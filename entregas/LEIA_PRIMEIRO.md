@@ -1,9 +1,7 @@
-# Entrega Modelo D — pacote v2.03
+# Entrega Modelo D — v2.04 — 29/10/2026
 
-Baixe ModeloD_Integrado_Sem_Transporte_v2_03.zip e substitua a pasta Scripts completa em MQL5. Preserve todos os arquivos em Common/Files. Recompile Test_Integrado_Sem_Transporte.mq5 e execute duas vezes; cada execução deve ter TEST_RUN distinto e resultados 631/0 e 104/0.
+Pacote atual: ModeloD_Integrado_Sem_Transporte_v2_04.zip. Extrair na pasta principal do projeto e copiar as subpastas de MQL5/Scripts e MQL5/Experts para as respectivas pastas da instalação MT5, preservando Common/Files. Compilar o script, executar duas vezes (631/0 + 104/0 em cada) e compilar o EA. Somente após aprovação nativa seguir com a observação de cerca de 15 minutos no WIN$N M5, negociação algorítmica desativada. Remover manualmente o EA ao terminar.
 
-Corrige o isolamento da bateria de regressão: o prefixo fixo anterior reutilizava estados e temporários das próprias fixtures. A reprodução local confirmou primeira execução 631/0 e segunda 556/85. A revisão reserva um namespace TEST_ONLY exclusivo por execução, preservando os arquivos anteriores. A reprodução corrigida passou duas vezes, 631/0 em ambas, sem limpar arquivos entre as execuções.
+A v2.04 acrescenta diagnóstico de bloqueios e recuperação no relatório do EA e corrige inicialização explícita de áreas inativas de estruturas em memória antes de cópia/decodificação. A investigação foi local com sanitizadores; não é uma falha já comprovada no MT5. Como a correção afeta cabeçalhos compartilhados, esta revisão precisa atualizar Experts e Scripts e ser recompilada/testada nativamente. Regras, preços, consumo, prazos, formato do diário e transporte não foram alterados. Não apaga nem recria checkpoints.
 
-O EA permanece idêntico ao pacote v2.02, com transporte ausente. Esta revisão altera apenas o runner dos testes e empacotamento/documentação. Compilação nativa do runner corrigido e execução MT5 permanecem pendentes. A compilação do EA v2.02 sem avisos também aguarda confirmação do usuário.
-
-Instruções, diagnósticos e evidências no ZIP. A main não foi alterada.
+Os quatro blocos e seus critérios de conclusão/impedimento estão em CRITERIOS_QUATRO_BLOCOS_20261029.md e no ZIP. Testes nativos anteriores não foram automaticamente atribuídos a esta revisão. Transporte permanece ausente. A main não foi alterada.
