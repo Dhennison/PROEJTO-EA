@@ -1,7 +1,9 @@
-# Entrega Modelo D v2.00 — 28/10/2026
+# Entrega Modelo D — pacote v2.01
 
-Baixe `ModeloD_Integrado_Sem_Transporte_v2_00.zip` e extraia o pacote. Consulte o LEIA_PRIMEIRO.txt dentro dele para instalação única, compilação do EA e execução do teste consolidado.
+Baixe `ModeloD_Integrado_Sem_Transporte_v2_01.zip`, extraia e copie as pastas para MQL5, aceitando a substituição dos arquivos da entrega v2.00. Preserve Common/Files. Recompile `Scripts/ModeloD_Integrado_Sem_Transporte/Test_Integrado_Sem_Transporte.mq5`.
 
-Esta versão mantém o transporte de ordens ausente. Os testes locais são C++ e APIs simuladas; compilação desta versão no MetaEditor e execução nativa no MT5 permanecem pendentes. Não está autorizada a negociar em conta real.
+Correção: todos os cabeçalhos do teste estão agora dentro da própria pasta Scripts; ele não depende de um include relativo para Experts. É necessário copiar a pasta inteira, com os arquivos .mqh.
 
-O ZIP inclui fontes, dependências, instruções, testes e logs. SHA-256 em SHA256SUMS.txt. A branch contém o pacote de entrega; a main não foi alterada.
+O EA principal permanece idêntico ao da v2.00, com transporte de ordens ausente e property version 2.00. A alteração v2.01 refere-se ao pacote e teste. Não houve alteração de estratégia. Os 104 checks locais de integração passaram, mas a recompilação nativa desta correção no MetaEditor continua pendente.
+
+As instruções completas e os logs estão no ZIP. A v2.00 permanece disponível somente como histórico. A main não foi alterada.
