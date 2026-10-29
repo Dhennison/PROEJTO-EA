@@ -1,9 +1,9 @@
-# Entrega Modelo D — pacote v2.01
+# Entrega Modelo D — pacote v2.02
 
-Baixe `ModeloD_Integrado_Sem_Transporte_v2_01.zip`, extraia e copie as pastas para MQL5, aceitando a substituição dos arquivos da entrega v2.00. Preserve Common/Files. Recompile `Scripts/ModeloD_Integrado_Sem_Transporte/Test_Integrado_Sem_Transporte.mq5`.
+Baixe ModeloD_Integrado_Sem_Transporte_v2_02.zip, extraia e copie as pastas para MQL5 substituindo os arquivos da entrega anterior. Preserve Common/Files. Recompile o EA principal.
 
-Correção: todos os cabeçalhos do teste estão agora dentro da própria pasta Scripts; ele não depende de um include relativo para Experts. É necessário copiar a pasta inteira, com os arquivos .mqh.
+Correção v2.02: renomeia o parâmetro ledger para ledger_text para remover o aviso de sombreamento da variável global. Nenhuma mudança de estratégia, persistência ou transporte. A compilação do EA anterior foi confirmada pelo usuário com zero erros e um aviso; a recompilação desta correção está pendente.
 
-O EA principal permanece idêntico ao da v2.00, com transporte de ordens ausente e property version 2.00. A alteração v2.01 refere-se ao pacote e teste. Não houve alteração de estratégia. Os 104 checks locais de integração passaram, mas a recompilação nativa desta correção no MetaEditor continua pendente.
+Correção v2.01 preservada: script de teste com todos os cabeçalhos na própria pasta Scripts. O usuário confirmou a compilação do script com zero erros/avisos e execução nativa com 631 + 104 verificações, zero falhas.
 
-As instruções completas e os logs estão no ZIP. A v2.00 permanece disponível somente como histórico. A main não foi alterada.
+Logs e instruções completas no ZIP. A main não foi alterada.
