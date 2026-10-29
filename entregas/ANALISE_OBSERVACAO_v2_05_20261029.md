@@ -20,8 +20,14 @@ No bloco 10:35–10:40, o minuto 10:38 divergiu:
 
 A diferença ficou restrita à máxima, 10 pontos. O EA reconsultou o mesmo bloco 19 vezes, aproximadamente a cada 30 segundos, sem mudança. Após dez minutos, recusou o bloco e bloqueou novas tentativas na sessão. Não aprovou checkpoint nem inventou tick. Esse comportamento confirma a política de recuperação, mas a origem da divergência ainda é desconhecida.
 
-## Próxima evidência necessária
+## Diagnóstico posterior
 
-O diagnóstico `ModeloD_Diagnostico_Ticks_20261029_1038_v1_00` consulta duas vezes a janela 10:35–10:40 e o minuto 10:38, comparando `COPY_TICKS_TRADE`, `COPY_TICKS_ALL`, flags LAST, Bid, Ask, OHLC M1, ordem e multiplicidade. Ele não altera EA, histórico ou estado. Somente depois dessa evidência será possível distinguir filtro/flags, alteração posterior do histórico ou inconsistência persistente do terminal/servidor.
+Às 11:01, o diagnóstico nativo encontrou 13.655 eventos TRADE no minuto, exatamente o `tick_volume` do M1. Entre os 1.995 eventos que não haviam sido fornecidos ao EA estava o negócio LAST de 173250 às 10:38:48.427. TRADE, ALL filtrado e M1 passaram a ter OHLC idêntico. As duas rodadas diagnósticas retornaram a mesma quantidade e sequência, sem erros, rejeições, regressões ou registros fora da janela.
 
-A Etapa 1 permanece parcialmente aceita: compilação, inicialização, retomada, dados diários, contrato, inventário, conciliação vazia, persistência, política de bloqueio e encerramento foram comprovados. Reconstrução completa, recuperação bem-sucedida e gestão com posições continuam sem comprovação.
+Isso comprova alteração/complementação posterior do histórico TRADE disponível no terminal. Não comprova a causa interna do atraso no terminal ou servidor. O cálculo OHLC e o filtro de negociação do EA não produziram a diferença.
+
+## Tratamento v2.06
+
+Em divergência TRADE/M1, o EA consulta ALL na mesma janela e preserva somente registros com as mesmas flags de negociação. Só avança se o candidato filtrado passar integralmente pelas validações e pelo M1. Se ALL também divergir, descarta o candidato e mantém cursor/bloqueio. A estratégia Last, a ordem e a multiplicidade não mudam.
+
+A Etapa 1 permanece parcialmente aceita: compilação, inicialização, retomada, dados diários, contrato, inventário, conciliação vazia, persistência, política de bloqueio e encerramento foram comprovados. A v2.06 ainda precisa de compilação e observação nativas. Gestão com posições continua sem comprovação.
