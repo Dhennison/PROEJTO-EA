@@ -1,0 +1,3 @@
+MQL5/Experts/ModeloD_Integrado_Sem_Transporte/EA_ModeloD_Fluxo_Sem_Ordens.mq5
+MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_OpeningTicks.mqh
+MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_DailyTerminal.mqh

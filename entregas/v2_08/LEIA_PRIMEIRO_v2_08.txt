@@ -1,0 +1,22 @@
+MODELO D v2.08 — coleta do primeiro tick — somente Experts
+
+Instalação
+1. Remova manualmente o EA atual do gráfico antes de substituir fontes.
+2. Extraia o ZIP e copie MQL5/Experts/ModeloD_Integrado_Sem_Transporte para MQL5/Experts da pasta de dados do MT5, substituindo a pasta correspondente. Não toque em Common/Files. Não substitua nem recompile o Script.
+3. No MetaEditor, compile EA_ModeloD_Fluxo_Sem_Ordens.mq5. Confirme versão 2.08 e envie erros/avisos. Não há EX5 ou compilação MQL5 nativa nesta entrega.
+4. Anexe ao WIN$N M5, parâmetros padrão e negociação algorítmica desativada. Preserve diário, arquivos B3 e identidade de conta/servidor/instância.
+5. Confira PRIMEIRO_TICK_CONSULTA na aba Experts: de_msc e ate_msc diferem no máximo 59999 ms. Em falha, o TXT informa erro, quantidade, tentativa, duração e backoff; no intervalo não deve haver nova consulta de ticks. Confira recuperação de DADOS_DIARIOS e os diagnósticos ENTRADA_0..4. Se continuar indisponível, envie TXT e Experts, incluindo duração; não apague o diário para tentar liberar.
+6. Remova manualmente para encerrar. Interrupção é diagnosticada separadamente; não valida nem avança a busca. Envie o TXT encerrado.
+
+Mudança
+A chamada anterior era CopyTicks(..., abertura_da_sessao, 1): início não zero e somente um registro solicitado, porém sem limite superior explícito de tempo. O log comprova timeout com retorno parcial; não comprova a causa interna ou volume de sincronização do MT5.
+Agora usa CopyTicksRange TRADE em uma janela fechada de até 60 segundos, entre abertura e cutoff aprovados. Há no máximo uma consulta de abertura por chamada ao coletor, sem loop de histórico. Só avança por janelas completamente vazias sem erro e já encerradas no relógio validado. Não usa barra M1, ALL nem aproximação para a abertura. Primeiro negócio deve pertencer à janela e ter preço e flags de negociação válidos. Confirmação continua sujeita ao validador diário, inclusive igualdade com abertura D1.
+4403, mesmo com dados retornados, nunca confirma abertura. Backoff de 2, 4, 8, 16 e no máximo 30 segundos começa após o retorno da API. A janela pendente é mantida. A primeira abertura confirmada fica em memória durante a execução, evitando repetir a sincronização. Reinício reconfirma a abertura desde o começo da sessão sem apagar persistência. Não há escrita em ledger, cursor de fluxo ou prazos no novo coletor.
+A coleta D1 só começa após a confirmação da abertura, evitando chamadas adicionais de histórico durante o backoff de ticks. Regras operacionais, Script, transporte e formato persistente não foram alterados. TRANSPORT_ABSENT.
+
+Limite que exige validação nativa
+CopyTicksRange continua sendo síncrona no EA. A janela e o número de consultas são limitados, mas este código não pode cancelar uma chamada já entregue ao MT5 nem impor um timeout próprio menor que o da plataforma. Não foi comprovado um limite de tempo de parede no terminal. A v2.08 evita encadear consultas de abertura num mesmo timer e não aumenta timeout. Se uma única consulta limitada ainda travar por minutos no MT5, será necessário um coletor assíncrono separado; não declarar esse requisito resolvido apenas com os mocks.
+
+Validação
+Testes novos ficam separados do ZIP, em opening_ticks.cpp e TESTAR_ABERTURA.py. APIs são simuladas; o código do novo coletor é adaptado somente na sintaxe de array para C++. Execução: python TESTAR_ABERTURA.py /caminho/MQL5/Experts/ModeloD_Integrado_Sem_Transporte
+Relatório de abertura: 14 verificações/0 falhas com ASan/UBSan. O teste simula 45 segundos decorridos dentro da API para confirmar backoff após retorno; não é medição de MT5. O runtime herdado substitui o coletor diário por stub e não valida essa integração nativamente. Ver relatório separado de regressão existente. Compilação e observação nativas permanecem a cargo do usuário.

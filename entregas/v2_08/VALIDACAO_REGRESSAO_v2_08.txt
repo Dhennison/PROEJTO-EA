@@ -1,0 +1,1118 @@
+VALIDACAO LOCAL C++ E APIs MT5 SIMULADAS. NAO E COMPILACAO MQL5.
+
+$ c++ -std=c++17 -g -Wall -Wextra -Wno-unused-parameter -O1 tests/host.cpp -o /tmp/modelod_validation_v56u75ev/host
+EXIT_STATUS=0
+
+$ c++ -std=c++17 -g -Wall -Wextra -Wno-unused-parameter -O1 tests/integrated.cpp -o /tmp/modelod_validation_v56u75ev/integrated
+EXIT_STATUS=0
+
+$ c++ -std=c++17 -g -Wall -Wextra -Wno-unused-parameter -O1 tests/faults.cpp -o /tmp/modelod_validation_v56u75ev/faults
+EXIT_STATUS=0
+
+$ c++ -std=c++17 -g -Wall -Wextra -Wno-unused-parameter -O1 tests/restart_process.cpp -o /tmp/modelod_validation_v56u75ev/restart_process
+EXIT_STATUS=0
+
+$ c++ -std=c++17 -g -Wall -Wextra -Wno-unused-parameter -O1 tests/regression_repeat.cpp -o /tmp/modelod_validation_v56u75ev/regression_repeat
+EXIT_STATUS=0
+
+$ c++ -std=c++17 -g -Wall -Wextra -Wno-unused-parameter -O1 tests/state_initialization.cpp -o /tmp/modelod_validation_v56u75ev/state_initialization
+EXIT_STATUS=0
+
+$ /tmp/modelod_validation_v56u75ev/host
+PASS: dados fixos constroem controlador
+PASS: nivel 0 calculo diario ligado a comando simulado
+PASS: nivel 1 calculo diario ligado a comando simulado
+PASS: nivel 2 calculo diario ligado a comando simulado
+PASS: nivel 3 calculo diario ligado a comando simulado
+PASS: nivel 4 calculo diario ligado a comando simulado
+PASS: pedido em voo nao duplica entrada
+PASS: reiniciar controlador nao apaga PREPARAR do diario
+PASS: primeiro toque bloqueia preparacao tardia
+PASS: sem relogio verificado nao prepara
+PASS: sem historia verificada nao prepara
+PASS: sem conciliacao nao prepara
+PASS: sem lock nao cria comando
+PASS: volume invalido nao prepara
+PASS: timer de corte sem tick bloqueia entrada
+PASS: cadeia parcial nasce do comando e diario calculados
+PASS: parcial protege somente ticket conciliado com SL TP originais
+PASS: parcial registra consumo no diario simulado
+PASS: nova conciliacao nao duplica consumo no diario
+PASS: corte planeja cancelar saldo e fechar parcial por ticket
+PASS: retomada conserva intencoes mesmo sem novo evento de corte
+PASS: fronteira sem prova apos fill cancela saldo e protege posicao
+PASS: fronteira comprovada apos fill planeja fechamento
+PASS: desconexao nao produz comando despachavel
+PASS: reconexao retoma intencao anterior
+PASS: conta diferente rejeitada
+PASS: servidor diferente rejeitado
+PASS: Magic divergente nao recebe comando
+PASS: posicao sem cadeia comprovada nao recebe comando
+PASS: volume divergente bloqueia plano inteiro
+PASS: snapshot incompleto bloqueia plano
+PASS: snapshot antigo bloqueia plano
+PASS: diario corrompido bloqueia plano
+PASS: mudanca de ticket respeita identifier conciliado
+PASS: historico incompleto cancela saldo comprovado sem nova entrada
+PASS: fill durante cancelamento fecha volume conciliado total
+PASS: duas posicoes da mesma ordem recebem protecao individual
+PASS: agenda permite primeira protecao imediata
+PASS: protecao em voo nao duplica tentativa
+PASS: espacamento inicial preservado
+PASS: prazo adicional inicia apos conclusao da sexta tentativa
+PASS: prazo sem SL chega ao comando simulado de fechamento
+PASS: SL presente TP ausente continua protecao sem fechar por prazo
+TESTE_615C;Checks=43;Failures=0;INTEGRACAO_SINTETICA;SEM_ORDENS
+PASS: dados fixos constroem controlador
+PASS: nivel 0 calculo diario ligado a comando simulado
+PASS: nivel 1 calculo diario ligado a comando simulado
+PASS: nivel 2 calculo diario ligado a comando simulado
+PASS: nivel 3 calculo diario ligado a comando simulado
+PASS: nivel 4 calculo diario ligado a comando simulado
+PASS: pedido em voo nao duplica entrada
+PASS: reiniciar controlador nao apaga PREPARAR do diario
+PASS: primeiro toque bloqueia preparacao tardia
+PASS: sem relogio verificado nao prepara
+PASS: sem historia verificada nao prepara
+PASS: sem conciliacao nao prepara
+PASS: sem lock nao cria comando
+PASS: volume invalido nao prepara
+PASS: timer de corte sem tick bloqueia entrada
+PASS: cadeia parcial nasce do comando e diario calculados
+PASS: parcial protege somente ticket conciliado com SL TP originais
+PASS: parcial registra consumo no diario simulado
+PASS: nova conciliacao nao duplica consumo no diario
+PASS: corte planeja cancelar saldo e fechar parcial por ticket
+PASS: retomada conserva intencoes mesmo sem novo evento de corte
+PASS: fronteira sem prova apos fill cancela saldo e protege posicao
+PASS: fronteira comprovada apos fill planeja fechamento
+PASS: desconexao nao produz comando despachavel
+PASS: reconexao retoma intencao anterior
+PASS: conta diferente rejeitada
+PASS: servidor diferente rejeitado
+PASS: Magic divergente nao recebe comando
+PASS: posicao sem cadeia comprovada nao recebe comando
+PASS: volume divergente bloqueia plano inteiro
+PASS: snapshot incompleto bloqueia plano
+PASS: snapshot antigo bloqueia plano
+PASS: diario corrompido bloqueia plano
+PASS: mudanca de ticket respeita identifier conciliado
+PASS: historico incompleto cancela saldo comprovado sem nova entrada
+PASS: fill durante cancelamento fecha volume conciliado total
+PASS: duas posicoes da mesma ordem recebem protecao individual
+PASS: agenda permite primeira protecao imediata
+PASS: protecao em voo nao duplica tentativa
+PASS: espacamento inicial preservado
+PASS: prazo adicional inicia apos conclusao da sexta tentativa
+PASS: prazo sem SL chega ao comando simulado de fechamento
+PASS: SL presente TP ausente continua protecao sem fechar por prazo
+TESTE_615C;Checks=43;Failures=0;INTEGRACAO_SINTETICA;SEM_ORDENS
+PASS: L: cadeia parcial inicializada
+PASS: L: parcial inicia protecao
+PASS: L: intencao nao duravel nao inicia tentativa
+PASS: L: ticket divergente nao inicia tentativa
+PASS: L: tentativa de protecao iniciada
+PASS: L: protecao em voo nao duplica plano
+PASS: L: conclusao de outro ticket rejeitada
+PASS: L: tentativa concluida sem presumir SL confirmado
+PASS: L: conclusao duplicada rejeitada
+PASS: L: antes de dois segundos aguarda
+PASS: L: segunda tentativa no prazo
+PASS: L: tentativa inicial 2
+PASS: L: tentativa inicial 3
+PASS: L: tentativa inicial 4
+PASS: L: tentativa inicial 5
+PASS: L: tentativa inicial 6
+PASS: L: adicional aguarda dez segundos
+PASS: L: adicional permite nova protecao
+PASS: L: antes de 180s apos sexta nao fecha por prazo
+PASS: L: sem SL no prazo gera intencao e fechamento
+PASS: L: fechamento representado no diario candidato
+PASS: L: diario de fechamento nao rearma protecao apos reset
+PASS: L: SL confirmado TP ausente continua reparacao
+PASS: L: SL e TP confirmados dispensam reparacao
+PASS: L: relogio monotono regressivo bloqueia
+PASS: L: fronteira comprovada cancela saldo e fecha parcial protegida
+PASS: L: cutoff prevalece sobre protecoes presentes
+PASS: L: desconexao bloqueia comandos
+PASS: L: reconexao conserva encerramento registrado
+PASS: L: fill durante cancelamento atualiza volume de fechamento
+PASS: L: saida conciliada encerra planos da cadeia
+PASS: L2: estado inicial valido
+PASS: L2: seis tentativas preservadas
+PASS: L2: releitura nao reinicia prazo de 180s
+PASS: L2: releitura preserva intervalo adicional
+PASS: L2: identidade divergente rejeitada
+PASS: L2: outra origem de relogio bloqueia retomada automatica
+PASS: L2: revisao antiga rejeitada
+PASS: L2: relogio anterior ao estado rejeitado
+PASS: L2: corrupcao rejeitada
+PASS: L2: truncamento rejeitado
+PASS: L2 DISCO: agenda gravada fechada e relida
+PASS: L2 DISCO: arquivo existente nao sobrescrito
+PASS: L2 DISCO: prazo vencido continua vencido
+PASS: L2 DISCO: protecao em voo nao e reenviada
+PASS: L2: sem conciliacao nao prepara cancelamento
+PASS: L2: sem intencao duravel nao prepara cancelamento
+PASS: L2: cria candidato de cancelamento
+PASS: L2 DISCO: cancelamento reservado permanece incerto
+PASS: L2: cancelamento reservado nao duplica
+PASS: L2: outro comando aguarda resolucao da reserva
+PASS: L2: retorno sem efeito comprovado nao conclui
+PASS: L2: resposta de outra tentativa rejeitada
+PASS: L2: resposta de outro ticket rejeitada
+PASS: L2: efeito confirmado resolve candidato
+PASS: L2: confirmacao duplicada nao altera estado
+PASS: L2: cancelamento concluido nao reaparece
+PASS: L2: fechamento usa volume conciliado apos parcial
+PASS: L2 DISCO: fechamento reservado preservado
+PASS: L2: fechamento reservado nao duplica
+PASS: L2 DISCO: reinicio com origem desconhecida bloqueado
+PASS: L2: caminho operacional rejeitado
+PASS: L3: cutoff gera cancelamento e fechamento conciliados
+PASS: L3: dois controles vinculados ao mesmo pedido
+PASS: L3: intencao ainda nao duravel bloqueia reserva
+PASS: L3: reserva de cancelamento do saldo
+PASS: L3: cancelamento reservado nao duplica
+PASS: L3: fechamento urgente permitido com cancelamento incerto
+PASS: L3: fechamento nao apaga incerteza do cancelamento
+PASS: L3 DISCO: dois controles gravados e relidos juntos
+PASS: L3 DISCO: arquivo anterior nao sobrescrito
+PASS: L3: retomada nao repete nenhum dos comandos
+PASS: L3: retorno sem efeito confirmado nao conclui fechamento
+PASS: L3: resposta de tentativa diferente rejeitada
+PASS: L3: resposta de outro ticket rejeitada
+PASS: L3: confirmar fechamento preserva cancelamento pendente
+PASS: L3: confirmacao duplicada rejeitada
+PASS: L3: cancelamento pode ser confirmado depois do fechamento
+PASS: L3: revisao antiga rejeitada
+PASS: L3: identidade diferente rejeitada
+PASS: L3: origem de relogio diferente rejeitada
+PASS: L3: arquivo corrompido rejeitado
+PASS: L3: arquivo parcial rejeitado
+PASS: L3: nova evidencia recalcula necessidade total de fechamento
+PASS: L3: novo volume nao duplica nem altera fechamento em voo
+PASS: L3: sem chamada anterior reserva volume atual conciliado
+PASS: L3: plano de outro ticket rejeitado
+PASS: L3: plano com diario invalido rejeitado
+PASS: L4: plano conciliado de corte preparado
+PASS: L4: leitura sem lock bloqueada
+PASS: L4: caminho operacional recusado
+PASS: L4 DISCO: lock exclusivo adquirido
+PASS: L4 DISCO: segunda abertura bloqueada
+PASS: L4: arquivo ausente nao vira estado vazio valido
+PASS: L4 DISCO: revisao inicial gravada e conferida
+PASS: L4: inicializacao nao sobrescreve estado existente
+PASS: L4 DISCO: cancelamento reservado publicado como revisao 2
+PASS: L4 DISCO: fechamento urgente publicado como revisao 3
+PASS: L4: escritor com estado antigo rejeitado
+PASS: L4: mesma revisao nao e regravada
+PASS: L4: salto de revisao rejeitado
+PASS: L4: handle fechado impede leitura
+PASS: L4 DISCO: lock liberado permite nova instancia
+PASS: L4 DISCO: retomada encontra revisao mais recente e duas reservas
+PASS: L4: retomada nao recria chamadas
+PASS: L4: identidade divergente bloqueia recuperacao
+PASS: L4: origem de relogio divergente bloqueia recuperacao
+PASS: L4 DISCO: temporario incompleto bloqueia retorno silencioso ao estado anterior
+PASS: L4: estado suspeito nao aceita commit
+PASS: L4 DISCO: ancora corrompida bloqueia sem fallback
+PASS: L4: caminho com travessia rejeitado
+PASS: L4: falha temporaria preservou estado confirmado anterior
+PASS: L5: contador continuo avanca tempo logico
+PASS: L5: UTC antigo nao vira prova atual automaticamente
+PASS: L5: contador regressivo rejeitado
+PASS: L5: origem diferente exige ponte temporal
+PASS: L5: horario novo nao certificado rejeitado
+PASS: L5: ancora antiga nao certificada rejeitada
+PASS: L5: UTC comprovadamente regressivo rejeitado
+PASS: L5: intervalo UTC invertido rejeitado
+PASS: L5: reinicio do contador preserva cem segundos decorridos
+PASS: L5: prazo restante nao reinicia nem expira cedo
+PASS: L5: um ms antes do prazo ainda nao expirou
+PASS: L5: prazo original expira exatamente apos retomada
+PASS: L5: SL confirmado impede fechamento apenas por prazo
+PASS: L5: prazo vencido durante parada continua vencido
+PASS: L5: incerteza que cruza prazo nao inventa resultado
+PASS: L5: limite inferior posterior comprova prazo vencido
+PASS: L5: intervalo incerto de tentativa aguarda evidencia
+PASS: L5: reinicio nao libera tentativa de protecao em voo
+PASS: L5: troca de origem nao reseta contagem logica
+PASS: L5: serializacao preserva mapa temporal
+PASS: L5: corrupcao temporal rejeitada
+PASS: L5: checkpoint liga agenda e mapa temporal
+PASS: L5: cancelamento e fechamento incertos preservados
+PASS: L5: checkpoint de outra identidade rejeitado
+PASS: L5: checkpoint antigo rejeitado
+PASS: L5: checkpoint adulterado rejeitado
+PASS: L5 DISCO: checkpoint fechado e relido
+PASS: L5 DISCO: segunda retomada preserva prazo original
+PASS: L5: ponte temporal nao autoriza reenvio de gestao
+PASS: L5: prazo recuperado produz plano de fechamento sem reiniciar agenda
+PASS: L6: fixture vem do diario e plano integrado
+PASS: L6: fechamento parcial terminal confirmado por ordem e deals
+PASS: L6: confirmacao produz candidato sem alterar estado de entrada
+PASS: L6: nova reserva contem somente volume residual
+PASS: L6: prova da tentativa anterior nao libera novo envio
+PASS: L6 DISCO: reserva residual preservada apos releitura
+PASS: L6 DISCO: releitura nao aceita confirmacao antiga
+PASS: L6: segunda tentativa confirmada encerra residual apos retomada
+PASS: L6: segunda confirmacao nao pode ser reutilizada
+PASS: L6: fechamento total nao reserva volume zero
+PASS: L6: confirmacao total duplicada rejeitada
+PASS: L6: vinculo nao comprovado bloqueia confirmacao
+PASS: L6: tentativa diferente bloqueia confirmacao
+PASS: L6: ordem ausente bloqueia confirmacao
+PASS: L6: identifier diferente bloqueia confirmacao
+PASS: L6: conta diferente bloqueia confirmacao
+PASS: L6: servidor diferente bloqueia confirmacao
+PASS: L6: coleta incompleta bloqueia confirmacao
+PASS: L6: desconexao bloqueia confirmacao
+PASS: L6: modo de conta divergente bloqueia confirmacao
+PASS: L6: parcial ainda ativa bloqueia confirmacao
+PASS: L6: rejeicao nao classificada bloqueia confirmacao
+PASS: L6: Magic diferente bloqueia confirmacao
+PASS: L6: lado de fechamento errado bloqueia confirmacao
+PASS: L6: volume solicitado divergente bloqueia confirmacao
+PASS: L6: saldo da ordem incompativel com deals bloqueia confirmacao
+PASS: L6: ordem marcada como entrada bloqueia confirmacao
+PASS: L6: ordem anterior ao pedido bloqueia confirmacao
+PASS: L6: deal anterior a criacao da ordem bloqueia confirmacao
+PASS: L6: ausencia de deal nao confirma bloqueia confirmacao
+PASS: L6: saldo da posicao divergente bloqueia confirmacao
+PASS: L6: ticket atual diferente bloqueia confirmacao
+PASS: L6: deal anterior ao pedido bloqueia confirmacao
+PASS: L6: OUT_BY fora do escopo bloqueia confirmacao
+PASS: L6: duplicata conflitante bloqueia confirmacao
+PASS: L6: diario adulterado bloqueia confirmacao
+PASS: L6: leitura antiga rejeitada
+PASS: L6: deal identico repetido nao duplica volume fechado
+PASS: L7: diario e fechamento reservado integrados
+PASS: L7: acesso sem lock recusado
+PASS: L7 DISCO: lock exclusivo adquirido
+PASS: L7 DISCO: segunda abertura bloqueada
+PASS: L7 DISCO: estado e mapa temporal criados no mesmo envelope
+PASS: L7: criacao nao sobrescreve ancora existente
+PASS: L7 DISCO: conteudo integral relido
+PASS: L7 DISCO: reserva inicial publicada sob lock
+PASS: L7: revisao sem avanco rejeitada
+PASS: L7: mapa temporal esperado divergente rejeitado
+PASS: L7: contador regressivo nao confirma fechamento
+PASS: L7: falha de persistencia nao entrega novo estado ao chamador
+PASS: L7 DISCO: tentativa nao publicada preserva estado anterior
+PASS: L7 DISCO: parcial confirma e publica reserva residual
+PASS: L7: mesmo evento com estado anterior nao republica
+PASS: L7 DISCO: reabertura preserva residual e tempo juntos
+PASS: L7: retomada rejeita vinculacao da tentativa anterior
+PASS: L7: origem nova sem evidencia temporal bloqueada
+PASS: L7: ancora UTC antiga nao certificada bloqueia ponte
+PASS: L7 DISCO: fechamento do residual publicado sem nova reserva
+PASS: L7 DISCO: estado final e tempo conferidos
+PASS: L7: outra conta nao adota arquivo existente
+PASS: L7: outro servidor nao adota arquivo existente
+PASS: L7: outra identidade nao adota arquivo existente
+PASS: L7: envelope adulterado rejeitado
+PASS: L7: envelope truncado rejeitado
+PASS: L7 DISCO: escrita interrompida bloqueia retomada
+PASS: L7: arquivo temporario nao e ignorado
+PASS: L7 DISCO: ancora temporal de bancada criada
+PASS: L7: ponte certificada pela fixture preserva tempo decorrido
+PASS: L7 DISCO: novo mapa temporal persiste com revisao
+PASS: L7: ponte antiga nao sobrescreve revisao atual
+PASS: L7 DISCO: ancora corrompida bloqueada sem fallback
+PASS: L7: pacote restrito a arquivos de bancada
+PASS: M: entrada elegivel preserva comando do nucleo
+PASS: M: plano admissivel nao habilita transporte
+PASS: M: bloqueio de entrada 1 - IDENTIDADE_DIVERGENTE
+PASS: M: bloqueio de entrada 2 - IDENTIDADE_DIVERGENTE
+PASS: M: bloqueio de entrada 3 - IDENTIDADE_DIVERGENTE
+PASS: M: bloqueio de entrada 4 - DESCONECTADO
+PASS: M: bloqueio de entrada 5 - SEM_LOCK
+PASS: M: bloqueio de entrada 6 - ESTADO_OU_INTENCAO_NAO_DURAVEL
+PASS: M: bloqueio de entrada 7 - ESTADO_OU_INTENCAO_NAO_DURAVEL
+PASS: M: bloqueio de entrada 8 - CONCILIACAO_PENDENTE
+PASS: M: bloqueio de entrada 9 - LEITURA_ANTIGA_OU_ORIGEM_TEMPORAL_DIVERGENTE
+PASS: M: bloqueio de entrada 10 - LEITURA_ANTIGA_OU_ORIGEM_TEMPORAL_DIVERGENTE
+PASS: M: bloqueio de entrada 11 - LEITURA_ANTIGA_OU_ORIGEM_TEMPORAL_DIVERGENTE
+PASS: M: bloqueio de entrada 12 - LEITURA_ANTIGA_OU_ORIGEM_TEMPORAL_DIVERGENTE
+PASS: M: bloqueio de entrada 13 - LEITURA_ANTIGA_OU_ORIGEM_TEMPORAL_DIVERGENTE
+PASS: M: bloqueio de entrada 14 - PROPRIEDADES_NAO_VALIDADAS
+PASS: M: bloqueio de entrada 15 - TENTATIVA_DA_ACAO_AINDA_INCERTA
+PASS: M: bloqueio de entrada 16 - SESSAO_DIVERGENTE
+PASS: M: bloqueio de entrada 17 - CALENDARIO_PENDENTE
+PASS: M: bloqueio de entrada 18 - DADOS_DIARIOS_PENDENTES
+PASS: M: bloqueio de entrada 19 - HISTORICO_DE_TOQUES_PENDENTE
+PASS: M: bloqueio de entrada 20 - RELOGIO_NAO_CERTIFICADO
+PASS: M: bloqueio de entrada 21 - FORA_DA_JANELA_DE_ENTRADA
+PASS: M: bloqueio de entrada 22 - FORA_DA_JANELA_DE_ENTRADA
+PASS: M: bloqueio de entrada 23 - NIVEL_INELEGIVEL
+PASS: M: fronteira inclusiva de frescor respeitada
+PASS: M: relatorio mostra bloqueios simultaneos
+PRONTIDAO_615M;acao=1;plano_admissivel=0;transporte=0;motivos=SEM_LOCK;DADOS_DIARIOS_PENDENTES;HISTORICO_DE_TOQUES_PENDENTE
+PASS: M: nivel inexistente continua rejeitado pelo nucleo
+PASS: M: falhas de entrada nao impedem plano de cancelamento comprovado
+PASS: M: encerramento preserva contrato ticket e volume conciliados
+PRONTIDAO_615M;acao=4;plano_admissivel=1;transporte=0;motivos=PLANO_ADMISSIVEL_SEM_TRANSPORTE
+PASS: M: protecao nao concorre com encerramento
+PASS: M: fechamento em voo nao e duplicado
+PASS: M: desconexao bloqueia comando mesmo no corte
+PASS: M: sem titularidade nao fecha posicao
+PASS: M: volume nao conciliado nao produz fechamento
+PASS: M: evidencia desatualizada nao apaga encerramento do diario
+PASS: M: protecao usa SL TP originais mesmo sem novos dados diarios
+PASS: M: agenda ainda nao vencida bloqueia protecao
+PASS: M: protecao em voo nao duplica
+PASS: M: gates nao substituem intencao de fechamento no diario
+PASS: M: gates nao substituem intencao de cancelamento no diario
+PASS: M: acao desconhecida rejeitada
+PASS: N: observacao totalmente preenchida nao vira permissao operacional
+PASS: N: checkpoint shadow nao substitui diario operacional
+PASS: N: minutos fechados nao certificam ticks ate o instante atual
+PASS: N: hora estimada do servidor nao certifica UTC
+PASS: N: falta de produtor de tentativas nao e resolucao implicita
+PASS: N: revisao observacional atual reconhecida separadamente
+PASS: N: revisao antiga nao persiste como atual no proximo ciclo
+PASS: N: coleta lenta nao satisfaz frescor
+PASS: N: troca de conta permanece bloqueada
+PASS: N: dia sem dados mostra todos os motivos
+PASS: N: desconexao aparece no relatorio
+PASS: N: nivel consumido ou bloqueado nao e rearmado
+PASS: N: falha de leitura das propriedades nao vira valor padrao valido
+PASS: N: relatorio separa observacao persistida de permissao
+PRONTIDAO_615N;nivel=0;data=20261016;dados_diarios=1;minutos_fechados_conferidos=1;conciliacao_observacional=1;estado_shadow_gravado=1;plano_entrada=0;transporte=0;motivos=ESTADO_OU_INTENCAO_NAO_DURAVEL;PROPRIEDADES_NAO_VALIDADAS;TENTATIVA_DA_ACAO_AINDA_INCERTA;HISTORICO_DE_TOQUES_PENDENTE;RELOGIO_NAO_CERTIFICADO
+PASS: N101: grade revisada 20261026
+PASS: N101: grade revisada 20261027
+PASS: N101: grade revisada 20261028
+PASS: N101: grade revisada 20261029
+PASS: N101: grade revisada 20261030
+PASS: N101: nao extrapola para sabado
+PASS: N101: nao extrapola para novembro
+PASS: N101: nao aceita contrato diferente
+PASS: N102: ausencia conjunta registrada em observacao
+PASS: N102: modo estrito nao relaxado
+PASS: N102: candle sem ticks rejeitado
+PASS: N102: ticks sem candle rejeitados
+PASS: N102: OHLC existente conferido
+PASS: N102: fechamento divergente rejeitado
+PASS: N102: candle duplicado rejeitado
+PASS: N102: retorno de erro rejeitado
+PASS: N102: primeiro candle pode ser no quarto minuto
+PASS: N102: timestamps iguais rejeitados
+PASS: N102: regressao M1 rejeitada
+PASS: N102: candle apos janela rejeitado
+PASS: N102: minuto desalinhado rejeitado
+PASS: N102: bloco anterior a abertura tardia iniciado
+PASS: N102: bloco vazio nao avanca modo estrito
+PASS: N102: bloco vazio observacional avanca sem inventar tick
+PASS: N102: bloco vazio nao inventa toque
+PASS: N102: primeiro tick real apos bloco vazio mantem abertura
+PASS: N102: bloco com abertura real concluido
+PASS: N102: abertura esperada dentro do vazio nao e ignorada
+PASS: N102: auditoria invalida nao avanca
+PASS: N102: pausa intermediaria nao cria tick
+PASS: O: reserva abre com identidade e pedido
+PASS: O: segundo escritor bloqueado pelo lock real
+PASS: O: relogio nao certificado impede gravar tentativa
+PASS: O: historico incompleto nao reserva
+PASS: O: tentativa incerta anterior bloqueia
+PASS: O: troca de conta bloqueia antes de gravar
+PASS: O: troca de servidor bloqueia
+PASS: O: corte bloqueia reserva de entrada
+PASS: O: reserva nao inventa persistencia previa do diario
+PASS: O: evidencias antigas bloqueiam
+PASS: O: desconexao bloqueia reserva
+PASS: O: gravacao releitura e plano encadeados sem transporte
+PASS: O: reserva preserva precos e pedido do diario
+PASS: O: releitura conserva tentativa como incerta
+PASS: O: repeticao no mesmo processo nao produz segundo plano
+PASS: O: estado reaberto do disco
+PASS: O: reabertura nao autoriza reenvio automatico
+PASS: O: recibo de outra conta rejeitado
+PASS: O: recibo de outro servidor rejeitado
+PASS: O: recibo de outro pedido rejeitado
+PASS: O: caminho fora de bancada rejeitado
+PASS: O: arquivo truncado nao e estado valido
+PASS: O: arquivo corrompido existente nao e sobrescrito
+PASS: O: arquivo ocupado nao produz comando
+PASS: O: objeto fechado nao reserva
+PASS: P: conjunto abre com pedido esperado
+PASS: P: segundo escritor bloqueado
+PASS: P: falha de prontidao nao publica nenhum componente
+PASS: P: historico incompleto continua bloqueado
+PASS: P: conta divergente nao publica
+PASS: P: diario invalido nao publica
+PASS: P: diario e reserva publicados antes de expor plano
+PASS: P: entradas do chamador nao viram atestados por mutacao
+PASS: P: publicacao completa sem temporario residual
+PASS: P: releitura recupera diario exato e tentativa incerta juntos
+PASS: P: precos aprovados preservados
+PASS: P: conjunto existente impede segunda preparacao
+PASS: P: reabertura real recupera ambos componentes
+PASS: P: reabertura nao autoriza reenvio
+PASS: P: conta errada rejeita conjunto
+PASS: P: servidor errado rejeita conjunto
+PASS: P: temporario isolado bloqueia retomada e preparacao
+PASS: P: head corrompido nao e sobrescrito
+PASS: P: head valido com temporario residual tambem bloqueia
+PASS: P: checksum adulterado rejeitado
+PASS: P: caminho fora de bancada rejeitado
+PASS: P: diario reserva e lado conferidos no nivel 1
+PASS: P: diario reserva e lado conferidos no nivel 2
+PASS: P: diario reserva e lado conferidos no nivel 3
+PASS: P: diario reserva e lado conferidos no nivel 4
+PASS: Q: importa diario e reserva relidos de P
+PASS: Q: importacao repetida nao sobrescreve estado
+PASS: Q: segundo escritor bloqueado
+PASS: Q: estado inicial preserva incerteza e diario
+PASS: Q: resposta de outra tentativa rejeitada
+PASS: Q: revisao antiga ou inexistente rejeitada
+PASS: Q: resposta aceita persistida aguardando prova
+PASS: Q: retorno aceito sozinho nao vincula ticket ao diario
+PASS: Q: resposta aceita duplicada nao incrementa revisao
+PASS: Q: reabertura conserva resposta aceita sem inventar vinculo
+PASS: Q: historico incompleto bloqueia vinculo
+PASS: Q: leitura antiga bloqueia vinculo
+PASS: Q: conta da evidencia divergente rejeitada
+PASS: Q: servidor da evidencia divergente rejeitado
+PASS: Q: preco divergente bloqueia vinculo
+PASS: Q: ticket divergente bloqueia vinculo
+PASS: Q: vinculo e diario confirmados na mesma revisao
+PASS: Q: aceite anterior ao toque preserva oportunidade
+PASS: Q: vinculo repetido nao reaplica eventos
+PASS: Q: reabertura recupera vinculo persistido
+PASS: Q: arquivo de outra conta rejeitado
+PASS: Q: aceite no mesmo milissegundo do toque marcado tardio
+PASS: Q: consumo e intencao de cancelamento persistidos juntos
+PASS: Q: timeout persistido nao libera reenvio
+PASS: Q: tentativa incerta nao vira vinculo sem resposta aceita
+PASS: Q: rejeicao preservada para classificacao sem retry neste adaptador
+PASS: Q: residuo temporario bloqueia atualizacao e leitura
+PASS: Q: importacao entre contas diferentes rejeitada
+PASS: Q: importacao entre servidores diferentes rejeitada
+PASS: R: tentativa incerta nao produz plano de gestao
+PASS: R: partida usa vinculo persistido em Q
+PASS: R: snapshot antigo nao publica intencoes
+PASS: R: snapshot de outra conta rejeitado
+PASS: R: snapshot de outro servidor rejeitado
+PASS: R: coleta incompleta nao altera estado
+PASS: R: volumes divergentes rejeitados sem incrementar revisao
+PASS: R: parcial produz plano de protecao para ticket conciliado
+PASS: R: consumo persistido antes de expor plano
+PASS: R: protecao mantem precos originais
+PASS: R: revisao antiga invalida plano anterior
+PASS: R: reconciliacao repetida nao duplica consumo no diario
+PASS: R: reabertura preserva consumo
+PASS: R: corte planeja cancelar saldo e fechar parcial
+PASS: R: cancelamento e fechamento persistidos juntos
+PASS: R: retomada conserva encerramento sem novo sinal de corte
+PASS: R: desconexao nao expoe plano
+PASS: R: identifier preservado resolve novo ticket atual
+PASS: R: posicao sem vinculo comprovado bloqueada
+PASS: R: residuo temporario impede exposicao de plano
+PASS: B1: diario vinculado e controlador duravel criados
+PASS: B1: snapshot antigo nao reserva tentativa
+PASS: B1: troca de ticket bloqueada explicitamente
+PASS: B1: multiplas posicoes nao reinicializam controlador silenciosamente
+PASS: B1: inicio duravel da protecao 1
+PASS: B1: tentativa em voo nao duplicada
+PASS: B1: conclusao sem evidencia rejeitada
+PASS: B1: conclusao conhecida persistida
+PASS: B1: mesma conclusao nao contada duas vezes
+PASS: B1: intervalo inferior a dois segundos bloqueado
+PASS: B1: inicio duravel da protecao 2
+PASS: B1: tentativa em voo nao duplicada
+PASS: B1: conclusao sem evidencia rejeitada
+PASS: B1: conclusao conhecida persistida
+PASS: B1: mesma conclusao nao contada duas vezes
+PASS: B1: intervalo inferior a dois segundos bloqueado
+PASS: B1: inicio duravel da protecao 3
+PASS: B1: tentativa em voo nao duplicada
+PASS: B1: conclusao sem evidencia rejeitada
+PASS: B1: conclusao conhecida persistida
+PASS: B1: mesma conclusao nao contada duas vezes
+PASS: B1: intervalo inferior a dois segundos bloqueado
+PASS: B1: inicio duravel da protecao 4
+PASS: B1: tentativa em voo nao duplicada
+PASS: B1: conclusao sem evidencia rejeitada
+PASS: B1: conclusao conhecida persistida
+PASS: B1: mesma conclusao nao contada duas vezes
+PASS: B1: intervalo inferior a dois segundos bloqueado
+PASS: B1: inicio duravel da protecao 5
+PASS: B1: tentativa em voo nao duplicada
+PASS: B1: conclusao sem evidencia rejeitada
+PASS: B1: conclusao conhecida persistida
+PASS: B1: mesma conclusao nao contada duas vezes
+PASS: B1: intervalo inferior a dois segundos bloqueado
+PASS: B1: inicio duravel da protecao 6
+PASS: B1: tentativa em voo nao duplicada
+PASS: B1: conclusao sem evidencia rejeitada
+PASS: B1: conclusao conhecida persistida
+PASS: B1: mesma conclusao nao contada duas vezes
+PASS: B1: prazo inicia na conclusao da sexta tentativa
+PASS: B1: repeticao apos sexta exige dez segundos
+PASS: B1: repeticao apos dez segundos preserva contador inicial
+PASS: B1: um milissegundo antes do prazo nao reserva fechamento
+PASS: B1: SL presente impede fechamento somente por falta de TP
+PASS: B1: prazo sem SL persiste intencao e reserva fechamento
+PASS: B1: diario e reserva confirmados antes do comando
+PASS: B1: fechamento pendente nao e reservado novamente
+PASS: B1: fixture de preenchimento integral criada
+PASS: B1: reserva de fechamento dos tres contratos
+PASS: B1: vinculacao nao verificada nao confirma fechamento
+PASS: B1: ordem e deal vinculados confirmam parcial e reservam residual
+PASS: B1: residual conserva tentativa e volume em disco
+PASS: B1: confirmacao anterior nao consome tentativa residual
+PASS: B1: fixture independente de corte criada
+PASS: B1: protecao em voo antes do corte
+PASS: B1: corte reserva cancelamento do saldo
+PASS: B1: fechamento urgente independente da protecao em voo
+PASS: B1: ordem ainda ativa nao confirma cancelamento
+PASS: B1: tres estados pendentes preservados juntos
+PASS: B1: referencia para segunda execucao gravada
+PASS: duas posicoes comprovadas na mesma cadeia
+PASS: coleta antiga nao cria controles
+PASS: controle independente para cada identificador
+PASS: identificadores distintos
+PASS: primeira posicao inicia tentativa
+PASS: segunda posicao inicia sem herdar tentativa da primeira
+PASS: resultado de uma tentativa nao altera a outra
+PASS: troca com pendencia externa bloqueada sem alterar estado
+PASS: troca conciliada sem pendencia preserva tentativas
+PASS: troca com tentativa em voo bloqueada
+PASS: ticket antigo nao conclui tentativa
+PASS: tentativa da segunda posicao conclui separadamente
+PASS: coleta incompleta nao altera controles
+PASS: ticket duplicado nao e adotado
+PASS: divergencia de volume bloqueia atualizacao
+PASS: reconciliacao repetida preserva contadores
+PASS: outra origem nao adota controle existente
+PASS: persistencia: duas posicoes reconciliadas
+PASS: persistencia: identificadores independentes
+PASS: persistencia: primeira tentativa concluida
+PASS: persistencia: segunda tentativa permanece em voo
+PASS: persistencia: codificacao e leitura completas
+PASS: persistencia: adulteracao rejeitada
+PASS: persistencia: arquivo truncado rejeitado
+PASS: persistencia: escopo divergente rejeitado
+PASS: persistencia: revisao inferior recusada
+PASS: persistencia: relogio anterior bloqueado
+PASS: disco: trava exclusiva bloqueia segunda abertura
+PASS: disco: criacao nao sobrescreve estado existente
+PASS: disco: ambas as posicoes relidas com estados diferentes
+PASS: disco: fechamento e reabertura recuperam estado
+PASS: retomada: tentativa em voo nao e duplicada
+PASS: retomada: apenas segunda posicao conclui
+PASS: disco: alteracao e nova revisao gravadas
+PASS: disco: revisao antiga nao sobrescreve novo estado
+PASS: disco: controles preservados apos gravacao
+PASS: disco: outro escopo nao adota estado
+PASS: disco: temporario remanescente impede retomada silenciosa
+PASS: ciclo: duas posicoes conciliadas e gravadas
+PASS: ciclo: coleta antiga nao reserva tentativa
+PASS: ciclo: ticket incorreto nao reserva tentativa
+PASS: ciclo: primeira tentativa reservada em disco
+PASS: ciclo: revisao antiga nao reserva segunda posicao
+PASS: ciclo: segunda posicao reservada separadamente
+PASS: ciclo: reabertura conserva duas chamadas em voo
+PASS: ciclo: retomada nao duplica tentativa em voo
+PASS: ciclo: resposta nao verificada bloqueada
+PASS: ciclo: horario de outra tentativa rejeitado
+PASS: ciclo: primeira conclusao persistida
+PASS: ciclo: mesma conclusao nao conta duas vezes
+PASS: ciclo: estado da segunda posicao independente
+PASS: ciclo: segunda conclusao persistida
+PASS: ciclo: antes de dois segundos nao inicia nova chamada
+PASS: ciclo: apos dois segundos grava nova chamada
+PASS: ciclo: segunda abertura preserva nova tentativa
+PASS: integracao: diario, fluxo e duas coletas sinteticas prontos
+PASS: integracao: duas posicoes ligadas a origem do diario
+PASS: integracao: identificadores e tickets distintos preservados
+PASS: integracao: controle observacional nao inventa tentativa de protecao
+PASS: integracao: volume por posicao e observado separadamente
+PASS: integracao: quantidade canonica aceita
+PASS: integracao: saida zero canonica aceita
+PASS: integracao: quantidade nao numerica rejeitada
+PASS: integracao: quantidade malformada rejeitada
+PASS: integracao: quantidade nao canonica rejeitada
+PASS: integracao: estado e diario reabertos no mesmo envelope
+PASS: integracao: adulteracao rejeitada
+PASS: integracao: truncamento rejeitado
+PASS: integracao: outra conta rejeitada
+PASS: integracao: outra sessao rejeitada
+PASS: integracao: outro contrato rejeitado
+PASS: integracao: replay nao duplica controladores
+PASS: integracao: duas leituras divergentes bloqueadas
+PASS: integracao: troca de ticket sem prova de pendencias bloqueada
+PASS: integracao: posicao ausente sem baixa comprovada bloqueada
+PASS: integracao: snapshot de outra conta bloqueado
+PASS: integracao: coleta incompleta bloqueada
+PASS: integracao: diario truncado nao rearma posicao
+PASS: integracao: fluxo atrasado nao restaura marcador mais novo
+PASS: integracao: tentativa operacional nao e inventada em estado observacional
+PASS: integracao: magic sem origem no diario nao autoriza adocao
+PASS: integracao: ausencia de cadeia e relatorio claro, sem simular posicoes
+PASS: integracao: parcela adicional atualiza somente volume conciliado
+PASS: integracao: volume adicional sobrevive a reabertura
+PASS: integracao: historico nao pode perder entrada ja observada
+PASS: integracao: saida parcial vinculada reduz saldo preservando entrada
+PASS: integracao: historico nao pode perder saida ja observada
+PASS: integracao: volume zero em posicao ativa e recusado
+PASS: integracao: volume acima da ordem original nao e serializado
+PASS: integracao: segunda origem de nivel diferente preparada na fixture
+PASS: integracao: diario, duas ordens, dois niveis e tres posicoes preservados
+PASS: integracao: origem do segundo nivel sobrevive a serializacao
+PASS: integracao: identificador compartilhado entre niveis recusado
+PASS: disco: trava exclusiva obtida
+PASS: disco: segunda trava recusada
+PASS: disco: dados reais de arquivo com diario e duas posicoes sinteticas
+PASS: disco: coleta identica nao cria revisoes inutilmente
+PASS: disco: reabertura recupera estado sem rearmar
+PASS: disco: reconstrucao aquem do marcador bloqueada
+PASS: disco: nova origem estende diario e preserva a anterior
+PASS: disco: diario anterior nao sobrescreve revisao nova
+PASS: disco: residuo temporario bloqueia sem apagar estado
+PASS: disco: marcador sem estado nao e recriado silenciosamente
+PASS: disco: parcela adicional atualiza saldo e revisao sem novo candle
+PASS: disco: retrocesso de historico nao substitui arquivo
+PASS: disco: alteracao externa durante sessao e bloqueada
+PASS: disco: estado sem marcador bloqueia retomada
+PASS: disco: coordenador nao sobrescreve arquivo temporario remanescente
+PASS: preview: diario, fluxo e duas posicoes sinteticas
+PASS: preview: historico incerto indica saldo e protecao por posicao sem despacho
+PASS: preview: tickets das duas posicoes aparecem separadamente
+PASS: preview: candidatos explicitamente nao enviados
+PASS: preview: diario candidato separado do diario observado
+PASS: preview: evidencia sintetica completa nao cancela saldo valido
+PASS: preview: corte sintetico inclui saldo e ambas posicoes
+PASS: preview: fronteira posterior sintetica inclui cancelamento e fechamento
+PASS: preview: duas leituras divergentes rejeitadas
+PASS: preview: leitura antiga bloqueada
+PASS: preview: grade divergente bloqueada
+PASS: preview: propriedades de volume invalidas bloqueadas
+PASS: preview: dois niveis e tres posicoes independentes
+PASS: preview: sem origem nao inventa ordens nem posicoes
+PASS: preview: magic sem origem nao e adotado
+PASS: disco: preview e diario observacional gravados juntos
+PASS: disco: leitura identica nao duplica revisao
+PASS: disco: preview de outro diario nao e armazenada
+PASS: disco: reabertura recupera preview sem executar comando
+PASS: disco: horizonte anterior nao sobrescreve preview
+PASS: disco: temporario pendente bloqueia substituicao
+TESTE_PREVIA_INTEGRADA;Checks=631;Failures=0
+EXIT_STATUS=0
+
+$ /tmp/modelod_validation_v56u75ev/integrated
+PASS: integrated empty snapshot processed
+PASS: all eligible entries planned in the same transaction
+PASS: transport physically absent
+PASS: suppressed intentions do not invent attempts
+PASS: repeated observation does not dispatch
+PASS: clock evidence required before candidate attempt
+PASS: reconciliation evidence required before candidate attempt
+PASS: attempt candidate marked uncertain before future transport
+PASS: uncertain attempt cannot be duplicated
+PASS: full state round trip
+PASS: restart retains uncertain attempt
+PASS: empty server inventory does not prove absent uncertain request
+PASS: wrong response serial rejected
+PASS: entry response recorded separately
+PASS: accepted response is not an order receipt or fill
+PASS: receipt bound by request and full order properties
+PASS: accepted-before-touch pending may remain
+PASS: theoretical boundary persists cancellation and concurrent-fill close cause
+PASS: cancel intention is not a server cancellation
+PASS: cancel attempt prepared
+PASS: fill during cancel produces close intention on identified position
+PASS: close addresses ticket and stable identifier
+PASS: one chain with multiple independently managed positions
+PASS: partial fill consumes level but preserves same-order residual
+PASS: missing SLTP creates intention only
+PASS: first protection attempt immediate
+PASS: inflight protection not repeated
+PASS: protection rejection recorded
+PASS: completed first failure retains schedule
+PASS: two-second initial spacing
+PASS: initial protection attempt 2
+PASS: initial protection completion 2
+PASS: initial protection attempt 3
+PASS: initial protection completion 3
+PASS: initial protection attempt 4
+PASS: initial protection completion 4
+PASS: initial protection attempt 5
+PASS: initial protection completion 5
+PASS: initial protection attempt 6
+PASS: initial protection completion 6
+PASS: sixth COMPLETION anchors additional three-minute window
+PASS: protection schedule persists with absolute UTC timestamps
+PASS: additional attempts wait ten seconds from start
+PASS: additional protection attempt due at ten seconds
+PASS: no early deadline before additional three minutes
+PASS: offline interval counts and missing SL triggers close at deadline
+PASS: another position has independent attempts and deadline
+PASS: successful SLTP response does not fabricate applied protection
+PASS: matching live SL AND TP confirm protection effect
+PASS: ticket migration reconciled by stable identifier
+PASS: migration preserves uncertain old-target attempt
+PASS: same-identifier observed protection resolves old ticket attempt
+PASS: position disappearance without exit deals does not confirm close
+PASS: complete outgoing deal and zero residual confirm close
+PASS: confirmed partial close schedules only residual volume
+PASS: residual intention retains monotonic attempt counter
+PASS: timer cutoff persists cancellation and all closes while disconnected
+PASS: restart after cutoff retains shutdown intentions
+PASS: restart after cutoff cannot plan a new entry
+PASS: clock regression blocks processing without shifting deadlines
+PASS: unknown clock does not fabricate certified cutoff
+PASS: transient rejection may retry only with current untapped eligibility
+PASS: touch before retry consumes and supersedes unsent intention
+PASS: definitive entry rejection is not retried or repriced
+PASS: matching magic without persisted attempted origin is not adopted
+PASS: crash before callback recovers origin by unique attempt comment
+PASS: cross-account snapshot cannot mutate persisted ownership
+PASS: frozen data conflict blocks new intent
+PASS: acceptance at same ms as touch triggers cancellation
+PASS: SL present and TP missing retains position and retries TP beyond deadline
+PASS: same totals with replaced deal ticket cannot rewrite persisted evidence
+PASS: executed price mutation cannot silently change a persisted receipt
+PASS: close remains retryable beyond six initial protection attempts 1
+PASS: close remains retryable beyond six initial protection attempts 2
+PASS: close remains retryable beyond six initial protection attempts 3
+PASS: close remains retryable beyond six initial protection attempts 4
+PASS: close remains retryable beyond six initial protection attempts 5
+PASS: close remains retryable beyond six initial protection attempts 6
+PASS: close remains retryable beyond six initial protection attempts 7
+PASS: close remains retryable beyond six initial protection attempts 8
+PASS: close retries have no six-attempt cap
+PASS: entry attempt for independent level 0
+PASS: entry attempt for independent level 1
+PASS: entry attempt for independent level 2
+PASS: entry attempt for independent level 3
+PASS: entry attempt for independent level 4
+PASS: five simultaneous partial chains reconcile into five independent positions
+PASS: all five chains retain fixed protections and independent opportunity consumption
+PASS: all five chains survive a single state serialization
+PASS: one invalid inventory does not partially commit any of the five chains
+PASS: exclusive ledger test lock opened
+PASS: one commit stores receipt positions intents and attempts together
+PASS: full integrated ledger reopens without clock-domain BENCH
+PASS: simulate crash after next ledger is durable before publication
+PASS: valid next revision automatically recovered as one transaction
+PASS: simulate torn staging file
+PASS: torn candidate preserved and prior complete ledger recovered
+PASS: corrupted integrated ledger rejected
+PASS: incomplete committed ledger rejected
+PASS: ledger cannot cross account context
+PASS: commit without exclusive lock rejected
+PASS: repeatable valid commit
+PASS: stale writer cannot overwrite newer ledger
+PASS: a later revision cannot reopen a consumed opportunity
+TESTE_OPERACIONAL_INTEGRADO;Checks=104;Failures=0;SEM_TRANSPORTE;EVENTOS_SINTETICOS;ARQUIVOS_REAIS
+EXIT_STATUS=0
+
+$ /tmp/modelod_validation_v56u75ev/faults
+PASS: fault fixture initial commit
+PASS: partial write cannot authorize a transport or mutate committed attempt counter
+PASS: reopen after partial candidate write retains prior integrated state
+PASS: flush error is not reported as durable commit
+PASS: complete staging file after uncertain flush is recovered conservatively as uncertain attempt
+PASS: publication error cannot pretend response has committed
+PASS: crash between write and publication recovers response and protection schedule together
+PASS: readback failure cannot grant durability to caller
+PASS: restart sees committed cancellation despite caller readback failure
+PASS: restart does not recreate a transport permit
+FAULT_INJECTION;Checks=10;Failures=0
+EXIT_STATUS=0
+
+$ /tmp/modelod_validation_v56u75ev/regression_repeat
+PASS: dados fixos constroem controlador
+PASS: nivel 0 calculo diario ligado a comando simulado
+PASS: nivel 1 calculo diario ligado a comando simulado
+PASS: nivel 2 calculo diario ligado a comando simulado
+PASS: nivel 3 calculo diario ligado a comando simulado
+PASS: nivel 4 calculo diario ligado a comando simulado
+PASS: pedido em voo nao duplica entrada
+PASS: reiniciar controlador nao apaga PREPARAR do diario
+PASS: primeiro toque bloqueia preparacao tardia
+PASS: sem relogio verificado nao prepara
+PASS: sem historia verificada nao prepara
+PASS: sem conciliacao nao prepara
+PASS: sem lock nao cria comando
+PASS: volume invalido nao prepara
+PASS: timer de corte sem tick bloqueia entrada
+PASS: cadeia parcial nasce do comando e diario calculados
+PASS: parcial protege somente ticket conciliado com SL TP originais
+PASS: parcial registra consumo no diario simulado
+PASS: nova conciliacao nao duplica consumo no diario
+PASS: corte planeja cancelar saldo e fechar parcial por ticket
+PASS: retomada conserva intencoes mesmo sem novo evento de corte
+PASS: fronteira sem prova apos fill cancela saldo e protege posicao
+PASS: fronteira comprovada apos fill planeja fechamento
+PASS: desconexao nao produz comando despachavel
+PASS: reconexao retoma intencao anterior
+PASS: conta diferente rejeitada
+PASS: servidor diferente rejeitado
+PASS: Magic divergente nao recebe comando
+PASS: posicao sem cadeia comprovada nao recebe comando
+PASS: volume divergente bloqueia plano inteiro
+PASS: snapshot incompleto bloqueia plano
+PASS: snapshot antigo bloqueia plano
+PASS: diario corrompido bloqueia plano
+PASS: mudanca de ticket respeita identifier conciliado
+PASS: historico incompleto cancela saldo comprovado sem nova entrada
+PASS: fill durante cancelamento fecha volume conciliado total
+PASS: duas posicoes da mesma ordem recebem protecao individual
+PASS: agenda permite primeira protecao imediata
+PASS: protecao em voo nao duplica tentativa
+PASS: espacamento inicial preservado
+PASS: prazo adicional inicia apos conclusao da sexta tentativa
+PASS: prazo sem SL chega ao comando simulado de fechamento
+PASS: SL presente TP ausente continua protecao sem fechar por prazo
+TESTE_615C;Checks=43;Failures=0;INTEGRACAO_SINTETICA;SEM_ORDENS
+PASS: dados fixos constroem controlador
+PASS: nivel 0 calculo diario ligado a comando simulado
+PASS: nivel 1 calculo diario ligado a comando simulado
+PASS: nivel 2 calculo diario ligado a comando simulado
+PASS: nivel 3 calculo diario ligado a comando simulado
+PASS: nivel 4 calculo diario ligado a comando simulado
+PASS: pedido em voo nao duplica entrada
+PASS: reiniciar controlador nao apaga PREPARAR do diario
+PASS: primeiro toque bloqueia preparacao tardia
+PASS: sem relogio verificado nao prepara
+PASS: sem historia verificada nao prepara
+PASS: sem conciliacao nao prepara
+PASS: sem lock nao cria comando
+PASS: volume invalido nao prepara
+PASS: timer de corte sem tick bloqueia entrada
+PASS: cadeia parcial nasce do comando e diario calculados
+PASS: parcial protege somente ticket conciliado com SL TP originais
+PASS: parcial registra consumo no diario simulado
+PASS: nova conciliacao nao duplica consumo no diario
+PASS: corte planeja cancelar saldo e fechar parcial por ticket
+PASS: retomada conserva intencoes mesmo sem novo evento de corte
+PASS: fronteira sem prova apos fill cancela saldo e protege posicao
+PASS: fronteira comprovada apos fill planeja fechamento
+PASS: desconexao nao produz comando despachavel
+PASS: reconexao retoma intencao anterior
+PASS: conta diferente rejeitada
+PASS: servidor diferente rejeitado
+PASS: Magic divergente nao recebe comando
+PASS: posicao sem cadeia comprovada nao recebe comando
+PASS: volume divergente bloqueia plano inteiro
+PASS: snapshot incompleto bloqueia plano
+PASS: snapshot antigo bloqueia plano
+PASS: diario corrompido bloqueia plano
+PASS: mudanca de ticket respeita identifier conciliado
+PASS: historico incompleto cancela saldo comprovado sem nova entrada
+PASS: fill durante cancelamento fecha volume conciliado total
+PASS: duas posicoes da mesma ordem recebem protecao individual
+PASS: agenda permite primeira protecao imediata
+PASS: protecao em voo nao duplica tentativa
+PASS: espacamento inicial preservado
+PASS: prazo adicional inicia apos conclusao da sexta tentativa
+PASS: prazo sem SL chega ao comando simulado de fechamento
+PASS: SL presente TP ausente continua protecao sem fechar por prazo
+TESTE_615C;Checks=43;Failures=0;INTEGRACAO_SINTETICA;SEM_ORDENS
+NEGATIVE_CONTROL_FIXED_PREFIX;Checks=556;Failures=85;EXPECTED_REPRODUCTION=1
+PASS: dados fixos constroem controlador
+PASS: nivel 0 calculo diario ligado a comando simulado
+PASS: nivel 1 calculo diario ligado a comando simulado
+PASS: nivel 2 calculo diario ligado a comando simulado
+PASS: nivel 3 calculo diario ligado a comando simulado
+PASS: nivel 4 calculo diario ligado a comando simulado
+PASS: pedido em voo nao duplica entrada
+PASS: reiniciar controlador nao apaga PREPARAR do diario
+PASS: primeiro toque bloqueia preparacao tardia
+PASS: sem relogio verificado nao prepara
+PASS: sem historia verificada nao prepara
+PASS: sem conciliacao nao prepara
+PASS: sem lock nao cria comando
+PASS: volume invalido nao prepara
+PASS: timer de corte sem tick bloqueia entrada
+PASS: cadeia parcial nasce do comando e diario calculados
+PASS: parcial protege somente ticket conciliado com SL TP originais
+PASS: parcial registra consumo no diario simulado
+PASS: nova conciliacao nao duplica consumo no diario
+PASS: corte planeja cancelar saldo e fechar parcial por ticket
+PASS: retomada conserva intencoes mesmo sem novo evento de corte
+PASS: fronteira sem prova apos fill cancela saldo e protege posicao
+PASS: fronteira comprovada apos fill planeja fechamento
+PASS: desconexao nao produz comando despachavel
+PASS: reconexao retoma intencao anterior
+PASS: conta diferente rejeitada
+PASS: servidor diferente rejeitado
+PASS: Magic divergente nao recebe comando
+PASS: posicao sem cadeia comprovada nao recebe comando
+PASS: volume divergente bloqueia plano inteiro
+PASS: snapshot incompleto bloqueia plano
+PASS: snapshot antigo bloqueia plano
+PASS: diario corrompido bloqueia plano
+PASS: mudanca de ticket respeita identifier conciliado
+PASS: historico incompleto cancela saldo comprovado sem nova entrada
+PASS: fill durante cancelamento fecha volume conciliado total
+PASS: duas posicoes da mesma ordem recebem protecao individual
+PASS: agenda permite primeira protecao imediata
+PASS: protecao em voo nao duplica tentativa
+PASS: espacamento inicial preservado
+PASS: prazo adicional inicia apos conclusao da sexta tentativa
+PASS: prazo sem SL chega ao comando simulado de fechamento
+PASS: SL presente TP ausente continua protecao sem fechar por prazo
+TESTE_615C;Checks=43;Failures=0;INTEGRACAO_SINTETICA;SEM_ORDENS
+PASS: dados fixos constroem controlador
+PASS: nivel 0 calculo diario ligado a comando simulado
+PASS: nivel 1 calculo diario ligado a comando simulado
+PASS: nivel 2 calculo diario ligado a comando simulado
+PASS: nivel 3 calculo diario ligado a comando simulado
+PASS: nivel 4 calculo diario ligado a comando simulado
+PASS: pedido em voo nao duplica entrada
+PASS: reiniciar controlador nao apaga PREPARAR do diario
+PASS: primeiro toque bloqueia preparacao tardia
+PASS: sem relogio verificado nao prepara
+PASS: sem historia verificada nao prepara
+PASS: sem conciliacao nao prepara
+PASS: sem lock nao cria comando
+PASS: volume invalido nao prepara
+PASS: timer de corte sem tick bloqueia entrada
+PASS: cadeia parcial nasce do comando e diario calculados
+PASS: parcial protege somente ticket conciliado com SL TP originais
+PASS: parcial registra consumo no diario simulado
+PASS: nova conciliacao nao duplica consumo no diario
+PASS: corte planeja cancelar saldo e fechar parcial por ticket
+PASS: retomada conserva intencoes mesmo sem novo evento de corte
+PASS: fronteira sem prova apos fill cancela saldo e protege posicao
+PASS: fronteira comprovada apos fill planeja fechamento
+PASS: desconexao nao produz comando despachavel
+PASS: reconexao retoma intencao anterior
+PASS: conta diferente rejeitada
+PASS: servidor diferente rejeitado
+PASS: Magic divergente nao recebe comando
+PASS: posicao sem cadeia comprovada nao recebe comando
+PASS: volume divergente bloqueia plano inteiro
+PASS: snapshot incompleto bloqueia plano
+PASS: snapshot antigo bloqueia plano
+PASS: diario corrompido bloqueia plano
+PASS: mudanca de ticket respeita identifier conciliado
+PASS: historico incompleto cancela saldo comprovado sem nova entrada
+PASS: fill durante cancelamento fecha volume conciliado total
+PASS: duas posicoes da mesma ordem recebem protecao individual
+PASS: agenda permite primeira protecao imediata
+PASS: protecao em voo nao duplica tentativa
+PASS: espacamento inicial preservado
+PASS: prazo adicional inicia apos conclusao da sexta tentativa
+PASS: prazo sem SL chega ao comando simulado de fechamento
+PASS: SL presente TP ausente continua protecao sem fechar por prazo
+TESTE_615C;Checks=43;Failures=0;INTEGRACAO_SINTETICA;SEM_ORDENS
+REPEATED_REGRESSION;FIRST_631_0=1;SECOND_631_0=1;UNIQUE_IDS=1;PREVIOUS_FIXTURES_PRESERVED=1
+EXIT_STATUS=0
+
+$ /tmp/modelod_validation_v56u75ev/state_initialization
+STATE_INITIALIZATION;INACTIVE_SLOTS=INITIALIZED;ACTIVE_STATE=UNCHANGED;FORMAT_MDOP1=UNCHANGED
+EXIT_STATUS=0
+
+$ /tmp/modelod_validation_v56u75ev/restart_process write
+PROCESS_WRITE;SIX_COMPLETED;UTC_DEADLINE_RETAINED
+EXIT_STATUS=0
+
+$ /tmp/modelod_validation_v56u75ev/restart_process resume
+PROCESS_RESUME;DEADLINE_AFTER_OFFLINE=OK;NO_DUPLICATE=OK;SECOND_POSITION_INDEPENDENT=OK
+EXIT_STATUS=0
+
+$ c++ -std=c++17 -g -Wall -Wextra -Wno-unused-parameter -O1 /tmp/modelod_validation_v56u75ev/adapted/runtime_mock.cpp -o /tmp/modelod_validation_v56u75ev/runtime_mock
+EXIT_STATUS=0
+
+$ /tmp/modelod_validation_v56u75ev/runtime_mock
+PASS: seed integrated ledger with proven synthetic positions
+RELATORIO_ABERTO;/tmp/md615k_host\Files\ModeloD_Integrado_A1S54455354I1_1792605000_10000.txt
+DIAGNOSTICO;componente=PERSISTENCIA;motivo=DIARIO_REABERTO_VALIDADO;recuperacao=ESTADO_PRESERVADO;NAO_AUTORIZA_TRANSPORTE
+START;v=2.08;TRANSPORT_ABSENT;LEGACY_OBSERVATION_NOT_IMPORTED;revision=1
+PASS: actual EA OnInit reopens integrated ledger
+PASS: lock marker is confirmed by content when native write count is bytes, not characters
+DIAGNOSTICO;componente=RELOGIO;motivo=CLOCK_SAMPLING;recuperacao=REAVALIA_NO_TIMER;NAO_REINICIA_PRAZOS
+DIAGNOSTICO;componente=DADOS_DIARIOS;motivo=RELOGIO_NAO_VALIDADO;recuperacao=REAVALIA_APOS_RELOGIO_VALIDO
+DIAGNOSTICO;componente=INVENTARIO;motivo=DUAS_LEITURAS_CONFERIDAS;recuperacao=NOVA_DUPLA_LEITURA_NO_TIMER;NAO_CONFIRMA_ACAO_POR_AUSENCIA
+COMMIT;revision=2;event=INTEGRATED_CYCLE;transporte=0
+LEVEL;key=202610280;symbol=WINZ26;origin=100;accepted_server_msc=150000;first_touch_server_msc=0;consumed=1;cutoff=0;entry_math=207377.8366666666697711;entry_requested=207380;SL_fixed=207005;TP_fixed=207590;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610281;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=207035.8333333333430346;entry_requested=207035;SL_fixed=206660;TP_fixed=207380;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610282;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=206693.8300000000162981;entry_requested=206695;SL_fixed=206045;TP_fixed=207035;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610283;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210101.4966666666732635;entry_requested=210100;SL_fixed=210475;TP_fixed=209485;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610284;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211100.1700000000128057;entry_requested=211100;SL_fixed=211550;TP_fixed=210850;entry_phase=7;entry_attempt=0;cancel_phase=0
+POSITION;identifier=700;ticket=900;entered=1.00000000;exited=0.00000000;residual=1.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
+POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
+DIAGNOSTICO;componente=CONCILIACAO;motivo=ALL_CHAINS_RECONCILED;recuperacao=REAVALIA_NO_TIMER;ORIGENS_E_EFEITOS_EXIGEM_PROVA
+DIAGNOSTICO;componente=FLUXO_TICKS;motivo=DADOS: FUSO_SERVIDOR_B3_NAO_CONFIRMADO;recuperacao=REAVALIA_NO_TIMER
+INTEGRATED;ALL_CHAINS_RECONCILED;revision=2;entry_intents=0;SLTP_intents=2;cancel_intents=0;close_intents=0;unresolved=0;transport=ABSENT;NATIVE_VALIDATION_PENDING
+DIAGNOSTICO;componente=RELOGIO;motivo=CLOCK_OBSERVED_NOT_INDEPENDENT_NTP_CERTIFICATION;recuperacao=REAVALIA_NO_TIMER;NAO_REINICIA_PRAZOS
+DIAGNOSTICO;componente=DADOS_DIARIOS;motivo=SIMULATED_DAILY_DATA_FAILURE;recuperacao=RELEITURA_NO_TIMER;DEPENDE_DE_DADOS_VALIDOS
+DIAGNOSTICO;componente=FLUXO_TICKS;motivo=DADOS: SIMULATED_DAILY_DATA_FAILURE;recuperacao=REAVALIA_NO_TIMER
+PASS: actual EA timer keeps both positions despite daily-data failure
+PASS: runtime clock samples measured server timezone
+PASS: actual timer persists missing SLTP intents
+PASS: daily failure cause is actually written to report, not only chart comment
+PASS: daily report explicitly states conditional automatic re-evaluation
+DIAGNOSTICO;componente=INVENTARIO;motivo=DUAS_LEITURAS_DIVERGENTES;recuperacao=NOVA_DUPLA_LEITURA_NO_TIMER;NAO_CONFIRMA_ACAO_POR_AUSENCIA
+DIAGNOSTICO;componente=CONCILIACAO;motivo=INVENTORY_UNAVAILABLE;recuperacao=REAVALIA_NO_TIMER;ORIGENS_E_EFEITOS_EXIGEM_PROVA
+INTEGRATED;INVENTORY_UNAVAILABLE;revision=2;entry_intents=0;SLTP_intents=2;cancel_intents=0;close_intents=0;unresolved=0;transport=ABSENT;NATIVE_VALIDATION_PENDING
+PASS: unstable pair of real collector calls cannot commit reconciliation
+PASS: unstable pair has exact report cause despite generic coordinator result
+PASS: terminal producer rejects unavailable execution price
+DIAGNOSTICO;componente=INVENTARIO;motivo=PRIMEIRA_COLETA;DEAL_PRICE_READ_FAILED;recuperacao=NOVA_DUPLA_LEITURA_NO_TIMER;NAO_CONFIRMA_ACAO_POR_AUSENCIA
+PASS: underlying property collection error survives the coordinator in the report
+DIAGNOSTICO;componente=INVENTARIO;motivo=DUAS_LEITURAS_CONFERIDAS;recuperacao=NOVA_DUPLA_LEITURA_NO_TIMER;NAO_CONFIRMA_ACAO_POR_AUSENCIA
+COMMIT;revision=3;event=INTEGRATED_CYCLE;transporte=0
+LEVEL;key=202610280;symbol=WINZ26;origin=100;accepted_server_msc=150000;first_touch_server_msc=0;consumed=1;cutoff=0;entry_math=207377.8366666666697711;entry_requested=207380;SL_fixed=207005;TP_fixed=207590;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610281;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=207035.8333333333430346;entry_requested=207035;SL_fixed=206660;TP_fixed=207380;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610282;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=206693.8300000000162981;entry_requested=206695;SL_fixed=206045;TP_fixed=207035;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610283;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210101.4966666666732635;entry_requested=210100;SL_fixed=210475;TP_fixed=209485;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610284;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211100.1700000000128057;entry_requested=211100;SL_fixed=211550;TP_fixed=210850;entry_phase=7;entry_attempt=0;cancel_phase=0
+POSITION;identifier=700;ticket=900;entered=1.00000000;exited=0.00000000;residual=1.00000000;SL_observed=207005.00000000;TP_observed=207590.00000000;protection_attempt=0;close_phase=0
+POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
+DIAGNOSTICO;componente=CONCILIACAO;motivo=ALL_CHAINS_RECONCILED;recuperacao=REAVALIA_NO_TIMER;ORIGENS_E_EFEITOS_EXIGEM_PROVA
+INTEGRATED;ALL_CHAINS_RECONCILED;revision=3;entry_intents=0;SLTP_intents=1;cancel_intents=0;close_intents=0;unresolved=0;transport=ABSENT;NATIVE_VALIDATION_PENDING
+PASS: live SLTP properties feed the persisted integrated state
+COMMIT;revision=4;event=INTEGRATED_CYCLE;transporte=0
+LEVEL;key=202610280;symbol=WINZ26;origin=100;accepted_server_msc=150000;first_touch_server_msc=0;consumed=1;cutoff=0;entry_math=207377.8366666666697711;entry_requested=207380;SL_fixed=207005;TP_fixed=207590;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610281;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=207035.8333333333430346;entry_requested=207035;SL_fixed=206660;TP_fixed=207380;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610282;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=206693.8300000000162981;entry_requested=206695;SL_fixed=206045;TP_fixed=207035;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610283;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210101.4966666666732635;entry_requested=210100;SL_fixed=210475;TP_fixed=209485;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610284;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211100.1700000000128057;entry_requested=211100;SL_fixed=211550;TP_fixed=210850;entry_phase=7;entry_attempt=0;cancel_phase=0
+POSITION;identifier=700;ticket=999;entered=1.00000000;exited=0.00000000;residual=1.00000000;SL_observed=207005.00000000;TP_observed=207590.00000000;protection_attempt=0;close_phase=0
+POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
+INTEGRATED;ALL_CHAINS_RECONCILED;revision=4;entry_intents=0;SLTP_intents=1;cancel_intents=0;close_intents=0;unresolved=0;transport=ABSENT;NATIVE_VALIDATION_PENDING
+PASS: actual EA reconciles migrated ticket without resetting identifier
+COMMIT;revision=5;event=TIMER_DEADLINE;transporte=0
+LEVEL;key=202610280;symbol=WINZ26;origin=100;accepted_server_msc=150000;first_touch_server_msc=0;consumed=1;cutoff=1;entry_math=207377.8366666666697711;entry_requested=207380;SL_fixed=207005;TP_fixed=207590;entry_phase=6;entry_attempt=1;cancel_phase=1
+LEVEL;key=202610281;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=1;cutoff=1;entry_math=207035.8333333333430346;entry_requested=207035;SL_fixed=206660;TP_fixed=207380;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610282;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=1;cutoff=1;entry_math=206693.8300000000162981;entry_requested=206695;SL_fixed=206045;TP_fixed=207035;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610283;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=1;cutoff=1;entry_math=210101.4966666666732635;entry_requested=210100;SL_fixed=210475;TP_fixed=209485;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610284;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=1;cutoff=1;entry_math=211100.1700000000128057;entry_requested=211100;SL_fixed=211550;TP_fixed=210850;entry_phase=7;entry_attempt=0;cancel_phase=0
+POSITION;identifier=700;ticket=999;entered=1.00000000;exited=0.00000000;residual=1.00000000;SL_observed=207005.00000000;TP_observed=207590.00000000;protection_attempt=0;close_phase=1
+POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=1
+PENDING_HISTORY;key=202610280;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+POSITION_HISTORY;identifier=700;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+POSITION_HISTORY;identifier=701;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+DIAGNOSTICO;componente=INVENTARIO;motivo=DESCONECTADO;recuperacao=NOVA_DUPLA_LEITURA_NO_TIMER;NAO_CONFIRMA_ACAO_POR_AUSENCIA
+DIAGNOSTICO;componente=CONCILIACAO;motivo=INVENTORY_UNAVAILABLE;recuperacao=REAVALIA_NO_TIMER;ORIGENS_E_EFEITOS_EXIGEM_PROVA
+INTEGRATED;INVENTORY_UNAVAILABLE;revision=5;entry_intents=0;SLTP_intents=0;cancel_intents=1;close_intents=2;unresolved=0;transport=ABSENT;NATIVE_VALIDATION_PENDING
+PASS: actual timer cutoff works without quote, daily data or connection
+PASS: actual EA does not transport shutdown intentions
+STOP;reason=1;transport=ABSENT
+RELATORIO_FECHADO;/tmp/md615k_host\Files\ModeloD_Integrado_A1S54455354I1_1792605000_10000.txt
+RELATORIO_ABERTO;/tmp/md615k_host\Files\ModeloD_Integrado_A1S54455354I1_1792605000_1010000.txt
+DIAGNOSTICO;componente=PERSISTENCIA;motivo=DIARIO_REABERTO_VALIDADO;recuperacao=ESTADO_PRESERVADO;NAO_AUTORIZA_TRANSPORTE
+START;v=2.08;TRANSPORT_ABSENT;LEGACY_OBSERVATION_NOT_IMPORTED;revision=5
+PASS: EA reinitialization retains cutoff and untransported intentions
+STOP;reason=1;transport=ABSENT
+RELATORIO_FECHADO;/tmp/md615k_host\Files\ModeloD_Integrado_A1S54455354I1_1792605000_1010000.txt
+PASS: fallback fixture starts with valid frozen daily data
+PASS: incomplete TRADE cache recovers only through trade-flagged ALL events that fully match M1; BLOCO_RECUPERADO_COPY_TICKS_ALL_FILTRADO;registros_all=4;eventos_negociacao=3;minutos_com_registros=1;minutos_sem_registros=0;ausentes_msc=;M1_CONFERIDO;INTEGRIDADE_TOTAL_NAO_CERTIFICADA
+PASS: ALL fallback that also disagrees with M1 cannot advance the stream; TICKS_DIVERGEM_M1;minuto_msc=1793178000000;bloco_inicio=1793178000000;bloco_fim=1793178059999;ticks_minuto=2;barras_minuto=1;ticks_O=100.00000000;ticks_H=110.00000000;ticks_L=100.00000000;ticks_C=110.00000000;M1_O=100.00000000;M1_H=120.00000000;M1_L=100.00000000;M1_C=110.00000000;recuperacao_ALL=ALL_FILTRADO_DIVERGE_M1;minuto_msc=1793178000000;filtrados=2;ticks_minuto=2;ticks_O=100.00000000;ticks_H=110.00000000;ticks_L=100.00000000;ticks_C=110.00000000;M1_O=100.00000000;M1_H=120.00000000;M1_L=100.00000000;M1_C=110.00000000
+PASS: margin API failure has an exact non-sensitive diagnostic
+PASS: insufficient free margin is distinct from calculation failure without logging account balance
+PASS: same-ms stop remains ambiguous; later target is proven post-origin
+PASS: pre/same-fill boundary is not converted into post-fill close evidence
+PASS: post-origin gap beyond mathematical stop creates boundary evidence
+PASS: failed tick query leaves trail cursor unchanged
+PASS: continuous clock established by successive samples
+PASS: wall-clock jump without monotonic progress is refused
+PASS: startup cannot certify time from two estimates sharing the same PC clock
+RUNTIME_MOCK;Checks=29;Failures=0;API_MT5_SIMULADA;NAO_E_COMPILACAO_MQL5
+EXIT_STATUS=0

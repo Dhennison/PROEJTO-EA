@@ -1,0 +1,2 @@
+a4b52adc0123941f995d16f14c6e54681c2085cf33900b3cf92e880072521a79  ../ModeloD_Integrado_Sem_Transporte_v2_08.zip
+a2ba04337b2108eda491929b90cfbd8faaa083c6cab2d26aebdb0a73bb8a6a8a  ModeloD_v2_08_Documentacao_e_Testes.zip

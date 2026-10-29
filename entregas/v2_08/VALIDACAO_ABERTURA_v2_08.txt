@@ -1,0 +1,23 @@
+PRIMEIRO_TICK_CONSULTA;de_msc=100000;ate_msc=159999;tentativa=1;TRANSPORT_ABSENT
+PASS partial timeout rejected without publishing opening
+PASS nonzero bounded one-minute session query
+PASS timeout preserves search cursor; backoff measured after call
+PASS no query during backoff
+PRIMEIRO_TICK_CONSULTA;de_msc=100000;ate_msc=159999;tentativa=2;TRANSPORT_ABSENT
+PASS repeated timeout increases backoff
+PRIMEIRO_TICK_CONSULTA;de_msc=100000;ate_msc=159999;tentativa=3;TRANSPORT_ABSENT
+PASS only complete empty window advances search
+PRIMEIRO_TICK_CONSULTA;de_msc=160000;ate_msc=219999;tentativa=4;TRANSPORT_ABSENT
+PASS later recovery confirms real first trade after proven empty prefix
+PASS confirmed opening retained without repeated history synchronization
+PASS manual interruption before query has no side effect
+PRIMEIRO_TICK_CONSULTA;de_msc=1100000;ate_msc=1159999;tentativa=1;TRANSPORT_ABSENT
+PASS manual removal during call does not commit error result or advance retry
+PRIMEIRO_TICK_CONSULTA;de_msc=1100000;ate_msc=1159999;tentativa=2;TRANSPORT_ABSENT
+PASS out-of-window result rejected
+PRIMEIRO_TICK_CONSULTA;de_msc=1100000;ate_msc=1159999;tentativa=3;TRANSPORT_ABSENT
+PASS quote-only event rejected
+PRIMEIRO_TICK_CONSULTA;de_msc=1100000;ate_msc=1159999;tentativa=4;TRANSPORT_ABSENT
+PASS valid subsequent trade recovers invalid result
+PASS unfinished first minute cannot certify empty history
+OPENING_TICKS_208;Checks=14;Failures=0;SIMULATED_API
