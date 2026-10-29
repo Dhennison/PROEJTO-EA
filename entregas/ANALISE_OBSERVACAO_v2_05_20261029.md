@@ -31,3 +31,11 @@ Isso comprova alteração/complementação posterior do histórico TRADE dispon�
 Em divergência TRADE/M1, o EA consulta ALL na mesma janela e preserva somente registros com as mesmas flags de negociação. Só avança se o candidato filtrado passar integralmente pelas validações e pelo M1. Se ALL também divergir, descarta o candidato e mantém cursor/bloqueio. A estratégia Last, a ordem e a multiplicidade não mudam.
 
 A Etapa 1 permanece parcialmente aceita: compilação, inicialização, retomada, dados diários, contrato, inventário, conciliação vazia, persistência, política de bloqueio e encerramento foram comprovados. A v2.06 ainda precisa de compilação e observação nativas. Gestão com posições continua sem comprovação.
+
+## Observação nativa v2.06
+
+A v2.06 compilou com 0 erros/0 avisos e executou no WIN$N M5 de 11:17:15 a 11:33:05. Retomou o diário na revisão 2, confirmou dados de 29/10/WINZ26 e duas leituras do inventário, reconstruiu 44 blocos e 1.659.934 ticks até 11:33 exclusivo, sempre com M1 consistente. Não houve divergência, retry, bloqueio, toque, ordem, posição ou intenção. O relatório encerrou com `STOP;reason=1` e `RELATORIO_FECHADO`.
+
+A recuperação ALL não foi acionada porque o cache TRADE já estava completo. Sua execução nativa permanece sem ocorrência; os casos positivo/negativo foram controlados localmente.
+
+As cinco entradas alternaram entre cobertura do minuto corrente ainda não fechada e `CALCULO_OU_DISPONIBILIDADE_DE_MARGEM`. A v2.07 separa a causa da margem sem alterar a decisão e sem registrar saldo. Uma execução curta deve identificar se houve falha de `OrderCalcMargin` ou margem livre insuficiente.
