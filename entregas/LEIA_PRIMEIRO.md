@@ -1,9 +1,9 @@
-# Entrega Modelo D — pacote v2.02
+# Entrega Modelo D — pacote v2.03
 
-Baixe ModeloD_Integrado_Sem_Transporte_v2_02.zip, extraia e copie as pastas para MQL5 substituindo os arquivos da entrega anterior. Preserve Common/Files. Recompile o EA principal.
+Baixe ModeloD_Integrado_Sem_Transporte_v2_03.zip e substitua a pasta Scripts completa em MQL5. Preserve todos os arquivos em Common/Files. Recompile Test_Integrado_Sem_Transporte.mq5 e execute duas vezes; cada execução deve ter TEST_RUN distinto e resultados 631/0 e 104/0.
 
-Correção v2.02: renomeia o parâmetro ledger para ledger_text para remover o aviso de sombreamento da variável global. Nenhuma mudança de estratégia, persistência ou transporte. A compilação do EA anterior foi confirmada pelo usuário com zero erros e um aviso; a recompilação desta correção está pendente.
+Corrige o isolamento da bateria de regressão: o prefixo fixo anterior reutilizava estados e temporários das próprias fixtures. A reprodução local confirmou primeira execução 631/0 e segunda 556/85. A revisão reserva um namespace TEST_ONLY exclusivo por execução, preservando os arquivos anteriores. A reprodução corrigida passou duas vezes, 631/0 em ambas, sem limpar arquivos entre as execuções.
 
-Correção v2.01 preservada: script de teste com todos os cabeçalhos na própria pasta Scripts. O usuário confirmou a compilação do script com zero erros/avisos e execução nativa com 631 + 104 verificações, zero falhas.
+O EA permanece idêntico ao pacote v2.02, com transporte ausente. Esta revisão altera apenas o runner dos testes e empacotamento/documentação. Compilação nativa do runner corrigido e execução MT5 permanecem pendentes. A compilação do EA v2.02 sem avisos também aguarda confirmação do usuário.
 
-Logs e instruções completas no ZIP. A main não foi alterada.
+Instruções, diagnósticos e evidências no ZIP. A main não foi alterada.
