@@ -1,0 +1,655 @@
+--- v2.09/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/EA_ModeloD_Fluxo_Sem_Ordens.mq5
++++ v2.10/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/EA_ModeloD_Fluxo_Sem_Ordens.mq5
+@@ -1,12 +1,15 @@
+ #property strict
+-#property version "2.09"
+-#property description "Modelo D integrado: diario, conciliacao e intencoes persistentes. Transporte ausente."
++#property version "2.10"
++#property description "Modelo D: observacao sem transporte no grafico; transporte simulado exclusivo do Strategy Tester."
++#property tester_file "ModeloD_Tester_20261030_ajuste_b3.txt"
++#include "ModeloD_Runtime210.mqh"
+ #include "ModeloD_Observer.mqh"
+ #include "ModeloD_Chart.mqh"
+ #include "ModeloD_StreamTerminal.mqh"
+ #include "ModeloD_Retry132.mqh"
+ #include "ModeloD_OperationalTerminal.mqh"
+ #include "ModeloD_CurrentCoverage.mqh"
++#include "ModeloD_TesterData210.mqh"
+ input int Instancia=1;
+ input int VolumePorNivel=1;
+ // Default approved volume 1; the later principal backtest uses 5.
+@@ -35,8 +38,9 @@
+  why="CONFIRMED";return true;
+ }
+ enum MDMode615 {DADOS_ATUAIS=0};const MDMode615 Modo=DADOS_ATUAIS;
+-string Scope615(){return MDContext612(AccountInfoInteger(ACCOUNT_LOGIN),AccountInfoString(ACCOUNT_SERVER),Instancia);}
++string Scope615(){return MDContext612(MDAccount210(),MDServer210(),Instancia);}
+ void Report615(string text) {
++ if(MDIsTester210())StringReplace(text,";SEM_ORDENS",";TESTER_SIMULADO");
+  Print(text);
+  if(report615==INVALID_HANDLE)return;
+  ResetLastError();uint n=FileWriteString(report615,TimeToString(TimeLocal(),TIME_DATE|TIME_SECONDS)+";"+text+"\r\n");
+@@ -56,9 +60,10 @@
+ void Status(string text) {
+  string policy="REAVALIA_NO_TIMER";
+  if(stream_failed615)policy="SEM_NOVA_TENTATIVA_DE_TICKS_NESTA_SESSAO;EXIGE_DIAGNOSTICO";
+- else if(retry132.active)policy=MDSlow132(retry132,(long)GetTickCount64())?"MONITORAMENTO_LENTO_120S;ENTRADAS_BLOQUEADAS":"RECONSULTA_BLOCO_30S;FASE_RAPIDA_600S";
++ else if(retry132.active)policy=MDSlow132(retry132,MDLogicalMillis210())?"MONITORAMENTO_LENTO_120S;ENTRADAS_BLOQUEADAS":"RECONSULTA_BLOCO_30S;FASE_RAPIDA_600S";
+  Diagnostic(4,"FLUXO_TICKS",stream_status615,policy);
+- Comment("MODELO D 2.09 — TRANSPORTE DESATIVADO\n",text,"\n",stream_status615,
++ string title="MODELO D 2.10 — ";
++ Comment(title+(MDTesterGate210()?"TESTER SIMULADO":"TRANSPORTE DESATIVADO")+"\n",text,"\n",stream_status615,
+  "\nIntencao nao e tentativa; resposta nao e execucao.\n",ledger_path);
+  if(text!=last_status){last_status=text;Report615(text);}
+ }
+@@ -92,20 +97,20 @@
+   MDReset132(retry132);
+   stream_started615=MDStreamStart615(stream615,obs615.data);
+   marker_loaded615=false;marker_restored615=false;marker_saved_cursor615=-1;marker_text615="";
+-  marker_path615="ModeloD_OBSERVADO_615N_"+Scope615()+"_"+IntegerToString(obs615.data.date)+".dat";
++  marker_path615=tester_prefix210+"ModeloD_OBSERVADO_615N_"+Scope615()+"_"+IntegerToString(obs615.data.date)+".dat";
+   stream_failed615=!stream_started615;stream_retries615=0;stream_reported615=-1;
+   Report615("TICKS_6_15_INICIO;data="+IntegerToString(obs615.data.date)+";contrato="+obs615.data.contract+";SEM_ORDENS");
+  }
+  if(stream_failed615){stream_status615="TICKS: BLOQUEADO — ENVIAR RELATORIO";return;}
+  if(!MDDaySameData(stream615.data,obs615.data))
+  {stream_failed615=true;Report615("TICKS_6_15_BLOQUEADO;DADOS_MUDARAM;SEM_ORDENS");return;}
+- if(retry132.active&&(long)GetTickCount64()<retry132.started)
++ if(retry132.active&&MDLogicalMillis210()<retry132.started)
+  {stream_failed615=true;Report615("TICKS_6_15_BLOQUEADO;RELOGIO_MONOTONICO_REGREDIU;SEM_ORDENS");return;}
+- if(MDEnterSlow132(retry132,(long)GetTickCount64()))
++ if(MDEnterSlow132(retry132,MDLogicalMillis210()))
+   Report615("TICKS_6_15_MONITORAMENTO_LENTO;intervalo_s=120;de_msc="+IntegerToString(retry132.from)+
+    ";ate_msc="+IntegerToString(retry132.end)+";ENTRADAS_BLOQUEADAS;NAO_REINICIA_PRAZOS;SEM_ORDENS");
+- if(!TerminalInfoInteger(TERMINAL_CONNECTED)){stream_status615="TICKS: SEM CONEXAO";return;}
+- if(!MDDue132(retry132,(long)GetTickCount64()))return;
++ if(!MDConnected210()){stream_status615="TICKS: SEM CONEXAO";return;}
++ if(!MDDue132(retry132,MDLogicalMillis210()))return;
+  MqlTick latest;
+  if(!SymbolInfoTick(stream615.data.contract,latest)||latest.time_msc<stream615.audit.begin_msc)
+  {stream_status615="TICKS: AGUARDANDO COTACAO DA SESSAO";return;}
+@@ -130,8 +135,8 @@
+    if(IsStopped())return;
+    if(StringFind(why,"TICKS_DIVERGEM_M1;")==0)
+    {
+-    bool waiting=MDFail132(retry132,stream615.cursor,end,(long)GetTickCount64());
+-    Report615("TICKS_6_15_RECUPERACAO;tentativa="+IntegerToString(retry132.failures)+";nova_consulta_em_s="+IntegerToString(retry132.slow?120:30)+";fase="+(retry132.slow?"MONITORAMENTO_LENTO":"RECUPERACAO_RAPIDA")+";decorrido_ms="+IntegerToString((long)GetTickCount64()-retry132.started)+";motivo="+why+";SEM_ORDENS");
++    bool waiting=MDFail132(retry132,stream615.cursor,end,MDLogicalMillis210());
++    Report615("TICKS_6_15_RECUPERACAO;tentativa="+IntegerToString(retry132.failures)+";nova_consulta_em_s="+IntegerToString(retry132.slow?120:30)+";fase="+(retry132.slow?"MONITORAMENTO_LENTO":"RECUPERACAO_RAPIDA")+";decorrido_ms="+IntegerToString(MDLogicalMillis210()-retry132.started)+";motivo="+why+";SEM_ORDENS");
+     if(!waiting){stream_failed615=true;Report615("TICKS_6_15_BLOQUEADO;RECUPERACAO_JANELA_OU_RELOGIO_DIVERGENTE;SEM_ORDENS");}
+     stream_status615="TICKS: RECUPERACAO PENDENTE — SEM APROVAR BLOCO";return;
+    }
+@@ -140,9 +145,9 @@
+    if(stream_retries615>=3){stream_failed615=true;Report615("TICKS_6_15_BLOQUEADO;TRES_TENTATIVAS_SEM_BLOCO_VALIDO;SEM_ORDENS");}
+    stream_status615=stream_failed615?"TICKS: BLOQUEADO — ENVIAR RELATORIO":"TICKS: AGUARDANDO NOVA TENTATIVA";return;
+   }
+-  if(!MDCanCommit132(retry132,stream615.cursor,end,(long)GetTickCount64()))
++  if(!MDCanCommit132(retry132,stream615.cursor,end,MDLogicalMillis210()))
+   {stream_failed615=true;Report615("TICKS_6_15_BLOQUEADO;RECUPERACAO_JANELA_OU_RELOGIO_INVALIDO;SEM_ORDENS");return;}
+-  if(!TerminalInfoInteger(TERMINAL_CONNECTED)){stream_status615="TICKS: DESCONECTADO_APOS_COLETA";return;}
++  if(!MDConnected210()){stream_status615="TICKS: DESCONECTADO_APOS_COLETA";return;}
+   if(!MDObserverIdentity615(obs615,Scope615()))
+   {MDVisualClear(0,(uint)Instancia);stream_failed615=true;Report615("TICKS_6_15_BLOQUEADO;IDENTIDADE_MUDOU;SEM_ORDENS");return;}
+   if(retry132.active)Report615("TICKS_6_15_RECUPERADO;de_msc="+IntegerToString(stream615.cursor)+";ate_msc="+IntegerToString(end)+";M1_DISPONIVEL_CONFERIDO;fase="+(retry132.slow?"MONITORAMENTO_LENTO":"RECUPERACAO_RAPIDA")+";SEM_ORDENS");
+@@ -209,7 +214,7 @@
+   MDVisualClear(0,(uint)Instancia);return;
+  }
+  int date=MDDateValue614((datetime)(opclock.utc/1000-10800));MDDailyRaw614 raw;string why;
+- bool read=MDCollectDaily614(date,raw,why);
++ bool read=MDIsTester210()?MDTesterReadDaily210(date,raw,why):MDCollectDaily614(date,raw,why);
+  if(!MDObserverUpdate615(obs615,date,read,raw,why)){
+   stream_status615="DADOS: "+obs615.reason;
+   Diagnostic(1,"DADOS_DIARIOS",obs615.reason,
+@@ -256,15 +261,17 @@
+  property_reason="PROPRIEDADES_CONFERIDAS";return true;
+ }
+ void BuildFrame(MDOpFrame &f,bool stable) {
+- MDOpFrameReset(f,opclock.utc,opclock.server,opclock.ok,(bool)TerminalInfoInteger(TERMINAL_CONNECTED));f.stable=stable;
++ MDOpFrameReset(f,opclock.utc,opclock.server,opclock.ok,(bool)MDConnected210());f.stable=stable;
+  bool current=obs615.visible&&stream_started615&&!stream_failed615&&!retry132.active&&
+  stream_reported615==stream615.cursor&&stream615.data.date==obs615.data.date;
++ bool opening_tail=MDTesterGate210()&&obs615.visible&&stream_started615&&!stream_failed615&&!retry132.active&&stream615.audit.count==0;
++ if(opening_tail)current=true;
+  bool live=false;string why="",coverage_reason="RECONSTRUCAO_AINDA_NAO_ATUALIZADA",coverage_details="";
+  MDCoverage209 coverage;MDCoverageReset209(coverage);
+  if(stream_failed615)coverage_reason="FLUXO_BLOQUEADO_EXIGE_DIAGNOSTICO";
+- else if(retry132.active)coverage_reason=MDSlow132(retry132,(long)GetTickCount64())?"RECUPERACAO_EM_MONITORAMENTO_LENTO":"RECUPERACAO_DO_BLOCO_PENDENTE";
++ else if(retry132.active)coverage_reason=MDSlow132(retry132,MDLogicalMillis210())?"RECUPERACAO_EM_MONITORAMENTO_LENTO":"RECUPERACAO_DO_BLOCO_PENDENTE";
+  else if(!obs615.visible)coverage_reason="DADOS_DIARIOS_NAO_CONFERIDOS";
+- if(current)live=MDCurrentCoverage209(stream615,opclock.server,coverage,coverage_reason,coverage_details);
++ if(current)live=MDCurrentCoverage209(stream615,opclock.server,coverage,coverage_reason,coverage_details,opening_tail);
+  string coverage_state=live?"CONFERIDA":coverage_reason;
+  if(coverage_last209!=coverage_state){
+   Report615("COBERTURA_ATUAL;estado="+coverage_state+";"+coverage_details);
+@@ -291,7 +298,10 @@
+   }
+   if(l.order>0) {
+    if(!pending_trail_started[k]||pending_trail[k].begin!=l.accepted_server){MDOpTrailInit(pending_trail[k],l.symbol,l.accepted_server,l.prices);pending_trail_started[k]=true;}
+-   f.pending_history[k]=MDOpTrailRead(pending_trail[k],opclock.server,why);
++   // A freshly accepted order has no strictly post-origin interval yet.
++   // Do not cancel it merely because the next simulated callback has the SAME time.
++   if(MDTesterGate210()&&opclock.server==l.accepted_server)f.pending_history[k]=true;
++   else f.pending_history[k]=MDOpTrailRead(pending_trail[k],opclock.server,why);
+    f.pending_boundary[k]=pending_trail[k].boundary;
+    if(!f.pending_history[k]&&why!="TRAIL_PREVIOUS_FAILURE")Report615("PENDING_HISTORY;key="+IntegerToString(l.key)+";"+why);
+   }
+@@ -317,7 +327,7 @@
+       operational.positions[i].sl==operational.levels[operational.positions[i].owner].prices.sl_tick))due=true;
+  }
+  if(due){
+-  MDOpFrame timer;MDOpFrameReset(timer,opclock.utc,opclock.server,true,(bool)TerminalInfoInteger(TERMINAL_CONNECTED));
++  MDOpFrame timer;MDOpFrameReset(timer,opclock.utc,opclock.server,true,(bool)MDConnected210());
+   MDOpState timed;
+   if(!MDOpCycle(operational,inventory_b,timer,timed,why)||!Commit(timed,"TIMER_DEADLINE"))return;
+  }
+@@ -330,7 +340,7 @@
+   if(day<start)start=day;
+  }
+  string inventory_reason="DESCONECTADO";
+- if(TerminalInfoInteger(TERMINAL_CONNECTED)) {
++ if(MDConnected210()) {
+   if(!MDOpCollect(start,inventory_a,why))inventory_reason="PRIMEIRA_COLETA;"+why;
+   else if(!MDOpCollect(start,inventory_b,why))inventory_reason="SEGUNDA_COLETA;"+why;
+   else if(!MDOpSameSnapshot(inventory_a,inventory_b))inventory_reason="DUAS_LEITURAS_DIVERGENTES";
+@@ -341,7 +351,7 @@
+  MDOpFrame frame;BuildFrame(frame,stable);
+  if((long)GetTickCount64()-began>3000){frame.stable=false;inventory_reason="INVENTARIO_VENCEU_DURANTE_HISTORICO;LIMITE_3000MS;origem="+inventory_reason;}
+  if(Scope615()!=operational.scope){frame.stable=false;inventory_reason="IDENTIDADE_MUDOU";}
+- if(!TerminalInfoInteger(TERMINAL_CONNECTED)){frame.stable=false;inventory_reason="DESCONECTADO";}
++ if(!MDConnected210()){frame.stable=false;inventory_reason="DESCONECTADO";}
+  Diagnostic(2,"INVENTARIO",inventory_reason,"NOVA_DUPLA_LEITURA_NO_TIMER;NAO_CONFIRMA_ACAO_POR_AUSENCIA");
+  MDOpState next;
+  if(!MDOpCycle(operational,inventory_b,frame,next,why)){Status("CYCLE_BLOCKED;"+why);return;}
+@@ -360,30 +370,40 @@
+  Diagnostic(3,"CONCILIACAO",why,"REAVALIA_NO_TIMER;ORIGENS_E_EFEITOS_EXIGEM_PROVA");
+  Status("INTEGRATED;"+why+";revision="+IntegerToString(operational.revision)+";entry_intents="+IntegerToString(entries)+
+  ";SLTP_intents="+IntegerToString(protect)+";cancel_intents="+IntegerToString(cancel)+";close_intents="+IntegerToString(close)+
+- ";unresolved="+IntegerToString(uncertain)+";transport=ABSENT;NATIVE_VALIDATION_PENDING");
+-}
++ ";unresolved="+IntegerToString(uncertain)+";transport="+(MDTesterGate210()?"TESTER_ONLY":"ABSENT")+";NATIVE_VALIDATION_PENDING");
++}
++#include "ModeloD_TesterTransport210.mqh"
+ int OnInit() {
++ ledger="";
++ tester_prefix210="";tester_prepared210=0;tester_sent210=0;tester_responses210=0;tester_deals210=";";
++ for(int i=0;i<256;i++)tester_blocks210[i]="";
++ if(!MDIsTester210()&&ExecutarNoTester){Print("TESTER_ONLY_BLOCKED_OUTSIDE_TESTER");return INIT_PARAMETERS_INCORRECT;}
++ if(MDIsTester210()){
++  string tester_why;if(!MDTesterValidate210(tester_why)){Print("TESTER_INIT_BLOCKED;",tester_why);return INIT_PARAMETERS_INCORRECT;}
++  tester_prefix210="MDT210_"+IntegerToString((long)TimeLocal())+"_"+IntegerToString((long)GetTickCount64())+"_"+IntegerToString((long)GetMicrosecondCount())+"_";
++  if(FileIsExist(tester_prefix210+"ModeloD_OPERATIONAL_"+Scope615()+".lock",FILE_COMMON)){Print("TESTER_RUN_COLLISION_PRESERVE_FILES");return INIT_FAILED;}
++ }
+  for(int i=0;i<10;i++)diagnostic_last[i]="";
+  coverage_last209="";
+  if(Instancia<1||Instancia>9999||VolumePorNivel<1||VolumePorNivel>1000000||IntervaloSegundos<1||IntervaloSegundos>30)return INIT_PARAMETERS_INCORRECT;
+  if(_Symbol!="WIN$N"&&_Symbol!="WINZ26")return INIT_PARAMETERS_INCORRECT;
+  string scope=Scope615();if(scope=="")return INIT_FAILED;
+- lock615=FileOpen("ModeloD_OPERATIONAL_"+scope+".lock",FILE_READ|FILE_WRITE|FILE_BIN|FILE_COMMON);
++ lock615=FileOpen(tester_prefix210+"ModeloD_OPERATIONAL_"+scope+".lock",FILE_READ|FILE_WRITE|FILE_BIN|FILE_COMMON);
+  if(lock615==INVALID_HANDLE){Print("EXCLUSIVE_LOCK_FAILED");return INIT_FAILED;}
+  string lock_marker="MDOP_LOCK_V1_"+scope;
+  bool initialized=FileSize(lock615)>0;
+  string marker_why;
+  if(initialized&&!LockMarkerMatches(lock615,lock_marker,marker_why)){Print("LOCK_MARKER_INVALID;",marker_why);return INIT_FAILED;}
+- if(initialized&&!FileIsExist("ModeloD_OPERATIONAL_"+scope+".ledger",FILE_COMMON)&&!FileIsExist("ModeloD_OPERATIONAL_"+scope+".ledger.next",FILE_COMMON)){
++ if(initialized&&!FileIsExist(tester_prefix210+"ModeloD_OPERATIONAL_"+scope+".ledger",FILE_COMMON)&&!FileIsExist(tester_prefix210+"ModeloD_OPERATIONAL_"+scope+".ledger.next",FILE_COMMON)){
+   Print("PREVIOUS_LEDGER_MISSING_RESTORE_BACKUP_NEVER_REINITIALIZE");return INIT_FAILED;
+  }
+  owns615=true;MDOpInit(operational,scope,Instancia);MDOpClockInit(opclock);MDObserverStart615(obs615,scope);MDReset132(retry132);
+- ledger_path="ModeloD_OPERATIONAL_"+scope+".ledger";string why;
++ ledger_path=tester_prefix210+"ModeloD_OPERATIONAL_"+scope+".ledger";string why;
+  bool previous_ledger=FileIsExist(ledger_path,FILE_COMMON)||FileIsExist(ledger_path+".next",FILE_COMMON);
+  if(previous_ledger) {
+   if(!MDOpRecoverFile(ledger_path,scope,Instancia,ledger,operational,why)){Print("LEDGER_BLOCKED;",why,";PRESERVE_FILES");return INIT_FAILED;}
+  }
+- report_path="ModeloD_Integrado_"+scope+"_"+IntegerToString((long)TimeLocal())+"_"+IntegerToString((long)GetTickCount64())+".txt";
++ report_path=tester_prefix210+"ModeloD_Integrado_"+scope+"_"+IntegerToString((long)TimeLocal())+"_"+IntegerToString((long)GetTickCount64())+".txt";
+  report615=FileOpen(report_path,
+  FILE_WRITE|FILE_TXT|FILE_ANSI|FILE_COMMON|FILE_SHARE_READ,0,CP_UTF8);
+  if(report615==INVALID_HANDLE){Print("RELATORIO_ABERTURA_FALHOU;erro=",GetLastError());return INIT_FAILED;}
+@@ -401,11 +421,13 @@
+  }
+  Diagnostic(3,"PERSISTENCIA",previous_ledger?"DIARIO_REABERTO_VALIDADO":"DIARIO_INICIAL_CRIADO",
+  "ESTADO_PRESERVADO;NAO_AUTORIZA_TRANSPORTE");
+- Report615("START;v=2.09;TRANSPORT_ABSENT;LEGACY_OBSERVATION_NOT_IMPORTED;revision="+IntegerToString(operational.revision));
++ string start_line="START;v=2.10;";
++ Report615(start_line+(MDTesterGate210()?"TRANSPORT_TESTER_ONLY;ISOLATED_RUN":"TRANSPORT_ABSENT;LEGACY_OBSERVATION_NOT_IMPORTED")+";revision="+IntegerToString(operational.revision));
++ if(MDTesterGate210())Report615("TESTER_CONFIG;date="+IntegerToString(DataTester)+";contract="+ContratoTester+";server_offset_s="+IntegerToString(FusoServidorTester)+";source_date="+tester_b3_210.source_date+";dataset="+MDTesterB3Path210()+";scope_prefix="+tester_prefix210+";SINGLE_DAY_NO_OPTIMIZATION;REAL_TICKS_REQUIRED_IN_TESTER_SETTINGS");
+  if(!EventSetTimer(IntervaloSegundos))return INIT_FAILED;
+  return INIT_SUCCEEDED;
+ }
+-void OnTimer(){if(Scope615()!=operational.scope){fatal=true;Diagnostic(3,"IDENTIDADE","CONTA_OU_SERVIDOR_MUDOU","SEM_CONTINUACAO_NESTA_EXECUCAO;NAO_REUTILIZAR_ESTADO_EM_OUTRA_CONTA");Status("IDENTITY_CHANGED");return;}OperationalCycle();}
++void OnTimer(){if(Scope615()!=operational.scope){fatal=true;Diagnostic(3,"IDENTIDADE","CONTA_OU_SERVIDOR_MUDOU","SEM_CONTINUACAO_NESTA_EXECUCAO;NAO_REUTILIZAR_ESTADO_EM_OUTRA_CONTA");Status("IDENTITY_CHANGED");return;}OperationalCycle();if(MDTesterGate210())MDTesterDispatch210();}
+ void OnTradeTransaction(const MqlTradeTransaction &trans,const MqlTradeRequest &request,const MqlTradeResult &result){transactions++;}
+ void OnChartEvent(const int id,const long &lparam,const double &dparam,const string &sparam) {
+  if(id!=CHARTEVENT_CHART_CHANGE||!obs615.visible||!owns615)return;
+@@ -414,7 +436,7 @@
+  MDVisualSync(0,(uint)Instancia,obs615.control.day,begin,end,true);
+ }
+ void OnDeinit(const int reason) {
+- EventKillTimer();if(owns615){MDVisualClear(0,(uint)Instancia);Comment("");Report615("STOP;reason="+IntegerToString(reason)+";transport=ABSENT");}
++ EventKillTimer();if(MDTesterGate210()&&owns615)Report615("TESTER_END;prepared="+IntegerToString(tester_prepared210)+";sent="+IntegerToString(tester_sent210)+";responses="+IntegerToString(tester_responses210)+";revision="+IntegerToString(operational.revision)+";NOT_AN_ACCEPTANCE_CERTIFICATE");if(owns615){MDVisualClear(0,(uint)Instancia);Comment("");Report615("STOP;reason="+IntegerToString(reason)+";transport="+(MDTesterGate210()?"TESTER_ONLY":"ABSENT"));}
+  if(report615!=INVALID_HANDLE){FileClose(report615);report615=INVALID_HANDLE;Print(report_error?"RELATORIO_COM_ERRO;":"RELATORIO_FECHADO;",TerminalInfoString(TERMINAL_COMMONDATA_PATH),"\\Files\\",report_path);}
+  if(lock615!=INVALID_HANDLE){FileClose(lock615);lock615=INVALID_HANDLE;}owns615=false;
+ }
+--- v2.09/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_B3File.mqh
++++ v2.10/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_B3File.mqh
+@@ -1,11 +1,13 @@
+ #ifndef MODELOD_B3FILE_MQH
+ #define MODELOD_B3FILE_MQH
+ #include "ModeloD_B3.mqh"
+-bool MDB3ReadOperational(MDB3File &data,string &reason)
++bool MDB3ReadAt210(string path,bool common,MDB3File &data,string &reason)
+ {
+    data.validated=false; data.count=0; reason="";
+    ResetLastError();
+-   int h=FileOpen("ajuste_b3.txt",FILE_READ|FILE_TXT|FILE_ANSI|FILE_COMMON|FILE_SHARE_READ,0,CP_UTF8);
++   int flags=FILE_READ|FILE_TXT|FILE_ANSI|FILE_SHARE_READ;
++   if(common)flags|=FILE_COMMON;
++   int h=FileOpen(path,flags,0,CP_UTF8);
+    if(h==INVALID_HANDLE) return MDB3Fail(reason,"ARQUIVO_INDISPONIVEL: "+IntegerToString(GetLastError()));
+    string text=""; bool ok=true; int lines=0;
+    while(!FileIsEnding(h))
+@@ -22,4 +24,6 @@
+    if(!ok) data.count=0;
+    return ok;
+ }
++bool MDB3ReadOperational(MDB3File &data,string &reason)
++{return MDB3ReadAt210("ajuste_b3.txt",true,data,reason);}
+ #endif
+--- v2.09/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_CurrentCoverage.mqh
++++ v2.10/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_CurrentCoverage.mqh
+@@ -6,14 +6,14 @@
+ struct MDCoverage209 {bool touched[5];long first[5];};
+ void MDCoverageReset209(MDCoverage209 &c)
+ {for(int i=0;i<5;i++){c.touched[i]=false;c.first[i]=0;}}
+-bool MDCurrentCoverage209(const MDStream615 &stream,long until,MDCoverage209 &out,string &why,string &details)
++bool MDCurrentCoverage209(const MDStream615 &stream,long until,MDCoverage209 &out,string &why,string &details,bool opening_tail=false)
+ {
+  MDCoverageReset209(out);MDCoverage209 candidate;MDCoverageReset209(candidate);
+  long from=stream.cursor;
+  details="de_msc="+IntegerToString(from)+";ate_exclusivo_msc="+IntegerToString(until);
+  if(IsStopped()){why="COLETA_INTERROMPIDA";return false;}
+- if(!TerminalInfoInteger(TERMINAL_CONNECTED)){why="DESCONECTADO";return false;}
+- if(!stream.ready||!stream.audit.valid||stream.audit.count<=0||until<from||until-from>60000)
++ if(!MDConnected210()){why="DESCONECTADO";return false;}
++ if(!stream.ready||!stream.audit.valid||(!opening_tail&&stream.audit.count<=0)||until<from||until-from>60000)
+  {why="JANELA_ATUAL_INVALIDA_OU_DEFASADA";return false;}
+  if(until==from){why="COBERTURA_NO_LIMITE_CONFERIDO";return true;}
+  MqlTick ticks[];ResetLastError();long began=(long)GetTickCount64();
+@@ -24,7 +24,10 @@
+  if(IsStopped()){why="COLETA_INTERROMPIDA";return false;}
+  if(n<0||error!=0){why="COPY_TICKS_ERRO_"+IntegerToString(error);return false;}
+  if(n>500000){why="CAPACIDADE_EXCEDIDA_500000";return false;}
++ if(stream.audit.count==0&&(n<=0||ticks[0].time_msc!=stream.data.open_msc||ticks[0].last!=stream.data.values.open_today))
++ {why="PRIMEIRO_TICK_DA_CAUDA_NAO_CONFERE";return false;}
+  long previous=stream.audit.last_msc;double last=stream.audit.last_price;
++ if(stream.audit.count==0){previous=0;last=stream.data.values.open_today;}
+  MDMinuteAudit minute;minute.count=0;minute.o=0;minute.h=0;minute.l=0;minute.c=0;
+  for(int j=0;j<n;j++)
+  {
+@@ -49,7 +52,7 @@
+   {why="MINUTO_COMPLETO_NAO_CONFERE_M1";details+=";barras="+IntegerToString(bars)+";erro_m1="+IntegerToString(rates_error);return false;}
+  }
+  if(IsStopped()){why="COLETA_INTERROMPIDA";return false;}
+- if(!TerminalInfoInteger(TERMINAL_CONNECTED)){why="DESCONECTADO_APOS_COLETA";return false;}
++ if(!MDConnected210()){why="DESCONECTADO_APOS_COLETA";return false;}
+  out=candidate;why="CAUDA_ATUAL_CONFERIDA_SEM_CERTIFICACAO_INDEPENDENTE";return true;
+ }
+ #endif
+--- v2.09/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_OpeningTicks.mqh
++++ v2.10/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_OpeningTicks.mqh
+@@ -6,7 +6,8 @@
+  int failures,attempts;bool confirmed;
+ };
+ MDOpening208 opening208;
+-bool MDOpeningRead208(string symbol,long begin,long end,long now,long &first_msc,double &first_last,string &why)
++bool MDOpeningRead208(string symbol,long begin,long end,long now,long &first_msc,double &first_last,string &why,
++ long logical_mono=-1,bool partial_window=false)
+ {
+  if(IsStopped()){why="PRIMEIRO_TICK_INTERROMPIDO;parando=1";return false;}
+  if(opening208.symbol!=symbol||opening208.begin!=begin||opening208.end!=end){
+@@ -15,17 +16,21 @@
+   opening208.failures=0;opening208.attempts=0;opening208.confirmed=false;
+  }
+  if(opening208.confirmed){first_msc=opening208.first_msc;first_last=opening208.first_last;why="PRIMEIRO_TICK_CONFIRMADO";return true;}
+- long mono=(long)GetTickCount64();
++ long wall_begin=(long)GetTickCount64();long mono=logical_mono<0?wall_begin:logical_mono;
+  string progress=";cursor_msc="+IntegerToString(opening208.cursor)+";tentativas="+IntegerToString(opening208.attempts);
+  if(mono<opening208.next_due){why="PRIMEIRO_TICK_BACKOFF"+progress+";restante_ms="+IntegerToString(opening208.next_due-mono);return false;}
+  if(begin<=0||end<=begin||opening208.cursor>=end){why="PRIMEIRO_TICK_SESSAO_SEM_NEGOCIOS"+progress;return false;}
+  long until=opening208.cursor+59999;if(until>=end)until=end-1;
+  // Do not certify an empty window that has not ended yet.
+- if(now<=until){why="PRIMEIRO_TICK_AGUARDA_JANELA_COMPLETA"+progress;return false;}
+- Print("PRIMEIRO_TICK_CONSULTA;de_msc="+IntegerToString(opening208.cursor)+";ate_msc="+IntegerToString(until)+";tentativa="+IntegerToString(opening208.attempts+1)+";TRANSPORT_ABSENT");
++ bool complete=now>until;
++ if(!complete){
++  if(!partial_window||now<=opening208.cursor){why="PRIMEIRO_TICK_AGUARDA_JANELA_COMPLETA"+progress;return false;}
++  until=now-1; // Positive, exact tick evidence only; NEVER skip an unfinished empty window.
++ }
++ Print("PRIMEIRO_TICK_CONSULTA;de_msc="+IntegerToString(opening208.cursor)+";ate_msc="+IntegerToString(until)+";tentativa="+IntegerToString(opening208.attempts+1)+(partial_window?";TESTER_SIMULADO":";TRANSPORT_ABSENT"));
+  MqlTick ticks[];ResetLastError();opening208.attempts++;
+  int n=CopyTicksRange(symbol,ticks,COPY_TICKS_TRADE,(ulong)opening208.cursor,(ulong)until);
+- int error=GetLastError();long finished=(long)GetTickCount64();
++ int error=GetLastError();long finished=logical_mono<0?(long)GetTickCount64():logical_mono;
+  if(IsStopped()){why="PRIMEIRO_TICK_INTERROMPIDO;parando=1;erro="+IntegerToString(error);return false;}
+  if(n<0||error!=0){
+   opening208.failures++;int delay=2000;
+@@ -34,11 +39,14 @@
+   opening208.next_due=finished+delay;
+   why="PRIMEIRO_TICK_INDISPONIVEL;retornados="+IntegerToString(n)+";erro="+IntegerToString(error)+
+    ";parando=0;de_msc="+IntegerToString(opening208.cursor)+";ate_msc="+IntegerToString(until)+
+-   ";tentativa="+IntegerToString(opening208.attempts)+";duracao_ms="+IntegerToString(finished-mono)+";backoff_ms="+IntegerToString(delay);
++   ";tentativa="+IntegerToString(opening208.attempts)+";duracao_ms="+IntegerToString((long)GetTickCount64()-wall_begin)+";backoff_ms="+IntegerToString(delay);
+   return false;
+  }
+  opening208.failures=0;opening208.next_due=finished+2000;
+- if(n==0){opening208.cursor=until+1;why="PRIMEIRO_TICK_JANELA_VAZIA_CONFIRMADA;ate_msc="+IntegerToString(until);return false;}
++ if(n==0){
++  if(!complete){why="PRIMEIRO_TICK_AGUARDA_NEGOCIO_NA_JANELA_PARCIAL"+progress;return false;}
++  opening208.cursor=until+1;why="PRIMEIRO_TICK_JANELA_VAZIA_CONFIRMADA;ate_msc="+IntegerToString(until);return false;
++ }
+  // Reject malformed results; never use M1 or a partial timeout as opening proof.
+  if(n!=ArraySize(ticks)||ticks[0].time_msc<opening208.cursor||ticks[0].time_msc>until||
+     !MathIsValidNumber(ticks[0].last)||ticks[0].last<=0||
+--- v2.09/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_OperationalTerminal.mqh
++++ v2.10/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_OperationalTerminal.mqh
+@@ -10,6 +10,15 @@
+ struct MDOpClock {long utc,server,last_utc,last_mono;int offset,samples;bool ok,broker_anchored;long last_broker;};
+ void MDOpClockInit(MDOpClock &c){c.utc=0;c.server=0;c.last_utc=0;c.last_mono=0;c.offset=0;c.samples=0;c.ok=false;c.broker_anchored=false;c.last_broker=0;}
+ bool MDOpClockRead(MDOpClock &c,long watermark,string &why) {
++ if(MDIsTester210()) {
++  long server=(long)TimeCurrent()*1000,utc=server-(long)FusoServidorTester*1000;
++  c.ok=false;
++  if(!ExecutarNoTester||FusoServidorTester!=-10800||server<=0||utc<watermark||
++    (c.last_utc>0&&utc<c.last_utc)){why="TESTER_CLOCK_INVALID_OR_REGRESSED";return false;}
++  c.utc=utc;c.server=server;c.last_utc=utc;c.last_mono=server;c.offset=FusoServidorTester;c.samples++;
++  if(c.samples<3){why="TESTER_CLOCK_SAMPLING";return false;}
++  c.ok=true;why="TESTER_SIMULATED_CLOCK_EXPLICIT_BRT_NOT_NTP";return true;
++ }
+  long utc=(long)TimeGMT()*1000,server=(long)TimeTradeServer()*1000,mono=(long)GetTickCount64();
+  c.ok=false;why="CLOCK_UNAVAILABLE";if(utc<=0||server<=0)return false;
+  long difference=server-utc;
+--- v2.09/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_Runtime210.mqh
++++ v2.10/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_Runtime210.mqh
+@@ -0,0 +1,18 @@
++#ifndef MD_RUNTIME210
++#define MD_RUNTIME210
++// Explicit opt-in applies ONLY to the Strategy Tester. Never to a connected account.
++input bool ExecutarNoTester=false;
++input int DataTester=20261030;
++input string ContratoTester="WINZ26";
++input int FusoServidorTester=-10800;
++bool MDIsTester210(){return (bool)MQLInfoInteger(MQL_TESTER);}
++bool MDConnected210(){return MDIsTester210()||TerminalInfoInteger(TERMINAL_CONNECTED);}
++// Virtual replay identity: independent of a broker login (which can be zero in an agent).
++long MDAccount210(){return MDIsTester210()?1:AccountInfoInteger(ACCOUNT_LOGIN);}
++string MDServer210(){return MDIsTester210()?"STRATEGY_TESTER":AccountInfoString(ACCOUNT_SERVER);}
++// Retry schedules follow simulated time; API durations still use GetTickCount64.
++long MDLogicalMillis210(){return MDIsTester210()?(long)TimeCurrent()*1000:(long)GetTickCount64();}
++string tester_prefix210="";
++bool MDTesterGate210()
++{return MDIsTester210()&&ExecutarNoTester&&!MQLInfoInteger(MQL_OPTIMIZATION)&&tester_prefix210!="";}
++#endif
+--- v2.09/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_StreamTerminal.mqh
++++ v2.10/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_StreamTerminal.mqh
+@@ -53,7 +53,7 @@
+   if(present)r++;else{empty++;absent+=IntegerToString(stamp)+",";}
+  }
+  if(IsStopped()){reason="ALL_INTERROMPIDO";return false;}
+- if(!TerminalInfoInteger(TERMINAL_CONNECTED)){reason="ALL_DESCONECTADO_APOS_COLETA";return false;}
++ if(!MDConnected210()){reason="ALL_DESCONECTADO_APOS_COLETA";return false;}
+  if(!MDSparseFinish615N(candidate,observation_only)){reason="ALL_BLOCO_NAO_CONCLUIDO";return false;}
+  recovered=candidate;reason="BLOCO_RECUPERADO_COPY_TICKS_ALL_FILTRADO;registros_all="+IntegerToString(total)+
+   ";eventos_negociacao="+IntegerToString(accepted)+";minutos_com_registros="+IntegerToString(bars)+
+@@ -123,7 +123,7 @@
+   else{empty++;absent+=IntegerToString(stamp)+",";}
+  }
+  if(IsStopped()){reason="INTERROMPIDO";return false;}
+- if(!TerminalInfoInteger(TERMINAL_CONNECTED)){reason="DESCONECTADO_APOS_COLETA";return false;}
++ if(!MDConnected210()){reason="DESCONECTADO_APOS_COLETA";return false;}
+  if(!MDSparseFinish615N(candidate,observation_only)){reason="BLOCO_NAO_CONCLUIDO";return false;}
+  state=candidate;reason="BLOCO_OBSERVADO;minutos_com_registros="+IntegerToString(bars)+";minutos_sem_registros="+IntegerToString(empty)+";ausentes_msc="+absent+";INTEGRIDADE_TOTAL_NAO_CERTIFICADA";return true;
+ }
+--- v2.09/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_TerminalCollect.mqh
++++ v2.10/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_TerminalCollect.mqh
+@@ -39,9 +39,9 @@
+ bool Collect69(datetime start,datetime end,MDSnapshot69 &s,string &reason)
+ {
+  s.complete=false;s.orders=0;s.deals=0;s.positions=0;
+- s.connected=(bool)TerminalInfoInteger(TERMINAL_CONNECTED);
++ s.connected=(bool)MDConnected210();
+  s.hedge=AccountInfoInteger(ACCOUNT_MARGIN_MODE)==ACCOUNT_MARGIN_MODE_RETAIL_HEDGING;
+- s.account_key=AccountInfoInteger(ACCOUNT_LOGIN);s.server_key=AccountInfoString(ACCOUNT_SERVER);
++ s.account_key=MDAccount210();s.server_key=MDServer210();
+  reason="INICIO";
+  if(!s.connected){reason="DESCONECTADO";return false;}
+  if(start<=0||end<start){reason="INTERVALO_INVALIDO";return false;}
+@@ -78,7 +78,7 @@
+   v.ticket=(long)t;v.buy=type==POSITION_TYPE_BUY;s.p[s.positions++]=v;
+  }
+  if(no!=OrdersTotal()||nh!=HistoryOrdersTotal()||nd!=HistoryDealsTotal()||np!=PositionsTotal()||
+- s.account_key!=AccountInfoInteger(ACCOUNT_LOGIN)||s.server_key!=AccountInfoString(ACCOUNT_SERVER)||!TerminalInfoInteger(TERMINAL_CONNECTED))
++ s.account_key!=MDAccount210()||s.server_key!=MDServer210()||!MDConnected210())
+  {reason="CONTAGEM_CONTA_OU_CONEXAO_MUDOU";return false;}
+  s.complete=true;reason="LEITURA_CONCLUIDA_NAO_ATOMICA";return true;
+ }
+--- v2.09/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_TesterData210.mqh
++++ v2.10/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_TesterData210.mqh
+@@ -0,0 +1,57 @@
++#ifndef MD_TESTER_DATA210
++#define MD_TESTER_DATA210
++#include "ModeloD_B3File.mqh"
++#include "ModeloD_OpeningTicks.mqh"
++// Fixed reviewed smoke-test dataset. Files are transferred to the agent sandbox.
++string MDTesterB3Path210(){return "ModeloD_Tester_20261030_ajuste_b3.txt";}
++MDB3File tester_b3_210;
++bool MDTesterValidate210(string &why)
++{
++ if(!MDIsTester210()){why="TESTER_ONLY";return false;}
++ if(!ExecutarNoTester||MQLInfoInteger(MQL_OPTIMIZATION)){why="TESTER_OPTIN_REQUIRED_NO_OPTIMIZATION";return false;}
++ if(DataTester!=20261030||ContratoTester!="WINZ26"||_Symbol!=ContratoTester||FusoServidorTester!=-10800)
++ {why="TESTER_210_REQUIRES_WINZ26_20261030_BRT";return false;}
++ if(AccountInfoInteger(ACCOUNT_MARGIN_MODE)!=ACCOUNT_MARGIN_MODE_RETAIL_HEDGING)
++ {why="TESTER_REQUIRES_HEDGING";return false;}
++ if(!SymbolSelect(ContratoTester,true)){why="TESTER_CONTRACT_UNAVAILABLE";return false;}
++ if(!MDB3ReadAt210(MDTesterB3Path210(),false,tester_b3_210,why))return false;
++ double adjustment=0,previous=0;
++ if(!MDB3Select(tester_b3_210,MDISO614(DataTester),ContratoTester,adjustment,previous,why))return false;
++ if(MDISODate614(tester_b3_210.source_date)!=MDPreviousSession2026(DataTester))
++ {why="TESTER_B3_SOURCE_DATE_MISMATCH";return false;}
++ MDSessionRule session;if(!MDSession614(DataTester,ContratoTester,session)){why="TESTER_SESSION_UNREVIEWED";return false;}
++ why="TESTER_DATASET_PINNED_STILL_REQUIRES_NATIVE_HISTORY";return true;
++}
++bool MDTesterReadDaily210(int date,MDDailyRaw614 &r,string &why)
++{
++ if(!MDTesterGate210()||date!=DataTester){why="TESTER_OUTSIDE_PINNED_DAY";return false;}
++ r.connected=true;r.synchronized=false;r.history_read_ok=false;r.opening_read_ok=false;
++ r.date=date;r.chart_symbol="WIN$N";r.description="TESTER_CONTRATO_EXPLICITO("+ContratoTester+")";
++ r.available_bars=0;r.first_msc=0;r.first_last=0;r.b3=tester_b3_210;
++ long expiry=0;
++ if(!SymbolInfoInteger(ContratoTester,SYMBOL_EXPIRATION_TIME,expiry)||
++    !SymbolInfoDouble(ContratoTester,SYMBOL_TRADE_TICK_SIZE,r.tick_size))
++ {why="TESTER_SYMBOL_PROPERTIES_UNAVAILABLE";return false;}
++ r.expiry=MDDateValue614((datetime)expiry);
++ MDSessionRule session;if(!MDSession614(date,ContratoTester,session)){why="TESTER_SESSION_UNREVIEWED";return false;}
++ int prior=MDPreviousSession2026(date);
++ long midnight=MDCivilMidnight2026(date),begin=midnight+(long)session.scheduled_open*1000;
++ long end=midnight+(long)session.cutoff*1000,now=(long)TimeCurrent()*1000;
++ if(!MDOpeningRead208(ContratoTester,begin,end,now,r.first_msc,r.first_last,why,MDLogicalMillis210(),true))return false;
++ r.opening_read_ok=true;
++ MqlRates recent[];MqlRates previous[];MqlRates today[];ResetLastError();
++ int n=CopyRates(ContratoTester,PERIOD_D1,0,3,recent);
++ if(n<3||GetLastError()!=0){why="TESTER_D1_HISTORY_INSUFFICIENT";return false;}r.available_bars=n;
++ datetime prior_start=(datetime)(MDCivilMidnight2026(prior)/1000),day_start=(datetime)(midnight/1000);
++ ResetLastError();n=CopyRates(ContratoTester,PERIOD_D1,prior_start,prior_start+86399,previous);
++ if(n!=1||GetLastError()!=0){why="TESTER_PREVIOUS_D1_UNAVAILABLE";return false;}
++ r.previous_date=MDDateValue614(previous[0].time);r.o=previous[0].open;r.h=previous[0].high;r.l=previous[0].low;r.c=previous[0].close;
++ r.previous_tick_volume=previous[0].tick_volume;r.previous_real_volume=previous[0].real_volume;
++ ResetLastError();n=CopyRates(ContratoTester,PERIOD_D1,day_start,day_start+86399,today);
++ if(n!=1||GetLastError()!=0){why="TESTER_CURRENT_D1_UNAVAILABLE";return false;}
++ r.day_open=today[0].open; // Never consume today's H/L/C to make an entry decision.
++ long sync=0;if(!SeriesInfoInteger(ContratoTester,PERIOD_D1,SERIES_SYNCHRONIZED,sync)||sync==0)
++ {why="TESTER_HISTORY_NOT_SYNCHRONIZED";return false;}
++ r.synchronized=true;r.history_read_ok=true;why="TESTER_RAW_DAILY_READY";return true;
++}
++#endif
+--- v2.09/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_TesterTransport210.mqh
++++ v2.10/MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_TesterTransport210.mqh
+@@ -0,0 +1,156 @@
++#ifndef MD_TESTER_TRANSPORT210
++#define MD_TESTER_TRANSPORT210
++// Application adapter: SAME integrated planner/ledger. No live-account transport.
++long tester_prepared210=0,tester_sent210=0,tester_responses210=0;
++string tester_deals210=";",tester_blocks210[256];
++void MDTesterBlocked210(int slot,string why)
++{
++ if(slot<0||slot>=256)return;
++ if(tester_blocks210[slot]!=why){tester_blocks210[slot]=why;Report615("TESTER_TRANSPORT_BLOCKED;slot="+IntegerToString(slot)+";reason="+why);}
++}
++bool MDTesterFresh210(MDOpFrame &frame,string &why)
++{
++ if(!MDTesterGate210()||fatal||!owns615||lock615==INVALID_HANDLE||Scope615()!=operational.scope||IsStopped())
++ {why="TESTER_CONTEXT_OR_LOCK_INVALID";return false;}
++ if(!MDOpClockRead(opclock,operational.watermark,why)||MDDateValue614((datetime)(opclock.server/1000))!=DataTester)return false;
++ long began=(long)GetTickCount64();
++ datetime start=(datetime)(MDCivilMidnight2026(DataTester)/1000-86400);
++ if(!MDOpCollect(start,inventory_a,why)||!MDOpCollect(start,inventory_b,why))return false;
++ bool stable=MDOpSameSnapshot(inventory_a,inventory_b)&&((long)GetTickCount64()-began<=3000);
++ // Bind newly observed receipts BEFORE building origin-specific tick trails.
++ // Otherwise a new pending could be cancelled using a frame built while its order was still unknown.
++ if(stable){
++  MDOpState observed=operational;
++  if(!MDOpReconcile(observed,inventory_b,opclock.utc,why)||!Commit(observed,"TESTER_RECEIPT_RECONCILIATION"))return false;
++ }
++ BuildFrame(frame,stable);
++ if((long)GetTickCount64()-began>3000||Scope615()!=operational.scope||!MDTesterGate210())frame.stable=false;
++ MDOpState reconciled;
++ if(!MDOpCycle(operational,inventory_b,frame,reconciled,why))return false;
++ if(!Commit(reconciled,"TESTER_FRESH_RECONCILIATION"))return false;
++ return frame.stable&&frame.connected&&frame.clock_ok&&why=="ALL_CHAINS_RECONCILED";
++}
++bool MDTesterRequest210(const MDOpState &s,int owner,int position,int kind,MqlTradeRequest &r,string &why)
++{
++ ZeroMemory(r);
++ if(!MDTesterGate210()||owner<0||owner>=s.nlevels){why="TESTER_REQUEST_CONTEXT";return false;}
++ MDOpLevel l=s.levels[owner];
++ if(l.date!=DataTester||l.symbol!=ContratoTester){why="TESTER_REQUEST_IDENTITY";return false;}
++ r.symbol=l.symbol;r.magic=(ulong)MDMagic67(s.instance,l.level);r.comment=MDOpComment(l);
++ r.type_time=ORDER_TIME_GTC;r.type_filling=ORDER_FILLING_RETURN;
++ if(kind==1){
++  r.action=TRADE_ACTION_PENDING;r.type=l.prices.buy?ORDER_TYPE_BUY_LIMIT:ORDER_TYPE_SELL_LIMIT;
++  r.volume=l.volume;r.price=l.prices.entry_tick;r.sl=l.prices.sl_tick;r.tp=l.prices.tp_tick;
++ }else if(kind==3){
++  if(l.order<=0){why="TESTER_CANCEL_WITHOUT_BOUND_ORIGIN";return false;}
++  r.action=TRADE_ACTION_REMOVE;r.order=(ulong)l.order;
++ }else{
++  if(position<0||position>=s.npositions||s.positions[position].owner!=owner){why="TESTER_POSITION_OWNER";return false;}
++  MDOpPosition v=s.positions[position];
++  if(v.ticket<=0||v.identifier<=0||v.volume<=0){why="TESTER_POSITION_UNAVAILABLE";return false;}
++  r.position=(ulong)v.ticket;
++  if(kind==2){r.action=TRADE_ACTION_SLTP;r.sl=l.prices.sl_tick;r.tp=l.prices.tp_tick;}
++  else if(kind==4){
++   MqlTick quote;long filling=0,execution=0;
++   if(!SymbolInfoTick(l.symbol,quote)||!SymbolInfoInteger(l.symbol,SYMBOL_FILLING_MODE,filling)||
++      !SymbolInfoInteger(l.symbol,SYMBOL_TRADE_EXEMODE,execution)){why="TESTER_CLOSE_PROPERTIES";return false;}
++   r.action=TRADE_ACTION_DEAL;r.type=l.prices.buy?ORDER_TYPE_SELL:ORDER_TYPE_BUY;
++   r.volume=v.volume;r.price=l.prices.buy?quote.bid:quote.ask;
++   if(!MDPositive(r.price)){why="TESTER_CLOSE_QUOTE_INVALID";return false;}
++   if((filling&SYMBOL_FILLING_FOK)!=0)r.type_filling=ORDER_FILLING_FOK;
++   else if((filling&SYMBOL_FILLING_IOC)!=0)r.type_filling=ORDER_FILLING_IOC;
++   else if(execution==SYMBOL_TRADE_EXECUTION_MARKET){why="TESTER_CLOSE_NO_ALLOWED_FILLING";return false;}
++  }else{why="TESTER_ACTION_INVALID";return false;}
++ }
++ if(kind==1||kind==4){
++  MDExecGate613 volume;volume.volume_min=0;volume.volume_max=0;volume.volume_step=0;
++  if(!SymbolInfoDouble(l.symbol,SYMBOL_VOLUME_MIN,volume.volume_min)||
++     !SymbolInfoDouble(l.symbol,SYMBOL_VOLUME_MAX,volume.volume_max)||
++     !SymbolInfoDouble(l.symbol,SYMBOL_VOLUME_STEP,volume.volume_step)||!MDVolume613(r.volume,volume))
++  {why="TESTER_VOLUME_INVALID";return false;}
++ }
++ why="TESTER_REQUEST_BUILT";return true;
++}
++void MDTesterReportDeals210()
++{
++ if(!MDTesterGate210())return;
++ for(int i=0;i<inventory_b.book.deals;i++){
++  MDDeal68 d=inventory_b.book.d[i];string id=";"+IntegerToString(d.ticket)+";";
++  if(StringFind(tester_deals210,id)>=0)continue;
++  int owner=-1;
++  for(int k=0;k<operational.nlevels;k++)if(operational.levels[k].order==d.order){owner=k;break;}
++  if(owner<0)for(int p=0;p<operational.npositions;p++)if(operational.positions[p].identifier==d.position){owner=operational.positions[p].owner;break;}
++  if(owner<0)continue;
++  MDOpLevel l=operational.levels[owner];double profit=0,commission=0,swap=0,fee=0;
++  bool costs=DD69((ulong)d.ticket,DEAL_PROFIT,profit)&&DD69((ulong)d.ticket,DEAL_COMMISSION,commission)&&
++   DD69((ulong)d.ticket,DEAL_SWAP,swap)&&DD69((ulong)d.ticket,DEAL_FEE,fee)&&
++   MathIsValidNumber(profit)&&MathIsValidNumber(commission)&&MathIsValidNumber(swap)&&MathIsValidNumber(fee);
++  Report615("TESTER_DEAL;ticket="+IntegerToString(d.ticket)+";order="+IntegerToString(d.order)+";position_id="+IntegerToString(d.position)+
++   ";date="+IntegerToString(l.date)+";contract="+l.symbol+";level="+IntegerToString(l.level)+";msc="+IntegerToString(d.msc)+
++   ";entry_kind="+IntegerToString(d.entry)+";buy="+IntegerToString(d.buy?1:0)+";volume="+DoubleToString(d.volume,8)+
++   ";executed="+DoubleToString(inventory_b.deal_price[i],8)+";entry_math="+DoubleToString(l.prices.entry,8)+
++   ";entry_requested="+DoubleToString(l.prices.entry_tick,8)+";SL_fixed="+DoubleToString(l.prices.sl_tick,8)+";TP_fixed="+DoubleToString(l.prices.tp_tick,8)+
++   ";costs_available="+IntegerToString(costs?1:0)+";profit="+DoubleToString(profit,8)+";commission="+DoubleToString(commission,8)+
++   ";swap="+DoubleToString(swap,8)+";fee="+DoubleToString(fee,8)+";SIMULATED_EXECUTION_NOT_WORK_COMPARISON");
++  tester_deals210+=IntegerToString(d.ticket)+";";
++ }
++}
++void MDTesterDispatch210()
++{
++ if(!MDTesterGate210()||fatal||!owns615||IsStopped())return;
++ bool entry_sent[MDOP_LEVELS],cancel_sent[MDOP_LEVELS],protect_sent[MDOP_POSITIONS],close_sent[MDOP_POSITIONS];
++ for(int k=0;k<MDOP_LEVELS;k++){entry_sent[k]=false;cancel_sent[k]=false;}
++ for(int p=0;p<MDOP_POSITIONS;p++){protect_sent[p]=false;close_sent[p]=false;}
++ // Each action/origin is considered at most once per timer. No tight retry loop.
++ for(int iteration=0;iteration<2*MDOP_LEVELS+2*MDOP_POSITIONS;iteration++){
++  MDOpFrame frame;string why;
++  if(!MDTesterFresh210(frame,why)){MDTesterBlocked210(255,why);return;}
++  MDTesterReportDeals210();
++  int owner=-1,position=-1,kind=0,slot=0;
++  for(int p=0;p<operational.npositions&&kind==0;p++)if(!close_sent[p]&&operational.positions[p].close.phase==1){position=p;owner=operational.positions[p].owner;kind=4;slot=192+p;}
++  for(int k=0;k<operational.nlevels&&kind==0;k++)if(!cancel_sent[k]&&operational.levels[k].cancellation.phase==1){owner=k;kind=3;slot=64+k;}
++  for(int p=0;p<operational.npositions&&kind==0;p++)if(!protect_sent[p]&&operational.positions[p].protect.phase==1){position=p;owner=operational.positions[p].owner;kind=2;slot=128+p;}
++  for(int k=0;k<operational.nlevels&&kind==0;k++)if(!entry_sent[k]&&operational.levels[k].entry.phase==1){owner=k;kind=1;slot=k;}
++  if(kind==0)return;
++  if(kind==1)entry_sent[owner]=true;
++  if(kind==3)cancel_sent[owner]=true;
++  if(kind==2)protect_sent[position]=true;
++  if(kind==4)close_sent[position]=true;
++  if(kind==1&&!frame.entry_ready[owner]){MDTesterBlocked210(slot,"ENTRY_NO_LONGER_ELIGIBLE");continue;}
++  MDOpState attempted=operational;
++  if(!MDOpBegin(attempted,owner,position,kind,frame.utc,frame.clock_ok,true)){MDTesterBlocked210(slot,"BEGIN_REFUSED");continue;}
++  MqlTradeRequest request;
++  if(!MDTesterRequest210(attempted,owner,position,kind,request,why)){MDTesterBlocked210(slot,why);continue;}
++  long began=(long)GetTickCount64();
++  if(!Commit(attempted,"TESTER_PREPARE_BEFORE_SEND"))return;
++  tester_prepared210++;
++  // A permit exists ONLY in this call stack after confirmed publication/readback.
++  bool permit=MDTesterGate210()&&!fatal&&owns615&&lock615!=INVALID_HANDLE&&Scope615()==operational.scope&&
++   !IsStopped()&&(long)GetTickCount64()-began<=3000;
++  if(!MDClaimOnce613(permit)){MDTesterBlocked210(slot,"PREPARED_BUT_NOT_SENT_RECONCILE_NO_AUTOMATIC_RESEND");return;}
++  if(!MDTesterGate210()){MDTesterBlocked210(slot,"TESTER_GATE_CHANGED");return;}
++  MDOpAction action;
++  if(kind==1)action=operational.levels[owner].entry;else if(kind==3)action=operational.levels[owner].cancellation;
++  else if(kind==2)action=operational.positions[position].protect;else action=operational.positions[position].close;
++  Report615("TESTER_REQUEST;kind="+IntegerToString(kind)+";key="+IntegerToString(operational.levels[owner].key)+
++   ";serial="+IntegerToString(action.serial)+";revision="+IntegerToString(operational.revision)+";order="+IntegerToString((long)request.order)+
++   ";position="+IntegerToString((long)request.position)+";volume="+DoubleToString(request.volume,8)+";price="+DoubleToString(request.price,8)+
++   ";sl="+DoubleToString(request.sl,8)+";tp="+DoubleToString(request.tp,8)+";SIMULATED_ONLY");
++  MqlTradeResult result;ZeroMemory(result);ResetLastError();
++  if(!MDTesterGate210()||fatal||!owns615||lock615==INVALID_HANDLE||Scope615()!=operational.scope||IsStopped()||
++     (long)GetTickCount64()-began>3000){MDTesterBlocked210(slot,"PERMIT_EXPIRED_BEFORE_SEND_RECONCILE");return;}
++  // The only send site in this release. Every path here requires native MQL_TESTER.
++  bool api_ok=OrderSend(request,result);int error=GetLastError();tester_sent210++;
++  long completed=(long)TimeCurrent()*1000-(long)FusoServidorTester*1000;
++  MDOpState response=operational;
++  if(!MDOpResponse(response,owner,position,kind,action.serial,completed,api_ok,(long)result.retcode,(long)result.retcode_external,(long)result.order)){
++   fatal=true;Report615("TESTER_RESPONSE_BLOCKED;RECONCILE_PRESERVE_FILES");return;
++  }
++  if(!Commit(response,"TESTER_RESPONSE_NOT_EXECUTION_PROOF"))return;
++  tester_responses210++;
++  Report615("TESTER_RESPONSE;kind="+IntegerToString(kind)+";serial="+IntegerToString(action.serial)+";api_ok="+IntegerToString(api_ok?1:0)+
++   ";retcode="+IntegerToString((long)result.retcode)+";external="+IntegerToString((long)result.retcode_external)+
++   ";order="+IntegerToString((long)result.order)+";deal="+IntegerToString((long)result.deal)+";error="+IntegerToString(error)+";EFFECT_REQUIRES_RECONCILIATION");
++ }
++}
++#endif

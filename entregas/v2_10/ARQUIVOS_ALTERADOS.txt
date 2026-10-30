@@ -1,0 +1,20 @@
+ARQUIVOS EXPERTS MODIFICADOS
+MQL5/Experts/ModeloD_Integrado_Sem_Transporte/EA_ModeloD_Fluxo_Sem_Ordens.mq5
+MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_B3File.mqh
+MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_CurrentCoverage.mqh
+MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_OpeningTicks.mqh
+MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_OperationalTerminal.mqh
+MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_StreamTerminal.mqh
+MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_TerminalCollect.mqh
+
+ARQUIVOS EXPERTS NOVOS
+MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_Runtime210.mqh
+MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_TesterData210.mqh
+MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_TesterTransport210.mqh
+
+SUPORTE LOCAL (FORA DO ZIP EXPERTS)
+tests/runtime_mock.cpp
+tests/run_focused_v210.py
+tests/tester210.cpp
+
+Script, núcleo matemático, modelo operacional, codec, arquivo do diário e proteção: sem alteração, conferidos por SHA-256.
