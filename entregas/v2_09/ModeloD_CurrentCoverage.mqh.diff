@@ -1,0 +1,57 @@
+--- MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_CurrentCoverage.mqh v2.08
++++ MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_CurrentCoverage.mqh v2.09
+@@ -0,0 +1,54 @@
++#ifndef MD_CURRENT_COVERAGE209
++#define MD_CURRENT_COVERAGE209
++#include "ModeloD_Stream.mqh"
++// Coverage of [stream.cursor,until), independent of any position's SL/TP.
++// The candidate is published only after the ENTIRE raw tail validates.
++struct MDCoverage209 {bool touched[5];long first[5];};
++void MDCoverageReset209(MDCoverage209 &c)
++{for(int i=0;i<5;i++){c.touched[i]=false;c.first[i]=0;}}
++bool MDCurrentCoverage209(const MDStream615 &stream,long until,MDCoverage209 &out,string &why,string &details)
++{
++ MDCoverageReset209(out);MDCoverage209 candidate;MDCoverageReset209(candidate);
++ long from=stream.cursor;
++ details="de_msc="+IntegerToString(from)+";ate_exclusivo_msc="+IntegerToString(until);
++ if(IsStopped()){why="COLETA_INTERROMPIDA";return false;}
++ if(!TerminalInfoInteger(TERMINAL_CONNECTED)){why="DESCONECTADO";return false;}
++ if(!stream.ready||!stream.audit.valid||stream.audit.count<=0||until<from||until-from>60000)
++ {why="JANELA_ATUAL_INVALIDA_OU_DEFASADA";return false;}
++ if(until==from){why="COBERTURA_NO_LIMITE_CONFERIDO";return true;}
++ MqlTick ticks[];ResetLastError();long began=(long)GetTickCount64();
++ int n=CopyTicksRange(stream.data.contract,ticks,COPY_TICKS_TRADE,(ulong)from,(ulong)(until-1));
++ int error=GetLastError();
++ details+=";retornados="+IntegerToString(n)+";erro="+IntegerToString(error)+
++  ";duracao_ms="+IntegerToString((long)GetTickCount64()-began);
++ if(IsStopped()){why="COLETA_INTERROMPIDA";return false;}
++ if(n<0||error!=0){why="COPY_TICKS_ERRO_"+IntegerToString(error);return false;}
++ if(n>500000){why="CAPACIDADE_EXCEDIDA_500000";return false;}
++ long previous=stream.audit.last_msc;double last=stream.audit.last_price;
++ MDMinuteAudit minute;minute.count=0;minute.o=0;minute.h=0;minute.l=0;minute.c=0;
++ for(int j=0;j<n;j++)
++ {
++  if(IsStopped()){why="COLETA_INTERROMPIDA";return false;}
++  if(ticks[j].time_msc<from||ticks[j].time_msc>=until||ticks[j].time_msc<previous||!MDPositive(ticks[j].last)||
++     (ticks[j].flags&(TICK_FLAG_LAST|TICK_FLAG_VOLUME|TICK_FLAG_BUY|TICK_FLAG_SELL))==0)
++  {why="TICK_INVALIDO";details+=";indice="+IntegerToString(j)+";msc="+IntegerToString(ticks[j].time_msc);return false;}
++  double price=ticks[j].last;
++  for(int i=0;i<5;i++)if(!candidate.touched[i]&&MDCrossed(last,price,stream.control.day.levels[i].entry))
++  {candidate.touched[i]=true;candidate.first[i]=ticks[j].time_msc;}
++  if(minute.count==0){minute.o=price;minute.h=price;minute.l=price;}
++  else{if(price>minute.h)minute.h=price;if(price<minute.l)minute.l=price;}
++  minute.c=price;minute.count++;last=price;previous=ticks[j].time_msc;
++ }
++ // If a whole minute is included, require the same M1 check as other producers.
++ if(until-from==60000)
++ {
++  MqlRates rates[];ResetLastError();int bars=CopyRates(stream.data.contract,PERIOD_M1,(datetime)(from/1000),(datetime)((until-1)/1000),rates);
++  int rates_error=GetLastError();
++  if(rates_error!=0||bars!=1||(long)rates[0].time*1000!=from||
++     !MDAuditMinuteMatches(minute,rates[0].open,rates[0].high,rates[0].low,rates[0].close))
++  {why="MINUTO_COMPLETO_NAO_CONFERE_M1";details+=";barras="+IntegerToString(bars)+";erro_m1="+IntegerToString(rates_error);return false;}
++ }
++ if(!TerminalInfoInteger(TERMINAL_CONNECTED)){why="DESCONECTADO_APOS_COLETA";return false;}
++ out=candidate;why="CAUDA_ATUAL_CONFERIDA_SEM_CERTIFICACAO_INDEPENDENTE";return true;
++}
++#endif

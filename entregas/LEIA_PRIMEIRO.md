@@ -1,9 +1,9 @@
-# Entrega Modelo D — v2.07 — 29/10/2026
+# Entrega atual — Modelo D v2.09
 
-Pacote atual: ModeloD_Integrado_Sem_Transporte_v2_07.zip. Extraia na pasta principal do projeto e copie **somente** a subpasta `MQL5/Experts/ModeloD_Integrado_Sem_Transporte` para Experts da instalação MT5, preservando `Common/Files`. Compile o EA. Não é necessário substituir, recompilar ou executar o Script integrado.
+[Baixar ZIP somente Experts](ModeloD_Integrado_Sem_Transporte_v2_09.zip) · [Instruções](v2_09/LEIA_PRIMEIRO_v2_09.txt) · [Relatórios e fontes dos testes](v2_09/README.md)
 
-O EA v2.06 compilou nativamente 0/0 e executou por 15 minutos sem divergência, retry ou bloqueio: 44 blocos, 1.659.934 ticks e M1 consistente até 11:33. O relatório agrupou falha de cálculo e margem insuficiente. A v2.07 apenas separa esses motivos, sem alterar a decisão nem registrar saldo. Não apague arquivos em `Common/Files`.
+A v2.09 corrige o acoplamento da cobertura corrente aos SL/TP do primeiro nível, registra a causa exata dos gates de cobertura e evidências comparáveis de ticks/M1. Divergência continua bloqueando o avanço; após dez minutos, sondagens passam a ocorrer a cada dois minutos, com novas entradas bloqueadas até recompor a cobertura. O Script, o formato do diário, a matemática e o transporte ausente foram preservados.
 
-Depois da compilação, anexe o EA v2.07 ao `WIN$N` M5 com os parâmetros padrão e negociação algorítmica desativada. Basta aguardar aparecer o motivo exato `ENTRADA_0..4` e remover manualmente; a lógica v2.06 já foi observada por 15 minutos. Envie compilação, essas linhas e o novo TXT.
+Atualize somente a pasta MQL5/Experts/ModeloD_Integrado_Sem_Transporte, compile o EA no MetaEditor e observe com a rede ligada antes do Wi-Fi. Preserve Common/Files e o Script. A compilação/observação MQL5 nativa da v2.09 está pendente; APIs simuladas não a substituem.
 
-Regras, preços, consumo, prazos, Script, formato do diário e transporte não mudaram. A correção passou localmente por runtime 29/0 e bateria sanitizada completa 631/0 + 104/0 + falhas 10/0; isso não substitui compilação MQL5. Os critérios dos quatro blocos estão em `CRITERIOS_QUATRO_BLOCOS_20261029.md`.
+A causa interna da alteração do histórico no episódio de 30/10 não foi comprovada. A atualização mantém a validação integral e torna a recuperação e a investigação verificáveis; não promete reparar dados de terceiros nem aprova o EA operacional final.

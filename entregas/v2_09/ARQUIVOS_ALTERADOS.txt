@@ -1,0 +1,5 @@
+MQL5/Experts/ModeloD_Integrado_Sem_Transporte/EA_ModeloD_Fluxo_Sem_Ordens.mq5
+MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_CurrentCoverage.mqh
+MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_QueryEvidence.mqh
+MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_Retry132.mqh
+MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_StreamTerminal.mqh

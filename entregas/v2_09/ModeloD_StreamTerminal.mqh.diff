@@ -1,0 +1,80 @@
+--- MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_StreamTerminal.mqh v2.08
++++ MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_StreamTerminal.mqh v2.09
+@@ -1,6 +1,7 @@
+ #ifndef MD_STREAM_TERMINAL615
+ #define MD_STREAM_TERMINAL615
+ #include "ModeloD_SparseM1615N.mqh"
++#include "ModeloD_QueryEvidence.mqh"
+ // Uma chamada consome no maximo cinco minutos FECHADOS, com auditoria M1.
+ // O estado original so muda depois que o bloco completo passa nas verificacoes.
+ // Em divergencia, ALL pode atualizar antes/depois de TRADE no cache do terminal.
+@@ -9,7 +10,10 @@
+ {
+  long from=state.cursor;MDStream615 candidate=state;
+  if(!MDStreamBegin615(candidate,from,end)){reason="ALL_JANELA_INVALIDA";return false;}
+- MqlTick all[];ResetLastError();int total=CopyTicksRange(state.data.contract,all,COPY_TICKS_ALL,(ulong)from,(ulong)end);int error=GetLastError();
++ MDQueryReset209(query_all209,"ALL_FILTRADO",from,end);query_all209.attempted=true;
++ MqlTick all[];ResetLastError();long tick_began=(long)GetTickCount64();
++ int total=CopyTicksRange(state.data.contract,all,COPY_TICKS_ALL,(ulong)from,(ulong)end);int error=GetLastError();
++ query_all209.returned=total;query_all209.tick_error=error;query_all209.ticks_ms=(long)GetTickCount64()-tick_began;
+  if(total<0||error!=0){reason="ALL_COPY_ERRO_"+IntegerToString(error)+";retornados="+IntegerToString(total);return false;}
+  if(total>500000){reason="ALL_EXCEDE_CAPACIDADE_500000";return false;}
+  uint mask=TICK_FLAG_LAST|TICK_FLAG_VOLUME|TICK_FLAG_BUY|TICK_FLAG_SELL;int accepted=0;
+@@ -20,12 +24,20 @@
+   if(!MDStreamPush615(candidate,all[i].time_msc,all[i].last))
+   {reason="ALL_TICK_NEGOCIACAO_INVALIDO;indice="+IntegerToString(i)+";msc="+IntegerToString(all[i].time_msc)+
+     ";last="+DoubleToString(all[i].last,16)+";flags="+IntegerToString((long)all[i].flags);return false;}
+-  accepted++;
++  MDQueryTick209(query_all209,all[i].time_msc,all[i].last,all[i].flags);accepted++;
+  }
+  MqlRates rates[];ArraySetAsSeries(rates,false);ResetLastError();
++ long rates_began=(long)GetTickCount64();
+  int bars=CopyRates(state.data.contract,PERIOD_M1,(datetime)(from/1000),(datetime)(end/1000),rates);error=GetLastError();
++ query_all209.bars=bars;query_all209.m1_error=error;query_all209.m1_ms=(long)GetTickCount64()-rates_began;
+  int expected=(int)((end-from+1)/60000),r=0,empty=0;string absent="";
+  if(error!=0||bars<0||bars>expected){reason="ALL_COBERTURA_M1_INVALIDA;erro="+IntegerToString(error)+";barras="+IntegerToString(bars);return false;}
++ for(int j=0;j<bars;j++){
++  long stamp=(long)rates[j].time*1000;
++  if(stamp<from||stamp>end||stamp%60000!=0||(j>0&&rates[j].time<=rates[j-1].time))
++  {reason="ALL_M1_FORA_JANELA_DUPLICADO_OU_FORA_ORDEM";return false;}
++  MDQueryBar209(query_all209,j,stamp,rates[j].open,rates[j].high,rates[j].low,rates[j].close);
++ }
+  for(int i=0;i<expected;i++)
+  {
+   long stamp=from+(long)i*60000;int k=(int)((stamp-candidate.audit.begin_msc)/60000);
+@@ -49,10 +61,12 @@
+ bool MDStreamCollect615(MDStream615 &state,long end,string &reason,bool observation_only=false)
+ {
+  long from=state.cursor;MDStream615 candidate=state;
++ MDQueryReset209(query_trade209,"TRADE",from,end);MDQueryReset209(query_all209,"ALL_FILTRADO",from,end);
+  if(!MDStreamBegin615(candidate,from,end)){reason="JANELA_DE_BLOCO_INVALIDA";return false;}
+- MqlTick ticks[];ResetLastError();
++ MqlTick ticks[];ResetLastError();query_trade209.attempted=true;long tick_began=(long)GetTickCount64();
+  int count=CopyTicksRange(state.data.contract,ticks,COPY_TICKS_TRADE,(ulong)from,(ulong)end);
+  int error=GetLastError();
++ query_trade209.returned=count;query_trade209.tick_error=error;query_trade209.ticks_ms=(long)GetTickCount64()-tick_began;
+  if(count<0||error!=0){reason="COPY_TICKS_ERRO_"+IntegerToString(error)+";retornados="+IntegerToString(count);return false;}
+  if(count>500000){reason="BLOCO_EXCEDE_CAPACIDADE_500000";return false;}
+  for(int i=0;i<count;i++)
+@@ -64,16 +78,19 @@
+    ";msc="+IntegerToString(ticks[i].time_msc)+";last="+DoubleToString(ticks[i].last,16)+";flags="+IntegerToString((long)ticks[i].flags)+
+    ";previous_accepted_msc="+IntegerToString(candidate.audit.last_msc)+";from="+IntegerToString(from)+";end="+IntegerToString(end)+
+    ";expected_open_msc="+IntegerToString(candidate.data.open_msc)+";expected_open="+DoubleToString(candidate.data.values.open_today,16);return false;}
++  MDQueryTick209(query_trade209,ticks[i].time_msc,ticks[i].last,ticks[i].flags);
+  }
+- MqlRates rates[];ArraySetAsSeries(rates,false);ResetLastError();
++ MqlRates rates[];ArraySetAsSeries(rates,false);ResetLastError();long rates_began=(long)GetTickCount64();
+  int bars=CopyRates(state.data.contract,PERIOD_M1,(datetime)(from/1000),(datetime)(end/1000),rates);
+- error=GetLastError();int expected=(int)((end-from+1)/60000);
++ error=GetLastError();query_trade209.bars=bars;query_trade209.m1_error=error;query_trade209.m1_ms=(long)GetTickCount64()-rates_began;
++ int expected=(int)((end-from+1)/60000);
+  if(error!=0||bars<0||bars>expected){reason="COBERTURA_M1_INVALIDA;erro="+IntegerToString(error)+";barras="+IntegerToString(bars);return false;}
+  long previous=from-1;
+  for(int i=0;i<bars;i++)
+  {
+   long stamp=(long)rates[i].time*1000;
+   if(!MDSparseStamp615N(stamp,from,end,previous)){reason="M1_FORA_JANELA_DUPLICADO_OU_FORA_ORDEM";return false;}
++  MDQueryBar209(query_trade209,i,stamp,rates[i].open,rates[i].high,rates[i].low,rates[i].close);
+   previous=stamp;
+  }
+  int r=0,empty=0;string absent="";

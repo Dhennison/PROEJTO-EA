@@ -1,0 +1,57 @@
+MODELO D — v2.09 — COBERTURA CORRENTE E RECUPERAÇÃO DE HISTÓRICO
+Entrega de atualização somente para MQL5/Experts. Não contém Script nem EX5.
+
+INSTALAÇÃO E PRÓXIMO TESTE
+1. Remova manualmente a v2.08 do gráfico antes de substituir os fontes. Preserve Common/Files, todos os diários/checkpoints e ajuste_b3.txt. Não apague nem edite persistência.
+2. Extraia ModeloD_Integrado_Sem_Transporte_v2_09.zip e copie a pasta MQL5/Experts/ModeloD_Integrado_Sem_Transporte para Experts da pasta de dados do MT5, substituindo a pasta correspondente. Copie TODOS os cabeçalhos da pasta, incluindo os dois novos. Não substitua, recompile ou execute o Script integrado por causa desta atualização.
+3. No MetaEditor, abra EA_ModeloD_Fluxo_Sem_Ordens.mq5, pressione F7 e envie a saída. Confira identificação 2.09. Não houve compilação MQL5 nativa neste ambiente; os testes abaixo usam adaptação C++ e APIs simuladas.
+4. Com mercado aberto e cotações, anexe ao WIN$N M5 com Instancia=1, VolumePorNivel=1 e IntervaloSegundos=2. Mantenha negociação algorítmica desativada e TRANSPORT_ABSENT.
+5. Mantenha a rede ligada. Primeiro observe esta versão por cerca de 20 minutos. Confira DIARIO_REABERTO_VALIDADO, dados diários, avanço dos ticks e COBERTURA_ATUAL. Os níveis S38,2 e S50 já consumidos nesta sessão devem continuar consumidos; o diário não deve recomeçar do zero.
+6. Se surgir divergência, mantenha a rede como está para observar as novas consultas. Após dez minutos de divergência, é esperado MONITORAMENTO_LENTO, com consultas a cada 120 segundos e entradas bloqueadas. Se recuperar, deverá aparecer TICKS_6_15_RECUPERADO e recomposição da lacuna. Para limitar o ensaio manual, se não recuperar até cerca de 20 minutos após a primeira divergência, remova o EA e envie os arquivos. Esse limite de observação não é um novo timeout do programa.
+7. Ao final, remova manualmente o EA e envie o TXT completo de Common/Files e Experts até STOP/RELATORIO_FECHADO. Experts pode truncar mensagens; o TXT é necessário. Se possível, inclua uma imagem para conferência visual. Não faça o teste de Wi-Fi nesta mesma rodada: ele continua adiado até analisarmos a v2.09.
+
+O QUE FOI CORRIGIDO
+A prova de cobertura do trecho corrente deixou de usar os preços SL/TP do primeiro nível como condição geral. Ela faz uma consulta comum de até um minuto para os cinco níveis, valida todos os ticks antes de publicar qualquer toque e permanece independente das fronteiras de proteção. Mantém cronologia, faixa temporal, preço válido, flags de negociação, rejeição de erro/retorno parcial e comparação M1 para minuto completo. Nenhum tick é ordenado, deduplicado ou fabricado. A ambiguidade de stop/alvo no mesmo milissegundo de uma execução continua sendo recusada nos controles de posições/pendentes, que não foram alterados.
+
+COBERTURA_ATUAL registra o motivo específico e detalhes quando o estado muda. ENTRADA_n pode continuar com COBERTURA_ATE_AGORA_NAO_CONFERIDA, agora acompanhada de causa. Essa mensagem é correta quando faltam dados ou há recuperação pendente; o objetivo não é fazê-la desaparecer a qualquer custo.
+
+DIVERGÊNCIA TICKS x M1
+Bloco divergente continua recusado, com o cursor aprovado preservado. A sequência rejeitada não incrementa o histórico nem consome níveis. ALL filtrado só recupera se conferir integralmente. A consulta ALL agora também valida ordem/unicidade/faixa dos timestamps M1.
+
+A causa interna do episódio nativo de 30/10 não foi determinada: o mesmo minuto retornou inicialmente 8.371 e depois 9.590 negócios. A v2.09 torna a recuperação mais robusta e coleta evidência comparável; não promete corrigir o cache ou servidor do MT5/B3 e não relaxa a igualdade de OHLC.
+
+NOVOS REGISTROS
+- TICKS_BLOCO: janela, duração total da coleta/validação/assinaturas e resultado.
+- TICKS_CONSULTA: fonte TRADE ou ALL_FILTRADO, janela, retornados/negócios processados, erro, duração da API, primeiros/últimos milissegundos e assinatura observacional.
+- TICKS_REFERENCIA: OHLC do trecho de ticks, quantidade/erro/duração M1, OHLC e assinatura M1.
+- COBERTURA_ATUAL: causa da recusa ou confirmação da cauda corrente. Entrada retém causa específica.
+As assinaturas são diagnósticas, não criptográficas: resumem time_msc, Last e flags na ordem recebida e, separadamente, horário e OHLC das barras. Quantidade e assinatura mudadas permitem detectar alterações observadas sem confundir com aprovação independente. Em retorno rejeitado por tick inválido, a assinatura cobre apenas o prefixo processado; em erro de API não há sequência aprovada. Números de conta/saldo não foram acrescentados.
+
+POLÍTICA APÓS DEZ MINUTOS
+Primeiros 600 segundos: pelo menos 30 segundos entre tentativas da mesma janela. Depois: monitoramento com 120 segundos entre sondagens, sem reset do início original, diário, cursor, consumos, prazos de proteção ou cutoff. Novas entradas permanecem bloqueadas durante a lacuna e só voltam a ser avaliadas após cobertura completa, dados/identidade/conexão e os demais critérios da versão. Nível tocado no intervalo não se torna nova oportunidade.
+
+O tempo decorrido não valida dados. A retomada tardia exige a mesma conferência de antes. Falhas definitivas diferentes da divergência de OHLC, mudança de identidade/dados ou regressão do relógio continuam exigindo bloqueio/diagnóstico conforme a política própria. A alteração não transforma todos os erros possíveis em retry infinito. A etapa de gestão continua com seus prazos próprios e transporte ausente; estes testes não certificam proteção ou fechamento reais.
+
+LIMITES
+CopyTicksRange/CopyRates continuam síncronas: não há mecanismo para cancelar chamada interna já entregue ao MT5. Os tempos reais, a aparência do gráfico e a mudança na política de recuperação precisam de observação nativa. Não existe operação real nesta entrega, nem aprovação de Strategy Tester/demo. Calendário e capacidades herdados não foram ampliados por esta correção.
+
+VALIDAÇÃO LOCAL
+45 verificações novas/0 falhas com AddressSanitizer, UndefinedBehaviorSanitizer e LeakSanitizer, incluindo:
+- reprodução do antigo bloqueio e prova de independência do TP do nível zero;
+- consulta única para cinco níveis e publicação atômica dos toques;
+- timestamp inválido/regressivo, NaN, flags inválidas, parcial+4403 e interrupção;
+- rejeição de minuto completo divergente/sem M1;
+- preservação da ambiguidade por origem para posições;
+- assinaturas observacionais sensíveis a registros/flags/OHLC;
+- transição exata aos dez minutos, sondagem de dois minutos e recuperação aos 14 minutos simulados pela rotina real Pump615;
+- preservação de cursor/contagem/estado/prazos e planejamento de cutoff durante indisponibilidade.
+
+Regressão existente com ASan/UBSan: 631/0, 104/0, falhas injetadas 10/0, runtime 29/0, repetição, retomada em processos separados e inicialização aprovadas. Contagens de regressão podem incluir testes anteriores; não somar como ensaios independentes de mercado. Isso não é compilação MQL5.
+
+FONTES ALTERADOS (somente Experts)
+EA_ModeloD_Fluxo_Sem_Ordens.mq5
+ModeloD_StreamTerminal.mqh
+ModeloD_Retry132.mqh
+ModeloD_CurrentCoverage.mqh (novo)
+ModeloD_QueryEvidence.mqh (novo)
+Script, fórmulas, níveis, preços, horários operacionais e formato do diário ficaram byte a byte inalterados.

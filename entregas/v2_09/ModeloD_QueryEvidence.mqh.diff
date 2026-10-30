@@ -1,0 +1,50 @@
+--- MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_QueryEvidence.mqh v2.08
++++ MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_QueryEvidence.mqh v2.09
+@@ -0,0 +1,47 @@
++#ifndef MD_QUERY_EVIDENCE209
++#define MD_QUERY_EVIDENCE209
++// Diagnostic sequence signature only: time_msc, Last and flags, in received order.
++// Not a cryptographic hash, independent market source or completeness certificate.
++long MDSignaturePart209(long hash,long value)
++{long v=value%2147483647;if(v<0)v+=2147483647;return (hash*65599+v)%2147483647;}
++long MDSignaturePrice209(long hash,double price)
++{string s=DoubleToString(price,16);for(int i=0;i<StringLen(s);i++)hash=MDSignaturePart209(hash,StringGetCharacter(s,i));return hash;}
++struct MDQuery209 {
++ bool attempted;string source;long from,end,first,last,tick_hash,m1_hash,ticks_ms,m1_ms;
++ int returned,accepted,tick_error,bars,m1_error;double o,h,l,c,m1_o,m1_h,m1_l,m1_c;
++};
++MDQuery209 query_trade209,query_all209;
++void MDQueryReset209(MDQuery209 &q,string source,long from,long end)
++{
++ q.attempted=false;q.source=source;q.from=from;q.end=end;q.first=-1;q.last=-1;
++ q.tick_hash=1;q.m1_hash=1;q.ticks_ms=0;q.m1_ms=0;q.returned=0;q.accepted=0;q.tick_error=0;q.bars=-1;q.m1_error=0;
++ q.o=0;q.h=0;q.l=0;q.c=0;q.m1_o=0;q.m1_h=0;q.m1_l=0;q.m1_c=0;
++}
++void MDQueryTick209(MDQuery209 &q,long stamp,double last,uint flags)
++{
++ q.tick_hash=MDSignaturePart209(q.tick_hash,stamp);q.tick_hash=MDSignaturePrice209(q.tick_hash,last);
++ q.tick_hash=MDSignaturePart209(q.tick_hash,(long)flags);
++ if(q.accepted==0){q.first=stamp;q.o=last;q.h=last;q.l=last;}
++ else{if(last>q.h)q.h=last;if(last<q.l)q.l=last;}
++ q.last=stamp;q.c=last;q.accepted++;
++}
++void MDQueryBar209(MDQuery209 &q,int index,long stamp,double o,double h,double l,double c)
++{
++ q.m1_hash=MDSignaturePart209(q.m1_hash,stamp);
++ q.m1_hash=MDSignaturePrice209(q.m1_hash,o);q.m1_hash=MDSignaturePrice209(q.m1_hash,h);
++ q.m1_hash=MDSignaturePrice209(q.m1_hash,l);q.m1_hash=MDSignaturePrice209(q.m1_hash,c);
++ if(index==0){q.m1_o=o;q.m1_h=h;q.m1_l=l;}else{if(h>q.m1_h)q.m1_h=h;if(l<q.m1_l)q.m1_l=l;}
++ q.m1_c=c;
++}
++string MDQueryTicksText209(const MDQuery209 &q)
++{return "fonte="+q.source+";de_msc="+IntegerToString(q.from)+";ate_msc="+IntegerToString(q.end)+
++ ";retornados="+IntegerToString(q.returned)+";negocios="+IntegerToString(q.accepted)+";erro="+IntegerToString(q.tick_error)+
++ ";duracao_ms="+IntegerToString(q.ticks_ms)+";primeiro_msc="+IntegerToString(q.first)+";ultimo_msc="+IntegerToString(q.last)+
++ ";assinatura="+IntegerToString(q.tick_hash);}
++string MDQueryPricesText209(const MDQuery209 &q)
++{return "fonte="+q.source+";de_msc="+IntegerToString(q.from)+";ate_msc="+IntegerToString(q.end)+
++ ";ticks_O="+DoubleToString(q.o,8)+";ticks_H="+DoubleToString(q.h,8)+";ticks_L="+DoubleToString(q.l,8)+";ticks_C="+DoubleToString(q.c,8)+
++ ";barras="+IntegerToString(q.bars)+";erro_m1="+IntegerToString(q.m1_error)+";duracao_m1_ms="+IntegerToString(q.m1_ms)+
++ ";assinatura_m1="+IntegerToString(q.m1_hash)+";M1_O="+DoubleToString(q.m1_o,8)+";M1_H="+DoubleToString(q.m1_h,8)+
++ ";M1_L="+DoubleToString(q.m1_l,8)+";M1_C="+DoubleToString(q.m1_c,8);}
++#endif

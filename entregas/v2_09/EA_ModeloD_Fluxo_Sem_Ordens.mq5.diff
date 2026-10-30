@@ -1,0 +1,172 @@
+--- MQL5/Experts/ModeloD_Integrado_Sem_Transporte/EA_ModeloD_Fluxo_Sem_Ordens.mq5 v2.08
++++ MQL5/Experts/ModeloD_Integrado_Sem_Transporte/EA_ModeloD_Fluxo_Sem_Ordens.mq5 v2.09
+@@ -1,11 +1,12 @@
+ #property strict
+-#property version "2.08"
++#property version "2.09"
+ #property description "Modelo D integrado: diario, conciliacao e intencoes persistentes. Transporte ausente."
+ #include "ModeloD_Observer.mqh"
+ #include "ModeloD_Chart.mqh"
+ #include "ModeloD_StreamTerminal.mqh"
+ #include "ModeloD_Retry132.mqh"
+ #include "ModeloD_OperationalTerminal.mqh"
++#include "ModeloD_CurrentCoverage.mqh"
+ input int Instancia=1;
+ input int VolumePorNivel=1;
+ // Default approved volume 1; the later principal backtest uses 5.
+@@ -14,7 +15,7 @@
+ MDOpState operational;MDOpSnapshot inventory_a,inventory_b;MDOpClock opclock;
+ MDOpTrail pending_trail[MDOP_LEVELS],position_trail[MDOP_POSITIONS];
+ bool pending_trail_started[MDOP_LEVELS],position_trail_started[MDOP_POSITIONS];
+-MDOpTrail live_trail;bool live_started=false;
++string coverage_last209="";
+ int lock615=INVALID_HANDLE,report615=INVALID_HANDLE;
+ bool owns615=false,fatal=false,report_error=false;
+ string ledger="",ledger_path="",last_status="",stream_status615="AGUARDANDO_DADOS";
+@@ -55,9 +56,9 @@
+ void Status(string text) {
+  string policy="REAVALIA_NO_TIMER";
+  if(stream_failed615)policy="SEM_NOVA_TENTATIVA_DE_TICKS_NESTA_SESSAO;EXIGE_DIAGNOSTICO";
+- else if(retry132.active)policy="RECONSULTA_BLOCO_30S;LIMITE_600S";
++ else if(retry132.active)policy=MDSlow132(retry132,(long)GetTickCount64())?"MONITORAMENTO_LENTO_120S;ENTRADAS_BLOQUEADAS":"RECONSULTA_BLOCO_30S;FASE_RAPIDA_600S";
+  Diagnostic(4,"FLUXO_TICKS",stream_status615,policy);
+- Comment("MODELO D 2.08 — TRANSPORTE DESATIVADO\n",text,"\n",stream_status615,
++ Comment("MODELO D 2.09 — TRANSPORTE DESATIVADO\n",text,"\n",stream_status615,
+  "\nIntencao nao e tentativa; resposta nao e execucao.\n",ledger_path);
+  if(text!=last_status){last_status=text;Report615(text);}
+ }
+@@ -76,6 +77,12 @@
+    ";ate_exclusivo_msc="+IntegerToString(stream615.cursor)+";NAO_E_EXECUCAO;SEM_ORDENS");
+  }
+ }
++void ReportQuery209(const MDQuery209 &q,bool accepted)
++{
++ if(!q.attempted)return;
++ Report615("TICKS_CONSULTA;"+MDQueryTicksText209(q)+";consulta_confere="+IntegerToString(accepted?1:0));
++ Report615("TICKS_REFERENCIA;"+MDQueryPricesText209(q));
++}
+ void Pump615()
+ {
+  if(!owns615||!obs615.visible||!obs615.frozen||obs615.conflict||obs615.identity_changed)return;
+@@ -92,8 +99,11 @@
+  if(stream_failed615){stream_status615="TICKS: BLOQUEADO — ENVIAR RELATORIO";return;}
+  if(!MDDaySameData(stream615.data,obs615.data))
+  {stream_failed615=true;Report615("TICKS_6_15_BLOQUEADO;DADOS_MUDARAM;SEM_ORDENS");return;}
+- if(MDExpired132(retry132,(long)GetTickCount64()))
+- {stream_failed615=true;Report615("TICKS_6_15_BLOQUEADO;RECUPERACAO_EXPIRADA_10_MIN;SEM_ORDENS");return;}
++ if(retry132.active&&(long)GetTickCount64()<retry132.started)
++ {stream_failed615=true;Report615("TICKS_6_15_BLOQUEADO;RELOGIO_MONOTONICO_REGREDIU;SEM_ORDENS");return;}
++ if(MDEnterSlow132(retry132,(long)GetTickCount64()))
++  Report615("TICKS_6_15_MONITORAMENTO_LENTO;intervalo_s=120;de_msc="+IntegerToString(retry132.from)+
++   ";ate_msc="+IntegerToString(retry132.end)+";ENTRADAS_BLOQUEADAS;NAO_REINICIA_PRAZOS;SEM_ORDENS");
+  if(!TerminalInfoInteger(TERMINAL_CONNECTED)){stream_status615="TICKS: SEM CONEXAO";return;}
+  if(!MDDue132(retry132,(long)GetTickCount64()))return;
+  MqlTick latest;
+@@ -109,14 +119,20 @@
+   if(retry132.active)end=retry132.end; // Reconsulta exatamente o bloco rejeitado.
+   stream_reported615=-1; // Nenhum checkpoint/conciliacao enquanto falta este bloco.
+   MDStream615 candidate=stream615;string why;
+-  if(!MDStreamCollect615(candidate,end,why,true))
++  long collect_began=(long)GetTickCount64();
++  bool collected=MDStreamCollect615(candidate,end,why,true);
++  Report615("TICKS_BLOCO;de_msc="+IntegerToString(stream615.cursor)+";ate_msc="+IntegerToString(end)+
++   ";duracao_total_ms="+IntegerToString((long)GetTickCount64()-collect_began)+";consulta_confere="+IntegerToString(collected?1:0));
++  ReportQuery209(query_trade209,collected&&!query_all209.attempted);
++  ReportQuery209(query_all209,collected&&query_all209.attempted);
++  if(!collected)
+   {
+    if(IsStopped())return;
+    if(StringFind(why,"TICKS_DIVERGEM_M1;")==0)
+    {
+     bool waiting=MDFail132(retry132,stream615.cursor,end,(long)GetTickCount64());
+-    Report615("TICKS_6_15_RECUPERACAO;tentativa="+IntegerToString(retry132.failures)+";nova_consulta_em_s=30;limite_s=600;motivo="+why+";SEM_ORDENS");
+-    if(!waiting){stream_failed615=true;Report615("TICKS_6_15_BLOQUEADO;RECUPERACAO_EXPIRADA_OU_JANELA_DIVERGENTE;SEM_ORDENS");}
++    Report615("TICKS_6_15_RECUPERACAO;tentativa="+IntegerToString(retry132.failures)+";nova_consulta_em_s="+IntegerToString(retry132.slow?120:30)+";fase="+(retry132.slow?"MONITORAMENTO_LENTO":"RECUPERACAO_RAPIDA")+";decorrido_ms="+IntegerToString((long)GetTickCount64()-retry132.started)+";motivo="+why+";SEM_ORDENS");
++    if(!waiting){stream_failed615=true;Report615("TICKS_6_15_BLOQUEADO;RECUPERACAO_JANELA_OU_RELOGIO_DIVERGENTE;SEM_ORDENS");}
+     stream_status615="TICKS: RECUPERACAO PENDENTE — SEM APROVAR BLOCO";return;
+    }
+    stream_retries615++;
+@@ -125,14 +141,14 @@
+    stream_status615=stream_failed615?"TICKS: BLOQUEADO — ENVIAR RELATORIO":"TICKS: AGUARDANDO NOVA TENTATIVA";return;
+   }
+   if(!MDCanCommit132(retry132,stream615.cursor,end,(long)GetTickCount64()))
+-  {stream_failed615=true;Report615("TICKS_6_15_BLOQUEADO;RECUPERACAO_FORA_DO_PRAZO;SEM_ORDENS");return;}
+-  if(retry132.active)Report615("TICKS_6_15_RECUPERADO;de_msc="+IntegerToString(stream615.cursor)+";ate_msc="+IntegerToString(end)+";M1_DISPONIVEL_CONFERIDO;SEM_ORDENS");
+-  MDReset132(retry132);
++  {stream_failed615=true;Report615("TICKS_6_15_BLOQUEADO;RECUPERACAO_JANELA_OU_RELOGIO_INVALIDO;SEM_ORDENS");return;}
++  if(!TerminalInfoInteger(TERMINAL_CONNECTED)){stream_status615="TICKS: DESCONECTADO_APOS_COLETA";return;}
+   if(!MDObserverIdentity615(obs615,Scope615()))
+   {MDVisualClear(0,(uint)Instancia);stream_failed615=true;Report615("TICKS_6_15_BLOQUEADO;IDENTIDADE_MUDOU;SEM_ORDENS");return;}
++  if(retry132.active)Report615("TICKS_6_15_RECUPERADO;de_msc="+IntegerToString(stream615.cursor)+";ate_msc="+IntegerToString(end)+";M1_DISPONIVEL_CONFERIDO;fase="+(retry132.slow?"MONITORAMENTO_LENTO":"RECUPERACAO_RAPIDA")+";SEM_ORDENS");
+   bool new_touch=false;
+   for(int i=0;i<5;i++)if(candidate.audit.touches[i].tape.touched&&!stream615.audit.touches[i].tape.touched)new_touch=true;
+-  stream615=candidate;stream_retries615=0;
++  MDReset132(retry132);stream615=candidate;stream_retries615=0;
+   Report615("COBERTURA_615N;"+why+";SEM_ORDENS");
+   Report615("TICKS_6_15_PROGRESSO;blocos="+IntegerToString(stream615.blocks)+";ticks="+IntegerToString(stream615.audit.count)+
+    ";ate_exclusivo="+TimeToString((datetime)(stream615.cursor/1000),TIME_DATE|TIME_SECONDS)+";M1_DISPONIVEL_CONFERIDO;SEM_ORDENS");
+@@ -243,33 +259,23 @@
+  MDOpFrameReset(f,opclock.utc,opclock.server,opclock.ok,(bool)TerminalInfoInteger(TERMINAL_CONNECTED));f.stable=stable;
+  bool current=obs615.visible&&stream_started615&&!stream_failed615&&!retry132.active&&
+  stream_reported615==stream615.cursor&&stream615.data.date==obs615.data.date;
+- bool live=false;string why;
+- // Prove current Last coverage beyond the closed-minute stream, never reuse a stale minute as "now".
+- if(current&&opclock.server>=stream615.cursor&&opclock.server-stream615.cursor<=60000) {
+-  if(!live_started||live_trail.symbol!=stream615.data.contract||live_trail.begin!=stream615.cursor-1){
+-   MDOpTrailInit(live_trail,stream615.data.contract,stream615.cursor-1,stream615.control.day.levels[0]);live_started=true;
+-  }
+-  live=MDOpTrailRead(live_trail,opclock.server,why);
++ bool live=false;string why="",coverage_reason="RECONSTRUCAO_AINDA_NAO_ATUALIZADA",coverage_details="";
++ MDCoverage209 coverage;MDCoverageReset209(coverage);
++ if(stream_failed615)coverage_reason="FLUXO_BLOQUEADO_EXIGE_DIAGNOSTICO";
++ else if(retry132.active)coverage_reason=MDSlow132(retry132,(long)GetTickCount64())?"RECUPERACAO_EM_MONITORAMENTO_LENTO":"RECUPERACAO_DO_BLOCO_PENDENTE";
++ else if(!obs615.visible)coverage_reason="DADOS_DIARIOS_NAO_CONFERIDOS";
++ if(current)live=MDCurrentCoverage209(stream615,opclock.server,coverage,coverage_reason,coverage_details);
++ string coverage_state=live?"CONFERIDA":coverage_reason;
++ if(coverage_last209!=coverage_state){
++  Report615("COBERTURA_ATUAL;estado="+coverage_state+";"+coverage_details);
++  coverage_last209=coverage_state;
+  }
+  for(int k=0;k<operational.nlevels;k++) {
+   MDOpLevel l=operational.levels[k];
+-  if(current&&l.date==stream615.data.date&&l.symbol==stream615.data.contract) {
+-   MDTap tap=stream615.audit.touches[l.level].tape;
+-   f.touched[k]=tap.touched;f.first_touch[k]=tap.touched?tap.first_msc:0;
+-   // Independent short raw tail for each entry reference (the level-0 trail is only a coverage check).
+-   if(live&&opclock.server>stream615.cursor) {
+-    MqlTick ticks[];ResetLastError();int n=CopyTicksRange(l.symbol,ticks,COPY_TICKS_TRADE,(ulong)stream615.cursor,(ulong)(opclock.server-1));
+-    int error=GetLastError();long previous=stream615.audit.last_msc;double last=stream615.audit.last_price;
+-    bool valid=n>=0&&error==0&&n<=500000;
+-    for(int j=0;valid&&j<n;j++) {
+-     if(ticks[j].time_msc<stream615.cursor||ticks[j].time_msc>=opclock.server||ticks[j].time_msc<previous||!MDPositive(ticks[j].last)||
+-       (ticks[j].flags&(TICK_FLAG_LAST|TICK_FLAG_VOLUME|TICK_FLAG_BUY|TICK_FLAG_SELL))==0){valid=false;break;}
+-     if(!f.touched[k]&&MDCrossed(last,ticks[j].last,l.prices.entry)){f.touched[k]=true;f.first_touch[k]=ticks[j].time_msc;}
+-     last=ticks[j].last;previous=ticks[j].time_msc;
+-    }
+-    if(!valid)live=false;
+-   }
+-   string entry_reason="COBERTURA_ATE_AGORA_NAO_CONFERIDA";
++  if(obs615.frozen&&l.date==obs615.data.date&&l.symbol==obs615.data.contract) {
++   if(current){MDTap tap=stream615.audit.touches[l.level].tape;f.touched[k]=tap.touched;f.first_touch[k]=tap.touched?tap.first_msc:0;}
++   if(live&&!f.touched[k]&&coverage.touched[l.level]){f.touched[k]=true;f.first_touch[k]=coverage.first[l.level];}
++   string entry_reason="COBERTURA_ATE_AGORA_NAO_CONFERIDA;causa="+coverage_reason;
+    f.entry_ready[k]=live&&opclock.offset==-10800&&EntryProperties(l,entry_reason)&&!f.touched[k]&&
+       opclock.utc<l.cutoff_utc&&l.date==MDDateValue614((datetime)(opclock.utc/1000-10800));
+    if(l.conflict)entry_reason="CONFLITO_DE_DADOS_CONGELADOS";
+@@ -358,6 +364,7 @@
+ }
+ int OnInit() {
+  for(int i=0;i<10;i++)diagnostic_last[i]="";
++ coverage_last209="";
+  if(Instancia<1||Instancia>9999||VolumePorNivel<1||VolumePorNivel>1000000||IntervaloSegundos<1||IntervaloSegundos>30)return INIT_PARAMETERS_INCORRECT;
+  if(_Symbol!="WIN$N"&&_Symbol!="WINZ26")return INIT_PARAMETERS_INCORRECT;
+  string scope=Scope615();if(scope=="")return INIT_FAILED;
+@@ -394,7 +401,7 @@
+  }
+  Diagnostic(3,"PERSISTENCIA",previous_ledger?"DIARIO_REABERTO_VALIDADO":"DIARIO_INICIAL_CRIADO",
+  "ESTADO_PRESERVADO;NAO_AUTORIZA_TRANSPORTE");
+- Report615("START;v=2.08;TRANSPORT_ABSENT;LEGACY_OBSERVATION_NOT_IMPORTED;revision="+IntegerToString(operational.revision));
++ Report615("START;v=2.09;TRANSPORT_ABSENT;LEGACY_OBSERVATION_NOT_IMPORTED;revision="+IntegerToString(operational.revision));
+  if(!EventSetTimer(IntervaloSegundos))return INIT_FAILED;
+  return INIT_SUCCEEDED;
+ }

@@ -1,0 +1,103 @@
+VALIDACAO LOCAL C++ E APIs MT5 SIMULADAS. NAO E COMPILACAO MQL5.
+
+$ c++ -std=c++17 -g -Wall -Wextra -Wno-unused-parameter -O0 -fsanitize=address,undefined -fno-omit-frame-pointer /tmp/modelod_validation_qkjyhkm2/adapted/runtime_mock.cpp -o /tmp/modelod_validation_qkjyhkm2/runtime_mock
+EXIT_STATUS=0
+
+$ /tmp/modelod_validation_qkjyhkm2/runtime_mock
+PASS: seed integrated ledger with proven synthetic positions
+RELATORIO_ABERTO;/tmp/md615k_host\Files\ModeloD_Integrado_A1S54455354I1_1792605000_10000.txt
+DIAGNOSTICO;componente=PERSISTENCIA;motivo=DIARIO_REABERTO_VALIDADO;recuperacao=ESTADO_PRESERVADO;NAO_AUTORIZA_TRANSPORTE
+START;v=2.09;TRANSPORT_ABSENT;LEGACY_OBSERVATION_NOT_IMPORTED;revision=1
+PASS: actual EA OnInit reopens integrated ledger
+PASS: lock marker is confirmed by content when native write count is bytes, not characters
+DIAGNOSTICO;componente=RELOGIO;motivo=CLOCK_SAMPLING;recuperacao=REAVALIA_NO_TIMER;NAO_REINICIA_PRAZOS
+DIAGNOSTICO;componente=DADOS_DIARIOS;motivo=RELOGIO_NAO_VALIDADO;recuperacao=REAVALIA_APOS_RELOGIO_VALIDO
+COBERTURA_ATUAL;estado=DADOS_DIARIOS_NAO_CONFERIDOS;
+DIAGNOSTICO;componente=INVENTARIO;motivo=DUAS_LEITURAS_CONFERIDAS;recuperacao=NOVA_DUPLA_LEITURA_NO_TIMER;NAO_CONFIRMA_ACAO_POR_AUSENCIA
+COMMIT;revision=2;event=INTEGRATED_CYCLE;transporte=0
+LEVEL;key=202610280;symbol=WINZ26;origin=100;accepted_server_msc=150000;first_touch_server_msc=0;consumed=1;cutoff=0;entry_math=207377.8366666666697711;entry_requested=207380;SL_fixed=207005;TP_fixed=207590;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610281;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=207035.8333333333430346;entry_requested=207035;SL_fixed=206660;TP_fixed=207380;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610282;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=206693.8300000000162981;entry_requested=206695;SL_fixed=206045;TP_fixed=207035;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610283;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210101.4966666666732635;entry_requested=210100;SL_fixed=210475;TP_fixed=209485;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610284;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211100.1700000000128057;entry_requested=211100;SL_fixed=211550;TP_fixed=210850;entry_phase=7;entry_attempt=0;cancel_phase=0
+POSITION;identifier=700;ticket=900;entered=1.00000000;exited=0.00000000;residual=1.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
+POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
+DIAGNOSTICO;componente=CONCILIACAO;motivo=ALL_CHAINS_RECONCILED;recuperacao=REAVALIA_NO_TIMER;ORIGENS_E_EFEITOS_EXIGEM_PROVA
+DIAGNOSTICO;componente=FLUXO_TICKS;motivo=DADOS: FUSO_SERVIDOR_B3_NAO_CONFIRMADO;recuperacao=REAVALIA_NO_TIMER
+INTEGRATED;ALL_CHAINS_RECONCILED;revision=2;entry_intents=0;SLTP_intents=2;cancel_intents=0;close_intents=0;unresolved=0;transport=ABSENT;NATIVE_VALIDATION_PENDING
+DIAGNOSTICO;componente=RELOGIO;motivo=CLOCK_OBSERVED_NOT_INDEPENDENT_NTP_CERTIFICATION;recuperacao=REAVALIA_NO_TIMER;NAO_REINICIA_PRAZOS
+DIAGNOSTICO;componente=DADOS_DIARIOS;motivo=SIMULATED_DAILY_DATA_FAILURE;recuperacao=RELEITURA_NO_TIMER;DEPENDE_DE_DADOS_VALIDOS
+DIAGNOSTICO;componente=FLUXO_TICKS;motivo=DADOS: SIMULATED_DAILY_DATA_FAILURE;recuperacao=REAVALIA_NO_TIMER
+PASS: actual EA timer keeps both positions despite daily-data failure
+PASS: runtime clock samples measured server timezone
+PASS: actual timer persists missing SLTP intents
+PASS: daily failure cause is actually written to report, not only chart comment
+PASS: daily report explicitly states conditional automatic re-evaluation
+DIAGNOSTICO;componente=INVENTARIO;motivo=DUAS_LEITURAS_DIVERGENTES;recuperacao=NOVA_DUPLA_LEITURA_NO_TIMER;NAO_CONFIRMA_ACAO_POR_AUSENCIA
+DIAGNOSTICO;componente=CONCILIACAO;motivo=INVENTORY_UNAVAILABLE;recuperacao=REAVALIA_NO_TIMER;ORIGENS_E_EFEITOS_EXIGEM_PROVA
+INTEGRATED;INVENTORY_UNAVAILABLE;revision=2;entry_intents=0;SLTP_intents=2;cancel_intents=0;close_intents=0;unresolved=0;transport=ABSENT;NATIVE_VALIDATION_PENDING
+PASS: unstable pair of real collector calls cannot commit reconciliation
+PASS: unstable pair has exact report cause despite generic coordinator result
+PASS: terminal producer rejects unavailable execution price
+DIAGNOSTICO;componente=INVENTARIO;motivo=PRIMEIRA_COLETA;DEAL_PRICE_READ_FAILED;recuperacao=NOVA_DUPLA_LEITURA_NO_TIMER;NAO_CONFIRMA_ACAO_POR_AUSENCIA
+PASS: underlying property collection error survives the coordinator in the report
+DIAGNOSTICO;componente=INVENTARIO;motivo=DUAS_LEITURAS_CONFERIDAS;recuperacao=NOVA_DUPLA_LEITURA_NO_TIMER;NAO_CONFIRMA_ACAO_POR_AUSENCIA
+COMMIT;revision=3;event=INTEGRATED_CYCLE;transporte=0
+LEVEL;key=202610280;symbol=WINZ26;origin=100;accepted_server_msc=150000;first_touch_server_msc=0;consumed=1;cutoff=0;entry_math=207377.8366666666697711;entry_requested=207380;SL_fixed=207005;TP_fixed=207590;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610281;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=207035.8333333333430346;entry_requested=207035;SL_fixed=206660;TP_fixed=207380;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610282;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=206693.8300000000162981;entry_requested=206695;SL_fixed=206045;TP_fixed=207035;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610283;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210101.4966666666732635;entry_requested=210100;SL_fixed=210475;TP_fixed=209485;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610284;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211100.1700000000128057;entry_requested=211100;SL_fixed=211550;TP_fixed=210850;entry_phase=7;entry_attempt=0;cancel_phase=0
+POSITION;identifier=700;ticket=900;entered=1.00000000;exited=0.00000000;residual=1.00000000;SL_observed=207005.00000000;TP_observed=207590.00000000;protection_attempt=0;close_phase=0
+POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
+DIAGNOSTICO;componente=CONCILIACAO;motivo=ALL_CHAINS_RECONCILED;recuperacao=REAVALIA_NO_TIMER;ORIGENS_E_EFEITOS_EXIGEM_PROVA
+INTEGRATED;ALL_CHAINS_RECONCILED;revision=3;entry_intents=0;SLTP_intents=1;cancel_intents=0;close_intents=0;unresolved=0;transport=ABSENT;NATIVE_VALIDATION_PENDING
+PASS: live SLTP properties feed the persisted integrated state
+COMMIT;revision=4;event=INTEGRATED_CYCLE;transporte=0
+LEVEL;key=202610280;symbol=WINZ26;origin=100;accepted_server_msc=150000;first_touch_server_msc=0;consumed=1;cutoff=0;entry_math=207377.8366666666697711;entry_requested=207380;SL_fixed=207005;TP_fixed=207590;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610281;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=207035.8333333333430346;entry_requested=207035;SL_fixed=206660;TP_fixed=207380;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610282;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=206693.8300000000162981;entry_requested=206695;SL_fixed=206045;TP_fixed=207035;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610283;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210101.4966666666732635;entry_requested=210100;SL_fixed=210475;TP_fixed=209485;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610284;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211100.1700000000128057;entry_requested=211100;SL_fixed=211550;TP_fixed=210850;entry_phase=7;entry_attempt=0;cancel_phase=0
+POSITION;identifier=700;ticket=999;entered=1.00000000;exited=0.00000000;residual=1.00000000;SL_observed=207005.00000000;TP_observed=207590.00000000;protection_attempt=0;close_phase=0
+POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
+INTEGRATED;ALL_CHAINS_RECONCILED;revision=4;entry_intents=0;SLTP_intents=1;cancel_intents=0;close_intents=0;unresolved=0;transport=ABSENT;NATIVE_VALIDATION_PENDING
+PASS: actual EA reconciles migrated ticket without resetting identifier
+COMMIT;revision=5;event=TIMER_DEADLINE;transporte=0
+LEVEL;key=202610280;symbol=WINZ26;origin=100;accepted_server_msc=150000;first_touch_server_msc=0;consumed=1;cutoff=1;entry_math=207377.8366666666697711;entry_requested=207380;SL_fixed=207005;TP_fixed=207590;entry_phase=6;entry_attempt=1;cancel_phase=1
+LEVEL;key=202610281;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=1;cutoff=1;entry_math=207035.8333333333430346;entry_requested=207035;SL_fixed=206660;TP_fixed=207380;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610282;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=1;cutoff=1;entry_math=206693.8300000000162981;entry_requested=206695;SL_fixed=206045;TP_fixed=207035;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610283;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=1;cutoff=1;entry_math=210101.4966666666732635;entry_requested=210100;SL_fixed=210475;TP_fixed=209485;entry_phase=7;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610284;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=1;cutoff=1;entry_math=211100.1700000000128057;entry_requested=211100;SL_fixed=211550;TP_fixed=210850;entry_phase=7;entry_attempt=0;cancel_phase=0
+POSITION;identifier=700;ticket=999;entered=1.00000000;exited=0.00000000;residual=1.00000000;SL_observed=207005.00000000;TP_observed=207590.00000000;protection_attempt=0;close_phase=1
+POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=1
+PENDING_HISTORY;key=202610280;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+POSITION_HISTORY;identifier=700;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+POSITION_HISTORY;identifier=701;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+DIAGNOSTICO;componente=INVENTARIO;motivo=DESCONECTADO;recuperacao=NOVA_DUPLA_LEITURA_NO_TIMER;NAO_CONFIRMA_ACAO_POR_AUSENCIA
+DIAGNOSTICO;componente=CONCILIACAO;motivo=INVENTORY_UNAVAILABLE;recuperacao=REAVALIA_NO_TIMER;ORIGENS_E_EFEITOS_EXIGEM_PROVA
+INTEGRATED;INVENTORY_UNAVAILABLE;revision=5;entry_intents=0;SLTP_intents=0;cancel_intents=1;close_intents=2;unresolved=0;transport=ABSENT;NATIVE_VALIDATION_PENDING
+PASS: actual timer cutoff works without quote, daily data or connection
+PASS: actual EA does not transport shutdown intentions
+STOP;reason=1;transport=ABSENT
+RELATORIO_FECHADO;/tmp/md615k_host\Files\ModeloD_Integrado_A1S54455354I1_1792605000_10000.txt
+RELATORIO_ABERTO;/tmp/md615k_host\Files\ModeloD_Integrado_A1S54455354I1_1792605000_1010000.txt
+DIAGNOSTICO;componente=PERSISTENCIA;motivo=DIARIO_REABERTO_VALIDADO;recuperacao=ESTADO_PRESERVADO;NAO_AUTORIZA_TRANSPORTE
+START;v=2.09;TRANSPORT_ABSENT;LEGACY_OBSERVATION_NOT_IMPORTED;revision=5
+PASS: EA reinitialization retains cutoff and untransported intentions
+STOP;reason=1;transport=ABSENT
+RELATORIO_FECHADO;/tmp/md615k_host\Files\ModeloD_Integrado_A1S54455354I1_1792605000_1010000.txt
+PASS: fallback fixture starts with valid frozen daily data
+PASS: incomplete TRADE cache recovers only through trade-flagged ALL events that fully match M1; BLOCO_RECUPERADO_COPY_TICKS_ALL_FILTRADO;registros_all=4;eventos_negociacao=3;minutos_com_registros=1;minutos_sem_registros=0;ausentes_msc=;M1_CONFERIDO;INTEGRIDADE_TOTAL_NAO_CERTIFICADA
+PASS: ALL fallback that also disagrees with M1 cannot advance the stream; TICKS_DIVERGEM_M1;minuto_msc=1793178000000;bloco_inicio=1793178000000;bloco_fim=1793178059999;ticks_minuto=2;barras_minuto=1;ticks_O=100.00000000;ticks_H=110.00000000;ticks_L=100.00000000;ticks_C=110.00000000;M1_O=100.00000000;M1_H=120.00000000;M1_L=100.00000000;M1_C=110.00000000;recuperacao_ALL=ALL_FILTRADO_DIVERGE_M1;minuto_msc=1793178000000;filtrados=2;ticks_minuto=2;ticks_O=100.00000000;ticks_H=110.00000000;ticks_L=100.00000000;ticks_C=110.00000000;M1_O=100.00000000;M1_H=120.00000000;M1_L=100.00000000;M1_C=110.00000000
+PASS: margin API failure has an exact non-sensitive diagnostic
+PASS: insufficient free margin is distinct from calculation failure without logging account balance
+PASS: same-ms stop remains ambiguous; later target is proven post-origin
+PASS: pre/same-fill boundary is not converted into post-fill close evidence
+PASS: post-origin gap beyond mathematical stop creates boundary evidence
+PASS: failed tick query leaves trail cursor unchanged
+PASS: continuous clock established by successive samples
+PASS: wall-clock jump without monotonic progress is refused
+PASS: startup cannot certify time from two estimates sharing the same PC clock
+RUNTIME_MOCK;Checks=29;Failures=0;API_MT5_SIMULADA;NAO_E_COMPILACAO_MQL5
+EXIT_STATUS=0
