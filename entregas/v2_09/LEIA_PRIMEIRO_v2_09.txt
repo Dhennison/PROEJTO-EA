@@ -36,7 +36,7 @@ LIMITES
 CopyTicksRange/CopyRates continuam síncronas: não há mecanismo para cancelar chamada interna já entregue ao MT5. Os tempos reais, a aparência do gráfico e a mudança na política de recuperação precisam de observação nativa. Não existe operação real nesta entrega, nem aprovação de Strategy Tester/demo. Calendário e capacidades herdados não foram ampliados por esta correção.
 
 VALIDAÇÃO LOCAL
-45 verificações novas/0 falhas com AddressSanitizer, UndefinedBehaviorSanitizer e LeakSanitizer, incluindo:
+47 verificações novas/0 falhas com AddressSanitizer, UndefinedBehaviorSanitizer e LeakSanitizer, incluindo:
 - reprodução do antigo bloqueio e prova de independência do TP do nível zero;
 - consulta única para cinco níveis e publicação atômica dos toques;
 - timestamp inválido/regressivo, NaN, flags inválidas, parcial+4403 e interrupção;

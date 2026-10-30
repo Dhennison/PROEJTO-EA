@@ -31,6 +31,7 @@ PASS_209 disconnection during read cannot certify coverage
 PASS_209 manual interruption before read makes no query
 PASS_209 manual interruption inside API cannot publish candidate
 PASS_209 complete minute requires and passes exact M1 consistency
+PASS_209 manual stop during M1 read cannot publish coverage
 PASS_209 complete-minute M1 divergence is rejected
 PASS_209 complete minute with missing M1 is rejected
 PASS_209 position-origin ambiguity protection remains unchanged
@@ -44,6 +45,7 @@ PASS_209 exact ten-minute transition schedules 120-second slow probe
 PASS_209 slow phase is bounded by its own two-minute interval
 PASS_209 late fully validated candidate remains eligible after ten minutes
 PASS_209 late admission still rejects changed window or monotonic regression
+PASS_209 manual stop during stream M1 read cannot commit a block
 TICKS_BLOCO;de_msc=1793178000000;ate_msc=1793178059999;duracao_total_ms=0;consulta_confere=0
 TICKS_CONSULTA;fonte=TRADE;de_msc=1793178000000;ate_msc=1793178059999;retornados=2;negocios=2;erro=0;duracao_ms=0;primeiro_msc=1793178000000;ultimo_msc=1793178001000;assinatura=1606654261;consulta_confere=0
 TICKS_REFERENCIA;fonte=TRADE;de_msc=1793178000000;ate_msc=1793178059999;ticks_O=100.00000000;ticks_H=110.00000000;ticks_L=100.00000000;ticks_C=110.00000000;barras=1;erro_m1=0;duracao_m1_ms=0;assinatura_m1=1303675830;M1_O=100.00000000;M1_H=120.00000000;M1_L=100.00000000;M1_C=110.00000000
@@ -91,6 +93,6 @@ PASS_209 successful TRADE query records changed count, restored high and new sig
 PASS_209 recovery and next timer cannot duplicate accepted ticks
 PASS_209 acquisition recovery never rewrites journal revision or operational deadlines
 PASS_209 cutoff planning continues without data coverage or connection while acquisition is degraded
-FOCUSED_209;Checks=45;Failures=0;API_SIMULADA;NAO_E_COMPILACAO_MQL5
+FOCUSED_209;Checks=47;Failures=0;API_SIMULADA;NAO_E_COMPILACAO_MQL5
 
 EXIT_STATUS=0

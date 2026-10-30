@@ -42,7 +42,15 @@
   for(int i=0;i<expected;i++)
   {
    long stamp=from+(long)i*60000;int k=(int)((stamp-candidate.audit.begin_msc)/60000);
-@@ -49,10 +61,12 @@
+@@ -40,6 +52,7 @@
+     ";M1_H="+DoubleToString(h,8)+";M1_L="+DoubleToString(l,8)+";M1_C="+DoubleToString(c,8);return false;}
+   if(present)r++;else{empty++;absent+=IntegerToString(stamp)+",";}
+  }
++ if(IsStopped()){reason="ALL_INTERROMPIDO";return false;}
+  if(!TerminalInfoInteger(TERMINAL_CONNECTED)){reason="ALL_DESCONECTADO_APOS_COLETA";return false;}
+  if(!MDSparseFinish615N(candidate,observation_only)){reason="ALL_BLOCO_NAO_CONCLUIDO";return false;}
+  recovered=candidate;reason="BLOCO_RECUPERADO_COPY_TICKS_ALL_FILTRADO;registros_all="+IntegerToString(total)+
+@@ -49,10 +62,12 @@
  bool MDStreamCollect615(MDStream615 &state,long end,string &reason,bool observation_only=false)
  {
   long from=state.cursor;MDStream615 candidate=state;
@@ -56,7 +64,7 @@
   if(count<0||error!=0){reason="COPY_TICKS_ERRO_"+IntegerToString(error)+";retornados="+IntegerToString(count);return false;}
   if(count>500000){reason="BLOCO_EXCEDE_CAPACIDADE_500000";return false;}
   for(int i=0;i<count;i++)
-@@ -64,16 +78,19 @@
+@@ -64,16 +79,19 @@
     ";msc="+IntegerToString(ticks[i].time_msc)+";last="+DoubleToString(ticks[i].last,16)+";flags="+IntegerToString((long)ticks[i].flags)+
     ";previous_accepted_msc="+IntegerToString(candidate.audit.last_msc)+";from="+IntegerToString(from)+";end="+IntegerToString(end)+
     ";expected_open_msc="+IntegerToString(candidate.data.open_msc)+";expected_open="+DoubleToString(candidate.data.values.open_today,16);return false;}
@@ -78,3 +86,11 @@
    previous=stamp;
   }
   int r=0,empty=0;string absent="";
+@@ -104,6 +122,7 @@
+   if(present)r++;
+   else{empty++;absent+=IntegerToString(stamp)+",";}
+  }
++ if(IsStopped()){reason="INTERROMPIDO";return false;}
+  if(!TerminalInfoInteger(TERMINAL_CONNECTED)){reason="DESCONECTADO_APOS_COLETA";return false;}
+  if(!MDSparseFinish615N(candidate,observation_only)){reason="BLOCO_NAO_CONCLUIDO";return false;}
+  state=candidate;reason="BLOCO_OBSERVADO;minutos_com_registros="+IntegerToString(bars)+";minutos_sem_registros="+IntegerToString(empty)+";ausentes_msc="+absent+";INTEGRIDADE_TOTAL_NAO_CERTIFICADA";return true;

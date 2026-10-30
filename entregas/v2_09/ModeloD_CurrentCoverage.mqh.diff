@@ -1,6 +1,6 @@
 --- MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_CurrentCoverage.mqh v2.08
 +++ MQL5/Experts/ModeloD_Integrado_Sem_Transporte/ModeloD_CurrentCoverage.mqh v2.09
-@@ -0,0 +1,54 @@
+@@ -0,0 +1,55 @@
 +#ifndef MD_CURRENT_COVERAGE209
 +#define MD_CURRENT_COVERAGE209
 +#include "ModeloD_Stream.mqh"
@@ -51,6 +51,7 @@
 +     !MDAuditMinuteMatches(minute,rates[0].open,rates[0].high,rates[0].low,rates[0].close))
 +  {why="MINUTO_COMPLETO_NAO_CONFERE_M1";details+=";barras="+IntegerToString(bars)+";erro_m1="+IntegerToString(rates_error);return false;}
 + }
++ if(IsStopped()){why="COLETA_INTERROMPIDA";return false;}
 + if(!TerminalInfoInteger(TERMINAL_CONNECTED)){why="DESCONECTADO_APOS_COLETA";return false;}
 + out=candidate;why="CAUDA_ATUAL_CONFERIDA_SEM_CERTIFICACAO_INDEPENDENTE";return true;
 +}

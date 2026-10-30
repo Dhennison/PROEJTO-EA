@@ -4,7 +4,7 @@
 
 A v2.09 corrige a dependência da cobertura geral dos SL/TP do primeiro nível. Registra a causa específica da cobertura e evidências comparáveis de ticks/M1. Depois dos dez minutos de retry rápido, continua sondagens a cada dois minutos com entradas bloqueadas até recompor a lacuna. Não elimina a necessidade de dados válidos e não afirma ter corrigido a causa interna do histórico da corretora.
 
-Testes novos: [45/0 com sanitizadores](VALIDACAO_FOCUSED_v2_09.txt). [Regressão existente](VALIDACAO_COMPLETA_v2_09_SANITIZERS.txt): 631/0, 104/0, falhas 10/0, runtime 29/0, repetição, retomada e inicialização. São APIs simuladas, não compilação MQL5. O Script e o formato do diário não foram alterados.
+Testes novos: [47/0 com sanitizadores](VALIDACAO_FOCUSED_v2_09.txt). [Regressão existente](VALIDACAO_COMPLETA_v2_09_SANITIZERS.txt): 631/0, 104/0, falhas 10/0, runtime 29/0, repetição, retomada e inicialização. São APIs simuladas, não compilação MQL5. O Script e o formato do diário não foram alterados.
 
 ## Próxima ação
 

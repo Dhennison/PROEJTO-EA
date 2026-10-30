@@ -25,7 +25,7 @@ void PrepareFrame209(MDDataEvidence data,long cursor){
  }
  stream_started615=true;stream_failed615=false;stream_reported615=cursor;MDReset132(retry132);
  opclock.ok=true;opclock.offset=-10800;opclock.server=cursor+2000;opclock.utc=opclock.server+10800000;
- mock_connected=true;mock_tick_error=false;mock_partial209=false;mock_stop209=false;mock_drop209=false;mock_raw209=false;mock_stop_in_read209=false;
+ mock_connected=true;mock_tick_error=false;mock_partial209=false;mock_stop209=false;mock_drop209=false;mock_raw209=false;mock_stop_in_read209=false;mock_stop_in_rates209=false;
  report615=INVALID_HANDLE;coverage_last209="";
 }
 int main(){
@@ -64,6 +64,9 @@ int main(){
  mock_ticks={{minute,120,8},{minute+1000,125,8},{minute+2000,115,8},{minute+3000,120,8}};
  mock_rates={{minute/1000,120,125,115,120}};
  Check209(MDCurrentCoverage209(stream615,minute+60000,coverage,why,detail),"complete minute requires and passes exact M1 consistency");
+ mock_stop_in_rates209=true;
+ Check209(!MDCurrentCoverage209(stream615,minute+60000,coverage,why,detail)&&why=="COLETA_INTERROMPIDA","manual stop during M1 read cannot publish coverage");
+ mock_stop_in_rates209=false;mock_stop209=false;
  mock_rates[0].high=130;Check209(!MDCurrentCoverage209(stream615,minute+60000,coverage,why,detail)&&why=="MINUTO_COMPLETO_NAO_CONFERE_M1","complete-minute M1 divergence is rejected");
  mock_rates.clear();Check209(!MDCurrentCoverage209(stream615,minute+60000,coverage,why,detail),"complete minute with missing M1 is rejected");
  MDOpTrail trail;MDLevel protect{};protect.buy=true;protect.entry=100;protect.sl=90;protect.tp=110;
@@ -85,6 +88,12 @@ int main(){
  Check209(!MDDue132(schedule,720999)&&MDDue132(schedule,721000),"slow phase is bounded by its own two-minute interval");
  Check209(MDCanCommit132(schedule,opening,opening+59999,901000),"late fully validated candidate remains eligible after ten minutes");
  Check209(!MDCanCommit132(schedule,opening+1,opening+59999,901000)&&!MDCanCommit132(schedule,opening,opening+59999,999),"late admission still rejects changed window or monotonic regression");
+ MDStream615 interrupted;MDStreamStart615(interrupted,data);
+ mock_ticks={{opening,100,8},{opening+1000,110,8}};mock_all_ticks=mock_ticks;mock_rates={{opening/1000,100,110,100,110}};
+ mock_stop_in_rates209=true;
+ Check209(!MDStreamCollect615(interrupted,opening+59999,why,true)&&interrupted.cursor==opening&&interrupted.audit.count==0,
+  "manual stop during stream M1 read cannot commit a block");
+ mock_stop_in_rates209=false;mock_stop209=false;
  // Actual coordinator: both feeds diverge; preserve candidate, enter slow mode, recover later.
  PrepareFrame209(data,minute);MDStreamStart615(stream615,data);obs615.data=data;obs615.scope=Scope615();owns615=true;
  mock_ticks={{opening,100,8},{opening+1000,110,8},{opening+60500,110,8}};mock_all_ticks=mock_ticks;

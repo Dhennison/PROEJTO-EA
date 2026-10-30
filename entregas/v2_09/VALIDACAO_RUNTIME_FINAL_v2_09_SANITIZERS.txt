@@ -1,9 +1,9 @@
 VALIDACAO LOCAL C++ E APIs MT5 SIMULADAS. NAO E COMPILACAO MQL5.
 
-$ c++ -std=c++17 -g -Wall -Wextra -Wno-unused-parameter -O0 -fsanitize=address,undefined -fno-omit-frame-pointer /tmp/modelod_validation_qkjyhkm2/adapted/runtime_mock.cpp -o /tmp/modelod_validation_qkjyhkm2/runtime_mock
+$ c++ -std=c++17 -g -Wall -Wextra -Wno-unused-parameter -O0 -fsanitize=address,undefined -fno-omit-frame-pointer /tmp/modelod_validation_pt1zm_u4/adapted/runtime_mock.cpp -o /tmp/modelod_validation_pt1zm_u4/runtime_mock
 EXIT_STATUS=0
 
-$ /tmp/modelod_validation_qkjyhkm2/runtime_mock
+$ /tmp/modelod_validation_pt1zm_u4/runtime_mock
 PASS: seed integrated ledger with proven synthetic positions
 RELATORIO_ABERTO;/tmp/md615k_host\Files\ModeloD_Integrado_A1S54455354I1_1792605000_10000.txt
 DIAGNOSTICO;componente=PERSISTENCIA;motivo=DIARIO_REABERTO_VALIDADO;recuperacao=ESTADO_PRESERVADO;NAO_AUTORIZA_TRANSPORTE
