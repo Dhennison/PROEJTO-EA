@@ -1,0 +1,131 @@
+{
+  "scope": "Texto extraído dos sete PDFs; leitura dirigida de decisões e estado, não auditoria integral de todas as listagens, imagens e anexos. Originais não duplicados no GitHub.",
+  "pdfs": [
+    {
+      "order": 1,
+      "name": "2026-09-25 - Auditoria do Backtest Fibonacci - WORK - 6ab6b06c.pdf",
+      "sha256": "f1ffeb94a1c7cccd93e39d4ad0bc6d91e0d90045c7f88a610d298ff626ea1ccc",
+      "pages": 70,
+      "characters": 142017
+    },
+    {
+      "order": 2,
+      "name": "2026-09-30 - Níveis de Fibonacci 2 Etapa 1 a 5 concluídas - 6abd09d2.pdf",
+      "sha256": "df9dbcd9ddc1e995ce707b2124b5ca568779c2d19be329037e76b94ba5c0864c",
+      "pages": 728,
+      "characters": 1027749
+    },
+    {
+      "order": 3,
+      "name": "2026-10-07 - Continuar pendência 9.2 - 6ac59d24.pdf",
+      "sha256": "dfdd14c08e1964a1525654f103a36f669f9416314c7fff092aa1651d553c1e03",
+      "pages": 207,
+      "characters": 437967
+    },
+    {
+      "order": 4,
+      "name": "2026-10-08 - Resolver etapa 4 - 6ac6fdf1.pdf",
+      "sha256": "6fb3370d435136abc77f9fea9875eaa9f5e598bfdb77059af522e1f5dd937061",
+      "pages": 110,
+      "characters": 195525
+    },
+    {
+      "order": 5,
+      "name": "2026-10-15 - EA - Etapa 6 - Programação - 6ad0275f.pdf",
+      "sha256": "48ca670d28dc3cb0466c8bb8aefd7f7ae3b0e6ab7aac9e55e7c2b309f2e91023",
+      "pages": 256,
+      "characters": 497359
+    },
+    {
+      "order": 6,
+      "name": "Chat 1 - Configurar PROEJTO-EA Chat v1.0.pdf",
+      "sha256": "c6ac185126d2514232ced47570d9d78e490479f202ab1836a02f30390f853e34",
+      "pages": 81,
+      "characters": 241632
+    },
+    {
+      "order": 7,
+      "name": "Chat 2 - Configurar PROEJTO-EA v2.0.pdf",
+      "sha256": "932cebab54e10bfb234a630af2a9c7fe34e6f81db0639fbfbe692d3e26da8220",
+      "pages": 38,
+      "characters": 82404
+    }
+  ],
+  "repository_archives": [
+    {
+      "path": "entregas/ModeloD_Diagnostico_Ticks_20261029_1038_v1_00.zip",
+      "sha256": "46540bef00e7b2a47873dd1fdd6840b06012748b388c7392a6cf812bce586545",
+      "entries": 8
+    },
+    {
+      "path": "entregas/ModeloD_Integrado_Sem_Transporte_v2_00.zip",
+      "sha256": "67cfef8f7b6b85cea20f0ccf2557f57c9f48163b6cde71ae546c0e7958b5e649",
+      "entries": 127
+    },
+    {
+      "path": "entregas/ModeloD_Integrado_Sem_Transporte_v2_01.zip",
+      "sha256": "39634c2b1bd2ce4ae9eb83975c8ad8380580691548748939ac15fb001b9fba82",
+      "entries": 133
+    },
+    {
+      "path": "entregas/ModeloD_Integrado_Sem_Transporte_v2_02.zip",
+      "sha256": "ecfcf355254bbeca0e9e51d0a34c90fa17d199550edbd226942cb7d255717f8d",
+      "entries": 137
+    },
+    {
+      "path": "entregas/ModeloD_Integrado_Sem_Transporte_v2_03.zip",
+      "sha256": "5ae989b69651430ba69e4215d17ae5389a6934897c8dc89cec03e3405acb42e4",
+      "entries": 141
+    },
+    {
+      "path": "entregas/ModeloD_Integrado_Sem_Transporte_v2_04.zip",
+      "sha256": "033683eff0a5ff5b05936c0a42a0c7333066e0aae8667925d856390dcb243548",
+      "entries": 155
+    },
+    {
+      "path": "entregas/ModeloD_Integrado_Sem_Transporte_v2_05.zip",
+      "sha256": "10493e11fc1b6c2b0ad25e957f274e7af5bb035369ab99df9293cfc6f9860dab",
+      "entries": 158
+    },
+    {
+      "path": "entregas/ModeloD_Integrado_Sem_Transporte_v2_06.zip",
+      "sha256": "006a04c552378bafde2037ead45959894d0b80563029d5e3a04529d4e0112d16",
+      "entries": 160
+    },
+    {
+      "path": "entregas/ModeloD_Integrado_Sem_Transporte_v2_07.zip",
+      "sha256": "377c0b8937c9493fe28ab81c415a89165e7f0d3adc021562dc69334243468c6e",
+      "entries": 162
+    },
+    {
+      "path": "entregas/ModeloD_Integrado_Sem_Transporte_v2_08.zip",
+      "sha256": "a4b52adc0123941f995d16f14c6e54681c2085cf33900b3cf92e880072521a79",
+      "entries": 35
+    },
+    {
+      "path": "entregas/ModeloD_Integrado_Sem_Transporte_v2_09.zip",
+      "sha256": "ab5dbfaa25611bc40e2a00c7843289e9709e7793bf5b35e59f99c8a3b9c293aa",
+      "entries": 37
+    },
+    {
+      "path": "entregas/ModeloD_Integrado_Tester_v2_10.zip",
+      "sha256": "fcede2fca646e8862d81a04a62da2ce032b3fa6b69349beb11f8b138d0f25c16",
+      "entries": 40
+    },
+    {
+      "path": "entregas/v2_08/ModeloD_v2_08_Documentacao_e_Testes.zip",
+      "sha256": "a2ba04337b2108eda491929b90cfbd8faaa083c6cab2d26aebdb0a73bb8a6a8a",
+      "entries": 6
+    },
+    {
+      "path": "entregas/v2_09/ModeloD_v2_09_Documentacao_e_Testes.zip",
+      "sha256": "632063f265bb11f73fa6e5b1fe7323c8e18bea813ff295802c5ef2f7e266068b",
+      "entries": 15
+    },
+    {
+      "path": "entregas/v2_10/ModeloD_v2_10_Documentacao_e_Testes.zip",
+      "sha256": "c234300f09725acd8b2d4720b96b9ee6667a3318eff88894c702bac52301cd99",
+      "entries": 19
+    }
+  ]
+}

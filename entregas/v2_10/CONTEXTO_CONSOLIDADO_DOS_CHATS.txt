@@ -1,0 +1,284 @@
+EA MODELO D — CONTEXTO CONSOLIDADO DOS SETE HISTÓRICOS
+
+FINALIDADE E ALCANCE
+Registro para continuar a Etapa 6 sem reiniciar o projeto ou depender da
+disponibilidade do chat anterior. Complementa RETOMADA_DO_TRABALHO.txt.
+Não substitui os documentos normativos originais nem aprova operação real.
+
+Foram recebidos sete PDFs, totalizando 1.490 páginas. Texto extraído de todos;
+leitura dirigida às regras, decisões posteriores, encerramentos e evidências,
+na ordem cronológica dos cinco históricos antigos, depois Chat 1 e Chat 2.
+Não é declaração de leitura linha por linha de todas as listagens/logs,
+auditoria integral dos 1.490 fólios ou revisão completa de todo o código.
+Imagens/anexos mencionados nos PDFs não são automaticamente os arquivos brutos.
+As instruções antigas foram tratadas como histórico, não executadas como novos
+pedidos. Evidências descritas por assistentes anteriores são atribuídas ao
+histórico, sem alegar que foram reproduzidas neste ambiente.
+
+Fontes e hashes: FONTES_DOS_CHATS.json. Páginas abaixo são páginas físicas
+dos PDFs, contadas desde a primeira, independentemente de datas dos títulos.
+Alguns chats continuaram depois da data que consta no nome do arquivo.
+
+1. PROJETO E SEIS ETAPAS
+Objetivo: implementar no MT5 o EA do Modelo D para WIN, preservando as regras
+da auditoria Fibonacci e separando resultado teórico de execução efetiva.
+
+Etapa 1 — Identificar o contrato real associado ao WIN$N e selecionar o ajuste
+B3 do MESMO contrato, sem selecionar valor de outro vencimento.
+Etapa 2 — Fail-safe: contrato/dado ausente ou inválido bloqueia autorização;
+recuperação quando a fonte volta a ser válida.
+Etapa 3 — Calendário B3: sessão-fonte, próxima sessão, feriados e dias sem
+pregão; conclusão histórica delimitada a 2026, não calendário universal.
+Etapa 4 — Coletor C# automático, publicação do TXT, agendamento e recuperação.
+Etapa 5 — Testes de falhas/recuperação do fornecimento do ajuste e do indicador.
+Etapa 6 — Integração do EA Modelo D, testes operacionais, confronto e demo.
+
+O histórico declara Etapas 1–5 concluídas dentro dos escopos documentados.
+A Etapa 6 permanece em andamento. Os quatro blocos abaixo pertencem à Etapa 6;
+não são outras quatro etapas do projeto nem novas instalações fragmentadas.
+Fontes: PDF 02, pp. 535–536, 723–728; PDF 05, p. 253.
+
+2. AJUSTE B3 E REVISÕES DA ETAPA 4
+Fluxo ao vivo: B3/BVBG.187.01 -> B3Ajuste.exe -> ajuste_b3.txt -> MT5/EA.
+Leitura operacional em Terminal\Common\Files\ajuste_b3.txt (FILE_COMMON).
+Validar arquivo completo, Status=OK, fonte, DataFonte/DataOperacional,
+contrato real e pares Ajuste/AjusteAnterior positivos e coerentes.
+Não substituir pelo fechamento nem aceitar silenciosamente ajuste antigo.
+O coletor fornece múltiplos vencimentos; o leitor seleciona o contrato correto.
+
+V4 corrigiu associação indevida de ajustes de contratos diferentes no extrator
+e trouxe recuperação progressiva para respostas vazias. Causa de respostas
+de 22 bytes não comprovada. Indicador operacional: versão 2.20.
+
+V5 (18/10) é a atualização posterior do COLETOR. A V4 invalidava um TXT já
+válido antes de verificar o ciclo; novas consultas com timeout retiraram a
+autorização de um ajuste que já havia sido coletado. A V5 valida o arquivo
+dentro do lock antes de invalidar ou acessar a B3. Se corresponde exatamente
+ao ciclo esperado, preserva conteúdo sem download/regravação. Não basta uma
+data operacional futura qualquer. Novo ciclo ou arquivo inválido exige coleta.
+O caminho/formato do TXT e o indicador 2.20 permanecem os mesmos.
+
+Histórico registra 50 verificações locais e no Windows; execução da tarefa
+em 18/10 preservou hash, terminou com código 0 e SEM_DOWNLOAD/SEM_REESCRITA.
+PublicadoOK=False nesse caso significa ausência de publicação NOVA, não falha.
+No encerramento desse histórico, coleta real de novo ciclo após V5 não estava
+demonstrada por aquela execução de preservação.
+Agendamento documentado: diário 19:40, corte 08:55, retries progressivos
+15/30/60/120 segundos e depois 30 minutos; não alterar agora essas configurações.
+Documentação antiga da Etapa 4 é histórico. Adendo V5 prevalece sobre V4 para
+o coletor; não confundir V5 do coletor com versões 2.xx do EA.
+Fontes: PDF 02, pp. 723–728; PDF 04, pp. 102–110; Resumo_V5_Para_Chat_EA.txt
+e Documentacao_Atualizacao_V5.txt nos ZIPs completos anteriores do GitHub.
+
+3. MATEMÁTICA E CINCO ENTRADAS CONGELADAS
+PP = (HighAnterior + LowAnterior + CloseAnterior) / 3
+ampR = abs(LowAnterior - PP); ampS = abs(HighAnterior - PP)
+R200 = OpenAtual + 2*ampR; S200 = OpenAtual - 2*ampS
+R_p = Ajuste + (R200 - Ajuste)*p
+S_p = Ajuste + (S200 - Ajuste)*p
+p: 0,236; 0,382; 0,500; 0,618.
+OHLC do pregão anterior COMPLETO do MESMO contrato real; abertura efetiva do
+pregão corrente. Níveis fixos intradiários; Ajuste independente do Pivot.
+
+Nível   Lado/entrada  Stop matemático     Alvo matemático
+S38,2   Buy Limit     S38,2 - 375         média(S38,2,S23,6)
+S50     Buy Limit     S50 - 375           S38,2
+S61,8   Buy Limit     S61,8 - 650         S50
+R38,2   Sell Limit    R38,2 + 375         R23,6
+R61,8   Sell Limit    R61,8 + 450         média(R61,8,R50)
+
+Sem extensões +25/+125 ou otimização de parâmetros para forçar resultado.
+Conta HEDGE; cinco níveis independentes e simultaneidade permitida.
+Uma oportunidade por nível por pregão; saída não rearma o nível.
+Filtro individual da abertura: compra inválida se Open < linha; venda inválida
+se Open > linha. Igualdade permanece válida e constitui primeiro toque.
+Bloqueio geométrico antes do arredondamento:
+- Ajuste <= S200: bloquear compras; lado oposto segue suas próprias regras.
+- Ajuste >= R200: bloquear vendas; lado oposto segue suas próprias regras.
+Igualdades incluídas; ambas as condições bloqueiam ambos os lados.
+
+Tick: múltiplo de 5 mais próximo, entrada/SL/TP individualmente; empate para
+cima para ambos os lados. Preservar valor matemático e normalizado separados.
+Não recalcular SL/TP a partir do preço efetivamente executado.
+Fontes: PDF 01, pp. 51–60, 65–70; resolução de 14/10; ModeloD_Core.mqh v2.10.
+
+4. PRIMEIRO TOQUE, PENDENTES E EXECUÇÕES
+Referência teórica: Last, incluindo igualdade e atravessamento/gap entre ticks.
+Toque não comprova fill. Ordem deve ser aceita antes do primeiro toque.
+Enviar todas as elegíveis após validação, sem ordem por proximidade ou horário.
+Se o primeiro toque aconteceu antes de aceitar a ordem, não criar entrada
+atrasada nem transformar Limit em Stop para operar o segundo toque.
+Sem histórico íntegro para provar elegibilidade: bloquear novas entradas.
+
+Pendente previamente aceita não é cancelada só por atravessar a linha sem fill.
+Se Last atinge/atravessa SL OU TP teórico sem execução, solicitar cancelamento
+e consumir oportunidade. Confirmar efeitos; pedido/retorno não são prova final.
+Parciais: proteger imediatamente volume preenchido; saldo da mesma ordem pode
+permanecer enquanto válido; não abrir nova ordem para completar volume.
+Execução durante cancelamento: reconciliar cronologia e limites; não assumir
+que cancelamento solicitado eliminou ordem nem fechar posição válida só por
+ter havido pedido de cancelamento. Aplicar proteção conforme evidências.
+Fontes: PDF 03, pp. 92–114, 133–143; resolução de 14/10.
+
+5. PROTEÇÃO, PERSISTÊNCIA, RELÓGIO E CORTE
+SL/TP vinculados à posição/ticket; não abrir hedge contrário para simular saída.
+Após execução, registrar ambos prontamente e conferir confirmação real.
+Proteção: primeira tentativa imediata; seis iniciais com intervalo mínimo de
+2 segundos; depois da sexta concluída, 3 minutos adicionais a cada 10 segundos.
+Sem SL ao fim: solicitar fechamento. Com SL mas sem TP: manter e tentar TP.
+Não deslocar preços fixos para satisfazer uma rejeição. Resposta incerta exige
+conciliação; timeout não autoriza envio duplicado.
+
+Reinício: conciliar ordens/deals/posições e diário, reconstruir Last e preservar
+consumo e prazos. Não apagar checkpoints, restaurar backup antigo ou mudar
+flags para liberar fluxo. Gestão das posições de origem continua necessária.
+
+Corte regular: 18h Brasília, sem depender de tick naquele instante; bloquear
+entradas, cancelar pendentes e fechar posições do EA por ticket, confirmando
+efeitos e retomando solicitações necessárias sem duplicação.
+A proposta de 16h35 no vencimento foi explicitamente DESCARTADA depois; não
+reintroduzi-la a partir das páginas anteriores do mesmo histórico. Horários
+especiais precisam de sessão validada; preservar antecedência de 25 minutos
+quando aplicável. Circuit breaker não é horário previsível nem permite prometer
+execução durante indisponibilidade. Nenhuma tabela B3 foi revalidada na rede
+nesta revisão documental.
+Fontes: PDF 03, pp. 89–92, 142–143 e resolução de 14/10, itens 9.5–9.8.
+
+6. CONTRATO, ROLAGEM E VOLUME
+WIN$N identifica candidato da Genial; calendário B3 é segunda verificação
+obrigatória, não gatilho independente de rolagem. Ajuste, abertura, OHLC, ticks
+e ordens devem referir-se ao MESMO contrato real. Não usar OHLC do contrato
+antigo/contínuo com ajuste do novo. Congelar contrato durante a sessão; gerir
+origens antigas no contrato original. Divergência bloqueia novas entradas.
+Histórico registra troca para WINZ26 antes da abertura de 14/10, sem determinar
+instante exato nem regra universal para todas as rolagens.
+Padrão EA: 1 contrato por nível. Backtest principal futuro: 5 por nível.
+Ensaio inicial v2.10: 1 por nível, sem alterar o plano do backtest principal.
+Isolar conta/servidor/instância/nível/identificadores; não copiar diário de outra
+identidade como estado válido.
+Fontes: PDF 03, pp. 194–207; resolução de 14/10, itens 9.9–15.
+
+7. APRESENTAÇÃO VISUAL — DECISÃO MAIS RECENTE
+As oito Fibonacci são calculadas, mas a apresentação posterior foi reduzida
+a SETE linhas: R200, S200 e as cinco entradas. S23,6/R23,6/R50 continuam
+internas para TP, sem exigir exibição. Rótulos com preços inteiros e alinhados
+no centro visível; isso não arredonda valores matemáticos das linhas.
+Bloqueio geométrico oculta entradas do lado afetado; R200/S200 permanecem.
+Indicador do Ajuste é independente e não deve ser apagado/duplicado pelo EA;
+isso não autoriza apresentar ajuste inválido como válido.
+Fontes: PDF 05, decisão após teste visual de 16/10; BASE_ONDE_PARAMOS_20261028;
+ModeloD_Visual.mqh v2.10. A descrição visual de 15/10 é anterior a essa redução.
+
+8. QUATRO BLOCOS DA ETAPA 6 E EVOLUÇÃO
+1) Fechar/aceitar fluxo operacional integrado com transporte ausente.
+2) Executar o mesmo núcleo no Strategy Tester, transporte só no teste autorizado.
+3) Confrontar operação por operação com o Work e explicar divergências.
+4) Demo, respostas reais do servidor e entrega final consolidada.
+
+O histórico antigo encerrou em 28/10 com integração incompleta. Não usar essa
+conclusão como se descrevesse sozinha a v2.10: Chat 1/2 registram evolução.
+Chat 1: v2.00 integração; v2.01 inclui cabeçalhos do Script; v2.02/03 corrigem
+persistência/repetibilidade dos testes; v2.04 consolida diagnóstico; v2.05 lock
+Unicode; v2.06 recuperação de cache TRADE por ALL filtrado e conferido com M1;
+v2.07 diagnósticos, com busca de abertura ainda bloqueante; v2.08 janelas curtas
+e backoff. Não tratar a v2.07 como baseline aprovada para desconexão.
+v2.09: causa específica de cobertura, evidências das consultas e reconsulta a
+cada dois minutos depois de dez minutos de divergência, sem aceitar dados ruins.
+v2.10: adaptador exclusivo do Tester, opt-in e isolamento, mantendo núcleo.
+Não mudar Script nem repetir toda instalação se apenas Experts mudou.
+Fontes: PDF 05, p. 253–255; PDF 06, pp. 4–41, 70–81; PDF 07, pp. 14–38.
+
+9. EVIDÊNCIAS HISTÓRICAS E LIMITES
+No Chat 2, v2.09: compilação nativa 0 erros/0 avisos e baseline de cerca de
+41m44s, 76 blocos/1.908.038 ticks, sem divergência registrada com M1.
+Wi-Fi: recuperação observacional aceita, mesma execução, consumo preservado.
+Fechar/reabrir MT5, reinício normal Windows e interrupção do processo pelo
+Gerenciador: aceitos no escopo observacional daquela amostra, sem negociação.
+Sem STOP na interrupção do processo não demonstra corte físico de energia
+durante escrita. As duas tentativas físicas posteriores tiveram STOP reason=9;
+foram encerramentos controlados, não prova de gravação abruptamente interrompida.
+Esses testes não validam gestão de posições reais ou servidor de negociação.
+Não repetir Wi-Fi por considerá-lo pendente com base no final mais antigo do
+Chat 1; Chat 2 registra sua conclusão. Monitoramento nativo de divergência
+após dez minutos não foi exercitado no baseline sem divergência.
+Fontes: PDF 07, pp. 16–35; PENDENCIA_ENERGIA_20261102.md.
+
+Controles do estudo Work registrados no histórico: Modelo D 2023–2026,
+1.877 operações e +124.337,758661 pontos, DD 4.780,240329 pontos.
+São REFERÊNCIAS relatadas, não recálculo atual nem metas para forçar igualdade.
+Modelo escolhido após observar a amostra: resultado retrospectivo não equivale
+a confirmação fora da amostra. STOP FIRST era convenção dos candles ambíguos;
+ticks devem seguir cronologia real. Pontos teóricos e executados separados,
+custos e slippage explicitados. Não somar contratos para adulterar comparação.
+Fonte: PDF 01, p. 46; resolução de 14/10, itens 10–11.
+
+10. PONTO ATUAL — PRIMEIRO ENSAIO v2.10
+Branch: entrega-modelod-v2-10-20261030.
+Entrega original: 928f5609fdf0060f27ff0e5e0d60b52c0db3b917.
+Próximo passo do usuário: preparar cópia B3 histórica e compilar no MetaEditor.
+Ainda não recebemos aqui resultado nativo de compilação/Tester da v2.10.
+Não confundir 0 erros C++ com compilação MQL5 ou existência de .ex5.
+
+Entrada do agente: MQL5\Files\ModeloD_Tester_20261030_ajuste_b3.txt
+fora de temp, cópia do backup real, preservando original e valores:
+DataFonte=2026-10-29; DataOperacional=2026-10-30.
+Não é o arquivo corrente destinado à sessão de 03/11. Não editar datas/preços
+para fazê-lo passar. #property tester_file transfere a cópia para o agente;
+essa leitura é local Files, sem FILE_COMMON. Saídas usam prefixo MDT210_
+isolado, preservando arquivos e diário operacional observacional.
+
+Ensaio: WINZ26, M5, 30/10 a 31/10 para cobrir 30/10 inteiro; ticks reais,
+teste único, agente local, HEDGE, 1 contrato/nível, visualização, sem otimização.
+ExecutarNoTester=true; DataTester=20261030; ContratoTester=WINZ26;
+FusoServidorTester=-10800; Instancia=1; IntervaloSegundos=2.
+Saldo simulado do roteiro: 1.000.000 BRL; não é capital recomendado.
+Roteiro completo e configuração: LEIA_PRIMEIRO_v2_10.md e arquivo .set.
+Pode executar histórico com mercado fechado, se dados necessários existirem.
+Não anexar configuração de Tester ao gráfico nem habilitar negociação real.
+
+Coletar: compilação, parâmetros, relatório HTML do MT5, diário do agente,
+TXT RELATORIO_ABERTO MDT210_ até o fim, ledger e candidatos se necessário,
+ajuste utilizado e hash. TESTER_END isolado não significa aprovação.
+Fontes: PDF 07, pp. 35–38; LEIA_PRIMEIRO_v2_10.md.
+
+11. O QUE FOI CONFERIDO AGORA NO REPOSITÓRIO
+ZIP v2.10 contém 40 arquivos de Experts; suporte v2.10 tem 19 entradas.
+ZIP completo v2.07 preserva fontes/testes anteriores e documentos normativos,
+inclusive resolução 14/10, visual 15/10 e adendo V5 do coletor.
+Conferência dirigida de Core e Visual v2.10: fórmulas, cinco pares SL/TP,
+bloqueio geométrico, arredondamento e sete linhas coerentes com itens acima.
+Isso NÃO é auditoria de todo transporte ou prova de execução MT5.
+
+RESULTADOS_TESTES.md registra 50 verificações novas, 47 de compatibilidade e
+regressões 631/104/10/29, com sanitizadores. Relatórios existentes consultados;
+nenhuma dessas baterias foi reexecutada nesta etapa de leitura documental.
+
+Não está comprovado que TODO o acervo de quase 900 MB esteja nesta branch.
+Os ZIPs inspecionados contêm entregas e parte das regras, não garantem presença
+de todos os datasets/tabulação de operações do Work, coletor completo e anexos.
+Documentos de critérios de 29/10 são anteriores à v2.09/v2.10; não usar seu
+status antigo como se anulasse as entregas posteriores.
+Não localizados como arquivos nesta árvore: CONTINUIDADE_MESTRA_MODELO_D.md
+e análises individuais mostradas nos PDFs como editadas no chat anterior.
+Essas menções não provam persistência nesta branch. O presente TXT reconstrói
+o contexto sem inventar aqueles arquivos ou alegar recuperar seus originais.
+Não é necessário receber o ZIP de 900 MB para a compilação/ensaio atual.
+Pedir só um arquivo específico se ele faltar para uma tarefa concreta futura.
+
+12. PENDÊNCIAS E FORMA DE TRABALHO
+- Compilação MQL5 v2.10 e ensaio nativo inicial ainda pendentes.
+- Antes de histórico longo: ampliar calendário/janela de sessões validada,
+  capacidade de oito sessões, retenção do diário/inventário e datasets.
+- Comparação Work por operação e demo ainda não concluídas.
+- Corte físico durante gravação não comprovado; bateria baixa pode hibernar.
+- Publicação do ambiente Codex não foi confirmada; commit/push do GitHub é
+  outra operação. Chat antigo indisponível não elimina commits já enviados.
+- Continuar na branch correta, preservar estratégia e estado, entregar pacotes
+  consolidados; não criar sequência de microinstalações sem necessidade.
+- Ao concluir cada etapa, salvar arquivos relevantes, TXT de resultados e
+  próximo passo, commit e push; informar sucesso só após confirmação do push.
+- Preservar PDFs originais do usuário como fontes; o resumo não os substitui.
+  Os PDFs/transcrições com dados de conta/rede não foram duplicados no GitHub
+  nesta consolidação; o manifesto identifica exatamente os sete anexos lidos.
+
+FIM — retomar pelo item 10 e atualizar resultados conforme forem recebidos.

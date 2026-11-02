@@ -46,3 +46,12 @@ COMO RETOMAR EM OUTRO CHAT
 Solicitar a leitura deste TXT e de LEIA_PRIMEIRO_v2_10.md na branch indicada.
 Consultar os commits posteriores para resultados novos. Não tratar etapas
 pendentes como executadas nem confundir teste C++ com compilação MQL5 nativa.
+
+ATUALIZAÇÃO — CONSOLIDAÇÃO DOS SETE HISTÓRICOS
+Foram fornecidos cinco PDFs antigos e os dois chats Codex. Consultar
+CONTEXTO_CONSOLIDADO_DOS_CHATS.txt e FONTES_DOS_CHATS.json para decisões,
+fontes, escopo da leitura e limites de validação. A leitura não alterou código
+nem executou testes novos. Compilação v2.10 no MetaEditor e primeiro ensaio
+continuam aguardando resultado do usuário. Os ensaios observacionais v2.09 de
+Wi-Fi/reabertura/reinício/interrupção do processo já constam como aceitos no
+Chat 2; não confundir com queda física durante gravação, ainda não provada.
