@@ -186,3 +186,13 @@ Ver diagnostico_agente/COMPARACAO_SEM_VISUALIZACAO.txt. Não recompilar nem
 recriar cache novamente nesta rodada. A ausência de Last está comprovada,
 mas não foi provado que só o suporte pode resolver. Ensaio não visual pendente;
 próximas hipóteses devem depender do resultado, sem repetir rodadas iguais.
+
+ATUALIZAÇÃO — NÃO VISUAL TAMBÉM REPETE O PROBLEMA
+Rodada 14:46 recebida e preservada em validacao_20261102_nao_visual/.
+START confirma visual=0; descarte integral persiste. TXT idêntico ao visual
+anterior salvo nome/visual: ALL3790 com Last0, TRADE0. Encerrar essa hipótese.
+Próxima comparação preparada: cópia portátil isolada do terminal, preservando
+instalação original, usando somente executáveis assinados originais e o
+diagnóstico já compilado. Ver diagnostico_agente/LEIA_MT5_ISOLADO.txt e
+PREPARAR_MT5_ISOLADO.txt (.ps1 idêntico). Preparação Windows ainda não executada;
+comandos revisados estaticamente, sem alteração do EA ou instalação local.

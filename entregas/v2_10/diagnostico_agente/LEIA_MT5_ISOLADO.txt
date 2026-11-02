@@ -1,0 +1,63 @@
+CÓPIA ISOLADA DO MT5 — PRÓXIMO DIAGNÓSTICO, SEM ALTERAR A INSTALAÇÃO ATUAL
+
+POR QUÊ
+O modo não visual também recebeu Last=0, TRADE=0, com descarte dos ticks.
+O cache recriado foi o do TESTER; as configurações e dados do TERMINAL de
+origem continuaram sendo os mesmos. Esta comparação ainda não foi feita.
+Uma cópia portátil, com pasta de dados própria, separa essa variável antes
+de atribuir a falha ao servidor ou depender exclusivamente de suporte.
+
+PREPARAÇÃO
+1. Manter aberto somente o MT5 original usado nos testes.
+2. Abrir PREPARAR_MT5_ISOLADO.txt no Bloco de Notas, selecionar todo o conteúdo
+   e copiar. Ele contém os mesmos comandos de PREPARAR_MT5_ISOLADO.ps1.
+3. Abrir PowerShell normal (não é necessário administrador), colar os comandos
+   completos e executar. A colagem interativa evita depender da política de
+   execução de arquivos PS1 baixados; não alterar ExecutionPolicy nem desativar
+   verificação de assinatura ou proteção do sistema.
+4. O procedimento exige assinaturas Authenticode válidas nos três executáveis
+   já instalados; confere SHA-256 das cópias. Se ocorrer erro, parar e enviar
+   a mensagem. Não baixar executáveis desconhecidos ou remover as verificações.
+
+O QUE OS COMANDOS FAZEM
+Identificam o executável do único MT5 aberto e o diagnóstico já compilado.
+Criam uma pasta NOVA e exclusiva em %LOCALAPPDATA%\ModeloD_MT5_Isolado_...
+Copiam SOMENTE terminal64.exe, metaeditor64.exe, metatester64.exe e o EX5 do
+diagnóstico. Não copiam bases, config, contas, senhas, perfis ou EA operacional.
+Não apagam, renomeiam, editam ou encerram arquivos/processos da instalação
+original. Só leem origin.txt (caminho de instalação) para resolver a origem.
+Criam manifesto de hashes/versões e atalho com argumento /portable, e abrem
+a cópia. Common/Files permanece compartilhado; os TXT têm nomes próprios.
+Não modificam o MT5 antigo nem automatizam login ou ordens.
+
+NA JANELA NOVA
+1. Arquivo > Abrir Pasta de Dados: deve abrir a NOVA pasta ModeloD_MT5_Isolado.
+   Se abrir a pasta antiga, parar e informar antes de testar.
+2. Conectar manualmente à conta existente no mesmo servidor Genial do teste
+   anterior. Se surgir assistente de nova conta, não criar outra conta.
+   Selecionar a corretora/servidor existente na interface, conforme necessário.
+   Credenciais são digitadas somente no MT5; não enviá-las ao chat.
+3. No Tester desta cópia: Diagnostico_Dados_WINZ26, WINZ26, M5,
+   30/10/2026–31/10/2026, Cada tick baseado em ticks reais, modo não visual,
+   sem otimização/forward/atraso, agente local, mesmo saldo USD e modo HEDGE.
+   Aguardar obtenção dos dados pela cópia nova. Não copiar o cache antigo.
+4. O diagnóstico para às 09:02 do replay. Enviar TXT MD_DIAG_DADOS e log do
+   agente DESTA cópia. O caminho do log aparece no Diário da nova rodada;
+   não presumir que seja o mesmo hash de diretório do terminal original.
+
+LIMITES
+Isso mantém o build dos arquivos copiados no momento da preparação, mas o
+terminal pode buscar componentes/atualizações oficiais ao iniciar; registrar
+build do log nativo em vez de assumir que ficou igual. Dependências extras,
+restrições de assinatura e login precisam ser verificadas na máquina Windows.
+Se a cópia pedir arquivo/componente ausente, não copiar configurações/bases
+antigas para contornar; enviar a mensagem para correção específica.
+Não há garantia de que a cópia resolverá. Se o descarte persistir em terminal
+isolado, teremos evidência adicional para distinguir dado/servidor/build de
+cache/configuração da instalação antiga. Não aprovar por Last positivo isolado.
+
+ESTADO DA ENTREGA
+Comandos preparados e revisados estaticamente. Não há PowerShell/MT5 Windows
+neste ambiente para executá-los. Nenhuma cópia/instalação isolada foi criada
+ou validada aqui. Fonte do diagnóstico e binário já compilado pelo usuário
+não foram alterados. Não é mudança de estratégia, teste de lucro ou demo.

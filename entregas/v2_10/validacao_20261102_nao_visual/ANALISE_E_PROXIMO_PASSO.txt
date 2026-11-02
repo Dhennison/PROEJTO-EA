@@ -1,0 +1,47 @@
+DIAGNÓSTICO NÃO VISUAL — 02/11/2026 14:46
+
+COMPARAÇÃO CONCLUÍDA
+START do diagnóstico confirma visual=0, build6231, WINZ26 e conta HEDGE.
+Não foi apenas desmarcação presumida pela interface: o modo foi consultado
+no próprio agente. O log do motor mostra o mesmo descarte de ticks reais
+nos 565 minutos do dia e 4.319.114 preços de ticks divergentes.
+ALL retorna 3790 registros com Last zerado; TRADE retorna zero, sem erro.
+Barra M1/propriedades do símbolo e encerramento automático às 09:02 iguais.
+
+Comparação textual normalizada com a rodada visual das 14:21: somente o nome
+do TXT na linha REPORT e visual=1 -> visual=0 mudaram. Todos os demais dados
+do TXT permanecem idênticos. Portanto, desativar visualização não resolveu
+e a falha não depende exclusivamente da janela de visualização nessa amostra.
+Não repetir esse teste com os mesmos dados/configuração.
+
+EVIDÊNCIAS
+Originais e hashes em FONTES.json. O log acumulado preserva rodadas anteriores;
+RODADA_NAO_VISUAL_EXTRAIDA.txt delimita a nova rodada. Diário colado é fonte
+complementar do terminal/motor. Nenhum novo negócio ou resultado financeiro.
+
+PRÓXIMA HIPÓTESE — TERMINAL ISOLADO, NÃO MAIS SÓ CACHE DO TESTER
+A reconstrução anterior separou bases do Tester; a base/configuração do
+terminal que fornece os dados continuou a mesma. Preparada cópia portátil
+isolada usando os executáveis assinados já instalados no Windows e somente
+o diagnóstico EX5 compilado pelo usuário. Não reutiliza config, contas,
+perfis, bases nem EAs operacionais da instalação antiga.
+Scripts/instruções em ../diagnostico_agente/PREPARAR_MT5_ISOLADO.ps1,
+PREPARAR_MT5_ISOLADO.txt e LEIA_MT5_ISOLADO.txt. Comandos criam destino
+exclusivo em LOCALAPPDATA, verificam assinaturas e hashes, abrem /portable.
+Originais não são renomeados, apagados ou encerrados. Login é manual no MT5
+novo, com conta existente e servidor Genial original; sem credenciais no chat.
+
+PREPARAÇÃO AINDA NÃO EXECUTADA NO WINDOWS
+Não há PowerShell/MT5 Windows no ambiente na nuvem; comandos só revisados
+estaticamente. Não afirmar instalação nova pronta nem comparação de build
+concluída. Checar Arquivo > Abrir Pasta de Dados na janela nova antes do teste:
+precisa apontar para o diretório novo criado. Se houver falha de preparação,
+resolver a mensagem específica sem desativar verificações ou mesclar bases.
+Common/Files pode continuar compartilhado, mas os relatórios têm novos nomes.
+
+Executar o mesmo diagnóstico uma vez na cópia nova, em modo não visual,
+WINZ26/M5/30/10–31/10/ticks reais, sem otimização/forward/atraso e mesma
+configuração de conta. Registrar build e diretórios efetivos no novo log.
+Se não houver melhora, essa observação ajudará a distinguir dado/servidor/build
+do estado local da instalação original. Não garante correção.
+Não mudar o EA operacional, seu contrato congelado ou os dados para obter PASS.
