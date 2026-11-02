@@ -1,0 +1,50 @@
+TERMINAL E AGENTE CONFIRMADOS — PRÓXIMA COMPARAÇÃO DE BUILD
+
+EVIDÊNCIA NOVA
+Captura Ajuda > Sobre do MT5 secundário: Version5.00 build6231,
+27 Sep2026, MetaQuotes Ltd. Os diagnósticos do agente também registram6231.
+Assim, não há descompasso demonstrado entre terminal e agente nessas rodadas.
+LiveUpdate da mesma cópia já respondeu latest version ao consultar release.
+Não houve atualização de build confirmada até este ponto.
+
+PRÓXIMA ALTERNATIVA, SOMENTE NA CÓPIA ISOLADA
+O usuário pediu continuar explorando caminhos locais. Depois de verificar
+release e versão, a alternativa para efetivamente comparar outro build é o
+canal beta oficial oferecido no menu Ajuda. Isso é diagnóstico experimental,
+não atualização operacional do projeto e não pressupõe que uma beta diferente
+esteja disponível ou corrija a falha.
+
+Antes de solicitar atualização, preservar os três executáveis6231 da cópia
+isolada em uma subpasta de backup exclusiva, sem substituir backups antigos:
+terminal64.exe, metaeditor64.exe, metatester64.exe. Não copiar bases/config.
+Diretório confirmado:
+%LOCALAPPDATA%\ModeloD_MT5_Isolado_20261102_145749_6554356a
+A instalação principal não é alvo desta operação e deve permanecer preservada.
+
+Na janela do SECUNDÁRIO: Ajuda > Verificar atualizações > Versão beta mais
+recente. Usar somente o mecanismo oficial, sem binários de terceiros e sem
+desativar assinatura/checagens. Se oferecer instalação/reinício, aplica-se
+exclusivamente a esta cópia de pesquisa. Depois conferir Ajuda > Sobre e
+log LiveUpdate, e confirmar pasta de dados própria se houver reinicialização.
+Ao reabrir manualmente, usar ABRIR_MT5_ISOLADO para preservar /portable.
+
+A orientação anterior de não escolher beta durante a busca de release estava
+limitada àquela verificação. Esta é uma comparação separada de canal/build,
+com finalidade e escopo próprios, não uma liberação de beta para v2.09/v2.10,
+conta operacional ou teste de lucro. Usuário ainda não executou/confirmou essa
+consulta; não registrar como atualização realizada ou autorização específica
+de beta dada pelo usuário. A indicação é uma decisão de investigação do agente
+dentro do pedido de explorar caminhos locais, com execução visível pelo usuário.
+
+DECISÃO DEPENDENTE DO RESULTADO
+Se instalar build diferente, registrar versão do terminal E do agente antes
+de comparar o diagnóstico mínimo30; mesmas datas/modelo/conta e não visual.
+Não testar se o diretório próprio não estiver confirmado ou houver erro.
+Se não houver beta diferente, não repetir o diagnóstico6231. Novo replay
+idêntico não testa uma hipótese nova. Manter dados/logs e definir outro eixo
+de investigação da origem ou do formato sem fabricar Last nem importar dados
+modificados como se fossem o histórico original.
+
+ESTADO
+6231 confirmado no terminal secundário por captura; consulta beta ainda não
+realizada/confirmada. Fonte/compilação do EA e diagnóstico permanecem iguais.

@@ -257,3 +257,11 @@ you are using the latest version. Nenhum upgrade ou outro build confirmado.
 Próximo: Ajuda > Sobre do SECUNDÁRIO, para registrar build do terminal;
 até aqui6231 está confirmado nos logs do agente/diagnóstico, não por captura
 Sobre da interface. Ver diagnostico_agente/VERIFICACAO_RELEASE_MT5_SECUNDARIO.txt.
+
+ATUALIZAÇÃO — SOBRE DO SECUNDÁRIO CONFIRMA6231
+Captura mostra MetaTrader5 v5.00 build6231 de27/09/2026. Terminal e agente
+concordam; release checker disse latest version. Próxima comparação indicada
+é canal beta OFICIAL apenas na cópia isolada/diagnóstico sem ordens, depois
+de preservar executáveis6231. Não é atualização operacional nem certeza de
+beta disponível. Ver BUILD_TERMINAL_E_COMPARACAO_EXPERIMENTAL.txt. Consulta,
+instalação e novo build ainda não recebidos; não repetir teste igual em6231.
