@@ -1,0 +1,7 @@
+Diagnostico_Dados_WINZ26.mq5
+code generated                         0
+0 errors, 0 warnings, 598 ms elapsed, cpu='AVX2 + FMA3'       0
+
+Resultado colado pelo usuário nesta conversa. Compilação MQL5 nativa no
+MetaEditor do usuário, não no ambiente na nuvem. Binário não foi anexado.
+Execução nativa correspondente recebida em TXT e log do agente.

@@ -139,3 +139,14 @@ Fonte + teste host C++ sobre amostra real: 17 verificações/zero falhas com
 sanitizadores. Compilação MQL5 e execução nativa do diagnóstico pendentes.
 Próximo: usuário compilar e executar essa coleta, enviando TXT MD_DIAG_DADOS_
 e log completo. Não declarar v2.10 corrigida ou dados reais validados.
+
+ATUALIZAÇÃO — DIAGNÓSTICO NATIVO CONCLUÍDO, 14:05
+Diagnostico_Dados_WINZ26.mq5: 0 erros/0 avisos; coleta e remoção automática
+às 09:02 executadas. Evidências em validacao_20261102_diagnostico_agente/.
+Agente declara LAST e recebe M1 idêntica ao CSV; entretanto ALL retorna
+3790 cotações com Last zerado e TRADE retorna 0, sem erro. Log do motor
+confirma novamente geração após descarte integral dos ticks reais.
+Ausência de negócios no agente demonstrada; causa interna do descarte não.
+Não mudar o EA para Bid/Last artificial. Próximo: verificar estrutura das
+pastas do agente local para preservar e planejar reconstrução do cache,
+sem apagar nada nem repetir rodada idêntica antes de mudança de estado.

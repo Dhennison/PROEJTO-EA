@@ -1,0 +1,72 @@
+DIAGNÓSTICO NATIVO DO AGENTE — 02/11/2026, 14:05:15–14:05:19
+
+RESULTADO DO DIAGNÓSTICO: COLETA EXECUTADA E ENCERRADA COMO PREVISTO
+Compilação nativa confirmada pelo usuário: 0 erros/0 avisos, 598 ms.
+Fonte diagnóstico v1.00; build 6231; visualização ativa; margin_mode=2.
+Inicio simulado 30/10/2026 00:00; probe às 09:02; ExpertRemove automático.
+DEINIT reason=0, probe_executed=1: encerramento voluntário esperado.
+Não é aceitação da v2.10 nem aprovação de backtest. Nenhuma ordem enviada.
+
+COMPARAÇÃO DECISIVA — MESMO MINUTO [09:00,09:01)
+Terminal atual, exportação fornecida anteriormente:
+- primeiro negócio Last positivo às 09:00:43.093;
+- 21.566 registros totais, incluindo cotações e sete registros de flags zero;
+- 10.528 registros com Last positivo e flags de negociação;
+- OHLC 170910/171600/170900/171330; volume negociado 78471.
+
+Agente no diagnóstico nativo:
+- SYMBOL_CHART_MODE=1, enum LAST=1: também declara gráfico por LAST;
+- tick_size=5, tick_value=1, digits=0, point=1; calculation_mode=33;
+- lucro/margem BRL, conta simulada USD;
+- barra M1 recebida com MESMOS OHLC, tick_volume=18948 e real_volume=78471;
+- CopyTicksRange ALL: 3790 registros, error=0, todos com Last zero;
+- ALL: zero negócios com Last positivo, zero regressões/fora de janela;
+- exemplos ALL têm flags=6 (Bid/Ask), volume e volume_real zero;
+- CopyTicksRange TRADE: 0 registros, error=0;
+- primeiro evento observado é cotação gerada às 09:00:00, Last=0,
+  diferente do primeiro negócio Last da exportação do terminal.
+
+CONFIRMAÇÃO DO MOTOR
+Novamente o motor registra descarte integral de ticks reais dos 565 minutos,
+4.319.114 preços de ticks divergentes e geração substituta. Preservados log
+acumulado, texto colado e relatório; fronteira da nova rodada destacada em
+RODADA_DIAGNOSTICO_EXTRAIDA.txt. Hashes/tamanhos em FONTES.json.
+O horário atual/GMT/servidor simulado igual a 09:02 não certifica fuso/NTP;
+não mudar o parâmetro BRT aprovado por causa da igualdade no Tester.
+
+O QUE ESTÁ COMPROVADO
+A ausência de negócios no adaptador não é apenas uma mensagem genérica do
+EA: a consulta nativa TRADE também está vazia. A sequência observada é:
+recusa dos ticks reais pelo motor -> geração de cotações sem Last ->
+TRADE vazio -> EA sem abertura de negócio validada -> nenhuma ordem.
+As barras M1 e o modo Last do agente conferem com os dados atuais do terminal.
+Não é necessário converter o EA para Bid ou fabricar Last para ultrapassar
+o bloqueio. Isso alteraria a regra e não restauraria os ticks reais.
+
+O QUE AINDA NÃO ESTÁ COMPROVADO
+A causa interna que levou o motor a recusar os ticks originais. Este
+diagnóstico lê o fluxo já preparado pelo Tester, não os ticks brutos que ele
+descartou. Não prova corrupção de cache, erro da Genial, bug de build nem
+incompatibilidade específica dos registros zero da amostra.
+Uma propriedade mal definida por Bid está afastada nesta rodada, pois a
+consulta nativa também retorna LAST. Isso não prova que todo o EA esteja
+correto: transporte, gestão e demais caminhos não foram exercitados.
+
+PRÓXIMO PASSO
+Verificar as pastas de bases/histórico/ticks do agente local, para planejar
+uma reconstrução controlada do seu cache com cópia preservada. As últimas
+sincronizações transferiram apenas 149 e 34 bytes de ticks; elas não provam
+redownload completo. Não repetir o mesmo diagnóstico sem mudança de estado.
+Primeiro confirmar os diretórios efetivamente existentes no Windows do usuário:
+%APPDATA%\MetaQuotes\Tester\7C2F32F55EE936F0CCC2F0B721A79A10\Agent-127.0.0.1-3000
+Solicitar captura da lista de pastas desse diretório, sem apagar/renomear
+arquivos ainda. A existência/estrutura de bases não foi inspecionada pelo
+assistente, que não tem acesso direto ao disco Windows do usuário.
+Não alterar o símbolo, CSVs, ajuste B3, diário ou instalação v2.09/v2.10.
+Qualquer reconstrução deve preservar o cache original, limitar-se ao agente
+correto e ser seguida de comparação nativa, sem prometer que resolverá.
+
+ESTADO
+Diagnóstico nativo concluído; problema de fornecimento de Last ao EA durante
+esse replay demonstrado. Restabelecimento do histórico real e aceitação
+operacional pendentes. Não houve correção de código do EA nesta etapa.
