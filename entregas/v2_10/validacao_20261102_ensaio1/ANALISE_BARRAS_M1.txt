@@ -1,0 +1,45 @@
+WINZ26 — BARRAS M1 EXPORTADAS PELO USUÁRIO APÓS O PRIMEIRO ENSAIO
+
+Fonte: aba Barras da janela Ativos do MT5, WINZ26, M1,
+intervalo solicitado 30/10/2026 00:00 a 31/10/2026 00:00, conforme captura.
+CSV original preservado com nome WINZ26_M1_202610300900_202610301824.csv.
+Hash/tamanho em FONTES.json. Resultado estruturado em ANALISE_M1.json.
+Formato do arquivo: texto UTF-8, colunas separadas por tabulação.
+
+CHECAGENS EXECUTADAS NO CSV
+565 linhas de dados, exatamente uma por minuto de 09:00 até 18:24 inclusive.
+Ordem cronológica estrita, sem duplicatas e sem minutos ausentes nesse intervalo.
+OHLC numericamente positivo e coerente dentro de cada barra; preços em
+múltiplos de 5. Volumes/spread não negativos; spread=5 em todas as barras.
+Agregado dos 565 minutos:
+Abertura=170910; máxima=171600; mínima=169070; fechamento=170350.
+Soma TICKVOL=7027468; soma VOL=20890318.
+Essas somas não devem ser equiparadas automaticamente à quantidade de ticks
+TRADE ou de negócios: dependem do significado dos campos na fonte.
+
+Primeiro minuto, 09:00:00:
+O=170910; H=171600; L=170900; C=171330; TICKVOL=18948; VOL=78471; SPREAD=5.
+
+INTERPRETAÇÃO
+O CSV confirma a existência de 565 barras no terminal no momento da exportação,
+em correspondência de quantidade com os 565 minutos citados no log do Tester.
+Coerência interna das barras não comprova que elas representam corretamente
+os negócios nem que o cache do agente tinha valores idênticos ao CSV atual.
+Ainda não há exportação dos ticks brutos para verificar a divergência registrada
+pelo motor. Não escolher barras ou ticks como fonte correta sem confronto.
+Não houve nova execução do EA, alteração de fontes, importação de dados,
+limpeza de cache nem mudança do ajuste B3 nesta etapa.
+
+PRÓXIMO PASSO — AMOSTRA PEQUENA, MESMO SÍMBOLO E HORÁRIO
+Na MESMA janela Ativos, selecionar Ticks, manter WINZ26, pedir
+30/10/2026 09:00 a 30/10/2026 09:01; clicar Solicitação e Exportar ticks.
+Enviar o CSV exportado. Comparar Last/negócios, timestamps/flags disponíveis,
+OHLC e volumes do minuto de 09:00 com a primeira barra M1, sem confundir
+Bid/Ask com Last, volume por tick com volume acumulado ou eventos com negócios.
+Se a exportação incluir o limite 09:01, separá-lo do minuto [09:00,09:01).
+Não solicitar nem anexar todos os milhões de ticks neste primeiro confronto.
+
+ESTADO
+Ensaio original continua inválido para aceitação em ticks reais; causa interna
+da divergência ainda não identificada. As verificações atuais não aprovam
+operações nem demonstram correção do leitor de abertura no Tester.

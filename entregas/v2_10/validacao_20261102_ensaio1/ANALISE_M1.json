@@ -1,0 +1,28 @@
+{
+  "rows": 565,
+  "first": "2026-10-30 09:00:00",
+  "last": "2026-10-30 18:24:00",
+  "ordered_exact_565_minutes": true,
+  "duplicates": 0,
+  "errors": [],
+  "open": "170910",
+  "high": 171600.0,
+  "low": 169070.0,
+  "close": "170350",
+  "sum_tickvol": 7027468,
+  "sum_volume": 20890318,
+  "spread_counts": {
+    "5": 565
+  },
+  "first_minute": {
+    "<DATE>": "2026.10.30",
+    "<TIME>": "09:00:00",
+    "<OPEN>": "170910",
+    "<HIGH>": "171600",
+    "<LOW>": "170900",
+    "<CLOSE>": "171330",
+    "<TICKVOL>": "18948",
+    "<VOL>": "78471",
+    "<SPREAD>": "5"
+  }
+}

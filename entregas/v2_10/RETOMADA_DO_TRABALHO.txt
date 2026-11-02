@@ -99,3 +99,11 @@ Tester descartou ticks reais de TODOS os 565 minutos do dia, identificou
 DIAGNOSTICO_LOG_COMPLETO.txt. Não repetir teste completo nem aceitar ticks
 sintéticos: próximo passo é conferir M1 e amostra de ticks Last de WINZ26
 no MT5, sem apagar cache/estado nem alterar estratégia ou arquivo B3.
+
+ATUALIZAÇÃO — CSV M1 RECEBIDO
+WINZ26_M1_202610300900_202610301824.csv preservado no diretório do ensaio.
+565 barras contíguas 09:00–18:24, sem duplicatas/lacunas nesse intervalo,
+OHLC/grade internamente coerentes. Isso não resolve confronto com ticks.
+Primeiro minuto: O170910 H171600 L170900 C171330. Próxima evidência:
+exportação de ticks WINZ26 de 30/10/2026 09:00 a 09:01 para confronto Last/M1.
+Ver ANALISE_BARRAS_M1.txt e ANALISE_M1.json; nenhum novo teste executado.
