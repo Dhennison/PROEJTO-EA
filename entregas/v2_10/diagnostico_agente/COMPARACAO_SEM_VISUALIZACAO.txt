@@ -1,0 +1,58 @@
+PRÓXIMA ALTERNATIVA LOCAL — DIAGNÓSTICO COM VISUALIZAÇÃO DESATIVADA
+
+CONTEXTO E CORREÇÃO DO ENCAMINHAMENTO
+O descarte dos ticks reais e ausência de Last no agente foram demonstrados.
+Ainda NÃO foi demonstrado que somente uma intervenção do suporte pode resolver
+o problema. As rodadas nativas recebidas ocorreram em visualização: visual=1.
+O suporte permanece uma opção, mas alternativas locais não foram esgotadas.
+Usuário pediu explicitamente continuar a investigação hoje, sem ficar parado
+aguardando retorno externo. Não declarar ausência de alternativas comprovada.
+
+ENSAIO CONTROLADO SEM NOVO FONTE/INSTALAÇÃO
+Usar o Diagnostico_Dados_WINZ26 v1.00 já compilado, não o EA operacional.
+Alterar APENAS o modo visual para desativado. Manter:
+- símbolo WINZ26; período M5;
+- datas personalizadas 30/10/2026 a 31/10/2026;
+- Cada tick baseado em ticks reais;
+- agente local; sem otimização/forward/atraso;
+- saldo simulado 1000000 USD, mesma configuração de conta.
+Não recriar cache novamente neste ensaio, não restaurar o backup nem trocar
+nomes de pastas, fonte de dados ou moeda. Não precisa recompilar.
+
+Executar e aguardar encerramento automático às 09:02 do replay. Sem gráfico,
+o progresso pode ser acompanhado pelo Diário. O diagnóstico não negocia e
+não consome os arquivos de ajuste ou diário operacional do Modelo D.
+Enviar novo TXT MD_DIAG_DADOS_20261030_... e log atualizado do agente.
+
+O QUE ESSA COMPARAÇÃO TESTA
+Se o preparo/fluxo no modo NÃO visual apresenta os mesmos avisos, propriedades
+e consultas da execução visual, mantendo os demais parâmetros conhecidos.
+Não prometer que resolve. A retirada do gráfico não deve ser descrita como
+mudança para ticks artificiais: o modelo selecionado continua sendo ticks reais.
+O agente pode também alterar alocação/processamento ao mudar modo; o log
+e as consultas devem demonstrar o que de fato ocorreu.
+
+CRITÉRIOS DE LEITURA
+1. Confirmar START com visual=0 e mesmos símbolo/data/build/parâmetros.
+2. Confrontar avisos de descarte e bytes de sincronização com a rodada visual.
+3. Conferir M1 e consultas ALL/TRADE: contagem, erros, flags e Last/volumes.
+4. Não aprovar só porque TRADE deixa de ser vazio; verificar que não houve
+   substituição por ticks gerados e que a amostra confere com os negócios.
+5. Se idêntico, encerrar essa hipótese; não repetir rodadas iguais.
+
+ALTERNATIVAS POSTERIORES, AINDA NÃO EXECUTADAS
+Se necessário, priorizar uma reprodução com instalação/perfil de terminal
+isolado para separar cache/configuração do terminal atual de dados do servidor,
+preservando a instalação operacional. Uma comparação de build só faz sentido
+com origem oficial e versão registrada. Não baixar binários desconhecidos,
+pedir credenciais em chat ou mudar o EA para fabricar Last.
+Importação de dados reais em símbolo de pesquisa é outra investigação possível,
+mas exigiria origem, propriedades, integridade e limitações explícitas. Não
+iniciar isso nem declarar equivalência ao contrato original sem necessidade.
+Não propor mudança de data/contrato como se validasse o ensaio congelado de
+30/10. Outros recortes seriam apenas diagnósticos separados, com dados próprios.
+
+ESTADO
+Ensaio não visual ainda PENDENTE. Nenhum teste novo executado neste registro.
+Nenhum código ou pacote operacional alterado; compilação nativa já existente
+do diagnóstico permanece a mesma. Suporte não é pré-requisito desta comparação.

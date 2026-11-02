@@ -177,3 +177,12 @@ validacao_20261102_pos_recriacao/DIARIO_TERMINAL_EXTERNO.txt e pacote de suporte
 Transferência concluída não anula rejeição posterior dos ticks no agente;
 Cloud servers switched off é esperado no teste local, e connection closed
 coincide com remoção automática do diagnóstico. Nenhum teste novo executado.
+
+ATUALIZAÇÃO — CONTINUAR ALTERNATIVAS LOCAIS, SEM AGUARDAR SUPORTE
+Usuário solicitou novos caminhos de teste. Rodadas nativas até agora eram
+visuais (visual=1). Próximo: executar MESMO diagnóstico compilado com modo
+visual desmarcado, preservando M5, 30/10–31/10, ticks reais e demais campos.
+Ver diagnostico_agente/COMPARACAO_SEM_VISUALIZACAO.txt. Não recompilar nem
+recriar cache novamente nesta rodada. A ausência de Last está comprovada,
+mas não foi provado que só o suporte pode resolver. Ensaio não visual pendente;
+próximas hipóteses devem depender do resultado, sem repetir rodadas iguais.
