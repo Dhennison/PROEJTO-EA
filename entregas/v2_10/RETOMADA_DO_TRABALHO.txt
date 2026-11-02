@@ -249,3 +249,11 @@ do dia30 nesse controle. Próximo: verificar opção de atualização oficial
 release no menu Ajuda do MT5 SECUNDÁRIO. Todos os testes usaram6231 até aqui;
 outro build ainda não foi testado nem há atualização disponível confirmada.
 Não instalar beta, modificar o principal ou repetir testes iguais nesse build.
+
+ATUALIZAÇÃO — VERIFICAÇÃO DE RELEASE NO SECUNDÁRIO
+Menu correto identificado como sendo do secundário (primeira captura era do
+principal). Usuário selecionou release: LiveUpdate às15:43 respondeu
+you are using the latest version. Nenhum upgrade ou outro build confirmado.
+Próximo: Ajuda > Sobre do SECUNDÁRIO, para registrar build do terminal;
+até aqui6231 está confirmado nos logs do agente/diagnóstico, não por captura
+Sobre da interface. Ver diagnostico_agente/VERIFICACAO_RELEASE_MT5_SECUNDARIO.txt.

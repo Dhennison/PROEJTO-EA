@@ -1,0 +1,32 @@
+VERIFICAÇÃO DE RELEASE NO MT5 SECUNDÁRIO — 02/11/2026
+
+Usuário corrigiu a identificação das capturas: o primeiro menu Ajuda mostrado
+era do principal e foi desconsiderado para instruções de atualização; o segundo
+era do secundário e continha Verificar atualizações.
+Submenu mostrava Versão mais recente e Versão beta mais recente.
+Foi selecionada a opção de release, não a beta.
+
+RESULTADO COLADO PELO USUÁRIO
+2026.11.02 15:43:40.368 LiveUpdate check for release version
+2026.11.02 15:43:40.590 LiveUpdate you are using the latest version
+
+ALCANCE
+O mecanismo de atualização desse terminal não ofereceu release mais nova.
+Não houve atualização confirmada nem comparação com outro build. A mensagem
+não informa o número de build do terminal/controlador. Os logs nativos do
+diagnóstico mostram o build6231 do agente e a leitura TERMINAL_BUILD dentro
+do próprio agente. Isso não substitui conferir a versão da interface principal.
+Não afirmar que uma beta está disponível ou resolverá o problema.
+
+PRÓXIMO DADO A CONFERIR
+Na MESMA janela do MT5 secundário: Ajuda > Sobre; registrar a versão/build
+do terminal e confrontá-la com o agente6231. Não executar novo teste igual,
+instalar outra cópia ou alterar EA/dados antes de definir hipótese específica.
+Uma comparação de canal/build diferente, se adotada posteriormente, precisa
+ser explicitamente diagnóstico na cópia isolada, com origem oficial e versões
+registradas; não promover versão experimental a operacional por um teste.
+
+ESTADO
+Release consultada; resultado latest version. Build do terminal secundário
+ainda aguardando captura. MT5 principal e fontes do EA não foram alterados
+por esta verificação descrita. Nenhuma nova execução do diagnóstico recebida.
