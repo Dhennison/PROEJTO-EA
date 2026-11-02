@@ -57,3 +57,19 @@ comparada e caso mínimo pronto. Bloqueador externo: motor não disponibiliza
 negócios Last válidos para o replay solicitado. Aguardamos investigação ou
 correção dos dados/preparação pelo ambiente MT5 para retomar o ensaio v2.10.
 Não houve nova mudança no EA nem aprovação de backtest/gestão/demo.
+
+COMPLEMENTO — DIÁRIO EXTERNO DO TERMINAL RECEBIDO POSTERIORMENTE
+DIARIO_TERMINAL_EXTERNO.txt transcreve o trecho colado pelo usuário, referente
+à MESMA rodada de 14:21–14:22, não uma nova execução. O terminal anuncia ticks
+desde 09/10/2026 e sincronização de 12723 KB com o agente local build6231.
+30/10 está depois do início anunciado da série. Isso não certifica cobertura
+contínua, integridade, Last válido ou redownload remoto completo. As mensagens
+de download preliminar iniciam/terminam no mesmo milissegundo; não inferir
+que todos os dados foram buscados novamente no servidor da corretora.
+O download/sincronização declarado pelo terminal é anterior à rejeição pelo
+motor do agente às 14:22:00.075; não há contradição em sincronizar e depois
+recusar a série por incoerência. Cloud servers switched off é compatível com
+o agente LOCAL solicitado. Authorized se refere à conexão com esse agente,
+não a aprovação de histórico ou autorização para negociar. Connection closed
+coincide com o encerramento automático do diagnóstico e não demonstra queda.
+Nenhum desses registros atribui a falha a feriado, sábado ou nome da pasta.

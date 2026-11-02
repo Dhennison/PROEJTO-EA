@@ -63,3 +63,10 @@ Fonte diagnóstico, seu TXT nativo e log da rodada 14:21–14:22;
 CSVs originais de barras M1 do dia e ticks de um minuto, sem alteração;
 manifesto SHA-256. O CSV de ticks inclui quatro registros do limite 09:01,
 que devem ser separados do minuto [09:00,09:01) na comparação.
+
+COMPLEMENTO DO DIÁRIO DO TERMINAL (MESMA EXECUÇÃO)
+O terminal informa ticks disponíveis desde 09/10/2026, conclusão de download
+preliminar e sincronização de 12723 KB com o agente local build6231. O teste
+de 30/10 está dentro do período anunciado. Essas mensagens antecedem a
+rejeição da série no agente; não certificam coerência dos dados transferidos.
+Trecho completo em DIARIO_TERMINAL_EXTERNO.txt.

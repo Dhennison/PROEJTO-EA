@@ -169,3 +169,11 @@ Não repetir reconstruções/ensaios iguais. Caso mínimo sem ordens e chamado
 de suporte preparados para investigação do histórico/preprocessamento MT5;
 nenhuma mensagem externa enviada. Ver ANALISE_E_PROXIMO_PASSO.txt e
 CHAMADO_SUPORTE_WINZ26.txt. Ensaio v2.10 continua bloqueado e não aprovado.
+
+COMPLEMENTO — DIÁRIO DO TERMINAL DA MESMA RODADA
+Usuário colou mensagens externas do Tester: início anunciado de ticks em
+09/10 e sincronização de 12723 KB com agente local. Salvas em
+validacao_20261102_pos_recriacao/DIARIO_TERMINAL_EXTERNO.txt e pacote de suporte.
+Transferência concluída não anula rejeição posterior dos ticks no agente;
+Cloud servers switched off é esperado no teste local, e connection closed
+coincide com remoção automática do diagnóstico. Nenhum teste novo executado.

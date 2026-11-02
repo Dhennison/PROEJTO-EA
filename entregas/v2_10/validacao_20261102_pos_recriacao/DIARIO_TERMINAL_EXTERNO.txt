@@ -1,0 +1,16 @@
+2026.11.02 14:20:14.677	Tester	Cloud servers switched off
+2026.11.02 14:21:58.077	Tester	"ModeloD_Diagnostico_Agente\Diagnostico_Dados_WINZ26.ex5" AVX2
+2026.11.02 14:21:58.389	Tester	WINZ26: preliminary downloading of history ticks started, it may take quite a long time
+2026.11.02 14:21:58.389	Tester	WINZ26: preliminary downloading of history ticks completed
+2026.11.02 14:21:58.389	Tester	WINZ26: ticks data begins from 2026.10.09 00:00
+2026.11.02 14:21:58.400	Core 01	agent process started on 127.0.0.1:3000
+2026.11.02 14:21:58.400	Core 01	connecting to 127.0.0.1:3000
+2026.11.02 14:21:58.917	Core 01	connected
+2026.11.02 14:21:58.983	Core 01	authorized (agent build 6231)
+2026.11.02 14:21:58.995	Tester	WINZ26,M5 (GenialInvestimentos-PRD): visual testing of Experts\ModeloD_Diagnostico_Agente\Diagnostico_Dados_WINZ26.ex5 from 2026.10.30 00:00 to 2026.10.31 00:00
+2026.11.02 14:21:59.448	Core 01	common synchronization completed
+2026.11.02 14:21:59.515	Core 01	WINZ26: history for 2026 year synchronized
+2026.11.02 14:21:59.515	Core 01	WINZ26: history synchronization completed [213 Kb]
+2026.11.02 14:21:59.516	Core 01	WINZ26: 213.19 Kb of history processed in 0:00:00.031
+2026.11.02 14:21:59.544	Core 01	WINZ26: ticks synchronization completed [12723 Kb]
+2026.11.02 14:22:03.228	Core 01	connection closed
