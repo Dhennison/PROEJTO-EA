@@ -1,0 +1,55 @@
+WINZ26 — CONFRONTO DOS TICKS EXPORTADOS COM M1, 30/10/2026 09:00
+
+RESULTADO
+Os negócios Last positivos do minuto exportado reproduzem exatamente o OHLC
+e volume real da barra M1 atual do terminal. Não há evidência de divergência
+nesses CINCO campos dessa amostra. Isso não anula o descarte registrado no
+ensaio nem prova que o agente tinha o mesmo conteúdo durante sua preparação.
+
+ARQUIVOS E REPRODUÇÃO
+WINZ26_202610300900_202610300901.csv preservado byte a byte.
+SHA-256: dd33aa0233a643d6aaf8ffc86026cddfba315f642faa48b584706b9b312ae675
+Rodar python3 CONFERIR_AMOSTRA_TICKS_M1.py nesta pasta ou por caminho completo.
+Resultado desta execução: COMPARACAO_TICKS_M1.json. O script usa Decimal,
+separa cotações de negócios e não modifica entradas.
+
+RECORTE E CONTAGENS
+Exportação: 21.570 registros; 21.566 dentro de [09:00,09:01).
+Quatro registros no limite 09:01:00.000 foram excluídos da primeira barra;
+incluí-los mudaria fechamento/volume indevidamente.
+10.528 registros têm Last positivo com flags de negociação (LAST/VOLUME/BUY/SELL).
+Primeiro negócio: 09:00:43.093, Last 170910; último: 09:00:59.999, Last 171330.
+Registros distintos no mesmo milissegundo foram mantidos em ordem original.
+Não há regressão de timestamps. Não converter células vazias de Bid/Ask/Last
+do export esparso em negócio, nem confundir Bid/Ask com Last.
+
+CAMPO       RECONSTRUÍDO DOS NEGÓCIOS     BARRA M1
+Abertura    170910                       170910
+Máxima      171600                       171600
+Mínima      170900                       170900
+Fechamento  171330                       171330
+Volume      78471                        78471
+
+LIMITES E ANOMALIAS A INVESTIGAR
+TICKVOL da barra M1 é 18.948; a exportação tem 21.566 eventos no minuto e
+10.528 registros de negociação. São contagens distintas; não presumir
+equivalência nem atribuir automaticamente a diferença a erro.
+Há sete registros com Bid/Ask/Last/volume/flags todos zero, nos instantes
+09:00:45.911, 47.069, 47.221, 49.870, 52.134, 52.707 e 53.027.
+Foram preservados e separados dos negócios positivos, sem apagá-los do arquivo.
+A presença desses registros merece investigação, mas não prova que causem
+o descarte integral pelo Tester. Não limpar/fabricar ticks para forçar PASS.
+
+PRÓXIMO PASSO
+Conferir a especificação do símbolo REAL WINZ26 no MT5, em particular se o
+modo de construção do gráfico é Last ou Bid. As barras exportadas conferem
+com Last; precisamos saber qual modo é declarado ao Tester antes de apontar
+incompatibilidade ou recomendar mudança. Esta é uma hipótese de investigação,
+não uma falha da especificação já comprovada. Não modificar propriedades.
+Se a propriedade não for exibida na interface, registrar a limitação e usar
+diagnóstico nativo somente se necessário. A amostra atual não valida o dia
+inteiro, o cache do agente, a reconstrução M1 no Tester ou o transporte do EA.
+
+Não houve nova execução do EA nem alteração de estratégia/ZIP. Ensaio original
+continua não aceito como backtest em ticks reais. Fontes/resultados desta
+investigação devem permanecer disponíveis na branch de entrega.

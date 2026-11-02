@@ -107,3 +107,13 @@ OHLC/grade internamente coerentes. Isso não resolve confronto com ticks.
 Primeiro minuto: O170910 H171600 L170900 C171330. Próxima evidência:
 exportação de ticks WINZ26 de 30/10/2026 09:00 a 09:01 para confronto Last/M1.
 Ver ANALISE_BARRAS_M1.txt e ANALISE_M1.json; nenhum novo teste executado.
+
+ATUALIZAÇÃO — AMOSTRA DE TICKS 09:00–09:01 RECEBIDA
+CSV preservado no diretório do ensaio. Negócios Last do minuto [09:00,09:01)
+reproduzem OHLC e volume M1 exatamente: 170910/171600/170900/171330 e 78471.
+Primeiro negócio 09:00:43.093. Há sete registros de preços/flags zerados,
+sem causa do descarte demonstrada. Não presumir que terminal atual e cache
+do agente eram idênticos. Script e relatório em CONFERIR_AMOSTRA_TICKS_M1.py,
+COMPARACAO_TICKS_M1.json e ANALISE_AMOSTRA_TICKS_M1.txt.
+Próximo passo: conferir especificação WINZ26, especialmente gráfico Last/Bid,
+sem alterar propriedades ou repetir ensaio completo ainda.

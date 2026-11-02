@@ -1,0 +1,114 @@
+{
+  "scope": "Amostra atual do terminal; não prova conteúdo do agente no ensaio",
+  "interval": "[2026-10-30 09:00:00, 2026-10-30 09:01:00)",
+  "export_rows": 21570,
+  "rows_in_minute": 21566,
+  "rows_outside_minute": 4,
+  "positive_last_trade_rows": 10528,
+  "first_trade_time": "09:00:43.093",
+  "last_trade_time": "09:00:59.999",
+  "timestamp_regressions": 0,
+  "flags_in_minute": {
+    "56": 4929,
+    "88": 4962,
+    "120": 637,
+    "6": 1,
+    "4": 5195,
+    "2": 5835,
+    "0": 7
+  },
+  "zero_flags_rows": [
+    {
+      "<DATE>": "2026.10.30",
+      "<TIME>": "09:00:45.911",
+      "<BID>": "0",
+      "<ASK>": "0",
+      "<LAST>": "0",
+      "<VOLUME>": "0.00000000",
+      "<FLAGS>": "0"
+    },
+    {
+      "<DATE>": "2026.10.30",
+      "<TIME>": "09:00:47.069",
+      "<BID>": "0",
+      "<ASK>": "0",
+      "<LAST>": "0",
+      "<VOLUME>": "0.00000000",
+      "<FLAGS>": "0"
+    },
+    {
+      "<DATE>": "2026.10.30",
+      "<TIME>": "09:00:47.221",
+      "<BID>": "0",
+      "<ASK>": "0",
+      "<LAST>": "0",
+      "<VOLUME>": "0.00000000",
+      "<FLAGS>": "0"
+    },
+    {
+      "<DATE>": "2026.10.30",
+      "<TIME>": "09:00:49.870",
+      "<BID>": "0",
+      "<ASK>": "0",
+      "<LAST>": "0",
+      "<VOLUME>": "0.00000000",
+      "<FLAGS>": "0"
+    },
+    {
+      "<DATE>": "2026.10.30",
+      "<TIME>": "09:00:52.134",
+      "<BID>": "0",
+      "<ASK>": "0",
+      "<LAST>": "0",
+      "<VOLUME>": "0.00000000",
+      "<FLAGS>": "0"
+    },
+    {
+      "<DATE>": "2026.10.30",
+      "<TIME>": "09:00:52.707",
+      "<BID>": "0",
+      "<ASK>": "0",
+      "<LAST>": "0",
+      "<VOLUME>": "0.00000000",
+      "<FLAGS>": "0"
+    },
+    {
+      "<DATE>": "2026.10.30",
+      "<TIME>": "09:00:53.027",
+      "<BID>": "0",
+      "<ASK>": "0",
+      "<LAST>": "0",
+      "<VOLUME>": "0.00000000",
+      "<FLAGS>": "0"
+    }
+  ],
+  "M1_tick_volume": "18948",
+  "comparison": {
+    "OPEN": {
+      "from_trades": "170910",
+      "M1": "170910",
+      "equal": true
+    },
+    "HIGH": {
+      "from_trades": "171600",
+      "M1": "171600",
+      "equal": true
+    },
+    "LOW": {
+      "from_trades": "170900",
+      "M1": "170900",
+      "equal": true
+    },
+    "CLOSE": {
+      "from_trades": "171330",
+      "M1": "171330",
+      "equal": true
+    },
+    "VOL": {
+      "from_trades": "78471.00000000",
+      "M1": "78471",
+      "equal": true
+    }
+  },
+  "all_compared_values_equal": true
+}
