@@ -55,3 +55,10 @@ nem executou testes novos. Compilação v2.10 no MetaEditor e primeiro ensaio
 continuam aguardando resultado do usuário. Os ensaios observacionais v2.09 de
 Wi-Fi/reabertura/reinício/interrupção do processo já constam como aceitos no
 Chat 2; não confundir com queda física durante gravação, ainda não provada.
+
+ATUALIZAÇÃO — INSTALAÇÃO PARALELA SOLICITADA PELO USUÁRIO
+Preservar a pasta da v2.09. Instalar a v2.10 na pasta separada
+MQL5\Experts\ModeloD_Integrado_Sem_Transporte v2.10\.
+Conferidos os includes relativos do ZIP v2.10; compilação nativa nesse caminho
+ainda pendente. Ver INSTALACAO_PARALELA_v2_10.txt, que substitui a orientação
+anterior de sobrescrever a pasta da v2.09. Código e ZIP não foram alterados.

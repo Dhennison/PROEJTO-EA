@@ -1,0 +1,34 @@
+INSTALAÇÃO v2.10 AO LADO DA v2.09 — DECISÃO DO USUÁRIO
+
+Preservar a instalação v2.09. Em vez de substituir sua pasta, instalar os
+40 arquivos de Experts do ZIP v2.10 em uma pasta separada:
+
+MQL5\Experts\ModeloD_Integrado_Sem_Transporte v2.10\
+
+A pasta antiga ModeloD_Integrado_Sem_Transporte pode continuar com a v2.09.
+Renomear somente a pasta NOVA, extraída do ZIP v2.10, antes de copiá-la para
+Experts. Não copiar só o .mq5 nem misturar cabeçalhos das duas versões.
+EA_ModeloD_Fluxo_Sem_Ordens.mq5 e todos os .mqh ficam juntos diretamente na
+nova pasta, sem acrescentar outra subpasta de mesmo nome por engano.
+
+Conferência estática do ZIP: os includes são relativos aos cabeçalhos locais;
+não foi encontrada referência literal ao nome antigo da pasta nos fontes.
+Isso permite a mudança de nome sem alterar código. A compilação MQL5 nesse
+caminho ainda depende da execução no MetaEditor do usuário.
+
+Antes da compilação, preparar a cópia B3 histórica prevista no roteiro:
+MQL5\Files\ModeloD_Tester_20261030_ajuste_b3.txt
+DataFonte=2026-10-29; DataOperacional=2026-10-30; preservar dados originais.
+O caminho/nome do arquivo B3 não muda ao renomear a pasta de Experts.
+
+Compilar no MetaEditor o EA_ModeloD_Fluxo_Sem_Ordens.mq5 da NOVA pasta.
+No Strategy Tester selecionar o EA sob ModeloD_Integrado_Sem_Transporte v2.10,
+e seguir LEIA_PRIMEIRO_v2_10.md com ExecutarNoTester=true no ensaio histórico.
+Essa opção é recusada fora do Strategy Tester. Não executar os dois EAs em
+paralelo em gráficos com a mesma identidade operacional. Renomear uma pasta
+não cria identidade/diário operacional independente; o isolamento do ensaio
+vem do modo Tester e dos prefixos MDT210_, não do nome da pasta.
+
+Não modificar Script, v2.09 ou arquivos operacionais de Common\Files.
+Esta alternativa substitui apenas a orientação de sobrescrever a pasta
+Experts no roteiro anterior; os demais parâmetros e requisitos permanecem.
