@@ -1,0 +1,37 @@
+CÓPIA ISOLADA — SOLICITAÇÃO EXPLÍCITA DE TICKS DE OUTUBRO
+
+EVIDÊNCIA VISUAL RECEBIDA APÓS A FALHA DE DOWNLOAD PRÉVIO
+Janela Ativos, aba Ticks, WINZ26, Todos os ticks.
+Intervalo: 30/10/2026 00:00:00 a 31/10/2026 00:00:00.
+Cabeçalho informa 4.319.285 ticks de 30/10/2026 recebidos,
+com 131.072 ticks exibidos abaixo. A quantidade exibida é menor que a
+recebida; não tratar 131.072 como prova de download incompleto.
+
+Registros visíveis no fim da tabela: 30/10/2026 18:31:24.719,
+Último=170350, volumes distintos positivos, sinalizadores56, Bid/Ask vazios
+na apresentação esparsa. Múltiplos registros no mesmo milissegundo não são
+automaticamente duplicatas: preservar volume e ordem da origem.
+
+ALCANCE
+A cópia nova consegue receber ticks do dia solicitado pelo comando manual.
+Isso muda o pré-requisito em relação à primeira tentativa do Tester, que
+parou antes de iniciar o agente por download prévio cancelado.
+A captura não comprova quais valores o agente receberá, nem permite contar
+negócios, flags, horários ou verificar OHLC/volume do dia inteiro.
+Não comparar a quantidade 4.319.285 recebida com 4.319.114 ticks cujos preços
+o motor rejeitou para concluir identidade/diferença sem o mesmo filtro e janela.
+Não afirmar correção do histórico ou aceitação do ensaio por essa tela.
+
+PRÓXIMO PASSO
+Fechar Ativos em OK e iniciar uma vez Diagnostico_Dados_WINZ26 na MESMA cópia
+isolada, mantendo WINZ26/M5, datas 30/10–31/10, ticks reais, não visual,
+sem otimização e agente local. Não copiar bases antigas ou alterar modelo.
+Aguardar sincronização e encerramento automático às 09:02, se o agente iniciar.
+Enviar novo TXT MD_DIAG_DADOS_... e log do agente da cópia; se parar no download
+prévio novamente, enviar mensagens do Diário sem presumir geração de novo TXT.
+Não exportar todos os ticks por enquanto. A decisão seguinte depende da
+execução com o histórico explicitamente solicitado na cópia nova.
+
+ESTADO
+Disponibilidade visual dos ticks no terminal isolado observada; coleta do
+diagnóstico no agente dessa cópia ainda pendente. Nenhum código alterado.

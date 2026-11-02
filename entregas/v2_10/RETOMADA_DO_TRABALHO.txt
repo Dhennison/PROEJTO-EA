@@ -212,3 +212,11 @@ Não confundir com Last=0/descarte da instalação antiga: diagnóstico não con
 como iniciado nesta cópia. Próximo: Ctrl+U/Ticks/WINZ26 solicitar explicitamente
 30/10 00:00 a 31/10 00:00 e observar resultado, sem exportar o dia inteiro
 ou repetir Tester ainda. Ver diagnostico_agente/ISOLADO_PRIMEIRA_TENTATIVA_*.txt.
+
+ATUALIZAÇÃO — SOLICITAÇÃO MANUAL DE OUTUBRO NO ISOLADO FUNCIONOU
+Captura Ativos/Ticks/WINZ26/30–31/10 informa 4.319.285 ticks recebidos,
+131.072 exibidos, com Last/volume nos registros visíveis. Não confundir
+limite de exibição com download incompleto. Ver
+diagnostico_agente/ISOLADO_SOLICITACAO_TICKS_OUTUBRO.txt. Próximo: tentar uma
+vez o diagnóstico na mesma cópia, agora com o recorte solicitado, e coletar
+TXT/log novos. Ainda não há prova de execução/dados reais no agente isolado.
