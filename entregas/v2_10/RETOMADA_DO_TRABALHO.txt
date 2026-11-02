@@ -196,3 +196,11 @@ instalação original, usando somente executáveis assinados originais e o
 diagnóstico já compilado. Ver diagnostico_agente/LEIA_MT5_ISOLADO.txt e
 PREPARAR_MT5_ISOLADO.txt (.ps1 idêntico). Preparação Windows ainda não executada;
 comandos revisados estaticamente, sem alteração do EA ou instalação local.
+
+ATUALIZAÇÃO — CÓPIA PORTÁTIL ABERTA E DIRETÓRIO CONFIRMADO
+Usuário abriu a cópia e conectou ao GenialInvestimentos-PRD/Hedge. Arquivo >
+Abrir Pasta de Dados mostra %LOCALAPPDATA%\ModeloD_MT5_Isolado_20261102_145749_6554356a.
+Confirmação e roteiro em diagnostico_agente/CONFIRMACAO_COPIA_ISOLADA.txt.
+Próximo: MESMO diagnóstico no terminal novo, WINZ26/M5/30–31/10/ticks reais,
+sem visualização; coletar TXT e log do NOVO agente, sem usar o caminho antigo
+por suposição. Build/dados/resultado desta cópia ainda não recebidos.

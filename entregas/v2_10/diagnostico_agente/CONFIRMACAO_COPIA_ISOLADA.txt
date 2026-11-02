@@ -1,0 +1,43 @@
+CÓPIA ISOLADA — CAMINHO DE DADOS CONFIRMADO PELO USUÁRIO
+
+Após a preparação, o usuário mostrou nova janela MT5 conectada ao servidor
+GenialInvestimentos-PRD, com Hedge no título. Não inferir criação de conta nova
+a partir da mensagem de boas-vindas; título indica o contexto já conhecido.
+
+Em seguida, Arquivo > Abrir Pasta de Dados abriu:
+%LOCALAPPDATA%\ModeloD_MT5_Isolado_20261102_145749_6554356a
+
+A captura mostra bases, config, logs, MQL5, temp, Tester, llm-agent e arquivos
+terminal64.exe, metaeditor64.exe, metatester64.exe, atalho ABRIR_MT5_ISOLADO,
+LEIA_ANTES_DO_TESTE.txt e MODELOD_PREPARACAO.json.
+Isso confirma o diretório próprio da cópia em execução. O manifesto não foi
+anexado/lido aqui; não alegar conferência independente dos hashes/versões nele.
+O build nativo da nova execução ainda precisa ser conferido pelo log.
+
+PRÓXIMA EXECUÇÃO NESTA CÓPIA
+Ctrl+R, teste Único.
+Expert: ModeloD_Diagnostico_Agente\Diagnostico_Dados_WINZ26.ex5.
+Ativo WINZ26; M5.
+Datas personalizadas 2026.10.30 a 2026.10.31.
+Modelagem Cada tick baseado em ticks reais.
+Forward Não; sem atraso; otimização desativada; visualização desmarcada;
+lucro em pips desmarcado; agente local, não cloud/remoto.
+Mesma configuração de conta/saldo do comparativo: Hedge, 1000000 USD, 1:100.
+Não importar perfis, configurações ou bases antigas para a cópia nova.
+Não executar o EA v2.10 ainda: primeiro observar o diagnóstico independente.
+
+Aguardar sincronização e coleta automática às 09:02 do replay. O diagnóstico
+encerra sozinho. Se não estiver disponível no seletor de Expert, localizar
+o EX5 em MQL5\Experts\ModeloD_Diagnostico_Agente da pasta nova antes de
+modificar qualquer instalação; o script de preparação tentou copiá-lo.
+
+COLETA
+Enviar TXT MD_DIAG_DADOS_20261030_... e log do agente DESTA cópia, com seu
+caminho registrado no Diário do Tester. Não reutilizar por suposição o caminho
+do agente da instalação original. Common/Files pode ser compartilhado: conferir
+o nome do novo TXT na linha REPORT e preservar os anteriores.
+
+ESTADO
+Isolamento do caminho de dados confirmado por captura. Login no servidor
+Genial/Hedge observado no título. Sincronização, versão, dados do agente e
+resultado do ensaio nesta cópia ainda pendentes. Nada foi alterado no EA.
