@@ -1,0 +1,5 @@
+HOST_DIAGNOSTICO;Checks=17;Failures=0;CPP_SIMULADO;NAO_E_COMPILACAO_MQL5
+Comando: python3 VALIDAR_LOCAL.py
+g++ -std=c++17 -O1 -g -fsanitize=address,undefined -fno-omit-frame-pointer
+Execução concluída fora do ptrace do sandbox, mantendo sanitizadores ativos.
+MetaEditor/Tester nativos da ferramenta ainda pendentes.

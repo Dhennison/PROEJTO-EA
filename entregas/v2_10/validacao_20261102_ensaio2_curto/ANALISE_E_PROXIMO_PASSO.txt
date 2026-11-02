@@ -1,0 +1,55 @@
+v2.10 — SEGUNDA RODADA CURTA, 02/11/2026, 13:48–13:49
+
+RESULTADO: DESCARTE REPETIDO; NÃO REPETIR A MESMA RODADA SEM NOVA EVIDÊNCIA
+O log acumulado contém a primeira execução e a nova rodada. Preservado inteiro
+como 20261102_ACUMULADO.log; Diário colado também preservado sem alterações.
+FONTES.json registra nomes, hashes e tamanhos. RODADA_2_EXTRAIDA.txt destaca
+somente a nova execução, com números de linha do arquivo acumulado.
+
+FRONTEIRA DA NOVA EXECUÇÃO
+Início 13:48:51.615; novo prefixo MDT210_1793318400_250349796_5279_.
+Configuração v2.10, WINZ26, M5, 30/10–31/10, parâmetros anteriores preservados.
+Às 13:48:52.277 constam 149 bytes de sincronização de ticks. Isso não prova
+redownload integral ou correção do cache, mesmo após novas solicitações no
+terminal. Não declarar que o histórico inteiro foi atualizado.
+
+EVIDÊNCIA
+Às 13:48:52.648, linhas 18401–18407 do log acumulado:
+- todos os ticks reais descartados no dia;
+- 4.319.114 ticks com preços divergentes em 565 barras de minuto;
+- 565 minutos de 565 com ticks reais descartados, geração utilizada;
+- volumes também divergentes.
+As mensagens repetem o resultado da primeira preparação; a amostra atual do
+terminal e sua especificação Last não eliminaram a recusa do motor.
+
+EA continua sem abertura confirmada, com consultas TRADE vazias e backoff.
+Replay alcançou 09:09:02; usuário interrompeu às 13:49:04.722. Essa parada
+manual é esperada no ensaio curto, não um novo defeito de encerramento.
+Não houve TESTER_REQUEST/TESTER_RESPONSE/TESTER_DEAL nessa rodada observada.
+O novo trecho não inclui TESTER_END; não fabricar totais de fechamento do EA
+para uma execução que o usuário interrompeu. Não usar a primeira TESTER_END
+do arquivo acumulado como resultado da segunda rodada.
+
+PRÓXIMO PASSO JÁ PREPARADO
+Ferramenta isolada em ../diagnostico_agente/ModeloD_Diagnostico_Agente_v1_00.zip.
+Instalação em Experts/ModeloD_Diagnostico_Agente, sem substituir v2.09/v2.10.
+Não é correção de estratégia ou versão operacional nova. Só consultas e
+relatório de dados, sem APIs de negociação. Recusa contexto fora do Tester,
+otimização e símbolo/data diferentes do recorte. Auto coleta/remoção às 09:02.
+Registra propriedades efetivas no agente, consulta ALL/TRADE do mesmo minuto
+e barra M1, para distinguir o que o motor disponibiliza do CSV do terminal.
+Preservar log do motor com avisos de descarte; consulta API sozinha não
+certifica qualidade do replay. Não criar símbolo sintético ou limpar ticks.
+
+VALIDAÇÃO DA FERRAMENTA
+17 verificações locais com C++/APIs simuladas e amostra real do usuário,
+zero falhas com AddressSanitizer/UndefinedBehaviorSanitizer. Primeiro comando
+no sandbox falhou por LeakSanitizer/ptrace; repetição fora dessa restrição
+passou mantendo sanitizadores. Não são compilação MQL5 nem execução no agente.
+Fonte, host reproduzível, relatório e hashes entregues. MetaEditor/Tester
+nativos da ferramenta aguardam usuário; seguir LEIA_PRIMEIRO_DIAGNOSTICO.txt.
+
+ESTADO
+Causa interna do descarte ainda não demonstrada. A aplicação foi compilada,
+mas teste em ticks reais e aceitação operacional permanecem pendentes. Nenhum
+código do EA v2.10, Script ou formato de estado foi modificado nesta etapa.

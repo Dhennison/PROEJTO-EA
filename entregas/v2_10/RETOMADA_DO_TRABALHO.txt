@@ -127,3 +127,15 @@ Como houve novas solicitações de M1/ticks no terminal após o primeiro ensaio,
 próxima verificação: inicialização curta do mesmo Tester, até cerca de 09:02,
 para comparar nova sincronização/possível descarte/abertura. Não completar dia
 nem repetir rodadas idênticas se a recusa continuar. Nenhuma correção aplicada.
+
+ATUALIZAÇÃO — SEGUNDA RODADA CURTA REPETIU DESCARTE
+Nova execução às 13:48–13:49, prefixo MDT210_1793318400_250349796_5279_.
+Novamente todos os 565 minutos descartados, 4.319.114 preços de ticks
+divergentes. Usuário parou em torno de 09:09:02 do replay. Evidências e análise
+em validacao_20261102_ensaio2_curto/. Não repetir rodada igual.
+Preparada ferramenta isolada diagnostico_agente/ModeloD_Diagnostico_Agente_v1_00.zip,
+sem ordens nem substituição do EA; coleta no próprio agente até 09:02 e para.
+Fonte + teste host C++ sobre amostra real: 17 verificações/zero falhas com
+sanitizadores. Compilação MQL5 e execução nativa do diagnóstico pendentes.
+Próximo: usuário compilar e executar essa coleta, enviando TXT MD_DIAG_DADOS_
+e log completo. Não declarar v2.10 corrigida ou dados reais validados.

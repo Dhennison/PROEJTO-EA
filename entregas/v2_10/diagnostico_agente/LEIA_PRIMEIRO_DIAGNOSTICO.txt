@@ -1,0 +1,65 @@
+DIAGNÓSTICO DO AGENTE — WINZ26, 30/10/2026 — v1.00
+
+OBJETIVO
+O segundo ensaio confirmou o mesmo descarte integral de ticks reais. Não
+repetir o EA v2.10 sem nova evidência. Esta ferramenta consulta o minuto
+[09:00,09:01) NO PRÓPRIO AGENTE, após o replay alcançar 09:02, para registrar:
+- SYMBOL_CHART_MODE (Bid/Last), grade, moedas e modo de cálculo efetivos;
+- primeiro evento observado, sem certificá-lo como abertura de negócio real;
+- OHLC/volumes da barra M1; contagem/erro das consultas ALL e TRADE;
+- exemplos de ticks, flags, horários, zeros, ordem e agregação dos negócios.
+O log do motor continua necessário para classificar geração/descarte de ticks.
+
+É uma ferramenta de diagnóstico temporária, não EA operacional v2.11,
+correção da v2.10, backtest alternativo ou autorização para usar dados gerados.
+Não contém OrderSend/OrderSendAsync/CTrade. Recusa execução fora do Tester,
+otimização, outro símbolo e data inicial diferente do dia 30/10/2026.
+Não lê nem modifica ajuste B3, diário da v2.09/v2.10 ou histórico da corretora.
+Grava somente seu TXT próprio MD_DIAG_DADOS_20261030_... em Common/Files.
+O cálculo resume dados observados; não os limpa, importa nem usa para operar.
+
+INSTALAÇÃO SEM SUBSTITUIR OS EAs EXISTENTES
+1. Extrair ModeloD_Diagnostico_Agente_v1_00.zip.
+2. Copiar a pasta NOVA MQL5\Experts\ModeloD_Diagnostico_Agente para Experts
+   da pasta de dados do MT5. Não copiar sobre as pastas v2.09/v2.10.
+3. Compilar Diagnostico_Dados_WINZ26.mq5 no MetaEditor, F7.
+   Enviar resultado se houver erros/avisos. Esta ferramenta não foi compilada
+   em MQL5 neste ambiente; os testes C++ locais não substituem esse passo.
+
+COLETA NATIVA
+Depois de compilar sem erros, no Strategy Tester:
+Expert: ModeloD_Diagnostico_Agente / Diagnostico_Dados_WINZ26.
+Ativo: WINZ26; M5; período personalizado 30/10/2026–31/10/2026.
+Modelagem: Cada tick baseado em ticks reais; teste único, agente LOCAL.
+Manter sem atraso, sem otimização e o restante da configuração anterior
+(1.000.000 USD e visualização). Não carregar o .set do EA: não há parâmetros
+de entrada nesta ferramenta e ela não precisa do arquivo de ajuste.
+Iniciar e aguardar: coleta automaticamente ao atingir 09:02 do replay e
+solicita sua remoção. Não precisa parar manualmente nem rodar o dia completo.
+Não precisa habilitar negociação na conta conectada.
+Se a data for recusada no OnInit, enviar o log; não alterar o fonte para
+contornar a checagem. Se não encerrar após 09:03, parar e preservar o log.
+
+ENVIAR
+1. Resultado da compilação.
+2. TXT MD_DIAG_DADOS_20261030_... de Terminal\Common\Files (nome no Diário,
+   linha MD_DIAG;REPORT).
+3. Log completo do agente referente ao dia de execução; em 02/11 será
+   20261102.log, da mesma pasta já usada. Preservar as execuções anteriores.
+Os relatórios são necessários para comparar amostra do terminal e API do
+agente. Não interpretar consulta vazia sem erro como ausência de negócios
+reais no pregão nem usar resultado do modo gerado como aceite operacional.
+
+VALIDAÇÃO LOCAL EXECUTADA
+python3 VALIDAR_LOCAL.py
+Host C++ com adaptação sintática do fonte MQL e APIs simuladas. Usa a amostra
+CSV real fornecida pelo usuário; checa recusas fora do contexto, espera até
+fechar o minuto, contagens ALL=21566/TRADE=10528, OHLC e volume=78471,
+preservação dos registros de flags zero, erro 4403 com resultado parcial,
+consulta vazia, não repetição da coleta e encerramento/fechamento do arquivo.
+17 verificações, zero falhas, com AddressSanitizer e UndefinedBehaviorSanitizer.
+Primeira execução no sandbox falhou pela incompatibilidade do LeakSanitizer
+com ptrace; execução fora dessa restrição passou mantendo os sanitizadores.
+Saída registrada em RESULTADO_LOCAL.txt.
+Não são 17 testes de mercado nem compilação nativa. A ferramenta lê por API;
+ela não consegue, sozinha, declarar que o motor usou ticks reais.
