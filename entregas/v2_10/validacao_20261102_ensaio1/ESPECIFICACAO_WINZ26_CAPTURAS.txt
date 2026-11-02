@@ -1,0 +1,50 @@
+WINZ26 — ESPECIFICAÇÃO ATUAL OBSERVADA NAS DUAS CAPTURAS DO USUÁRIO
+As capturas são continuação da mesma tela, não especificações distintas.
+Registro textual da evidência visual; imagens originais permanecem no chat.
+
+CAMPOS OBSERVADOS
+Símbolo selecionado: WINZ26, descrição IBOVESPA MINI.
+Término de validade na lista: 16/12/2026.
+Última negociação na seção inferior: 16/12/2026 00:00.
+Dígitos: 0; tamanho de contrato: 1.
+Spread: flutuante; nível de stops: 0.
+Moedas de margem e lucro: BRL.
+Cálculo: Mercado Futuro; base: WINZ26.
+Tamanho do tick: 5; valor do tick: 1.
+Margens inicial, manutenção e hedge: 155.
+PLOTAGEM DE GRÁFICOS: SEGUNDO PREÇO LAST.
+Negociação: acesso completo; execução: Bolsa.
+GTC: válida até ser cancelada.
+Preenchimento: Tudo/Nada e Tudo/Parcialmente.
+Volume mínimo: 1; máximo: 1000; passo: 1; limite: 1000.
+Sessões de cotações/negociação exibidas: 00:00–24:00 de segunda a sexta.
+Tabela de margens mostra 155 BRL/lot inicial/manutenção para as modalidades.
+
+CONCLUSÃO
+O terminal atual NÃO declara gráfico por Bid. A hipótese de configuração Bid
+na especificação atual está afastada; as barras e negócios Last da amostra
+atual conferem em OHLC/volume. Isso não demonstra quais propriedades/dados o
+agente usou no ensaio original, nem valida o histórico completo.
+Não alterar a especificação, criar símbolo sintético, filtrar os registros
+zerados do arquivo original ou substituir Last por Bid/Ask para obter PASS.
+Sessões genéricas 24h não certificam a sessão efetiva B3. Não substituir a
+grade revisada do EA por essa tabela como se fosse calendário oficial.
+Margem de hedge 155 na especificação não comprova modo HEDGE de qualquer conta;
+o código do EA valida o modo de conta separadamente. USD no Tester continua
+exigindo atenção a conversões de margem/lucro quando houver preparo de ordens.
+
+PRÓXIMA VERIFICAÇÃO NATIVA, SEM NOVA INSTALAÇÃO
+Houve novas solicitações de barras M1 do dia e ticks do primeiro minuto no
+terminal desde o ensaio original. Elas produziram uma amostra coerente, mas
+não provam que atualizaram o cache do agente. Testar essa hipótese com nova
+inicialização CURTA do MESMO Tester/EA, mesma configuração e arquivos, parando
+por volta de 09:02 do replay. Nenhum resultado dessa rodada foi recebido ainda.
+Comparar mensagens iniciais de sincronização/descarte e aquisição de abertura
+com a execução anterior, preservando a fronteira entre execuções.
+Não é necessário completar o dia nem considerar o ensaio curto como backtest.
+Interrupção manual esperada não representa falha de encerramento do EA.
+O diário do agente pode acumular execuções: preservar o arquivo completo e
+identificar a rodada pelo novo START/scope_prefix em vez de sobrescrever provas.
+Se o descarte continuar, não repetir rodadas iguais: comparar/instrumentar as
+consultas no próprio agente para distinguir dados/características do terminal
+e do Tester. A correção ainda depende dessa evidência; nenhuma foi aplicada.

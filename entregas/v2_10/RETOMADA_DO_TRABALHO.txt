@@ -117,3 +117,13 @@ do agente eram idênticos. Script e relatório em CONFERIR_AMOSTRA_TICKS_M1.py,
 COMPARACAO_TICKS_M1.json e ANALISE_AMOSTRA_TICKS_M1.txt.
 Próximo passo: conferir especificação WINZ26, especialmente gráfico Last/Bid,
 sem alterar propriedades ou repetir ensaio completo ainda.
+
+ATUALIZAÇÃO — ESPECIFICAÇÃO LAST CONFIRMADA NAS CAPTURAS
+As duas imagens são continuação: WINZ26 declara plotagem Segundo preço Last,
+tick 5, valor 1, margem/lucro BRL e volumes min1/passo1/max1000.
+Não há evidência de símbolo atual configurado por Bid. Sessões 24h exibidas
+não certificam horários B3. Registro em ESPECIFICACAO_WINZ26_CAPTURAS.txt.
+Como houve novas solicitações de M1/ticks no terminal após o primeiro ensaio,
+próxima verificação: inicialização curta do mesmo Tester, até cerca de 09:02,
+para comparar nova sincronização/possível descarte/abertura. Não completar dia
+nem repetir rodadas idênticas se a recusa continuar. Nenhuma correção aplicada.
