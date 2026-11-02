@@ -2,13 +2,18 @@
 Não compila MQL5, não reproduz o motor do Tester nem certifica o histórico.
 """
 from pathlib import Path
+import argparse
 import datetime
 import re
 import subprocess
 import tempfile
 
 root = Path(__file__).resolve().parent
-source = root / "MQL5/Experts/ModeloD_Diagnostico_Agente/Diagnostico_Dados_WINZ26.mq5"
+parser = argparse.ArgumentParser()
+parser.add_argument("--source", type=Path)
+parser.add_argument("--day", default="2026-10-30")
+args = parser.parse_args()
+source = args.source or root / "MQL5/Experts/ModeloD_Diagnostico_Agente/Diagnostico_Dados_WINZ26.mq5"
 text = source.read_text()
 if re.search(r"\b(OrderSend|OrderSendAsync|CTrade|FileDelete|FileMove)\b", text):
     raise SystemExit("API de negociação ou mutação de arquivos encontrada")
@@ -118,7 +123,17 @@ int main(int argc,char**argv){try{
 csv_path = root.parent / "validacao_20261102_ensaio1/WINZ26_202610300900_202610300901.csv"
 with tempfile.TemporaryDirectory(prefix="md_diag_host_") as tmp:
     folder = Path(tmp)
-    (folder / "host.cpp").write_text(prelude + text + main)
+    # A different control day shifts the MOCK timestamps only. The numerical
+    # fixture remains the supplied 30/10 CSV, not authentic ticks of that day.
+    shift = (datetime.date.fromisoformat(args.day) - datetime.date(2026, 10, 30)).days * 86400
+    def shift_constant(match):
+        value = int(match[1])
+        return str(value + shift * (1000 if len(match[1]) == 13 else 1)) + (match[2] or "")
+    # Keep date literals compiled from the selected MQL source unchanged.
+    pattern = r"\b(179\d{7}(?:\d{3})?)(LL)?\b"
+    prelude_shifted = re.sub(pattern, shift_constant, prelude)
+    main_shifted = re.sub(pattern, shift_constant, main)
+    (folder / "host.cpp").write_text(prelude_shifted + text + main_shifted)
     subprocess.run(["g++", "-std=c++17", "-O1", "-g", "-fsanitize=address,undefined",
                     "-fno-omit-frame-pointer", str(folder / "host.cpp"),
                     "-o", str(folder / "host")], check=True)

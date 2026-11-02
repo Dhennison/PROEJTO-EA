@@ -1,0 +1,54 @@
+DIAGNÓSTICO NATIVO NA CÓPIA ISOLADA — 02/11/2026, 15:18
+
+IDENTIDADE DA RODADA CONFIRMADA
+O log aponta explicitamente para:
+%LOCALAPPDATA%\ModeloD_MT5_Isolado_20261102_145749_6554356a\Tester\
+Agent-127.0.0.1-3000\logs\20261102.log.
+Build6231, visual0, margin_mode2, WINZ26/M5, intervalo 30/10–31/10.
+Esta execução de fato iniciou e concluiu o diagnóstico; não confundir com
+a tentativa anterior de 15:10 que parou no download prévio.
+
+RESULTADO
+213 KB de barras e 12,41 MB de ticks transferidos ao novo agente. Mesmo
+descarte dos ticks reais dos 565 minutos e 4.319.114 preços divergentes.
+Barra M1 de 09:00 e propriedades Last/grade iguais às rodadas anteriores.
+ALL3790 com Last0; TRADE0, sem erro. Encerramento automático às 09:02.
+Comparação textual com a rodada não visual da instalação original: idêntica
+após remover só a linha REPORT com o nome do arquivo desta execução.
+
+INTERPRETAÇÃO
+Uma pasta de terminal própria com configuração/bases novas não resolveu.
+Não repetir reconstruções de cache ou mudar visualização novamente. Isso
+não é comparação de builds: foram copiados executáveis e o log manteve6231.
+Estado global do sistema, dados do mesmo servidor e comportamento desse build
+continuam compartilhados; a cópia isolada não os afasta como hipóteses.
+O bloqueio persiste antes de qualquer negociação, também no diagnóstico mínimo.
+Não alterar o EA para usar cotações geradas, Bid/Ask como Last ou valores B3
+artificiais. Não afirmar que todo o EA esteja validado por essa investigação.
+
+PRÓXIMO CONTROLE LOCAL PREPARADO
+Ler outro pregão do MESMO contrato, sem operar. Arquivo separado
+Diagnostico_Dados_WINZ26_20261029.mq5 em
+../diagnostico_agente/controle_20261029/ModeloD_Diagnostico_Controle_20261029.zip.
+Mesma lógica da ferramenta de 30/10, datas/identificação fixadas em 29/10.
+Na cópia isolada, compilar novo fonte e testar 29/10–30/10, não visual,
+ticks reais, mesmas propriedades/conta. Para às 09:02 e não exige arquivo B3.
+A v2.10 operacional continua com recorte de 30/10, sem modificações.
+
+Por que é útil: até agora todas as rodadas consultavam o mesmo dia30. Um
+resultado diferente em29 permitiria investigar a particularidade do recorte30
+e planejar outro ensaio explicitamente com dados B3 reais adequados. Se repetir,
+a falha ocorre também no segundo dia e comparação de build/fonte ganha prioridade.
+Não concluir que um único controle representa todo o histórico.
+
+VALIDAÇÃO DA ENTREGA
+Clone só muda datas, nome de relatório, descrição e mensagem de data inválida;
+algoritmo/guard Tester/símbolo e ausência de APIs de negociação preservados.
+Verificador host agora aceita --source e --day. Tanto controle29 como original30
+passaram17/0 com sanitizadores. Para29 a fixture do CSV30 foi deslocada em
+tempo SOMENTE no host simulado, sem alegar dados autênticos do dia29.
+Compilação MQL5 e execução nativa do novo controle ainda pendentes.
+
+EVIDÊNCIAS
+Originais preservados byte a byte; FONTES.json registra hashes/tamanhos.
+Nenhum novo lucro, execução de ordem, teste de estratégia ou correção entregue.

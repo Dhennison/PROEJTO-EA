@@ -1,0 +1,6 @@
+Controle fixo de 29/10: HOST_DIAGNOSTICO;Checks=17;Failures=0;CPP_SIMULADO;NAO_E_COMPILACAO_MQL5
+Original fixo de 30/10: HOST_DIAGNOSTICO;Checks=17;Failures=0;CPP_SIMULADO;NAO_E_COMPILACAO_MQL5
+AddressSanitizer e UndefinedBehaviorSanitizer ativos, execução fora do ptrace.
+No controle de data, timestamps da fixture de 30/10 foram deslocados apenas
+no host simulado. Não equivalem a histórico verdadeiro de 29/10.
+MetaEditor e coleta nativa do controle novo ainda pendentes.

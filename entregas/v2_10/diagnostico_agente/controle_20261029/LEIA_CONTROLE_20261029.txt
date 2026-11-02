@@ -1,0 +1,53 @@
+CONTROLE DE DADOS — WINZ26, 29/10/2026 — SOMENTE DIAGNÓSTICO
+
+POR QUE ESTE CONTROLE
+O terminal isolado build6231 também descartou ticks de 30/10, mesmo com dados
+próprios e modo não visual. Verificar um segundo pregão distingue uma recusa
+associada ao recorte 30/10 de uma falha que também aparece em outro dia do
+mesmo contrato/build/servidor. Não demonstra universalidade com apenas dois dias.
+
+NÃO MUDA O ENSAIO DA ESTRATÉGIA
+A v2.10 continua fixada em 30/10; não alterar DataTester/B3 para executar o EA
+em 29/10. Este controle não lê B3 nem negocia, não exige outro ajuste histórico
+e não valida operações. O arquivo é independente do diagnóstico de 30/10.
+
+INSTALAÇÃO NA CÓPIA ISOLADA
+Copiar Diagnostico_Dados_WINZ26_20261029.mq5 para
+MQL5\Experts\ModeloD_Diagnostico_Agente\ da cópia portátil.
+O ZIP mantém esse caminho para copiar a pasta sem substituir os fontes antigos.
+Abrir o fonte NOVO no MetaEditor da cópia e compilar (F7). Enviar resultado.
+Havendo erro, não editar datas do EA para contornar; enviar a mensagem.
+
+TESTER
+Selecionar Diagnostico_Dados_WINZ26_20261029.ex5.
+WINZ26; M5; período personalizado 2026.10.29 a 2026.10.30.
+Cada tick baseado em ticks reais; modo visual desmarcado; teste único;
+sem otimização/forward/atraso, agente local, mesmo servidor e conta Hedge,
+saldo simulado 1000000 USD e alavancagem 1:100.
+Se precisar, solicitar primeiro ticks do dia 29 nessa cópia. Não importar
+dados nem usar o ajuste de 30/10 no EA. A coleta encerra sozinha às 09:02.
+
+RETORNO
+Resultado da compilação, TXT MD_DIAG_DADOS_20261029_... e log do agente da
+cópia portátil, cujo caminho já foi confirmado no log anterior:
+%LOCALAPPDATA%\ModeloD_MT5_Isolado_20261102_145749_6554356a\Tester\Agent-127.0.0.1-3000\logs\20261102.log
+Common/Files permanece compartilhado. Confirmar nome do novo TXT no REPORT.
+Se o download parar antes do agente, não presumir execução; enviar Diário.
+
+VALIDAÇÃO LOCAL
+Mesma lógica do diagnóstico nativo já compilado; mudanças restritas às datas,
+nome do relatório, descrição e mensagem de data recusada. Fonte operacional
+v2.10 e diagnóstico de 30/10 não foram modificados.
+VALIDAR_LOCAL.py --source CAMINHO_DESTE_MQ5 --day 2026-10-29: 17 verificações,
+zero falhas, com sanitizadores. O host desloca timestamps da fixture fornecida
+de 30/10 para testar os limites do dia 29 de forma SIMULADA. Não são dados
+históricos autênticos de 29/10 nem resultado do Tester. Caso original de 30/10
+também passou (17/0) após adaptação do verificador. Compilação MQL5 nova pendente.
+
+LEITURA DO RESULTADO
+Se houver negócios Last sem descarte no dia 29, investigar particularidade
+de dados/preparo de 30/10 e planejar recorte alternativo explícito da estratégia
+somente com B3 real correspondente e validação própria. Se repetir Last0/descarte,
+o problema também afeta este segundo pregão; priorizar comparação de build ou
+fonte/servidor sem repetir cópias de cache/configuração já descartadas.
+Não usar tick gerado ou preencher Last com Bid/Ask para considerar PASS.

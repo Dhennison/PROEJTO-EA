@@ -1,0 +1,80 @@
+2026.11.02 15:18:08.351	Tester	"ModeloD_Diagnostico_Agente\Diagnostico_Dados_WINZ26.ex5" AVX2
+2026.11.02 15:18:08.797	Tester	WINZ26: ticks data begins from 2026.10.30 00:00
+2026.11.02 15:18:08.955	Core 01	agent process started on 127.0.0.1:3000
+2026.11.02 15:18:08.956	Core 01	connecting to 127.0.0.1:3000
+2026.11.02 15:18:09.470	Core 01	connected
+2026.11.02 15:18:09.512	Core 01	authorized (agent build 6231)
+2026.11.02 15:18:09.517	Tester	WINZ26,M5 (GenialInvestimentos-PRD): testing of Experts\ModeloD_Diagnostico_Agente\Diagnostico_Dados_WINZ26.ex5 from 2026.10.30 00:00 to 2026.10.31 00:00
+2026.11.02 15:18:09.686	Core 01	common synchronization completed
+2026.11.02 15:18:09.708	Core 01	WINZ26: history for 2026 year synchronized
+2026.11.02 15:18:09.708	Core 01	WINZ26: history synchronization completed [213 Kb]
+2026.11.02 15:18:09.708	Core 01	WINZ26: 213.19 Kb of history processed in 0:00:00.016
+2026.11.02 15:18:09.725	Core 01	WINZ26: ticks synchronization completed [12723 Kb]
+2026.11.02 15:18:11.899	Core 01	MetaTester 5 started on 127.0.0.1:3000
+2026.11.02 15:18:11.899	Core 01	cloud network mode is off
+2026.11.02 15:18:11.899	Core 01	initialization finished
+2026.11.02 15:18:11.899	Core 01	login (build 6231)
+2026.11.02 15:18:11.899	Core 01	5464 bytes of account info loaded
+2026.11.02 15:18:11.899	Core 01	1478 bytes of tester parameters loaded
+2026.11.02 15:18:11.899	Core 01	196 bytes of input parameters loaded
+2026.11.02 15:18:11.899	Core 01	595349 bytes of symbols list loaded (73498 symbols)
+2026.11.02 15:18:11.899	Core 01	expert file added: Experts\ModeloD_Diagnostico_Agente\Diagnostico_Dados_WINZ26.ex5. 29115 bytes loaded
+2026.11.02 15:18:11.899	Core 01	initial deposit 1000000.00 USD, leverage 1:100
+2026.11.02 15:18:11.899	Core 01	successfully initialized
+2026.11.02 15:18:11.899	Core 01	491 Kb of total initialization data received
+2026.11.02 15:18:11.899	Core 01	13th Gen Intel Core i5-1335U, 7879 MB
+2026.11.02 15:18:11.899	Core 01	WINZ26: symbol to be synchronized
+2026.11.02 15:18:11.899	Core 01	WINZ26: symbol synchronized, 3720 bytes of symbol info received
+2026.11.02 15:18:11.899	Core 01	WINZ26: load 213 Kb of history data to synchronize in 0:00:00.016
+2026.11.02 15:18:11.899	Core 01	WINZ26: history synchronized from 2026.05.12 to 2026.10.30
+2026.11.02 15:18:11.899	Core 01	WINZ26: ticks synchronization started
+2026.11.02 15:18:11.899	Core 01	WINZ26: load 12.41 Mb of tick data to synchronize in 0:00:00.172
+2026.11.02 15:18:11.899	Core 01	WINZ26: history ticks synchronized from 2026.10.30 to 2026.10.30
+2026.11.02 15:18:11.899	Core 01	WINZ26,M5: history cache allocated for 7474 bars and contains 7220 bars from 2026.05.12 17:10 to 2026.10.29 18:20
+2026.11.02 15:18:11.899	Core 01	WINZ26,M5: history begins from 2026.05.12 17:10
+2026.11.02 15:18:11.899	Core 01	WINZ26,M5 (GenialInvestimentos-PRD): generating based on real ticks
+2026.11.02 15:18:11.899	Core 01	WINZ26,M5: testing of Experts\ModeloD_Diagnostico_Agente\Diagnostico_Dados_WINZ26.ex5 from 2026.10.30 00:00 to 2026.10.31 00:00 started
+2026.11.02 15:18:11.899	Core 01	2026.10.30 00:00:00   MD_DIAG;START;VERSION=1.00;TESTER_ONLY;SEM_ORDENS;symbol=WINZ26;build=6231;visual=0;margin_mode=2
+2026.11.02 15:18:11.899	Core 01	2026.10.30 00:00:00   MD_DIAG;REPORT;Common\Files\MD_DIAG_DADOS_20261030_85_255707484.txt
+2026.11.02 15:18:11.899	Core 01	WINZ26 : 2026.10.30 23:59 - all the real ticks discarded within a day
+2026.11.02 15:18:11.899	Core 01	WINZ26 : 2026.10.30 23:59 - 4319114 tick prices mismatch for 565 minute bars
+2026.11.02 15:18:11.899	Core 01	WINZ26 : real ticks begin from 2026.10.30 00:00:00
+2026.11.02 15:18:11.899	Core 01	WINZ26 : 2026.10.30 00:00 - 2026.10.31 00:00  real ticks discarded for 565 minutes of 565 total minute bars, every tick generation used
+2026.11.02 15:18:11.899	Core 01	WINZ26 : 2026.10.30 00:00 - 2026.10.31 00:00  real ticks discarded for 1 whole days
+2026.11.02 15:18:11.899	Core 01	WINZ26 : 2026.10.30 00:00 - 2026.10.31 00:00  tick volumes not matched for 565 minute bars
+2026.11.02 15:18:11.899	Core 01	WINZ26 : 2026.10.30 00:00 - 2026.10.31 00:00  tick prices of 4319114 ticks not matched for 565 minute bars
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:00:00   MD_DIAG;FIRST_OBSERVED_EVENT_NOT_CERTIFIED_OPEN;time=2026.10.30 09:00:00;msc=1793350800000;bid=170910.00000000;ask=170915.00000000;last=0.00000000;volume=0;volume_real=0.00000000;flags=6
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;PROBE;time_current=2026.10.30 09:02:00;time_server=2026.10.30 09:02:00;time_gmt=2026.10.30 09:02:00
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;PROPERTY;name=SYMBOL_CHART_MODE;ok=1;value=1;error=0
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;ENUMS;CHART_BID=0;CHART_LAST=1
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;PROPERTY;name=SYMBOL_TRADE_CALC_MODE;ok=1;value=33;error=0
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;PROPERTY;name=SYMBOL_DIGITS;ok=1;value=0;error=0
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;PROPERTY;name=SYMBOL_TRADE_TICK_SIZE;ok=1;value=5.00000000;error=0
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;PROPERTY;name=SYMBOL_TRADE_TICK_VALUE;ok=1;value=1.00000000;error=0
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;PROPERTY;name=SYMBOL_POINT;ok=1;value=1.00000000;error=0
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;CURRENCIES;profit=BRL;margin=BRL;account=USD
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;CURRENT_TICK;ok=1;error=0
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;CURRENT_TICK_DATA;time=2026.10.30 09:02:00;msc=1793350920000;bid=171260.00000000;ask=171265.00000000;last=0.00000000;volume=0;volume_real=0.00000000;flags=6
+2026.11.02 15:18:11.899	Core 01	WINZ26,M1: history cache allocated for 30259 bars and contains 28991 bars from 2026.05.12 17:12 to 2026.10.29 18:24
+2026.11.02 15:18:11.899	Core 01	WINZ26,M1: 2 bars from 2026.10.30 09:00 to 2026.10.30 09:01 added
+2026.11.02 15:18:11.899	Core 01	WINZ26,M1: history begins from 2026.05.12 17:12
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;M1_QUERY;returned=1;error=0
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;M1;time=2026.10.30 09:00:00;open=170910.00000000;high=171600.00000000;low=170900.00000000;close=171330.00000000;tick_volume=18948;real_volume=78471
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;QUERY;mode=ALL;from=1793350800000;to=1793350859999;returned=3790;array=3790;error=0
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;SAMPLE;mode=ALL;index=0;time=2026.10.30 09:00:00;msc=1793350800000;bid=170910.00000000;ask=170915.00000000;last=0.00000000;volume=0;volume_real=0.00000000;flags=6
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;SAMPLE;mode=ALL;index=1;time=2026.10.30 09:00:00;msc=1793350800003;bid=170915.00000000;ask=170920.00000000;last=0.00000000;volume=0;volume_real=0.00000000;flags=6
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;SAMPLE;mode=ALL;index=2;time=2026.10.30 09:00:00;msc=1793350800006;bid=170910.00000000;ask=170915.00000000;last=0.00000000;volume=0;volume_real=0.00000000;flags=6
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;SUMMARY;mode=ALL;complete_without_api_error=1;positive_trade_rows=0;zero_or_invalid_last=3790;flags_zero=0;regressions=0;outside=0;open=0.00000000;high=0.00000000;low=0.00000000;close=0.00000000;sum_volume=0.00000000;sum_volume_real=0.00000000
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;LAST_SAMPLE;mode=ALL;time=2026.10.30 09:00:59;msc=1793350859998;bid=171330.00000000;ask=171335.00000000;last=0.00000000;volume=0;volume_real=0.00000000;flags=6
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;QUERY;mode=TRADE;from=1793350800000;to=1793350859999;returned=0;array=0;error=0
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;SUMMARY;mode=TRADE;complete_without_api_error=1;positive_trade_rows=0;zero_or_invalid_last=0;flags_zero=0;regressions=0;outside=0;open=0.00000000;high=0.00000000;low=0.00000000;close=0.00000000;sum_volume=0.00000000;sum_volume_real=0.00000000
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;END;SEM_ORDENS;SEM_ACEITE_DE_BACKTEST;CONSULTAR_TAMBEM_LOG_DO_MOTOR
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   ExpertRemove() function called
+2026.11.02 15:18:11.899	Core 01	final balance 1000000.00 USD
+2026.11.02 15:18:11.899	Core 01	2026.10.30 09:02:00   MD_DIAG;DEINIT;reason=0;probe_executed=1
+2026.11.02 15:18:11.899	Core 01	removed itself on 37% of testing interval
+2026.11.02 15:18:11.899	Core 01	WINZ26,M5: 7621 ticks, 1 bars generated. Environment synchronized in 0:00:00.361. Test passed in 0:00:02.030 (including ticks preprocessing 0:00:00.109).
+2026.11.02 15:18:11.899	Core 01	WINZ26,M5: total time from login to stop testing 0:00:02.391 (including 0:00:00.361 for history data synchronization)
+2026.11.02 15:18:11.899	Core 01	691 Mb memory used including 2 Mb of history data, 64 Mb of tick data
+2026.11.02 15:18:11.899	Core 01	log file "C:\Users\jhenn\AppData\Local\ModeloD_MT5_Isolado_20261102_145749_6554356a\Tester\Agent-127.0.0.1-3000\logs\20261102.log" written
+2026.11.02 15:18:11.909	Core 01	connection closed

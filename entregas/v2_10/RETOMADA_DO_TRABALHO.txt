@@ -220,3 +220,14 @@ limite de exibição com download incompleto. Ver
 diagnostico_agente/ISOLADO_SOLICITACAO_TICKS_OUTUBRO.txt. Próximo: tentar uma
 vez o diagnóstico na mesma cópia, agora com o recorte solicitado, e coletar
 TXT/log novos. Ainda não há prova de execução/dados reais no agente isolado.
+
+ATUALIZAÇÃO — AGENTE DA CÓPIA ISOLADA REPRODUZIU DESCARTE
+Rodada15:18: log confirma caminho dentro da cópia portátil, build6231, não
+visual; diagnóstico concluído09:02. Transferiu12,41MB e manteve descarte de
+565min, ALL3790/Last0/TRADE0. TXT igual ao original não visual salvo nome.
+Evidências em validacao_20261102_isolado/. Não repetir cópia/cache/visual.
+Próximo controle preparado para29/10 (somente leitura, sem B3/ordens), arquivo
+separado em diagnostico_agente/controle_20261029/. Datas no Tester29/10–30/10.
+Host17/0 do controle com fixture temporalmente simulada; original30 também17/0.
+Compilação/execução MQL5 do novo controle pendentes. EA v2.10 não foi alterado
+e continua fixado em30/10; controle de dados não equivale a ensaio da estratégia.
