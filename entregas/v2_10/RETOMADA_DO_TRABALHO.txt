@@ -231,3 +231,11 @@ separado em diagnostico_agente/controle_20261029/. Datas no Tester29/10–30/10.
 Host17/0 do controle com fixture temporalmente simulada; original30 também17/0.
 Compilação/execução MQL5 do novo controle pendentes. EA v2.10 não foi alterado
 e continua fixado em30/10; controle de dados não equivale a ensaio da estratégia.
+
+ATUALIZAÇÃO — CONTROLE29 COMPILADO NATIVAMENTE
+Fonte novo localizado na cópia secundária e resultado do MetaEditor recebido:
+Diagnostico_Dados_WINZ26_20261029.mq5, 0 erros/0 avisos,621ms.
+Ver diagnostico_agente/controle_20261029/COMPILACAO_NATIVA_USUARIO.txt.
+Antes da execução, solicitar no MT5 secundário ticks29/10 00:00–30/10 00:00;
+configurar NOVO Expert controle29 para esse recorte, WINZ26/M5/ticks reais,
+sem visualização. Compilação confirmada; dados e execução29 ainda pendentes.

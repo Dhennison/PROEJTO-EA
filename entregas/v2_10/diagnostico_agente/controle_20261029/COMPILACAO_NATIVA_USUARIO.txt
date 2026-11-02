@@ -1,0 +1,20 @@
+Diagnostico_Dados_WINZ26_20261029.mq5
+code generated                         0
+0 errors, 0 warnings, 621 ms elapsed, cpu='AVX2 + FMA3'       0
+
+Resultado colado pelo usuário em 02/11/2026. Compilação MQL5 nativa no
+MetaEditor do usuário; não confundir com host C++ simulado da entrega.
+Captura anterior confirmou o fonte novo em:
+%LOCALAPPDATA%\ModeloD_MT5_Isolado_20261102_145749_6554356a\MQL5\Experts\ModeloD_Diagnostico_Agente
+Foi orientada abertura pelo MetaEditor do MT5 secundário/isolado.
+Binário compilado e seu hash não foram anexados.
+
+PRÓXIMO PASSO NESTA MESMA CÓPIA
+Solicitar ticks WINZ26 de 29/10/2026 00:00 a 30/10/2026 00:00 na aba Ticks
+de Ativos (Ctrl+U), pois a solicitação explícita recebida antes cobria só30/10.
+Depois de receber dados, testar o NOVO Expert Diagnostico_Dados_WINZ26_20261029,
+WINZ26/M5, datas29/10–30/10, ticks reais, não visual, sem otimização/forward/atraso,
+agente local e mesmos parâmetros de conta. Encerra às09:02 automaticamente.
+Se solicitação falhar, preservar Diário e tratar obtenção antes de repetir.
+Enviar TXT MD_DIAG_DADOS_20261029_... e log atualizado do agente isolado.
+Execução nativa de29/10 ainda pendente. Não altera o EA v2.10 ou arquivo B3.
