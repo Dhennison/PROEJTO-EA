@@ -1,0 +1,63 @@
+v2.10 — AJUSTE HISTÓRICO RECEBIDO E CONFIGURAÇÃO DO PRIMEIRO ENSAIO
+
+ARQUIVO FORNECIDO PELO USUÁRIO
+Nome: ModeloD_Tester_20261030_ajuste_b3.txt
+Cópia byte a byte em dados_ensaio_20261030/, nesta pasta da entrega.
+Tamanho: 944 bytes; 29 linhas com CRLF reais, sem escapes literais no lugar
+das quebras de linha. Nenhuma data, preço, chave ou quebra foi modificada.
+SHA-256: d8e8ce4f588c527ff0287dd9c57b91162c3ec9bd8e39f06893984715b31a9257
+
+VALIDAÇÃO EXECUTADA AGORA
+Usados os fontes originais ModeloD_B3.mqh/ModeloD_B3Status.mqh do ZIP v2.10,
+com os auxiliares de string/matemática do host.cpp do pacote completo v2.07,
+compilados por g++ -std=c++17 -Wall -Wextra em diretório temporário.
+MDB3Parse e MDB3Select executaram sobre o arquivo real fornecido, sem fixtures
+numéricas sintéticas. Foi conferida adicionalmente DataFonte=2026-10-29.
+Código de saída: 0.
+
+Saída:
+PARSE_OK;contratos=12;DataFonte=2026-10-29;DataOperacional=2026-10-30;Fonte=BVBG.187.01;Status=OK
+SELECT_OK;WINZ26;Ajuste=171499;AjusteAnterior=173818
+
+Isso verifica estrutura, chaves/pares/contagem e seleção de sessão/contrato
+conforme o parser da entrega. Não é compilação MQL5 nova, leitura nativa pelo
+agente, nova consulta à B3 nem auditoria independente do boletim original.
+O arquivo é a cópia histórica apresentada pelo usuário; preservar procedência.
+
+CONFIGURAÇÃO OBSERVADA NAS CAPTURAS DO MT5
+Expert: ModeloD_Integrado_Sem_Transporte v2.10\EA_ModeloD_Fluxo_Sem_Ordens.ex5
+Ativo: WINZ26; período: M5.
+Datas: 2026.10.30 a 2026.10.31; período personalizado; forward: Não.
+Modelagem selecionada: Cada tick é baseado em um tick real.
+Latência: Sem atrasos, execução perfeita.
+Depósito simulado: 1000000 USD; alavancagem exibida: 1:100.
+O usuário não encontrou BRL e manteve USD. Diverge do roteiro inicial em BRL;
+o código não exige moeda BRL, mas cálculo de margem pode exigir conversão e
+histórico de câmbio. Registrar eventual falha; não comparar valores USD a BRL
+diretamente nem confundir saldo simulado com recomendação de capital.
+Otimização: Desativada; modo visual: marcado; lucro em pips: desmarcado.
+Selecionar ticks reais no painel ainda não comprova disponibilidade/uso efetivo:
+verificar mensagens e relatório depois da execução.
+
+PARÂMETROS OBSERVADOS
+DataTester=20261030; ContratoTester=WINZ26; FusoServidorTester=-10800;
+Instancia=1; VolumePorNivel=1; IntervaloSegundos=2.
+Na última captura ExecutarNoTester ainda estava false. Foi solicitado alterar
+para true na coluna Valor; confirmação da alteração/execução ainda pendente.
+As caixas e colunas Iniciar/Passo/Parar são da otimização e não precisam mudar.
+
+PRÓXIMA AÇÃO
+No Windows, manter a MESMA cópia em:
+MQL5\Files\ModeloD_Tester_20261030_ajuste_b3.txt, fora de temp.
+Com ExecutarNoTester=true, iniciar o ensaio único no Strategy Tester local.
+Não anexar essa configuração ao gráfico operacional nem habilitar conta real.
+O código confere HEDGE no início e recusa netting com TESTER_REQUIRES_HEDGING;
+as capturas não demonstram o modo da conta simulada. Não presumir validação.
+Se parar ou exibir erro, preservar/enviar Diário do Tester com as linhas desde
+o início. Se concluir, coletar relatório HTML, Diário e TXT MDT210_ indicado
+por RELATORIO_ABERTO, além do ledger se necessário. Não apagar evidências.
+
+ESTADO
+Compilação nativa do usuário já confirmada; arquivo de entrada validado
+localmente. Execução nativa, transferência tester_file, histórico real,
+HEDGE, margem e efeitos de ordens ainda não verificados neste ensaio.

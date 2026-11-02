@@ -71,3 +71,12 @@ Compilação nativa confirmada pelo log; ver COMPILACAO_NATIVA_USUARIO_v2_10.txt
 Próximo passo passa a ser configuração/execução do Strategy Tester conforme
 roteiro, selecionando a pasta v2.10. Arquivo B3 e teste nativo ainda aguardam
 validação; nenhum resultado de backtest ou operação está aprovado por compilar.
+
+ATUALIZAÇÃO — AJUSTE HISTÓRICO RECEBIDO E VALIDADO
+Cópia original preservada em dados_ensaio_20261030/. Parser da entrega v2.10
+executado localmente em C++: 12 contratos; fonte 29/10, sessão 30/10; Status OK;
+WINZ26 Ajuste=171499, AjusteAnterior=173818. Ver relatório
+VALIDACAO_AJUSTE_E_CONFIGURACAO_20261030.txt e SHA-256 nele registrado.
+Capturas confirmam configuração do ensaio com 1000000 USD, não BRL, modo
+visual e ticks reais selecionados. ExecutarNoTester estava false na última
+captura: usuário orientado a mudar para true; teste nativo ainda não recebido.
