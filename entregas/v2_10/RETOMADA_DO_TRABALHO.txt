@@ -1,0 +1,48 @@
+REGISTRO DE CONTINUIDADE — MODELO D v2.10
+
+Repositório: Dhennison/PROEJTO-EA
+Branch de trabalho: entrega-modelod-v2-10-20261030
+Commit da entrega original: 928f5609fdf0060f27ff0e5e0d60b52c0db3b917
+
+ACORDO DE REGISTRO
+O usuário autorizou registrar cada etapa concluída nesta branch, incluindo os
+arquivos criados e TXT explicativo, com commit e push ao GitHub. Atualizar este
+registro com resultados, pendências e próximo passo. Só declarar uma etapa salva
+no GitHub depois de confirmar o push. Não incluir segredos ou dados de conta.
+Arquivos existentes apenas no computador do usuário precisam ser fornecidos
+para poderem ser registrados no repositório.
+
+ESTADO CONFIRMADO NESTA RETOMADA
+- A branch acima foi obtida e selecionada no ambiente atual.
+- O commit original foi confirmado no GitHub.
+- Foram lidos LEIA_PRIMEIRO_v2_10.md e ARQUIVOS_ALTERADOS.txt.
+- Nenhum código do EA foi alterado nesta retomada.
+- Ainda não recebemos resultado da compilação MQL5 ou do Strategy Tester.
+- O chat anterior apresentou: "FailedPrecondition: The cloud build for this
+  thread has been deleted and cannot be resumed. View saved history. If this
+  is a setup thread, report the unavailable environment."
+  A mensagem confirma indisponibilidade daquele ambiente; não informa a causa
+  da exclusão nem estabelece prazo de expiração por inatividade.
+
+PRÓXIMO PASSO — NO MT5/METAEDITOR DO USUÁRIO
+1. Preservar o ajuste B3 original do backup. Copiar, sem alterar datas ou preços,
+   para MQL5\Files\ModeloD_Tester_20261030_ajuste_b3.txt, fora de temp.
+2. Conferir DataFonte=2026-10-29 e DataOperacional=2026-10-30, além dos demais
+   requisitos de LEIA_PRIMEIRO_v2_10.md. O arquivo ainda não foi recebido nem
+   validado neste chat.
+3. Compilar MQL5\Experts\ModeloD_Integrado_Sem_Transporte\
+   EA_ModeloD_Fluxo_Sem_Ordens.mq5 no MetaEditor, com os cabeçalhos da entrega.
+4. Fornecer o resultado da compilação (erros e avisos) para análise e registro.
+5. Após a compilação, seguir o roteiro existente do primeiro ensaio: WINZ26,
+   30/10/2026, um pregão, Strategy Tester local. Não habilitar negociação real.
+
+FONTES DA ENTREGA
+- entregas/ModeloD_Integrado_Tester_v2_10.zip
+- entregas/v2_10/LEIA_PRIMEIRO_v2_10.md
+- entregas/v2_10/ModeloD_v2_10_Documentacao_e_Testes.zip
+- entregas/v2_10/ARQUIVOS_ALTERADOS.txt
+
+COMO RETOMAR EM OUTRO CHAT
+Solicitar a leitura deste TXT e de LEIA_PRIMEIRO_v2_10.md na branch indicada.
+Consultar os commits posteriores para resultados novos. Não tratar etapas
+pendentes como executadas nem confundir teste C++ com compilação MQL5 nativa.
