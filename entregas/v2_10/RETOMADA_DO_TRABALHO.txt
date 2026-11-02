@@ -62,3 +62,12 @@ MQL5\Experts\ModeloD_Integrado_Sem_Transporte v2.10\.
 Conferidos os includes relativos do ZIP v2.10; compilação nativa nesse caminho
 ainda pendente. Ver INSTALACAO_PARALELA_v2_10.txt, que substitui a orientação
 anterior de sobrescrever a pasta da v2.09. Código e ZIP não foram alterados.
+
+ATUALIZAÇÃO — COMPILAÇÃO NATIVA v2.10 RECEBIDA EM 02/11/2026
+Usuário enviou o resultado do MetaEditor: code generated; 0 errors,
+0 warnings, 5920 ms elapsed, cpu='AVX2 + FMA3'. Cabeçalhos Runtime210,
+TesterData210 e TesterTransport210 constam da listagem.
+Compilação nativa confirmada pelo log; ver COMPILACAO_NATIVA_USUARIO_v2_10.txt.
+Próximo passo passa a ser configuração/execução do Strategy Tester conforme
+roteiro, selecionando a pasta v2.10. Arquivo B3 e teste nativo ainda aguardam
+validação; nenhum resultado de backtest ou operação está aprovado por compilar.

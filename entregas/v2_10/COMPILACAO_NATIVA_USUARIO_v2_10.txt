@@ -1,0 +1,30 @@
+MODELO D v2.10 — RESULTADO NATIVO INFORMADO PELO USUÁRIO
+
+Recebido neste chat em 02/11/2026 (data da mensagem, não timestamp do build).
+Contexto: instalação paralela em ModeloD_Integrado_Sem_Transporte v2.10,
+preservando a pasta da v2.09, conforme orientação anterior. O log colado não
+exibe o caminho absoluto do arquivo compilado.
+
+Ferramenta: MetaEditor na instalação do usuário.
+Fonte principal: EA_ModeloD_Fluxo_Sem_Ordens.mq5.
+Cabeçalhos da v2.10 presentes no log, inclusive Runtime210, TesterData210 e
+TesterTransport210.
+
+TRECHO FINAL DO RESULTADO FORNECIDO
+code generated                         0
+0 errors, 0 warnings, 5920 ms elapsed, cpu='AVX2 + FMA3'     0
+
+CONCLUSÃO
+Compilação MQL5 nativa confirmada pelo resultado enviado: zero erros e avisos.
+Isso substitui o status de compilação pendente nos registros anteriores,
+sem alterar as limitações dos testes locais C++ documentados na entrega.
+O binário .ex5 não foi anexado nem compilado neste ambiente na nuvem; seu hash
+e caminho não foram verificados aqui. Arquivo B3 de entrada ainda não foi
+recebido/validado neste chat. Compilação não comprova sua procedência/conteúdo.
+
+PRÓXIMO PASSO
+Configurar Strategy Tester local com o EA da pasta v2.10, WINZ26, M5,
+30/10/2026 a 31/10/2026, ticks reais, HEDGE e arquivo .set da entrega.
+Seguir LEIA_PRIMEIRO_v2_10.md, aplicando INSTALACAO_PARALELA_v2_10.txt para
+o nome da pasta de Experts. Não anexar o modo Tester ao gráfico operacional.
+Ensaio nativo, leitura B3, execução/efeitos de ordens e relatório ainda pendentes.
