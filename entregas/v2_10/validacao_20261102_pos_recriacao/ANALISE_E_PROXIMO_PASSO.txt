@@ -1,0 +1,59 @@
+DIAGNÓSTICO APÓS PROCEDIMENTO DE RECONSTRUÇÃO — 02/11/2026 14:21–14:22
+
+RESULTADO: DESCARTE E AUSÊNCIA DE LAST PERSISTEM
+O log desta rodada registra carregamento de 213 KB de histórico e 12,41 MB
+de ticks para sincronizar o agente, em contraste com as transferências mínimas
+das duas rodadas anteriores (149/34 bytes de ticks).
+Isso comprova nova transferência significativa ao agente; não comprova
+download direto do servidor da corretora em vez de dados já presentes no
+terminal, nem identifica o defeito interno de origem.
+A renomeação/preservação física do cache no Windows não foi inspecionada
+diretamente pelo assistente. A rodada foi recebida após as instruções de
+reconstrução e as mensagens são compatíveis com uma nova sincronização.
+
+NOVAMENTE NO LOG DO MOTOR
+14:22:00.075: todos os ticks reais descartados; 4.319.114 preços de ticks
+divergentes; 565 minutos de 565 recusados, geração substituta utilizada;
+volumes divergentes nos mesmos 565 minutos.
+
+NOVAMENTE NA API DO DIAGNÓSTICO
+Símbolo WINZ26, build 6231, HEDGE (margin_mode=2), gráfico Last confirmado.
+Barra M1 de 09:00: O170910 H171600 L170900 C171330, TICKVOL18948 VOL78471.
+ALL: 3790 registros, erro 0, todos sem Last positivo; exemplos flags6/BidAsk.
+TRADE: zero registros, erro 0.
+Remoção automática às 09:02, reason0, probe_executed1, sem negociação.
+Comparação automatizada com o TXT da rodada 14:05: conteúdo idêntico após
+excluir apenas a linha REPORT com o novo nome de arquivo. Não houve melhora
+nas propriedades, dados M1 ou fluxo fornecido pelas APIs.
+
+CONCLUSÃO
+A nova transferência ao agente não resolveu o problema. Não há justificativa
+para repetir renomeações ou ensaios iguais. O impedimento nativo permanece
+no preparo/fornecimento dos ticks do Tester, antes de qualquer envio do EA.
+Isso não prova ausência de outros defeitos no EA, ainda não exercitado com
+operações. Tampouco prova culpa da corretora ou da MetaQuotes: dados do
+terminal, transferência/preprocessamento e build continuam hipóteses.
+Não alterar Last, B3, datas, preços, volume ou modelo para contornar o bloqueio.
+Não aprovar a execução pela etiqueta HTML 100% ou texto Test passed.
+
+PRÓXIMO PASSO CONCRETO
+Pacote reproduzível de suporte preparado nesta pasta, com fonte de diagnóstico
+sem ordens, TXT nativo, trecho completo desta rodada do motor, amostra de ticks
+09:00–09:01 e barras M1 exportadas. Texto CHAMADO_SUPORTE_WINZ26.txt descreve
+o que foi e não foi provado e solicita investigação dos ticks/dados e do
+preprocessamento, sem atribuir causa não demonstrada.
+Usuário pode abrir chamado no suporte MT5 da Genial e encaminhar o ZIP.
+Se o suporte identificar falha do motor/build, pedir encaminhamento técnico
+à MetaQuotes. Nenhuma mensagem externa foi enviada pelo assistente.
+
+Pode ser necessário reproduzir em instalação/build isolado ou obter histórico
+corrigido, mas isso ainda não foi executado nem imposto como solução certa.
+Não instalar outra plataforma, fornecer credenciais em chat ou alterar a
+instalação operacional sem diagnóstico específico. Preservar o backup do cache.
+
+ESTADO
+Trabalho independente desta etapa concluído: evidências preservadas, rodada
+comparada e caso mínimo pronto. Bloqueador externo: motor não disponibiliza
+negócios Last válidos para o replay solicitado. Aguardamos investigação ou
+correção dos dados/preparação pelo ambiente MT5 para retomar o ensaio v2.10.
+Não houve nova mudança no EA nem aprovação de backtest/gestão/demo.

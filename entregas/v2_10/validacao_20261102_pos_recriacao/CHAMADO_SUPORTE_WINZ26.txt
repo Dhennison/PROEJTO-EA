@@ -1,0 +1,65 @@
+ASSUNTO: WINZ26 30/10/2026 — Tester descarta todos os ticks reais e fornece Last=0
+
+Solicito investigação do histórico/preparação de dados do WINZ26 no MT5 da
+Genial (GenialInvestimentos-PRD), build 6231, Windows 11. Não há negociação
+real neste caso: o problema foi reproduzido com EA mínimo de diagnóstico,
+sem chamadas de negociação, que consulta o primeiro minuto e encerra sozinho.
+
+REPRODUÇÃO
+Compilar MQL5/Experts/ModeloD_Diagnostico_Agente/Diagnostico_Dados_WINZ26.mq5.
+Compilação do usuário: 0 erros/0 avisos, 598 ms.
+No Tester local: WINZ26, M5, 30/10/2026–31/10/2026, Cada tick baseado em
+ticks reais, sem otimização/forward/atraso, visualização, saldo simulado
+1.000.000 USD, conta HEDGE. O diagnóstico coleta às 09:02 e encerra.
+O arquivo B3 e o EA de estratégia não são necessários para essa reprodução.
+
+ESPERADO
+O histórico real válido deve disponibilizar negócios Last e volume ao agente.
+Não basta selecionar ticks reais se eles forem substituídos por cotações geradas.
+
+OBSERVADO NO TERMINAL
+Exportação da aba Ticks para [30/10/2026 09:00,09:01): 21.566 eventos,
+10.528 registros com Last positivo e flags de negociação; primeiro negócio
+09:00:43.093. OHLC reconstruído 170910/171600/170900/171330 e soma de volume
+78471 conferem exatamente com a barra M1 exportada.
+Amostra contém sete registros de preços/flags zerados, preservados no CSV;
+sua relação com o descarte não foi estabelecida. TICKVOL da barra é 18948;
+não foi presumida equivalência desse campo com contagem ALL ou TRADE.
+
+OBSERVADO NO TESTER
+O motor registra, inclusive após nova transferência de 12,41 MB de ticks:
+"all the real ticks discarded within a day"
+"4319114 tick prices mismatch for 565 minute bars"
+"real ticks discarded for 565 minutes of 565 total minute bars, every tick generation used"
+"tick volumes not matched for 565 minute bars"
+
+Propriedades consultadas DENTRO do agente:
+SYMBOL_CHART_MODE=LAST; tick_size5; tick_value1; digits0; point1;
+SYMBOL_TRADE_CALC_MODE=33; moedas de lucro e margem BRL, conta USD.
+A M1 de 09:00 recebida pelo agente confere com a exportação do terminal.
+Porém CopyTicksRange ALL do mesmo minuto retorna apenas 3790 cotações,
+Last/volume zerados, exemplos flags6. CopyTicksRange TRADE retorna zero,
+ambas sem erro. Primeiro evento gerado surge às 09:00:00 com Last=0.
+
+JÁ VERIFICADO
+- Datas/símbolo corretos e gráfico Last no terminal e no agente.
+- Amostra de negócios e M1 do terminal com OHLC/volume coincidentes.
+- Repetição curta manteve a falha.
+- Procedimento de reconstrução do cache do Tester com preservação orientada;
+  nova transferência de 12,41 MB ao agente manteve o resultado.
+- Exports não foram editados/limpos; nenhuma conversão de Last para Bid/Ask.
+
+SOLICITAÇÃO
+Verificar a integridade/coerência da série de ticks WINZ26 de 30/10/2026,
+seu alinhamento às barras M1 e o motivo exato de o preprocessamento recusar
+os ticks, apesar da coincidência OHLC/volume na amostra. Indicar se há
+correção de histórico, procedimento suportado de ressincronização do terminal
+ou problema de build/configuração do Tester. Se for falha do motor, solicitar
+encaminhamento à MetaQuotes com este caso mínimo.
+Não pedimos aprovação de estratégia ou aceitação de ticks artificiais.
+
+ANEXOS DO PACOTE
+Fonte diagnóstico, seu TXT nativo e log da rodada 14:21–14:22;
+CSVs originais de barras M1 do dia e ticks de um minuto, sem alteração;
+manifesto SHA-256. O CSV de ticks inclui quatro registros do limite 09:01,
+que devem ser separados do minuto [09:00,09:01) na comparação.

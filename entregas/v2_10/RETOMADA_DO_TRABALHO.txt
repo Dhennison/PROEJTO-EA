@@ -159,3 +159,13 @@ fechar esse MT5, preservar bases renomeando com nome de backup exclusivo,
 reabrir e executar uma vez o diagnóstico para comparar nova sincronização.
 Não apagar dados, mexer em Terminal/Common/Files ou alterar o EA. Renomeação
 e nova coleta ainda aguardam confirmação/resultados do usuário.
+
+ATUALIZAÇÃO — NOVA TRANSFERÊNCIA AO AGENTE NÃO RESOLVEU
+Rodada 14:21–14:22 recebida após orientação de reconstrução. Log registra
+213 KB de barras e 12,41 MB de ticks sincronizados; descarte integral dos
+565 minutos persiste. TXT idêntico ao anterior salvo nome do relatório:
+ALL3790 com Last0; TRADE0. Evidências em validacao_20261102_pos_recriacao/.
+Não repetir reconstruções/ensaios iguais. Caso mínimo sem ordens e chamado
+de suporte preparados para investigação do histórico/preprocessamento MT5;
+nenhuma mensagem externa enviada. Ver ANALISE_E_PROXIMO_PASSO.txt e
+CHAMADO_SUPORTE_WINZ26.txt. Ensaio v2.10 continua bloqueado e não aprovado.
