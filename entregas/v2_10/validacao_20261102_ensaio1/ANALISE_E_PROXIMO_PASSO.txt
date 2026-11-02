@@ -1,0 +1,88 @@
+v2.10 — PRIMEIRO ENSAIO NATIVO DO STRATEGY TESTER
+Execução em 02/11/2026, replay de 30/10/2026.
+
+RESULTADO: NÃO ACEITO COMO VALIDAÇÃO OPERACIONAL
+O processo do Tester terminou normalmente, mas o EA não chegou a validar os
+dados diários/abertura nem preparar/enviar ordens. Não classificar zero resultado
+como aprovação de estratégia, comportamento sem oportunidades ou backtest final.
+
+FONTES
+ReportTester-155063.html: HTML original UTF-16 exportado pelo usuário.
+RELATORIO_EA_ORIGINAL.txt: TXT original de 13.145 linhas, identificado pelo
+prefixo MDT210_1793318400_247818687_447_ (nome original completo em FONTES.json).
+DIARIO_PARCIAL_COLADO.txt: texto colado, começa no replay 14:16:04, termina após
+o encerramento; não contém a inicialização completa do agente/baixada de dados.
+Originais preservados byte a byte. Hashes/tamanhos em FONTES.json.
+As imagens acompanhantes do HTML são auxiliares; os números/tabulações foram
+lidos diretamente do HTML e cruzados com o TXT. Não foram regeneradas imagens.
+
+O HTML CONFIRMA
+Servidor: GenialInvestimentos-PRD, build 6231.
+WINZ26, M5, 2026.10.30–2026.10.31.
+ExecutarNoTester=true, data 20261030, WINZ26, fuso -10800, instância 1,
+volume 1, intervalo 2. Alteração de false para true agora confirmada.
+Saldo simulado inicial: 1.000.000 USD; alavancagem 1:100.
+Qualidade declarada: 100% de ticks reais; 113 barras, 1.843.819 ticks.
+Total de negociações e ofertas: zero. Seção Ordens vazia; transações apenas
+com o lançamento inicial de saldo. Saldo final igual ao inicial.
+Não confundir qualidade declarada do replay com comprovação de que o leitor
+do EA obteve os mesmos ticks por CopyTicksRange.
+
+O TXT DO EA CONFIRMA
+00:00:00: START v2.10, TRANSPORT_TESTER_ONLY, ISOLATED_RUN, revisão 1.
+TESTER_CONFIG com fonte 29/10 e arquivo histórico correto.
+00:00:02: amostragem do relógio; 00:00:04: relógio simulado explícito BRT.
+09:00:44 em diante: espera de negócio em janela parcial.
+09:01:00: primeira PRIMEIRO_TICK_JANELA_VAZIA_CONFIRMADA.
+Sessão 09:00–18:00: 540 janelas completas de um minuto registradas vazias
+no componente DADOS_DIARIOS; o mesmo motivo também aparece em FLUXO_TICKS,
+portanto não duplicar a contagem entre componentes.
+18:00:04: PRIMEIRO_TICK_SESSAO_SEM_NEGOCIOS; tentativas=5163.
+23:59:58: TESTER_END;prepared=0;sent=0;responses=0;revision=1.
+STOP reason=1, transporte TESTER_ONLY. Nenhuma TESTER_REQUEST, TESTER_RESPONSE
+ou TESTER_DEAL no TXT.
+
+Contagens em DADOS_DIARIOS:
+RELOGIO_NAO_VALIDADO: 1
+PRIMEIRO_TICK_AGUARDA_JANELA_COMPLETA: 1
+PRIMEIRO_TICK_AGUARDA_NEGOCIO_NA_JANELA_PARCIAL: 4623
+PRIMEIRO_TICK_BACKOFF: 1400
+PRIMEIRO_TICK_JANELA_VAZIA_CONFIRMADA: 540
+PRIMEIRO_TICK_SESSAO_SEM_NEGOCIOS: 1
+
+DIAGNÓSTICO CONFIRMADO E LIMITE
+Bloqueio na aquisição da abertura, anterior à formação dos dados diários e ao
+envio. Conferido ModeloD_OpeningTicks.mqh no ZIP v2.10:
+MDOpeningRead208 usa CopyTicksRange com COPY_TICKS_TRADE, janelas de até 60s;
+os motivos de espera/vazio observados correspondem ao ramo n==0, sem erro da
+API, nesse fonte. Janela completa vazia avança cursor; janela parcial vazia
+aguarda. Não há nesta evidência preço/flags dos ticks, nem comparação com
+COPY_TICKS_ALL no agente. A causa por trás dos retornos vazios ainda não foi
+determinada; não atribuir à corretora, flags, fuso, cache ou moeda sem prova.
+Não resolver fabricando abertura por candle/M1 ou desativando validações.
+
+Não houve falha de inicialização HEDGE no começo: o START/TESTER_CONFIG ocorrem
+após a validação do adaptador no fonte. Isso não comprova gestão de posições.
+O ajuste histórico passou pela inicialização; a moeda USD não é a explicação
+demonstrada deste bloqueio, pois o fluxo sequer chegou ao preparo de ordens.
+Margem/conversões financeiras ainda precisam ser verificadas quando ele chegar.
+
+GRÁFICOS E SETAS
+Sem ordens/negócios, não há setas nativas de execução a exibir neste ensaio.
+Não tratar isso como defeito visual já comprovado. Usuário informou que botão
+direito não abre menu no gráfico visual; orientação anterior não se aplicou.
+Rever as opções da visualização depois, sem misturar com bloqueio de abertura.
+
+PRÓXIMO PASSO
+Obter o log completo do agente de 02/11/2026, cujo caminho aparece no final do
+Diário: %APPDATA%\MetaQuotes\Tester\7C2F32F55EE936F0CCC2F0B721A79A10\
+Agent-127.0.0.1-3000\logs\20261102.log.
+Precisamos das mensagens iniciais de preparação/sincronização e do teste,
+ausentes do trecho colado. Não repetir a mesma configuração sem nova hipótese.
+Se o log completo não esclarecer os retornos, instrumentar a consulta no
+próprio agente para registrar contagem/erro, relógio, tick atual e confronto
+TRADE/ALL antes de propor correção. Preservar as regras e identidade do teste.
+
+Esta etapa apenas preserva/analisa evidências. Nenhum código, ZIP ou parâmetro
+de estratégia foi alterado. Nenhum resultado lucrativo, correção ou novo teste
+é declarado por esta análise.

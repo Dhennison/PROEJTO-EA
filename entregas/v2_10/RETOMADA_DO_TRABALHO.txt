@@ -80,3 +80,13 @@ VALIDACAO_AJUSTE_E_CONFIGURACAO_20261030.txt e SHA-256 nele registrado.
 Capturas confirmam configuração do ensaio com 1000000 USD, não BRL, modo
 visual e ticks reais selecionados. ExecutarNoTester estava false na última
 captura: usuário orientado a mudar para true; teste nativo ainda não recebido.
+
+ATUALIZAÇÃO — PRIMEIRO TESTER NATIVO RECEBIDO
+Preservados HTML, TXT do EA e Diário parcial em validacao_20261102_ensaio1/.
+HTML confirma ExecutarNoTester=true, 100% ticks reais, 1.843.819 ticks,
+113 barras e ZERO negociações. TXT termina prepared=0/sent=0/responses=0.
+EA não obteve primeiro negócio pelas consultas TRADE, registrando 540 janelas
+completas vazias. Ensaio não aceito como validação operacional; causa dos
+retornos vazios ainda não determinada. Ver ANALISE_E_PROXIMO_PASSO.txt.
+Próxima evidência necessária: log COMPLETO 20261102.log do agente, pois o
+Diário colado começa apenas às 14:16:04 simuladas. Não repetir ensaio igual.
