@@ -239,3 +239,13 @@ Ver diagnostico_agente/controle_20261029/COMPILACAO_NATIVA_USUARIO.txt.
 Antes da execução, solicitar no MT5 secundário ticks29/10 00:00–30/10 00:00;
 configurar NOVO Expert controle29 para esse recorte, WINZ26/M5/ticks reais,
 sem visualização. Compilação confirmada; dados e execução29 ainda pendentes.
+
+ATUALIZAÇÃO — CONTROLE29 NATIVO TAMBÉM FALHOU
+Capturas confirmam solicitação4.707.729 ticks e configuração29–30/10.
+Rodada15:36, build6231, portátil/não visual/Hedge: todos565min descartados,
+4.707.605 preços divergentes. ALL3277/Last0; TRADE0, sem erro, coleta09:02.
+Evidências em validacao_20261102_controle_20261029/. Não é problema exclusivo
+do dia30 nesse controle. Próximo: verificar opção de atualização oficial
+release no menu Ajuda do MT5 SECUNDÁRIO. Todos os testes usaram6231 até aqui;
+outro build ainda não foi testado nem há atualização disponível confirmada.
+Não instalar beta, modificar o principal ou repetir testes iguais nesse build.

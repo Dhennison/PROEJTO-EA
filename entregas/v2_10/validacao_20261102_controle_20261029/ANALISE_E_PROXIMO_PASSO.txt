@@ -1,0 +1,60 @@
+CONTROLE DE OUTRO PREGÃO — WINZ26, 29/10/2026, EXECUTADO EM 02/11 15:36
+
+CONFIGURAÇÃO E ORIGEM CONFIRMADAS
+Capturas mostram solicitação explícita 29/10 00:00–30/10 00:00 com 4.707.729
+ticks recebidos, 131.072 exibidos. Últimos negócios visíveis às18:31:15.071,
+Last171050, volumes positivos e flags88. Não interpretar registro no mesmo
+milissegundo como duplicata automaticamente nem como dado de primeiro minuto.
+Captura do Tester confirma Expert novo Diagnostico_Dados_WINZ26_20261029,
+WINZ26/M5/29–30/10/ticks reais, visual desativado, conta USD, sem otimização.
+Log confirma build6231, conta Hedge (margin_mode2), datas corretas e agente
+na cópia portátil já identificada. Diagnóstico encerrou sozinho às09:02.
+
+RESULTADO DO MOTOR
+13,34 MB de ticks sincronizados. O motor descartou todos os ticks reais de
+29/10: 565 de565 minutos, 4.707.605 preços de ticks divergentes e volumes
+divergentes. Os números do dia29 NÃO são os do dia30; separar as duas rodadas
+do arquivo acumulado. RODADA_29_EXTRAIDA.txt preserva os números de linha.
+
+RESULTADO DAS CONSULTAS NATIVAS, MINUTO [09:00,09:01)
+Gráfico Last, tick_size5, tick_value1, digits0 e point1, calculation_mode33.
+M1: O173135 H173485 L173105 C173255, tick_volume3277, real_volume53061.
+ALL:3277 registros, erro0, todos com Last zerado, sem negócios positivos.
+Exemplos: Bid/Ask positivos e flags6, volume0.
+TRADE:0 registros, erro0. Nenhuma ordem (fonte não contém negociação).
+CSV bruto do minuto29 não foi recebido; não declarar reconstrução independente
+de OHLC ou volume desse dia, apenas resultado retornado pelo agente.
+
+CONCLUSÃO
+A falha não é exclusiva do recorte30 no ambiente observado. Ela se reproduz
+também em29, na cópia isolada, sem visualização, com o mesmo build6231 e servidor.
+Não generalizar dois dias como prova de todos os contratos/dias. A causa
+interna do descarte continua sem comprovação. Esta coleta não autoriza mudar
+o recorte operacional da v2.10 nem usar outro ajuste B3; o controle é só leitura.
+
+RESUMO DAS HIPÓTESES LOCAIS JÁ EXERCITADAS
+- Visualização: mesmo problema com visual1 e visual0.
+- Cache do Tester: nova transferência após reconstrução manteve recusa.
+- Perfil/base do terminal antigo: cópia portátil também manteve recusa.
+- Um só dia:29 também falhou, além de30.
+- Tipo de gráfico por Bid: terminal/agente consultados declaram Last.
+Ainda NÃO houve comparação com outro build: todos os logs registram6231.
+Dados/servidor, comportamento do build e suas interações continuam hipóteses.
+
+PRÓXIMO PASSO LOCAL
+No MT5 SECUNDÁRIO/ISOLADO, verificar em Ajuda se há opção de atualização para
+versão oficial de lançamento (release estável). Confirmar a opção disponível
+na interface antes de presumir nomes/existência de comando. Não instalar beta,
+binário de fonte desconhecida, downgrade aleatório ou alterar o MT5 principal.
+Não afirmar que há atualização disponível: essa verificação ainda não ocorreu.
+Se existir release mais recente, registrar a versão e o diretório da cópia
+antes/depois e repetir primeiro o diagnóstico mínimo original30, mantendo
+dados/modelo/conta comparáveis; só então avaliar mudança de comportamento.
+Se não houver outra versão disponível, não repetir rodadas6231: seguir com
+investigação técnica dos dados/fonte ou caso reproduzível de suporte.
+
+ESTADO
+Controle29 nativo concluído e falhou quanto ao fornecimento de negócios reais.
+Artefatos/hashes salvos; nenhum código novo ou correção do EA nesta etapa.
+Suporte pode prosseguir em paralelo; alternativas locais dependem de mudança
+concreta de variável. Não declarar mercado fechado como causa sem evidência.
