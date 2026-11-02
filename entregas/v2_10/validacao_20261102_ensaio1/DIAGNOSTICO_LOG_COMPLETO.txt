@@ -1,0 +1,64 @@
+v2.10 — ATUALIZAÇÃO APÓS RECEBIMENTO DO LOG COMPLETO DO AGENTE
+
+ESTADO: ENSAIO INVÁLIDO PARA ACEITAÇÃO EM TICKS REAIS
+Esta conclusão complementa e atualiza ANALISE_E_PROXIMO_PASSO.txt. A próxima
+ação já não é pedir o log completo: ele foi recebido e preservado aqui.
+
+EVIDÊNCIA NOVA DECISIVA — 20261102.log, LINHAS 40–46
+40: all the real ticks discarded within a day
+41: 4319114 tick prices mismatch for 565 minute bars
+43: real ticks discarded for 565 minutes of 565 total minute bars,
+    every tick generation used
+44: real ticks discarded for 1 whole days
+45: tick volumes not matched for 565 minute bars
+46: tick prices of 4319114 ticks not matched for 565 minute bars
+
+As linhas foram emitidas às 13:06:41.539, durante preparação do replay, antes
+do fluxo do EA. O cabeçalho do log registra sincronização bem-sucedida do
+símbolo WINZ26 e download de 12,41 MB de ticks. Isso não garante coerência
+entre ticks e barras: em seguida o Tester descartou todos os ticks reais.
+Trechos com números de linha em TRECHOS_LOG_COMPLETO.txt; original UTF-16
+preservado sem modificação em 20261102.log; hash/tamanho em FONTES.json.
+
+CONCLUSÃO E CORREÇÃO DE INTERPRETAÇÃO
+O painel/HTML declara 100% de ticks reais, mas o log do motor explicita que
+os descartou em TODOS os 565 minutos e recorreu à geração. Os 1.843.819 ticks
+processados no encerramento NÃO são comprovação de replay de negócios reais.
+Não houve erro do usuário ao selecionar o modelo: ele selecionou ticks reais,
+conforme capturas, e o motor substituiu os dados durante a preparação.
+O texto "Test passed" indica fim do processo, não aprovação das regras/dados.
+
+O EA permaneceu sem abertura validada e sem ordens. A indisponibilidade de
+negócios nas consultas TRADE é compatível com a geração observada, mas o log
+não demonstra sozinho que essa é a ÚNICA causa possível dos retornos n==0.
+Não alterar o leitor para aceitar Bid/Ask/tick sintético como primeiro negócio
+Last apenas para fazer o ensaio passar. Mesmo que aparecessem operações, esse
+replay não atenderia ao requisito aprovado de ticks reais.
+
+O QUE AINDA NÃO ESTÁ DETERMINADO
+- Por que os preços/volumes dos ticks divergem das barras M1 em todo o dia.
+- Qual conjunto representa os negócios corretos (ticks, barras, ambos ou cache).
+- Se nova sincronização elimina a divergência; nenhum refresh foi executado.
+- Se haverá necessidade de ajuste do adaptador após restaurar os dados reais.
+Não atribuir a causa interna à Genial/cache/escala/fuso sem confrontar amostras.
+Moeda USD não explica, por si, essa recusa de ticks por divergência de preços
+e volumes. Não alterar datas nem preços do ajuste B3 para contornar a recusa.
+
+PRÓXIMO PASSO CONCRETO — SEM NOVA EXECUÇÃO COMPLETA POR ENQUANTO
+No MT5 do usuário, inspecionar o símbolo REAL WINZ26 em Símbolos (Ctrl+U),
+aba Barras, período M1, no intervalo de 30/10/2026. Conferir/exportar barras
+e uma amostra de ticks Last do mesmo intervalo na aba Ticks para comparar
+preços, timestamps e volumes antes de recomendar correção ou sincronização.
+Uma amostra inicial de 09:00–09:01 limita o volume do arquivo, sem exigir
+enviar os milhões de ticks ou o ZIP de 900 MB. Se o minuto não tiver dados,
+identificar o primeiro intervalo com negócios reais e preservar essa ausência.
+Não apagar caches, arquivos de histórico, diário do EA ou estado da v2.09.
+Se o servidor continuar fornecendo conjuntos incompatíveis, fornecer à
+corretora evidência específica e solicitar histórico coerente; não enviar
+mensagem externa automaticamente e não declarar necessidade já comprovada.
+
+ESCOPO DESTA ETAPA
+Análise documental do log nativo fornecido, sem modificação de código, ZIP,
+histórico do usuário ou parâmetros. A compilação nativa v2.10 permanece
+confirmada; aceitação operacional e teste válido em ticks reais permanecem
+pendentes. Não aprovar resultado por ausência de ordens, falhas ou lucro.

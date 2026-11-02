@@ -1,6 +1,10 @@
 v2.10 — PRIMEIRO ENSAIO NATIVO DO STRATEGY TESTER
 Execução em 02/11/2026, replay de 30/10/2026.
 
+ATUALIZAÇÃO POSTERIOR: log completo recebido. Ver DIAGNOSTICO_LOG_COMPLETO.txt:
+o motor descartou todos os ticks reais e gerou substitutos por divergências
+com M1. O pedido de log abaixo foi atendido e não é mais o próximo passo.
+
 RESULTADO: NÃO ACEITO COMO VALIDAÇÃO OPERACIONAL
 O processo do Tester terminou normalmente, mas o EA não chegou a validar os
 dados diários/abertura nem preparar/enviar ordens. Não classificar zero resultado

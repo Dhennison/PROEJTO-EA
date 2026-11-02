@@ -90,3 +90,12 @@ completas vazias. Ensaio não aceito como validação operacional; causa dos
 retornos vazios ainda não determinada. Ver ANALISE_E_PROXIMO_PASSO.txt.
 Próxima evidência necessária: log COMPLETO 20261102.log do agente, pois o
 Diário colado começa apenas às 14:16:04 simuladas. Não repetir ensaio igual.
+
+ATUALIZAÇÃO — LOG COMPLETO RECEBIDO, TICKS REAIS DESCARTADOS
+20261102.log preservado em validacao_20261102_ensaio1/. Linhas 40–46:
+Tester descartou ticks reais de TODOS os 565 minutos do dia, identificou
+4.319.114 ticks com preços divergentes e gerou ticks substitutos. O HTML
+"100% de ticks reais" não comprova uso real neste replay. Ver
+DIAGNOSTICO_LOG_COMPLETO.txt. Não repetir teste completo nem aceitar ticks
+sintéticos: próximo passo é conferir M1 e amostra de ticks Last de WINZ26
+no MT5, sem apagar cache/estado nem alterar estratégia ou arquivo B3.

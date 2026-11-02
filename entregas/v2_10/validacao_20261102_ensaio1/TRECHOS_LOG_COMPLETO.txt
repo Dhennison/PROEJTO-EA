@@ -1,0 +1,57 @@
+1: CS	0	13:06:38.812	Startup	MetaTester 5 build 6231, 27 Sep 2026
+2: CS	0	13:06:38.812	Startup	Windows 11 build 26200, 12 x 13th Gen Intel Core i5-1335U, AVX2, 1 / 7 Gb memory, 341 / 475 Gb disk, UAC, GMT-3
+3: CS	0	13:06:38.816	Server	MetaTester 5 started on 127.0.0.1:3000
+4: CS	0	13:06:38.820	Startup	cloud network mode is off
+5: CS	0	13:06:38.820	Startup	initialization finished
+6: CS	0	13:06:39.090	127.0.0.1	login (build 6231)
+7: CS	0	13:06:39.208	Network	5464 bytes of account info loaded
+8: CS	0	13:06:39.208	Network	1478 bytes of tester parameters loaded
+9: CS	0	13:06:39.208	Network	3780 bytes of input parameters loaded
+10: CS	0	13:06:39.327	Network	595349 bytes of symbols list loaded (73498 symbols)
+11: CS	0	13:06:39.328	Tester	expert file added: Experts\ModeloD_Integrado_Sem_Transporte v2.10\EA_ModeloD_Fluxo_Sem_Ordens.ex5. 310342 bytes loaded
+12: CS	0	13:06:39.329	Tester	file added: Files\ModeloD_Tester_20261030_ajuste_b3.txt. 991 bytes loaded
+13: CS	0	13:06:39.351	Tester	initial deposit 1000000.00 USD, leverage 1:100
+14: CS	0	13:06:39.351	Tester	successfully initialized
+15: CS	0	13:06:39.351	Network	767 Kb of total initialization data received
+16: CS	0	13:06:39.351	Tester	13th Gen Intel Core i5-1335U, 7879 MB
+17: CS	0	13:06:39.380	Symbols	WINZ26: symbol to be synchronized
+18: CS	0	13:06:39.382	Symbols	WINZ26: symbol synchronized, 3720 bytes of symbol info received
+19: CS	0	13:06:39.383	History	WINZ26: history synchronization started
+20: CS	0	13:06:39.399	History	WINZ26: load 213 Kb of history data to synchronize in 0:00:00.015
+21: CS	0	13:06:39.399	History	WINZ26: history synchronized from 2026.05.12 to 2026.10.30
+22: CS	0	13:06:39.399	Ticks	WINZ26: ticks synchronization started
+23: CS	0	13:06:41.197	Ticks	WINZ26: load 12.41 Mb of tick data to synchronize in 0:00:01.797
+24: CS	0	13:06:41.197	Ticks	WINZ26: history ticks synchronized from 2026.10.30 to 2026.10.30
+25: CS	0	13:06:41.200	History	WINZ26,M5: history cache allocated for 7474 bars and contains 7220 bars from 2026.05.12 17:10 to 2026.10.29 18:20
+26: CS	0	13:06:41.200	History	WINZ26,M5: history begins from 2026.05.12 17:10
+27: CS	0	13:06:41.409	Tester	WINZ26,M5 (GenialInvestimentos-PRD): generating based on real ticks
+28: CS	0	13:06:41.409	Tester	WINZ26,M5: testing of Experts\ModeloD_Integrado_Sem_Transporte v2.10\EA_ModeloD_Fluxo_Sem_Ordens.ex5 from 2026.10.30 00:00 to 2026.10.31 00:00 started with inputs:
+29: CS	0	13:06:41.409	Tester	  ExecutarNoTester=true
+30: CS	0	13:06:41.409	Tester	  DataTester=20261030
+31: CS	0	13:06:41.409	Tester	  ContratoTester=WINZ26
+32: CS	0	13:06:41.409	Tester	  FusoServidorTester=-10800
+33: CS	0	13:06:41.409	Tester	  Instancia=1
+34: CS	0	13:06:41.409	Tester	  VolumePorNivel=1
+35: CS	0	13:06:41.409	Tester	  IntervaloSegundos=2
+36: CS	0	13:06:41.434	EA_ModeloD_Fluxo_Sem_Ordens (WINZ26,M5)	2026.10.30 00:00:00   RELATORIO_ABERTO;C:\Users\jhenn\AppData\Roaming\MetaQuotes\Terminal\Common\Files\MDT210_1793318400_247818687_447_ModeloD_Integrado_A1S53545241544547595F544553544552I1_1793318400_247818687.txt
+37: CS	0	13:06:41.436	EA_ModeloD_Fluxo_Sem_Ordens (WINZ26,M5)	2026.10.30 00:00:00   DIAGNOSTICO;componente=PERSISTENCIA;motivo=DIARIO_INICIAL_CRIADO;recuperacao=ESTADO_PRESERVADO;NAO_AUTORIZA_TRANSPORTE
+38: CS	0	13:06:41.436	EA_ModeloD_Fluxo_Sem_Ordens (WINZ26,M5)	2026.10.30 00:00:00   START;v=2.10;TRANSPORT_TESTER_ONLY;ISOLATED_RUN;revision=1
+39: CS	0	13:06:41.436	EA_ModeloD_Fluxo_Sem_Ordens (WINZ26,M5)	2026.10.30 00:00:00   TESTER_CONFIG;date=20261030;contract=WINZ26;server_offset_s=-10800;source_date=2026-10-29;dataset=ModeloD_Tester_20261030_ajuste_b3.txt;scope_prefix=MDT210_1793318400_247818687_447_;SINGLE_DAY_NO_OPTIMIZATION;REAL_TICKS_REQUIRED_IN_TESTER_SETTINGS
+40: CS	3	13:06:41.539	Ticks	WINZ26 : 2026.10.30 23:59 - all the real ticks discarded within a day
+41: CS	3	13:06:41.539	Ticks	WINZ26 : 2026.10.30 23:59 - 4319114 tick prices mismatch for 565 minute bars
+42: CS	0	13:06:41.539	Ticks	WINZ26 : real ticks begin from 2026.10.30 00:00:00
+43: CS	3	13:06:41.539	Ticks	WINZ26 : 2026.10.30 00:00 - 2026.10.31 00:00  real ticks discarded for 565 minutes of 565 total minute bars, every tick generation used
+44: CS	3	13:06:41.539	Ticks	WINZ26 : 2026.10.30 00:00 - 2026.10.31 00:00  real ticks discarded for 1 whole days
+45: CS	3	13:06:41.539	Ticks	WINZ26 : 2026.10.30 00:00 - 2026.10.31 00:00  tick volumes not matched for 565 minute bars
+46: CS	3	13:06:41.539	Ticks	WINZ26 : 2026.10.30 00:00 - 2026.10.31 00:00  tick prices of 4319114 ticks not matched for 565 minute bars
+18349: CS	0	13:14:12.917	Tester	final balance 1000000.00 USD
+18350: CS	0	13:14:12.917	EA_ModeloD_Fluxo_Sem_Ordens (WINZ26,M5)	2026.10.30 23:59:58   TESTER_END;prepared=0;sent=0;responses=0;revision=1;NOT_AN_ACCEPTANCE_CERTIFICATE
+18351: CS	0	13:14:12.917	EA_ModeloD_Fluxo_Sem_Ordens (WINZ26,M5)	2026.10.30 23:59:58   STOP;reason=1;transport=TESTER_ONLY
+18352: CS	0	13:14:12.919	EA_ModeloD_Fluxo_Sem_Ordens (WINZ26,M5)	2026.10.30 23:59:58   RELATORIO_FECHADO;C:\Users\jhenn\AppData\Roaming\MetaQuotes\Terminal\Common\Files\MDT210_1793318400_247818687_447_ModeloD_Integrado_A1S53545241544547595F544553544552I1_1793318400_247818687.txt
+18353: CS	0	13:14:12.929	Tester	WINZ26,M5: 1843819 ticks, 113 bars generated. Environment synchronized in 0:00:02.095. Test passed in 0:07:31.743 (including ticks preprocessing 0:00:00.094).
+18354: CS	0	13:14:12.929	Tester	WINZ26,M5: total time from login to stop testing 0:07:33.838 (including 0:00:02.095 for history data synchronization)
+18355: CS	0	13:14:12.929	Tester	123 Mb memory used including 0.47 Mb of history data, 64 Mb of tick data
+18356: CS	0	13:14:12.929	Tester	log file "C:\Users\jhenn\AppData\Roaming\MetaQuotes\Tester\7C2F32F55EE936F0CCC2F0B721A79A10\Agent-127.0.0.1-3000\logs\20261102.log" written
+18357: CS	0	13:14:12.930	Tester	test Experts\ModeloD_Integrado_Sem_Transporte v2.10\EA_ModeloD_Fluxo_Sem_Ordens.ex5 on WINZ26,M5 thread finished
+18358: CS	0	13:14:12.957	127.0.0.1	prepare for shutdown
+18359: CS	0	13:14:12.957	127.0.0.1	shutdown finished
