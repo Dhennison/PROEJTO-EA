@@ -204,3 +204,11 @@ Confirmação e roteiro em diagnostico_agente/CONFIRMACAO_COPIA_ISOLADA.txt.
 Próximo: MESMO diagnóstico no terminal novo, WINZ26/M5/30–31/10/ticks reais,
 sem visualização; coletar TXT e log do NOVO agente, sem usar o caminho antigo
 por suposição. Build/dados/resultado desta cópia ainda não recebidos.
+
+ATUALIZAÇÃO — PRIMEIRA TENTATIVA NO ISOLADO PAROU ANTES DO AGENTE
+Usuário colou Diário das 15:10: M1 baixado; download preliminar de ticks
+(arquivo 202611.tkc citado) cancelado; no history data, stop testing.
+Não confundir com Last=0/descarte da instalação antiga: diagnóstico não consta
+como iniciado nesta cópia. Próximo: Ctrl+U/Ticks/WINZ26 solicitar explicitamente
+30/10 00:00 a 31/10 00:00 e observar resultado, sem exportar o dia inteiro
+ou repetir Tester ainda. Ver diagnostico_agente/ISOLADO_PRIMEIRA_TENTATIVA_*.txt.

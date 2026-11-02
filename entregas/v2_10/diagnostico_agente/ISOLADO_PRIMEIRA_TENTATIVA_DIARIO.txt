@@ -1,0 +1,18 @@
+2026.11.02 15:04:59.882	Tester	Cloud servers switched off
+2026.11.02 15:05:30.966	Tester	MQL5 Cloud Server "MQL5 Cloud Asia 2: 10 gbit" found
+2026.11.02 15:05:30.966	Tester	MQL5 Cloud Server "MQL5 Cloud USA 1: 10 gbit" found
+2026.11.02 15:05:30.966	Tester	MQL5 Cloud Server "MQL5 Cloud Europe 2: 10 gbit" found
+2026.11.02 15:05:30.966	Tester	MQL5 Cloud Server "MQL5 Cloud USA 2: 10 gbit" found
+2026.11.02 15:05:30.966	Tester	MQL5 Cloud Server "MQL5 Cloud Asia 1: 1 gbit" found
+2026.11.02 15:05:30.966	Tester	MQL5 Cloud Server "MQL5 Cloud Europe 3: 10 gbit" found
+2026.11.02 15:05:30.966	Tester	MQL5 Cloud Server "MQL5 Cloud Europe 1: 10 gbit" found
+2026.11.02 15:10:17.653	Tester	"ModeloD_Diagnostico_Agente\Diagnostico_Dados_WINZ26.ex5" AVX2
+2026.11.02 15:10:18.037	Tester	WINZ26: preliminary downloading of M1 history started
+2026.11.02 15:10:18.254	Tester	WINZ26: 43% history downloaded
+2026.11.02 15:10:18.361	Tester	WINZ26: 67% history downloaded
+2026.11.02 15:10:18.472	Tester	WINZ26: preliminary downloading of M1 history completed in 0:00:00.547
+2026.11.02 15:10:18.472	Tester	WINZ26: history data begins from 2026.05.12 00:00
+2026.11.02 15:10:18.476	Tester	WINZ26: preliminary downloading of history ticks started, it may take quite a long time
+2026.11.02 15:10:18.476	Tester	WINZ26: "bases\GenialInvestimentos-PRD\ticks\WINZ26\202611.tkc" download
+2026.11.02 15:10:19.749	Tester	WINZ26: preliminary downloading of history ticks canceled
+2026.11.02 15:10:19.751	Tester	no history data, stop testing

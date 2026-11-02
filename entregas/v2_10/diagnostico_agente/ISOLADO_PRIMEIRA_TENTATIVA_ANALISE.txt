@@ -1,0 +1,39 @@
+CÓPIA ISOLADA — PRIMEIRA TENTATIVA, 02/11/2026 15:10
+
+Fonte: trecho do Diário do Tester colado pelo usuário, transcrito no arquivo
+ISOLADO_PRIMEIRA_TENTATIVA_DIARIO.txt. Não é log completo do agente.
+Configuração imediatamente anterior confirmada por captura: diagnóstico,
+WINZ26/M5, 30/10/2026 a 31/10/2026, ticks reais, não visual, sem otimização.
+
+RESULTADO
+Histórico M1 baixado, anunciado desde 12/05/2026. Download prévio de ticks
+iniciou e foi cancelado; terminal interrompeu por no history data.
+Não há no trecho abertura de agente, MD_DIAG START/probe ou descarte de ticks.
+Logo, a execução do diagnóstico nesta instalação ainda não foi comprovada.
+Não classificar isso como reprodução da falha Last=0 da instalação original.
+Ausência de novo TXT é esperada se OnInit nem foi executado.
+
+OBSERVAÇÃO A INVESTIGAR
+Arquivo pedido no trecho: bases\GenialInvestimentos-PRD\ticks\WINZ26\202611.tkc,
+que identifica novembro. O recorte escolhido na captura era outubro.
+Essa linha isolada não prova datas erradas nem esclarece a estratégia interna
+de download/cache (por exemplo, pré-carregamento de outro mês). Não concluir
+causa por feriado, sábado ou inexistência de ticks de outubro com esse trecho.
+Canceled não prova que o usuário cancelou; motivo do cancelamento não consta.
+Servidores Cloud encontrados não provam uso da Cloud; é necessário identificar
+agente efetivo, e aqui o processo foi interrompido antes de demonstrá-lo.
+
+PRÓXIMO PASSO LOCAL, NESSA CÓPIA
+Ctrl+U > WINZ26 > Ticks. Solicitar explicitamente o intervalo
+30/10/2026 00:00 a 31/10/2026 00:00. Aguardar o fim da solicitação e observar
+se há ticks Last/volume, ausência de dados ou mensagem de falha.
+Não exportar o dia inteiro nem importar dados/cache da instalação antiga.
+Enviar captura do resultado e, se falhar, mensagens do Diário do TERMINAL
+emitidas durante a solicitação. Ainda não repetir o Tester até a solicitação
+ser avaliada; isso evita rodadas iguais sem pré-requisito novo.
+Uma solicitação explícita de outubro pode distinguir o que o terminal consegue
+obter do pedido preliminar de novembro. Não garante redownload nem correção.
+
+ESTADO
+Preparação portátil e conexão foram observadas; comparação de execução ainda
+pendente por obtenção do histórico. Nenhum fonte/regra do EA foi alterado.
