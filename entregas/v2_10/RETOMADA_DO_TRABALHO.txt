@@ -150,3 +150,12 @@ Ausência de negócios no agente demonstrada; causa interna do descarte não.
 Não mudar o EA para Bid/Last artificial. Próximo: verificar estrutura das
 pastas do agente local para preservar e planejar reconstrução do cache,
 sem apagar nada nem repetir rodada idêntica antes de mudança de estado.
+
+ATUALIZAÇÃO — BASES DO TESTER LOCALIZADAS POR CAPTURA
+Na instalação do usuário, bases é IRMÃ de Agent-127.0.0.1-3000 em
+%APPDATA%\MetaQuotes\Tester\7C2F32F55EE936F0CCC2F0B721A79A10.
+Procedimento em validacao_20261102_diagnostico_agente/RECONSTRUCAO_CACHE_TESTER.txt:
+fechar esse MT5, preservar bases renomeando com nome de backup exclusivo,
+reabrir e executar uma vez o diagnóstico para comparar nova sincronização.
+Não apagar dados, mexer em Terminal/Common/Files ou alterar o EA. Renomeação
+e nova coleta ainda aguardam confirmação/resultados do usuário.

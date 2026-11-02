@@ -1,0 +1,49 @@
+LOCALIZAÇÃO CONFIRMADA E PROCEDIMENTO DE RECONSTRUÇÃO DO CACHE DO TESTER
+
+EVIDÊNCIA VISUAL DO USUÁRIO
+Diretório mostrado no Explorador:
+%APPDATA%\MetaQuotes\Tester\7C2F32F55EE936F0CCC2F0B721A79A10
+Contém Agent-127.0.0.1-3000 e bases como pastas IRMÃS.
+O interior de Agent contém config, logs, MQL5, temp e common.ini; não é
+correto procurar/renomear bases dentro desse Agent nesta instalação.
+
+OBJETIVO
+Separar o cache compartilhado já usado pelo Tester e permitir que ele crie
+uma base nova/sincronize novamente. Isso testa a hipótese de dados locais
+do Tester divergentes ou obsoletos, sem concluir que o cache esteja corrompido.
+Não garante correção e não autoriza substituir negócios Last por Bid/Ask.
+
+PROCEDIMENTO MANUAL NO WINDOWS DO USUÁRIO
+1. Fechar a instalação do MT5 usada nesses testes e aguardar seu encerramento.
+2. No diretório confirmado acima, renomear SOMENTE bases para
+   bases_backup_antes_recriacao_20261102.
+   Se o nome de backup já existir, usar outro nome exclusivo; não substituir
+   nem mesclar backups. Se o Windows acusar pasta em uso/erro, parar e
+   informar a mensagem, sem forçar remoção ou encerrar processos indiscriminados.
+3. Preservar Agent-127.0.0.1-3000, logs e demais arquivos. Não apagar nada.
+   Não tocar bases da pasta Terminal, Common/Files, ajuste ou diários dos EAs.
+   A operação afasta o cache de dados deste diretório do Tester, que pode conter
+   outros símbolos além de WINZ26; eles permanecem no backup e podem exigir
+   nova sincronização se usados. Não afirmar que renomeou só o arquivo WINZ26.
+4. Reabrir o MT5 e executar Diagnostico_Dados_WINZ26 (não o EA v2.10), com a
+   mesma configuração do diagnóstico anterior: WINZ26/M5, 30/10–31/10,
+   ticks reais, agente local, sem otimização. A coleta para sozinha às 09:02.
+   Aguardar eventual sincronização; não alterar datas ou modelo para acelerar.
+5. Enviar o novo TXT MD_DIAG_DADOS_20261030_... e log 20261102.log completo.
+   Se execução ocorrer em outro dia, o nome do log muda para a data real.
+
+AVALIAÇÃO POSTERIOR
+Conferir se bases foi recriada, bytes de sincronização, avisos de descarte,
+propriedades no agente, M1, consulta ALL e consulta TRADE. Diferenciar nova
+rodada das anteriores no log acumulado. Last positivo por si só não aprova
+histórico: exigir log sem substituição indevida e confronto de amostra.
+Se o mesmo descarte persistir, não repetir reconstruções iguais: seguir para
+confronto do histórico bruto/origem e evidência técnica para suporte conforme
+necessário, sem enviar mensagens externas automaticamente.
+Não restaurar o backup antigo automaticamente nem apagar a nova base antes
+de preservar resultados e diagnosticar a rodada.
+
+ESTADO AO SALVAR ESTE DOCUMENTO
+A estrutura de diretórios foi confirmada por captura. Renomeação, recriação,
+redownload e novo teste AINDA NÃO foram confirmados pelo usuário. Nenhum
+arquivo no Windows foi alterado pelo assistente; ele não tem acesso à máquina.
