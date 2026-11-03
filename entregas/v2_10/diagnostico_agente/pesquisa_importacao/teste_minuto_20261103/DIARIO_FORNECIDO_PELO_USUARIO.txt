@@ -1,0 +1,85 @@
+2026.11.03 15:12:59.864	Tester	"ModeloD_Diagnostico_Pesquisa\Diagnostico_Importacao_WINZ26.ex5" AVX2
+2026.11.03 15:13:00.498	Tester	MD_PESQ_WINZ26_1030: history data begins from 2026.10.29 00:00
+2026.11.03 15:13:00.501	Tester	MD_PESQ_WINZ26_1030: ticks data begins from 2026.10.30 00:00
+2026.11.03 15:13:00.535	Core 01	agent process started on 127.0.0.1:3000
+2026.11.03 15:13:00.536	Core 01	connecting to 127.0.0.1:3000
+2026.11.03 15:13:01.069	Core 01	connected
+2026.11.03 15:13:01.119	Core 01	authorized (agent build 6295)
+2026.11.03 15:13:01.131	Tester	MD_PESQ_WINZ26_1030,M5 (GenialInvestimentos-PRD): testing of Experts\ModeloD_Diagnostico_Pesquisa\Diagnostico_Importacao_WINZ26.ex5 from 2026.10.30 00:00 to 2026.10.31 00:00
+2026.11.03 15:13:01.274	Core 01	common synchronization completed
+2026.11.03 15:13:01.283	Core 01	MD_PESQ_WINZ26_1030: history for 2026 year synchronized
+2026.11.03 15:13:01.284	Core 01	MD_PESQ_WINZ26_1030: history synchronization completed [5 Kb]
+2026.11.03 15:13:01.284	Core 01	MD_PESQ_WINZ26_1030: 5.59 Kb of history processed in 0:00:00.000
+2026.11.03 15:13:01.286	Core 01	MD_PESQ_WINZ26_1030: ticks synchronization completed [60 Kb]
+2026.11.03 15:13:01.310	Core 01	MetaTester 5 started on 127.0.0.1:3000
+2026.11.03 15:13:01.310	Core 01	cloud network mode is off
+2026.11.03 15:13:01.310	Core 01	initialization finished
+2026.11.03 15:13:01.310	Core 01	login (build 6295)
+2026.11.03 15:13:01.310	Core 01	5464 bytes of account info loaded
+2026.11.03 15:13:01.310	Core 01	1478 bytes of tester parameters loaded
+2026.11.03 15:13:01.310	Core 01	196 bytes of input parameters loaded
+2026.11.03 15:13:01.310	Core 01	595368 bytes of symbols list loaded (73499 symbols)
+2026.11.03 15:13:01.310	Core 01	expert file added: Experts\ModeloD_Diagnostico_Pesquisa\Diagnostico_Importacao_WINZ26.ex5. 29104 bytes loaded
+2026.11.03 15:13:01.310	Core 01	initial deposit 1000000.00 USD, leverage 1:100
+2026.11.03 15:13:01.310	Core 01	successfully initialized
+2026.11.03 15:13:01.310	Core 01	472 Kb of total initialization data received
+2026.11.03 15:13:01.310	Core 01	13th Gen Intel Core i5-1335U, 7879 MB
+2026.11.03 15:13:01.310	Core 01	MD_PESQ_WINZ26_1030: symbol to be synchronized
+2026.11.03 15:13:01.310	Core 01	MD_PESQ_WINZ26_1030: symbol synchronized, 3720 bytes of symbol info received
+2026.11.03 15:13:01.310	Core 01	MD_PESQ_WINZ26_1030: load 5723 bytes of history data to synchronize in 0:00:00.003
+2026.11.03 15:13:01.310	Core 01	MD_PESQ_WINZ26_1030: history synchronized from 2026.10.29 to 2026.10.30
+2026.11.03 15:13:01.310	Core 01	MD_PESQ_WINZ26_1030: ticks synchronization started
+2026.11.03 15:13:01.310	Core 01	MD_PESQ_WINZ26_1030: load 60 Kb of tick data to synchronize in 0:00:00.000
+2026.11.03 15:13:01.310	Core 01	MD_PESQ_WINZ26_1030: history ticks synchronized from 2026.10.30 to 2026.10.30
+2026.11.03 15:13:01.310	Core 01	MD_PESQ_WINZ26_1030,M5: history cache allocated for 367 bars and contains 113 bars from 2026.10.29 09:00 to 2026.10.29 18:20
+2026.11.03 15:13:01.310	Core 01	MD_PESQ_WINZ26_1030,M5: history begins from 2026.10.29 09:00
+2026.11.03 15:13:01.310	Core 01	MD_PESQ_WINZ26_1030,M5 (GenialInvestimentos-PRD): generating based on real ticks
+2026.11.03 15:13:01.310	Core 01	MD_PESQ_WINZ26_1030,M5: testing of Experts\ModeloD_Diagnostico_Pesquisa\Diagnostico_Importacao_WINZ26.ex5 from 2026.10.30 00:00 to 2026.10.31 00:00 started
+2026.11.03 15:13:01.310	Core 01	2026.10.30 00:00:00   MD_DIAG;START;VERSION=1.00;TESTER_ONLY;SEM_ORDENS;symbol=MD_PESQ_WINZ26_1030;build=6295;visual=0;margin_mode=2
+2026.11.03 15:13:01.310	Core 01	2026.10.30 00:00:00   MD_DIAG;REPORT;Common\Files\MD_DIAG_PESQUISA_20261030_45_341798546.txt
+2026.11.03 15:13:01.310	Core 01	MD_PESQ_WINZ26_1030 : real ticks begin from 2026.10.30 00:00:00
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:00:43   MD_DIAG;FIRST_OBSERVED_EVENT_NOT_CERTIFIED_OPEN;time=2026.10.30 09:00:43;msc=1793350843093;bid=0.00000000;ask=0.00000000;last=170910.00000000;volume=250;volume_real=250.00000000;flags=56
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;PROBE;time_current=2026.10.30 09:01:00;time_server=2026.10.30 09:01:00;time_gmt=2026.10.30 09:01:00
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;PROPERTY;name=SYMBOL_CHART_MODE;ok=1;value=1;error=0
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;ENUMS;CHART_BID=0;CHART_LAST=1
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;PROPERTY;name=SYMBOL_TRADE_CALC_MODE;ok=1;value=33;error=0
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;PROPERTY;name=SYMBOL_DIGITS;ok=1;value=0;error=0
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;PROPERTY;name=SYMBOL_TRADE_TICK_SIZE;ok=1;value=5.00000000;error=0
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;PROPERTY;name=SYMBOL_TRADE_TICK_VALUE;ok=1;value=1.00000000;error=0
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;PROPERTY;name=SYMBOL_POINT;ok=1;value=1.00000000;error=0
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;CURRENCIES;profit=BRL;margin=BRL;account=USD
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;CURRENT_TICK;ok=1;error=0
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;CURRENT_TICK_DATA;time=2026.10.30 09:01:00;msc=1793350860000;bid=171290.00000000;ask=171305.00000000;last=171330.00000000;volume=1;volume_real=1.00000000;flags=2
+2026.11.03 15:13:01.310	Core 01	MD_PESQ_WINZ26_1030,M1: history cache allocated for 1833 bars and contains 565 bars from 2026.10.29 09:00 to 2026.10.29 18:24
+2026.11.03 15:13:01.310	Core 01	MD_PESQ_WINZ26_1030,M1: 2 bars from 2026.10.30 09:00 to 2026.10.30 09:01 added
+2026.11.03 15:13:01.310	Core 01	MD_PESQ_WINZ26_1030,M1: history begins from 2026.10.29 09:00
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;M1_QUERY;returned=1;error=0
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;M1;time=2026.10.30 09:00:00;open=170910.00000000;high=171600.00000000;low=170900.00000000;close=171330.00000000;tick_volume=10528;real_volume=78471
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;QUERY;mode=ALL;from=1793350800000;to=1793350859999;returned=21559;array=21559;error=0
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;SAMPLE;mode=ALL;index=0;time=2026.10.30 09:00:43;msc=1793350843093;bid=0.00000000;ask=0.00000000;last=170910.00000000;volume=250;volume_real=250.00000000;flags=56
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;TRADE;mode=ALL;index=0;time=2026.10.30 09:00:43;msc=1793350843093;bid=0.00000000;ask=0.00000000;last=170910.00000000;volume=250;volume_real=250.00000000;flags=56
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;SAMPLE;mode=ALL;index=1;time=2026.10.30 09:00:43;msc=1793350843093;bid=0.00000000;ask=0.00000000;last=170910.00000000;volume=7800;volume_real=7800.00000000;flags=56
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;TRADE;mode=ALL;index=1;time=2026.10.30 09:00:43;msc=1793350843093;bid=0.00000000;ask=0.00000000;last=170910.00000000;volume=7800;volume_real=7800.00000000;flags=56
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;SAMPLE;mode=ALL;index=2;time=2026.10.30 09:00:43;msc=1793350843093;bid=0.00000000;ask=0.00000000;last=170910.00000000;volume=250;volume_real=250.00000000;flags=56
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;TRADE;mode=ALL;index=2;time=2026.10.30 09:00:43;msc=1793350843093;bid=0.00000000;ask=0.00000000;last=170910.00000000;volume=250;volume_real=250.00000000;flags=56
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;SUMMARY;mode=ALL;complete_without_api_error=1;positive_trade_rows=10528;zero_or_invalid_last=0;flags_zero=0;regressions=0;outside=0;open=170910.00000000;high=171600.00000000;low=170900.00000000;close=171330.00000000;sum_volume=78471.00000000;sum_volume_real=78471.00000000
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;LAST_SAMPLE;mode=ALL;time=2026.10.30 09:00:59;msc=1793350859999;bid=171290.00000000;ask=171305.00000000;last=171330.00000000;volume=1;volume_real=1.00000000;flags=56
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;QUERY;mode=TRADE;from=1793350800000;to=1793350859999;returned=10528;array=10528;error=0
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;SAMPLE;mode=TRADE;index=0;time=2026.10.30 09:00:43;msc=1793350843093;bid=0.00000000;ask=0.00000000;last=170910.00000000;volume=250;volume_real=250.00000000;flags=56
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;TRADE;mode=TRADE;index=0;time=2026.10.30 09:00:43;msc=1793350843093;bid=0.00000000;ask=0.00000000;last=170910.00000000;volume=250;volume_real=250.00000000;flags=56
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;SAMPLE;mode=TRADE;index=1;time=2026.10.30 09:00:43;msc=1793350843093;bid=0.00000000;ask=0.00000000;last=170910.00000000;volume=7800;volume_real=7800.00000000;flags=56
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;TRADE;mode=TRADE;index=1;time=2026.10.30 09:00:43;msc=1793350843093;bid=0.00000000;ask=0.00000000;last=170910.00000000;volume=7800;volume_real=7800.00000000;flags=56
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;SAMPLE;mode=TRADE;index=2;time=2026.10.30 09:00:43;msc=1793350843093;bid=0.00000000;ask=0.00000000;last=170910.00000000;volume=250;volume_real=250.00000000;flags=56
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;TRADE;mode=TRADE;index=2;time=2026.10.30 09:00:43;msc=1793350843093;bid=0.00000000;ask=0.00000000;last=170910.00000000;volume=250;volume_real=250.00000000;flags=56
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;SUMMARY;mode=TRADE;complete_without_api_error=1;positive_trade_rows=10528;zero_or_invalid_last=0;flags_zero=0;regressions=0;outside=0;open=170910.00000000;high=171600.00000000;low=170900.00000000;close=171330.00000000;sum_volume=78471.00000000;sum_volume_real=78471.00000000
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;LAST_SAMPLE;mode=TRADE;time=2026.10.30 09:00:59;msc=1793350859999;bid=171290.00000000;ask=171305.00000000;last=171330.00000000;volume=1;volume_real=1.00000000;flags=56
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;END;SEM_ORDENS;SEM_ACEITE_DE_BACKTEST;CONSULTAR_TAMBEM_LOG_DO_MOTOR
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   ExpertRemove() function called
+2026.11.03 15:13:01.310	Core 01	final balance 1000000.00 USD
+2026.11.03 15:13:01.310	Core 01	2026.10.30 09:01:00   MD_DIAG;DEINIT;reason=0;probe_executed=1
+2026.11.03 15:13:01.310	Core 01	removed itself on 37% of testing interval
+2026.11.03 15:13:01.310	Core 01	MD_PESQ_WINZ26_1030,M5: 21560 ticks, 1 bars generated. Environment synchronized in 0:00:00.167. Test passed in 0:00:00.031.
+2026.11.03 15:13:01.310	Core 01	MD_PESQ_WINZ26_1030,M5: total time from login to stop testing 0:00:00.198 (including 0:00:00.167 for history data synchronization)
+2026.11.03 15:13:01.310	Core 01	317 Mb memory used including 0.94 Mb of history data, 64 Mb of tick data
+2026.11.03 15:13:01.310	Core 01	log file "C:\Users\jhenn\AppData\Local\ModeloD_MT5_Isolado_20261102_145749_6554356a\Tester\Agent-127.0.0.1-3000\logs\20261103.log" written
+2026.11.03 15:13:01.321	Core 01	connection closed

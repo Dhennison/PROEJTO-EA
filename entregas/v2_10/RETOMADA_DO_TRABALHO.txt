@@ -391,3 +391,24 @@ Próximo para usuário: fechar Ativos comOK,abrir TesterCtrl+R e enviar captura
 Configurações antes de iniciar. Expert Diagnostico_Importacao_WINZ26 já tem
 compilação nativa0/0; manter fonte. AlvoMD_PESQ_WINZ26_1030,M5,30/10–31/10,
 ticks reais,sem visualização/otimização e agente local. Ainda não executado.
+
+ATUALIZAÇÃO — CONTROLE POSITIVO NO AGENTE6295,AMOSTRA DE UM MINUTO
+Usuário confirmou configurações por captura e executou. Diário colado
+03/11/2026 15:12:59–15:13:01 no horário mostrado pelo MT5,Expert de pesquisa,
+MD_PESQ_WINZ26_1030,M5,30/10–31/10,local127.0.0.1:3000/build6295,cloud off,
+visual0,Hedge2. Preservado/analisado em pesquisa_importacao/teste_minuto_20261103/.
+Primeiro evento09:00:43.093/Last170910/vol250/flags56. PROBE09:01:00:
+ALL21559/TRADE10528,erro0;volume78471;OHLC170910/171600/170900/171330 iguais
+à amostra original. M1sameOHLC/realvolume,tickvol10528(original18948).
+END/DEINITreason0/probe1;ExpertRemove voluntário. Sem discard/mismatch no
+Diário fornecido. Resumo21560ticks é compatível comALL21559+primeiro09:01.
+A consulta tem7 eventos a menos que o CSV original,compatível com ausência
+das7 linhas zeradas,mas sem prova por sequência integral. Não contou os7
+negócios extras vistos no CSV reexportado(10535/78485). Causa interna aberta.
+Controle positivo de ingestão,sem ordens; não corrige realWINZ26 nem aprovaEA
+ou dia inteiro. Relatório derivado do Diário identificado como derivado.
+Próximo imediato: usuário anexar TXT nativo já criado emCommon/Files,
+MD_DIAG_PESQUISA_20261030_45_341798546.txt,sem repetir teste. Diário já basta
+para a conclusão técnica; arquivo nativo completa o acervo de evidência.
+Depois ampliar controle de dados ao dia inteiro com coleta/validação nova,
+sem apagar esta amostra nem assumir que o caminho custom resolve o original.

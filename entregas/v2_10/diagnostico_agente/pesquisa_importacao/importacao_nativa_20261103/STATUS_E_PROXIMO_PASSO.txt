@@ -71,3 +71,17 @@ Antes de iniciar, conferir captura da configuração do Tester secundário:
 Diagnostico_Importacao_WINZ26,MD_PESQ_WINZ26_1030,M5,30/10–31/10, ticks reais,
 sem visualização/otimização e agente local. Conferir resultados contra ambos
 os CSVs; teste não aprova os dados originais ou o EA v2.10.
+
+ATUALIZAÇÃO — CONTROLE DE UM MINUTO EXECUTADO NO AGENTE6295
+Configuração corrigida/confirmada por capturas: Expert de pesquisa, símbolo
+custom, M5,30/10–31/10,ticks reais,visual desmarcado/otimização desativada.
+Diário recebido da rodada15:12:59–15:13:01,local127.0.0.1:3000,build6295.
+Às09:01,ALL21559/TRADE10528/erro0,volume78471,OHLC igual ao CSV original.
+Sem flags0/regressões/fora,probe_executed1,encerramento voluntário conforme
+previsto. Sem discard/mismatch no trecho fornecido. M1customTICKVOL10528.
+Contraste importante: CSV reexportado tinha10535 negócios/volume78485; esses
+sete extras não aparecem no agregado do agente. Não concluir mecanismo
+interno nem equivalência integral dos registros sem auditoria completa.
+Caso positivo documentado em teste_minuto_20261103/. TXT nativo apontado no
+Diário ainda não anexado:MD_DIAG_PESQUISA_20261030_45_341798546.txt,Common/Files.
+Não repetir o teste para obtê-lo. Isso não aprova WINZ26 real/EA/dia inteiro.

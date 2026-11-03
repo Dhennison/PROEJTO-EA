@@ -1,0 +1,111 @@
+{
+  "source_file": "Texto colado.txt",
+  "bytes": 11380,
+  "sha256": "d84c46d04c4d78b56f9ba0e1ee8b1e92cb5544497821f73a0ce30727499de24c",
+  "native_common_report_name": "MD_DIAG_PESQUISA_20261030_45_341798546.txt",
+  "native_common_report_uploaded": false,
+  "agent_build": 6295,
+  "local_agent": "127.0.0.1:3000",
+  "start": {
+    "VERSION": "1.00",
+    "symbol": "MD_PESQ_WINZ26_1030",
+    "build": "6295",
+    "visual": "0",
+    "margin_mode": "2"
+  },
+  "first_observed_event": {
+    "time": "2026.10.30 09:00:43",
+    "msc": "1793350843093",
+    "bid": "0.00000000",
+    "ask": "0.00000000",
+    "last": "170910.00000000",
+    "volume": "250",
+    "volume_real": "250.00000000",
+    "flags": "56"
+  },
+  "queries": {
+    "ALL": {
+      "mode": "ALL",
+      "from": "1793350800000",
+      "to": "1793350859999",
+      "returned": "21559",
+      "array": "21559",
+      "error": "0"
+    },
+    "TRADE": {
+      "mode": "TRADE",
+      "from": "1793350800000",
+      "to": "1793350859999",
+      "returned": "10528",
+      "array": "10528",
+      "error": "0"
+    }
+  },
+  "summaries": {
+    "ALL": {
+      "mode": "ALL",
+      "complete_without_api_error": "1",
+      "positive_trade_rows": "10528",
+      "zero_or_invalid_last": "0",
+      "flags_zero": "0",
+      "regressions": "0",
+      "outside": "0",
+      "open": "170910.00000000",
+      "high": "171600.00000000",
+      "low": "170900.00000000",
+      "close": "171330.00000000",
+      "sum_volume": "78471.00000000",
+      "sum_volume_real": "78471.00000000"
+    },
+    "TRADE": {
+      "mode": "TRADE",
+      "complete_without_api_error": "1",
+      "positive_trade_rows": "10528",
+      "zero_or_invalid_last": "0",
+      "flags_zero": "0",
+      "regressions": "0",
+      "outside": "0",
+      "open": "170910.00000000",
+      "high": "171600.00000000",
+      "low": "170900.00000000",
+      "close": "171330.00000000",
+      "sum_volume": "78471.00000000",
+      "sum_volume_real": "78471.00000000"
+    }
+  },
+  "M1": {
+    "time": "2026.10.30 09:00:00",
+    "open": "170910.00000000",
+    "high": "171600.00000000",
+    "low": "170900.00000000",
+    "close": "171330.00000000",
+    "tick_volume": "10528",
+    "real_volume": "78471"
+  },
+  "warnings_in_supplied_run": [],
+  "original_csv_minute_rows": 21566,
+  "original_csv_positive_trade_rows": 10528,
+  "original_csv_volume": "78471.00000000",
+  "readback_csv_positive_trade_rows": 10535,
+  "readback_csv_volume": "78485.00000000",
+  "original_real_symbol_agent6295_queries": {
+    "ALL": {
+      "mode": "ALL",
+      "from": "1793350800000",
+      "to": "1793350859999",
+      "returned": "3790",
+      "array": "3790",
+      "error": "0"
+    },
+    "TRADE": {
+      "mode": "TRADE",
+      "from": "1793350800000",
+      "to": "1793350859999",
+      "returned": "0",
+      "array": "0",
+      "error": "0"
+    }
+  },
+  "all_count_difference_from_original_minute": 7,
+  "scope": "Aggregates and logged samples; no full tick-by-tick agent comparison, no full-day or strategy acceptance"
+}

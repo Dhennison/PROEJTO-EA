@@ -1,0 +1,62 @@
+CONTROLE NATIVO DE UM MINUTO CONCLUÍDO — 03/11/2026
+
+FONTE E ESCOPO
+Diário completo desta rodada fornecido como Texto colado.txt, preservado byte
+a byte em DIARIO_FORNECIDO_PELO_USUARIO.txt. Rodada03/11/2026 15:12:59–15:13:01
+no horário exibido pelo MT5. RELATORIO_EXTRAIDO_DO_DIARIO.txt é DERIVADO das
+linhas MD_DIAG, não o arquivo nativo Common/Files ainda não anexado.
+Expert Diagnostico_Importacao_WINZ26 no símbolo custom MD_PESQ_WINZ26_1030,
+M5,30/10 a31/10,agente local127.0.0.1:3000/build6295,cloud off,visual0,
+margin_mode2(Hedge),depósito simulado1milhãoUSD/alavancagem1:100.
+Não foi executado o EA operacional. Diagnóstico sem chamadas de ordens.
+
+RESULTADO DENTRO DO AGENTE
+Primeiro evento observado09:00:43.093,Last170910,volume250,flags56,conforme
+primeiro registro do CSV original. Bid/Ask0 nesse instante não foi convertido
+em preço de execução nem confundido com ausência de Last válido.
+Às09:01:00,CopyTicksRange consulta[09:00:00.000,09:00:59.999]:
+ALL21559,TRADE10528,arrays completos/erro0. Em ambas,10528 negócios positivos,
+volume78471,OHLC170910/171600/170900/171330;flags0=0,regressões0,fora0.
+M1 consultada:OHLC igual,real_volume78471,tick_volume10528.
+END/DEINIT reason0/probe_executed1. Encerrou voluntariamente às09:01 por
+ExpertRemove,conforme desenho do diagnóstico;37% não é falha nem teste de
+37% dos negócios do minuto. Motor informa21560 ticks/1barra; é compatível com
+21559 eventos do minuto mais o primeiro evento09:01 que disparou a coleta.
+A mensagem genérica de barra gerada não comprova cotações sintéticas.
+Nenhuma mensagem discard/mismatch foi encontrada no Diário desta rodada;
+conclusão restrita ao material fornecido e minuto amostrado.
+
+COMPARAÇÃO DOS CAMINHOS
+CSV original do minuto:21566 linhas,10528 negócios segundo flags/Last,
+volume78471. Inclui7 registros zerados/flags0 preservados no original.
+CSV reexportado do custom:21566 linhas no minuto,10535 negócios segundo
+flags/Last,volume78485,com as7 alterações já documentadas.
+AGENTE NO CUSTOM:21559 ALL,10528 TRADE,volume78471,sem flags0.
+Portanto,as7 conversões vistas na reexportação não aparecem como7 negócios
+extras no agregado do agente. Diferença ALL de7 é compatível com exclusão dos
+7 registros zerados,mas faltam a sequência integral e auditoria por registro
+para provar exatamente o tratamento de cada linha. Não atribuir mecanismo
+interno certo ao importador,exportador,cache ou motor.
+AGENTE NO WINZ26 ORIGINAL/build6295:ALL3790/TRADE0 na mesma consulta09:00;
+controle anterior coleta às09:02. Este novo controle coleta às09:01 para
+usar a amostra limitada. Há diferenças de símbolo/ingestão/barras e horário
+de coleta; não isola uma causa única do problema original.
+M1 original tem tick_volume18948; custom tem10528. OHLC e real_volume78471
+coincidem. Não presumir obrigação de igualar TICKVOL à contagemTRADE/ALL.
+
+INTERPRETAÇÃO
+O agente local6295 consegue disponibilizar Last/volume e consultar negócios
+pela entrada custom,com agregados de negócio iguais ao CSV original neste
+minuto. É um controle positivo útil, não correção comprovada de WINZ26 nem
+aprovação do EA,execução real,dia inteiro ou desempenho financeiro.
+Preservar diferenças da reexportação; não remover registros para forçar
+consistência. Não repetir testes anteriores sem nova variável/evidência.
+
+PRÓXIMO PASSO IMEDIATO
+Anexar o relatório nativo que o próprio Diário identificou:
+MD_DIAG_PESQUISA_20261030_45_341798546.txt
+Local:%APPDATA%\MetaQuotes\Terminal\Common\Files
+Não repetir o teste. Esse anexo completa a evidência nativa; o Diário já
+permite a conclusão acima. Etapa posterior útil: ampliar o controle ao dia
+inteiro, com nova coleta/validação de ticks, preservando este caso mínimo.
+A ampliação ainda não foi executada nem preparada como backtest operacional.
