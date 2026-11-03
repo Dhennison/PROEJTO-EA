@@ -1,0 +1,50 @@
+COMPARAÇÃO NATIVA DE BUILDS CONCLUÍDA — 03/11/2026 10:36
+
+VERSÃO E CONTEXTO COMPROVADOS
+Log da nova rodada: MetaTester5 build6295,29Oct2026. START do diagnóstico
+também confirma6295,visual0,margin_mode2. Caminho do log continua no agente
+da cópia isolada. EX5 diagnóstico carregado com29115bytes, mesmo tamanho das
+rodadas6231. Não houve recompilação nova solicitada para essa comparação.
+Configuração: WINZ26/M5,30/10–31/10, modelo ticks reais,USD1000000,1:100.
+
+RESULTADO
+Mesmos avisos de descarte integral:565 de565 minutos,4.319.114 preços de
+ticks divergentes, volumes divergentes, geração substituta utilizada.
+M1/propriedades iguais; ALL3790, Last carregado171050 e flags6/volume0;
+TRADE0 com erro0. Nenhum evento de negociação positivo. Auto encerrou09:02.
+Comparação automática dos TXT de hoje6231 versus6295: somente build no START
+e nome de arquivo no REPORT diferem. Conteúdo das consultas igual. Ver diff.
+Cache de ticks transferiu34bytes após espera33s; isso não comprova download
+remoto completo. Não atribuir a duração de33s a bloqueio permanente.
+
+CONCLUSÃO
+O beta6295 não resolveu essa recusa. Não repetir cache/visualização/cópia/
+mesmos dias ou atualizar outros ambientes esperando resultado diferente sem
+variável nova. Isso não demonstra que todo build possível falhe; demonstra
+os dois builds testados com essa fonte/dataset e contexto.
+Nem Last positivo nem texto Test passed aprovam o histórico. EA operacional
+v2.10 continua sem prova nativa de operações nesta investigação.
+
+PRÓXIMO EIXO — DADOS BRUTOS DA INSTALAÇÃO ISOLADA
+A amostra CSV do minuto09:00–09:01 já analisada foi exportada no terminal
+principal, antes de criar a cópia. A cópia nova só teve sua lista/totais de
+ticks exibidos em captura; não recebemos CSV bruto dela.
+Solicitar no MT5 SECUNDÁRIO/ISOLADO, Ctrl+U/Ativos/Ticks, WINZ26, Todos os
+ticks,30/10/2026 09:00:00–09:01:00. Após Solicitação, Exportar ticks e enviar
+CSV (pode ter mesmo nome de arquivo anterior, mas registrar origem nova).
+Não importar/editar o arquivo, mudar símbolo ou exportar o dia inteiro.
+
+Comparar quantidade, timestamps, flags, Last/volumes, presença de Bid/Ask e
+registros zerados com o CSV do principal e M1 comum. Campos vazios no export
+são esparsos; não tratá-los automaticamente como zeros nem inventar valores.
+Separar registros no limite09:01 do intervalo [09:00,09:01).
+Se dados brutos diferirem, isso localiza uma diferença de origem/cache a
+investigar. Se iguais, documentar a divergência entre entrada exportável e
+fluxo pós-preparo sem declarar motivo interno conhecido. Eventual ensaio
+de importação/símbolo de pesquisa exige procedência e limites explícitos e
+não pode ser apresentado como validação do histórico original ou de lucro.
+
+ESTADO
+Comparação6295 finalizada sem melhora. Fontes/logs preservados; nenhum preço,
+regra, arquivo B3 ou código do EA modificado. Investigação local continua
+com confronto de dados, sem exigir nova rodada do mesmo diagnóstico agora.

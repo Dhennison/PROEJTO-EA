@@ -1,0 +1,72 @@
+74: CS	0	10:36:00.830	Startup	MetaTester 5 build 6295, 29 Oct 2026
+75: CS	0	10:36:00.832	Startup	Windows 11 build 26200, 12 x 13th Gen Intel Core i5-1335U, AVX2, 0 / 7 Gb memory, 340 / 475 Gb disk, UAC, GMT-3
+76: CS	0	10:36:00.833	Server	MetaTester 5 started on 127.0.0.1:3000
+77: CS	0	10:36:00.835	Startup	cloud network mode is off
+78: CS	0	10:36:00.835	Startup	initialization finished
+79: CS	0	10:36:01.015	127.0.0.1	login (build 6295)
+80: CS	0	10:36:01.063	Network	5464 bytes of account info loaded
+81: CS	0	10:36:01.063	Network	1478 bytes of tester parameters loaded
+82: CS	0	10:36:01.063	Network	196 bytes of input parameters loaded
+83: CS	0	10:36:01.204	Network	595349 bytes of symbols list loaded (73498 symbols)
+84: CS	0	10:36:01.204	Tester	expert file added: Experts\ModeloD_Diagnostico_Agente\Diagnostico_Dados_WINZ26.ex5. 29115 bytes loaded
+85: CS	0	10:36:01.210	Tester	initial deposit 1000000.00 USD, leverage 1:100
+86: CS	0	10:36:01.210	Tester	successfully initialized
+87: CS	0	10:36:01.210	Network	472 Kb of total initialization data received
+88: CS	0	10:36:01.211	Tester	13th Gen Intel Core i5-1335U, 7879 MB
+89: CS	0	10:36:01.215	Symbols	WINZ26: symbol to be synchronized
+90: CS	0	10:36:01.217	Symbols	WINZ26: symbol synchronized, 3720 bytes of symbol info received
+91: CS	0	10:36:01.222	History	WINZ26: load 27 bytes of history data to synchronize in 0:00:00.001
+92: CS	0	10:36:01.222	History	WINZ26: history synchronized from 2026.05.12 to 2026.10.30
+93: CS	0	10:36:01.222	Ticks	WINZ26: ticks synchronization started
+94: CS	0	10:36:34.512	Ticks	WINZ26: load 34 bytes of tick data to synchronize in 0:00:33.297
+95: CS	0	10:36:34.512	Ticks	WINZ26: history ticks synchronized from 2026.10.29 to 2026.10.30
+96: CS	0	10:36:34.515	History	WINZ26,M5: history cache allocated for 7474 bars and contains 7220 bars from 2026.05.12 17:10 to 2026.10.29 18:20
+97: CS	0	10:36:34.515	History	WINZ26,M5: history begins from 2026.05.12 17:10
+98: CS	0	10:36:34.916	Tester	WINZ26,M5 (GenialInvestimentos-PRD): generating based on real ticks
+99: CS	0	10:36:34.916	Tester	WINZ26,M5: testing of Experts\ModeloD_Diagnostico_Agente\Diagnostico_Dados_WINZ26.ex5 from 2026.10.30 00:00 to 2026.10.31 00:00 started
+100: CS	0	10:36:34.923	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 00:00:00   MD_DIAG;START;VERSION=1.00;TESTER_ONLY;SEM_ORDENS;symbol=WINZ26;build=6295;visual=0;margin_mode=2
+101: CS	0	10:36:34.923	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 00:00:00   MD_DIAG;REPORT;Common\Files\MD_DIAG_DADOS_20261030_52_325212171.txt
+102: CS	3	10:36:35.182	Ticks	WINZ26 : 2026.10.30 23:59 - all the real ticks discarded within a day
+103: CS	3	10:36:35.182	Ticks	WINZ26 : 2026.10.30 23:59 - 4319114 tick prices mismatch for 565 minute bars
+104: CS	0	10:36:35.182	Ticks	WINZ26 : real ticks begin from 2026.10.29 00:00:00
+105: CS	3	10:36:35.182	Ticks	WINZ26 : 2026.10.30 00:00 - 2026.10.31 00:00  real ticks discarded for 565 minutes of 565 total minute bars, every tick generation used
+106: CS	3	10:36:35.182	Ticks	WINZ26 : 2026.10.30 00:00 - 2026.10.31 00:00  real ticks discarded for 1 whole days
+107: CS	3	10:36:35.182	Ticks	WINZ26 : 2026.10.30 00:00 - 2026.10.31 00:00  tick volumes not matched for 565 minute bars
+108: CS	3	10:36:35.182	Ticks	WINZ26 : 2026.10.30 00:00 - 2026.10.31 00:00  tick prices of 4319114 ticks not matched for 565 minute bars
+109: CS	0	10:36:36.438	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:00:00   MD_DIAG;FIRST_OBSERVED_EVENT_NOT_CERTIFIED_OPEN;time=2026.10.30 09:00:00;msc=1793350800000;bid=170910.00000000;ask=170915.00000000;last=171050.00000000;volume=0;volume_real=0.00000000;flags=6
+110: CS	0	10:36:36.439	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;PROBE;time_current=2026.10.30 09:02:00;time_server=2026.10.30 09:02:00;time_gmt=2026.10.30 09:02:00
+111: CS	0	10:36:36.439	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;PROPERTY;name=SYMBOL_CHART_MODE;ok=1;value=1;error=0
+112: CS	0	10:36:36.439	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;ENUMS;CHART_BID=0;CHART_LAST=1
+113: CS	0	10:36:36.440	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;PROPERTY;name=SYMBOL_TRADE_CALC_MODE;ok=1;value=33;error=0
+114: CS	0	10:36:36.440	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;PROPERTY;name=SYMBOL_DIGITS;ok=1;value=0;error=0
+115: CS	0	10:36:36.440	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;PROPERTY;name=SYMBOL_TRADE_TICK_SIZE;ok=1;value=5.00000000;error=0
+116: CS	0	10:36:36.440	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;PROPERTY;name=SYMBOL_TRADE_TICK_VALUE;ok=1;value=1.00000000;error=0
+117: CS	0	10:36:36.440	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;PROPERTY;name=SYMBOL_POINT;ok=1;value=1.00000000;error=0
+118: CS	0	10:36:36.440	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;CURRENCIES;profit=BRL;margin=BRL;account=USD
+119: CS	0	10:36:36.440	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;CURRENT_TICK;ok=1;error=0
+120: CS	0	10:36:36.440	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;CURRENT_TICK_DATA;time=2026.10.30 09:02:00;msc=1793350920000;bid=171260.00000000;ask=171265.00000000;last=171050.00000000;volume=0;volume_real=0.00000000;flags=6
+121: CS	0	10:36:36.443	History	WINZ26,M1: history cache allocated for 30259 bars and contains 28991 bars from 2026.05.12 17:12 to 2026.10.29 18:24
+122: CS	0	10:36:36.736	History	WINZ26,M1: 2 bars from 2026.10.30 09:00 to 2026.10.30 09:01 added
+123: CS	0	10:36:36.736	History	WINZ26,M1: history begins from 2026.05.12 17:12
+124: CS	0	10:36:36.736	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;M1_QUERY;returned=1;error=0
+125: CS	0	10:36:36.736	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;M1;time=2026.10.30 09:00:00;open=170910.00000000;high=171600.00000000;low=170900.00000000;close=171330.00000000;tick_volume=18948;real_volume=78471
+126: CS	0	10:36:36.736	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;QUERY;mode=ALL;from=1793350800000;to=1793350859999;returned=3790;array=3790;error=0
+127: CS	0	10:36:36.736	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;SAMPLE;mode=ALL;index=0;time=2026.10.30 09:00:00;msc=1793350800000;bid=170910.00000000;ask=170915.00000000;last=171050.00000000;volume=0;volume_real=0.00000000;flags=6
+128: CS	0	10:36:36.736	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;SAMPLE;mode=ALL;index=1;time=2026.10.30 09:00:00;msc=1793350800003;bid=170915.00000000;ask=170920.00000000;last=171050.00000000;volume=0;volume_real=0.00000000;flags=6
+129: CS	0	10:36:36.736	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;SAMPLE;mode=ALL;index=2;time=2026.10.30 09:00:00;msc=1793350800006;bid=170910.00000000;ask=170915.00000000;last=171050.00000000;volume=0;volume_real=0.00000000;flags=6
+130: CS	0	10:36:36.737	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;SUMMARY;mode=ALL;complete_without_api_error=1;positive_trade_rows=0;zero_or_invalid_last=0;flags_zero=0;regressions=0;outside=0;open=0.00000000;high=0.00000000;low=0.00000000;close=0.00000000;sum_volume=0.00000000;sum_volume_real=0.00000000
+131: CS	0	10:36:36.737	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;LAST_SAMPLE;mode=ALL;time=2026.10.30 09:00:59;msc=1793350859998;bid=171330.00000000;ask=171335.00000000;last=171050.00000000;volume=0;volume_real=0.00000000;flags=6
+132: CS	0	10:36:36.737	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;QUERY;mode=TRADE;from=1793350800000;to=1793350859999;returned=0;array=0;error=0
+133: CS	0	10:36:36.737	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;SUMMARY;mode=TRADE;complete_without_api_error=1;positive_trade_rows=0;zero_or_invalid_last=0;flags_zero=0;regressions=0;outside=0;open=0.00000000;high=0.00000000;low=0.00000000;close=0.00000000;sum_volume=0.00000000;sum_volume_real=0.00000000
+134: CS	0	10:36:36.737	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;END;SEM_ORDENS;SEM_ACEITE_DE_BACKTEST;CONSULTAR_TAMBEM_LOG_DO_MOTOR
+135: CS	3	10:36:36.737	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   ExpertRemove() function called
+136: CS	0	10:36:36.737	Tester	final balance 1000000.00 USD
+137: CS	0	10:36:36.738	Diagnostico_Dados_WINZ26 (WINZ26,M5)	2026.10.30 09:02:00   MD_DIAG;DEINIT;reason=0;probe_executed=1
+138: CS	3	10:36:36.751	Tester	removed itself on 37% of testing interval
+139: CS	0	10:36:36.751	Tester	WINZ26,M5: 7621 ticks, 1 bars generated. Environment synchronized in 0:00:33.485. Test passed in 0:00:02.251 (including ticks preprocessing 0:00:00.266).
+140: CS	0	10:36:36.751	Tester	WINZ26,M5: total time from login to stop testing 0:00:35.736 (including 0:00:33.485 for history data synchronization)
+141: CS	0	10:36:36.751	Tester	725 Mb memory used including 2 Mb of history data, 64 Mb of tick data
+142: CS	0	10:36:36.751	Tester	log file "C:\Users\jhenn\AppData\Local\ModeloD_MT5_Isolado_20261102_145749_6554356a\Tester\Agent-127.0.0.1-3000\logs\20261103.log" written
+143: CS	0	10:36:36.752	Tester	test Experts\ModeloD_Diagnostico_Agente\Diagnostico_Dados_WINZ26.ex5 on WINZ26,M5 thread finished
+144: CS	0	10:36:36.995	127.0.0.1	prepare for shutdown
+145: CS	0	10:36:36.995	127.0.0.1	shutdown finished

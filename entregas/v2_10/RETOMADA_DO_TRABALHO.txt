@@ -285,3 +285,13 @@ Registro em diagnostico_agente/ATUALIZACAO_BETA_6295_CONFIRMADA.txt.
 Próximo: mesmo diagnóstico ORIGINAL30 (sem20261029), mesma configuração,
 sem recompilar por enquanto; coletar TXT/log e verificar agente6295 efetivo.
 Novo teste e correção ainda não confirmados. MT5 principal não é alvo.
+
+ATUALIZAÇÃO — AGENTE6295 CONFIRMADO, SEM MELHORA
+Rodada03/11 às10:36 no isolado registra agente/START6295, não visual. Mesmo
+descarte565/565 e4.319.114 preços divergentes. ALL3790/Last171050/flags6/volume0;
+TRADE0. TXT idêntico ao6231 de hoje salvo build/nome. Ver
+validacao_20261103_build6295/. Não repetir esses cenários iguais.
+Próximo: exportar CSV bruto09:00–09:01 de30/10 no MT5 SECUNDÁRIO, Todos os
+ticks, para comparar ao CSV anterior do PRINCIPAL. Só havia captura/totais
+do secundário; seu CSV de um minuto ainda não foi recebido. Nenhum teste novo
+ou modificação do EA necessária para esta coleta.
