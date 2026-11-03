@@ -1,0 +1,20 @@
+{
+  "source": "Captura de tela enviada pelo usuario nesta conversa; transcricao visual",
+  "terminal_context": "MT5 secundario isolado",
+  "symbol": "WINZ26",
+  "selection": "Todos os ticks",
+  "from": "2026.10.30 00:00:00",
+  "to": "2026.10.31 00:00:00",
+  "status": "WINZ26: 4319285 ticks de 2026.10.30 a 2026.10.30 recebidos (131072 ticks exibidos abaixo)",
+  "received_ticks": 4319285,
+  "displayed_ticks": 131072,
+  "first_visible_row": {
+    "time": "2026.10.30 18:31:24.719",
+    "last": "170350",
+    "volume": "31",
+    "flags": "56"
+  },
+  "export_button_enabled": true,
+  "csv_received": false,
+  "full_file_count_verified": false
+}

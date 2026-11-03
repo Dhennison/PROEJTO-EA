@@ -1,0 +1,29 @@
+COLETA DO DIA INTEIRO — CAPTURA RECEBIDA EM03/11/2026
+
+Ativos/Ticks,WINZ26 original,Todos os ticks,30/10/2026 00:00:00 a31/10/2026
+00:00:00. Consulta concluída. Mensagem visível:
+WINZ26: 4319285 ticks de 2026.10.30 a 2026.10.30 recebidos
+(131072 ticks exibidos abaixo).
+Botão Exportar ticks habilitado. Quantidade recebida4319285 é distinta do
+limite de exibição131072; não usar só a tabela como prova da sequência total.
+Primeira linha visível18:31:24.719,Last170350,volume31,flags56. Há outros
+negócios no mesmo milissegundo,Last170350,volumes distintos. Não deduplicar.
+
+PONTO A CONFERIR NA PRÓXIMA ANÁLISE
+A exportação M1 anterior terminava18:24. Esta captura contém negócios18:31.
+O total recebido também difere em171 da contagem4319114 de divergências de
+preço registrada no caso anterior do agente. São fatos observados em fontes
+diferentes,não prova de causa,identidade entre contagens ou série completa.
+Conferir a distribuição temporal no CSV integral antes de concluir relação.
+
+PRÓXIMO PASSO
+Exportar ticks para arquivo novo WINZ26_20261030_DIA_COMPLETO.csv na Área de
+Trabalho. Aguardar conclusão. Compactar esse CSV emZIP e anexar o ZIP aqui;
+não abrir/regravar em planilha nem substituir arquivos anteriores. Se não
+conseguir localizar a opção de compactação,enviar captura para orientar.
+Verificar o CSV efetivamente exportado:contagem,cabeçalho,horários,ordem,
+negócios/volumes,zeros,limites do dia e confronto com amostra original eM1.
+Não presumir que o exportador gravou todos os4319285 só pela mensagem daGUI.
+Não importar ainda no símbolo custom nem executar o diagnóstico atual como
+se cobrisse o dia inteiro:ele encerra09:01. Preservar o controle mínimo.
+O CSV/ZIP ainda não foi recebido. Sem alterações de fonte/estratégia/dados.

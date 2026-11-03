@@ -425,3 +425,16 @@ histórico de dia inteiro, depois validar/exportar e preparar diagnóstico
 apropriado:o Expert atual encerra09:01 e não audita o restante do dia.
 Preservar controle mínimo e amostra/reexportação anteriores. Arquivo do dia
 poderá precisar de ZIP para upload; orientar exportação após a nova consulta.
+
+ATUALIZAÇÃO — CONSULTA DO DIA RETORNA4319285 TICKS ORIGINAIS
+Captura após Solicitação emWINZ26/Todos os ticks/30/10 00:00 a31/10 00:00:
+4319285 ticks recebidos,131072 exibidos;Exportar ticks ativo. Registro em
+pesquisa_importacao/coleta_dia_20261103/. Só captura,não CSV completo ainda.
+Negócios visíveis18:31:24.719,Last170350/flags56,volumes distintos. Atenção:
+M1 anteriormente exportada acabava18:24;conferir alcance temporal noCSV,não
+presumir causa. Total da consulta supera contagem anterior de preços
+mismatch4319114 em171,mas relação causal/de eventos não estabelecida.
+Próximo: Exportar ticks comoWINZ26_20261030_DIA_COMPLETO.csv,arquivo novo na
+Área de Trabalho;compactarZIP e anexar. Conferir contagem efetiva do arquivo
+vs4319285,sem presumir exportação integral pelo limite visual131072.
+Manteram-se amostra/controle mínimo;sem importação ou novo teste nesta etapa.
