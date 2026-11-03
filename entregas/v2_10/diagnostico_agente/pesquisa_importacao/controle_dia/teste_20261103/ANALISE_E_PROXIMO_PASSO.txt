@@ -47,3 +47,17 @@ Não consultar WINZ26 original ou antigo símbolo de um minuto por engano.
 Depois confrontar a barra18:31 do terminal com volume do agente. Auditar em
 etapa posterior os registros extrasTRADE,sem presumir causa e sem removerzeros.
 Não repetir o teste igual nem iniciar EA operacional como aprovado.
+
+ATUALIZAÇÃO — BARRA NO TERMINAL DIFERE DO AGENTE
+Usuário consultou Ativos/Barras,MD_PESQ_WINZ26_DIA1030,M1,mesmas datas30/10–31/10.
+Captura:566barras;18:31OHLC170350,TICKVOL170,real_volume25986,spread25.
+18:24OHLC170235/170340/170205/170320,TICKVOL258,V1360,spread5.
+Volume18:31 do terminal coincide comCSV25986 e difere do agente527000000000.
+Não atribuir ainda a causa a barra em formação,cache ou normalização. Essa
+leitura afasta que o valor527bilhões seja o número mostrado nessa M1 do
+terminal. Só campos visíveis conferidos;CSV terminal566barras ainda pendente.
+Próximo:Exportar barras,canto inferior esquerdo,salvar na Área de Trabalho
+MD_PESQ_WINZ26_DIA1030_M1.csv e anexar CSV direto,sem editar/semZIP.
+Depois comparar todas as566 barras com ticks e relatório do agente.
+TRADE+13/+36 continua questão independente,não resolvida pela consulta deM1.
+Sem repetir o teste,modificar verificador,dados ou estratégia.

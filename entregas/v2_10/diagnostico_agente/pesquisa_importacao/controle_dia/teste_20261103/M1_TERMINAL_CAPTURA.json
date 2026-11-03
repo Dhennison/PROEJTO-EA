@@ -1,0 +1,33 @@
+{
+  "source": "Captura da janela Ativos enviada pelo usuario;registro visual",
+  "symbol": "MD_PESQ_WINZ26_DIA1030",
+  "period": "M1",
+  "from": "2026.10.30 00:00",
+  "to": "2026.10.31 00:00",
+  "bars": 566,
+  "last_bar": {
+    "time": "2026.10.30 18:31:00",
+    "open": 170350,
+    "high": 170350,
+    "low": 170350,
+    "close": 170350,
+    "tick_volume": 170,
+    "real_volume": 25986,
+    "spread": 25
+  },
+  "previous_bar": {
+    "time": "2026.10.30 18:24:00",
+    "open": 170235,
+    "high": 170340,
+    "low": 170205,
+    "close": 170320,
+    "tick_volume": 258,
+    "real_volume": 1360,
+    "spread": 5
+  },
+  "agent_last_bar_real_volume": 527000000000,
+  "csv_expected_last_bar_volume": 25986,
+  "terminal_last_bar_matches_csv_visible_fields": true,
+  "terminal_csv_uploaded": false,
+  "cause_identified": false
+}

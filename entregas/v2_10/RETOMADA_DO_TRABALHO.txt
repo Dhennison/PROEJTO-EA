@@ -546,3 +546,13 @@ Próximo:Ctrl+U/abaBarras nosecundário,enviarprint paraorientarM1doCUSTOM
 MD_PESQ_WINZ26_DIA1030,30/10 00:00–31/10 00:00,conferir18:31 fora doagente.
 Assim distinguir estado da última barra noTester de volume persistido no
 terminal;depois isolar registros extrasTRADE emnova auditoria específica.
+
+ATUALIZAÇÃO — M1 DO TERMINAL TEM VOLUME25986;AGENTE RETORNOU527BILHÕES
+Captura Ativos/Barras doCUSTOM MD_PESQ_WINZ26_DIA1030,M1,30/10–31/10,
+566barras. Última18:31OHLC170350/tickvol170/realvol25986/spread25,igualCSV
+nos campos visíveis;18:24OHLC170235/170340/170205/170320,V1360,tickvol258.
+Confirma diferença entrecontextosterminal/agente(527000000000),semestabelecer
+mecanismo interno. RegistroJSON/acréscimoàanálise emcontrole_dia/teste_20261103/.
+Próximo usuário:Exportar barras→Área de Trabalho→MD_PESQ_WINZ26_DIA1030_M1.csv,
+anexarCSVdireto,sem regravar/ZIP. Confrontar566barras versusCSV/agentedepois.
+Não repetir o teste igual;divergênciaTRADE+13/+36 permanece semcausa isolada.
