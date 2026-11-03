@@ -1,0 +1,61 @@
+AUDITORIA DO CSV DO DIA INTEIRO — 03/11/2026
+
+ENTRADAS PRESERVADAS
+ZIP original recebido:WINZ26_20261030_DIA_COMPLETO.zip;19288489bytes;SHA256=0494127f661494963f88567503829d7ab1f16f0eea250decdb3ba4d2ad602fa2
+CSV interno:WINZ26_20261030_DIA_COMPLETO.csv;195623528bytes;SHA256=8035268c0d8ac2e0fdc99a5c42e748c0f13b5d684563c820d56a1634693d861a
+ZIP lido até EOF com verificação CRC. Não extraído CSV grande no repositório; apenas ZIP original.
+Script reproduzível:AUDITAR_DIA.py. Saídas:AUDITORIA_DIA.json e COMPARACAO_POR_MINUTO.csv.
+
+RESULTADOS GERAIS
+Registros=4319285,iguais aos4319285 da consulta;exportação não limitada aos131072 da grade.
+Primeiro registro=2026.10.30 06:59:34.907;último=2026.10.30 18:31:24.719;regressões de horário=0.
+Negócios Last/flags positivos=3190938;volume somado=20884960.00000000.
+OHLC dos negócios no dia=[170910, 171600, 169070, 170350].
+Registros totalmente zerados/flags0=14,preservados;nenhum preenchido/removido.
+Negócios positivos com volume0/negativo=0;preços positivos fora da grade5=0.
+Pares de linhas consecutivas idênticas=103215;não foram deduplicados.
+Amostra original de09:00–09:01,incluindo4 registros de09:01:00.000,é idêntica BYTE A BYTE.
+SHA256 da amostra=dd33aa0233a643d6aaf8ffc86026cddfba315f642faa48b584706b9b312ae675.
+
+CONFRONTO COM AS565 BARRAS M1 DO ARQUIVO ANTERIOR
+Referência:WINZ26_M1_202610300900_202610301824.csv,exportado anteriormente no MT5 principal.
+A consulta da referência cobria30/10 00:00 a31/10 00:00;retornou09:00–18:24.
+565 minutos têm ticks;561 conferem em TODOS os OHLC/VOL comparados.
+Nos outros4 minutos:
+Minuto | VOL dos negócios CSV | VOL M1 anterior | diferença M1 menos CSV | OHLC
+11:58 | 50730.00000000 | 52249 | 1519.00000000 | igual
+15:54 | 36020.00000000 | 38151 | 2131.00000000 | igual
+16:38 | 26808.00000000 | 28516 | 1708.00000000 | igual
+18:24 | 1360.00000000 | 27346 | 25986.00000000 | diverge em HIGH/CLOSE
+
+18:24 pelo CSV:O170235/H170340/L170205/C170320/V1360.
+18:24 na M1 anterior:O170235/H170350/L170205/C170350/V27346.
+O CSV tem170 negócios posteriores em18:31:24.719,Last170350,volume25986.
+A soma1360+25986=27346;incluir esses negócios no agregado de18:24 também faria HIGH/CLOSE coincidirem.
+Isso é coincidência numérica verificável,compatível com tratamento diferente de fechamento;NÃO é autorização
+para mover negócios de horário nem prova da regra/correção da fonte. Não remapear timestamps.
+Em11:58/15:54/16:38,há uma linha zerada em cada minuto,mas não imputar os volumes faltantes a elas:
+diferenças1519+2131+1708=5358;relação causal com as linhas zeradas ainda não demonstrada.
+Volume diário das M1 anteriores20890318;CSV20884960,diferença5358 depois de incluir18:31.
+
+ALCANCE TEMPORAL
+Minutos do CSV sem correspondente no arquivo M1 anterior:06:59(1 registro zerado) e18:31(170 negócios).
+São171 registros fora dos565 minutos. Dentro deles há4319114 registros,quantidade igual à registrada
+como tick prices mismatch pelo agente no caso original. Contagem igual NÃO prova que cada preço estava errado
+ou que as quatro divergências observadas explicam a rejeição de todas as565 barras.
+
+LIMITES E PRÓXIMA EVIDÊNCIA NECESSÁRIA
+Confronto offline entre dois arquivos exportados em momentos/instalações diferentes. O CSV de ticks atual
+é do secundário,as M1 de referência vieram antes do principal. Só a amostra09:00 foi verificada idêntica
+entre instalações. Não atribuir causa ao provedor/motor nem assumir que as M1 ATUAIS do secundário são iguais.
+Coletar agora M1 deWINZ26 no MESMO MT5 secundário,30/10 00:00 a31/10 00:00,e comparar antes de nova importação.
+Primeiro orientar apenas abrirAtivos/Ctrl+U,abaBarras,e enviar captura para definir períodoM1/datas com precisão.
+Não limpar zeros,adicionar volume ou alterar barras/preços para forçar um resultado.
+Controle mínimo positivo preservado;nenhuma importação do dia inteiro ou teste novo realizado.
+O diagnóstico atual para às09:01;diagnóstico de dia inteiro ainda precisa ser preparado/verificado depois
+da análise dos dados correspondentes. EA operacional,ajusteB3,fonte original e fórmulas não alterados.
+
+VALIDAÇÃO LOCAL
+Contagem,CRC eSHA256 da entrada;confronto de todos os565 minutos;amostra original conferida porhash.
+Segundo parser csv.DictReader/Decimal,em leitura independente doZIP,confirmou OHLC/volume/contagem dos
+quatro minutos divergentes e dos dois minutos fora dasM1. Nenhum teste nativo novo foi alegado.

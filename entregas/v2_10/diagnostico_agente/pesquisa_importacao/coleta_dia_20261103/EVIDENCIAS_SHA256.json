@@ -1,0 +1,32 @@
+[
+  {
+    "file": "entregas/v2_10/diagnostico_agente/pesquisa_importacao/coleta_dia_20261103/WINZ26_20261030_DIA_COMPLETO.zip",
+    "bytes": 19288489,
+    "sha256": "0494127f661494963f88567503829d7ab1f16f0eea250decdb3ba4d2ad602fa2"
+  },
+  {
+    "file": "entregas/v2_10/diagnostico_agente/pesquisa_importacao/coleta_dia_20261103/AUDITAR_DIA.py",
+    "bytes": 9581,
+    "sha256": "f24b6f6ad8490102c03c29d889a0fd9f89663184f2b3a675174dfa291adc8978"
+  },
+  {
+    "file": "entregas/v2_10/diagnostico_agente/pesquisa_importacao/coleta_dia_20261103/AUDITORIA_DIA.json",
+    "bytes": 463643,
+    "sha256": "b48758dc17b00480b5c8f50b9d3439012e1c064e05ef61b13502f6b9ab40e420"
+  },
+  {
+    "file": "entregas/v2_10/diagnostico_agente/pesquisa_importacao/coleta_dia_20261103/COMPARACAO_POR_MINUTO.csv",
+    "bytes": 42152,
+    "sha256": "4d2178f27838a6578d6abfc764dadf9692815ed187650b5ec44163d3b7a53d98"
+  },
+  {
+    "file": "entregas/v2_10/validacao_20261102_ensaio1/WINZ26_M1_202610300900_202610301824.csv",
+    "bytes": 35344,
+    "sha256": "fb85d9a8b41ffe619f69aa03c4c181f200cac8d9461cc1a7d5518e9f3a2accec"
+  },
+  {
+    "file": "entregas/v2_10/diagnostico_agente/pesquisa_importacao/DADOS_ORIGINAIS/WINZ26_202610300900_202610300901.csv",
+    "bytes": 915158,
+    "sha256": "dd33aa0233a643d6aaf8ffc86026cddfba315f642faa48b584706b9b312ae675"
+  }
+]

@@ -27,3 +27,18 @@ Não presumir que o exportador gravou todos os4319285 só pela mensagem daGUI.
 Não importar ainda no símbolo custom nem executar o diagnóstico atual como
 se cobrisse o dia inteiro:ele encerra09:01. Preservar o controle mínimo.
 O CSV/ZIP ainda não foi recebido. Sem alterações de fonte/estratégia/dados.
+
+ATUALIZAÇÃO — ZIP RECEBIDO E CSV INTEGRAL AUDITADO
+ZIP19288489bytes contém CSV195623528bytes/4319285 registros;CRC eSHA256
+conferidos. Original preservado;amostra09:00 idêntica aoCSV anterior porhash.
+14 registros zerados,todos preservados;sem regressões de horário.
+Comparação comM1 ANTERIOR:561 de565 minutos conferem OHLC/VOL;divergências
+em11:58/15:54/16:38(volume) e18:24(high/close/volume). Há170 negócios18:31
+vol25986 cujo agregado é numericamente compatível com acréscimo àM1 de18:24.
+Não alterar horários/volumes com base nisso. AsM1 anteriores não são captura
+atual do secundário:obter M1 dele antes de atribuir causa/ampliarcontrole.
+Resultados/reprodutor/hashes emAUDITORIA_DIA.json,COMPARACAO_POR_MINUTO.csv,
+ANALISE_DIA_E_PROXIMO_PASSO.txt eAUDITAR_DIA.py. Segundo parser conferiu os
+minutos de interesse em leitura independente. Nenhuma importação ou teste novo.
+Próximo usuário:janelaAtivos/Ctrl+U,clicarBarras e enviar captura. Depois
+configurar M1/30/10 00:00–31/10 00:00 e exportar barras atuais doWINZ26.

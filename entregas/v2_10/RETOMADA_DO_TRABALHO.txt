@@ -438,3 +438,24 @@ Próximo: Exportar ticks comoWINZ26_20261030_DIA_COMPLETO.csv,arquivo novo na
 Área de Trabalho;compactarZIP e anexar. Conferir contagem efetiva do arquivo
 vs4319285,sem presumir exportação integral pelo limite visual131072.
 Manteram-se amostra/controle mínimo;sem importação ou novo teste nesta etapa.
+
+ATUALIZAÇÃO — CSV INTEGRAL AUDITADO;DIVERGÊNCIAS COM M1 ANTERIOR
+Usuário anexouWINZ26_20261030_DIA_COMPLETO.zip,19288489bytes/hash0494127f...
+Preservado emcoleta_dia_20261103/,contémCSV195623528bytes/hash8035268c...,
+4319285registros,mesma contagemGUI. CRC/ordem verificados;14 zeros preservados.
+Amostra09:00–09:01 idêntica porhashàanterior. Negócios positivos3190938,
+volume20884960,OHLC170910/171600/169070/170350. Nenhuma deduplicação/limpeza.
+Dos565 minutos nasM1 antigas,561 iguaisOHLC/VOL;11:58/15:54/16:38 têmvolume
+menor noCSV,diferenças1519/2131/1708,total5358.18:24 divergeH/C/V:
+CSVH170340/C170320/V1360;M1H170350/C170350/V27346.170 negócios18:31:24.719
+Last170350/volume25986 fecham numericamente essa diferença,sem provar regra
+ou autorizar remapear eventos. Um zero06:59+170 negócios18:31 são171 fora
+M1antiga;4319114 linhas dentroM1coincidem com contagemmismatchantiga,não causa.
+A referência M1 foi exportada antes no principal;precisa M1ATUAL do secundário
+para confirmar persistência das divergências. Auditoria/reprodutor/JSON/CSV/
+manifesto e detalhes emcoleta_dia_20261103/. Segundo parser independente validou
+4minutos divergentes+2foraM1. Sem códigoMQL/estratégia/B3 alterados,sem importar
+amostra do dia nem rodarTester. Controle mínimo positivo permanece preservado.
+Próximo usuário:AtivosCtrl+U,abaBarras,enviarprint. OrientarM1/datas30/10 00:00
+a31/10 00:00,consultar/exportar barrasATUAISWINZ26do secundário;analisar antes
+de ampliarcontrole. Expert atual para09:01,não cobre o dia inteiro.
