@@ -519,3 +519,13 @@ integrais/14zeros. Próximo:clicarSolicitação/aguardar/enviar captura da conta
 consultada. Depois configurarExpertDIÁRIO já compilado para auditar sequência
 no agente;não pedir CSV integral reexportado redundante,não repetir importação.
 Controle mínimo preservado;novoExpert ainda não executado.
+
+ATUALIZAÇÃO — CONSULTA DO SÍMBOLO DIÁRIO CONFIRMA4319285 TICKS
+Nova captura apósSolicitação,MD_PESQ_WINZ26_DIA1030/Todos/30/10 00:00 a31/10
+00:00,informa4319285recebidos/131072exibidos;mesma quantidade do CSV/importação.
+Registro atualizado emcontrole_dia/importacao_dia_20261103/. Não equivale a
+conferência integral;sem novo CSV reexportado solicitado. Próximo usuário:
+fecharAtivosOK,Ctrl+R/Configuração,ExpertModeloD_Diagnostico_Pesquisa/
+Diagnostico_Dia_Importado_WINZ26.ex5,ativoMD_PESQ_WINZ26_DIA1030;manter
+M5/datas30/10–31/10/ticks reais/sem otimização/sem visual. Enviar captura antes
+de iniciar;novoExpert de dia inteiro não executado ainda.

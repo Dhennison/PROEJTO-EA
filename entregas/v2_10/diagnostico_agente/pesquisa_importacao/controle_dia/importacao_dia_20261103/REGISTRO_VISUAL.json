@@ -11,6 +11,9 @@
   "selection": "Todos os ticks",
   "ui_imported_ticks": 4319285,
   "matches_original_file_count": true,
-  "native_requery_confirmed": false,
-  "full_day_expert_executed": false
+  "native_requery_confirmed": true,
+  "full_day_expert_executed": false,
+  "ui_queried_ticks": 4319285,
+  "ui_displayed_ticks": 131072,
+  "query_status": "MD_PESQ_WINZ26_DIA1030: 4319285 ticks de 2026.10.30 a 2026.10.30 recebidos (131072 ticks exibidos abaixo)"
 }

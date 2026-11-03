@@ -24,3 +24,14 @@ fingerprint64 da sequência de campos sinalizados e confronto deM1. Não
 pedir novo CSV integral reexportado neste ponto só para repetir comparação
 que o diagnóstico já foi preparado para fazer no agente. Preservar a amostra
 mínima e sua diferença de exportação já conhecida. Ainda não executadoTester.
+
+ATUALIZAÇÃO — CONSULTA NATIVA DO SÍMBOLO DIÁRIO CONFERIDA
+Captura após Solicitação:4319285ticks recebidos(131072exibidos),símbolo
+MD_PESQ_WINZ26_DIA1030,Todos os ticks,30/10 00:00 a31/10 00:00. Contagem
+consultada coincide com importada/CSV. Exportar ticks habilitado. Isso não
+substitui o fingerprint nativo nem o confronto dasM1 que o Expert fará.
+Próximo:fecharAtivos/OK,Ctrl+R,Configuração;selecionar
+ModeloD_Diagnostico_Pesquisa/Diagnostico_Dia_Importado_WINZ26.ex5 e ativo
+MD_PESQ_WINZ26_DIA1030. Manter M5/30/10 a31/10/ticks reais/otimização
+Desativada/visual desmarcado/demais campos do controle anterior. Enviar
+captura antes de iniciar. Expert diário ainda não executado.
