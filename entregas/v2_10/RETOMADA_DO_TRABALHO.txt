@@ -486,3 +486,14 @@ Preparar_Pesquisa_Dia_WINZ26.mq5,F7,enviar resultado,sem executar ainda.
 Depois compilar novo Expert e orientar preparação/importação passo a passo.
 Controle diário não prova correção doWINZ26real nem valida estratégia/dados
 oficiais;quatro divergências permanecem explicitamente documentadas.
+
+ATUALIZAÇÃO — AMBOS OS FONTES DIÁRIOS COMPILADOS NO MT5 SECUNDÁRIO
+Usuário informou Preparar_Pesquisa_Dia_WINZ26.mq5:0erros/0avisos,400ms,
+e Diagnostico_Dia_Importado_WINZ26.mq5:0erros/0avisos,615ms,CPUAVX2+FMA3.
+Resultados registrados emcontrole_dia/COMPILACOES_NATIVAS_USUARIO.txt.
+EX5/hashes não anexados;nenhum fonte alterado. Criação/importação/teste do
+símbolo diário ainda não confirmados. Próximo usuário:voltar ao secundário,
+fechar Ativos se aberto,gráficoWINZ26(H1serve),Ctrl+N/Scripts/
+ModeloD_Pesquisa_Dados/Preparar_Pesquisa_Dia_WINZ26,executar UMA vez e enviar
+MD_PESQ_DIA_PREPARACAO_...txt/Common/Files ou mensagens doScript. Esperar
+READY/readback antes de importar CSV. Não iniciar Expert noTester ainda.

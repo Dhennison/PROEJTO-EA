@@ -1,15 +1,28 @@
-CONTROLE DO DIA INTEIRO — ESTADO ANTES DA COMPILAÇÃO NATIVA
+CONTROLE DO DIA INTEIRO — DUAS COMPILAÇÕES NATIVAS CONFIRMADAS
 
-Preparar_Pesquisa_Dia_WINZ26.mq5: compilação MQL5 PENDENTE.
-Diagnostico_Dia_Importado_WINZ26.mq5: compilação MQL5 PENDENTE.
-Os62 checks emC++/APIs simuladas não são compilação MetaEditor.
-Resultados nativos de arquivos anteriores não se aplicam a estes nomes novos.
+Resultados enviados pelo usuário em03/11/2026,após cópia do pacote ao MT5
+secundário e abertura dos fontes no MetaEditor dessa instalação:
+
+Preparar_Pesquisa_Dia_WINZ26.mq5
+code generated 0
+0 errors, 0 warnings, 400 ms elapsed, cpu='AVX2 + FMA3' 0
+
+Diagnostico_Dia_Importado_WINZ26.mq5
+code generated 0
+0 errors, 0 warnings, 615 ms elapsed, cpu='AVX2 + FMA3' 0
+
+São resultados de compilação nativa fornecidos pelo usuário;binários EX5 e
+respectivos hashes não foram anexados. Os62 checks locais continuam sendo
+simulados e separados dessas compilações. Nenhum fonte foi alterado agora.
+Compilar não comprova execução,criação/readback,importação ou ticks no agente.
 
 PRÓXIMO PASSO
-Copiar MQL5 do pacote ModeloD_Pesquisa_Dia_v1_00.zip para a RAIZ:
-C:\Users\jhenn\AppData\Local\ModeloD_MT5_Isolado_20261102_145749_6554356a
-No MetaEditor do secundário(F4),abrir e compilarF7 o primeiro fonte:
-MQL5\Scripts\ModeloD_Pesquisa_Dados\Preparar_Pesquisa_Dia_WINZ26.mq5
-Enviar resultado da compilação antes de executar. Depois orientar a
-compilação do novo Expert. Criação/importação do símbolo diário ainda não
-executadas. O símbolo do controle mínimo está preservado.
+No MT5 secundário,fechar Ativos se estiver aberto e abrir/mantiver gráfico
+WINZ26(original). H1 pode permanecer:Script usa PERIOD_M1 explicitamente.
+Ctrl+N,Navegador/Scripts/ModeloD_Pesquisa_Dados/Preparar_Pesquisa_Dia_WINZ26.
+Executar uma vez no gráfico;confirmar OK se abrir propriedades. Não é pelo
+Tester,não exige habilitar negociação. Cria MD_PESQ_WINZ26_DIA1030 somente
+se inexistente,copia M1 real29/10 e exige readback antes de READY.
+Coletar MD_PESQ_DIA_PREPARACAO_...txt em Common/Files e mensagens do Script.
+Ainda não importar CSV nem iniciar o Expert. Se falhar,preservar o estado
+para diagnóstico,sem apagar/recriar/repetir automaticamente.
