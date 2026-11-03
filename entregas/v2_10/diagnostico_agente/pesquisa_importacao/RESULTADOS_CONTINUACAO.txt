@@ -1,0 +1,11 @@
+HOST_CONTINUACAO;Checks=39;Failures=0;CPP_SIMULADO;NAO_E_COMPILACAO_MQL5
+Comando: python3 VALIDAR_CONTINUACAO.py
+AddressSanitizer e UndefinedBehaviorSanitizer ativos; execução fora do ptrace.
+Verifica recusa no Tester, símbolo ausente/real, origem custom, propriedades
+incompatíveis/indisponíveis, histórico insuficiente/inválido/com timeout,
+colisão/erro de relatório, falha de seleção, cópia incompleta/com erro,
+readback divergente/incompleto/com erro e continuação íntegra com READY.
+Mock rejeita leitura/escrita fora do M1 de29/10 e escrita fora do símbolo de
+pesquisa. Usa fixture sintética somente no host. Não testa o importador MT5.
+Compilação MQL5 e execução nativa da continuação ainda pendentes.
+Fontes/ZIP v1.00, CSV original, Expert da pesquisa e EA v2.10 não alterados.

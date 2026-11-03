@@ -324,3 +324,19 @@ gráfico WINZ26 e executar apenas Script Preparar_Simbolo_Pesquisa_WINZ26 pelo
 Navegador/Scripts (fora do Tester), uma vez. Coletar MD_PESQ_PREPARACAO_...
 para confirmar criação/readback/READY antes da importação. Nenhuma importação
 ou execução do Expert de pesquisa confirmada ainda; não alterar WINZ26.
+
+ATUALIZAÇÃO — PREPARAÇÃO PAROU EM DESCRIPTION_FAILED5309
+Usuário enviou MD_PESQ_PREPARACAO_52032_328072015.txt, build6295: CREATED
+MD_PESQ_WINZ26_1030 seguido de falha na atribuição de SYMBOL_DESCRIPTION.
+O código retorna antes de copiar barras29/readback. Não importar CSV ainda.
+Relatório preservado em pesquisa_importacao/falha_descricao_5309/.
+Novo Script Continuar_Preparacao_WINZ26.mq5 v1.01 retoma o símbolo custom
+existente, confere propriedades e mantém a descrição herdada, sem criação/
+exclusão ou escrita em WINZ26. Copia só29/10 e exige readback integral antes
+de READY. Pacote ModeloD_Continuacao_5309_v1_01.zip inclui apenas esse novo
+MQ5, instruções e resultados/hashes. V1.00/CSV/Expert/EA preservados.
+Host simulado39 checks/zero falhas com sanitizadores; não compila MQL5.
+Próximo: copiar novo MQ5 à pasta MQL5/Scripts/ModeloD_Pesquisa_Dados do MT5
+secundário; compilar F7, com0 erros/avisos executar uma vez em WINZ26 e enviar
+compilação + MD_PESQ_CONTINUACAO_...txt. Não apagar símbolo nem repetir o
+preparador original. Expert/importação nativos ainda aguardam essa conferência.

@@ -33,3 +33,12 @@ Coletar o TXT MD_PESQ_PREPARACAO_... e as mensagens do Script. A linha
 READY_FOR_MANUAL_TICK_IMPORT só é emitida após criação do símbolo custom e
 readback das barras anteriores confirmado. Se houver erro, preservar o estado;
 não repetir automaticamente ou apagar símbolo existente para contornar.
+
+ATUALIZAÇÃO — EXECUÇÃO RECEBIDA; FALHA NA DESCRIÇÃO
+Preparador v1.00 executado no build6295: símbolo criado, seguido de
+DESCRIPTION_FAILED;error=5309. Não chegou à cópia/readback. Relatório em
+falha_descricao_5309/. As pendências acima são o estado anterior à execução.
+Novo Continuar_Preparacao_WINZ26.mq5 v1.01 preparado para esse símbolo já
+criado. Sua compilação/execução nativas ainda pendentes; não reutilizar como
+resultado dele a compilação426ms do preparador v1.00. Próximo passo atualizado
+no LEIA_CONTINUACAO_APOS_5309.txt. Não importar nem apagar o símbolo.

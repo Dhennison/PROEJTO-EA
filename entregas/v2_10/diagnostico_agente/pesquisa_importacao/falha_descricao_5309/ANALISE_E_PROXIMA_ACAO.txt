@@ -1,0 +1,40 @@
+PREPARAÇÃO DA PESQUISA — FALHA NATIVA RECEBIDA EM 03/11/2026
+
+EVIDÊNCIA
+Relatório original MD_PESQ_PREPARACAO_52032_328072015.txt preservado byte a byte.
+Terminal6295: START, REPORT, CREATED MD_PESQ_WINZ26_1030 a partir de WINZ26,
+seguido de DESCRIPTION_FAILED;error=5309. Execução em gráfico WINZ26,H1.
+H1 não é o problema: o Script consulta explicitamente PERIOD_M1.
+
+LEITURA DO FONTE V1.00
+CustomSymbolCreate retornou sucesso. O erro veio de CustomSymbolSetString
+para SYMBOL_DESCRIPTION; o programa retorna imediatamente. Não chegou a
+CustomRatesReplace nem a PRIOR_READBACK/READY. Criação não confirma prontidão.
+A string original tem 75 caracteres. O retorno nativo confirma a rejeição da
+atribuição, mas não comprova sozinho seu limite de tamanho ou causa interna.
+Não atribuir a falha à importação de ticks, ainda não iniciada.
+
+CONTINUAÇÃO V1.01
+Novo Script Continuar_Preparacao_WINZ26.mq5, sem alterar o fonte/ZIP v1.00.
+Exige o nome fixo MD_PESQ_WINZ26_1030 existente e custom; seleciona-o antes de
+consultar propriedades. Exige origem WINZ26 real, compara modo de gráfico,
+dígitos, cálculo, tick size, point, contract size e moedas. Mantém a descrição
+herdada: não chama CustomSymbolSetString, criação ou exclusão de símbolos.
+Consulta/valida M1 real de29/10 e substitui somente esse intervalo no símbolo
+de pesquisa. Não escreve WINZ26, ticks ou barras de30/10. Confere todos os
+campos do readback antes de emitir READY. Uma falha preserva o estado e
+registra STOP; não certifica uma cópia parcial como sucesso.
+Não é um modo genérico de retomar símbolos de terceiros. Destina-se à criação
+parcial comprovada pelo relatório desta sessão, antes da importação manual.
+
+VALIDAÇÃO E PENDÊNCIAS
+Host C++ com APIs simuladas e sanitizadores ativos: resultado no TXT
+RESULTADOS_CONTINUACAO.txt. Exercita guardas, limites da escrita, erro/retorno
+parcial da cópia e divergências de readback. Usa barras sintéticas APENAS NO
+MOCK, nunca como dados importados ou históricos certificados. Não compila
+MQL5 nem comprova as APIs nativas. Compilação e execução desse novo Script no
+MetaEditor/MT5 secundário ainda pendentes. Expert já compilado não foi alterado.
+Próximo: copiar apenas o novo MQ5 ao diretório Scripts indicado no LEIA,
+compilar e, com zero erros/avisos, executar uma vez no gráfico WINZ26. Coletar
+MD_PESQ_CONTINUACAO_... antes de importar o CSV. Não rodar de novo o preparador
+original: ele recusa o símbolo agora existente. Não apagar o símbolo.

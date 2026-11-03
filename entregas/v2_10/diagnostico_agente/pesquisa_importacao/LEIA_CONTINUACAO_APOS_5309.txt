@@ -1,0 +1,34 @@
+CONTINUAR A PREPARAÇÃO QUE PAROU NO ERRO5309
+
+O símbolo MD_PESQ_WINZ26_1030 foi criado, mas o Script parou na descrição.
+Ainda não houve cópia/readback confirmado das barras anteriores. Esta
+continuação preserva a descrição e usa esse mesmo símbolo de pesquisa.
+Não apaga/recria símbolos, não negocia e não muda WINZ26 ou o EA v2.10.
+
+1. Extraia este ZIP. Copie SOMENTE Continuar_Preparacao_WINZ26.mq5 para:
+C:\Users\jhenn\AppData\Local\ModeloD_MT5_Isolado_20261102_145749_6554356a\MQL5\Scripts\ModeloD_Pesquisa_Dados
+Essa é a pasta onde está Preparar_Simbolo_Pesquisa_WINZ26.mq5. É um novo
+arquivo; não precisa substituir o anterior nem copiar outra pasta MQL5.
+
+2. No MT5 SECUNDÁRIO, pressione F4 para abrir seu MetaEditor. Abra o novo
+Continuar_Preparacao_WINZ26.mq5 e pressione F7. Com zero erros e zero avisos,
+prossiga. Se houver erro ou aviso, envie a compilação e pare nessa etapa.
+O Expert Diagnostico_Importacao_WINZ26 já compilado não precisa recompilar.
+
+3. Volte ao MT5 secundário, deixe aberto o gráfico WINZ26. H1 pode permanecer:
+o Script consulta as barras M1 explicitamente. Ctrl+N abre o Navegador.
+Em Scripts > ModeloD_Pesquisa_Dados, atualize a lista se necessário e execute
+UMA VEZ Continuar_Preparacao_WINZ26. Não é o Preparar_Simbolo... antigo.
+Não é pelo Testador de Estratégia. Não exige habilitar negociação algorítmica.
+
+4. Envie a compilação e o novo MD_PESQ_CONTINUACAO_...txt de:
+%APPDATA%\MetaQuotes\Terminal\Common\Files
+Esperado: PRIOR_M1_COPY com written=source_rows/error=0, PRIOR_READBACK com
+same=1/error=0 e READY_FOR_MANUAL_TICK_IMPORT. Se houver erro, envie também as
+linhas do Script na aba Experts. Não repita nem apague o símbolo.
+
+A importação do CSV vem depois de conferirmos esse retorno. Ainda não
+execute o diagnóstico no Tester nem importe ticks. Essa etapa confirma
+apenas o aquecimento do símbolo de pesquisa com barras reais de29/10.
+
+Verificações locais não substituem a compilação/execução no seu MT5.
