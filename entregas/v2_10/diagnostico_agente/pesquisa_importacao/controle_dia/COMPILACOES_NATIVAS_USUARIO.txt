@@ -26,3 +26,11 @@ se inexistente,copia M1 real29/10 e exige readback antes de READY.
 Coletar MD_PESQ_DIA_PREPARACAO_...txt em Common/Files e mensagens do Script.
 Ainda não importar CSV nem iniciar o Expert. Se falhar,preservar o estado
 para diagnóstico,sem apagar/recriar/repetir automaticamente.
+
+ATUALIZAÇÃO — PREPARAÇÃO EXECUTADA E CONFERIDA
+Usuário forneceu mensagens16:52:39/build6295:novoMD_PESQ_WINZ26_DIA1030
+criado,565 copiadas/565 relidas,same1,error0,READY emitido. Registro em
+preparacao_confirmada_20261103/. NativeTXT apontado mas não anexado.
+Execução do preparador confirmada;importação/ticks/controle no agente pendentes.
+Próximo:selecionar símbolo diário na janelaAtivos e conferir captura antes
+de importar CSV integral. Não executar novamente o preparador.

@@ -497,3 +497,14 @@ fechar Ativos se aberto,gráficoWINZ26(H1serve),Ctrl+N/Scripts/
 ModeloD_Pesquisa_Dados/Preparar_Pesquisa_Dia_WINZ26,executar UMA vez e enviar
 MD_PESQ_DIA_PREPARACAO_...txt/Common/Files ou mensagens doScript. Esperar
 READY/readback antes de importar CSV. Não iniciar Expert noTester ainda.
+
+ATUALIZAÇÃO — SÍMBOLO DIÁRIO CRIADO E AQUECIMENTO CONFIRMADO
+Usuário colou mensagens03/11/2026 16:52:39,Preparar_Pesquisa_Dia_WINZ26,
+WINZ26,H1,build6295. CREATEDMD_PESQ_WINZ26_DIA1030,descrição herdada,565M1
+copiadas/565relidas,same1/error0,READY. Relatório nativo apontado:
+MD_PESQ_DIA_PREPARACAO_26596_347775156.txt,Common/Files,ainda não anexado.
+Registro das mensagens emcontrole_dia/preparacao_confirmada_20261103/.
+Não repetirScript. Próximo:AtivosCtrl+U/Especificação/MetaTrader5/busca lupa
+MD_PESQ_WINZ26_DIA1030,selecionar/abaTicks,enviar captura para conferir alvo
+antes de importarCSVintegral. O antigoMD_PESQ_WINZ26_1030 fica preservado.
+Importação do dia completo e execução do novoExpert ainda não feitas.

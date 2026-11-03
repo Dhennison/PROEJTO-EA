@@ -1,0 +1,22 @@
+PREPARAÇÃO DIÁRIA — MENSAGENS COLADAS PELO USUÁRIO EM03/11/2026
+
+Execução16:52:39.420–16:52:39.448,horário exibido peloMT5,gráficoWINZ26,H1.
+Preparar_Pesquisa_Dia_WINZ26;build6295.
+Relatório apontado:Common\Files\MD_PESQ_DIA_PREPARACAO_26596_347775156.txt.
+Arquivo nativo não anexado nesta etapa;este é registro das mensagens coladas.
+
+MD_PESQ_DIA;START;PESQUISA_SEM_ORDENS;build=6295
+MD_PESQ_DIA;REPORT;Common\Files\MD_PESQ_DIA_PREPARACAO_26596_347775156.txt
+MD_PESQ_DIA;CREATED;symbol=MD_PESQ_WINZ26_DIA1030;origin=WINZ26;ONLY_NEW_SYMBOL
+MD_PESQ_DIA;DESCRIPTION_INHERITED;NO_DESCRIPTION_WRITE
+MD_PESQ_DIA;PRIOR_M1_COPY;source_rows=565;written=565;error=0
+MD_PESQ_DIA;PRIOR_READBACK;rows=565;same=1;error=0
+MD_PESQ_DIA;READY_FOR_MANUAL_TICK_IMPORT;symbol=MD_PESQ_WINZ26_DIA1030;CSV_ORIGINAL_30OUT_DIA_INTEIRO;NO_CURRENT_DAY_TICKS_IMPORTED_YET;NO_ORDERS
+
+CONCLUSÃO
+Símbolo diário novo criado;565 barrasM1 reais29/10 copiadas/readback integral.
+Ainda não foram importados ticks30/10 pelo Script. Não repetir preparação.
+Próximo:abrirAtivosCtrl+U,Especificação,raizMetaTrader5,busca com lupa pelo
+nomeEXATO MD_PESQ_WINZ26_DIA1030,selecionar resultado/abaTicks,enviar captura.
+Isso confere o destino separado antes de abrir importação do CSV integral.
+Não usar o antigoMD_PESQ_WINZ26_1030,não iniciarExpert noTester nesta etapa.
