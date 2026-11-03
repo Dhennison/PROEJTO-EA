@@ -10,9 +10,26 @@ secundária. Foi orientada a abertura do fonte pelo MetaEditor dessa cópia:
 %LOCALAPPDATA%\ModeloD_MT5_Isolado_20261102_145749_6554356a\MQL5\Scripts\ModeloD_Pesquisa_Dados
 Resultado nativo colado pelo usuário; binário e hash não foram anexados.
 
+DIAGNÓSTICO DE IMPORTAÇÃO — RESULTADO RECEBIDO EM 03/11/2026
+Diagnostico_Importacao_WINZ26.mq5
+code generated                         0
+0 errors, 0 warnings, 528 ms elapsed, cpu='AVX2 + FMA3'       0
+
+Resultado nativo colado pelo usuário após orientação de abertura no mesmo
+MetaEditor do MT5 secundário. Os dois fontes agora têm compilação nativa
+confirmada pelo resultado enviado, sem alegar verificação de hashes dos EX5.
+
 PENDÊNCIAS
-Compilação de Diagnostico_Importacao_WINZ26.mq5 ainda não recebida.
 Execução do preparador, criação/readback do símbolo de pesquisa, importação
 do CSV e diagnóstico nativo ainda não executados/confirmados neste registro.
 Compilar sem erros não comprova que as APIs de criação/cópia funcionaram.
 Não confundir essa compilação com aprovação de ticks reais ou do EA v2.10.
+
+PRÓXIMA AÇÃO
+No MT5 secundário, abrir gráfico de WINZ26 e executar pelo Navegador > Scripts
+o Preparar_Simbolo_Pesquisa_WINZ26, uma única vez. Não rodar no Strategy Tester
+nem anexar o Expert diagnóstico ainda. Não exige habilitar negociação.
+Coletar o TXT MD_PESQ_PREPARACAO_... e as mensagens do Script. A linha
+READY_FOR_MANUAL_TICK_IMPORT só é emitida após criação do símbolo custom e
+readback das barras anteriores confirmado. Se houver erro, preservar o estado;
+não repetir automaticamente ou apagar símbolo existente para contornar.

@@ -316,3 +316,11 @@ Ver pesquisa_importacao/COMPILACOES_NATIVAS_USUARIO.txt no diretório do
 diagnóstico. Próximo: compilar Diagnostico_Importacao_WINZ26.mq5 no MetaEditor
 secundário. Ainda não executar preparador/importação; criação e readback
 do símbolo de pesquisa não estão comprovados por essa compilação.
+
+ATUALIZAÇÃO — SEGUNDO FONTE DA PESQUISA COMPILADO
+Diagnostico_Importacao_WINZ26.mq5: 0 erros/0 avisos,528ms, informado pelo usuário.
+Ambas as compilações nativas confirmadas. Próximo: no MT5 secundário abrir
+gráfico WINZ26 e executar apenas Script Preparar_Simbolo_Pesquisa_WINZ26 pelo
+Navegador/Scripts (fora do Tester), uma vez. Coletar MD_PESQ_PREPARACAO_...
+para confirmar criação/readback/READY antes da importação. Nenhuma importação
+ou execução do Expert de pesquisa confirmada ainda; não alterar WINZ26.
