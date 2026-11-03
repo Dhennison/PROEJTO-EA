@@ -1,0 +1,16 @@
+{
+  "source": "Capturas enviadas na conversa;registro textual",
+  "symbol": "MD_PESQ_WINZ26_DIA1030",
+  "input_csv": "WINZ26_20261030_DIA_COMPLETO.csv",
+  "separator": "tab",
+  "skip_columns": 0,
+  "skip_lines": 1,
+  "shift_hours": 0,
+  "from": "2026.10.30 00:00:00",
+  "to": "2026.10.31 00:00:00",
+  "selection": "Todos os ticks",
+  "ui_imported_ticks": 4319285,
+  "matches_original_file_count": true,
+  "native_requery_confirmed": false,
+  "full_day_expert_executed": false
+}

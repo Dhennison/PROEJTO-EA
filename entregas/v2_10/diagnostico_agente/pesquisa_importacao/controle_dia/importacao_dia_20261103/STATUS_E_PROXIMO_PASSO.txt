@@ -1,0 +1,26 @@
+IMPORTAÇÃO DO DIA INTEIRO — CAPTURAS DO USUÁRIO EM03/11/2026
+
+Prévia:Importação de ticks:MD_PESQ_WINZ26_DIA1030;arquivo
+C:\Users\jhenn\Desktop\WINZ26_20261030_DIA_COMPLETO.csv;separadorTAB,
+pular0 colunas/1linha,deslocar0 horas. Campos da prévia separados/data com
+milissegundos. Foi orientado clicarOK e aguardar o resultado.
+
+Captura posterior:Ativos/Ticks,mesmo símbolo,Todos os ticks,intervalo
+2026.10.30 00:00:00 a2026.10.31 00:00:00. Mensagem:
+MD_PESQ_WINZ26_DIA1030: 4319285 ticks importados
+Total coincide com CSV original integral4319285. Linhas visíveis de
+18:31:24.719/Last170350/flags56,volumes31/103/1/137,etc,conferem com amostra
+final do original. Isso não comprova sequência completa nem tratamento dos
+14zeros,preços/volumes/flags em todos os registros.
+
+PRÓXIMO PASSO
+Manter símbolo/filtro/datas. ClicarSolicitação,à direita do campo final,
+aguardar conclusão e enviar captura da quantidade de ticks consultada.
+Exportar ticks está desabilitado na captura de importação;isso não indica
+perda de dados. Não repetir a importação. Após consulta conferida,configurar
+Expert DIÁRIO Diagnostico_Dia_Importado_WINZ26 no símboloMD_PESQ_WINZ26_DIA1030.
+A auditoria extensa será feita pelo próprio Expert,com contagens/volumes/
+fingerprint64 da sequência de campos sinalizados e confronto deM1. Não
+pedir novo CSV integral reexportado neste ponto só para repetir comparação
+que o diagnóstico já foi preparado para fazer no agente. Preservar a amostra
+mínima e sua diferença de exportação já conhecida. Ainda não executadoTester.

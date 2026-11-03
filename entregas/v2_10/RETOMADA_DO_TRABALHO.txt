@@ -508,3 +508,14 @@ Não repetirScript. Próximo:AtivosCtrl+U/Especificação/MetaTrader5/busca lupa
 MD_PESQ_WINZ26_DIA1030,selecionar/abaTicks,enviar captura para conferir alvo
 antes de importarCSVintegral. O antigoMD_PESQ_WINZ26_1030 fica preservado.
 Importação do dia completo e execução do novoExpert ainda não feitas.
+
+ATUALIZAÇÃO — CSV INTEGRAL IMPORTADO NO NOVO SÍMBOLO DIÁRIO
+Captura de prévia:MD_PESQ_WINZ26_DIA1030,CSV originalDesktopdo dia inteiro,
+TAB/Colunas0/Linhas1/Deslocar0. ApósOK,Ativos/Ticks informa4319285ticks
+importados no símbolo correto,igual ao arquivo original. FiltroTodos e
+30/10 00:00–31/10 00:00 corretos. Registro emcontrole_dia/importacao_dia_20261103/.
+Amostra visível18:31:24.719/Last170350/flags56 confere,mas não certifica dados
+integrais/14zeros. Próximo:clicarSolicitação/aguardar/enviar captura da contagem
+consultada. Depois configurarExpertDIÁRIO já compilado para auditar sequência
+no agente;não pedir CSV integral reexportado redundante,não repetir importação.
+Controle mínimo preservado;novoExpert ainda não executado.
