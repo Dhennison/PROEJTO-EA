@@ -34,3 +34,22 @@ armazenados para arquivo NOVO e comparar ao CSV original preservado.
 Não repetir a importação nem executar o Tester antes dessa conferência.
 Este resultado é da ingestão no símbolo custom, não da execução no agente.
 EA/diagnósticos/CSV originais não alterados nesta etapa; apenas documentação.
+
+ATUALIZAÇÃO — CONSULTA DO HISTÓRICO IMPORTADO RECEBIDA
+Após orientação para clicar Solicitação, nova captura mostra o mesmo símbolo,
+Todos os ticks,30/10/2026 09:00:00 a09:01:00 e status:
+MD_PESQ_WINZ26_1030: 21570 ticks
+O texto já não é a mensagem de importação; a contagem consultada coincide com
+a importada. Botão Exportar ticks aparece habilitado no canto inferior
+esquerdo. Valores dos quatro eventos visíveis no limite09:01 permanecem os
+mesmos. Captura não substitui comparação integral do CSV de saída.
+
+PRÓXIMO PASSO ATUALIZADO
+Clicar Exportar ticks; na janela de salvar, escolher Área de Trabalho e usar
+nome novo MD_PESQ_WINZ26_1030_READBACK.csv. Salvar e anexar esse arquivo na
+conversa, sem abrir/reescrever em planilha. Preservar CSV original.
+Depois comparar todos os registros, ordem, horário/milissegundos, flags,
+preços, volumes, campos vazios, sete linhas de zeros e quatro registros do
+limite. Só então avaliar execução do diagnóstico de pesquisa no Tester.
+Exportação/readback em arquivo ainda não recebido. Nenhum teste novo do
+agente foi realizado ou aprovado por essa consulta.

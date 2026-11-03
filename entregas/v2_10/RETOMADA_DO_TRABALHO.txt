@@ -365,3 +365,12 @@ Próximo clique: Solicitação, mantendo símbolo/filtro/datas. Exportar ticks
 aparece desabilitado na captura; consultar primeiro e conferir tela/contagem.
 Depois exportar para arquivo novo e comparar sequência/flags/zeros/volumes
 com o original. Ainda não executar Tester nem repetir importação.
+
+ATUALIZAÇÃO — CONSULTA RETORNA21570 TICKS; EXPORTAÇÃO HABILITADA
+Nova captura após Solicitação mostra MD_PESQ_WINZ26_1030:21570 ticks,
+Todos os ticks e09:00–09:01 de30/10/2026. Exportar ticks agora habilitado.
+Contagem da consulta coincide com importação/original, mas CSV completo de
+readback ainda pendente. Registro acrescentado ao status da importação.
+Próximo: Exportar ticks, salvar como MD_PESQ_WINZ26_1030_READBACK.csv na Área
+de Trabalho e anexar aqui sem regravar em planilha. Conferir integralmente
+antes de rodar diagnóstico no Tester. Nenhuma alteração em fonte ou dados.
