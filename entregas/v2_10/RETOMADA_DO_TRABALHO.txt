@@ -374,3 +374,20 @@ readback ainda pendente. Registro acrescentado ao status da importação.
 Próximo: Exportar ticks, salvar como MD_PESQ_WINZ26_1030_READBACK.csv na Área
 de Trabalho e anexar aqui sem regravar em planilha. Conferir integralmente
 antes de rodar diagnóstico no Tester. Nenhuma alteração em fonte ou dados.
+
+ATUALIZAÇÃO — READBACK CONFERE CONTAGEM, MAS ALTERA SETE REGISTROS ZERADOS
+Recebido MD_PESQ_WINZ26_1030_READBACK.csv,915270bytes,hashfa6a1ef13e289c36...
+Preservado em pesquisa_importacao/readback_20261103/,com COMPARACAO.json,
+RESULTADO_COMPARACAO.txt e AUDITAR_READBACK.py reproduzível. Original915158bytes
+intocado. Ambos21570 registros/mesmos horários/ordem;21563 linhas idênticas.
+As7 linhas zeradas/flags0 do original saem com preços/volume e flags26/28/30.
+No minuto09:00,linhas de negócio segundo CSV10528→10535,volume78471→78485;
+OHLC170910/171600/170900/171330 inalterado. Quatro registros09:01 preservados.
+Não classificar importação como cópia fiel nem atribuir causa interna certa.
+Sem edições/remoções para contornar. Diagnóstico seguinte pode observar o
+agente no símbolo custom COMO CONTROLE NÃO EQUIVALENTE,com diferenças acima
+registradas; não valida contrato real/amostra original ou estratégia.
+Próximo para usuário: fechar Ativos comOK,abrir TesterCtrl+R e enviar captura
+Configurações antes de iniciar. Expert Diagnostico_Importacao_WINZ26 já tem
+compilação nativa0/0; manter fonte. AlvoMD_PESQ_WINZ26_1030,M5,30/10–31/10,
+ticks reais,sem visualização/otimização e agente local. Ainda não executado.

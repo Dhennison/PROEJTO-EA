@@ -1,0 +1,279 @@
+{
+  "original": {
+    "file": "WINZ26_202610300900_202610300901.csv",
+    "bytes": 915158,
+    "sha256": "dd33aa0233a643d6aaf8ffc86026cddfba315f642faa48b584706b9b312ae675",
+    "crlf": 21571,
+    "rows": 21570,
+    "minute_rows": 21566,
+    "boundary_rows": 4,
+    "timestamp_regressions": 0,
+    "flag_counts": {
+      "0": 7,
+      "2": 5836,
+      "4": 5196,
+      "6": 1,
+      "56": 4929,
+      "88": 4964,
+      "120": 637
+    },
+    "explicit_all_zero_csv_lines": [
+      4810,
+      6630,
+      7002,
+      11096,
+      14795,
+      15729,
+      16271
+    ],
+    "minute_positive_trade_rows_from_csv_flags": 10528,
+    "minute_trade_volume_from_csv": "78471.00000000",
+    "minute_trade_ohlc_from_csv": [
+      "170910",
+      "171600",
+      "170900",
+      "171330"
+    ]
+  },
+  "readback": {
+    "file": "MD_PESQ_WINZ26_1030_READBACK.csv",
+    "bytes": 915270,
+    "sha256": "fa6a1ef13e289c36bf3c2e6d9667e7a2fc04412b9726f50e9bb86b4444076256",
+    "crlf": 21571,
+    "rows": 21570,
+    "minute_rows": 21566,
+    "boundary_rows": 4,
+    "timestamp_regressions": 0,
+    "flag_counts": {
+      "2": 5836,
+      "4": 5196,
+      "6": 1,
+      "26": 1,
+      "28": 3,
+      "30": 3,
+      "56": 4929,
+      "88": 4964,
+      "120": 637
+    },
+    "explicit_all_zero_csv_lines": [],
+    "minute_positive_trade_rows_from_csv_flags": 10535,
+    "minute_trade_volume_from_csv": "78485.00000000",
+    "minute_trade_ohlc_from_csv": [
+      "170910",
+      "171600",
+      "170900",
+      "171330"
+    ]
+  },
+  "byte_identical": false,
+  "same_row_count": true,
+  "same_dates_times_and_order": true,
+  "unchanged_paired_rows": 21563,
+  "changed_paired_rows": 7,
+  "changed_column_counts": {
+    "<BID>": 7,
+    "<ASK>": 7,
+    "<LAST>": 7,
+    "<VOLUME>": 7,
+    "<FLAGS>": 7
+  },
+  "differences": [
+    {
+      "csv_line": 4810,
+      "original": {
+        "<DATE>": "2026.10.30",
+        "<TIME>": "09:00:45.911",
+        "<BID>": "0",
+        "<ASK>": "0",
+        "<LAST>": "0",
+        "<VOLUME>": "0.00000000",
+        "<FLAGS>": "0"
+      },
+      "readback": {
+        "<DATE>": "2026.10.30",
+        "<TIME>": "09:00:45.911",
+        "<BID>": "171290",
+        "<ASK>": "171335",
+        "<LAST>": "171290",
+        "<VOLUME>": "6.00000000",
+        "<FLAGS>": "28"
+      },
+      "changed_columns": [
+        "<BID>",
+        "<ASK>",
+        "<LAST>",
+        "<VOLUME>",
+        "<FLAGS>"
+      ]
+    },
+    {
+      "csv_line": 6630,
+      "original": {
+        "<DATE>": "2026.10.30",
+        "<TIME>": "09:00:47.069",
+        "<BID>": "0",
+        "<ASK>": "0",
+        "<LAST>": "0",
+        "<VOLUME>": "0.00000000",
+        "<FLAGS>": "0"
+      },
+      "readback": {
+        "<DATE>": "2026.10.30",
+        "<TIME>": "09:00:47.069",
+        "<BID>": "171190",
+        "<ASK>": "171195",
+        "<LAST>": "171175",
+        "<VOLUME>": "1.00000000",
+        "<FLAGS>": "30"
+      },
+      "changed_columns": [
+        "<BID>",
+        "<ASK>",
+        "<LAST>",
+        "<VOLUME>",
+        "<FLAGS>"
+      ]
+    },
+    {
+      "csv_line": 7002,
+      "original": {
+        "<DATE>": "2026.10.30",
+        "<TIME>": "09:00:47.221",
+        "<BID>": "0",
+        "<ASK>": "0",
+        "<LAST>": "0",
+        "<VOLUME>": "0.00000000",
+        "<FLAGS>": "0"
+      },
+      "readback": {
+        "<DATE>": "2026.10.30",
+        "<TIME>": "09:00:47.221",
+        "<BID>": "171180",
+        "<ASK>": "171205",
+        "<LAST>": "171100",
+        "<VOLUME>": "1.00000000",
+        "<FLAGS>": "26"
+      },
+      "changed_columns": [
+        "<BID>",
+        "<ASK>",
+        "<LAST>",
+        "<VOLUME>",
+        "<FLAGS>"
+      ]
+    },
+    {
+      "csv_line": 11096,
+      "original": {
+        "<DATE>": "2026.10.30",
+        "<TIME>": "09:00:49.870",
+        "<BID>": "0",
+        "<ASK>": "0",
+        "<LAST>": "0",
+        "<VOLUME>": "0.00000000",
+        "<FLAGS>": "0"
+      },
+      "readback": {
+        "<DATE>": "2026.10.30",
+        "<TIME>": "09:00:49.870",
+        "<BID>": "171455",
+        "<ASK>": "171470",
+        "<LAST>": "171355",
+        "<VOLUME>": "2.00000000",
+        "<FLAGS>": "30"
+      },
+      "changed_columns": [
+        "<BID>",
+        "<ASK>",
+        "<LAST>",
+        "<VOLUME>",
+        "<FLAGS>"
+      ]
+    },
+    {
+      "csv_line": 14795,
+      "original": {
+        "<DATE>": "2026.10.30",
+        "<TIME>": "09:00:52.134",
+        "<BID>": "0",
+        "<ASK>": "0",
+        "<LAST>": "0",
+        "<VOLUME>": "0.00000000",
+        "<FLAGS>": "0"
+      },
+      "readback": {
+        "<DATE>": "2026.10.30",
+        "<TIME>": "09:00:52.134",
+        "<BID>": "171405",
+        "<ASK>": "171440",
+        "<LAST>": "171420",
+        "<VOLUME>": "1.00000000",
+        "<FLAGS>": "30"
+      },
+      "changed_columns": [
+        "<BID>",
+        "<ASK>",
+        "<LAST>",
+        "<VOLUME>",
+        "<FLAGS>"
+      ]
+    },
+    {
+      "csv_line": 15729,
+      "original": {
+        "<DATE>": "2026.10.30",
+        "<TIME>": "09:00:52.707",
+        "<BID>": "0",
+        "<ASK>": "0",
+        "<LAST>": "0",
+        "<VOLUME>": "0.00000000",
+        "<FLAGS>": "0"
+      },
+      "readback": {
+        "<DATE>": "2026.10.30",
+        "<TIME>": "09:00:52.707",
+        "<BID>": "171340",
+        "<ASK>": "171285",
+        "<LAST>": "171235",
+        "<VOLUME>": "2.00000000",
+        "<FLAGS>": "28"
+      },
+      "changed_columns": [
+        "<BID>",
+        "<ASK>",
+        "<LAST>",
+        "<VOLUME>",
+        "<FLAGS>"
+      ]
+    },
+    {
+      "csv_line": 16271,
+      "original": {
+        "<DATE>": "2026.10.30",
+        "<TIME>": "09:00:53.027",
+        "<BID>": "0",
+        "<ASK>": "0",
+        "<LAST>": "0",
+        "<VOLUME>": "0.00000000",
+        "<FLAGS>": "0"
+      },
+      "readback": {
+        "<DATE>": "2026.10.30",
+        "<TIME>": "09:00:53.027",
+        "<BID>": "171330",
+        "<ASK>": "171345",
+        "<LAST>": "171305",
+        "<VOLUME>": "1.00000000",
+        "<FLAGS>": "28"
+      },
+      "changed_columns": [
+        "<BID>",
+        "<ASK>",
+        "<LAST>",
+        "<VOLUME>",
+        "<FLAGS>"
+      ]
+    }
+  ],
+  "scope": "CSV comparison only; no claim of internal MT5 cause, native API result or Tester success"
+}

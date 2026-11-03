@@ -1,0 +1,55 @@
+COMPARACAO INTEGRAL DO READBACK — 03/11/2026
+CSV original e CSV de saida preservados; nenhum registro foi editado/removido.
+Registros: original=21570; readback=21570.
+Identicos byte a byte: False.
+Mesmos pares data/hora e ordem: True.
+Linhas pareadas identicas: 21563; alteradas: 7.
+
+original: bytes=915158; SHA256=dd33aa0233a643d6aaf8ffc86026cddfba315f642faa48b584706b9b312ae675
+Minuto09:00: linhas=21566; negocios positivos segundo flags/Last do CSV=10528; volume somado=78471.00000000
+OHLC de negocios no minuto=['170910', '171600', '170900', '171330']
+Linhas totalmente zeradas=[4810, 6630, 7002, 11096, 14795, 15729, 16271]; registros no limite09:01=4
+
+readback: bytes=915270; SHA256=fa6a1ef13e289c36bf3c2e6d9667e7a2fc04412b9726f50e9bb86b4444076256
+Minuto09:00: linhas=21566; negocios positivos segundo flags/Last do CSV=10535; volume somado=78485.00000000
+OHLC de negocios no minuto=['170910', '171600', '170900', '171330']
+Linhas totalmente zeradas=[]; registros no limite09:01=4
+
+Linha CSV 4810, 2026.10.30 09:00:45.911
+  original BID/ASK/LAST/VOLUME/FLAGS=0/0/0/0.00000000/0
+  readback BID/ASK/LAST/VOLUME/FLAGS=171290/171335/171290/6.00000000/28
+Linha CSV 6630, 2026.10.30 09:00:47.069
+  original BID/ASK/LAST/VOLUME/FLAGS=0/0/0/0.00000000/0
+  readback BID/ASK/LAST/VOLUME/FLAGS=171190/171195/171175/1.00000000/30
+Linha CSV 7002, 2026.10.30 09:00:47.221
+  original BID/ASK/LAST/VOLUME/FLAGS=0/0/0/0.00000000/0
+  readback BID/ASK/LAST/VOLUME/FLAGS=171180/171205/171100/1.00000000/26
+Linha CSV 11096, 2026.10.30 09:00:49.870
+  original BID/ASK/LAST/VOLUME/FLAGS=0/0/0/0.00000000/0
+  readback BID/ASK/LAST/VOLUME/FLAGS=171455/171470/171355/2.00000000/30
+Linha CSV 14795, 2026.10.30 09:00:52.134
+  original BID/ASK/LAST/VOLUME/FLAGS=0/0/0/0.00000000/0
+  readback BID/ASK/LAST/VOLUME/FLAGS=171405/171440/171420/1.00000000/30
+Linha CSV 15729, 2026.10.30 09:00:52.707
+  original BID/ASK/LAST/VOLUME/FLAGS=0/0/0/0.00000000/0
+  readback BID/ASK/LAST/VOLUME/FLAGS=171340/171285/171235/2.00000000/28
+Linha CSV 16271, 2026.10.30 09:00:53.027
+  original BID/ASK/LAST/VOLUME/FLAGS=0/0/0/0.00000000/0
+  readback BID/ASK/LAST/VOLUME/FLAGS=171330/171345/171305/1.00000000/28
+
+INTERPRETACAO
+Os sete registros explicitamente zerados no original saem com precos, volume e flags26/28/30 no readback.
+A amostra exportada nao e copia fiel: tem sete eventos adicionais classificados como negocio pelos flags.
+O volume somado de negocios no minuto sobe14, de78471 para78485; OHLC permanece igual.
+Demais21563 linhas, inclusive vazios, sao identicas; quatro eventos do limite preservados.
+A comparacao observa o percurso importar/armazenar/exportar; nao identifica sua causa interna exata.
+Nao alegar que a consulta CopyTicksRange do agente ja foi executada ou retornara essas contagens.
+
+PROXIMO CONTROLE
+Prosseguir somente como diagnostico de ingestao no simbolo custom com essa diferenca conhecida.
+Nao editar CSV nem excluir zeros para forcar equivalencia. Preservar original e readback.
+Expert ja compilado Diagnostico_Importacao_WINZ26, simbolo MD_PESQ_WINZ26_1030, M5,
+30/10 a31/10/2026, cada tick baseado em ticks reais, sem visualizacao/otimizacao e agente local.
+Antes de iniciar, usuario envia captura das configuracoes. Prova em09:01; consulta somente09:00.
+Comparar consulta ALL/TRADE, flags, volume e M1 com os DOIS CSVs e inspecionar log do agente.
+Aceitacao desse controle nao certifica a amostra original nem o backtest do contrato negociavel.

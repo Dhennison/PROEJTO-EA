@@ -53,3 +53,21 @@ preços, volumes, campos vazios, sete linhas de zeros e quatro registros do
 limite. Só então avaliar execução do diagnóstico de pesquisa no Tester.
 Exportação/readback em arquivo ainda não recebido. Nenhum teste novo do
 agente foi realizado ou aprovado por essa consulta.
+
+ATUALIZAÇÃO — CSV DE READBACK RECEBIDO; SETE LINHAS ALTERADAS
+Arquivo MD_PESQ_WINZ26_1030_READBACK.csv recebido e preservado byte a byte em
+readback_20261103/. Comparação integral reproduzível por AUDITAR_READBACK.py.
+21570 registros em ambos, mesmos horários/ordem,21563 linhas idênticas e7
+alteradas. As7 são exatamente os registros originalmente zerados/flags0;
+saem com Bid/Ask/Last/volume e flags26/28/30. Volume somado no minuto09:00
+sobe78471→78485 e linhas com Last/flags de negócio10528→10535. OHLC inalterado.
+Logo a amostra importada/exportada não é cópia fiel. CSV original intocado;
+não limpar registros nem apresentar o novo volume como negócios originais.
+Diferença observada no percurso importar/armazenar/exportar; causa interna
+exata e retorno nativo CopyTicksRange ainda não isolados.
+Próximo controle: usar o Expert de pesquisa já compilado apenas para observar
+como o agente trata ESSE símbolo importado, com a diferença conhecida.
+Antes de iniciar, conferir captura da configuração do Tester secundário:
+Diagnostico_Importacao_WINZ26,MD_PESQ_WINZ26_1030,M5,30/10–31/10, ticks reais,
+sem visualização/otimização e agente local. Conferir resultados contra ambos
+os CSVs; teste não aprova os dados originais ou o EA v2.10.
