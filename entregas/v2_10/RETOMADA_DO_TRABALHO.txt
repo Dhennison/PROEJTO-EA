@@ -353,3 +353,15 @@ Enviar captura do mapeamento/prévia antes de confirmar. CSV usa TAB,7 colunas,
 hora com milissegundos; preservar vazios/zeros. Ainda não rodar Tester.
 Não repetir preparadores. EA/Expert/CSV originais inalterados; esta confirmação
 se limita ao aquecimento M1 de29/10,não valida ticks30/10 nem backtest final.
+
+ATUALIZAÇÃO — IMPORTADOR INFORMA21570 TICKS NO SÍMBOLO CUSTOM
+Usuário encontrou MD_PESQ_WINZ26_1030 e enviou prévia de importação do CSV
+original, separadorTAB. Orientado Linhas1/Colunas0/Deslocar0 e confirmar.
+Captura seguinte: Ativos/Ticks,Todos os ticks,09:00–09:01 de30/10/2026,
+"21570 ticks importados". Total coincide com o CSV;4 registros visíveis no
+limite09:01 conferem com os originais. Não é conferência integral do readback.
+Registro em pesquisa_importacao/importacao_nativa_20261103/.
+Próximo clique: Solicitação, mantendo símbolo/filtro/datas. Exportar ticks
+aparece desabilitado na captura; consultar primeiro e conferir tela/contagem.
+Depois exportar para arquivo novo e comparar sequência/flags/zeros/volumes
+com o original. Ainda não executar Tester nem repetir importação.

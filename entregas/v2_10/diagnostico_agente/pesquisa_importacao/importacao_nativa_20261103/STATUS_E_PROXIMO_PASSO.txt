@@ -1,0 +1,36 @@
+IMPORTAÇÃO NATIVA DA PESQUISA — CAPTURA RECEBIDA EM03/11/2026
+
+EVIDÊNCIA VISUAL
+Janela Ativos, aba Ticks; símbolo MD_PESQ_WINZ26_1030, Todos os ticks,
+intervalo30/10/2026 09:00:00 a09:01:00. A captura enviada na conversa informa:
+MD_PESQ_WINZ26_1030: 21570 ticks importados.
+A grade mostra Last/volume/sinalizadores positivos, além de eventos Bid/Ask.
+No topo aparecem quatro registros no limite09:01:00.000. Valores visíveis:
+Last171310/volume2/flags88; Last171315/volume3/flags88; Ask171310/flags4;
+Bid171290/flags2. Coincidem com os quatro registros finais do CSV original
+em ordem inversa. Registro textual da captura; não é arquivo de readback.
+
+CONFIGURAÇÃO QUE PRECEDEU A IMPORTAÇÃO
+Prévia enviada pelo usuário mostrava símbolo correto, CSV original, separador
+tab, Colunas0, Linhas0 e Deslocar0 horas. Orientado alterar apenas Linhas para1
+para ignorar o cabeçalho e clicar OK. Captura posterior confirma o total
+importado; configuração final não foi capturada separadamente. Não assumir
+verificação independente de cada ajuste além do que as capturas comprovam.
+
+CONFRONTO COM ORIGINAL
+CSV preservado:21570 registros, sendo21566 no minuto09:00 e4 no limite09:01.
+SHA256 dd33aa0233a643d6aaf8ffc86026cddfba315f642faa48b584706b9b312ae675.
+Contagem informada pelo importador coincide com a original. Amostra visível
+confere, mas ainda não comprova sequência integral, vazios, sete registros de
+zeros, flags ou volume de todas as linhas armazenadas.
+
+PRÓXIMA AÇÃO EXATA NO MT5 SECUNDÁRIO
+Manter símbolo MD_PESQ_WINZ26_1030, Todos os ticks e datas como estão.
+Clicar Solicitação, à direita do campo final09:01:00, e aguardar a consulta.
+Enviar captura da aba Ticks após carregar, incluindo a contagem e o rodapé.
+Na captura atual Exportar ticks aparece desabilitado; não instruir clicar
+nesse botão antes da consulta. Depois de consultar, exportar os ticks
+armazenados para arquivo NOVO e comparar ao CSV original preservado.
+Não repetir a importação nem executar o Tester antes dessa conferência.
+Este resultado é da ingestão no símbolo custom, não da execução no agente.
+EA/diagnósticos/CSV originais não alterados nesta etapa; apenas documentação.
