@@ -1,0 +1,8 @@
+Diagnóstico de importação em host C++ com APIs simuladas:
+HOST_DIAGNOSTICO;Checks=17;Failures=0;CPP_SIMULADO;NAO_E_COMPILACAO_MQL5
+Comando:
+python3 ../VALIDAR_LOCAL.py --source MQL5/Experts/ModeloD_Diagnostico_Pesquisa/Diagnostico_Importacao_WINZ26.mq5 --symbol MD_PESQ_WINZ26_1030 --probe-minute 1
+Usa CSV real do minuto do usuário; não executa importador/Tester reais.
+AddressSanitizer e UndefinedBehaviorSanitizer ativos, fora do ptrace.
+Preparador: revisão estática; execução nativa ainda pendente.
+Ambos os fontes: compilação MetaEditor pendente.

@@ -1,0 +1,83 @@
+PESQUISA DE IMPORTAÇÃO LOCAL — NÃO É BACKTEST OPERACIONAL
+
+MOTIVAÇÃO
+O CSV de09:00–09:01 exportado pelo MT5 secundário é IDÊNTICO byte a byte ao
+do principal: SHA-256 dd33aa0233a643d6aaf8ffc86026cddfba315f642faa48b584706b9b312ae675.
+Reconstrução independente confere OHLC/volume de negócios com M1; agente
+6231 e6295 os recusam e entregam cotações geradas. Esta pesquisa compara a
+entrada via importação nativa num símbolo LOCAL SEPARADO. Não muda WINZ26,
+não cria preços de execução, não negocia e não aprova a v2.10.
+
+LOCAL EXATO — SOMENTE MT5 SECUNDÁRIO
+Pasta de dados confirmada:
+%LOCALAPPDATA%\ModeloD_MT5_Isolado_20261102_145749_6554356a
+Extrair o ZIP numa pasta temporária e copiar sua pasta MQL5 para ESSE local.
+São pastas novas de Script/Expert; não substituir a instalação principal.
+
+COMPILAR PELO METAEDITOR DO MT5 SECUNDÁRIO (F4)
+1. MQL5\Scripts\ModeloD_Pesquisa_Dados\Preparar_Simbolo_Pesquisa_WINZ26.mq5
+2. MQL5\Experts\ModeloD_Diagnostico_Pesquisa\Diagnostico_Importacao_WINZ26.mq5
+Enviar as duas compilações antes de iniciar a preparação/importação.
+São fontes novos; não foram compilados em MQL5 no ambiente na nuvem.
+
+COMO A PREPARAÇÃO FUNCIONA
+Depois de compilar e conferir, abrir gráfico WINZ26 no MT5 secundário e executar
+o Script Preparar_Simbolo_Pesquisa_WINZ26 pelo Navegador > Scripts.
+Não é executado no Strategy Tester. Não precisa habilitar negociação.
+O Script exige500 ou mais barras M1 reais de29/10 como histórico anterior
+para aquecimento do Tester; verifica cronologia/OHLC e copia somente esse dia
+anterior para o símbolo novo MD_PESQ_WINZ26_1030, criado a partir das propriedades
+de WINZ26. Faz readback de todos os campos copiados. Não fabrica barras antigas.
+Se não houver histórico, para ANTES de criar símbolo. Se o nome já existir,
+recusa sobrescrever. Não apaga nem altera dados do símbolo WINZ26.
+Se houver falha após criar o símbolo, ele fica preservado para diagnóstico;
+não importar ticks nem apagar para repetir até avaliar o log.
+Grava MD_PESQ_PREPARACAO_... em Common/Files. Enviar TXT e linha READY.
+
+ETAPA SEGUINTE, APÓS PREPARAÇÃO CONFIRMADA
+No secundário, Ctrl+U, localizar símbolo MD_PESQ_WINZ26_1030 no grupo
+ModeloD_Pesquisa. Na aba Ticks, usar Importar ticks e selecionar o CSV original
+incluído em DADOS_ORIGINAIS no ZIP. Antes de confirmar a importação, conferir
+a tela de mapeamento de colunas: DATE, TIME com milissegundos, BID, ASK,
+LAST e VOLUME. Enviar captura dessa tela para conferir o formato; não assumir
+que FLAGS foi preservado pela importação. Não trocar preços ou limpar linhas.
+Não importar no símbolo WINZ26 nem importar M1 de30/10 para forçar consistência.
+As barras de30/10 serão as que o mecanismo de importação gerar dos ticks;
+confrontaremos essa derivação com os originais, inclusive contagem/volumes.
+Campos vazios do CSV são esparsos; comportamento do importador precisa ser
+verificado. Sete registros de zeros foram preservados no original. Se o
+importador rejeitá-los, registrar a rejeição; não removê-los silenciosamente.
+
+PESQUISA NO TESTER — SOMENTE APÓS IMPORTAÇÃO/READBACK CONFERIDOS
+Expert Diagnostico_Importacao_WINZ26.ex5; ativo MD_PESQ_WINZ26_1030, M5,
+30/10–31/10/2026, Cada tick baseado em ticks reais, não visual e sem otimização,
+agente local e demais campos da comparação anterior. Não usar o EA v2.10.
+Este diagnóstico só aceita o nome custom de pesquisa e recusa símbolo real,
+outro nome, otimização e execução fora do Tester. Coleta às09:01, após fechar
+o minuto09:00. O CSV inclui quatro registros no limite09:01:00; são mantidos
+na importação, mas excluídos da consulta [09:00,09:01). Encerramento automático.
+Se o replay acabar antes da coleta, preservar log; não inventar ticks de fim.
+Enviar TXT MD_DIAG_PESQUISA_... e log do agente do secundário.
+
+INTERPRETAÇÃO E LIMITES
+O símbolo custom é dado de pesquisa, não o contrato negociável da Genial.
+Importação pode recalcular flags e barras; por isso retorno de Last/TRADE
+não basta para certificar preservação da sequência original. Comparar export
+de readback antes de atribuir equivalência. Falta de ticks fora da amostra e
+eventuais ticks gerados em outros minutos NÃO validam o dia inteiro. Consultas
+do diagnóstico se limitam ao minuto com CSV e nenhum resultado de lucro é usado.
+Se essa entrada funcionar, localiza-se uma diferença do caminho de ingestão/
+propriedades/validação de dados. Não prova qual componente original está errado
+nem autoriza ajustar preços ou substituir o backtest final por esse controle.
+Se falhar, registrar comportamento sem repetir modos/builds já testados.
+
+VALIDAÇÃO LOCAL DISPONÍVEL
+Diagnóstico de pesquisa exercitado em host C++ com APIs simuladas e a amostra
+real do usuário:17 verificações/zero falhas, sanitizadores ativos. Recorte de
+consulta, guardas, contagens, flags, OHLC e volume foram checados no host.
+Verificador reproduzível: VALIDAR_LOCAL.py no diretório pai, --source MQ5,
+--symbol MD_PESQ_WINZ26_1030 --probe-minute 1.
+Preparador de símbolo revisado estaticamente; APIs de criação/cópia/readback
+do símbolo só poderão ser verificadas no MT5 nativo. Não confundir os17 checks
+do diagnóstico com teste nativo do importador ou criação de símbolo.
+Fonte do EA e diagnósticos originais permanecem intactos.

@@ -1,0 +1,56 @@
+CSV RECEBIDO PARA CONFRONTO PRINCIPAL/SECUNDÁRIO — 03/11/2026
+
+RESULTADO EXATO
+O novo WINZ26_202610300900_202610300901.csv tem915158bytes e é idêntico
+byte a byte ao arquivo recebido anteriormente para a coleta no principal.
+SHA-256 dd33aa0233a643d6aaf8ffc86026cddfba315f642faa48b584706b9b312ae675.
+Não há diferença de ordenação, preço, volume, flag ou linha nessa amostra.
+A origem é o contexto da solicitação ao usuário; o arquivo CSV não contém
+identificador do terminal exportador. Não afirmar perícia do processo Windows.
+
+Recontagem independente:21570 linhas de dados no arquivo;21566 em[09:00,09:01);
+quatro no limite09:01:00.000. Negócios Last positivos/flags de negociação10528.
+OHLC170910/171600/170900/171330 e volume78471, iguais à M1 exportada/consultada.
+Sete registros de flags/preços zerados preservados, sem atribuir causalidade.
+Campos de cotação esparsos não foram preenchidos nem convertidos em negócio.
+
+CONCLUSÃO
+O confronto não encontrou diferença nas amostras apresentadas. No agente,
+o motor transforma/rejeita esse caminho de dados e devolve cotações geradas;
+origem interna dessa diferença continua desconhecida. Não repetir downloads,
+cache, cópia, dias, visualização ou builds já comparados sem variável nova.
+
+EXPERIMENTO SEPARADO PREPARADO — IMPORTAÇÃO NATIVA EM SÍMBOLO DE PESQUISA
+Pacote ../diagnostico_agente/pesquisa_importacao/ModeloD_Pesquisa_Importacao_v1_00.zip.
+Inclui CSV original intacto, Script de preparação e Expert de leitura.
+Instalação somente nas pastas NOVAS da cópia isolada; compilar os dois fontes.
+Preparador cria MD_PESQ_WINZ26_1030, copiando propriedades do WINZ26 e somente
+barras M1 reais de29/10 como aquecimento. Não copia dados de30/10 nem fabrica
+barras. Confere campos por readback e recusa sobrescrever símbolo existente.
+Depois de preparo confirmado, usar importador NATIVO da interface no símbolo
+NOVO para a amostra, conferir mapeamento antes de confirmar, exportar/readback
+para avaliar alterações, e só então testar diagnóstico exclusivo desse símbolo.
+Não executar essas importações no símbolo real WINZ26.
+
+O diagnóstico de pesquisa lê[09:00,09:01), probe às09:01 após fechamento do
+minuto; o arquivo inclui eventos de borda que permitem alcançar esse horário.
+Não negocia, recusa símbolo real/outro símbolo e não altera EA v2.10.
+O objetivo é comparar o caminho de importação local com o do símbolo de origem,
+não produzir lucro ou liberar o backtest. O importador pode recalcular flags,
+contagens e barras; não presumir equivalência de eventos sem readback.
+Se houver rejeição dos zeros/formatos, registrar em vez de limpar silenciosamente.
+
+VALIDAÇÃO E LIMITES
+Expert de pesquisa:17/0 em host C++/APIs simuladas com amostra real e
+sanitizadores. Original30 também17/0 após adaptação do host. Preparador:
+revisado estaticamente, ainda não executado em MT5. ZIP íntegro e CSV incluído
+com hash original; ver SHA256SUMS.json. Nenhuma compilação MQL5 nova ainda.
+Não reclassificar essa pesquisa de um minuto em símbolo custom como teste
+operacional do contrato original ou aprovação de estratégia/dados do dia inteiro.
+
+PRÓXIMO PASSO DO USUÁRIO
+No MT5 SECUNDÁRIO, copiar MQL5 do ZIP para a pasta portátil já confirmada.
+Compilar Preparar_Simbolo_Pesquisa_WINZ26.mq5 em Scripts/ModeloD_Pesquisa_Dados
+e Diagnostico_Importacao_WINZ26.mq5 em Experts/ModeloD_Diagnostico_Pesquisa.
+Enviar as duas compilações antes de executar criação/importação, pois as APIs
+nativas ainda precisam dessa verificação. Nenhum ajuste B3 exigido na pesquisa.

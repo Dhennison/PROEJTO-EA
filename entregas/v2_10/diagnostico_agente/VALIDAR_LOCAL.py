@@ -12,6 +12,8 @@ root = Path(__file__).resolve().parent
 parser = argparse.ArgumentParser()
 parser.add_argument("--source", type=Path)
 parser.add_argument("--day", default="2026-10-30")
+parser.add_argument("--symbol", default="WINZ26")
+parser.add_argument("--probe-minute", type=int, default=2, choices=(1, 2))
 args = parser.parse_args()
 source = args.source or root / "MQL5/Experts/ModeloD_Diagnostico_Agente/Diagnostico_Dados_WINZ26.mq5"
 text = source.read_text()
@@ -35,7 +37,7 @@ prelude = r'''
 #include <string>
 #include <vector>
 using string=std::string; using datetime=long long;
-enum ENUM_SYMBOL_INFO_INTEGER { SYMBOL_CHART_MODE, SYMBOL_TRADE_CALC_MODE, SYMBOL_DIGITS };
+enum ENUM_SYMBOL_INFO_INTEGER { SYMBOL_CHART_MODE, SYMBOL_TRADE_CALC_MODE, SYMBOL_DIGITS, SYMBOL_CUSTOM };
 enum ENUM_SYMBOL_INFO_DOUBLE { SYMBOL_TRADE_TICK_SIZE, SYMBOL_TRADE_TICK_VALUE, SYMBOL_POINT };
 enum { MQL_TESTER=1,MQL_OPTIMIZATION,MQL_VISUAL_MODE,ACCOUNT_CURRENCY,ACCOUNT_MARGIN_MODE,
  TERMINAL_BUILD,SYMBOL_CURRENCY_PROFIT,SYMBOL_CURRENCY_MARGIN };
@@ -63,7 +65,7 @@ template<class T>int ArraySize(const std::vector<T>&a){return (int)a.size();}
 long MQLInfoInteger(int p){if(p==MQL_TESTER)return tester;if(p==MQL_OPTIMIZATION)return optimization;return 1;}
 long AccountInfoInteger(int){return 2;}long TerminalInfoInteger(int){return 6231;}
 string AccountInfoString(int){return "USD";}string SymbolInfoString(string,int){return "BRL";}
-bool SymbolInfoInteger(string,ENUM_SYMBOL_INFO_INTEGER p,long &v){v=p==SYMBOL_CHART_MODE?1:0;return true;}
+bool SymbolInfoInteger(string,ENUM_SYMBOL_INFO_INTEGER p,long &v){v=(p==SYMBOL_CHART_MODE||p==SYMBOL_CUSTOM)?1:0;return true;}
 bool SymbolInfoDouble(string,ENUM_SYMBOL_INFO_DOUBLE p,double &v){v=p==SYMBOL_TRADE_TICK_SIZE?5:1;return true;}
 void ResetLastError(){api_error=0;}int GetLastError(){return api_error;}
 datetime TimeCurrent(){return simulated;}datetime TimeTradeServer(){return simulated;}datetime TimeGMT(){return simulated;}
@@ -133,6 +135,11 @@ with tempfile.TemporaryDirectory(prefix="md_diag_host_") as tmp:
     pattern = r"\b(179\d{7}(?:\d{3})?)(LL)?\b"
     prelude_shifted = re.sub(pattern, shift_constant, prelude)
     main_shifted = re.sub(pattern, shift_constant, main)
+    prelude_shifted = prelude_shifted.replace('"WINZ26"', '"' + args.symbol + '"')
+    main_shifted = main_shifted.replace('"WINZ26"', '"' + args.symbol + '"')
+    if args.probe_minute == 1:
+        main_shifted = main_shifted.replace(str(1793350919 + shift) + "LL", str(1793350859 + shift) + "LL")
+        main_shifted = main_shifted.replace(str(1793350920 + shift) + "LL", str(1793350860 + shift) + "LL")
     (folder / "host.cpp").write_text(prelude_shifted + text + main_shifted)
     subprocess.run(["g++", "-std=c++17", "-O1", "-g", "-fsanitize=address,undefined",
                     "-fno-omit-frame-pointer", str(folder / "host.cpp"),

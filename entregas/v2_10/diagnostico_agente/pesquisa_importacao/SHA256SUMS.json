@@ -1,0 +1,27 @@
+[
+  {
+    "file": "DADOS_ORIGINAIS/WINZ26_202610300900_202610300901.csv",
+    "bytes": 915158,
+    "sha256": "dd33aa0233a643d6aaf8ffc86026cddfba315f642faa48b584706b9b312ae675"
+  },
+  {
+    "file": "LEIA_PESQUISA_IMPORTACAO.txt",
+    "bytes": 5387,
+    "sha256": "8beb36b73b3cdec5c06ede08f6592cfcc29ec5e38bd2c753d59478e375d5f37a"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Diagnostico_Pesquisa/Diagnostico_Importacao_WINZ26.mq5",
+    "bytes": 8212,
+    "sha256": "d446d350fd5d03ee58b943e6906cb4e76cd0c3ce6fda4c091ec05b90eac2dca8"
+  },
+  {
+    "file": "MQL5/Scripts/ModeloD_Pesquisa_Dados/Preparar_Simbolo_Pesquisa_WINZ26.mq5",
+    "bytes": 4952,
+    "sha256": "b9692e73c0ce03d47bebdec571e6adb039c126ae894cde55b01c611dbd2a9fb0"
+  },
+  {
+    "file": "RESULTADOS_LOCAIS.txt",
+    "bytes": 563,
+    "sha256": "a8312a6ef3d6b905b9e26477ae6cfcf8eab9a70d685dcc7136e4e046158cae3c"
+  }
+]
