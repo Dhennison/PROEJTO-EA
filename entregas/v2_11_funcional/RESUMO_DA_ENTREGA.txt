@@ -1,0 +1,44 @@
+ENSAIO FUNCIONAL DO EA MODELO D — V2.11
+
+PROBLEMA CONCRETO
+O EA2.10 aceita apenas WINZ26 real noTester;essa fonte foi substituída por
+cotações geradas pelo motor e não confirmou abertura. O custom de pesquisa
+já tem ticksM1 utilizáveis,mas não passava pela identidade fixa doEA. Os
+últimos diagnósticos não validaram envio ou gestão do próprio robô.
+
+ENTREGA
+EA completo em pasta separada ModeloD_Ensaio_Funcional,com mesma matemática,
+planejador,ledger,proteção,cinco níveis e corte18h de Brasília. Ponte somente
+noTester mantém contrato lógico WINZ26/B3 e roteia ticks/M1,propriedades,
+margem e requests para MD_PESQ_WINZ26_DIA1030. Strings de símbolo de
+ordens/deals/posições voltam à identidade lógica antes da reconciliação.
+D1 e vencimento permanecem no WINZ26 original,mesmo contrato:preserva os três dias nativos
+já disponíveis e o OHLC real do dia anterior. Não inventa histórico/volumes.
+Data fixa30/10/2026,Fuso-10800,Hedge,1contrato por nível. Nenhuma exceção a
+primeiro toque,SL/TP ou consumo. Não força cinco envios ou fills quando
+algum nível não for elegível. Demonstra funcionamento,não rentabilidade.
+
+LIMITES
+Apenas StrategyTester;OnInit recusa gráfico/conta conectada. Único send nativo
+protegido porTester/opt-in/contexto;pedido de outro contrato recusado. Não é
+versão liberada para operação real. Usuário informou que Genial não oferece
+demo;nenhuma etapa atual depende de criar demo. Liberação real continua
+separada e exige terminar/validar transporte de produção,depois deste ensaio.
+
+VERIFICAÇÃO
+77checksC++/APIs simuladas,ASan/UBSan ativos,zero falhas. Inclui50anteriores
+mais ponte,cinco pendentes elegíveis,identidade,D1real,M1importada,SLTP,
+fechamento/cancelamento por ticket,normalização de recibos,bloqueio live/
+contexto errado e outra origem. Fixtures dos testes são sintéticos,não
+resultado histórico. Não compila MQL5,não executa ordens nativas doMT5.
+Arquivos matemáticos/coordenador/proteção/ledger preservados byte a byte;
+manifestoPRESERVACAO_DAS_REGRAS.json. Originais2.09/2.10 não alterados.
+
+CRITÉRIO DO ENSAIO NATIVO
+Abertura real confirmada;cinco níveis avaliados com motivo individual;
+pendentes somente elegíveis/antes do primeiro toque;recibos/fills conciliados;
+SL/TP fixos por origem;nenhuma duplicação;pendentes canceladas e posições
+fechadas no corte conforme efeitos observados. Se o dia não preencher algum
+ramo,não chamar esse ramo validado;teste sintético/local é evidência distinta.
+Uma falha de abertura,envio,proteção ou zeragem vira correção doEA nesta
+mesma etapa. Volume18:31 não é gate do ensaio. Não instalar marcadores.

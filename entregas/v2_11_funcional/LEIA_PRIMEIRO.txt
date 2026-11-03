@@ -1,0 +1,37 @@
+PRÓXIMA ETAPA: ENSAIO FUNCIONAL DO PRÓPRIO EA
+
+1. Extraia ModeloD_Ensaio_Funcional_v2_11.zip numa pasta temporária.
+2. Copie a pasta MQL5 inteira do ZIP e cole DIRETAMENTE na raiz do secundário:
+C:\Users\jhenn\AppData\Local\ModeloD_MT5_Isolado_20261102_145749_6554356a
+É a pasta que já contém MQL5,Tester,logs. A cópia acrescenta pasta nova de
+Experts,preset e arquivoB3 idêntico ao já aprovado. Pode mesclar as pastas e aceitar substituir os arquivos deste pacote.
+Não cole MQL5 dentro da MQL5 existente: o resultado não deve ser MQL5\MQL5.
+3. No MT5 secundário,F4. No MetaEditor,Ctrl+O,abrir:
+MQL5\Experts\ModeloD_Ensaio_Funcional\EA_ModeloD_Ensaio_Funcional.mq5
+4. F7;enviar compilação. Ainda não executar no gráfico nem iniciarTester.
+
+CONFIGURAÇÃO QUE SERÁ CONFERIDA DEPOIS DA COMPILAÇÃO
+Ctrl+R/Configuração:
+Expert ModeloD_Ensaio_Funcional\EA_ModeloD_Ensaio_Funcional.ex5
+Ativo MD_PESQ_WINZ26_DIA1030,M5,30/10/2026 a31/10/2026,ticks reais,
+sem forward/otimização/visual,agente local,sem atrasos.
+Depósito simulado1000000BRL,alavancagem1:100. BRL evita depender da conversão
+USD/BRL para este ensaio de execução. Não significa lucro ou saldo real.
+Parâmetros de entrada:Carregar preset da instalação:
+MQL5\Profiles\Tester\ModeloD_Funcional_20261030.set
+Ele ativaExecutarNoTester eUsarFonteImportadaNoTester,fixaWINZ26/data30/
+fuso-10800,1contrato por nível e timer2s. Não alterar fórmulas/SL/TP.
+Enviar captura de configuração/parâmetros antes de iniciar.
+
+Usa o custom e CSV já instalados;nenhuma importação nem preparação nova.
+D1 e vencimento vêm do WINZ26 original;quotes/execuções do custom. Ambos do mesmo contrato,
+identidade explícita nos logs. Não contornar se históricoD1 não estiver pronto:
+o relatório dirá o bloqueio direto doEA. Não remover checagens para passar.
+EA rodará seu fluxo de ordens simuladas noTester. Ordens nunca são enviadas
+à conta real nesse pacote,mesmo com a contaGenial real conectada.
+
+Ao concluir,enviar Diário desta rodada e TXT cujo nome começaMDT211_FUNC_
+e contémModeloD_Integrado,na pastaCommon/Files. Vamos avaliar abertura,
+níveis,requests/respostas/deals,proteção,cancelamentos e zeragem. Não exigir
+limpeza de dados após18h para aprovar o comportamento operacional no corte.
+Este pacote requer compilação e ensaio nativos;ainda não é produção real.

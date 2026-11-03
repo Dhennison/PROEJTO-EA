@@ -613,3 +613,21 @@ ensaiofuncional dentro da janela/cinconíveis/zeragem,semfórmulas alteradas;
 antes verificar rotaTester:EA sóaceitaWINZ26 e requer3D1,custom atual não é
 plug-and-play. Não prometer iniciarEAali sem trabalho de integração explícito.
 Responder pergunta do usuário com transparência,sem novo ciclo de coleta.
+
+ETAPA ATUAL — ENSAIO FUNCIONAL DO EA V2.11
+Usuário pediu foco na conclusão do EA; diagnóstico de marcadores permanece
+pausado. Informou que só dispõe de conta real Genial, sem demo. Não há
+autorização para enviar ordens reais. Próxima execução é somente no Tester.
+Pacote entregas/v2_11_funcional/ModeloD_Ensaio_Funcional_v2_11.zip pronto:
+usa o custom existente MD_PESQ_WINZ26_DIA1030 para ticks/M1 e requests
+simulados; preserva WINZ26 como identidade lógica e fonte de D1/vencimento.
+Matemática, proteção e coordenador preservados; 77 verificações C++ com
+APIs simuladas passaram com ASan/UBSan. Não equivalem a compilação MQL5
+nem comprovação de execução nativa. Artefatos e limites no resumo do pacote.
+Próximo passo usuário: extrair ZIP, copiar MQL5 inteira na RAIZ do secundário
+(não dentro de MQL5), F4, abrir Experts/ModeloD_Ensaio_Funcional/
+EA_ModeloD_Ensaio_Funcional.mq5, F7 e enviar compilação. Sem nova importação.
+Depois configurar Tester/preset do pacote e conferir fluxo real do EA:
+abertura, elegibilidade, recibos, proteção, cancelamentos e zeragem no corte.
+Transporte de produção ainda não concluído/liberado; não declarar EA pronto
+para conta real com base nos testes locais ou no pacote funcional.
