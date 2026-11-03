@@ -1,0 +1,49 @@
+CONTROLE DIÁRIO — REPLAY COMPLETO,CONTROLE NÃO APROVADO
+
+Diário fornecido03/11/2026,rodada17:08:54–17:09:02,no horário exibidoMT5.
+SímboloMD_PESQ_WINZ26_DIA1030,Expert diário,M5,30/10–31/10,agente local6295,
+cloud off,visual0,Hedge2. Fonte preservada;relatório extraído é DERIVADO,não
+TXT nativo Common/Files. Nome nativo emRESULTADOS.json,ainda não anexado.
+
+REPLAY E ALL
+OnTester executado;4319271ticks observados,último18:31:24.719 correto.
+ALL4319285retornados,14flags0,4319271sinalizados,3190938negócios,volume20884960.
+Fingerprints ALL/negócios iguais aos calculados do CSV. Sem erro de API,campos
+inválidos,regressões ou eventos fora. Sem mensagens de discard/mismatch do
+MOTOR no Diário fornecido. É controle positivo do caminhoALL para campos
+sinalizados,sem afirmar equivalência binária/criptográfica ou qualidade oficial.
+
+TRADE
+COPY_TICKS_TRADE retorna3190951,volume20884996,13registros/36unidades extras
+versus filtro de negócios doALL eCSV. Fingerprint9173918236803246442,diferente
+do esperado5303037543060369848. API completa/erro0 não garante equivalência.
+Existem13zeros no horário de negócios e1antes da abertura noCSV;essa contagem
+é compatível com o extra13,mas NÃO prova correspondência por registro nem
+mecanismo interno. Não tratar esses13 como negócios originais do mercado.
+O controle mínimo anterior teveTRADE10528 igual ao original;portanto não
+presumir que a inconsistência é independente de recorte/cache/chamada.
+
+M1
+566barras,565conferem OHLC/real_volume com negócios doALL;uma diverge18:31.
+OHLC170350eTICKVOL170,mas real_volume527000000000 em vez de25986 do CSV/ALL.
+Esse valor vem de CopyRates no agente,como registrado pelo fonte;causa ainda
+não estabelecida. Não corrigir multiplicador/volume nem alterar o verificador.
+A última barra pode ter tratamento diferente no estado final do replay;
+comparar com M1 armazenada no terminal antes de concluir corrupção persistente.
+Não confundir esta divergência com as4M1 do WINZ26 ORIGINAL já documentadas.
+
+CONCLUSÃO
+RESULT:replay1,canonicalALL1,canonicalTRADE0,M1matches0,control_complete0.
+O motor dizerTest passed não significa aprovação da auditoria. Sem ordens;
+saldo simulado permaneceu1milhãoUSD. DEINITreason1 com audit_executed1 não
+é evidência de cancelamento antecipado:OnTester/último timestamp/completude
+já estão registrados. Sem nova execução ou alteração emCSV/código/estratégia.
+
+PRÓXIMO PASSO
+Consultar no terminal secundário a M1 do próprioMD_PESQ_WINZ26_DIA1030,
+intervalo30/10 00:00 a31/10 00:00,para conferir especialmente18:31.
+Usuário abreCtrl+U,abaBarras,envia captura para orientar seleçãoM1/alvo/datas.
+Não consultar WINZ26 original ou antigo símbolo de um minuto por engano.
+Depois confrontar a barra18:31 do terminal com volume do agente. Auditar em
+etapa posterior os registros extrasTRADE,sem presumir causa e sem removerzeros.
+Não repetir o teste igual nem iniciar EA operacional como aprovado.

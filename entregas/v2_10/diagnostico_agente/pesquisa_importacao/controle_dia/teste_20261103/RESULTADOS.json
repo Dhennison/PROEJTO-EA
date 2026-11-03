@@ -1,0 +1,87 @@
+{
+  "source": "Diario fornecido pelo usuario",
+  "source_bytes": 120903,
+  "source_sha256": "3ad06c6166e744d19788c0163ed344dfc9a776591ab403eeb68e07dd9060e527",
+  "native_report_name": "MD_DIAG_DIA_PESQUISA_20261030_1060_348751562.txt",
+  "native_report_uploaded": false,
+  "agent_build": 6295,
+  "symbol": "MD_PESQ_WINZ26_DIA1030",
+  "audit": {
+    "trigger": "ON_TESTER",
+    "observed_ticks": "4319271",
+    "last_observed_msc": "1793385084719"
+  },
+  "queries": {
+    "ALL": {
+      "mode": "ALL",
+      "returned": "4319285",
+      "array": "4319285",
+      "error": "0"
+    },
+    "TRADE": {
+      "mode": "TRADE",
+      "returned": "3190951",
+      "array": "3190951",
+      "error": "0"
+    }
+  },
+  "summaries": {
+    "ALL": {
+      "mode": "ALL",
+      "api_complete": "1",
+      "signaled": "4319271",
+      "trades": "3190938",
+      "volume": "20884960",
+      "flags_zero": "14",
+      "bad_fields": "0",
+      "outside": "0",
+      "regressions": "0",
+      "hash_all_signed": "-5375692068497323170",
+      "hash_trade_signed": "5303037543060369848"
+    },
+    "TRADE": {
+      "mode": "TRADE",
+      "api_complete": "1",
+      "signaled": "3190951",
+      "trades": "3190951",
+      "volume": "20884996",
+      "flags_zero": "0",
+      "bad_fields": "0",
+      "outside": "0",
+      "regressions": "0",
+      "hash_all_signed": "9173918236803246442",
+      "hash_trade_signed": "9173918236803246442"
+    }
+  },
+  "result": {
+    "replay_reached_last_source_msc": "1",
+    "canonical_all_match": "1",
+    "canonical_trade_match": "0",
+    "m1_matches_native_trades": "0",
+    "control_complete": "0"
+  },
+  "m1_summary": {
+    "rows": "566",
+    "error": "0",
+    "api_complete": "1",
+    "mismatches": "1",
+    "missing": "0"
+  },
+  "m1_mismatches": [
+    {
+      "time": "2026.10.30 18:31:00",
+      "open": "170350",
+      "high": "170350",
+      "low": "170350",
+      "close": "170350",
+      "tick_volume": "170",
+      "real_volume": "527000000000",
+      "same_ohlc_volume_as_query": "0"
+    }
+  ],
+  "engine_discard_mismatch_messages": [],
+  "trade_extra_rows": 13,
+  "trade_extra_volume": 36,
+  "closing_csv_volume": 25986,
+  "next_step": "Consultar M1 do simbolo custom no terminal,mesmo intervalo,para comparar18:31 fora do agente;nao repetir teste nem alterar dados."
+}

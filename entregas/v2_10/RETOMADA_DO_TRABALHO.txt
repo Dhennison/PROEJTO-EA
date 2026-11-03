@@ -529,3 +529,20 @@ fecharAtivosOK,Ctrl+R/Configuração,ExpertModeloD_Diagnostico_Pesquisa/
 Diagnostico_Dia_Importado_WINZ26.ex5,ativoMD_PESQ_WINZ26_DIA1030;manter
 M5/datas30/10–31/10/ticks reais/sem otimização/sem visual. Enviar captura antes
 de iniciar;novoExpert de dia inteiro não executado ainda.
+
+ATUALIZAÇÃO — CONTROLE DIÁRIO EXECUTADO;ALL PASSA,TRADE/M1 NÃO
+Usuário inicialmente deixou ativo do minuto;orientado corrigirparaDIA1030.
+Diário recebido17:08:54–17:09:02,local6295,nomecorreto,OnTesteraté18:31:24.719,
+4319271ticks observados. Fonte/resultados emcontrole_dia/teste_20261103/.
+ALLret4319285/14flags0/signaled4319271/trades3190938/vol20884960,hashes
+ALL-5375692068497323170/TRADE5303037543060369848 iguaisCSV. Semdiscardmotor.
+COPY_TICKS_TRADEret3190951/vol20884996,13extras/+36,hash9173918236803246442,
+APIssem erro. Contagemcompatível13zerosintraday,não prova correspondência.
+M1n566,565iguais,18:31realvol527000000000 vs25986esperado,OHLC170350/tickvol170.
+RESULT replay1/ALL1/TRADE0/M1matches0/control_complete0. Semordens,nãoaprovar.
+TXTnativo apontadoMD_DIAG_DIA_PESQUISA_20261030_1060_348751562.txt,nãoanexado;
+Diário jácontém relatório. Não pedir repetição igual/ajustardados ou verificador.
+Próximo:Ctrl+U/abaBarras nosecundário,enviarprint paraorientarM1doCUSTOM
+MD_PESQ_WINZ26_DIA1030,30/10 00:00–31/10 00:00,conferir18:31 fora doagente.
+Assim distinguir estado da última barra noTester de volume persistido no
+terminal;depois isolar registros extrasTRADE emnova auditoria específica.
