@@ -1,0 +1,8 @@
+HOST_TERMINAL;Checks=23;Failures=0;SOURCE_ROWS=4319285;CPP_SIMULADO;NAO_E_COMPILACAO_MQL5
+Executado comCSVreal integral,AddressSanitizer/UBSan ativos,fora do ptrace.
+Modelo separa campos carregados e eventos porflags. Verifica recusa noTester,
+símbolo não custom,relatório indisponível/colisão,caminho canônico,14flags0
+presentes/registradas sem criar negócios,ordem trocada,cotação ausente,
+volume inconsistente,timeout,eventos fora de faixa e M1 incompatível.
+Usa harness do controle_dia,APIs simuladas. Não é compilação nem execuçãoMQL5.
+Comando:python3 VALIDAR_LOCAL_TERMINAL.py. Compilação nativa ainda pendente.

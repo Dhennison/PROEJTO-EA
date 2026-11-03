@@ -1,0 +1,17 @@
+[
+  {
+    "file": "MQL5/Scripts/ModeloD_Pesquisa_Dados/Auditar_Consultas_Dia_WINZ26.mq5",
+    "bytes": 9119,
+    "sha256": "07380cf243928d4ba36e3ae6a032352d51d5d30172f166c30c37a693dce5ab73"
+  },
+  {
+    "file": "LEIA_AUDITORIA_TERMINAL.txt",
+    "bytes": 1807,
+    "sha256": "148dbeccd1ac11bb4df18f9f54915f736301fbb1317f8c54b45fc0372615bd91"
+  },
+  {
+    "file": "RESULTADOS_LOCAIS.txt",
+    "bytes": 636,
+    "sha256": "af2df5408511e5f9c6ce8e97c644674d98fa40b607c25a8af2319b982f411a4c"
+  }
+]

@@ -1,0 +1,29 @@
+AUDITORIA SOMENTE LEITURA NO TERMINAL
+
+M1 exportadas do custom:566/566conferem OHLC/VOL comCSV original;única
+diferença versus agente é volume18:31:terminal25986,agente527000000000.
+TRADE no agente tem13eventos/+36vol versusALL. Causa ainda não isolada.
+Este Script lê ALL/TRADE/M1 NO TERMINAL,para separar a consulta nativa da
+execução noTester. Registra também todos os eventos nos14timestamps com
+zeros noCSV;isso testa a hipótese,sem pressupor que os13extras são esses
+marcadores. Não edita dados,não cria/apaga símbolos,não importa,não negocia.
+
+Copiar a pasta MQL5 desteZIP para a RAIZ do secundário:
+C:\Users\jhenn\AppData\Local\ModeloD_MT5_Isolado_20261102_145749_6554356a
+Depois F4 no secundário,abrir o fonte novo:
+MQL5\Scripts\ModeloD_Pesquisa_Dados\Auditar_Consultas_Dia_WINZ26.mq5
+F7 e enviar compilação. Só depois executar uma vez pelo Navegador/Scripts
+no terminal secundário,fora doTester. Pode usar gráficoWINZ26,H1. O Script
+consulta o nome fixoMD_PESQ_WINZ26_DIA1030;recusaTester/símbolo não custom.
+Não exige habilitar negociação. Aguarde terminar as leituras do dia inteiro.
+Enviar MD_AUDIT_TERMINAL_DIA_20261030_...txt em:
+%APPDATA%\MetaQuotes\Terminal\Common\Files
+O nome também será registrado na abaExperts.
+
+Os fingerprints usam o método de seis inteiros do controle diário;campos
+não marcados não contam como eventos novos,flags0são contadas separadamente.
+Não alteraCSV ou trata negócios adicionais como originais. A M1 é comparada
+com a consultaALL deste contexto. Comparar relatório novo com o do agente,
+sem mudar o verificador ou volume para obter aprovação. Resultado é controle
+de dados,não validação do contrato real,estratégia ou lucro.23checks locais
+passaram emhostCPPsimulado;compilação e execuçãoMQL5 ainda pendentes.

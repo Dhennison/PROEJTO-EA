@@ -556,3 +556,18 @@ mecanismo interno. RegistroJSON/acréscimoàanálise emcontrole_dia/teste_202611
 Próximo usuário:Exportar barras→Área de Trabalho→MD_PESQ_WINZ26_DIA1030_M1.csv,
 anexarCSVdireto,sem regravar/ZIP. Confrontar566barras versusCSV/agentedepois.
 Não repetir o teste igual;divergênciaTRADE+13/+36 permanece semcausa isolada.
+
+ATUALIZAÇÃO — M1 DO CUSTOM566/566COERENTES COMCSV;AUDITORIA TERMINAL PRONTA
+RecebidoMD_PESQ_WINZ26_DIA1030_M1.csv,35146bytes,preservado emteste_20261103/.
+Todas566OHLC/VOLconferem comCSV e osTICKVOLconferem comagente;única diferença
+agente/terminal é VOL18:31:527000000000 vs25986. COMPARACAO_M1_TERMINAL.json.
+Preparadoauditoria_terminal/ModeloD_Auditoria_Terminal_v1_00.zip,Script
+Auditar_Consultas_Dia_WINZ26.mq5. Só leitura no terminal,recusaTester,
+exigeMD_PESQ_WINZ26_DIA1030custom. ConsultaALL/TRADE/M1,método6inteiros e
+logdeeventosnos14timestampszerados para testar causa dos13extras,semassumir.
+Não altera/importa dados,não cria símbolos,não negocia.23checksCPP/0falhas,
+CSV4319285real,ASan/UBSan;semcompilaçãoMQL5. ReprodutorVALIDAR_LOCAL_TERMINAL.py.
+Próximo:copiarMQL5 do novoZIPna RAIZ do secundário,F4abrirfonte novoem
+Scripts/ModeloD_Pesquisa_Dados/Auditar_Consultas_Dia_WINZ26.mq5,F7,enviar
+resultado antesdeexecutar. Depoisexecutar sóno terminal/coletar
+MD_AUDIT_TERMINAL_DIA_20261030_...txt/Common/Files. Não repetirTesterigual.

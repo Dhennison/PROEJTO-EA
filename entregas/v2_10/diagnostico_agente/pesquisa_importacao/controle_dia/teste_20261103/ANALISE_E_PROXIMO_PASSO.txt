@@ -61,3 +61,16 @@ MD_PESQ_WINZ26_DIA1030_M1.csv e anexar CSV direto,sem editar/semZIP.
 Depois comparar todas as566 barras com ticks e relatório do agente.
 TRADE+13/+36 continua questão independente,não resolvida pela consulta deM1.
 Sem repetir o teste,modificar verificador,dados ou estratégia.
+
+ATUALIZAÇÃO — CSV M1 DO TERMINAL CONFIRMA566/566BARRAS
+MD_PESQ_WINZ26_DIA1030_M1.csv recebido/preservado:35146bytes. Todas566 barras
+conferem OHLC/VOL com ticks originais. Comparando tambémTICKVOL ao agente,
+única diferença é real_volume da última18:31:25986 vs527000000000.
+Não atribuir mecanismo interno. Dados e comparação emCOMPARACAO_M1_TERMINAL.json.
+Preparada auditoria SOMENTE LEITURA emauditoria_terminal/. Reutiliza as
+consultas/fingerprint,M1 no terminal e acrescenta registros nos14timestamps
+originais de flags0,em cada consulta completaALL/TRADE. Não presume causa.
+23checksCPPsimulados/zero falhas/sanitizadores comCSVcompleto. Compilação
+MQL5 e execução nativas pendentes. Próximo:copiarMQL5 do pacote à raiz do
+secundário,F4abrirScripts/ModeloD_Pesquisa_Dados/Auditar_Consultas_Dia_WINZ26.mq5,
+F7/enviar resultado,sem executar ainda. Não repetir o Tester.

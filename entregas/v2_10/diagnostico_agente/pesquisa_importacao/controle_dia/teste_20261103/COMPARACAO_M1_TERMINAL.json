@@ -1,0 +1,20 @@
+{
+  "file": "MD_PESQ_WINZ26_DIA1030_M1.csv",
+  "bytes": 35146,
+  "sha256": "ab4adc45c5e4f8003449fb8aa0b10c1ee07f0c4a95249e92e97523a91b32a1b0",
+  "bars": 566,
+  "matches_all_trade_minutes": true,
+  "ohlc_volume_mismatches_vs_csv": [],
+  "differences_vs_agent": [
+    {
+      "time": "2026.10.30 18:31:00",
+      "differences": {
+        "VOL": {
+          "terminal": "25986",
+          "agent": "527000000000"
+        }
+      }
+    }
+  ],
+  "terminal_total_volume": 20884960
+}
