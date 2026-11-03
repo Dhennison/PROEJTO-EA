@@ -1,0 +1,18 @@
+PESQUISA DE IMPORTAÇÃO — COMPILAÇÕES NO MT5 SECUNDÁRIO
+
+PREPARADOR — RESULTADO RECEBIDO EM 03/11/2026
+Preparar_Simbolo_Pesquisa_WINZ26.mq5
+code generated                         0
+0 errors, 0 warnings, 426 ms elapsed, cpu='AVX2 + FMA3'       0
+
+Usuário confirmou cópia da pasta MQL5 do pacote para a raiz da instalação
+secundária. Foi orientada a abertura do fonte pelo MetaEditor dessa cópia:
+%LOCALAPPDATA%\ModeloD_MT5_Isolado_20261102_145749_6554356a\MQL5\Scripts\ModeloD_Pesquisa_Dados
+Resultado nativo colado pelo usuário; binário e hash não foram anexados.
+
+PENDÊNCIAS
+Compilação de Diagnostico_Importacao_WINZ26.mq5 ainda não recebida.
+Execução do preparador, criação/readback do símbolo de pesquisa, importação
+do CSV e diagnóstico nativo ainda não executados/confirmados neste registro.
+Compilar sem erros não comprova que as APIs de criação/cópia funcionaram.
+Não confundir essa compilação com aprovação de ticks reais ou do EA v2.10.

@@ -308,3 +308,11 @@ com aquecimento real29/10 e importar CSV nativamente após conferir mapeamento.
 Não é backtest aprovado; verificar flags/barras no readback. Expert17/0 local
 simulado, preparador revisado estaticamente; duas compilações MQL5 pendentes.
 Próximo: usuário copiar MQL5 do pacote ao secundário e enviar compilações.
+
+ATUALIZAÇÃO — PREPARADOR DA PESQUISA COMPILADO
+Usuário confirmou cópia ao MT5 secundário e enviou compilação nativa de
+Preparar_Simbolo_Pesquisa_WINZ26.mq5: 0 erros/0 avisos, 426 ms.
+Ver pesquisa_importacao/COMPILACOES_NATIVAS_USUARIO.txt no diretório do
+diagnóstico. Próximo: compilar Diagnostico_Importacao_WINZ26.mq5 no MetaEditor
+secundário. Ainda não executar preparador/importação; criação e readback
+do símbolo de pesquisa não estão comprovados por essa compilação.
