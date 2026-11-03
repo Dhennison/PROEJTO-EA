@@ -1,0 +1,15 @@
+CONTROLE DO DIA INTEIRO — ESTADO ANTES DA COMPILAÇÃO NATIVA
+
+Preparar_Pesquisa_Dia_WINZ26.mq5: compilação MQL5 PENDENTE.
+Diagnostico_Dia_Importado_WINZ26.mq5: compilação MQL5 PENDENTE.
+Os62 checks emC++/APIs simuladas não são compilação MetaEditor.
+Resultados nativos de arquivos anteriores não se aplicam a estes nomes novos.
+
+PRÓXIMO PASSO
+Copiar MQL5 do pacote ModeloD_Pesquisa_Dia_v1_00.zip para a RAIZ:
+C:\Users\jhenn\AppData\Local\ModeloD_MT5_Isolado_20261102_145749_6554356a
+No MetaEditor do secundário(F4),abrir e compilarF7 o primeiro fonte:
+MQL5\Scripts\ModeloD_Pesquisa_Dados\Preparar_Pesquisa_Dia_WINZ26.mq5
+Enviar resultado da compilação antes de executar. Depois orientar a
+compilação do novo Expert. Criação/importação do símbolo diário ainda não
+executadas. O símbolo do controle mínimo está preservado.

@@ -42,3 +42,18 @@ ANALISE_DIA_E_PROXIMO_PASSO.txt eAUDITAR_DIA.py. Segundo parser conferiu os
 minutos de interesse em leitura independente. Nenhuma importação ou teste novo.
 Próximo usuário:janelaAtivos/Ctrl+U,clicarBarras e enviar captura. Depois
 configurar M1/30/10 00:00–31/10 00:00 e exportar barras atuais doWINZ26.
+
+ATUALIZAÇÃO — M1 ATUAL CONFIRMA AS DIFERENÇAS;CONTROLE DIÁRIO PREPARADO
+RecebidoWINZ26_M1_20261030_SECUNDARIO_ATUAL.csv,565 barras,35344bytes/hashfb85d9a8...
+É idêntico byte a byte ao anterior:as quatro diferenças persistem no confronto
+atual do secundário. Detalhes/reprodutor em m1_atual_20261103/.
+Novo controle em controle_dia/ModeloD_Pesquisa_Dia_v1_00.zip:cria símbolo
+MD_PESQ_WINZ26_DIA1030 e usa novo Expert Diagnostico_Dia_Importado_WINZ26.
+Não reutiliza o Expert que encerra09:01 nem sobrescreve o símbolo mínimo.
+Confere sequência de campos sinalizados ALL/TRADE com fingerprint64,contagens,
+volumes e M1 nativas;preserva14zeros no CSV. OnTester faz auditoria ao final;
+OnDeinit cancelado só registra ausência de resultado. Sem ordens.
+62 verificações locais/zero falhas,CSV integral/APIs simuladas/sanitizadores.
+Compilação e execução nativas PENDENTES. Próximo usuário:copiarMQL5 à raiz do
+secundário,compilarPreparar_Pesquisa_Dia_WINZ26.mq5/enviar saída;depois Expert.
+Não importar ainda. Fonte/EA/B3 e controle mínimo anteriores preservados.

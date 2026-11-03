@@ -1,0 +1,17 @@
+[
+  {
+    "file": "m1_atual_20261103/WINZ26_M1_20261030_SECUNDARIO_ATUAL.csv",
+    "bytes": 35344,
+    "sha256": "fb85d9a8b41ffe619f69aa03c4c181f200cac8d9461cc1a7d5518e9f3a2accec"
+  },
+  {
+    "file": "m1_atual_20261103/M1_E_SEQUENCIA.json",
+    "bytes": 3822,
+    "sha256": "fd18bdafa6125826880924382a9daf8b8cdb08ac08000819f704a5e173c7deaf"
+  },
+  {
+    "file": "m1_atual_20261103/CONFERIR_M1_E_SEQUENCIA.py",
+    "bytes": 5202,
+    "sha256": "071d415921b86fe284f1d672f47d104f734c7453506051ddd08574a1cd36f641"
+  }
+]

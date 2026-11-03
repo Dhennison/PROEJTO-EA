@@ -1,0 +1,79 @@
+CONTROLE DO DIA INTEIRO — SEM ORDENS, SEM ACEITE OPERACIONAL
+
+MOTIVO
+M1 atual do secundário é idêntica à antiga;persistem divergências em quatro
+minutos versus CSV integral. O controle mínimo de09:00 funcionou,mas não
+cobre o dia. Este pacote cria outro símbolo e outro Expert sem apagar o caso
+mínimo e sem alterar WINZ26,EA v2.10,ajusteB3 ou fórmulas de negociação.
+
+INSTALAÇÃO — SOMENTE NO MT5 SECUNDÁRIO
+Extraia este ZIP em pasta temporária. Copie sua pasta MQL5 e cole na RAIZ:
+C:\Users\jhenn\AppData\Local\ModeloD_MT5_Isolado_20261102_145749_6554356a
+Essa raiz já contém uma pasta MQL5;ao colar,as pastas são mescladas.
+O pacote acrescenta somente dois MQ5 com nomes novos.
+
+COMPILAÇÕES PELO METAEDITOR DO SECUNDÁRIO (F4, ABRIR ARQUIVO, F7)
+Primeiro:
+MQL5\Scripts\ModeloD_Pesquisa_Dados\Preparar_Pesquisa_Dia_WINZ26.mq5
+Enviar0 erros/0 avisos antes de executar. Depois será compilado:
+MQL5\Experts\ModeloD_Diagnostico_Pesquisa\Diagnostico_Dia_Importado_WINZ26.mq5
+Ambos têm validação local simulada,mas não compilação MQL5 na nuvem.
+Não atribuir a eles a compilação de fontes antigos.
+
+PREPARAÇÃO — DEPOIS DE CONFERIR AS COMPILAÇÕES
+Gráfico WINZ26 no secundário,fora do Tester. Navegador/Scripts executar
+Preparar_Pesquisa_Dia_WINZ26 uma vez. Não precisa habilitar negociação.
+Cria apenas MD_PESQ_WINZ26_DIA1030,grupo ModeloD_Pesquisa_Dia,com propriedades
+de WINZ26 e M1 real29/10 para aquecimento. Recusa símbolo preexistente;não
+apaga/substitui o controle mínimo MD_PESQ_WINZ26_1030. Não altera a descrição
+herdada. Faz readback de todos os campos copiados antes de READY.
+Enviar MD_PESQ_DIA_PREPARACAO_...txt de Common/Files. Se falhar,preservar o
+estado e enviar log;não apagar nem repetir automaticamente.
+
+IMPORTAÇÃO POSTERIOR — NÃO FAZER ANTES DA PREPARAÇÃO CONFERIDA
+Ctrl+U,localizar EXATAMENTE MD_PESQ_WINZ26_DIA1030,abaTicks/Importar ticks.
+CSV original já salvo na Área de Trabalho:WINZ26_20261030_DIA_COMPLETO.csv,
+extraído/contido no ZIP integral do usuário. Não está incluído neste pacote
+pequeno. SHA256 do CSV8035268c0d8ac2e0fdc99a5c42e748c0f13b5d684563c820d56a1634693d861a.
+TAB,Colunas0,Linhas1(cabeçalho),Deslocar0. Conferir captura antes de confirmar.
+Não limpar14zeros,não mudar preços/volume/timestamps,não importar M1 de30/10
+para forçar concordância. Barras desse dia serão as derivadas pelo importador.
+Conferir ingestão/consulta antes do Tester. Nenhuma importação feita na nuvem.
+
+TESTER — SOMENTE APÓS AS ETAPAS ANTERIORES
+Expert ModeloD_Diagnostico_Pesquisa\Diagnostico_Dia_Importado_WINZ26.ex5.
+Ativo MD_PESQ_WINZ26_DIA1030,M5,30/10/2026 a31/10/2026,ticks reais,sem
+visualização/otimização/forward,agente LOCAL,demais parâmetros da comparação.
+Enviar captura de configuração antes de iniciar. Este Expert não para09:01.
+Deixar concluir normalmente. OnTester lê o dia até o último timestamp original
+18:31:24.719. Se interromper,não aceitar resultado incompleto.
+OnDeinit não inicia auditoria grande;registra AUDIT_NOT_RUN se faltou OnTester.
+Relatório MD_DIAG_DIA_PESQUISA_20261030_...txt em:
+%APPDATA%\MetaQuotes\Terminal\Common\Files
+Enviar TXT e Diário do agente. Os dois são necessários para inspecionar tanto
+os retornos quanto eventuais descartes/geração de cotações do motor.
+
+O QUE É COMPARADO
+ALL e TRADE:contagens,volume,integridade de chamadas,ordem temporal e fingerprint
+sobre seis INTEIROS unsigned64 por evento:time_msc,flags,Bid seflag2,Ask seflag4,
+Last seflag8,volume_real inteiro seflag16;campos não marcados valem0 só nessa
+representação canônica. Início0xCBF29CE484222325;por inteiro,h=(h XOR valor)*
+1099511628211 módulo2^64. ALL esperado B565B48B9B550B5E;TRADE49982C8C78AC71B8.
+Não é FNV de bytes,SHA256 ou prova criptográfica. Valores carregados em campos
+não marcados não são classificados como novos eventos. Flags0 são contadas
+separadamente,sem alterar CSV. No agente do controle mínimo elas não retornaram;
+o comportamento do dia completo ainda será medido,não presumido.
+São4319285 linhas na entrada,14flags0,4319271 eventos sinalizados,3190938
+negócios,volume20884960. Esses totais são do CSV,com diferenças já documentadas
+em relação às M1 publicadas. O controle não transforma essa entrada em fonte
+oficial validada. Fingerprint não substitui auditoria binária de MqlTick.
+M1 do custom:OHLC e real_volume devem conferir com negócios que a própria API
+entregou,com barras ausentes/extras/divergentes sinalizadas;TICKVOL não é
+obrigado a igualar contagemTRADE. Aquecimento29/10 fica fora da consulta.
+
+INTERPRETAÇÃO
+RESULT informa separadamente replay no último horário,ALL/TRADE canônicos e
+M1 versus negócios nativos. control_complete1 significa só esse controle de
+INGESTÃO,no símbolo custom e na amostra conhecida. Não aprova o WINZ26 real,
+EA,ordens,lucro ou a correção das divergências de dados. Se algum campo0,
+inspecionar logs antes de qualquer ajuste;não mudar dados/fórmulas para passar.

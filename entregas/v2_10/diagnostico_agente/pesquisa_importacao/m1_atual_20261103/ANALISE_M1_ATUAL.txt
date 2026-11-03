@@ -1,0 +1,40 @@
+M1 ATUAL DO SECUNDÁRIO — CONFRONTO CONCLUÍDO EM03/11/2026
+
+WINZ26_M1_20261030_SECUNDARIO_ATUAL.csv,35344bytes,565 barras,é IDÊNTICO BYTE
+A BYTE ao arquivo M1 anterior do principal. SHA256 de ambos:
+fb85d9a8b41ffe619f69aa03c4c181f200cac8d9461cc1a7d5518e9f3a2accec.
+Captura da consulta: WINZ26,M1,30/10 00:00 a31/10 00:00,565 barras;última18:24.
+
+Consequentemente persistem as quatro divergências OHLC/VOL na comparação
+com os ticks integrais do mesmo secundário:11:58,15:54,16:38(volume) e18:24
+(high/close/volume).561 minutos iguais. Diferenças de volume1519/2131/1708
+nos três primeiros;18:24 recebe nas M1 o volume que numericamente coincide
+com os170 negócios25986unidades de18:31:24.719. Não remapear nem imputar.
+Isso confirma diferenças entre os arquivos atuais,mas não identifica a
+causa única do descarte de565 barras pelo motor nem qual fonte está correta.
+
+CSV original preservado,4319285linhas,14zeradas. Fingerprint de eventos
+SINALIZADOS:n4319271;negócios3190938;volume20884960. Método explícito em
+M1_E_SEQUENCIA.json e CONFERIR_M1_E_SEQUENCIA.py. Considera somente campos
+marcados pelas flags para não confundir preenchimento de valores carregados
+com novos eventos. Não é hash criptográfico nem equivalência binária de
+MqlTick. Os14zeros seguem no CSV;somente a classificação do fingerprint os
+separa dos eventos sinalizados,sem alterar o arquivo/importação.
+
+Preparado controle separado do DIA INTEIRO emcontrole_dia/. Novo símbolo
+MD_PESQ_WINZ26_DIA1030,preservando o controle mínimoMD_PESQ_WINZ26_1030.
+Script copia apenas M1 real29/10/2026 para aquecimento e herda a descrição,
+sem setter que falhou5309. CSV30/10 será importado nativamente sem alterações.
+Expert sem ordens roda até o encerramento normal;OnTester consulta ALL/TRADE,
+compara contagens/volume/fingerprint dos eventos com o CSV e confronta M1
+importada com os negócios entregues. Sem presumir TICKVOL=TRADE. Se cancelar,
+OnDeinit apenas registraAUDIT_NOT_RUN;evita consultas grandes nesse handler.
+Teste com origem incompleta,API parcial,sequência trocada,cotação faltante,
+campo de volume inconsistente e M1 divergente não pode emitircontrol_complete1.
+Não valida estratégia/símbolo real nem preenche o volume diferente dasM1.
+
+Host com o CSV inteiro/APIs simuladas e sanitizadores:21 checks preparador,
+41 diagnóstico,zero falhas. Compilações MQL5 e execução nativa AINDA PENDENTES.
+Próximo usuário:copiar MQL5 do novo pacote à RAIZ do secundário e compilar
+primeiro Preparar_Pesquisa_Dia_WINZ26.mq5;enviar resultado antes de executar.
+Não reusar o Expert de um minuto como se auditasse o dia inteiro.

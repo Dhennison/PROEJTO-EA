@@ -1,0 +1,141 @@
+{
+  "current_m1_file": "WINZ26_M1_20261030_SECUNDARIO_ATUAL.csv",
+  "current_m1_sha256": "fb85d9a8b41ffe619f69aa03c4c181f200cac8d9461cc1a7d5518e9f3a2accec",
+  "current_m1_rows": 565,
+  "byte_identical_to_older_m1": true,
+  "matching_minutes": 561,
+  "differences": [
+    {
+      "minute": "11:58",
+      "equal": false,
+      "fields_equal": {
+        "OPEN": true,
+        "HIGH": true,
+        "LOW": true,
+        "CLOSE": true,
+        "VOL": false
+      },
+      "ticks": {
+        "open": 170230,
+        "high": 170400,
+        "low": 170225,
+        "close": 170235,
+        "volume": "50730.00000000"
+      },
+      "M1": {
+        "<DATE>": "2026.10.30",
+        "<TIME>": "11:58:00",
+        "<OPEN>": "170230",
+        "<HIGH>": "170400",
+        "<LOW>": "170225",
+        "<CLOSE>": "170235",
+        "<TICKVOL>": "17292",
+        "<VOL>": "52249",
+        "<SPREAD>": "5"
+      }
+    },
+    {
+      "minute": "15:54",
+      "equal": false,
+      "fields_equal": {
+        "OPEN": true,
+        "HIGH": true,
+        "LOW": true,
+        "CLOSE": true,
+        "VOL": false
+      },
+      "ticks": {
+        "open": 169645,
+        "high": 169720,
+        "low": 169575,
+        "close": 169600,
+        "volume": "36020.00000000"
+      },
+      "M1": {
+        "<DATE>": "2026.10.30",
+        "<TIME>": "15:54:00",
+        "<OPEN>": "169645",
+        "<HIGH>": "169720",
+        "<LOW>": "169575",
+        "<CLOSE>": "169600",
+        "<TICKVOL>": "12429",
+        "<VOL>": "38151",
+        "<SPREAD>": "5"
+      }
+    },
+    {
+      "minute": "16:38",
+      "equal": false,
+      "fields_equal": {
+        "OPEN": true,
+        "HIGH": true,
+        "LOW": true,
+        "CLOSE": true,
+        "VOL": false
+      },
+      "ticks": {
+        "open": 170175,
+        "high": 170275,
+        "low": 170175,
+        "close": 170185,
+        "volume": "26808.00000000"
+      },
+      "M1": {
+        "<DATE>": "2026.10.30",
+        "<TIME>": "16:38:00",
+        "<OPEN>": "170175",
+        "<HIGH>": "170275",
+        "<LOW>": "170175",
+        "<CLOSE>": "170185",
+        "<TICKVOL>": "8659",
+        "<VOL>": "28516",
+        "<SPREAD>": "5"
+      }
+    },
+    {
+      "minute": "18:24",
+      "equal": false,
+      "fields_equal": {
+        "OPEN": true,
+        "HIGH": false,
+        "LOW": true,
+        "CLOSE": false,
+        "VOL": false
+      },
+      "ticks": {
+        "open": 170235,
+        "high": 170340,
+        "low": 170205,
+        "close": 170320,
+        "volume": "1360.00000000"
+      },
+      "M1": {
+        "<DATE>": "2026.10.30",
+        "<TIME>": "18:24:00",
+        "<OPEN>": "170235",
+        "<HIGH>": "170350",
+        "<LOW>": "170205",
+        "<CLOSE>": "170350",
+        "<TICKVOL>": "2127",
+        "<VOL>": "27346",
+        "<SPREAD>": "5"
+      }
+    }
+  ],
+  "dataset_zip_sha256": "0494127f661494963f88567503829d7ab1f16f0eea250decdb3ba4d2ad602fa2",
+  "source_csv_sha256": "8035268c0d8ac2e0fdc99a5c42e748c0f13b5d684563c820d56a1634693d861a",
+  "source_rows": 4319285,
+  "source_zero_flag_rows": 14,
+  "signaled_event_rows": 4319271,
+  "positive_trade_rows": 3190938,
+  "positive_trade_volume": 20884960,
+  "first_signaled_msc": 1793350843093,
+  "last_signaled_msc": 1793385084719,
+  "fingerprint_method": "start14695981039346656037; each of 6 unsigned integers: (state XOR value)*1099511628211 modulo2^64",
+  "fingerprint_fields": "time_msc,flags,BID if flags2 else0,ASK if flags4 else0,LAST if flags8 else0,VOLUME if flags16 else0",
+  "fingerprint_all_hex": "B565B48B9B550B5E",
+  "fingerprint_all_signed": -5375692068497323170,
+  "fingerprint_trade_hex": "49982C8C78AC71B8",
+  "fingerprint_trade_signed": 5303037543060369848,
+  "scope": "Flag-directed canonical events; ignores carried values in unflagged fields, not raw MqlTick byte equality or cryptographic proof"
+}

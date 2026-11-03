@@ -1,0 +1,21 @@
+HOST_PREPARAR_DIA;Checks=21;Failures=0;CPP_SIMULADO;NAO_E_COMPILACAO_MQL5
+HOST_DIA;Checks=41;Failures=0;SOURCE_ROWS=4319285;CPP_SIMULADO;NAO_E_COMPILACAO_MQL5
+
+Comando: python3 VALIDAR_LOCAL_DIA.py
+AddressSanitizer e UndefinedBehaviorSanitizer ativos;execução fora do ptrace.
+Preparador:guardas de Tester/origem/nome existente/histórico/relatório,
+falhas de criação,cópia,seleção,readback e caminho íntegro.21 verificações.
+Diagnóstico:CSV original completo4319285registros em host C++;modelo considera
+14flags0 separadamente e simula campos carregados sem criar negócios deles.
+Eventos sinalizados4319271;negócios3190938;fingerprints ALL/TRADE calculados em
+Python e conferidos no fonte C++ traduzido. Compara também M1 agregadas no
+MOCK e injeta M1 publicada divergente;nenhuma barra de mock é importada.
+41 verificações:recusas,relatório,interrupção sem OnTester,sequência trocada,
+cotação ausente mantendo negócios intactos,volume inteiro divergente do
+volume_real,timeout com saída parcial,eventos fora do recorte,replay que
+não alcançou último timestamp,M1 incompatível e caminho canônico íntegro.
+
+Limites:APIs/MT5/importador não são executados no host. Não é compilação MQL5,
+aceitação nativa,prova criptográfica ou equivalência binária do histórico.
+Compilar ambos no MetaEditor secundário e conferir resultado nativo depois.
+Todos os CSVs,ZIPs,Expert mínimo e EA operacional anteriores preservados.

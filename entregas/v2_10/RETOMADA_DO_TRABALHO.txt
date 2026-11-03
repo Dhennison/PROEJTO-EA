@@ -459,3 +459,30 @@ amostra do dia nem rodarTester. Controle mínimo positivo permanece preservado.
 Próximo usuário:AtivosCtrl+U,abaBarras,enviarprint. OrientarM1/datas30/10 00:00
 a31/10 00:00,consultar/exportar barrasATUAISWINZ26do secundário;analisar antes
 de ampliarcontrole. Expert atual para09:01,não cobre o dia inteiro.
+
+ATUALIZAÇÃO — M1 ATUAL É IDÊNTICA À ANTIGA;NOVO CONTROLE DIÁRIO PRONTO
+RecebidoWINZ26_M1_20261030_SECUNDARIO_ATUAL.csv,565 barras,35344bytes,
+SHA256fb85d9a8b41ffe619f69aa03c4c181f200cac8d9461cc1a7d5518e9f3a2accec.
+Idêntico byte a byte ao anterior;persistem4minutos divergentes versus ticks
+atuais. m1_atual_20261103/ guarda fonte,comparação e algoritmo de sequência.
+Do CSV original:4319271eventos sinalizados/3190938negócios/volume20884960,
+14flags0 separados só no fingerprint,sem alterar CSV. Hash64 por6inteiros
+(time,flags,preços/volume somente se sinalizados):ALLB565B48B9B550B5E,
+TRADE49982C8C78AC71B8. Não é hash criptográfico ou MqlTick binário.
+Preparado pacote controle_dia/ModeloD_Pesquisa_Dia_v1_00.zip com dois MQ5:
+Preparar_Pesquisa_Dia_WINZ26 e Diagnostico_Dia_Importado_WINZ26. Novo símbolo
+MD_PESQ_WINZ26_DIA1030;preserva o mínimoMD_PESQ_WINZ26_1030. Preparador exige
+origem real,nome novo,M1 real29/10 válida/readback;herda descrição,sem setter5309.
+Expert sóTester/data30/custom fixo/sem otimização/ordens;roda atéfim,OnTester
+consultaALL/TRADEaté18:31:24.719,compara contagens/volume/fingerprint eOHLC/VOL
+M1contra negócios nativos. OnDeinitnão inicia consulta grande ao cancelar.
+62 checksCPPsimulados:21preparador+41Expert,zero falhas,CSV4319285linhasreal,
+AddressSanitizer/UBSan. Inclui permuta,quote ausente,API parcial,volume inteiro
+incompatível,replay incompleto,M1 publicada divergente e cancelamento. NãoMQL.
+Fontes/ZIPoriginais/EA/B3 preservados. Compilações nativas,criação do novo
+símbolo/importação/teste ainda PENDENTES. Próximo usuário:copiarMQL5 do novo
+ZIPà RAIZ do secundário;F4 abrirScripts/ModeloD_Pesquisa_Dados/
+Preparar_Pesquisa_Dia_WINZ26.mq5,F7,enviar resultado,sem executar ainda.
+Depois compilar novo Expert e orientar preparação/importação passo a passo.
+Controle diário não prova correção doWINZ26real nem valida estratégia/dados
+oficiais;quatro divergências permanecem explicitamente documentadas.

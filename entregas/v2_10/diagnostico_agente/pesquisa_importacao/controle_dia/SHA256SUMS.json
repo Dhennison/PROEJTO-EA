@@ -1,0 +1,22 @@
+[
+  {
+    "file": "MQL5/Experts/ModeloD_Diagnostico_Pesquisa/Diagnostico_Dia_Importado_WINZ26.mq5",
+    "bytes": 10482,
+    "sha256": "5cf118eabea29b16d1fe9f64f4068e9c957e3a6f0f6dc4534df33e004ba5d8cf"
+  },
+  {
+    "file": "MQL5/Scripts/ModeloD_Pesquisa_Dados/Preparar_Pesquisa_Dia_WINZ26.mq5",
+    "bytes": 4956,
+    "sha256": "48c30fce1c5e24614efb22be9b7352c7ec924e3f192cf6c9e4852f656545d01c"
+  },
+  {
+    "file": "LEIA_CONTROLE_DIA.txt",
+    "bytes": 5019,
+    "sha256": "5e01be225d4b5fd21ed8421902487c4948ac7bd9d526b6353874362dc93bd198"
+  },
+  {
+    "file": "RESULTADOS_LOCAIS.txt",
+    "bytes": 1456,
+    "sha256": "43bf7b0af280ef6859f14bacf9b96803cc1adf42e338dd21ee87d6bb15d29829"
+  }
+]
