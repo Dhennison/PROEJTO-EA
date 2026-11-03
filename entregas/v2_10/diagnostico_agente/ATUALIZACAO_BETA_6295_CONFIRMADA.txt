@@ -1,0 +1,46 @@
+CÓPIA ISOLADA — ATUALIZAÇÃO OFICIAL BETA, 03/11/2026
+
+LIVEUPDATE COLADO PELO USUÁRIO
+2026.11.03 10:24:41.906 LiveUpdate check for beta version
+2026.11.03 10:24:43.141 LiveUpdate new version build 6295 (IDE: 6295, Tester: 6295) is available
+2026.11.03 10:24:51.831 LiveUpdate 'mt5clw64' downloaded (59953 kb)
+2026.11.03 10:24:56.704 LiveUpdate 'mt5clwide64' downloaded (30081 kb)
+2026.11.03 10:24:59.421 LiveUpdate 'mt5clwtst64' downloaded and updated (11207 kb)
+2026.11.03 10:25:07.885 LiveUpdate 'mt5onnx64' downloaded (41640 kb)
+2026.11.03 10:25:07.890 LiveUpdate downloaded successfully
+As linhas seguintes informam staging dos arquivos.6295 em
+%APPDATA%\MetaQuotes\Terminal\AA2B15350EE8936D8622827E1E183BD0\liveupdate.
+Esse caminho de staging sozinho não determina a pasta de dados em execução.
+
+APÓS REINÍCIO, CAPTURAS CONFIRMAM
+Ajuda > Sobre: MetaTrader5 v5.00 build6295,29 Oct2026, MetaQuotes Ltd.
+Arquivo > Abrir Pasta de Dados aponta na barra de endereço para:
+%LOCALAPPDATA%\ModeloD_MT5_Isolado_20261102_145749_6554356a
+O nome é o diretório aberto na barra superior, não uma subpasta adicional
+que o usuário deva procurar dentro dele. Modo portátil continua compatível
+com esse caminho próprio observado.
+Pasta Backup_binarios_6231 visível. Conteúdo/hashes do backup não foram
+anexados, portanto não alegar verificação independente dos três binários.
+Executáveis do terminal/IDE/Tester aparecem com datas atualizadas na cópia.
+
+PRÓXIMA COMPARAÇÃO CONTROLADA
+Nesta MESMA cópia secundária, executar diagnóstico ORIGINAL de30/10:
+ModeloD_Diagnostico_Agente\Diagnostico_Dados_WINZ26.ex5 (sem20261029).
+WINZ26/M5, início2026.10.30, fim2026.10.31, ticks reais, não visual,
+sem otimização/forward/atraso, agente local,1000000USD/1:100/Hedge.
+Não trocar CSVs, B3, fonte do diagnóstico ou propriedades para fazer passar.
+O EX5 foi compilado nativamente no6231; primeiro testar seu carregamento
+sem recompilação, para manter o binário do diagnóstico igual na comparação.
+Se6295 recusar o EX5, preservar log e decidir recompilação explicitamente.
+
+Coletar TXT MD_DIAG_DADOS_20261030_... e
+%LOCALAPPDATA%\ModeloD_MT5_Isolado_20261102_145749_6554356a\Tester\Agent-127.0.0.1-3000\logs\20261103.log.
+O diagnóstico encerra às09:02. O log/START precisam confirmar agente6295;
+atualização do terminal e download do Tester não substituem verificar build
+do processo efetivamente usado. Não chamar teste com agente6231 de comparação6295.
+Conferir descarte, M1, ALL/TRADE, flags/volume e Last; não basta preço positivo.
+
+ESTADO
+Terminal6295 e caminho isolado confirmados; diagnóstico no agente6295 ainda
+pendente. Trata-se de comparação experimental, sem ordens e sem promoção
+da beta para versão operacional ou alteração de estratégia/EA v2.10.

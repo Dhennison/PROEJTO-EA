@@ -275,3 +275,13 @@ Evidências/diff em validacao_20261103_mercado_aberto/. Fonte v2.10 inalterado.
 Próxima comparação ainda não feita é outro build: consultar beta OFICIAL só
 no secundário, com backup6231, registrarLiveUpdate/Sobre antes de repetir.
 Se não houver build novo, não repetir o mesmo cenário. Suporte em paralelo.
+
+ATUALIZAÇÃO — BETA OFICIAL6295 INSTALADA NA CÓPIA ISOLADA
+LiveUpdate03/11 às10:24 anunciou6295(IDE/Tester6295), download concluído e
+reinício. Captura Sobre confirma terminal5.00 build6295 de29/10/2026.
+Barra do Explorador confirma dados em ModeloD_MT5_Isolado_20261102_145749_6554356a;
+Backup_binarios_6231 visível (conteúdo/hashes não inspecionados).
+Registro em diagnostico_agente/ATUALIZACAO_BETA_6295_CONFIRMADA.txt.
+Próximo: mesmo diagnóstico ORIGINAL30 (sem20261029), mesma configuração,
+sem recompilar por enquanto; coletar TXT/log e verificar agente6295 efetivo.
+Novo teste e correção ainda não confirmados. MT5 principal não é alvo.
