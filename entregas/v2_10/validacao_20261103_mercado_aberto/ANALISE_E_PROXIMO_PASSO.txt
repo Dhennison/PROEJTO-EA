@@ -1,0 +1,63 @@
+RODADA 03/11/2026, MERCADO ABERTO INFORMADO PELO USUÁRIO
+Replay histórico: WINZ26, 30/10/2026, diagnóstico mínimo original.
+
+CONTEXTO
+Usuário confirmou que NÃO atualizou para beta. Captura anterior confirmou
+datas30/10–31/10, modelo ticks reais, M5, não visual e sem otimização.
+Log de hoje confirma agente na cópia isolada, build6231, Hedge e visual0.
+Sincronização:5488 bytes de histórico e149 bytes de ticks. Não é evidência
+de novo download integral direto da corretora, apesar de a execução ocorrer
+em dia útil/mercado aberto. Não presumir resolução só pela mudança de dia.
+
+MOTOR
+Novamente todos os ticks reais descartados nos565 minutos, com4.319.114
+preços divergentes e volumes divergentes; geração substituta utilizada.
+Diagnóstico chegou às09:02 e encerrou sozinho, reason0, probe_executed1.
+
+MUDANÇA REAL OBSERVADA, SEM CONFUNDIR COM CORREÇÃO
+No dia02 as cotações geradas vinham com Last0. Hoje exemplos de ALL e
+SymbolInfoTick apresentam Last171050, inclusive primeiro evento09:00:00.
+Porém flags continuam6 (Bid/Ask), volumes0 e sem eventos de negociação.
+ALL:3790 registros, erro0; positive_trade_rows0; zero_or_invalid_last0.
+TRADE:0 registros, erro0. M1/propriedades do símbolo permanecem iguais.
+OHLC/volume de negócios continua não calculável dessa sequência gerada:
+o diagnóstico corretamente não converte Last carregado em evento de negócio.
+
+O valor171050 coincide com o Último visível no fim de29/10 na captura do
+controle anterior. Isso é compatível com campo de estado carregado de outro
+instante, mas NÃO determina sua origem sem evidência adicional. Não chamar
+esse valor de cotação real de abertura30/10 ou correção do histórico.
+Do CSV de30/10 recebido, abertura de negócios foi170910 às09:00:43.093.
+Não substituir essa abertura pelo171050 carregado no replay gerado.
+
+CONCLUSÃO
+Executar hoje não resolveu a recusa do histórico já disponível ao Tester.
+Isso não demonstra que feriado nunca afeta downloads nem identifica a causa
+original: esta rodada não refez todo o histórico remoto. O bloqueio confirmado
+continua no preparo/fornecimento de negócios pelo motor. Mercado aberto não
+autoriza ignorar log de substituição por ticks gerados.
+Nenhuma negociação, validação do EA operacional ou melhoria de histórico foi
+confirmada. Não basta Last>0 para aceitar: exigir flags/volume/cronologia e
+ausência de substituição indevida. Fonte da v2.10 permanece sem alteração.
+
+PRÓXIMA VARIÁVEL AINDA NÃO EXERCITADA
+Outro build do motor. Canal release já respondeu latest version e todos os
+testes ficaram em6231. A comparação experimental de beta oficial só na cópia
+isolada já foi descrita e não executada; antes preservar os executáveis6231
+se o backup ainda não foi feito. Não tocar no MT5 principal.
+Consultar no secundário Ajuda > Verificar atualizações > Versão beta mais
+recente e registrar mensagens LiveUpdate e Sobre. Não presumir disponibilidade
+de build diferente. Se permanecer6231, não repetir outro diagnóstico igual.
+Uma atualização efetiva exige confirmar a versão do terminal e a do agente
+na coleta seguinte, bem como seu caminho portátil próprio.
+
+LIMITES
+As alternativas de cache, cópia limpa, visualização e segundo dia já foram
+exercitadas. Outras pesquisas de fonte/formato precisam de hipótese explícita,
+procedência e preservação dos ticks; não fabricar Last ou alterar preços/SL/TP
+para obter execução. Caso de suporte permanece útil em paralelo.
+
+EVIDÊNCIAS
+Originais preservados byte a byte, hashes/tamanhos em FONTES.json.
+DIFERENCAS_TXT_02NOV_03NOV.diff mostra mudanças reais dos TXT, incluindo nome
+de relatório e campos Last/contagem de Last inválido, sem misturar rodadas.

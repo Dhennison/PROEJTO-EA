@@ -265,3 +265,13 @@ concordam; release checker disse latest version. Próxima comparação indicada
 de preservar executáveis6231. Não é atualização operacional nem certeza de
 beta disponível. Ver BUILD_TERMINAL_E_COMPARACAO_EXPERIMENTAL.txt. Consulta,
 instalação e novo build ainda não recebidos; não repetir teste igual em6231.
+
+ATUALIZAÇÃO — 03/11, MERCADO ABERTO, MESMO6231
+Usuário informou que não atualizou beta e pediu repetir diagnóstico30/10.
+Rodada10:16 no isolado não visual/Hedge: descarte565/565 eTRADE0 persistem.
+ALL3790 agora tem Last171050, porém flags6/volume0 e zero eventos de negócio.
+Não é correção nem abertura válida; valor positivo carregado não prova fill.
+Evidências/diff em validacao_20261103_mercado_aberto/. Fonte v2.10 inalterado.
+Próxima comparação ainda não feita é outro build: consultar beta OFICIAL só
+no secundário, com backup6231, registrarLiveUpdate/Sobre antes de repetir.
+Se não houver build novo, não repetir o mesmo cenário. Suporte em paralelo.
