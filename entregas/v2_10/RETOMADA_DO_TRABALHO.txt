@@ -571,3 +571,13 @@ Próximo:copiarMQL5 do novoZIPna RAIZ do secundário,F4abrirfonte novoem
 Scripts/ModeloD_Pesquisa_Dados/Auditar_Consultas_Dia_WINZ26.mq5,F7,enviar
 resultado antesdeexecutar. Depoisexecutar sóno terminal/coletar
 MD_AUDIT_TERMINAL_DIA_20261030_...txt/Common/Files. Não repetirTesterigual.
+
+ATUALIZAÇÃO — SCRIPT DA AUDITORIA TERMINAL COMPILADO
+Usuário confirmouAuditar_Consultas_Dia_WINZ26.mq5:0erros/0avisos,484ms,
+CPUAVX2+FMA3. Registro emauditoria_terminal/COMPILACAO_NATIVA_USUARIO.txt.
+EX5/hashes não anexados;fonte não alterado. Próximo usuário:MT5secundário,
+fecharAtivosOKseaberto,gráficoWINZ26/H1,Ctrl+N/Scripts/ModeloD_Pesquisa_Dados/
+Auditar_Consultas_Dia_WINZ26,executar UMA vez e aguardar. Fora doTester,
+somenteleitura do custom diário fixo. EnviarMD_AUDIT_TERMINAL_DIA_20261030_...txt
+Common/Files. Ainda não executado,sem resolver por antecipação13extras/+36
+ou volume da últimaM1 no agente. Não repetirTester nem alterar dados.

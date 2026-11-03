@@ -1,0 +1,18 @@
+AUDITORIA TERMINAL — COMPILAÇÃO NATIVA RECEBIDA EM03/11/2026
+
+Auditar_Consultas_Dia_WINZ26.mq5
+code generated 0
+0 errors, 0 warnings, 484 ms elapsed, cpu='AVX2 + FMA3' 0
+
+Resultado enviado pelo usuário após instalação do pacote no secundário.
+Não foram anexados EX5/hash do binário. Compilação não comprova execução.
+
+PRÓXIMO PASSO
+Voltar ao MT5 secundário,fechar Ativos se aberto,usar gráfico WINZ26(H1serve).
+Ctrl+N/Navegador/Scripts/ModeloD_Pesquisa_Dados/Auditar_Consultas_Dia_WINZ26,
+executar uma vez,confirmar OK se abrir propriedades e aguardar concluir.
+Fora do Tester:Script recusa MQL_TESTER e lê somente o custom fixo diário.
+Não exige habilitar negociação. Não importa/altera dados nem cria símbolos.
+Enviar MD_AUDIT_TERMINAL_DIA_20261030_...txt de Common/Files. Nome exato aparece
+nas mensagens Experts. Comparar ALL/TRADE/M1 e eventos dos marcadores com
+relatório do agente;resultado nativo ainda pendente.
