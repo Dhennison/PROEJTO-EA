@@ -340,3 +340,16 @@ Próximo: copiar novo MQ5 à pasta MQL5/Scripts/ModeloD_Pesquisa_Dados do MT5
 secundário; compilar F7, com0 erros/avisos executar uma vez em WINZ26 e enviar
 compilação + MD_PESQ_CONTINUACAO_...txt. Não apagar símbolo nem repetir o
 preparador original. Expert/importação nativos ainda aguardam essa conferência.
+
+ATUALIZAÇÃO — PREPARAÇÃO NATIVA DA PESQUISA CONFIRMADA
+Usuário enviou compilação Continuar_Preparacao_WINZ26.mq5:0 erros/avisos,509ms
+e MD_PESQ_CONTINUACAO_13474_339449453.txt. Build6295 confirma símbolo custom
+existente/propriedades,565 M1 anteriores copiadas e565 relidas,same=1,error=0,
+READY_FOR_MANUAL_TICK_IMPORT. Descrição preservada; sem importação de ticks.
+Relatório/hash e explicação em pesquisa_importacao/preparacao_confirmada_20261103/.
+Próximo: no MT5 secundário,Ctrl+U > MD_PESQ_WINZ26_1030 > Ticks > Importar ticks;
+selecionar CSV original de um minuto na pasta DADOS_ORIGINAIS do primeiro ZIP.
+Enviar captura do mapeamento/prévia antes de confirmar. CSV usa TAB,7 colunas,
+hora com milissegundos; preservar vazios/zeros. Ainda não rodar Tester.
+Não repetir preparadores. EA/Expert/CSV originais inalterados; esta confirmação
+se limita ao aquecimento M1 de29/10,não valida ticks30/10 nem backtest final.

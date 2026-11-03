@@ -42,3 +42,10 @@ Novo Continuar_Preparacao_WINZ26.mq5 v1.01 preparado para esse símbolo já
 criado. Sua compilação/execução nativas ainda pendentes; não reutilizar como
 resultado dele a compilação426ms do preparador v1.00. Próximo passo atualizado
 no LEIA_CONTINUACAO_APOS_5309.txt. Não importar nem apagar o símbolo.
+
+ATUALIZAÇÃO — CONTINUAÇÃO V1.01 COMPILADA E PREPARAÇÃO CONFIRMADA
+Continuar_Preparacao_WINZ26.mq5: 0 erros/0 avisos,509ms, informado pelo usuário.
+Execução build6295:565 barras copiadas/565 lidas,same=1,error=0,READY emitido.
+Evidência em preparacao_confirmada_20261103/; fonte/EX5 não reidentificados
+por hash nativo. Sem ticks importados pelo Script. Próximo: tela de mapeamento
+na importação do CSV original para MD_PESQ_WINZ26_1030, antes da confirmação.

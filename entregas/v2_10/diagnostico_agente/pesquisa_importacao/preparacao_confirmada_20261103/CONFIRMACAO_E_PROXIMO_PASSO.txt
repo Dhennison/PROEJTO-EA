@@ -1,0 +1,37 @@
+PREPARAÇÃO NATIVA CONFIRMADA — 03/11/2026
+
+Usuário informou compilação Continuar_Preparacao_WINZ26.mq5:
+code generated 0
+0 errors, 0 warnings, 509 ms elapsed, cpu='AVX2 + FMA3' 0
+Resultado de compilação fornecido pelo usuário; EX5/hash não anexados.
+
+Relatório original preservado byte a byte:
+MD_PESQ_CONTINUACAO_13474_339449453.txt
+Journal colado pelo usuário: execução03/11 às14:33:52, horário exibido no MT5,
+gráfico WINZ26,H1. START confirma build6295. Símbolo custom existente
+MD_PESQ_WINZ26_1030; propriedades comparadas com WINZ26 conferem.
+Descrição preservada; nenhum símbolo criado/excluído nesta continuação.
+PRIOR_M1_COPY: source_rows=565, written=565, error=0.
+PRIOR_READBACK: rows=565, same=1, error=0.
+READY_FOR_MANUAL_TICK_IMPORT emitido. Não foram importados ticks pelo Script.
+
+ALCANCE
+Confirma cópia e readback das565 barras M1 de29/10/2026 de WINZ26 para o
+símbolo custom de pesquisa, conforme intervalo explícito no fonte. Não
+comprova ingestão de ticks de30/10, preservação de flags pelo importador,
+comportamento do Tester, desempenho ou aceitação do EA v2.10.
+Não precisa repetir os Scripts de preparação ou recompilar o Expert já
+compilado. Próxima etapa útil é conferir o mapeamento da importação nativa.
+
+PRÓXIMO PASSO — MT5 SECUNDÁRIO
+Ctrl+U, localizar e selecionar MD_PESQ_WINZ26_1030 (grupo ModeloD_Pesquisa).
+Abrir aba Ticks, botão Importar ticks, selecionar o CSV original
+WINZ26_202610300900_202610300901.csv da pasta DADOS_ORIGINAIS do PRIMEIRO
+pacote ModeloD_Pesquisa_Importacao_v1_00.zip. Esse CSV não veio no ZIP menor
+de continuação. O separador original é TAB; cabeçalho DATE/TIME/BID/ASK/LAST/
+VOLUME/FLAGS. Preservar arquivo sem editar, inclusive campos vazios e zeros.
+Enviar captura da tela de mapeamento/prévia ANTES de confirmar a importação.
+Será conferida a apresentação de data, hora com milissegundos e preços/volume;
+preservação de FLAGS só poderá ser confirmada no readback posterior.
+A tela/importação ainda não foi recebida/executada nesta etapa. Não selecionar
+o WINZ26 negociável; não rodar o Tester antes da conferência da importação.
