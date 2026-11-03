@@ -3,7 +3,7 @@
   "bytes": 11380,
   "sha256": "d84c46d04c4d78b56f9ba0e1ee8b1e92cb5544497821f73a0ce30727499de24c",
   "native_common_report_name": "MD_DIAG_PESQUISA_20261030_45_341798546.txt",
-  "native_common_report_uploaded": false,
+  "native_common_report_uploaded": true,
   "agent_build": 6295,
   "local_agent": "127.0.0.1:3000",
   "start": {
@@ -107,5 +107,12 @@
     }
   },
   "all_count_difference_from_original_minute": 7,
-  "scope": "Aggregates and logged samples; no full tick-by-tick agent comparison, no full-day or strategy acceptance"
+  "scope": "Aggregates and logged samples; no full tick-by-tick agent comparison, no full-day or strategy acceptance",
+  "native_common_report": {
+    "file": "MD_DIAG_PESQUISA_20261030_45_341798546.txt",
+    "bytes": 4689,
+    "sha256": "1e6cf13b0b2607d3db0a4d4f4ae33fba05c22409738c76a1b4bac84256f3a276",
+    "matches_diary_after_line_ending_normalization": true,
+    "lines": 36
+  }
 }

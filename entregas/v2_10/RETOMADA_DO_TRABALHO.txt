@@ -412,3 +412,16 @@ MD_DIAG_PESQUISA_20261030_45_341798546.txt,sem repetir teste. Diário já basta
 para a conclusão técnica; arquivo nativo completa o acervo de evidência.
 Depois ampliar controle de dados ao dia inteiro com coleta/validação nova,
 sem apagar esta amostra nem assumir que o caminho custom resolve o original.
+
+ATUALIZAÇÃO — TXT NATIVO DO CONTROLE POSITIVO RECEBIDO
+MD_DIAG_PESQUISA_20261030_45_341798546.txt recebido,preservado byte a byte em
+teste_minuto_20261103/. Todas as linhas conferem com o Diário extraído após
+normalizar quebras de linha; RESULTADOS.json atualizado comhash/bytes/estado.
+Sem novo teste; mesmos10528 negócios,volume78471,OHLC e término voluntário.
+Próximo usuário: Ctrl+U/abaTicks/selecionar WINZ26 ORIGINAL/Todos os ticks,
+início2026.10.30 00:00:00,fim2026.10.31 00:00:00;clicar Solicitação e enviar
+captura da contagem. Não importar nem alterar símbolos. Primeiro coletar
+histórico de dia inteiro, depois validar/exportar e preparar diagnóstico
+apropriado:o Expert atual encerra09:01 e não audita o restante do dia.
+Preservar controle mínimo e amostra/reexportação anteriores. Arquivo do dia
+poderá precisar de ZIP para upload; orientar exportação após a nova consulta.

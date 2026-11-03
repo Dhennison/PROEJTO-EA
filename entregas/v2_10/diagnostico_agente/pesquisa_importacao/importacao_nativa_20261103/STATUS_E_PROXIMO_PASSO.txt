@@ -85,3 +85,11 @@ interno nem equivalência integral dos registros sem auditoria completa.
 Caso positivo documentado em teste_minuto_20261103/. TXT nativo apontado no
 Diário ainda não anexado:MD_DIAG_PESQUISA_20261030_45_341798546.txt,Common/Files.
 Não repetir o teste para obtê-lo. Isso não aprova WINZ26 real/EA/dia inteiro.
+
+ATUALIZAÇÃO — TXT NATIVO CONFERIDO COM DIÁRIO
+Relatório MD_DIAG_PESQUISA_20261030_45_341798546.txt recebido; todas as linhas
+conferem com o Diário após normalizar quebras de linha. Preservado no diretório
+teste_minuto_20261103/,hash e metadados registrados. Sem nova execução.
+Próxima coleta: WINZ26 original/Todos os ticks,30/10/2026 00:00 a31/10 00:00,
+Solicitação e captura da contagem. Isso prepara ampliação ao dia inteiro;
+ainda não exportado/importado/testado. Controle de um minuto preservado.

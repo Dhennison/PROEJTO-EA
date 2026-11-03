@@ -60,3 +60,21 @@ Não repetir o teste. Esse anexo completa a evidência nativa; o Diário já
 permite a conclusão acima. Etapa posterior útil: ampliar o controle ao dia
 inteiro, com nova coleta/validação de ticks, preservando este caso mínimo.
 A ampliação ainda não foi executada nem preparada como backtest operacional.
+
+ATUALIZAÇÃO — RELATÓRIO NATIVO RECEBIDO E CONFERIDO
+MD_DIAG_PESQUISA_20261030_45_341798546.txt recebido e preservado byte a byte.
+Todas as linhas conferem com o relatório derivado do Diário após normalizar
+somente quebras de linha para a comparação. Metadados/hash em RESULTADOS.json.
+Confirma os mesmos resultados; não foi executado outro teste.
+
+PRÓXIMA COLETA — HISTÓRICO ORIGINAL DO DIA INTEIRO
+No MT5 secundário,Ctrl+U,abaTicks,selecionar WINZ26 (o símbolo original),
+Todos os ticks, início2026.10.30 00:00:00 e fim2026.10.31 00:00:00.
+Clicar Solicitação e enviar captura com símbolo,intervalo e contagem.
+A coleta de um dia é nova evidência para ampliar o controle positivo; não é
+repetição do teste original que já falhou. Preservar caso mínimo já concluído.
+Não importar/alterar/apagar dados nesta etapa. Exportação do CSV do dia será
+orientada depois da consulta; arquivo provavelmente exigirá ZIP para upload.
+O Expert atual encerra às09:01 e não audita o restante do dia: para ampliar
+execução será necessário preparar/verificar diagnóstico apropriado antes de
+rodar. Não apresentar o Expert de um minuto como diagnóstico do dia inteiro.
