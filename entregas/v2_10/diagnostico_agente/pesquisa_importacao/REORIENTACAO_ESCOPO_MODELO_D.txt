@@ -1,0 +1,42 @@
+REORIENTAÇÃO APÓS QUESTIONAMENTO DO USUÁRIO — 03/11/2026
+
+Usuário questionou relevância da auditoria18:31 e excesso de diagnósticos
+sem avanço operacional. Suspender pedido de instalar/compilar o pacote de
+marcadores;preservar arquivos como evidência,não tratar controle global1
+como pré-requisito automático ao ensaio do ModeloD.
+
+CONFERÊNCIA DO PROJETO
+CONTEXTO_CONSOLIDADO_DOS_CHATS.txt,linhas135–145: corte regular18hBrasília,
+bloqueio/cancelamento/zeragem e gestão por timer,com horários especiais
+conforme sessão validada. ZIP operacional v2.10:ModeloD_Session.mqh define
+cutoff18*3600 para a data;Stream limita consultas antes do cutoff.
+ModeloD_StreamTerminal.mqh lê no máximo5minutos fechados e confereOHLC,
+com recuperação COPY_TICKS_ALL filtrando flags de negócio já implementada.
+ModeloD_OpeningTicks.mqh busca abertura porCOPY_TICKS_TRADE em janelas
+limitadas. Portanto consulta do dia inteiro não replica necessariamente a
+consulta realmente usada pelo EA. Volume da últimaM1 às18:31 não é entrada
+das regras de primeiro toque nem daquela auditoriaOHLC intrajornada.
+
+RELEVÂNCIA DOS ACHADOS
+Divergência527bilhões na18:31:diagnóstico de contexto/cache/API,fora da
+janela regular;por si só não deve bloquear teste funcional.
+13extras/+36:ocorrem em horários intrajornada e justificam verificar o
+caminho efetivo do leitor,mas ainda não comprovam impacto em primeiro toque
+ou ordens. Há valoresLast carregados/repetidos;não presumir preço novo nem
+impacto decisório só pela contagem. ALLfiltrado já existe no EA.
+Falha original realWINZ26:agente descartou ticks,leitor não validou abertura,
+EA não enviou ordens. Esse ainda é bloqueio operacional relevante.
+Controles custom mostraram dados acessíveis mas não são teste do EA.
+
+PRIORIDADE CORRIGIDA
+Retomar validação do EA e cinco níveis na janela aprovada:abertura,linhas,
+aceitação anterior ao primeiro toque,ordens/SL/TP,cancelamentos e zeragem.
+Antes de pedir execução,verificar a rota:TesterData210 aceita apenasWINZ26
+real/data30/Fuso-10800 e exige históricoD1;custom de pesquisa não é substituto
+plug-and-play. Preparação atual copiou só29/10,EA exige3D1 recentes. Não mandar
+simplesmente selecionar EA no custom e esperar que funcione,nem relaxar
+restrições silenciosamente. Identificar/adaptar somente um controle deTester
+claramente separado,ou resolver a fonte original;regras/preços permanecem.
+Não alterar fórmulas/limites por falhas dos diagnósticos. Não repetir rotinas
+sem hipótese operacional e critério de sucesso. Infraestrutura diagnosticada
+não equivale a estratégia validada. Usuário pediu explicação antes de agir.

@@ -599,3 +599,17 @@ ModeloD_Diagnostico_Pesquisa/Diagnostico_Marcadores_Dia_WINZ26.mq5,F7/enviar
 resultado. DepoisconfigurarTester sóExpertnovo,mesmoDIA1030/M5/datas/ticksreais;
 rodada nova justificada porcaptura dosregistros antesnãoobservados. Sem
 relaxar checks/sugerir resultadoaprovado doEAoucontrato real.
+
+REORIENTAÇÃO — USUÁRIO QUESTIONOU INVESTIGAÇÃO FORA DA JANELA
+Usuário pausou antes de instalar marcadores e perguntou relevância/circularidade.
+Conferi regra/código:regular18hBRT;Stream antescutoff/5minfechados/auditoria
+OHLC/ALLfiltradojáimplementado. Volume18:31 não é pré-requisito funcional.
+Reconhecer desvio de foco. PacotemarcadoresEMPAUSA,não solicitar instalar.
+13extrasintrajornada têm relevância potencial,mas consulta dia inteiro não
+prova efeito nas janelas reais do leitor/primeiro toque. Avanço realizado é
+infraestrutura,não EA operacional. Falha originalWIN ainda impede abertura.
+Reorientação detalhada emREORIENTACAO_ESCOPO_MODELO_D.txt. Próximo foco é
+ensaiofuncional dentro da janela/cinconíveis/zeragem,semfórmulas alteradas;
+antes verificar rotaTester:EA sóaceitaWINZ26 e requer3D1,custom atual não é
+plug-and-play. Não prometer iniciarEAali sem trabalho de integração explícito.
+Responder pergunta do usuário com transparência,sem novo ciclo de coleta.
