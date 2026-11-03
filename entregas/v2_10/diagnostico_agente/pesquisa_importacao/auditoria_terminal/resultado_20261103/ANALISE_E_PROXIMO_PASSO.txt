@@ -1,0 +1,25 @@
+AUDITORIA NO TERMINAL — TODOS OS TRÊS CONTROLES PASSARAM
+Relatório nativo preservado,build6295,mesmo custom diário/dataset.
+ALL4319285/14flags0/signaled4319271/trades3190938/volume20884960;fingerprints
+ALL/TRADE iguaisCSV. COPY_TICKS_TRADE3190938/volume20884960/mesmofingerprint.
+M1n566/mismatches0/missing0. Logo este contexto não repete13extras/+36 ou
+volumeM1final527bilhões. Barra18:31 retorna25986 também noCopyRates terminal.
+
+Nos14timestamps do CSV,ALL mostra14flags0:1pré-abertura semLast/volume,
+13durante negócios comLast/volume carregados,soma36. TRADE terminal os exclui.
+A combinação13/+36 coincide exatamente com o excesso do agente,mas não
+prova ainda qual registro foi reclassificado no agente. Conferir por horário,
+flags e valores antes de atribuir causa. Sem corrupção comprovada doCSV ou
+mudança na estratégia. Quatro diferenças originais WINZ26/ticks seguem distintas.
+
+Preparado Expert adicional de OBSERVAÇÃO,sem alterar o controle original:
+auditoria_marcadores_agente/Diagnostico_Marcadores_Dia_WINZ26.mq5(v1.01).
+Mesmos dados/símbolo/datas/consultas/veredictos. Acrescenta logs dos14horários,
+fingerprint dos callbacksOnTick e último tick,para comparar também entrega
+real da sequência com consultas em cache. Não importa/corrige dados,não negocia.
+44checksCPPsimulados/0falhas,CSVreal completo/sanitizadores,incluindo cada
+callback sinalizado e preservação dos mesmos resultados do verificador.
+Compilação e execução MQL5 pendentes. Próximo copiarMQL5 doZIPnovo à raiz do
+secundário,F4abrirExpert novo/F7/enviar compilação. Depois configurar só esse
+Expert no MESMOcustom/dia/ticksreais;preservar logs anteriores. Não repetir
+sem instrumentação:esta execução coleta a evidência por registro que faltava.

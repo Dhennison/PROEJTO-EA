@@ -1,0 +1,29 @@
+OBSERVAR AS DIFERENÇAS NO AGENTE — SEM ORDENS
+
+No terminal,ALL/TRADE/M1 conferemCSV. No agente,ALLconfere masTRADEtem13extras
+/+36 e M1finalvolume527000000000 vs25986. Há13flags0comLastcarregado/volumes
+somando36 noALL do terminal. É hipótese de correspondência,a provarnoagente.
+
+Copie a pasta MQL5 deste ZIP e cole na RAIZ do secundário:
+C:\Users\jhenn\AppData\Local\ModeloD_MT5_Isolado_20261102_145749_6554356a
+Acrescenta só UM Expert novo. Mantém fontes anteriores,símbolos,dados,
+importação e regras do controle. Não é Script;fica em Experts.
+F4 no secundário,abrir:
+MQL5\Experts\ModeloD_Diagnostico_Pesquisa\Diagnostico_Marcadores_Dia_WINZ26.mq5
+F7/enviar resultado. Só depois orientar execução noTester.
+
+Configuração posterior:Expert novo,ativoMD_PESQ_WINZ26_DIA1030,M5,30/10 a31/10,
+ticks reais,sem visual/otimização,agente local. Mesmos dados do teste anterior;
+não repetir importação. Este Expert preserva o RESULT original sem relaxar
+checks;novos logs MARKER nos14timestamps,OBSERVED_SEQUENCE com fingerprint dos
+callbacks e LAST_OBSERVED com campos do último callback. Fingerprint não é
+criptográfico/equivalência de todos os bytes;usa campos sinalizados já
+explicados nos controles anteriores. Logs podem alterar o tempo de execução,
+mas não reescrevem ticks/barras nem mudam consultas/veredictos.
+Esperar finalizar. Enviar TXT novo:
+MD_DIAG_MARCADORES_DIA_20261030_...txt
+Local:%APPDATA%\MetaQuotes\Terminal\Common\Files
+Enviar também Diário do motor desta rodada. Se resultados mudarem,comparar
+estado/cache e dados observados;instrumentação não deve ser tratada como
+correção. Não aprova estratégia/contrato real/performance.44checksCPPsimulados
+comCSV real passaram;compilação/execuçãoMT5 ainda pendentes.

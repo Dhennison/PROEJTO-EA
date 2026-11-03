@@ -1,0 +1,8 @@
+HOST_DIA;Checks=44;Failures=0;SOURCE_ROWS=4319285;CPP_SIMULADO;NAO_E_COMPILACAO_MQL5
+Comando:python3 VALIDAR_LOCAL_MARCADORES.py
+ASan/UBSan ativos,execução fora do ptrace. Mesmo corpus/harness do controle
+diário:recusas/API parcial/ordem trocada/quote ausente/volumecampo incompatível/
+fora da faixa/replay cedo/M1 divergente/cancelamento. Adiciona reprodução de
+4319271callbacks sinalizados,conferindo fingerprints ALL/TRADE/volumes íntegros.
+Veredictos originais preservados. APIs simuladas:não é compilaçãoMQL5 nem
+prova de comportamento do agente/importador. Compilação nativa pendente.

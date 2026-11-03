@@ -581,3 +581,21 @@ Auditar_Consultas_Dia_WINZ26,executar UMA vez e aguardar. Fora doTester,
 somenteleitura do custom diário fixo. EnviarMD_AUDIT_TERMINAL_DIA_20261030_...txt
 Common/Files. Ainda não executado,sem resolver por antecipação13extras/+36
 ou volume da últimaM1 no agente. Não repetirTester nem alterar dados.
+
+ATUALIZAÇÃO — AUDITORIA TERMINAL PASSAALL/TRADE/M1;EXTRASRESTRITOS AO AGENTEOBSERVADO
+RecebidoMD_AUDIT_TERMINAL_DIA_20261030_2968_350248765.txt,91231bytes,preservado
+em auditoria_terminal/resultado_20261103/. ALL4319285/14zeros/4319271sinalizados,
+trades3190938/vol20884960/hashescorretos. TRADE3190938/vol20884960/hashcorreto;
+M1n566/mismatch0. Todos3RESULT1. Nas14marcaçõesALL,13flags0Lastpositivo/vol
+somado36+1préabertura0;TRADEterminalexcluioszeros. Agentehavia13extras/+36,
+mas correspondência exata porregistro ainda não demonstrada. Causa aberta.
+Preparadoauditoria_marcadores_agente/ModeloD_Marcadores_Agente_v1_01.zip,
+ExpertNOVODiagnostico_Marcadores_Dia_WINZ26. Mesmo verificador/dados/símbolo,
+acrescenta14markers,hashescallbackOnTick eúltimotickpara distinguir cache/
+consultas/entregareal. Não altera/importa,não cria símbolos,não opera.
+44checksCPP0falhas,CSV4319285,ASan/UBSan,inclui4319271callbacks;MQL5pendente.
+Próximo usuário:copiarMQL5do novoZIP naRAIZdosecundário,F4abrirExperts/
+ModeloD_Diagnostico_Pesquisa/Diagnostico_Marcadores_Dia_WINZ26.mq5,F7/enviar
+resultado. DepoisconfigurarTester sóExpertnovo,mesmoDIA1030/M5/datas/ticksreais;
+rodada nova justificada porcaptura dosregistros antesnãoobservados. Sem
+relaxar checks/sugerir resultadoaprovado doEAoucontrato real.

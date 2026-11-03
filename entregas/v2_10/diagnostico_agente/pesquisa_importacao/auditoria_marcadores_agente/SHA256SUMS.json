@@ -1,0 +1,17 @@
+[
+  {
+    "file": "MQL5/Experts/ModeloD_Diagnostico_Pesquisa/Diagnostico_Marcadores_Dia_WINZ26.mq5",
+    "bytes": 13310,
+    "sha256": "5d41197115669de942fd85a54082e0543d0e5c068380d833fa36056f80ada920"
+  },
+  {
+    "file": "RESULTADOS_LOCAIS.txt",
+    "bytes": 604,
+    "sha256": "f71812f1ab4f5c20f75a9f667df535311f205ba7e1ef053ea52118aa70e9b2a8"
+  },
+  {
+    "file": "LEIA_MARCADORES_AGENTE.txt",
+    "bytes": 1773,
+    "sha256": "240970470969650cc4a7f1fdde643782c8acf4a4fe284713d10feda779a7b9a4"
+  }
+]
