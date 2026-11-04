@@ -17,14 +17,15 @@ struct MqlTick{long time_msc;double last;uint flags;double bid=209995,ask=210000
 struct MqlRates{long time;double open,high,low,close;long tick_volume=100,real_volume=100;};
 template<class T>void ArraySetAsSeries(std::vector<T> &,bool){}
 struct MqlTradeTransaction{};
-struct MqlTradeRequest{int action=0,type=0,type_filling=0,type_time=0;ulong magic=0,order=0,position=0;string symbol,comment;double volume=0,price=0,sl=0,tp=0;};
+struct MqlTradeRequest{long expiration=0;int action=0,type=0,type_filling=0,type_time=0;ulong magic=0,order=0,position=0;string symbol,comment;double volume=0,price=0,sl=0,tp=0;};
 struct MqlTradeResult{uint retcode=0;int retcode_external=0;ulong order=0,deal=0;};
 template<class T>void ZeroMemory(T &v){v=T{};}
 template<class T>int ArraySize(const std::vector<T> &v){return (int)v.size();}
 const int MQL_TESTER=100,MQL_OPTIMIZATION=101,ACCOUNT_MARGIN_MODE=102,ACCOUNT_MARGIN_MODE_RETAIL_HEDGING=103,
  SYMBOL_EXPIRATION_TIME=104,SERIES_SYNCHRONIZED=105,PERIOD_D1=1440,SYMBOL_FILLING_MODE=106,SYMBOL_TRADE_EXEMODE=107,
  SYMBOL_FILLING_FOK=1,SYMBOL_FILLING_IOC=2,SYMBOL_TRADE_EXECUTION_MARKET=2,
- ORDER_TIME_GTC=0,ORDER_FILLING_RETURN=2,ORDER_FILLING_FOK=0,ORDER_FILLING_IOC=1,
+ SYMBOL_EXPIRATION_MODE=130,SYMBOL_EXPIRATION_GTC=1,SYMBOL_EXPIRATION_DAY=2,SYMBOL_EXPIRATION_SPECIFIED=4,
+ ACCOUNT_CURRENCY=131,ORDER_TIME_DAY=1,ORDER_TIME_SPECIFIED=2,ORDER_TIME_GTC=0,ORDER_FILLING_RETURN=2,ORDER_FILLING_FOK=0,ORDER_FILLING_IOC=1,
  TRADE_ACTION_PENDING=5,TRADE_ACTION_REMOVE=8,TRADE_ACTION_SLTP=6,TRADE_ACTION_DEAL=1,
  ORDER_TYPE_BUY_LIMIT=2,ORDER_TYPE_SELL_LIMIT=3,DEAL_PROFIT=110,DEAL_COMMISSION=111,DEAL_SWAP=112,DEAL_FEE=113;
 long mock_login210=1;string mock_server210="TEST";bool mock_hedge210=true;
@@ -33,6 +34,7 @@ std::vector<MqlTradeRequest> mock_requests210;std::vector<MqlRates> mock_daily_r
 std::function<bool(const MqlTradeRequest &,MqlTradeResult &)> mock_send210;
 long MQLInfoInteger(int p){return p==MQL_TESTER?mock_tester210:mock_optimization210;}
 bool OrderSend(const MqlTradeRequest &r,MqlTradeResult &v){mock_send_calls210++;mock_requests210.push_back(r);if(mock_send210)return mock_send210(r,v);v.retcode=10031;return false;}
+long mock_expiration_modes211=SYMBOL_EXPIRATION_GTC;bool mock_expiration_error211=false;string mock_currency211="BRL";
 string mock_last_symbol211="";
 bool SymbolSelect(string s,bool){mock_last_symbol211=s;return true;}
 bool SeriesInfoInteger(string,int,int,long &v){v=1;return true;}
@@ -58,7 +60,7 @@ long TimeGMT(){return mock_utc/1000;}
 long TimeTradeServer(){return (mock_utc-10800000)/1000;}
 long TimeCurrent(){return mock_broker_fresh?TimeTradeServer():0;}
 unsigned long GetTickCount64(){return mock_mono;}
-long AccountInfoInteger(int p){return p==ACCOUNT_MARGIN_MODE?(mock_hedge210?ACCOUNT_MARGIN_MODE_RETAIL_HEDGING:0):mock_login210;}string AccountInfoString(int){return mock_server210;}
+long AccountInfoInteger(int p){return p==ACCOUNT_MARGIN_MODE?(mock_hedge210?ACCOUNT_MARGIN_MODE_RETAIL_HEDGING:0):mock_login210;}string AccountInfoString(int p){return p==ACCOUNT_CURRENCY?mock_currency211:mock_server210;}
 double AccountInfoDouble(int){return mock_free_margin;}
 bool TerminalInfoInteger(int){return mock_connected;}
 bool TimeToStruct(long stamp,MqlDateTime &out){std::time_t value=stamp;auto g=std::gmtime(&value);out.year=g->tm_year+1900;out.mon=g->tm_mon+1;out.day=g->tm_mday;return true;}
@@ -77,7 +79,7 @@ bool SymbolInfoDouble(string symbol,int prop,double &v){mock_last_symbol211=symb
  else v=1;
  return true;
 }
-bool SymbolInfoInteger(string symbol,int prop,long &v){if(prop==114){v=symbol=="MD_PESQ_WINZ26_DIA1030"?1:0;return true;}if(prop==SYMBOL_TRADE_MODE)v=SYMBOL_TRADE_MODE_FULL;else if(prop==SYMBOL_ORDER_MODE)v=14;else if(prop==SYMBOL_EXPIRATION_TIME)v=MDCivilMidnight2026(20261216)/1000;else if(prop==SYMBOL_FILLING_MODE)v=SYMBOL_FILLING_FOK;else if(prop==SYMBOL_TRADE_EXEMODE)v=SYMBOL_TRADE_EXECUTION_MARKET;else v=0;return true;}
+bool SymbolInfoInteger(string symbol,int prop,long &v){if(prop==SYMBOL_EXPIRATION_MODE){mock_last_symbol211=symbol;v=mock_expiration_modes211;return !mock_expiration_error211;}if(prop==114){v=symbol=="MD_PESQ_WINZ26_DIA1030"?1:0;return true;}if(prop==SYMBOL_TRADE_MODE)v=SYMBOL_TRADE_MODE_FULL;else if(prop==SYMBOL_ORDER_MODE)v=14;else if(prop==SYMBOL_EXPIRATION_TIME)v=MDCivilMidnight2026(20261216)/1000;else if(prop==SYMBOL_FILLING_MODE)v=SYMBOL_FILLING_FOK;else if(prop==SYMBOL_TRADE_EXEMODE)v=SYMBOL_TRADE_EXECUTION_MARKET;else v=0;return true;}
 bool SymbolInfoTick(string symbol,MqlTick &v){mock_last_symbol211=symbol;if(mock_ticks.empty())return false;v=mock_ticks.back();return true;}
 bool OrderCalcMargin(int,string symbol,double,double,double &v){mock_last_symbol211=symbol;v=100;if(!mock_margin_ok){lastError=77;return false;}return true;}
 string MDLogico211(string s);

@@ -30,6 +30,22 @@ bool MDTesterFresh210(MDOpFrame &frame,string &why)
  if(!Commit(reconciled,"TESTER_FRESH_RECONCILIATION"))return false;
  return frame.stable&&frame.connected&&frame.clock_ok&&why=="ALL_CHAINS_RECONCILED";
 }
+bool MDTesterExpiration211(const MDOpLevel &l,MqlTradeRequest &r,string &why)
+{
+ long modes=0;
+ if(!MDSymbolInfoInteger211(l.symbol,SYMBOL_EXPIRATION_MODE,modes))
+ {why="TESTER_EXPIRATION_PROPERTIES_UNAVAILABLE";return false;}
+ r.expiration=0;
+ if((modes&SYMBOL_EXPIRATION_GTC)!=0)r.type_time=ORDER_TIME_GTC;
+ else if((modes&SYMBOL_EXPIRATION_DAY)!=0)r.type_time=ORDER_TIME_DAY;
+ else if((modes&SYMBOL_EXPIRATION_SPECIFIED)!=0){
+  long cutoff_server=l.cutoff_utc/1000+(long)FusoServidorTester;
+  if(cutoff_server<=(long)TimeCurrent()){why="TESTER_EXPIRATION_CUTOFF_PASSED";return false;}
+  r.type_time=ORDER_TIME_SPECIFIED;r.expiration=(datetime)cutoff_server;
+ }else{why="TESTER_EXPIRATION_MODE_UNSUPPORTED";return false;}
+ // DAY/GTC never replace the model's timer-driven cancellation/closing cutoff.
+ return true;
+}
 bool MDTesterRequest210(const MDOpState &s,int owner,int position,int kind,MqlTradeRequest &r,string &why)
 {
  ZeroMemory(r);
@@ -39,6 +55,7 @@ bool MDTesterRequest210(const MDOpState &s,int owner,int position,int kind,MqlTr
  r.symbol=l.symbol;r.magic=(ulong)MDMagic67(s.instance,l.level);r.comment=MDOpComment(l);
  r.type_time=ORDER_TIME_GTC;r.type_filling=ORDER_FILLING_RETURN;
  if(kind==1){
+  if(!MDTesterExpiration211(l,r,why))return false;
   r.action=TRADE_ACTION_PENDING;r.type=l.prices.buy?ORDER_TYPE_BUY_LIMIT:ORDER_TYPE_SELL_LIMIT;
   r.volume=l.volume;r.price=l.prices.entry_tick;r.sl=l.prices.sl_tick;r.tp=l.prices.tp_tick;
  }else if(kind==3){
@@ -135,7 +152,8 @@ void MDTesterDispatch210()
   Report615("TESTER_REQUEST;kind="+IntegerToString(kind)+";key="+IntegerToString(operational.levels[owner].key)+
    ";serial="+IntegerToString(action.serial)+";revision="+IntegerToString(operational.revision)+";order="+IntegerToString((long)request.order)+
    ";position="+IntegerToString((long)request.position)+";volume="+DoubleToString(request.volume,8)+";price="+DoubleToString(request.price,8)+
-   ";sl="+DoubleToString(request.sl,8)+";tp="+DoubleToString(request.tp,8)+";SIMULATED_ONLY");
+   ";sl="+DoubleToString(request.sl,8)+";tp="+DoubleToString(request.tp,8)+
+   ";type_time="+IntegerToString((long)request.type_time)+";expiration="+IntegerToString((long)request.expiration)+";SIMULATED_ONLY");
   MqlTradeResult result;ZeroMemory(result);ResetLastError();
   if(!MDTesterGate210()||fatal||!owns615||lock615==INVALID_HANDLE||Scope615()!=operational.scope||IsStopped()||
      (long)GetTickCount64()-began>3000){MDTesterBlocked210(slot,"PERMIT_EXPIRED_BEFORE_SEND_RECONCILE");return;}

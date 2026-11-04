@@ -26,7 +26,7 @@ demo;nenhuma etapa atual depende de criar demo. Liberação real continua
 separada e exige terminar/validar transporte de produção,depois deste ensaio.
 
 VERIFICAÇÃO
-79checksC++/APIs simuladas,ASan/UBSan ativos,zero falhas. Inclui50anteriores
+87checksC++/APIs simuladas,ASan/UBSan ativos,zero falhas. Inclui50anteriores
 mais ponte,cinco pendentes elegíveis,identidade,D1real,M1importada,SLTP,
 fechamento/cancelamento por ticket,normalização de recibos,bloqueio live/
 contexto errado e outra origem. Fixtures dos testes são sintéticos,não
@@ -50,3 +50,13 @@ de dois argumentos. Acrescentada a sobrecarga bool com string de saída,
 preservando o retorno de erro e o roteamento do símbolo da API nativa.
 Sem mudança nas regras ou no fluxo de ordens. A compilação nativa deve ser
 repetida; a suíte local não substitui a validação do MetaEditor.
+
+CORREÇÃO APÓS A PRIMEIRA RODADA NATIVA — 04/11/2026
+A rodada chegou ao cálculo dos cinco níveis e aos cinco requests, todos
+rejeitados com retcode 10022. Também faltou histórico BRLUSD10 na conta
+simulada em USD. Ensaio não aprovado; proteção e zeragem não demonstradas.
+Corrigida a seleção da validade segundo os flags do símbolo físico.
+INI solicita Currency=BRL; novo bloqueio verifica a moeda efetiva antes
+de inicializar o ensaio importado. Não modifica a conta real nem os dados
+do símbolo. Launcher usa a instalação isolada com /portable e /config.
+Essas integrações requerem compilação e rodada nativas, ainda pendentes.

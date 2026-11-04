@@ -1,0 +1,603 @@
+2026.11.04 11:44:39.166	Tester	"ModeloD_Ensaio_Funcional\EA_ModeloD_Ensaio_Funcional.ex5" AVX2
+2026.11.04 11:44:39.684	Tester	MD_PESQ_WINZ26_DIA1030: history data begins from 2026.10.29 00:00
+2026.11.04 11:44:39.687	Tester	MD_PESQ_WINZ26_DIA1030: ticks data begins from 2026.10.30 00:00
+2026.11.04 11:44:39.728	Core 01	agent process started on 127.0.0.1:3000
+2026.11.04 11:44:39.728	Core 01	connecting to 127.0.0.1:3000
+2026.11.04 11:44:40.247	Core 01	connected
+2026.11.04 11:44:40.293	Core 01	authorized (agent build 6295)
+2026.11.04 11:44:40.308	Tester	MD_PESQ_WINZ26_DIA1030,M5 (GenialInvestimentos-PRD): testing of Experts\ModeloD_Ensaio_Funcional\EA_ModeloD_Ensaio_Funcional.ex5 from 2026.10.30 00:00 to 2026.10.31 00:00
+2026.11.04 11:44:40.471	Core 01	common synchronization completed
+2026.11.04 11:44:40.486	Core 01	MD_PESQ_WINZ26_DIA1030: ticks synchronized already [75 bytes]
+2026.11.04 11:44:46.601	Core 01	MetaTester 5 started on 127.0.0.1:3000
+2026.11.04 11:44:46.601	Core 01	cloud network mode is off
+2026.11.04 11:44:46.601	Core 01	initialization finished
+2026.11.04 11:44:46.601	Core 01	login (build 6295)
+2026.11.04 11:44:46.601	Core 01	5464 bytes of account info loaded
+2026.11.04 11:44:46.601	Core 01	1478 bytes of tester parameters loaded
+2026.11.04 11:44:46.601	Core 01	4292 bytes of input parameters loaded
+2026.11.04 11:44:46.601	Core 01	595400 bytes of symbols list loaded (73501 symbols)
+2026.11.04 11:44:46.601	Core 01	expert file added: Experts\ModeloD_Ensaio_Funcional\EA_ModeloD_Ensaio_Funcional.ex5. 319132 bytes loaded
+2026.11.04 11:44:46.601	Core 01	file added: Files\ModeloD_Tester_20261030_ajuste_b3.txt. 991 bytes loaded
+2026.11.04 11:44:46.601	Core 01	initial deposit 1000000.00 USD, leverage 1:100
+2026.11.04 11:44:46.601	Core 01	successfully initialized
+2026.11.04 11:44:46.601	Core 01	756 Kb of total initialization data received
+2026.11.04 11:44:46.601	Core 01	13th Gen Intel Core i5-1335U, 7879 MB
+2026.11.04 11:44:46.601	Core 01	MD_PESQ_WINZ26_DIA1030: symbol to be synchronized
+2026.11.04 11:44:46.601	Core 01	MD_PESQ_WINZ26_DIA1030: symbol synchronized, 3720 bytes of symbol info received
+2026.11.04 11:44:46.601	Core 01	MD_PESQ_WINZ26_DIA1030: load 59 bytes of history data to synchronize in 0:00:00.001
+2026.11.04 11:44:46.601	Core 01	MD_PESQ_WINZ26_DIA1030: history synchronized from 2026.10.29 to 2026.10.30
+2026.11.04 11:44:46.601	Core 01	MD_PESQ_WINZ26_DIA1030: ticks synchronization started
+2026.11.04 11:44:46.601	Core 01	MD_PESQ_WINZ26_DIA1030: load 66 bytes of tick data to synchronize in 0:00:00.000
+2026.11.04 11:44:46.601	Core 01	MD_PESQ_WINZ26_DIA1030: history ticks synchronized from 2026.10.30 to 2026.10.30
+2026.11.04 11:44:46.601	Core 01	MD_PESQ_WINZ26_DIA1030,M5: history cache allocated for 367 bars and contains 113 bars from 2026.10.29 09:00 to 2026.10.29 18:20
+2026.11.04 11:44:46.601	Core 01	MD_PESQ_WINZ26_DIA1030,M5: history begins from 2026.10.29 09:00
+2026.11.04 11:44:46.601	Core 01	MD_PESQ_WINZ26_DIA1030,M5 (GenialInvestimentos-PRD): generating based on real ticks
+2026.11.04 11:44:46.601	Core 01	MD_PESQ_WINZ26_DIA1030,M5: testing of Experts\ModeloD_Ensaio_Funcional\EA_ModeloD_Ensaio_Funcional.ex5 from 2026.10.30 00:00 to 2026.10.31 00:00 started with inputs:
+2026.11.04 11:44:46.601	Core 01	  ExecutarNoTester=true
+2026.11.04 11:44:46.601	Core 01	  DataTester=20261030
+2026.11.04 11:44:46.601	Core 01	  ContratoTester=WINZ26
+2026.11.04 11:44:46.601	Core 01	  FusoServidorTester=-10800
+2026.11.04 11:44:46.601	Core 01	  UsarFonteImportadaNoTester=true
+2026.11.04 11:44:46.601	Core 01	  Instancia=1
+2026.11.04 11:44:46.601	Core 01	  VolumePorNivel=1
+2026.11.04 11:44:46.601	Core 01	  IntervaloSegundos=2
+2026.11.04 11:44:46.601	Core 01	2026.10.30 00:00:00   RELATORIO_ABERTO;C:\Users\jhenn\AppData\Roaming\MetaQuotes\Terminal\Common\Files\MDT211_FUNC_1793318400_415696484_437_ModeloD_Integrado_A1S53545241544547595F544553544552I1_1793318400_415696484.txt
+2026.11.04 11:44:46.601	Core 01	2026.10.30 00:00:00   DIAGNOSTICO;componente=PERSISTENCIA;motivo=DIARIO_INICIAL_CRIADO;recuperacao=ESTADO_PRESERVADO;NAO_AUTORIZA_TRANSPORTE
+2026.11.04 11:44:46.601	Core 01	2026.10.30 00:00:00   START;v=2.11_FUNCIONAL;TRANSPORT_TESTER_ONLY;ISOLATED_RUN;revision=1
+2026.11.04 11:44:46.601	Core 01	2026.10.30 00:00:00   TESTER_CONFIG;date=20261030;contract=WINZ26;server_offset_s=-10800;source_date=2026-10-29;dataset=ModeloD_Tester_20261030_ajuste_b3.txt;scope_prefix=MDT211_FUNC_1793318400_415696484_437_;SINGLE_DAY_NO_OPTIMIZATION;REAL_TICKS_REQUIRED_IN_TESTER_SETTINGS
+2026.11.04 11:44:46.601	Core 01	MD_PESQ_WINZ26_DIA1030 : real ticks begin from 2026.10.30 00:00:00
+2026.11.04 11:44:52.112	Core 01	WINZ26: ticks synchronization started
+2026.11.04 11:45:09.109	Core 01	WINZ26: ticks downloading completed
+2026.11.04 11:45:09.109	Core 01	WINZ26: ticks synchronized already [43 bytes]
+2026.11.04 11:45:09.110	Core 01	2026.10.30 00:00:02   DIAGNOSTICO;componente=RELOGIO;motivo=TESTER_CLOCK_SAMPLING;recuperacao=REAVALIA_NO_TIMER;NAO_REINICIA_PRAZOS
+2026.11.04 11:45:09.110	Core 01	2026.10.30 00:00:02   DIAGNOSTICO;componente=DADOS_DIARIOS;motivo=RELOGIO_NAO_VALIDADO;recuperacao=REAVALIA_APOS_RELOGIO_VALIDO
+2026.11.04 11:45:09.110	Core 01	2026.10.30 00:00:02   COBERTURA_ATUAL;estado=DADOS_DIARIOS_NAO_CONFERIDOS;
+2026.11.04 11:45:09.110	Core 01	2026.10.30 00:00:02   DIAGNOSTICO;componente=INVENTARIO;motivo=DUAS_LEITURAS_CONFERIDAS;recuperacao=NOVA_DUPLA_LEITURA_NO_TIMER;NAO_CONFIRMA_ACAO_POR_AUSENCIA
+2026.11.04 11:45:09.110	Core 01	2026.10.30 00:00:02   DIAGNOSTICO;componente=CONCILIACAO;motivo=ALL_CHAINS_RECONCILED;recuperacao=REAVALIA_NO_TIMER;ORIGENS_E_EFEITOS_EXIGEM_PROVA
+2026.11.04 11:45:09.110	Core 01	2026.10.30 00:00:02   DIAGNOSTICO;componente=FLUXO_TICKS;motivo=DADOS: FUSO_SERVIDOR_B3_NAO_CONFIRMADO;recuperacao=REAVALIA_NO_TIMER
+2026.11.04 11:45:09.110	Core 01	2026.10.30 00:00:02   INTEGRATED;ALL_CHAINS_RECONCILED;revision=1;entry_intents=0;SLTP_intents=0;cancel_intents=0;close_intents=0;unresolved=0;transport=TESTER_ONLY;NATIVE_VALIDATION_PENDING
+2026.11.04 11:45:09.110	Core 01	2026.10.30 00:00:02   TESTER_TRANSPORT_BLOCKED;slot=255;reason=TESTER_CLOCK_SAMPLING
+2026.11.04 11:45:09.110	Core 01	2026.10.30 00:00:04   DIAGNOSTICO;componente=RELOGIO;motivo=TESTER_SIMULATED_CLOCK_EXPLICIT_BRT_NOT_NTP;recuperacao=REAVALIA_NO_TIMER;NAO_REINICIA_PRAZOS
+2026.11.04 11:45:09.110	Core 01	WINZ26: symbol to be synchronized
+2026.11.04 11:45:09.110	Core 01	WINZ26: symbol synchronized, 3720 bytes of symbol info received
+2026.11.04 11:45:09.110	Core 01	2026.10.30 00:00:04   DIAGNOSTICO;componente=DADOS_DIARIOS;motivo=PRIMEIRO_TICK_AGUARDA_JANELA_COMPLETA;cursor_msc=1793350800000;tentativas=0;recuperacao=RELEITURA_NO_TIMER;DEPENDE_DE_DADOS_VALIDOS
+2026.11.04 11:45:09.110	Core 01	2026.10.30 00:00:04   DIAGNOSTICO;componente=FLUXO_TICKS;motivo=DADOS: PRIMEIRO_TICK_AGUARDA_JANELA_COMPLETA;cursor_msc=1793350800000;tentativas=0;recuperacao=REAVALIA_NO_TIMER
+2026.11.04 11:45:09.110	Core 01	2026.10.30 09:00:44   PRIMEIRO_TICK_CONSULTA;de_msc=1793350800000;ate_msc=1793350843999;tentativa=1;TESTER_SIMULADO
+2026.11.04 11:45:09.110	Core 01	WINZ26: load 27 bytes of history data to synchronize in 0:00:00.000
+2026.11.04 11:45:09.110	Core 01	WINZ26: history synchronized from 2026.05.12 to 2026.10.30
+2026.11.04 11:45:09.110	Core 01	WINZ26: ticks synchronization started
+2026.11.04 11:45:10.217	Core 01	BRLUSD10: history synchronization started
+2026.11.04 11:45:20.852	Core 01	BRLUSD10: history downloading stopped due to timeout
+2026.11.04 11:45:21.032	Core 01	WINZ26: load 34 bytes of tick data to synchronize in 0:00:21.500
+2026.11.04 11:45:21.032	Core 01	WINZ26: history ticks synchronized from 2026.10.29 to 2026.10.30
+2026.11.04 11:45:21.032	Core 01	WINZ26,Daily: history cache allocated for 119 bars and contains 118 bars from 2026.05.12 00:00 to 2026.10.29 00:00
+2026.11.04 11:45:21.032	Core 01	WINZ26,Daily: 1 bar from 2026.10.30 00:00 added
+2026.11.04 11:45:21.032	Core 01	WINZ26,Daily: history begins from 2026.05.12 00:00
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   COMMIT;revision=2;event=DAILY_DATA;transporte=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169800.7553333333344199;entry_requested=169800;SL_fixed=169425;TP_fixed=170125;entry_phase=0;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169276.1666666666569654;entry_requested=169275;SL_fixed=168900;TP_fixed=169800;entry_phase=0;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=168751.5779999999795110;entry_requested=168750;SL_fixed=168100;TP_fixed=169275;entry_phase=0;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172115.6753333333181218;entry_requested=172115;SL_fixed=172490;TP_fixed=171880;entry_phase=0;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172496.6579999999958091;entry_requested=172495;SL_fixed=172945;TP_fixed=172400;entry_phase=0;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   DIAGNOSTICO;componente=DADOS_DIARIOS;motivo=CONFERIDOS;data=20261030;contrato=WINZ26;recuperacao=MONITORAMENTO_NO_TIMER;NAO_COMPROVA_EXECUCAO
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   VISUAL_SYNC_FAILED
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   TICKS_6_15_INICIO;data=20261030;contrato=WINZ26;TESTER_SIMULADO
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   COBERTURA_ATUAL;estado=CONFERIDA;de_msc=1793350800000;ate_exclusivo_msc=1793350844000;retornados=908;erro=0;duracao_ms=0
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: symbol to be synchronized
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: symbol synchronized, 3720 bytes of symbol info received
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 40 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   DIAGNOSTICO;componente=ENTRADA_0;motivo=GATES_DE_DADOS_CONFERIDOS;AINDA_EXIGE_CONCILIACAO_E_TRANSPORTE_AUSENTE;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   DIAGNOSTICO;componente=ENTRADA_1;motivo=GATES_DE_DADOS_CONFERIDOS;AINDA_EXIGE_CONCILIACAO_E_TRANSPORTE_AUSENTE;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   DIAGNOSTICO;componente=ENTRADA_2;motivo=GATES_DE_DADOS_CONFERIDOS;AINDA_EXIGE_CONCILIACAO_E_TRANSPORTE_AUSENTE;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   DIAGNOSTICO;componente=ENTRADA_3;motivo=GATES_DE_DADOS_CONFERIDOS;AINDA_EXIGE_CONCILIACAO_E_TRANSPORTE_AUSENTE;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   DIAGNOSTICO;componente=ENTRADA_4;motivo=GATES_DE_DADOS_CONFERIDOS;AINDA_EXIGE_CONCILIACAO_E_TRANSPORTE_AUSENTE;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   DIAGNOSTICO;componente=INVENTARIO;motivo=INVENTARIO_VENCEU_DURANTE_HISTORICO;LIMITE_3000MS;origem=DUAS_LEITURAS_CONFERIDAS;recuperacao=NOVA_DUPLA_LEITURA_NO_TIMER;NAO_CONFIRMA_ACAO_POR_AUSENCIA
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   DIAGNOSTICO;componente=CONCILIACAO;motivo=INVENTORY_UNAVAILABLE;recuperacao=REAVALIA_NO_TIMER;ORIGENS_E_EFEITOS_EXIGEM_PROVA
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   DIAGNOSTICO;componente=FLUXO_TICKS;motivo=TICKS: RECONSTRUINDO DESDE A ABERTURA;recuperacao=REAVALIA_NO_TIMER
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   INTEGRATED;INVENTORY_UNAVAILABLE;revision=2;entry_intents=0;SLTP_intents=0;cancel_intents=0;close_intents=0;unresolved=0;transport=TESTER_ONLY;NATIVE_VALIDATION_PENDING
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   COMMIT;revision=3;event=TESTER_FRESH_RECONCILIATION;transporte=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169800.7553333333344199;entry_requested=169800;SL_fixed=169425;TP_fixed=170125;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169276.1666666666569654;entry_requested=169275;SL_fixed=168900;TP_fixed=169800;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=168751.5779999999795110;entry_requested=168750;SL_fixed=168100;TP_fixed=169275;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172115.6753333333181218;entry_requested=172115;SL_fixed=172490;TP_fixed=171880;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172496.6579999999958091;entry_requested=172495;SL_fixed=172945;TP_fixed=172400;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   COMMIT;revision=4;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169800.7553333333344199;entry_requested=169800;SL_fixed=169425;TP_fixed=170125;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169276.1666666666569654;entry_requested=169275;SL_fixed=168900;TP_fixed=169800;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=168751.5779999999795110;entry_requested=168750;SL_fixed=168100;TP_fixed=169275;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172115.6753333333181218;entry_requested=172115;SL_fixed=172490;TP_fixed=171880;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172496.6579999999958091;entry_requested=172495;SL_fixed=172945;TP_fixed=172400;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   TESTER_REQUEST;kind=1;key=202610300;serial=1;revision=4;order=0;position=0;volume=1.00000000;price=169800.00000000;sl=169425.00000000;tp=170125.00000000;SIMULATED_ONLY
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   failed buy limit 1 MD_PESQ_WINZ26_DIA1030 at 169800 sl: 169425 tp: 170125 [Invalid expiration]
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   COMMIT;revision=5;event=TESTER_RESPONSE_NOT_EXECUTION_PROOF;transporte=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169800.7553333333344199;entry_requested=169800;SL_fixed=169425;TP_fixed=170125;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169276.1666666666569654;entry_requested=169275;SL_fixed=168900;TP_fixed=169800;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=168751.5779999999795110;entry_requested=168750;SL_fixed=168100;TP_fixed=169275;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172115.6753333333181218;entry_requested=172115;SL_fixed=172490;TP_fixed=171880;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172496.6579999999958091;entry_requested=172495;SL_fixed=172945;TP_fixed=172400;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   TESTER_RESPONSE;kind=1;serial=1;api_ok=0;retcode=10022;external=0;order=0;deal=0;error=4756;EFFECT_REQUIRES_RECONCILIATION
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   DIAGNOSTICO;componente=ENTRADA_0;motivo=TENTATIVA_OU_RESPOSTA_AGUARDA_CONCILIACAO;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   COMMIT;revision=6;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169800.7553333333344199;entry_requested=169800;SL_fixed=169425;TP_fixed=170125;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169276.1666666666569654;entry_requested=169275;SL_fixed=168900;TP_fixed=169800;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=168751.5779999999795110;entry_requested=168750;SL_fixed=168100;TP_fixed=169275;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172115.6753333333181218;entry_requested=172115;SL_fixed=172490;TP_fixed=171880;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172496.6579999999958091;entry_requested=172495;SL_fixed=172945;TP_fixed=172400;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   TESTER_REQUEST;kind=1;key=202610301;serial=1;revision=6;order=0;position=0;volume=1.00000000;price=169275.00000000;sl=168900.00000000;tp=169800.00000000;SIMULATED_ONLY
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   failed buy limit 1 MD_PESQ_WINZ26_DIA1030 at 169275 sl: 168900 tp: 169800 [Invalid expiration]
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   COMMIT;revision=7;event=TESTER_RESPONSE_NOT_EXECUTION_PROOF;transporte=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169800.7553333333344199;entry_requested=169800;SL_fixed=169425;TP_fixed=170125;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169276.1666666666569654;entry_requested=169275;SL_fixed=168900;TP_fixed=169800;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=168751.5779999999795110;entry_requested=168750;SL_fixed=168100;TP_fixed=169275;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172115.6753333333181218;entry_requested=172115;SL_fixed=172490;TP_fixed=171880;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172496.6579999999958091;entry_requested=172495;SL_fixed=172945;TP_fixed=172400;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   TESTER_RESPONSE;kind=1;serial=1;api_ok=0;retcode=10022;external=0;order=0;deal=0;error=4756;EFFECT_REQUIRES_RECONCILIATION
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   DIAGNOSTICO;componente=ENTRADA_1;motivo=TENTATIVA_OU_RESPOSTA_AGUARDA_CONCILIACAO;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   COMMIT;revision=8;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169800.7553333333344199;entry_requested=169800;SL_fixed=169425;TP_fixed=170125;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169276.1666666666569654;entry_requested=169275;SL_fixed=168900;TP_fixed=169800;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=168751.5779999999795110;entry_requested=168750;SL_fixed=168100;TP_fixed=169275;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172115.6753333333181218;entry_requested=172115;SL_fixed=172490;TP_fixed=171880;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172496.6579999999958091;entry_requested=172495;SL_fixed=172945;TP_fixed=172400;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   TESTER_REQUEST;kind=1;key=202610302;serial=1;revision=8;order=0;position=0;volume=1.00000000;price=168750.00000000;sl=168100.00000000;tp=169275.00000000;SIMULATED_ONLY
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   failed buy limit 1 MD_PESQ_WINZ26_DIA1030 at 168750 sl: 168100 tp: 169275 [Invalid expiration]
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   COMMIT;revision=9;event=TESTER_RESPONSE_NOT_EXECUTION_PROOF;transporte=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169800.7553333333344199;entry_requested=169800;SL_fixed=169425;TP_fixed=170125;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169276.1666666666569654;entry_requested=169275;SL_fixed=168900;TP_fixed=169800;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=168751.5779999999795110;entry_requested=168750;SL_fixed=168100;TP_fixed=169275;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172115.6753333333181218;entry_requested=172115;SL_fixed=172490;TP_fixed=171880;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172496.6579999999958091;entry_requested=172495;SL_fixed=172945;TP_fixed=172400;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   TESTER_RESPONSE;kind=1;serial=1;api_ok=0;retcode=10022;external=0;order=0;deal=0;error=4756;EFFECT_REQUIRES_RECONCILIATION
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   DIAGNOSTICO;componente=ENTRADA_2;motivo=TENTATIVA_OU_RESPOSTA_AGUARDA_CONCILIACAO;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   COMMIT;revision=10;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169800.7553333333344199;entry_requested=169800;SL_fixed=169425;TP_fixed=170125;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169276.1666666666569654;entry_requested=169275;SL_fixed=168900;TP_fixed=169800;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=168751.5779999999795110;entry_requested=168750;SL_fixed=168100;TP_fixed=169275;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172115.6753333333181218;entry_requested=172115;SL_fixed=172490;TP_fixed=171880;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172496.6579999999958091;entry_requested=172495;SL_fixed=172945;TP_fixed=172400;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   TESTER_REQUEST;kind=1;key=202610303;serial=1;revision=10;order=0;position=0;volume=1.00000000;price=172115.00000000;sl=172490.00000000;tp=171880.00000000;SIMULATED_ONLY
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   failed sell limit 1 MD_PESQ_WINZ26_DIA1030 at 172115 sl: 172490 tp: 171880 [Invalid expiration]
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   COMMIT;revision=11;event=TESTER_RESPONSE_NOT_EXECUTION_PROOF;transporte=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169800.7553333333344199;entry_requested=169800;SL_fixed=169425;TP_fixed=170125;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169276.1666666666569654;entry_requested=169275;SL_fixed=168900;TP_fixed=169800;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=168751.5779999999795110;entry_requested=168750;SL_fixed=168100;TP_fixed=169275;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172115.6753333333181218;entry_requested=172115;SL_fixed=172490;TP_fixed=171880;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172496.6579999999958091;entry_requested=172495;SL_fixed=172945;TP_fixed=172400;entry_phase=1;entry_attempt=0;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   TESTER_RESPONSE;kind=1;serial=1;api_ok=0;retcode=10022;external=0;order=0;deal=0;error=4756;EFFECT_REQUIRES_RECONCILIATION
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   DIAGNOSTICO;componente=ENTRADA_3;motivo=TENTATIVA_OU_RESPOSTA_AGUARDA_CONCILIACAO;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   COMMIT;revision=12;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169800.7553333333344199;entry_requested=169800;SL_fixed=169425;TP_fixed=170125;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169276.1666666666569654;entry_requested=169275;SL_fixed=168900;TP_fixed=169800;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=168751.5779999999795110;entry_requested=168750;SL_fixed=168100;TP_fixed=169275;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172115.6753333333181218;entry_requested=172115;SL_fixed=172490;TP_fixed=171880;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172496.6579999999958091;entry_requested=172495;SL_fixed=172945;TP_fixed=172400;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   TESTER_REQUEST;kind=1;key=202610304;serial=1;revision=12;order=0;position=0;volume=1.00000000;price=172495.00000000;sl=172945.00000000;tp=172400.00000000;SIMULATED_ONLY
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   failed sell limit 1 MD_PESQ_WINZ26_DIA1030 at 172495 sl: 172945 tp: 172400 [Invalid expiration]
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   COMMIT;revision=13;event=TESTER_RESPONSE_NOT_EXECUTION_PROOF;transporte=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169800.7553333333344199;entry_requested=169800;SL_fixed=169425;TP_fixed=170125;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=169276.1666666666569654;entry_requested=169275;SL_fixed=168900;TP_fixed=169800;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=168751.5779999999795110;entry_requested=168750;SL_fixed=168100;TP_fixed=169275;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172115.6753333333181218;entry_requested=172115;SL_fixed=172490;TP_fixed=171880;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=172496.6579999999958091;entry_requested=172495;SL_fixed=172945;TP_fixed=172400;entry_phase=2;entry_attempt=1;cancel_phase=0
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   TESTER_RESPONSE;kind=1;serial=1;api_ok=0;retcode=10022;external=0;order=0;deal=0;error=4756;EFFECT_REQUIRES_RECONCILIATION
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	BRLUSD10: no data synchronized, 31 bytes read
+2026.11.04 11:45:21.032	Core 01	symbol BRLUSD10 history synchronization error
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44  no prices for symbol BRLUSD10 (1970.01.01 00:00:00 0.00000, 0.00000)
+2026.11.04 11:45:21.032	Core 01	2026.10.30 09:00:44   DIAGNOSTICO;componente=ENTRADA_4;motivo=TENTATIVA_OU_RESPOSTA_AGUARDA_CONCILIACAO;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+2026.11.04 11:45:21.032	Core 01	log file "C:\Users\jhenn\AppData\Local\ModeloD_MT5_Isolado_20261102_145749_6554356a\Tester\Agent-127.0.0.1-3000\logs\20261104.log" written
+2026.11.04 11:45:21.043	Core 01	connection closed

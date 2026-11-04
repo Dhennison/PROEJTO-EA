@@ -9,6 +9,7 @@ void EmptyBook210(){
  mock_book.book.account_key=MDAccount210();mock_book.book.server_key=MDServer210();mock_book.execution_prices_known=true;
 }
 void Reset210(){
+ mock_expiration_modes211=SYMBOL_EXPIRATION_GTC;mock_expiration_error211=false;mock_currency211="BRL";
  if(lock615!=INVALID_HANDLE)OnDeinit(1);
  fatal=false;owns615=false;report_error=false;stream_started615=false;stream_failed615=false;stream_reported615=-1;
  last_status="";stream_retries615=0;mock_tester210=true;ExecutarNoTester=true;mock_optimization210=false;
@@ -227,6 +228,24 @@ int main(){
  mock_tester210=false;MDTesterDispatch210();Check210(mock_send_calls210==before,"runtime loss of Tester flag blocks every transport path");mock_tester210=true;
  bool routed_all=true;for(auto r:mock_requests210)routed_all=routed_all&&r.symbol==MD_FONTE211;
  Check210(routed_all,"SLTP close and cancellation preserve physical-symbol route and ticket ownership");
+ OnDeinit(1);
+ Reset210();UsarFonteImportadaNoTester=true;_Symbol=MD_FONTE211;mock_currency211="USD";
+ Check210(OnInit()==INIT_PARAMETERS_INCORRECT&&mock_send_calls210==0,"USD functional run blocks before sends rather than requesting absent conversion");
+ Reset210();UsarFonteImportadaNoTester=true;_Symbol=MD_FONTE211;mock_expiration_modes211=SYMBOL_EXPIRATION_DAY;
+ prepared=true;AcceptOrders210(prepared);Check210(OnInit()==INIT_SUCCEEDED,"BRL day-only fixture initializes");Bootstrap210();
+ bool day=mock_requests210.size()==5;for(auto r:mock_requests210)day=day&&r.type_time==ORDER_TIME_DAY&&r.expiration==0&&r.sl>0&&r.tp>0;
+ Check210(day&&prepared,"day-only symbol receives five DAY pending requests with original SLTP and durable prepare");
+ MqlTradeRequest validity;string why_validity;MDOpLevel level=operational.levels[0];
+ mock_expiration_modes211=SYMBOL_EXPIRATION_GTC|SYMBOL_EXPIRATION_DAY;
+ Check210(MDTesterExpiration211(level,validity,why_validity)&&validity.type_time==ORDER_TIME_GTC&&validity.expiration==0,"GTC used only when supported");
+ mock_expiration_modes211=SYMBOL_EXPIRATION_SPECIFIED;
+ Check210(MDTesterExpiration211(level,validity,why_validity)&&validity.type_time==ORDER_TIME_SPECIFIED&&validity.expiration==level.cutoff_utc/1000+FusoServidorTester,"specified expiry maps UTC model cutoff to server seconds");
+ level.cutoff_utc=(long)TimeCurrent()*1000-(long)FusoServidorTester*1000;
+ Check210(!MDTesterExpiration211(level,validity,why_validity)&&why_validity=="TESTER_EXPIRATION_CUTOFF_PASSED","specified expiry refuses elapsed cutoff");
+ mock_expiration_modes211=8;
+ Check210(!MDTesterExpiration211(level,validity,why_validity)&&why_validity=="TESTER_EXPIRATION_MODE_UNSUPPORTED","unsupported expiry blocks without guessing");
+ mock_expiration_error211=true;
+ Check210(!MDTesterExpiration211(level,validity,why_validity)&&why_validity=="TESTER_EXPIRATION_PROPERTIES_UNAVAILABLE","expiry property read failure blocks");
  OnDeinit(1);
  std::cout<<"FOCUSED_211;Checks="<<checks210<<";Failures="<<failures210<<";API_MOCK_NOT_NATIVE_MQL5\n";
  return failures210?1:0;

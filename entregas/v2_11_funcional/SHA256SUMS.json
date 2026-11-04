@@ -1,8 +1,8 @@
 [
   {
     "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/EA_ModeloD_Ensaio_Funcional.mq5",
-    "bytes": 31749,
-    "sha256": "0107a3c88661344b313bd7fd606e57aa5e78e2b2d67c1f66b8c171020c3d34a4"
+    "bytes": 31995,
+    "sha256": "04d820940906de4fa5b58592e2d2d551db6f05997a9996b6288bb8be105efe2c"
   },
   {
     "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/ModeloD_B3.mqh",
@@ -186,8 +186,8 @@
   },
   {
     "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/ModeloD_TesterTransport210.mqh",
-    "bytes": 10766,
-    "sha256": "4b40bd0f3bf4fc1cc056c87b4b91b4e3a7e389c2e090e95c5281df347b540b15"
+    "bytes": 11753,
+    "sha256": "44da0f5530f8b8cdca6f5af943250fa2e5e97de855a91e859dce9fd341e76cce"
   },
   {
     "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/ModeloD_TickAudit.mqh",
@@ -216,22 +216,32 @@
   },
   {
     "file": "LEIA_PRIMEIRO.txt",
-    "bytes": 2371,
-    "sha256": "e3cdf1070005579a6e194022809568572f77cc0574f4b419ad58fa7edcf9418c"
+    "bytes": 2086,
+    "sha256": "ae1b59aaf8b53f384bb63d42511b70f072c06df0497250e7145f360937a0195f"
   },
   {
     "file": "RESUMO_DA_ENTREGA.txt",
-    "bytes": 3157,
-    "sha256": "6c05bd1b309c4a2638f55e45f38b17108adfcd29976c81b2c21d072d351f5f66"
+    "bytes": 3812,
+    "sha256": "14e126e0f2b0e5fcd93ef62f5db878b208915014138d62a621953e99ac8888da"
   },
   {
     "file": "PRESERVACAO_DAS_REGRAS.json",
     "bytes": 9921,
-    "sha256": "2ab5cde2d935fd31462f606dd4b94ed185d0b62d2be346d29d95af2a81adcb5e"
+    "sha256": "a9fb490239fcdc2a2f08e0b898012f57d3350166f2141c76b10848467640da66"
   },
   {
     "file": "TESTES_LOCAIS.txt",
-    "bytes": 265224,
-    "sha256": "f482cf946123d814abbef05244a0c6691cc33e61607faf2c3e632d5884a28226"
+    "bytes": 295027,
+    "sha256": "9a26f899775d1191f8c2b6a70c48527f22018e5be5b4c7b7126d8eb3125ba123"
+  },
+  {
+    "file": "ModeloD_Funcional_BRL.ini",
+    "bytes": 391,
+    "sha256": "064aa36b076d8922ffc7752420337cb05fea0786126df7e3670ed5099f0357bd"
+  },
+  {
+    "file": "INICIAR_ENSAIO_BRL.cmd",
+    "bytes": 610,
+    "sha256": "a168877573073331000c451dcef693a11307d857c95f37208f19fefadf078321"
   }
 ]

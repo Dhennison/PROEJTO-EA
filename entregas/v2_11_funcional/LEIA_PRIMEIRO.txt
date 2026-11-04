@@ -1,37 +1,34 @@
-PRÓXIMA ETAPA: ENSAIO FUNCIONAL DO PRÓPRIO EA
+CORREÇÃO DA VALIDADE E CONFIGURAÇÃO DO ENSAIO EM BRL — 04/11/2026
 
-1. Extraia ModeloD_Ensaio_Funcional_v2_11.zip numa pasta temporária.
-2. Copie a pasta MQL5 inteira do ZIP e cole DIRETAMENTE na raiz do secundário:
-C:\Users\jhenn\AppData\Local\ModeloD_MT5_Isolado_20261102_145749_6554356a
-É a pasta que já contém MQL5,Tester,logs. A cópia acrescenta pasta nova de
-Experts,preset e arquivoB3 idêntico ao já aprovado. Pode mesclar as pastas e aceitar substituir os arquivos deste pacote.
-Não cole MQL5 dentro da MQL5 existente: o resultado não deve ser MQL5\MQL5.
-3. No MT5 secundário,F4. No MetaEditor,Ctrl+O,abrir:
-MQL5\Experts\ModeloD_Ensaio_Funcional\EA_ModeloD_Ensaio_Funcional.mq5
-4. F7;enviar compilação. Ainda não executar no gráfico nem iniciarTester.
+APLICAR NO MT5 SECUNDÁRIO
+1. Extraia o ZIP. Copie os três itens MQL5, ModeloD_Funcional_BRL.ini e
+   INICIAR_ENSAIO_BRL.cmd diretamente para a raiz:
+   C:\Users\jhenn\AppData\Local\ModeloD_MT5_Isolado_20261102_145749_6554356a
+   Aceite mesclar/substituir os arquivos do pacote. Não cole MQL5 dentro
+   de MQL5. INI e CMD ficam ao lado de terminal64.exe.
+2. No MT5 secundário, F4. Abra:
+   MQL5\Experts\ModeloD_Ensaio_Funcional\EA_ModeloD_Ensaio_Funcional.mq5
+   Pressione F7. Somente prossiga se forem 0 erros.
+3. Feche o MetaEditor secundário e o MT5 secundário. O principal pode ficar
+   aberto. Não execute o EA em gráfico.
+4. Na raiz acima, dê duplo clique em INICIAR_ENSAIO_BRL.cmd.
+   Leia a mensagem e pressione uma tecla para continuar. Ele abrirá somente
+   o terminal isolado, em modo portable, e iniciará automaticamente o Tester
+   com a configuração do INI. Usa os dados existentes, sem importação.
+5. Aguarde o teste terminar e envie as mensagens da aba Diário.
+   O TXT do EA também ficará em Common\Files, com prefixo MDT211_FUNC_.
 
-CONFIGURAÇÃO QUE SERÁ CONFERIDA DEPOIS DA COMPILAÇÃO
-Ctrl+R/Configuração:
-Expert ModeloD_Ensaio_Funcional\EA_ModeloD_Ensaio_Funcional.ex5
-Ativo MD_PESQ_WINZ26_DIA1030,M5,30/10/2026 a31/10/2026,ticks reais,
-sem forward/otimização/visual,agente local,sem atrasos.
-Depósito simulado1000000BRL,alavancagem1:100. BRL evita depender da conversão
-USD/BRL para este ensaio de execução. Não significa lucro ou saldo real.
-Parâmetros de entrada:Carregar preset da instalação:
-MQL5\Profiles\Tester\ModeloD_Funcional_20261030.set
-Ele ativaExecutarNoTester eUsarFonteImportadaNoTester,fixaWINZ26/data30/
-fuso-10800,1contrato por nível e timer2s. Não alterar fórmulas/SL/TP.
-Enviar captura de configuração/parâmetros antes de iniciar.
-
-Usa o custom e CSV já instalados;nenhuma importação nem preparação nova.
-D1 e vencimento vêm do WINZ26 original;quotes/execuções do custom. Ambos do mesmo contrato,
-identidade explícita nos logs. Não contornar se históricoD1 não estiver pronto:
-o relatório dirá o bloqueio direto doEA. Não remover checagens para passar.
-EA rodará seu fluxo de ordens simuladas noTester. Ordens nunca são enviadas
-à conta real nesse pacote,mesmo com a contaGenial real conectada.
-
-Ao concluir,enviar Diário desta rodada e TXT cujo nome começaMDT211_FUNC_
-e contémModeloD_Integrado,na pastaCommon/Files. Vamos avaliar abertura,
-níveis,requests/respostas/deals,proteção,cancelamentos e zeragem. Não exigir
-limpeza de dados após18h para aprovar o comportamento operacional no corte.
-Este pacote requer compilação e ensaio nativos;ainda não é produção real.
+O QUE MUDA
+- Pendentes consultam SYMBOL_EXPIRATION_MODE no símbolo efetivamente
+  negociado. Usa GTC se permitido, senão DAY, senão SPECIFIED no corte.
+  Modos incompatíveis ou leitura inválida bloqueiam antes do envio.
+- Timer, cancelamentos, zeragem, preços, volume, primeiro toque e SL/TP
+  continuam sob as regras originais do Modelo D. Não há reenvio automático
+  das tentativas antigas: nova rodada tem ledger próprio.
+- Currency=BRL é solicitada pelo INI, sem depender da lista de moedas do MT5.
+  É a moeda do depósito SIMULADO; não muda a moeda ou o saldo da conta real.
+- Se a moeda efetiva não for BRL, o EA recusa a inicialização e registra
+  ENSAIO_REQUER_BRL. Não altera a moeda do contrato nem inventa câmbio.
+- A aceitação de BRL pelo MT5 e das pendentes pelo motor exige esta rodada
+  nativa. Não foram comprovadas pelo ambiente local C++.
+- Continua sendo exclusivo do Tester. Não libera operação real.

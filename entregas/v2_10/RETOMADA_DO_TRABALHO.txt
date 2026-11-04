@@ -640,3 +640,16 @@ ZIP completo atualizado; patch Correcao_Compilacao_v2_11.zip contém somente
 ModeloD_FonteFuncional211.mqh para substituir na pasta do Expert já instalada.
 Próximo passo usuário: substituir esse arquivo e F7 no EA principal.
 Compilação nativa ainda pendente; não iniciar Tester antes de compilar.
+
+04/11/2026 — PRIMEIRO ENSAIO FUNCIONAL NATIVO E CORREÇÃO
+Compilação nativa confirmada: 0 erros/0 avisos, 6447 ms, AVX2+FMA3.
+Diário preservado em v2_11_funcional/coleta_20261104/. Iniciou e calculou
+os cinco níveis; cinco requests rejeitados com retcode 10022 (validade),
+nenhuma ordem aceita nas respostas. USD exigiu BRLUSD10 sem histórico.
+Usuário já informou BRL ausente da lista; não pedir para selecionar de novo.
+Corrigida validade pelos flags do símbolo físico. Pacote com INI Currency=BRL
+e launcher portable do secundário; EA bloqueia fonte importada se moeda
+efetiva não for BRL. Não inventar câmbio nem alterar moeda do símbolo.
+Próximo usuário: copiar atualização na raiz, compilar F7, fechar secundário
+e abrir launcher. Inicia teste automaticamente em BRL via config. Aplicação
+da moeda e validade ainda exigem confirmação nativa; não afirmar aprovadas.

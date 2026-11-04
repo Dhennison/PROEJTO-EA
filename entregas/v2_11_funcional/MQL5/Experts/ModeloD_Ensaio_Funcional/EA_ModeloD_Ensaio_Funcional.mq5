@@ -376,6 +376,10 @@ void OperationalCycle() {
 #include "ModeloD_TesterTransport210.mqh"
 int OnInit() {
   if(!MDIsTester210()){Print("ENSAIO_FUNCIONAL_APENAS_TESTER");return INIT_PARAMETERS_INCORRECT;}
+  if(UsarFonteImportadaNoTester&&AccountInfoString(ACCOUNT_CURRENCY)!="BRL"){
+   Print("TESTER_INIT_BLOCKED;ENSAIO_REQUER_BRL;currency=",AccountInfoString(ACCOUNT_CURRENCY),";USAR_CONFIG_BRL;SEM_ORDENS");
+   return INIT_PARAMETERS_INCORRECT;
+  }
  ledger="";
  tester_prefix210="";tester_prepared210=0;tester_sent210=0;tester_responses210=0;tester_deals210=";";
  for(int i=0;i<256;i++)tester_blocks210[i]="";
