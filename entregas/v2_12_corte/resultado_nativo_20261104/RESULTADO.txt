@@ -1,0 +1,34 @@
+TESTE NATIVO DO CORTE — CENÁRIO SINTÉTICO V2.12 — APROVADO NO ESCOPO
+Compilações informadas pelo usuário: script0erros/0avisos439ms; EA0erros/
+0avisos6295ms, AVX2+FMA3. Preparo no secundário04/11/2026 às15:43:18
+(horário exibido pelo MT5): READBACK_OK ticks32957/M1551/priorM1565, READY.
+
+EVIDÊNCIA DO TESTER — TEMPO SIMULADO30/10/2026
+09:00:46 — cinco pendentes aceitas, tickets2-6, DAY, sem erros.
+09:05:00 — compraS38.2 executada, ticket/position_id2, volume1 a169800.
+17:59:50 — CORTE212_ANTES:1posição protegida,4pendentes,volume1,esperado1.
+18:00:00 — requestkind4,position2,volume1,venda a169895. Retcode10009,
+order7/deal3; deal de saída no mesmo milissegundo1793383200000 eposition_id2.
+Um único pedido de fechamento; ocorreu pelo EA, não por finalização doTester.
+18:00:00 — cancelamento do ticket3 aceito.
+18:00:02 — cancelamentos dos tickets4 e5 aceitos.
+18:00:04 — cancelamento do ticket6 aceito; registro finalresidual0,close_phase6.
+18:00:10 — CORTE212_APOS_10S: positions0,pending0,close_sends1,
+first_close_msc1793383200000,efeitos_conciliados1.
+23:59:58 — CORTE212_FINAL aprovado1,close_sends1,entrada_apos_corte0.
+Resumo10envios:5pendentes+1fechamento+4cancelamentos,10respostas.
+
+INTERPRETAÇÃO E LIMITES
+Cenário de encerramento por ticket com exposição pré-corte, cancelamento
+das quatro pendentes e bloqueio de novas entradas após18h demonstrados
+nativamente. Todos os efeitos não ocorreram exatamente18:00:00: o último
+cancelamento foi18:00:04. Houve BOUND_ORDER_MISSING_FROM_HISTORY transitório
+após pedido de cancelamento; conciliação posterior concluída, sem duplicação.
+Lucro sintético19BRL (95pontos/1contrato), sem custos, não é resultado do
+pregão original nem deve ser somado aos145pontos da v2.11 histórica.
+Não exercitou fillsparciais, restartcomexposição, concorrência com outroEA
+ou corretora fora doTester. A v2.12 é exclusiva do cenário sintético/Tester;
+transporte para simulador/produção ainda precisa ser concluído e validado.
+Não repetir este caso igual. Próximo foco: versão operacional para simulador.
+XPsimuladorMT5/Hedge em consulta; Genialsomentecontareal. Nenhuma ordemreal
+autorizada. Fonte completa e eventos resumidos preservados nesta pasta.

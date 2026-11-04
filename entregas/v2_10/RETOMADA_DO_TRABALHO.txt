@@ -725,3 +725,16 @@ do secundário, aguardarREADY. Sódepois fecharsecundário/abrirCMDnovo que
 iniciaTesterBRL automaticamente. RelatórioMDT212_CORTE_...Common/Files.
 Preservada v2.11/símbolos históricos. Compilação/preparo/rodada nativos ainda
 pendentes. Nenhuma ordem real autorizada. XPsimulador/Hedge em consulta.
+
+04/11/2026 — CORTE V2.12 APROVADO NATIVAMENTE NO CENÁRIO CONTROLADO
+Fonte completa em v2_12_corte/resultado_nativo_20261104/. Compilação
+script439ms/EA6295ms,0erros0avisos. Preparo15:43:18READBACK_OK32957ticks/
+551M1/prior565,READY. Tester:09:00:46cinco pendentes;09:05compraS38.2
+position_id2/volume1/169800.17:59:50posição1protegida+4pendentes.
+18:00:00closekind4ticket2/volume1/requeste deal3(169895) no mesmo ms.
+Quatrocancelamentos18:00:00/02/04, todosconciliados.18:00:10positions0/
+pending0/close_sends1/efeitosconciliados1. FINALaprovado1,entrada_poscorte0.
+Não repetir caso. Não somar95pontossintéticos aos145históricos. Resultado
+comprova cutoffnoTester; não é live. Próximo foco: concluir transporte
+operacional para simulador e validar gestão restante nesse ambiente.
+XPsimulador/Hedge em consulta; nenhuma ordemreal autorizada.
