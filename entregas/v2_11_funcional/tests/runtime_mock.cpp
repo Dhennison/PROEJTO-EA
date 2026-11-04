@@ -116,6 +116,8 @@ using ENUM_TIMEFRAMES=int;using ENUM_SERIES_INFO_INTEGER=int;using ENUM_ORDER_TY
 using ENUM_ORDER_PROPERTY_STRING=int;using ENUM_DEAL_PROPERTY_STRING=int;using ENUM_POSITION_PROPERTY_STRING=int;
 const int SYMBOL_CUSTOM=114,ORDER_SYMBOL=121,DEAL_SYMBOL=122,POSITION_SYMBOL=123;
 string SymbolInfoString(string,int){return "BRL";}
+bool mock_string_failure211=false;
+bool SymbolInfoString(string symbol,int,string &v){mock_last_symbol211=symbol;if(mock_string_failure211)return false;v="BRL";return true;}
 bool OrderGetString(int,string &v){v="MD_PESQ_WINZ26_DIA1030";return true;}
 bool HistoryOrderGetString(ulong,int,string &v){v="MD_PESQ_WINZ26_DIA1030";return true;}
 bool HistoryDealGetString(ulong,int,string &v){v="MD_PESQ_WINZ26_DIA1030";return true;}

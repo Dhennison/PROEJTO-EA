@@ -26,7 +26,7 @@ demo;nenhuma etapa atual depende de criar demo. Liberação real continua
 separada e exige terminar/validar transporte de produção,depois deste ensaio.
 
 VERIFICAÇÃO
-77checksC++/APIs simuladas,ASan/UBSan ativos,zero falhas. Inclui50anteriores
+79checksC++/APIs simuladas,ASan/UBSan ativos,zero falhas. Inclui50anteriores
 mais ponte,cinco pendentes elegíveis,identidade,D1real,M1importada,SLTP,
 fechamento/cancelamento por ticket,normalização de recibos,bloqueio live/
 contexto errado e outra origem. Fixtures dos testes são sintéticos,não
@@ -42,3 +42,11 @@ fechadas no corte conforme efeitos observados. Se o dia não preencher algum
 ramo,não chamar esse ramo validado;teste sintético/local é evidência distinta.
 Uma falha de abertura,envio,proteção ou zeragem vira correção doEA nesta
 mesma etapa. Volume18:31 não é gate do ensaio. Não instalar marcadores.
+
+CORREÇÃO DE COMPILAÇÃO — 04/11/2026
+O MetaEditor reportou dois usos da sobrecarga de três argumentos de
+MDSymbolInfoString211 no módulo DailyTerminal. A ponte só expunha a forma
+de dois argumentos. Acrescentada a sobrecarga bool com string de saída,
+preservando o retorno de erro e o roteamento do símbolo da API nativa.
+Sem mudança nas regras ou no fluxo de ordens. A compilação nativa deve ser
+repetida; a suíte local não substitui a validação do MetaEditor.

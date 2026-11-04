@@ -81,8 +81,8 @@
   },
   {
     "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/ModeloD_FonteFuncional211.mqh",
-    "bytes": 4282,
-    "sha256": "d903fddf15f0ce593d13d8e39a6e045e26c4b485c3eb6ba41094488f2dfd33a2"
+    "bytes": 4408,
+    "sha256": "8f7e78cf67a632aa65c38437c24255fac3848aa4ecb6f046aa1f2d45924b7601"
   },
   {
     "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/ModeloD_Journal.mqh",
@@ -221,8 +221,8 @@
   },
   {
     "file": "RESUMO_DA_ENTREGA.txt",
-    "bytes": 2677,
-    "sha256": "5cd9b9a9d1bcf8ea98ef36cbaca0683610d004d7c13c3606fba1a6af7a8a19a0"
+    "bytes": 3157,
+    "sha256": "6c05bd1b309c4a2638f55e45f38b17108adfcd29976c81b2c21d072d351f5f66"
   },
   {
     "file": "PRESERVACAO_DAS_REGRAS.json",
@@ -231,7 +231,7 @@
   },
   {
     "file": "TESTES_LOCAIS.txt",
-    "bytes": 265068,
-    "sha256": "bdccee45ce989d792fd38553be6c63e8dc64b26d0a6ecf51e184e3d1112f7f2e"
+    "bytes": 265224,
+    "sha256": "f482cf946123d814abbef05244a0c6691cc33e61607faf2c3e632d5884a28226"
   }
 ]

@@ -631,3 +631,12 @@ Depois configurar Tester/preset do pacote e conferir fluxo real do EA:
 abertura, elegibilidade, recibos, proteção, cancelamentos e zeragem no corte.
 Transporte de produção ainda não concluído/liberado; não declarar EA pronto
 para conta real com base nos testes locais ou no pacote funcional.
+
+04/11/2026 — CORREÇÃO DA PRIMEIRA COMPILAÇÃO NATIVA V2.11
+Usuário recebeu dois erros DailyTerminal linhas 13/36: ponte SymbolInfoString
+só tinha dois argumentos. Adicionada sobrecarga de três argumentos com
+retorno bool e saída por referência. Não houve alteração nas regras.
+ZIP completo atualizado; patch Correcao_Compilacao_v2_11.zip contém somente
+ModeloD_FonteFuncional211.mqh para substituir na pasta do Expert já instalada.
+Próximo passo usuário: substituir esse arquivo e F7 no EA principal.
+Compilação nativa ainda pendente; não iniciar Tester antes de compilar.

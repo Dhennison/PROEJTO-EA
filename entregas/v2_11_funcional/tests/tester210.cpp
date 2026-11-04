@@ -171,6 +171,12 @@ int main(){
  bool logical=operational.nlevels==5;for(int k=0;k<operational.nlevels;k++)logical=logical&&operational.levels[k].symbol=="WINZ26"&&operational.levels[k].order>0;
  Check210(logical,"core keeps WINZ26 identity and reconciles physical receipts");
  long expiry211=0;MDSymbolInfoInteger211("WINZ26",SYMBOL_EXPIRATION_TIME,expiry211);
+ string description211;
+ Check210(MDSymbolInfoString211("WINZ26",0,description211)&&description211=="BRL"&&mock_last_symbol211=="MD_PESQ_WINZ26_DIA1030","three-argument string property preserves output and physical route");
+ mock_string_failure211=true;
+ Check210(!MDSymbolInfoString211("WIN$N",0,description211)&&mock_last_symbol211=="WIN$N","three-argument string property preserves failure and unmapped identity");
+ mock_string_failure211=false;
+ MDSymbolInfoInteger211("WINZ26",SYMBOL_EXPIRATION_TIME,expiry211);
  Check210(mock_last_symbol211=="WINZ26"&&expiry211==MDCivilMidnight2026(20261216)/1000,"expiry belongs to real underlying contract, not internal custom name");
  std::vector<MqlRates> rates;CopyRates("WINZ26",PERIOD_D1,0,3,rates);
  Check210(mock_last_symbol211=="WINZ26","D1 remains original same-contract reference");

@@ -1213,6 +1213,8 @@ INTEGRATED;ALL_CHAINS_RECONCILED;revision=18;entry_intents=0;SLTP_intents=0;canc
 PASS_210;functional bridge sends five eligible pending orders after durable prepare
 PASS_210;broker receives only physical custom symbol in Tester
 PASS_210;core keeps WINZ26 identity and reconciles physical receipts
+PASS_210;three-argument string property preserves output and physical route
+PASS_210;three-argument string property preserves failure and unmapped identity
 PASS_210;expiry belongs to real underlying contract, not internal custom name
 PASS_210;D1 remains original same-contract reference
 PASS_210;M1 uses imported execution tape
@@ -1470,6 +1472,6 @@ PASS_210;SLTP close and cancellation preserve physical-symbol route and ticket o
 TESTER_END;prepared=3;sent=3;responses=3;revision=13;NOT_AN_ACCEPTANCE_CERTIFICATE
 STOP;reason=1;transport=TESTER_ONLY
 RELATORIO_FECHADO;/tmp/md615k_host\Files\MDT211_FUNC_1792605000_10000_615015_ModeloD_Integrado_A1S53545241544547595F544553544552I1_1792605000_10000.txt
-FOCUSED_211;Checks=77;Failures=0;API_MOCK_NOT_NATIVE_MQL5
+FOCUSED_211;Checks=79;Failures=0;API_MOCK_NOT_NATIVE_MQL5
 
 EXIT_STATUS=0

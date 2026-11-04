@@ -35,6 +35,8 @@ bool MDSymbolInfoDouble211(string s,ENUM_SYMBOL_INFO_DOUBLE p,double &v)
 {return SymbolInfoDouble(MDPrecoSimbolo211(s),p,v);}
 string MDSymbolInfoString211(string s,ENUM_SYMBOL_INFO_STRING p)
 {return SymbolInfoString(MDPrecoSimbolo211(s),p);}
+bool MDSymbolInfoString211(string s,ENUM_SYMBOL_INFO_STRING p,string &v)
+{return SymbolInfoString(MDPrecoSimbolo211(s),p,v);}
 bool MDSymbolInfoTick211(string s,MqlTick &v)
 {return SymbolInfoTick(MDPrecoSimbolo211(s),v);}
 bool MDSymbolSelect211(string s,bool selected)
