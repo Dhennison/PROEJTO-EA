@@ -45,7 +45,8 @@ bool MDStreamRecoverAll615(const MDStream615 &state,long end,bool observation_on
   bool present=r<bars;if(present)present=(long)rates[r].time*1000==stamp;
   double o=0,h=0,l=0,c=0;if(present){o=rates[r].open;h=rates[r].high;l=rates[r].low;c=rates[r].close;}
   MDMinuteAudit m=candidate.audit.minutes[k];
-  if(!MDSparseMinute615N(m,present?1:0,o,h,l,c,observation_only))
+  if(!MDSparseMinute615N(m,present?1:0,o,h,l,c,observation_only)&&
+     !(present&&MDReferenceMinute211(stamp,all,total)))
   {reason="ALL_FILTRADO_DIVERGE_M1;minuto_msc="+IntegerToString(stamp)+";filtrados="+IntegerToString(accepted)+
     ";ticks_minuto="+IntegerToString(m.count)+";ticks_O="+DoubleToString(m.o,8)+";ticks_H="+DoubleToString(m.h,8)+
     ";ticks_L="+DoubleToString(m.l,8)+";ticks_C="+DoubleToString(m.c,8)+";M1_O="+DoubleToString(o,8)+
@@ -105,7 +106,8 @@ bool MDStreamCollect615(MDStream615 &state,long end,string &reason,bool observat
   double o=0,h=0,l=0,c=0;
   if(present){o=rates[r].open;h=rates[r].high;l=rates[r].low;c=rates[r].close;}
   MDMinuteAudit m=candidate.audit.minutes[k];
-  if(!MDSparseMinute615N(m,present?1:0,o,h,l,c,observation_only))
+  if(!MDSparseMinute615N(m,present?1:0,o,h,l,c,observation_only)&&
+     !(present&&MDReferenceMinute211(stamp,ticks,count)))
   {
    MDStream615 recovered;string recovery_reason;
    if(MDStreamRecoverAll615(state,end,observation_only,recovered,recovery_reason))

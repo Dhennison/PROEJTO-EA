@@ -1,0 +1,32 @@
+RESULTADO NATIVO — ENSAIO BRL, 04/11/2026
+Compilação informada pelo usuário: 0 erros/0 avisos, 6153ms, AVX2+FMA3.
+A configuração BRL foi aplicada (saldo final 1000000.00 BRL no Diário).
+Cinco pendentes aceitas às 09:00:44, tickets 2 a 6, retcode10009/error0,
+validadeDAY. Origens vinculadas e entry_phase6 no relatório.
+Cinco cancelamentos aceitos 09:00:46/48/50; cancel_phase6, consumed1,
+first_touch_server_msc0, cutoff0. Não houve TESTER_DEAL nem posições.
+Envio e cancelamento nativos demonstrados; fills, proteção de posição e
+zeragem de posições às18h NÃO demonstrados. Rodada não aprova EA completo.
+
+BLOQUEIO 1 — cancelamento imediato de todas as pendentes.
+MDOpTrailRead usa o mesmo predicado absoluto de SL/TP para pendente e
+posição: compra price<=SL ou price>=TP; venda price>=SL ou price<=TP.
+Pending usa begin=accepted_server. Enquanto a pendente ainda espera o
+primeiro toque na entrada, preço inicial do mercado pode estar além do TP
+na direção de origem. Isso é tratado como boundary sem exigir atingir ou
+atravessar a linha desde um preço anterior. A saída força cancel/consumed.
+Conferir semântica de atingir/atravessar com histórico cronológico e tratar
+separadamente trilha da pendente e proteção pós-fill. Não remover regra de
+cancelamento no SL/TP; não alterar fórmulas nem rearmar oportunidades.
+
+BLOQUEIO 2 — divergência intrajornada efetiva, minuto09:01.
+Às09:02, TRADE e ALL_FILTRADO retornam O171315 versus M1O171330; H/L/C
+iguais. Repete até o fim. Não é volume18:31. Leitor trava reconstrução e
+não comprova cronologia posterior. Não ignorar OHLC nem afirmar que o
+ALL filtrado resolveu. Corrigir fonte/validação intrajornada com evidência.
+VISUAL_SYNC_FAILED repetido é problema separado de representação, não
+prova de falha de envio. Não usar como motivo para repetir rodada igual.
+
+PRÓXIMO TRABALHO
+Correção funcional dirigida do monitor de pendentes e do bloco09:01,
+com reprodução e validação; nenhuma nova coleta necessária agora.

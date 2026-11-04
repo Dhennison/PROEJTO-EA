@@ -26,7 +26,7 @@ demo;nenhuma etapa atual depende de criar demo. Liberação real continua
 separada e exige terminar/validar transporte de produção,depois deste ensaio.
 
 VERIFICAÇÃO
-87checksC++/APIs simuladas,ASan/UBSan ativos,zero falhas. Inclui50anteriores
+114checksC++/APIs simuladas,ASan/UBSan ativos,zero falhas. Inclui50anteriores
 mais ponte,cinco pendentes elegíveis,identidade,D1real,M1importada,SLTP,
 fechamento/cancelamento por ticket,normalização de recibos,bloqueio live/
 contexto errado e outra origem. Fixtures dos testes são sintéticos,não
@@ -60,3 +60,28 @@ INI solicita Currency=BRL; novo bloqueio verifica a moeda efetiva antes
 de inicializar o ensaio importado. Não modifica a conta real nem os dados
 do símbolo. Launcher usa a instalação isolada com /portable e /config.
 Essas integrações requerem compilação e rodada nativas, ainda pendentes.
+
+CORREÇÃO DAS PENDENTES E REFERÊNCIA ORIGINAL — 04/11/2026
+Segunda rodada: cinco pendentes aceitas09:00:44 e canceladas09:00:46-50,
+sem fills. O monitor de posição era usado também pela pendente e tratava
+qualquer preço além do TP como limite após entrada. Separado monitor da
+pendente: âncora Last, toque na entrada, depois atingimento/atravessamento
+de SL/TP. Gap pelo preço de entrada e SL é preservado. Sem âncora, bloqueia.
+SL/TP da posição preenchida continuam avaliados como antes. Matemática,
+coordenador, consumo, cancelamento por efeito e corte permanecem intactos.
+
+CSV original SHA8035268c...861a e exportação M1 pré-teste confirmam abertura
+09:01=171315. Nova referência compilada por566minutos permite resolver a
+divergência no motor (171330) SOMENTE se os ticks da janela fechada passam
+contagem, OHLC e duas assinaturas ordenadas de timestamp/Last/flags. Não
+relaxa comparação de OHLC, não preenche lacunas, não muda a ordem dos ticks
+nem reescreve M1. Não usa o conteúdo futuro da referência para decisões.
+O estado observado continua sendo calculado dos ticks consultados. Há log
+REFERENCIA_ORIGINAL211 para registrar uso. Leitura TRADE no contexto fixo
+importado usa ALL com filtro de flags, preservando erros de consulta.
+
+114 verificações locais C++/ASan/UBSan, zero falhas. Inclui sequência real
+de26687negócios09:01; remoção/alteração/reordenação bloqueadas. Integração
+conferida em Stream, recuperação ALL, cobertura atual e trilha. Não é
+compilação MQL5 nem comprovação de fills/proteção/zeragem nativos. Nova
+compilação F7 e rodada nativa ainda pendentes. Nenhuma nova importação.

@@ -64,10 +64,12 @@ bool MDOpSameSnapshot(const MDOpSnapshot &a,const MDOpSnapshot &b) {
 }
 struct MDOpTrail {
  string symbol;long begin,cursor;bool boundary,ambiguous,failed;double entry,sl,tp;bool buy;
+ bool pending,previous_known,entry_seen;double previous_price;
 };
-void MDOpTrailInit(MDOpTrail &t,string symbol,long begin,const MDLevel &price) {
+void MDOpTrailInit(MDOpTrail &t,string symbol,long begin,const MDLevel &price,bool pending=false) {
  t.symbol=symbol;t.begin=begin;t.cursor=begin+1;t.boundary=false;t.ambiguous=false;t.failed=false;
  t.entry=price.entry;t.sl=price.sl;t.tp=price.tp;t.buy=price.buy;
+ t.pending=pending;t.previous_known=false;t.previous_price=0;t.entry_seen=false;
 }
 // Bounded per call, retained in memory and rebuilt from receipt/fill after restart.
 // Same-millisecond boundary and fill have no demonstrated order; never claim post-fill evidence.
@@ -77,22 +79,39 @@ bool MDOpTrailRead(MDOpTrail &t,long until,string &why) {
  if(t.cursor==until)return !t.ambiguous;
  long end=t.cursor+59999;if(end>=until)end=until-1;
  MqlTick ticks[];ResetLastError();
- int n=MDCopyTicksRange211(t.symbol,ticks,COPY_TICKS_TRADE,(ulong)(t.cursor==t.begin+1?t.begin:t.cursor),(ulong)end);
+ long lower=t.cursor==t.begin+1?t.begin:t.cursor;
+ if(t.pending&&t.cursor==t.begin+1){lower=t.begin-60000;if(lower<0)lower=0;}
+ int n=MDCopyTicksRange211(t.symbol,ticks,COPY_TICKS_TRADE,(ulong)lower,(ulong)end);
  int error=GetLastError();
  if(n<0||error!=0||n>500000){why="TRAIL_COPY_FAILED_"+IntegerToString(error);return false;}
  long previous=-1;bool boundary=t.boundary,ambiguous=t.ambiguous;
+ bool known=t.previous_known,entered=t.entry_seen;double prior_price=t.previous_price;
  for(int i=0;i<n;i++) {
   long stamp=ticks[i].time_msc;double price=ticks[i].last;
-  long lower=t.cursor==t.begin+1?t.begin:t.cursor;
   if(stamp<lower||stamp>end||stamp<previous||!MDPositive(price)||
     (ticks[i].flags&(TICK_FLAG_LAST|TICK_FLAG_VOLUME|TICK_FLAG_BUY|TICK_FLAG_SELL))==0){
    why="TRAIL_TICK_INVALID;index="+IntegerToString(i)+";msc="+IntegerToString(stamp)+";previous="+IntegerToString(previous);t.failed=true;return false;
   }
+  if(t.pending&&stamp<t.begin){known=true;prior_price=price;previous=stamp;continue;}
   bool hit=t.buy?(price<=t.sl||price>=t.tp):(price>=t.sl||price<=t.tp);
+  if(t.pending){
+   if(stamp==t.begin){entered=entered||price==t.entry;hit=t.buy?price<=t.sl:price>=t.sl;}
+   else{
+    if(!known){why="TRAIL_PENDING_ANCHOR_MISSING";return false;}
+    bool was_entered=entered;
+    if(MDCrossed(prior_price,price,t.entry))entered=true;
+    // The approach to a Limit necessarily passes its TP before its entry.
+    // Only a missed entry touch can start the theoretical SL/TP path.
+    hit=was_entered?(MDCrossed(prior_price,price,t.sl)||MDCrossed(prior_price,price,t.tp)):
+        (entered&&(t.buy?price<=t.sl:price>=t.sl));
+   }
+   known=true;prior_price=price;
+  }
   if(stamp==t.begin&&hit)ambiguous=true;
   if(stamp>t.begin&&hit)boundary=true;
   previous=stamp;
  }
+ if(t.pending&&!known){why="TRAIL_PENDING_ANCHOR_MISSING";return false;}
  // Audit complete minutes in this exact block against M1; partial edges are labelled raw tail.
  long first=(t.cursor+59999)/60000*60000,last=(end+1)/60000*60000;
  for(long minute=first;minute<last;minute+=60000) {
@@ -102,11 +121,13 @@ bool MDOpTrailRead(MDOpTrail &t,long until,string &why) {
    m.c=price;m.count++;
   }
   MqlRates bars[];ResetLastError();int count=MDCopyRates211(t.symbol,PERIOD_M1,(datetime)(minute/1000),(datetime)(minute/1000+59),bars);
-  if(GetLastError()!=0||count!=1||!MDAuditMinuteMatches(m,bars[0].open,bars[0].high,bars[0].low,bars[0].close)){
+  if(GetLastError()!=0||count!=1||(!MDAuditMinuteMatches(m,bars[0].open,bars[0].high,bars[0].low,bars[0].close)&&
+    !MDReferenceMinute211(minute,ticks,n))){
    why="TRAIL_M1_NOT_CONFIRMED;minute="+IntegerToString(minute);return false;
   }
  }
  t.cursor=end+1;t.boundary=boundary;t.ambiguous=ambiguous;
+ t.previous_known=known;t.previous_price=prior_price;t.entry_seen=entered;
  why=ambiguous?"BOUNDARY_SAME_MILLISECOND_UNKNOWN":"TRAIL_OBSERVED_RAW_PARTIAL_EDGES";
  return t.cursor==until&&!ambiguous;
 }

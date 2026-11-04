@@ -653,3 +653,32 @@ efetiva não for BRL. Não inventar câmbio nem alterar moeda do símbolo.
 Próximo usuário: copiar atualização na raiz, compilar F7, fechar secundário
 e abrir launcher. Inicia teste automaticamente em BRL via config. Aplicação
 da moeda e validade ainda exigem confirmação nativa; não afirmar aprovadas.
+
+04/11/2026 — SEGUNDA RODADA NATIVA BRL ANALISADA
+Relatório completo preservado em v2_11_funcional/coleta_20261104/segunda_rodada.
+5 pendentes aceitas 09:00:44 (tickets2-6,DAY), mas5 cancelamentos09:00:46-50,
+sem fills/posições. Os10envios não são10operações. Cancel_phase6 comprovado,
+first_touch0/cutoff0. Predicado absoluto SL/TP da mesma trilha trata mercado
+no lado inicial além doTP como boundary; separar atingimento/atravessamento
+da pendente da proteção pós-fill, preservando regras. Outra falha relevante
+intrajornada09:01: TRADE/ALL O171315 vs M1O171330; reconstrução trava.
+Não aprovar EA nem SLTP/zeragem por ausência de posições; não pedir rodada
+igual. Próximo é correção funcional dirigida, sem nova coleta genérica.
+
+CORREÇÃO PREPARADA — PENDENTES E REFERÊNCIA ORIGINAL V2.11
+114 checks C++ com ASan/UBSan passaram. Pendentes têm modo próprio na
+trilha: âncora <=aceitação, passagem inicial pelo TP não consome; entrada
+observada arma SL/TP teórico. Gap entrada+SL cancela. Proteção pós-fill
+mantida. Coordenador e matemática não alterados. Leitura importadaTRADE
+usa ALL filtrado porflags para não fabricar negócios a partir deLast/flags0.
+Conferidos566minutosCSV contraM1exportado: todosOHLC/quantidade iguais.
+Nova referência compilada com contagem/OHLC/duas assinaturas ordenadas
+de(timestamp,Last,flags). Só contextoTesterfixo e minuto fechado; permite
+validar ticks originais quandoM1doagente diverge, sem reescrever dados nem
+usarfuturo. RegistrosREFERENCIA_ORIGINAL211 permitem ver uso da referência.
+Reprodução local09:01 com26687ticks originais passou nas quatro rotas
+locais(Stream/ALL/cobertura/trilha); tickfaltante/alterado/reordenado bloqueia.
+Pacote Correcao_Pendentes_Referencia_v2_11.zip: copiarMQL5naRAIZdoisolado,
+F4abrirEAprincipal/F7 e enviarcompilação. Depois reusarCMD/INIemBRL já
+instalados. Compilação/execução nativas da correção ainda pendentes.
+Não aprovar SLTP/zeragem nativos com base nos mocks. Sem nova coleta agora.

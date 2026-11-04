@@ -48,7 +48,8 @@ bool MDCurrentCoverage209(const MDStream615 &stream,long until,MDCoverage209 &ou
   MqlRates rates[];ResetLastError();int bars=MDCopyRates211(stream.data.contract,PERIOD_M1,(datetime)(from/1000),(datetime)((until-1)/1000),rates);
   int rates_error=GetLastError();
   if(rates_error!=0||bars!=1||(long)rates[0].time*1000!=from||
-     !MDAuditMinuteMatches(minute,rates[0].open,rates[0].high,rates[0].low,rates[0].close))
+     (!MDAuditMinuteMatches(minute,rates[0].open,rates[0].high,rates[0].low,rates[0].close)&&
+      !MDReferenceMinute211(from,ticks,n)))
   {why="MINUTO_COMPLETO_NAO_CONFERE_M1";details+=";barras="+IntegerToString(bars)+";erro_m1="+IntegerToString(rates_error);return false;}
  }
  if(IsStopped()){why="COLETA_INTERROMPIDA";return false;}

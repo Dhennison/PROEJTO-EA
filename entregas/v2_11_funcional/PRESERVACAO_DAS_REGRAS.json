@@ -63,7 +63,7 @@
     "file": "ModeloD_CurrentCoverage.mqh",
     "same_bytes": false,
     "original_sha256": "131905d8074e62112f10a2f0e1fe5aca2bb48198fe332e35bc4f87283b71de61",
-    "functional_sha256": "5cd7bd0ddee28aafd476409b99c8b08abcf1df298d5d6d55641f6ea87f0af23e"
+    "functional_sha256": "d204ca86a6608647efb3bda2acae9b76f6d928829c6b9cb96953dacedb0f535e"
   },
   {
     "file": "ModeloD_DailyAdapter.mqh",
@@ -141,7 +141,7 @@
     "file": "ModeloD_OperationalTerminal.mqh",
     "same_bytes": false,
     "original_sha256": "0f53a0f50da64a5edbb179f817617377185651c8a52936e4e74013af0d4c02fb",
-    "functional_sha256": "817811546313c2b8572d8ea6dcd1c8f1420516ad6573667115afdba72eb1d90a"
+    "functional_sha256": "07d779d6d962a2b2f576ef30785afaad67556c38b8c4825735543c3f9a4c0dfc"
   },
   {
     "file": "ModeloD_Protection.mqh",
@@ -195,7 +195,7 @@
     "file": "ModeloD_StreamTerminal.mqh",
     "same_bytes": false,
     "original_sha256": "63505eee21a46e0891750858c4545de16e85e54cdf087ef480b57c44736bb1d8",
-    "functional_sha256": "80f7e43852b5b8716e07e87885513fb597b96882c0e6377986ed605cc37180d0"
+    "functional_sha256": "a951b5405b94f89101f70f4d705d778a01baab15f675148b339597bfcddbd31d"
   },
   {
     "file": "ModeloD_TerminalCollect.mqh",

@@ -16,6 +16,7 @@ with tempfile.TemporaryDirectory(prefix='modelod210_') as temp:
         s = re.sub(r'^#property.*$', '', source.read_text(), flags=re.M)
         s = re.sub(r'^input ', '', s, flags=re.M)
         s = re.sub(r'\b(MqlTick|MqlRates) (\w+)\[\];', r'std::vector<\1> \2;', s)
+        s=re.sub(r'MqlTick &(\w+)\[\]', r'std::vector<MqlTick> &\1', s)
         s=s.replace('MqlRates &v[]','std::vector<MqlRates> &v').replace('MqlTick &v[]','std::vector<MqlTick> &v')
         (build / source.name).write_text(s)
     host = (root / 'tests/host.cpp').read_text()
@@ -38,7 +39,7 @@ with tempfile.TemporaryDirectory(prefix='modelod210_') as temp:
         'bool mock_stopped210=false,mock_partial210=false;\nbool EventSetTimer(int)')
     mock = mock.replace('return out.size();\n}',
         'if(mock_partial210){lastError=4403;}return out.size();\n}', 1)
-    (build / 'focused.cpp').write_text(mock + '\n' + (root / 'tests/tester210.cpp').read_text())
+    (build / 'focused.cpp').write_text(mock + '\n' + (root / 'tests/tester210.cpp').read_text().replace('ORIGINAL_MINUTE_PATH', str(root / 'tests/fixtures/09_01_original.txt')))
     flags = ['-std=c++17', '-O0', '-g', '-Wall', '-Wextra', '-Wno-unused-parameter']
     if a.sanitize:
         flags += ['-fsanitize=address,undefined', '-fno-omit-frame-pointer']

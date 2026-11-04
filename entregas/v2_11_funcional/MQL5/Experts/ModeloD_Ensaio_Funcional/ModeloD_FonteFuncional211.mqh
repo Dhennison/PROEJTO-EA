@@ -50,7 +50,18 @@ int MDCopyRates211(string s,ENUM_TIMEFRAMES p,int start,int count,MqlRates &v[])
 int MDCopyRates211(string s,ENUM_TIMEFRAMES p,datetime start,datetime end,MqlRates &v[])
 {if(!MDPrepararSerie211(s,p))return -1;return CopyRates(MDSerieSimbolo211(s,p),p,start,end,v);}
 int MDCopyTicksRange211(string s,MqlTick &v[],uint flags,ulong start,ulong end)
-{return CopyTicksRange(MDPrecoSimbolo211(s),v,flags,start,end);}
+{
+ if(!MDFonteAtiva211()||s!="WINZ26"||flags!=COPY_TICKS_TRADE)
+  return CopyTicksRange(MDPrecoSimbolo211(s),v,flags,start,end);
+ // Read the imported source explicitly; carried Last with flags=0 is not a trade.
+ int n=CopyTicksRange(MD_FONTE211,v,COPY_TICKS_ALL,start,end);
+ if(n<0||GetLastError()!=0)return n;
+ if(n>500000)return -1;
+ int used=0;
+ for(int i=0;i<n;i++)if((v[i].flags&120)!=0){if(used!=i)v[used]=v[i];used++;}
+ if(ArrayResize(v,used)!=used)return -1;
+ return used;
+}
 bool MDSeriesInfoInteger211(string s,ENUM_TIMEFRAMES p,ENUM_SERIES_INFO_INTEGER prop,long &v)
 {if(!MDPrepararSerie211(s,p))return false;return SeriesInfoInteger(MDSerieSimbolo211(s,p),p,prop,v);}
 bool MDOrderCalcMargin211(ENUM_ORDER_TYPE type,string s,double volume,double price,double &margin)
@@ -71,4 +82,5 @@ bool MDHistoryDealGetString211(ulong ticket,ENUM_DEAL_PROPERTY_STRING p,string &
 {bool ok=HistoryDealGetString(ticket,p,v);if(ok&&p==DEAL_SYMBOL)v=MDLogico211(v);return ok;}
 bool MDPositionGetString211(ENUM_POSITION_PROPERTY_STRING p,string &v)
 {bool ok=PositionGetString(p,v);if(ok&&p==POSITION_SYMBOL)v=MDLogico211(v);return ok;}
+#include "ModeloD_ReferenciaOriginal211.mqh"
 #endif

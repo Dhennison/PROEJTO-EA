@@ -19,6 +19,7 @@ MDObserver615 obs615;MDStream615 stream615;MDRetry132 retry132;
 MDOpState operational;MDOpSnapshot inventory_a,inventory_b;MDOpClock opclock;
 MDOpTrail pending_trail[MDOP_LEVELS],position_trail[MDOP_POSITIONS];
 bool pending_trail_started[MDOP_LEVELS],position_trail_started[MDOP_POSITIONS];
+long md_reference_reported211=0;
 string coverage_last209="";
 int lock615=INVALID_HANDLE,report615=INVALID_HANDLE;
 bool owns615=false,fatal=false,report_error=false;
@@ -298,7 +299,7 @@ void BuildFrame(MDOpFrame &f,bool stable) {
    Diagnostic(5+l.level,"ENTRADA_"+IntegerToString(l.level),entry_reason,"REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA");
   }
   if(l.order>0) {
-   if(!pending_trail_started[k]||pending_trail[k].begin!=l.accepted_server){MDOpTrailInit(pending_trail[k],l.symbol,l.accepted_server,l.prices);pending_trail_started[k]=true;}
+   if(!pending_trail_started[k]||pending_trail[k].begin!=l.accepted_server){MDOpTrailInit(pending_trail[k],l.symbol,l.accepted_server,l.prices,true);pending_trail_started[k]=true;}
    // A freshly accepted order has no strictly post-origin interval yet.
    // Do not cancel it merely because the next simulated callback has the SAME time.
    if(MDTesterGate210()&&opclock.server==l.accepted_server)f.pending_history[k]=true;
@@ -380,6 +381,7 @@ int OnInit() {
    Print("TESTER_INIT_BLOCKED;ENSAIO_REQUER_BRL;currency=",AccountInfoString(ACCOUNT_CURRENCY),";USAR_CONFIG_BRL;SEM_ORDENS");
    return INIT_PARAMETERS_INCORRECT;
   }
+ md_reference_hits211=0;md_reference_minute211=0;md_reference_reported211=0;
  ledger="";
  tester_prefix210="";tester_prepared210=0;tester_sent210=0;tester_responses210=0;tester_deals210=";";
  for(int i=0;i<256;i++)tester_blocks210[i]="";
@@ -433,7 +435,12 @@ int OnInit() {
  if(!EventSetTimer(IntervaloSegundos))return INIT_FAILED;
  return INIT_SUCCEEDED;
 }
-void OnTimer(){if(Scope615()!=operational.scope){fatal=true;Diagnostic(3,"IDENTIDADE","CONTA_OU_SERVIDOR_MUDOU","SEM_CONTINUACAO_NESTA_EXECUCAO;NAO_REUTILIZAR_ESTADO_EM_OUTRA_CONTA");Status("IDENTITY_CHANGED");return;}OperationalCycle();if(MDTesterGate210())MDTesterDispatch210();}
+void OnTimer(){if(Scope615()!=operational.scope){fatal=true;Diagnostic(3,"IDENTIDADE","CONTA_OU_SERVIDOR_MUDOU","SEM_CONTINUACAO_NESTA_EXECUCAO;NAO_REUTILIZAR_ESTADO_EM_OUTRA_CONTA");Status("IDENTITY_CHANGED");return;}OperationalCycle();if(MDTesterGate210())MDTesterDispatch210();
+ if(md_reference_hits211!=md_reference_reported211){
+  Report615("REFERENCIA_ORIGINAL211;validacoes="+IntegerToString(md_reference_hits211)+";ultimo_minuto_msc="+IntegerToString(md_reference_minute211)+";CONTAGEM_OHLC_E_DUAS_ASSINATURAS_ORDENADAS_CONFERIDAS;NAO_ALTERA_M1_NATIVA");
+  md_reference_reported211=md_reference_hits211;
+ }
+}
 void OnTradeTransaction(const MqlTradeTransaction &trans,const MqlTradeRequest &request,const MqlTradeResult &result){transactions++;}
 void OnChartEvent(const int id,const long &lparam,const double &dparam,const string &sparam) {
  if(id!=CHARTEVENT_CHART_CHANGE||!obs615.visible||!owns615)return;

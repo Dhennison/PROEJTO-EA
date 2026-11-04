@@ -20,6 +20,7 @@ struct MqlTradeTransaction{};
 struct MqlTradeRequest{long expiration=0;int action=0,type=0,type_filling=0,type_time=0;ulong magic=0,order=0,position=0;string symbol,comment;double volume=0,price=0,sl=0,tp=0;};
 struct MqlTradeResult{uint retcode=0;int retcode_external=0;ulong order=0,deal=0;};
 template<class T>void ZeroMemory(T &v){v=T{};}
+template<class T>int ArrayResize(std::vector<T> &v,int size){v.resize(size);return size;}
 template<class T>int ArraySize(const std::vector<T> &v){return (int)v.size();}
 const int MQL_TESTER=100,MQL_OPTIMIZATION=101,ACCOUNT_MARGIN_MODE=102,ACCOUNT_MARGIN_MODE_RETAIL_HEDGING=103,
  SYMBOL_EXPIRATION_TIME=104,SERIES_SYNCHRONIZED=105,PERIOD_D1=1440,SYMBOL_FILLING_MODE=106,SYMBOL_TRADE_EXEMODE=107,

@@ -1,34 +1,46 @@
-CORREÇÃO DA VALIDADE E CONFIGURAÇÃO DO ENSAIO EM BRL — 04/11/2026
+CORREÇÃO DO MONITOR DE PENDENTES E REFERÊNCIA ORIGINAL — 04/11/2026
 
-APLICAR NO MT5 SECUNDÁRIO
-1. Extraia o ZIP. Copie os três itens MQL5, ModeloD_Funcional_BRL.ini e
-   INICIAR_ENSAIO_BRL.cmd diretamente para a raiz:
+FAÇA PRIMEIRO APENAS A INSTALAÇÃO E COMPILAÇÃO
+1. Extraia Correcao_Pendentes_Referencia_v2_11.zip.
+2. Copie a pasta MQL5 inteira extraída e cole DIRETAMENTE na raiz:
    C:\Users\jhenn\AppData\Local\ModeloD_MT5_Isolado_20261102_145749_6554356a
-   Aceite mesclar/substituir os arquivos do pacote. Não cole MQL5 dentro
-   de MQL5. INI e CMD ficam ao lado de terminal64.exe.
-2. No MT5 secundário, F4. Abra:
+   Aceite mesclar e substituir os arquivos do pacote. Não entre em MQL5
+   para colar dentro dela; o resultado não deve ser MQL5\MQL5.
+3. No MT5 secundário, pressione F4. Abra:
    MQL5\Experts\ModeloD_Ensaio_Funcional\EA_ModeloD_Ensaio_Funcional.mq5
-   Pressione F7. Somente prossiga se forem 0 erros.
-3. Feche o MetaEditor secundário e o MT5 secundário. O principal pode ficar
-   aberto. Não execute o EA em gráfico.
-4. Na raiz acima, dê duplo clique em INICIAR_ENSAIO_BRL.cmd.
-   Leia a mensagem e pressione uma tecla para continuar. Ele abrirá somente
-   o terminal isolado, em modo portable, e iniciará automaticamente o Tester
-   com a configuração do INI. Usa os dados existentes, sem importação.
-5. Aguarde o teste terminar e envie as mensagens da aba Diário.
-   O TXT do EA também ficará em Common\Files, com prefixo MDT211_FUNC_.
+4. Pressione F7 e envie o resultado da compilação antes de iniciar o teste.
 
-O QUE MUDA
-- Pendentes consultam SYMBOL_EXPIRATION_MODE no símbolo efetivamente
-  negociado. Usa GTC se permitido, senão DAY, senão SPECIFIED no corte.
-  Modos incompatíveis ou leitura inválida bloqueiam antes do envio.
-- Timer, cancelamentos, zeragem, preços, volume, primeiro toque e SL/TP
-  continuam sob as regras originais do Modelo D. Não há reenvio automático
-  das tentativas antigas: nova rodada tem ledger próprio.
-- Currency=BRL é solicitada pelo INI, sem depender da lista de moedas do MT5.
-  É a moeda do depósito SIMULADO; não muda a moeda ou o saldo da conta real.
-- Se a moeda efetiva não for BRL, o EA recusa a inicialização e registra
-  ENSAIO_REQUER_BRL. Não altera a moeda do contrato nem inventa câmbio.
-- A aceitação de BRL pelo MT5 e das pendentes pelo motor exige esta rodada
-  nativa. Não foram comprovadas pelo ambiente local C++.
-- Continua sendo exclusivo do Tester. Não libera operação real.
+DEPOIS DA COMPILAÇÃO SEM ERROS
+O INI e o CMD em BRL já instalados continuam sendo usados. Feche o
+MetaEditor e o MT5 secundários; abra INICIAR_ENSAIO_BRL.cmd na raiz do
+secundário e pressione uma tecla. O teste simulado começa automaticamente.
+Envie o relatório TXT completo indicado por RELATORIO_FECHADO, na pasta
+C:\Users\jhenn\AppData\Roaming\MetaQuotes\Terminal\Common\Files
+Seu nome começa MDT211_FUNC_ e contém ModeloD_Integrado. Não é necessário
+reimportar CSV, recriar símbolo, mudar parâmetros ou instalar scripts.
+
+CORREÇÕES
+Pendentes: Last na região além do TP antes do primeiro toque na entrada
+não é evidência de alvo após entrada. O monitor mantém âncora cronológica,
+observa primeiro toque e continua cancelando se SL/TP for atingido depois
+sem execução. Gap atravessando entrada e SL também cancela. Histórico
+incompleto continua bloqueando; não há reenvio de oportunidade consumida.
+Posições preenchidas conservam a proteção por SL/TP e o corte de 18h.
+
+Minuto09:01: CSV original e M1 exportado concordam em O171315. O motor
+passou a retornar M1O171330. A nova referência compilada deriva dos566
+minutos do CSV original e foi comparada com o M1 exportado. Se a M1 nativa
+divergir, uma janela FECHADA só passa se os ticks consultados coincidirem
+com quantidade, OHLC e duas assinaturas ordenadas de tempo/Last/flags do
+original. Tick removido, modificado ou reordenado mantém o bloqueio.
+A referência não cria ticks nem preços, não é consultada para antecipar
+sinais e não altera a base do terminal. Restringe-se ao símbolo e data
+fixos deste ensaio no Tester. D1 e vencimento continuam no WINZ26 real.
+A leitura importada de negócios usa ALL filtrado por flags de negociação,
+excluindo Last carregado com flags0 e atualizações só de Bid/Ask.
+
+VALIDAÇÃO
+114 verificações locais C++ com ASan/UBSan passaram, incluindo reprodução
+do cancelamento prematuro e a sequência ORIGINAL completa de09:01.
+A compilação e execução nativas da correção ainda precisam ser verificadas.
+Este pacote continua exclusivo do Tester; não libera operação real.

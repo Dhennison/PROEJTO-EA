@@ -1,8 +1,8 @@
 [
   {
     "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/EA_ModeloD_Ensaio_Funcional.mq5",
-    "bytes": 31995,
-    "sha256": "04d820940906de4fa5b58592e2d2d551db6f05997a9996b6288bb8be105efe2c"
+    "bytes": 32445,
+    "sha256": "3cd96b633265ecfc5b7744839b26e9bb1fab39af3bbca039f29e8228278fbd83"
   },
   {
     "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/ModeloD_B3.mqh",
@@ -56,8 +56,8 @@
   },
   {
     "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/ModeloD_CurrentCoverage.mqh",
-    "bytes": 3656,
-    "sha256": "5cd7bd0ddee28aafd476409b99c8b08abcf1df298d5d6d55641f6ea87f0af23e"
+    "bytes": 3702,
+    "sha256": "d204ca86a6608647efb3bda2acae9b76f6d928829c6b9cb96953dacedb0f535e"
   },
   {
     "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/ModeloD_DailyAdapter.mqh",
@@ -81,8 +81,8 @@
   },
   {
     "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/ModeloD_FonteFuncional211.mqh",
-    "bytes": 4408,
-    "sha256": "8f7e78cf67a632aa65c38437c24255fac3848aa4ecb6f046aa1f2d45924b7601"
+    "bytes": 4872,
+    "sha256": "54dd06bb0308dfc750a886d017aa13903630d247f39daf327ffe6691956f0e30"
   },
   {
     "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/ModeloD_Journal.mqh",
@@ -126,8 +126,8 @@
   },
   {
     "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/ModeloD_OperationalTerminal.mqh",
-    "bytes": 7243,
-    "sha256": "817811546313c2b8572d8ea6dcd1c8f1420516ad6573667115afdba72eb1d90a"
+    "bytes": 8417,
+    "sha256": "07d779d6d962a2b2f576ef30785afaad67556c38b8c4825735543c3f9a4c0dfc"
   },
   {
     "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/ModeloD_Protection.mqh",
@@ -143,6 +143,11 @@
     "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/ModeloD_Recovery.mqh",
     "bytes": 5438,
     "sha256": "a405020907843331d31fa9b623a713a909d786612cb9c10afe45e87dfdb139ca"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/ModeloD_ReferenciaOriginal211.mqh",
+    "bytes": 41776,
+    "sha256": "ee2f8808095522ffc4ff8c8173c1285b9d1c87544c84c8485cdbaa7701a979d4"
   },
   {
     "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/ModeloD_Retry132.mqh",
@@ -171,8 +176,8 @@
   },
   {
     "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/ModeloD_StreamTerminal.mqh",
-    "bytes": 8693,
-    "sha256": "80f7e43852b5b8716e07e87885513fb597b96882c0e6377986ed605cc37180d0"
+    "bytes": 8809,
+    "sha256": "a951b5405b94f89101f70f4d705d778a01baab15f675148b339597bfcddbd31d"
   },
   {
     "file": "MQL5/Experts/ModeloD_Ensaio_Funcional/ModeloD_TerminalCollect.mqh",
@@ -216,23 +221,28 @@
   },
   {
     "file": "LEIA_PRIMEIRO.txt",
-    "bytes": 2086,
-    "sha256": "ae1b59aaf8b53f384bb63d42511b70f072c06df0497250e7145f360937a0195f"
+    "bytes": 2778,
+    "sha256": "e72ee0ba6098a3713e0ebd41c28e05f7b9648e3eb5dfee34e4cd02a90c11ef43"
   },
   {
     "file": "RESUMO_DA_ENTREGA.txt",
-    "bytes": 3812,
-    "sha256": "14e126e0f2b0e5fcd93ef62f5db878b208915014138d62a621953e99ac8888da"
+    "bytes": 5479,
+    "sha256": "aa8e1d34991ed0d0d07320c313ae8d0337807fc09e6d04721d3e5152989a3067"
   },
   {
     "file": "PRESERVACAO_DAS_REGRAS.json",
     "bytes": 9921,
-    "sha256": "a9fb490239fcdc2a2f08e0b898012f57d3350166f2141c76b10848467640da66"
+    "sha256": "821e091856abe6b86e55bb764f6f4ff12c122288444fc5f49a4833511c8e793b"
+  },
+  {
+    "file": "REFERENCIA_ORIGINAL.json",
+    "bytes": 331,
+    "sha256": "11d484ad1f638f9709775c7bda57052f99ec5f03ed3a38a0131ffea5bc7bcad7"
   },
   {
     "file": "TESTES_LOCAIS.txt",
-    "bytes": 295027,
-    "sha256": "9a26f899775d1191f8c2b6a70c48527f22018e5be5b4c7b7126d8eb3125ba123"
+    "bytes": 346484,
+    "sha256": "72f772d278982e870b953fb9199d71a9cbb0c708db6e447659bc63d1bc98b93a"
   },
   {
     "file": "ModeloD_Funcional_BRL.ini",

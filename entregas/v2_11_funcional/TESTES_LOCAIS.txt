@@ -358,7 +358,7 @@ POSITION;identifier=700;ticket=900;entered=1.00000000;exited=0.00000000;residual
 POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
 PASS_210;fixture with proven origins committed
 COBERTURA_ATUAL;estado=DADOS_DIARIOS_NAO_CONFERIDOS;
-PENDING_HISTORY;key=202610300;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+PENDING_HISTORY;key=202610300;TRAIL_PENDING_ANCHOR_MISSING
 POSITION_HISTORY;identifier=700;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 POSITION_HISTORY;identifier=701;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 COMMIT;revision=3;event=TESTER_FRESH_RECONCILIATION;transporte=0
@@ -389,7 +389,7 @@ LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_ser
 POSITION;identifier=700;ticket=900;entered=1.00000000;exited=0.00000000;residual=1.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
 POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
 TESTER_RESPONSE;kind=3;serial=1;api_ok=1;retcode=10009;external=0;order=0;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
-PENDING_HISTORY;key=202610300;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+PENDING_HISTORY;key=202610300;TRAIL_PENDING_ANCHOR_MISSING
 POSITION_HISTORY;identifier=700;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 POSITION_HISTORY;identifier=701;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 COMMIT;revision=6;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
@@ -418,7 +418,7 @@ LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_ser
 LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211100.1700000000128057;entry_requested=211100;SL_fixed=211550;TP_fixed=210850;entry_phase=7;entry_attempt=0;cancel_phase=0
 POSITION;identifier=700;ticket=900;entered=1.00000000;exited=0.00000000;residual=1.00000000;SL_observed=207005.00000000;TP_observed=207590.00000000;protection_attempt=1;close_phase=0
 POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
-PENDING_HISTORY;key=202610300;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+PENDING_HISTORY;key=202610300;TRAIL_PENDING_ANCHOR_MISSING
 POSITION_HISTORY;identifier=700;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 POSITION_HISTORY;identifier=701;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 COMMIT;revision=9;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
@@ -447,7 +447,7 @@ LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_ser
 LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211100.1700000000128057;entry_requested=211100;SL_fixed=211550;TP_fixed=210850;entry_phase=7;entry_attempt=0;cancel_phase=0
 POSITION;identifier=700;ticket=900;entered=1.00000000;exited=0.00000000;residual=1.00000000;SL_observed=207005.00000000;TP_observed=207590.00000000;protection_attempt=1;close_phase=0
 POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=207005.00000000;TP_observed=207590.00000000;protection_attempt=1;close_phase=0
-PENDING_HISTORY;key=202610300;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+PENDING_HISTORY;key=202610300;TRAIL_PENDING_ANCHOR_MISSING
 POSITION_HISTORY;identifier=700;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 POSITION_HISTORY;identifier=701;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 PASS_210;two proven positions get independent durable fixed SLTP requests
@@ -477,7 +477,7 @@ LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_ser
 POSITION;identifier=700;ticket=900;entered=1.00000000;exited=0.00000000;residual=1.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
 POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
 COBERTURA_ATUAL;estado=DADOS_DIARIOS_NAO_CONFERIDOS;
-PENDING_HISTORY;key=202610300;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+PENDING_HISTORY;key=202610300;TRAIL_PENDING_ANCHOR_MISSING
 POSITION_HISTORY;identifier=700;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 POSITION_HISTORY;identifier=701;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 COMMIT;revision=4;event=TESTER_FRESH_RECONCILIATION;transporte=0
@@ -516,7 +516,7 @@ LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_ser
 LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211100.1700000000128057;entry_requested=211100;SL_fixed=211550;TP_fixed=210850;entry_phase=7;entry_attempt=0;cancel_phase=0
 POSITION;identifier=700;ticket=0;entered=1.00000000;exited=1.00000000;residual=0.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=6
 POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=1
-PENDING_HISTORY;key=202610300;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+PENDING_HISTORY;key=202610300;TRAIL_PENDING_ANCHOR_MISSING
 POSITION_HISTORY;identifier=701;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 TESTER_DEAL;ticket=102;order=2001;position_id=700;date=20261030;contract=WINZ26;level=0;msc=1793350845000;entry_kind=1;buy=0;volume=1.00000000;executed=209995.00000000;entry_math=207377.83666667;entry_requested=207380.00000000;SL_fixed=207005.00000000;TP_fixed=207590.00000000;costs_available=1;profit=0.00000000;commission=0.00000000;swap=0.00000000;fee=0.00000000;SIMULATED_EXECUTION_NOT_WORK_COMPARISON
 COMMIT;revision=8;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
@@ -545,7 +545,7 @@ LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_ser
 LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211100.1700000000128057;entry_requested=211100;SL_fixed=211550;TP_fixed=210850;entry_phase=7;entry_attempt=0;cancel_phase=0
 POSITION;identifier=700;ticket=0;entered=1.00000000;exited=1.00000000;residual=0.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=6
 POSITION;identifier=701;ticket=0;entered=2.00000000;exited=2.00000000;residual=0.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=6
-PENDING_HISTORY;key=202610300;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+PENDING_HISTORY;key=202610300;TRAIL_PENDING_ANCHOR_MISSING
 TESTER_DEAL;ticket=103;order=2002;position_id=701;date=20261030;contract=WINZ26;level=0;msc=1793350845000;entry_kind=1;buy=0;volume=2.00000000;executed=209995.00000000;entry_math=207377.83666667;entry_requested=207380.00000000;SL_fixed=207005.00000000;TP_fixed=207590.00000000;costs_available=1;profit=0.00000000;commission=0.00000000;swap=0.00000000;fee=0.00000000;SIMULATED_EXECUTION_NOT_WORK_COMPARISON
 COMMIT;revision=11;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
 LEVEL;key=202610300;symbol=WINZ26;origin=100;accepted_server_msc=150000;first_touch_server_msc=0;consumed=1;cutoff=0;entry_math=207377.8366666666697711;entry_requested=207380;SL_fixed=207005;TP_fixed=207590;entry_phase=6;entry_attempt=1;cancel_phase=2
@@ -573,10 +573,10 @@ LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_ser
 LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211100.1700000000128057;entry_requested=211100;SL_fixed=211550;TP_fixed=210850;entry_phase=7;entry_attempt=0;cancel_phase=0
 POSITION;identifier=700;ticket=0;entered=1.00000000;exited=1.00000000;residual=0.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=6
 POSITION;identifier=701;ticket=0;entered=2.00000000;exited=2.00000000;residual=0.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=6
-PENDING_HISTORY;key=202610300;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+PENDING_HISTORY;key=202610300;TRAIL_PENDING_ANCHOR_MISSING
 PASS_210;cutoff closes both exact tickets and cancels only proven pending remainder
 PASS_210;close and cancel effects reconciled from complete chains
-PENDING_HISTORY;key=202610300;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+PENDING_HISTORY;key=202610300;TRAIL_PENDING_ANCHOR_MISSING
 PASS_210;completed close/cancel actions cannot duplicate
 PASS_210;runtime loss of Tester flag blocks every transport path
 TESTER_END;prepared=3;sent=3;responses=3;revision=13;NOT_AN_ACCEPTANCE_CERTIFICATE
@@ -1247,7 +1247,7 @@ POSITION;identifier=700;ticket=900;entered=1.00000000;exited=0.00000000;residual
 POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
 PASS_210;fixture with proven origins committed
 COBERTURA_ATUAL;estado=DADOS_DIARIOS_NAO_CONFERIDOS;
-PENDING_HISTORY;key=202610300;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+PENDING_HISTORY;key=202610300;TRAIL_PENDING_ANCHOR_MISSING
 POSITION_HISTORY;identifier=700;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 POSITION_HISTORY;identifier=701;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 COMMIT;revision=3;event=TESTER_FRESH_RECONCILIATION;transporte=0
@@ -1278,7 +1278,7 @@ LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_ser
 POSITION;identifier=700;ticket=900;entered=1.00000000;exited=0.00000000;residual=1.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
 POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
 TESTER_RESPONSE;kind=3;serial=1;api_ok=1;retcode=10009;external=0;order=0;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
-PENDING_HISTORY;key=202610300;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+PENDING_HISTORY;key=202610300;TRAIL_PENDING_ANCHOR_MISSING
 POSITION_HISTORY;identifier=700;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 POSITION_HISTORY;identifier=701;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 COMMIT;revision=6;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
@@ -1307,7 +1307,7 @@ LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_ser
 LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211100.1700000000128057;entry_requested=211100;SL_fixed=211550;TP_fixed=210850;entry_phase=7;entry_attempt=0;cancel_phase=0
 POSITION;identifier=700;ticket=900;entered=1.00000000;exited=0.00000000;residual=1.00000000;SL_observed=207005.00000000;TP_observed=207590.00000000;protection_attempt=1;close_phase=0
 POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
-PENDING_HISTORY;key=202610300;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+PENDING_HISTORY;key=202610300;TRAIL_PENDING_ANCHOR_MISSING
 POSITION_HISTORY;identifier=700;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 POSITION_HISTORY;identifier=701;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 COMMIT;revision=9;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
@@ -1336,7 +1336,7 @@ LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_ser
 LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211100.1700000000128057;entry_requested=211100;SL_fixed=211550;TP_fixed=210850;entry_phase=7;entry_attempt=0;cancel_phase=0
 POSITION;identifier=700;ticket=900;entered=1.00000000;exited=0.00000000;residual=1.00000000;SL_observed=207005.00000000;TP_observed=207590.00000000;protection_attempt=1;close_phase=0
 POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=207005.00000000;TP_observed=207590.00000000;protection_attempt=1;close_phase=0
-PENDING_HISTORY;key=202610300;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+PENDING_HISTORY;key=202610300;TRAIL_PENDING_ANCHOR_MISSING
 POSITION_HISTORY;identifier=700;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 POSITION_HISTORY;identifier=701;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 PASS_210;two proven positions get independent durable fixed SLTP requests
@@ -1366,7 +1366,7 @@ LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_ser
 POSITION;identifier=700;ticket=900;entered=1.00000000;exited=0.00000000;residual=1.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
 POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=0
 COBERTURA_ATUAL;estado=DADOS_DIARIOS_NAO_CONFERIDOS;
-PENDING_HISTORY;key=202610300;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+PENDING_HISTORY;key=202610300;TRAIL_PENDING_ANCHOR_MISSING
 POSITION_HISTORY;identifier=700;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 POSITION_HISTORY;identifier=701;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 COMMIT;revision=4;event=TESTER_FRESH_RECONCILIATION;transporte=0
@@ -1405,7 +1405,7 @@ LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_ser
 LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211100.1700000000128057;entry_requested=211100;SL_fixed=211550;TP_fixed=210850;entry_phase=7;entry_attempt=0;cancel_phase=0
 POSITION;identifier=700;ticket=0;entered=1.00000000;exited=1.00000000;residual=0.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=6
 POSITION;identifier=701;ticket=901;entered=2.00000000;exited=0.00000000;residual=2.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=1
-PENDING_HISTORY;key=202610300;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+PENDING_HISTORY;key=202610300;TRAIL_PENDING_ANCHOR_MISSING
 POSITION_HISTORY;identifier=701;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
 TESTER_DEAL;ticket=102;order=2001;position_id=700;date=20261030;contract=WINZ26;level=0;msc=1793350845000;entry_kind=1;buy=0;volume=1.00000000;executed=209995.00000000;entry_math=207377.83666667;entry_requested=207380.00000000;SL_fixed=207005.00000000;TP_fixed=207590.00000000;costs_available=1;profit=0.00000000;commission=0.00000000;swap=0.00000000;fee=0.00000000;SIMULATED_EXECUTION_NOT_WORK_COMPARISON
 COMMIT;revision=8;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
@@ -1434,7 +1434,7 @@ LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_ser
 LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211100.1700000000128057;entry_requested=211100;SL_fixed=211550;TP_fixed=210850;entry_phase=7;entry_attempt=0;cancel_phase=0
 POSITION;identifier=700;ticket=0;entered=1.00000000;exited=1.00000000;residual=0.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=6
 POSITION;identifier=701;ticket=0;entered=2.00000000;exited=2.00000000;residual=0.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=6
-PENDING_HISTORY;key=202610300;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+PENDING_HISTORY;key=202610300;TRAIL_PENDING_ANCHOR_MISSING
 TESTER_DEAL;ticket=103;order=2002;position_id=701;date=20261030;contract=WINZ26;level=0;msc=1793350845000;entry_kind=1;buy=0;volume=2.00000000;executed=209995.00000000;entry_math=207377.83666667;entry_requested=207380.00000000;SL_fixed=207005.00000000;TP_fixed=207590.00000000;costs_available=1;profit=0.00000000;commission=0.00000000;swap=0.00000000;fee=0.00000000;SIMULATED_EXECUTION_NOT_WORK_COMPARISON
 COMMIT;revision=11;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
 LEVEL;key=202610300;symbol=WINZ26;origin=100;accepted_server_msc=150000;first_touch_server_msc=0;consumed=1;cutoff=0;entry_math=207377.8366666666697711;entry_requested=207380;SL_fixed=207005;TP_fixed=207590;entry_phase=6;entry_attempt=1;cancel_phase=2
@@ -1462,10 +1462,10 @@ LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_ser
 LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211100.1700000000128057;entry_requested=211100;SL_fixed=211550;TP_fixed=210850;entry_phase=7;entry_attempt=0;cancel_phase=0
 POSITION;identifier=700;ticket=0;entered=1.00000000;exited=1.00000000;residual=0.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=6
 POSITION;identifier=701;ticket=0;entered=2.00000000;exited=2.00000000;residual=0.00000000;SL_observed=0.00000000;TP_observed=0.00000000;protection_attempt=0;close_phase=6
-PENDING_HISTORY;key=202610300;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+PENDING_HISTORY;key=202610300;TRAIL_PENDING_ANCHOR_MISSING
 PASS_210;cutoff closes both exact tickets and cancels only proven pending remainder
 PASS_210;close and cancel effects reconciled from complete chains
-PENDING_HISTORY;key=202610300;TRAIL_OBSERVED_RAW_PARTIAL_EDGES
+PENDING_HISTORY;key=202610300;TRAIL_PENDING_ANCHOR_MISSING
 PASS_210;completed close/cancel actions cannot duplicate
 PASS_210;runtime loss of Tester flag blocks every transport path
 PASS_210;SLTP close and cancellation preserve physical-symbol route and ticket ownership
@@ -1626,6 +1626,293 @@ PASS_210;expiry property read failure blocks
 TESTER_END;prepared=5;sent=5;responses=5;revision=18;NOT_AN_ACCEPTANCE_CERTIFICATE
 STOP;reason=1;transport=TESTER_ONLY
 RELATORIO_FECHADO;/tmp/md615k_host\Files\MDT211_FUNC_1792605000_10000_615016_ModeloD_Integrado_A1S53545241544547595F544553544552I1_1792605000_10000.txt
-FOCUSED_211;Checks=87;Failures=0;API_MOCK_NOT_NATIVE_MQL5
+RELATORIO_ABERTO;/tmp/md615k_host\Files\MDT211_FUNC_1792605000_10000_615017_ModeloD_Integrado_A1S53545241544547595F544553544552I1_1792605000_10000.txt
+DIAGNOSTICO;componente=PERSISTENCIA;motivo=DIARIO_INICIAL_CRIADO;recuperacao=ESTADO_PRESERVADO;NAO_AUTORIZA_TRANSPORTE
+START;v=2.11_FUNCIONAL;TRANSPORT_TESTER_ONLY;ISOLATED_RUN;revision=1
+TESTER_CONFIG;date=20261030;contract=WINZ26;server_offset_s=-10800;source_date=2026-10-29;dataset=ModeloD_Tester_20261030_ajuste_b3.txt;scope_prefix=MDT211_FUNC_1792605000_10000_615017_;SINGLE_DAY_NO_OPTIMIZATION;REAL_TICKS_REQUIRED_IN_TESTER_SETTINGS
+DIAGNOSTICO;componente=RELOGIO;motivo=TESTER_CLOCK_SAMPLING;recuperacao=REAVALIA_NO_TIMER;NAO_REINICIA_PRAZOS
+DIAGNOSTICO;componente=DADOS_DIARIOS;motivo=RELOGIO_NAO_VALIDADO;recuperacao=REAVALIA_APOS_RELOGIO_VALIDO
+COBERTURA_ATUAL;estado=DADOS_DIARIOS_NAO_CONFERIDOS;
+DIAGNOSTICO;componente=INVENTARIO;motivo=DUAS_LEITURAS_CONFERIDAS;recuperacao=NOVA_DUPLA_LEITURA_NO_TIMER;NAO_CONFIRMA_ACAO_POR_AUSENCIA
+DIAGNOSTICO;componente=CONCILIACAO;motivo=ALL_CHAINS_RECONCILED;recuperacao=REAVALIA_NO_TIMER;ORIGENS_E_EFEITOS_EXIGEM_PROVA
+DIAGNOSTICO;componente=FLUXO_TICKS;motivo=DADOS: FUSO_SERVIDOR_B3_NAO_CONFIRMADO;recuperacao=REAVALIA_NO_TIMER
+INTEGRATED;ALL_CHAINS_RECONCILED;revision=1;entry_intents=0;SLTP_intents=0;cancel_intents=0;close_intents=0;unresolved=0;transport=TESTER_ONLY;NATIVE_VALIDATION_PENDING
+TESTER_TRANSPORT_BLOCKED;slot=255;reason=TESTER_CLOCK_SAMPLING
+DIAGNOSTICO;componente=RELOGIO;motivo=TESTER_SIMULATED_CLOCK_EXPLICIT_BRT_NOT_NTP;recuperacao=REAVALIA_NO_TIMER;NAO_REINICIA_PRAZOS
+PRIMEIRO_TICK_CONSULTA;de_msc=1793350800000;ate_msc=1793350846999;tentativa=1;TESTER_SIMULADO
+COMMIT;revision=2;event=DAILY_DATA;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=0;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=0;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=0;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=0;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=0;entry_attempt=0;cancel_phase=0
+DIAGNOSTICO;componente=DADOS_DIARIOS;motivo=CONFERIDOS;data=20261030;contrato=WINZ26;recuperacao=MONITORAMENTO_NO_TIMER;NAO_COMPROVA_EXECUCAO
+TICKS_6_15_INICIO;data=20261030;contrato=WINZ26;TESTER_SIMULADO
+COBERTURA_ATUAL;estado=CONFERIDA;de_msc=1793350800000;ate_exclusivo_msc=1793350847000;retornados=1;erro=0;duracao_ms=0
+DIAGNOSTICO;componente=ENTRADA_0;motivo=GATES_DE_DADOS_CONFERIDOS;AINDA_EXIGE_CONCILIACAO_E_TRANSPORTE_AUSENTE;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+DIAGNOSTICO;componente=ENTRADA_1;motivo=GATES_DE_DADOS_CONFERIDOS;AINDA_EXIGE_CONCILIACAO_E_TRANSPORTE_AUSENTE;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+DIAGNOSTICO;componente=ENTRADA_2;motivo=GATES_DE_DADOS_CONFERIDOS;AINDA_EXIGE_CONCILIACAO_E_TRANSPORTE_AUSENTE;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+DIAGNOSTICO;componente=ENTRADA_3;motivo=GATES_DE_DADOS_CONFERIDOS;AINDA_EXIGE_CONCILIACAO_E_TRANSPORTE_AUSENTE;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+DIAGNOSTICO;componente=ENTRADA_4;motivo=GATES_DE_DADOS_CONFERIDOS;AINDA_EXIGE_CONCILIACAO_E_TRANSPORTE_AUSENTE;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+COMMIT;revision=3;event=INTEGRATED_CYCLE;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+DIAGNOSTICO;componente=FLUXO_TICKS;motivo=TICKS: RECONSTRUINDO DESDE A ABERTURA;recuperacao=REAVALIA_NO_TIMER
+INTEGRATED;ALL_CHAINS_RECONCILED;revision=3;entry_intents=5;SLTP_intents=0;cancel_intents=0;close_intents=0;unresolved=0;transport=TESTER_ONLY;NATIVE_VALIDATION_PENDING
+COMMIT;revision=4;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+TESTER_REQUEST;kind=1;key=202610300;serial=1;revision=4;order=0;position=0;volume=1.00000000;price=209235.00000000;sl=208860.00000000;tp=209380.00000000;type_time=0;expiration=0;SIMULATED_ONLY
+COMMIT;revision=5;event=TESTER_RESPONSE_NOT_EXECUTION_PROOF;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=3;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+TESTER_RESPONSE;kind=1;serial=1;api_ok=1;retcode=10008;external=0;order=1000;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+COMMIT;revision=6;event=TESTER_RECEIPT_RECONCILIATION;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=1000;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+DIAGNOSTICO;componente=ENTRADA_0;motivo=ORIGEM_JA_VINCULADA;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+COMMIT;revision=7;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=1000;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+TESTER_REQUEST;kind=1;key=202610301;serial=1;revision=7;order=0;position=0;volume=1.00000000;price=209000.00000000;sl=208625.00000000;tp=209235.00000000;type_time=0;expiration=0;SIMULATED_ONLY
+COMMIT;revision=8;event=TESTER_RESPONSE_NOT_EXECUTION_PROOF;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=1000;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=3;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+TESTER_RESPONSE;kind=1;serial=1;api_ok=1;retcode=10008;external=0;order=1001;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+COMMIT;revision=9;event=TESTER_RECEIPT_RECONCILIATION;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=1000;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=1001;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+DIAGNOSTICO;componente=ENTRADA_1;motivo=ORIGEM_JA_VINCULADA;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+COMMIT;revision=10;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=1000;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=1001;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+TESTER_REQUEST;kind=1;key=202610302;serial=1;revision=10;order=0;position=0;volume=1.00000000;price=208765.00000000;sl=208115.00000000;tp=209000.00000000;type_time=0;expiration=0;SIMULATED_ONLY
+COMMIT;revision=11;event=TESTER_RESPONSE_NOT_EXECUTION_PROOF;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=1000;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=1001;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=3;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+TESTER_RESPONSE;kind=1;serial=1;api_ok=1;retcode=10008;external=0;order=1002;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+COMMIT;revision=12;event=TESTER_RECEIPT_RECONCILIATION;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=1000;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=1001;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=1002;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+DIAGNOSTICO;componente=ENTRADA_2;motivo=ORIGEM_JA_VINCULADA;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+COMMIT;revision=13;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=1000;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=1001;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=1002;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+TESTER_REQUEST;kind=1;key=202610303;serial=1;revision=13;order=0;position=0;volume=1.00000000;price=210765.00000000;sl=211140.00000000;tp=210470.00000000;type_time=0;expiration=0;SIMULATED_ONLY
+COMMIT;revision=14;event=TESTER_RESPONSE_NOT_EXECUTION_PROOF;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=1000;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=1001;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=1002;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=3;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+TESTER_RESPONSE;kind=1;serial=1;api_ok=1;retcode=10008;external=0;order=1003;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+COMMIT;revision=15;event=TESTER_RECEIPT_RECONCILIATION;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=1000;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=1001;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=1002;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=1003;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+DIAGNOSTICO;componente=ENTRADA_3;motivo=ORIGEM_JA_VINCULADA;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+COMMIT;revision=16;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=1000;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=1001;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=1002;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=1003;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=2;entry_attempt=1;cancel_phase=0
+TESTER_REQUEST;kind=1;key=202610304;serial=1;revision=16;order=0;position=0;volume=1.00000000;price=211235.00000000;sl=211685.00000000;tp=211120.00000000;type_time=0;expiration=0;SIMULATED_ONLY
+COMMIT;revision=17;event=TESTER_RESPONSE_NOT_EXECUTION_PROOF;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=1000;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=1001;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=1002;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=1003;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=3;entry_attempt=1;cancel_phase=0
+TESTER_RESPONSE;kind=1;serial=1;api_ok=1;retcode=10008;external=0;order=1004;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+COMMIT;revision=18;event=TESTER_RECEIPT_RECONCILIATION;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=1000;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=1001;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=1002;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=1003;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=6;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=1004;accepted_server_msc=1793350847000;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=6;entry_attempt=1;cancel_phase=0
+DIAGNOSTICO;componente=ENTRADA_4;motivo=ORIGEM_JA_VINCULADA;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+INTEGRATED;ALL_CHAINS_RECONCILED;revision=18;entry_intents=0;SLTP_intents=0;cancel_intents=0;close_intents=0;unresolved=0;transport=TESTER_ONLY;NATIVE_VALIDATION_PENDING
+PASS_210;accepted pending limits remain active before entry touch; next timers cannot cancel all five merely beyond TP
+TESTER_END;prepared=5;sent=5;responses=5;revision=18;NOT_AN_ACCEPTANCE_CERTIFICATE
+STOP;reason=1;transport=TESTER_ONLY
+RELATORIO_FECHADO;/tmp/md615k_host\Files\MDT211_FUNC_1792605000_10000_615017_ModeloD_Integrado_A1S53545241544547595F544553544552I1_1792605000_10000.txt
+PASS_210;buy pending beyond TP at acceptance is not a post-touch boundary
+PASS_210;crossing TP on approach to buy entry cannot consume an untouched limit
+PASS_210;entry touch without fill leaves previously accepted pending valid
+PASS_210;TP crossing after missed entry touch still cancels pending
+PASS_210;sell approach across TP is not post-entry cancellation evidence
+PASS_210;sell target after missed entry touch remains cancellation evidence
+PASS_210;gap across entry and stop cannot leave pending active
+PASS_210;missing acceptance anchor blocks rather than assuming no crossing
+PASS_210;same-millisecond acceptance and boundary remain unproven
+PASS_210;filled-position protection still detects a post-fill price beyond stop
+PASS_210;TP equality at acceptance without entry touch is not a post-entry boundary
+RELATORIO_ABERTO;/tmp/md615k_host\Files\MDT211_FUNC_1792605000_10000_615018_ModeloD_Integrado_A1S53545241544547595F544553544552I1_1792605000_10000.txt
+DIAGNOSTICO;componente=PERSISTENCIA;motivo=DIARIO_INICIAL_CRIADO;recuperacao=ESTADO_PRESERVADO;NAO_AUTORIZA_TRANSPORTE
+START;v=2.11_FUNCIONAL;TRANSPORT_TESTER_ONLY;ISOLATED_RUN;revision=1
+TESTER_CONFIG;date=20261030;contract=WINZ26;server_offset_s=-10800;source_date=2026-10-29;dataset=ModeloD_Tester_20261030_ajuste_b3.txt;scope_prefix=MDT211_FUNC_1792605000_10000_615018_;SINGLE_DAY_NO_OPTIMIZATION;REAL_TICKS_REQUIRED_IN_TESTER_SETTINGS
+DIAGNOSTICO;componente=RELOGIO;motivo=TESTER_CLOCK_SAMPLING;recuperacao=REAVALIA_NO_TIMER;NAO_REINICIA_PRAZOS
+DIAGNOSTICO;componente=DADOS_DIARIOS;motivo=RELOGIO_NAO_VALIDADO;recuperacao=REAVALIA_APOS_RELOGIO_VALIDO
+COBERTURA_ATUAL;estado=DADOS_DIARIOS_NAO_CONFERIDOS;
+DIAGNOSTICO;componente=INVENTARIO;motivo=DUAS_LEITURAS_CONFERIDAS;recuperacao=NOVA_DUPLA_LEITURA_NO_TIMER;NAO_CONFIRMA_ACAO_POR_AUSENCIA
+DIAGNOSTICO;componente=CONCILIACAO;motivo=ALL_CHAINS_RECONCILED;recuperacao=REAVALIA_NO_TIMER;ORIGENS_E_EFEITOS_EXIGEM_PROVA
+DIAGNOSTICO;componente=FLUXO_TICKS;motivo=DADOS: FUSO_SERVIDOR_B3_NAO_CONFIRMADO;recuperacao=REAVALIA_NO_TIMER
+INTEGRATED;ALL_CHAINS_RECONCILED;revision=1;entry_intents=0;SLTP_intents=0;cancel_intents=0;close_intents=0;unresolved=0;transport=TESTER_ONLY;NATIVE_VALIDATION_PENDING
+TESTER_TRANSPORT_BLOCKED;slot=255;reason=TESTER_CLOCK_SAMPLING
+DIAGNOSTICO;componente=RELOGIO;motivo=TESTER_SIMULATED_CLOCK_EXPLICIT_BRT_NOT_NTP;recuperacao=REAVALIA_NO_TIMER;NAO_REINICIA_PRAZOS
+PRIMEIRO_TICK_CONSULTA;de_msc=1793350800000;ate_msc=1793350846999;tentativa=1;TESTER_SIMULADO
+COMMIT;revision=2;event=DAILY_DATA;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=0;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=0;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=0;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=0;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=0;entry_attempt=0;cancel_phase=0
+DIAGNOSTICO;componente=DADOS_DIARIOS;motivo=CONFERIDOS;data=20261030;contrato=WINZ26;recuperacao=MONITORAMENTO_NO_TIMER;NAO_COMPROVA_EXECUCAO
+TICKS_6_15_INICIO;data=20261030;contrato=WINZ26;TESTER_SIMULADO
+COBERTURA_ATUAL;estado=CONFERIDA;de_msc=1793350800000;ate_exclusivo_msc=1793350847000;retornados=1;erro=0;duracao_ms=0
+DIAGNOSTICO;componente=ENTRADA_0;motivo=GATES_DE_DADOS_CONFERIDOS;AINDA_EXIGE_CONCILIACAO_E_TRANSPORTE_AUSENTE;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+DIAGNOSTICO;componente=ENTRADA_1;motivo=GATES_DE_DADOS_CONFERIDOS;AINDA_EXIGE_CONCILIACAO_E_TRANSPORTE_AUSENTE;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+DIAGNOSTICO;componente=ENTRADA_2;motivo=GATES_DE_DADOS_CONFERIDOS;AINDA_EXIGE_CONCILIACAO_E_TRANSPORTE_AUSENTE;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+DIAGNOSTICO;componente=ENTRADA_3;motivo=GATES_DE_DADOS_CONFERIDOS;AINDA_EXIGE_CONCILIACAO_E_TRANSPORTE_AUSENTE;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+DIAGNOSTICO;componente=ENTRADA_4;motivo=GATES_DE_DADOS_CONFERIDOS;AINDA_EXIGE_CONCILIACAO_E_TRANSPORTE_AUSENTE;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+COMMIT;revision=3;event=INTEGRATED_CYCLE;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+DIAGNOSTICO;componente=FLUXO_TICKS;motivo=TICKS: RECONSTRUINDO DESDE A ABERTURA;recuperacao=REAVALIA_NO_TIMER
+INTEGRATED;ALL_CHAINS_RECONCILED;revision=3;entry_intents=5;SLTP_intents=0;cancel_intents=0;close_intents=0;unresolved=0;transport=TESTER_ONLY;NATIVE_VALIDATION_PENDING
+COMMIT;revision=4;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+TESTER_REQUEST;kind=1;key=202610300;serial=1;revision=4;order=0;position=0;volume=1.00000000;price=209235.00000000;sl=208860.00000000;tp=209380.00000000;type_time=0;expiration=0;SIMULATED_ONLY
+COMMIT;revision=5;event=TESTER_RESPONSE_NOT_EXECUTION_PROOF;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+TESTER_RESPONSE;kind=1;serial=1;api_ok=0;retcode=10031;external=0;order=0;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+DIAGNOSTICO;componente=ENTRADA_0;motivo=TENTATIVA_OU_RESPOSTA_AGUARDA_CONCILIACAO;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+COMMIT;revision=6;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+TESTER_REQUEST;kind=1;key=202610301;serial=1;revision=6;order=0;position=0;volume=1.00000000;price=209000.00000000;sl=208625.00000000;tp=209235.00000000;type_time=0;expiration=0;SIMULATED_ONLY
+COMMIT;revision=7;event=TESTER_RESPONSE_NOT_EXECUTION_PROOF;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+TESTER_RESPONSE;kind=1;serial=1;api_ok=0;retcode=10031;external=0;order=0;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+DIAGNOSTICO;componente=ENTRADA_1;motivo=TENTATIVA_OU_RESPOSTA_AGUARDA_CONCILIACAO;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+COMMIT;revision=8;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+TESTER_REQUEST;kind=1;key=202610302;serial=1;revision=8;order=0;position=0;volume=1.00000000;price=208765.00000000;sl=208115.00000000;tp=209000.00000000;type_time=0;expiration=0;SIMULATED_ONLY
+COMMIT;revision=9;event=TESTER_RESPONSE_NOT_EXECUTION_PROOF;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=1;entry_attempt=0;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+TESTER_RESPONSE;kind=1;serial=1;api_ok=0;retcode=10031;external=0;order=0;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+DIAGNOSTICO;componente=ENTRADA_2;motivo=TENTATIVA_OU_RESPOSTA_AGUARDA_CONCILIACAO;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+COMMIT;revision=10;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+TESTER_REQUEST;kind=1;key=202610303;serial=1;revision=10;order=0;position=0;volume=1.00000000;price=210765.00000000;sl=211140.00000000;tp=210470.00000000;type_time=0;expiration=0;SIMULATED_ONLY
+COMMIT;revision=11;event=TESTER_RESPONSE_NOT_EXECUTION_PROOF;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=1;entry_attempt=0;cancel_phase=0
+TESTER_RESPONSE;kind=1;serial=1;api_ok=0;retcode=10031;external=0;order=0;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+DIAGNOSTICO;componente=ENTRADA_3;motivo=TENTATIVA_OU_RESPOSTA_AGUARDA_CONCILIACAO;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+COMMIT;revision=12;event=TESTER_PREPARE_BEFORE_SEND;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=2;entry_attempt=1;cancel_phase=0
+TESTER_REQUEST;kind=1;key=202610304;serial=1;revision=12;order=0;position=0;volume=1.00000000;price=211235.00000000;sl=211685.00000000;tp=211120.00000000;type_time=0;expiration=0;SIMULATED_ONLY
+COMMIT;revision=13;event=TESTER_RESPONSE_NOT_EXECUTION_PROOF;transporte=0
+LEVEL;key=202610300;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209236.0000000000000000;entry_requested=209235;SL_fixed=208860;TP_fixed=209380;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610301;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=209000.0000000000000000;entry_requested=209000;SL_fixed=208625;TP_fixed=209235;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610302;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=208764.0000000000000000;entry_requested=208765;SL_fixed=208115;TP_fixed=209000;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610303;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=210764.0000000000000000;entry_requested=210765;SL_fixed=211140;TP_fixed=210470;entry_phase=2;entry_attempt=1;cancel_phase=0
+LEVEL;key=202610304;symbol=WINZ26;origin=0;accepted_server_msc=0;first_touch_server_msc=0;consumed=0;cutoff=0;entry_math=211236.0000000000000000;entry_requested=211235;SL_fixed=211685;TP_fixed=211120;entry_phase=2;entry_attempt=1;cancel_phase=0
+TESTER_RESPONSE;kind=1;serial=1;api_ok=0;retcode=10031;external=0;order=0;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+DIAGNOSTICO;componente=ENTRADA_4;motivo=TENTATIVA_OU_RESPOSTA_AGUARDA_CONCILIACAO;recuperacao=REAVALIA_SEM_REARMAR_CONSUMO_OU_TENTATIVA
+INTEGRATED;ALL_CHAINS_RECONCILED;revision=13;entry_intents=0;SLTP_intents=0;cancel_intents=0;close_intents=0;unresolved=5;transport=TESTER_ONLY;NATIVE_VALIDATION_PENDING
+PASS_210;imported trade query uses ALL and excludes carried Last and quote-only records
+PASS_210;filtered trade adapter preserves incomplete-query error
+PASS_210;original CSV 09:01 passes count OHLC and both ordered timestamp-price-flag hashes
+PASS_210;missing interior trade cannot pass frozen reference
+PASS_210;modified interior trade cannot pass frozen reference
+PASS_210;reordered same-millisecond trades cannot pass frozen reference
+PASS_210;frozen reference cannot override original symbol or live context
+PASS_210;future minute cannot be certified from preloaded reference
+PASS_210;closed-minute integration fixture starts
+PASS_210;actual stream advances on exact original sequence despite mutated native M1 open
+PASS_210;ALL producer uses the same exact immutable-reference check
+PASS_210;current coverage accepts exact original minute without rewriting native M1
+PASS_210;position trail audits the same immutable original minute
+PASS_210;stream with missing trade and mismatching native M1 remains blocked
+PASS_210;current coverage cannot bypass integrity with an incomplete original minute
+TESTER_END;prepared=5;sent=5;responses=5;revision=13;NOT_AN_ACCEPTANCE_CERTIFICATE
+STOP;reason=1;transport=TESTER_ONLY
+RELATORIO_FECHADO;/tmp/md615k_host\Files\MDT211_FUNC_1792605000_10000_615018_ModeloD_Integrado_A1S53545241544547595F544553544552I1_1792605000_10000.txt
+FOCUSED_211;Checks=114;Failures=0;API_MOCK_NOT_NATIVE_MQL5
 
 EXIT_STATUS=0
