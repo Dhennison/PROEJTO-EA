@@ -1,0 +1,84 @@
+MODELO D — V2.13 — CONTA DEMO DA CORRETORA
+
+DESTINO
+MT5 da XP já instalado pelo usuário: servidor XPMT5-DEMO, Conta Demo, Hedge.
+O programa verifica as propriedades reais do MT5. Não confia só no nome do
+servidor: aceita apenas ACCOUNT_TRADE_MODE_DEMO, Hedge e moeda BRL.
+Conta real, contest, Tester e símbolos customizados são bloqueados.
+
+PRIMEIRO PASSO: COPIAR E COMPILAR
+1. Extraia ModeloD_DEMO_v2_13.zip numa pasta temporária.
+2. No MT5 DA XP, clique Arquivo -> Abrir Pasta de Dados.
+3. Na janela do Explorador que abrir, cole a pasta MQL5 inteira do pacote.
+   É a RAIZ da pasta de dados aberta pelo próprio MT5 da XP, onde já existe
+   MQL5. Não entre na MQL5 existente para colar dentro dela. Aceite mesclar
+   e substituir os arquivos deste pacote. Não use o caminho do secundário
+   Genial para instalar na XP: cada instalação tem sua própria pasta.
+4. Volte ao MT5 da XP e pressione F4. No MetaEditor, abra:
+   MQL5\Experts\ModeloD_Demo\EA_ModeloD_Demo.mq5
+5. Pressione F7 e envie o resultado da compilação. Ainda não anexe ao gráfico.
+
+SEGUNDO PASSO: CONFERÊNCIA NA XP, DEPOIS DE COMPILAR
+6. Confirme na barra superior Conta Demo - Hedge. Abra um gráfico WIN$N.
+   Se precisar, Ctrl+U -> pesquisar WIN$N -> Exibir símbolo; depois abrir
+   gráfico pela Observação do Mercado. Um gráfico do contrato real atual
+   também é aceito, mas novas entradas exigem corresponder ao contrato do dia.
+7. No Navegador, Consultor expert -> ModeloD_Demo -> EA_ModeloD_Demo.
+   Anexe ao gráfico com ExecutarNaDemo=false, Instancia=1,
+   VolumePorNivel=1 e IntervaloSegundos=2. Não altere os valores nesta etapa.
+8. Envie as mensagens iniciais da aba Experts. Esperamos DEMO213_CONTA e
+   START;v=2.13_DEMO. Por padrão é OBSERVAÇÃO e não envia ordens.
+   Se faltar WIN$N, ajuste, dados, grade ou permissão, o motivo aparece no log.
+
+OPERAÇÃO NA DEMO — DEPOIS DE CONFERIR O AMBIENTE
+A autorização de ordens depende de ExecutarNaDemo=true, AlgoTrading ligado
+no terminal, permissão de negociação algorítmica do EA e permissões da conta.
+A conta permanece DEMO; não existe opção para liberar conta real neste EA.
+Prefira ativar antes da abertura de um novo pregão para observar todas as
+cinco oportunidades. Anexar/ativar mais tarde não permite segundo toque:
+o EA reconstrói o histórico e preserva oportunidades já consumidas.
+Esta versão roda no gráfico da conta, em tempo real; não use o Tester
+nem os comandos .cmd dos ensaios anteriores. Mantenha o MT5 e o EA em
+execução para gerenciar o corte. Remover o EA ou fechar o terminal não
+executa zeragem automática; SL/TP já aceitos permanecem no servidor.
+Use apenas uma instância inicialmente. Não mude Instancia/volume durante
+uma sessão já congelada, nem apague arquivos para rearmar oportunidades.
+
+AJUSTE B3 E DADOS
+O EA lê o arquivo OPERACIONAL já publicado pelo coletor:
+C:\Users\jhenn\AppData\Roaming\MetaQuotes\Terminal\Common\Files\ajuste_b3.txt
+Ele é compartilhado entre instalações do MT5 do mesmo usuário Windows.
+Este pacote NÃO contém ajuste histórico nem modifica esse arquivo.
+É preciso Status=OK, fonte correta, contrato WIN associado ao WIN$N e ciclo
+DataFonte/DataOperacional do pregão corrente. D1, abertura, ticks e ordens
+são do contrato real da corretora, sem aliases ou referências sintéticas.
+A grade vem de SymbolInfoSessionTrade do servidor, no dia atual, com início
+09h e sessão que cubra o corte18h. Não é certificação independente da B3.
+Datas de vencimento não usam essa grade semanal genérica: ficam bloqueadas
+até uma revisão específica. O calendário e vencimentos cadastrados são2026.
+Servidor deve usar timestamps compatíveis com Brasília(-3h), como exigido
+pelos adaptadores validados; outro fuso bloqueia, sem conversão silenciosa.
+
+REINÍCIO E RELATÓRIOS
+O diário MDD213_DEMO_ é persistente por conta/servidor/instância, diferente
+dos diários dos Testers v2.11/v2.12. Fechar/reabrir preserva origem, consumo,
+tentativas e efeitos conciliados. Resposta incerta não é repetida por ausência.
+Se faltarem dados diários após reinício, a gestão de exposição conhecida
+continua; dados completos continuam obrigatórios para novas entradas.
+Troca de conta/servidor/tipo de conta revoga o transporte. Posições alheias
+não são adotadas pelo Magic e não são fechadas pelo EA.
+Os relatórios completos ficam em Common\Files e começam MDD213_DEMO_;
+o nome de relatório inclui ModeloD_Integrado. Preserve também .ledger,
+.lock e candidatos .next. Não sobrescreva ou apague esses arquivos.
+
+ESCOPO DESTA ENTREGA DE HOMOLOGAÇÃO
+53 verificações locais C++/ASan/UBSan passaram. Não são compilação MQL5
+nem operações nativas na XP. A validação nessa corretora ainda será feita.
+O núcleo matemático e coordenador são os mesmos dos ensaios aprovados;
+o novo trabalho é o transporte demo, dados atuais e retomada persistente.
+Limites do núcleo mantidos: até8pregões/40níveis e64posições históricas por
+diário; a coleta global limita256ordens(histórico+ativas),4096deals e64
+posições simultâneas da conta. Ao atingir capacidade ou perder integridade,
+bloqueia novas ações e preserva o estado; não trunca nem zera o diário.
+Esses limites precisam ser revistos antes de uma liberação contínua de
+produção. Esta entrega é para a homologação inicial na conta DEMO.

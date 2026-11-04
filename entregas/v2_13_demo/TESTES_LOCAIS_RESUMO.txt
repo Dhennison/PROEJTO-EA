@@ -1,0 +1,55 @@
+C++ com APIs simuladas; ASan/UBSan ativos. Sem conexão ou ordem nativa na XP.
+PASS_213;real account refused before ledger and any API send
+PASS_213;contest account cannot masquerade as demo
+PASS_213;demo package refuses Tester context
+PASS_213;unidentified login cannot count as demo
+PASS_213;netting is refused
+PASS_213;unsupported account currency refused without rewriting broker properties
+PASS_213;operational demo pins two-second management timer
+PASS_213;custom chart cannot enter operational demo
+PASS_213;demo observation mode can initialize
+PASS_213;default observation cannot send any request
+PASS_213;current-day demo initializes outside Tester
+PASS_213;five native-demo limit requests pass durable prepare and real account identity
+PASS_213;send metrics count actual native API invocations
+PASS_213;actual contract and fixed SLTP are preserved with supported expiration
+PASS_213;broker receipts reconcile under real demo login and server, not virtual Tester scope
+PASS_213;live daily reader accepts current B3 cycle and current broker session beyond old October pin
+PASS_213;same account server and instance cannot acquire a second exclusive lock
+PASS_213;waiting pending cannot be cancelled merely beyond its TP
+PASS_213;restart recovers same stable demo journal
+PASS_213;restart cannot duplicate previously accepted pending orders
+PASS_213;unowned market entry cannot reach native API
+PASS_213;foreign pending ticket cannot be cancelled
+PASS_213;foreign contract rejected by owned-action proof
+PASS_213;terminal Algo Trading disabled blocks sends
+PASS_213;EA algorithm permission disabled blocks sends
+PASS_213;broker expert permission blocks sends
+PASS_213;broker trading permission blocks sends
+PASS_213;disconnection cannot send
+PASS_213;missing current trade session blocks November entries rather than extrapolating October snapshot
+PASS_213;session shorter than model cutoff is refused
+PASS_213;stale B3 cycle cannot create orders
+PASS_213;uncertain broker response persists without automatic resend
+PASS_213;account mode flip to real during PREPARE revokes the final send permit
+PASS_213;failed durable write prevents all API calls
+PASS_213;account switch invalidates running instance
+PASS_213;proven two-position fixture committed to demo ledger
+PASS_213;two owned hedge tickets get fixed protection and observed confirmation with daily source unavailable
+PASS_213;restart recovers exposure and protection state without resetting provenance
+PASS_213;already observed protection is not sent again after restart
+PASS_213;native-demo adapter closes two exact tickets and cancels proven pending at cutoff through normal timer
+PASS_213;exit receipts confirm flat exposure
+PASS_213;subsequent cutoff timer does not duplicate completed actions
+PASS_213;proven two-position fixture committed to demo ledger
+PASS_213;valid in-flight owned close fixture is durable
+PASS_213;owned-request proof accepts actual bound close before revocation
+PASS_213;account changing to real during symbol metadata read is refused immediately before OrderSend
+PASS_213;custom symbol cannot reach native API even with in-flight owned action
+PASS_213;foreign position ticket cannot reach native close API
+PASS_213;close volume cannot exceed observed owned position
+PASS_213;real-mode revocation is enforced at final native API boundary
+PASS_213;permission revocation is enforced at final native API boundary
+PASS_213;existing lock marker forbids initializing a fresh state over a missing ledger
+PASS_213;expiry date cannot use an ordinary weekly broker session without reviewed special schedule
+DEMO_213;Checks=53;Failures=0;API_MOCK_NOT_NATIVE_MT5

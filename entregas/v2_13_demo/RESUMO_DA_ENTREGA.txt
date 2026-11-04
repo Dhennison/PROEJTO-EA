@@ -1,0 +1,57 @@
+PROBLEMA E COMPORTAMENTO
+As versões2.11/2.12 só enviam no Tester e estão presas ao dataset histórico
+ou sintético. A2.13 usa a conta DEMO conectada, fora doTester, com contrato
+por descrição doWIN$N, arquivo operacional Common/Files/ajuste_b3.txt,
+histórico da corretora e grade semanal informada pelo servidor no dia atual.
+Conta real não pode ser habilitada por input. Default ExecutarNaDemo=false.
+
+TRANSPORTE E PROVA DE ORIGEM
+Uma única chamada OrderSend, na fonte demo. Verifica opt-in, modo nativo
+DEMO, Hedge, BRL, conta/servidor iniciais, conexão, permissões de terminal,
+EA e conta. Repete a validação imediatamente antes da API. Símbolo precisa
+ser real; sem aliases. Requer correspondência com ação em fase2 persistida,
+origem, Magic, comentário, tipo, preços/volume e ticket correto. DEAL só
+fecha posição própria, não abre posição a mercado. Pendentes sóLimit.
+PREPARE publicado/reaberto antes do envio; resposta não confirma efeito.
+Native_api_called distingue tentativa local bloqueada de chamada real à API.
+
+DADOS, RELÓGIO E RECUPERAÇÃO
+Diário estável por conta/servidor/instância. Lock exclusivo, replay,
+preservação de .next e recusa de reinicializar diário perdido. Reinicia
+estado volátil de aquisição, preserva estado operacional. Recupera exposição
+mesmo sem descrição diária disponível; novas entradas continuam bloqueadas
+sem dados. Não repete ordens ou proteção já conciliadas. Para origens já
+terminadas e sem saldo, evita replay inútil de ticks de dias anteriores.
+Relógio observado UTC/servidor/monótono do código validado, sem relógio
+artificial do Tester. Exige BRT. Grade atual porSymbolInfoSessionTrade é
+metadado do servidor, não uma nova consulta oficial à B3; acesso HTTP à
+página oficial não esteve disponível neste ambiente(proxy403). Não extrapola
+janelas antigas para novembro e não usa grade semanal em dia de vencimento.
+Calendário e vencimentos cadastrados continuam2026. Arquivo B3 precisa
+corresponder exatamente ao ciclo e contrato atuais. Não distribui ajuste velho.
+
+REGRAS E LIMITES
+Matemática, coordenador, ledger, proteção e primeiro toque preservados;
+manifesto documenta identidades. Timer de gestão fixado2s. Brackets fixos,
+recebimentos por ticket/position_identifier, cancelamentos e fechamento no
+corte18h, preservando consumo e desconhecimento de tentativas incertas.
+Os limites herdados de capacidade(8pregões/40níveis/64posições históricas;
+snapshotglobal256ordens/4096deals/64posições) permanecem e bloqueiam sem
+apagar estado. Esta é homologação inicial emdemo, não liberação contínua
+para produção nem para conta real. Validação nativa da XP está pendente.
+
+VERIFICAÇÃO
+53checksC++/ASan/UBSan, zero falhas. Inclui leitor diário real(adaptado),
+grade do dia, recusa de conta real/contest/netting/Tester/custom/USD,
+permissões, cinco pendentes comSLTP, identidade real de demo, retomada,
+lockduplo, perda de diário, resultado incerto, troca de modo noPREPARE e
+entre metadados e API, proteção de dois tickets, reinício com exposição e
+fechamento/cancelamento no corte mesmo com fonte diária indisponível.
+Mocks têm contas, dados e relógios sintéticos; nenhuma conexão ou ordem
+foi feita na XP por este ambiente. Conferência nativa e dados do dia seguem.
+
+INFORMAÇÃO DO USUÁRIO
+Usuário contratou MT5DEMOHedge daXP e instalou. Captura mostra servidor
+XPMT5-DEMO e Conta Demo-Hedge. Essa informação guia instalação; a decisão
+do código usa propriedades nativas do MT5, não o texto da captura ou nome
+comDemo. Não houve autorização para ordens em conta real.

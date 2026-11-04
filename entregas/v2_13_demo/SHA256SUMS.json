@@ -1,0 +1,222 @@
+[
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/EA_ModeloD_Demo.mq5",
+    "bytes": 34183,
+    "sha256": "d66f7dd6fe4aecdc5b3d2b5a6069853a5e488d76f6a125724321d025f765044d"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_B3.mqh",
+    "bytes": 6382,
+    "sha256": "25f4dd3de8f2eede32ca75d456a154b7e5e7037dbc31c90036bf5a3c558d6122"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_B3File.mqh",
+    "bytes": 1141,
+    "sha256": "10cc0c77289b55b05fa5bf045d74a3e88567b63debf9e26d4e82b730f9eef6bc"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_B3Status.mqh",
+    "bytes": 2194,
+    "sha256": "29a174de81a53c10fbbe4ef94539a2271f821a017907580b03e0a0d64af1c59c"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_Calendar.mqh",
+    "bytes": 2352,
+    "sha256": "56256c0fb6b99972336b2686a923282ed9792ff7c9c5be8cb65c77f5dbe7364f"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_Chain.mqh",
+    "bytes": 8452,
+    "sha256": "b3f95f030d6dca9fb581895797a91343a517843bd107741ab16f22261c31e8e9"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_Chart.mqh",
+    "bytes": 5433,
+    "sha256": "20089f66c522630d6322ce636b70c8a59cb1fc7e09219d76fba7a55c5dc832db"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_Collect.mqh",
+    "bytes": 3102,
+    "sha256": "a219a69c82e090336bb23fd3e103146e209d56b8eb3f1cb05192e4f99e747b3c"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_Context.mqh",
+    "bytes": 2944,
+    "sha256": "5974e3ae235b9a4e07f076d0bc385cc1c07656c525bafc0a2cd422ccd5f98484"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_Contract.mqh",
+    "bytes": 1265,
+    "sha256": "371f5c1fa30d243c81849797b213ed503fa8cd4a3a4e0b63c0aa77fd7c09ec18"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_Core.mqh",
+    "bytes": 6026,
+    "sha256": "e198de7e6bb608ad9e13cc999be53e632d94a780bbba8ffc1712297ea1a2da55"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_CurrentCoverage.mqh",
+    "bytes": 3702,
+    "sha256": "384c96f6da4157efcfcaf96c31fa231990eb37e4b25becd17d69647c50dbfffc"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_DailyAdapter.mqh",
+    "bytes": 4262,
+    "sha256": "aeba65279c75a5ba82a6a39edbf4ab3955e3487100821a02302dd61fa162db63"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_DailyTerminal.mqh",
+    "bytes": 3083,
+    "sha256": "bff5b7820745d11d672e205bfa0561dfc95159d593064e8e6a9925889960aaf5"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_DayControl.mqh",
+    "bytes": 5414,
+    "sha256": "32ca20d99c6c8f862aefbdf2931fa8ad22c0f800bc419c69eb7ec09c4cdb6ee1"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_Execution.mqh",
+    "bytes": 3102,
+    "sha256": "fb519af71fda4cd44a8b11705a04c8123398db92dc654e78e3577313b855f05e"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_FonteDemo213.mqh",
+    "bytes": 2747,
+    "sha256": "b4abd2bdd0793c399b4f746fe156c2cd5f74b5a587d6730d29705407f4dfbb2b"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_Journal.mqh",
+    "bytes": 4905,
+    "sha256": "237a8d67f87babe149f645fe69c71621a6ccf77edccbe144bf6fa83e9cf2a5d2"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_Lifecycle.mqh",
+    "bytes": 5066,
+    "sha256": "2012765705597eca5da94989fe91732a030ddc27d3c030355850d039447e4a22"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_Observer.mqh",
+    "bytes": 2550,
+    "sha256": "87f35698a1bb528a82086f98d6a5dafa8aae015bb9f8d29b018ef1c30d76875a"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_OpeningTicks.mqh",
+    "bytes": 3856,
+    "sha256": "840c860e1700dee7eacc96ced2de3857b865c35afe21fc7882ea71c1f0a7f7f1"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_Operational.mqh",
+    "bytes": 20572,
+    "sha256": "b356daef38a7efb6c16e1631d8e5a2f1fb9bdb5e3edee8a6970ce38b711d50f4"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_OperationalCodec.mqh",
+    "bytes": 8175,
+    "sha256": "5c7b3eb40c07c2321918e82d2d053cf7623803bc2d7fb7dcb60ad5fd3c9556ec"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_OperationalFile.mqh",
+    "bytes": 3656,
+    "sha256": "d12e3519ac8311bef32808f246f466e000292d6f045db6923c90d4c4e0f5217b"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_OperationalTerminal.mqh",
+    "bytes": 7887,
+    "sha256": "87de1cb4d5695bd8598ccb92789d9e869f51abd352e1c84adc7953f8520958fd"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_Protection.mqh",
+    "bytes": 1306,
+    "sha256": "26eb2272cc2cbe3228ffb8eadcddaf241dc093e17a154d8c6690df680b76271e"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_QueryEvidence.mqh",
+    "bytes": 2944,
+    "sha256": "4ac40920f97821f9218f2df01964d214eaee64d8b370e0403052dfa7d9b3fe81"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_Recovery.mqh",
+    "bytes": 5438,
+    "sha256": "a405020907843331d31fa9b623a713a909d786612cb9c10afe45e87dfdb139ca"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_Retry132.mqh",
+    "bytes": 1413,
+    "sha256": "2c2a83aa7e8e90ec3e23b19533a5faff6369957a85e5c120f0f7a512403b139b"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_RuntimeDemo213.mqh",
+    "bytes": 2334,
+    "sha256": "2012803d7577e68c42b1b17e1fee222883ad7ed233212d0552048f2002209a91"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_SessaoDemo213.mqh",
+    "bytes": 1049,
+    "sha256": "cc0f645b4000036cb0751b417016ad9fe2f6d57af038d08997739c69ec9e8c56"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_Session.mqh",
+    "bytes": 2508,
+    "sha256": "eacb0f11be8711735b1e2cf21741fec947a5bed52f11b3bad3bb2c3236e539a4"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_SparseM1615N.mqh",
+    "bytes": 1047,
+    "sha256": "4c84fc7fc298f51bb146cf9feeb3d92f47ce639a370bb348620ad34802031d6c"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_Stream.mqh",
+    "bytes": 1933,
+    "sha256": "cf910a588277f618ab1bb6a447e022b9b1e75ba3c13572f8429561e46e8bc41f"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_StreamTerminal.mqh",
+    "bytes": 8809,
+    "sha256": "6e289f722d71733e37a9efe8162be327346c96d61ddcc7f20be5c0ace8103359"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_TerminalCollect.mqh",
+    "bytes": 5187,
+    "sha256": "02549ff4882c8851f78172e836b0b79e4c86eafb9a969a02f1449b91b661ea5f"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_TickAudit.mqh",
+    "bytes": 2809,
+    "sha256": "fafdc7f9b1e87e36503377f373f0aaa02b2ae2a5efb720e2d2071a61c3149d17"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_TransporteDemo213.mqh",
+    "bytes": 11765,
+    "sha256": "ef2e1a3606674cf4ddef25d8d583a4cf15dc83734bbc3d623337b84dd9ed89f9"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_VisibleCenter.mqh",
+    "bytes": 357,
+    "sha256": "f779bab9ac5372bc89e7cf8945dbf965a24c43fc946c655b7e4a67f6e1c9b626"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Demo/ModeloD_Visual.mqh",
+    "bytes": 1341,
+    "sha256": "2b9b28cb8b8bd74bf8aef65b3820e26bb945d6302f258583eb5f7068a0124f42"
+  },
+  {
+    "file": "LEIA_PRIMEIRO.txt",
+    "bytes": 5387,
+    "sha256": "e827da4761c7feeb96486e6a18cba1609f16d7ddd0592bd82761de5d74b06820"
+  },
+  {
+    "file": "RESUMO_DA_ENTREGA.txt",
+    "bytes": 3639,
+    "sha256": "648c04216b313b8a8e6123a5094087f7899fb9ea1072a04c94e3cba1eda148eb"
+  },
+  {
+    "file": "PRESERVACAO_DAS_REGRAS.json",
+    "bytes": 9027,
+    "sha256": "01a7f71730666c80a4c1f78660dac616d557bf3022dfd249d68803910ee1d501"
+  },
+  {
+    "file": "TESTES_LOCAIS_RESUMO.txt",
+    "bytes": 3642,
+    "sha256": "17a1cf672f1a7979db36313a0cf0cebfa83ffe17724213cdc77d6c0dd5effacb"
+  }
+]

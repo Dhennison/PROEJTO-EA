@@ -738,3 +738,40 @@ Não repetir caso. Não somar95pontossintéticos aos145históricos. Resultado
 comprova cutoffnoTester; não é live. Próximo foco: concluir transporte
 operacional para simulador e validar gestão restante nesse ambiente.
 XPsimulador/Hedge em consulta; nenhuma ordemreal autorizada.
+
+VERSÃO PARA DEMO PREPARADA — V2.13 — 04/11/2026
+Usuário pediu preparar operação fora doTester. Confirmou contratação e
+instalou MT5daXP, escolheuHedge. Captura mostra XPMT5-DEMO/ContaDemo-Hedge.
+Não pedir confirmação de tipo/instalação novamente. Código valida propriedades
+nativas antes de conceder transporte; não usa só nome do servidor.
+Pacote entregas/v2_13_demo/ModeloD_DEMO_v2_13.zip, Expert
+MQL5/Experts/ModeloD_Demo/EA_ModeloD_Demo.mq5. DefaultExecutarNaDemo=false.
+ContaDEMO/Hedge/BRL exigidos, real/contest/Tester/custom bloqueados.
+Conta/servidor ligados aoInit, permissões rechecadas apósPREPARE e antes
+únicaAPIOrderSend; prova de açãofase2/origem/magic/ticket/volume/preços.
+MarketDEAL somente para fechar posição própria, não abrir a mercado.
+Native_api_called registra se aAPIfoi de fato chamada. Sem data30fixa,
+sem aliases, sem referência deCSV. Ajuste operacionalCommon/Files/ajuste_b3.txt
+ATUAL e contrato por descriçãoWIN$N. DadosD1/ticks/ordens reais da corretora.
+Sessão corrente porSymbolInfoSessionTrade: início09h, cobre corte18h, não
+extrapola outubro e bloqueia vencimento sem revisãoespecial. É metadado
+semanal do servidor no dia atual, não certificaçãoindependenteB3. HTTPB3
+proxy403; nenhum horário oficialnovo alegado. BRT/2026 continuam exigidos.
+LedgerMDD213_DEMO estável por conta/servidor/instância, lockexclusivo/replay;
+recomeço não descarta exposições/consumo/tentativas. Metadados diários
+indisponíveis não impedem recuperar/gerenciar exposição conhecida.
+53checksC++/ASan/UBSan passaram(0falhas), leitor diário atual incluído,
+modos/permissões/trocaConta/inFlightREAL/retomada/lockperdido/incerteza/
+proteção de2tickets e corte comdadosfaltantes. Não compilaMQL5 nemoperaXP.
+Núcleosmath/coordenador/proteção/ledger byteidênticos a2.11(28móduloscompartilhados).
+Limitesherdados documentados:8pregões/40níveis/64posições históricas,
+snapshot256ordens/4096deals/64posições. HomologaçãoinicialDemo; limites
+precisamrevisão antesreleasecontínua, nãoéversãoliberadaparareal.
+Próximousuário: no MT5DA XP Arquivo>AbrirPastaDados, copiarMQL5inteira
+doZIPnaRAIZaberta(não dentrodeMQL5), F4abrirExpertacima/F7/enviarresultado.
+Não usar caminho isoladoGenial para instalarnaXP. Depois orientar abrir
+WIN$N/anexarEAcomExecutarNaDemo=false e coletarmensagens iniciais, antes
+de ativar ordensdeDemo. UsarAccountInfo, B3corrente, dados e permissões
+daXPpara concluir homologação. Não pedirsenha nemcriaroutracontaDemo.
+Não repetir cenários históricos/sintéticosjáaprovados. Nenhumaordemreal
+autorizada, nenhumaAPIdecorrerora foi usada no ambienteCloud.
