@@ -682,3 +682,17 @@ Pacote Correcao_Pendentes_Referencia_v2_11.zip: copiarMQL5naRAIZdoisolado,
 F4abrirEAprincipal/F7 e enviarcompilação. Depois reusarCMD/INIemBRL já
 instalados. Compilação/execução nativas da correção ainda pendentes.
 Não aprovar SLTP/zeragem nativos com base nos mocks. Sem nova coleta agora.
+
+04/11/2026 — TERCEIRA RODADA NATIVA: FLUXO FUNCIONAL DEMONSTRADO
+Fonte completa em v2_11_funcional/coleta_20261104/terceira_rodada/.
+Compilação0erros/0avisos6722ms. Cinco pendentes aceitas09:00:44; sem
+cancelamento precoce. Dois fills(S38.2/S50) com SLTP fixos observados,
+saídas conciliadas/residual0. Outros três níveis semtoque, cancelados
+18:00:00-18:00:02; zerointents/zerounresolved18:00:04. Não chamar
+zeragemforçada de posição validada: ambas já haviam saído antes10:22.
+Referência09:01usada,streamaté18h3164395negócios/M1consistente1.
+Não repetir rodada igual. Próximo é transporte para simulador e gestão
+ainda não exercitada; XPsimulador/Hedge em consulta, Genialrealapenas.
+Versão2.11aindaTester-only/datafixa; nenhuma ordemreal autorizada.
+Resultado+29BRLsemcustos não comprova rentabilidade. DEAL_REASON não
+registrado; não inferir motivo nativo das saídas apenas pelos preços.

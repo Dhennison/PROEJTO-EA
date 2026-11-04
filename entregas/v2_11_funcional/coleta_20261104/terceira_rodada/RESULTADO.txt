@@ -1,0 +1,38 @@
+TERCEIRA RODADA NATIVA — 04/11/2026
+Fonte: relatório completo anexado pelo usuário, preservado nesta pasta.
+Compilação informada: 0 erros/0 avisos, 6722ms, AVX2+FMA3.
+
+COMPROVADO NESTA RODADA
+- Cinco pendentes aceitas09:00:44, tickets2-6, retcode10009/error0, DAY.
+- Sem cancelamento prematuro; nenhum reenvio das cinco entradas.
+- S38.2: fill09:36:03.030,169800,1contrato. Primeiro toque Last09:36:03.004,
+  posterior à aceitação09:00:44. SL observado169425, TP observado170125.
+  Saída09:45:35.345 a169430. Resultado informado-74BRL, sem custos.
+- S50: fill09:48:17.563,169275,1contrato. Primeiro toque Last09:48:16.584,
+  posterior à aceitação. SL observado168900, TP observado169800.
+  Saída10:21:23.839 a169790. Resultado informado+103BRL, sem custos.
+- SL/TP observados são os fixos previstos; não confundir preços dos deals
+  com os limites solicitados. O relatório não inclui DEAL_REASON: não
+  certificar o motivo nativo SL/TP da saída apenas pela proximidade do preço.
+- Nenhum request de fechamento a mercado ou alteraçãoSLTP nesta rodada.
+  Fechamentos conciliados com exited1/residual0 por posição.
+- Três pendentes sem toque (S61.8/R38.2/R61.8) canceladas no corte:
+  tickets4/5 às18:00:00 e6 às18:00:02. Cancel_phase6 nas três.
+  Às18:00:04 reconciliado,0intents/0unresolved. Não declarar todos os
+  efeitos exatamente18:00:00: houve intervalo observado de2segundos.
+- Referência original usada09:02:00/02 para minuto09:01; leitor chegou até
+ 18:00 exclusive com3164395negócios e M1_consistente1. Sem travar09:01.
+
+LIMITES E PRÓXIMO FOCO
+A rodada valida fluxo nativo de pendentes, dois fills, proteção já anexada,
+reconciliação de saídas e cancelamento no corte. Não prova operação real.
+Não havia posição às18h; fechamento forçado por ticket no corte não foi
+exercitado. Também não houve fills parciais, simultaneidade de posições,
+recuperação de reinício com exposição ou reparo nativo de SL ausente.
+Saldo líquido dos deals+29BRL sem custos não é validação de rentabilidade.
+Não repetir esta rodada igual nem retomar diagnósticos18:31.
+Próximo trabalho é concluir/adaptar transporte de produção para simulador,
+com os casos de gestão ainda não exercitados. Usuário está consultando XP
+sobre simuladorMT5/Hedge. Genial só dispõe de conta real. Nenhum envio real
+foi autorizado. Ensaio atual permanece Tester-only e data fixa30/10/2026.
+VISUAL_SYNC_FAILED é ruído de representação; não invalidar os deals por isso.
