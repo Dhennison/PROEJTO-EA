@@ -1,0 +1,64 @@
+TESTE CONTROLADO DO CORTE — V2.12 — CENÁRIO SINTÉTICO
+
+OBJETIVO
+Confirmar no MT5 que o EA fecha por ticket uma posição ainda aberta às18h,
+cancela as outras pendentes, confirma os efeitos e não envia novas entradas.
+Não mede rentabilidade nem representa o pregão histórico real.
+
+INSTALAÇÃO E COMPILAÇÃO — PRIMEIRO PASSO
+1. Extraia ModeloD_Teste_Corte_v2_12.zip.
+2. Copie MQL5, ModeloD_Corte_1800_BRL.ini e INICIAR_TESTE_CORTE.cmd para:
+   C:\Users\jhenn\AppData\Local\ModeloD_MT5_Isolado_20261102_145749_6554356a
+   Cole na RAIZ, ao lado de terminal64.exe. Aceite mesclar/substituir os
+   arquivos deste pacote. Não cole MQL5 dentro de MQL5.
+3. No MT5 secundário, F4. Abra e compile com F7 os dois arquivos:
+   MQL5\Scripts\ModeloD_Corte212\Preparar_Cenario_Corte_WINZ26.mq5
+   MQL5\Experts\ModeloD_Ensaio_Corte\EA_ModeloD_Ensaio_Corte.mq5
+4. Envie os resultados das duas compilações antes de executar.
+
+PREPARAÇÃO — DEPOIS DE COMPILAR SEM ERROS
+5. No MT5 secundário, abra um gráfico de WINZ26. Ctrl+N, Scripts,
+   ModeloD_Corte212. Execute Preparar_Cenario_Corte_WINZ26 UMA vez.
+   O script apenas cria o símbolo MD_SINT_CORTE_WINZ26 e dados sintéticos;
+   não tem funções de envio de ordens. Copia M1 real29/10 como aquecimento.
+6. Aguarde a mensagem CORTE212_PREP;READY e envie as mensagens exibidas
+   em Experts. Se ocorrer erro, envie a mensagem antes de continuar.
+   Relatório em Common\Files\MD_CORTE212_PREPARACAO_....txt.
+   Não é necessário importar CSV manualmente ou executar o EA em gráfico.
+
+RODADA — APÓS READY
+7. Feche MetaEditor e MT5 secundários. O principal pode continuar aberto.
+8. Abra INICIAR_TESTE_CORTE.cmd na raiz do secundário e pressione uma tecla.
+   Isso inicia automaticamente somente o Tester, em BRL, no novo símbolo.
+9. Ao terminar, envie o novo relatório completo cujo nome começa MDT212_CORTE_
+   em C:\Users\jhenn\AppData\Roaming\MetaQuotes\Terminal\Common\Files
+   Não confunda com MDT211_FUNC_ da rodada histórica anterior.
+
+CENÁRIO E CRITÉRIO
+Data fixa30/10/2026, M5, ticks reais do símbolo custom, Hedge, BRL, volume1,
+timer2s. A fita é SINTÉTICA e vai09:00:44 a18:10:00, com32957ticks.
+Começa170910. Às09:05 chega169800 para acionar S38.2; depois mantém
+Last169900/Bid169895/Ask169900, entre SL169425 eTP170125, além das18h.
+D1/vencimento e ajuste continuam provenientes do contrato WINZ26 do dia
+revisado. Se os níveis divergirem do cenário, o EA bloqueia; não força preços.
+O núcleo matemático, o coordenador e a regra do corte são os mesmos da2.11.
+Não há abertura, fechamento ou cancelamento injetado no estado do modelo:
+o EA precisa gerar os próprios requests através do fluxo normal.
+O script verifica todos os ticks e todas as551barras M1 sintéticas, além
+ das barras reais29/10 copiadas. Um cenário existente só é lido e conferido;
+se divergir, é preservado e o script recusa sobrescrever.
+
+CORTE212_ANTES deve mostrar1posição protegida e4pendentes antes18h.
+O pedido de fechamento deve ocorrer no primeiro timer do corte (até2s).
+CORTE212_APOS_10S verifica ausência de posições e pendentes e conciliação.
+CORTE212_FINAL só aprova com exposição prévia comprovada, um único pedido
+de fechamento por ticket, efeitos confirmados e nenhuma entrada pós-corte.
+Uma saída automática no final do Tester não satisfaz esse critério.
+As mensagens e o histórico completo prevalecem sobre o resumo automático.
+
+LIMITES
+A versão2.11 e seus símbolos históricos são preservados. Este pacote é
+exclusivo do Tester e bloqueia fora dele, sem opt-in, sem Hedge ou sem BRL.
+Não habilita operação real nem transporte para a conta da corretora.
+A verificação local usa APIs simuladas; compilação, criação do símbolo e
+execução nativas continuam pendentes até a realização das etapas acima.

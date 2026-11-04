@@ -1,0 +1,267 @@
+[
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/EA_ModeloD_Ensaio_Corte.mq5",
+    "bytes": 35744,
+    "sha256": "32f84d22686cf63e3100907b5a337fdd581e399dbdf7b87a2c3936519d08b091"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_B3.mqh",
+    "bytes": 6382,
+    "sha256": "25f4dd3de8f2eede32ca75d456a154b7e5e7037dbc31c90036bf5a3c558d6122"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_B3File.mqh",
+    "bytes": 1141,
+    "sha256": "10cc0c77289b55b05fa5bf045d74a3e88567b63debf9e26d4e82b730f9eef6bc"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_B3Status.mqh",
+    "bytes": 2194,
+    "sha256": "29a174de81a53c10fbbe4ef94539a2271f821a017907580b03e0a0d64af1c59c"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Calendar.mqh",
+    "bytes": 2352,
+    "sha256": "56256c0fb6b99972336b2686a923282ed9792ff7c9c5be8cb65c77f5dbe7364f"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Chain.mqh",
+    "bytes": 8452,
+    "sha256": "b3f95f030d6dca9fb581895797a91343a517843bd107741ab16f22261c31e8e9"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Chart.mqh",
+    "bytes": 5433,
+    "sha256": "20089f66c522630d6322ce636b70c8a59cb1fc7e09219d76fba7a55c5dc832db"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Collect.mqh",
+    "bytes": 3102,
+    "sha256": "a219a69c82e090336bb23fd3e103146e209d56b8eb3f1cb05192e4f99e747b3c"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Context.mqh",
+    "bytes": 2944,
+    "sha256": "5974e3ae235b9a4e07f076d0bc385cc1c07656c525bafc0a2cd422ccd5f98484"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Contract.mqh",
+    "bytes": 1265,
+    "sha256": "371f5c1fa30d243c81849797b213ed503fa8cd4a3a4e0b63c0aa77fd7c09ec18"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Core.mqh",
+    "bytes": 6026,
+    "sha256": "e198de7e6bb608ad9e13cc999be53e632d94a780bbba8ffc1712297ea1a2da55"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_CurrentCoverage.mqh",
+    "bytes": 3702,
+    "sha256": "d204ca86a6608647efb3bda2acae9b76f6d928829c6b9cb96953dacedb0f535e"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_DailyAdapter.mqh",
+    "bytes": 4171,
+    "sha256": "aed14f719069a7b48b977599f995a66ef00acd1bdba1d94d72b74d6a79e4fb9e"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_DailyTerminal.mqh",
+    "bytes": 3010,
+    "sha256": "66df35f3a2da2263ab004694dd5b4d0a6499d9a0e64a553c7e983ad4592643ef"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_DayControl.mqh",
+    "bytes": 5414,
+    "sha256": "32ca20d99c6c8f862aefbdf2931fa8ad22c0f800bc419c69eb7ec09c4cdb6ee1"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Execution.mqh",
+    "bytes": 3102,
+    "sha256": "fb519af71fda4cd44a8b11705a04c8123398db92dc654e78e3577313b855f05e"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_FonteFuncional211.mqh",
+    "bytes": 4877,
+    "sha256": "fb2df441df35e1b46ca09f3c9974e54425c156afed43cde5fef522eff28039aa"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Journal.mqh",
+    "bytes": 4905,
+    "sha256": "237a8d67f87babe149f645fe69c71621a6ccf77edccbe144bf6fa83e9cf2a5d2"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Lifecycle.mqh",
+    "bytes": 5066,
+    "sha256": "2012765705597eca5da94989fe91732a030ddc27d3c030355850d039447e4a22"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Observer.mqh",
+    "bytes": 2550,
+    "sha256": "87f35698a1bb528a82086f98d6a5dafa8aae015bb9f8d29b018ef1c30d76875a"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_OpeningTicks.mqh",
+    "bytes": 3843,
+    "sha256": "e96a2138ead430862e3ee17fac22b82c3c203d6a97937b9e1482d0e501c7034d"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Operational.mqh",
+    "bytes": 20572,
+    "sha256": "b356daef38a7efb6c16e1631d8e5a2f1fb9bdb5e3edee8a6970ce38b711d50f4"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_OperationalCases.mqh",
+    "bytes": 18843,
+    "sha256": "6d83fafa64eb6e1d49b6f986efad1c3a4b36bfaf53ed329fd89ee5eba68ee608"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_OperationalCodec.mqh",
+    "bytes": 8175,
+    "sha256": "5c7b3eb40c07c2321918e82d2d053cf7623803bc2d7fb7dcb60ad5fd3c9556ec"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_OperationalFile.mqh",
+    "bytes": 3656,
+    "sha256": "d12e3519ac8311bef32808f246f466e000292d6f045db6923c90d4c4e0f5217b"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_OperationalTerminal.mqh",
+    "bytes": 8417,
+    "sha256": "07d779d6d962a2b2f576ef30785afaad67556c38b8c4825735543c3f9a4c0dfc"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Protection.mqh",
+    "bytes": 1306,
+    "sha256": "26eb2272cc2cbe3228ffb8eadcddaf241dc093e17a154d8c6690df680b76271e"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_QueryEvidence.mqh",
+    "bytes": 2944,
+    "sha256": "4ac40920f97821f9218f2df01964d214eaee64d8b370e0403052dfa7d9b3fe81"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Recovery.mqh",
+    "bytes": 5438,
+    "sha256": "a405020907843331d31fa9b623a713a909d786612cb9c10afe45e87dfdb139ca"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_ReferenciaCorte212.mqh",
+    "bytes": 948,
+    "sha256": "e15e537c6fcbdc25d5c4a1b05a614b284bc62a86d509a8625c35d9985d7edc8d"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Retry132.mqh",
+    "bytes": 1413,
+    "sha256": "2c2a83aa7e8e90ec3e23b19533a5faff6369957a85e5c120f0f7a512403b139b"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Runtime210.mqh",
+    "bytes": 1032,
+    "sha256": "3e32e67e45b553f4c11a0bda25a211b9d9baea5513bf2f89f85ec74da0e6aa89"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Session.mqh",
+    "bytes": 2508,
+    "sha256": "eacb0f11be8711735b1e2cf21741fec947a5bed52f11b3bad3bb2c3236e539a4"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_SparseM1615N.mqh",
+    "bytes": 1047,
+    "sha256": "4c84fc7fc298f51bb146cf9feeb3d92f47ce639a370bb348620ad34802031d6c"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Stream.mqh",
+    "bytes": 1933,
+    "sha256": "cf910a588277f618ab1bb6a447e022b9b1e75ba3c13572f8429561e46e8bc41f"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_StreamTerminal.mqh",
+    "bytes": 8809,
+    "sha256": "a951b5405b94f89101f70f4d705d778a01baab15f675148b339597bfcddbd31d"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_TerminalCollect.mqh",
+    "bytes": 5187,
+    "sha256": "cdfe2d69ef15608ef46ccebafdff2980dae949e3ed01533b6db6c68b2bcfc4a6"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_TesterData210.mqh",
+    "bytes": 3933,
+    "sha256": "0e613c78c2b3d79316b7369d51fa8db422f0062bcc8779119ca66fecd7ff6e23"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_TesterTransport210.mqh",
+    "bytes": 12009,
+    "sha256": "ced47841fa01ef31616cec14616cb97999d3b2b90b963756eb3141b11b51f747"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_TickAudit.mqh",
+    "bytes": 2809,
+    "sha256": "fafdc7f9b1e87e36503377f373f0aaa02b2ae2a5efb720e2d2071a61c3149d17"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_VisibleCenter.mqh",
+    "bytes": 357,
+    "sha256": "f779bab9ac5372bc89e7cf8945dbf965a24c43fc946c655b7e4a67f6e1c9b626"
+  },
+  {
+    "file": "MQL5/Experts/ModeloD_Ensaio_Corte/ModeloD_Visual.mqh",
+    "bytes": 1341,
+    "sha256": "2b9b28cb8b8bd74bf8aef65b3820e26bb945d6302f258583eb5f7068a0124f42"
+  },
+  {
+    "file": "MQL5/Files/ModeloD_Tester_20261030_ajuste_b3.txt",
+    "bytes": 944,
+    "sha256": "d8e8ce4f588c527ff0287dd9c57b91162c3ec9bd8e39f06893984715b31a9257"
+  },
+  {
+    "file": "MQL5/Include/ModeloD_Corte212/Cenario.mqh",
+    "bytes": 1068,
+    "sha256": "5a1f48b18edbf85c57e31ae8b84ee60a8dc6cf04c9b91cf1e859a185be486aff"
+  },
+  {
+    "file": "MQL5/Profiles/Tester/ModeloD_Corte_1800_20261030.set",
+    "bytes": 348,
+    "sha256": "ee179c1966a8a9a3a5b7da73ae0acf1e0228a0a4525e0d482a9405a9f89b3467"
+  },
+  {
+    "file": "MQL5/Scripts/ModeloD_Corte212/Preparar_Cenario_Corte_WINZ26.mq5",
+    "bytes": 5357,
+    "sha256": "fda7ccc6dd3fd870d89a5f5561d89547812c6aacbe16ca4751bdb4fc5ad8bdaf"
+  },
+  {
+    "file": "LEIA_PRIMEIRO.txt",
+    "bytes": 3837,
+    "sha256": "8437c64bb0f1bb5fcf4bcdd306db3526387f15433568f8a9e464be385b2361aa"
+  },
+  {
+    "file": "RESUMO_DA_ENTREGA.txt",
+    "bytes": 2055,
+    "sha256": "2aa1c2909d10cec79d1b26cf3b718cf3cb92136e6a988577ce7a49b65f9b6acb"
+  },
+  {
+    "file": "PRESERVACAO_DAS_REGRAS.json",
+    "bytes": 10337,
+    "sha256": "67ce138ddbf28fc495f44b01b7c23af442f28152dd41e3af1277c3219c987ca1"
+  },
+  {
+    "file": "TESTES_LOCAIS_EA.txt",
+    "bytes": 6461,
+    "sha256": "9f0a9058391721f36d4ade104a639eb1e6e28eabb3b52a42da3426b1a1879636"
+  },
+  {
+    "file": "TESTES_LOCAIS_PREPARACAO.txt",
+    "bytes": 2236,
+    "sha256": "54a987dd22ac5ebeb6be176114fe420bd6857ae3646feadb49075a2e8b6c4708"
+  },
+  {
+    "file": "ModeloD_Corte_1800_BRL.ini",
+    "bytes": 382,
+    "sha256": "4026d1df56c2bb43a9c568a824742f52d7b9f43bff8c9806e798cbe460d23609"
+  },
+  {
+    "file": "INICIAR_TESTE_CORTE.cmd",
+    "bytes": 886,
+    "sha256": "bf1b3cf6de1228f6c434085e0045ef05893c9df7348d3061e3e8491849706138"
+  }
+]

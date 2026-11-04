@@ -1,0 +1,33 @@
+PROBLEMA E RESULTADO ESPERADO
+O ensaio histórico v2.11 demonstrou dois fills e suas saídas, mas nenhuma
+posição permaneceu aberta até18h. Repeti-lo não validaria fechamento forçado.
+A v2.12 adiciona um cenário sintético isolado com posição S38.2 aberta até
+além18h. Testa o próprio coordenador e transporte do EA, sem alterar suas
+regras de entrada, proteção, cancelamento ou corte e sem semear posição no
+estado do modelo. O script cria somente MD_SINT_CORTE_WINZ26.
+
+ARQUITETURA
+EA ModeloD_Ensaio_Corte em pasta própria, opt-in sintético obrigatório e
+MQL_TESTER; novo prefixo MDT212_CORTE_. D1 e vencimento do WINZ26 original,
+ajuste B3 real do dia revisto. Receita sintética de32957ticks/551M1; referência
+exata e fechada do mesmo cenário para eventuais diferenças de M1 no motor.
+Guardas de geometria, volume1, timer2, data, Hedge e BRL. Monitor passivo
+registra estado pré-corte, primeiro pedido e conciliação pós-corte; não
+injeta comandos e não muda o coordenador. Script de preparo não envia
+ordens e não sobrescreve um símbolo existente, mesmo se parcial/divergente.
+Mesmo existente idêntico é apenas conferido. Sem mudança no histórico real.
+
+VERIFICAÇÃO
+Os testes locais executam o corpo do EA com APIs simuladas, incluindo os
+nove horas de ponta a ponta até18:10 e a conciliação por posição/ticket.
+Arquivo TESTES_LOCAIS_EA.txt contém o resultado. O script de preparação
+é verificado separadamente em TESTES_LOCAIS_PREPARACAO.txt. Sanitizadores
+ASan/UBSan ativos. Não são compilação MQL5 nem execução nativa.
+Núcleos preservados byte a byte conforme PRESERVACAO_DAS_REGRAS.json.
+
+ACEITAÇÃO NATIVA PENDENTE
+Uma posição com SLTP correto e quatro pendentes antes18h; um único close
+por ticket no primeiro timer18h; cancelamentos e exposição zero conferidos
+no pós-corte; nenhum reenvio/entrada após18h. Inspecionar requests, deals,
+preços, tempos e estados, além dos checkpoints. Lucro sintético não é
+resultado histórico nem critério de rentabilidade ou liberação real.

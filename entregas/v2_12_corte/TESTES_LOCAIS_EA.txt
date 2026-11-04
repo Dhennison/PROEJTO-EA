@@ -1,0 +1,62 @@
+APIs simuladas C++; ASan/UBSan; não é compilação MQL5.
+CORTE212_APENAS_TESTER_SIMBOLO_SINTETICO_OPTIN
+PASS_210;cutoff EA refuses live chart
+CORTE212_APENAS_TESTER_SIMBOLO_SINTETICO_OPTIN
+PASS_210;synthetic opt-in is mandatory
+CORTE212_APENAS_TESTER_SIMBOLO_SINTETICO_OPTIN
+PASS_210;original symbol cannot enter synthetic case
+PASS_210;USD refused before orders
+PASS_210;hedging remains mandatory
+CORTE212_REQUER_VOLUME1_TIMER2
+PASS_210;scenario requires exactly one contract
+CORTE212_REQUER_VOLUME1_TIMER2
+PASS_210;scenario pins two-second timer
+CORTE212_APENAS_TESTER_SIMBOLO_SINTETICO_OPTIN
+PASS_210;optimization refused
+CORTE212_CENARIO_INCOMPATIVEL_COM_NIVEIS;TESTER_SIMULADO
+PASS_210;incompatible geometry blocks without forcing frozen levels
+CORTE212_FINAL;cenario_sintetico=1;aprovado=0;close_sends=0;primeiro_close_msc=0;entrada_apos_corte=0;NAO_E_RESULTADO_HISTORICO_NEM_LIBERACAO_REAL
+PASS_210;recipe has 32957 ticks and 551 minutes
+PASS_210;post-fill bid ask and Last stay strictly inside protection beyond cutoff
+PASS_210;closed synthetic opening minute verifies against recipe
+PASS_210;synthetic reference refuses changed quote
+PASS_210;isolated cutoff EA initializes with recipe and reviewed B3 input
+TESTER_REQUEST;kind=1;key=202610300;serial=1;revision=4;order=0;position=0;volume=1.00000000;price=169800.00000000;sl=169425.00000000;tp=170125.00000000;type_time=1;expiration=0;SIMULATED_ONLY
+TESTER_RESPONSE;kind=1;serial=1;api_ok=1;retcode=10008;external=0;order=1000;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+TESTER_REQUEST;kind=1;key=202610301;serial=1;revision=7;order=0;position=0;volume=1.00000000;price=169275.00000000;sl=168900.00000000;tp=169800.00000000;type_time=1;expiration=0;SIMULATED_ONLY
+TESTER_RESPONSE;kind=1;serial=1;api_ok=1;retcode=10008;external=0;order=1001;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+TESTER_REQUEST;kind=1;key=202610302;serial=1;revision=10;order=0;position=0;volume=1.00000000;price=168750.00000000;sl=168100.00000000;tp=169275.00000000;type_time=1;expiration=0;SIMULATED_ONLY
+TESTER_RESPONSE;kind=1;serial=1;api_ok=1;retcode=10008;external=0;order=1002;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+TESTER_REQUEST;kind=1;key=202610303;serial=1;revision=13;order=0;position=0;volume=1.00000000;price=172115.00000000;sl=172490.00000000;tp=171880.00000000;type_time=1;expiration=0;SIMULATED_ONLY
+TESTER_RESPONSE;kind=1;serial=1;api_ok=1;retcode=10008;external=0;order=1003;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+TESTER_REQUEST;kind=1;key=202610304;serial=1;revision=16;order=0;position=0;volume=1.00000000;price=172495.00000000;sl=172945.00000000;tp=172400.00000000;type_time=1;expiration=0;SIMULATED_ONLY
+TESTER_RESPONSE;kind=1;serial=1;api_ok=1;retcode=10008;external=0;order=1004;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+PASS_210;same planner sends five DAY pending limits after durable records
+PASS_210;physical synthetic requests preserve model prices and logical identity
+PASS_210;flat initialization cannot falsely certify a forced close
+TESTER_DEAL;ticket=10;order=1000;position_id=8000;date=20261030;contract=WINZ26;level=0;msc=1793351100000;entry_kind=0;buy=1;volume=1.00000000;executed=169800.00000000;entry_math=169800.75533333;entry_requested=169800.00000000;SL_fixed=169425.00000000;TP_fixed=170125.00000000;costs_available=1;profit=0.00000000;commission=0.00000000;swap=0.00000000;fee=0.00000000;SIMULATED_EXECUTION_NOT_WORK_COMPARISON
+CORTE212_ANTES;cenario_sintetico=1;positions=1;pending=4;volume=1.00;esperado_1pos_4pend_protegida=1
+TESTER_REQUEST;kind=4;key=202610300;serial=1;revision=22;order=0;position=9000;volume=1.00000000;price=169895.00000000;sl=0.00000000;tp=0.00000000;type_time=0;expiration=0;SIMULATED_ONLY
+TESTER_RESPONSE;kind=4;serial=1;api_ok=1;retcode=10009;external=0;order=2005;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+TESTER_DEAL;ticket=101;order=2005;position_id=8000;date=20261030;contract=WINZ26;level=0;msc=1793383201000;entry_kind=1;buy=0;volume=1.00000000;executed=169895.00000000;entry_math=169800.75533333;entry_requested=169800.00000000;SL_fixed=169425.00000000;TP_fixed=170125.00000000;costs_available=1;profit=0.00000000;commission=0.00000000;swap=0.00000000;fee=0.00000000;SIMULATED_EXECUTION_NOT_WORK_COMPARISON
+TESTER_REQUEST;kind=3;key=202610301;serial=1;revision=25;order=1001;position=0;volume=0.00000000;price=0.00000000;sl=0.00000000;tp=0.00000000;type_time=0;expiration=0;SIMULATED_ONLY
+TESTER_RESPONSE;kind=3;serial=1;api_ok=1;retcode=10009;external=0;order=0;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+TESTER_REQUEST;kind=3;key=202610302;serial=1;revision=28;order=1002;position=0;volume=0.00000000;price=0.00000000;sl=0.00000000;tp=0.00000000;type_time=0;expiration=0;SIMULATED_ONLY
+TESTER_RESPONSE;kind=3;serial=1;api_ok=1;retcode=10009;external=0;order=0;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+TESTER_REQUEST;kind=3;key=202610303;serial=1;revision=31;order=1003;position=0;volume=0.00000000;price=0.00000000;sl=0.00000000;tp=0.00000000;type_time=0;expiration=0;SIMULATED_ONLY
+TESTER_RESPONSE;kind=3;serial=1;api_ok=1;retcode=10009;external=0;order=0;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+TESTER_REQUEST;kind=3;key=202610304;serial=1;revision=34;order=1004;position=0;volume=0.00000000;price=0.00000000;sl=0.00000000;tp=0.00000000;type_time=0;expiration=0;SIMULATED_ONLY
+TESTER_RESPONSE;kind=3;serial=1;api_ok=1;retcode=10009;external=0;order=0;deal=0;error=0;EFFECT_REQUIRES_RECONCILIATION
+CORTE212_APOS_10S;positions=0;pending=0;close_sends=1;first_close_msc=1793383201000;efeitos_conciliados=1
+PASS_210;one protected position plus four pending remain immediately before real 18h cutoff
+PASS_210;no forced close or pending cancellation before 18h
+PASS_210;exactly one close is sent in first cutoff timer
+PASS_210;close addresses exact owned ticket volume and physical source after durable prepare
+PASS_210;all four remaining pending limits are cancelled
+PASS_210;close effect is reconciled from receipt and exit deal, not response alone
+PASS_210;no duplicate or post-cutoff entries
+PASS_210;cutoff case passes only after pre-cut exposure and confirmed flat final inventory
+PASS_210;missing pre-cut exposure invalidates acceptance
+PASS_210;duplicate close invalidates acceptance
+CORTE212_FINAL;cenario_sintetico=1;aprovado=1;close_sends=1;primeiro_close_msc=1793383201000;entrada_apos_corte=0;NAO_E_RESULTADO_HISTORICO_NEM_LIBERACAO_REAL
+FOCUSED_212;Checks=27;Failures=0;API_MOCK_NOT_NATIVE_MQL5

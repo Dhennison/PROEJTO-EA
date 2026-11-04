@@ -696,3 +696,32 @@ ainda não exercitada; XPsimulador/Hedge em consulta, Genialrealapenas.
 Versão2.11aindaTester-only/datafixa; nenhuma ordemreal autorizada.
 Resultado+29BRLsemcustos não comprova rentabilidade. DEAL_REASON não
 registrado; não inferir motivo nativo das saídas apenas pelos preços.
+
+PRÓXIMA ETAPA PREPARADA — TESTE CONTROLADO DO CORTE V2.12
+Usuário pediu seguir com fechamento por ticket de posição aberta às18h.
+Pacote entregas/v2_12_corte/ModeloD_Teste_Corte_v2_12.zip: novoEA
+ModeloD_Ensaio_Corte/EA_ModeloD_Ensaio_Corte e script de preparação
+Scripts/ModeloD_Corte212/Preparar_Cenario_Corte_WINZ26. Compartilham receita
+Include/ModeloD_Corte212/Cenario.mqh. Símbolo NOVO MD_SINT_CORTE_WINZ26,
+32957ticks sintéticos09:00:44-18:10, fonte real29M1 só para aquecimento.
+Abre170910, toqueS38.2em169800às09:05; depoisLast169900/Bid169895/Ask169900,
+sempre dentroSL169425/TP170125, permitindo permanecer aberta até corte18h.
+D1/vencimento/B3 continuam doWINZ26dia30revisado; geometria divergente bloqueia.
+37 módulos byte a byte iguais à2.11, inclusive matemática/coordenador/ledger/
+proteção. Apenas adaptação, isolamento, guardas e checkpoints passivos novos.
+MQL_TESTER/opt-in sintético/Hedge/BRL/volume1/timer2 obrigatórios. Caso não
+semeia posição no modelo nem força close: fluxo real do EA deve fazê-lo.
+Checkpoints CORTE212_ANTES (1posição4pendentes), APOS_10S e FINAL: um único
+requestclose por ticket no primeiro timer18h (até2s), saída conciliada,
+4cancelamentos, exposiçãozero e nenhuma entrada após corte. Não pode
+aprovar cenário que já estava sem posição antes do corte. Não mede lucro.
+36checksC++/ASan/UBSan passaram:27fluxo completo até18:10 e9script(cria
+só novo, validaallTicks/551M1/prior565, existenteidênticoread-only, divergente
+recusado sem sobrescrever, nenhum pedido de ordem no script). Não nativos.
+Próximo usuário: baixarZIP/copiarMQL5+ModeloD_Corte_1800_BRL.ini+
+INICIAR_TESTE_CORTE.cmd naRAIZdoisolado; F4 e F7 nos DOIS arquivos acima;
+enviar resultados. Depois orientar execução UMAvez do script no gráficoWINZ26
+do secundário, aguardarREADY. Sódepois fecharsecundário/abrirCMDnovo que
+iniciaTesterBRL automaticamente. RelatórioMDT212_CORTE_...Common/Files.
+Preservada v2.11/símbolos históricos. Compilação/preparo/rodada nativos ainda
+pendentes. Nenhuma ordem real autorizada. XPsimulador/Hedge em consulta.
