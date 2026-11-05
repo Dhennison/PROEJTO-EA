@@ -1,0 +1,3 @@
+115verificacoes PASS;zero falhas;ASan/UBSan;API simulada.
+78regressoes+37casos de recuperacao auditada.
+Compilacao e execucao nativa2.13.03 pendentes.

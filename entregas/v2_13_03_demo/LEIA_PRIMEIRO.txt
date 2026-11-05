@@ -1,0 +1,66 @@
+MODELO D DEMO — 2.13.03 — RECUPERACAO AUDITADA DO INCIDENTE DE05/11
+
+OBJETIVO
+Inclui as correcoes da grade XP e do cancelamento por recibo tardio.
+Nao precisa executar a2.13.02 antes. A nova versao identifica as quatro
+ordens canceladas pelo defeito da2.13.01, confere o diario e os recibos da
+corretora, reconstroi os negocios desde a abertura ate agora e restaura
+somente os niveis que AINDA NAO FORAM TOCADOS e passam pelos gates do EA.
+R38,2 ja tocada nao e restaurada. Se outro nivel tiver sido tocado desde
+entao, tambem fica bloqueado. Sem historico atual conferido nao ha recuperacao.
+Cotacao de book nao substitui negocio; primeiro negocio valido a partir09h
+e corte18h continuam iguais. Matematica, stops e alvos nao mudaram.
+
+ESCOPO PRECISO
+A migracao e limitada ao incidente conhecido: XP DEMO da conta ja usada,
+Instancia1, WINZ26,05/11/2026 e tickets2584908719,2584909140,2584909261,
+2584909339. Nao e permissao generica para rearmar ordens canceladas.
+Exige cancelar comprovado, ausencia de qualquer deal vinculado, volume1,
+propriedades/comentario originais e a transicao defeituosa no diario.
+Uma ordem ainda ativa, executada, outra conta/data/instancia, conflito,
+cutoff, falta de historico ou divergencia de recibos impede a recuperacao.
+
+PERSISTENCIA
+Nao apagar nenhum arquivo. A versao salva uma copia confirmada do diario
+em .ledger.pre21303 antes da primeira correcao. Todas as revisoes antigas
+permanecem byte a byte como prefixo do mesmo diario; cada recuperacao e
+uma revisao nova REPAIR21303_CANCEL_<ticket>. No maximo1por timer.
+A serial2 e reservada para a migracao; novo pedido usa serial3, com outro
+comentario. A ordem antiga cancelada permanece auditada e nao e adotada
+como se fosse a nova. Mudanca posterior no recibo antigo bloqueia conciliacao.
+Reinicio recupera essas decisoes e nao repete a mesma migracao.
+Depois da migracao, manter2.13.03 ou posterior: versoes antigas nao aceitam
+as transicoes corretivas no replay. Nao restaurar backup para apagar consumo
+nem voltar de versao enquanto houver novas ordens/posicoes.
+
+INSTALACAO NA XP DEMO
+1. Se EA_ModeloD_Demo estiver anexado ao WIN$N, remova somente esse EA.
+   Mantenha indicador, conta e todos os arquivos Common/Files.
+2. Extraia o ZIP e copie a pasta MQL5 inteira.
+3. XP -> Arquivo -> Abrir Pasta de Dados. Cole nessa RAIZ, onde existe
+   MQL5. Aceite mesclar e substituir os arquivos do pacote. Nao entre na
+   MQL5 existente para colar; nao use a pasta de dados da Genial.
+4. F4. Abra MQL5\Experts\ModeloD_Demo\EA_ModeloD_Demo.mq5. Pressione F7.
+5. Envie o resultado da compilacao. Ainda nao anexe ate conferirmos.
+
+DEPOIS DE COMPILAR
+Reanexar no MESMO WIN$N, mesma XP DEMO Hedge BRL e Instancia1,
+VolumePorNivel1, IntervaloSegundos2, ExecutarNaDemo=true. Manter permissao
+de negociacao algoritmica e AlgoTrading do terminal ativos.
+Confirmar START;v=2.13.03_DEMO e DIARIO_REABERTO_VALIDADO.
+O EA reconstroi antes de recuperar; o envio de novas pendentes exige uma
+nova validacao atual antes de cada pedido. Nivel tocado durante essa espera
+continua bloqueado. Nao trocar Instancia, nao apagar diario.
+Enviar o novo MDD213_DEMO_...txt para conferirmos REPAIR21303_CONFIRMADO ou
+REPAIR21303_BLOQUEADO, quais niveis permaneceram validos e os recibos.
+
+TESTES
+115verificacoes locais passaram com C++/ASan/UBSan e APIs MT5 simuladas:
+78regressoes anteriores +37casos de migracao, recibos, preservacao de R38,
+toque posterior, historico incompleto, conta/ticket incorretos, ausencia
+de diario, primeira correcao duravel, novos comentarios, ordens antigas
+no snapshot, backup e retomada. No teste automatico, S50 e R38 tocadas
+ficaram consumidas e somente S38/S61/R61 sem toque foram restauradas.
+As APIs de broker e os dados desses testes sao simulados. Compilacao MQL5
+e execucao nativa XP da2.13.03 ainda dependem do MT5 do usuario.
+36fontes preservados byte a byte;4alterados;1modulo adicionado.

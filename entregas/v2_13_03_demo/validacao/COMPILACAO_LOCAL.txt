@@ -1,0 +1,12 @@
+In file included from /tmp/modelod213_h9a_n5nu/ModeloD_OperationalTerminal.mqh:6,
+                 from /tmp/modelod213_h9a_n5nu/EA_ModeloD_Demo.mq5:10,
+                 from /tmp/modelod213_h9a_n5nu/case.cpp:141:
+/tmp/modelod213_h9a_n5nu/ModeloD_DailyTerminal.mqh: In function ‘bool MDCollectDaily614(int, MDDailyRaw614&, string&)’:
+/tmp/modelod213_h9a_n5nu/ModeloD_DailyTerminal.mqh:25:2: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   25 |  if(n<3||GetLastError()!=0)return MDB3Fail(reason,"HISTORICO_AINDA_INDISPONIVEL");r.available_bars=n;
+      |  ^~
+/tmp/modelod213_h9a_n5nu/ModeloD_DailyTerminal.mqh:25:83: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   25 |  if(n<3||GetLastError()!=0)return MDB3Fail(reason,"HISTORICO_AINDA_INDISPONIVEL");r.available_bars=n;
+      |                                                                                   ^
+
+EXIT_STATUS=0
