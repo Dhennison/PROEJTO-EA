@@ -1,0 +1,290 @@
+[
+  {
+    "id": "01",
+    "pdf": "Guia §1–2 / resolução §0",
+    "regra": "PP, amplitudes, R200/S200 e Fibonacci",
+    "status": "CONFORME_NO_CODIGO",
+    "arquivo": "ModeloD_Core.mqh",
+    "linha": 38,
+    "nota": "Fórmulas correspondem ao PDF, sem usar Ajuste como Pivot."
+  },
+  {
+    "id": "02",
+    "pdf": "Guia cinco operações / §0",
+    "regra": "Stops 375/375/650/375/450 e cinco alvos originais",
+    "status": "CONFORME_NO_CODIGO",
+    "arquivo": "ModeloD_Core.mqh",
+    "linha": 59,
+    "nota": "Sem extensões; S38 e R61 usam o ponto médio; R38 sai em R23,6."
+  },
+  {
+    "id": "03",
+    "pdf": "Guia §3–4 / §0",
+    "regra": "Filtro individual da abertura e igualdade",
+    "status": "CONFORME_NO_CODIGO",
+    "arquivo": "ModeloD_Core.mqh",
+    "linha": 26,
+    "nota": "Comparações inclusivas válidas; igualdade constitui toque, mas não prova ordem já aceita antes dele."
+  },
+  {
+    "id": "04",
+    "pdf": "Guia §4A–4B / adendo visual",
+    "regra": "Bloqueio por geometria, incluindo igualdade",
+    "status": "CONFORME_NO_CODIGO",
+    "arquivo": "ModeloD_Core.mqh",
+    "linha": 49,
+    "nota": "Comparação matemática antes de normalizar; lados independentes."
+  },
+  {
+    "id": "05",
+    "pdf": "§9.4",
+    "regra": "Normalização individual ao tick 5, empate para cima",
+    "status": "CONFORME_NO_CODIGO",
+    "arquivo": "ModeloD_Core.mqh",
+    "linha": 25,
+    "nota": "Entrada, SL e TP normalizados separadamente. Não são derivados do preço executado."
+  },
+  {
+    "id": "06",
+    "pdf": "Capa / §9.5",
+    "regra": "SL/TP fixos mesmo com execução melhor ou pior",
+    "status": "CONFORME_NO_CODIGO",
+    "arquivo": "ModeloD_TransporteDemo213.mqh",
+    "linha": 70,
+    "nota": "Proteções usam l.prices.sl_tick/tp_tick congelados; não usam fill como nova âncora."
+  },
+  {
+    "id": "07",
+    "pdf": "§9.1 / adendo V5",
+    "regra": "Arquivo B3 completo, status/fonte/datas/contrato e par de ajustes",
+    "status": "CONFORME_NO_CODIGO",
+    "arquivo": "ModeloD_B3.mqh",
+    "linha": 51,
+    "nota": "Parser valida pares e chaves; DailyAdapter valida fonte do pregão anterior e data operacional. Coletor V5 externo não foi recertificado nesta revisão."
+  },
+  {
+    "id": "08",
+    "pdf": "Adendo V5 / §14.2",
+    "regra": "Ler ajuste_b3.txt depois das 08h55 sem coleta extraordinária",
+    "status": "CONFORME_NO_CODIGO",
+    "arquivo": "ModeloD_DailyTerminal.mqh",
+    "linha": 35,
+    "nota": "EA lê arquivo; não inicia coletor nem troca pela exportação Profit ao vivo."
+  },
+  {
+    "id": "09",
+    "pdf": "§9.2A–B",
+    "regra": "Abertura real a partir de 09h e relógio validado",
+    "status": "IMPLEMENTADO_VALIDACAO_NATIVA_PARCIAL",
+    "arquivo": "ModeloD_DailyAdapter.mqh",
+    "linha": 51,
+    "nota": "Primeiro negócio válido, confrontado com D1. Fuso -10800 requerido; Genial e todas as datas/leilões ainda não certificados."
+  },
+  {
+    "id": "10",
+    "pdf": "§9.2C / §14.2",
+    "regra": "OHLC anterior do mesmo contrato real e completo",
+    "status": "IMPLEMENTADO_VALIDACAO_NATIVA_PARCIAL",
+    "arquivo": "ModeloD_DailyTerminal.mqh",
+    "linha": 26,
+    "nota": "Fonte é contrato real; sincronização, datas e volumes são checados. Esses testes não certificam por si só a integridade de toda a sessão D1/rolagem; falta confronto histórico."
+  },
+  {
+    "id": "11",
+    "pdf": "§9.3",
+    "regra": "Last: igualdade/cruzamento/gap; aceitação anterior ao primeiro toque",
+    "status": "CONFORME_NO_CODIGO",
+    "arquivo": "ModeloD_Core.mqh",
+    "linha": 67,
+    "nota": "Flag de negócio e Last finito positivo; igualdade temporal não demonstra precedência; sem compra a mercado para recuperar toque perdido."
+  },
+  {
+    "id": "12",
+    "pdf": "§9.3",
+    "regra": "Todos os níveis elegíveis planejados sem proximidade",
+    "status": "CONFORME_NO_CODIGO",
+    "arquivo": "ModeloD_Operational.mqh",
+    "linha": 349,
+    "nota": "Planeja todos no mesmo ciclo; transmissão sequencial com novas conferências e recibos, sem ranking por distância."
+  },
+  {
+    "id": "13",
+    "pdf": "§9.3",
+    "regra": "Pendente após toque: cancelar se SL/TP teórico atingido",
+    "status": "CONFORME_NO_CODIGO",
+    "arquivo": "ModeloD_OperationalTerminal.mqh",
+    "linha": 67,
+    "nota": "Trilha distingue aproximação anterior à entrada, toque e fronteira posterior; não cancela só porque o preço passou pelo TP antes da entrada."
+  },
+  {
+    "id": "14",
+    "pdf": "§9.5",
+    "regra": "Seis tentativas, 2s; mais 3min a cada 10s; fechamento sem SL",
+    "status": "IMPLEMENTADO_VALIDACAO_NATIVA_PENDENTE",
+    "arquivo": "ModeloD_Protection.mqh",
+    "linha": 16,
+    "nota": "Agenda em código com janela a partir da sexta conclusão; manutenção TP se SL presente. Caminhos de falha ainda sem prova nativa completa."
+  },
+  {
+    "id": "15",
+    "pdf": "§9.5",
+    "regra": "Proteção por ticket/posição e ausência de hedge auxiliar",
+    "status": "CONFORME_NO_CODIGO",
+    "arquivo": "ModeloD_TransporteDemo213.mqh",
+    "linha": 69,
+    "nota": "Modificação TRADE_ACTION_SLTP; fechamento oposto vinculado ao ticket. OnTradeTransaction apenas conta eventos; reação corretiva ocorre no timer de 2s, sujeito a latência de coleta/envio."
+  },
+  {
+    "id": "16",
+    "pdf": "§9.6",
+    "regra": "Rejeições: retcode, conciliação, sem preço ajustado ou reenvio incerto",
+    "status": "IMPLEMENTADO_VALIDACAO_NATIVA_PARCIAL",
+    "arquivo": "ModeloD_Operational.mqh",
+    "linha": 143,
+    "nota": "Fases de resposta incerta, transitória e definitiva; reentrada depende de elegibilidade sem toque. Cobertura de retcodes Genial ainda pendente."
+  },
+  {
+    "id": "17",
+    "pdf": "§9.6",
+    "regra": "Parciais: proteger preenchido, manter saldo da mesma ordem",
+    "status": "IMPLEMENTADO_VALIDACAO_NATIVA_PENDENTE",
+    "arquivo": "ModeloD_Operational.mqh",
+    "linha": 272,
+    "nota": "Volume e posição reconciliados por deals/identificador; não cria ordem para completar. Sem parcial nativa observada nas duas operações de hoje."
+  },
+  {
+    "id": "18",
+    "pdf": "§9.7",
+    "regra": "Reinício: cancelar pendentes se histórico incompleto",
+    "status": "DIVERGENCIA_CONFIRMADA",
+    "arquivo": "ModeloD_Operational.mqh",
+    "linha": 343,
+    "nota": "v2.13.04 removeu !f.pending_history do cancelamento. Mantém pendente tanto na reconstrução quanto em leituras falhas sem fronteira comprovada. Contraria texto expresso da página 12."
+  },
+  {
+    "id": "19",
+    "pdf": "§9.7",
+    "regra": "Reconstrução, isolamento, diário e não duplicação",
+    "status": "IMPLEMENTADO_VALIDACAO_NATIVA_PARCIAL",
+    "arquivo": "ModeloD_OperationalFile.mqh",
+    "linha": 38,
+    "nota": "Diário encadeado e recibos duráveis; retomadas e correções observadas na XP. Migrações 21303/21304 são incidentes específicos autorizados, não reset geral."
+  },
+  {
+    "id": "20",
+    "pdf": "§9.8",
+    "regra": "18h: bloquear entradas, cancelar pendentes e fechar posições",
+    "status": "IMPLEMENTADO_VALIDACAO_NATIVA_PARCIAL",
+    "arquivo": "EA_ModeloD_Demo.mq5",
+    "linha": 330,
+    "nota": "Cancelamento R61 comprovado em 05/11; posições estavam fechadas. Falta fechamento nativo de posição aberta no corte e corrida fill/cancel no servidor; ensaios locais/sintéticos não equivalem a isso."
+  },
+  {
+    "id": "21",
+    "pdf": "§9.2D / §9.8 / §10",
+    "regra": "Sessões especiais e calendário histórico multianual",
+    "status": "IMPLEMENTACAO_INCOMPLETA",
+    "arquivo": "ModeloD_SessaoDemo213.mqh",
+    "linha": 9,
+    "nota": "DEMO usa janela regular 09–18 para grade genérica. Sessão com outra abertura/fim ou vencimento é bloqueada. Não aplica tabela histórica 17:45 nem calendários 2023–2025/2027."
+  },
+  {
+    "id": "22",
+    "pdf": "§9.9A / §14.1–2",
+    "regra": "Contrato pela descrição, validade B3 e congelamento por sessão",
+    "status": "IMPLEMENTADO_VALIDACAO_NATIVA_PARCIAL",
+    "arquivo": "ModeloD_Contract.mqh",
+    "linha": 6,
+    "nota": "Calendário não escolhe contrato; observador congela dados, bloqueia divergência e mantém origens. WIN$N→WINZ26 observado na XP; todas as rolagens e Genial não certificados."
+  },
+  {
+    "id": "23",
+    "pdf": "§9.9B",
+    "regra": "Volume único, padrão 1 e backtest principal 5",
+    "status": "PARCIAL",
+    "arquivo": "EA_ModeloD_Demo.mq5",
+    "linha": 13,
+    "nota": "Um parâmetro para os cinco níveis; sem progressão. Backtest multianual principal com 5 ainda não implementado/executado; teste DEMO volume 1 é adequado ao seu escopo."
+  },
+  {
+    "id": "24",
+    "pdf": "§9.4 / §9.9B",
+    "regra": "Tick/volume/tipos/stops/freeze/margem reais",
+    "status": "PARCIAL",
+    "arquivo": "EA_ModeloD_Demo.mq5",
+    "linha": 238,
+    "nota": "Tick, volume, tipos, stops e margem usados nas condições. freeze é apenas lido, sem aplicar seu valor nas decisões de entrada/modificação/cancelamento. Retcode não equivale a validação prévia de freeze."
+  },
+  {
+    "id": "25",
+    "pdf": "§9.9C",
+    "regra": "Isolamento por Magic, data, nível, símbolo, ticket e deals",
+    "status": "CONFORME_NO_CODIGO",
+    "arquivo": "ModeloD_Operational.mqh",
+    "linha": 165,
+    "nota": "Instância reservada; origem comprovada, sem adotar ordens externas somente pelo Magic. Dois slots de migração não dispensam prova de recibo."
+  },
+  {
+    "id": "26",
+    "pdf": "§10",
+    "regra": "CSV histórico, ajustes por data/contrato e período Work",
+    "status": "IMPLEMENTACAO_INCOMPLETA",
+    "arquivo": "ModeloD_Calendar.mqh",
+    "linha": 5,
+    "nota": "Referência Work auditada; adaptador Tester v2.11 fixo em 30/10/2026/WINZ26. Falta contrato/ajuste validado por dia, ticks, rolagens e calendário 2023–2026."
+  },
+  {
+    "id": "27",
+    "pdf": "§11 / capa",
+    "regra": "Relatório teórico e executado, ponderação de parciais, slippage e estatísticas por nível",
+    "status": "IMPLEMENTACAO_INCOMPLETA",
+    "arquivo": "ModeloD_TransporteDemo213.mqh",
+    "linha": 92,
+    "nota": "Logs gravam preço matemático/solicitado/executado, volume, SL/TP e custos. Não entregam consolidação automática exigida de pontos teóricos/executados por operação/nível/total, motivos, slippage, acerto e comparação independente."
+  },
+  {
+    "id": "28",
+    "pdf": "§14.2",
+    "regra": "Auditar liquidez observada de contrato antigo/novo na rolagem",
+    "status": "NAO_LOCALIZADO",
+    "arquivo": "ModeloD_Contract.mqh",
+    "linha": 6,
+    "nota": "Não foi localizada coleta/registro comparativo de liquidez antigo/novo. Não acrescentar filtro estratégico de liquidez; falta somente a evidência de auditoria requerida."
+  },
+  {
+    "id": "29",
+    "pdf": "Capa / decisão visual 16/10 / adendo 15/10",
+    "regra": "Sete linhas, geometria, rótulos inteiros centrados e indicador independente",
+    "status": "CONFORME_NO_CODIGO",
+    "arquivo": "ModeloD_Visual.mqh",
+    "linha": 17,
+    "nota": "Cinco entradas + R200/S200; R23,6/R50/S23,6 só cálculo. Chart usa prefixo próprio, não toca Ajuste. Igualdade tripla mantém referências; falhas visuais nativas ainda precisam diagnóstico se reaparecerem."
+  },
+  {
+    "id": "30",
+    "pdf": "Funcionamento contínuo / §9.7 / §10–11",
+    "regra": "Retenção suficiente para continuidade e histórico",
+    "status": "LIMITACAO_CONFIRMADA",
+    "arquivo": "ModeloD_Operational.mqh",
+    "linha": 9,
+    "nota": "40 níveis = 8 pregões; 64 posições acumuladas. Sem arquivamento/poda, nona sessão nova é recusada. Mantém gestão das origens conhecidas, mas não está pronto para operação contínua prolongada/877 dias."
+  },
+  {
+    "id": "31",
+    "pdf": "§12–15 / validações técnicas",
+    "regra": "Compatibilidade Genial e liberação de conta real",
+    "status": "PENDENTE_DE_HOMOLOGACAO",
+    "arquivo": "ModeloD_RuntimeDemo213.mqh",
+    "linha": 16,
+    "nota": "v2.13.04 é DEMO-only por decisão do projeto. Não é versão final real; testes XP e aprovação documental não liberam ordens reais."
+  },
+  {
+    "id": "32",
+    "pdf": "Guia §7–10 / capa",
+    "regra": "STOP FIRST teórico, cronologia por ticks e dados incompletos separados",
+    "status": "PARCIAL",
+    "arquivo": "ModeloD_OperationalTerminal.mqh",
+    "linha": 66,
+    "nota": "EA não impõe STOP FIRST de candles no caminho por ticks; não fabrica fill/saída com dado ausente. Relatório de comparação teórica e classificações históricas completas ainda pendente."
+  }
+]

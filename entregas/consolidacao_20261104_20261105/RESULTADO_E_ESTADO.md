@@ -79,3 +79,7 @@ Work usa candles, preços teóricos e STOP FIRST; EA usa ticks e preços execut�
 ## Continuidade operacional
 
 Manter mesma conta/servidor/Instância 1 e o diário existente; não apagar consumos. v2.13.04 aceita as migrações 2.13.03 e 2.13.04; versões anteriores não devem ser usadas para reabrir o diário migrado. Notebook/MT5/rede precisam estar ativos para a gestão pelo EA; stops/targets e pendentes aceitos permanecem sujeitos à corretora durante indisponibilidade.
+
+## Revisão posterior: PDF consolidado de regras
+
+Após este fechamento, o usuário forneceu Regras_Modelo_D_Consolidadas_2026-11-05.pdf. A [auditoria de 32 itens](../auditoria_regras_20261105/AUDITORIA_REGRAS_V21304.md) identificou conflito entre a manutenção de pendentes na v2.13.04 e o cancelamento por histórico incompleto exigido expressamente em 9.7. O êxito técnico do reenvio/corte permanece evidência do comportamento observado, mas não certifica conformidade dessa política com o PDF. Também foram identificadas lacunas de relatórios, retenção, calendário e freeze. Código do EA não alterado nesta revisão.

@@ -1,0 +1,1097 @@
+MODELO D   /   WIN   /   MT5                                   Referência consolidada • 05/11/2026
+
+
+
+
+Regras do Modelo D
+Como usar este consolidado
+A seguir estão as oito páginas do guia ilustrado de 15/10, preservadas na ordem original. Depois
+delas estão a resolução operacional completa de 14/10 e os complementos de apresentação e
+ajuste. Use os marcadores do PDF para navegar. As datas e os estados de validação nos
+documentos reproduzidos são históricos.
+
+Quando a entrada é executada em outro preço
+“Stops/alvos são preços fixos originais normalizados, sem deslocar com execução melhor ou pior.”
+Resolução de 14/10, seção 0; a seção 9.5 confirma a aplicação à posição. Vale para as três
+compras e as duas vendas.
+
+Exemplo S50: entrada prevista em 165.000, stop em 164.625 e alvo no S38,2 do dia. Compra
+executada em 164.800: o stop continua em 164.625 e o alvo continua no mesmo S38,2. Se sair no
+stop previsto, são −175 pontos executados contra −375 teóricos. Se sair exatamente no alvo, são
+200 pontos a mais do que na entrada teórica. Se a saída também ocorrer em outro preço,
+contabilizar o preço efetivo.
+
+O que mudou na apresentação do gráfico
+A decisão posterior de 16/10 restringiu o desenho aos cinco níveis de entrada, além de R200 e
+S200. Sem bloqueio geométrico, são sete linhas do EA. R23,6, R50 e S23,6 continuam nos cálculos
+e não são desenhados. Com bloqueio por lado, ocultar linhas e rótulos Fibonacci daquele lado;
+preservar R200, S200 e o indicador independente do Ajuste. Exibir preços inteiros e alinhar os
+rótulos no centro do trecho visível do pregão. Isso não altera preços matemáticos ou a grade de
+execução.
+
+Work, MT5 e limites da comparação
+Toque teórico no Last não prova preenchimento. Separar operação teórica por nível e operação
+efetivamente executada; nas parciais, ponderar pelos volumes. STOP FIRST é a convenção do
+estudo por candles ambíguos; com ticks, usar cronologia. Uma regra aprovada não comprova seu
+funcionamento no servidor. A conferência no Tester, a comparação por operação e a validação em
+demonstração são etapas de verificação.
+MODELO D / WIN / FIBONACCI STORMER
+
+
+As cinco operações
+Parâmetros originais, fixos e independentes
+
+
+
+
+   S38,2            COMPRA                   Stop: 375 pontos
+                    Alvo: (S38,2 + S23,6) / 2
+
+
+   S50              COMPRA                   Stop: 375 pontos
+                    Alvo: S38,2
+
+
+   S61,8            COMPRA                   Stop: 650 pontos
+                    Alvo: S50
+
+
+   R38,2            VENDA                    Stop: 375 pontos
+                    Alvo: R23,6
+
+
+   R61,8            VENDA                    Stop: 450 pontos
+                    Alvo: (R61,8 + R50) / 2
+
+
+
+
+Figura 1. Retorno em direção ao Ajuste: alvos dos suportes.
+
+
+
+Ajuste
+
+
+
+S23,6
+
+
+
+S38,2
+
+
+
+S50
+
+
+
+S61,8
+
+
+
+S61,8 → S50; S50 → S38,2; S38,2 → ponto médio até S23,6.
+
+
+
+Esquema ilustrativo, sem escala. Resistências fazem o retorno por venda. O Modelo D não utiliza
+extensões de alvo.
+
+
+
+
+Regras congeladas | Registro de 07/10/2026                                                        1/6
+MODELO D / WIN / FIBONACCI STORMER
+
+
+Cálculo e Ajuste Diário
+Fórmulas exatas e autorização obrigatória do EA
+
+
+
+
+1. CÁLCULO DIÁRIO DOS NÍVEIS
+Utilizar máxima, mínima e fechamento do pregão anterior completo, além da abertura do pregão
+corrente:
+
+PP = (HighD(1) + LowD(1) + CloseD(1)) / 3
+
+ampR = Abs(LowD(1) - PP)
+
+ampS = Abs(HighD(1) - PP)
+
+R200 = OpenD(0) + (ampR × 2)
+
+S200 = OpenD(0) - (ampS × 2)
+
+A projeção Stormer parte da abertura do próprio dia. O Ajuste Diário é uma referência independente.
+
+R23,6 = Ajuste + ((R200 - Ajuste) × 0,236)
+
+R38,2 = Ajuste + ((R200 - Ajuste) × 0,382)
+
+R50 = Ajuste + ((R200 - Ajuste) × 0,500)
+
+R61,8 = Ajuste + ((R200 - Ajuste) × 0,618)
+
+S23,6 = Ajuste + ((S200 - Ajuste) × 0,236)
+
+S38,2 = Ajuste + ((S200 - Ajuste) × 0,382)
+
+S50 = Ajuste + ((S200 - Ajuste) × 0,500)
+
+S61,8 = Ajuste + ((S200 - Ajuste) × 0,618)
+
+Os níveis ficam fixos durante o pregão.
+
+2. AJUSTE DIÁRIO
+No histórico, utilizar o Ajuste correspondente à sessão, equivalente ao PriorCote(4) utilizado na auditoria.
+
+Na operação do EA, a fonte definida é:
+
+B3 → B3Ajuste.exe → ajuste_b3.txt → MT5.
+
+Novas entradas exigem cumulativamente:
+
+- Status=OK;
+
+- fonte aceita, BVBG.187.01;
+
+- DataOperacional correspondente ao pregão corrente;
+
+- contrato WIN real correto;
+
+- Ajuste e AjusteAnterior desse contrato;
+
+- leitura completa e válida do arquivo.
+
+Sem essas condições, bloquear novas entradas. Não substituir o Ajuste pelo fechamento anterior nem
+reutilizar silenciosamente um valor antigo.
+
+
+
+
+Regras congeladas | Registro de 07/10/2026                                                              2/6
+MODELO D / WIN / FIBONACCI STORMER
+
+
+Abertura e invalidação
+Cada linha é avaliada separadamente antes das entradas
+
+
+
+
+3. FILTRO OBRIGATÓRIO DA ABERTURA
+Aplicar antes de procurar entradas, individualmente em cada nível operacional:
+
+Suporte:
+
+Open < nível → INVALIDADO.
+
+Open >= nível → VÁLIDO.
+
+Resistência:
+
+Open > nível → INVALIDADO.
+
+Open <= nível → VÁLIDO.
+
+Uma abertura pode invalidar vários níveis simultaneamente. Cada nível invalidado permanece sem
+operar durante todo aquele pregão, mesmo que seja tocado posteriormente.
+
+Não existe inversão de polaridade: suporte opera somente compra; resistência opera somente venda.
+
+4. ABERTURA EXATAMENTE IGUAL À LINHA
+Se Open == nível, o nível permanece válido e a abertura constitui seu primeiro toque.
+
+É uma condição prevista pela lógica das comparações estritas; não foi observada nas bases
+anteriormente conferidas.
+
+
+Figura 2. Uma abertura pode invalidar vários suportes.
+
+ S38,2 = 130.000                                                                        INVALIDADO
+
+
+
+ S50 = 129.700                                                                          INVALIDADO
+
+
+
+ Open = 129.600                                                                          ABERTURA
+
+
+
+ S61,8 = 129.400                                                                            VÁLIDO
+
+
+
+Exemplo numérico ilustrativo. A abertura está abaixo de S38,2 e S50: ambos ficam invalidados durante
+todo o dia. S61,8 permanece válido.
+
+
+
+
+Regras congeladas | Registro de 07/10/2026                                                        3/6
+MODELO D / WIN / FIBONACCI STORMER
+
+
+Bloqueio por lado
+4A. Elegibilidade geométrica antes da procura por entrada
+
+
+
+
+Estas condições explicitam o bloqueio operacional já existente nas rotinas consultadas do
+backtest. A apresentação visual abaixo foi definida em 15/10/2026. Fórmulas, stops e alvos
+permanecem iguais.
+
+SUPORTES: Ajuste ≤ S200
+
+Bloquear todas as compras de S38,2, S50 e S61,8. Manter S200 visível e ocultar as Fibonacci
+S23,6, S38,2, S50 e S61,8, incluindo rótulos e preços dessas linhas.
+
+RESISTÊNCIAS: Ajuste ≥ R200
+
+Bloquear todas as vendas de R38,2 e R61,8. Manter R200 visível e ocultar as Fibonacci R23,6,
+R38,2, R50 e R61,8, incluindo rótulos e preços dessas linhas.
+
+O bloqueio afeta somente o lado correspondente. O lado oposto conserva suas Fibonacci e pode
+operar se passar por suas próprias condições e pelas demais regras.
+
+
+Figura 5. Exemplo de suporte bloqueado (sem escala).
+
+
+                                                            R200 visível
+
+
+                                                            R61,8
+
+                                                            R50
+
+                                                            R38,2
+
+                                                            R23,6
+
+
+
+                                                            S200 visível
+
+
+                                                            Ajuste visível
+
+
+Ajuste abaixo de S200: compras bloqueadas e nenhuma Fibonacci de suporte desenhada. As
+Fibonacci de resistência permanecem no gráfico; a elegibilidade de venda depende também das
+demais regras.
+
+
+
+
+Complemento de 15/10/2026 | Páginas originais preservadas                          3A / complemento
+MODELO D / WIN / FIBONACCI STORMER
+
+
+Exibição e comparações
+4B. Ajuste independente, igualdade e conferência dos estados
+
+
+
+
+AJUSTE SEMPRE VISÍVEL PELO INDICADOR EXISTENTE
+
+A linha do Ajuste é responsabilidade do indicador Ajuste Oficial B3, que lê ajuste_b3.txt. O EA não
+deve apagar, ocultar ou modificar seus objetos/plots nem criar uma linha duplicada para
+substituí-lo. A autorização para operar continua exigindo arquivo válido, sessão e contrato
+corretos.
+
+Figura 6. Resistência bloqueada: regra simétrica (sem escala).
+
+
+                                                               Ajuste visível
+
+
+                                                               R200 visível
+
+
+
+
+                                                               S23,6
+
+                                                               S38,2
+
+                                                               S50
+
+                                                               S61,8
+
+
+
+                                                               S200 visível
+
+
+Ajuste acima de R200: nenhuma Fibonacci de resistência desenhada; o suporte continua sujeito às
+próprias condições.
+
+IGUALDADE E FILTROS CUMULATIVOS
+
+Ajuste == S200 bloqueia suporte; Ajuste == R200 bloqueia resistência. Open == nível continua
+válido apenas no filtro da abertura: não contorna este bloqueio geométrico.
+
+Se Ajuste == S200 == R200, bloquear ambos os lados e ocultar as duas famílias de Fibonacci.
+Manter as referências identificáveis, sem deslocar preços ou interferir no indicador do Ajuste. Essa
+igualdade tripla não foi especificamente contada nesta atualização.
+
+Calcular e comparar valores matemáticos originais antes do arredondamento para execução.
+Preservar cálculos e logs mesmo quando as linhas estiverem ocultas. Este controle visual não
+oculta níveis apenas por invalidação individual da abertura ou por já terem operado.
+
+Registrar motivo e lado bloqueado; reconstruir o estado após reinício e a cada novo pregão. A
+ocultação visual não substitui o bloqueio de ordens. Quando S200 < Ajuste < R200, este controle
+não bloqueia nem oculta nenhum lado.
+
+
+
+
+Complemento de 15/10/2026 | Páginas originais preservadas                            3B / complemento
+MODELO D / WIN / FIBONACCI STORMER
+
+
+Primeiro toque e posições
+Uma operação por nível por dia; posições simultâneas permitidas
+
+
+
+
+5. ENTRADA E INDEPENDÊNCIA DOS NÍVEIS
+- Entrada no primeiro toque válido de cada nível.
+
+- Máximo de uma operação por nível por pregão.
+
+- Uma operação encerrada não permite reentrada naquele nível no mesmo dia.
+
+- Os cinco níveis são independentes.
+
+- Posições simultâneas são permitidas, inclusive de lados diferentes.
+
+- Uma posição aberta não impede entrada em outro nível.
+
+- Quantidade de contratos fixa por entrada, sem progressão ou ajuste após gain/loss.
+
+6. PREÇOS TEÓRICOS DE ENTRADA, STOP E ALVO
+No backtest histórico, a entrada é contabilizada exatamente na linha Fibonacci, inclusive quando o
+candle atravessa ou abre além dela, desde que o filtro da abertura diária não tenha invalidado o nível.
+
+Stop de compra = preço da linha - distância do stop
+
+Stop de venda = preço da linha + distância do stop
+
+Alvo S38,2 = (S38,2 + S23,6) / 2
+
+Alvo S50 = S38,2
+
+Alvo S61,8 = S50
+
+Alvo R38,2 = R23,6
+
+Alvo R61,8 = (R61,8 + R50) / 2
+
+O Modelo D utiliza esses alvos originais, sem +25, +125 ou outras extensões.
+
+No estudo teórico, não aplicar slippage, custos ou arredondamento ao tick. Na execução pelo MT5,
+registrar separadamente linha teórica, preço solicitado e preço efetivamente executado.
+
+
+Figura 3. Ciclo de cada nível, independente dos demais.
+
+
+
+
+            VÁLIDO                           PRIMEIRO TOQUE                      UMA OPERAÇÃO
+
+
+
+
+                                             NÍVEL UTILIZADO
+
+
+
+
+Após GAIN, STOP ou ZERAGEM, o nível não gera outra entrada naquele pregão. Os demais níveis
+continuam com seus próprios estados.
+
+
+
+
+Regras congeladas | Registro de 07/10/2026                                                            4/6
+MODELO D / WIN / FIBONACCI STORMER
+
+
+Saídas e horário
+Prioridade temporal e distinção entre candles e ticks
+
+
+
+
+7. SAÍDA POR ALVO OU STOP
+- Atingiu alvo primeiro: GAIN.
+
+- Atingiu stop primeiro: STOP.
+
+- No histórico por candles, se ambos forem atingidos no mesmo candle e não houver informação
+suficiente para determinar a ordem: STOP FIRST.
+
+- No EA com ticks, respeitar a sequência temporal disponível, sem impor STOP FIRST artificialmente.
+
+8. HORÁRIO OPERACIONAL
+Na metodologia operacional atual:
+
+- nenhuma nova entrada a partir das 18:00;
+
+- posições remanescentes devem ser zeradas às 18:00;
+
+- não carregar posições para o pregão seguinte.
+
+No backtest, a zeragem utiliza exclusivamente o OPEN do candle que inicia às 18:00. A máxima, mínima
+e fechamento desse candle não participam da decisão de saída das posições que chegaram abertas ao
+horário.
+
+Períodos históricos com outro horário de encerramento utilizam o calendário específico documentado na
+auditoria.
+
+Na execução real, o preço da zeragem será o negócio efetivamente realizado pelo MT5, registrado junto
+ao horário da solicitação.
+
+
+Figura 4. Zeragem operacional no backtest.
+
+
+               ANTES DAS 18:00                                      18:00: OPEN DO CANDLE
+
+
+
+
+Antes do limite: entradas, alvo e stop. No início do candle das 18:00: zerar posições abertas pelo OPEN,
+sem usar High, Low ou Close.
+
+
+
+
+Candles ambíguos: STOP FIRST. Ticks: respeitar a ordem temporal observada. Execução real: registrar o
+preço efetivamente negociado.
+
+
+
+
+Regras congeladas | Registro de 07/10/2026                                                            5/6
+MODELO D / WIN / FIBONACCI STORMER
+
+
+Dados e controles do EA
+Tratamento de incerteza e conferência independente
+
+
+
+
+9. OPERAÇÕES SEM DESFECHO E DADOS INCOMPLETOS
+Na metodologia histórica sem zeragem obrigatória, operação que não atinge alvo nem stop até o término
+do pregão é NÃO RESOLVIDA, com 0 ponto, sem carregamento.
+
+Na metodologia operacional, é necessário conhecer o preço de abertura do candle de zeragem. Se ele
+estiver ausente, não estimar a saída.
+
+Em análise complementar de pregões incompletos:
+
+- preservar gains/stops conhecidos dentro dos dados disponíveis;
+
+- posição ainda aberta ao terminar o histórico recebe SAÍDA HORÁRIA INDETERMINÁVEL, sem atribuir
+preço ou pontos;
+
+- manter esses resultados separados da consolidação operacional completa.
+
+10. QUALIDADE DOS DADOS
+Para calcular um pregão, exigir abertura válida, Ajuste correto e OHLC anterior completo e confiável.
+
+Não reconstruir ou estimar dados ausentes. Não utilizar OHLC incompleto como se fosse o pregão
+anterior completo. Ordenar candles cronologicamente antes de calcular operações, curvas e drawdown.
+
+11. REGRAS DE FUNCIONAMENTO DO EA
+- Conta HEDGE, com gerenciamento independente por nível e posição.
+
+- Identificar operações por símbolo, nível, Magic Number e identificadores da plataforma.
+
+- Reconstruir posições abertas e níveis já operados após reinício ou reconexão.
+
+- Não duplicar entradas após reinicialização.
+
+- Registrar níveis válidos/invalidados, dados dos cálculos, ordens, execuções e saídas.
+
+- Conferir resultados operação por operação com uma segunda rotina independente antes de
+classificá-los como validados.
+
+As regras estratégicas acima estão congeladas. A forma de colocar ordens pendentes, tratar execução
+parcial, arredondar preços executáveis e administrar rejeições pertence à especificação de execução do
+EA e precisa ser documentada junto às decisões aprovadas.
+
+
+
+
+Regras congeladas | Registro de 07/10/2026                                                              6/6
+MODELO D   /   WIN   /   MT5                                   Referência consolidada • 05/11/2026
+
+
+
+
+Resolução operacional integral
+RESOLUÇÃO FINAL DAS PENDÊNCIAS — EA MODELO D / MT5 / GENIAL
+
+Consolidado e atualizado em 14/10/2026 para encaminhamento ao Work
+
+Base: PENDENCIAS_PRE_ETAPA_6_EA_MODELO_D.txt e decisões posteriores desta conversa.
+
+STATUS: AUTORIZADO INICIAR A ETAPA 6 (PROGRAMAÇÃO), com validações técnicas obrigatórias.
+Não confundir regra aprovada com funcionamento já comprovado no servidor. Não alterar regras
+sem autorização.
+
+0. MATEMÁTICA CONGELADA
+PP=(Máxima anterior+Mínima anterior+Fechamento anterior)/3
+
+ampR=Abs(Mínima anterior-PP); ampS=Abs(Máxima anterior-PP)
+
+R200=Abertura atual+2*ampR; S200=Abertura atual-2*ampS
+
+O Ajuste Diário é INDEPENDENTE do Pivot. Fibonacci: Rxx=Ajuste+(R200-Ajuste)*xx/100;
+Sxx=Ajuste+(S200-Ajuste)*xx/100.
+
+Cinco níveis independentes, uma oportunidade por nível por pregão, conta HEDGE:
+
+S38,2 Buy Limit, SL=S38,2-375, TP=média(S38,2,S23,6).
+
+S50 Buy Limit, SL=S50-375, TP=S38,2.
+
+S61,8 Buy Limit, SL=S61,8-650, TP=S50.
+
+R38,2 Sell Limit, SL=R38,2+375, TP=R23,6.
+
+R61,8 Sell Limit, SL=R61,8+450, TP=média(R61,8,R50).
+
+Stops/alvos são preços fixos originais normalizados, sem deslocar com execução melhor ou pior.
+
+Filtro de abertura: suporte inválido somente se Open < suporte; resistência inválida somente se
+Open > resistência; igualdade válida.
+
+9.1 AJUSTE AO VIVO — RESPONDIDA
+Fonte exclusiva: B3/BVBG.187.01 -> B3Ajuste.exe -> ajuste_b3.txt -> MT5 -> EA.
+
+Antes de nova entrada validar arquivo completo, Status=OK, fonte B3 aceita, DataOperacional
+correta, DataFonte coerente, contrato REAL correspondente, Ajuste e AjusteAnterior do MESMO
+contrato. Falta/inconsistência: BLOQUEAR novas entradas; nunca reutilizar ajuste antigo nem
+trocar contrato. O ajuste divulgado após um pregão vale para a sessão operacional seguinte. CSV
+do Profit NÃO substitui B3 ao vivo.
+
+9.2 SESSÃO, RELÓGIO, ABERTURA, OHLC E EXCEÇÕES —
+REGRAS RESPONDIDAS, TESTES PENDENTES
+A) Referência temporal: sessão B3 em horário de Brasília. Validar no MT5 real da Genial hora do
+servidor, diferença de fuso, timestamps, calendário e eventuais variações. A zeragem às 18h não
+deve depender de tick às 18h.
+MODELO D   /   WIN   /   MT5                                    Referência consolidada • 05/11/2026
+
+
+
+B) Antes da abertura real do contrato WIN não enviar ordens. O PP usa pregão anterior, mas
+R200/S200 e níveis definitivos exigem ABERTURA REAL do dia. Depois da abertura, validar Open,
+ajuste, OHLC e primeiro toque; não presumir que iOpen(D1,0) representa a abertura oficial sem
+comprovação (leilões/pré-abertura).
+
+C) Máxima, mínima e fechamento do pregão anterior COMPLETO do MESMO CONTRATO REAL;
+Open anterior pode ser auditado. Na rolagem, buscar no MT5 OHLC anterior do contrato NOVO;
+não misturar OHLC antigo e ajuste novo. Se OHLC confiável faltar, não operar. Conferir formação
+do D1, leilões e janelas da sessão contra histórico Work.
+
+D) Sessões excepcionais (ex.: Quarta-feira de Cinzas): respeitar calendário e horário oficial
+especial. MECANISMO DE HORÁRIOS ESPECIAIS E ZERAGEM ANTECIPADA A
+IMPLEMENTAR/VALIDAR. Se horário não for confiável, bloquear novas entradas; não inventar
+horários.
+
+9.3 PRIMEIRO TOQUE — RESPONDIDA
+Referência: LAST, inclusive igualdade, cruzamento entre ticks e gap atravessando nível sem
+negócio exatamente nele. Primeiro toque teórico não equivale a execução pela corretora. Ordem
+deve ser ACEITA pelo servidor ANTES do primeiro toque. Todas as pendentes elegíveis são
+enviadas de uma vez após validação; NÃO enviar progressivamente por proximidade. Se ajuste
+chegar atrasado, examinar Last desde abertura; não enviar ordem se nível já foi tocado. Sem
+histórico íntegro: bloquear entrada. Ordem previamente aceita pode permanecer pendente
+mesmo após toque se não executada; quando Last atingir STOP ou ALVO TEÓRICO, cancelar
+pendente e consumir nível. Não permitir reentrada. Auditoria original por candles usava stop-first
+em candle ambíguo; no EA com ticks reais, seguir ordem cronológica, sem stop-first artificial.
+
+9.4 TICK SIZE — RESPONDIDA
+WIN: grade de 5 pontos. Arredondar entrada, SL e TP INDIVIDUALMENTE para múltiplo de 5 mais
+próximo; empate exato: para CIMA, independentemente de compra/venda. Preservar valor
+matemático, normalizado, solicitado e executado. Comparações teóricas preservam referência
+matemática para auditoria. Validar tick size, distância mínima, freeze/stops levels, tipos de ordem;
+não deslocar silenciosamente níveis por rejeição do servidor.
+
+9.5 PROTEÇÕES — RESPONDIDA
+SL e TP vinculados a TICKET/POSIÇÃO; não criar ordens opostas independentes que possam abrir
+hedge indesejado. Após execução, registrar AMBOS prontamente, idealmente na mesma
+modificação de posição, e verificar aceitação real. Se falhar: 6 tentativas iniciais, espaçamento
+mínimo 2 segundos, primeira imediata, conferindo estado. Após sexta tentativa concluída, janela
+ADICIONAL de 3 minutos com tentativas a cada 10 segundos. Se SL ausente ao final: solicitar
+fechamento a mercado. Se SL presente mas TP ausente: manter posição e seguir tentando TP. Se
+Last atingir stop/alvo enquanto proteção necessária faltar, fechar a mercado imediatamente se
+posição ainda aberta. Com SL/TP aceitos, servidor cuida da saída; EA monitora sem duplicar. Se
+histórico após entrada mostrar stop/alvo já alcançado e posição persistir aberta, fechar; jamais
+usar evento anterior à execução como justificativa. SL/TP permanecem fixos mesmo se preço de
+entrada for melhor.
+MODELO D   /   WIN   /   MT5                                    Referência consolidada • 05/11/2026
+
+
+
+
+9.6 REJEIÇÕES E PARCIAIS — RESPONDIDA
+Entrada rejeitada: verificar retcode e estado real; tentar novamente só se não houve primeiro
+toque e nível segue elegível, sem requisições duplicadas. Se toque precedeu aceitação:
+oportunidade consumida. Work mapeará retcodes transitórios/definitivos; não foi aprovado
+número fixo universal de tentativas de ENTRADA. Rejeição definitiva: bloquear e registrar, sem
+mudar preço automaticamente.
+
+Execução parcial: aceitar e proteger volume preenchido imediatamente; saldo da MESMA ordem
+pode permanecer pendente enquanto válido; não criar nova ordem para completar. Quando saldo
+preencher, proteger adicional; se stop/alvo teórico ocorrer, cancelar saldo. Se execução coincidir
+com cancelamento, verificar cronologia de ordens, deals e posições. Uma oportunidade por nível,
+mesmo com várias parcelas.
+
+9.7 REINÍCIO/RECONEXÃO — RESPONDIDA
+Reconstruir com ordens, posições, deals, histórico do servidor, identificadores do EA, estado local
+e Last desde abertura. Sem comprovação de ausência de primeiro toque: bloquear NOVAS
+entradas. Pendentes já aceitas permanecem apenas se comprovado que stop/alvo teóricos não
+foram alcançados; se alcançados ou histórico incompleto, solicitar cancelamento. Posições
+executadas: proteger e verificar cronologicamente Last após entrada; se stop/alvo ocorreu e
+posição ainda está aberta, fechar. Não duplicar ordens/cancelamentos/saídas. Sem conexão:
+suspender entradas, retomar cancelamentos e proteção ao recuperar. Reinício após 18h: somente
+encerramento, jamais entradas.
+
+9.8 ZERAGEM ÀS 18H — RESPONDIDA
+Às 18h Brasília em sessão regular: bloquear novas entradas, cancelar todas pendentes do EA e
+fechar todas posições do EA. Não depender de tick no minuto. Se pendente executar durante
+cancelamento, fechar posição resultante. Verificar confirmações e repetir pedidos necessários
+sem duplicidade até não restarem ordens/posições; se servidor desconectado, persistir intenção e
+retomar na reconexão. Se mercado não aceitar ordem, registrar impedimento; não prometer
+zeragem garantida durante indisponibilidade. Sem limite fixo de tentativas de
+cancelamento/saída. Sessões especiais dependem de calendário e horários validados (ver 9.2D).
+
+9.9 CONTRATO, VOLUME E IDENTIFICAÇÃO
+A) EA instalado no WIN$N; identificar contrato REAL vigente na descrição do WIN$N (ex.:
+WINV26/WINZ26), como no indicador de ajuste. Buscar ajuste e preços do MESMO contrato REAL e
+negociar nele. Congelar contrato por sessão; divergência bloqueia novas entradas. Operações
+antigas continuam geridas em seu contrato original. Validar tecnicamente no MT5/Genial rolagem,
+Market Watch, ticks, ordens em símbolo diferente do gráfico, histórico e identificação. Informação
+do usuário: WIN$N não costuma trocar de contrato no meio do pregão; mesmo assim implementar
+defesa.
+
+B) Volume: parâmetro único para os cinco níveis. PADRÃO do EA = 1 minicontrato por nível.
+BACKTEST PRINCIPAL = 5 minicontratos por nível, podendo haver até 25 simultâneos se todos
+executarem. Validar mínimo/máximo/step e margem real; não presumir margem reservada para
+pendentes. Quantidade não altera pontuação TEÓRICA, mas pode alterar execução real e
+pontuação EXECUTADA.
+MODELO D   /   WIN   /   MT5                                     Referência consolidada • 05/11/2026
+
+
+
+C) MAGIC NUMBER: isolamento de ordens/posições do Modelo D aprovado, mas NÃO FOI FIXADO
+UM NÚMERO ESPECÍFICO. Work deve reservar número/faixa e política de instâncias/versões/níveis,
+combinando Magic, ticket, símbolo, data, nível e deals. Não tocar ordens de outros sistemas. Este
+detalhe técnico não impede início da implementação.
+
+10. AJUSTES HISTÓRICOS / STRATEGY TESTER —
+METODOLOGIA RESPONDIDA
+Backtest inicial SOMENTE período já auditado pelo Work; expansão depois. Ajustes históricos
+exportados do indicador no WINFUT do Profit Pro (data/hora, OHLC e coluna do ajuste); ajuste
+permanece igual em todos candles de cada pregão, portanto extrair e validar UM registro por
+pregão. O Profit já mostra ajuste VÁLIDO para a data operacional: não deslocar data
+automaticamente. Uma amostra de 08/12/2022 foi confrontada pelo usuário com live da época e
+coincidiu; não significa série inteira validada. CSV final deve identificar DataOperacional, contrato
+real e Ajuste; manter data/hora/proveniência e DataFonte quando disponíveis. Conferir amostras
+com B3 e transição entre contratos, evitando look-ahead.
+
+O Profit limita histórico dos contratos específicos, mas permite WINFUT; usuário propôs comparar
+WINFUT e dois contratos recentes no pregão anterior ao vencimento, dia do vencimento e
+seguinte, conferindo ajuste e OHLC. Coincidência de ajuste isoladamente não comprova OHLC.
+Work já utilizou histórico de preços WIN$N do MT5; no EA preferir OHLC do contrato REAL
+validado, inclusive dia anterior do contrato novo. Primeiro dia do CSV sem OHLC anterior: somente
+referência, sem operação. Se houver histórico anterior válido do contrato novo, não descartar
+automaticamente dia de rolagem.
+
+No Strategy Tester: priorizar “Cada tick baseado em ticks reais”. Se faltar histórico, NÃO substituir
+automaticamente por ticks artificiais. Validar dados de contratos vencidos, múltiplos símbolos,
+rolagens e leitura de CSV no ambiente do Tester. Se AjusteAnterior histórico for necessário, obter
+e validar; não presumir presença na exportação. Work original e MT5 serão avaliações
+independentes; não forçar igualdade artificial.
+
+11. RELATÓRIOS, PONTOS E TESTES
+PONTOS são a métrica PRINCIPAL. Work não considerou contratos, resultado financeiro ou custos.
+MT5: pontuação TEÓRICA (comparável ao Work) e pontuação EXECUTADA (preços efetivos,
+ponderada pelo volume nas parciais); resultado financeiro apenas complementar. Corretagem
+Genial informada como zero; custos B3 separados, sem estimativa inventada. Registrar por
+operação data, contrato, nível, preço teórico/normalizado/solicitado/executado, volume, parciais,
+SL/TP, horários, motivo de saída, slippage, falhas e estados. Consolidar pontos, operações,
+vitórias, derrotas e acerto para S38,2, S50, S61,8, R38,2, R61,8 e total. Aproveitar se útil
+dias_niveis.csv, eventos.csv e operacoes.csv já propostos pelo Work.
+
+Backtest principal: 5 contratos por nível para observar parciais quando simuladas; se não
+ocorrerem naturalmente, teste isolado posterior sem alterar backtest principal. Comparar
+operação por operação com auditoria do Work, explicar diferenças de ticks, ordens, stops,
+execução e horário. Validar em duas abordagens independentes antes de considerar EA pronto
+para operar.
+MODELO D   /   WIN   /   MT5                                     Referência consolidada • 05/11/2026
+
+
+
+
+12. VALIDAÇÕES QUE RESTAM NA ETAPA 6 (NÃO SÃO
+NOVAS DECISÕES DE ESTRATÉGIA)
+- Relógio do servidor Genial x Brasília/B3, abertura real, D1, leilões e sessões excepcionais.
+
+- Fonte e aplicação de horários especiais de sessão, inclusive zeragem quando diferente de 18h.
+
+- WIN$N -> contrato real, rolagem, disponibilidade de ticks e ordens em outro símbolo.
+
+- Restrições de volume/margem, grade de preços, stops/freeze levels, retcodes e SL/TP na Genial.
+
+- Magic Number/instâncias, persistência e identificação inequívoca de ordens.
+
+- CSV histórico no Tester: caminho, formato, data operacional, contrato, leitura e integridade.
+
+- Histórico de ticks reais no período auditado e nos contratos reais; limitações de simulação de
+parciais.
+
+- Testes de falhas, reconexão, cancelamento, execução durante cancelamento, proteção e
+zeragem.
+
+13. INSTRUÇÃO FINAL AO WORK
+Pode iniciar a Etapa 6 e codificar o EA com as decisões acima. Primeiro integrar especificação,
+implementar módulos e logs; compilar, testar poucos pregões, validar regras, rodar período já
+analisado, confrontar operação por operação, testar falhas/parciais e realizar validação
+independente. Não mudar matemática, níveis, stops/alvos, primeiro toque, filtro de abertura,
+zeragem ou fonte B3 ao vivo para acomodar diferenças do Tester. Dúvidas de compatibilidade
+técnica devem ser relatadas com evidências e propostas, não resolvidas por alterações
+silenciosas.
+
+14. ADENDO DEFINITIVO — CALENDÁRIO B3, ROLAGEM E
+OBSERVAÇÃO GENIAL 13–14/10/2026
+STATUS: REGRAS APROVADAS; IDENTIFICAÇÃO/SELEÇÃO DO AJUSTE OBSERVADAS NO MT5;
+EXECUÇÃO DE ORDENS AINDA DEPENDE DE TESTES.
+
+14.1 FONTE OFICIAL DE VENCIMENTOS
+Calendário oficial B3 de vencimentos de contratos financeiros:
+
+https://www.b3.com.br/pt_br/solucoes/plataformas/puma-trading-system/para-participantes-e-trad
+ers/calendario-de-negociacao/vencimentos/calendario-de-vencimentos-de-contratos-financeiros/
+
+Segundo tabela B3 fornecida pelo usuário: WINV26: último dia de negociação (UDN) 14/10/2026;
+liquidação financeira (LF) 15/10/2026; WINZ26: UDN 16/12/2026, LF 17/12/2026. UDN e LF são
+conceitos diferentes; validade do contrato antigo não determina a composição do WIN$N da
+corretora.
+MODELO D   /   WIN   /   MT5                                    Referência consolidada • 05/11/2026
+
+
+
+
+14.2 HIERARQUIA OBRIGATÓRIA E CONDUTA
+- A corretora Genial, por meio da identificação efetiva do contrato real associado ao WIN$N,
+determina QUAL contrato é candidato à operação. O calendário B3 é SEGUNDA VERIFICAÇÃO
+OBRIGATÓRIA para checar validade, vencimento e sequência de contratos, não um gatilho
+autônomo de troca.
+
+- Conferir descrição do WIN$N e símbolo real, presença e ticks do contrato real, data operacional e
+ajuste oficial correspondente. Se houver divergência não resolvida, bloquear NOVAS entradas e
+registrar a causa; não escolher silenciosamente outro contrato.
+
+- O arquivo ajuste_b3.txt já contém ajustes oficiais de múltiplos contratos futuros, inclusive o
+seguinte; selecionar o registro do contrato REAL identificado. A janela de recuperação do coletor
+até 08h55 não impede que o EA LEIA o arquivo válido depois desse horário. Não executar coleta
+extraordinária apenas porque houve rolagem, se os registros necessários já estão disponíveis e
+válidos.
+
+- Antes de enviar ordens, obter abertura REAL e OHLC do pregão anterior COMPLETO do MESMO
+contrato real (inclusive WINZ26 no dia da rolagem). Não usar indiscriminadamente o D1 do WIN$N
+nem misturar OHLC WINV26 com ajuste WINZ26. Bloquear se o histórico do contrato real não
+estiver validado.
+
+- Congelar contrato selecionado na sessão, sem migrar ordens intradiárias. Em caso de mudança
+inesperada ou divergência durante o pregão, bloquear novas entradas; gerenciar ordens/posições
+existentes no contrato de origem e auditar evento. A troca pré-abertura observada em 14/10 não
+prova que nunca haverá troca intradiária em outras datas.
+
+- Durante rolagem, registrar liquidez observada dos contratos antigo/novo como dado de
+auditoria; NÃO introduzir filtro de volume/liquidez que mude a estratégia sem nova autorização.
+
+14.3 EVIDÊNCIAS OBSERVADAS PELO USUÁRIO NO MT5 DA
+GENIAL
+13/10/2026, antes da sessão operacional de 14/10: gráfico WIN$N M15 descrevia 'Por Liquidez
+(WINV26)'; indicador AJUSTE OFICIAL B3 v2.20 exibia contrato WINV26, DataFonte 2026-10-13,
+DataOperacional 2026-10-14, Situação PRÓXIMA SESSÃO, Ajuste 206865, AjusteAnterior 209133,
+Status OK. Gráfico individual WINZ26 já apresentava Ajuste 211293, AjusteAnterior 213483,
+mesmo período operacional e Status OK.
+
+14/10/2026, ANTES da abertura/leilão, captura do usuário: WIN$N já mostrava 'Por Liquidez
+(WINZ26)' e indicador selecionava WINZ26, DataFonte 2026-10-13, DataOperacional 2026-10-14,
+Situação SESSÃO ATUAL, Ajuste 211293, AjusteAnterior 213483, Status OK. Logo, a alteração do
+símbolo contínuo ocorreu em algum momento entre as duas observações; NÃO há evidência do
+instante exato da mudança.
+
+14/10/2026, APÓS abertura: WIN$N H1 permanecia 'Por Liquidez (WINZ26)', indicador do WIN$N e
+gráfico individual WINZ26 mostravam ajuste 211293 e Status OK. O usuário mostrou tooltip do
+candle de 09:00 em AMBOS: Open 210500. No WIN$N, H1 exibiu Open 210500, High 211115, Low
+210090, Close 210400 no instante da captura; no WINZ26 individual, H1 exibiu Open 210500,
+High 211115, Low 209590, Close 209620 no instante de outra captura. As capturas não são
+simultâneas, portanto High/Low/Close distintos não provam divergência de séries. A coincidência
+MODELO D   /   WIN   /   MT5                                    Referência consolidada • 05/11/2026
+
+
+
+comprovada nesta observação é a ABERTURA 210500.
+
+O usuário identificou GAP visual na transição do WIN$N para o contrato novo, enquanto o gráfico
+individual WINZ26 já exibia histórico do próprio contrato antes da rolagem. Essa diferença é
+compatível com a construção das séries e reforça a proibição de misturar OHLC contínuo e
+contrato real. NÃO assumir que o gráfico contínuo seja ajustado retroativamente ou que todo GAP
+seja apenas de rolagem sem validar a construção da série.
+
+14.4 ESCOPO DO QUE FOI E NÃO FOI VALIDADO
+CONFIRMADO POR CAPTURAS: identificação WINV26 antes; identificação WINZ26 antes da
+abertura em 14/10; manutenção de WINZ26 após abertura; seleção de ajuste correspondente;
+Status OK; coincidência de Open 210500 no candle de 09h entre WIN$N e WINZ26.
+
+NÃO COMPROVADO AINDA: instante exato da troca do WIN$N; disponibilidade e integridade de
+todos os ticks/contratos vencidos; igualdade de OHLC D1 anterior; envio e aceitação de ordens
+pelo EA no contrato real a partir de gráfico WIN$N; liquidez efetiva suficiente; comportamento em
+todas as rolagens futuras. Estes são testes da Etapa 6.
+
+14.5 TESTE DE ACEITAÇÃO PARA O WORK
+(a) Capturar descrição WIN$N e símbolo real; (b) confrontar com calendário B3; (c) validar
+ajuste_b3.txt para DataOperacional e contrato real; (d) obter e auditar abertura e OHLC anterior
+do contrato real; (e) confirmar ticks e regras de ordens em símbolo distinto; (f) validar rolagem em
+backtest com histórico disponível; (g) testar bloqueios em caso de divergência/ausência de dados;
+(h) registrar em logs a fonte e momento de cada verificação. Nunca supor que vencimento B3
+determina sozinho a troca de símbolo contínuo.
+
+15. INSTRUÇÃO FINAL ATUALIZADA
+Autorizado iniciar a programação do EA Modelo D no Work com TODOS os requisitos dos itens
+0–14. O adendo de rolagem complementa, não substitui, as regras 9.1, 9.2, 9.7 e 9.9. Manter
+pontos como métrica principal; não alterar decisões sem consulta. Comprovações de identificação
+e ajuste não equivalem a validação de negociação real.
+
+FIM.
+MODELO D   /   WIN   /   MT5                                    Referência consolidada • 05/11/2026
+
+
+
+
+Adendo visual de 15/10
+ATUALIZAÇÃO APROVADA - MODELO D / EA MT5
+
+VISIBILIDADE DO AJUSTE, R200, S200 E FIBONACCI
+
+Data: 15/10/2026
+
+OBJETIVO
+
+Incorporar a apresentação visual aprovada pelo usuário ao projeto do EA. Este documento
+complementa as regras e a atualização de bloqueio geométrico por lado. Não modifica fórmulas,
+stops, alvos ou resultados dos backtests.
+
+1. AJUSTE DIÁRIO: INDICADOR INDEPENDENTE
+O Ajuste permanecerá visível pelo indicador Ajuste Oficial B3 já criado, que lê ajuste_b3.txt no
+MT5.
+
+O bloqueio geométrico não deve ocultar, apagar ou modificar objetos/plots desse indicador
+independente. O EA não precisa criar outra linha de Ajuste para substituir ou duplicar a existente.
+
+A visibilidade do indicador não dispensa as validações obrigatórias de dados, Status, sessão e
+contrato para autorizar entradas. Não apresentar valor inválido ou antigo como autorizado.
+
+2. SUPORTE BLOQUEADO
+Condição matemática: Ajuste <= S200.
+
+- Manter S200 normalmente visível no gráfico.
+
+- Suprimir TODAS as Fibonacci de suporte: S23,6, S38,2, S50 e S61,8, incluindo seus
+rótulos/valores visuais.
+
+- Bloquear compras em S38,2, S50 e S61,8, conforme regra operacional já existente.
+
+- O lado da resistência permanece normalmente visível e elegível, sujeito ao seu próprio bloqueio
+e às demais regras.
+
+- O Ajuste continua sob controle do indicador independente.
+
+3. RESISTÊNCIA BLOQUEADA
+Condição matemática: Ajuste >= R200.
+
+- Manter R200 normalmente visível no gráfico.
+
+- Suprimir TODAS as Fibonacci de resistência: R23,6, R38,2, R50 e R61,8, incluindo seus
+rótulos/valores visuais.
+
+- Bloquear vendas em R38,2 e R61,8, conforme regra operacional já existente.
+
+- O lado do suporte permanece normalmente visível e elegível, sujeito ao seu próprio bloqueio e
+às demais regras.
+
+- O Ajuste continua sob controle do indicador independente.
+MODELO D    /   WIN   /   MT5                                      Referência consolidada • 05/11/2026
+
+
+
+
+4. LADOS SEM BLOQUEIO GEOMÉTRICO
+Se S200 < Ajuste < R200, este controle não oculta as Fibonacci de nenhum lado. Manter sua
+apresentação habitual.
+
+O filtro individual da abertura continua independente. Esta atualização NÃO determina ocultar
+linhas somente porque um nível foi invalidado pela abertura, já operou ou teve sua oportunidade
+consumida.
+
+5. IGUALDADE E REFERÊNCIAS COINCIDENTES
+A igualdade pertence ao bloqueio: Ajuste == S200 bloqueia suporte; Ajuste == R200 bloqueia
+resistência.
+
+As referências R200/S200 devem permanecer identificáveis mesmo se coincidirem com a linha do
+Ajuste. Ajustar somente os rótulos pertencentes ao EA, se necessário para legibilidade, sem
+deslocar preços nem alterar a linha/rótulo do indicador independente.
+
+Se Ajuste == S200 == R200, aplicar os dois bloqueios: ocultar Fibonacci dos dois lados, impedir
+entradas dos dois lados e preservar as referências identificadas.
+
+A igualdade tripla não foi especificamente contada nesta atualização. Não afirmar que ocorreu ou
+que nunca ocorreu no histórico. Pela fórmula, S200 == R200 exige amplitudes nulas, com
+máxima, mínima e fechamento anteriores iguais; a igualdade tripla também exige Ajuste igual à
+abertura atual.
+
+6. ESCOPO E IMPLEMENTAÇÃO
+- Usar as comparações com valores matemáticos originais, antes do arredondamento para
+execução, como na regra de bloqueio já aprovada.
+
+- A camada visual reflete o bloqueio; ocultar linhas não substitui o controle operacional de ordens.
+
+- Preservar o cálculo interno necessário à auditoria e aos logs, mesmo quando as Fibonacci não
+forem desenhadas.
+
+- Evitar objetos antigos: ao inicializar, reconstruir a sessão ou trocar de pregão, sincronizar objetos
+e estados com os dados válidos da sessão.
+
+- Modificar/remover somente objetos pertencentes ao EA. Não interferir no indicador
+independente do Ajuste nem em desenhos de outros sistemas.
+
+- Não criar novo filtro estratégico, alterar o lado oposto ou modificar o histórico.
+
+- Não acrescentar painel/aviso novo como requisito desta atualização; o requisito aprovado é a
+visibilidade descrita acima.
+
+7. TESTES DE ACEITAÇÃO
+A) Ajuste < S200 ou Ajuste == S200: S200 visível, Fibonacci de suporte ocultas e nenhuma
+compra desse lado.
+
+B) Ajuste > R200 ou Ajuste == R200: R200 visível, Fibonacci de resistência ocultas e nenhuma
+venda desse lado.
+MODELO D   /   WIN   /   MT5                                     Referência consolidada • 05/11/2026
+
+
+
+C) Lado oposto sem seu próprio bloqueio: linhas preservadas e regras habituais de operação
+mantidas.
+
+D) S200 < Ajuste < R200: Fibonacci dos dois lados apresentadas normalmente por este controle.
+
+E) Igualdade tripla em teste sintético: duas famílias de Fibonacci ocultas e zero entradas;
+referências identificadas.
+
+F) Reinício e virada de sessão: nenhuma linha residual ou objeto de outro indicador apagado.
+
+G) Indicador Ajuste Oficial B3 permanece independente e sem interferência do EA.
+
+INSTRUÇÃO AO WORK DA ETAPA 6
+
+Incorporar esta apresentação visual ao código e à documentação do EA. Conferir a implementação
+contra o bloqueio geométrico já aprovado. Registrar versão e testes efetivamente realizados. Este
+TXT documenta a decisão aprovada; não comprova implementação, compilação ou
+funcionamento no MT5.
+MODELO D   /   WIN   /   MT5                                   Referência consolidada • 05/11/2026
+
+
+
+
+Ajuste B3: atualização V5
+ATUALIZAÇÃO PARA O CHAT WORK DO EA — COLETOR AJUSTE B3 V5 Fechamento: 18/10/2026,
+após instalação e confirmação operacional.
+
+RESUMO O incidente foi no coletor C# da Etapa 4. Não foi erro de identificação do contrato pelo
+indicador nem motivo para mudar a estratégia/EA. Coletor passou da V4 à V5
+(ETAPA4_COLETOR_V5_20261018). Indicador MT5 continua na versão 2.20.
+
+ERRO IDENTIFICADO TXT válido com fonte 16/10 e operação 19/10 havia sido publicado na sexta.
+Sábado baixou/republicou o mesmo ciclo com os mesmos 12 pares. Domingo a tarefa diária
+iniciou novamente; V4 invalidou o TXT antes de conferir se já existia um resultado OK para o
+mesmo ciclo. As novas buscas deram timeouts e o arquivo passou para
+Status=ERRO/AGUARDANDO_NOVA_TENTATIVA. Indicador corretamente retirou o ajuste; o EA
+deve continuar bloqueando novas entradas com arquivo inválido. Esse comportamento não
+significa que a B3 não tinha publicado o boletim: o mesmo boletim já tinha sido obtido. A causa
+dos timeouts não foi identificada.
+
+RECUPERAÇÃO Comparados logs de sexta e sábado: datas, 12 contratos e valores publicados
+coincidiram. Com coletor parado e backup, o bloco publicado foi restaurado no TXT a partir dos
+logs, sem digitação manual de preços. Usuário confirmou que o ajuste voltou ao MT5: WINZ26
+209314 / 208485, DataOperacional 2026-10-19.
+
+CORREÇÃO V5 Dentro do lock e antes de invalidar o TXT ou acessar a B3, verifica o arquivo local
+completo: Status OK, fonte BVBG.187.01, datas EXATAS do ciclo calculado pelo calendário B3,
+quantidade consistente, tickers WIN, pares de ajustes positivos, chaves únicas e formato válido.
+Não basta uma data operacional futura qualquer. Arquivos de teste são rejeitados em operação.
+Se já válido para o ciclo: encerra sem download e sem reescrita. Se ausente, inválido ou de outro
+ciclo: coleta normal dentro da janela permitida. Assim, sábado/domingo/feriado preservam o
+resultado já obtido, e o início de novo ciclo continua coletando a sessão nova. Agendamento diário
+mantido para permitir recuperação quando o boletim ainda não tiver sido coletado.
+
+NADA A ALTERAR NO CAMINHO OU FORMATO DO EA O arquivo continua:
+%APPDATA%\MetaQuotes\Terminal\Common\Files\ajuste_b3.txt No Windows do usuário:
+C:\Users\jhenn\AppData\Roaming\MetaQuotes\Terminal\Common\Files\ajuste_b3.txt Chaves
+permanecem DataFonte, DataOperacional, Fonte, QuantidadeContratos,
+Contrato.<ticker>.Ajuste, Contrato.<ticker>.AjusteAnterior e Status. Não ler ajuste_b3_teste.txt
+ou arquivos da área C:\B3AjusteCorrecaoV5. Não alterar o indicador 2.20, a lógica de rolagem ou
+as regras de operação do EA por causa desta atualização. Continuar validando
+sessão/contrato/status/dados. Os vários contratos permanecem no mesmo TXT e cada par
+pertence ao seu ticker. Identificação real do WIN$N e validações próprias do EA continuam
+necessárias.
+
+MANTIDO Tarefa B3 Ajuste - Coletor diária 19:40, configuração de bateria e demais condições; EXE
+operacional na mesma pasta publish; corte 08:55; calendário 2026; extração por PricRpt; retries
+15/30/60/120s e depois 30min; publicação segura; indicador e leitura Common\Files. Causa dos 22
+bytes não comprovada.
+
+TESTES E RESULTADO 50 verificações locais aprovadas no Linux e depois no Windows: 10 de
+extração, 12 do fluxo anterior e 28 novas V5, incluindo mesmo ciclo, fim de semana, feriado,
+manhã da sessão, rejeições e coleta ao mudar o ciclo. Os testes são isolados/simulados, não nova
+MODELO D   /   WIN   /   MT5                                   Referência consolidada • 05/11/2026
+
+
+
+certificação de rede/ordens. Instalador fez backup completo, instalou e conferiu fonte/DLL,
+preservando TXT. Backup: C:\B3Ajuste_Backup_Antes_V5_20261018_213045. DLL instalada
+SHA256: 24A9BFFE9700BFEC0CE0C1F8477BA03247D707C16D27AAEAFB67AAE374BA5048
+
+CONFIRMAÇÃO REAL PELA TAREFA: 18/10 às 21:47:29, resultado 0. Log operacional identificou
+fonte 16/10, operação 19/10 e informou: ARQUIVO_EXISTENTE_VALIDO_PRESERVADO
+SEM_DOWNLOAD; SEM_REESCRITA_DO_TXT FIM; CodigoSaida=0; PublicadoOK=False;
+ArquivoExistentePreservado=True Hash do TXT antes/depois idêntico (True). PublicadoOK=False
+não é falha: não foi preciso publicar novamente. Esses campos são do log do coletor, NÃO novas
+chaves obrigatórias no TXT lido pelo EA. A linha HTTP_CONTEXTO_RENOVADO=ENCERRAMENTO
+não indica novo download. Próximo disparo informado: 19/10 às 19:40 para o novo ciclo. Coleta
+real de novo ciclo após V5 ainda não aconteceu nesta confirmação; simulada foi aprovada.
+
+DOCUMENTAÇÃO Guardar o adendo na pasta do projeto:
+02_ETAPA_4_VIGENTE_WORK_2026-10-08\Atualizacoes\V5_2026-10-18 Para o coletor, esse
+adendo prevalece sobre a descrição anterior da V4. Indicador 2.20 anterior continua atual.
+Preservar fontes/histórico para auditoria. Correção do coletor concluída e conferida; nenhuma
+ordem do EA foi testada ou autorizada por este procedimento.
+
