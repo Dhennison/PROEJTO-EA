@@ -1,0 +1,51 @@
+MODELO D DEMO — 2.13.02 — RECIBO ASSINCRONO E PENDENTE RECEM-VINCULADA
+
+RESULTADO NATIVO DA2.13.01
+Em05/11/2026,09:23:05-09:24:01: diario retomado, sessao e dados conferidos,
+fluxo de negocios lido,4pendentes aceitas na DEMO e canceladas pelo EA.
+R38,2 nao foi enviada porque o primeiro toque precedeu a ativacao.
+Nao ha confirmacao de entrada em posicao nesse trecho.
+
+DEFEITO REPRODUZIDO
+O recibo da corretora pode ficar conciliavel apenas no timer seguinte.
+O caminho de transporte ja vinculava o recibo antes de montar a analise
+por origem, mas o ciclo principal do timer ainda montava a analise antes.
+Ao conciliar depois, a nova pendente ficava vinculada a um quadro no qual
+sua origem nao existia e pending_history permanecia false. Isso disparava
+cancelamento e consumo. O teste antes da correcao reproduziu essa falha.
+
+CORRECAO
+No timer, conciliar e publicar recibos comprovados antes de montar as
+trilhas de preco por origem, como ja fazia o transporte. Se a conciliacao
+nao estiver comprovada, marcar o inventario como nao estavel e preservar
+o estado; nao adotar origem por suposicao nem reenviar tentativa incerta.
+A matematica, primeiro toque, stop/alvo, corte18h e a correcao da grade
+0->86400 da2.13.01 permanecem iguais. Transporte continua DEMO Hedge BRL.
+
+NAO REARMAR HOJE
+A atualizacao preserva o mesmo diario, conta, servidor e Instancia.
+Cancelamentos aceitos ja registrados nao sao desfeitos. R38,2 ja tocada
+tambem nao e rearmada. Nao apague arquivos e nao troque Instancia.
+Se as cinco oportunidades constarem consumidas, nao ha novas entradas
+nesses niveis hoje. O proximo pregao cria as oportunidades da nova data.
+
+INSTALAR APENAS SOBRE A2.13.01 JA INSTALADA NA XP
+1. Remova somente EA_ModeloD_Demo do grafico WIN$N. Nao apague o diario.
+2. Extraia o ZIP e copie a pasta MQL5 inteira.
+3. XP -> Arquivo -> Abrir Pasta de Dados. Cole na RAIZ, onde existe MQL5.
+   Aceite mesclar e substituir o unico fonte alterado. Nao cole dentro da
+   MQL5 existente e nao use a pasta de dados da Genial.
+4. F4. Abra MQL5\Experts\ModeloD_Demo\EA_ModeloD_Demo.mq5 e pressione F7.
+5. Envie o resultado da compilacao antes de reanexar.
+6. Depois de compilar, manter mesma XP DEMO, grafico WIN$N, Instancia1,
+   volume1, intervalo2 e ExecutarNaDemo=true, AlgoTrading permitido.
+   Confirmar START;v=2.13.02_DEMO e DIARIO_REABERTO_VALIDADO.
+Versao tecnica no MetaEditor2.132. Nao instalar este patch sobre2.13original;
+a correcao de sessao anterior e dependencia e ja foi compilada pelo usuario.
+
+TESTES
+Regressoes anteriores mais reproducao de recibos com setup966ms apos o
+relogio do snapshot anterior. Verifica preparo duravel, ausencia de
+cancelamento indevido, consumo preservado, origem comprovada e retomada.
+APIs simuladas C++/ASan/UBSan. Nao equivale a compilacao nem execucao MT5.
+Fonte mq5 e o unico arquivo de producao alterado; demais39preservados.

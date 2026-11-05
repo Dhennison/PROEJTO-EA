@@ -1,0 +1,9 @@
+{
+  "base": "v2.13.01",
+  "changed": [
+    "EA_ModeloD_Demo.mq5"
+  ],
+  "unchanged_sources": 39,
+  "same_journal_namespace": "MDD213_DEMO_",
+  "no_rearm": true
+}

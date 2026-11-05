@@ -1,0 +1,5 @@
+78verificacoes PASS; zero falhas; ASan/UBSan.
+Inclui53regressoes2.13+18casosgrade+7casosreciboassincrono/retomada.
+A reproducao antes da correcao falhou por cancelamento indevido (repro_antes).
+API simulada C++, nao e compilacao ou execucao MT5.
+Compilacao e execucao nativa da2.13.02 pendentes.

@@ -1,0 +1,11 @@
+XP DEMO — 05/11/2026 — TRECHO09:23:05 A09:24:01
+2.13.01 carregada e diario reaberto validado; dados diarios conferidos.
+Abertura de negocio nos dados09:00:46.475, Last170000.
+Ate09:24,178722ticks de negocio conferidos no fluxo.
+R38,2 ja tocada09:06:09.846, corretamente nao enviada ao ativar09:23.
+S38,2,S50,S61,8,R61,8:4pendentes enviadas e aceitas(retcode10009),
+seguidas por4pedidos de cancelamento aceitos e conciliados.
+Sem confirmacao de entrada em posicao nesse trecho. Nao e resultado de lucro.
+A revisao final27 tem todas as cinco oportunidades consumidas,
+sem novas intencoes de entrada/protecao/cancelamento/fechamento.
+Nao rearmar nem apagar diario.2.13.02 preserva o estado ja publicado.
