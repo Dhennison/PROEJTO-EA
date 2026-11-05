@@ -1,0 +1,8 @@
+{
+  "pdf_datas": 877,
+  "csv_datas": 877,
+  "mesmas_datas": true,
+  "divergencias_acima_de_meio_centiponto": {},
+  "max_diferenca_exibicao": "0.005",
+  "criterio": "Apenas coluna D; tolerancia de 0,005 ponto para PDF exibido a duas casas. Empates dependem do arredondamento de exibicao; CSV original preservado."
+}

@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "checks": {
+    "1877_operacoes": true,
+    "877_pregoes_unicos": true,
+    "csv_duplicado_nao_concatenado": true,
+    "chave_data_nivel_lado_unica": true,
+    "cinco_niveis": true,
+    "datas_operacoes_elegiveis": true,
+    "ajuste_unico_e_mesmas_877_datas": true,
+    "operacoes_conferem_cada_dia": true,
+    "ajustes_contagem_operacoes_por_dia": true,
+    "operacoes_conferem_cada_mes": true,
+    "operacoes_conferem_cada_ano": true,
+    "soma_124337_758661": true,
+    "linha_total_nao_somada_duas_vezes": true,
+    "curva_diaria_saldo_zero": true,
+    "dd_duas_rotinas_4780_240329": true,
+    "dd_apenas_colunas_D": true,
+    "controles_filtrados_D": true,
+    "contrato_publicacao_anterior_nao_inventados": true,
+    "cutoff_historico_operacoes": true,
+    "cutoff_historico_ajustes": true
+  },
+  "periodo": [
+    "2023-03-01",
+    "2026-09-21"
+  ],
+  "operacoes": 1877,
+  "pregoes": 877,
+  "pregoes_sem_operacao": 112,
+  "pontos": "124337.758661",
+  "dd_diario": "4780.240329",
+  "por_ano": {
+    "2023": {
+      "operacoes": 469,
+      "pontos": "36753.370672"
+    },
+    "2024": {
+      "operacoes": 514,
+      "pontos": "21544.596984"
+    },
+    "2025": {
+      "operacoes": 510,
+      "pontos": "38280.446339"
+    },
+    "2026": {
+      "operacoes": 384,
+      "pontos": "27759.344666"
+    }
+  },
+  "motivos": {
+    "ALVO": 1525,
+    "STOP": 319,
+    "ZERAGEM 18H": 26,
+    "ZERAGEM 17:45": 7
+  },
+  "zeragens_efetivas": {
+    "18:00:00": 26,
+    "17:45:00": 7
+  },
+  "marcadores_ambiguidade": {
+    "": 1845,
+    "SIM": 32
+  },
+  "hashes_csv": {
+    "Ajustes_Diarios_Modelo_D_20230301_20260921.csv": "c4140fbdf725509e4b3fbc8fa5859ae4bdf236e0605ef3d181c7e84b817f52d6",
+    "Apoio_Arquivos_e_exclusoes.csv": "6d38bf07df364316e0a258fc083b7857b7c7bae5234bec30937fcd2f57f3d402",
+    "Apoio_Niveis_2024.csv": "289ebea54c75c72bb329da52fb237ebe236c5e7c12f99896c4377d810d5a3640",
+    "Apoio_Notas.csv": "6b3183f17c51e642cd07857d9cfe0def3878d2e53237afc954e07512397c7dc2",
+    "Apoio_Reaud_cobertura_M5.csv": "cde9ec49e39804b38b2dc9cdca3e86cfe0e2f250241948b49b7949f8bda2d7e8",
+    "Apoio_Reaud_exclusoes.csv": "7cd36b72702bc71a07317789eb7705a6f0ed4c59332b6efc6a8048e1fa7ec894",
+    "Apoio_Reaud_horários_B3.csv": "f1542a222b36c01a29b15e53a0f44e20f0c1385153f70ce339fd1e26b4104014",
+    "Apoio_Reaud_niveis.csv": "16126c1f8f6a333f1cb742646a4c13c25d0e9f81dc365b97c22ac248b8dd3a4b",
+    "Apoio_Reaud_notas.csv": "aeb82827f9480e2eeddb8153da34a092fd94e913bda802a1f1901d2addfb6d0b",
+    "Cobertura_Ajustes_Fonte_Todas_Datas.csv": "d12dfb81b805aa5b7d73553dbbc625fc1d0eb2dab479fc38578fbd80092b8c15",
+    "Indice_Mensal_Ajustes_Modelo_D.csv": "4698db43f82f50f569271100f4015f488f68f2d3775b7efb146fbbad23903ea8",
+    "Inventario_Fontes_Ajuste.csv": "01b340b37d5fd3f6dec5004f9ae55fd2c65ba709f6874dca40dd3e8e337ede62",
+    "Operacoes_Modelo_D_20230301_20260921_ORIGINAL.csv": "da1d65eb594d9543ead6eb121cfae51df07873f809569a021968905a8025e3e7",
+    "Referencia_D_ambiguidades.csv": "8b0d71d8b87e9ab65af2234a0b93eecd3d09394c32d73977bde8350754ee77e8",
+    "Referencia_D_anual.csv": "5033aeddd99d6a70c46735ae6098d2484413db05f25b322bcc8c1b50e2f6831f",
+    "Referencia_D_controles.csv": "269bfc4381b5e461dae8efb4bccb4be6a5eadb35d32f380a31b5d252ba1eda38",
+    "Referencia_D_definicao.csv": "d07aae48b26e7bd82174de0cba644849a9d5d7e6d0478659b0149281e99195a6",
+    "Referencia_D_diário.csv": "a6465aee1dba3946722624c222e3393e4a4645625ece2a198d4bb967b2569081",
+    "Referencia_D_drawdown.csv": "bcd84db7158cb69aeb61ef1c87ae3b6f97319812d574d8254bf54ca5d4edbfbe",
+    "Referencia_D_dupla_rotina.csv": "bb8825cccb5f321f139b13f41cfc291037b31813abced630d53f55bea332f852",
+    "Referencia_D_mensal.csv": "d38f995f71f94f8bbd8f921c657f1b2feff3ff845af5a18d4a888e4328d6a44a",
+    "Referencia_D_operacoes.csv": "da1d65eb594d9543ead6eb121cfae51df07873f809569a021968905a8025e3e7",
+    "Referencia_D_por_nivel.csv": "ca0a0efae59b43cee824903ac064cdf8dae53944a59bb1e59da188d6328188f3"
+  },
+  "limite": "Auditoria da referencia D; nao executa EA nem certifica candles, ticks ou contratos."
+}

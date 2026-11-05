@@ -1,0 +1,173 @@
+﻿GUIA PARA O OUTRO CHAT — TESTE HISTÓRICO DO MODELO D
+Organização, fontes, Ajustes e procedimento de comparação
+Preparado em 05/11/2026
+Período de referência: 01/03/2023 a 21/09/2026
+
+LEIA PRIMEIRO
+O objetivo é testar exclusivamente o MODELO D e comparar o MT5 com o histórico original do Work. Não escolher entre A/B/C/D, não otimizar e não alterar parâmetros para aproximar totais. As outras metodologias aparecem na planilha porque as etapas anteriores foram preservadas. Sua presença NÃO autoriza somar suas operações ao Modelo D.
+Este guia decorre de revisão dos arquivos originais e de conferência da extração. Não foi executado um novo backtest, não foram refeitas operações e não foi certificada a execução do EA.
+
+1. QUAL É A REFERÊNCIA CORRETA
+Arquivo principal: auditoria_fibonacci_win_2023_2026_modelo_d.xlsx.
+É a planilha-mestre original com a inclusão do D. Preservá-la intacta. Não usar como referência final planilhas antigas sem o sufixo modelo_d, nem os primeiros estudos com cobertura parcial de 2023.
+Lista principal: aba EXATA “D operações”. Contém 1.877 operações.
+CSV equivalente: Operacoes_Modelo_D_20230301_20260921_ORIGINAL.csv.
+Esse CSV é extração das células da aba; os preços e pontos não foram recalculados. Usar uma dessas duas listas como referência, não concatená-las, pois são os mesmos registros.
+
+2. ABAS QUE DEVEM SER CONSIDERADAS
+ABAS PRINCIPAIS, EXCLUSIVAMENTE D:
+- D definição: escopo, cinco níveis, stops/alvos, dados e horários utilizados. Ler primeiro.
+- D operações: lista canônica por operação, para comparar data, nível, lado, entrada, stop, alvo, horários, saída, motivo e pontos.
+- D diário: 877 pregões elegíveis, incluindo dias sem operação; pontos, operações, curva e drawdown diário.
+- D mensal: resultado e quantidade por mês; não é histórico de Ajustes.
+- D anual: resultados de 2023, 2024, 2025, 2026 e linha Total; a linha Total não é um quinto ano e não deve ser novamente somada.
+- D por nível: resultados dos cinco níveis.
+- D drawdown: curva e DD do D. Essa aba também contém colunas DD A, DD B e DD C para comparação; usar “Acumulado D”, “Pico D” e “DD D” para o D.
+- D ambiguidades: contagens; em registros de vários níveis, o total do período pode se repetir. Não somar totais repetidos; as operações ambíguas individuais estão em D operações.
+- D dupla rotina: registro original da comparação independente das duas implementações do D.
+- D controles: controles de soma e DD, MAS ESTA ABA CONTÉM A/B/C/D. Filtrar Modelo = D; não usar o total de outro modelo.
+
+ABAS DE COMPARAÇÃO, SOMENTE SE NECESSÁRIAS:
+“D comp. ABCD”, “D comp. anual”, “D comp. níveis”, “D mensal níveis” e “D robustez” podem conter outros modelos. Filtrar Modelo = D antes de utilizar.
+“D controle A S50” e “D efeito S50” explicam a relação estrutural D = A + S50, mas não são fontes para construir uma segunda lista de operações D.
+“D alvos estendidos” é análise de comparação com extensões. NÃO usar como especificação nem como operações do D original.
+Não basta o nome da aba começar com D: conferir colunas e filtro de modelo.
+
+ABAS AUXILIARES DE DADOS/CALENDÁRIO:
+- Reaud horários B3: tabela de horários históricos de 2023 e cutoff aplicado pelo Work.
+- Reaud cobertura M5 e Reaud exclusões: cobertura/exclusões da reauditoria de 2023.
+- Reaud notas: explica reprocessamento de 2023 e preservação das abas anteriores.
+- Reaud níveis: referências diárias de 2023, inclusive Ajuste na coluna G.
+- Níveis 2024: referências diárias de 2024, inclusive Ajuste na coluna G.
+- Arquivos e exclusões e Notas: informações de dados, granularidade e exclusões. Algumas observações de versões antigas foram preservadas; conferir seu escopo e confrontar com D definição, D diário e a reauditoria vigente.
+
+ABAS ANTIGAS QUE NÃO SÃO A LISTA ATUAL DO D:
+“Resumo”, “Operações completas”, “Operações 2024”, “2023 Operações”, “Operações 2023-2026”, “Consolidado 2023-2026” e as abas “Compl.” foram mantidas por histórico. Não importar indiscriminadamente como D, não somar estudos complementares e não voltar ao estudo inicial de 44 pregões de 2023.
+As abas “Reaud operações A/B/C” também não são a lista do D.
+
+3. COMO O PACOTE ESTÁ ORGANIZADO
+A pasta Pacote_Modelo_D_Historico_20261105 contém:
+- Este guia: LEIA_PRIMEIRO_Guia_Historico_Modelo_D.txt.
+- A planilha-mestre original, sem alterações.
+- Operacoes_Modelo_D_20230301_20260921_ORIGINAL.csv: lista canônica do D.
+- Ajustes_Diarios_Modelo_D_20230301_20260921.csv: UM Ajuste por pregão elegível, 877 registros; arquivo principal para consultar Ajustes do período original.
+- Indice_Mensal_Ajustes_Modelo_D.csv: localização por ano/mês, quantidades de datas, primeira/última data elegível e fontes. Não somar ou tirar média de Ajustes para produzir um “Ajuste do mês”. O Ajuste é DIÁRIO.
+- Cobertura_Ajustes_Fonte_Todas_Datas.csv: todas as 885 datas com Ajuste selecionado das fontes no período pedido, com marcador de elegibilidade. Inclui oito datas fora da base elegível D; não autoriza operar nessas datas.
+- Inventario_Fontes_Ajuste.csv: arquivo, aba, coluna, datas reais do conteúdo, quantidade de registros e SHA-256.
+- Referencia_*.csv: extrações das dez abas principais listadas acima. Algumas, como D controles e D drawdown, preservam colunas/linhas comparativas e exigem o filtro indicado neste guia.
+- Apoio_*.csv: extrações das abas auxiliares de calendário, exclusões, notas e níveis de 2023/2024.
+- Fontes_Originais_Ajuste/: quatro arquivos XLSX recebidos do usuário, preservados integralmente.
+Os CSVs usam ponto e vírgula, codificação UTF-8 com BOM e vírgula decimal. Datas extraídas são AAAA-MM-DD. Não alterar preços, arredondar ao tick ou remover casas decimais na importação da referência teórica.
+
+4. ONDE ESTÁ O AJUSTE DE CADA DATA, MÊS E ANO
+Consulta mais simples: abrir Ajustes_Diarios_Modelo_D_20230301_20260921.csv e buscar DataOperacional; filtrar Ano ou Mes. Coluna Ajuste contém o valor que a base original utilizou naquele pregão, não um valor estimado.
+A mesma linha informa ArquivoFonte, AbaFonte, ColunaFonte e PrimeiraLinhaFonte/UltimaLinhaFonte para localizar as observações de origem no XLSX. As linhas são números de linha Excel, incluindo cabeçalho na linha 1.
+A coluna Mes é AAAA-MM e serve apenas para organização; Ano e Mes não são datas de divulgação do boletim.
+
+FONTES A UTILIZAR POR PERÍODO:
+2023: “Ajuste 2023(1).xlsx”, aba Planilha2, coluna F = TESTE_AJUSTE_HISTORICO. Usar somente registros de 2023 e o recorte pedido. Planilha1 desse arquivo contém OUTROS ANOS e não deve ser usada como 2023.
+2024: “ajuste 2024.xlsx”, aba Planilha2, coluna F = TESTE_AJUSTE_HISTORICO.
+2025: “Book(3).xlsx”, aba Planilha1, coluna F = TESTE_AJUSTE_HISTORICO.
+Janeiro/fevereiro de 2026: “Jan e Fev 2026.xlsx”, aba Planilha1, coluna F = TESTE_AJUSTE_HISTORICO. O conteúdo não se limita a esses meses; selecionar apenas janeiro e fevereiro de 2026 para esta fonte.
+Março a 21/09/2026: “Book(3).xlsx”, aba Planilha1, coluna F = TESTE_AJUSTE_HISTORICO.
+
+Os valores se repetem nos registros de um mesmo pregão. Foi conferido que cada data selecionada tem um valor único, sem escolher arbitrariamente entre valores diferentes.
+Não somar registros repetidos e não usar registros de outros meses/anos pelo nome do arquivo.
+
+REGRA DE DATA DO AJUSTE HISTÓRICO:
+As exportações do Profit já fornecem o Ajuste válido para a data operacional. NÃO deslocar automaticamente o valor para o dia seguinte. Isso difere da associação DataFonte -> próxima DataOperacional realizada pelo coletor B3 ao vivo. Não aplicar novamente essa mudança de data ao histórico fornecido aqui.
+
+LIMITAÇÃO IMPORTANTE — CONTRATO REAL:
+As quatro fontes históricas não possuem coluna que identifique o contrato real em cada data. Por isso ContratoReal, DataFontePublicacao e AjusteAnterior estão VAZIOS no CSV. Não inventar esses campos, não atribuir vencimento automaticamente como se fosse informação observada e não calcular AjusteAnterior a partir de uma data anterior sem validar contrato e semântica.
+O arquivo é o histórico do Ajuste utilizado pelo Work, adequado para referência histórica; ainda não é uma tabela certificada de Ajuste por contrato/vencimento para todos os símbolos reais do MT5.
+Antes de alimentar o EA por contrato real, estabelecer e conferir o vínculo data -> série/contrato -> Ajuste, sobretudo nas rolagens. Se necessário usar arquivos B3 ou exportações específicas para confirmar o vínculo. Não substituir silenciosamente o Ajuste do Work para forçar compatibilidade e não afirmar coincidência de OHLC só porque o Ajuste coincidiu.
+Ao vivo permanece a fonte B3 aprovada; CSV do Profit é a fonte histórica de comparação, não substituto da autorização B3 ao vivo.
+
+5. REFERÊNCIA NUMÉRICA A PRESERVAR
+2023: 469 operações | +36.753,370672 pontos.
+2024: 514 operações | +21.544,596984 pontos.
+2025: 510 operações | +38.280,446339 pontos.
+2026 até 21/09: 384 operações | +27.759,344666 pontos.
+TOTAL: 1.877 operações | +124.337,758661 pontos.
+Desfechos: 1.525 ALVO; 319 STOP; 7 zeragens às 17:45; 26 zeragens às 18:00.
+Drawdown máximo da curva DIÁRIA: 4.780,240329 pontos.
+Não confundir quantidade de operações com pregões ou contratos. A pontuação histórica não é multiplicada por cinco porque o teste do EA utilize cinco contratos.
+D foi formulado após observação da mesma amostra; resultado retrospectivo não constitui confirmação fora da amostra (D definição).
+
+6. COMO LER CORRETAMENTE A LISTA DE OPERAÇÕES
+“Data” é a data operacional; usar “Hora entrada” e “Hora saída” para horários intradiários. Nas células da planilha, a data é armazenada com horário 12:00, enquanto o CSV usa somente a data. Esse 12:00 da célula de data NÃO é horário de entrada da operação.
+“Nível” e “Lado” identificam a operação independente. Comparar chave (Data, Nível, Lado), não apenas a posição da linha ou o horário, pois podem existir várias entradas na mesma vela.
+“Linha”/“Entrada”, “Stop” e “Alvo” são preços teóricos; Stop NÃO é a distância em pontos. A distância é 375, 375, 650, 375 ou 450 conforme o nível.
+“Motivo” distingue ALVO, STOP e ZERAGEM. “Zeragem” na aba D operações/CSV é o HORÁRIO PROGRAMADO de cutoff da sessão e aparece também em operações que saíram por alvo/stop; sua presença não significa que a operação foi zerada por horário.
+“Ambíguo” em branco corresponde ao valor ausente do marcador na exportação; não classificar como operação não resolvida. Usar o marcador verdadeiro e Motivo para a análise de ambiguidade. Não reclassificar registros originais.
+Pontos originais por operação foram arredondados a seis casas decimais; a soma é conferida em micropontos. Não recalcular silenciosamente os Pontos a partir de preços exportados com outra precisão.
+A lista segue datas e saídas; não presumir que a ordem das linhas seja a ordem de entrada. Para risco e eventos intradiários, usar os horários e as limitações de granularidade.
+
+7. HORÁRIOS E GRANULARIDADE QUE PRECISAM SER PRESERVADOS NA COMPARAÇÃO
+2023: antes de 13/03, cutoff 18:00; de 13/03/2023 a 03/11/2023 inclusive, cutoff 17:45; a partir de 06/11, cutoff 18:00. Conferir D definição e Reaud horários B3.
+2024–2026: a referência desta planilha usa cutoff 18:00. Sessões especiais de um novo teste precisam ser explicitadas e comparadas, não silenciosamente aplicadas ao histórico antigo como se fossem idênticas.
+Na referência por candles, a posição remanescente sai pelo OPEN do candle do cutoff, sem testar High/Low desse candle e sem novas entradas a partir do cutoff.
+Amostra: 2023 M5; 2024 M5; 2025 M5; janeiro/fevereiro de 2026 M5; março/setembro de 2026 M1. O arquivo principal de 2026 também possui fevereiro, mas o recorte original utilizou a fonte M5 em janeiro/fevereiro e a M1 a partir de março, evitando sobreposição.
+O backtest de referência usa entrada exata na linha, sem arredondamento de tick, custos ou slippage; candle com stop/alvo simultâneos segue STOP FIRST.
+O EA usa ticks, preços executáveis e as decisões aprovadas de ordens/normalização. Comparar camada teórica e executada separadamente e explicar diferenças, não forçar igualdade artificial.
+
+8. MATEMÁTICA E PARÂMETROS DO MODELO D
+PP=(HighD(1)+LowD(1)+CloseD(1))/3.
+ampR=Abs(LowD(1)-PP); ampS=Abs(HighD(1)-PP).
+R200=OpenD(0)+2*ampR; S200=OpenD(0)-2*ampS.
+FibR(p)=Ajuste+(R200-Ajuste)*p; FibS(p)=Ajuste+(S200-Ajuste)*p.
+p = 0,236; 0,382; 0,500; 0,618.
+S38,2: compra; stop 375; alvo meio do percurso até S23,6.
+S50: compra; stop 375; alvo S38,2.
+S61,8: compra; stop 650; alvo S50.
+R38,2: venda; stop 375; alvo R23,6.
+R61,8: venda; stop 450; alvo meio do percurso até R50.
+Sem extensões +25/+125. Uma operação por nível/dia; níveis independentes e posições simultâneas permitidas.
+Filtro de abertura: suporte inválido se Open < nível; resistência inválida se Open > nível. Igualdade de abertura permanece válida nesse filtro.
+Bloqueio geométrico: Ajuste >= R200 bloqueia vendas de resistência; Ajuste <= S200 bloqueia compras de suporte. Outro lado continua sujeito às próprias regras. No histórico esse bloqueio consta da verificação da direção do alvo natural. Comparações teóricas usam valores matemáticos antes de arredondar.
+Visuais aprovados posteriormente não mudam pontos históricos: manter Ajuste pelo indicador independente e S200/R200 visíveis; ocultar Fibonacci do lado bloqueado.
+A resolução das pendências do EA de 14/10 e os complementos de 15/10 continuam valendo para execução; este guia organiza dados/referência e não substitui toda a especificação operacional.
+
+9. PROCEDIMENTO RECOMENDADO NO CHAT DE TESTE
+1) Ler este guia e D definição antes de importar valores.
+2) Conferir 1.877 registros da lista original e a reconciliação de pontos por operação/dia/mês/ano.
+3) Usar as 877 datas de D diário como universo elegível da comparação original, incluindo dias sem operação. Não restringir só a dias com trades, pois isso impede detectar operações extras do EA.
+4) Carregar um Ajuste por DataOperacional do CSV principal, validar disponibilidade e vínculo do contrato, sem antecipação ou deslocamento de datas.
+5) Conferir preços/candles, OHLC anterior e abertura da mesma fonte/contrato. A referência histórica utilizou WIN$N/WINFUT; o EA com contrato real deve documentar diferenças de série e rolagem. Não misturar OHLC de contrato antigo com Ajuste do novo.
+6) Usar ticks reais disponíveis no MT5. Sem ticks reais, não substituir silenciosamente por ticks artificiais nem afirmar cobertura completa.
+7) Testar poucos pregões com logs; depois ampliar ao período. Respeitar limites históricos de horário e dias excluídos.
+8) Confrontar por chave Data/Nível/Lado: operações ausentes/extras, horários, linha, execução, SL/TP, motivos e pontos. Distinguir regra teórica, arredondamento, spread/execução, cronologia intrabar, dados e calendário.
+9) Reconciliar operação -> dia -> mês -> ano -> total; recalcular DD diário contínuo com saldo inicial zero e uma segunda rotina independente. DD por negócio ou intradiário é outra métrica.
+10) Usar D dupla rotina e D controles (filtrado D) como evidência original, sem tomar sua presença como prova de que o EA novo já reproduziu as operações. A nova execução exige conferência própria e relatório de divergências.
+11) Não chamar uma diferença de erro antes de identificar a causa e não ajustar parâmetros para escondê-la. Se dados/contratos não permitirem comparação homogênea, registrar a limitação com as datas afetadas.
+
+10. CONFERÊNCIAS FEITAS NA PREPARAÇÃO DESTE PACOTE
+- Revisão das abas e escopos da planilha original.
+- Extração do CSV de operações conferida célula a célula com D operações; contagem/soma conferidas por leitura XML independente da planilha na extração anterior desta sessão.
+- Fontes de Ajuste lidas e agrupadas por data, com valor único por pregão; segunda leitura independente dos XMLs dos quatro XLSX confirmou todos os mapas de datas/valores das abas utilizadas.
+- 877 datas elegíveis da aba D diário possuem Ajuste na fonte selecionada.
+- Ajustes de 452 contextos de 2023/2024 coincidem com Reaud níveis/Níveis 2024.
+- Em cada uma das 1.877 operações, o Ajuste da fonte foi conferido contra a origem matemática recuperável da entrada e do alvo natural. A maior diferença numérica foi inferior a 0,000000001 ponto, decorrente da precisão de ponto flutuante. Essa conferência de consistência não certifica o vencimento real da série.
+- Soma dos pontos das operações = soma diária = soma mensal = soma anual de referência: 124.337,758661.
+- As fontes originais e a planilha-mestre foram copiadas sem alteração.
+Nenhuma dessas verificações substitui a conferência de ticks, contratos reais e execução do EA.
+
+11. COBERTURA ANUAL DO AJUSTE E DATAS NÃO ELEGÍVEIS
+2023: 208 pregões elegíveis no D; 208 datas com Ajuste nas fontes selecionadas; 469 operações D.
+2024: 244 pregões elegíveis no D; 247 datas com Ajuste nas fontes selecionadas; 514 operações D.
+2025: 247 pregões elegíveis no D; 250 datas com Ajuste nas fontes selecionadas; 510 operações D.
+2026: 178 pregões elegíveis no D; 180 datas com Ajuste nas fontes selecionadas; 384 operações D.
+Datas com Ajuste disponível, mas fora da base elegível D: 2024-01-08, 2024-03-08, 2024-03-11, 2025-01-02, 2025-07-10, 2025-07-11, 2026-07-31, 2026-08-03.
+Não são pregões extras autorizados. Motivo individual deve ser conferido nas abas auxiliares e nos candles originais; este pacote não inventa motivo com base apenas na ausência de operação.
+
+12. CONTEÚDO REAL DOS ARQUIVOS DE AJUSTE (ANTES DO RECORTE)
+Ajuste 2023(1).xlsx | Planilha2 | F: TESTE_AJUSTE_HISTORICO | 2023-01-02 a 2023-12-28 | 248 datas | 2313 registros.
+SHA-256: d1902fda34a78e5a3cac9db89326bd4c11ca1139ac8798913ce4159c872c9063
+ajuste 2024.xlsx | Planilha2 | F: TESTE_AJUSTE_HISTORICO | 2024-01-08 a 2024-12-30 | 247 datas | 2466 registros.
+SHA-256: 8dcdb35cbd8faffbeeea7089bdfa176c0a415dd541955cc0c2f74609b1c3c2cc
+Book(3).xlsx | Planilha1 | F: TESTE_AJUSTE_HISTORICO | 2024-08-13 a 2026-09-23 | 528 datas | 20001 registros.
+SHA-256: 90b189326aaa5f1fb4e82e52217fa0f98e5cf0538c5b4fd561d461beb058303f
+Jan e Fev 2026.xlsx | Planilha1 | F: TESTE_AJUSTE_HISTORICO | 2024-08-15 a 2026-09-25 | 528 datas | 20001 registros.
+SHA-256: c435584d3adb441416f79b68ac73f9968be3f1f1cc1aa7cb9fe632ab7cdaa12a
+
+FIM DO GUIA. Prioridade: Modelo D, dados de origem identificados, parâmetros congelados e comparação explicável operação por operação.

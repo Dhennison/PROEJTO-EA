@@ -1,0 +1,11 @@
+{
+  "relatorio": "evidencias/MDD213_DEMO_21304_140902_180102.txt",
+  "pedidos_neste_relatorio": 2,
+  "pedidos_cancelamento": 1,
+  "deals_distintos": 4,
+  "lucro_demo_brl": "-48.00000000",
+  "revisao_final": 60,
+  "cancelamento_R61_conciliado": true,
+  "posicoes_conhecidas_residual_zero": true,
+  "posicao_aberta_no_corte_exercitada": false
+}
