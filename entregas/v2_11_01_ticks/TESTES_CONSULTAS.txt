@@ -1,0 +1,19 @@
+PASS ALL skips quote-only prefix and preserves duplicate order
+PASS paired diagnostic records actual query counts
+PASS actual opening reader accepts first flagged trade despite empty TRADE
+PASS quote-only carried Last never creates opening
+PASS partial timeout cannot advance opening cursor
+PASS retry of same window succeeds after complete ALL result
+PASS out-of-window ALL rejected
+PASS unordered ALL rejected without sorting
+PASS flagged zero Last rejected
+PASS flagged NaN Last rejected
+PASS complete empty ALL remains empty
+PASS TRADE baseline unaffected by auxiliary ALL error
+PASS baseline preserves TRADE timeout rejection
+PASS selected ALL can succeed independently of TRADE timeout
+PASS comparisons stop at bounded limit while ALL continues
+PASS outside Tester forwards original query unchanged
+PASS imported path excluded from experiment
+PASS non-TRADE queries unchanged
+CHECKS=18;FAILURES=0;SIMULATED_API

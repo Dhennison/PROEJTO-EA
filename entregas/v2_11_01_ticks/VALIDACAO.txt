@@ -1,0 +1,13 @@
+ENTREGA 2.11.01 — VALIDACAO LOCAL
+18 verificacoes do adaptador de consulta e abertura: PASS.
+114 verificacoes anteriores em modo compativel (parametro novo=false): PASS.
+5 verificacoes adicionais do EA integrado (parametro novo=true,
+TRADE vazio e ALL com prefixo de book seguido de negocio valido): PASS.
+Total:137verificacoes, zero falhas; ASan/UBSan habilitados.
+Sao corpos reais adaptados em sintaxe para C++ com API MT5 simulada.
+Nao equivale a compilacao MQL5 nem a execucao nativa no Tester da XP.
+Compilacao nativa e resultado com historico real: PENDENTES.
+40 arquivos fonte preservados byte a byte; 2alterados; 1modulo novo.
+A v2.13 e a v2.11 anteriores nao foram alteradas.
+Configuracao/encadeamento dos includes/ZIP conferidos automaticamente.
+O iniciador Windows foi adaptado do usado na XP, mas nao executado aqui.

@@ -1,0 +1,66 @@
+MODELO D — 2.11.01 — EXPERIMENTO DE CONSULTA DOS TICKS NATIVOS DA XP
+
+OBJETIVO
+Comparar COPY_TICKS_TRADE e COPY_TICKS_ALL nas primeiras 32 consultas
+nativas de negocio, nas mesmas janelas. Usar ALL filtrado por flags de
+negocio no restante da coleta, inclusive abertura e fluxo operacional.
+Nao ha promessa de corrigir a base do Tester. Se ALL tambem nao trouxer
+negocios validos, o EA permanece bloqueado e o relatorio registra a evidencia.
+
+INSTALAR NA XP
+1. Extraia o ZIP. Copie os quatro itens abaixo:
+   MQL5 (pasta inteira)
+   ModeloD_21101_XP_BRL.ini
+   INICIAR_TESTE_21101_XP.cmd
+   INICIAR_TESTE_21101_XP.ps1
+2. No MT5 DA XP, Arquivo -> Abrir Pasta de Dados. Cole nessa RAIZ, onde
+   ja existe MQL5. Nao entre na MQL5 para colar. Aceite mesclar/substituir
+   os arquivos correspondentes. A pasta de Experts e separada das v2.11/v2.13.
+3. F4 no MT5 da XP. Abra e compile com F7:
+   MQL5\Experts\ModeloD_Ensaio_Funcional_21101\EA_ModeloD_Ensaio_Funcional.mq5
+   Identificacao tecnica no MetaEditor: 2.111, entrega 2.11.01.
+4. Envie o resultado da compilacao antes de iniciar.
+
+EXECUTAR, DEPOIS DE COMPILAR
+5. Deixe a pasta de dados aberta. Feche o MetaEditor e o MT5 DA XP.
+   A v2.13 fica parada enquanto o terminal estiver fechado ou no Tester;
+   faca este ensaio fora do pregao e reabra/confira a v2.13 antes do proximo.
+6. Na raiz de dados, execute INICIAR_TESTE_21101_XP.cmd. Enter quando pedido.
+   O iniciador usa o executavel identificado pelo origin.txt da propria XP.
+   Nao usa /portable em uma instalacao normal e nao modifica login/servidor.
+7. Aguarde terminar. Nao precisa copiar milhares de linhas da janela Diario.
+8. Windows+R -> %APPDATA%\MetaQuotes\Terminal\Common\Files
+   Envie o NOVO relatorio MDT21101_TICKS_...txt, referente a esta execucao.
+
+CONFIGURACAO JA PREPARADA
+WINZ26 nativo XP; M5; 30/10/2026 a 31/10/2026; ticks reais; BRL1.000.000;
+1 contrato por nivel; sem otimizacao/nuvem; UsarFonteImportadaNoTester=false;
+UsarConsultaAllFiltradaNoTester=true; ExecutarNoTester=true.
+O parametro novo=false preserva a consulta TRADE como fonte selecionada
+para uma eventual comparacao de controle; nao e necessario repetir agora.
+
+EVIDENCIA E LIMITES
+TICKS21101_COMPARE registra simbolo, janela, quantidade e erro de cada API,
+quantidade filtrada, validade e fonte escolhida. Tambem registra o primeiro
+registro de TRADE/ALL e o primeiro negocio filtrado, com Last/Bid/Ask/flags.
+A comparacao e limitada a32consultas. O fluxo continua em ALL filtrado.
+Cotacoes com Last carregado e apenas flags BID/ASK sao excluidas. Flags
+LAST/VOLUME/BUY/SELL (mascara120) seguem o criterio ja usado na v2.11;
+Last positivo e finito, ordem temporal e janela exata sao obrigatorios.
+Empates de horario e duplicatas sao preservados. Dados parciais com erro
+nao provam janela vazia. Nao usa M1 como substituto de negocio.
+O ajuste historico do pacote NAO e ticks e NAO substitui Common/Files/ajuste_b3.txt.
+
+Nucleo, niveis, primeiro toque, risco, protecoes, conciliacao e corte18h
+permanecem iguais a v2.11 corrigida. Transporte continua SOMENTE Tester,
+com escopo de diario novo por execucao. Nao anexar este EA ao grafico DEMO.
+A v2.13 nao foi modificada. So promover a alteracao apos analisar a evidencia.
+
+VALIDACAO
+18 verificacoes locais C++ com ASan/UBSan do adaptador real e leitor de
+abertura adaptados em sintaxe, usando API simulada. Compilacao MQL5 e
+execucao nativa XP ainda dependem do MetaEditor/MT5 do usuario.
+A regressao de compatibilidade roda com o parametro novo=false apenas
+na traducao C++ e reaproveita as114verificacoes existentes da v2.11.
+Ha ainda5verificacoes do EA integrado com ALL ativo e TRADE vazio, com
+preparo duravel das cinco ordens e sem duplicacao nos timers seguintes.
