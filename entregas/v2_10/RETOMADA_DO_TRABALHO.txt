@@ -775,3 +775,36 @@ de ativar ordensdeDemo. UsarAccountInfo, B3corrente, dados e permissões
 daXPpara concluir homologação. Não pedirsenha nemcriaroutracontaDemo.
 Não repetir cenários históricos/sintéticosjáaprovados. Nenhumaordemreal
 autorizada, nenhumaAPIdecorrerora foi usada no ambienteCloud.
+
+RETOMADA NOTURNA — XP: INDICADOR, V2.11 NATIVA, DEPOIS V2.13
+Usuário definiu a ordem: instalar/configurar indicador na XP, testarv2.11
+com histórico NATIVO da XP, analisar resultado, sóentão deixara2.13
+instalada naDEMOpara o próximo pregão. XPjáinstalada/DEMO/Hedge confirmado.
+Indicador operacional confirmado no histórico04: Ajuste_Oficial_B3_v2_20.mq5
+e.ex5, instalado no MT5 original Genial. Binário/fonte do indicador não
+estão neste workspace; não reconstruir outro indicador para substituir.
+Orientar copiar SOMENTE esses dois arquivos: Genial(ondejáfunciona)
+Arquivo>AbrirPastaDados>MQL5/Indicators; copiar. XPArquivo>AbrirPastaDados>
+MQL5/Indicators; colar DENTROIndicators. F4naXP,abrirMQ5/F7,enviarcompilação.
+DepoisNavegador/Indicadores/Atualizar, gráficoWIN$N/configuraçãov2.20e
+verificarstatus/data/contrato. Common/Files/ajuste_b3.txtcompartilhado por
+mesmousuárioWindows; não copiar ajusteantigo nem reinstalarcoletor.
+Se indicadorbloqueado por ciclo/data, isso não impede Testerhistórico.
+Pacote2.11XPpreparado emv2_11_funcional/teste_xp_nativo/
+ModeloD_v2_11_XP_Nativo.zip. Fontes doEAeB3 byteidênticos à2.11corrigida.
+Única diferença são preset/INI/launcher:WINZ26real,fonteimportadafalse,
+30/10-31/10/2026,M5,ticksreais,BRL1milhão,1contrato,semvisual/otimização.
+SemCSV/importações/símboloscustom/referênciaGenial: quandoimport=false,
+MDFonteAtiva211false e referência congelada não é consultada.
+LauncherXP usa origin.txt da pasta de dados para achar terminal64.exe;
+instalação normal SEM/portable, sóportable seEXEestiver naprópria raiz.
+Não reutilizarCMDdoGenialisolado/portable naXP. ArquivosMQL5+INI+CMD+PS1
+coladosnaRAIZdaXP(menuArquivo>AbrirPastaDados); compilarEA naXP, fechar
+XP/MetaEditor antesCMD. ConfiguradorTesterinicia automático. Relatório
+MDT211_FUNC_...Common/Files. Mercadofechado permite essehistórico; não
+permite comprovar execução2.13emtemporeal. Sem prometer dadosXPresolverem
+causaGenial nem resultado145pontosexato. Validar abertura/flags/M1/deals.
+Após análise desse teste, usar pacote2.13c077570, modoobservaçãofalse
+antesativarDEMO. Não voltar aos cenáriosimportados/sintéticos aprovados.
+Config/preset/identidadefontes/arquivoB3/ZIPconferidos. LauncherWindows e
+rodadaXPnativos ainda pendentes. Nenhuma mudança no código doEA.

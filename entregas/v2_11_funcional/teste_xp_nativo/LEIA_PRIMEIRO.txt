@@ -1,0 +1,49 @@
+V2.11 CORRIGIDA — TESTE HISTÓRICO COM OS DADOS NATIVOS DA XP
+
+Só realizar esta etapa depois de concluir a instalação do indicador, na
+ordem pedida pelo usuário. O indicador não é requisito técnico deste teste.
+
+1. No MT5 daXP: Arquivo > AbrirPastaDeDados.
+2. Extraia esteZIP e copie estes QUATRO itens para a RAIZ aberta:
+   MQL5 (pasta inteira)
+   ModeloD_XP_Nativo_BRL.ini
+   INICIAR_TESTE_XP_NATIVO.cmd
+   INICIAR_TESTE_XP_NATIVO.ps1
+   Aceite mesclar/substituir arquivos do pacote. Não cole MQL5 dentro deMQL5.
+3. F4 noMT5daXP, abrir e compilar F7:
+   MQL5\Experts\ModeloD_Ensaio_Funcional\EA_ModeloD_Ensaio_Funcional.mq5
+   Enviar resultado antes de iniciar. Fontes são byte a byte iguais às da
+   v2.11 corrigida, já compilada e testada pelo usuário no cenário importado.
+4. Depois de compilar, fechar MetaEditor e MT5 daXP. Não anexar EA em gráfico.
+5. Abrir INICIAR_TESTE_XP_NATIVO.cmd e pressionarEnter. O comando usa origin.txt
+   para localizar o executável da instalação que corresponde à pasta de dados.
+   Em instalação normal NÃO força /portable; isso evita trocar a pasta de dados.
+   Não pede senha, não troca servidor, não copia credenciais, não altera atalhos.
+   Se o executável não for identificado, para e mostra a mensagem.
+6. Aguarde terminar e envie o TXT completo MDT211_FUNC_...ModeloD_Integrado...
+   em Common\Files. Enviar também o Diário se houver falha antes do relatório.
+
+CONFIGURAÇÃO
+AtivoWINZ26 (REAL DA CORRETORA), M5, 30/10/2026 a31/10/2026,
+modelagemCadaTickBaseadoEmTickReal, depósitoSIMULADO1000000BRL,1:100,
+sem atraso/otimização/forward/visual, agente local,1contrato por nível.
+UsarFonteImportadaNoTester=false. Não usaMD_PESQ_..., CSVimportado nem
+referência congelada da Genial. Não é o cenário sintético de corte2.12.
+O ajuste histórico correto está em MQL5/Files/ModeloD_Tester_20261030_ajuste_b3.txt
+para o Tester. Não sobrescreve Common/Files/ajuste_b3.txt do coletor.
+Rodar o Testador com mercado fechado é permitido. A disponibilidade e a
+qualidade do histórico de30/10 na XP ainda precisam ser verificadas.
+
+ANÁLISE
+Conferir origem/flags dos ticks, abertura, coberturaM1, níveis, aceitação
+antes do primeiro toque, execuções/SLTP e cancelamentos no corte. Não basta
+mensagemTestPassed. Comparar com a execução importada anterior sem prometer
+mesmos preços de fill ou os mesmos145pontos. Dados/fills podem diferir.
+A versão continua exclusiva do Tester, mesmo com login demo ou real.
+A v2.13 é outra etapa, para o gráfico da contaDEMO com dados atuais.
+
+VALIDAÇÃO LOCAL
+Fontes e arquivo B3 comparados byte a byte com o pacote v2.11 corrigido.
+INI/preset conferidos: WINZ26, fonteimportadafalse, datas eBRL.
+Zip com integridade e arquivos conferidos. Nenhuma alteração de código doEA.
+LauncherWindows e teste nativo naXP ainda pendentes; não executados noCloud.
