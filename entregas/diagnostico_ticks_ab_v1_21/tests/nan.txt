@@ -1,0 +1,3 @@
+PASS nonfinite Last classified without invalid numeric conversion
+
+EXIT_STATUS=0

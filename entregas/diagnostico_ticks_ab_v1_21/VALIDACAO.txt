@@ -1,0 +1,5 @@
+44 verificacoes locais PASS, zero falhas (43funcionais +1NaN).
+ASan/UBSan/float-cast-overflow habilitados.
+API simulada, nao e compilacao/execucao MT5.
+Inclui escritor CSV e falhas de arquivo simuladas.
+Detalhes em tests/normal.txt e tests/nan.txt.

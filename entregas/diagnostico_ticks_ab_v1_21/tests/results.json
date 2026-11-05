@@ -1,0 +1,16 @@
+{
+  "source_sha256": "7e707c7d416fe7de3d2c54b390a17bbb3c1fe2c16fd05ffdab23136a9a328807",
+  "scope": "actual Collect/SameRes/Mix/Q bodies, C++ syntax adaptation, simulated MT5 APIs",
+  "runs": {
+    "normal": {
+      "exit_status": 0,
+      "stdout": "PASS quote-only stream remains distinct from trades\nPASS valid flags+Last recognized\nPASS carried Last and volume not counted as flagged trades\nPASS flagged zero Last counted separately\nPASS identical complete responses stable\nPASS changed quote-only Bid changes full signature\nPASS partial timeout invalidates response\nPASS count/array mismatch explicitly invalidated\nPASS negative API return invalidated\nPASS tick before requested window rejected\nPASS tick at exclusive end rejected\nPASS time reversal rejected\nPASS same-millisecond duplicates preserved\nPASS complete empty response structurally valid\nPASS invalid responses never stable even if repeated\nPASS per-minute assignment follows requested origin\nPASS different fractional volume_real must not be called identical\nPASS CSV buffer must contain exactly final successful response size\nPASS final empty ALL must clear old CSV records\nPASS valid initialization selects symbol and starts timer\nPASS invalid window rejected at initialization\nPASS insufficient attempts rejected\nPASS symbol selection failure rejected\nPASS timer initialization failure rejected\nPASS timer does not query an unfinished window\nPASS first valid response cannot declare stability\nPASS second consecutive identical valid response finishes stable\nPASS finished run cannot query again\nPASS timeout cannot establish stable baseline\nPASS first success after timeout is a new baseline\nPASS recovery requires two consecutive successful reads\nPASS repeated malformed array reaches limit without false stable\nPASS snapshot allocation failure invalidates response\nPASS infinite Bid rejected before hashing\nPASS NaN Ask rejected before hashing\nPASS infinite volume_real rejected before hashing\nPASS CSV emits header and exactly ALL.n data rows\nPASS empty final CSV emits header only\nPASS CSV refuses mismatched snapshot before opening file\nPASS CSV header write failure reported\nPASS CSV row write failure reported\nPASS CSV flush failure reported\nPASS CSV cannot overwrite when all candidate filenames exist\nCHECKS=43;FAILURES=0\n",
+      "stderr": ""
+    },
+    "nan": {
+      "exit_status": 0,
+      "stdout": "PASS nonfinite Last classified without invalid numeric conversion\n",
+      "stderr": ""
+    }
+  }
+}

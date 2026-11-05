@@ -1,0 +1,11 @@
+{
+  "DiagTicksAB.mq5": "7e707c7d416fe7de3d2c54b390a17bbb3c1fe2c16fd05ffdab23136a9a328807",
+  "LEIA_PRIMEIRO.txt": "65c23f400a0a12f00e4694e4fa560650d9573e2d2fff04bbabda832aefc0b784",
+  "VALIDACAO.txt": "7ea954c6c918b029473829f1b03534936ad902886beee0933830e793ca5684e7",
+  "tests/compilation.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/harness.cpp": "e3c8d35b51bc9f0c145a444512d8c5fcdb12ccd8a4f5c966fbdfc17ec47bed30",
+  "tests/nan.txt": "67584e86b1d9e610fc9556b5b311b218a6bf1750b4968ce8e7eccb9122c5d271",
+  "tests/normal.txt": "71e162202af888bcdc6eafe384f06c46fbacc4a04c297a8177430775cf5ff317",
+  "tests/results.json": "3a27bbe9f1ae9c3fb9a42de86eb864f94a1a4f9959bb61f40bd486278e701af0",
+  "tests/run_tests.py": "1ea084303965aade03008e49d7c6a58687a2ae43eb1009af4640090d79e6e5d7"
+}

@@ -1,0 +1,59 @@
+DIAG TICKS A/B — v1.21 — DIAGNOSTICO SEPARADO DO EA MODELO D
+
+INSTALAR E COMPILAR NA XP
+1. No MT5 da XP: Arquivo -> Abrir Pasta de Dados.
+2. Entre em MQL5 -> Experts e crie a pasta ModeloD_Diagnostico_Ticks.
+3. Cole somente DiagTicksAB.mq5 dentro dessa nova pasta.
+   Caminho relativo: MQL5\Experts\ModeloD_Diagnostico_Ticks\DiagTicksAB.mq5
+4. F4 no MT5 da XP. No MetaEditor abra esse arquivo e pressione F7.
+5. Envie o resultado da compilacao. Compilacao MQL5 ainda pendente.
+
+COLETA A — TERMINAL (DEPOIS DE COMPILAR)
+Abra OUTRO grafico WINZ26 na MESMA XP DEMO. Nao substitua EA_ModeloD_Demo
+no WIN$N, nao remova a v2.13 nem altere sua Instancia/parametros.
+Anexe DiagTicksAB nesse novo grafico com:
+InpSymbol=WINZ26
+InpFrom=2026.10.30 09:00:00
+InpTo=2026.10.30 09:10:00
+InpMaxAttempts=10
+InpTag=XP_A
+InpDumpCsv=true
+A janela e HISTORICA: nao precisa esperar 09h10 do pregao atual.
+O diagnostico coleta, grava e remove apenas a si mesmo do seu grafico.
+Nao envia ordens e nao exige liberar negociacao algoritmica para coletar.
+
+COLETA B — TESTER
+Sem fechar o MT5 nem remover a v2.13, abra Ctrl+R.
+Selecione ModeloD_Diagnostico_Ticks\DiagTicksAB.ex5.
+Ativo WINZ26; M1; 2026.10.30 a 2026.10.31;
+Cada tick baseado em um tick real; otimizacao desativada.
+Entradas iguais a coleta A; altere somente InpTag=XP_B.
+InpDumpCsv=true. Inicie e aguarde concluir.
+Nao use os iniciadores .cmd da v2.11, pois exigem fechar o terminal.
+
+RELATORIOS
+Windows+R -> %APPDATA%\MetaQuotes\Terminal\Common\Files
+Envie os novos arquivos DiagTicksAB_TERMINAL_...txt e
+DiagTicksAB_TESTER_...txt, com seus respectivos _ALL.csv.
+Preserve tambem as mensagens iniciais/finais do Diario do Tester sobre
+uso/descarte de ticks reais ou geracao de ticks.
+O diagnostico e independente da v2.13 e das bibliotecas do Modelo D.
+Nao apaga cache, nao muda simbolos historicos, nao modifica ajuste_b3.txt.
+
+CORRECOES
+- ESTAVEL exige snapshots validos iguais CAMPO A CAMPO, inclusive ordem,
+  repeticoes, tempo, bid/ask/last, volume, volume_real e flags.
+- Hash e somente resumo, sem quantizacao em centavos; numeros em notacao
+  cientifica com16casas na mantissa (17digitos significativos).
+- CSV usa a mesma precisao; buffer redimensionado e copia conferida,
+  inclusive quando a leitura final esta vazia.
+- Campos nao finitos sao identificados antes de gerar hash ou converter.
+
+TESTES LOCAIS
+44 verificacoes passaram (43 funcionais +1caso separado com NaN), com
+ASan/UBSan/float-cast-overflow. Corpos reais de coleta, comparacao,
+inicializacao e timer adaptados em sintaxe para C++ com APIs simuladas.
+Nao equivale a compilacao MetaEditor nem a coleta nativa XP.
+O escritor CSV foi testado com APIs de arquivo simuladas, incluindo
+quantidade de linhas e falhas de escrita/flush. A formatacao e a gravacao
+nativas no Windows ainda dependem do MT5.

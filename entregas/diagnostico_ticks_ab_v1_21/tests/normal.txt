@@ -1,0 +1,46 @@
+PASS quote-only stream remains distinct from trades
+PASS valid flags+Last recognized
+PASS carried Last and volume not counted as flagged trades
+PASS flagged zero Last counted separately
+PASS identical complete responses stable
+PASS changed quote-only Bid changes full signature
+PASS partial timeout invalidates response
+PASS count/array mismatch explicitly invalidated
+PASS negative API return invalidated
+PASS tick before requested window rejected
+PASS tick at exclusive end rejected
+PASS time reversal rejected
+PASS same-millisecond duplicates preserved
+PASS complete empty response structurally valid
+PASS invalid responses never stable even if repeated
+PASS per-minute assignment follows requested origin
+PASS different fractional volume_real must not be called identical
+PASS CSV buffer must contain exactly final successful response size
+PASS final empty ALL must clear old CSV records
+PASS valid initialization selects symbol and starts timer
+PASS invalid window rejected at initialization
+PASS insufficient attempts rejected
+PASS symbol selection failure rejected
+PASS timer initialization failure rejected
+PASS timer does not query an unfinished window
+PASS first valid response cannot declare stability
+PASS second consecutive identical valid response finishes stable
+PASS finished run cannot query again
+PASS timeout cannot establish stable baseline
+PASS first success after timeout is a new baseline
+PASS recovery requires two consecutive successful reads
+PASS repeated malformed array reaches limit without false stable
+PASS snapshot allocation failure invalidates response
+PASS infinite Bid rejected before hashing
+PASS NaN Ask rejected before hashing
+PASS infinite volume_real rejected before hashing
+PASS CSV emits header and exactly ALL.n data rows
+PASS empty final CSV emits header only
+PASS CSV refuses mismatched snapshot before opening file
+PASS CSV header write failure reported
+PASS CSV row write failure reported
+PASS CSV flush failure reported
+PASS CSV cannot overwrite when all candidate filenames exist
+CHECKS=43;FAILURES=0
+
+EXIT_STATUS=0
