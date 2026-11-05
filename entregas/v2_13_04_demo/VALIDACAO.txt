@@ -1,0 +1,30 @@
+v2.13.04 — 05/11/2026
+
+Reproducao anterior: 117 verificacoes, 1 falha esperada: recibos estaveis
+com historico parcial provocavam cancelamento/consumo da pendente sem toque.
+Registro: repro_antes/TESTES_LOCAIS.txt.
+
+Versao corrigida: 151 verificacoes, zero falhas, ASan/UBSan ativos.
+115 regressoes anteriores + 36 verificacoes adicionais.
+Inclui leitura real da funcao limitada por blocos: parcial, timeout e
+conclusao; conservacao da pendente; invalidacao comprovada; precedencia do
+toque; corte; migracao auditada do incidente R61; backup; ausencia de toque;
+recibos sem execucao; preservacao de duas operacoes S50/S61,8 encerradas;
+replay de ambas as migracoes; comentarios distintos; reinicio idempotente.
+A fixture usa os precos nativos de 05/11, mas suas APIs e recibos sao
+simulados. Nenhuma ordem foi enviada a uma conta MT5 por estes testes.
+
+Comando na raiz do repositorio:
+python entregas/v2_13_04_demo/tests/run_demo.py --sanitize --report-dir entregas/v2_13_04_demo/validacao
+O runner usa pilha de 64 MiB para as structs de capacidade fixa e fixtures
+aninhadas no executavel C++. ASan e UBSan nao foram desativados.
+Compilacao e execucao MQL5 nativas da v2.13.04 ainda pendentes no MT5.
+
+Escopo da alteracao de fontes em relacao a v2.13.03:
+5 alterados, 1 adicionado, 36 identicos.
+EA_ModeloD_Demo.mq5
+ModeloD_Operational.mqh
+ModeloD_OperationalCodec.mqh
+ModeloD_OperationalFile.mqh
+ModeloD_OperationalTerminal.mqh
+ModeloD_Recuperacao21304.mqh

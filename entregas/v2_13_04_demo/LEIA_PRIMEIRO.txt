@@ -1,0 +1,53 @@
+MODELO D DEMO — v2.13.04 — RETOMADA SEM CANCELAMENTO POR HISTORICO INCOMPLETO
+
+CORRECAO
+Uma pendente aceita nao sera cancelada ou consumida somente porque a leitura
+dos negocios ainda esta reconstruindo o periodo apos suspensao/hibernacao.
+A falta de historico nao prova invalidacao. Cancelamentos por limite teorico
+comprovado, aceitacao sem precedencia estrita ao toque e corte das 18h seguem
+ativos. Os gates de dados para novas entradas continuam exigidos.
+Inclui as correcoes anteriores da grade XP, recibos e recuperacao 2.13.03.
+Mantem abertura pelo primeiro negocio valido A PARTIR das 09h, stops, alvos
+e arredondamento. Nenhuma cotacao Ask/Bid substitui Last de negocio.
+
+RECUPERACAO DO INCIDENTE DE HOJE
+A recuperacao adicional e limitada a R61,8, ordem 2585252290, XP DEMO,
+conta 52237148, Instancia 1, WINZ26, data 05/11/2026. Exige transicao
+indevida comprovada no diario, ordem cancelada comprovada na corretora,
+nenhuma execucao vinculada, nenhum toque ate agora, historico atual completo,
+relogio e inventario validos, e horario anterior ao corte. Nao ha rearmamento
+generico de ordens consumidas. Se R61,8 tiver sido tocada enquanto voce
+prepara a atualizacao, fica bloqueada. O novo envio exige revalidacao.
+S50 e S61,8 ja encerradas e os toques reais de S38,2/R38,2 sao preservados.
+
+DIARIO
+NAO APAGUE arquivos Common/Files. NAO TROQUE a Instancia.
+Antes da correcao, e salva e conferida uma copia .ledger.pre21304.
+Todas as revisoes antigas permanecem identicas como prefixo; a recuperacao
+acrescenta REPAIR21304_RESUME_2585252290. A geracao 4 e reservada para a
+migracao; eventual novo pedido usa comentario A5, sem reutilizar A1/A3.
+O replay aceita as migracoes 2.13.03 e 2.13.04. Nao volte a versoes antigas
+nem restaure backup para apagar consumos ou recibos.
+
+INSTALAR NA XP DEMO
+1. Remova somente o EA_ModeloD_Demo do grafico WIN$N. Mantenha o indicador.
+2. Extraia o ZIP. Copie a pasta MQL5 inteira que esta dentro dele.
+3. No MT5 da XP: Arquivo -> Abrir Pasta de Dados.
+4. Cole nessa RAIZ, onde ja existe a pasta MQL5. Aceite mesclar/substituir
+   os arquivos do pacote. Nao cole dentro da MQL5 existente.
+5. F4. Abra MQL5\Experts\ModeloD_Demo\EA_ModeloD_Demo.mq5 e pressione F7.
+6. Envie o resultado da compilacao antes de reanexar.
+
+DEPOIS DA COMPILACAO NATIVA CONFERIDA
+Mesma XP DEMO Hedge BRL, grafico WIN$N, Instancia=1,
+VolumePorNivel=1, IntervaloSegundos=2, ExecutarNaDemo=true.
+Permissao de negociacao algoritmica e AlgoTrading ativos.
+Confirmar START;v=2.13.04_DEMO e DIARIO_REABERTO_VALIDADO.
+Aguarde reconstrucao. Envie o novo MDD213_DEMO_...txt para verificar
+REPAIR21304_CONFIRMADO ou REPAIR21304_BLOQUEADO e os recibos.
+O notebook precisa estar acordado, conectado e com MT5 ativo para o EA agir.
+
+VALIDACAO
+151 verificacoes locais passaram com ASan/UBSan e APIs MT5 simuladas.
+Nao substituem compilacao MQL5 nem teste de execucao na XP.
+Detalhes em VALIDACAO.txt e validacao/TESTES_LOCAIS.txt.
