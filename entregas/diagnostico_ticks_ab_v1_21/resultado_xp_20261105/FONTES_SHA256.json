@@ -1,0 +1,27 @@
+{
+  "A_relatorio": {
+    "filename": "DiagTicksAB_TERMINAL_XPMT5-DEMO_WINZ26_2026_10_30_09_00_2026_10_30_09_10_XP_A_492165406.txt",
+    "bytes": 2370,
+    "sha256": "b1284fb26d40d5609678f755729f2050de689be17a5673c00fecfcdf68fbf389"
+  },
+  "A_csv": {
+    "filename": "DiagTicksAB_TERMINAL_XPMT5-DEMO_WINZ26_2026_10_30_09_00_2026_10_30_09_10_XP_A_492165406_ALL.csv",
+    "bytes": 12330625,
+    "sha256": "c73c6ca12d909cd4688a865ce775be775bfa5f8e3b5acba76144e96f554c3282"
+  },
+  "B_relatorio": {
+    "filename": "DiagTicksAB_TESTER_XPMT5-DEMO_WINZ26_2026_10_30_09_00_2026_10_30_09_10_XP_B_502759406.txt",
+    "bytes": 1928,
+    "sha256": "c632d9814e5854457207fd6ab936c5570c5a15851a11f9651f522e8a585c1d84"
+  },
+  "B_csv": {
+    "filename": "DiagTicksAB_TESTER_XPMT5-DEMO_WINZ26_2026_10_30_09_00_2026_10_30_09_10_XP_B_502759406_ALL.csv",
+    "bytes": 4059429,
+    "sha256": "bcbeb9e46b260d58bd869337c5ed0e6e30e0c253d0d14167ce444376509e132d"
+  },
+  "B_diario": {
+    "filename": "Texto colado.txt",
+    "bytes": 8637,
+    "sha256": "58bad3c61686c9c26cc14e47f1813d5b7eb19cf8aee957fa43f432280e81608d"
+  }
+}

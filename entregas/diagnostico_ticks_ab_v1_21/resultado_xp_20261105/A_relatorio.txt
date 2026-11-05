@@ -1,0 +1,25 @@
+=== DiagTicksAB v1.21 | ambiente=TERMINAL | tag=XP_A
+simbolo_consultado=WINZ26 | simbolo_do_grafico=WINZ26 | periodo=PERIOD_M5
+janela=2026.10.30 09:00:00 -> 2026.10.30 09:10:00 (hora do servidor)
+servidor=XPMT5-DEMO | empresa=XP Investimentos CCTVM S/A | build=6295
+tester=0 visual=0 otimizacao=0 conectado=1 simbolo_custom=0 TimeCurrent=2026.11.05 08:59:09
+STATUS=ESTAVEL (duas leituras consecutivas validas, comparacao exata campo a campo)
+[ALL] valido=1 | n=108005 err=0 | tf_n=105342 | ea_n(last>0 finito)=105342 | tf_last_invalido=0 | carregado_sem_flag=2662 | last>0=108004 | volume>0=108004 | primeiro_neg_msc=1793350843103
+   hash_completo=10794337223706908855 | hash_negocios=3893595084199777626
+   flags: 1026 x1334; 1336 x48391; 1030 x1; 1028 x1328; 1368 x49205; 1400 x7746;
+   neg_por_minuto(tf): 8660 20683 15263 9445 8792 12129 6838 6168 9340 8024
+   primeiro_tick: msc=1793350810702 bid=188645.0 ask=154350.0 last=0.0 flags=1026 | ultimo_msc=1793351399988
+[TRADE] valido=1 | n=105342 err=0 | tf_n=105342 | ea_n(last>0 finito)=105342 | tf_last_invalido=0 | carregado_sem_flag=0 | last>0=105342 | volume>0=105342 | primeiro_neg_msc=1793350843103
+   hash_completo=9604679868938950912 | hash_negocios=3893595084199777626
+   flags: 1336 x48391; 1368 x49205; 1400 x7746;
+   neg_por_minuto(tf): 8660 20683 15263 9445 8792 12129 6838 6168 9340 8024
+   primeiro_tick: msc=1793350843103 bid=188645.0 ask=154350.0 last=170910.0 flags=1336 | ultimo_msc=1793351399988
+[INFO] valido=1 | n=2663 err=0 | tf_n=0 | ea_n(last>0 finito)=0 | tf_last_invalido=0 | carregado_sem_flag=2662 | last>0=2662 | volume>0=2662 | primeiro_neg_msc=0
+   hash_completo=15208109116929933648 | hash_negocios=1469598103934665603
+   flags: 1026 x1334; 1030 x1; 1028 x1328;
+   neg_por_minuto(tf): 0 0 0 0 0 0 0 0 0 0
+   primeiro_tick: msc=1793350810702 bid=188645.0 ask=154350.0 last=0.0 flags=1026 | ultimo_msc=1793351399894
+CRUZAMENTO: ALL.tf_n=105342 | ALL.ea_n=105342 | TRADE.n=105342 | TRADE.tf_n=105342 | hash_negocios ALL==TRADE: sim
+--- historico das tentativas ---
+tentativa 1 | validos ALL=1 TRADE=1 INFO=1 | ALL n=108005 err=0 tf=105342 ea=105342 | TRADE n=105342 err=0 | INFO n=2663 err=0 | igual_a_anterior=0
+tentativa 2 | validos ALL=1 TRADE=1 INFO=1 | ALL n=108005 err=0 tf=105342 ea=105342 | TRADE n=105342 err=0 | INFO n=2663 err=0 | igual_a_anterior=1
