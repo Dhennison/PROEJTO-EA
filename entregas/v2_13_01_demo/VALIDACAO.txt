@@ -1,0 +1,3 @@
+71checks PASS; zero falhas; ASan/UBSan. APIs simuladas, nao execucao MT5.
+Compilacao e execucao nativa pendentes.
+Detalhes em validacao/TESTES_LOCAIS.txt.

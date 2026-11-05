@@ -1,0 +1,53 @@
+MODELO D DEMO — 2.13.01 — CORRECAO DA GRADE GENERICA DA XP
+
+CAUSA COMPROVADA
+Em05/11/2026 a XP informou uma unica SymbolInfoSessionTrade 0->86400.
+A2.13 exigia inicio exatamente09h e tambem reduzia86400 a0 via modulo.
+Esse cadastro representa disponibilidade generica do simulador, nao horario
+oficial da B3. Nao certificamos que a bolsa negocie24h.
+
+CORRECAO
+Apenas para conta DEMO Hedge BRL, data atual com calendario valido,
+contrato WIN valido e fora do vencimento, a linha exata0->86400, unica,
+permite revisar a JANELA DO MODELO D:09h ate corte18h.
+O campo normal_end nesse caso representa o fim da gestao do modelo18h,
+NAO o encerramento oficial da bolsa. A proveniencia fica explicita em
+DEMO_SERVER_GENERIC_00_24;MODEL_WINDOW_09_18;NOT_B3_EXCHANGE_SCHEDULE.
+Grades especificas antes aceitas continuam pelo caminho anterior.
+Grade ausente,0->0, metadados ambiguos ou sessao curta continuam bloqueados.
+Primeiro negocio valido A PARTIR das09h continua obrigatorio. Pode ocorrer
+as09:01,09:05 etc. Nenhuma cotacao de book/leilao substitui esse negocio.
+Ajuste B3 atual, D1, integridade do fluxo e demais verificacoes permanecem.
+
+INSTALACAO: SOMENTE NO MT5 DA XP DEMO COM A2.13 JA INSTALADA
+O ZIP contem apenas os DOIS fontes alterados dentro da pasta MQL5.
+1. No grafico WIN$N, botao direito -> Lista de Experts -> Remover o
+   EA_ModeloD_Demo (ou Consultor expert -> Remover, conforme o menu).
+   Nao remova o indicador. Nao apague arquivos de Common/Files.
+   Esta atualizacao nao muda o diario nem rearma oportunidades.
+2. Extraia o ZIP. Copie a pasta MQL5 inteira do pacote.
+3. No MT5 DA XP: Arquivo -> Abrir Pasta de Dados. Cole nessa RAIZ,
+   onde ja existe MQL5. Aceite mesclar e substituir os DOIS arquivos.
+   Nao cole dentro da MQL5 existente. Nao use a pasta de dados da Genial.
+4. F4. Abra MQL5\Experts\ModeloD_Demo\EA_ModeloD_Demo.mq5 e pressione F7.
+   Versao tecnica MetaEditor2.131; identificacao do EA2.13.01_DEMO.
+5. Envie o resultado da compilacao antes de reanexar.
+
+DEPOIS DE COMPILAR E CONFERIR
+No mesmo grafico WIN$N, reanexar EA_ModeloD_Demo na MESMA XP DEMO,
+Instancia=1, VolumePorNivel=1, IntervaloSegundos=2, ExecutarNaDemo=true.
+Permitir negociacao algoritmica e AlgoTrading do terminal ligados.
+Confirmar DIARIO_REABERTO_VALIDADO e START;v=2.13.01_DEMO.
+Como a abertura ja passou, o EA deve conferir o fluxo desde09h e preservar
+consumos anteriores; nao garante que sobrara oportunidade para entrada hoje.
+Nao apagar diario, nao trocar Instancia para tentar recuperar entradas.
+Se houver outro bloqueio, enviar o novo relatorio MDD213_DEMO_...txt.
+
+TESTES
+71 verificacoes C++/ASan/UBSan com APIs MT5 simuladas passaram:
+53regressoes anteriores +18casos da grade generica, incluindo05/11/2026,
+primeiro negocio09:05:01, exclusao do evento08:55, corte18h, preparo
+duravel das ordens e retomada sem duplicacao.
+Ainda falta compilacao MQL5 e execucao nativa da correcao na XP.
+38outros fontes preservados byte a byte; apenas2alterados.
+A2.13original e o diagnostico1.21 permanecem preservados no repositorio.
