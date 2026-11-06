@@ -1,0 +1,55 @@
+{
+  "linhas_dados": 36895,
+  "ticks_negocio_validos": 35868,
+  "horarios_civis_servidor_sem_converter_fuso": true,
+  "entrada_matematica": "168806.3106666666863021",
+  "alvo_matematico_derivado_aproximado": "168440.0453333333454641246073",
+  "SL_matematico": "169181.3106666666863021",
+  "entrada_normalizada": "168805",
+  "alvo_normalizado": "168440",
+  "SL_normalizado": "169180",
+  "primeiro_toque": {
+    "msc_civil_servidor": 1793961002602,
+    "hora": "10:30:02.602",
+    "last": "168810",
+    "linha_csv": 10909,
+    "flags": 56,
+    "ultimas_cotacoes_precedentes": {
+      "<BID>": {
+        "preco": "168310",
+        "horario": "10:30:02.395",
+        "linha": 10650
+      },
+      "<ASK>": {
+        "preco": "168320",
+        "horario": "10:30:02.041",
+        "linha": 10482
+      }
+    }
+  },
+  "alvo_apos_toque": {
+    "msc_civil_servidor": 1793961002618,
+    "hora": "10:30:02.618",
+    "last": "168440",
+    "linha_csv": 11018,
+    "flags": 56,
+    "ultimas_cotacoes_precedentes": {
+      "<BID>": {
+        "preco": "168310",
+        "horario": "10:30:02.395",
+        "linha": 10650
+      },
+      "<ASK>": {
+        "preco": "168320",
+        "horario": "10:30:02.041",
+        "linha": 10482
+      }
+    }
+  },
+  "primeiro_stop_apos_toque": null,
+  "intervalo_toque_alvo_ms": 16,
+  "cancelamento_reportado_no_log": "10:30:04",
+  "alvo_antes_cancelamento": true,
+  "conclusao": "Cancelamento da pendente tocada e nao executada esta conforme regra de fronteira teorica.",
+  "limite": "Esta sequencia nao prova preenchimento nem a causa interna do nao preenchimento no simulador."
+}

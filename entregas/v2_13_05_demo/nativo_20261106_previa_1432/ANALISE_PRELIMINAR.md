@@ -1,5 +1,7 @@
 # Prévia nativa de 06/11 — relatório até 14:32:01
 
+**Atualização posterior:** o [CSV de ticks esclareceu o cancelamento da R38,2](esclarecimento_r38/CONCLUSAO.md): primeiro toque10:30:02.602, alvo10:30:02.618, antes do pedido de cancelamento10:30:04. Cancelamento conforme a regra. A análise abaixo preserva as dúvidas existentes antes da chegada dos ticks.
+
 Não é fechamento do pregão. Arquivos originais recebidos e preservados.
 
 - Arquivamento de 05/11 confirmado às 08:55:01, revisão 61. Primeira prova nativa desta função; não certifica retenção prolongada.
