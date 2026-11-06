@@ -1,0 +1,25 @@
+{
+  "nucleo_Cpp_extraido_do_MQL_com_APIs_simuladas": {
+    "checks": 27,
+    "falhas": 0,
+    "sanitizers": [
+      "AddressSanitizer",
+      "UndefinedBehaviorSanitizer"
+    ]
+  },
+  "testes_python_plano_protocolo_checksum": {
+    "checks": 7,
+    "falhas": 0
+  },
+  "preflight_input_global": "PASS",
+  "compilacao_MetaEditor": "PENDENTE_AMBIENTE_MT5_NAO_DISPONIVEL",
+  "execucao_nativa_terminal_tester": "PENDENTE",
+  "limite": "Testes locais nao substituem compilacao e execucao no MT5.",
+  "base_v1_00_compilada_nativamente_Genial": {
+    "erros": 0,
+    "avisos": 0,
+    "tempo_ms": 1706,
+    "fonte": "resultado fornecido pelo usuario"
+  },
+  "alteracao_v1_01": "Instrumentacao antes/depois de CopyTicksRange e CopyRates, contagem de tentativas e redraw; nucleo e plano identicos a v1.00."
+}

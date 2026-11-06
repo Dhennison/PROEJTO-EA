@@ -1,0 +1,4 @@
+Referencia preservada: 01 a 21/09/2026, 14 pregoes e 33 operacoes Work.
+Fonte: WINFUT Profit M1 original, ajuste por data operacional.
+Reproducao teorica independente conferida: +3839,308998 pontos por contrato, zero divergencias.
+Essas tabelas nao sao resultado da coleta do MT5 nem execucao nativa do EA.

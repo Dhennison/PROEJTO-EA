@@ -1,0 +1,16 @@
+{
+  "ATUALIZAR_PARA_1_01.md": "cf1c2358aa321ee2b8b5c9975710496d88d58f9c52c7484886d874e6b91605ab",
+  "LEIA_PRIMEIRO.md": "68d498fe925ec793922e3f4be7e030820c367dc40bbf7bef7eb5eefad8469840",
+  "MQL5/Experts/ModeloD_Historico_Diagnostico/Diagnostico_Cobertura_Historica.mq5": "388e6dc02c8e4d54e0c93a1a0aabc6509722c822d6e5c524e92cbb9d67894330",
+  "MQL5/Experts/ModeloD_Historico_Diagnostico/HC_Core.mqh": "b93764e5065773c491e87cf23fc55e5eb37b84dde3ff70e3693cc17f47044ea8",
+  "MQL5/Files/PLANO_HC100_877.csv": "61ca96b40893705e18235129815dcf89331e3b8dfca06bd31734bad18cc210d8",
+  "REFERENCIA_CONFERIDA_SETEMBRO/CONTEXTO_14_PREGOES.csv": "030feeba4dcd7fe918415555b1f3448fe8455fe932906e97e2b2d1ee312aafd1",
+  "REFERENCIA_CONFERIDA_SETEMBRO/LEIA_REFERENCIA.txt": "dd500e550a86d56ab49985dbf5c4a51caeeb14f6f2a0dba9eaafb97663b37461",
+  "REFERENCIA_CONFERIDA_SETEMBRO/OPERACOES_33_WORK.csv": "46ae35eb19b321215f388af6356e89cc937b5308f2ad63113e5d2b0e9d5538c7",
+  "gerar_plano.py": "f400e005532ffeccff88751c412045defd8c851d67ec9dbe1296576c85e5b441",
+  "resumir_relatorios.py": "aae7bf1ac8682299005d8b0d582c19263e454164cb283fd9c96de043f10597cc",
+  "tests/VALIDACAO_LOCAL.json": "1e2eb7ae10816533d387deceb8bbf97e445fa104dad6b2fc7ac44ab59cd3e539",
+  "tests/build_core_test.py": "493f4482c52e32e7a9bacec18aa93e0c94d836db679e7fabb3cedd9561389a37",
+  "tests/core_harness.cpp": "90cef5660e3932fb5ab512a0fd3c198c917d90572c97192a9252cd9ff7875475",
+  "tests/test_protocol.py": "083791e1a0486e55a90231d91c5eec566a34410af7ace1db9fb1c5f39965f6ec"
+}
