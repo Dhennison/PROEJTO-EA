@@ -1,0 +1,622 @@
+[
+  {
+    "arquivo": "PROEJTO-EA/entregas/ModeloD_Diagnostico_Ticks_20261029_1038_v1_00.zip",
+    "sha256": "46540bef00e7b2a47873dd1fdd6840b06012748b388c7392a6cf812bce586545",
+    "total_itens": 8,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/ModeloD_Integrado_Sem_Transporte_v2_00.zip",
+    "sha256": "67cfef8f7b6b85cea20f0ccf2557f57c9f48163b6cde71ae546c0e7958b5e649",
+    "total_itens": 127,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/ModeloD_Integrado_Sem_Transporte_v2_01.zip",
+    "sha256": "39634c2b1bd2ce4ae9eb83975c8ad8380580691548748939ac15fb001b9fba82",
+    "total_itens": 133,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/ModeloD_Integrado_Sem_Transporte_v2_02.zip",
+    "sha256": "ecfcf355254bbeca0e9e51d0a34c90fa17d199550edbd226942cb7d255717f8d",
+    "total_itens": 137,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/ModeloD_Integrado_Sem_Transporte_v2_03.zip",
+    "sha256": "5ae989b69651430ba69e4215d17ae5389a6934897c8dc89cec03e3405acb42e4",
+    "total_itens": 141,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/ModeloD_Integrado_Sem_Transporte_v2_04.zip",
+    "sha256": "033683eff0a5ff5b05936c0a42a0c7333066e0aae8667925d856390dcb243548",
+    "total_itens": 155,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/ModeloD_Integrado_Sem_Transporte_v2_05.zip",
+    "sha256": "10493e11fc1b6c2b0ad25e957f274e7af5bb035369ab99df9293cfc6f9860dab",
+    "total_itens": 158,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/ModeloD_Integrado_Sem_Transporte_v2_06.zip",
+    "sha256": "006a04c552378bafde2037ead45959894d0b80563029d5e3a04529d4e0112d16",
+    "total_itens": 160,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/ModeloD_Integrado_Sem_Transporte_v2_07.zip",
+    "sha256": "377c0b8937c9493fe28ab81c415a89165e7f0d3adc021562dc69334243468c6e",
+    "total_itens": 162,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/ModeloD_Integrado_Sem_Transporte_v2_08.zip",
+    "sha256": "a4b52adc0123941f995d16f14c6e54681c2085cf33900b3cf92e880072521a79",
+    "total_itens": 35,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/ModeloD_Integrado_Sem_Transporte_v2_09.zip",
+    "sha256": "ab5dbfaa25611bc40e2a00c7843289e9709e7793bf5b35e59f99c8a3b9c293aa",
+    "total_itens": 37,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/ModeloD_Integrado_Tester_v2_10.zip",
+    "sha256": "fcede2fca646e8862d81a04a62da2ce032b3fa6b69349beb11f8b138d0f25c16",
+    "total_itens": 40,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/diagnostico_ticks_ab_v1_21/ModeloD_Diagnostico_Ticks_v1_21.zip",
+    "sha256": "129b565b9ff97623ca6b110edb9be78bfab2adf624f5bced8b867fa17cd407b1",
+    "total_itens": 10,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/diagnostico_ticks_ab_v1_21/pacote_resultado_xp_20261105/Resultado_AB_XP_20261105.zip",
+    "sha256": "e560d75be9658dd2d16b3b018d3ad87ddde6beb08f7405a4d2dbe868985cdc05",
+    "total_itens": 9,
+    "candidatos_dados_ou_subarquivos": [
+      {
+        "nome": "Resultado_AB_XP_20261105/A_TERMINAL/DiagTicksAB_TERMINAL_XPMT5-DEMO_WINZ26_2026_10_30_09_00_2026_10_30_09_10_XP_A_492165406_ALL.csv",
+        "bytes": 12330625
+      },
+      {
+        "nome": "Resultado_AB_XP_20261105/B_TESTER/DiagTicksAB_TESTER_XPMT5-DEMO_WINZ26_2026_10_30_09_00_2026_10_30_09_10_XP_B_502759406_ALL.csv",
+        "bytes": 4059429
+      },
+      {
+        "nome": "Resultado_AB_XP_20261105/COMPARACAO_POR_MINUTO.csv",
+        "bytes": 409
+      }
+    ]
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/historico_work_modelo_d_20261105/Preparacao_Historico_Work_Modelo_D_20261106.zip",
+    "sha256": "386c300fc7f6f9aaa434daa87b16014d89aea4e8c7781ed9d9617fe9f1ca596d",
+    "total_itens": 15,
+    "candidatos_dados_ou_subarquivos": [
+      {
+        "nome": "Preparacao_Historico_Work_Modelo_D/dados/COBERTURA_NOVA_EXECUCAO_MODELO.csv",
+        "bytes": 15
+      },
+      {
+        "nome": "Preparacao_Historico_Work_Modelo_D/dados/INVENTARIO_877_PREGOES.csv",
+        "bytes": 116876
+      },
+      {
+        "nome": "Preparacao_Historico_Work_Modelo_D/dados/OPERACOES_NOVA_EXECUCAO_MODELO.csv",
+        "bytes": 116
+      },
+      {
+        "nome": "Preparacao_Historico_Work_Modelo_D/dados/PILOTO_20260914_20260918.csv",
+        "bytes": 951
+      },
+      {
+        "nome": "Preparacao_Historico_Work_Modelo_D/dados/REFERENCIA_PILOTO_D.csv",
+        "bytes": 2107
+      },
+      {
+        "nome": "Preparacao_Historico_Work_Modelo_D/sem_nova_execucao/POR_DIA.csv",
+        "bytes": 46
+      },
+      {
+        "nome": "Preparacao_Historico_Work_Modelo_D/sem_nova_execucao/POR_OPERACAO.csv",
+        "bytes": 72
+      },
+      {
+        "nome": "Preparacao_Historico_Work_Modelo_D/sem_nova_execucao/POR_PERIODO.csv",
+        "bytes": 47
+      }
+    ]
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/historico_work_modelo_d_20261105/originais/Pacote_Modelo_D_Historico_20230301_20260921.zip",
+    "sha256": "b107d539afa3e76fb5fbd5f0d7cf8045283e9f133f21828e79638a0c85d823a6",
+    "total_itens": 29,
+    "candidatos_dados_ou_subarquivos": [
+      {
+        "nome": "Ajustes_Diarios_Modelo_D_20230301_20260921.csv",
+        "bytes": 94803
+      },
+      {
+        "nome": "Apoio_Arquivos_e_exclusoes.csv",
+        "bytes": 650
+      },
+      {
+        "nome": "Apoio_Niveis_2024.csv",
+        "bytes": 53410
+      },
+      {
+        "nome": "Apoio_Notas.csv",
+        "bytes": 1337
+      },
+      {
+        "nome": "Apoio_Reaud_cobertura_M5.csv",
+        "bytes": 16457
+      },
+      {
+        "nome": "Apoio_Reaud_exclusoes.csv",
+        "bytes": 151
+      },
+      {
+        "nome": "Apoio_Reaud_horários_B3.csv",
+        "bytes": 1102
+      },
+      {
+        "nome": "Apoio_Reaud_niveis.csv",
+        "bytes": 44684
+      },
+      {
+        "nome": "Apoio_Reaud_notas.csv",
+        "bytes": 1225
+      },
+      {
+        "nome": "Cobertura_Ajustes_Fonte_Todas_Datas.csv",
+        "bytes": 117534
+      },
+      {
+        "nome": "Fontes_Originais_Ajuste/Ajuste 2023(1).xlsx",
+        "bytes": 871710
+      },
+      {
+        "nome": "Fontes_Originais_Ajuste/Book(3).xlsx",
+        "bytes": 730730
+      },
+      {
+        "nome": "Fontes_Originais_Ajuste/Jan e Fev 2026.xlsx",
+        "bytes": 730838
+      },
+      {
+        "nome": "Fontes_Originais_Ajuste/ajuste 2024.xlsx",
+        "bytes": 96859
+      },
+      {
+        "nome": "Indice_Mensal_Ajustes_Modelo_D.csv",
+        "bytes": 3242
+      },
+      {
+        "nome": "Inventario_Fontes_Ajuste.csv",
+        "bytes": 668
+      },
+      {
+        "nome": "Operacoes_Modelo_D_20230301_20260921_ORIGINAL.csv",
+        "bytes": 279595
+      },
+      {
+        "nome": "Referencia_D_ambiguidades.csv",
+        "bytes": 1009
+      },
+      {
+        "nome": "Referencia_D_anual.csv",
+        "bytes": 1415
+      },
+      {
+        "nome": "Referencia_D_controles.csv",
+        "bytes": 2371
+      },
+      {
+        "nome": "Referencia_D_definicao.csv",
+        "bytes": 1552
+      },
+      {
+        "nome": "Referencia_D_diário.csv",
+        "bytes": 48306
+      },
+      {
+        "nome": "Referencia_D_drawdown.csv",
+        "bytes": 66416
+      },
+      {
+        "nome": "Referencia_D_dupla_rotina.csv",
+        "bytes": 1770
+      },
+      {
+        "nome": "Referencia_D_mensal.csv",
+        "bytes": 2053
+      },
+      {
+        "nome": "Referencia_D_operacoes.csv",
+        "bytes": 279595
+      },
+      {
+        "nome": "Referencia_D_por_nivel.csv",
+        "bytes": 2524
+      },
+      {
+        "nome": "auditoria_fibonacci_win_2023_2026_modelo_d.xlsx",
+        "bytes": 2794394
+      }
+    ]
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_08/ModeloD_v2_08_Documentacao_e_Testes.zip",
+    "sha256": "a2ba04337b2108eda491929b90cfbd8faaa083c6cab2d26aebdb0a73bb8a6a8a",
+    "total_itens": 6,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_09/ModeloD_v2_09_Documentacao_e_Testes.zip",
+    "sha256": "632063f265bb11f73fa6e5b1fe7323c8e18bea813ff295802c5ef2f7e266068b",
+    "total_itens": 15,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_10/ModeloD_v2_10_Documentacao_e_Testes.zip",
+    "sha256": "c234300f09725acd8b2d4720b96b9ee6667a3318eff88894c702bac52301cd99",
+    "total_itens": 19,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_10/diagnostico_agente/ModeloD_Diagnostico_Agente_v1_00.zip",
+    "sha256": "1c831709fcbf6707b2798dce481d54fd09978c3ef1c9350d5ce8911b4ef84769",
+    "total_itens": 2,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_10/diagnostico_agente/controle_20261029/ModeloD_Diagnostico_Controle_20261029.zip",
+    "sha256": "6d028089a50680e7a6c6394ae7d77bc87bd18dd316d37bb22f68110df94efcd3",
+    "total_itens": 2,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_10/diagnostico_agente/pesquisa_importacao/ModeloD_Continuacao_5309_v1_01.zip",
+    "sha256": "8a2aaab7f4d7a03341ffd388f6e52aaabc46fc5310d4e11abca2ae2cd39468a9",
+    "total_itens": 4,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_10/diagnostico_agente/pesquisa_importacao/ModeloD_Pesquisa_Importacao_v1_00.zip",
+    "sha256": "2cf80551e118a4e43a03c153aaabaab9963e0564d6c274aa3c995b92241645ee",
+    "total_itens": 6,
+    "candidatos_dados_ou_subarquivos": [
+      {
+        "nome": "DADOS_ORIGINAIS/WINZ26_202610300900_202610300901.csv",
+        "bytes": 915158
+      }
+    ]
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_10/diagnostico_agente/pesquisa_importacao/auditoria_marcadores_agente/ModeloD_Marcadores_Agente_v1_01.zip",
+    "sha256": "65a4bb33cf80ae75edd961aec9ae1885d49eb0cc1dfd99f757b4590690f13985",
+    "total_itens": 4,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_10/diagnostico_agente/pesquisa_importacao/auditoria_terminal/ModeloD_Auditoria_Terminal_v1_00.zip",
+    "sha256": "d47e61c250d45cf49c0e4636dfb12ad3cced8995302f70e06e7b7b9f370c771e",
+    "total_itens": 4,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_10/diagnostico_agente/pesquisa_importacao/coleta_dia_20261103/WINZ26_20261030_DIA_COMPLETO.zip",
+    "sha256": "0494127f661494963f88567503829d7ab1f16f0eea250decdb3ba4d2ad602fa2",
+    "total_itens": 1,
+    "candidatos_dados_ou_subarquivos": [
+      {
+        "nome": "WINZ26_20261030_DIA_COMPLETO.csv",
+        "bytes": 195623528
+      }
+    ]
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_10/diagnostico_agente/pesquisa_importacao/controle_dia/ModeloD_Pesquisa_Dia_v1_00.zip",
+    "sha256": "5df880befc397c58b6f82bb53682828130f834478fffc8508f3f7cfab1809874",
+    "total_itens": 5,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_10/validacao_20261102_pos_recriacao/Pacote_Suporte_WINZ26_Tester_20261102.zip",
+    "sha256": "36589787719ffa9a24568b3fdc57546055cbcf4aaf4df89228488325d45213ae",
+    "total_itens": 9,
+    "candidatos_dados_ou_subarquivos": [
+      {
+        "nome": "WINZ26_M1_202610300900_202610301824.csv",
+        "bytes": 35344
+      },
+      {
+        "nome": "WINZ26_202610300900_202610300901.csv",
+        "bytes": 915158
+      }
+    ]
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_11_01_ticks/ModeloD_v2_11_01_XP_Ticks.zip",
+    "sha256": "c46cf80e64b77e1a04d8d55b51538260abed6ba4d07f302ef2e15a0b21354dbd",
+    "total_itens": 51,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_11_funcional/Correcao_Compilacao_v2_11.zip",
+    "sha256": "2c83663eb9b4249b3283f7cc87b15406c6e72d60c08ee6016cec382566c22828",
+    "total_itens": 1,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_11_funcional/Correcao_Execucao_v2_11.zip",
+    "sha256": "e2f45370c7b40686341887566646b98fb0265dca9056898942c57bb5ee24489d",
+    "total_itens": 7,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_11_funcional/Correcao_Pendentes_Referencia_v2_11.zip",
+    "sha256": "17cb29f81bb8ac0d72cb06ef62a79585a936be29319d2ea22284d3678f265f29",
+    "total_itens": 8,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_11_funcional/ModeloD_Ensaio_Funcional_v2_11.zip",
+    "sha256": "a928cbb6838b32f5bc5eae0fed61d1a31c094511d328b256e67d863009973e22",
+    "total_itens": 52,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_11_funcional/teste_xp_nativo/ModeloD_v2_11_XP_Nativo.zip",
+    "sha256": "4ac3bab4a02a68aa3500c5f6b213aa9e99d03f381984faf5e41e6addfe256b3f",
+    "total_itens": 49,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_12_corte/ModeloD_Teste_Corte_v2_12.zip",
+    "sha256": "47781af549ee218b3a8b1a93b0cbb7cc4c448a804f4bb13d95b6111d09ffa7e9",
+    "total_itens": 54,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_13_01_demo/ModeloD_DEMO_Correcao_v2_13_01.zip",
+    "sha256": "ba0458685a5785782ef1d58c0961dc66fefd7068bcdc8b64ffacb9d45f981728",
+    "total_itens": 6,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_13_02_demo/ModeloD_DEMO_Correcao_v2_13_02.zip",
+    "sha256": "f82e81ae4149834254f35c5fec6b73ef2c64d297c666857c8973e1379006cdea",
+    "total_itens": 6,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_13_03_demo/ModeloD_DEMO_v2_13_03_Recuperacao.zip",
+    "sha256": "f69ca3f7ed14025ec47e7216431e613d27b817d7c07326edb020c69f9daefbcd",
+    "total_itens": 45,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_13_04_demo/ModeloD_DEMO_v2_13_04_Retomada.zip",
+    "sha256": "ae2618a530d880fe80451f00c7690cc8963c7161205485b72b21501db5f74cef",
+    "total_itens": 53,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_13_05_demo/Correcao_Compilacao_v2_13_05.zip",
+    "sha256": "ab94615370dd87d352db28f500ae857cf8353345b9e708b35af42e7be48fecaf",
+    "total_itens": 2,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_13_05_demo/ModeloD_DEMO_v2_13_05_Retomada_e_Continuidade.zip",
+    "sha256": "84340f71cecc7a48a421bebbd8200799a820fac925b6ad4162d9193cf7ef9a59",
+    "total_itens": 65,
+    "candidatos_dados_ou_subarquivos": [
+      {
+        "nome": "configuracao/ModeloD_Sessoes_Verificadas_EXEMPLO.csv",
+        "bytes": 52
+      }
+    ]
+  },
+  {
+    "arquivo": "PROEJTO-EA/entregas/v2_13_demo/ModeloD_DEMO_v2_13.zip",
+    "sha256": "06e428a3ae26dc38e7a411e1584d45844f42f4a83c58012e49ed626ec2506598",
+    "total_itens": 45,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "attachments/27cee93e-8316-4198-b385-1c8d8905fe77/WINZ26_20261030_DIA_COMPLETO.zip",
+    "sha256": "0494127f661494963f88567503829d7ab1f16f0eea250decdb3ba4d2ad602fa2",
+    "total_itens": 1,
+    "candidatos_dados_ou_subarquivos": [
+      {
+        "nome": "WINZ26_20261030_DIA_COMPLETO.csv",
+        "bytes": 195623528
+      }
+    ]
+  },
+  {
+    "arquivo": "attachments/3399bd51-351e-4b69-b960-fefb28f95c3c/ModeloD_Diagnostico_Ticks.zip",
+    "sha256": "a2654337d05b1cad5d99891c0a86d8d47b51cb7d254e1af1223da1a09aee2b94",
+    "total_itens": 2,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "attachments/a358c9fc-870c-4fec-b054-add8b492cd39/Pacote_Modelo_D_Historico_20230301_20260921.zip",
+    "sha256": "b107d539afa3e76fb5fbd5f0d7cf8045283e9f133f21828e79638a0c85d823a6",
+    "total_itens": 29,
+    "candidatos_dados_ou_subarquivos": [
+      {
+        "nome": "Ajustes_Diarios_Modelo_D_20230301_20260921.csv",
+        "bytes": 94803
+      },
+      {
+        "nome": "Apoio_Arquivos_e_exclusoes.csv",
+        "bytes": 650
+      },
+      {
+        "nome": "Apoio_Niveis_2024.csv",
+        "bytes": 53410
+      },
+      {
+        "nome": "Apoio_Notas.csv",
+        "bytes": 1337
+      },
+      {
+        "nome": "Apoio_Reaud_cobertura_M5.csv",
+        "bytes": 16457
+      },
+      {
+        "nome": "Apoio_Reaud_exclusoes.csv",
+        "bytes": 151
+      },
+      {
+        "nome": "Apoio_Reaud_horários_B3.csv",
+        "bytes": 1102
+      },
+      {
+        "nome": "Apoio_Reaud_niveis.csv",
+        "bytes": 44684
+      },
+      {
+        "nome": "Apoio_Reaud_notas.csv",
+        "bytes": 1225
+      },
+      {
+        "nome": "Cobertura_Ajustes_Fonte_Todas_Datas.csv",
+        "bytes": 117534
+      },
+      {
+        "nome": "Fontes_Originais_Ajuste/Ajuste 2023(1).xlsx",
+        "bytes": 871710
+      },
+      {
+        "nome": "Fontes_Originais_Ajuste/Book(3).xlsx",
+        "bytes": 730730
+      },
+      {
+        "nome": "Fontes_Originais_Ajuste/Jan e Fev 2026.xlsx",
+        "bytes": 730838
+      },
+      {
+        "nome": "Fontes_Originais_Ajuste/ajuste 2024.xlsx",
+        "bytes": 96859
+      },
+      {
+        "nome": "Indice_Mensal_Ajustes_Modelo_D.csv",
+        "bytes": 3242
+      },
+      {
+        "nome": "Inventario_Fontes_Ajuste.csv",
+        "bytes": 668
+      },
+      {
+        "nome": "Operacoes_Modelo_D_20230301_20260921_ORIGINAL.csv",
+        "bytes": 279595
+      },
+      {
+        "nome": "Referencia_D_ambiguidades.csv",
+        "bytes": 1009
+      },
+      {
+        "nome": "Referencia_D_anual.csv",
+        "bytes": 1415
+      },
+      {
+        "nome": "Referencia_D_controles.csv",
+        "bytes": 2371
+      },
+      {
+        "nome": "Referencia_D_definicao.csv",
+        "bytes": 1552
+      },
+      {
+        "nome": "Referencia_D_diário.csv",
+        "bytes": 48306
+      },
+      {
+        "nome": "Referencia_D_drawdown.csv",
+        "bytes": 66416
+      },
+      {
+        "nome": "Referencia_D_dupla_rotina.csv",
+        "bytes": 1770
+      },
+      {
+        "nome": "Referencia_D_mensal.csv",
+        "bytes": 2053
+      },
+      {
+        "nome": "Referencia_D_operacoes.csv",
+        "bytes": 279595
+      },
+      {
+        "nome": "Referencia_D_por_nivel.csv",
+        "bytes": 2524
+      },
+      {
+        "nome": "auditoria_fibonacci_win_2023_2026_modelo_d.xlsx",
+        "bytes": 2794394
+      }
+    ]
+  },
+  {
+    "arquivo": "attachments/a7ae0bdf-f8ba-4254-a2be-9b8a65669df4/ModeloD_Diagnostico_Ticks Atualizado.zip",
+    "sha256": "61e854ee948fbfc301618e22c46b6961ff4cbe8636970e37a8cf463103756233",
+    "total_itens": 2,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "attachments/f66bbd2a-a8af-4a1a-9b4e-5de3d8d53497/ModeloD_Diagnostico_Ticks.zip",
+    "sha256": "ff9343e956b2fe00671cc894d06391e906401f6fcd7a344aef3b1257f8838ed1",
+    "total_itens": 2,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "scratch/diag_ticks_v120_review/Revisao_DiagTicksAB_v120.zip",
+    "sha256": "64f55b4359f5f6d678f6ffed198c61de09941ada285ff79c8522af47832f2e19",
+    "total_itens": 9,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "shared/ModeloD_Diagnostico_Ticks_v1_21/ModeloD_Diagnostico_Ticks_v1_21.zip",
+    "sha256": "129b565b9ff97623ca6b110edb9be78bfab2adf624f5bced8b867fa17cd407b1",
+    "total_itens": 10,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "shared/ModeloD_Pesquisa_Dia_v1_00.zip",
+    "sha256": "5df880befc397c58b6f82bb53682828130f834478fffc8508f3f7cfab1809874",
+    "total_itens": 5,
+    "candidatos_dados_ou_subarquivos": []
+  },
+  {
+    "arquivo": "shared/Resultado_AB_XP_20261105.zip",
+    "sha256": "e560d75be9658dd2d16b3b018d3ad87ddde6beb08f7405a4d2dbe868985cdc05",
+    "total_itens": 9,
+    "candidatos_dados_ou_subarquivos": [
+      {
+        "nome": "Resultado_AB_XP_20261105/A_TERMINAL/DiagTicksAB_TERMINAL_XPMT5-DEMO_WINZ26_2026_10_30_09_00_2026_10_30_09_10_XP_A_492165406_ALL.csv",
+        "bytes": 12330625
+      },
+      {
+        "nome": "Resultado_AB_XP_20261105/B_TESTER/DiagTicksAB_TESTER_XPMT5-DEMO_WINZ26_2026_10_30_09_00_2026_10_30_09_10_XP_B_502759406_ALL.csv",
+        "bytes": 4059429
+      },
+      {
+        "nome": "Resultado_AB_XP_20261105/COMPARACAO_POR_MINUTO.csv",
+        "bytes": 409
+      }
+    ]
+  }
+]

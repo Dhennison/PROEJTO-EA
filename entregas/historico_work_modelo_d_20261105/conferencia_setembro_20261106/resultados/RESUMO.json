@@ -1,0 +1,33 @@
+{
+  "periodo": [
+    "2026-09-01",
+    "2026-09-21"
+  ],
+  "contexto_necessario_desde": "2026-08-31",
+  "pregoes_work": 14,
+  "niveis_calculados": 70,
+  "operacoes_work_com_precos_conferidos": 33,
+  "operacoes_divergentes_em_preco_ou_filtro": 0,
+  "maior_diferenca_numerica_ponto": "2.00000000000000000000000E-11",
+  "tolerancia_representacao_numerica": "1E-8",
+  "dia_sem_operacoes_sem_referencia_independente_de_niveis": [
+    "2026-09-03"
+  ],
+  "duas_fontes_M15": {
+    "iguais_no_recorte": true,
+    "registros_comuns": 570,
+    "registros_divergentes": 0
+  },
+  "arquivos_zip_inventariados": 51,
+  "resultado": "CONTEXTO_M15_COMPATIVEL_COM_PRECOS_WORK; CRONOLOGIA_M1_E_EXECUCAO_EA_PENDENTES",
+  "operacoes_recalculadas_intradia": 0,
+  "backtests_ea": 0,
+  "limite": "A coincidência com preços de operações não valida independentemente cada H/L/C anterior, os 70 níveis, cobertura M1 ou ticks, nem o contrato real. As duas fontes M15 podem compartilhar a mesma origem.",
+  "hashes": {
+    "Fontes_Originais_Ajuste/Book(3).xlsx": "90b189326aaa5f1fb4e82e52217fa0f98e5cf0538c5b4fd561d461beb058303f",
+    "Fontes_Originais_Ajuste/Jan e Fev 2026.xlsx": "c435584d3adb441416f79b68ac73f9968be3f1f1cc1aa7cb9fe632ab7cdaa12a",
+    "Referencia_D_operacoes.csv": "da1d65eb594d9543ead6eb121cfae51df07873f809569a021968905a8025e3e7",
+    "Referencia_D_diário.csv": "a6465aee1dba3946722624c222e3393e4a4645625ece2a198d4bb967b2569081",
+    "Ajustes_Diarios_Modelo_D_20230301_20260921.csv": "c4140fbdf725509e4b3fbc8fa5859ae4bdf236e0605ef3d181c7e84b817f52d6"
+  }
+}
