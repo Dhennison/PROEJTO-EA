@@ -1,0 +1,18 @@
+{
+  "csv_colunas": 30,
+  "csv_registros": 6,
+  "operacoes_encerradas": 2,
+  "pontos_executados": "-240.00000000",
+  "profit_brl_reportado": "-48.00000000",
+  "acerto_percentual": "50.00000000",
+  "residuais_zero": true,
+  "precos_conferem_quatro_deals_anteriores": true,
+  "SL_S50_confirmado_pelo_reason_4": true,
+  "TP_S618_confirmado_pelo_reason_5": true,
+  "teoricos_nao_inventados": true,
+  "rearm_arquivo_nativos_exercitados_neste_log": false,
+  "hashes": {
+    "MDD21305_PONTOS_A52237148S58504D54352D44454D4FI1_20261105.csv": "f746c8d514ebdf4616bc14dea8b815afa84582db8b255f3b38673cd775b9fe28",
+    "MDD213_DEMO_ModeloD_Integrado_A52237148S58504D54352D44454D4FI1_1793920229_543245687.txt": "a9c7b61e1ee91d442852cd2684cf2bc2cdd5c6de18b17b675a0dae02d036c07d"
+  }
+}
