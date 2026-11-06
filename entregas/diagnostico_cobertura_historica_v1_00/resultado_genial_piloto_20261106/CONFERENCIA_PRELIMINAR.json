@@ -1,0 +1,202 @@
+{
+  "inicio": "2026.11.06 17:44:15.536",
+  "fim": "2026.11.06 18:09:55.699",
+  "duracao_segundos": 1540.163,
+  "pregoes_concluidos": 14,
+  "d1_anteriores_recuperados": 14,
+  "pendencias_ticks_m1": 14,
+  "datas": [
+    {
+      "Data": "2026.09.01",
+      "Simbolo": "WINV26",
+      "TicksEstado": "PENDENTE_OU_DIVERGENTE",
+      "DadosPrimeiroPiloto": "PENDENTE",
+      "MotivoUltimaPendenciaNoResumo": "TICKS_M1_DIVERGENTES_OU_AUSENTES,erro_ticks=0,erro_m1=0|IDENTIFICACAO_HISTORICA_PENDENTE|VINCULO_AJUSTE_B3_PENDENTE|FUSO_HISTORICO_PENDENTE",
+      "HorarioConclusaoPregao": "2026.11.06 17:49:44.196"
+    },
+    {
+      "Data": "2026.09.02",
+      "Simbolo": "WINV26",
+      "TicksEstado": "PENDENTE_OU_DIVERGENTE",
+      "DadosPrimeiroPiloto": "PENDENTE",
+      "MotivoUltimaPendenciaNoResumo": "TICKS_M1_DIVERGENTES_OU_AUSENTES,erro_ticks=0,erro_m1=0|IDENTIFICACAO_HISTORICA_PENDENTE|VINCULO_AJUSTE_B3_PENDENTE|FUSO_HISTORICO_PENDENTE",
+      "HorarioConclusaoPregao": "2026.11.06 17:51:22.298"
+    },
+    {
+      "Data": "2026.09.03",
+      "Simbolo": "WINV26",
+      "TicksEstado": "PENDENTE_OU_DIVERGENTE",
+      "DadosPrimeiroPiloto": "PENDENTE",
+      "MotivoUltimaPendenciaNoResumo": "TICKS_M1_DIVERGENTES_OU_AUSENTES,erro_ticks=0,erro_m1=0|IDENTIFICACAO_HISTORICA_PENDENTE|VINCULO_AJUSTE_B3_PENDENTE|FUSO_HISTORICO_PENDENTE",
+      "HorarioConclusaoPregao": "2026.11.06 17:52:31.296"
+    },
+    {
+      "Data": "2026.09.04",
+      "Simbolo": "WINV26",
+      "TicksEstado": "PENDENTE_OU_DIVERGENTE",
+      "DadosPrimeiroPiloto": "PENDENTE",
+      "MotivoUltimaPendenciaNoResumo": "TICKS_M1_DIVERGENTES_OU_AUSENTES,erro_ticks=0,erro_m1=0|IDENTIFICACAO_HISTORICA_PENDENTE|VINCULO_AJUSTE_B3_PENDENTE|FUSO_HISTORICO_PENDENTE",
+      "HorarioConclusaoPregao": "2026.11.06 17:54:06.939"
+    },
+    {
+      "Data": "2026.09.08",
+      "Simbolo": "WINV26",
+      "TicksEstado": "PENDENTE_OU_DIVERGENTE",
+      "DadosPrimeiroPiloto": "PENDENTE",
+      "MotivoUltimaPendenciaNoResumo": "TICKS_M1_DIVERGENTES_OU_AUSENTES,erro_ticks=0,erro_m1=0|IDENTIFICACAO_HISTORICA_PENDENTE|VINCULO_AJUSTE_B3_PENDENTE|FUSO_HISTORICO_PENDENTE",
+      "HorarioConclusaoPregao": "2026.11.06 17:55:26.130"
+    },
+    {
+      "Data": "2026.09.09",
+      "Simbolo": "WINV26",
+      "TicksEstado": "PENDENTE_OU_DIVERGENTE",
+      "DadosPrimeiroPiloto": "PENDENTE",
+      "MotivoUltimaPendenciaNoResumo": "TICKS_M1_DIVERGENTES_OU_AUSENTES,erro_ticks=0,erro_m1=0|IDENTIFICACAO_HISTORICA_PENDENTE|VINCULO_AJUSTE_B3_PENDENTE|FUSO_HISTORICO_PENDENTE",
+      "HorarioConclusaoPregao": "2026.11.06 17:56:58.225"
+    },
+    {
+      "Data": "2026.09.10",
+      "Simbolo": "WINV26",
+      "TicksEstado": "PENDENTE_OU_DIVERGENTE",
+      "DadosPrimeiroPiloto": "PENDENTE",
+      "MotivoUltimaPendenciaNoResumo": "TICKS_M1_DIVERGENTES_OU_AUSENTES,erro_ticks=0,erro_m1=0|IDENTIFICACAO_HISTORICA_PENDENTE|VINCULO_AJUSTE_B3_PENDENTE|FUSO_HISTORICO_PENDENTE",
+      "HorarioConclusaoPregao": "2026.11.06 17:58:46.960"
+    },
+    {
+      "Data": "2026.09.11",
+      "Simbolo": "WINV26",
+      "TicksEstado": "PENDENTE_OU_DIVERGENTE",
+      "DadosPrimeiroPiloto": "PENDENTE",
+      "MotivoUltimaPendenciaNoResumo": "TICKS_M1_DIVERGENTES_OU_AUSENTES,erro_ticks=0,erro_m1=0|IDENTIFICACAO_HISTORICA_PENDENTE|VINCULO_AJUSTE_B3_PENDENTE|FUSO_HISTORICO_PENDENTE",
+      "HorarioConclusaoPregao": "2026.11.06 18:00:23.815"
+    },
+    {
+      "Data": "2026.09.14",
+      "Simbolo": "WINV26",
+      "TicksEstado": "PENDENTE_OU_DIVERGENTE",
+      "DadosPrimeiroPiloto": "PENDENTE",
+      "MotivoUltimaPendenciaNoResumo": "TICKS_M1_DIVERGENTES_OU_AUSENTES,erro_ticks=0,erro_m1=0|IDENTIFICACAO_HISTORICA_PENDENTE|VINCULO_AJUSTE_B3_PENDENTE|FUSO_HISTORICO_PENDENTE",
+      "HorarioConclusaoPregao": "2026.11.06 18:02:11.719"
+    },
+    {
+      "Data": "2026.09.15",
+      "Simbolo": "WINV26",
+      "TicksEstado": "PENDENTE_OU_DIVERGENTE",
+      "DadosPrimeiroPiloto": "PENDENTE",
+      "MotivoUltimaPendenciaNoResumo": "TICKS_M1_DIVERGENTES_OU_AUSENTES,erro_ticks=0,erro_m1=0|IDENTIFICACAO_HISTORICA_PENDENTE|VINCULO_AJUSTE_B3_PENDENTE|FUSO_HISTORICO_PENDENTE",
+      "HorarioConclusaoPregao": "2026.11.06 18:03:41.159"
+    },
+    {
+      "Data": "2026.09.16",
+      "Simbolo": "WINV26",
+      "TicksEstado": "PENDENTE_OU_DIVERGENTE",
+      "DadosPrimeiroPiloto": "PENDENTE",
+      "MotivoUltimaPendenciaNoResumo": "TICKS_M1_DIVERGENTES_OU_AUSENTES,erro_ticks=0,erro_m1=0|IDENTIFICACAO_HISTORICA_PENDENTE|VINCULO_AJUSTE_B3_PENDENTE|FUSO_HISTORICO_PENDENTE",
+      "HorarioConclusaoPregao": "2026.11.06 18:05:25.786"
+    },
+    {
+      "Data": "2026.09.17",
+      "Simbolo": "WINV26",
+      "TicksEstado": "PENDENTE_OU_DIVERGENTE",
+      "DadosPrimeiroPiloto": "PENDENTE",
+      "MotivoUltimaPendenciaNoResumo": "TICKS_M1_DIVERGENTES_OU_AUSENTES,erro_ticks=0,erro_m1=0|IDENTIFICACAO_HISTORICA_PENDENTE|VINCULO_AJUSTE_B3_PENDENTE|FUSO_HISTORICO_PENDENTE",
+      "HorarioConclusaoPregao": "2026.11.06 18:06:59.426"
+    },
+    {
+      "Data": "2026.09.18",
+      "Simbolo": "WINV26",
+      "TicksEstado": "PENDENTE_OU_DIVERGENTE",
+      "DadosPrimeiroPiloto": "PENDENTE",
+      "MotivoUltimaPendenciaNoResumo": "TICKS_M1_DIVERGENTES_OU_AUSENTES,erro_ticks=0,erro_m1=0|IDENTIFICACAO_HISTORICA_PENDENTE|VINCULO_AJUSTE_B3_PENDENTE|FUSO_HISTORICO_PENDENTE",
+      "HorarioConclusaoPregao": "2026.11.06 18:08:27.886"
+    },
+    {
+      "Data": "2026.09.21",
+      "Simbolo": "WINV26",
+      "TicksEstado": "PENDENTE_OU_DIVERGENTE",
+      "DadosPrimeiroPiloto": "PENDENTE",
+      "MotivoUltimaPendenciaNoResumo": "TICKS_M1_DIVERGENTES_OU_AUSENTES,erro_ticks=0,erro_m1=0|IDENTIFICACAO_HISTORICA_PENDENTE|VINCULO_AJUSTE_B3_PENDENTE|FUSO_HISTORICO_PENDENTE",
+      "HorarioConclusaoPregao": "2026.11.06 18:09:55.428"
+    }
+  ],
+  "d1_por_data": {
+    "2026.09.01": {
+      "anterior": "2026.08.31",
+      "n": "1",
+      "erro": "0"
+    },
+    "2026.09.02": {
+      "anterior": "2026.09.01",
+      "n": "1",
+      "erro": "0"
+    },
+    "2026.09.03": {
+      "anterior": "2026.09.02",
+      "n": "1",
+      "erro": "0"
+    },
+    "2026.09.04": {
+      "anterior": "2026.09.03",
+      "n": "1",
+      "erro": "0"
+    },
+    "2026.09.08": {
+      "anterior": "2026.09.04",
+      "n": "1",
+      "erro": "0"
+    },
+    "2026.09.09": {
+      "anterior": "2026.09.08",
+      "n": "1",
+      "erro": "0"
+    },
+    "2026.09.10": {
+      "anterior": "2026.09.09",
+      "n": "1",
+      "erro": "0"
+    },
+    "2026.09.11": {
+      "anterior": "2026.09.10",
+      "n": "1",
+      "erro": "0"
+    },
+    "2026.09.14": {
+      "anterior": "2026.09.11",
+      "n": "1",
+      "erro": "0"
+    },
+    "2026.09.15": {
+      "anterior": "2026.09.14",
+      "n": "1",
+      "erro": "0"
+    },
+    "2026.09.16": {
+      "anterior": "2026.09.15",
+      "n": "1",
+      "erro": "0"
+    },
+    "2026.09.17": {
+      "anterior": "2026.09.16",
+      "n": "1",
+      "erro": "0"
+    },
+    "2026.09.18": {
+      "anterior": "2026.09.17",
+      "n": "1",
+      "erro": "0"
+    },
+    "2026.09.21": {
+      "anterior": "2026.09.18",
+      "n": "1",
+      "erro": "0"
+    }
+  },
+  "status": "LOTE_CONCLUIDO_ANALISE_TECNICA_PENDENTE_DIAS_BLOCOS_META",
+  "limites": [
+    "Experts nao fornece contagem por janela nem quantos minutos divergiram.",
+    "Motivo diario registra a ultima pendencia do pregao; nao prova erro zero em todas as chamadas/releituras.",
+    "Nenhum pregao integralmente aprovado no criterio atual; isso nao significa ausencia de ticks nos 14 dias.",
+    "Identificacao historica, ajuste B3 e fuso permanecem pendentes no plano por falta de evidencias declaradas, separadamente das divergencias ticks/M1.",
+    "Nao e repeticao do A/B Genial, que segue pendente."
+  ]
+}
