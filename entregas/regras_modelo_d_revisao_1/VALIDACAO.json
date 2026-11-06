@@ -1,0 +1,21 @@
+{
+  "paginas": 23,
+  "original_paginas": 21,
+  "paginas_originais_editadas": [
+    1,
+    12
+  ],
+  "paginas_adicionadas": [
+    22,
+    23
+  ],
+  "outras_19_paginas_texto_e_pixels_identicos": true,
+  "tamanhos_fonte_substituicoes": [
+    10,
+    10
+  ],
+  "pdf_original_sha256": "e9bc6de910d3049afa06a1e4c9e0dd3dc166babbed67cb5edf562ff01ab0f342",
+  "pdf_revisado_sha256": "41de0300a55108037e1a7e950440ba74fbf12bd1006e57777fe635b46bf32157",
+  "regra_cancelar_por_historico_incompleto_substituida": true,
+  "codigo_EA_alterado": false
+}

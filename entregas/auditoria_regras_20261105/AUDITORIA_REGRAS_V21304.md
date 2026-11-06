@@ -67,3 +67,7 @@ Repor simplesmente o teste booleano antigo confundiria novamente paginação ain
 ## Próxima ação
 
 Primeiro resolver a divergência de política de retomada (9.7), antes de alterar o comportamento que será observado no próximo pregão. Depois completar relatórios e retenção junto ao adaptador histórico, e homologar os caminhos faltantes de proteção/corte/parciais no ambiente apropriado. Esta revisão não inicia ordens nem modifica o EA instalado.
+
+## Decisão posterior aprovada — Revisão 1
+
+O usuário esclareceu e aprovou a manutenção durante reconstrução, o reenvio após cancelamento comprovado sem toque/execução e a continuidade do saldo da mesma ordem em parciais. A [Revisão 1](../regras_modelo_d_revisao_1/LEIA_PRIMEIRO.md) substitui a redação de 9.7 do PDF original. A divergência registrada acima é histórica em relação à redação anterior; o reenvio geral aprovado continua pendente de implementação. Outras lacunas desta auditoria permanecem.
