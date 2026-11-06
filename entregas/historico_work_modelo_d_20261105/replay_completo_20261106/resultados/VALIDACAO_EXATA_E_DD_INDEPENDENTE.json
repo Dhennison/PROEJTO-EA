@@ -1,0 +1,20 @@
+{
+  "estado": "PASS",
+  "checks": {
+    "877_pregoes": true,
+    "1877_operacoes_chaves_exatas": true,
+    "pontos_exatos_em_cada_operacao_sem_tolerancia": true,
+    "contagem_e_pontos_exatos_cada_dia": true,
+    "curva_pico_dd_diarios_exatos": true,
+    "dd_independente": true,
+    "soma_exata": true,
+    "112_pregoes_sem_operacao": true,
+    "contexto_20260102_20251230_M5": true,
+    "contexto_20260302_20260227_M5_completo": true,
+    "limites_cutoff_2023": true,
+    "32_ambiguidades_mesmas_chaves_work": true,
+    "26_pregoes_ambiguos": true
+  },
+  "dd_por_prefixos_independentes": "4780.240329",
+  "limite": "Conferência do replay teórico; nenhuma resolução por ticks ou execução MT5 produzida."
+}

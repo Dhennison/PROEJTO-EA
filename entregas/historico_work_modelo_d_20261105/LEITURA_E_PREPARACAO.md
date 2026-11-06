@@ -1,5 +1,7 @@
 # Referência histórica Work — exclusivamente Modelo D
 
+**Atualização em 06/11/2026:** os candles originais foram recebidos posteriormente. A [reprodução teórica integral](replay_completo_20261106/RESULTADO.md) concluiu os 877 pregões e 1877 operações sem divergências, preservando STOP FIRST na referência. A execução do EA no MT5 e a resolução cronológica das 32 operações ambíguas permanecem pendentes de contrato real, ticks e validação nativa. O texto abaixo preserva o levantamento inicial de 05/11.
+
 Recebido em 05/11/2026: Pacote_Modelo_D_Historico_20230301_20260921.zip e relatório PDF diário. Originais preservados na área de anexos; planilha-mestre extraída sem alteração. O guia foi lido integralmente, com a aba D definição. Apenas D foi usado nos cálculos. Instruções de referência do guia não alteram a estratégia nem autorizam execução real.
 
 ## Conferência realizada

@@ -1,0 +1,57 @@
+{
+  "camada": "REPLAY_TEORICO_CANDLES_ORIGINAIS",
+  "periodo": [
+    "2023-03-01",
+    "2026-09-21"
+  ],
+  "pregoes": 877,
+  "operacoes": 1877,
+  "niveis": 4385,
+  "pontos_por_contrato": "124337.758661",
+  "por_ano": {
+    "2023": {
+      "operacoes": 469,
+      "pontos": "36753.370672"
+    },
+    "2024": {
+      "operacoes": 514,
+      "pontos": "21544.596984"
+    },
+    "2025": {
+      "operacoes": 510,
+      "pontos": "38280.446339"
+    },
+    "2026": {
+      "operacoes": 384,
+      "pontos": "27759.344666"
+    }
+  },
+  "motivos": {
+    "ALVO": 1525,
+    "STOP": 319,
+    "ZERAGEM 18H": 26,
+    "ZERAGEM 17:45": 7
+  },
+  "estados_niveis": {
+    "OPERACAO_TEORICA": 1877,
+    "SEM_TOQUE_ANTES_CORTE": 2360,
+    "ABERTURA_INVALIDA": 74,
+    "GEOMETRIA_BLOQUEADA": 74
+  },
+  "pregoes_sem_operacao": 112,
+  "operacoes_ambiguas": 32,
+  "pregoes_com_ambiguidade": 26,
+  "registros_lacunas_internas": 6,
+  "dias_contexto_troca_fonte": [
+    "2026-01-02",
+    "2026-03-02"
+  ],
+  "hashes_csv_brutos": {
+    "WIN$N_M5_202302271510_202312281820.csv": "34a0ec1a5e42508dd42534c0a6e01a8dcb48296f080bfe2c4a720739b0bcc147",
+    "WINFUT_F_0_5min_01-01-2024_31-12-2024.csv": "152692d933327b33cca8cb2d71d741dfb4bb3d70b1605cc50d0f6cadec71cf82",
+    "WINFUT_F_0_5min_01-01-2025_31-12-2025.csv": "103c1404e6e5aa3085e426e20f0273c51dcc21b7a8c899776da23318e5cb4e63",
+    "WINFUT_F_0_5min_01-01-2026_28-02-2026.csv": "92c7534706b548653635abc97ae242841d2a22e285b8fa1c3ceeec0e7b010922",
+    "WINFUT_F_0_1min_01-01-2026_22-09-2026.csv": "f1343f8181fce176b5d266bd1710c5aadfea8ed8af8941da1ee6b3fd9469dc45"
+  },
+  "limite": "Reprodução teórica STOP FIRST; lacunas não preenchidas. Não é execução MT5 nem certificado de ticks reais."
+}
