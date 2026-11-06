@@ -1,0 +1,33 @@
+{
+  "camada": "REPLAY_TEORICO_CANDLES_ORIGINAIS",
+  "fonte": "WINFUT_F_0_1min_01-01-2026_22-09-2026.csv",
+  "simbolo": "WINFUT",
+  "tempo_grafico": "M1",
+  "periodo": [
+    "2026-09-01",
+    "2026-09-21"
+  ],
+  "pregoes": 14,
+  "operacoes": 33,
+  "pontos_por_contrato": "3839.308998",
+  "motivos": {
+    "STOP": 9,
+    "ALVO": 24
+  },
+  "estados_niveis": {
+    "SEM_TOQUE_ANTES_CORTE": 36,
+    "OPERACAO_TEORICA": 33,
+    "ABERTURA_INVALIDA": 1
+  },
+  "sem_operacoes": [
+    "2026-09-03"
+  ],
+  "hash_zip": "74442c025633c95a8a86b854bed6de172534d439b9e955e7fe74c47536f2ab76",
+  "inventario_877_datas": {
+    "datas_sem_candles": [],
+    "datas_sem_barra_corte": [],
+    "limite": "Presença de barras/corte não certifica cobertura integral ou replay dos demais pregões."
+  },
+  "regra": "Entrada teórica na linha; STOP FIRST intrabar; saída pelo OPEN do corte; sem custos, arredondamento ao tick ou slippage.",
+  "limite": "Não é execução do EA/MT5. Ausência de barras antes da primeira barra original não certifica horário do primeiro negócio por ticks."
+}

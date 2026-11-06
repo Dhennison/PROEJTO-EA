@@ -1,0 +1,67 @@
+[
+  {
+    "arquivo": "WIN$N_M5_202302271510_202312281820.csv",
+    "sha256": "34a0ec1a5e42508dd42534c0a6e01a8dcb48296f080bfe2c4a720739b0bcc147",
+    "bytes": 1443021,
+    "barras": 22680,
+    "primeiro": "2023-02-27T15:10:00",
+    "ultimo": "2023-12-28T18:20:00",
+    "pregoes": 210,
+    "simbolo": "WIN$N",
+    "tempo_grafico": "M5",
+    "duplicidades": 0,
+    "OHLC_invalidos": 0
+  },
+  {
+    "arquivo": "WINFUT_F_0_5min_01-01-2024_31-12-2024.csv",
+    "sha256": "152692d933327b33cca8cb2d71d741dfb4bb3d70b1605cc50d0f6cadec71cf82",
+    "bytes": 2442060,
+    "barras": 27892,
+    "primeiro": "2024-01-05T15:55:00",
+    "ultimo": "2024-12-30T18:20:00",
+    "pregoes": 248,
+    "simbolo": "WINFUT",
+    "tempo_grafico": "M5",
+    "duplicidades": 0,
+    "OHLC_invalidos": 0
+  },
+  {
+    "arquivo": "WINFUT_F_0_5min_01-01-2025_31-12-2025.csv",
+    "sha256": "103c1404e6e5aa3085e426e20f0273c51dcc21b7a8c899776da23318e5cb4e63",
+    "bytes": 2349396,
+    "barras": 28176,
+    "primeiro": "2025-01-02T09:00:00",
+    "ultimo": "2025-12-30T18:20:00",
+    "pregoes": 250,
+    "simbolo": "WINFUT",
+    "tempo_grafico": "M5",
+    "duplicidades": 0,
+    "OHLC_invalidos": 0
+  },
+  {
+    "arquivo": "WINFUT_F_0_5min_01-01-2026_28-02-2026.csv",
+    "sha256": "92c7534706b548653635abc97ae242841d2a22e285b8fa1c3ceeec0e7b010922",
+    "bytes": 382634,
+    "barras": 4359,
+    "primeiro": "2026-01-02T09:00:00",
+    "ultimo": "2026-02-27T18:20:00",
+    "pregoes": 39,
+    "simbolo": "WINFUT",
+    "tempo_grafico": "M5",
+    "duplicidades": 0,
+    "OHLC_invalidos": 0
+  },
+  {
+    "arquivo": "WINFUT_F_0_1min_01-01-2026_22-09-2026.csv",
+    "sha256": "f1343f8181fce176b5d266bd1710c5aadfea8ed8af8941da1ee6b3fd9469dc45",
+    "bytes": 6492121,
+    "barras": 79437,
+    "primeiro": "2026-02-27T14:55:00",
+    "ultimo": "2026-09-21T18:24:00",
+    "pregoes": 142,
+    "simbolo": "WINFUT",
+    "tempo_grafico": "M1",
+    "duplicidades": 0,
+    "OHLC_invalidos": 0
+  }
+]

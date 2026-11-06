@@ -1,0 +1,12 @@
+{
+  "estado": "COMPLETO",
+  "camada": "TEORICA_INDEPENDENTE",
+  "pregoes_comparados": 14,
+  "pregoes_pendentes": [],
+  "divergencias": 0,
+  "dd_work_sequencia_datas_processadas": "1087.585333",
+  "dd_nova_sequencia_datas_processadas": "1087.585333",
+  "dd_periodo_integral_certificado": true,
+  "tolerancia_numerica_ponto": "0.000001",
+  "limite": "Não compara fills/parciais do MT5. Em cobertura parcial, totais e DD referem-se apenas às datas processadas, não ao período inteiro."
+}
