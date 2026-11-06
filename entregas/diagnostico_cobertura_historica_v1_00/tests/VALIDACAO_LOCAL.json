@@ -1,0 +1,18 @@
+{
+  "nucleo_Cpp_extraido_do_MQL_com_APIs_simuladas": {
+    "checks": 27,
+    "falhas": 0,
+    "sanitizers": [
+      "AddressSanitizer",
+      "UndefinedBehaviorSanitizer"
+    ]
+  },
+  "testes_python_plano_protocolo_checksum": {
+    "checks": 7,
+    "falhas": 0
+  },
+  "preflight_input_global": "PASS",
+  "compilacao_MetaEditor": "PENDENTE_AMBIENTE_MT5_NAO_DISPONIVEL",
+  "execucao_nativa_terminal_tester": "PENDENTE",
+  "limite": "Testes locais nao substituem compilacao e execucao no MT5."
+}
