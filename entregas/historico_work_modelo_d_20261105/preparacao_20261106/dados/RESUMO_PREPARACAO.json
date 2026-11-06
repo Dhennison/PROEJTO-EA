@@ -1,0 +1,23 @@
+{
+  "pregoes": 877,
+  "operacoes_referencia": 1877,
+  "pregoes_sem_operacao": 112,
+  "contratos_reais_identificados": 0,
+  "backtests_ea_executados": 0,
+  "piloto": {
+    "inicio": "2026-09-14",
+    "fim": "2026-09-18",
+    "pregoes": 5,
+    "operacoes_work": 14,
+    "pontos_work_por_contrato": "2424.152333",
+    "volume_planejado_ea_por_nivel": 5,
+    "criterio_selecao": "Semana civil completa recente dentro da amostra M1; sem otimização de resultados."
+  },
+  "hashes_fontes_ajuste": {
+    "Ajuste 2023(1).xlsx": "d1902fda34a78e5a3cac9db89326bd4c11ca1139ac8798913ce4159c872c9063",
+    "Book(3).xlsx": "90b189326aaa5f1fb4e82e52217fa0f98e5cf0538c5b4fd561d461beb058303f",
+    "Jan e Fev 2026.xlsx": "c435584d3adb441416f79b68ac73f9968be3f1f1cc1aa7cb9fe632ab7cdaa12a",
+    "ajuste 2024.xlsx": "8dcdb35cbd8faffbeeea7089bdfa176c0a415dd541955cc0c2f74609b1c3c2cc"
+  },
+  "limite": "Inventário de fontes de ajuste. Quantidade e horários não certificam a cobertura dos candles do Work nem de ticks reais."
+}

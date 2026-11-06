@@ -1,0 +1,6 @@
+﻿Data;AjusteWork;OperacoesWork;GranularidadeWork;CorteWork;ArquivoFonteAjuste;AbaFonteAjuste;LinhasOHLCNaFonteAjuste;PrimeiroHorarioFonte;UltimoHorarioFonte;PassosObservadosSegundos;ContratoReal;DataFontePublicacao;AjusteAnterior;CandlesOriginaisWorkConferidos;TicksReaisConferidos;EstadoBacktestEA
+2026-09-14;188987;3;M1;18:00:00;Book(3).xlsx;Planilha1;38;09:00:00;18:15:00;"{""900"": 37}";;;;NAO;NAO;PENDENTE_DADOS_E_ADAPTADOR
+2026-09-15;187507;2;M1;18:00:00;Book(3).xlsx;Planilha1;38;09:00:00;18:15:00;"{""900"": 37}";;;;NAO;NAO;PENDENTE_DADOS_E_ADAPTADOR
+2026-09-16;188393;3;M1;18:00:00;Book(3).xlsx;Planilha1;38;09:00:00;18:15:00;"{""900"": 37}";;;;NAO;NAO;PENDENTE_DADOS_E_ADAPTADOR
+2026-09-17;187236;4;M1;18:00:00;Book(3).xlsx;Planilha1;38;09:00:00;18:15:00;"{""900"": 37}";;;;NAO;NAO;PENDENTE_DADOS_E_ADAPTADOR
+2026-09-18;187733;2;M1;18:00:00;Book(3).xlsx;Planilha1;38;09:00:00;18:15:00;"{""900"": 37}";;;;NAO;NAO;PENDENTE_DADOS_E_ADAPTADOR

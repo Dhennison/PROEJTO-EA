@@ -1,0 +1,16 @@
+{
+  "LEIA_PRIMEIRO.md": "8bfb9877b5ce51560dbf11e909c0e1f2b072deb6786b3289de7570bb99299954",
+  "comparar_teorico.py": "7b383da291ee3ca5bef2b558f23b13de8f30c609ffb8b59fe684f1594917bfdf",
+  "dados/COBERTURA_NOVA_EXECUCAO_MODELO.csv": "29d0c8ade4168a60bb90b7a866073784e94c173c218992badba22e2f578c9778",
+  "dados/INVENTARIO_877_PREGOES.csv": "ddd4b59cae57b7c8a8ef8e833b896a2f670b3be1a8e7de7b2b9429161af5f95d",
+  "dados/OPERACOES_NOVA_EXECUCAO_MODELO.csv": "060705697b7c2aa54fd6c47d3dd881b2f90c02ab3ee28580a74e9523958a3af1",
+  "dados/PILOTO_20260914_20260918.csv": "cd367530837c435e5b30fb26c4a245feff996bc544ca424f9404c24ec66f3c06",
+  "dados/REFERENCIA_PILOTO_D.csv": "8785198ff10130e2ba6436784002fefe7da7cff49e157559b584794344b8e69c",
+  "dados/RESUMO_PREPARACAO.json": "169a7ea9c4a281f73c451a6fc0060bc52317e956e122bcdd48cff58e0458c07b",
+  "preparar.py": "b483493e5af6720609429f65e65e6a49c6a31dc8834d505c42631ab32a94ebd5",
+  "sem_nova_execucao/POR_DIA.csv": "0831809d8977b14d2dcc3af958fdaaaeba4b29ce8e47695883239cfb8499aa3c",
+  "sem_nova_execucao/POR_OPERACAO.csv": "900a088dc84e75153d672905b66bf2e1a9f79d528fe71c26a4ecf10d8d4d4bbb",
+  "sem_nova_execucao/POR_PERIODO.csv": "a2ecb70c3264bee7f98edcec2695c34bdd8cfcaf79e26af947402b64a0e2e343",
+  "sem_nova_execucao/RESUMO.json": "4fcf4d1f6bfdd5549cd5d2e818808fc40e865e93ab4b008236f361c440b8f8a3",
+  "tests/test_comparacao.py": "5e9e58f42bff3d2258f3b0e7f930606c18e4fbbf2bcdf221f68d3abf13aea924"
+}
