@@ -1,0 +1,2 @@
+CHECK=input_global_modifier_only;NOT_NATIVE_MQL_COMPILER
+PASS;all_sources_scanned;no_input_identifier

@@ -1,5 +1,8 @@
 MODELO D — v2.13.05 DEMO — RETOMADA E OPERAÇÃO CONTÍNUA
 
+CORREÇÃO DE COMPILAÇÃO INCLUÍDA: variável local input renomeada para
+chain_input21305. Mesma lógica e mesmo diário; ver CORRECAO_COMPILACAO.txt.
+
 O QUE FOI IMPLEMENTADO NESTE PACOTE
 1. REENVIO GERAL CONFORME REVISÃO 1 DO ITEM 9.7
    Pendente comprovadamente cancelada na corretora, sem execução nem toque,

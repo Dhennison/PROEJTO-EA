@@ -264,13 +264,13 @@ bool MDRegistryRetired21305(const MDOpState &s,const MDOpSnapshot &snapshot,int 
      o.setup_msc!=accepted||o.order.initial_volume!=volume||x.price!=entry||x.sl!=sl||x.tp!=tp||x.comment!=comment)return false;
   MDOrigin68 origin;origin.verified=true;origin.buy=level<3;origin.symbol=symbol;origin.instance=instance;origin.level=level;
   origin.date=date;origin.order_ticket=ticket;origin.magic=o.order.magic;origin.accepted_msc=accepted;origin.initial_volume=volume;
-  MDChainInput68 input;MDChainResult68 chain;string why;
-  if(!MDBuild69(snapshot.book,origin,snapshot.server_msc,input,why)||!MDReconcileChain68(input,chain)||chain.pending||chain.open_volume>0)return false;
+  MDChainInput68 chain_input21305;MDChainResult68 chain;string why;
+  if(!MDBuild69(snapshot.book,origin,snapshot.server_msc,chain_input21305,why)||!MDReconcileChain68(chain_input21305,chain)||chain.pending||chain.open_volume>0)return false;
   string observed="";
-  for(int d=0;d<input.deal_count;d++){
-   int z=-1;for(int j=0;j<snapshot.book.deals;j++)if(snapshot.book.d[j].ticket==input.deals[d].ticket){z=j;break;}
+  for(int d=0;d<chain_input21305.deal_count;d++){
+   int z=-1;for(int j=0;j<snapshot.book.deals;j++)if(snapshot.book.d[j].ticket==chain_input21305.deals[d].ticket){z=j;break;}
    if(z<0)return false;
-   string receipt=MDOpDealReceipt(input.deals[d],snapshot.execution_prices_known,snapshot.deal_price[z]);
+   string receipt=MDOpDealReceipt(chain_input21305.deals[d],snapshot.execution_prices_known,snapshot.deal_price[z]);
    if(StringFind(receipts,receipt)<0)return false;
    if(StringFind(observed,receipt)<0)observed+=receipt;
   }

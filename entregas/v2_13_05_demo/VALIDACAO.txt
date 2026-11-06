@@ -23,3 +23,8 @@ python entregas/v2_13_05_demo/tests/run_demo.py --sanitize --report-dir entregas
 
 O harness usa 64 MiB de pilha para structs fixas e fixtures aninhadas.
 Nenhum teste negociou na XP/Genial. Próxima prova: MetaEditor e XP DEMO.
+
+Correção posterior à primeira compilação nativa: palavra reservada input
+renomeada em OperationalCodec. Scanner identificou o defeito original e não
+encontrou esse uso nos 48 fontes corrigidos. As 240 verificações com ASan/UBSan
+passaram novamente. Scanner não é compilador MQL5; nova compilação nativa pendente.

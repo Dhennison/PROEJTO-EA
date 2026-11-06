@@ -3,6 +3,10 @@ from pathlib import Path
 import argparse,json,os,re,subprocess,tempfile,resource
 p=argparse.ArgumentParser();p.add_argument('--sanitize',action='store_true');p.add_argument('--report-dir',type=Path,required=True);a=p.parse_args()
 root=Path(__file__).resolve().parents[1];base=root.parent/'v2_11_funcional';a.report_dir.mkdir(parents=True,exist_ok=True)
+from check_mql_keywords import check_tree
+keyword_errors=check_tree(root/'MQL5')
+(a.report_dir/'MQL_KEYWORDS.txt').write_text('CHECK=input_global_modifier_only;NOT_NATIVE_MQL_COMPILER\n'+('FAIL\n'+str(keyword_errors) if keyword_errors else 'PASS;all_sources_scanned;no_input_identifier\n'))
+if keyword_errors:raise SystemExit('MQL reserved keyword misuse: '+str(keyword_errors))
 replacements=json.loads((root/'REPLACEMENTS.json').read_text())
 with tempfile.TemporaryDirectory(prefix='modelod213_') as name:
  build=Path(name)

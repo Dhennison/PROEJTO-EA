@@ -1,0 +1,20 @@
+CORREÇÃO DE COMPILAÇÃO — v2.13.05
+
+Causa: variável local chamada input em ModeloD_OperationalCodec.mqh.
+input é palavra reservada do MQL5. Renomeada para chain_input21305.
+Os demais erros apresentados eram decorrentes da interpretação dessa palavra.
+Não houve mudança de lógica, formato do diário ou parâmetros.
+
+1. Extraia Correcao_Compilacao_v2_13_05.zip.
+2. Copie a pasta MQL5 do ZIP.
+3. MT5 da XP -> Arquivo -> Abrir Pasta de Dados.
+4. Cole nessa RAIZ. Aceite mesclar/substituir: somente um .mqh será trocado.
+5. No MetaEditor, compile novamente EA_ModeloD_Demo.mq5 com F7.
+
+Não apagar o diário, não trocar Instância. Enviar o resultado da compilação.
+O pacote completo da v2.13.05 também foi atualizado.
+
+Verificação: scanner detectou o defeito no fonte original e aprovou os 48
+fontes corrigidos. As 240 verificações C++/ASan/UBSan passaram novamente.
+O scanner é específico para input; não substitui compilação MetaEditor.
+Compilação nativa corrigida ainda pendente.

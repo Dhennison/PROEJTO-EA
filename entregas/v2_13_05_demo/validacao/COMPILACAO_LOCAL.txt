@@ -1,39 +1,39 @@
-In file included from /tmp/modelod213_8037i544/ModeloD_OperationalFile.mqh:3,
-                 from /tmp/modelod213_8037i544/ModeloD_OperationalCases.mqh:3,
-                 from /tmp/modelod213_8037i544/case.cpp:8:
-/tmp/modelod213_8037i544/ModeloD_OperationalCodec.mqh: In function ‘bool MDRearmEligible21305(const MDOpState&, int)’:
-/tmp/modelod213_8037i544/ModeloD_OperationalCodec.mqh:192:2: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+In file included from /tmp/modelod213_ynys26a_/ModeloD_OperationalFile.mqh:3,
+                 from /tmp/modelod213_ynys26a_/ModeloD_OperationalCases.mqh:3,
+                 from /tmp/modelod213_ynys26a_/case.cpp:8:
+/tmp/modelod213_ynys26a_/ModeloD_OperationalCodec.mqh: In function ‘bool MDRearmEligible21305(const MDOpState&, int)’:
+/tmp/modelod213_ynys26a_/ModeloD_OperationalCodec.mqh:192:2: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
   192 |  if(k<0||k>=s.nlevels)return false;MDOpLevel l=s.levels[k];
       |  ^~
-/tmp/modelod213_8037i544/ModeloD_OperationalCodec.mqh:192:36: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+/tmp/modelod213_ynys26a_/ModeloD_OperationalCodec.mqh:192:36: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
   192 |  if(k<0||k>=s.nlevels)return false;MDOpLevel l=s.levels[k];
       |                                    ^~~~~~~~~
-/tmp/modelod213_8037i544/ModeloD_OperationalCodec.mqh: In function ‘bool MDRegistryRetired21305(const MDOpState&, const MDOpSnapshot&, int)’:
-/tmp/modelod213_8037i544/ModeloD_OperationalCodec.mqh:279:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+/tmp/modelod213_ynys26a_/ModeloD_OperationalCodec.mqh: In function ‘bool MDRegistryRetired21305(const MDOpState&, const MDOpSnapshot&, int)’:
+/tmp/modelod213_ynys26a_/ModeloD_OperationalCodec.mqh:279:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
   279 |    if(StringFind(observed,StringSubstr(receipts,from,stop-from+1))<0)return false;from=stop+1;
       |    ^~
-/tmp/modelod213_8037i544/ModeloD_OperationalCodec.mqh:279:83: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+/tmp/modelod213_ynys26a_/ModeloD_OperationalCodec.mqh:279:83: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
   279 |    if(StringFind(observed,StringSubstr(receipts,from,stop-from+1))<0)return false;from=stop+1;
       |                                                                                   ^~~~
-In file included from /tmp/modelod213_8037i544/ModeloD_SessaoDemo213.mqh:3,
-                 from /tmp/modelod213_8037i544/ModeloD_DailyAdapter.mqh:5,
-                 from /tmp/modelod213_8037i544/ModeloD_Observer.mqh:3,
-                 from /tmp/modelod213_8037i544/EA_ModeloD_Demo.mq5:6,
-                 from /tmp/modelod213_8037i544/case.cpp:144:
-/tmp/modelod213_8037i544/ModeloD_SessoesVerificadas21305.mqh: In function ‘bool MDSessionTime21305(string, int&)’:
-/tmp/modelod213_8037i544/ModeloD_SessoesVerificadas21305.mqh:8:2: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+In file included from /tmp/modelod213_ynys26a_/ModeloD_SessaoDemo213.mqh:3,
+                 from /tmp/modelod213_ynys26a_/ModeloD_DailyAdapter.mqh:5,
+                 from /tmp/modelod213_ynys26a_/ModeloD_Observer.mqh:3,
+                 from /tmp/modelod213_ynys26a_/EA_ModeloD_Demo.mq5:6,
+                 from /tmp/modelod213_ynys26a_/case.cpp:144:
+/tmp/modelod213_ynys26a_/ModeloD_SessoesVerificadas21305.mqh: In function ‘bool MDSessionTime21305(string, int&)’:
+/tmp/modelod213_ynys26a_/ModeloD_SessoesVerificadas21305.mqh:8:2: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
     8 |  if(h>23||m>59||s>59)return false;value=h*3600+m*60+s;return true;
       |  ^~
-/tmp/modelod213_8037i544/ModeloD_SessoesVerificadas21305.mqh:8:35: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+/tmp/modelod213_ynys26a_/ModeloD_SessoesVerificadas21305.mqh:8:35: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
     8 |  if(h>23||m>59||s>59)return false;value=h*3600+m*60+s;return true;
       |                                   ^~~~~
-In file included from /tmp/modelod213_8037i544/ModeloD_OperationalTerminal.mqh:6,
-                 from /tmp/modelod213_8037i544/EA_ModeloD_Demo.mq5:10:
-/tmp/modelod213_8037i544/ModeloD_DailyTerminal.mqh: In function ‘bool MDCollectDaily614(int, MDDailyRaw614&, string&)’:
-/tmp/modelod213_8037i544/ModeloD_DailyTerminal.mqh:25:2: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+In file included from /tmp/modelod213_ynys26a_/ModeloD_OperationalTerminal.mqh:6,
+                 from /tmp/modelod213_ynys26a_/EA_ModeloD_Demo.mq5:10:
+/tmp/modelod213_ynys26a_/ModeloD_DailyTerminal.mqh: In function ‘bool MDCollectDaily614(int, MDDailyRaw614&, string&)’:
+/tmp/modelod213_ynys26a_/ModeloD_DailyTerminal.mqh:25:2: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
    25 |  if(n<3||GetLastError()!=0)return MDB3Fail(reason,"HISTORICO_AINDA_INDISPONIVEL");r.available_bars=n;
       |  ^~
-/tmp/modelod213_8037i544/ModeloD_DailyTerminal.mqh:25:83: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+/tmp/modelod213_ynys26a_/ModeloD_DailyTerminal.mqh:25:83: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
    25 |  if(n<3||GetLastError()!=0)return MDB3Fail(reason,"HISTORICO_AINDA_INDISPONIVEL");r.available_bars=n;
       |                                                                                   ^
 
