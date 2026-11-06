@@ -40,7 +40,19 @@ Em 18:01:01.870 apareceu COBERTURA_ATUAL=JANELA_ATUAL_INVALIDA_OU_DEFASADA. Esse
 
 A gravação confirma a sequência visual em torno de 17:59:56, 18:00:04 e 18:00:12. Em um trecho, o texto do indicador de ajuste substitui o texto de status do EA e depois o status do EA reaparece; a pendência visual já conhecida permanece, sem evidência neste material de interferência nos cancelamentos.
 
-O saldo no print é 999982,00 BRL. Esse saldo isolado não fornece o resultado diário por nível. A R61,8 +150 pontos/+30 BRL já tinha sido demonstrada pelos negócios recebidos anteriormente; para consolidar o fechamento financeiro deste dia, é necessário o CSV de pontos atualizado após o corte. Não somar o alvo teórico da R38,2 como resultado executado.
+O saldo no print é 999982,00 BRL. Esse saldo isolado não fornece o resultado diário por nível. Posteriormente foi recebido o CSV de pontos atualizado após o corte, preservado como `PONTOS_FINAL_20261106.csv`, e seu fechamento foi conferido abaixo. Não somar o alvo teórico da R38,2 como resultado executado.
+
+## Fechamento financeiro confirmado pelo CSV final
+
+CSV de 30 colunas, cinco níveis e total. Uma única operação encerrada: **R61,8, venda de um contrato em 169400, saída em 169250, motivo nativo 5 (TP)**. Resultado: **+150 pontos por contrato, +150 pontos-contratos e +30,00 BRL**. Volume de entrada=1, saída=1, residual=0.
+
+Comissão, swap e fee informados no CSV são zero; o líquido segundo esses custos disponíveis é +30,00 BRL. Slippage adverso de entrada em relação ao preço solicitado e saída em relação ao TP normalizado: zero. Uma vitória, zero derrotas; acerto de 100% corresponde somente a essa única operação, sem extrapolação.
+
+S38,2/S50/S61,8 permanecem SEM_EXECUCAO no CSV e, cruzados com o log do corte, sem toque observado e cancelados por horário. R38,2 permanece TOCADA_SEM_EXECUCAO, com resultado financeiro zero, sem atribuir o alvo teórico ao executado. Pontos/volumes/custos/quantidade de operações da linha TOTAL foram reconciliados com os cinco níveis. A conta está sem volume residual.
+
+Acumulado dos CSVs conferidos de **05 e 06/11**: -240 + 150 = **-90 pontos**, -48 + 30 = **-18,00 BRL**, três operações encerradas, duas positivas e uma negativa. Esse acumulado é das duas datas da XP DEMO, não do Work nem de outra conta.
+
+As colunas teóricas de 06/11 continuam vazias: essa data está fora da amostra Work encerrada em 21/09/2026 e não foi submetida a replay teórico independente nesta etapa.
 
 ## Evidências preservadas
 

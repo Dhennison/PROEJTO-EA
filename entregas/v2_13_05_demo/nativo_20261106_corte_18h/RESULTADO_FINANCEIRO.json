@@ -1,0 +1,47 @@
+{
+  "data": "2026-11-06",
+  "contrato": "WINZ26",
+  "operacoes_encerradas": 1,
+  "volume_executado_contratos": "1",
+  "entrada_R61_8": "169400",
+  "saida_R61_8": "169250",
+  "motivo": "TP (DEAL_REASON_TP=5)",
+  "pontos_executados_por_contrato": "150",
+  "pontos_contratos": "150",
+  "profit_brl": "30.00000000",
+  "commission_brl": "0.00000000",
+  "swap_brl": "0.00000000",
+  "fee_brl": "0.00000000",
+  "resultado_liquido_conforme_custos_disponiveis": "30.00000000",
+  "volume_residual_total": "0.00000000",
+  "slippage_entrada_adverso": "0",
+  "slippage_saida_SLTP_adverso": "0",
+  "vitorias": 1,
+  "derrotas": 0,
+  "acerto_amostra": "100%, apenas uma operacao",
+  "estados_csv_por_nivel": {
+    "S38.2": "SEM_EXECUCAO",
+    "S50": "SEM_EXECUCAO",
+    "S61.8": "SEM_EXECUCAO",
+    "R38.2": "TOCADA_SEM_EXECUCAO",
+    "R61.8": "ENCERRADA"
+  },
+  "limites": [
+    "SEM_EXECUCAO isoladamente nao prova ausencia de toque; suportes cruzados com log observacional do corte.",
+    "R38.2 tocada sem execucao nao soma pontos nem resultado teorico ao executado.",
+    "Colunas teoricas permanecem vazias para 06/11, fora da amostra Work encerrada em 21/09/2026.",
+    "Custos zero sao os informados no CSV da conta DEMO, nao estimativa de custos reais."
+  ],
+  "sha256_original": "b0a05defffe773289d41788d32de9708d8b704b6c33cc42fe2c66c4b58e2b627",
+  "acumulado_duas_datas_XP_DEMO": {
+    "datas": [
+      "2026-11-05",
+      "2026-11-06"
+    ],
+    "pontos_contratos": "-90.00000000",
+    "brl_conforme_custos_disponiveis": "-18.00000000",
+    "operacoes_encerradas": 3,
+    "vitorias": 2,
+    "derrotas": 1
+  }
+}
