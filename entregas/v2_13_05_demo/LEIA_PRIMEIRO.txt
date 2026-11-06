@@ -1,0 +1,121 @@
+MODELO D — v2.13.05 DEMO — RETOMADA E OPERAÇÃO CONTÍNUA
+
+O QUE FOI IMPLEMENTADO NESTE PACOTE
+1. REENVIO GERAL CONFORME REVISÃO 1 DO ITEM 9.7
+   Pendente comprovadamente cancelada na corretora, sem execução nem toque,
+   pode receber novo pedido depois de conferir o histórico até o presente.
+   Exige relógio, dados B3, inventário, propriedades e elegibilidade válidos,
+   antes do corte. Confere cancelamento nativo, não apenas ausência na tela.
+   Parcial, primeiro toque, ordem ativa ou resposta incerta impedem reenvio.
+   Cada geração tem comentário diferente. Preserva as anteriores no diário.
+   Reconstrução/falha de consulta não consome oportunidade por si só.
+   Mantém gestão das posições conhecidas e corte durante a reconstrução.
+
+2. PARCIAIS, SAÍDAS E REJEIÇÕES
+   Mantém 6 executados + 4 pendentes como saldo da mesma ordem de 10.
+   SL/TP da corretora confirmado em deal cancela o saldo mesmo se a trilha
+   Last ainda estiver reconstruindo. Stop/alvo e corte continuam encerrando
+   o residual. Saída obrigatória por falta de SL também cancela o saldo para
+   não permitir reposição involuntária da exposição. SL presente e TP ausente
+   mantém a tentativa de TP sem fechar só pelo prazo de proteção.
+   Rejeições explícitas de stop/freeze são classificadas mesmo com retorno
+   falso de OrderSend. Timeout, desconexão e respostas desconhecidas seguem
+   incertos: não há reenvio automático sem conciliação.
+
+3. ARQUIVAMENTO DE SESSÕES FECHADAS
+   Remove do estado de trabalho apenas pregões anteriores comprovadamente
+   encerrados, sem pendentes ativas, posições abertas ou pedidos incertos.
+   Preserva todos os registros antigos como prefixo imutável do mesmo diário.
+   O replay reconstitui as provas das ordens arquivadas, inclusive migrações
+   2.13.03/04. Novos pregões reutilizam os slots, sem acumular oito dias ou
+   64 posições já encerradas no estado ativo. Vínculos de posições do pregão
+   atual são remapeados sem alterar ticket, volume, Magic ou preços.
+   Não é exclusão de recibos nem aumento indiscriminado dos limites.
+   Se faltam provas, o arquivamento aguarda; não descarta exposição.
+
+4. RELATÓRIO AUTOMÁTICO EXECUTADO
+   Publica em Common\Files um CSV diário MDD21305_PONTOS_<contexto>_<data>.csv.
+   Cinco níveis e total: preços, volumes, pontos executados ponderados,
+   pontos-contratos separados, slippage de entrada e de saída SL/TP,
+   motivos nativos, custos disponíveis, operações encerradas, vitórias,
+   derrotas, neutras e acerto. Valores desconhecidos ficam vazios/indicados.
+   A parcela ainda aberta não recebe pontuação final inventada.
+   Teóricos Work ficam explicitamente pendentes: não são derivados dos fills
+   nem apresentados como se fossem uma execução independente do histórico.
+   CSV: ponto e vírgula; decimal ponto; 30 colunas. Importar com esse formato.
+   O relatório final precisa estar publicado antes de arquivar o pregão.
+
+5. FREEZE LEVEL
+   Consulta e aplica o valor na decisão de cancelar pendente, sem mover preços.
+   Dentro da zona congelada, preserva intenção e reavalia. Proteção e saída
+   emergencial não são silenciosamente suprimidas por essa pré-checagem:
+   proteção segue com preços fixos e retcode, respeitando a agenda 6+3min;
+   fechamento a mercado continua sendo tentado quando devido.
+   O servidor ainda pode rejeitar uma ação e essa rejeição é conciliada.
+
+6. LIQUIDEZ SOMENTE COMO AUDITORIA
+   Registra volume de sessão disponível e timestamp de ticks do candidato
+   e do contrato anterior observado. Se não conhecido, informa a ausência.
+   Não escolhe contrato por volume nem cria filtro estratégico.
+
+7. SESSÕES REVISADAS POR DATA E CONTRATO
+   Suporta tabela opcional Common\Files\ModeloD_Sessoes_Verificadas.csv,
+   com data exata, contrato, abertura, fim, zeragem, revisão e fonte.
+   Valida tabela inteira, duplicidades, horários e compatibilidade com a
+   disponibilidade da corretora. Arquivo inválido não vira sessão regular
+   por fallback silencioso. Exceção conhecida sem horário revisado bloqueia
+   entradas. A janela regular atual continua 09h–18h sem tabela especial.
+   Nenhum horário especial foi preenchido ou certificado neste pacote.
+   Não é calendário multianual completo. Ver SESSOES_VERIFICADAS.txt.
+
+INSTALAÇÃO — XP DEMO
+1. Remova somente EA_ModeloD_Demo do gráfico WIN$N. Mantenha o indicador.
+2. Extraia o ZIP. Copie a pasta MQL5 inteira que está dentro dele.
+3. No MT5 DA XP: Arquivo -> Abrir Pasta de Dados.
+4. Cole nessa RAIZ, onde já existe MQL5. Aceite mesclar e substituir os
+   arquivos do pacote. NÃO cole dentro da MQL5 existente.
+5. F4. Abra MQL5\Experts\ModeloD_Demo\EA_ModeloD_Demo.mq5 e pressione F7.
+6. Envie o resultado da compilação antes de reanexar.
+
+DEPOIS DE CONFERIR A COMPILAÇÃO NATIVA
+Mesmo gráfico WIN$N, XP DEMO Hedge BRL, Instancia=1, VolumePorNivel=1,
+IntervaloSegundos=2, ExecutarNaDemo=true e AlgoTrading ativo.
+Confirmar START;v=2.13.05_DEMO e DIARIO_REABERTO_VALIDADO.
+Não apagar arquivos Common/Files, não trocar Instância e não reinstalar o
+indicador de ajuste. Não é necessário configurar horários especiais para
+um pregão regular de novembro.
+
+PERSISTÊNCIA E COMPATIBILIDADE
+Mesmo formato MDOP1, contexto e caminho do diário; aceita o histórico das
+versões anteriores e as duas migrações já usadas na XP.
+Antes das primeiras alterações estruturais salva/confere .ledger.pre21305.
+Eventos REARM21305 e ARCHIVE21305 são canônicos e auditados, sem editar o
+passado. Depois deles, manter 2.13.05 ou posterior: versões antigas não
+reconhecem essas transições. Não restaurar backup para apagar consumos.
+
+VALIDAÇÃO E LIMITES
+240 verificações locais passaram com ASan/UBSan, incluindo 151 regressões
+anteriores, reenvios sucessivos, parcial 6+4, vinte sessões, posições atuais
+preservadas no arquivamento, migrações antigas, CSV e horários especiais.
+São APIs simuladas. Não foram enviadas ordens a uma conta MT5 por estes testes.
+Compilação MQL5 e execução nativas desta versão ainda dependem do MT5.
+
+CONTINUAM PENDENTES
+- Dados e associação contrato/ajuste/OHLC/ticks do período Work, calendário
+  2023–2026 e backtest principal com cinco contratos por nível.
+- Pontuação teórica independente, comparação Work e consolidação multianual.
+- A/B Genial, causa do descarte pelo Tester e revisão da falha visual.
+- Homologação nativa dos novos caminhos, parciais/proteção/corridas e posição
+  aberta no corte, aproveitando ensaios existentes quando apropriado.
+- Implantação real Genial e validação prolongada de desempenho/persistência.
+  A guarda de 128 MiB do diário e os limites de snapshots/cadeias continuam:
+  não é promessa de capacidade ilimitada ou histórico longo já homologado.
+  Fill/recibo tardio que contradiga uma origem já comprovada como cancelada
+  e retirada provoca bloqueio de conciliação/diagnóstico, sem ignorá-lo; a
+  recuperação automática dessa anomalia ainda não está homologada no servidor.
+  A tabela de horários não inclui automaticamente calendário de anos novos
+  nem libera o próprio contrato no vencimento sem revisão específica.
+
+Fórmulas, cinco SL/TP, normalização, fonte B3, filtros e indicador independente
+preservados. Conta real permanece bloqueada. Regras da Revisão 1 anexadas;
+o estado de implementação escrito naquele PDF antecede esta entrega.

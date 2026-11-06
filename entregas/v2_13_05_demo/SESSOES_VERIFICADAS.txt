@@ -1,0 +1,23 @@
+TABELA OPCIONAL DE SESSÕES — DEMO v2.13.05
+
+Arquivo operacional: Common\Files\ModeloD_Sessoes_Verificadas.csv.
+Cabeçalho exato:
+Data;Contrato;Abertura;Fim;Zeragem;Verificado;Fonte
+
+Data: AAAAMMDD. Contrato real WIN cadastrado. Horários HH:MM:SS (Brasília).
+Verificado: SIM. Fonte: identificação da referência oficial conferida.
+Uma linha por data/contrato. Sem duplicidades ou colunas adicionais.
+Abertura < Zeragem <= Fim. O ano e contrato devem estar cadastrados e a
+sessão disponível na corretora precisa cobrir a janela revisada.
+
+O modelo de cabeçalho fornecido não tem horários e não é arquivo operacional.
+Não copiar/renomear como substituto de uma tabela oficial revisada.
+Configurar antes do pregão; dados congelados não são migrados silenciosamente
+no meio do dia. Sem tabela especial válida, a exceção conhecida é bloqueada.
+A quarta-feira de cinzas de 2026 está marcada como exceção que exige revisão.
+Uma sessão normal de novembro não exige este arquivo.
+
+A tabela é configuração de dados revisados, não download/validação autônoma
+de boletim B3 nem cadastro de todo o calendário histórico. Não preenche
+contratos ou ajustes ausentes. O contrato no próprio vencimento continua
+bloqueado pelo adaptador DEMO até revisão específica.

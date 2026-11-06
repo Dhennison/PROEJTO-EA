@@ -1,0 +1,25 @@
+v2.13.05 — validação local final
+
+240 verificações; zero falhas; AddressSanitizer e UndefinedBehaviorSanitizer
+ativos. 151 regressões anteriores + 89 verificações adicionais.
+Compilação C++ adaptada às APIs simuladas; não é compilação MQL5.
+O compilador C++ mantém avisos de estilo em código herdado; resultado e
+stdout estão em validacao. Nenhum resultado nativo novo é afirmado.
+
+Casos: reenvio geral/repetido só com cancelamento nativo, nenhum fill/toque;
+ordem ativa/ausente/expirada/resposta incerta/cutoff bloqueiam; diário
+imutável, backup, replay, nonce e reconhecimento de gerações anteriores;
+parciais 6+4, SL/TP confirmado no servidor, saída obrigatória sem SL e TP-only;
+arquivamento de vinte sessões, liberação de posições encerradas, preservação
+de posição atual com remapeamento, recibos alterados e fills tardios;
+CSV de 30 colunas, menos375/mais135/menos240, custos e slippage SL,
+pontos-contratos separados, custos indisponíveis não inventados;
+freeze, rejeições explícitas com retorno falso, incerteza preservada;
+liquidez observacional sem envio; tabela especial válida, duplicada,
+não revisada, inválida ou incompatível com metadados.
+
+Comando (raiz do repositório):
+python entregas/v2_13_05_demo/tests/run_demo.py --sanitize --report-dir entregas/v2_13_05_demo/validacao
+
+O harness usa 64 MiB de pilha para structs fixas e fixtures aninhadas.
+Nenhum teste negociou na XP/Genial. Próxima prova: MetaEditor e XP DEMO.
