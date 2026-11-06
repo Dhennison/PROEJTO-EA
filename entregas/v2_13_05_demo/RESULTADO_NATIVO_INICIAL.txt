@@ -1,0 +1,21 @@
+XP DEMO — v2.13.05 — inicialização nativa em 05/11/2026
+
+Fonte: resultado MetaEditor, mensagens e captura enviados pelo usuário.
+Compilação após correção de input: zero erros, zero avisos, 8470 ms.
+
+23:10:29.949 START;v=2.13.05_DEMO; revision=60.
+DIARIO_REABERTO_VALIDADO; estado anterior preservado.
+Conta DEMO, Hedge, BRL, servidor XPMT5-DEMO; gráfico WIN$N,M5.
+23:10:31.972 ALL_CHAINS_RECONCILED; intenções e unresolved=0.
+PONTOS21305_ATUALIZADO: CSV de 20261105 publicado em Common/Files.
+Conteúdo do CSV ainda não recebido/conferido nesta inicialização.
+23:10:33.970 FRESH_BROKER_TIME_REQUIRED_AFTER_RESTART.
+
+Mercado fechado e sem referência recente do broker: bloqueio esperado até
+validação de relógio; não é prova de fuso errado. Não houve novos envios
+neste trecho. Este registro não certifica reenvio genérico, arquivamento
+na virada do dia, sessões especiais, parciais ou fechamento no corte.
+
+A captura mostra 2.135 no campo numérico nativo de versão. Pedido do usuário:
+exibir o nome completo de entrega, por exemplo v2.13.05, nas próximas versões.
+O executável compilado do usuário não foi anexado ao repositório.
