@@ -106,7 +106,7 @@ def compare(reference, actual, eligible, coverage):
 
 def save_csv(path, fields, rows):
     with path.open("w", encoding="utf-8-sig", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=fields, delimiter=";")
+        writer = csv.DictWriter(stream, fieldnames=fields, delimiter=";", lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
