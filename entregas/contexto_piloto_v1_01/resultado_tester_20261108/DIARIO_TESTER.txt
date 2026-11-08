@@ -1,0 +1,52 @@
+2026.11.08 14:29:52.587	Tester	"ModeloD_PilotoControlado\Diagnostico_Piloto_OnTick.ex5" AVX2
+2026.11.08 14:29:52.725	Tester	MDDP29_1794147861_770874343: history data begins from 2026.10.27 00:00
+2026.11.08 14:29:52.728	Tester	MDDP29_1794147861_770874343: ticks data begins from 2026.10.29 00:00
+2026.11.08 14:29:52.735	Core 01	agent process started on 127.0.0.1:3000
+2026.11.08 14:29:52.735	Core 01	connecting to 127.0.0.1:3000
+2026.11.08 14:29:53.258	Core 01	connected
+2026.11.08 14:29:53.278	Core 01	authorized (agent build 6231)
+2026.11.08 14:29:53.290	Tester	MDDP29_1794147861_770874343,M5 (GenialInvestimentos-PRD): testing of Experts\ModeloD_PilotoControlado\Diagnostico_Piloto_OnTick.ex5 from 2026.10.29 00:00 to 2026.10.30 00:00
+2026.11.08 14:29:53.439	Core 01	common synchronization completed
+2026.11.08 14:29:53.446	Core 01	MDDP29_1794147861_770874343: history for 2025 year synchronized
+2026.11.08 14:29:53.448	Core 01	MDDP29_1794147861_770874343: history for 2026 year synchronized
+2026.11.08 14:29:53.448	Core 01	MDDP29_1794147861_770874343: history synchronization completed [11 Kb]
+2026.11.08 14:29:53.448	Core 01	MDDP29_1794147861_770874343: 11.24 Kb of history processed in 0:00:00.015
+2026.11.08 14:29:53.453	Core 01	MDDP29_1794147861_770874343: ticks synchronization completed [508 Kb]
+2026.11.08 14:29:56.289	Core 01	MetaTester 5 started on 127.0.0.1:3000
+2026.11.08 14:29:56.289	Core 01	cloud network mode is off
+2026.11.08 14:29:56.289	Core 01	initialization finished
+2026.11.08 14:29:56.289	Core 01	login (build 6231)
+2026.11.08 14:29:56.289	Core 01	5464 bytes of account info loaded
+2026.11.08 14:29:56.289	Core 01	1478 bytes of tester parameters loaded
+2026.11.08 14:29:56.289	Core 01	708 bytes of input parameters loaded
+2026.11.08 14:29:56.289	Core 01	595667 bytes of symbols list loaded (73535 symbols)
+2026.11.08 14:29:56.289	Core 01	expert file added: Experts\ModeloD_PilotoControlado\Diagnostico_Piloto_OnTick.ex5. 65550 bytes loaded
+2026.11.08 14:29:56.289	Core 01	initial deposit 1000000.00 USD, leverage 1:100
+2026.11.08 14:29:56.289	Core 01	successfully initialized
+2026.11.08 14:29:56.289	Core 01	527 Kb of total initialization data received
+2026.11.08 14:29:56.289	Core 01	13th Gen Intel Core i5-1335U, 7879 MB
+2026.11.08 14:29:56.289	Core 01	MDDP29_1794147861_770874343: symbol to be synchronized
+2026.11.08 14:29:56.289	Core 01	MDDP29_1794147861_770874343: symbol synchronized, 3720 bytes of symbol info received
+2026.11.08 14:29:56.289	Core 01	MDDP29_1794147861_770874343: load 11 Kb of history data to synchronize in 0:00:00.003
+2026.11.08 14:29:56.289	Core 01	MDDP29_1794147861_770874343: history synchronized from 2026.10.27 to 2026.10.29
+2026.11.08 14:29:56.289	Core 01	MDDP29_1794147861_770874343: ticks synchronization started
+2026.11.08 14:29:56.289	Core 01	MDDP29_1794147861_770874343: load 508 Kb of tick data to synchronize in 0:00:00.000
+2026.11.08 14:29:56.289	Core 01	MDDP29_1794147861_770874343: history ticks synchronized from 2026.10.29 to 2026.10.29
+2026.11.08 14:29:56.289	Core 01	MDDP29_1794147861_770874343,M5: history cache allocated for 480 bars and contains 227 bars from 2026.10.27 09:00 to 2026.10.28 18:25
+2026.11.08 14:29:56.289	Core 01	MDDP29_1794147861_770874343,M5: history begins from 2026.10.27 09:00
+2026.11.08 14:29:56.289	Core 01	MDDP29_1794147861_770874343,M5 (GenialInvestimentos-PRD): generating based on real ticks
+2026.11.08 14:29:56.289	Core 01	MDDP29_1794147861_770874343,M5: testing of Experts\ModeloD_PilotoControlado\Diagnostico_Piloto_OnTick.ex5 from 2026.10.29 00:00 to 2026.10.30 00:00 started with inputs:
+2026.11.08 14:29:56.289	Core 01	  InpArquivoFonte=DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINZ26_2026_10_29_09_00_2026_10_29_09_10_GTR_06_20261029_A_765756968_ALL.csv
+2026.11.08 14:29:56.289	Core 01	2026.10.29 00:00:00   PILOTO100_TESTER;START;v=1.00;SEM_ORDENS;symbol=MDDP29_1794147861_770874343;source_n=204027;ON_TICK_ONLY_BUFFERING;pasta=Common\Files\ModeloD_Piloto_Controlado\TESTER_1793232000_422453
+2026.11.08 14:29:56.289	Core 01	MDDP29_1794147861_770874343 : real ticks begin from 2026.10.29 00:00:00
+2026.11.08 14:29:56.289	Core 01	MDDP29_1794147861_770874343,M1: history cache allocated for 2397 bars and contains 1130 bars from 2026.10.27 09:00 to 2026.10.28 18:25
+2026.11.08 14:29:56.289	Core 01	MDDP29_1794147861_770874343,M1: 10 bars from 2026.10.29 09:00 to 2026.10.29 09:09 added
+2026.11.08 14:29:56.289	Core 01	MDDP29_1794147861_770874343,M1: history begins from 2026.10.27 09:00
+2026.11.08 14:29:56.289	Core 01	2026.10.29 09:09:59   PILOTO100_TESTER;END;callbacks=204027;buffered=204027;history_exact=false;ontick_exact=false;overflow=0;export_events=true;export_query=true;report_ok=true;pasta=Common\Files\ModeloD_Piloto_Controlado\TESTER_1793232000_422453
+2026.11.08 14:29:56.289	Core 01	final balance 1000000.00 USD
+2026.11.08 14:29:56.289	Core 01	OnTester result 0
+2026.11.08 14:29:56.289	Core 01	MDDP29_1794147861_770874343,M5: 204027 ticks, 2 bars generated. Environment synchronized in 0:00:00.176. Test passed in 0:00:02.837 (including ticks preprocessing 0:00:00.016).
+2026.11.08 14:29:56.289	Core 01	MDDP29_1794147861_770874343,M5: total time from login to stop testing 0:00:03.013 (including 0:00:00.176 for history data synchronization)
+2026.11.08 14:29:56.289	Core 01	396 Mb memory used including 0.94 Mb of history data, 64 Mb of tick data
+2026.11.08 14:29:56.289	Core 01	log file "C:\Users\jhenn\AppData\Roaming\MetaQuotes\Tester\7C2F32F55EE936F0CCC2F0B721A79A10\Agent-127.0.0.1-3000\logs\20261108.log" written
+2026.11.08 14:29:56.299	Core 01	connection closed

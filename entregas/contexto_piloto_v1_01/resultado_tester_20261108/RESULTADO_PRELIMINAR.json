@@ -1,0 +1,20 @@
+{
+  "diary_sha256": "a4e8a57b0fe9134d478c15d9ff0fb4aeee783c8c9bdc3c7299bb1f891f89da49",
+  "symbol": "MDDP29_1794147861_770874343",
+  "effective_start": "2026-10-29 00:00:00",
+  "history_prior_M5_bars": 227,
+  "engine_processed_ticks": 204027,
+  "callbacks": 204027,
+  "buffered": 204027,
+  "overflow": 0,
+  "history_exact_vs_original_raw": false,
+  "ontick_exact_vs_original_raw": false,
+  "exports_events": true,
+  "exports_query": true,
+  "report_ok": true,
+  "discard_or_absent_reported_in_received_diary": false,
+  "raw_output_folder": "ModeloD_Piloto_Controlado/TESTER_1793232000_422453",
+  "raw_CSVs_received": false,
+  "cause_of_false_equality": "PENDING_RAW_VERIFICATION_KNOWN_EXTRA_FLAGS_MAY_EXPLAIN",
+  "initialization_shift_resolved_this_run": true
+}
