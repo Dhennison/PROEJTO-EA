@@ -1,0 +1,274 @@
+﻿MODELO D — ANÁLISE CONSOLIDADA DOS TESTES HISTÓRICOS XP E GENIAL
+Atualização: 08/11/2026 — inclui conferência dos arquivos brutos das rodadas 01 a 06
+
+1. CONCLUSÃO PRINCIPAL
+
+As seis execuções do plano na Genial foram realizadas. Nenhuma ficou aprovada
+como alimentação de ticks reais para comparar operações do EA com o Work.
+Nos testes 01 a 05, o Tester declarou descarte dos ticks reais e entregou
+somente cotações geradas sem flags de negócio. No teste 06, declarou ausência
+de ticks reais e usou geração substituta, porém produziu Last, volume e flags
+de negócio. Portanto, esses campos, mesmo preenchidos, NÃO certificam origem
+real. A origem das inconsistências ainda não foi identificada.
+
+Essa conclusão não significa que o backtest seja impossível: significa que
+esta alimentação nativa ainda não foi validada. A matemática do Work e a
+validação da execução do EA são etapas diferentes.
+
+2. FONTES E VERIFICAÇÃO REALIZADA AGORA
+
+Recebido: “Teste A-B 01 a 06.zip”, com sete pares TXT/CSV:
+seis rodadas corretas e uma tentativa adicional com datas divergentes.
+Foram lidos INTEGRALMENTE os sete CSVs, totalizando 412.894 registros.
+As seis rodadas corretas somam 155.923 registros; a tentativa adicional tem
+256.971. Não somar esses registros como se fossem negócios de um único dia.
+
+Foram conferidos: correspondência com cada TXT, contagem ALL, classificação
+por flags e Last, contagem INFO, distribuição de flags, negócios por minuto,
+ordem cronológica, limites das janelas, finitude dos campos numéricos e SHA256.
+As verificações passaram. Todos os TXT declaram estabilidade em duas leituras.
+A checagem do CSV é sobre o snapshot exportado; a igualdade entre as duas
+leituras é evidenciada pelos relatórios nativos, não por dois CSVs separados.
+
+Os Diários já recebidos foram preservados por rodada. O ZIP atual contém os
+TXT e CSV nativos; as mensagens do motor do Tester são dos Diários anteriores.
+Não há consulta do terminal A de outubro feita automaticamente por este lote.
+Os controles A anteriores e a coleta focal de setembro são fontes separadas.
+
+3. CONDIÇÕES COMUNS
+
+DiagTicksAB v1.21, sem bibliotecas da estratégia e sem envio de ordens.
+Servidor GenialInvestimentos-PRD, build 6231; símbolos nativos, gráfico M5.
+Modelagem selecionada: “Cada tick é baseado em um tick real”.
+Sem otimização, teste futuro ou modo visual; consultas em hora do servidor.
+Janela com início inclusivo e fim exclusivo. Um intervalo maior no Tester
+permite ao relógio passar do final da consulta; não amplia a janela exportada.
+O símbolo consultado não certifica, por si, o contrato original usado no Work.
+
+4. SEIS RODADAS CORRETAS — VALORES CONFIRMADOS NOS CSVs
+
+ID  Data        Símbolo  Janela       ALL     TRADE*   INFO    Situação no Diário
+01  01/09/2026  WINV26   18:20–18:25    5200        0    5200  Reais descartados
+02  02/09/2026  WINV26   16:10–16:15   15966        0   15966  Reais descartados
+03  02/10/2026  WINV26   09:00–09:10   29650        0   29650  Reais descartados
+04  09/10/2026  WINV26   09:00–09:10   30350        0   30350  Reais descartados
+05  19/10/2026  WINZ26   09:00–09:10   37831        0   37831  Reais descartados
+06  29/10/2026  WINZ26   09:00–09:10   36926    36926   36922  Reais ausentes
+
+*TRADE nesta tabela coincide com a contagem por flags de negócio e Last válido.
+No teste 06, são registros gerados que satisfazem o classificador, não 36.926
+negócios reais autenticados. Todos os dias usaram geração substituta segundo
+o Diário. Nenhum erro de consulta foi reportado nessas rodadas.
+
+Nos testes 01 a 05, todos os registros têm flags=6 (BID|ASK), volume=0 e
+volume_real=0. Em 01, 03, 04 e 05, Last=0 em todas as linhas.
+Em 02, Last=182390 CONSTANTE nas 15.966 linhas. O valor coincide com o
+fechamento M1/Work de 01/09 às 18:24. A coincidência e a constância são fatos;
+a origem interna de sua propagação pelo MT5 não está demonstrada.
+O classificador corretamente não trata esses Last carregados como negócios,
+porque não há flags de negócio correspondentes.
+
+Primeiro registro dos testes 03 e 04: 09:02:00. Isso descreve o fluxo recebido
+do Tester; não prova abertura real às 09:02, leilão ou falta de negócios antes.
+
+5. EVIDÊNCIA DIÁRIA DE DESCARTE/AUSÊNCIA
+
+01/09 WINV26: 563 barras M1 com incompatibilidade de preços;
+linha diária informa 3.325.801 preços de ticks incompatíveis.
+02/09 WINV26: execução isolada confirma 562/562 barras com descarte,
+3.639.772 preços incompatíveis e divergência de volumes em 562 barras.
+02/10 WINV26: 563/563 barras com descarte, 4.847.259 preços incompatíveis,
+e divergência de volumes nas 563 barras.
+09/10 WINV26: 563/563 barras com descarte, 4.340.862 preços incompatíveis,
+e divergência de volumes nas 563 barras.
+19/10 WINZ26: 565/565 barras com descarte, 4.011.346 preços incompatíveis,
+e divergência de volumes nas 565 barras.
+29/10 WINZ26: ticks reais AUSENTES nas 565/565 barras; geração substituta.
+
+A primeira execução abrangeu 01 e 02/09 e declarou descarte agregado em
+1125/1125 barras. A linha de preços atribuída a 02/09 nessa execução e seu
+resumo mostram 6.965.573, enquanto a execução isolada de 02/09 mostra
+3.639.772. Não somar ou comparar esses valores sem respeitar o escopo:
+6.965.573 = 3.325.801 + 3.639.772. A mensagem dessa rodada tem aparência
+cumulativa; isso não comprova mudança da base entre as execuções.
+Também houve indicação de uma barra M1 ausente com ticks presentes no
+intervalo de dois dias; o texto não isola com segurança um minuto específico.
+
+Em 19/10 houve download/sincronização de aproximadamente 11 MB antes do teste,
+seguido do descarte. Não é prova de cache íntegro nem de cache corrompido;
+documenta transferência de dados nessa rodada. Mensagens de sincronização
+com poucos bytes em outras rodadas não diagnosticam corrupção por si sós.
+
+6. TESTE 06 — GERAÇÃO SUBSTITUTA COM APARÊNCIA DE NEGÓCIO
+
+Arquivo com sufixo 762822359:
+ALL=36926; TRADE=36926; INFO=36922.
+flags=30 em 36922 linhas; flags=24 em quatro linhas.
+30 = BID|ASK|LAST|VOLUME; 24 = LAST|VOLUME.
+Last positivo e volume_real positivo em todas as linhas.
+Last variou de 172615 a 173500, com 174 preços distintos.
+Last foi IGUAL AO BID em 100% das 36.926 linhas.
+Primeiro registro: 09:00:00.000; último: 09:09:59.999.
+
+Distribuição de registros classificados como negócio por minuto:
+09:00 3277; 09:01 3899; 09:02 3933; 09:03 3978; 09:04 3629;
+09:05 3634; 09:06 3788; 09:07 3739; 09:08 3447; 09:09 3602.
+Soma: 36926, conferida.
+
+INFO e TRADE se sobrepõem neste caso, porque o mesmo registro contém flags
+de cotação E de negócio. Assim, não se pode exigir sempre TRADE+INFO=ALL.
+A igualdade ocorrida nos controles anteriores não é uma identidade universal.
+
+O Diário diz explicitamente “real ticks absent ... every tick generation used”.
+Logo, Last+flags+volume não são um certificado de ticks reais no Tester.
+Isso não prova que o EA completo liberaria todas as demais validações.
+Não afirmar que o EA está homologado para esse dia nem que basta endurecer
+um único filtro para resolver a procedência. A alimentação precisa de controle.
+
+7. TENTATIVA ADICIONAL — CONSULTA FORA DO PERÍODO SIMULADO
+
+Sufixo 762592437, tag ainda GTR_05_20261019_B:
+Tester configurado para 29/10 até 30/10, mas consulta permaneceu em
+19/10 09:00–09:10. Esse arquivo não é o teste 06 e deve ficar separado.
+
+ALL=256971; TRADE/negócios classificados=162331; INFO=94640.
+Flags: 1336 x79289; 1368 x78484; 1400 x4558;
+1030 x2; 1026 x46996; 1028 x47642.
+Primeiro negócio: 19/10 09:00:50.393; último registro: 09:09:59.997.
+Last variou entre 209765 e 210900; 64 registros tinham Bid maior que Ask.
+As contagens e a soma por minuto conferem com o TXT.
+
+Na simulação DO PRÓPRIO 19/10, essa janela retornou 37831 registros e zero
+negócios após descarte. Consultada como histórico ANTERIOR à simulação de
+29/10, retornou os 162331 registros com flags e Last de negócio.
+O motor desta tentativa processou ZERO ticks e ZERO barras antes de o
+programa se remover. A consulta não aguardou a evolução de eventos de 19/10.
+
+É evidência de que o contexto temporal da consulta altera o fluxo acessível:
+consulta histórica anterior ao período simulado e alimentação do próprio
+período não podem ser tratadas como equivalentes. Não comprova que OnTick
+receberia aqueles dados, nem que o histórico está íntegro ou o problema resolvido.
+A origem e a correspondência desse snapshot com o terminal A ainda precisam
+ser confrontadas. Não usar essa consulta de outra data para operar o dia simulado.
+
+Preservar os dois retornos da tag 05:
+762382031 = simulação de 19/10; consulta de 19/10; zero negócios classificados.
+762592437 = simulação de 29/10; consulta histórica de 19/10; 162331 classificados.
+
+8. CONFRONTO NOVO: BID GERADO VS. BARRAS M1 E TICKS DO TERMINAL
+
+Foram reconstruídos OHLC por minuto dos sete CSVs. Nas duas janelas de
+setembro, o OHLC do BID GERADO coincidiu com o OHLC M1 em todas as DEZ barras
+já preservadas na coleta focal. Essas barras haviam coincidido também com
+os candles originais do Work em OHLC e volume real.
+Isso é compatível com geração apoiada em barras, sem demonstrar todo o
+algoritmo interno do MT5. Igualar OHLC não recupera a cronologia real.
+
+Exemplos dos dois minutos divergentes conhecidos:
+
+01/09, 18:24:
+Negócios do terminal: O182355 H182355 L182260 C182330.
+M1/Work:             O182355 H182390 L182260 C182390.
+Bid gerado Tester:   O182355 H182390 L182260 C182390.
+Last Tester: zero durante toda a janela do teste 01.
+
+02/09, 16:13:
+Negócios do terminal: O187855 H187930 L187820 C187865.
+M1/Work:             O187855 H187945 L187820 C187865.
+Bid gerado Tester:   O187855 H187945 L187820 C187865.
+Last Tester: 182390 constante durante toda a janela do teste 02.
+
+A geração reproduziu os extremos das barras, inclusive preços ausentes nos
+ticks ALL dos respectivos minutos coletados no terminal. Isso NÃO é recuperação
+de negócios comprovados: é trajetória substituta. Não usar sua ordem de
+passagem por máxima/mínima para resolver as ambiguidades históricas do Work.
+As diferenças de 15 e 35 pontos são menores que os stops de 375/450/650,
+mas podem mudar operações se coincidirem com entrada, alvo ou stop.
+
+9. CONTROLE ANTERIOR XP E GENIAL — 30/10/2026
+
+Janela 09:00–09:10, WINZ26/M5, mesmo DiagTicksAB v1.21.
+XP, servidor XPMT5-DEMO/build6295:
+A terminal: ALL108005, TRADE105342, INFO2663.
+B Tester: ALL36571, TRADE0, INFO36571; flags6, Last/volume zero.
+Genial, servidor GenialInvestimentos-PRD/build6231:
+A terminal: ALL236855, TRADE142865, INFO93990.
+B Tester: ALL36571, TRADE0, INFO36571; flags6, Last/volume zero.
+
+Os dois CSVs B são idênticos byte a byte, SHA256:
+bcbeb9e46b260d58bd869337c5ed0e6e30e0c253d0d14167ce444376509e132d
+Ambos os Diários confirmaram descarte dos reais nas 565/565 barras do dia.
+XP: 2299875 preços incompatíveis; Genial: 4319114.
+Terminais A diferentes e B idênticos sustentam um mecanismo comum de geração,
+mas não isolam qual componente criou a incompatibilidade inicial.
+Os quatro CSVs desse controle já haviam sido conferidos integralmente.
+
+No A da XP havia 757 linhas com Bid>Ask; no A Genial, 135.
+As flags adicionais presentes nos negócios não provaram ser causa do descarte.
+Duas instalações/servidores com comportamento semelhante mostram recorrência;
+não eliminam todas as hipóteses de armazenamento ou processamento.
+
+10. O QUE ESTÁ E O QUE NÃO ESTÁ CONCLUÍDO
+
+Concluído:
+- Controle A/B de 30/10 na XP e na Genial, com dados brutos conferidos.
+- Seis execuções da triagem e conferência integral dos sete pares recebidos.
+- Distinção entre descarte, ausência e registros gerados com campos de negócio.
+- Comprovação de que o Bid gerado reproduz dez OHLC de setembro.
+- Preservação da tentativa temporalmente divergente, sem confundi-la com teste 06.
+
+Ainda não concluído:
+- Causa original do descarte ou da ausência de ticks reais no Tester.
+- Confronto A terminal de 29/10 e da consulta histórica adicional de 19/10.
+- Alimentação histórica aprovada para o EA, contrato original do Work,
+  vínculo oficial de ajustes, fuso e sessões históricas.
+- Backtest operacional do EA para todo o período e PDF comparativo final.
+
+Não apagar cache por suposição, não substituir Last por Bid/Ask e não fabricar
+campos ou alterar flags para obter aprovação artificial. Importar ticks em um
+símbolo personalizado pode controlar a alimentação, mas não recria negócios
+ou preços ausentes da fonte. Essa alternativa precisa de piloto comprovado.
+Não adotar os bits extras de uma corretora como selo universal de tick real.
+
+11. ENCAMINHAMENTO TÉCNICO
+
+Os dados recebidos são suficientes para fechar esta triagem, sem repetir
+mais dias do mesmo tipo neste momento. O próximo controle útil é coletar A
+no terminal para 29/10, 09:00–09:10, com WINZ26 e o SET 06_A já fornecido;
+e para 19/10, com SET 05_A, para comparar com o snapshot histórico adicional.
+Isso separará dados acessíveis no terminal, histórico anterior no agente e
+fluxo que o Tester efetivamente entrega no período simulado.
+
+Depois, preparar um piloto de alimentação controlada com fonte identificada,
+verificar os eventos realmente entregues, OHLC/volumes e preservação dos
+negócios. Só então ampliar a coleta/backtest em lotes de meses e anos.
+São propostas técnicas para a próxima etapa; nenhum novo piloto de importação
+ou código de adaptação foi executado nesta análise.
+
+12. REFERÊNCIA WORK E CRITÉRIOS MANTIDOS
+
+A reprodução matemática independente conferiu 877 pregões e 1877 operações,
+de março/2023 até 21/09/2026, sem diferenças nos resultados de referência.
+Isso não é backtest de execução do EA. Os dados anteriores e ajustes por
+data operacional estão preservados; vínculo com contrato/B3 deve ser auditado.
+
+Comparação principal: 1 contrato por nível, pontos brutos por operação e dia;
+financeiro secundário. Cinco contratos ficam para testes posteriores de parciais.
+Saída por horário usa preço efetivamente executado, podendo dar pontos
+positivos, negativos ou zero; respeitar as sessões históricas aplicáveis.
+Work mantém o stop nas 32 operações ambíguas em 26 pregões. EA só resolve
+cada uma por cronologia verificável e execução comprovada. Geração artificial
+com OHLC igual não decide qual extremo ocorreu primeiro na realidade.
+Se não houver evidência suficiente, registrar indeterminado, sem inventar resultado.
+O PDF final terá Work e EA lado a lado, por ano/mês/dia/operação, classificando
+divergências confirmadas de dados, ambiguidade, execução ou lógica; causas
+não isoladas permanecem explicitamente pendentes.
+
+13. RASTREABILIDADE DO LOTE
+
+O ZIP original fica preservado localmente, sem publicação no GitHub.
+Acompanham a análise no repositório: script analisar.py,
+CONFERENCIA_CSV.json, OHLC_POR_MINUTO.json, CONFRONTO_BID_GERADO_M1.json e
+FONTES_SHA256.json, além dos Diários de cada rodada preservados anteriormente.
+Os valores contados são registros de ticks, não contratos ou ordens executadas.
+Nenhuma alteração no código ou nas regras do EA foi feita nesta análise.

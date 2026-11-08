@@ -1,0 +1,1542 @@
+[
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_09_01_18_20_2026_09_01_18_25_GTR_01_20260901_B_761483671_ALL.csv",
+    "minute": "2026-09-01 18:20:00.000",
+    "ALL": 1110,
+    "business_valid": 0,
+    "bid_OHLC": [
+      182315.0,
+      182375.0,
+      182310.0,
+      182345.0
+    ],
+    "ask_OHLC": [
+      182320.0,
+      182380.0,
+      182315.0,
+      182350.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_09_01_18_20_2026_09_01_18_25_GTR_01_20260901_B_761483671_ALL.csv",
+    "minute": "2026-09-01 18:21:00.000",
+    "ALL": 620,
+    "business_valid": 0,
+    "bid_OHLC": [
+      182345.0,
+      182350.0,
+      182285.0,
+      182310.0
+    ],
+    "ask_OHLC": [
+      182350.0,
+      182355.0,
+      182290.0,
+      182315.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_09_01_18_20_2026_09_01_18_25_GTR_01_20260901_B_761483671_ALL.csv",
+    "minute": "2026-09-01 18:22:00.000",
+    "ALL": 538,
+    "business_valid": 0,
+    "bid_OHLC": [
+      182315.0,
+      182355.0,
+      182300.0,
+      182330.0
+    ],
+    "ask_OHLC": [
+      182320.0,
+      182360.0,
+      182305.0,
+      182335.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_09_01_18_20_2026_09_01_18_25_GTR_01_20260901_B_761483671_ALL.csv",
+    "minute": "2026-09-01 18:23:00.000",
+    "ALL": 602,
+    "business_valid": 0,
+    "bid_OHLC": [
+      182330.0,
+      182370.0,
+      182320.0,
+      182350.0
+    ],
+    "ask_OHLC": [
+      182335.0,
+      182375.0,
+      182325.0,
+      182355.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_09_01_18_20_2026_09_01_18_25_GTR_01_20260901_B_761483671_ALL.csv",
+    "minute": "2026-09-01 18:24:00.000",
+    "ALL": 2330,
+    "business_valid": 0,
+    "bid_OHLC": [
+      182355.0,
+      182390.0,
+      182260.0,
+      182390.0
+    ],
+    "ask_OHLC": [
+      182360.0,
+      182395.0,
+      182265.0,
+      182395.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_09_02_16_10_2026_09_02_16_15_GTR_02_20260902_B_761791421_ALL.csv",
+    "minute": "2026-09-02 16:10:00.000",
+    "ALL": 3063,
+    "business_valid": 0,
+    "bid_OHLC": [
+      187725.0,
+      187850.0,
+      187720.0,
+      187815.0
+    ],
+    "ask_OHLC": [
+      187730.0,
+      187855.0,
+      187725.0,
+      187820.0
+    ],
+    "last_OHLC": [
+      182390.0,
+      182390.0,
+      182390.0,
+      182390.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_09_02_16_10_2026_09_02_16_15_GTR_02_20260902_B_761791421_ALL.csv",
+    "minute": "2026-09-02 16:11:00.000",
+    "ALL": 2947,
+    "business_valid": 0,
+    "bid_OHLC": [
+      187815.0,
+      187865.0,
+      187780.0,
+      187820.0
+    ],
+    "ask_OHLC": [
+      187820.0,
+      187870.0,
+      187785.0,
+      187825.0
+    ],
+    "last_OHLC": [
+      182390.0,
+      182390.0,
+      182390.0,
+      182390.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_09_02_16_10_2026_09_02_16_15_GTR_02_20260902_B_761791421_ALL.csv",
+    "minute": "2026-09-02 16:12:00.000",
+    "ALL": 3411,
+    "business_valid": 0,
+    "bid_OHLC": [
+      187820.0,
+      187885.0,
+      187795.0,
+      187855.0
+    ],
+    "ask_OHLC": [
+      187825.0,
+      187890.0,
+      187800.0,
+      187860.0
+    ],
+    "last_OHLC": [
+      182390.0,
+      182390.0,
+      182390.0,
+      182390.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_09_02_16_10_2026_09_02_16_15_GTR_02_20260902_B_761791421_ALL.csv",
+    "minute": "2026-09-02 16:13:00.000",
+    "ALL": 2869,
+    "business_valid": 0,
+    "bid_OHLC": [
+      187855.0,
+      187945.0,
+      187820.0,
+      187865.0
+    ],
+    "ask_OHLC": [
+      187860.0,
+      187950.0,
+      187825.0,
+      187870.0
+    ],
+    "last_OHLC": [
+      182390.0,
+      182390.0,
+      182390.0,
+      182390.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_09_02_16_10_2026_09_02_16_15_GTR_02_20260902_B_761791421_ALL.csv",
+    "minute": "2026-09-02 16:14:00.000",
+    "ALL": 3676,
+    "business_valid": 0,
+    "bid_OHLC": [
+      187870.0,
+      187925.0,
+      187870.0,
+      187905.0
+    ],
+    "ask_OHLC": [
+      187875.0,
+      187930.0,
+      187875.0,
+      187910.0
+    ],
+    "last_OHLC": [
+      182390.0,
+      182390.0,
+      182390.0,
+      182390.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_02_09_00_2026_10_02_09_10_GTR_03_20261002_B_762037593_ALL.csv",
+    "minute": "2026-10-02 09:00:00.000",
+    "ALL": 0,
+    "business_valid": 0,
+    "bid_OHLC": null,
+    "ask_OHLC": null,
+    "last_OHLC": null,
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_02_09_00_2026_10_02_09_10_GTR_03_20261002_B_762037593_ALL.csv",
+    "minute": "2026-10-02 09:01:00.000",
+    "ALL": 0,
+    "business_valid": 0,
+    "bid_OHLC": null,
+    "ask_OHLC": null,
+    "last_OHLC": null,
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_02_09_00_2026_10_02_09_10_GTR_03_20261002_B_762037593_ALL.csv",
+    "minute": "2026-10-02 09:02:00.000",
+    "ALL": 3672,
+    "business_valid": 0,
+    "bid_OHLC": [
+      187800.0,
+      188755.0,
+      187625.0,
+      188430.0
+    ],
+    "ask_OHLC": [
+      187805.0,
+      188760.0,
+      187630.0,
+      188435.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_02_09_00_2026_10_02_09_10_GTR_03_20261002_B_762037593_ALL.csv",
+    "minute": "2026-10-02 09:03:00.000",
+    "ALL": 3796,
+    "business_valid": 0,
+    "bid_OHLC": [
+      188430.0,
+      188815.0,
+      188155.0,
+      188565.0
+    ],
+    "ask_OHLC": [
+      188435.0,
+      188820.0,
+      188160.0,
+      188570.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_02_09_00_2026_10_02_09_10_GTR_03_20261002_B_762037593_ALL.csv",
+    "minute": "2026-10-02 09:04:00.000",
+    "ALL": 3797,
+    "business_valid": 0,
+    "bid_OHLC": [
+      188565.0,
+      189150.0,
+      188560.0,
+      189000.0
+    ],
+    "ask_OHLC": [
+      188570.0,
+      189155.0,
+      188565.0,
+      189005.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_02_09_00_2026_10_02_09_10_GTR_03_20261002_B_762037593_ALL.csv",
+    "minute": "2026-10-02 09:05:00.000",
+    "ALL": 3662,
+    "business_valid": 0,
+    "bid_OHLC": [
+      189005.0,
+      189325.0,
+      188980.0,
+      189225.0
+    ],
+    "ask_OHLC": [
+      189010.0,
+      189330.0,
+      188985.0,
+      189230.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_02_09_00_2026_10_02_09_10_GTR_03_20261002_B_762037593_ALL.csv",
+    "minute": "2026-10-02 09:06:00.000",
+    "ALL": 3657,
+    "business_valid": 0,
+    "bid_OHLC": [
+      189230.0,
+      189525.0,
+      189210.0,
+      189385.0
+    ],
+    "ask_OHLC": [
+      189235.0,
+      189530.0,
+      189215.0,
+      189390.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_02_09_00_2026_10_02_09_10_GTR_03_20261002_B_762037593_ALL.csv",
+    "minute": "2026-10-02 09:07:00.000",
+    "ALL": 3667,
+    "business_valid": 0,
+    "bid_OHLC": [
+      189385.0,
+      189805.0,
+      189375.0,
+      189720.0
+    ],
+    "ask_OHLC": [
+      189390.0,
+      189810.0,
+      189380.0,
+      189725.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_02_09_00_2026_10_02_09_10_GTR_03_20261002_B_762037593_ALL.csv",
+    "minute": "2026-10-02 09:08:00.000",
+    "ALL": 3800,
+    "business_valid": 0,
+    "bid_OHLC": [
+      189725.0,
+      189975.0,
+      189675.0,
+      189950.0
+    ],
+    "ask_OHLC": [
+      189730.0,
+      189980.0,
+      189680.0,
+      189955.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_02_09_00_2026_10_02_09_10_GTR_03_20261002_B_762037593_ALL.csv",
+    "minute": "2026-10-02 09:09:00.000",
+    "ALL": 3599,
+    "business_valid": 0,
+    "bid_OHLC": [
+      189955.0,
+      190040.0,
+      189760.0,
+      189820.0
+    ],
+    "ask_OHLC": [
+      189960.0,
+      190045.0,
+      189765.0,
+      189825.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_09_09_00_2026_10_09_09_10_GTR_04_20261009_B_762216640_ALL.csv",
+    "minute": "2026-10-09 09:00:00.000",
+    "ALL": 0,
+    "business_valid": 0,
+    "bid_OHLC": null,
+    "ask_OHLC": null,
+    "last_OHLC": null,
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_09_09_00_2026_10_09_09_10_GTR_04_20261009_B_762216640_ALL.csv",
+    "minute": "2026-10-09 09:01:00.000",
+    "ALL": 0,
+    "business_valid": 0,
+    "bid_OHLC": null,
+    "ask_OHLC": null,
+    "last_OHLC": null,
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_09_09_00_2026_10_09_09_10_GTR_04_20261009_B_762216640_ALL.csv",
+    "minute": "2026-10-09 09:02:00.000",
+    "ALL": 3840,
+    "business_valid": 0,
+    "bid_OHLC": [
+      209115.0,
+      209320.0,
+      208815.0,
+      209315.0
+    ],
+    "ask_OHLC": [
+      209120.0,
+      209325.0,
+      208820.0,
+      209320.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_09_09_00_2026_10_09_09_10_GTR_04_20261009_B_762216640_ALL.csv",
+    "minute": "2026-10-09 09:03:00.000",
+    "ALL": 3967,
+    "business_valid": 0,
+    "bid_OHLC": [
+      209310.0,
+      209540.0,
+      208830.0,
+      209000.0
+    ],
+    "ask_OHLC": [
+      209315.0,
+      209545.0,
+      208835.0,
+      209005.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_09_09_00_2026_10_09_09_10_GTR_04_20261009_B_762216640_ALL.csv",
+    "minute": "2026-10-09 09:04:00.000",
+    "ALL": 3838,
+    "business_valid": 0,
+    "bid_OHLC": [
+      208995.0,
+      209135.0,
+      208105.0,
+      208360.0
+    ],
+    "ask_OHLC": [
+      209000.0,
+      209140.0,
+      208110.0,
+      208365.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_09_09_00_2026_10_09_09_10_GTR_04_20261009_B_762216640_ALL.csv",
+    "minute": "2026-10-09 09:05:00.000",
+    "ALL": 3995,
+    "business_valid": 0,
+    "bid_OHLC": [
+      208355.0,
+      208465.0,
+      208135.0,
+      208345.0
+    ],
+    "ask_OHLC": [
+      208360.0,
+      208470.0,
+      208140.0,
+      208350.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_09_09_00_2026_10_09_09_10_GTR_04_20261009_B_762216640_ALL.csv",
+    "minute": "2026-10-09 09:06:00.000",
+    "ALL": 3789,
+    "business_valid": 0,
+    "bid_OHLC": [
+      208340.0,
+      208340.0,
+      207765.0,
+      207810.0
+    ],
+    "ask_OHLC": [
+      208345.0,
+      208345.0,
+      207770.0,
+      207815.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_09_09_00_2026_10_09_09_10_GTR_04_20261009_B_762216640_ALL.csv",
+    "minute": "2026-10-09 09:07:00.000",
+    "ALL": 3652,
+    "business_valid": 0,
+    "bid_OHLC": [
+      207810.0,
+      208045.0,
+      207740.0,
+      207920.0
+    ],
+    "ask_OHLC": [
+      207815.0,
+      208050.0,
+      207745.0,
+      207925.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_09_09_00_2026_10_09_09_10_GTR_04_20261009_B_762216640_ALL.csv",
+    "minute": "2026-10-09 09:08:00.000",
+    "ALL": 3475,
+    "business_valid": 0,
+    "bid_OHLC": [
+      207915.0,
+      208085.0,
+      207860.0,
+      207935.0
+    ],
+    "ask_OHLC": [
+      207920.0,
+      208090.0,
+      207865.0,
+      207940.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINV26_2026_10_09_09_00_2026_10_09_09_10_GTR_04_20261009_B_762216640_ALL.csv",
+    "minute": "2026-10-09 09:09:00.000",
+    "ALL": 3794,
+    "business_valid": 0,
+    "bid_OHLC": [
+      207935.0,
+      207995.0,
+      207625.0,
+      207935.0
+    ],
+    "ask_OHLC": [
+      207940.0,
+      208000.0,
+      207630.0,
+      207940.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762382031_ALL.csv",
+    "minute": "2026-10-19 09:00:00.000",
+    "ALL": 3522,
+    "business_valid": 0,
+    "bid_OHLC": [
+      210900.0,
+      210900.0,
+      210305.0,
+      210400.0
+    ],
+    "ask_OHLC": [
+      210905.0,
+      210905.0,
+      210310.0,
+      210405.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762382031_ALL.csv",
+    "minute": "2026-10-19 09:01:00.000",
+    "ALL": 3825,
+    "business_valid": 0,
+    "bid_OHLC": [
+      210415.0,
+      210580.0,
+      210070.0,
+      210125.0
+    ],
+    "ask_OHLC": [
+      210420.0,
+      210585.0,
+      210075.0,
+      210130.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762382031_ALL.csv",
+    "minute": "2026-10-19 09:02:00.000",
+    "ALL": 3938,
+    "business_valid": 0,
+    "bid_OHLC": [
+      210130.0,
+      210220.0,
+      209765.0,
+      210080.0
+    ],
+    "ask_OHLC": [
+      210135.0,
+      210225.0,
+      209770.0,
+      210085.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762382031_ALL.csv",
+    "minute": "2026-10-19 09:03:00.000",
+    "ALL": 3632,
+    "business_valid": 0,
+    "bid_OHLC": [
+      210080.0,
+      210180.0,
+      209915.0,
+      210175.0
+    ],
+    "ask_OHLC": [
+      210085.0,
+      210185.0,
+      209920.0,
+      210180.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762382031_ALL.csv",
+    "minute": "2026-10-19 09:04:00.000",
+    "ALL": 3905,
+    "business_valid": 0,
+    "bid_OHLC": [
+      210175.0,
+      210580.0,
+      210135.0,
+      210495.0
+    ],
+    "ask_OHLC": [
+      210180.0,
+      210585.0,
+      210140.0,
+      210500.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762382031_ALL.csv",
+    "minute": "2026-10-19 09:05:00.000",
+    "ALL": 3854,
+    "business_valid": 0,
+    "bid_OHLC": [
+      210495.0,
+      210605.0,
+      210375.0,
+      210435.0
+    ],
+    "ask_OHLC": [
+      210500.0,
+      210610.0,
+      210380.0,
+      210440.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762382031_ALL.csv",
+    "minute": "2026-10-19 09:06:00.000",
+    "ALL": 3968,
+    "business_valid": 0,
+    "bid_OHLC": [
+      210440.0,
+      210530.0,
+      210225.0,
+      210415.0
+    ],
+    "ask_OHLC": [
+      210445.0,
+      210535.0,
+      210230.0,
+      210420.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762382031_ALL.csv",
+    "minute": "2026-10-19 09:07:00.000",
+    "ALL": 3942,
+    "business_valid": 0,
+    "bid_OHLC": [
+      210415.0,
+      210670.0,
+      210380.0,
+      210555.0
+    ],
+    "ask_OHLC": [
+      210420.0,
+      210675.0,
+      210385.0,
+      210560.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762382031_ALL.csv",
+    "minute": "2026-10-19 09:08:00.000",
+    "ALL": 3714,
+    "business_valid": 0,
+    "bid_OHLC": [
+      210555.0,
+      210685.0,
+      210340.0,
+      210435.0
+    ],
+    "ask_OHLC": [
+      210560.0,
+      210690.0,
+      210345.0,
+      210440.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762382031_ALL.csv",
+    "minute": "2026-10-19 09:09:00.000",
+    "ALL": 3531,
+    "business_valid": 0,
+    "bid_OHLC": [
+      210430.0,
+      210745.0,
+      210340.0,
+      210690.0
+    ],
+    "ask_OHLC": [
+      210435.0,
+      210750.0,
+      210345.0,
+      210695.0
+    ],
+    "last_OHLC": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "business_OHLC": null
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762592437_ALL.csv",
+    "minute": "2026-10-19 09:00:00.000",
+    "ALL": 14279,
+    "business_valid": 7989,
+    "bid_OHLC": [
+      0.0,
+      210890.0,
+      0.0,
+      210415.0
+    ],
+    "ask_OHLC": [
+      0.0,
+      210900.0,
+      0.0,
+      210420.0
+    ],
+    "last_OHLC": [
+      210900.0,
+      210900.0,
+      210305.0,
+      210400.0
+    ],
+    "business_OHLC": [
+      210900.0,
+      210900.0,
+      210305.0,
+      210400.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762592437_ALL.csv",
+    "minute": "2026-10-19 09:01:00.000",
+    "ALL": 52809,
+    "business_valid": 29768,
+    "bid_OHLC": [
+      210415.0,
+      210575.0,
+      210130.0,
+      210290.0
+    ],
+    "ask_OHLC": [
+      210420.0,
+      210580.0,
+      210135.0,
+      210295.0
+    ],
+    "last_OHLC": [
+      210400.0,
+      210580.0,
+      210070.0,
+      210125.0
+    ],
+    "business_OHLC": [
+      210415.0,
+      210580.0,
+      210070.0,
+      210125.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762592437_ALL.csv",
+    "minute": "2026-10-19 09:02:00.000",
+    "ALL": 39825,
+    "business_valid": 25401,
+    "bid_OHLC": [
+      210290.0,
+      210350.0,
+      209765.0,
+      210030.0
+    ],
+    "ask_OHLC": [
+      210295.0,
+      210360.0,
+      209770.0,
+      210035.0
+    ],
+    "last_OHLC": [
+      210125.0,
+      210220.0,
+      209765.0,
+      210080.0
+    ],
+    "business_OHLC": [
+      210130.0,
+      210220.0,
+      209765.0,
+      210080.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762592437_ALL.csv",
+    "minute": "2026-10-19 09:03:00.000",
+    "ALL": 26610,
+    "business_valid": 13417,
+    "bid_OHLC": [
+      210030.0,
+      210220.0,
+      209915.0,
+      210165.0
+    ],
+    "ask_OHLC": [
+      210035.0,
+      210225.0,
+      209925.0,
+      210180.0
+    ],
+    "last_OHLC": [
+      210080.0,
+      210180.0,
+      209915.0,
+      210175.0
+    ],
+    "business_OHLC": [
+      210080.0,
+      210180.0,
+      209915.0,
+      210175.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762592437_ALL.csv",
+    "minute": "2026-10-19 09:04:00.000",
+    "ALL": 32259,
+    "business_valid": 20803,
+    "bid_OHLC": [
+      210170.0,
+      210575.0,
+      210135.0,
+      210510.0
+    ],
+    "ask_OHLC": [
+      210180.0,
+      210580.0,
+      210155.0,
+      210515.0
+    ],
+    "last_OHLC": [
+      210175.0,
+      210580.0,
+      210135.0,
+      210495.0
+    ],
+    "business_OHLC": [
+      210175.0,
+      210580.0,
+      210135.0,
+      210495.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762592437_ALL.csv",
+    "minute": "2026-10-19 09:05:00.000",
+    "ALL": 21502,
+    "business_valid": 14432,
+    "bid_OHLC": [
+      210510.0,
+      210600.0,
+      210375.0,
+      210435.0
+    ],
+    "ask_OHLC": [
+      210515.0,
+      210605.0,
+      210380.0,
+      210440.0
+    ],
+    "last_OHLC": [
+      210495.0,
+      210605.0,
+      210375.0,
+      210435.0
+    ],
+    "business_OHLC": [
+      210495.0,
+      210605.0,
+      210375.0,
+      210435.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762592437_ALL.csv",
+    "minute": "2026-10-19 09:06:00.000",
+    "ALL": 17791,
+    "business_valid": 12499,
+    "bid_OHLC": [
+      210435.0,
+      210525.0,
+      210225.0,
+      210410.0
+    ],
+    "ask_OHLC": [
+      210440.0,
+      210530.0,
+      210245.0,
+      210415.0
+    ],
+    "last_OHLC": [
+      210435.0,
+      210530.0,
+      210225.0,
+      210415.0
+    ],
+    "business_OHLC": [
+      210440.0,
+      210530.0,
+      210225.0,
+      210415.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762592437_ALL.csv",
+    "minute": "2026-10-19 09:07:00.000",
+    "ALL": 17225,
+    "business_valid": 12799,
+    "bid_OHLC": [
+      210410.0,
+      210665.0,
+      210380.0,
+      210550.0
+    ],
+    "ask_OHLC": [
+      210415.0,
+      210670.0,
+      210385.0,
+      210560.0
+    ],
+    "last_OHLC": [
+      210415.0,
+      210670.0,
+      210380.0,
+      210555.0
+    ],
+    "business_OHLC": [
+      210415.0,
+      210670.0,
+      210380.0,
+      210555.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762592437_ALL.csv",
+    "minute": "2026-10-19 09:08:00.000",
+    "ALL": 16545,
+    "business_valid": 12180,
+    "bid_OHLC": [
+      210550.0,
+      210680.0,
+      210340.0,
+      210430.0
+    ],
+    "ask_OHLC": [
+      210560.0,
+      210690.0,
+      210350.0,
+      210435.0
+    ],
+    "last_OHLC": [
+      210555.0,
+      210685.0,
+      210340.0,
+      210435.0
+    ],
+    "business_OHLC": [
+      210555.0,
+      210685.0,
+      210340.0,
+      210435.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762592437_ALL.csv",
+    "minute": "2026-10-19 09:09:00.000",
+    "ALL": 18126,
+    "business_valid": 13043,
+    "bid_OHLC": [
+      210430.0,
+      210740.0,
+      210340.0,
+      210685.0
+    ],
+    "ask_OHLC": [
+      210435.0,
+      210745.0,
+      210345.0,
+      210690.0
+    ],
+    "last_OHLC": [
+      210435.0,
+      210745.0,
+      210340.0,
+      210690.0
+    ],
+    "business_OHLC": [
+      210430.0,
+      210745.0,
+      210340.0,
+      210690.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_29_09_00_2026_10_29_09_10_GTR_06_20261029_B_762822359_ALL.csv",
+    "minute": "2026-10-29 09:00:00.000",
+    "ALL": 3277,
+    "business_valid": 3277,
+    "bid_OHLC": [
+      173135.0,
+      173485.0,
+      173105.0,
+      173255.0
+    ],
+    "ask_OHLC": [
+      173140.0,
+      173490.0,
+      173110.0,
+      173260.0
+    ],
+    "last_OHLC": [
+      173135.0,
+      173485.0,
+      173105.0,
+      173255.0
+    ],
+    "business_OHLC": [
+      173135.0,
+      173485.0,
+      173105.0,
+      173255.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_29_09_00_2026_10_29_09_10_GTR_06_20261029_B_762822359_ALL.csv",
+    "minute": "2026-10-29 09:01:00.000",
+    "ALL": 3899,
+    "business_valid": 3899,
+    "bid_OHLC": [
+      173250.0,
+      173485.0,
+      172835.0,
+      172860.0
+    ],
+    "ask_OHLC": [
+      173255.0,
+      173490.0,
+      172840.0,
+      172865.0
+    ],
+    "last_OHLC": [
+      173250.0,
+      173485.0,
+      172835.0,
+      172860.0
+    ],
+    "business_OHLC": [
+      173250.0,
+      173485.0,
+      172835.0,
+      172860.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_29_09_00_2026_10_29_09_10_GTR_06_20261029_B_762822359_ALL.csv",
+    "minute": "2026-10-29 09:02:00.000",
+    "ALL": 3933,
+    "business_valid": 3933,
+    "bid_OHLC": [
+      172855.0,
+      173270.0,
+      172760.0,
+      172810.0
+    ],
+    "ask_OHLC": [
+      172860.0,
+      173275.0,
+      172765.0,
+      172815.0
+    ],
+    "last_OHLC": [
+      172855.0,
+      173270.0,
+      172760.0,
+      172810.0
+    ],
+    "business_OHLC": [
+      172855.0,
+      173270.0,
+      172760.0,
+      172810.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_29_09_00_2026_10_29_09_10_GTR_06_20261029_B_762822359_ALL.csv",
+    "minute": "2026-10-29 09:03:00.000",
+    "ALL": 3978,
+    "business_valid": 3978,
+    "bid_OHLC": [
+      172810.0,
+      172990.0,
+      172615.0,
+      172825.0
+    ],
+    "ask_OHLC": [
+      172815.0,
+      172995.0,
+      172620.0,
+      172830.0
+    ],
+    "last_OHLC": [
+      172810.0,
+      172990.0,
+      172615.0,
+      172825.0
+    ],
+    "business_OHLC": [
+      172810.0,
+      172990.0,
+      172615.0,
+      172825.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_29_09_00_2026_10_29_09_10_GTR_06_20261029_B_762822359_ALL.csv",
+    "minute": "2026-10-29 09:04:00.000",
+    "ALL": 3629,
+    "business_valid": 3629,
+    "bid_OHLC": [
+      172825.0,
+      173145.0,
+      172795.0,
+      173010.0
+    ],
+    "ask_OHLC": [
+      172830.0,
+      173150.0,
+      172800.0,
+      173015.0
+    ],
+    "last_OHLC": [
+      172825.0,
+      173145.0,
+      172795.0,
+      173010.0
+    ],
+    "business_OHLC": [
+      172825.0,
+      173145.0,
+      172795.0,
+      173010.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_29_09_00_2026_10_29_09_10_GTR_06_20261029_B_762822359_ALL.csv",
+    "minute": "2026-10-29 09:05:00.000",
+    "ALL": 3634,
+    "business_valid": 3634,
+    "bid_OHLC": [
+      173010.0,
+      173185.0,
+      172960.0,
+      173120.0
+    ],
+    "ask_OHLC": [
+      173015.0,
+      173190.0,
+      172965.0,
+      173125.0
+    ],
+    "last_OHLC": [
+      173010.0,
+      173185.0,
+      172960.0,
+      173120.0
+    ],
+    "business_OHLC": [
+      173010.0,
+      173185.0,
+      172960.0,
+      173120.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_29_09_00_2026_10_29_09_10_GTR_06_20261029_B_762822359_ALL.csv",
+    "minute": "2026-10-29 09:06:00.000",
+    "ALL": 3788,
+    "business_valid": 3788,
+    "bid_OHLC": [
+      173115.0,
+      173325.0,
+      173070.0,
+      173240.0
+    ],
+    "ask_OHLC": [
+      173120.0,
+      173330.0,
+      173075.0,
+      173245.0
+    ],
+    "last_OHLC": [
+      173115.0,
+      173325.0,
+      173070.0,
+      173240.0
+    ],
+    "business_OHLC": [
+      173115.0,
+      173325.0,
+      173070.0,
+      173240.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_29_09_00_2026_10_29_09_10_GTR_06_20261029_B_762822359_ALL.csv",
+    "minute": "2026-10-29 09:07:00.000",
+    "ALL": 3739,
+    "business_valid": 3739,
+    "bid_OHLC": [
+      173235.0,
+      173465.0,
+      173235.0,
+      173325.0
+    ],
+    "ask_OHLC": [
+      173240.0,
+      173470.0,
+      173240.0,
+      173330.0
+    ],
+    "last_OHLC": [
+      173235.0,
+      173465.0,
+      173235.0,
+      173325.0
+    ],
+    "business_OHLC": [
+      173235.0,
+      173465.0,
+      173235.0,
+      173325.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_29_09_00_2026_10_29_09_10_GTR_06_20261029_B_762822359_ALL.csv",
+    "minute": "2026-10-29 09:08:00.000",
+    "ALL": 3447,
+    "business_valid": 3447,
+    "bid_OHLC": [
+      173330.0,
+      173390.0,
+      173230.0,
+      173280.0
+    ],
+    "ask_OHLC": [
+      173335.0,
+      173395.0,
+      173235.0,
+      173285.0
+    ],
+    "last_OHLC": [
+      173330.0,
+      173390.0,
+      173230.0,
+      173280.0
+    ],
+    "business_OHLC": [
+      173330.0,
+      173390.0,
+      173230.0,
+      173280.0
+    ]
+  },
+  {
+    "file": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_29_09_00_2026_10_29_09_10_GTR_06_20261029_B_762822359_ALL.csv",
+    "minute": "2026-10-29 09:09:00.000",
+    "ALL": 3602,
+    "business_valid": 3602,
+    "bid_OHLC": [
+      173280.0,
+      173500.0,
+      173265.0,
+      173425.0
+    ],
+    "ask_OHLC": [
+      173285.0,
+      173505.0,
+      173270.0,
+      173430.0
+    ],
+    "last_OHLC": [
+      173280.0,
+      173500.0,
+      173265.0,
+      173425.0
+    ],
+    "business_OHLC": [
+      173280.0,
+      173500.0,
+      173265.0,
+      173425.0
+    ]
+  }
+]

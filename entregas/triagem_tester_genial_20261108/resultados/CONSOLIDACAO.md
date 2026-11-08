@@ -1,5 +1,7 @@
 # Seis execuções concluídas — Genial, 08/11/2026
 
+Atualização posterior: os sete pares TXT/CSV foram recebidos e conferidos integralmente. Veja a [análise completa](../analise_completa_20261108/Analise_Completa_AB_XP_Genial_01_a_06_20261108.txt). O texto abaixo preserva o estado registrado ao receber os Diários.
+
 | Teste | Símbolo/data | ALL | TRADE: flags + Last | Diário |
 |---|---|---:|---:|---|
 |01|WINV26 01/09|5200|0|Ticks reais descartados|
