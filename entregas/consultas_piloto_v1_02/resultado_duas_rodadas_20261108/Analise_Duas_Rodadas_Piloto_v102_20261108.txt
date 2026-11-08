@@ -1,0 +1,206 @@
+﻿MODELO D — CONFERÊNCIA FINAL DAS DUAS RODADAS DO PILOTO v1.02
+08/11/2026 — GenialInvestimentos-PRD, build 6231
+Rodadas das 17:26 e 17:31, horário apresentado pelo terminal do usuário.
+
+CONCLUSÃO PRINCIPAL
+As duas execuções são reproduzíveis: TODOS os 20 arquivos internos de cada
+pasta são idênticos byte a byte, incluindo RESULTADO.txt e todos os CSVs.
+Os ZIPs têm nomes de pasta e SHA256 diferentes; a identidade é dos conteúdos
+correspondentes, não dos arquivos ZIP inteiros.
+
+A estrutura local zerada antes de SymbolInfoTick NÃO eliminou as diferenças.
+COPY_TICKS_TRADE não protegeu a classificação nesta amostra: retornou 170544,
+contra 128669 negócios classificados na fonte. O piloto não está aprovado
+como fonte geral para o EA histórico. A causa interna não está identificada.
+
+Há também um resultado positivo específico: as 64898 mudanças consecutivas
+de Last, com seus horários, coincidem exatamente com a fonte nos caminhos
+OnTick, ALL, TRADE e concatenação por minuto. Isso preserva a trajetória de
+mudanças de preço nesta janela, mas não certifica flags, volumes, integridade
+M1, execução de ordens ou o comportamento completo do EA.
+
+1. FONTES E MÉTODO
+Fonte original: CSV A Genial WINZ26, 29/10/2026, 09:00–09:10, sufixo765756968.
+Símbolo custom: MDDP29_1794147861_770874343, com contexto M1 de 27–28/10.
+Expert: Diagnostico_Piloto_Consultas v1.02, sem ordens ou alteração de símbolos.
+Período de simulação:29/10 até30/10, M5, ticks reais selecionados.
+Foram conferidos os dois ZIPs completos, os relatórios, os Diários recebidos,
+e os arquivos do piloto v1.00 para comparar a zeragem da estrutura.
+
+Em cada rodada há20 arquivos, dos quais18 são snapshots de ticks. Esses
+snapshots somam1266033 linhas por rodada; incluem visões repetidas dos mesmos
+dados. NÃO são 1266033 negócios distintos nem mais fita que a fonte original.
+A conferência leu todos esses snapshots, verificando quantidade, cronologia,
+janela, campos, flags, composição entre modalidades e igualdade entre rodadas.
+Nenhuma tolerância de preço ou volume foi aplicada.
+
+2. NÚMEROS CONFIRMADOS NAS DUAS EXECUÇÕES
+Fonte ALL:204027. Fonte negócios:128669. Fonte cotações:75358.
+OnTick:204027 observações, todas classificadas por flags+Last como negócio.
+CopyTicksRange ALL completo:204025 registros.
+COPY_TICKS_TRADE:170544 registros.
+COPY_TICKS_INFO:75358 registros.
+Soma dos dez ALL por minuto:204024 registros.
+Grupo09:02:28.680:3 registros em ALL e TRADE; fonte:5.
+
+Cada controle do v1.02 declarou duas leituras iguais, sem erros.
+Callbacks, buffer:204027; falhas em SymbolInfoTick:0; fora da janela:0;
+estouro do buffer:0. O motor declarou204027 ticks processados.
+Os Diários recebidos não mostram ausência, descarte ou geração substituta.
+A expressão normal “generating based on real ticks” não significa fallback.
+
+3. TRADE E INFO NÃO SÃO PARTIÇÕES EXCLUSIVAS NESTE TESTER
+O arquivo MODE_TRADE.csv é exatamente igual, em oito campos e na mesma ordem,
+ao filtro flags&120 com Last válido aplicado ao ALL retornado pelo Tester.
+Portanto, aqui o modo TRADE não restituiu os 128669 negócios da fonte.
+
+MODE_INFO.csv corresponde exatamente ao filtro flags de Bid/Ask do mesmo ALL.
+Seus75358 registros têm os mesmos números, horários e ordem das cotações da
+fonte, mas41877 deles também possuem bits de negócio na visão do Tester.
+Eles aparecem tanto em TRADE quanto em INFO.
+
+Identidade de contagens confirmada:
+170544 (TRADE) +75358 (INFO) -41877 (sobreposição) =204025 (ALL).
+Não exigir TRADE+INFO=ALL quando há sobreposição de flags.
+
+Dos170544 retornados por TRADE,128667 correspondem aos negócios da fonte
+que permaneceram na consulta e41877 correspondem a cotações da fonte.
+Dois negócios da referência estão ausentes. O excesso líquido é41875.
+Essa decomposição foi conferida por correspondência ordenada do payload,
+não apenas por subtração de totais.
+
+4. ZERAR A ESTRUTURA NÃO MUDOU OS SNAPSHOTS
+ONTICK.csv, TESTER_COPYTICKS.csv e TESTER_M1.csv do v1.02 são idênticos,
+byte a byte, aos respectivos arquivos do piloto v1.00.
+Logo, o controle ZeroMemory(tick) não eliminou o comportamento nestas rodadas.
+Isso não identifica por si o componente interno responsável e não autoriza
+atribuir genericamente a falha ao MT5, à corretora ou a cache corrompido.
+
+No OnTick permanecem:
+-128669 posições de negócio da fonte com números, horários, ordem e bits
+ públicos idênticos ao esperado após a retirada dos bits extras da importação.
+-75358 cotações da fonte com bits de negócio acrescentados.
+-Uma diferença de Bid, em 09:01:03.768: fonte0, observado173395.
+ Last, Ask e volumes dessa cotação ficaram iguais.
+
+5. DOIS NEGÓCIOS AUSENTES: NEM A CONSULTA ESTREITA RECUPEROU
+Em09:02:28.680, fonte e OnTick possuem, na ordem:
+Last173255/vol8;173255/vol4;173255/vol5;173255/vol8;173245/vol1.
+O ALL completo, o TRADE, o ALL por minuto e as consultas só desse1ms retornam:
+173255/vol5;173255/vol8;173245/vol1.
+
+Faltam uma ocorrência de volume8 e outra de volume4, total12, com Last173255.
+Como há duas ocorrências numericamente iguais de volume8 sem ID de bolsa,
+a identidade individual de uma delas não pode ser afirmada de forma única.
+A perda de multiplicidade na visão consultada é objetiva; o OnTick as contém.
+As duas rodadas repetem o mesmo resultado, inclusive nos arquivos de grupo.
+
+6. UM REGISTRO ADICIONAL NA FRONTEIRA DO MINUTO
+A concatenação dos dez minutos é idêntica ao ALL completo EXCETO por uma
+cotação às 09:00:59.999, time_msc1793264459999:
+Bid173240;Ask173255;Last173255;volume1;volume_real1;flags2 na visão ALL.
+Ela existe na fonte, no OnTick e no ALL completo, mas não em MINUTE_0.csv.
+É exatamente o último milissegundo do minuto consultado.
+
+Por isso, minuto0 retorna2874 em vez de 2875 e a concatenação204024 em vez
+de 204025 do ALL completo. Isso aponta uma questão de fronteira a investigar,
+mas não comprova a semântica interna do parâmetro final nem justifica mudar
+os limites do EA sem controle. A cotação não tem flags de negócio na visão
+completa e não muda o caminho de preços reduzido desta amostra.
+
+7. ACHADO NOVO: RECONSTRUÇÃO EXATA DA VISÃO ALL
+O snapshot ALL do Tester pode ser reconstruído EXATAMENTE, nos oito campos,
+como a concatenação de:
+A) os primeiros 72953 registros da fonte, usando a projeção de flags públicos
+   já observada na importação (source_flags &126),
+B) os ÚLTIMOS131072 registros observados no OnTick.
+
+131072 =2 elevado a 17. A cauda do OnTick começa no índice72955 da fonte
+(base zero). Os índices72953 e72954 são justamente as duas ocorrências que
+ficam fora dessa reconstrução, no mesmo ms do começo da cauda.
+204025 =72953 +131072.
+
+O prefixo conserva os flags públicos originais das cotações. A cauda coincide
+inclusive nos flags reinterpretados vistos no OnTick. Essa divisão explica
+algebricamente as 41877 cotações com bits de negócio e as duas ausências.
+A igualdade foi testada integralmente; não é aproximação ou só igualdade de hash.
+
+É uma pista forte para investigar junção de representações/blocos e tratamento
+do grupo na fronteira. NÃO é prova da arquitetura interna nem de que o cache
+oficial tenha exatamente131072 posições. Preservar essa distinção ao relatar
+à plataforma ou à corretora. Não apagar cache por essa observação.
+
+8. O QUE FICOU PRESERVADO NA TRAJETÓRIA DE PREÇOS
+Construímos para cada camada uma lista de pares (time_msc, Last), mantendo
+apenas eventos com flags de negócio e Last válido e eliminando repetições
+CONSECUTIVAS do mesmo Last. O horário mantido é o da primeira ocorrência
+em cada mudança, sem ordenar ou rearranjar eventos.
+
+Fonte:64898 mudanças.
+OnTick:64898, idênticas à fonte em preço e horário.
+ALL do Tester:64898, idênticas.
+TRADE do Tester:64898, idênticas.
+Minutos concatenados:64898, idênticas.
+
+Hash SHA256 da representação canônica desse caminho:
+bdebed8995924638850f8b96f5420bfd42605f7a7bf3c63d355437252573f03e
+
+Isso mostra que os registros a mais/menos, nesta amostra, não mudaram a lista
+de mudanças de Last. Não prova equivalência do EA completo: auditorias M1,
+reconhecimento de negócios, volumes, armar/cancelar ordens, execução e parciais
+podem depender de outros dados ou da forma de leitura. Também não demonstra
+o que acontece nas32 operações ambíguas do Work, de outros dias.
+Não aprovar o ambiente só por essa igualdade nem remover duplicatas da fonte.
+A redução foi uma visão de análise, não transformação da fita utilizada.
+
+9. M1 E ESCOPO DAS CONCLUSÕES
+TESTER_M1.csv permanece idêntico ao piloto anterior: quatro aberturas +5
+pontos e volumes automáticos que incluem Last/volume carregados em cotações.
+As dez barras não foram reconstruídas manualmente neste controle.
+A correção de contexto resolveu só a inicialização; não corrigiu as flags
+ou as diferenças de cardinalidade da API no período simulado.
+
+O controle usa uma janela de 29/10 fora da amostra do Work, encerrada em 21/09.
+Não é resultado de operações do Modelo D nem homologação de execução real.
+Não elimina hipóteses de falha na fita original: a referência é o CSV recebido,
+não uma certificação independente da bolsa.
+
+10. CONFERÊNCIA DO LEITOR v2.13.05 NO REPOSITÓRIO
+Também foi lido o código preservado em:
+entregas/v2_13_05_demo/MQL5/Experts/ModeloD_Demo/ModeloD_FonteDemo213.mqh
+Na função MDCopyTicksRange213, mesmo quando o chamador pede COPY_TICKS_TRADE,
+o adaptador consulta COPY_TICKS_ALL e seleciona os registros com flags&120.
+O StreamTerminal também contém o caminho ALL_FILTRADO com auditoria M1.
+
+Portanto, reaproveitar esse leitor sem adaptação neste Tester não resolve
+o problema por trocar apenas o nome da consulta. E a chamada TRADE direta,
+medida agora, também não restituiu a referência original neste caso.
+Isso não demonstra defeito no pregão DEMO ao vivo, cujo ambiente de consulta
+é diferente. Nenhum código da estratégia ou do EA operacional foi alterado.
+
+11. ENCAMINHAMENTO
+A repetibilidade desta rodada está conferida. Não repetir esses mesmos testes
+mais vezes agora. Não flexibilizar o Modelo D nem substituir Last por Bid/Ask.
+
+Para o backtest principal, o leitor histórico precisa manter a classificação
+e os limites da fonte auditada, sem tomar os flags reinterpretados do Tester
+como verdade da origem. Um modo histórico separado, usando o CSV original
+como referência de eventos, é uma direção a especificar e validar. Ainda não
+foi implementado neste relatório; deverá respeitar o horizonte de simulação,
+sem acessar eventos futuros, e permanecer separado do transporte DEMO ao vivo.
+
+A sondagem de ticks antigos já preparada continua pendente e pode rodar em
+paralelo no terminal. Seus nove recortes ajudarão a definir que parte de 2023
+até setembro/2026 tem registros recuperáveis; símbolos não cadastrados e janelas
+vazias não devem ser convertidos em ausência global de histórico.
+
+Um histórico sintético a partir de candles, se necessário, ficará separado
+como validação de lógica. Não poderá resolver ambiguidades como fita real.
+O comparativo principal permanece um contrato por nível e pontos brutos;
+as diferenças de dados, execução e lógica serão registradas separadamente.
+
+12. ARQUIVAMENTO
+Foram preservados localmente os dois ZIPs e demais arquivos brutos.
+No repositório ficam relatório, CONFERENCIA.json, manifesto dos 20 arquivos
+internos e script reproduzível. São dados derivados, sem republicar a fita.
+Todas as igualdades descritas se limitam às duas rodadas e à janela analisada.

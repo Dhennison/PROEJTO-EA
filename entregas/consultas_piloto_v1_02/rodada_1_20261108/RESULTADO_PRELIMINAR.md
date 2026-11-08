@@ -19,3 +19,5 @@ não aparece no resumo do Diário e depende de RESULTADO.txt/ONTICK.csv.
 Próximo: preservar QUERIES102_1793232000_504466 e repetir UMA vez com os
 mesmos parâmetros e símbolo. Depois confrontar os dois retornos e Diários,
 sem novo programa e sem alteração de cache, ticks ou barras.
+
+Atualização: as duas rodadas e os vinte arquivos internos foram conferidos. Veja a [análise final](../resultado_duas_rodadas_20261108/Analise_Duas_Rodadas_Piloto_v102_20261108.txt).

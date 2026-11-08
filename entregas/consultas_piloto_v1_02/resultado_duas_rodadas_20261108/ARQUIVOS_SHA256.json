@@ -1,0 +1,102 @@
+{
+  "ALL_AFTER_MODES.csv": {
+    "bytes": 25098108,
+    "sha256": "2626189760a4ffb4c965458501dc7f83db9567ebdf5b3a457cbb703ffa11cced",
+    "byte_identical_between_rounds": true
+  },
+  "GROUP_ALL.csv": {
+    "bytes": 422,
+    "sha256": "01dcdb4667d13aeaff203c73fcb37376e7cab6557d35b5c99206667d28666c07",
+    "byte_identical_between_rounds": true
+  },
+  "GROUP_TRADE.csv": {
+    "bytes": 422,
+    "sha256": "01dcdb4667d13aeaff203c73fcb37376e7cab6557d35b5c99206667d28666c07",
+    "byte_identical_between_rounds": true
+  },
+  "MINUTES_COMBINED.csv": {
+    "bytes": 25097986,
+    "sha256": "689a7d5733128e2e580189a1cbe5e64dabbcb51c78ce6bc3a3b479d048bdad92",
+    "byte_identical_between_rounds": true
+  },
+  "MINUTE_0.csv": {
+    "bytes": 352655,
+    "sha256": "f7f9276f78c1e3997c06f848ee48a9f1a444fc20d02d8b8d49fc3623eb97b701",
+    "byte_identical_between_rounds": true
+  },
+  "MINUTE_1.csv": {
+    "bytes": 6033857,
+    "sha256": "967fb5d9082ff82fffb6c8419c049bdb841803e80e507e9841d333818efce564",
+    "byte_identical_between_rounds": true
+  },
+  "MINUTE_2.csv": {
+    "bytes": 4846917,
+    "sha256": "7e6044d3032941aa42348c5d2fe50673347d1e3caa12bc68bcb5d7e1c23924ff",
+    "byte_identical_between_rounds": true
+  },
+  "MINUTE_3.csv": {
+    "bytes": 3382028,
+    "sha256": "337f404f5da77a86f168dc8ad6de40edc25621152cb3514ce8ca29bbc16c264a",
+    "byte_identical_between_rounds": true
+  },
+  "MINUTE_4.csv": {
+    "bytes": 2719772,
+    "sha256": "5095decf0be3bb4ef006a3e730f7a15e0a5aa7782673e0f746aba93f673c1549",
+    "byte_identical_between_rounds": true
+  },
+  "MINUTE_5.csv": {
+    "bytes": 1706826,
+    "sha256": "2cf49a331a9491f6d9b44fb7ee80e44c7133117dff1b54e033cb2ae462c37b22",
+    "byte_identical_between_rounds": true
+  },
+  "MINUTE_6.csv": {
+    "bytes": 1691011,
+    "sha256": "78faa5fc0cc5e8b1f59adeaa3bd7930c6ec76d8ac811c956b3688e73ae4cb4a8",
+    "byte_identical_between_rounds": true
+  },
+  "MINUTE_7.csv": {
+    "bytes": 1744182,
+    "sha256": "94f8404911fa2a3a3e44d2ab624a089e66b91b22d8153323f040b74558f9b205",
+    "byte_identical_between_rounds": true
+  },
+  "MINUTE_8.csv": {
+    "bytes": 1321980,
+    "sha256": "476996ebef60d3913358983f04e048be7c064dda67e8e985864a3a37c3fb185e",
+    "byte_identical_between_rounds": true
+  },
+  "MINUTE_9.csv": {
+    "bytes": 1299235,
+    "sha256": "43df31492fc39f4391da25af2d94b92f1441b3aa4239ffb598fdb85efbb254ce",
+    "byte_identical_between_rounds": true
+  },
+  "MODE_INFO.csv": {
+    "bytes": 9248142,
+    "sha256": "52766a21669615e424bc73487da96be3cf6ede5c62b09937fdbfb00f27fea54f",
+    "byte_identical_between_rounds": true
+  },
+  "MODE_TRADE.csv": {
+    "bytes": 21012012,
+    "sha256": "020357efbcf05533562d3c6579e99c6acee8a773d7e28e69fe8f59a922397375",
+    "byte_identical_between_rounds": true
+  },
+  "ONTICK.csv": {
+    "bytes": 25136204,
+    "sha256": "48a1aeea301b8dd6f79d86088051df442800c46b857c5103ee3856ea6b68de63",
+    "byte_identical_between_rounds": true
+  },
+  "RESULTADO.txt": {
+    "bytes": 15657,
+    "sha256": "bda6f7bc6563deedb5401d335b67fafe7dc71c3583f2390425d1e004da659c37",
+    "byte_identical_between_rounds": true
+  },
+  "TESTER_COPYTICKS.csv": {
+    "bytes": 25098108,
+    "sha256": "2626189760a4ffb4c965458501dc7f83db9567ebdf5b3a457cbb703ffa11cced",
+    "byte_identical_between_rounds": true
+  },
+  "TESTER_M1.csv": {
+    "bytes": 2482,
+    "sha256": "34bad588ad557c53d06cad4869d2820dd7da4a6b0d2f7ac120bbeb63e4e17c33",
+    "byte_identical_between_rounds": true
+  }
+}

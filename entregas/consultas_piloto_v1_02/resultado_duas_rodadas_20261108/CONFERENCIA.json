@@ -1,0 +1,98 @@
+{
+  "archive_sha256": {
+    "round1": "a2435f9dce10201931e6509d28f5af9f9b7b7855c544531c87f66fde62277930",
+    "round2": "5696b508b0ee1992b69f8e942ca50762ba247d2a8f4ec7c4d7385641f1c98f3e"
+  },
+  "files_per_round": 20,
+  "all_file_payloads_byte_identical": true,
+  "tick_rows_verified_per_round": 1266033,
+  "source_ALL": 204027,
+  "source_business": 128669,
+  "source_INFO": 75358,
+  "returned_counts": {
+    "ALL_AFTER_MODES.csv": 204025,
+    "GROUP_ALL.csv": 3,
+    "GROUP_TRADE.csv": 3,
+    "MINUTES_COMBINED.csv": 204024,
+    "MINUTE_0.csv": 2874,
+    "MINUTE_1.csv": 49217,
+    "MINUTE_2.csv": 39425,
+    "MINUTE_3.csv": 27449,
+    "MINUTE_4.csv": 22072,
+    "MINUTE_5.csv": 13849,
+    "MINUTE_6.csv": 13718,
+    "MINUTE_7.csv": 14151,
+    "MINUTE_8.csv": 10725,
+    "MINUTE_9.csv": 10544,
+    "MODE_INFO.csv": 75358,
+    "MODE_TRADE.csv": 170544,
+    "ONTICK.csv": 204027,
+    "TESTER_COPYTICKS.csv": 204025
+  },
+  "API_TRADE_equals_filter_of_API_ALL": true,
+  "API_INFO_equals_filter_of_API_ALL": true,
+  "MODE_INFO_numeric_time_order_equals_original_INFO": true,
+  "INFO_records_with_business_flags": 41877,
+  "zeroing_comparison_vs_v100": {
+    "ONTICK.csv": true,
+    "TESTER_COPYTICKS.csv": true,
+    "TESTER_M1.csv": true
+  },
+  "source_vs_OnTick_numeric_differences": {
+    "time": 0,
+    "time_msc": 0,
+    "bid": 1,
+    "ask": 0,
+    "last": 0,
+    "volume": 0,
+    "volume_real": 0
+  },
+  "minute_boundary_additional_absence": {
+    "row": [
+      1793264459,
+      1793264459999,
+      173240.0,
+      173255.0,
+      173255.0,
+      1,
+      1.0,
+      2
+    ],
+    "time": "09:00:59.999",
+    "source_kind": "QUOTE_ONLY",
+    "cause": "NOT_ISOLATED_POSSIBLE_BOUNDARY_SEMANTICS"
+  },
+  "full_query_reconstruction": {
+    "source_prefix_rows": 72953,
+    "callback_tail_rows": 131072,
+    "tail_is_power_of_two": 17,
+    "callback_tail_start_index_zero_based": 72955,
+    "exact_in_all_eight_fields": true,
+    "missing_in_join_indices_zero_based": [
+      72953,
+      72954
+    ],
+    "meaning": "Exact algebraic reconstruction of observed output, NOT proof of internal cache architecture or capacity."
+  },
+  "compressed_Last_path": {
+    "OnTick": {
+      "changes": 64898,
+      "first_change_times_and_Last_equal_to_source": true
+    },
+    "ALL": {
+      "changes": 64898,
+      "first_change_times_and_Last_equal_to_source": true
+    },
+    "TRADE": {
+      "changes": 64898,
+      "first_change_times_and_Last_equal_to_source": true
+    },
+    "MINUTES_COMBINED": {
+      "changes": 64898,
+      "first_change_times_and_Last_equal_to_source": true
+    }
+  },
+  "compressed_path_sha256": "bdebed8995924638850f8b96f5420bfd42605f7a7bf3c63d355437252573f03e",
+  "overall": "REPRODUCIBLE_BUT_NOT_APPROVED_AS_GENERAL_EA_DATA_SOURCE",
+  "price_path_limit": "Only this ten-minute sample; equality of compressed Last does not certify raw flags/volume, M1 integrity, fills or whole-EA behavior."
+}
