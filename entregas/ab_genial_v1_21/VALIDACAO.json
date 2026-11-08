@@ -1,0 +1,16 @@
+{
+  "codigo": "DiagTicksAB v1.21",
+  "fonte_identico_ao_controle_XP": true,
+  "sha256_fonte": "7e707c7d416fe7de3d2c54b390a17bbb3c1fe2c16fd05ffdab23136a9a328807",
+  "janela_controle": {
+    "simbolo": "WINZ26",
+    "periodo_grafico": "M5",
+    "inicio": "2026-10-30 09:00:00",
+    "fim_exclusivo": "2026-10-30 09:10:00"
+  },
+  "base_nativa_XP": "Coletas A/B recebidas em 05/11/2026, headers PERIOD_M5 e dados preservados no repositorio.",
+  "instalacao_compilacao_Genial": "PENDENTE",
+  "execucao_A_Genial": "PENDENTE",
+  "execucao_B_Genial": "PENDENTE",
+  "alteracao_codigo": "NENHUMA; apenas estrutura de instalacao e guia Genial."
+}
