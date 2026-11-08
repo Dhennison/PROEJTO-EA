@@ -1,0 +1,69 @@
+{
+  "servidor": "GenialInvestimentos-PRD",
+  "ambiente": "TERMINAL",
+  "plano_hash_confere": true,
+  "checksums_14_linhas_diarias": "PASS",
+  "pregoes": 14,
+  "janelas": 1582,
+  "janelas_de_rodadas_nao_concluidas": 0,
+  "janelas_conferidas": 1559,
+  "janelas_pendentes": 23,
+  "percentual_janelas_conferidas": "98.54614412136536030341340076",
+  "antes_corte": {
+    "conferidas": 1503,
+    "pendentes": 9
+  },
+  "apos_corte": {
+    "conferidas": 56,
+    "pendentes": 14
+  },
+  "datas_sem_pendencia_antes_corte": [
+    "2026.09.01",
+    "2026.09.04",
+    "2026.09.08",
+    "2026.09.10",
+    "2026.09.11",
+    "2026.09.15",
+    "2026.09.16",
+    "2026.09.21"
+  ],
+  "datas_com_pendencia_antes_corte": [
+    "2026.09.02",
+    "2026.09.03",
+    "2026.09.09",
+    "2026.09.14",
+    "2026.09.17",
+    "2026.09.18"
+  ],
+  "minutos_sem_ticks_com_m1": 0,
+  "minutos_sem_m1_com_ticks": 0,
+  "minutos_com_ohlc_diferente": 24,
+  "negocios_janelas_conferidas": 36951132,
+  "all_janelas_conferidas": 47498317,
+  "negocios_finais_janelas_pendentes": 239947,
+  "all_finais_janelas_pendentes": 311656,
+  "negocios_soma_leituras_finais_todos_blocos": 37191079,
+  "all_soma_leituras_finais_todos_blocos": 47809973,
+  "erros_registrados_leitura_final_ticks": {
+    "0": 1582
+  },
+  "erros_registrados_leitura_final_m1": {
+    "0": 1582
+  },
+  "distribuicao_leituras": {
+    "3": 1,
+    "2": 1558,
+    "4": 23
+  },
+  "contextos_aberturas_ajustes_work_iguais": 14,
+  "offset_trade_server_gmt_apenas_no_inicio_segundos": -10800,
+  "limites": [
+    "Consulta no terminal, não teste de entrega de dados no Tester.",
+    "WINV26 é corroborado por dados, sem prova documental histórica de série/rolagem nesta coleta.",
+    "AjusteWork confere, mas vínculo com boletim B3 permanece pendente.",
+    "Divergências em 18:20-18:25 são posteriores ao corte, mas não devem ser apagadas: podem afetar contexto ou validação do Tester.",
+    "Não há OHLC/minuto específico nos CSVs v1.00 para diagnosticar a causa dos 24 minutos divergentes.",
+    "Zeros de erro são das leituras finais registradas, não de todas as chamadas de sincronização anteriores.",
+    "Concordância entre ticks e M1 não certifica integridade total dos registros."
+  ]
+}

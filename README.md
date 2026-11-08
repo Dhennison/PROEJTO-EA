@@ -11,7 +11,7 @@ Expert Advisor Modelo D para WIN no MT5. Estado consolidado em 05/11/2026, após
 - [A/B XP — Terminal versus Tester](entregas/diagnostico_ticks_ab_v1_21/resultado_xp_20261105/RESULTADO.md)
 - [Referência histórica exclusivamente Modelo D — Work](entregas/historico_work_modelo_d_20261105/LEITURA_E_PREPARACAO.md)
 - [06/11 — Replay teórico integral: 877 pregões, 1877 operações, zero divergências com Work; execução MT5 pendente](entregas/historico_work_modelo_d_20261105/replay_completo_20261106/RESULTADO.md)
-- [Diagnóstico histórico v1.00 — compilado na Genial, piloto de setembro em andamento, somente leitura](entregas/diagnostico_cobertura_historica_v1_00/ACOMPANHAMENTO_GENIAL_20261106.md)
+- [Genial — piloto histórico concluído: 1559/1582 janelas conferidas; divergências localizadas e vínculos pendentes](entregas/diagnostico_cobertura_historica_v1_00/resultado_genial_piloto_20261106/VERIFICACAO_COMPLETA.md)
 - [06/11 — XP DEMO: três pendentes canceladas no corte das 18h; fechamento de posição aberta ainda não exercitado](entregas/v2_13_05_demo/nativo_20261106_corte_18h/RESULTADO.md)
 
 O cancelamento da pendente R61,8 no corte foi confirmado na XP DEMO; não havia posição aberta às 18h. Backtest multianual, confronto Work e conclusão da homologação permanecem em andamento. Conta real não liberada.

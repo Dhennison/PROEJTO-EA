@@ -1,5 +1,7 @@
 # Genial — piloto histórico de setembro concluído
 
+**Atualização:** os três arquivos foram recebidos e cruzados. A [verificação completa](VERIFICACAO_COMPLETA.md) identifica 1559 janelas conferidas e 23 pendentes; as solicitações de arquivos abaixo pertencem ao levantamento preliminar e já foram atendidas.
+
 Fonte: log Experts fornecido pelo usuário, execução nativa v1.00, GENIAL_PILOTO, WINV26 candidato, 14 pregões de 01 a 21/09/2026.
 
 Início em **06/11/2026 17:44:15.536** e HC100_END em **18:09:55.699**, duração **25 minutos e 40,163 segundos**. As 14 tarefas foram concluídas. Não houve travamento definitivo do lote.
