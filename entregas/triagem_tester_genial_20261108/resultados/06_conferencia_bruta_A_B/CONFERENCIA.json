@@ -1,0 +1,263 @@
+{
+  "A": {
+    "ALL": 204027,
+    "negocios_flags_Last": 128669,
+    "INFO": 75358,
+    "flags": {
+      "1336": 61083,
+      "1368": 59823,
+      "1030": 2,
+      "1026": 37515,
+      "1028": 37841,
+      "1400": 7763
+    },
+    "Last_positivo": 204027,
+    "volume_real_positivo": 204027,
+    "primeiro_msc": 1793264458034,
+    "ultimo_msc": 1793264999998,
+    "Last_negocios_min": 172615.0,
+    "Last_negocios_max": 173500.0,
+    "bid_maior_ask": 34,
+    "sha256": "a3acba0e6d6e8f10ab1f6c24143c63d46fa8ce9767c2f87b87220fd3c2e0ed0b"
+  },
+  "B_antes": {
+    "ALL": 36926,
+    "negocios_flags_Last": 36926,
+    "INFO": 36922,
+    "flags": {
+      "30": 36922,
+      "24": 4
+    },
+    "Last_positivo": 36926,
+    "volume_real_positivo": 36926,
+    "primeiro_msc": 1793264400000,
+    "ultimo_msc": 1793264999999,
+    "Last_negocios_min": 172615.0,
+    "Last_negocios_max": 173500.0,
+    "bid_maior_ask": 0,
+    "sha256": "aacdf0fd80cab2850bfac2cd6464521c4562ffc81156c2f583ec9ad4da2bc262"
+  },
+  "B_apos": {
+    "ALL": 36926,
+    "negocios_flags_Last": 0,
+    "INFO": 36926,
+    "flags": {
+      "6": 36926
+    },
+    "Last_positivo": 0,
+    "volume_real_positivo": 0,
+    "primeiro_msc": 1793264400000,
+    "ultimo_msc": 1793264999999,
+    "Last_negocios_min": null,
+    "Last_negocios_max": null,
+    "bid_maior_ask": 0,
+    "sha256": "3aba0b5a62baf3652c943c1395213364ba581923ee79f3a6cc85b73147840331"
+  },
+  "comparacao_posicional_B": {
+    "linhas": 36926,
+    "linhas_diferentes_por_campo": {
+      "time_msc": 0,
+      "bid": 0,
+      "ask": 0,
+      "last": 36926,
+      "volume": 36926,
+      "volume_real": 36926,
+      "flags": 36926
+    },
+    "mesmos_time_bid_ask": true
+  },
+  "minutos": [
+    {
+      "minuto": "09:00",
+      "A_negocios": 1612,
+      "B_registros": 3277,
+      "A_Last_OHLC": [
+        173135.0,
+        173485.0,
+        173105.0,
+        173255.0
+      ],
+      "B_bid_OHLC": [
+        173135.0,
+        173485.0,
+        173105.0,
+        173255.0
+      ],
+      "OHLC_iguais": true,
+      "volume_real_A_negocios": 53061.0
+    },
+    {
+      "minuto": "09:01",
+      "A_negocios": 25385,
+      "B_registros": 3899,
+      "A_Last_OHLC": [
+        173250.0,
+        173485.0,
+        172835.0,
+        172860.0
+      ],
+      "B_bid_OHLC": [
+        173250.0,
+        173485.0,
+        172835.0,
+        172860.0
+      ],
+      "OHLC_iguais": true,
+      "volume_real_A_negocios": 88224.0
+    },
+    {
+      "minuto": "09:02",
+      "A_negocios": 24215,
+      "B_registros": 3933,
+      "A_Last_OHLC": [
+        172855.0,
+        173270.0,
+        172760.0,
+        172810.0
+      ],
+      "B_bid_OHLC": [
+        172855.0,
+        173270.0,
+        172760.0,
+        172810.0
+      ],
+      "OHLC_iguais": true,
+      "volume_real_A_negocios": 109162.0
+    },
+    {
+      "minuto": "09:03",
+      "A_negocios": 16990,
+      "B_registros": 3978,
+      "A_Last_OHLC": [
+        172810.0,
+        172990.0,
+        172615.0,
+        172825.0
+      ],
+      "B_bid_OHLC": [
+        172810.0,
+        172990.0,
+        172615.0,
+        172825.0
+      ],
+      "OHLC_iguais": true,
+      "volume_real_A_negocios": 81555.0
+    },
+    {
+      "minuto": "09:04",
+      "A_negocios": 13879,
+      "B_registros": 3629,
+      "A_Last_OHLC": [
+        172825.0,
+        173145.0,
+        172795.0,
+        173010.0
+      ],
+      "B_bid_OHLC": [
+        172825.0,
+        173145.0,
+        172795.0,
+        173010.0
+      ],
+      "OHLC_iguais": true,
+      "volume_real_A_negocios": 71949.0
+    },
+    {
+      "minuto": "09:05",
+      "A_negocios": 9909,
+      "B_registros": 3634,
+      "A_Last_OHLC": [
+        173010.0,
+        173185.0,
+        172960.0,
+        173120.0
+      ],
+      "B_bid_OHLC": [
+        173010.0,
+        173185.0,
+        172960.0,
+        173120.0
+      ],
+      "OHLC_iguais": true,
+      "volume_real_A_negocios": 51703.0
+    },
+    {
+      "minuto": "09:06",
+      "A_negocios": 10408,
+      "B_registros": 3788,
+      "A_Last_OHLC": [
+        173115.0,
+        173325.0,
+        173070.0,
+        173240.0
+      ],
+      "B_bid_OHLC": [
+        173115.0,
+        173325.0,
+        173070.0,
+        173240.0
+      ],
+      "OHLC_iguais": true,
+      "volume_real_A_negocios": 56399.0
+    },
+    {
+      "minuto": "09:07",
+      "A_negocios": 10889,
+      "B_registros": 3739,
+      "A_Last_OHLC": [
+        173235.0,
+        173465.0,
+        173235.0,
+        173325.0
+      ],
+      "B_bid_OHLC": [
+        173235.0,
+        173465.0,
+        173235.0,
+        173325.0
+      ],
+      "OHLC_iguais": true,
+      "volume_real_A_negocios": 56388.0
+    },
+    {
+      "minuto": "09:08",
+      "A_negocios": 7505,
+      "B_registros": 3447,
+      "A_Last_OHLC": [
+        173330.0,
+        173390.0,
+        173230.0,
+        173280.0
+      ],
+      "B_bid_OHLC": [
+        173330.0,
+        173390.0,
+        173230.0,
+        173280.0
+      ],
+      "OHLC_iguais": true,
+      "volume_real_A_negocios": 42513.0
+    },
+    {
+      "minuto": "09:09",
+      "A_negocios": 7877,
+      "B_registros": 3602,
+      "A_Last_OHLC": [
+        173280.0,
+        173500.0,
+        173265.0,
+        173425.0
+      ],
+      "B_bid_OHLC": [
+        173280.0,
+        173500.0,
+        173265.0,
+        173425.0
+      ],
+      "OHLC_iguais": true,
+      "volume_real_A_negocios": 48142.0
+    }
+  ],
+  "minutos_OHLC_iguais": 10,
+  "limite": "Dados do snapshot; não prova causa interna, integridade da sessão ou execução de ordens. Timestamps tratados como hora do servidor, sem certificação de fuso."
+}

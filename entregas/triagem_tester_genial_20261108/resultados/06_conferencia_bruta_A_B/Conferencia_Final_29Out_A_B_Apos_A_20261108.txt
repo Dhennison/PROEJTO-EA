@@ -1,0 +1,145 @@
+﻿CONFERÊNCIA FINAL DOS ARQUIVOS — 29/10/2026, A E B APÓS A
+Modelo D / DiagTicksAB v1.21 — atualização de 08/11/2026
+
+1. DOCUMENTOS CONFERIDOS
+
+Recebidos e lidos integralmente os TXT e CSV:
+- A terminal, GTR_06_20261029_A, sufixo 765756968.
+- B após A, GTR_06_20261029_B_APOS_A, sufixo 765979640.
+Comparação também com o B anterior, sufixo 762822359, já recebido no ZIP
+“Teste A-B 01 a 06”. Todos WINZ26 nativo, GenialInvestimentos-PRD, build6231,
+janela 29/10/2026 09:00–09:10 em hora do servidor, final exclusivo.
+
+Conferidos limites da janela, ordem cronológica, campos numéricos finitos,
+contagens, flags, resultados por minuto e correspondência com os TXT.
+Todas as verificações realizadas passaram. Os dados brutos permanecem locais;
+são publicados somente relatório, resumos e script de conferência.
+
+2. CONTAGENS CONFIRMADAS
+
+Medida                       A terminal       B antes       B após A
+ALL                             204027         36926          36926
+TRADE / flags e Last válido      128669         36926*             0
+INFO                             75358         36922          36926
+Last positivo                   204027         36926              0
+Volume_real positivo            204027         36926              0
+
+*No B antes, são registros GERADOS classificados pelas flags, não negócios
+reais certificados. Seu Diário declara reais ausentes e geração substituta.
+No B após, o Diário declara reais descartados e geração substituta.
+Os TXT confirmam duas leituras estáveis; isso atesta repetibilidade, não
+completude da fita nem a procedência real dos dados.
+
+3. COMPARAÇÃO CAMPO A CAMPO DOS DOIS B
+
+Mesma quantidade e mesma ordem: 36926 linhas.
+Linhas diferentes em cada campo:
+- time_msc: 0
+- bid: 0
+- ask: 0
+- last: 36926
+- volume: 36926
+- volume_real: 36926
+- flags: 36926
+
+Portanto, todos os horários, Bid e Ask são IDÊNTICOS antes e depois.
+No B antes, Last=Bid e volume positivo em todas as linhas; flags30 em36922
+registros e flags24 em4. No B após, Last e volumes são zero, flags6 em todos.
+
+É o mesmo percurso temporal de cotações geradas, com mudança nos campos de
+negócio. Não é a transformação em uma reprodução real das 128669 ocorrências
+classificadas como negócio na consulta A.
+
+SHA256 B antes:
+aacdf0fd80cab2850bfac2cd6464521c4562ffc81156c2f583ec9ad4da2bc262
+SHA256 B após:
+3aba0b5a62baf3652c943c1395213364ba581923ee79f3a6cc85b73147840331
+SHA256 A terminal:
+a3acba0e6d6e8f10ab1f6c24143c63d46fa8ce9767c2f87b87220fd3c2e0ed0b
+
+4. OHLC COINCIDE, CRONOLOGIA NÃO É REPRODUZIDA
+
+Reconstruído OHLC por minuto dos Last com flags de negócio no A e do Bid
+nos B. Os dez OHLC coincidem exatamente. Consequentemente, o Last gerado
+do B anterior (igual ao Bid) também reproduz esses dez OHLC.
+Extremos de preço na janela A: 172615 a173500.
+
+Minuto   Negócios A    Registros B     OHLC Last A = OHLC Bid B
+09:00        1612          3277                  SIM
+09:01       25385          3899                  SIM
+09:02       24215          3933                  SIM
+09:03       16990          3978                  SIM
+09:04       13879          3629                  SIM
+09:05        9909          3634                  SIM
+09:06       10408          3788                  SIM
+09:07       10889          3739                  SIM
+09:08        7505          3447                  SIM
+09:09        7877          3602                  SIM
+Total      128669         36926
+
+Exemplo de diferença temporal comprovada:
+A: primeiro negócio retornado em09:00:58.034, Last173135.
+B: primeiro registro em09:00:00.000, Bid173135.
+O fluxo gerado começa58,034 segundos antes do primeiro negócio retornado
+pela consulta do terminal. Isso não prova que o terminal contém todos os
+negócios possíveis; prova que os fluxos recebidos não reproduzem a mesma
+sequência de registros e horários.
+
+Igualdade de OHLC não certifica a ordem intraminuto de passagem por alvo,
+stop ou entrada. Esses B não podem resolver ambiguidades do Work como se
+fossem uma fita real. Não substituir Last pelo Bid para contornar isso.
+
+5. ANTES/DEPOIS DA SINCRONIZAÇÃO
+
+B original: ticks reais declarados AUSENTES em565/565 barras M1.
+Após coleta A: nova sincronização de13679Kb no Tester; agora reais
+DESCARTADOS em565/565 barras, com4707605 preços incompatíveis e volumes
+divergentes. O agente também foi reiniciado antes do segundo B.
+
+O conjunto demonstra mudança na disponibilidade dos dados para o Tester
+e forte evidência a favor da hipótese de sincronização incompleta anterior.
+Não isola o mecanismo interno ou a participação específica de cada fator:
+coleta A e reinício do agente ocorreram entre as rodadas. Não comprova
+corrupção de cache nem um bug específico de intervalos marcados sincronizados.
+
+Mesmo após sincronizar, o Tester descartou os dados. Assim, a causa do
+descarte permanece em aberto e é separada da ausência inicial.
+
+6. QUALIDADE E LIMITES DO A
+
+A tem34 registros com Bid maior que Ask; primeiro negócio com Bid=Ask=0.
+Isso não invalida por si o Last de negócio, mas preserva observações de
+qualidade de cotação. Não foi demonstrado que essas34 linhas expliquem o
+descarte em todas as565 barras do dia.
+
+TRADE e o filtro de negócios no ALL têm128669 registros, sem Last inválido.
+Os relatórios nativos informam mesmo hash de negócios em ambas as consultas.
+Apenas o ALL foi exportado neste diagnóstico: não afirmar que comparamos
+um CSV TRADE separado deste lote, que não existe.
+
+INFO+TRADE=ALL no A; no B anterior há sobreposição de flags. Portanto essa
+soma não é regra universal para todas as modalidades de tick.
+
+7. SITUAÇÃO E ENCAMINHAMENTO
+
+Conferência bruta deste controle concluída. Nenhuma nova repetição destes
+mesmos testes é necessária neste momento. Os seis dias distintos da triagem
+têm ao menos uma execução com descarte de reais confirmado; 29/10 preserva
+também a execução anterior com ausência e geração dotada de flags de negócio.
+Nenhum desses fluxos B foi aprovado como alimentação real do EA.
+
+A próxima etapa útil é um piloto pequeno de alimentação controlada, com
+fonte identificada, preservação da sequência de negócios e validação do
+fluxo realmente entregue pelo Tester. Não basta o símbolo se chamar
+personalizado: a importação e a saída precisam de confronto com a fonte.
+
+A janela de29/10 disponível aqui tem apenas dez minutos e está fora da
+amostra do Work (que termina em21/09/2026). Serve como piloto técnico de
+dados, não como backtest completo do Modelo D ou resultado comparável ao Work.
+Para operações, serão necessários sessão, contexto do pregão anterior,
+ajuste e contrato conferidos no período efetivamente comparado.
+
+As regras do Modelo D permanecem preservadas. Comparação principal em
+pontos brutos, um contrato por nível. As ambiguidades do Work só serão
+resolvidas por cronologia verificável, não por percursos gerados a partir
+de OHLC. Nenhum código do EA foi alterado nesta conferência.

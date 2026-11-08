@@ -1,0 +1,12 @@
+[
+  {
+    "nome": "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINZ26_2026_10_29_09_00_2026_10_29_09_10_GTR_06_20261029_A_765756968.txt",
+    "sha256": "a5cf21ad450b1ef059196bcb82d29577ac02c0a2534f6465353acbe76bec001d",
+    "contagens_e_minutos_conferidos": true
+  },
+  {
+    "nome": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_29_09_00_2026_10_29_09_10_GTR_06_20261029_B_APOS_A_765979640.txt",
+    "sha256": "4b1ecbdcbb61856d83f361563d7b2da2cd39d9b8fe5fac01d9b20d4e9913af6b",
+    "contagens_e_minutos_conferidos": true
+  }
+]
