@@ -1,0 +1,108 @@
+{
+  "ambiente": "TERMINAL_GENIAL",
+  "SymbolCustom": 0,
+  "ModoGrafico": "LAST",
+  "barras_conferidas": 10,
+  "barras_ticks_m1_iguais": 8,
+  "barras_divergentes": 2,
+  "barras_m1_genial_iguais_ao_work": 10,
+  "canais_ALL_TRADE": [
+    {
+      "janela": 1,
+      "ALL_n": 2955,
+      "ALL_negocios": 1907,
+      "TRADE_n": 1907,
+      "igualdade_exata_ALL_filtrado_e_TRADE": true
+    },
+    {
+      "janela": 2,
+      "ALL_n": 17348,
+      "ALL_negocios": 14210,
+      "TRADE_n": 14210,
+      "igualdade_exata_ALL_filtrado_e_TRADE": true
+    }
+  ],
+  "ohlc_por_minuto_igual_nas_duas_releituras": true,
+  "divergencias": [
+    {
+      "janela": 1,
+      "minuto": "2026.09.01 18:24:00",
+      "campos": "H|C",
+      "ticks_ohlc": {
+        "O": "182355.00000000000",
+        "H": "182355.00000000000",
+        "L": "182260.00000000000",
+        "C": "182330.00000000000"
+      },
+      "m1_ohlc": {
+        "O": "182355.00000000000",
+        "H": "182390.00000000000",
+        "L": "182260.00000000000",
+        "C": "182390.00000000000"
+      },
+      "deltas_ticks_menos_m1": {
+        "O": "0E-11",
+        "H": "-35.00000000000",
+        "L": "0E-11",
+        "C": "-60.00000000000"
+      },
+      "raw_ALL_no_minuto": 437,
+      "negocios_no_minuto": 300,
+      "preco_maxima_M1_encontrado_em_raw_ALL": {
+        "last": 0,
+        "bid": 0,
+        "ask": 0
+      },
+      "primeiro_tick_msc": "1788287040047",
+      "ultimo_tick_msc": "1788287099780",
+      "soma_volume_real_registros_negocio": "2275.0000000000000000",
+      "volume_real_barra_m1": "22171",
+      "ressalva_volume": "Soma de registros não prova quantidade exata de contratos/negócios ausentes sem identidade de negócio."
+    },
+    {
+      "janela": 2,
+      "minuto": "2026.09.02 16:13:00",
+      "campos": "H",
+      "ticks_ohlc": {
+        "O": "187855.00000000000",
+        "H": "187930.00000000000",
+        "L": "187820.00000000000",
+        "C": "187865.00000000000"
+      },
+      "m1_ohlc": {
+        "O": "187855.00000000000",
+        "H": "187945.00000000000",
+        "L": "187820.00000000000",
+        "C": "187865.00000000000"
+      },
+      "deltas_ticks_menos_m1": {
+        "O": "0E-11",
+        "H": "-15.00000000000",
+        "L": "0E-11",
+        "C": "0E-11"
+      },
+      "raw_ALL_no_minuto": 3073,
+      "negocios_no_minuto": 2545,
+      "preco_maxima_M1_encontrado_em_raw_ALL": {
+        "last": 0,
+        "bid": 0,
+        "ask": 0
+      },
+      "primeiro_tick_msc": "1788365580010",
+      "ultimo_tick_msc": "1788365639998",
+      "soma_volume_real_registros_negocio": "25506.0000000000000000",
+      "volume_real_barra_m1": "37688",
+      "ressalva_volume": "Soma de registros não prova quantidade exata de contratos/negócios ausentes sem identidade de negócio."
+    }
+  ],
+  "conclusao": "Inconsistência reproduzida entre barras e ticks recuperados; filtro de flags não explica a ausência dos preços máximos nas duas amostras.",
+  "limites": [
+    "Não foi comprovado se a causa é origem/servidor, cache/sincronização, timestamp de borda ou convenção de formação de barra.",
+    "Não foi executado teste no Strategy Tester por esta coleta.",
+    "Não foram consultados ticks fora das duas janelas; possíveis eventos de borda permanecem sem prova.",
+    "Concordância entre Work e M1 não substitui fita independente da bolsa.",
+    "Não flexibilizar filtros nem fabricar Last para reproduzir preços ausentes."
+  ],
+  "hash_zip_recebido": "d78d15d50956e18b591f43807f1344d98464b5e85e518576d2952ec164e6c6bb",
+  "hash_csv_m1_original_work": "f1343f8181fce176b5d266bd1710c5aadfea8ed8af8941da1ee6b3fd9469dc45"
+}

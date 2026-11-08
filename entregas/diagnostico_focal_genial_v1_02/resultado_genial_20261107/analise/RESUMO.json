@@ -1,0 +1,52 @@
+{
+  "lote_tem_marcador_END": true,
+  "metadados": {
+    "Servidor": "GenialInvestimentos-PRD",
+    "Ambiente": "TERMINAL",
+    "Simbolo": "WINV26",
+    "DescricaoAtualNaoHistorica": "IBOVESPA MINI",
+    "SymbolCustom": "0",
+    "ModoGrafico": "1",
+    "TimeCurrent": "2026.11.06 18:24:00",
+    "TimeTradeServer": "2026.11.07 22:21:11",
+    "TimeGMT": "2026.11.08 01:21:11"
+  },
+  "janelas": [
+    {
+      "janela": 1,
+      "validade_declarada": "SIM",
+      "estabilidade_declarada": "SIM",
+      "inicio": "2026.09.01 18:20:00",
+      "fim_exclusivo": "2026.09.01 18:25:00",
+      "flags_ALL": {
+        "1026": 535,
+        "1028": 513,
+        "1336": 938,
+        "1368": 966,
+        "1400": 3
+      },
+      "ticks_all": 2955,
+      "ticks_trade": 1907,
+      "estado": "ESTAVEL_PARA_ANALISE"
+    },
+    {
+      "janela": 2,
+      "validade_declarada": "SIM",
+      "estabilidade_declarada": "SIM",
+      "inicio": "2026.09.02 16:10:00",
+      "fim_exclusivo": "2026.09.02 16:15:00",
+      "flags_ALL": {
+        "1026": 1554,
+        "1028": 1582,
+        "1030": 2,
+        "1336": 6821,
+        "1368": 6809,
+        "1400": 580
+      },
+      "ticks_all": 17348,
+      "ticks_trade": 14210,
+      "estado": "ESTAVEL_PARA_ANALISE"
+    }
+  ],
+  "limite": "Recalcula o snapshot exportado, não prova causa da diferença, integridade de toda a sessão, identificação histórica ou execução no Tester. Modo Bid não permite interpretar diferença Last/M1 como erro da base de negócios."
+}
