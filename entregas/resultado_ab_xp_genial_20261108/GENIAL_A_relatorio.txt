@@ -1,0 +1,25 @@
+=== DiagTicksAB v1.21 | ambiente=TERMINAL | tag=GENIAL_A
+simbolo_consultado=WINZ26 | simbolo_do_grafico=WINZ26 | periodo=PERIOD_M5
+janela=2026.10.30 09:00:00 -> 2026.10.30 09:10:00 (hora do servidor)
+servidor=GenialInvestimentos-PRD | empresa=Genial Investimentos Corretora de Valores Mobiliários S.A. | build=6231
+tester=0 visual=0 otimizacao=0 conectado=1 simbolo_custom=0 TimeCurrent=2026.11.06 18:24:00
+STATUS=ESTAVEL (duas leituras consecutivas validas, comparacao exata campo a campo)
+[ALL] valido=1 | n=236855 err=0 | tf_n=142865 | ea_n(last>0 finito)=142865 | tf_last_invalido=0 | carregado_sem_flag=93990 | last>0=236855 | volume>0=236855 | primeiro_neg_msc=1793350843093
+   hash_completo=8313169577021322304 | hash_negocios=18223970942279482697
+   flags: 1336 x63915; 1368 x65795; 1400 x13155; 1030 x1; 1028 x46740; 1026 x47249;
+   neg_por_minuto(tf): 10528 26687 21451 12731 11849 17716 9325 8468 13070 11040
+   primeiro_tick: msc=1793350843093 bid=0.0 ask=0.0 last=170910.0 flags=1336 | ultimo_msc=1793351399988
+[TRADE] valido=1 | n=142865 err=0 | tf_n=142865 | ea_n(last>0 finito)=142865 | tf_last_invalido=0 | carregado_sem_flag=0 | last>0=142865 | volume>0=142865 | primeiro_neg_msc=1793350843093
+   hash_completo=1281114631577254066 | hash_negocios=18223970942279482697
+   flags: 1336 x63915; 1368 x65795; 1400 x13155;
+   neg_por_minuto(tf): 10528 26687 21451 12731 11849 17716 9325 8468 13070 11040
+   primeiro_tick: msc=1793350843093 bid=0.0 ask=0.0 last=170910.0 flags=1336 | ultimo_msc=1793351399988
+[INFO] valido=1 | n=93990 err=0 | tf_n=0 | ea_n(last>0 finito)=0 | tf_last_invalido=0 | carregado_sem_flag=93990 | last>0=93990 | volume>0=93990 | primeiro_neg_msc=0
+   hash_completo=4739962657454861329 | hash_negocios=1469598103934665603
+   flags: 1030 x1; 1028 x46740; 1026 x47249;
+   neg_por_minuto(tf): 0 0 0 0 0 0 0 0 0 0
+   primeiro_tick: msc=1793350843179 bid=170905.0 ask=170910.0 last=170990.0 flags=1030 | ultimo_msc=1793351399985
+CRUZAMENTO: ALL.tf_n=142865 | ALL.ea_n=142865 | TRADE.n=142865 | TRADE.tf_n=142865 | hash_negocios ALL==TRADE: sim
+--- historico das tentativas ---
+tentativa 1 | validos ALL=1 TRADE=1 INFO=1 | ALL n=236855 err=0 tf=142865 ea=142865 | TRADE n=142865 err=0 | INFO n=93990 err=0 | igual_a_anterior=0
+tentativa 2 | validos ALL=1 TRADE=1 INFO=1 | ALL n=236855 err=0 tf=142865 ea=142865 | TRADE n=142865 err=0 | INFO n=93990 err=0 | igual_a_anterior=1

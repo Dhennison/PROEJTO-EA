@@ -1,0 +1,182 @@
+﻿RESULTADOS CONSOLIDADOS DO TESTE A/B — XP E GENIAL
+Atualização: 08/11/2026
+Estratégia: Modelo D
+
+1. OBJETIVO E MÉTODO
+
+A e B são os ambientes do diagnóstico de dados; não são modelos de estratégia.
+A = consulta ao histórico pelo terminal MT5.
+B = consulta ao histórico pelo Testador de Estratégias do mesmo servidor.
+
+Foi utilizado o DiagTicksAB v1.21, independente das bibliotecas da estratégia,
+sem envio de ordens. Símbolo nativo WINZ26, gráfico M5, mesma janela:
+30/10/2026, de 09:00:00 inclusive a 09:10:00 exclusive, em hora do servidor.
+O Tester foi configurado com “Cada tick é baseado em um tick real”, período
+30/10/2026 a 31/10/2026, sem otimização, teste futuro ou modo visual.
+
+Nos quatro relatórios, duas leituras consecutivas foram estáveis e as
+consultas ALL, TRADE e INFO terminaram sem erro. Estabilidade significa
+repetibilidade da consulta; não certifica completude nem fidelidade à bolsa.
+
+Os quatro CSVs ALL foram lidos integralmente nesta consolidação, incluindo
+os CSVs da XP preservados no ZIP original. As contagens abaixo conferem com
+os relatórios. Negócio válido = flags de negócio (máscara 120: LAST, VOLUME,
+BUY ou SELL) e Last positivo e finito. Last positivo sozinho não basta:
+ticks de informação podem carregar o último preço sem ser novo negócio.
+
+2. RESULTADOS EM UMA TABELA
+
+Medida                         XP A      XP B      Genial A    Genial B
+Ticks ALL                     108.005    36.571      236.855      36.571
+TRADE / negócios válidos       105.342         0      142.865           0
+INFO                            2.663    36.571       93.990      36.571
+ALL com Last positivo          108.004         0      236.855           0
+ALL com volume_real positivo   108.004         0      236.855           0
+
+XP: servidor XPMT5-DEMO, build 6295. Testes realizados em 05/11/2026.
+Genial: servidor GenialInvestimentos-PRD, build 6231. Testes em 08/11/2026.
+A Genial foi usada apenas para diagnóstico sem ordens.
+
+Primeiro negócio válido:
+- XP:     09:00:43.103, Last 170910.
+- Genial: 09:00:43.093, Last 170910.
+Extremos dos Last de negócios na janela: 170420 a 171600 nos dois terminais.
+As contagens, flags e horários dos terminais diferem; não são fluxos
+idênticos. Isso não permite atribuir automaticamente a diferença a perdas
+de dados de um servidor sem uma referência independente de negócios.
+
+Negócios válidos por minuto, de 09:00 até 09:09:
+Minuto     XP A      Genial A      XP B      Genial B
+09:00       8660        10528           0             0
+09:01      20683        26687           0             0
+09:02      15263        21451           0             0
+09:03       9445        12731           0             0
+09:04       8792        11849           0             0
+09:05      12129        17716           0             0
+09:06       6838         9325           0             0
+09:07       6168         8468           0             0
+09:08       9340        13070           0             0
+09:09       8024        11040           0             0
+TOTAL    105342       142865           0             0
+
+3. O QUE OS TESTERS ENTREGARAM
+
+Nos dois CSVs B, os 36.571 registros têm flags=6 (BID|ASK), Last=0,
+volume=0 e volume_real=0. Não há negócio escondido pelo filtro do EA.
+TRADE retornou zero, enquanto INFO e ALL retornaram 36.571.
+
+Mais forte que a igualdade de contagens: os CSVs B da XP e da Genial são
+idênticos campo a campo, na mesma ordem, e também byte a byte (mesmo SHA256):
+bcbeb9e46b260d58bd869337c5ed0e6e30e0c253d0d14167ce444376509e132d
+
+Hash completo informado pelo DiagTicksAB nos dois B:
+12192812819959984030.
+Primeiro registro B: 09:00:00.000, Bid 170910, Ask 170915, Last 0.
+Último registro B: 09:09:59.571.
+
+4. EVIDÊNCIA DOS DIÁRIOS
+
+Em ambos os servidores, o Diário informa:
+“all the real ticks discarded within a day”
+“real ticks discarded for 565 minutes of 565 total minute bars,
+every tick generation used”
+
+XP: 2.299.875 preços de ticks incompatíveis para 565 barras M1;
+volumes de ticks também não coincidiram nas 565 barras.
+Genial: 4.319.114 preços de ticks incompatíveis para 565 barras M1;
+volumes de ticks também não coincidiram nas 565 barras.
+
+Portanto, selecionar ticks reais não garantiu seu uso: nesses testes o
+MT5 descartou os ticks reais do dia e recorreu à geração substituta.
+O descarte relatado abrange o dia; a auditoria dos registros exportados
+abrange somente os dez minutos definidos na consulta.
+O total de eventos processados pelo motor do Tester até a remoção do
+robô pode diferir das 36.571 linhas dessa janela; são escopos diferentes.
+
+5. ACHADOS ADICIONAIS E LIMITES
+
+Nos CSVs A existem cotações com Bid maior que Ask: 757 linhas na XP e
+135 na Genial. A primeira linha da XP tem Bid 188645 e Ask 154350;
+a primeira linha de negócio da Genial tem Bid=Ask=0.
+São observações de qualidade dos dados, não prova da causa do descarte.
+
+Nos negócios dos dois terminais aparecem flags 1336, 1368 e 1400, que
+incluem bits adicionais além dos bits públicos usados pelo classificador.
+Não foi demonstrado que esses bits provoquem rejeição no Tester.
+Não se deve remover registros ou alterar flags sem validação independente.
+
+O controle A/B demonstra o mecanismo imediato do bloqueio: o terminal
+retorna negócios com Last válido, mas o Tester entrega somente cotações
+geradas sem Last. Isso não é evidência de leilão prolongado nem de ausência
+de negócios na base consultada pelo terminal.
+
+A causa original da incompatibilidade continua em investigação. Não foi
+isolado se está no fornecimento, no armazenamento, no processamento de
+barras/ticks ou em outro comportamento do MT5. A mensagem de sincronização
+com poucos bytes não prova cache corrompido. Não apagar cache por suposição.
+A/B não é teste de execução de ordens, fila, DMA4 ou VPS e não homologa o EA.
+
+6. RELAÇÃO COM A DIVERGÊNCIA DE SETEMBRO NA GENIAL
+
+Antes deste A/B foi executado um diagnóstico focal no WINV26 nativo,
+com duas janelas estáveis de cinco minutos e exportação ALL, TRADE e M1:
+- 01/09/2026, 18:20–18:25: ALL 2955, TRADE 1907.
+- 02/09/2026, 16:10–16:15: ALL 17348, TRADE 14210.
+O filtro de negócios de ALL reproduziu TRADE exatamente.
+Oito das dez barras coincidiram em OHLC; duas divergiram:
+
+01/09, 18:24:
+Ticks: O 182355, H 182355, L 182260, C 182330.
+M1/Work: O 182355, H 182390, L 182260, C 182390.
+Diferenças: máxima -35 pontos e fechamento -60 pontos.
+
+02/09, 16:13:
+Ticks: O 187855, H 187930, L 187820, C 187865.
+M1/Work: O 187855, H 187945, L 187820, C 187865.
+Diferença: máxima -15 pontos.
+
+Os preços máximos indicados pelas barras não apareceram sequer em Last,
+Bid ou Ask dos registros ALL dos respectivos minutos. As dez barras M1
+coincidiram com os candles originais do Work em OHLC e volume real.
+Isso demonstra inconsistência entre barras e ticks na amostra, mas não
+identifica sozinho sua origem. Não foram consultados ticks fora das janelas.
+O A/B de outubro não prova que o Tester descartará o WINV26 em setembro:
+esses símbolos e períodos precisam de verificação específica.
+
+7. CONSEQUÊNCIAS PARA O MODELO D E A COMPARAÇÃO COM O WORK
+
+O bloqueio por ausência de negócio válido é coerente com a regra do Modelo D.
+Estes dados não justificam trocar Last por Bid/Ask, fabricar Last ou
+flexibilizar a validação da abertura. Isso mudaria a estratégia ou a base.
+Também não permitem afirmar que todas as demais regras do EA estão aprovadas.
+
+A repetição A/B na Genial está concluída para essa janela, com CSVs conferidos.
+A investigação da causa do descarte e a preparação do histórico seguem abertas.
+Para avançar, é necessário validar uma pequena amostra do período alvo no
+ambiente que efetivamente alimentará o EA, incluindo ticks, barras, contrato
+histórico, ajuste por data operacional e fuso/sessão; depois ampliar em lotes.
+Um símbolo personalizado com ticks importados pode controlar a alimentação,
+mas não recupera preços ou negócios ausentes dos ticks originais.
+
+A reprodução matemática independente do Work já conferiu 877 pregões e
+1.877 operações, de março/2023 até 21/09/2026, sem diferenças nos resultados
+de referência. Isso é reprodução teórica dos candles, ainda não backtest do EA.
+
+A comparação principal será com 1 contrato por nível e pontos brutos,
+incluindo saídas pelo preço efetivamente executado no corte da sessão.
+Cinco contratos ficam para um teste posterior de parciais e proteção.
+As 32 operações ambíguas do Work, distribuídas em 26 pregões, permanecem
+registradas com stop na referência original. No EA, o resultado dependerá
+da cronologia verificável e das execuções; se não houver evidência suficiente,
+o resultado ficará indeterminado, sem inventar gain ou stop.
+O PDF final deverá apresentar Work e EA lado a lado por data e operação.
+
+8. RASTREABILIDADE
+
+Fontes: quatro relatórios A/B, quatro CSVs ALL completos e Diários do Tester.
+XP: pacote Resultado_AB_XP_20261105.zip preservado no projeto.
+Genial: arquivos GENIAL_A_757381906 e GENIAL_B_757688312 enviados pelo usuário.
+Conferência independente desta consolidação: CONFERENCIA_CSV.json e conferir.py.
+Valores estatísticos são contagens de registros, não quantidade de contratos.
+Nenhuma ordem foi enviada e nenhuma regra ou código do EA foi alterado para
+produzir este relatório.

@@ -1,0 +1,133 @@
+{
+  "results": {
+    "XP_A": {
+      "rows": 108005,
+      "business_valid": 105342,
+      "per_minute": [
+        8660,
+        20683,
+        15263,
+        9445,
+        8792,
+        12129,
+        6838,
+        6168,
+        9340,
+        8024
+      ],
+      "flags": {
+        "1026": 1334,
+        "1336": 48391,
+        "1030": 1,
+        "1028": 1328,
+        "1368": 49205,
+        "1400": 7746
+      },
+      "positive_last": 108004,
+      "positive_volume": 108004,
+      "bid_greater_ask": 757,
+      "first_msc": 1793350810702,
+      "last_msc": 1793351399988,
+      "first_business_msc": 1793350843103,
+      "business_min": 170420.0,
+      "business_max": 171600.0,
+      "sha256": "c73c6ca12d909cd4688a865ce775be775bfa5f8e3b5acba76144e96f554c3282"
+    },
+    "XP_B": {
+      "rows": 36571,
+      "business_valid": 0,
+      "per_minute": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "flags": {
+        "6": 36571
+      },
+      "positive_last": 0,
+      "positive_volume": 0,
+      "bid_greater_ask": 0,
+      "first_msc": 1793350800000,
+      "last_msc": 1793351399571,
+      "first_business_msc": null,
+      "business_min": null,
+      "business_max": null,
+      "sha256": "bcbeb9e46b260d58bd869337c5ed0e6e30e0c253d0d14167ce444376509e132d"
+    },
+    "GENIAL_A": {
+      "rows": 236855,
+      "business_valid": 142865,
+      "per_minute": [
+        10528,
+        26687,
+        21451,
+        12731,
+        11849,
+        17716,
+        9325,
+        8468,
+        13070,
+        11040
+      ],
+      "flags": {
+        "1336": 63915,
+        "1368": 65795,
+        "1400": 13155,
+        "1030": 1,
+        "1028": 46740,
+        "1026": 47249
+      },
+      "positive_last": 236855,
+      "positive_volume": 236855,
+      "bid_greater_ask": 135,
+      "first_msc": 1793350843093,
+      "last_msc": 1793351399988,
+      "first_business_msc": 1793350843093,
+      "business_min": 170420.0,
+      "business_max": 171600.0,
+      "sha256": "5d16ac2d541bf9df4844f177735f32b2f00817b40b5bcce958e64ad5030d616c"
+    },
+    "GENIAL_B": {
+      "rows": 36571,
+      "business_valid": 0,
+      "per_minute": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "flags": {
+        "6": 36571
+      },
+      "positive_last": 0,
+      "positive_volume": 0,
+      "bid_greater_ask": 0,
+      "first_msc": 1793350800000,
+      "last_msc": 1793351399571,
+      "first_business_msc": null,
+      "business_min": null,
+      "business_max": null,
+      "sha256": "bcbeb9e46b260d58bd869337c5ed0e6e30e0c253d0d14167ce444376509e132d"
+    }
+  },
+  "sources": {
+    "XP_A": "Resultado_AB_XP_20261105/A_TERMINAL/DiagTicksAB_TERMINAL_XPMT5-DEMO_WINZ26_2026_10_30_09_00_2026_10_30_09_10_XP_A_492165406_ALL.csv",
+    "XP_B": "Resultado_AB_XP_20261105/B_TESTER/DiagTicksAB_TESTER_XPMT5-DEMO_WINZ26_2026_10_30_09_00_2026_10_30_09_10_XP_B_502759406_ALL.csv",
+    "GENIAL_A": "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINZ26_2026_10_30_09_00_2026_10_30_09_10_GENIAL_A_757381906_ALL.csv",
+    "GENIAL_B": "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_30_09_00_2026_10_30_09_10_GENIAL_B_757688312_ALL.csv"
+  },
+  "XP_B_igual_GENIAL_B_campo_a_campo": true
+}
