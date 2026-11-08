@@ -1,0 +1,176 @@
+{
+  "A_ALL": 0,
+  "B_ALL": 30327,
+  "B_flags": {
+    "30": 30325,
+    "24": 2
+  },
+  "B_last_equals_bid_rows": 30327,
+  "B_ask_minus_bid": [
+    "5.00000000000"
+  ],
+  "available_candles": 8,
+  "OHLC_exact_matches": 8,
+  "individual_price_fields_matched": 32,
+  "minutes": [
+    {
+      "minute": "09:00",
+      "ticks": 0,
+      "generated_ohlc": null,
+      "Work_ohlc": null,
+      "status": "SEM_REGISTROS_NOS_DOIS"
+    },
+    {
+      "minute": "09:01",
+      "ticks": 0,
+      "generated_ohlc": null,
+      "Work_ohlc": null,
+      "status": "SEM_REGISTROS_NOS_DOIS"
+    },
+    {
+      "minute": "09:02",
+      "ticks": 3524,
+      "generated_ohlc": [
+        "187980.00000000000",
+        "188625.00000000000",
+        "187980.00000000000",
+        "188545.00000000000"
+      ],
+      "Work_ohlc": [
+        "187980",
+        "188625",
+        "187980",
+        "188545"
+      ],
+      "status": "OHLC_IGUAL"
+    },
+    {
+      "minute": "09:03",
+      "ticks": 3884,
+      "generated_ohlc": [
+        "188540.00000000000",
+        "188550.00000000000",
+        "187600.00000000000",
+        "188090.00000000000"
+      ],
+      "Work_ohlc": [
+        "188540",
+        "188550",
+        "187600",
+        "188090"
+      ],
+      "status": "OHLC_IGUAL"
+    },
+    {
+      "minute": "09:04",
+      "ticks": 3844,
+      "generated_ohlc": [
+        "188090.00000000000",
+        "188190.00000000000",
+        "187685.00000000000",
+        "188030.00000000000"
+      ],
+      "Work_ohlc": [
+        "188090",
+        "188190",
+        "187685",
+        "188030"
+      ],
+      "status": "OHLC_IGUAL"
+    },
+    {
+      "minute": "09:05",
+      "ticks": 3992,
+      "generated_ohlc": [
+        "188020.00000000000",
+        "188070.00000000000",
+        "187555.00000000000",
+        "187860.00000000000"
+      ],
+      "Work_ohlc": [
+        "188020",
+        "188070",
+        "187555",
+        "187860"
+      ],
+      "status": "OHLC_IGUAL"
+    },
+    {
+      "minute": "09:06",
+      "ticks": 3903,
+      "generated_ohlc": [
+        "187855.00000000000",
+        "188300.00000000000",
+        "187840.00000000000",
+        "188055.00000000000"
+      ],
+      "Work_ohlc": [
+        "187855",
+        "188300",
+        "187840",
+        "188055"
+      ],
+      "status": "OHLC_IGUAL"
+    },
+    {
+      "minute": "09:07",
+      "ticks": 3635,
+      "generated_ohlc": [
+        "188055.00000000000",
+        "188445.00000000000",
+        "188055.00000000000",
+        "188245.00000000000"
+      ],
+      "Work_ohlc": [
+        "188055",
+        "188445",
+        "188055",
+        "188245"
+      ],
+      "status": "OHLC_IGUAL"
+    },
+    {
+      "minute": "09:08",
+      "ticks": 3670,
+      "generated_ohlc": [
+        "188240.00000000000",
+        "188470.00000000000",
+        "188125.00000000000",
+        "188395.00000000000"
+      ],
+      "Work_ohlc": [
+        "188240",
+        "188470",
+        "188125",
+        "188395"
+      ],
+      "status": "OHLC_IGUAL"
+    },
+    {
+      "minute": "09:09",
+      "ticks": 3875,
+      "generated_ohlc": [
+        "188400.00000000000",
+        "188485.00000000000",
+        "188215.00000000000",
+        "188345.00000000000"
+      ],
+      "Work_ohlc": [
+        "188400",
+        "188485",
+        "188215",
+        "188345"
+      ],
+      "status": "OHLC_IGUAL"
+    }
+  ],
+  "provenance": "GERACAO_SUBSTITUTA_EXPLICITA_NO_DIARIO_NAO_TICKS_REAIS",
+  "scope": "Eight candles in one ten-minute window, not all September or the whole Work period; no EA orders or ambiguity resolution.",
+  "sha256": {
+    "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WIN_N_2026_09_21_09_00_2026_09_21_09_10_GENIAL_WINN_20260921_A_783793046_ALL.csv": "0b8b26d87f928ad75789d56029704fb44c2e1fef8865a81fd1942b18139a4408",
+    "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WIN_N_2026_09_21_09_00_2026_09_21_09_10_GENIAL_WINN_20260921_B_784001937_ALL.csv": "666d4d8fb680bc4fe5d906983bdf0e02754a7293b5950bd0de473a9ef429cb8e",
+    "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WIN_N_2026_09_21_09_00_2026_09_21_09_10_GENIAL_WINN_20260921_A_783793046.txt": "b17c1a09fcd529197502559dd72898aa24991d219c395a4dc2c98dedb5107e39",
+    "DiagTicksAB_TESTER_GenialInvestimentos-PRD_WIN_N_2026_09_21_09_00_2026_09_21_09_10_GENIAL_WINN_20260921_B_784001937.txt": "62df57c53a4320461b533236a5e5904cbc6631162136de0d5457b5ab8b4dec52",
+    "WINFUT_F_0_1min_01-01-2026_22-09-2026.csv": "f1343f8181fce176b5d266bd1710c5aadfea8ed8af8941da1ee6b3fd9469dc45"
+  }
+}

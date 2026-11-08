@@ -1,0 +1,47 @@
+ANÁLISE FINAL DOS ARQUIVOS A/B — WIN$N / GENIAL
+Data da análise: 08/11/2026
+
+CONCLUSÃO
+O diagnóstico rodou no WIN$N e o fluxo gerado pelo Tester reproduziu exatamente o OHLC das oito barras M1 disponíveis na janela auditada, em comparação com os candles originais do WINFUT usados pelo Work. Isso sustenta um próximo teste de lógica por candles no WIN$N. Não demonstra reprodução de negócios reais, execução do EA nem cobertura integral do histórico.
+
+ESCOPO E FONTES
+Símbolo nativo WIN$N, servidor GenialInvestimentos-PRD, build 6231, DiagTicksAB v1.21. Janela: 21/09/2026, 09:00 inclusive a 09:10 exclusive, hora do servidor. Tester configurado de 21/09 a 22/09, M5, opção de ticks reais.
+Conferidos os quatro arquivos originais enviados: TXT e ALL.csv do terminal A (sufixo 783793046), TXT e ALL.csv do Tester B (sufixo 784001937). Cruzados com o Diário do Tester já enviado e com WINFUT_F_0_1min_01-01-2026_22-09-2026.csv, fonte original do Work. O JSON anexo registra os SHA256 das cinco fontes da conferência dos arquivos.
+
+A — TERMINAL
+ALL=0, TRADE=0 e INFO=0, erro zero e duas leituras consecutivas iguais. O CSV contém apenas cabeçalho. Resultado vazio estável nesta janela; não certifica ausência de ticks em todas as datas nem transforma ausência de registros em aprovação de dados.
+
+B — TESTER
+CSV com 30.327 registros, compatível com o TXT. TRADE=30.327 e INFO=30.325. Flags 30 em 30.325 registros e 24 em dois. Last coincide com Bid em todos os registros; Ask-Bid é 5 pontos em todos. Horários ordenados, dentro da janela consultada, preços e volumes finitos e positivos.
+O Diário declara explicitamente: "no real ticks, every tick generation used". Portanto a opção selecionada de ticks reais não corresponde à origem efetivamente utilizada nesta rodada. Os flags de negócio e o retorno de COPY_TICKS_TRADE não tornam esse fluxo gerado uma sequência de negócios reais.
+As categorias TRADE e INFO se sobrepõem: não se deve somar esses contadores como partições disjuntas.
+
+CONFERÊNCIA INDEPENDENTE COM O WORK
+Reconstrução por minuto usando Last do CSV B e comparação decimal exata, sem tolerância, com OHLC original do Work:
+Hora;Ticks;Abertura;Máxima;Mínima;Fechamento;Resultado
+09:00;0;;;;;SEM REGISTROS NOS DOIS
+09:01;0;;;;;SEM REGISTROS NOS DOIS
+09:02;3524;187980;188625;187980;188545;OHLC_IGUAL
+09:03;3884;188540;188550;187600;188090;OHLC_IGUAL
+09:04;3844;188090;188190;187685;188030;OHLC_IGUAL
+09:05;3992;188020;188070;187555;187860;OHLC_IGUAL
+09:06;3903;187855;188300;187840;188055;OHLC_IGUAL
+09:07;3635;188055;188445;188055;188245;OHLC_IGUAL
+09:08;3670;188240;188470;188125;188395;OHLC_IGUAL
+09:09;3875;188400;188485;188215;188345;OHLC_IGUAL
+
+Resultado: 8/8 barras e 32/32 campos de preço iguais. Não há registros às 09:00 e 09:01 em nenhum dos conjuntos comparados; esses dois minutos não foram contados como barras aprovadas. Primeira ocorrência do fluxo B às 09:02:00.000, compatível com a primeira barra original disponível. A coincidência vale para esta janela, não para todo setembro nem para março/2023 a setembro/2026.
+
+IMPLICAÇÕES PARA O MODELO D
+1. O WIN$N é uma alternativa concreta para testar a lógica histórica com base em candles compatíveis com o Work. O diagnóstico não enviou ordens; ainda é necessário validar a adaptação do EA, as propriedades do símbolo no Tester e os resultados das operações.
+2. A sequência intrabar é gerada. Um gain ou stop obtido nessa sequência não esclarece qual ocorreu primeiro no mercado real em um dia ambíguo. Preservar no comparativo o stop adotado pelo Work e identificar o resultado do EA como dependente da modelagem sintética.
+3. Manter a comparação principal com um contrato por nível e pontuação bruta. Cinco contratos e execução parcial pertencem a uma rodada posterior.
+4. Saídas por horário devem usar o preço efetivo de encerramento registrado pelo teste; a pontuação pode ser positiva, negativa ou zero. Isso não certifica que aquele preenchimento teria ocorrido no mercado real.
+5. As regras, ajustes por data, contratos e horários históricos do Modelo D continuam exigindo tratamento explícito. Selecionar WIN$N no gráfico não garante que o EA atual deixe de resolver e consultar o contrato de vencimento.
+
+ENCAMINHAMENTO
+Preparar um teste curto do EA adaptado ao WIN$N, com origem sintética explicitamente identificada e um contrato por nível. Conferir entradas, alvos, stops, encerramentos por horário e pontuação contra o Work antes de ampliar para meses. A leitura histórica por referência CSV e a sondagem de ticks antigos continuam adiadas conforme a decisão do usuário.
+Não repetir este A/B sem nova questão específica: os quatro arquivos já sustentam a conclusão desta janela.
+
+PRESERVAÇÃO
+Este relatório substitui as ressalvas de arquivos ainda não recebidos do relatório preliminar. Os CSVs brutos permanecem preservados localmente; o material de conferência contém análise derivada, hashes e código reproduzível.
