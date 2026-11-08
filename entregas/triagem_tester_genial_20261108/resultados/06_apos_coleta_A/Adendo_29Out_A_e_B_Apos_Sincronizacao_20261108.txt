@@ -1,0 +1,85 @@
+﻿ADENDO — 29/10/2026: B ANTES E DEPOIS DA COLETA A
+Modelo D / diagnóstico de dados, não teste de execução de ordens.
+Atualização: 08/11/2026, após a rodada das 13:02.
+
+MESMO SÍMBOLO E JANELA
+WINZ26 nativo, M5, GenialInvestimentos-PRD, build 6231.
+Consulta 29/10/2026, 09:00–09:10, final exclusivo.
+Tester 29/10 até 30/10, modelagem de ticks reais selecionada.
+Código DiagTicksAB v1.21 sem alterações.
+
+RESULTADOS
+                           B antes       A terminal       B após A
+ALL                          36926           204027           36926
+TRADE / flags+Last           36926           128669               0
+INFO                         36922            75358           36926
+Situação declarada B      Reais ausentes        —        Reais descartados
+
+B ANTES: GTR_06_20261029_B, sufixo 762822359.
+CSV recebido e conferido integralmente na análise anterior.
+565/565 barras sem ticks reais segundo o Diário; geração substituta.
+Last e volume positivos, flags 30/24; Last=Bid em todas as linhas.
+Esses registros satisfaziam o classificador, mas eram geração substituta.
+
+A TERMINAL: GTR_06_20261029_A, sufixo 765756968.
+Resultado recebido no chat; TXT e CSV nativos ainda não recebidos.
+Primeira tentativa: ALL/TRADE=-1, erro4401; INFO=75358, erro0.
+Tentativas 2 e 3: leituras válidas iguais, sem erro.
+ALL204027 = TRADE128669 + INFO75358; todos os negócios com Last válido.
+Primeiro negócio retornado: 09:00:58.034, Last173135.
+Hash de negócios ALL e TRADE: 3626944630656477247.
+Demonstra disponibilidade de registros de negócio no terminal nessa janela.
+Não certifica completude de toda a sessão nem causa exata da demora.
+Abrir o Navegador não é causa demonstrada da conclusão.
+
+B APÓS A: GTR_06_20261029_B_APOS_A, sufixo 765979640.
+Diário recebido e conferido, TXT/CSV nativos ainda não recebidos.
+Nova sincronização de 13679 Kb; agente informa carga de 13,34 Mb de ticks.
+O agente foi iniciado nesta rodada (mensagem agent process started).
+Agora o Diário declara todos os ticks reais DESCARTADOS em 565/565 barras,
+4.707.605 preços incompatíveis e volumes divergentes nas 565 barras.
+ALL36926, INFO36926, TRADE0; flags6 em todos os registros, Last/volume zero.
+Duas leituras estáveis, sem erros de consulta.
+Hash completo informado: 9312195725339875686.
+
+INTERPRETAÇÃO
+Foi observada exatamente a mudança prevista pela hipótese de disponibilidade:
+após a coleta A, houve sincronização adicional e “ausentes” mudou para
+“descartados”. Isso é forte evidência de uma diferença de disponibilidade/
+sincronização entre as rodadas, não de ausência de negócios no servidor.
+
+O teste NÃO isola o mecanismo interno: além da coleta A, o agente foi
+reiniciado entre as rodadas. Não atribuir exclusivamente à coleta A o efeito
+sem um controle que separe esses fatores. Não comprova um bug específico
+de intervalo marcado como sincronizado nem corrupção de cache.
+
+A causa do DESCARTE continua sem solução. Agora que há dados sincronizados,
+o Tester os rejeita como nos demais dias. Resolver disponibilidade não
+resolve a incompatibilidade entre ticks e barras M1.
+
+O total ALL ficou igual em 36926 antes e depois, mas os campos/flags mudaram.
+Igualdade de contagem NÃO significa igualdade de fluxo. Não afirmar que
+Bid/Ask e horários de todas as linhas permaneceram idênticos sem comparar o
+novo CSV, ainda não recebido. Hash completo anterior:135489622808874762;
+hash posterior:9312195725339875686. Os fluxos completos não têm o mesmo hash.
+
+CORREÇÃO DO ESTADO DA TRIAGEM
+Preservar o teste06 original como evidência de geração com flags de negócio;
+não apagar nem reclassificar retroativamente seu Diário “ausentes”.
+Acrescentar esta rodada: os seis dias distintos agora têm alguma execução
+com descarte de ticks reais confirmado. Em 29/10, a primeira foi ausência,
+a posterior foi descarte. Nenhuma alimentação real ficou aprovada.
+Last positivo + flags de negócio continuam sem certificar origem real.
+A existência dos negócios no terminal não garante entrega no Tester.
+
+PRÓXIMO PASSO, SEM NOVAS REPETIÇÕES NESTE MOMENTO
+Receber os quatro arquivos nativos, TXT e CSV, dos sufixos:
+765756968 (A terminal) e 765979640 (B após A).
+O CSV B anterior 762822359 já foi conferido e está preservado localmente.
+Confrontar o novo B com ele, e comparar A com B em contagens, cronologia,
+preços e OHLC. Em seguida escolher um piloto de alimentação controlada.
+Não expandir o backtest por meses antes de validar a alimentação.
+Não alterar a estratégia, apagar cache ou converter Bid em Last por suposição.
+
+O relatório completo anterior e os Diários são preservados. Este adendo
+atualiza a situação de 29/10 e não declara resolvida a origem do descarte.

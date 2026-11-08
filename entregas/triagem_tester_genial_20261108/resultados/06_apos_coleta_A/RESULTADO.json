@@ -1,0 +1,42 @@
+{
+  "fonte": "DIARIO_TESTER_B_APOS_A.txt",
+  "sha256": "30650f6ab79ccda7c7939a474087f59d8eff4d9bb8a71bd33f89ed38a3caf848",
+  "simbolo": "WINZ26",
+  "data": "2026-10-29",
+  "janela": "09:00–09:10",
+  "A_reportado_usuario": {
+    "ALL": 204027,
+    "TRADE": 128669,
+    "INFO": 75358,
+    "estavel": true,
+    "sufixo": "765756968",
+    "CSV_recebido": false
+  },
+  "B_antes": {
+    "ALL": 36926,
+    "TRADE": 36926,
+    "INFO": 36922,
+    "diario": "AUSENTES_GERACAO",
+    "CSV_conferido": true
+  },
+  "B_apos": {
+    "ALL": 36926,
+    "TRADE": 0,
+    "INFO": 36926,
+    "Last_positivo": 0,
+    "volume_positivo": 0,
+    "flags": {
+      "6": 36926
+    },
+    "sincronizacao_Kb": 13679,
+    "descarte_barras_M1": 565,
+    "total_barras_M1": 565,
+    "ticks_precos_mismatch": 4707605,
+    "estavel": true,
+    "hash_completo": "9312195725339875686",
+    "sufixo": "765979640",
+    "CSV_recebido": false
+  },
+  "agente_reiniciado_entre_rodadas": true,
+  "causa_descarte": "NAO_ISOLADA"
+}
