@@ -32,3 +32,12 @@ Pacote com o DiagTicksAB v1.21 inalterado, seis configurações B e seis A opcio
 - [Guia e parâmetros](entregas/triagem_tester_genial_20261108/LEIA_PRIMEIRO.txt)
 - [ZIP para o MT5](entregas/Triagem_Tester_Genial_6_Pregoes_20261108.zip)
 - [Consolidação A/B XP e Genial com os quatro CSVs conferidos](entregas/resultado_ab_xp_genial_20261108/Resultados_AB_XP_e_Genial_2026-11-08.txt)
+
+### Piloto de alimentação controlada v1.00 — 29/10/2026
+
+Pacote preparado com importador em símbolo personalizado novo, auditoria de fonte/CopyTicksRange/OnTick, sonda amostral de datas antigas e revisão do ZIP fornecido pela outra IA. Sem alterações no EA da estratégia. Comparação exata, lotes sem dividir milissegundos e M1 derivado opcional/desligado. Compilação MetaEditor e execução nativa pendentes.
+
+- [ZIP integrado](entregas/ModeloD_Piloto_Controlado_v1_00_Integrado.zip)
+- [Instalação e roteiro](entregas/piloto_controlado_v1_00/LEIA_PRIMEIRO.txt)
+- [Revisão e decisões de integração](entregas/piloto_controlado_v1_00/REVISAO_PACOTE_OUTRA_IA.md)
+- [Verificações dos algoritmos](entregas/piloto_controlado_v1_00/tests/RESULTADO.json)

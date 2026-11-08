@@ -1,0 +1,15 @@
+{
+  "cpp_extracted_algorithms": "checks=84 failures=0",
+  "sanitizers": "address,undefined",
+  "python_checks": "passed: equality, order, duplicate timestamps, every field, plan, mutation boundaries, buffered OnTick",
+  "scope": "Algorithms adapted to C++; no native MQL compilation, no MT5 API/import/OnTick execution here.",
+  "source_sha256": {
+    "MQL5/Experts/ModeloD_PilotoControlado/Diagnostico_Piloto_OnTick.mq5": "d4afd9b27e5fbad82218d33ba416f13c2ba2f1bb72e9aa46124a62479beb3ee0",
+    "MQL5/Experts/ModeloD_PilotoControlado/Sondar_Ticks_Antigos.mq5": "74a1cb2b7cf93417c5335180ea2146ac158eba4941b023ab9206420ff2f5f414",
+    "MQL5/Files/SONDA_PILOTO_9_JANELAS.csv": "43e484e6fe0c76b7e7afc3eb90a008370be1328588bdce54474831f7892bd589",
+    "MQL5/Include/ModeloD_PilotoControlado/Piloto_Core.mqh": "461407245ad8fe9d13f307650c9874ff8c35bac23f8af583da03956b87b949d6",
+    "MQL5/Profiles/Tester/PILOTO_29OUT_DIAGNOSTICO.set": "983a37882d172052ecc8c0621022aaf4b9bd1d30a15b1868dfc130f9589b16f4",
+    "MQL5/Profiles/Tester/SONDA_9_JANELAS.set": "d854c29dd90d4ef54d6e8193cba179c3604a935285ef6a079bf1c560e1f7a97a",
+    "MQL5/Scripts/ModeloD_PilotoControlado/Importar_Piloto_29Out.mq5": "e82c4814fa7a511ea1faf5e863d381fd64c3cfc12290f8cee2bca20da1835cf9"
+  }
+}

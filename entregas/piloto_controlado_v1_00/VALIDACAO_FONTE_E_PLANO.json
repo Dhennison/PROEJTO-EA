@@ -1,0 +1,52 @@
+{
+  "source_name": "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINZ26_2026_10_29_09_00_2026_10_29_09_10_GTR_06_20261029_A_765756968_ALL.csv",
+  "source_sha256": "a3acba0e6d6e8f10ab1f6c24143c63d46fa8ce9767c2f87b87220fd3c2e0ed0b",
+  "source_summary": {
+    "n": 204027,
+    "business": 128669,
+    "flags": {
+      "1336": 61083,
+      "1368": 59823,
+      "1030": 2,
+      "1026": 37515,
+      "1028": 37841,
+      "1400": 7763
+    },
+    "time_ordered": true,
+    "inside_window": true,
+    "seconds_consistent": true,
+    "bid_gt_ask": 34,
+    "zero_quotes": 148
+  },
+  "batch_100000_plan": [
+    {
+      "begin_index": 0,
+      "end_exclusive": 100012,
+      "rows": 100012,
+      "first_msc": 1793264458034,
+      "last_msc": 1793264594961
+    },
+    {
+      "begin_index": 100012,
+      "end_exclusive": 200012,
+      "rows": 100000,
+      "first_msc": 1793264594962,
+      "last_msc": 1793264970087
+    },
+    {
+      "begin_index": 200012,
+      "end_exclusive": 204027,
+      "rows": 4015,
+      "first_msc": 1793264970089,
+      "last_msc": 1793264999998
+    }
+  ],
+  "peer_zip_reviewed": "ModeloD_Piloto_Alimentacao_v1.zip",
+  "peer_zip_sha256": "d5d5c7a0ecff020e0ade61f6e6603d0d280be20c4c455e9eaac2a190f671dc99",
+  "raw_source_in_delivery": false,
+  "native_MetaEditor_compilation": "PENDENTE",
+  "native_MT5_API_import_and_OnTick": "PENDENTE",
+  "readme_has_complete_install_paths": true,
+  "strategy_EA_changed": false,
+  "next_step": "COMPILAR_OS_TRES_MQ5_NO_METAEDITOR_GENIAL"
+}

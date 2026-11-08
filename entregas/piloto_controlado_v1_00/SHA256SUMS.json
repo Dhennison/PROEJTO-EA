@@ -1,0 +1,15 @@
+{
+  "LEIA_PRIMEIRO.txt": "99c4942e3fbb51c9c2eba11feb43cf11b7df65258cf92d48ab579091b385869f",
+  "MQL5/Experts/ModeloD_PilotoControlado/Diagnostico_Piloto_OnTick.mq5": "d4afd9b27e5fbad82218d33ba416f13c2ba2f1bb72e9aa46124a62479beb3ee0",
+  "MQL5/Experts/ModeloD_PilotoControlado/Sondar_Ticks_Antigos.mq5": "74a1cb2b7cf93417c5335180ea2146ac158eba4941b023ab9206420ff2f5f414",
+  "MQL5/Files/SONDA_PILOTO_9_JANELAS.csv": "43e484e6fe0c76b7e7afc3eb90a008370be1328588bdce54474831f7892bd589",
+  "MQL5/Include/ModeloD_PilotoControlado/Piloto_Core.mqh": "461407245ad8fe9d13f307650c9874ff8c35bac23f8af583da03956b87b949d6",
+  "MQL5/Profiles/Tester/PILOTO_29OUT_DIAGNOSTICO.set": "983a37882d172052ecc8c0621022aaf4b9bd1d30a15b1868dfc130f9589b16f4",
+  "MQL5/Profiles/Tester/SONDA_9_JANELAS.set": "d854c29dd90d4ef54d6e8193cba179c3604a935285ef6a079bf1c560e1f7a97a",
+  "MQL5/Scripts/ModeloD_PilotoControlado/Importar_Piloto_29Out.mq5": "e82c4814fa7a511ea1faf5e863d381fd64c3cfc12290f8cee2bca20da1835cf9",
+  "REVISAO_PACOTE_OUTRA_IA.md": "2c2e1ef08a7aa4c679532580d67c799b2f4e2867d6e536c0d258569746de37aa",
+  "VALIDACAO_FONTE_E_PLANO.json": "49e3550e77e9836c116872a98700aa3e9a662c840a4e9373a8a91635a8a5f395",
+  "tests/RESULTADO.json": "c125c9b8a312eee6a1cb7e718347633dec89e95829738e7e88e2de30443156c6",
+  "tests/run_checks.py": "170357ea0ee0375793f008a56b7059fef69b3144b53de36471cf499fc0da06fc",
+  "verificar_retorno.py": "aca834944da88021b220eec37d4542f85250522171547a2ba2aa3c7c28b92102"
+}

@@ -1,0 +1,203 @@
+﻿PILOTO CONTROLADO MODELO D v1.00 — 29/10/2026 — GENIAL
+
+O QUE FAREMOS PRIMEIRO
+Instalar e compilar os três programas. Depois executar somente o importador
+no terminal e conferir o retorno. O diagnóstico de OnTick vem após essa leitura.
+A sonda de datas antigas é independente e pode rodar em outro gráfico.
+Todos são programas de dados, sem envio de ordens e sem alterar o EA da XP.
+
+ESTADO DA ENTREGA
+Código novo, ainda NÃO compilado no MetaEditor nem executado no MT5.
+84 verificações de algoritmos extraídos e adaptados para C++ passaram com
+AddressSanitizer e UndefinedBehaviorSanitizer. Verificações Python passaram.
+Isso NÃO substitui compilação e execução nativas, APIs de importação ou Tester.
+
+INSTALAÇÃO — PASTA CORRETA
+1. Extraia o ZIP.
+2. No MT5 da GENIAL: Arquivo > Abrir Pasta de Dados.
+3. Cole NESSA RAIZ a pasta MQL5 extraída do pacote, permitindo mesclar pastas.
+   Não entre primeiro na MQL5 existente: isso criaria MQL5\MQL5.
+4. F4 abre o MetaEditor. Compile, com F7, estes três arquivos:
+
+MQL5\Scripts\ModeloD_PilotoControlado\Importar_Piloto_29Out.mq5
+MQL5\Experts\ModeloD_PilotoControlado\Diagnostico_Piloto_OnTick.mq5
+MQL5\Experts\ModeloD_PilotoControlado\Sondar_Ticks_Antigos.mq5
+
+O include é instalado em:
+MQL5\Include\ModeloD_PilotoControlado\Piloto_Core.mqh
+Não precisa compilar o .mqh separadamente. Não há EX5 no ZIP.
+Envie os resultados das compilações, incluindo qualquer erro ou aviso.
+Os nomes deste pacote são diferentes dos do ZIP da outra IA; use um pacote
+por rodada, sem misturar includes, executáveis ou relatórios de ambos.
+
+FONTE DO PILOTO — JÁ ESTÁ NO SEU COMMON\FILES
+O pacote NÃO inclui nem publica os CSVs brutos. Usará exatamente:
+DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINZ26_2026_10_29_09_00_2026_10_29_09_10_GTR_06_20261029_A_765756968_ALL.csv
+
+Windows + R, cole e dê Enter:
+%APPDATA%\MetaQuotes\Terminal\Common\Files
+
+Esse CSV deve estar diretamente na pasta acima. Não editar, salvar por cima
+no Excel ou converter o separador. O importador confere os sete campos do
+cabeçalho, números, sequência, janela, 204027 linhas e o hash legado informado
+pelo próprio DiagTicksAB A. O verificador Python também exige o SHA256 original:
+a3acba0e6d6e8f10ab1f6c24143c63d46fa8ce9767c2f87b87220fd3c2e0ed0b
+São esperados 128669 registros com flags de negócio e Last válido.
+Existem 34 linhas com Bid>Ask e 148 com Bid ou Ask zero: são preservadas.
+Não converter, filtrar, ordenar, deduplicar ou reparar a fonte para fazê-la passar.
+
+ETAPA 1 — IMPORTAR EM UM SÍMBOLO PERSONALIZADO NOVO
+Após compilação, no terminal da Genial, abra um gráfico separado WINZ26/M5.
+Ctrl+N > Scripts > ModeloD_PilotoControlado > Importar_Piloto_29Out.
+Arraste o script para esse gráfico. Deixe:
+- InpArquivoFonte: nome completo acima.
+- InpClonarSimbolo: WINZ26.
+- InpTamanhoLote: 100000.
+- InpConstruirM1: false.
+Confirme em OK. Não exige AlgoTrading, DLL ou WebRequest.
+
+O script carrega a fonte ANTES de criar qualquer símbolo. Cria um nome novo
+MDDP29_... no grupo ModeloD_Piloto, clonando propriedades de WINZ26 e usando
+modo de gráfico Last. Nunca reutiliza um símbolo existente e não apaga símbolos.
+Todas as mutações são direcionadas somente ao novo símbolo personalizado.
+Nenhum tick ou barra do WINZ26, WIN$N, ajustes ou diário do EA é alterado.
+
+Importa em lotes, ampliando o limite do lote quando houver vários registros
+no mesmo milissegundo. O mesmo grupo temporal não é dividido entre chamadas.
+Não corta a abertura nem acrescenta ticks sintéticos de aquecimento/encerramento.
+Os dez minutos são o único histórico importado; não é teste de estratégia.
+
+A aba Experts mostrará LENDO_FONTE, os lotes e, ao final, algo como:
+PILOTO100_IMPORT;END;symbol=MDDP29_...;import_exact=true;...
+Copie o nome completo do símbolo: ele será o ATIVO do Tester posteriormente.
+O nome varia a cada execução para preservar as cópias anteriores.
+
+O script relê os ticks duas vezes, compara os oito campos sem tolerância,
+registra diferenças e exporta IMPORT_READBACK.csv. Também observa as barras
+M1 e exporta IMPORT_M1_AUTO.csv e IMPORT_M1.csv.
+IMPORT_EXACT=1 exige importação completa e releitura estável igual à fonte.
+M1_OHLC_EQUAL=1 é uma conferência separada; volumes das barras são registrados,
+mas não declarados automaticamente corretos só porque o OHLC coincidiu.
+
+Se falhar leitura, hash, importação, igualdade ou exportação, preserve a pasta
+e envie o relatório. Não altere flags nem decimais para contornar a divergência.
+Se IMPORT_EXACT=1 e M1_OHLC_EQUAL=1, teremos um candidato para o diagnóstico;
+ainda não é alimentação aprovada nem homologação do EA.
+
+ETAPA 1B — CONSTRUÇÃO OPCIONAL DE M1, NÃO AUTOMÁTICA
+Primeiro execute com InpConstruirM1=false. Se as barras faltarem ou divergirem,
+envie o relatório. A opção true cria OUTRO símbolo novo, preservando o anterior.
+Ela registra o M1 automático antes de construir barras derivadas dos negócios
+originais: OHLC por Last, tick_volume=quantidade de registros de negócio,
+real_volume=soma do volume inteiro desses negócios. Isso é uma escolha explícita
+de construção para pesquisa, não barra oficial da bolsa ou do Work.
+Não inventa preços ausentes na fonte nem decide a sequência de extremos.
+
+Após CustomRatesUpdate, o script relê os ticks novamente, exporta
+IMPORT_READBACK_AFTER_M1.csv e compara com a fonte. Qualquer alteração fica
+registrada. Não fazer a primeira rodada com essa opção ligada.
+
+ETAPA 2 — DIAGNÓSTICO DAS TRÊS CAMADAS NO TESTER
+Depois de conferir a importação:
+1. Garanta que o novo MDDP29_... aparece na Observação do Mercado.
+2. Ctrl+R > Configuração:
+   Expert: ModeloD_PilotoControlado\Diagnostico_Piloto_OnTick.ex5
+   Ativo: NOME NOVO MDDP29_... informado pelo importador (não WINZ26)
+   Tempo gráfico: M5
+   Data inicial: 2026.10.29
+   Data final: 2026.10.30
+   Modelagem: Cada tick é baseado em um tick real
+   Otimização: Desativada; Para a frente: Não; Modo visual: desmarcado
+   Latência: Sem atrasos; agente local, sem nuvem ou agentes remotos.
+   Depósito/moeda/alavancagem: pode manter os do diagnóstico anterior.
+3. Em Parâmetros de entrada > botão direito > Carregar:
+   MQL5\Profiles\Tester\PILOTO_29OUT_DIAGNOSTICO.set
+   Só existe um parâmetro: o nome do CSV original em Common\Files.
+   O SET não muda o ativo, as datas ou a modelagem da aba Configuração.
+4. Iniciar. A simulação encerra ao final do histórico disponível/período.
+   O programa não usa ExpertRemove no primeiro tick e não depende de um tick
+   posterior a 09:10 para emitir relatório: finaliza por OnTester/OnDeinit.
+5. Salve o Diário COMPLETO do Tester desde o começo, mesmo se o relatório
+   declarar igualdade. Mensagens de ausência, descarte ou geração substituta
+   para o novo símbolo precisam ser analisadas. A opção da interface não prova
+   que a alimentação foi preservada.
+
+TRÊS CAMADAS, MAIS A RELEITURA DO IMPORTADOR
+1. Fonte original CSV, com time em segundos derivado de time_msc.
+2. Histórico do símbolo consultado DENTRO do Tester por CopyTicksRange.
+3. Callbacks OnTick e o MqlTick efetivamente observado em cada callback.
+A releitura feita pelo importador no terminal é preservada separadamente.
+Não confundir a consulta no final do teste com prova de entrega via OnTick.
+
+O OnTick faz só SymbolInfoTick, verificação da janela e cópia para memória
+pré-alocada. Não escreve CSV, não calcula hash, não consulta histórico e não
+redimensiona arrays por evento. Falhas de SymbolInfoTick e estouro do buffer
+são contabilizados. Isso reduz interferência, mas não garante uma chamada
+por registro. Coalescência/agrupamento deve ser investigado se houver diferença.
+
+Ao final grava:
+- RESULTADO.txt: contagens, qualidade, hashes de oito campos e comparação exata.
+- ONTICK.csv: todos os registros observados dentro da janela, na ordem.
+- TESTER_COPYTICKS.csv: snapshot consultado ao final, quando a chamada for válida.
+- TESTER_M1.csv: confronto OHLC e volumes observados por minuto.
+Os CSVs de saída acrescentam a coluna time para preservar também os segundos
+reais retornados pelo MT5. Não são novos arquivos de entrada do importador.
+
+Compara todos os campos: time, time_msc, bid, ask, last, volume, volume_real,
+flags, quantidade e ordem. Hash não substitui igualdade campo a campo.
+Os hashes novos de oito campos não têm de coincidir com o hash legado de sete
+campos do DiagTicksAB. PHLoadPilot usa o legado somente para conferir a fonte.
+
+Registra também subsequência ordenada e cobertura por milissegundos. Um tick
+repetido não pode ser associado infinitas vezes ao mesmo registro da fonte.
+Quantidade menor de callbacks ou ms sem callback não prova sozinha perda de
+importação. Se a ordem mudar, registros forem transformados ou houver repetição
+extra, isso aparece separadamente. Mesmo igualdade integral exige ler o Diário.
+Nenhuma saída do programa autoriza operação real nem aprova automaticamente o EA.
+
+ETAPA PARALELA — SONDA DE TICKS ANTIGOS
+Não precisa esperar o piloto do Tester, mas execute em outro gráfico da Genial.
+Anexe, como EA no terminal, Sondar_Ticks_Antigos. Não executar no Tester.
+Use InpPlano=SONDA_PILOTO_9_JANELAS.csv e InpMaxTentativas=6.
+O CSV de plano foi instalado em MQL5\Files, não em Common\Files.
+Há nove janelas de dez minutos em 2023, 2024, 2025 e 2026, incluindo setembro.
+Os contratos são CANDIDATOS por calendário, ainda não identificação do Work.
+
+A sonda mostra QUERY_BEGIN antes de cada consulta, QUERY_END com duração e
+retentativas, inclusive se houver 4401. Exige duas leituras válidas iguais
+campo a campo para classificar uma janela como estável. Pode demorar enquanto
+o MT5 consulta/sincroniza. Abrir o Navegador não é o mecanismo de atualização.
+Não exige mercado aberto, mas precisa de conexão ao servidor.
+
+Estados diferentes:
+- STABLE_BUSINESS_PRESENT: há registros com flags de negócio e Last válido.
+- STABLE_QUOTES_ONLY: retornaram registros, sem negócios pelo critério.
+- STABLE_EMPTY_WINDOW: duas consultas vazias nessa janela apenas.
+- SYMBOL_NOT_REGISTERED: símbolo não cadastrado; não é ausência de ticks antigos.
+- PENDING_ERROR_OR_NOT_STABLE: sem conclusão; erro não vira zero negócios.
+Não aprova cobertura do pregão inteiro, fuso, contrato histórico ou ajuste.
+Uma janela vazia às 09h pode precisar de outra hora; não certifica ausência
+em todo o dia/ano. Se surgirem ticks antigos, aprofundaremos a cobertura.
+DIAS.csv e META.txt registram também se o plano terminou ou foi interrompido.
+Não exporta a fita antiga completa nesta primeira sondagem.
+
+ARQUIVOS PARA ENVIAR
+Todos os retornos ficam em:
+%APPDATA%\MetaQuotes\Terminal\Common\Files\ModeloD_Piloto_Controlado
+Subpastas IMPORT_..., TESTER_... e SONDA_..., com identificadores próprios.
+Envie a pasta IMPORT da primeira rodada; depois a TESTER com o Diário do motor.
+A pasta SONDA pode ser enviada separadamente. Preserve também os CSVs originais.
+Não publique os dados brutos em repositório sem autorização específica.
+
+ANÁLISE LOCAL OPCIONAL — NÃO PRECISA RODAR PYTHON NO NOTEBOOK
+verificar_retorno.py compara a fonte com os CSVs retornados e exige seu SHA256.
+Pode ser usado aqui quando você enviar os arquivos. O resultado geral permanece
+pendente de Diário/revisão, sem autoaprovação por contagem ou hash.
+
+LIMITES DO OBJETIVO
+29/10 está fora do período do Work, que termina em 21/09/2026. Este piloto de
+dez minutos testa alimentação, não entradas, stops, alvos ou resultado do Modelo D.
+Só depois de validar esse mecanismo prepararemos a semana dentro da amostra,
+com sessão, contexto anterior, contrato e ajuste conferidos.
+Histórico sintético, se necessário para datas sem ticks recuperáveis, ficará
+identificado como validação de lógica e não resolverá ambiguidades como fita real.
