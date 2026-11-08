@@ -1,0 +1,110 @@
+{
+  "diary_sha256": "30d2cb24d77aff10d1270af555ef2809dc87bc7e8683593305fcaa408a63fcc6",
+  "native_compile_user_report": {
+    "errors": 0,
+    "warnings": 0,
+    "elapsed_ms": 2126
+  },
+  "round": 1,
+  "queries": {
+    "MODE_TRADE": {
+      "n": 170544,
+      "error": 0,
+      "stable": true
+    },
+    "MODE_INFO": {
+      "n": 75358,
+      "error": 0,
+      "stable": true
+    },
+    "MINUTE_0": {
+      "n": 2874,
+      "error": 0,
+      "stable": true
+    },
+    "MINUTE_1": {
+      "n": 49217,
+      "error": 0,
+      "stable": true
+    },
+    "MINUTE_2": {
+      "n": 39425,
+      "error": 0,
+      "stable": true
+    },
+    "MINUTE_3": {
+      "n": 27449,
+      "error": 0,
+      "stable": true
+    },
+    "MINUTE_4": {
+      "n": 22072,
+      "error": 0,
+      "stable": true
+    },
+    "MINUTE_5": {
+      "n": 13849,
+      "error": 0,
+      "stable": true
+    },
+    "MINUTE_6": {
+      "n": 13718,
+      "error": 0,
+      "stable": true
+    },
+    "MINUTE_7": {
+      "n": 14151,
+      "error": 0,
+      "stable": true
+    },
+    "MINUTE_8": {
+      "n": 10725,
+      "error": 0,
+      "stable": true
+    },
+    "MINUTE_9": {
+      "n": 10544,
+      "error": 0,
+      "stable": true
+    },
+    "GROUP_ALL": {
+      "n": 3,
+      "error": 0,
+      "stable": true
+    },
+    "GROUP_TRADE": {
+      "n": 3,
+      "error": 0,
+      "stable": true
+    },
+    "ALL_AFTER_MODES": {
+      "n": 204025,
+      "error": 0,
+      "stable": true
+    }
+  },
+  "sum_minute_ALL": 204024,
+  "source_ALL": 204027,
+  "source_business": 128669,
+  "source_minute_ALL": [
+    2875,
+    49217,
+    39427,
+    27449,
+    22072,
+    13849,
+    13718,
+    14151,
+    10725,
+    10544
+  ],
+  "source_target_group": 5,
+  "callbacks": 204027,
+  "buffered": 204027,
+  "overflow": 0,
+  "discard_or_absent_reported": false,
+  "folder": "QUERIES102_1793232000_504466",
+  "CSV_received": false,
+  "zeroing_effect_on_flags": "PENDING_RESULT_AND_RAW_CSV",
+  "second_execution": "PENDING"
+}
