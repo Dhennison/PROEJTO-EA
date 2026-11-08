@@ -1,0 +1,89 @@
+﻿CONTEXTO REAL PARA INICIALIZAÇÃO DO PILOTO — COMPLEMENTO v1.01
+
+POR QUE O TESTE PAROU
+O símbolo inicial tem apenas dez minutos de ticks e duas barras M5.
+O Diário mostrou:
+“start time changed to 2026.10.30 00:00 to provide data at beginning”.
+O Tester deslocou o início para o dia seguinte para obter histórico inicial.
+O diagnóstico recebeu TimeCurrent em30/10 e recusou a data, como programado.
+Não houve observação OnTick da janela nem resultado de alimentação aprovado.
+Não afrouxar essa proteção: consultar 29/10 como passado de30/10 repetiria
+o problema de confundir consulta histórica com reprodução do próprio dia.
+
+O QUE ESTE COMPLEMENTO FAZ
+Cria OUTRA cópia personalizada. Mantém a cópia original intacta.
+Lê a fonte CSV original e confere a primeira cópia contra o mapeamento de flags
+já observado (somente comparação, sem editar a fonte).
+Reproduz os ticks e M1 da cópia inicial e exige igualdade integral antes de
+acrescentar contexto. Usa os mesmos lotes de100000, preservando grupos de ms.
+
+Obtém barras M1 REAIS do WINZ26, de27/10 até29/10 exclusivo, com duas leituras
+iguais, e exige pelo menos200 grupos M5 anteriores ao teste. Esses são dados
+recuperados do terminal, não candles sintéticos, prova de bolsa, ajuste do
+Work ou contexto certificado de estratégia. São apenas histórico de inicialização.
+Não importa ticks de aquecimento. Não inventa preços ou preenche lacunas.
+
+Escreve as barras anteriores somente na NOVA cópia. Relê e exige que os ticks
+e TODAS as propriedades das dez barras M1 de29/10 permaneçam idênticos antes
+e depois. Também relê o contexto importado e o compara com a fonte nativa.
+Não reconstrói as barras de29/10, não liga InpConstruirM1 e não altera o
+WINZ26 original. Nenhuma ordem é enviada.
+
+INSTALAR E COMPILAR
+1. Extraia o ZIP.
+2. MT5 da Genial > Arquivo > Abrir Pasta de Dados.
+3. Cole a pasta MQL5 do pacote NESSA RAIZ, mesclando as pastas.
+   O Piloto_Core.mqh incluído é byte a byte igual ao v1.00 já instalado.
+4. F4 > compile com F7 apenas o novo arquivo:
+MQL5\Scripts\ModeloD_PilotoControlado\Preparar_Contexto_Piloto.mq5
+O Diagnostico_Piloto_OnTick v1.00 permanece inalterado e já está compilado.
+
+EXECUTAR NO TERMINAL
+Ctrl+N > Scripts > ModeloD_PilotoControlado > Preparar_Contexto_Piloto.
+Arraste para um gráfico separado WINZ26/M5. Mantenha:
+InpCopiaOriginal=MDDP29_1794146086_769098390
+InpArquivoFonte=nome original já preenchido do A de29/10, sufixo765756968.
+Confirme OK. O programa mostra READ_M1_BEGIN antes de cada consulta para que
+uma sincronização demorada não pareça ausência de execução.
+
+Aguarde a linha PILOTO101_CONTEXT;END, com nome da NOVA cópia e:
+target_ticks_equal=1
+target_M1_equal=1
+context_M1_equal=1
+prior_M5_groups >=200
+exports_ok=1
+
+Se qualquer conferência falhar, envie o relatório e mantenha ambas as cópias.
+Não substitua valores para fazê-las passar e não apague histórico/cache.
+O preparo é uma hipótese de correção para a inicialização; a execução nativa
+é necessária para confirmar se o Tester aceita iniciar em29/10.
+
+RETORNOS
+Windows+R, cole:
+%APPDATA%\MetaQuotes\Terminal\Common\Files\ModeloD_Piloto_Controlado
+Abra a subpasta CONTEXT_... informada pelo script. Ela conterá RESULTADO.txt,
+CONTEXT_SOURCE_M1.csv, CONTEXT_READBACK_M1.csv, ORIGINAL_TARGET_M1.csv,
+TARGET_M1_AFTER_CONTEXT.csv e TARGET_TICKS_AFTER_CONTEXT.csv.
+Envie a pasta e as mensagens da execução. Os dados brutos permanecem locais.
+
+REPETIÇÃO DO TESTER, APÓS CONFERIR O PREPARO
+Use o NOVO símbolo informado por este script, com o MESMO Expert:
+ModeloD_PilotoControlado\Diagnostico_Piloto_OnTick.ex5
+M5, de2026.10.29 até2026.10.30, modelagem de ticks reais, otimização desativada,
+sem teste futuro, sem modo visual e agente local.
+Parâmetros do diagnóstico continuam apontando ao CSV A original.
+As barras de27 e28/10 são contexto prévio, fora da janela de eventos do teste.
+Não começar a simulação nos dias de contexto: eles não têm ticks importados.
+Preserve o Diário completo e confirme a data efetiva de início.
+Se ainda mudar para30/10, preserve a recusa e envie o Diário: a guarda continua.
+
+LIMITES
+O contexto anterior não corrige os quatro M1 de29/10 nem prova preservação
+no Tester. A diferença dos flags completos permanece registrada, e a prova
+principal ainda será a comparação dos eventos e do histórico entregue.
+O piloto continua técnico, fora da amostra do Work; não homologa o Modelo D.
+
+VERIFICAÇÃO LOCAL
+27 verificações de funções extraídas/adaptadas para C++ passaram com ASan/UBSan.
+NÃO houve compilação nativa deste novo script nem execução de APIs MT5 aqui.
+A compilação do MetaEditor e o preparo no seu terminal são as próximas etapas.

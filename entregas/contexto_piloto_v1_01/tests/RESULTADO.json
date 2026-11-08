@@ -1,0 +1,8 @@
+{
+  "checks": "checks=27 failures=0",
+  "sanitizers": "address,undefined",
+  "scope": "Extracted pure functions adapted to C++, no native MQL compilation/API execution.",
+  "core_identical_v100": true,
+  "tester_EA_changed": false,
+  "source_sha256": "e0b58545f377c248cc59eb886f7bb049c01479a41a15beb3e1d2329a32f35ad0"
+}
