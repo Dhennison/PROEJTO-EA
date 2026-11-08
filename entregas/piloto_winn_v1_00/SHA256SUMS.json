@@ -1,0 +1,18 @@
+{
+  "LEIA_PRIMEIRO.txt": "92d31afa261ab54075bd8b35272461a373494ad777bbb356b0421aee4f556754",
+  "MQL5/Experts/ModeloD_Diagnostico_Ticks/DiagTicksAB.mq5": "7e707c7d416fe7de3d2c54b390a17bbb3c1fe2c16fd05ffdab23136a9a328807",
+  "MQL5/Experts/ModeloD_PilotoWINN/EA_ModeloD_Piloto_WINN.mq5": "00c2bd435efe81730898eb4d45afd96c24f9e8d0fe77ada11c179d1cfad0e000",
+  "MQL5/Include/ModeloD_PilotoWINN/ModeloD_Core.mqh": "e198de7e6bb608ad9e13cc999be53e632d94a780bbba8ffc1712297ea1a2da55",
+  "MQL5/Include/ModeloD_PilotoWINN/Piloto_Especificacao.mqh": "ecb76d5481abebe3a771ae937827d10523236da504a13b8629db92a22fe1851f",
+  "MQL5/Include/ModeloD_PilotoWINN/Piloto_Logica.mqh": "f1b5e7bd61ad32c337d94abf6a8bf9a98e824eb6a8288df44dd149b5c5f0ef01",
+  "MQL5/Scripts/ModeloD_PilotoWINN/Inspecionar_Ativo.mq5": "9ddbe1d39d1f3b0751992684ca14b616deb90b0e36e01179fc32bb1ae79db9a9",
+  "PLANO_ACTIVTRADES.txt": "d4862ec25411c5ad2293592bc66b59883569551275c99cfdaa62ddd54c286b5a",
+  "VALIDACAO.txt": "ce25637ef34ae5a2f044c54a324226d5920d05a78a0944942ee70e00feeee3c1",
+  "referencias/PROVENIENCIA.json": "f4fe1289d05bbefca0f168ccd72f282b0545ba179311f5ae54a9555cce99d4ef",
+  "referencias/WORK_M1_20260921.csv": "751524ff49e8c078b168f79b160c5076543d7826b33ccf1857ba0b7ccd5ba7fa",
+  "referencias/WORK_OPERACOES_20260921.csv": "befcb88903ce32b92e0650847a2512bf012a5f86f46c3d763f3df9f004af053e",
+  "tests/COMPILACAO_CPP.txt": "5d3ef99083b15a7dc019919549d09b4968089a3cf8d3d6ccb989589362a532ed",
+  "tests/RESULTADO_CPP.txt": "a6c8e5ffbecffbdd66f61b606a53c0119efe45765b1ad36b9cd0bb39a4efb5f0",
+  "tests/host.cpp": "2a7acaea77ba69ddbe066347a85c156d7327b55be2bd3dc47df837520ba906a9",
+  "tests/run.py": "044202cd3d65c0e862c5163b52afb2bf5215de27435ec9edfc20d2fb75cce2df"
+}

@@ -1,0 +1,80 @@
+PILOTO WIN$N v1.00 — 21/09/2026 — UM CONTRATO POR NIVEL
+Preparado em 08/11/2026. Compilacao e execucao nativas ainda pendentes.
+
+OBJETIVO
+Ver se o WIN$N nativo da Genial permite enviar e executar as ordens das cinco linhas no Tester. Usa o mesmo ModeloD_Core.mqh da v2.13.05, byte a byte, e um transporte experimental separado, exclusivo do Tester. Nao substitui o EA DEMO nem homologa todas as suas rotinas operacionais.
+O A/B anterior confirmou OHLC igual ao Work em oito barras entre 09:02 e 09:09, com geracao substituta de ticks. O dia inteiro e suas ordens ainda nao foram conferidos.
+
+PRIMEIRO PASSO — INSTALAR E COMPILAR
+1. Extraia este ZIP para uma pasta temporaria do Windows.
+2. No MT5 da Genial, use Arquivo > Abrir Pasta de Dados.
+3. Copie a pasta MQL5 extraida para a RAIZ dessa Pasta de Dados, onde ja existe a pasta MQL5. Nao cole dentro de MQL5.
+   Os arquivos novos estao nas subpastas ModeloD_PilotoWINN. O DiagTicksAB incluido e uma copia inalterada da v1.21; pode manter a copia existente.
+4. No MetaEditor, compile:
+   MQL5\Experts\ModeloD_PilotoWINN\EA_ModeloD_Piloto_WINN.mq5
+   MQL5\Scripts\ModeloD_PilotoWINN\Inspecionar_Ativo.mq5
+   Nao e necessario compilar os .mqh separados.
+5. Envie primeiro o resultado da compilacao se houver erro ou aviso. Os 58 controles locais em C++ com APIs simuladas nao substituem a compilacao MQL5.
+
+SEGUNDO PASSO — TESTER (APOS COMPILAR)
+Expert: ModeloD_PilotoWINN\EA_ModeloD_Piloto_WINN.ex5
+Ativo: WIN$N NATIVO da Genial. Nao usar WINV26, WINZ26 nem MDDP29.
+Periodo: M5.
+Data: periodo personalizado, de 2026.09.21 ate 2026.09.22.
+Modelagem: Cada tick e baseado em um tick real.
+Latencia: Sem atrasos, execucao perfeita.
+Otimizacao: Desativada.
+Forward: Nao.
+Deposito: 1000000; pode manter a moeda usada no diagnostico. Financeiro nao e criterio desta rodada.
+Modo visual: opcional, desmarcado para rodar mais rapido.
+Este EA nao tem inputs nem precisa de arquivo .set. Data, ativo e volume estao fixados para este piloto.
+Nao conecte o EA DEMO no lugar deste piloto.
+
+COMO O PILOTO SE COMPORTA
+- Exige Tester sem otimizacao, WIN$N nativo e M5. Nao envia ordens no terminal, mesmo em conta real.
+- Registra especificacao do simbolo e ambiente antes das verificacoes de negociacao.
+- Exige modo Hedge para manter os cinco niveis independentes. Nao altera o tipo da conta; se o Tester informar outro modo, registra e recusa.
+- Exige tick de 5 pontos, volume 1 permitido, negociacao FULL, ordens LIMIT e protecao SL/TP, prazo GTC ou DAY.
+- Espera a primeira ocorrencia classificada de negocio em 21/09 as 09:02:00.000, Last=187980, como no A/B auditado. Se divergir, nao abre ordens.
+- Usa os dados do Work explicitamente: anterior 18/09, maxima 188730, minima 185880, fechamento 187135 e ajuste 186745. Este ajuste e referencia historica do Work; nao e consulta B3 live certificada.
+- Aplica o nucleo das cinco linhas, filtro de abertura matematico e bloqueio geometrico, sem alterar as regras para fazer passar.
+- Solicita uma unica ordem limitada de 1 contrato por nivel elegivel. SL e TP sao fixos e normalizados individualmente para 5 pontos, calculados da entrada teorica.
+- Registra OrderCheck e OrderSend. Rejeicao de entrada interrompe novas entradas; a gestao das ordens/posicoes ja existentes continua.
+- Nao rearma ordens nesta rodada curta: uma solicitacao por nivel. Rotinas de retomada, rearme apos cancelamento externo e persistencia do EA operacional nao estao sendo homologadas.
+- Mantem a pendente tocada ate SL/TP teorico, primeira saida ou corte. A primeira execucao nao autoriza uma nova entrada. Posicoes executadas usam SL/TP nativos.
+- No primeiro tick a partir das 18h cancela pendentes e solicita fechamento das posicoes a mercado pelo lado adequado. Se faltar evento no corte, ou sobrar posicao/ordem, o resultado fica incompleto. Nao fabrica fechamento as 18h nem usa uma cotacao teorica como execucao.
+- Pontos vem dos precos dos deals efetivos, com ponderacao por volume. Saida parcial ou posicao residual nao e contabilizada como operacao encerrada.
+- Nao apresenta aceite automatico. E preciso conferir Diario, deals, candles e comparativo.
+
+RESULTADO ESPERADO DO WORK — REFERENCIA, NAO PREVISAO DO EA
+R38.2: venda, ALVO, entrada na barra 09:02 e saida na barra 09:03; +579.863333... pontos matematicos.
+R61.8: venda, ALVO, entrada na barra 09:19 e saida na barra 09:20; +234.328333... pontos matematicos.
+Total original: +814.191666... pontos. Nenhuma das duas operacoes e ambigua no Work.
+S38.2, S50 e S61.8: nenhuma operacao no Work deste dia.
+Na grade de 5 pontos, entrada/SL/TP de R38.2 = 188260/188635/187680 e R61.8 = 189200/189650/188965.
+Se ambos executarem precisamente nos limites e alvos, seriam +580 e +235 = +815 pontos. Isso e apenas referencia aritmetica normalizada; os precos efetivos do Tester podem diferir. Nao e resultado ja obtido pelo EA.
+Separar arredondamento, spread/execucao, dados, cronologia sintetica e logica ao analisar qualquer diferenca.
+
+ONDE ESTAO OS RESULTADOS
+No Explorador do Windows, cole:
+%APPDATA%\MetaQuotes\Terminal\Common\Files\ModeloD_Piloto_WINN
+Abra a pasta mais recente WINN100_... e compacte a pasta inteira.
+Arquivos previstos:
+ RESULTADO.txt — verificacoes, ordens, eventos e resumo.
+ ESPECIFICACAO.txt — propriedades do simbolo no Tester.
+ DEALS.csv — negocios efetivos e motivos nativos.
+ ORDERS.csv — ordens historicas com estado, precos, volumes e horarios nativos de criacao/termino.
+ COMPARATIVO.csv — cinco niveis, pontos efetivos e referencia Work.
+ M1_ONTICK.csv — OHLC observado nos callbacks classificados por flags e Last.
+ M1_TESTER.csv — candles consultados ao encerrar, para conferencia posterior.
+Se parar no OnInit, podem existir apenas RESULTADO e ESPECIFICACAO. Envie esses arquivos e o Diario mesmo assim: a recusa tambem responde ao piloto.
+Envie tambem o Diario do Tester desde a inicializacao ate o fim, pois e ele que identifica uso/descarte/ausencia de ticks reais e eventual geracao substituta.
+
+INTERPRETACAO
+O modo selecionado nao certifica a origem real: o A/B WIN$N anterior declarou "no real ticks, every tick generation used". Flags LAST/VOLUME em ticks gerados nao comprovam negocios reais.
+Um resultado positivo aqui valida apenas este transporte experimental e esta rodada. Nao valida o EA DEMO completo nem o periodo 2023-2026.
+Dias ambiguos no Work continuarao com a referencia STOP adotada. O resultado de um teste sintetico nao demonstra o que aconteceu primeiro no mercado real.
+O leitor historico por CSV e a sondagem de ticks antigos continuam adiados.
+
+ACTIVTRADES
+O roteiro separado PLANO_ACTIVTRADES.txt e o script Inspecionar_Ativo permitem preparar a investigacao. O EA de ordens acima permanece fixo no WIN$N da rodada e nao deve ser adaptado para BRA50 por simples troca de nome.

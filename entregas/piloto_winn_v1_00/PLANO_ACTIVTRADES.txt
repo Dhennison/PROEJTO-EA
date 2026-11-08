@@ -1,0 +1,37 @@
+CONTROLE ADICIONAL ACTIVTRADES — DADOS, SEM ORDENS
+08/11/2026
+
+A informacao enviada pelo usuario cita BRA50/Bra50 e modalidades baseadas em futuros e cash. O codigo exato e as propriedades precisam ser confirmados na instalacao/servidor utilizados. Os links informados pelo usuario sao referencias a conferir; nao foram verificados independentemente nesta entrega:
+https://activtrades.support/global/base-conhecimento/indices-futuros/
+https://www.activtrades.com/pt/instrument/Bra50
+
+1. IDENTIFICAR O PRODUTO
+Na instalacao da ActivTrades, adicione o ativo encontrado no Observador do Mercado. Abra um grafico e execute o script:
+Scripts > ModeloD_PilotoWINN > Inspecionar_Ativo
+Deixe InpSymbol vazio para usar o ativo do grafico.
+O script nao envia ordens e nao modifica ticks nem barras. Apenas seleciona o ativo e registra especificacao/metadados.
+Envie o TXT ESPEC_... criado em:
+%APPDATA%\MetaQuotes\Terminal\Common\Files\ModeloD_Piloto_WINN
+Registra codigo, descricao, caminho, servidor, empresa, build, bolsa/base/ISIN se disponiveis, modo de calculo, vencimento, moedas, tamanho de contrato, tick, volumes e permissoes. Ausencia de um campo nao prova ausencia de vinculo com a bolsa; especificacao isolada tambem nao certifica a origem do historico.
+Confirmar na documentacao da corretora se e contrato de bolsa ou CFD e como ocorre a formacao do preco, rolagem/ajuste e horario do servidor. Valor de R$0,20 por ponto ou ter vencimento nao basta para estabelecer identidade com o WIN da B3.
+
+2. DEFINIR UMA JANELA COMPARAVEL
+Preferencia: os dez minutos correspondentes a 29/10/2026 09:00-09:10 no servidor Genial ja auditado, usando o produto de futuro equivalente, se existir.
+Antes de rodar, confirmar a diferenca entre os horarios dos servidores nessa data. Nao copiar 09:00 automaticamente. Deslocamentos, horarios de verao e modelo cash/futuro podem alterar a comparacao.
+Se o produto nao tiver aquele dia, registrar isso e escolher nova janela com cobertura, sem concluir ausencia em todo o historico.
+Nao comparar hashes de produtos/horarios distintos como se fosse a mesma fonte.
+
+3. A/B DE SOMENTE LEITURA — MESMO DiagTicksAB v1.21
+Ja incluido em MQL5\Experts\ModeloD_Diagnostico_Ticks\DiagTicksAB.mq5, sem alteracoes.
+A: executar no grafico do ativo ActivTrades, preenchendo InpSymbol com o codigo exato, InpFrom/InpTo com a janela ajustada e InpTag=ACTIV_BRA50_A (ou nome equivalente identificavel), InpDumpCsv=true, InpMaxAttempts=10.
+B: no Tester da mesma instalacao, mesmo ativo, janela dos inputs identica a A, M5, "Cada tick e baseado em um tick real", sem atrasos e sem otimizacao. Usar tag ACTIV_BRA50_B.
+Configurar tambem as datas gerais do Tester para cobrir todo o dia da janela. O .set nao altera ativo/data da aba Configuracoes.
+Guardar os dois TXT, os dois ALL.csv e o Diario completo do Tester. O diagnostico e sem ordens. A saida fica diretamente em Common\Files, como nas rodadas anteriores.
+As consultas CopyTicksRange nao comprovam, sozinhas, o que OnTick recebe. Se o A/B revelar um controle util, uma etapa posterior devera medir a reproducao pelo OnTick no produto nativo; nao reutilizar o diagnostico fixo no simbolo personalizado como se fosse generico.
+
+4. O QUE ESSE CONTROLE PODERA DIZER
+- Se A tiver ticks e B os descartar/substituir: comportamento semelhante ao visto nas corretoras brasileiras, agora nesse produto e servidor. Ainda investigar compativel de barras/ticks, formato e sincronizacao.
+- Se B usar ticks reais: controle adicional util para comparar ambiente/servidor/produto. Ainda nao comprova a causa nas outras corretoras.
+- Se A nao tiver ticks: ausencia apenas na consulta e janela, respeitando erros/estabilidade e cobertura.
+- Se o produto for CFD: tratar como outra alimentacao. Precos, volumes, spread, candles e negocios podem diferir legitimamente do WINFUT/WIN$N/contrato B3.
+Mesmo tres corretoras com comportamento semelhante nao isolam "MT5 ou B3". Permanecem servidor da corretora, provedor/bridge, regras de consistencia barras-ticks, sincronizacao e natureza do instrumento. B3 nao deve ser atribuida como causa sem evidencia da cadeia de dados.

@@ -1,0 +1,20 @@
+{
+  "reference_candles": 563,
+  "date": "2026-09-21",
+  "previous_date": "2026-09-18",
+  "high_prev": 188730,
+  "low_prev": 185880,
+  "close_prev": 187135,
+  "adjustment_Work": 186745,
+  "opening_Work": 187980,
+  "opening_server": "09:02:00",
+  "cutoff_server": "18:00:00",
+  "source_candles_sha256": "f1343f8181fce176b5d266bd1710c5aadfea8ed8af8941da1ee6b3fd9469dc45",
+  "source_operations_sha256": "46ae35eb19b321215f388af6356e89cc937b5308f2ad63113e5d2b0e9d5538c7",
+  "reference_operations": 2,
+  "Work_ambiguous": false,
+  "core_source": "entregas/v2_13_05_demo/MQL5/Experts/ModeloD_Demo/ModeloD_Core.mqh",
+  "native_compile_status": "PENDING_USER_METAEDITOR",
+  "native_run_status": "NOT_EXECUTED",
+  "scope": "Experimental single-day Tester transport using unchanged pure core; not operational EA homologation."
+}
