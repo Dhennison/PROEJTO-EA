@@ -13,7 +13,7 @@ Expert Advisor Modelo D para WIN no MT5. Estado consolidado em 05/11/2026, após
 - [06/11 — Replay teórico integral: 877 pregões, 1877 operações, zero divergências com Work; execução MT5 pendente](entregas/historico_work_modelo_d_20261105/replay_completo_20261106/RESULTADO.md)
 - [Genial — piloto histórico concluído: 1559/1582 janelas conferidas; divergências localizadas e vínculos pendentes](entregas/diagnostico_cobertura_historica_v1_00/resultado_genial_piloto_20261106/VERIFICACAO_COMPLETA.md)
 - [Genial focal v1.02 — compilado/executado: preços de M1/Work ausentes nos ticks recuperados em duas amostras](entregas/diagnostico_focal_genial_v1_02/resultado_genial_20261107/RESULTADO.md)
-- [Próximo controle A/B Genial — DiagTicksAB v1.21 idêntico ao da XP, guia de instalação e etapas A/B](entregas/ab_genial_v1_21/LEIA_PRIMEIRO.md)
+- [A/B Genial — Diário confirma descarte de ticks reais e geração substituta; CSVs originais pendentes](entregas/ab_genial_v1_21/resultado_20261108/RESULTADO_PRELIMINAR.md)
 - [Comparativo principal Work × EA — um contrato, pontos, PDF e tratamento de ambiguidades/zeragem](entregas/historico_work_modelo_d_20261105/ESPECIFICACAO_COMPARATIVO_WORK_EA.md)
 - [06/11 — XP DEMO: três pendentes canceladas no corte das 18h; fechamento de posição aberta ainda não exercitado](entregas/v2_13_05_demo/nativo_20261106_corte_18h/RESULTADO.md)
 

@@ -1,0 +1,51 @@
+{
+  "ambiente": "GenialInvestimentos-PRD",
+  "codigo": "DiagTicksAB v1.21",
+  "build_genial": 6231,
+  "simbolo": "WINZ26",
+  "tempo_grafico": "M5",
+  "janela": [
+    "2026-10-30 09:00:00",
+    "2026-10-30 09:10:00"
+  ],
+  "A_terminal": {
+    "fonte": "Log fornecido pelo usuario diretamente na conversa; TXT/CSV originais ainda nao anexados.",
+    "ALL_n": 236855,
+    "TRADE_n": 142865,
+    "INFO_n": 93990,
+    "negocios_flags_last_validos": 142865,
+    "estavel": true,
+    "leituras": 2,
+    "hash_completo_ALL_reportado": "8313169577021322304",
+    "hash_negocios_reportado": "18223970942279482697"
+  },
+  "B_tester": {
+    "fonte": "DIARIO_TESTER_B.txt recebido por anexo",
+    "ALL_n": 36571,
+    "TRADE_n": 0,
+    "INFO_n": 36571,
+    "negocios_flags_last_validos": 0,
+    "last_positivo": 0,
+    "flags_somente": 6,
+    "estavel": true,
+    "leituras": 2,
+    "hash_completo_ALL_reportado": "12192812819959984030",
+    "minutos_descartados": 565,
+    "barras_M1_total": 565,
+    "tick_prices_mismatch_reportados": 4319114,
+    "geracao_substituta_confirmada": true
+  },
+  "comparacao_XP": {
+    "build_XP": 6295,
+    "mesmo_hash_ALL_B_reportado": true,
+    "limite": "Hashes coincidentes nao substituem confronto integral dos CSVs; dados A diferem entre brokers e datas de coleta."
+  },
+  "estado": "MECANISMO_DESCARTE_CONFIRMADO_POR_DIARIO; CSV_ORIGINAIS_A_B_PENDENTES",
+  "limites": [
+    "Nao confirma a origem primeira da incompatibilidade de precos/volumes.",
+    "Nao prova cache corrompido; os pequenos tamanhos de sincronizacao do Diario nao certificam isso.",
+    "Nao generalizar o dia 30/10 WINZ26 para todo o historico ou para os minutos WINV26 de setembro sem testes correspondentes.",
+    "Nao e ensaio de execucao do Modelo D nem resultado de ordens.",
+    "CSV A e B originais ainda necessarios para conferencia final registro a registro."
+  ]
+}
