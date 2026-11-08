@@ -1,0 +1,23 @@
+{
+  "fonte": "DIARIO_TESTER.txt",
+  "sha256": "a33edf7dc1b21aedea53e4a1673f97bcca0f4c4118f64c0e1120dccbd5a7f951",
+  "simbolo": "WINZ26",
+  "data": "2026-10-19",
+  "janela": "09:00–09:10",
+  "ALL": 37831,
+  "TRADE": 0,
+  "INFO": 37831,
+  "flags": {
+    "6": 37831
+  },
+  "Last_positivo": 0,
+  "volume_positivo": 0,
+  "estavel": true,
+  "erro_consultas": 0,
+  "descarte_barras_M1": 565,
+  "total_barras_M1": 565,
+  "ticks_precos_mismatch": 4011346,
+  "download_ticks_Kb": 11622,
+  "CSV_B_recebido": false,
+  "terminal_A_mesma_janela": "NAO_COLETADO_NESTA_TRIAGEM"
+}

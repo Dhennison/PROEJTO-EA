@@ -1,0 +1,81 @@
+2026.11.08 12:02:34.094	Tester	"ModeloD_Diagnostico_Ticks\DiagTicksAB.ex5" AVX2
+2026.11.08 12:02:34.599	Tester	WINZ26: preliminary downloading of history ticks started, it may take quite a long time
+2026.11.08 12:02:34.599	Tester	WINZ26: preliminary downloading of history ticks completed
+2026.11.08 12:02:34.599	Tester	WINZ26: ticks data begins from 2026.10.09 00:00
+2026.11.08 12:02:34.600	Core 01	connecting to 127.0.0.1:3000
+2026.11.08 12:02:34.608	Core 01	connected
+2026.11.08 12:02:34.641	Core 01	authorized (agent build 6231)
+2026.11.08 12:02:34.653	Tester	WINZ26,M5 (GenialInvestimentos-PRD): testing of Experts\ModeloD_Diagnostico_Ticks\DiagTicksAB.ex5 from 2026.10.19 00:00 to 2026.10.20 00:00
+2026.11.08 12:02:34.937	Core 01	common synchronization completed
+2026.11.08 12:02:36.969	Core 01	WINZ26: ticks synchronization started
+2026.11.08 12:02:48.073	Core 01	WINZ26: ticks downloading completed
+2026.11.08 12:02:48.091	Core 01	WINZ26: ticks synchronization completed [11622 Kb]
+2026.11.08 12:02:48.146	Core 01	test Experts\ModeloD_Diagnostico_Ticks\DiagTicksAB.ex5 on WINV26,M5 thread finished
+2026.11.08 12:02:48.146	Core 01	prepare for shutdown
+2026.11.08 12:02:48.146	Core 01	shutdown finished
+2026.11.08 12:02:48.146	Core 01	login (build 6231)
+2026.11.08 12:02:48.146	Core 01	account info found with currency USD
+2026.11.08 12:02:48.146	Core 01	1478 bytes of tester parameters loaded
+2026.11.08 12:02:48.146	Core 01	3268 bytes of input parameters loaded
+2026.11.08 12:02:48.146	Core 01	initial deposit 1000000.00 USD, leverage 1:100
+2026.11.08 12:02:48.146	Core 01	successfully initialized
+2026.11.08 12:02:48.146	Core 01	862 bytes of total initialization data received
+2026.11.08 12:02:48.146	Core 01	13th Gen Intel Core i5-1335U, 7879 MB
+2026.11.08 12:02:48.146	Core 01	WINZ26: symbol to be synchronized
+2026.11.08 12:02:48.146	Core 01	WINZ26: symbol synchronized, 3720 bytes of symbol info received
+2026.11.08 12:02:48.146	Core 01	WINZ26: load 27 bytes of history data to synchronize in 0:00:00.000
+2026.11.08 12:02:48.146	Core 01	WINZ26: history synchronized from 2026.05.12 to 2026.10.30
+2026.11.08 12:02:48.146	Core 01	WINZ26: ticks synchronization started
+2026.11.08 12:02:49.771	Core 01	WINZ26: load 11.34 Mb of tick data to synchronize in 0:00:13.250
+2026.11.08 12:02:49.771	Core 01	WINZ26: history ticks synchronized from 2026.10.19 to 2026.10.30
+2026.11.08 12:02:49.771	Core 01	WINZ26,M5: history cache allocated for 6868 bars and contains 6203 bars from 2026.05.12 17:10 to 2026.10.16 18:20
+2026.11.08 12:02:49.771	Core 01	WINZ26,M5: history begins from 2026.05.12 17:10
+2026.11.08 12:02:49.771	Core 01	WINZ26,M5 (GenialInvestimentos-PRD): generating based on real ticks
+2026.11.08 12:02:49.771	Core 01	WINZ26,M5: testing of Experts\ModeloD_Diagnostico_Ticks\DiagTicksAB.ex5 from 2026.10.19 00:00 to 2026.10.20 00:00 started with inputs:
+2026.11.08 12:02:49.771	Core 01	  InpSymbol=WINZ26
+2026.11.08 12:02:49.771	Core 01	  InpFrom=1792400400
+2026.11.08 12:02:49.771	Core 01	  InpTo=1792401000
+2026.11.08 12:02:49.771	Core 01	  InpMaxAttempts=10
+2026.11.08 12:02:49.771	Core 01	  InpTag=GTR_05_20261019_B
+2026.11.08 12:02:49.771	Core 01	  InpDumpCsv=true
+2026.11.08 12:02:49.771	Core 01	WINZ26 : 2026.10.19 23:59 - all the real ticks discarded within a day
+2026.11.08 12:02:49.771	Core 01	WINZ26 : 2026.10.19 23:59 - 4011346 tick prices mismatch for 565 minute bars
+2026.11.08 12:02:49.771	Core 01	WINZ26 : real ticks begin from 2026.10.19 00:00:00
+2026.11.08 12:02:49.771	Core 01	WINZ26 : 2026.10.19 00:00 - 2026.10.20 00:00  real ticks discarded for 565 minutes of 565 total minute bars, every tick generation used
+2026.11.08 12:02:49.771	Core 01	WINZ26 : 2026.10.19 00:00 - 2026.10.20 00:00  real ticks discarded for 1 whole days
+2026.11.08 12:02:49.771	Core 01	WINZ26 : 2026.10.19 00:00 - 2026.10.20 00:00  tick volumes not matched for 565 minute bars
+2026.11.08 12:02:49.771	Core 01	WINZ26 : 2026.10.19 00:00 - 2026.10.20 00:00  tick prices of 4011346 ticks not matched for 565 minute bars
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:02   tentativa 1 | validos ALL=1 TRADE=1 INFO=1 | ALL n=37831 err=0 tf=0 ea=0 | TRADE n=0 err=0 | INFO n=37831 err=0 | igual_a_anterior=0
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03   tentativa 2 | validos ALL=1 TRADE=1 INFO=1 | ALL n=37831 err=0 tf=0 ea=0 | TRADE n=0 err=0 | INFO n=37831 err=0 | igual_a_anterior=1
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03   === DiagTicksAB v1.21 | ambiente=TESTER | tag=GTR_05_20261019_B
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03   simbolo_consultado=WINZ26 | simbolo_do_grafico=WINZ26 | periodo=PERIOD_M5
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03   janela=2026.10.19 09:00:00 -> 2026.10.19 09:10:00 (hora do servidor)
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03   servidor=GenialInvestimentos-PRD | empresa=Genial Investimentos Corretora de Valores Mobiliários S.A. | build=6231
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03   tester=1 visual=0 otimizacao=0 conectado=1 simbolo_custom=0 TimeCurrent=2026.10.19 09:10:03
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03   STATUS=ESTAVEL (duas leituras consecutivas validas, comparacao exata campo a campo)
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03   [ALL] valido=1 | n=37831 err=0 | tf_n=0 | ea_n(last>0 finito)=0 | tf_last_invalido=0 | carregado_sem_flag=0 | last>0=0 | volume>0=0 | primeiro_neg_msc=0
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03      hash_completo=16218900722657551945 | hash_negocios=1469598103934665603
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03      flags: 6 x37831;
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03      neg_por_minuto(tf): 0 0 0 0 0 0 0 0 0 0
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03      primeiro_tick: msc=1792400400000 bid=210900.0 ask=210905.0 last=0.0 flags=6 | ultimo_msc=1792400999500
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03   [TRADE] valido=1 | n=0 err=0 | tf_n=0 | ea_n(last>0 finito)=0 | tf_last_invalido=0 | carregado_sem_flag=0 | last>0=0 | volume>0=0 | primeiro_neg_msc=0
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03      hash_completo=1469598103934665603 | hash_negocios=1469598103934665603
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03      flags:
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03      neg_por_minuto(tf): 0 0 0 0 0 0 0 0 0 0
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03   [INFO] valido=1 | n=37831 err=0 | tf_n=0 | ea_n(last>0 finito)=0 | tf_last_invalido=0 | carregado_sem_flag=0 | last>0=0 | volume>0=0 | primeiro_neg_msc=0
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03      hash_completo=16218900722657551945 | hash_negocios=1469598103934665603
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03      flags: 6 x37831;
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03      neg_por_minuto(tf): 0 0 0 0 0 0 0 0 0 0
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03      primeiro_tick: msc=1792400400000 bid=210900.0 ask=210905.0 last=0.0 flags=6 | ultimo_msc=1792400999500
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03   CRUZAMENTO: ALL.tf_n=0 | ALL.ea_n=0 | TRADE.n=0 | TRADE.tf_n=0 | hash_negocios ALL==TRADE: sim
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03   --- historico das tentativas ---
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03   Relatorio gravado em Common\Files\DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762382031.txt
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03   CSV gravado em Common\Files\DiagTicksAB_TESTER_GenialInvestimentos-PRD_WINZ26_2026_10_19_09_00_2026_10_19_09_10_GTR_05_20261019_B_762382031_ALL.csv linhas_dados=37831 esperado_ALL_n=37831
+2026.11.08 12:02:49.771	Core 01	2026.10.19 09:10:03   ExpertRemove() function called
+2026.11.08 12:02:49.771	Core 01	final balance 1000000.00 USD
+2026.11.08 12:02:49.771	Core 01	removed itself on 38% of testing interval
+2026.11.08 12:02:49.771	Core 01	WINZ26,M5: 40314 ticks, 3 bars generated. Environment synchronized in 0:00:13.549. Test passed in 0:00:01.583 (including ticks preprocessing 0:00:00.094).
+2026.11.08 12:02:49.771	Core 01	WINZ26,M5: total time from login to stop testing 0:00:15.132 (including 0:00:13.549 for history data synchronization)
+2026.11.08 12:02:49.771	Core 01	456 Mb memory used including 0.47 Mb of history data, 64 Mb of tick data
+2026.11.08 12:02:49.771	Core 01	log file "C:\Users\jhenn\AppData\Roaming\MetaQuotes\Tester\7C2F32F55EE936F0CCC2F0B721A79A10\Agent-127.0.0.1-3000\logs\20261108.log" written
+2026.11.08 12:02:49.781	Core 01	connection closed
