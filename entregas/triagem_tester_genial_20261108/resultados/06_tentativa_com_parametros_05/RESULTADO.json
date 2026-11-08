@@ -1,0 +1,21 @@
+{
+  "sha256": "9dfc51e1a2dd6683608e9f65c4012fee7d734ae69e8c93ad2ba702fc6d66c06e",
+  "status": "JANELA_DIVERGE_DO_PERIODO_TESTADO_NAO_CONCLUI_TESTE_06",
+  "periodo_tester": [
+    "2026-10-29",
+    "2026-10-30"
+  ],
+  "consulta_data": "2026-10-19",
+  "consulta_janela": "09:00–09:10",
+  "tag": "GTR_05_20261019_B",
+  "ALL": 256971,
+  "TRADE": 162331,
+  "INFO": 94640,
+  "estavel": true,
+  "erro_consultas": 0,
+  "eventos_ticks_motor": 0,
+  "barras_motor": 0,
+  "diario_29out": "TICKS_REAIS_AUSENTES_565_DE_565_BARRAS",
+  "CSV_recebido": false,
+  "teste_06_correto_pendente": true
+}
