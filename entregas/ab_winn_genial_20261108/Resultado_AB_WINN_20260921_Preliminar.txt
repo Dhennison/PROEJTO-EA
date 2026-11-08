@@ -1,0 +1,42 @@
+﻿TESTE A/B WIN$N — GENIAL — 21/09/2026
+Atualização: 08/11/2026, após Diário B das18:03.
+
+O diagnóstico executou no WIN$N no Tester. Não houve teste de ordens.
+O Diário afirma: “no real ticks, every tick generation used”.
+Portanto, este ensaio usou ticks GERADOS a partir do histórico de barras,
+apesar da modelagem de ticks reais selecionada na interface.
+
+A terminal: ALL=0, TRADE=0, INFO=0, duas leituras iguais, erro zero.
+B Tester: ALL=30327, TRADE=30327, INFO=30325, duas leituras iguais, erro zero.
+Todos os30327 registros têm Last e volume positivos, segundo o relatório
+impresso no Diário. Flags30 em30325 e24 em2. Não são negócios reais
+certificados: o próprio motor declara geração substituta.
+TXT e CSV originais de A e B ainda não recebidos para conferência bruta.
+
+Primeiro tick gerado:09:02:00.000, Last187980, Bid187980, Ask187985.
+A referência Work já preservada para21/09 tem abertura187980 e primeiro M1
+às09:02. Esse ponto coincide; ainda não foi comparado todo o OHLC da janela
+com o CSV B nem certificado todo o período. Zero nos primeiros dois minutos
+não deve ser interpretado isoladamente como falha: a referência começa09:02.
+
+O log anuncia histórico de barras desde2022, mas essa mensagem não prova
+cobertura integral utilizável desde2023 nem presença de ticks reais antigos.
+Nesta rodada foram sincronizadas barras suficientes para o período testado.
+
+Consequência: WIN$N é candidato para comparação de lógica baseada em candles,
+com resultados claramente rotulados como simulação gerada. Não resolve a
+sequência real de gain/stop dos dias ambíguos. Um gain em trajetória gerada
+não comprova gain histórico quando o Work adotou stop por ambiguidade.
+
+Também não comprova que o WIN$N aceite ordens no Tester: o programa não envia
+ordens nem verifica todas as propriedades de negociação. O EA operacional
+hoje busca contrato real; um modo histórico precisa usar explicitamente o
+símbolo do teste, as datas e os ajustes operacionais de referência.
+Não basta anexar a versão DEMO atual ao WIN$N e presumir essa adaptação.
+
+Próximo dado necessário: TXT e CSV de A, sufixo783793046, e de B,
+sufixo784001937. Com eles, comparar por minuto os preços gerados com a base
+original do Work. Caminho: Common/Files, nomes com GENIAL_WINN_20260921.
+A investigação do leitor CSV e a sonda antiga ficam adiadas por instrução do
+usuário enquanto se avalia o caminho WIN$N. Regras do Modelo D preservadas;
+comparação principal continua um contrato e pontos brutos, não financeiro.

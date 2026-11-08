@@ -1,0 +1,50 @@
+{
+  "symbol": "WIN$N",
+  "server": "GenialInvestimentos-PRD",
+  "build": 6231,
+  "date": "2026-09-21",
+  "window": "09:00 <= t < 09:10 server time",
+  "A_terminal_reported_in_chat": {
+    "ALL": 0,
+    "TRADE": 0,
+    "INFO": 0,
+    "stable": true,
+    "API_errors": 0,
+    "suffix": "783793046",
+    "raw_files_received": false
+  },
+  "B_tester_reported_in_diary": {
+    "ALL": 30327,
+    "TRADE": 30327,
+    "INFO": 30325,
+    "Last_positive": 30327,
+    "volume_positive": 30327,
+    "flags": {
+      "30": 30325,
+      "24": 2
+    },
+    "stable": true,
+    "API_errors": 0,
+    "first_tick_server": "09:02:00.000",
+    "first_Last": 187980,
+    "suffix": "784001937",
+    "raw_files_received": false
+  },
+  "engine_statement": "no real ticks, every tick generation used",
+  "usefulness": "Potential bar-based logic comparison, not actual tick chronology or EA execution approval",
+  "Work_reference_opening": {
+    "price": 187980,
+    "first_M1_time": "09:02:00",
+    "source": "replay_setembro_20261106/resultados/CONTEXTO_M1_E_CINCO_NIVEIS.csv"
+  },
+  "limits": [
+    "Only first generated Last/open compared; full minute OHLC still pending CSV.",
+    "History begins from 2022 in log does not certify full usable coverage or ticks.",
+    "No orders sent; native symbol trade permissions untested."
+  ],
+  "diary_sha256": "b6da948d288fc56765b41fa521c912bbcf6568e842127d16f5eef29fd3eee86d",
+  "deferred_by_user": [
+    "historical_CSV_reader",
+    "old_tick_coverage_probe"
+  ]
+}
