@@ -1,0 +1,25 @@
+{
+  "fonte": "DIARIO_TESTER.txt",
+  "sha256": "848a57d43e93fccaafb11d73edbfeaecedfd7f98f6e1faaca0e3b8166f5100e8",
+  "simbolo": "WINV26",
+  "data": "2026-10-09",
+  "janela": "09:00–09:10",
+  "ALL": 30350,
+  "TRADE": 0,
+  "INFO": 30350,
+  "flags": {
+    "6": 30350
+  },
+  "Last_positivo": 0,
+  "volume_positivo": 0,
+  "estavel": true,
+  "erro_consultas": 0,
+  "descarte_barras_M1": 563,
+  "total_barras_M1": 563,
+  "ticks_precos_mismatch": 4340862,
+  "primeiro_tick_msc": 1791536520000,
+  "primeiro_Bid": 209115,
+  "primeiro_Ask": 209120,
+  "CSV_B_recebido": false,
+  "terminal_A_mesma_janela": "NAO_COLETADO_NESTA_TRIAGEM"
+}
