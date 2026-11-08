@@ -1,0 +1,27 @@
+{
+  "fonte": "DIARIO_TESTER.txt",
+  "sha256": "bb23f47387349c723c340123fba30b905a7c590dc93c93bf8d7f1ef56f5b7970",
+  "simbolo": "WINV26",
+  "servidor": "GenialInvestimentos-PRD",
+  "build": 6231,
+  "consulta": "2026-09-01 18:20:00 <= t < 18:25:00",
+  "ALL": 5200,
+  "TRADE": 0,
+  "INFO": 5200,
+  "flags": {
+    "6": 5200
+  },
+  "Last_positivo": 0,
+  "erro_consultas": 0,
+  "leituras_estaveis": 2,
+  "descarte_real_confirmado_datas": [
+    "2026-09-01",
+    "2026-09-02"
+  ],
+  "barras_M1_descarte_agregado": 1125,
+  "barras_M1_total_agregado": 1125,
+  "ALL_focal_terminal_mesma_janela": 2955,
+  "TRADE_focal_terminal_mesma_janela": 1907,
+  "CSV_B_recebido": false,
+  "janela_02_16h10_ainda_pendente": true
+}
