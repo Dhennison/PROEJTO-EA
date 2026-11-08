@@ -1,0 +1,128 @@
+﻿PILOTO CONTROLADO v1.00 — RESULTADO DA IMPORTAÇÃO NATIVA
+Data da análise: 08/11/2026
+Símbolo criado: MDDP29_1794146086_769098390
+Fonte: CSV A Genial WINZ26, 29/10/2026, 09:00–09:10.
+InpConstruirM1=false. Código da estratégia Modelo D não alterado.
+
+1. COMPILAÇÃO E EXECUÇÃO CONFIRMADAS PELO USUÁRIO
+Importar_Piloto_29Out: 0 erros, 0 avisos, 1700 ms.
+Diagnostico_Piloto_OnTick: 0 erros, 0 avisos, 1767 ms.
+Sondar_Ticks_Antigos: 0 erros, 0 avisos, 674 ms.
+Importador executado em 08/11 às 13:54:45–47 no terminal da Genial.
+Os três lotes retornaram as quantidades esperadas, erro zero:
+100012 + 100000 + 4015 = 204027 registros.
+
+Recebido IMPORT_M1.zip com RESULTADO.txt, IMPORT_READBACK.csv,
+IMPORT_M1_AUTO.csv e IMPORT_M1.csv. Conferência independente leu todas
+as 204027 linhas da releitura e comparou com a fonte original preservada.
+Os dois CSVs de barras automáticas são idênticos entre si.
+
+2. A DIVERGÊNCIA DE TICKS FICOU ISOLADA NOS FLAGS
+Quantidade e ordem preservadas. Diferenças por campo, registro a registro:
+time=0; time_msc=0; bid=0; ask=0; last=0; volume=0; volume_real=0;
+flags=204027.
+Não houve exclusão de registros, deslocamento temporal, arredondamento
+ou alteração dos campos de preço/volume neste roundtrip em relação à fonte.
+Isso não certifica que a fonte já possua todos os negócios da bolsa.
+
+O mapeamento observado na importação/releitura foi:
+Fonte -> Releitura   Quantidade
+1336  -> 56          61083
+1368  -> 88          59823
+1400  -> 120          7763
+1030  -> 6               2
+1026  -> 2           37515
+1028  -> 4           37841
+
+Os flags relidos equivalem exatamente a fonte_flags & 126 em TODAS as linhas.
+126 representa os bits documentados BID, ASK, LAST, VOLUME, BUY e SELL.
+Foram retirados o bit1024 nas 204027 linhas e o bit256 nas 128669 linhas
+de negócio. Todos os bits documentados permaneceram idênticos.
+
+A classificação flags&120 com Last válido permaneceu em 128669 negócios.
+As 34 linhas com Bid>Ask e 148 com Bid ou Ask zero foram preservadas;
+o importador não as corrigiu. Nenhuma tolerância foi usada na comparação.
+
+IMPORT_EXACT=0 está correto: os flags completos realmente mudaram.
+A análise dos bits documentados é uma visão adicional, não alteração da fonte,
+não reclassificação retroativa do resultado exato e não selo de tick real.
+Não generalizar esse mapeamento a outros símbolos/fontes sem conferir.
+
+3. O M1 AUTOMÁTICO USA TAMBÉM LAST E VOLUME CARREGADOS NAS COTAÇÕES
+Há dez barras, e seu OHLC coincide com o OHLC de TODOS os registros ALL
+com Last positivo em 10/10 minutos. A referência do piloto, porém, usa somente
+registros com flags de negócio e Last válido. Essa diferença gera quatro
+aberturas distintas, todas +5 pontos:
+Minuto    Abertura dos negócios    Abertura automática
+09:01          173250                    173255
+09:02          172855                    172860
+09:06          173115                    173120
+09:07          173235                    173240
+
+Nos dez minutos, máxima, mínima e fechamento coincidem com os negócios.
+Seis barras coincidem também na abertura. Nos quatro casos divergentes,
+o primeiro registro é uma atualização de cotação, carregando Last anterior.
+Isso explica o OHLC_EQUAL=0 neste retorno, sem inferir perda dos ticks.
+
+O real_volume automático coincide em cada minuto com a SOMA DOS VOLUMES
+DE ALL, incluindo valores carregados nas atualizações de cotação:
+Soma dos volumes dos registros de negócio: 659096.
+Soma dos volumes de ALL / real_volume das barras automáticas: 896135.
+São contagens derivadas da fonte; não certificação independente do volume
+negociado em bolsa. Somar ALL não equivale a somar apenas negócios.
+
+O tick_volume automático coincide com a quantidade ALL em oito minutos.
+Em09:03: ALL27449, tick_volume23954; em09:09: ALL10544, tick_volume8924.
+Esses dois minutos atravessam as fronteiras entre lotes, mas a coincidência
+não prova causa. A releitura contém todos os registros, com os mesmos campos
+numéricos e na mesma ordem. Não interpretar a diferença de metadados de barra
+como perda de5115 ticks sem investigar o mecanismo de construção/atualização.
+
+A opção de construir M1 foi DESLIGADA. Nenhuma barra foi escrita manualmente.
+Esses resultados descrevem a construção automática após CustomTicksReplace.
+Não certificam, sozinhos, a causa do descarte no símbolo nativo WINZ26.
+
+4. CONSEQUÊNCIA E PRÓXIMO CONTROLE
+O roundtrip preservou números, horários, multiplicidade, ordem e os bits
+públicos usados pelo classificador do Modelo D. A identidade integral dos
+flags continua falsa e fica registrada como diferença de metadados.
+O M1 automático diverge da referência de negócios em abertura e volumes.
+Ainda não houve diagnóstico do Tester/OnTick deste símbolo personalizado;
+a alimentação não está aprovada e nenhuma operação foi homologada.
+
+É útil executar agora o DIAGNÓSTICO JÁ COMPILADO sobre ESTA MESMA cópia,
+sem modificar fonte ou ligar construção M1, para preservar a linha de base.
+Objetivo: verificar o que o Tester faz com a cópia automática, inclusive
+possíveis descarte/regeneração, e quais callbacks chegam ao programa.
+Não é backtest de resultados da estratégia nem aprovação desta construção.
+Os indicadores de igualdade exata podem continuar falsos pelos flags; após
+receber os arquivos, comparar separadamente campos numéricos/tempo e bits
+públicos, mantendo também a comparação integral.
+
+Configuração do Tester:
+Expert: ModeloD_PilotoControlado/Diagnostico_Piloto_OnTick.ex5
+Ativo: MDDP29_1794146086_769098390
+M5; 2026.10.29 até 2026.10.30; Cada tick baseado em um tick real.
+Otimização desativada; sem teste futuro, sem modo visual; agente local.
+Carregar PILOTO_29OUT_DIAGNOSTICO.set, que mantém o CSV A original.
+Enviar Diário completo e pasta TESTER_... criada em Common/Files/
+ModeloD_Piloto_Controlado. Não comparar só mensagens finais ou hashes.
+
+Depois dessa linha de base, se houver necessidade, separar controles de
+importação em um único lote e de M1 explicitamente derivado, sempre em
+símbolos novos. A função opcional de M1 da versão1.00 exige identidade
+integral, portanto NÃO deve ser ligada agora para contornar a diferença
+conhecida dos flags. Qualquer adaptação futura precisará manter os resultados
+estritos e declarar a projeção de bits usada na análise.
+
+5. RASTREABILIDADE
+Fonte original SHA256:
+a3acba0e6d6e8f10ab1f6c24143c63d46fa8ce9767c2f87b87220fd3c2e0ed0b
+Releitura SHA256:
+3559fa73274f350c35ca851c24d297bc23b7f0375447917c7568f0453f2d4bc8
+ZIP recebido SHA256:
+9393d4519c7cfa5148fc4d9df81d3f1e32136e556e432bbe1fab171b436fc3ac
+
+Arquivos brutos preservados localmente, sem publicação no GitHub.
+Publicados somente relatório, conferência derivada e script reprodutível.
+Nenhuma alteração nos fontes do piloto ou no EA foi feita nesta análise.

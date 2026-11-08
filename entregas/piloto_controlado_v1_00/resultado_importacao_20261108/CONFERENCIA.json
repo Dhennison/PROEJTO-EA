@@ -1,0 +1,358 @@
+{
+  "source_sha256": "a3acba0e6d6e8f10ab1f6c24143c63d46fa8ce9767c2f87b87220fd3c2e0ed0b",
+  "return_zip_sha256": "9393d4519c7cfa5148fc4d9df81d3f1e32136e556e432bbe1fab171b436fc3ac",
+  "readback_sha256": "3559fa73274f350c35ca851c24d297bc23b7f0375447917c7568f0453f2d4bc8",
+  "rows": 204027,
+  "business_source": 128669,
+  "business_readback": 128669,
+  "positional_differences": {
+    "time": 0,
+    "time_msc": 0,
+    "bid": 0,
+    "ask": 0,
+    "last": 0,
+    "volume": 0,
+    "volume_real": 0,
+    "flags": 204027
+  },
+  "full_identity": false,
+  "all_numeric_time_order_preserved": true,
+  "documented_flag_bits_equal": true,
+  "readback_flags_equal_source_and_126": true,
+  "flag_mapping": [
+    {
+      "source": 1026,
+      "readback": 2,
+      "count": 37515
+    },
+    {
+      "source": 1028,
+      "readback": 4,
+      "count": 37841
+    },
+    {
+      "source": 1030,
+      "readback": 6,
+      "count": 2
+    },
+    {
+      "source": 1336,
+      "readback": 56,
+      "count": 61083
+    },
+    {
+      "source": 1368,
+      "readback": 88,
+      "count": 59823
+    },
+    {
+      "source": 1400,
+      "readback": 120,
+      "count": 7763
+    }
+  ],
+  "stripped_bits": {
+    "bit1024": 204027,
+    "bit256": 128669
+  },
+  "M1_auto_equals_final": true,
+  "minutes": [
+    {
+      "minute": "2026.10.29 09:00",
+      "source_ALL": 2875,
+      "source_trades": 1612,
+      "OHLC_ALL": [
+        173135.0,
+        173485.0,
+        173105.0,
+        173255.0
+      ],
+      "OHLC_trades": [
+        173135.0,
+        173485.0,
+        173105.0,
+        173255.0
+      ],
+      "OHLC_auto": [
+        173135.0,
+        173485.0,
+        173105.0,
+        173255.0
+      ],
+      "auto_matches_ALL": true,
+      "auto_matches_trades": true,
+      "source_trade_volume": 53061,
+      "source_ALL_volume": 55844,
+      "auto_real_volume": 55844,
+      "auto_tick_volume": 2875
+    },
+    {
+      "minute": "2026.10.29 09:01",
+      "source_ALL": 49217,
+      "source_trades": 25385,
+      "OHLC_ALL": [
+        173255.0,
+        173485.0,
+        172835.0,
+        172860.0
+      ],
+      "OHLC_trades": [
+        173250.0,
+        173485.0,
+        172835.0,
+        172860.0
+      ],
+      "OHLC_auto": [
+        173255.0,
+        173485.0,
+        172835.0,
+        172860.0
+      ],
+      "auto_matches_ALL": true,
+      "auto_matches_trades": false,
+      "source_trade_volume": 88224,
+      "source_ALL_volume": 147053,
+      "auto_real_volume": 147053,
+      "auto_tick_volume": 49217
+    },
+    {
+      "minute": "2026.10.29 09:02",
+      "source_ALL": 39427,
+      "source_trades": 24215,
+      "OHLC_ALL": [
+        172860.0,
+        173270.0,
+        172760.0,
+        172810.0
+      ],
+      "OHLC_trades": [
+        172855.0,
+        173270.0,
+        172760.0,
+        172810.0
+      ],
+      "OHLC_auto": [
+        172860.0,
+        173270.0,
+        172760.0,
+        172810.0
+      ],
+      "auto_matches_ALL": true,
+      "auto_matches_trades": false,
+      "source_trade_volume": 109162,
+      "source_ALL_volume": 154728,
+      "auto_real_volume": 154728,
+      "auto_tick_volume": 39427
+    },
+    {
+      "minute": "2026.10.29 09:03",
+      "source_ALL": 27449,
+      "source_trades": 16990,
+      "OHLC_ALL": [
+        172810.0,
+        172990.0,
+        172615.0,
+        172825.0
+      ],
+      "OHLC_trades": [
+        172810.0,
+        172990.0,
+        172615.0,
+        172825.0
+      ],
+      "OHLC_auto": [
+        172810.0,
+        172990.0,
+        172615.0,
+        172825.0
+      ],
+      "auto_matches_ALL": true,
+      "auto_matches_trades": true,
+      "source_trade_volume": 81555,
+      "source_ALL_volume": 118127,
+      "auto_real_volume": 118127,
+      "auto_tick_volume": 23954
+    },
+    {
+      "minute": "2026.10.29 09:04",
+      "source_ALL": 22072,
+      "source_trades": 13879,
+      "OHLC_ALL": [
+        172825.0,
+        173145.0,
+        172795.0,
+        173010.0
+      ],
+      "OHLC_trades": [
+        172825.0,
+        173145.0,
+        172795.0,
+        173010.0
+      ],
+      "OHLC_auto": [
+        172825.0,
+        173145.0,
+        172795.0,
+        173010.0
+      ],
+      "auto_matches_ALL": true,
+      "auto_matches_trades": true,
+      "source_trade_volume": 71949,
+      "source_ALL_volume": 102571,
+      "auto_real_volume": 102571,
+      "auto_tick_volume": 22072
+    },
+    {
+      "minute": "2026.10.29 09:05",
+      "source_ALL": 13849,
+      "source_trades": 9909,
+      "OHLC_ALL": [
+        173010.0,
+        173185.0,
+        172960.0,
+        173120.0
+      ],
+      "OHLC_trades": [
+        173010.0,
+        173185.0,
+        172960.0,
+        173120.0
+      ],
+      "OHLC_auto": [
+        173010.0,
+        173185.0,
+        172960.0,
+        173120.0
+      ],
+      "auto_matches_ALL": true,
+      "auto_matches_trades": true,
+      "source_trade_volume": 51703,
+      "source_ALL_volume": 65637,
+      "auto_real_volume": 65637,
+      "auto_tick_volume": 13849
+    },
+    {
+      "minute": "2026.10.29 09:06",
+      "source_ALL": 13718,
+      "source_trades": 10408,
+      "OHLC_ALL": [
+        173120.0,
+        173325.0,
+        173070.0,
+        173240.0
+      ],
+      "OHLC_trades": [
+        173115.0,
+        173325.0,
+        173070.0,
+        173240.0
+      ],
+      "OHLC_auto": [
+        173120.0,
+        173325.0,
+        173070.0,
+        173240.0
+      ],
+      "auto_matches_ALL": true,
+      "auto_matches_trades": false,
+      "source_trade_volume": 56399,
+      "source_ALL_volume": 69024,
+      "auto_real_volume": 69024,
+      "auto_tick_volume": 13718
+    },
+    {
+      "minute": "2026.10.29 09:07",
+      "source_ALL": 14151,
+      "source_trades": 10889,
+      "OHLC_ALL": [
+        173240.0,
+        173465.0,
+        173235.0,
+        173325.0
+      ],
+      "OHLC_trades": [
+        173235.0,
+        173465.0,
+        173235.0,
+        173325.0
+      ],
+      "OHLC_auto": [
+        173240.0,
+        173465.0,
+        173235.0,
+        173325.0
+      ],
+      "auto_matches_ALL": true,
+      "auto_matches_trades": false,
+      "source_trade_volume": 56388,
+      "source_ALL_volume": 68932,
+      "auto_real_volume": 68932,
+      "auto_tick_volume": 14151
+    },
+    {
+      "minute": "2026.10.29 09:08",
+      "source_ALL": 10725,
+      "source_trades": 7505,
+      "OHLC_ALL": [
+        173330.0,
+        173390.0,
+        173230.0,
+        173280.0
+      ],
+      "OHLC_trades": [
+        173330.0,
+        173390.0,
+        173230.0,
+        173280.0
+      ],
+      "OHLC_auto": [
+        173330.0,
+        173390.0,
+        173230.0,
+        173280.0
+      ],
+      "auto_matches_ALL": true,
+      "auto_matches_trades": true,
+      "source_trade_volume": 42513,
+      "source_ALL_volume": 56538,
+      "auto_real_volume": 56538,
+      "auto_tick_volume": 10725
+    },
+    {
+      "minute": "2026.10.29 09:09",
+      "source_ALL": 10544,
+      "source_trades": 7877,
+      "OHLC_ALL": [
+        173280.0,
+        173500.0,
+        173265.0,
+        173425.0
+      ],
+      "OHLC_trades": [
+        173280.0,
+        173500.0,
+        173265.0,
+        173425.0
+      ],
+      "OHLC_auto": [
+        173280.0,
+        173500.0,
+        173265.0,
+        173425.0
+      ],
+      "auto_matches_ALL": true,
+      "auto_matches_trades": true,
+      "source_trade_volume": 48142,
+      "source_ALL_volume": 57681,
+      "auto_real_volume": 57681,
+      "auto_tick_volume": 8924
+    }
+  ],
+  "trade_volume_total": 659096,
+  "ALL_volume_total": 896135,
+  "tick_volume_different_from_ALL_minutes": [
+    "2026.10.29 09:03",
+    "2026.10.29 09:09"
+  ],
+  "conclusion": "Roundtrip de dados numéricos/tempo exato, bits extras removidos, M1 automático representa ALL inclusive Last/volume carregados; diagnóstico do Tester ainda pendente."
+}
