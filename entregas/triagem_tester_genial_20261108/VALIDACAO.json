@@ -1,0 +1,10 @@
+{
+  "fonte_identico_v121": true,
+  "sets": 12,
+  "consultas_B_novas": 6,
+  "janela_maxima_60_min": true,
+  "datas_separadas_dos_sets": true,
+  "primeira_janela_avanca_ao_pregao_seguinte": true,
+  "compilacao_nova": "NAO_NECESSARIA_FONTE_IDENTICO",
+  "execucao_nativa_deste_plano": "PENDENTE_NO_MT5_DO_USUARIO"
+}

@@ -24,3 +24,11 @@ Revisão posterior do PDF de regras encontrou divergência expressa no item 9.7:
 A Revisão 1 substitui a redação anterior de 9.7: reconstrução não consome oportunidade; cancelamento confirmado sem toque/execução permite reenvio elegível. Documento atualizado; implementação geral no EA ainda pendente. A auditoria anterior permanece como registro da comparação com o PDF original.
 
 A v2.13.05 implementa a Revisão 1, arquivamento de sessões encerradas, relatórios executados, freeze, auditoria de liquidez e tabela de horários revisados. 240 verificações locais ASan/UBSan passaram. Compilação e execução nativas desta versão pendentes; matemática e fonte B3 preservadas. O histórico Work e a liberação real continuam pendentes.
+
+### Triagem do Tester na Genial — seis pregões (08/11/2026)
+
+Pacote com o DiagTicksAB v1.21 inalterado, seis configurações B e seis A opcionais, roteiro e planilha de retorno. Execução nativa deste plano pendente; não é homologação do histórico nem de operações.
+
+- [Guia e parâmetros](entregas/triagem_tester_genial_20261108/LEIA_PRIMEIRO.txt)
+- [ZIP para o MT5](entregas/Triagem_Tester_Genial_6_Pregoes_20261108.zip)
+- [Consolidação A/B XP e Genial com os quatro CSVs conferidos](entregas/resultado_ab_xp_genial_20261108/Resultados_AB_XP_e_Genial_2026-11-08.txt)

@@ -1,0 +1,119 @@
+﻿TRIAGEM DO TESTER NA GENIAL — 08/11/2026
+
+OBJETIVO
+Identificar, em seis consultas novas, se o Tester descarta ticks reais ou
+entrega negocios com Last valido. O controle WINZ26 de 30/10 ja foi concluido
+na XP e na Genial; nao repetir esse controle agora.
+Este pacote reaproveita o DiagTicksAB v1.21, sem nenhuma alteracao de codigo.
+O programa nao envia ordens. Nao altera o EA da XP, ajustes ou diario operacional.
+
+O QUE VEM NO ZIP
+- Fonte original em MQL5/Experts/ModeloD_Diagnostico_Ticks.
+- Seis arquivos B.set para o Tester e seis A.set opcionais para o terminal.
+- PLANO_E_RESULTADOS.csv com datas, simbolos, tags e campos de resultado vazios.
+- VALIDACAO.json e SHA256SUMS.json.
+Nao inclui executavel EX5: aproveite o DiagTicksAB.ex5 v1.21 ja compilado e
+executado na Genial. So compile o fonte com F7 se o EX5 estiver ausente.
+
+INSTALACAO
+1. Extraia o ZIP.
+2. No MT5 da GENIAL: Arquivo > Abrir Pasta de Dados.
+3. Copie a pasta MQL5 do ZIP para essa pasta, mesclando as pastas.
+Os parametros devem aparecer em MQL5/Profiles/Tester.
+O fonte e byte a byte igual ao que voce ja compilou. Se o Windows perguntar
+sobre substituicao, trata-se do mesmo fonte; preserve seu EX5 existente.
+
+CONFIGURACAO COMUM — Ctrl+R > Configuracao
+Expert: ModeloD_Diagnostico_Ticks/DiagTicksAB.ex5
+Periodo: M5
+Modelagem: Cada tick e baseado em um tick real
+Otimizacao: Desativada
+Para a frente: Nao
+Modo visual: Desativado
+Latencia: Sem atrasos, execucao perfeita
+Agente local; sem agentes remotos ou nuvem.
+Deposito/moeda/alavancagem: pode manter os valores do A/B anterior.
+Nao precisa habilitar AlgoTrading na conta para estas consultas sem ordens.
+
+ROTEIRO DOS SEIS TESTES B
+ID  Ativo    Data inicial  Data final    Janela da consulta
+01  WINV26   2026.09.01    2026.09.03    01/09 18:20 ate 18:25
+02  WINV26   2026.09.02    2026.09.03    02/09 16:10 ate 16:15
+03  WINV26   2026.10.02    2026.10.03    02/10 09:00 ate 09:10
+04  WINV26   2026.10.09    2026.10.10    09/10 09:00 ate 09:10
+05  WINZ26   2026.10.19    2026.10.20    19/10 09:00 ate 09:10
+06  WINZ26   2026.10.29    2026.10.30    29/10 09:00 ate 09:10
+Janelas sao em hora do servidor, com final exclusivo.
+
+IMPORTANTE SOBRE O TESTE 01
+O diagnostico existente so consulta quando TimeCurrent >= InpTo + 2 segundos.
+Se o ultimo tick de 01/09 for anterior a 18:25:02, ele nao concluiria dentro
+apenas desse pregao. Por isso a data final e 03/09: permite avancar para os
+ticks de 02/09, mas a consulta continua estritamente em 01/09 18:20–18:25.
+O Diario pode mencionar DOIS pregoes. Preserve as linhas com as datas e nao
+atribua um resumo agregado de dois dias somente a 01/09.
+Essa janela e diagnostica, apos o corte das 18h; nao e entrada da estrategia.
+O teste 02 verifica a divergencia durante a sessao operacional.
+
+COMO CARREGAR CADA TESTE
+1. Em Configuracao, ajuste ATIVO e DATA INICIAL/FINAL conforme a tabela.
+2. Em Parametros de entrada: clique com o botao direito na tabela > Carregar.
+   Abra MQL5/Profiles/Tester na pasta de dados e selecione o arquivo B.set do ID.
+3. Confira os seis campos carregados: simbolo, inicio, fim, 10 tentativas,
+   tag terminada em _B, e InpDumpCsv=true.
+4. Clique Iniciar. Ao concluir, o ExpertRemove e esperado.
+5. Salve o Diario desse teste antes de iniciar outro. Pode usar botao direito
+   > Copiar tudo e colar num TXT, ou Abrir e copiar o arquivo de log correspondente.
+   Preserve o trecho desde o inicio ate o final; nao envie so a ultima linha.
+6. Prossiga na ordem. O SET muda SOMENTE parametros de entrada: NAO muda
+   automaticamente ativo, datas gerais, modelagem nem modo de otimizacao.
+
+PRIMEIRO TESTE EXATO
+Configuracao: WINV26, M5, 01/09/2026 ate 03/09/2026, ticks reais.
+SET: 01_20260901_WINV26_B.set
+InpSymbol=WINV26
+InpFrom=2026.09.01 18:20:00
+InpTo=2026.09.01 18:25:00
+InpMaxAttempts=10
+InpTag=GTR_01_20260901_B
+InpDumpCsv=true
+
+QUANDO TERMINAR
+Os arquivos sao gravados diretamente em Common/Files.
+Windows + R > cole o caminho abaixo > Enter:
+%APPDATA%\MetaQuotes\Terminal\Common\Files
+Procure por GTR_01 ate GTR_06 nos nomes DiagTicksAB_TESTER_....
+Cada teste concluido gera um TXT e um _ALL.csv (se o snapshot ALL for valido).
+Junte os TXT e CSV de cada ID com o respectivo Diario num ZIP e envie.
+Pode enviar primeiro o ID 01 para conferirmos a configuracao, depois os demais.
+Se nao houver TXT/CSV, envie o Diario e o print dos parametros; nao preencha
+resultado como zero por ausencia de arquivo. Sem dados no proprio simbolo,
+o motor pode nao avancar e nao chamar a coleta; isso e pendencia, nao prova de
+que nao existem negocios. Se demorar sem avancar, informe o ultimo log.
+
+SETS A OPCIONAIS — AINDA NAO PRECISA RODAR
+As duas janelas de setembro ja tem coleta focal A preservada. Para outubro,
+um B com negocios sera confrontado com um A da mesma janela. Os A.set estao
+incluidos para essa etapa. Use um grafico separado do simbolo correspondente,
+anexe o mesmo DiagTicksAB e carregue o A.set. O programa consulta, grava e sai.
+Nao use A.set no Tester nem B.set no terminal: isso confundiria a tag do arquivo.
+
+COMO INTERPRETAREMOS
+- Descarte: somente quando o Diario o confirmar, respeitando a data da mensagem.
+- Negocios presentes: TRADE e criterio de negocio com Last valido positivos;
+  isso sozinho nao certifica que todos os ticks reais foram preservados.
+- Last zero/flags=6: fluxo sem negocios validos; conferir o Diario para a causa.
+- Ausencia de mensagem de descarte nao significa automaticamente ticks aprovados.
+- Erro, consulta instavel ou teste sem resultado: pendente, sem inventar zeros.
+- Alguns dias diferentes ajudam a investigar; todos iguais mostram recorrencia
+  apenas na amostra. Nenhum caso isola sozinho a causa original.
+
+LIMITES
+WINV26 e WINZ26 sao simbolos a consultar, nao certificacao de que correspondem
+ao contrato original usado pelo Work. Outubro usa candidatos por calendario,
+separados antes/depois do vencimento de outubro. Liquidez, contrato historico,
+vinculo do ajuste e fuso continuam verificacoes separadas. Nao substituir um
+simbolo indisponivel por WIN$N sem registrar e discutir a mudanca.
+Esta etapa nao compara resultados de operacoes nem homologa o EA. O backtest
+principal posterior continua com 1 contrato por nivel e resultado em pontos.
+Nao apagar cache, alterar flags ou substituir Last por Bid/Ask.
