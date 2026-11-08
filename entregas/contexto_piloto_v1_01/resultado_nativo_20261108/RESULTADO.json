@@ -1,0 +1,24 @@
+{
+  "fonte": "LOG_CONTEXT_FORNECIDO.txt",
+  "sha256": "a2c849692857c8b862615da8f85809a79e182834f31e39ed19ee848f4d52c361",
+  "native_compile_user_report": {
+    "errors": 0,
+    "warnings": 0,
+    "elapsed_ms": 1222
+  },
+  "original_symbol": "MDDP29_1794146086_769098390",
+  "new_symbol": "MDDP29_1794147861_770874343",
+  "context_source": "WINZ26 M1 2026-10-27 <= t < 2026-10-29",
+  "context_M1": 1130,
+  "prior_M5_groups": 227,
+  "target_ticks": 204027,
+  "target_ticks_unchanged": true,
+  "target_M1_unchanged": true,
+  "context_M1_readback_equal": true,
+  "exports_ok": true,
+  "baseline_hash8": "9717538522665796209",
+  "source_raw_full_equal": false,
+  "source_raw_difference": "FLAGS_ADDITIONAL_BITS_ALREADY_AUDITED",
+  "CSV_outputs_received": false,
+  "tester_and_OnTick": "PENDING_NEW_SYMBOL_RUN"
+}
