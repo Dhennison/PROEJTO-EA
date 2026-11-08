@@ -1,0 +1,122 @@
+{
+  "input_sha256": "a3acba0e6d6e8f10ab1f6c24143c63d46fa8ce9767c2f87b87220fd3c2e0ed0b",
+  "tester_zip_sha256": "1769da6135c9ad8408fe64f3bd8969215513504d0f8f8d897639b1804410d174",
+  "snapshots_sha256": {
+    "ONTICK.csv": "48a1aeea301b8dd6f79d86088051df442800c46b857c5103ee3856ea6b68de63",
+    "TESTER_COPYTICKS.csv": "2626189760a4ffb4c965458501dc7f83db9567ebdf5b3a457cbb703ffa11cced"
+  },
+  "source": {
+    "ALL": 204027,
+    "business": 128669,
+    "quote_only": 75358,
+    "time_groups": 128380
+  },
+  "OnTick": {
+    "records": 204027,
+    "numeric_positional_differences": {
+      "time": 0,
+      "time_msc": 0,
+      "bid": 1,
+      "ask": 0,
+      "last": 0,
+      "volume": 0,
+      "volume_real": 0
+    },
+    "numeric_differing_records": [
+      {
+        "index": 8501,
+        "source": [
+          1793264463,
+          1793264463768,
+          0.0,
+          173430.0,
+          173370.0,
+          1,
+          1.0,
+          1026
+        ],
+        "observed": [
+          1793264463,
+          1793264463768,
+          173395.0,
+          173430.0,
+          173370.0,
+          1,
+          1.0,
+          90
+        ]
+      }
+    ],
+    "original_trade_records_preserved_numeric_time_order_and_public_flags": 128669,
+    "classified_business_by_observed_flags": 204027,
+    "source_quotes_acquired_business_flags": 75358,
+    "flags": {
+      "56": 61083,
+      "88": 59823,
+      "126": 1,
+      "90": 17242,
+      "92": 14285,
+      "122": 5896,
+      "60": 17801,
+      "58": 14377,
+      "124": 5755,
+      "120": 7763,
+      "94": 1
+    }
+  },
+  "tester_ALL_query": {
+    "records": 204025,
+    "time_groups": 128380,
+    "numeric_source_subsequence": true,
+    "numeric_source_subsequence_removed": [
+      {
+        "index": 72953,
+        "source": [
+          1793264548,
+          1793264548680,
+          173135.0,
+          173140.0,
+          173255.0,
+          8,
+          8.0,
+          1336
+        ]
+      },
+      {
+        "index": 72954,
+        "source": [
+          1793264548,
+          1793264548680,
+          173135.0,
+          173140.0,
+          173255.0,
+          4,
+          4.0,
+          1336
+        ]
+      }
+    ],
+    "matched_original_trades": 128667,
+    "source_quotes_acquired_business_flags": 41877,
+    "classified_business_by_query_flags": 170544,
+    "flags": {
+      "56": 61081,
+      "88": 59823,
+      "6": 2,
+      "2": 16584,
+      "4": 16895,
+      "120": 7763,
+      "60": 9397,
+      "58": 6887,
+      "90": 10363,
+      "92": 7947,
+      "122": 3681,
+      "124": 3602
+    },
+    "TRADE_selection_API_called": false,
+    "INFO_selection_API_called": false
+  },
+  "M1_identical_to_importer_automatic_output": true,
+  "conclusion": "INITIALIZATION_WORKS_BUT_FLAG_SEMANTICS_AND_TESTER_HISTORY_NOT_FAITHFUL;CALLBACK_TRADE_PAYLOAD_PRESERVED;PILOT_NOT_APPROVED_AS_GENERAL_EA_FEED",
+  "limits": "Align by timestamp/ordered numeric payload before interpreting positional mismatches. No cause inferred for API state/flag changes or the missing group records."
+}

@@ -1,0 +1,156 @@
+﻿ANÁLISE FINAL DO PILOTO 29/10 — HISTÓRICO DO TESTER E ONTICK
+Atualização: 08/11/2026, após recebimento de TESTER_M1.zip
+Símbolo: MDDP29_1794147861_770874343, GenialInvestimentos-PRD, build6231.
+Fonte original: CSV A WINZ26, 29/10/2026, 09:00–09:10.
+
+CONCLUSÃO
+O contexto anterior resolveu a inicialização: o Tester começou em29/10,
+processou204027 ticks e não registrou descarte/ausência/geração substituta
+no Diário recebido. A conferência bruta, porém, encontrou transformações
+nos flags e diferenças no histórico consultado. O piloto NÃO ficou aprovado
+como alimentação geral fiel do EA. Contagem de callbacks igual à fonte não
+foi suficiente para essa aprovação.
+
+O QUE FOI LIDO E COMPARADO
+RESULTADO.txt, ONTICK.csv, TESTER_COPYTICKS.csv e TESTER_M1.csv do ZIP novo,
+lidos integralmente, contra o CSV A original e o IMPORT_READBACK.csv anterior.
+Os ZIPs brutos são preservados localmente, sem publicação no GitHub.
+Tempo, quantidade, ordem e todos os campos foram comparados sem tolerância.
+A fonte mantém204027 registros, dos quais128669 com flags de negócio e Last
+válido e75358 cotações. São critérios da fonte, não certificação de fita da bolsa.
+
+QUATRO CAMADAS
+                              Registros ALL   Classificados por flags+Last
+CSV A original                    204027                  128669
+Releitura no terminal custom      204027                  128669
+Observações OnTick                204027                  204027
+CopyTicksRange ALL no Tester      204025                  170544
+
+A última linha é uma consulta COPY_TICKS_ALL, filtrada depois pelo critério.
+NÃO foi feita chamada COPY_TICKS_TRADE nem COPY_TICKS_INFO nesta versão do
+piloto. Não atribuir esses170544 a uma resposta da modalidade TRADE da API.
+
+1. ONTICK: NÚMEROS DOS NEGÓCIOS PRESERVADOS, FLAGS DAS COTAÇÕES ALTERADOS
+O diagnóstico registrou204027 callbacks e204027 observações, sem falha em
+SymbolInfoTick, sem eventos fora da janela e sem estouro do buffer.
+Todos os128380 milissegundos distintos da fonte tiveram observação.
+
+Comparação posicional com a fonte:
+time:0 diferenças; time_msc:0; ask:0; last:0; volume:0; volume_real:0.
+Bid:1 diferença. Flags completos:204027 diferenças.
+
+Ao considerar SOMENTE as128669 posições que são negócios na fonte:
+Last, horários, Bid/Ask, volumes, ordem e flags públicos (fonte_flags &126)
+coincidem exatamente com o OnTick. Esses payloads de negócio foram preservados.
+A retirada dos bits extras1024/256 já havia sido identificada na importação.
+
+Mas as75358 posições que eram apenas cotações na fonte passaram a ter bits
+de negócio no OnTick. Assim, flags&120 e Last positivo classificam TODOS os
+204027 eventos como negócios. Isso vai além da retirada dos bits extras:
+há mudança também na semântica dos bits documentados das cotações.
+Não tratá-los como75358 novos negócios reais.
+
+A única diferença numérica observada é uma cotação, índice8501 (base zero):
+09:01:03.768, time_msc1793264463768.
+Fonte: Bid0, Ask173430, Last173370, volume1, flags1026.
+OnTick: Bid173395, Ask173430, Last173370, volume1, flags90.
+A origem interna desse preenchimento e dos flags ainda não está isolada.
+Não atribuir automaticamente à importação, à corretora ou a erro da estratégia.
+
+Histograma OnTick:
+56x61083;88x59823;120x7763;126x1;90x17242;92x14285;
+122x5896;60x17801;58x14377;124x5755;94x1.
+
+2. COPYTICKSRANGE NO TESTER: DOIS REGISTROS A MENOS
+Duas respostas consecutivas iguais e sem erro retornaram204025 registros.
+A leitura no terminal custom e o OnTick tinham204027. A diferença não está
+no final da janela: concentra-se em09:02:28.680, time_msc1793264548680.
+
+Grupo na fonte e na releitura do terminal, na ordem:
+Last173255/vol8; Last173255/vol4; Last173255/vol5;
+Last173255/vol8; Last173245/vol1.
+Todos são negócios na fonte, com BUY ou SELL nos flags.
+
+Grupo no CopyTicksRange final:
+Last173255/vol5; Last173255/vol8; Last173245/vol1.
+
+Faltam duas ocorrências numéricas, volumes8 e4, total12, Last173255.
+Um alinhamento ordenado compatível aponta os índices72953 e72954 da fonte
+(base zero). Como há duas ocorrências iguais de volume8 e não há identificador
+único de negócio no CSV, não atribuir identidade individual inequívoca a uma
+delas. A diferença de multiplicidade e de volume total está comprovada.
+O OnTick continha as cinco ocorrências na sequência numérica esperada.
+
+Após alinhar o snapshot consultado por tempo e payload numérico, TODOS os
+204025 registros retornados correspondem a uma subsequência da fonte em
+seus campos numéricos. Não há113 mil preços/horários comprovadamente alterados:
+as grandes contagens posicionais do relatório decorrem do deslocamento após
+as duas ausências. É necessário alinhar antes de interpretar essas contagens.
+
+3. FLAGS DO HISTÓRICO CONSULTADO TAMBÉM MUDARAM
+Dos registros retornados:
+128667 correspondem a negócios classificados na fonte (128669 menos2).
+41877 correspondem a cotações da fonte que passaram a ter flags de negócio.
+Somam170544 classificados por flags+Last na consulta ALL.
+O excesso líquido em relação ao número de negócios da fonte é41875.
+
+Os bits públicos dos128667 negócios correspondentes ficaram iguais aos da
+fonte. O problema adicional é a promoção de cotações na visão consultada.
+Soma de volumes dos classificados na consulta:810460; fonte negócios:659096.
+A origem dos novos bits não foi isolada. Não foi demonstrada uma regra única
+de herança dos flags do último negócio. Não fazer essa afirmação sem controle.
+
+A contagem por milissegundos permaneceu128380 também no snapshot consultado:
+o grupo com duas ocorrências a menos ainda contém outros registros.
+Logo, cobertura de todos os ms não prova preservação de cada ocorrência.
+
+4. BARRAS M1
+TESTER_M1.csv é IDÊNTICO byte a byte ao IMPORT_M1.csv recebido anteriormente.
+Persistem as quatro aberturas +5 pontos (09:01,09:02,09:06,09:07) e os volumes
+automáticos derivados de ALL, incluindo valores carregados nas cotações.
+Não houve alteração comprovada dessas barras durante este teste.
+Isso não prova que o EA deve usar esses volumes ou que o descarte nativo
+original tenha sido causado pelos mesmos fatores.
+
+5. O QUE FICOU CONCLUÍDO
+- Inicialização com contexto real anterior funcionou em29/10.
+- Os204027 registros chegaram a callbacks, com a sequência Last/volume/tempo
+  preservada; os payloads dos128669 negócios da fonte e seus bits públicos
+  permaneceram iguais nas posições correspondentes.
+- Não houve aviso de substituição dos reais no Diário recebido.
+- Diferenças de flags, uma cotação Bid e duas ocorrências ausentes na consulta
+  final foram isoladas por conferência independente dos arquivos completos.
+
+AINDA NÃO CONCLUÍDO
+- Fidelidade global da classificação por flags no Tester e no OnTick.
+- Equivalência de COPY_TICKS_TRADE e COPY_TICKS_INFO com a fonte.
+- Explicação das duas ocorrências ausentes na visão ALL de dez minutos.
+- Fonte histórica aprovada para operar o EA/comparar com o Work.
+A estratégia Modelo D não foi executada nem alterada neste diagnóstico.
+
+6. PRÓXIMO CONTROLE PREPARADO: DIAGNOSTICO_PILOTO_CONSULTAS v1.02
+Usa o MESMO símbolo com contexto, o MESMO CSV e o MESMO período. Sem nova
+importação, sem alteração dos ticks, barras ou flags de entrada.
+
+Acrescenta controles em uma única execução:
+- consultas reais COPY_TICKS_TRADE e COPY_TICKS_INFO, cada uma com duas leituras;
+- consultas ALL por minuto e concatenação em ordem;
+- consultas ALL e TRADE só no ms09:02:28.680;
+- uma nova consulta ALL depois das demais modalidades;
+- captura OnTick com estrutura local explicitamente zerada antes de
+  SymbolInfoTick, para controlar possível influência de inicialização.
+Essa última medida é um controle instrumental, não uma causa confirmada.
+
+Assim verificaremos se a modalidade TRADE preserva o fluxo que o EA precisa,
+se a consulta por minuto recupera as duas ocorrências e se a alteração de
+flags depende da forma de consulta. Não substituir por Bid/Ask, não reparar
+flags e não aprovar a alimentação somente por quantidade ou hash.
+Não converter o resultado desta amostra em afirmação sobre todos os dias.
+
+7. RASTREABILIDADE
+Acompanham esta análise CONFERENCIA.json e analisar.py.
+As diferenças do snapshot foram reproduzidas lendo os arquivos integrais.
+Nenhum dado bruto ou fonte original foi editado para chegar a esta conclusão.
+A comparação principal com o Work permanece em pontos brutos, um contrato;
+ambiguidades só podem ser resolvidas por cronologia verificável e execução,
+não por trajetórias geradas nem por contagens semelhantes.

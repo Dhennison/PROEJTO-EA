@@ -1,0 +1,7 @@
+{
+  "checks": "checks=13 failures=0",
+  "scope": "Adapted QueryRead/PHSame C++ with simulated APIs; not native MetaEditor or MT5.",
+  "native_compile": "PENDING",
+  "source_sha256": "cc53216104a4d7100c1d6cdbf40e4f89c935cb56f43d9f3937b59d5731cadd6e",
+  "core_sha256": "461407245ad8fe9d13f307650c9874ff8c35bac23f8af583da03956b87b949d6"
+}

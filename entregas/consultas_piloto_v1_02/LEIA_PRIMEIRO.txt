@@ -1,0 +1,55 @@
+﻿DIAGNÓSTICO DE MODALIDADES DO PILOTO v1.02
+
+Por que este controle
+A versão1.00 capturou204027 eventos, mas os flags das cotações mudaram e a
+consulta ALL final retornou204025 registros. A classificação do filtro aplicado
+a ALL não prova o resultado de COPY_TICKS_TRADE, que ainda não foi consultado.
+O piloto de alimentação ainda não está aprovado.
+
+O programa v1.02 é outro arquivo, sem substituir o diagnóstico1.00.
+Não importa nem altera ticks, barras ou símbolos e não envia ordens.
+Reutiliza a cópia com contexto já preparada. O include é idêntico ao instalado.
+
+Instalação e compilação
+1. Extraia o ZIP.
+2. Genial > Arquivo > Abrir Pasta de Dados > cole a pasta MQL5 nessa raiz.
+3. F4 > abra e compile com F7:
+MQL5\Experts\ModeloD_PilotoControlado\Diagnostico_Piloto_Consultas.mq5
+Envie qualquer erro/aviso. A compilação nativa dessa versão ainda está pendente.
+Treze testes da rotina de consulta extraída/adaptada para C++, com APIs
+simuladas e ASan/UBSan, passaram. Isso não substitui MetaEditor/MT5.
+
+Configuração do Tester
+Expert: ModeloD_PilotoControlado\Diagnostico_Piloto_Consultas.ex5
+Ativo: MDDP29_1794147861_770874343
+M5, de2026.10.29 até2026.10.30.
+Modelagem: Cada tick é baseado em um tick real.
+Otimização desativada; sem teste futuro, sem modo visual; agente local.
+Parâmetro: InpArquivoFonte mantém o CSV A original, sufixo765756968.
+Não carregar um SET do antigo DiagTicksAB: são programas/parâmetros diferentes.
+Não precisa importar de novo nem executar o preparador de contexto.
+
+O que acontece
+A captura OnTick usa ZeroMemory na estrutura local antes de SymbolInfoTick,
+como controle instrumental; mantém buffer pré-alocado, sem I/O por evento.
+Ao terminar, preserva as consultas ALL originais do diagnóstico e acrescenta
+TRADE, INFO, dez janelas de um minuto, um grupo de1ms e ALL depois dos modos.
+Essas consultas executam só após acabar o fluxo de eventos. Cada controle
+informa início/fim no Diário e duas leituras válidas iguais ou pendência.
+Os CSVs guardam os oito campos sem tolerância nem edição de flags.
+A concatenação por minuto respeita janelas sem sobreposição, final exclusivo.
+
+Retorno
+Common\Files\ModeloD_Piloto_Controlado\QUERIES102_...
+Windows+R:
+%APPDATA%\MetaQuotes\Terminal\Common\Files\ModeloD_Piloto_Controlado
+
+Compacte a pasta QUERIES102 informada e envie junto do Diário completo.
+Contém RESULTADO, ONTICK, TESTER_COPYTICKS, TESTER_M1, MODE_TRADE, MODE_INFO,
+MINUTE_0 a MINUTE_9, MINUTES_COMBINED, GROUP_ALL, GROUP_TRADE e ALL_AFTER_MODES.
+Não interprete os indicadores de igualdade integral isoladamente: a fonte
+bruta ainda tem os bits extras que a importação removeu. Precisamos comparar
+separadamente quantidade, ordem, campos e classificação, sem editar a fonte.
+A guarda de data permanece: se o Tester deslocar o início, preserve a recusa.
+Os flags alterados no teste anterior não foram atribuídos a uma causa interna.
+Esta versão sonda mecanismos; não é reparo confirmado nem homologação do EA.

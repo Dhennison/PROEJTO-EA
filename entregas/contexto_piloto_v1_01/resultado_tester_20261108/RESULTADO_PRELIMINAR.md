@@ -16,3 +16,5 @@ TESTER_1793232000_422453 para análise independente.
 
 A inicialização com contexto funcionou nesta rodada. Não concluir ainda
 preservação integral dos eventos, homologação do EA ou backtest do Work.
+
+Atualização: recebidos e conferidos os quatro arquivos completos. Foram detectados flags de negócio nas cotações e duas ocorrências ausentes no snapshot ALL do Tester. Veja a [análise final](conferencia_bruta/Analise_Final_Piloto_OnTick_29Out_20261108.txt).
