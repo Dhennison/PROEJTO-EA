@@ -1,0 +1,3 @@
+﻿Data;SimboloConsultado;InicioServidor;FimExclusivoServidor;RelacaoComCorte;TicksALLNaLeituraFinal;NegociosNaLeituraFinal;Leituras;ErroTicksUltimaLeitura;ErroM1UltimaLeitura;Motivo;Limite
+2026.09.01;WINV26;2026-09-01T18:20:00;2026-09-01T18:25:00;APOS_CORTE;2955;1907;4;0;0;TICKS_M1_DIVERGENTES_OU_AUSENTES;"CSV v1.00 não guarda minuto ou O/H/L/C divergentes; requer consulta focalizada."
+2026.09.02;WINV26;2026-09-02T16:10:00;2026-09-02T16:15:00;ANTES_18H;17348;14210;4;0;0;TICKS_M1_DIVERGENTES_OU_AUSENTES;"CSV v1.00 não guarda minuto ou O/H/L/C divergentes; requer consulta focalizada."

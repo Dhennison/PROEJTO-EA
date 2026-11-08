@@ -1,0 +1,20 @@
+{
+  "Cpp_nucleo_e_serializacao_extraidos_MQL": {
+    "checks": 24,
+    "falhas": 0,
+    "sanitizers": [
+      "AddressSanitizer",
+      "UndefinedBehaviorSanitizer"
+    ],
+    "limite": "Tipos e APIs simulados; nao e compilacao MetaEditor."
+  },
+  "python_analisador": {
+    "checks": 6,
+    "falhas": 0
+  },
+  "preflight_input_global": "PASS",
+  "HC_Core_identico_v1_00": true,
+  "compilacao_MetaEditor_v1_02": "PENDENTE",
+  "execucao_nativa_v1_02": "PENDENTE",
+  "transporte_ordens": "AUSENTE"
+}

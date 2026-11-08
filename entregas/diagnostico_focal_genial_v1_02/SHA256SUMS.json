@@ -1,0 +1,12 @@
+{
+  "BASELINE_2_JANELAS.csv": "0458fb6b761589af37312aab55ccd4bc5322f29f94150febe6025efb40031021",
+  "LEIA_PRIMEIRO.md": "025230e7b23c84656e86c8ca22634d29455563533b8161993a26153766bd47ae",
+  "MQL5/Experts/ModeloD_Diagnostico_Focal/Diagnostico_Focal_Ticks_M1.mq5": "1ab4e5086fa70e7f481587c21b26a358f949efd99e47b9701a5aa12fd61c0ebd",
+  "MQL5/Experts/ModeloD_Diagnostico_Focal/Focal_Core.mqh": "8868d821efe2c7b811a15e3f3d5c7c98765437166e9df24aa8ef16ae14dd3fce",
+  "MQL5/Experts/ModeloD_Diagnostico_Focal/HC_Core.mqh": "b93764e5065773c491e87cf23fc55e5eb37b84dde3ff70e3693cc17f47044ea8",
+  "analisar_focal.py": "704f9f39b825c6b452ae72784058625e130a38fb115c99b9bdfd809844b0814d",
+  "tests/VALIDACAO_LOCAL.json": "db9fe86590b54cf8ef7a4023263a32ae0b1478bc21c72746959f5b0c9e1fee9a",
+  "tests/build_core_test.py": "131f8c9eec2e50cdba1e4839b349994f47505c3f78dea9ce5a64ef257ce9b3d6",
+  "tests/core_harness.cpp": "92aee308d62199bf409b1a85fe295cd0529b41fe7bd16a838feb476adf275cda",
+  "tests/test_analysis.py": "bf7eb6bf11c1af355600a349f3b590ad7ac7f6bc1cb78c88b127c093f8b0ffc3"
+}
