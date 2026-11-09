@@ -1,0 +1,8 @@
+{
+  "ini_checks": "PASS",
+  "launcher_static_checks": "PASS",
+  "zip_integrity": "PASS",
+  "EA_source_unchanged": true,
+  "native_BRL_launch": "PENDING_USER",
+  "zip_sha256": "8bdc0995930ff6fdca60fcf1e22bb6b51f250962ccdd56ebc769a00e56fe2333"
+}

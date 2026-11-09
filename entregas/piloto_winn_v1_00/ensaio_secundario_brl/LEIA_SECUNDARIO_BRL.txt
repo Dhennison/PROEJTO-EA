@@ -1,0 +1,32 @@
+PILOTO WIN$N NA INSTALACAO SECUNDARIA DA GENIAL — DEPOSITO BRL POR INI
+
+Este complemento usa o MESMO EA v1.00, sem alterar regras, codigo ou referencia do Work. A unica mudanca e iniciar o Tester com Currency=BRL por arquivo de configuracao. Nao cria moeda, simbolo de conversao, taxa cambial nem historico. Usa a instalacao secundaria que o usuario informa ja ter preparado para BRL.
+
+1. Abra a instalacao SECUNDARIA e confira que o servidor e GenialInvestimentos-PRD. Nao reutilize uma copia ainda conectada a XP achando que e Genial.
+2. Instale nela o mesmo piloto:
+   Extraia este ZIP em uma pasta temporaria. Copie a pasta MQL5 para a RAIZ da instalacao secundaria que contem terminal64.exe, no modo portable ja usado nessa copia.
+   Compile no MetaEditor DESSA instalacao:
+   MQL5\Experts\ModeloD_PilotoWINN\EA_ModeloD_Piloto_WINN.mq5
+   O fonte e o mesmo que compilou com zero erros e zero avisos. Alternativamente, pode copiar o EA_ModeloD_Piloto_WINN.ex5 que ja compilou para essa mesma subpasta do secundario; o EX5 inclui suas dependencias.
+3. Copie estes dois arquivos para a mesma RAIZ da instalacao secundaria, ao lado de terminal64.exe:
+   ModeloD_Piloto_WINN_BRL.ini
+   INICIAR_PILOTO_WINN_BRL.cmd
+   Nao coloque INI/CMD dentro de MQL5 nem em Common\Files. Nao substitua arquivos de inicializacao dos testes antigos: os nomes sao novos.
+4. Feche apenas o MT5 secundario e o MetaEditor dele. O principal pode continuar aberto.
+5. Abra INICIAR_PILOTO_WINN_BRL.cmd e pressione uma tecla. O comando abre APENAS o terminal64.exe da propria pasta, em /portable, com o INI do piloto.
+6. A rodada deve iniciar automaticamente: WIN$N, M5, 21/09/2026 ate 22/09/2026, modelagem de ticks reais, sem atrasos/otimizacao, deposito 1.000.000 BRL. Lucro em pips fica desmarcado (ProfitInPips=0).
+   Nao mude depois a moeda manualmente na tela: queremos verificar se o INI foi aplicado.
+
+VALIDACAO OBRIGATORIA DO CONTROLE
+No Diario, procurar "initial deposit 1000000.00 BRL". No ESPECIFICACAO.txt da NOVA pasta, conferir account_currency=BRL e server=GenialInvestimentos-PRD.
+Se ainda aparecer USD, nao considerar o controle aplicado: envie o Diario e a especificacao; nao repetir sem diagnosticar a inicializacao.
+O INI solicita BRL; so esses registros confirmam que o terminal aceitou a configuracao. Trocar de instalacao tambem pode trocar build/cache/historico; isso sera registrado, portanto uma eventual melhora nao isola sozinha a causa da interrupcao anterior.
+
+RETORNO
+Enviar o Diario completo e a NOVA pasta WINN100_... criada em:
+%APPDATA%\MetaQuotes\Terminal\Common\Files\ModeloD_Piloto_WINN
+A pasta Common pode ser compartilhada pelas instalacoes. Selecione a nova pasta pela ultima modificacao e confira o servidor/moeda no ESPECIFICACAO.txt. Preserve a antiga WINN100_1789948800_1130.
+Se concluir, esperamos tambem DEALS.csv, ORDERS.csv, COMPARATIVO.csv, M1_ONTICK.csv, M1_TESTER.csv e a linha RESUMO em RESULTADO.txt. Ausencia desses arquivos nao e resultado zero; e rodada incompleta.
+
+ESCOPO
+Permanece um piloto experimental com um contrato por nivel e pontos brutos, usando base historica explicita do Work. O WIN$N gerou ticks sinteticos em 21/09 nas rodadas anteriores; conferir novamente o Diario. Este controle nao recupera ticks reais nem homologa o EA operacional ou o periodo longo.

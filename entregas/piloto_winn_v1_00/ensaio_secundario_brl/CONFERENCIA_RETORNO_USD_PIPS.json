@@ -1,0 +1,25 @@
+{
+  "run_folder": "WINN100_1789948800_1130",
+  "account_currency": "USD",
+  "symbol_currency_profit": "BRL",
+  "symbol_currency_margin": "BRL",
+  "server": "GenialInvestimentos-PRD",
+  "build": 6231,
+  "hedge_margin_mode": 2,
+  "native_trade_mode": 4,
+  "native_tick_size": 5,
+  "entry_requests_accepted": 5,
+  "recorded_deals": 0,
+  "EA_summary_present": false,
+  "agent_profit_in_pips_confirmed": true,
+  "agent_last_run_conversion_no_prices_count": 9,
+  "agent_last_run_thread_finished": true,
+  "agent_last_run_shutdown_finished": true,
+  "cause_of_termination": "NOT_IDENTIFIED_BY_THESE_FILES",
+  "next_control": "Same pilot on secondary Genial installation, Currency=BRL via INI, verify applied currency and environment; no manual dropdown selection required.",
+  "source_sha256": {
+    "RESULTADO.txt": "16cdd2288af895e493096c8441eacf1d583d81c02b0953a195991d5403dbf334",
+    "ESPECIFICACAO.txt": "80a4e917d8a583fb95bad77bbffd50a47747bc37bae6b77efec2cdc0abfba086",
+    "20261108.log": "769bc292ff9fbe76db6e0f5626bd25ac21039e69b54077739004743a5b5ffa3e"
+  }
+}

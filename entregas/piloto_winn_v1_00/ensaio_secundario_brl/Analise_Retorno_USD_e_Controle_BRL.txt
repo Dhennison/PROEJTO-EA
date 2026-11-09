@@ -1,0 +1,9 @@
+ANALISE DO RETORNO WIN$N — USD COM LUCRO EM PIPS
+
+RESULTADO.txt registra abertura e cinco solicitacoes de entrada aceitas, todas as 09:02:00. Nao registra DEAL nem RESUMO. ESPECIFICACAO.txt confirma Tester, servidor GenialInvestimentos-PRD, build 6231, conta USD, margem/profit do simbolo em BRL, Hedge (margin_mode=2), negociacao FULL (trade_mode=4), tick de 5, volume minimo/passo 1 e suporte a LIMIT/SL/TP.
+O log completo do agente confirma ativacao de lucro em pips, erros de conversao BRLUSD10 e encerramento da thread seguido de shutdown, sem o resumo de conclusao do piloto. Isso confirma que o registro incompleto nao era apenas um corte da copia do painel. Nao ha mensagem que identifique a causa da finalizacao dessa rodada; nao atribuir automaticamente a timeout, crash ou falta de conversao.
+Nenhum resultado em pontos foi obtido. Ordens aceitas nao sao negocios executados.
+
+O usuario informou que sua instalacao secundaria ja foi preparada para BRL. O metodo encontrado nas entregas anteriores e Currency=BRL em INI, iniciado por terminal64.exe /portable /config. Portanto nao se deve insistir em selecionar BRL na lista do terminal principal, onde o usuario ja informou repetidamente que nao existe essa opcao.
+Foi preparado um INI/CMD NOVO para o piloto atual, sem alterar o EA. A nova rodada deve comprovar BRL no Diario e em account_currency. Se falhar essa verificacao, a configuracao nao foi aplicada.
+A mudanca de instalacao pode tambem mudar build/cache/dados; registrar essas diferencas antes de atribuir eventual sucesso apenas a moeda. A disponibilidade de ticks reais continua sendo verificada separadamente. Nao se trata de homologacao do EA operacional completo.
