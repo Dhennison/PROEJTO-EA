@@ -1,0 +1,126 @@
+MODELO D — COBERTURA LONGA WIN$N GENIAL x FONTES ORIGINAIS DO WORK
+Atualização: 09/11/2026, após EXPORT110_1794243035_5791
+
+CONCLUSÃO
+A nova coleta recuperou todas as 37 janelas solicitadas, com zero janelas pendentes. O problema de obtenção observado na primeira exportação foi superado após o usuário ajustar o limite de barras e reiniciar o terminal. Não há fundamento para classificar os 36 períodos antigos da primeira coleta como ausentes no servidor.
+
+O confronto das fontes recebidas encontrou 162.334 barras de referência, todas presentes no MT5 na duração correspondente. Delas, 162.331 têm OHLC idêntico e três divergem, todas após as 18h. Os quatro dados de preço usados na formação dos níveis — abertura atual e H/L/C anterior — são idênticos nas 877 datas operacionais do Work.
+
+A cobertura de coleta necessária foi obtida. Isso permite preparar a ampliação controlada da execução do EA. Não significa igualdade integral de minutos internos, ticks reais, execução ou resultado financeiro.
+
+1. NOVA COLETA
+Terminal principal GenialInvestimentos-PRD, build 6231, ambiente terminal (não Tester), símbolo nativo WIN$N.
+Solicitação: 27/02/2023 00:00 inclusive a 01/03/2026 00:00 exclusivo.
+37 janelas EXPORTADO_ESTAVEL, duas leituras válidas idênticas por janela, erro zero.
+417.800 barras M1. Primeiro candle: 27/02/2023 09:00; último: 27/02/2026 18:24.
+Diário encerra normalmente com:
+M1EXP110;END;months=37;pending_months=0;rows=417800;io_failed=false
+Depois ocorre ExpertRemove(), encerramento normal do exportador.
+Não houve ordens nem modificação do histórico.
+
+A configuração anterior de 100.000 barras era insuficiente para o histórico solicitado. A coleta foi repetida após a orientação de ampliar para 1.000.000 e reiniciar a Genial principal. O exportador não registra diretamente TERMINAL_MAXBARS; o valor antigo foi informado pelo usuário. O resultado demonstra que os dados antes pendentes puderam ser obtidos nessa repetição, sem exigir novos testes corretivos de exportação.
+
+2. CONSOLIDAÇÃO DAS DUAS COLETAS
+Nova: fevereiro/2023 a fevereiro/2026.
+Anterior EXPORT110_1794241201_5300: fevereiro/2026 parcial e março–setembro/2026.
+As 2.307 barras sobrepostas de fevereiro/2026 são idênticas em todos os campos exportados. Na consolidação aparecem uma única vez.
+Total: 497.028 registros M1 distintos, em 891 datas observadas, de 27/02/2023 09:00 a 21/09/2026 18:24.
+891 datas observadas no MT5 não significam 891 datas operacionais do Work. A seleção original do Work inclui contexto, exclusões e limites próprios; as 877 datas operacionais permanecem preservadas.
+
+3. MÉTODO DE COMPARAÇÃO
+As fontes originais não têm todas a mesma duração:
+2023: WIN$N exportado anteriormente do MT5 em M5.
+2024 e 2025: WINFUT exportado do Profit em M5.
+Janeiro–fevereiro/2026: WINFUT do Profit em M5.
+Março–setembro/2026: WINFUT do Profit em M1.
+
+Para comparar M5, o M1 nativo foi agregado por intervalos de cinco minutos: abertura do primeiro registro, máxima, mínima, fechamento do último e soma de volume_real. Comparação decimal exata, sem tolerância ou arredondamento de preços. Barras em comum comparadas pelo mesmo horário. Não houve imputação de minutos nem alteração dos arquivos originais.
+As barras extras e faltantes são contadas dentro do intervalo temporal da fonte original de cada grupo. Não se exige que um arquivo Work iniciado no meio do pregão contenha os minutos anteriores à sua primeira linha. Datas nativas fora do intervalo das fontes não entram automaticamente no Work.
+Igualdade de uma barra M5 não valida a presença nem o OHLC de cada M1 interno. Não classificar todo grupo com menos de cinco minutos como defeituoso: pode haver ausência de negociação ou falta de dados; a coleta sozinha não determina a causa.
+
+4. RESULTADO POR FONTE
+Fonte                     Barras Work  OHLC iguais  Diferentes  Faltantes MT5  Extras MT5  Quantidade diferente
+2023 MT5 M5                    22680        22680           0              0           0                     0
+2024 Profit M5                 27892        27891           1              0           0                    53
+2025 Profit M5                 28176        28175           1              0           1                    49
+2026 janeiro/fevereiro M5        4359         4359           0              0           0                     6
+2026 março/setembro M1          79227        79226           1              0           1                    39
+TOTAL                         162334       162331           3              0           2                   147
+
+Nos conjuntos temporais comparados, os OHLC agregados por dia coincidem em todas as 888 datas em comum, incluindo datas de contexto ou parciais da referência. Isso não transforma esses dias em 888 sessões completas certificadas.
+Não há divergências de OHLC de barras em comum antes das 18h. Em 2023, também deve continuar valendo o corte histórico às 17:45 de 13/03 a 03/11 inclusive; não foi alterado para 18h.
+
+5. TRÊS EXCEÇÕES DE OHLC E DUAS BARRAS EXTRAS
+04/09/2024 18:20, M5:
+MT5 O=138030 H=138075 L=137780 C=137920.
+Work O=138030 H=138075 L=137920 C=137920.
+Difere a mínima do intervalo. A mínima diária coincide porque esse preço não muda o extremo do dia. Não foi estabelecida a causa da diferença da barra.
+
+20/05/2025 18:20, M5:
+MT5 O=141505 H=141525 L=141470 C=141510.
+Work O=141505 H=141525 L=141470 C=141500.
+Difere o fechamento do intervalo. O MT5 também tem um intervalo 18:25 não presente na fonte Work. No agregado diário, o fechamento coincide. Não se remove nem desloca a barra extra para declarar igualdade por intervalo.
+
+10/03/2026 18:24, M1:
+MT5 O=185845 H=185885 L=185710 C=185710; quantidade=2513.
+Work O=185845 H=185950 L=185710 C=185950; quantidade=26792.
+MT5 extra 18:25: O=185725 H=185950 L=185725 C=185950; quantidade=24279.
+Agregar analiticamente os dois minutos MT5 reproduz a barra Work em OHLC e quantidade. É compatível com distribuição temporal diferente no fechamento, sem provar a regra de agrupamento do fornecedor. Os brutos permanecem intactos.
+
+As três diferenças ocorrem após o corte operacional usual das 18h, e não alteraram abertura/HLC anterior dos 877 contextos auditados. Isso não autoriza desprezar diferenças futuras ou afirmar igualdade integral entre feeds.
+
+6. DADOS PARA FORMAÇÃO DOS NÍVEIS — 877 DATAS
+Foi usada a tabela já auditada CONTEXTO_E_4385_NIVEIS.csv, com 877 datas e cinco níveis por data.
+Para cada data, comparou-se:
+- Abertura da sessão nativa contra Abertura do Work.
+- Máxima, mínima e fechamento da data anterior explicitamente indicada no Work contra o agregado nativo dessa mesma data.
+Resultado: 877 de 877 quartetos idênticos, sem substituir o pregão anterior por outro calendário.
+O CSV CONTEXTO_877_DATAS.csv registra a evidência por data, junto do ajuste e corte históricos preservados.
+O Ajuste Diário continua sendo a referência histórica fornecida no Work. Candles não comprovam esse ajuste nem sua certificação B3. Não foi recalculado ajuste com fechamento, nem reutilizado o ajuste atual para datas antigas.
+
+7. VOLUMES E LACUNAS
+Há 147 diferenças de quantidade nos intervalos comparados. Elas estão separadas da auditoria de preços em QUANTIDADE_DIVERGENTE.csv. Não se atribui a causa a negócio, agressão, leilão ou agrupamento sem evidência adicional. O resultado positivo de preços não aprova volumes como idênticos.
+
+Foram encontrados 19 saltos intradiários entre registros M1, total detalhado em LACUNAS_M1.csv. Exemplos importantes:
+03/06/2025: de 09:03 a 09:56, sem 52 minutos intermediários.
+21/08/2025: de 09:16 a 10:26, sem 69 minutos intermediários, além de outros saltos próximos.
+10/07/2026: de 09:55 a 09:57, sem o minuto 09:56.
+As lacunas longas de junho e agosto de 2025 já apareciam na referência Work em M5; o minuto de julho/2026 também está ausente no Work M1. As demais lacunas M1 não podem ser validadas individualmente por uma fonte que só tem M5.
+Ausência de um minuto não comprova por si só defeito ou ausência de negócios. Também não se deve preencher artificialmente o minuto e anunciar cobertura integral.
+31/07/2026 começa às 12:34 e tem 351 registros nas fontes comparadas, já documentado na primeira auditoria. Datas com abertura tardia ou dados insuficientes continuam sujeitas às regras de elegibilidade e completude.
+
+8. O QUE ESTÁ CONCLUÍDO E O QUE AINDA NÃO ESTÁ
+Concluído: obtenção dos meses que estavam pendentes, comparação com as fontes originais nas durações correspondentes, enumeração das exceções e conferência dos dados de entrada dos 877 contextos.
+Não concluído por esta coleta: execução do EA em todo o histórico, conferência dos preenchimentos, reconstrução de ticks reais, homologação de resultado financeiro e validação do feed ActivTrades.
+O WIN$N histórico continua sujeito à modelagem do Tester. Igualdade dos candles não recupera a sequência real de preços dentro do candle.
+Os resultados anteriores de setembro permanecem: Work matemático +3839,308998 pontos, EA com geração de ticks +1070 e EA em 1 minuto OHLC +565. O resultado da exportação não transforma essa diferença em erro puramente de dados nem em lucro executável.
+
+9. PRÓXIMA AMPLIAÇÃO CONTROLADA — ESPECIFICAÇÃO
+Não é necessário repetir a exportação agora. Guardar os dois ZIPs originais e os Diários.
+A versão atual EA_ModeloD_WINN_Periodo tem referências compiladas somente dos 14 pregões de setembro. Não basta alterar as datas do Tester para executar 2023–2026: primeiro devem ser geradas e integradas as referências dos demais meses.
+A ampliação deve preservar:
+- As 877 datas elegíveis do Work, sem incluir dias extras automaticamente.
+- Abertura atual e H/L/C anterior explicitamente auditados, ajuste histórico por data e cinco níveis.
+- Um contrato por nível, comparação em pontos brutos, grade de cinco pontos e SL/TP ancorados no nível teórico.
+- Corte às 17:45 de 13/03 a 03/11/2023 inclusive e às 18h nas demais datas.
+- Auditoria de abertura real e estado completo por data; falta de dados não equivale a resultado zero.
+- Fonte de resultados Work acessada somente para relatório, sem guiar decisões de entrada/saída.
+- As 32 operações ambíguas originais e o STOP adotado no Work, sem reescrever a referência para acomodar a modelagem.
+- Observação adicional de cronologia entrada/alvo na mesma barra, distinta da ambiguidade original SL/TP.
+- Controles com posição aberta no corte e fechamento efetivo, ainda não exercitados no piloto de setembro.
+- Comparação por operação separando resultado matemático, grade, execução, dados, motivo e ambiguidade; não escolher a modelagem por maior lucro.
+A execução deve continuar no secundário da Genial configurado em BRL por INI, sem depender de uma opção BRL na lista da interface, que o usuário já informou não existir. Não substituir o EA DEMO da XP.
+A investigação ActivTrades permanece como teste de alimentação adicional: identificar símbolo, servidor, especificações, fuso e tipo do instrumento antes de tratar BRA50 como equivalente ao WIN. Resultados semelhantes entre corretoras não isolam sozinhos MT5 ou B3 como causa.
+
+10. RASTREABILIDADE
+CONFERENCIA.json registra contagens, limites, hashes SHA-256 dos arquivos e referências.
+RESUMO_POR_FONTE.csv separa ano/duração.
+COBERTURA.csv lista os arquivos recebidos e seus limites.
+OHLC_DIVERGENTE.csv contém somente três diferenças.
+EXTRAS_MT5.csv contém as duas barras extras dentro dos intervalos das fontes.
+QUANTIDADE_DIVERGENTE.csv contém 147 diferenças de quantidade.
+COMPARACAO_POR_DIA.csv registra os 888 confrontos diários.
+CONTEXTO_877_DATAS.csv registra abertura/HLC anterior para as datas operacionais.
+LACUNAS_M1.csv preserva os 19 saltos intradiários.
+analisar_cobertura.py permite reproduzir a análise com os diretórios locais dos brutos e a tabela de contextos; não opera o terminal.
+Os arquivos de auditoria publicados são derivados. Os históricos brutos e ZIPs originais enviados permanecem preservados localmente.
