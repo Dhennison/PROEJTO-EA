@@ -1,0 +1,14 @@
+XP DEMO — RETORNO APOS HIBERNACAO — 09/11/2026
+Trecho recebido: 15:55:44 a 16:03:00.
+
+Ao retornar, o terminal registrou DESCONECTADO, dados diarios nao conferidos e inventario indisponivel; as entradas permaneceram bloqueadas nessa fase. Dados diarios voltaram a CONFERIDOS as 15:57:14 e inventario com duas leituras conferidas as 15:57:23. Conciliacao ALL_CHAINS_RECONCILED e transport=DEMO_ONLY as 15:57:24, mantendo unresolved=0; ultima revisao observada=130.
+
+Dois deals da R38.2 foram recuperados do historico:
+Venda de 1 contrato WINZ26 a 172330 em 12:28:10.345, seguida de compra de encerramento a 172705 por SL em 13:33:33.600, horarios nominais do historico do servidor. Resultado: -375 pontos. A impressao dos eventos as 15:57 e o momento da conciliacao, nao o momento de execucao.
+Entrada e saida correspondem a posicao/ordem original 2588105420. O preco de saida corresponde exatamente ao SL fixo. O primeiro toque matematico consta 46ms antes do preenchimento. Posicao historica reconciliada com entered=1, exited=1 e residual=0. Valores SL_observed/TP_observed zero nesse registro de posicao ja encerrada nao demonstram ausencia de protecao: o deal nativo confirma SL e preco de encerramento.
+
+Os cinco tickets e horarios de aceite sao os mesmos do trecho da manha, todos com entry_attempt=1. Nao ha novos DEMO_RESPONSE nesse log. R38.2 esta consumed=1; os outros quatro niveis continuam sem toque/consumo no ultimo estado registrado. A ausencia de reenvio e sustentada pelos estados/tentativas e pelo log, sem declarar integridade de todas as operacoes futuras.
+
+O historico foi reconstruido e avancou ate 16:03:00 exclusivo, com 1638263 ticks e OHLC das barras disponiveis conferido. A JANELA_ATUAL_INVALIDA_OU_DEFASADA as 16:00:03 voltou a CONFERIDA as 16:00:19. Nao ha indicacao de bloqueio permanente ou duplicacao no trecho. A leitura atual do terminal apos esse horario nao esta disponivel nesta analise.
+
+Este caso demonstra uma pendente ja aceita e seu SL nativo atuando durante a hibernacao nesta conta DEMO. Nao significa que todas as funcoes do EA rodam com o notebook hibernado: corte por horario e cancelamentos gerados pelo EA exigem terminal em execucao. Nao e execucao em conta real e nao homologa os demais cenarios operacionais.
