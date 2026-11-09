@@ -1,0 +1,96 @@
+{
+  "period": [
+    "2026-09-01",
+    "2026-09-21"
+  ],
+  "days": 14,
+  "bars_each_run": 7875,
+  "all_OHLC_exact_against_original_Work_in_both_runs": true,
+  "native_M1_files_byte_identical": true,
+  "daily_input_files_byte_identical": true,
+  "specification_identical_except_initial_tick_millisecond": true,
+  "ohlc_callbacks": 31500,
+  "ohlc_callbacks_per_bar": 4,
+  "generated_tick_callbacks": 24120038,
+  "closed_operations_each_run": 33,
+  "same_date_level_and_exit_motive_in_both_runs": true,
+  "same_entry_and_exit_minute_in_both_runs": true,
+  "same_exit_motive_as_Work": 26,
+  "same_seven_different_from_Work": true,
+  "different_from_Work_6_target_to_stop_1_stop_to_target": true,
+  "Work_points": "3839.308998",
+  "generated_ticks_points": "1070.0000000000",
+  "OHLC_points": "565.0000000000",
+  "ticks_minus_OHLC": "505.0000000000",
+  "ohlc_minus_Work": "-3274.3089980000",
+  "ohlc_all_33_entries_and_33_exits_at_requested_prices": true,
+  "change_counts": {
+    "entrada_media_changed": 17,
+    "saida_media_changed": 26,
+    "pontos_EA_brutos_changed": 28,
+    "primeiro_in_msc_changed": 33,
+    "ultimo_out_msc_changed": 33,
+    "entry_minute_changed": 0,
+    "exit_minute_changed": 0,
+    "ticks_points_higher": 18,
+    "ticks_points_lower": 10,
+    "ticks_points_equal": 5
+  },
+  "ticks_minus_OHLC_by_Work_class": {
+    "MOTIVOS_DIFERENTES": "0E-10",
+    "MESMO_MOTIVO_CONFERIR_PRECOS": "505.0000000000"
+  },
+  "residual_each_run": 0,
+  "native_cutoff_position_close_exercised": false,
+  "source_hashes": {
+    "TICKS_GERADOS": {
+      "COMPARATIVO.csv": "f71efea2f65b3149dcebbfba91d1e87e7b6d6e313252b923558c3892586e4e2c",
+      "DEALS.csv": "c1010f3f85f3bc867f1db00931718559a223cadb2ff56e04b08c5d35e270920e",
+      "DIAS.csv": "4c233e6caabf293337ff0b0537ce7f61aa36fb32af44d33ded6ae95f1f7bb606",
+      "ESPECIFICACAO.txt": "a14b29fc9ca6889b1a028c58a745361d49bb4e8c6d5a16391c4fc8162bbb46fe",
+      "M1_ONTICK.csv": "bf01d3aada9e3389f6e2d475513cfb272d7cb93577f1328a0cdd79e22137d4bf",
+      "M1_TESTER.csv": "2243628953716c19019288e705c6ecb28f6f55e93618a88ec8f67a2cc58d3f9f",
+      "ORDERS.csv": "638650e8c2cf7793640ef8aacf3e03ade3ffbcbcadbe59043765cc91584c5e3f",
+      "REFERENCIA_USADA.csv": "98c61427617ddfe42cecbb997d961809c3094812360f2425a6a04d19026d9286",
+      "RESULTADO.txt": "a8ab96b633523ea05cab55a47ed5371ad0216015c4ee53710394ea591440d45a"
+    },
+    "M1_OHLC": {
+      "COMPARATIVO.csv": "1ac41989846c6120fdfd30ea09309f7fe8cfb07f2dc128b3b3971337250af988",
+      "DEALS.csv": "23d8ddf7086fccccf6a4a681aa3d715bd3c60f067063d5d1570c28cb787c0a09",
+      "DIAS.csv": "0875b2b856d313d2de9144c28e146a1be4221657d251bf12540700be322b33e2",
+      "ESPECIFICACAO.txt": "135256b8da11e99864969feb803d417966a07a6138c636b6316db2803645d374",
+      "M1_ONTICK.csv": "b72df04c8075cafb9977a5d06eae155bf0fc34b7fac927d71a8bfc0a229c07ee",
+      "M1_TESTER.csv": "2243628953716c19019288e705c6ecb28f6f55e93618a88ec8f67a2cc58d3f9f",
+      "ORDERS.csv": "9be4b30006b74bf3b4555c4bf0e72a56d8fffe771714287c8e0060d9f73f2b76",
+      "REFERENCIA_USADA.csv": "98c61427617ddfe42cecbb997d961809c3094812360f2425a6a04d19026d9286",
+      "RESULTADO.txt": "31312a431da1b7786ffe93e0398dba86cbf11dad66806c752faaf67130c9e6c1"
+    }
+  },
+  "input_hashes": {
+    "ticks_zip": {
+      "file": "PM110_1788220800_2639.zip",
+      "sha256": "320f4203afb0ae14425ccd7fc01f8279891ad962341f9599af7e98295440d759"
+    },
+    "ohlc_zip": {
+      "file": "PM110_1788220800_643.zip",
+      "sha256": "bfe1cef98901c4f860d0e30e270a57db4f1ada509d638f8abfa979083d23090a"
+    },
+    "ticks_diary": {
+      "file": "Texto colado.txt",
+      "sha256": "519309b4e33dd017d24ce2183d6aeeb483fc731bf14878d82e6802ef40385d3c"
+    },
+    "ohlc_diary": {
+      "file": "Texto colado.txt",
+      "sha256": "48bbebbbfc6451b057949920fbfbb5f75f60000897915d4f474dd6d34263a2b3"
+    },
+    "original_work_M1": {
+      "file": "WINFUT_F_0_1min_01-01-2026_22-09-2026.csv",
+      "sha256": "f1343f8181fce176b5d266bd1710c5aadfea8ed8af8941da1ee6b3fd9469dc45"
+    },
+    "Work_operations": {
+      "file": "OPERACOES_WORK_SETEMBRO.csv",
+      "sha256": "46ae35eb19b321215f388af6356e89cc937b5308f2ad63113e5d2b0e9d5538c7"
+    }
+  },
+  "limits": "Both Tester runs are synthetic. Identical candles and two-mode motive agreement do not establish real intrabar chronology or live performance. Analytical Python candle grade5 control is not the native Model=1 result."
+}

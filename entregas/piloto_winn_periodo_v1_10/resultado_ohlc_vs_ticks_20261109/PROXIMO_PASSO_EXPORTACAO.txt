@@ -1,0 +1,19 @@
+PROXIMO PASSO — EXPORTACAO PURA M1, SEM ORDENS
+Usar o MT5 PRINCIPAL DA GENIAL. Nao e o da XP e nao exige BRL nem operacao no Tester.
+
+1. Copie a pasta MQL5 do ZIP ModeloD_WINN_Periodo_v1_10_Setembro para a raiz da Pasta de Dados do principal da Genial, aberta por Arquivo > Abrir Pasta de Dados.
+2. No MetaEditor desse terminal (F4), abra e compile:
+   MQL5\Experts\ModeloD_PilotoWINN_Periodo\Exportar_M1_WINN_Sem_Ordens.mq5
+   Envie primeiro o resultado da compilacao.
+3. Apos compilar, abrir NOVO grafico WIN$N nesse terminal e anexar o exportador pelo Navegador > Experts. Nao o executar no Tester nem substituir o EA da XP.
+4. Parametros a usar:
+   InpSymbol = WIN$N
+   InpInicio = 2023.02.27 00:00:00
+   InpFim = 2026.09.22 00:00:00 (exclusivo)
+   InpMaxTentativasPorMes = 10
+   O inicio anterior a marco inclui o contexto do primeiro pregao. Sobrepoe apenas o valor padrao do input, sem alterar fonte ou estrategia. Sao 44 janelas mensais, com fevereiro/2023 e setembro/2026 parciais.
+5. Aguardar M1EXP110;END, observando os estados de exportacao/pedencias por mes. O exportador nao envia ordens, nao altera cache/historico e exige duas leituras validas iguais para exportar cada janela.
+6. Compactar e enviar a pasta EXPORT110_... de:
+   %APPDATA%\MetaQuotes\Terminal\Common\Files\ModeloD_Cobertura_WINN
+   Incluir STATUS.csv, ESPECIFICACAO.txt e todos os M1_AAAAMM.csv criados, mais o log Experts da exportacao. Se o ZIP ficar grande, dividir por ano sem omitir STATUS.
+Cobertura, dias sem dados, barras extras e OHLC serao conferidos externamente. Vazio estavel de um mes nao prova ausencia global no servidor. Onde a referencia original e M5, agregar M1 antes de comparar.

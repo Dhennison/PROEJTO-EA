@@ -1,0 +1,147 @@
+COMPARACAO FINAL DOS DOIS MODELOS — WIN$N / GENIAL / SETEMBRO 2026
+Analise dos arquivos recebidos em 09/11/2026.
+
+CONCLUSAO
+A rodada nativa de 1 MINUTO OHLC concluiu os mesmos 14 pregoes e 33 operacoes, com +565 pontos. A rodada anterior de ticks gerados havia somado +1070. As sete trocas de motivo frente ao Work permaneceram exatamente nas mesmas datas/niveis: seis ALVOS do Work viraram STOP nos dois testes, e um STOP do Work virou ALVO nos dois. Nenhuma das 33 operacoes mudou de motivo entre os modelos.
+Nos dois testes, os 7.875 candles coincidem exatamente com o Work em OHLC. O arquivo M1_TESTER.csv e identico BYTE A BYTE entre as rodadas, assim como REFERENCIA_USADA.csv. Assim, a escolha do modelo alterou preenchimentos e segundos dos eventos, mas nao resolveu a divergencia da convencao de candle do Work com a sequencia/execucao do Tester neste lote.
+Em 1 minuto OHLC, TODAS as 33 entradas e TODAS as 33 saidas foram registradas exatamente nos limites/SL/TP solicitados. A diferenca de pontos em relacao ao Work persiste mesmo nesse controle sem diferenca de preco entre pedido e preenchimento.
+Nao e justificavel concluir que um dos modelos revelou a cronologia real, escolher o que deu maior lucro ou alterar as regras aprovadas para produzir igualdade artificial. Os dois testes sao reproducoes sinteticas.
+
+1. AMBIENTE CONTROLADO E AUDITORIA
+Mesmo EA_ModeloD_WINN_Periodo v1.10, WIN$N nativo, GenialInvestimentos-PRD, build 6295, Hedge/BRL, um contrato por nivel, periodo 01/09/2026 a 22/09/2026 exclusivo, sem atrasos e otimizacao. Referencias diarias identicas.
+O Diario novo confirma "1 minutes OHLC ticks generating". O anterior confirmava ausencia de ticks reais e geracao substituta em todo o intervalo.
+Os ESPECIFICACAO.txt diferem apenas no milissegundo da cotacao anterior ao inicio: .928 no primeiro contra .000 no controle. Servidor, build, moeda, modo de conta, propriedades e precos dessa cotacao sao iguais. Isso foi registrado, sem atribuir um efeito causal a essa precisao inicial.
+Os nove arquivos de cada retorno foram lidos e confrontados entre si e com a fonte Work original. Os precos nao foram substituidos por referencias teoricas. Os arquivos brutos permanecem locais; as tabelas publicadas sao resultados derivados. SHA256 e script de conferencia acompanham o documento.
+
+2. DADOS
+- 14 pregoes completos, 7.875 barras M1 e 31.500 campos OHLC exatos por comparacao com o Work.
+- OnTick do controle OHLC tambem reproduz todos os campos do Work, sem tolerancia.
+- Volume real das barras nativas coincide com a quantidade original nos 7.875 minutos. Isso nao certifica ticks reais.
+- Ticks gerados: 24.120.038 callbacks.
+- 1 minuto OHLC: 31.500 callbacks, exatamente QUATRO por barra M1.
+- Nenhuma duplicata, falta ou barra extra nos conjuntos comparados.
+- As 14 tabelas de entrada/ajuste/contexto sao as mesmas; os limites e protecoes solicitados sao identicos em todas as 70 combinacoes data/nivel.
+- O dia 03/09 continua com zero operacoes nos dois modelos, com dados presentes. Nao foi tratado como ausencia de dados.
+
+3. ORDENS E NEGOCIOS
+Em cada rodada: 69 pendentes iniciais, 33 entradas preenchidas, 33 ordens de saida e 36 pendentes canceladas as 18h, total de 102 ordens historicas e 66 deals.
+Cada posicao tem entrada de 1 e saida de 1, sem parcial, duplicidade ou saldo. Todas as ordens existiam antes dos preenchimentos. SL/TP ancorados nas linhas teoricas e precos na grade5 conferem.
+As duas rodadas negociaram as mesmas 33 combinacoes data/nivel. Os minutos de entrada e saida coincidem entre os modelos em todas elas. Os segundos/milissegundos mudaram em todas as 33 entradas e saidas, como esperado em sequencias com densidades distintas.
+14/14 dias completos, residual=0, global_block=0, unknown_date_events=0, history_ok=1 e io_failed=0 no controle. Nenhum fechamento de posicao por horario foi exercitado: no corte, so restavam pendentes.
+
+4. RESULTADOS
+Work matematico original: +3839.308998 pontos, 24 ALVOS e 9 STOPS.
+EA / ticks gerados: +1070 pontos, 19 ALVOS e 14 STOPS.
+EA / 1 minuto OHLC: +565 pontos, 19 ALVOS e 14 STOPS.
+Ticks menos OHLC: +505 pontos.
+OHLC menos Work: -3274.308998 pontos.
+Ticks menos Work: -2769.308998 pontos.
+Mesmo motivo do Work: 26/33 nos dois modelos.
+Motivo diferente do Work: as mesmas 7/33 nos dois modelos.
+
+Comparando SOMENTE os dois modelos:
+- Preco medio de entrada mudou em 17 operacoes.
+- Preco medio de saida mudou em 26.
+- Pontuacao mudou em 28 e permaneceu igual em 5.
+- Ticks tiveram mais pontos em 18, menos em 10 e igual em 5; nao existe melhora uniforme de preenchimento.
+- Nenhum motivo final nem minuto de entrada/saida mudou.
+Os +505 liquidos pertencem a diferenca de precos executados neste lote. Nao sao uma estimativa do vies em outros periodos ou da execucao real.
+
+5. REFERENCIA DE 21/09
+R38.2:
+ Ticks gerados: entrada188305, saida187605, +700.
+ OHLC: entrada188260, saida187680, +580.
+R61.8:
+ Ticks gerados: entrada189200, saida188970, +230.
+ OHLC: entrada189200, saida188965, +235.
+TOTAL de 21/09: +930 no primeiro contra +815 no controle. As linhas/SL/TP nao mudaram. O controle atribuiu os precos solicitados; isso nao comprova que tais preenchimentos ocorreriam no mercado real.
+O fato de uma saida por TP aparecer como ordem BUY/SELL de tipo mercado no historico do Tester nao autoriza inferir uma regra universal de execucao para todos os servidores/mercados. Nesta rodada OHLC os precos de saida foram exatamente os da protecao solicitada.
+
+6. AS SETE TROCAS QUE PERSISTIRAM
+01/09 R38.2: Work STOP, EA ALVO nos dois modelos. A grade5 reduziu a entrada de 180935.837333... para 180935. A maxima 09:47 foi exatamente 180935: ambos os testes entram antes da barra de entrada matematica do Work, 09:51. O alvo dos testes ocorre em 09:50, antes da entrada do Work. A mudanca do momento da entrada e reproduzida tambem pelo controle teorico de candles com grade5.
+Os outros seis: 10/09 S38.2 e R61.8; 14/09 S38.2; 16/09 S38.2; 17/09 S38.2 e S61.8. Work ALVO na propria barra de entrada; ambos os modelos STOP em barra posterior.
+Em cada uma dessas seis barras, a abertura ja estava alem do alvo antes de atingir a entrada. O Work aplica uma convencao de candle que credita o alvo pela maxima/minima dessa barra. O OHLC nao garante que tenha havido esse preco DEPOIS da entrada.
+Exemplo de 10/09 S38.2: O187270 H187305 L186760 C186905, entrada matematica186786.214666..., alvo187021.226. Duas trajetorias possiveis preservam o mesmo OHLC:
+ A: OPEN -> HIGH -> LOW (entra comprado) -> CLOSE. O alvo esteve antes da entrada; a posicao pode continuar aberta para a barra seguinte.
+ B: OPEN -> LOW (entra comprado) -> HIGH (alcanca alvo) -> CLOSE.
+Esses sao contraexemplos logicos de ordem temporal, nao reconstrucoes de negocios reais. A barra sozinha nao escolhe entre eles. O resultado dos dois Testers e compativel com ausencia de execucao de alvo apos a entrada; o Work preserva sua convencao. Nao foram exportados todos os Bid/Ask vizinhos para isolar cada gatilho.
+A referencia original continua com Ambiguo=NAO nesses casos. A incerteza entrada-alvo foi documentada em campo separado, sem reclassificar ou alterar os stops das ambiguidades originais do Work.
+
+7. DECOMPOSICAO DOS GRUPOS
+26 operacoes com o mesmo motivo do Work:
+ Work: +2881.295666
+ OHLC: +2890, exatamente nos precos solicitados
+ Ticks: +3395
+ Grade menos Work: +8.704334
+ Ticks menos OHLC nesse grupo: +505.
+7 com motivo diferente do Work:
+ Work: +958.013332
+ OHLC: -2325
+ Ticks: -2325.
+A igualdade da soma -2325 e uma compensacao neste conjunto, nao igualdade de todos os sete preenchimentos. Em 01/09 R38.2, ticks superou OHLC em 5; nas seis operacoes restantes, o saldo foi -5.
+
+8. NAO CONFUNDIR REPLAY TEORICO COM O CONTROLE NATIVO
+O +4490 citado na analise anterior era um replay em Python da convencao de candles do Work com niveis da grade5. Nao era execucao do MT5 nem o resultado previsto do seu modo 1 minuto OHLC.
+O novo +565 e um resultado NATIVO do Tester, que entrega quatro eventos por minuto e executa ordens/posicoes em uma sequencia. Mesmo usando candles M1, esse procedimento nao equivale a testar maxima/minima da barra inteira como se o alvo necessariamente tivesse ocorrido depois da entrada.
+A comparacao de dados passou. A equivalencia do resultado com a convencao Work nao passou neste lote. A auditoria nao encontrou erro de tabela diaria, calculo das linhas, normalizacao aprovada, preco solicitado, ancoragem de protecao, duplicacao ou mistura de datas como explicacao para essas sete trocas.
+Esses fatos nao certificam a estrategia ao vivo, nem revelam a cronologia historica real. Preservar em separado Work original, controle normalizado e deals do Tester.
+
+9. CONTINUIDADE
+Esta comparacao encerra o A/B dos dois modelos para o lote: nao e necessario repeti-los sem uma nova questao especifica.
+Proximo controle de dados: exportar o WIN$N M1 do periodo longo, sem ordens, pelo exportador ja incluido no pacote. Preferir o principal da Genial, que anunciava historico mais antigo, mas verificar retornos e STATUS em vez de assumir cobertura.
+Ao iniciar a exportacao, usar 27/02/2023 como inicio para incluir contexto anterior ao primeiro pregao de marco/2023, e 22/09/2026 como fim exclusivo. Isso gera 44 janelas mensais (fevereiro parcial mais o periodo originalmente planejado), sem alterar o codigo. A meta de comparacao continua marco/2023 a setembro/2026; os dias extras servem de contexto.
+Onde o Work original estiver em M5, agregar M1 em M5 antes de comparar. Depois ampliar os lotes com referencias diarias e horarios historicos correspondentes, mantendo estas limitacoes explicitadas nos relatorios.
+Continuam pendentes: demonstracao nativa de uma posicao aberta no corte, um caso originalmente ambiguo do Work, cobertura efetiva do historico longo e a investigacao ActivTrades com produto/fuso identificados.
+
+10. POR PREGAO
+Data;Work pontos;Ticks gerados pontos;1 minuto OHLC pontos;Ticks menos OHLC
+2026-09-01;-262.5853330000;430.0000000000;385.0000000000;45.0000000000
+2026-09-02;-825.0000000000;-925.0000000000;-825.0000000000;-100.0000000000
+2026-09-03;0.0000000000;0.0000000000;0.0000000000;0E-10
+2026-09-04;865.5853340000;915.0000000000;865.0000000000;50.0000000000
+2026-09-08;399.4300000000;395.0000000000;400.0000000000;-5.0000000000
+2026-09-09;-755.9950000000;-695.0000000000;-755.0000000000;60.0000000000
+2026-09-10;386.8419990000;-755.0000000000;-820.0000000000;65.0000000000
+2026-09-11;792.6879990000;940.0000000000;795.0000000000;145.0000000000
+2026-09-14;774.2470000000;5.0000000000;-40.0000000000;45.0000000000
+2026-09-15;-196.6430000000;-210.0000000000;-195.0000000000;-15.0000000000
+2026-09-16;501.5070000000;35.0000000000;10.0000000000;25.0000000000
+2026-09-17;687.1099990000;-700.0000000000;-730.0000000000;30.0000000000
+2026-09-18;657.9313340000;705.0000000000;660.0000000000;45.0000000000
+2026-09-21;814.1916660000;930.0000000000;815.0000000000;115.0000000000
+
+11. OPERACAO POR OPERACAO
+Data;Nivel;Work motivo;Work pontos;EA motivo nos dois;Ticks pontos;OHLC pontos;Ticks menos OHLC
+2026-09-01;R38.2;STOP;-375;ALVO;280.0000000000;275.0000000000;5.0000000000
+2026-09-01;R61.8;ALVO;112.414667;ALVO;150.0000000000;110.0000000000;40.0000000000
+2026-09-02;R38.2;STOP;-375;STOP;-395.0000000000;-375.0000000000;-20.0000000000
+2026-09-02;R61.8;STOP;-450;STOP;-530.0000000000;-450.0000000000;-80.0000000000
+2026-09-04;S38.2;ALVO;379.794667;ALVO;430.0000000000;380.0000000000;50.0000000000
+2026-09-04;R38.2;ALVO;485.790667;ALVO;485.0000000000;485.0000000000;0E-10
+2026-09-08;R61.8;ALVO;399.43;ALVO;395.0000000000;400.0000000000;-5.0000000000
+2026-09-09;S38.2;ALVO;269.005;ALVO;285.0000000000;270.0000000000;15.0000000000
+2026-09-09;S50;STOP;-375;STOP;-375.0000000000;-375.0000000000;0E-10
+2026-09-09;S61.8;STOP;-650;STOP;-605.0000000000;-650.0000000000;45.0000000000
+2026-09-10;S38.2;ALVO;235.011333;STOP;-360.0000000000;-375.0000000000;15.0000000000
+2026-09-10;S50;ALVO;379.881333;ALVO;405.0000000000;380.0000000000;25.0000000000
+2026-09-10;R38.2;STOP;-375;STOP;-335.0000000000;-375.0000000000;40.0000000000
+2026-09-10;R61.8;ALVO;146.949333;STOP;-465.0000000000;-450.0000000000;-15.0000000000
+2026-09-11;S38.2;ALVO;187.269333;ALVO;210.0000000000;190.0000000000;20.0000000000
+2026-09-11;S50;ALVO;302.709333;ALVO;415.0000000000;300.0000000000;115.0000000000
+2026-09-11;S61.8;ALVO;302.709333;ALVO;315.0000000000;305.0000000000;10.0000000000
+2026-09-14;S38.2;ALVO;439.241;STOP;-335.0000000000;-375.0000000000;40.0000000000
+2026-09-14;S50;STOP;-375;STOP;-370.0000000000;-375.0000000000;5.0000000000
+2026-09-14;S61.8;ALVO;710.006;ALVO;710.0000000000;710.0000000000;0E-10
+2026-09-15;R38.2;STOP;-375;STOP;-385.0000000000;-375.0000000000;-10.0000000000
+2026-09-15;R61.8;ALVO;178.357;ALVO;175.0000000000;180.0000000000;-5.0000000000
+2026-09-16;S38.2;ALVO;118.479;STOP;-385.0000000000;-375.0000000000;-10.0000000000
+2026-09-16;S50;ALVO;191.514;ALVO;195.0000000000;195.0000000000;0E-10
+2026-09-16;S61.8;ALVO;191.514;ALVO;225.0000000000;190.0000000000;35.0000000000
+2026-09-17;S38.2;ALVO;150.331333;STOP;-410.0000000000;-375.0000000000;-35.0000000000
+2026-09-17;S50;STOP;-375;STOP;-385.0000000000;-375.0000000000;-10.0000000000
+2026-09-17;S61.8;ALVO;243.001333;STOP;-650.0000000000;-650.0000000000;0E-10
+2026-09-17;R38.2;ALVO;668.777333;ALVO;745.0000000000;670.0000000000;75.0000000000
+2026-09-18;S38.2;ALVO;251.460667;ALVO;295.0000000000;255.0000000000;40.0000000000
+2026-09-18;S50;ALVO;406.470667;ALVO;410.0000000000;405.0000000000;5.0000000000
+2026-09-21;R38.2;ALVO;579.863333;ALVO;700.0000000000;580.0000000000;120.0000000000
+2026-09-21;R61.8;ALVO;234.328333;ALVO;230.0000000000;235.0000000000;-5.0000000000
