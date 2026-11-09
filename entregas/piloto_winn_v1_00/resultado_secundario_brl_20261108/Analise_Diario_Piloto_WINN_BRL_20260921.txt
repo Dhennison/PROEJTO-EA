@@ -1,0 +1,33 @@
+PILOTO WIN$N / GENIAL — RESULTADO PRELIMINAR DO DIARIO EM BRL
+
+ESCOPO
+Simulacao de 21/09/2026 a 22/09/2026, M5, mesmo piloto experimental v1.00, um contrato por nivel. Instalacao secundaria GenialInvestimentos-PRD, agente build 6295, deposito 1.000.000 BRL, lucro em pips desativado por INI. Analise baseada no Diario enviado; arquivos finais da nova pasta ainda nao recebidos.
+
+CONCLUSAO
+A rodada concluiu. Cinco pendentes aceitas, duas operacoes encerradas por TP, tres pendentes de suporte canceladas as 18h e nenhum residual no resumo. Total apurado dos quatro deals: +930 pontos brutos. Resumo: blocked=0, history_ok=1, cut_seen=1, closed=2, residual=0, io_failed=0. O Tester informa 1.699.111 ticks e 113 barras M5 geradas; consulta final retorna 563 barras M1. Essas contagens nao certificam OHLC completo sem comparar os arquivos.
+O Diario declara explicitamente: "no real ticks, every tick generation used". O teste usa trajetoria sintetica, mesmo com a opcao de ticks reais selecionada.
+
+COMPARACAO POR OPERACAO
+Nivel;Entrada solicitada;Entrada efetiva;TP solicitado;Saida efetiva;Pontos EA;Pontos Work matematicos
+R38.2;188260;188305;187680;187605;700;579.863333333333...
+R61.8;189200;189200;188965;188970;230;234.328333333333...
+TOTAL;;;;;930;814.191666666666...
+As entradas e saidas caem nas mesmas barras de minuto da referencia Work: R38.2 09:02/09:03; R61.8 09:19/09:20. Nenhuma das duas e ambigua no Work. As tres linhas de suporte nao executaram.
+
+DECOMPOSICAO DA DIFERENCA
+Se as vendas tivessem entrado e saido exatamente nos precos solicitados normalizados a 5 pontos: R38.2 +580, R61.8 +235, total +815.
+R38.2: entrada efetiva 45 pontos acima do limite (favoravel a venda); saida efetiva 75 abaixo do TP (favoravel a venda). Resultado +700 = 580+45+75.
+R61.8: entrada no limite; saida 5 pontos acima do TP (adversa a venda). Resultado +230 = 235-5.
+Execucao acrescentou 115 pontos ao total normalizado. A normalizacao acrescenta aproximadamente 0.808333 ao Work matematico. Total EA menos Work original: aproximadamente +115.808333 pontos.
+Os precos e os motivos TP sao fatos do Diario; a regra interna que produziu esses preenchimentos ainda nao foi isolada. Nao atribuir automaticamente a falha de calculo do EA nem tratar melhorias de preco do fluxo sintetico como ganhos reproduziveis no mercado real.
+
+MOEDA E AMBIENTE
+Nenhuma mencao a BRLUSD10 no Diario desta rodada. O INI aplicou BRL e a rodada concluiu, resolvendo o bloqueio pratico para este controle. A causa exata das finalizacoes anteriores continua nao demonstrada: tambem mudaram a instalacao/cache e o build 6231 para 6295.
+O historico inicialmente anunciado no secundario comeca em 17/12/2024, diferente do anuncio do principal em 03/01/2022. Isso nao prova ausencia de candles antigos no servidor nem certifica cobertura de marco/2023 em diante. Conferir cobertura quando ampliar o periodo.
+
+CORTE
+As tres pendentes de suporte foram canceladas as 18:00:00. Nao havia posicao aberta nesse horario; portanto esta rodada nao exercitou fechamento de posicao a mercado no corte nem operacao com pontuacao parcial por horario.
+
+PROXIMA CONFERENCIA
+Receber a pasta Common\Files\ModeloD_Piloto_WINN\WINN100_1789948800_300 com RESULTADO, ESPECIFICACAO, DEALS, ORDERS, COMPARATIVO, M1_ONTICK e M1_TESTER. Comparar as 563 barras com a referencia original e conferir preenchimentos, protecoes e cancelamentos pelos registros completos. Nao repetir esta rodada antes dessa leitura.
+O resultado valida a viabilidade deste piloto de transporte no WIN$N em BRL. Nao homologa o EA operacional completo nem ambiguidades de mercado real nem todo o periodo do Work.
