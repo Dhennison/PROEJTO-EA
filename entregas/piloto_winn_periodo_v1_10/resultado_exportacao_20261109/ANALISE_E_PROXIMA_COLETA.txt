@@ -1,0 +1,74 @@
+MODELO D — AUDITORIA DA EXPORTAÇÃO M1 DO WIN$N — 09/11/2026
+
+1. Escopo e conclusão
+Fonte: EXPORT110_1794241201_5300.zip e Diário da exportação, terminal principal GenialInvestimentos-PRD, build 6231. Coleta somente de leitura, sem ordens e sem alteração do histórico. Janela solicitada: 27/02/2023 inclusive até 22/09/2026 exclusivo. Foram solicitadas 44 janelas mensais: 8 exportadas com duas leituras válidas idênticas, 36 pendentes. Não houve falha de gravação. Total retornado: 81.535 barras M1.
+
+A coleta longa ainda não está completa. O usuário confirmou que “Máx. de barras no gráfico” está em 100.000. Esse limite é insuficiente para a cobertura M1 pretendida. O corte retornado no meio do pregão é compatível com limitação local, mas esta rodada não prova a causa de todos os erros nem ausência de dados no servidor. Deve-se ajustar o limite, reiniciar esse terminal e repetir a coleta antes de concluir sobre a cobertura antiga.
+
+2. Cobertura
+36 janelas pendentes: 27/02/2023 até janeiro de 2026, inclusive. Cada janela esgotou 10 tentativas, com retorno -1 e erro 4401. Não classificar esses meses como comprovadamente sem histórico.
+Fevereiro de 2026: 2.307 barras, apenas cobertura parcial. Primeiro registro em 23/02/2026 às 17:38; último em 27/02. Dia 23 tem apenas 47 registros e os dias 24–27 têm 565 cada.
+Março: 12.412 barras; abril: 11.260; maio: 11.280; junho: 11.825; julho: 12.748; agosto: 11.828; setembro até dia 21: 7.875.
+Último registro retornado: 21/09/2026 às 18:24.
+
+3. Comparação M1 com a fonte original do Work, março–setembro de 2026
+Foram comparados os candles fornecidos, sem completar minutos artificialmente:
+- MT5: 79.228 barras; Work: 79.227.
+- 79.227 horários em comum; nenhum horário do Work ausente no MT5.
+- 79.226 barras em comum com todos os quatro preços OHLC idênticos.
+- Uma barra com diferença de OHLC: 10/03/2026 às 18:24.
+- Uma barra extra no MT5: 10/03/2026 às 18:25.
+- Nenhuma divergência de OHLC em horário anterior às 18:00.
+- Os OHLC agregados por dia coincidem nas 141 datas observadas.
+Isso compara registros recebidos; não certifica automaticamente a completude de todas as sessões.
+
+Detalhe do fechamento de 10/03/2026:
+MT5 18:24: O=185845 H=185885 L=185710 C=185710; quantidade=2513.
+MT5 18:25: O=185725 H=185950 L=185725 C=185950; quantidade=24279.
+Work 18:24: O=185845 H=185950 L=185710 C=185950; quantidade=26792.
+A agregação analítica das duas barras MT5 reproduz exatamente o OHLC e a quantidade da barra Work. Isso é compatível com uma diferença na distribuição temporal dos registros do fechamento, mas não prova a regra do fornecedor. Os dados brutos não foram alterados ou fundidos para declarar igualdade minuto a minuto.
+
+Há 39 diferenças de quantidade/volume_real nos horários em comum, incluindo esse fechamento. As outras 38 permanecem registradas separadamente, sem causa estabelecida. Igualdade de preços não implica igualdade de volumes. Não houve alteração das regras do Modelo D.
+
+Exceções compartilhadas preservadas:
+- 10/07/2026: minuto 09:56 ausente nas duas fontes, entre 09:55 e 09:57.
+- 31/07/2026: primeiro registro às 12:34, com 351 registros no dia nas fontes comparadas. Isso não certifica uma sessão completa.
+
+4. Comparação de fevereiro na duração correta
+A fonte original disponível do Work para janeiro–fevereiro é M5. Por isso os M1 retornados foram agregados em intervalos de cinco minutos para uma comparação derivada, preservando abertura do primeiro registro, máxima, mínima, fechamento do último e soma de quantidade.
+461 intervalos completos de cinco minutos coincidem exatamente com o Work em OHLC e quantidade.
+O intervalo 23/02/2026 17:35 tem apenas os minutos 17:38 e 17:39 disponíveis. Ele foi marcado parcial e não aprovado como M5 completo.
+A coleta de fevereiro continua incompleta, mesmo com a concordância dos intervalos disponíveis.
+
+5. Próxima ação — somente no MT5 principal da Genial
+1) Ferramentas > Opções > Gráficos.
+2) Alterar “Máx. de barras no gráfico” de 100000 para 1000000 e confirmar em OK.
+3) Fechar e reabrir somente esse MT5 principal da Genial pelo atalho habitual. Não fechar a XP que está com o EA DEMO.
+4) Abrir um gráfico WIN$N e executar o mesmo Exportar_M1_WINN_Sem_Ordens já compilado. Não precisa recompilar nem alterar código.
+5) Usar os parâmetros:
+   InpSymbol = WIN$N
+   InpInicio = 2023.02.27 00:00:00
+   InpFim (campo que aparece como “exclusivo”) = 2026.03.01 00:00:00
+   InpMaxTentativasPorMes = 10
+6) Manter o terminal aberto e conectado até a mensagem M1EXP110;END. O exportador pode avançar após tentativas pendentes; aguardar o resumo final.
+7) Compactar a NOVA pasta EXPORT110_... criada em:
+   %APPDATA%\MetaQuotes\Terminal\Common\Files\ModeloD_Cobertura_WINN
+8) Enviar o novo ZIP e o log da aba Experts, do START ao END.
+
+Essa repetição cobre 37 janelas: as 36 pendentes mais fevereiro de 2026 incompleto. Preservar a exportação atual; março–setembro já foi comparado e não precisa ser repetido nesta etapa. A ampliação do limite remove uma restrição local conhecida, mas não garante previamente que o servidor fornecerá todo o período.
+
+6. Limites do resultado e sequência
+Esta auditoria valida os registros disponíveis e identifica pendências de cobertura. Não é um backtest novo, não aprova desempenho e não fornece a trajetória real intrabar. As diferenças entre execução com ticks gerados, OHLC M1 e resultado matemático do Work continuam separadas. Os +115 pontos do piloto de 21/09 e as diferenças do piloto de setembro não constituem evidência de ganho real.
+Depois da nova coleta, comparar os meses antigos na duração da fonte original: M5 até fevereiro de 2026, M1 a partir de março. Só então ampliar as tabelas por data e a execução controlada do EA, preservando ajustes e regras auditados, incluindo corte histórico e ambiguidades.
+O teste na ActivTrades permanece pendente: precisa identificar o símbolo e especificações no terminal; BRA50/CFD não pode ser presumido idêntico ao contrato WIN da B3. Resultados semelhantes entre corretoras não isolam, por si só, MT5 ou B3 como causa.
+
+7. Evidência e reprodução
+CONFERENCIA_EXPORTACAO.json: contagens, limites, hashes SHA-256 dos arquivos recebidos e das fontes originais.
+COBERTURA_POR_JANELA.csv: cobertura e estado por janela.
+OHLC_M1_DIVERGENTE.csv e BARRA_EXTRA_MT5.csv: exceções de preço/horário.
+QUANTIDADE_M1_DIVERGENTE.csv: 39 diferenças de quantidade.
+OHLC_AGREGADO_POR_DIA.csv: comparação diária.
+FEVEREIRO_M5_CONFERIDO.csv: comparação derivada em M5.
+LACUNAS_COMPARTILHADAS.csv: salto intradiário observado nas duas fontes.
+analisar_exportacao.py: conferência reproduzível com os arquivos originais locais; não depende de credenciais nem opera o MT5.
+Os ZIPs e os históricos brutos recebidos foram preservados localmente; o arquivo de auditoria publica somente resultados derivados e o código da análise.

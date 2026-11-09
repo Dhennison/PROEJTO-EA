@@ -1,0 +1,76 @@
+{
+  "source": "Native terminal GenialInvestimentos-PRD, build 6231, not Tester",
+  "requested_windows": 44,
+  "exported_stable_windows": 8,
+  "pending_windows": 36,
+  "pending_error": 4401,
+  "pending_scope": [
+    "2023-02-27",
+    "2026-01-31"
+  ],
+  "exported_rows": 81535,
+  "first_returned_M1": "2026.02.23 17:38",
+  "last_returned_M1": "2026.09.21 18:24",
+  "February_M1_rows": 2307,
+  "February_coverage": "PARTIAL",
+  "March_September": {
+    "MT5_rows": 79228,
+    "Work_rows": 79227,
+    "common": 79227,
+    "missing_Work_rows_in_MT5": 0,
+    "extra_MT5_rows": 1,
+    "exact_OHLC_rows": 79226,
+    "different_OHLC_rows": 1,
+    "price_difference_time": "2026.03.10 18:24",
+    "quantity_difference_rows": 39,
+    "days_with_same_aggregated_OHLC": 141,
+    "intraday_price_differences_before_18": 0,
+    "closing_two_MT5_bars_aggregate_exactly_to_one_Work_bar": true,
+    "merged_closing_quantity": "26792",
+    "integrity_scope": "Matching supplied records is not proof that every session is complete; shared gaps and late openings remain documented."
+  },
+  "February_M5_comparison": {
+    "full_buckets_checked": 461,
+    "exact_OHLC_and_quantity": 461,
+    "partial_buckets": [
+      {
+        "time": "2026.02.23 17:35",
+        "M1_disponiveis": 2,
+        "estado": "PARCIAL_NAO_APROVADO_COMO_M5_COMPLETO"
+      }
+    ]
+  },
+  "shared_intraday_gaps": [
+    {
+      "data": "2026.07.10",
+      "antes": "2026.07.10 09:55",
+      "depois": "2026.07.10 09:57",
+      "gap_compartilhado_Work": "True"
+    }
+  ],
+  "local_max_chart_bars_confirmed_by_user": 100000,
+  "bar_limit_diagnosis": "Local configuration insufficient for requested full M1 history; mid-session cutoff consistent with truncation. Server absence not established. Increase limit and restart only this terminal before controlled retry.",
+  "recommended_max_chart_bars": 1000000,
+  "retry_from_inclusive": "2023.02.27 00:00:00",
+  "retry_to_exclusive": "2026.03.01 00:00:00",
+  "retry_month_windows": 37,
+  "retry_scope": "36 pending windows plus incomplete February 2026. Preserve verified March-September export.",
+  "io_failed": false,
+  "trading_or_history_mutation": false,
+  "sha256": {
+    "ESPECIFICACAO.txt": "8db0395d2f32a0411f4d3683062465a0af9a3629c85e81fb233e148d6841af0a",
+    "M1_202602.csv": "9fef00ce61ea779800837dfdec473454874f5008e81f133fbe79477c7c8925c1",
+    "M1_202603.csv": "a32446469d67d133e9e7b2eb57a4f1bbf323d3ce1ed442dc658bd0a489a50e21",
+    "M1_202604.csv": "d02d68fb7619b2dfde407953d43e32a9c5cc5812fe814bfabe3dbfae08f393cb",
+    "M1_202605.csv": "112be79a2a16bbbd70b0bf02b93a8a5ec2986b0a14d49eb541b69d721d690d03",
+    "M1_202606.csv": "3fb8291410e3cd3e3ce921d7b646014bd25b90a2f6cf4a658937aa3e6aaa2d0d",
+    "M1_202607.csv": "d072af3028446c708b7604dd934d178967e532dd1bc143cfb33c01203d9ca01a",
+    "M1_202608.csv": "2f98a5cc986d88452d930310af09236fa0965519b8750d8782a7db49eafe4075",
+    "M1_202609.csv": "4f209aa4c854ca52f8793b1448a08fef613d4a8048dda59ef8d8afb5e5e206eb",
+    "STATUS.csv": "c1dd9e9089fb2bec0d139e90d5a17ce57d019d5c275a7b3f46cf9535bb2c5cfa",
+    "EXPORT110_1794241201_5300.zip": "327eac113ccf086b76a38dd4873532f574d0c0e91a0177e93c0bf79799e8a0b7",
+    "Texto colado.txt": "8bbe2635bbeb9d3c238af3ef1c74afbee97ef29964f6334234ae86f1824f701d",
+    "WINFUT_F_0_1min_01-01-2026_22-09-2026.csv": "f1343f8181fce176b5d266bd1710c5aadfea8ed8af8941da1ee6b3fd9469dc45",
+    "WINFUT_F_0_5min_01-01-2026_28-02-2026.csv": "92c7534706b548653635abc97ae242841d2a22e285b8fa1c3ceeec0e7b010922"
+  }
+}
