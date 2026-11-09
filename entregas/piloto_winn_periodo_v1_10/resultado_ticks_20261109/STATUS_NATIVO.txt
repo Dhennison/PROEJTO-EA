@@ -1,0 +1,10 @@
+WIN$N PERIODO v1.10 — EVIDENCIA NATIVA RECEBIDA EM 09/11/2026
+Compilacao informada pelo usuario: 0 errors, 0 warnings, 1304 ms, AVX2 + FMA3.
+Rodada: GenialInvestimentos-PRD, build 6295, BRL, 01/09/2026 a 22/09/2026 exclusivo.
+Conclusao operacional: 14 pregoes, 33 operacoes encerradas, 0 residuais, 0 bloqueios globais ou falhas de IO no resumo.
+Origem: ticks gerados, fallback explicito no Diario.
+Auditoria externa: 7875 barras M1 identicas em OHLC ao Work, nos callbacks e em CopyRates; mesmas 33 chaves data/nivel.
+Motivos: 26 iguais e 7 diferentes; EA +1070 pontos, Work +3839.308998.
+Comparabilidade de resultados: DIVERGENCIAS_DOCUMENTADAS; nao homologacao de cronologia real, desempenho ou EA operacional DEMO.
+Controle MT5 Model=1: AINDA NAO EXECUTADO; o replay Python em grade5 e um controle analitico separado.
+Nao houve mudanca do codigo do EA para obter este retorno.

@@ -1,0 +1,100 @@
+{
+  "period": [
+    "2026-09-01",
+    "2026-09-21"
+  ],
+  "date_count": 14,
+  "original_Work_M1_rows": 7875,
+  "exact_OHLC_fields_each_pair": 31500,
+  "OHLC_comparisons_all_exact": [
+    "OnTick vs original Work",
+    "CopyRates vs original Work",
+    "OnTick vs CopyRates"
+  ],
+  "native_M1_real_volume_exact_rows": 7875,
+  "callbacks": 24120038,
+  "native_M1_tick_volume_sum": 80558033,
+  "native_M1_real_volume_sum": 257089061,
+  "Work_operations": 33,
+  "EA_closed": 33,
+  "same_date_level_keys": true,
+  "same_exit_motive": 26,
+  "different_exit_motive": 7,
+  "Work_target_to_EA_stop": 6,
+  "Work_stop_to_EA_target": 1,
+  "Work_original_ambiguous": 0,
+  "EA_exit_motives": {
+    "ALVO": 19,
+    "STOP": 14
+  },
+  "Work_exit_motives": {
+    "STOP": 9,
+    "ALVO": 24
+  },
+  "Work_points": "3839.308998",
+  "EA_points": "1070.0000000000",
+  "difference_EA_Work": "-2769.3089980000",
+  "same_motive_subgroup": {
+    "Work_points": "2881.295666",
+    "same_motive_grade5_points": "2890.0000000000",
+    "EA_points": "3395.0000000000",
+    "normalization_arithmetic_difference": "8.7043340000",
+    "execution_arithmetic_difference": "505.0000000000"
+  },
+  "different_motive_subgroup": {
+    "Work_points": "958.013332",
+    "EA_points": "-2325.0000000000"
+  },
+  "normalized_candle_counterfactual": {
+    "points": "4490.0000000000",
+    "changed_entry_minutes": 3,
+    "changed_exit_minutes": 3,
+    "changed_exit_motives_from_Work": 1,
+    "scope": "Same OHLC convention as Work with grade5 prices, no Bid/Ask spread, queue or fill modelling. Analytical control, not EA backtest/performance."
+  },
+  "initial_orders": 69,
+  "filled_entry_orders": 33,
+  "native_exit_market_orders": 33,
+  "cancelled_pending_orders_at_cutoff": 36,
+  "orders_total": 102,
+  "deals_total": 66,
+  "volume_per_deal": 1,
+  "residual": 0,
+  "native_cutoff_position_close_exercised": false,
+  "zero_operation_day": "2026-09-03",
+  "native_single_day_regression": {
+    "M1_ONTICK.csv": "IDENTICO_CAMPO_A_CAMPO_563_LINHAS",
+    "M1_TESTER.csv": "IDENTICO_CAMPO_A_CAMPO_563_LINHAS"
+  },
+  "tick_origin": "SYNTHETIC_FALLBACK_EXPLICIT_IN_DIARY",
+  "summary": {
+    "hook": "OnTester",
+    "expected_days": "14",
+    "days_complete": "14",
+    "closed": "33",
+    "residual": "0",
+    "points_closed": "1070.0000000000",
+    "Work_reference_points": "3839.3089980000",
+    "ticks": "24120038",
+    "unknown_date_events": "0",
+    "global_block": "0",
+    "history_ok": "1",
+    "io_failed": "0"
+  },
+  "sha256": {
+    "COMPARATIVO.csv": "f71efea2f65b3149dcebbfba91d1e87e7b6d6e313252b923558c3892586e4e2c",
+    "DEALS.csv": "c1010f3f85f3bc867f1db00931718559a223cadb2ff56e04b08c5d35e270920e",
+    "DIAS.csv": "4c233e6caabf293337ff0b0537ce7f61aa36fb32af44d33ded6ae95f1f7bb606",
+    "ESPECIFICACAO.txt": "a14b29fc9ca6889b1a028c58a745361d49bb4e8c6d5a16391c4fc8162bbb46fe",
+    "M1_ONTICK.csv": "bf01d3aada9e3389f6e2d475513cfb272d7cb93577f1328a0cdd79e22137d4bf",
+    "M1_TESTER.csv": "2243628953716c19019288e705c6ecb28f6f55e93618a88ec8f67a2cc58d3f9f",
+    "ORDERS.csv": "638650e8c2cf7793640ef8aacf3e03ade3ffbcbcadbe59043765cc91584c5e3f",
+    "REFERENCIA_USADA.csv": "98c61427617ddfe42cecbb997d961809c3094812360f2425a6a04d19026d9286",
+    "RESULTADO.txt": "a8ab96b633523ea05cab55a47ed5371ad0216015c4ee53710394ea591440d45a",
+    "PM110_1788220800_2639.zip": "320f4203afb0ae14425ccd7fc01f8279891ad962341f9599af7e98295440d759",
+    "Texto colado.txt": "519309b4e33dd017d24ce2183d6aeeb483fc731bf14878d82e6802ef40385d3c",
+    "WINFUT_F_0_1min_01-01-2026_22-09-2026.csv": "f1343f8181fce176b5d266bd1710c5aadfea8ed8af8941da1ee6b3fd9469dc45",
+    "CONTEXTO_WORK_SETEMBRO.csv": "030feeba4dcd7fe918415555b1f3448fe8455fe932906e97e2b2d1ee312aafd1",
+    "OPERACOES_WORK_SETEMBRO.csv": "46ae35eb19b321215f388af6356e89cc937b5308f2ad63113e5d2b0e9d5538c7"
+  }
+}
