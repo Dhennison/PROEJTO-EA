@@ -1,0 +1,65 @@
+ANALISE FINAL DOS ARQUIVOS — PILOTO WIN$N / GENIAL / 21-09-2026
+
+CONCLUSAO
+O retorno COMPARATIVO.zip confirma a viabilidade do piloto experimental no WIN$N nativo, no Tester da instalacao secundaria GenialInvestimentos-PRD, build 6295, deposito BRL e um contrato por nivel. O dia concluiu com duas vendas encerradas por TP, +930 pontos brutos e nenhum residual no resumo. As 563 barras M1 observadas por OnTick e as 563 consultadas no Tester coincidem exatamente com os candles originais do Work, em todos os campos OHLC. Nao ha divergencia de candles que explique a diferenca de pontuacao neste dia.
+O fluxo e SINTETICO, conforme o Diario anteriormente enviado: "no real ticks, every tick generation used". O resultado nao homologa o EA operacional completo, outras datas ou cronologia real dos dias ambiguos.
+
+FONTES E METODO
+Foram lidos os sete arquivos do ZIP: COMPARATIVO.csv, DEALS.csv, ESPECIFICACAO.txt, M1_ONTICK.csv, M1_TESTER.csv, ORDERS.csv e RESULTADO.txt. Cruzamento independente com WINFUT_F_0_1min_01-01-2026_22-09-2026.csv original, e com REFERENCIA_OPERACOES_SETEMBRO.csv do Work. As barras originais estao em ordem inversa no arquivo; o cruzamento foi feito por data/minuto, sem reordenar ou modificar a fonte. Comparacoes de OHLC por Decimal, sem tolerancia.
+O script analisar.py reproduz a conferencia; CONFERENCIA_COMPLETA.json registra resultados e SHA256 de todas as entradas. CONFERENCIA_563_MINUTOS.csv registra o aceite por minuto. Os arquivos brutos enviados permanecem locais, sem publicacao do ZIP original.
+
+CANDLES — PREGAO INTEIRO DISPONIVEL
+- 563 minutos de 09:02 a 18:24, mesmos horarios nos tres conjuntos, sem duplicatas ou lacunas internas.
+- OnTick versus Work: 563/563 OHLC iguais, 2.252/2.252 campos de preco exatos.
+- CopyRates do Tester versus Work: 563/563 OHLC iguais, 2.252/2.252 campos exatos.
+- OnTick versus CopyRates: tambem identicos em todos os campos OHLC.
+- 09:00 e 09:01 nao aparecem em nenhum dos conjuntos deste dia; nao foram preenchidos artificialmente nem contados como barras aprovadas.
+- O campo real_volume das barras do Tester coincide com a quantidade da referencia original nos 563 minutos. Soma: 17.064.039. Esse nome de campo nao certifica que a trajetoria usada pelo Tester contenha os negocios reais.
+- Foram observados 1.699.111 callbacks classificados pelo criterio flags&120 e Last positivo, exatamente a soma por minuto e a contagem do RESUMO. A soma de tick_volume das barras nativas e 5.268.240. Essas medidas sao distintas; diferenca entre elas nao demonstra perda de eventos, pois a reproducao e gerada e nao foi exportada uma sequencia completa de ticks nesta rodada.
+- Spread armazenado nas barras nativas: 5 pontos em todos os minutos. Isso nao equivale a uma auditoria de cada Bid/Ask entregue durante a execucao.
+A identidade comprovada vale para 21/09/2026, nao para todo o periodo do Work.
+
+ORDENS, NEGOCIOS E PONTOS
+Foram conferidos sete registros de ordens historicas e quatro deals, sem duplicidade de tickets:
+R38.2:
+  Ordem #5 SELL_LIMIT, criada 09:02:00.000, limitada em 188260, SL 188635, TP 187680.
+  Deal de entrada #2: 09:02:02.993, venda de 1 a 188305.
+  Ordem de TP #7, deal de saida #3: 09:03:02.296, compra de 1 a 187605, motivo nativo 5 (TP).
+  Pontos efetivos: 188305 - 187605 = +700.
+R61.8:
+  Ordem #6 SELL_LIMIT, criada 09:02:00.000, limitada em 189200, SL 189650, TP 188965.
+  Deal de entrada #4: 09:19:01.090, venda de 1 a 189200.
+  Ordem de TP #8, deal de saida #5: 09:20:02.374, compra de 1 a 188970, motivo nativo 5 (TP).
+  Pontos efetivos: 189200 - 188970 = +230.
+TOTAL: +930 pontos brutos.
+As duas ordens de entrada existiam estritamente antes dos respectivos preenchimentos; seus estados historicos sao FILLED. Cada posicao tem uma entrada de 1 e uma saida de 1, sem fracionamento. Os SL/TP registrados correspondem aos niveis fixos normalizados pelo nucleo. O COMPARATIVO confere com os precos, volumes, horarios e pontos recalculados a partir dos DEALS; nenhum preco efetivo foi substituido pelo limite ou TP solicitado.
+Observacao de formato: motivos_nativos aparece como "|5" no COMPARATIVO. O separador inicial e cosmetico; DEALS confirma motivo 5, sem ambiguidade sobre a classificacao.
+
+WORK AO LADO DO EA
+Nivel;Motivo Work;Pontos Work matematicos aproximados;Motivo EA;Pontos EA;Diferenca aproximada EA-Work
+R38.2;ALVO;579.863333333333;TP;700;120.136666666667
+R61.8;ALVO;234.328333333333;TP;230;-4.328333333333
+TOTAL;;814.191666666667;;930;115.808333333333
+Os precos exportados do Work tem pequenas diferencas de representacao decimal nos ultimos digitos; o JSON preserva o calculo direto desses precos. Isso nao altera a pontuacao acima na precisao apresentada.
+As barras de entrada/saida tambem coincidem com a referencia: R38.2 em 09:02/09:03 e R61.8 em 09:19/09:20. Nenhuma das duas operacoes e ambigua no Work.
+S38.2, S50 e S61.8 nao executaram, como no Work. Os campos de pontos permanecem vazios nessas linhas; nao confundir ausencia de operacao com operacao encerrada em zero.
+
+DE ONDE VEM A DIFERENCA
+Na grade de 5 pontos, os resultados nos precos solicitados seriam +580 e +235, total +815. Em relacao a isso:
+- R38.2 teve entrada 45 pontos mais alta e recompra 75 pontos mais baixa: +120 adicionais, chegando a +700.
+- R61.8 teve recompra 5 pontos acima do TP solicitado: -5, chegando a +230.
+- Saldo dos preenchimentos: +115; normalizacao versus Work matematico: cerca de +0.808333; diferenca total: cerca de +115.808333.
+A separacao entre preco solicitado e preco executado esta confirmada por ORDERS e DEALS, alem do Diario. A regra interna do motor que produziu esses preenchimentos nao foi isolada. Como nao temos dump de todos os Bid/Ask/Last nos instantes vizinhos, nao e possivel atribuir cada diferenca especificamente a spread, salto entre ticks ou criterio de execucao. O resultado favoravel do fluxo sintetico nao demonstra lucro reproduzivel em execucao real.
+O SL nao foi deslocado para acompanhar a entrada efetiva: na R38.2, entre entrada efetiva 188305 e SL fixo 188635 ha 330 pontos. Isso e coerente com a regra de protecao ancorada na linha teorica, e nao no preenchimento.
+
+CORTE DAS 18H
+As ordens de suporte #2, #3 e #4 constam CANCELED, com done_msc=1790013600000, correspondente a 18:00:00.000. Nao ha deals dessas linhas. Resumo e COMPARATIVO indicam zero pendentes/posicoes residuais.
+Nao havia posicao aberta no corte. Portanto nao foi exercitada a saida a mercado por horario com ganho/perda parcial ou zero. Esse caso segue pendente para a ampliacao.
+
+MOEDA E AMBIENTE
+ESPECIFICACAO confirma conta BRL, simbolo nativo, margem/profit em BRL, Hedge, tick 5 e volume minimo/passo 1. O Diario do secundario nao registra BRLUSD10 e conclui. Isso resolveu o impedimento pratico observado na instalacao anterior. Nao demonstra causa unica das finalizacoes anteriores, porque tambem mudaram instalacao/cache e build 6231 para 6295.
+Nao confundir o metadado basis=WINZ26 da serie continua com uma certificacao do contrato historico de setembro: o piloto usa o proprio WIN$N e base Work explicita. O resolvedor historico de contratos/ajustes do EA operacional nao esta sendo homologado nesta rodada.
+
+ENCAMINHAMENTO
+Nao e necessario repetir 21/09: a auditoria dos arquivos desta rodada esta concluida. A etapa seguinte e preparar processamento de periodo com datas, abertura, pregao anterior, ajuste e corte por dia, mantendo um contrato por nivel e pontos brutos. O piloto atual tem data e base fixas; apenas ampliar as datas do Tester nao o transforma em teste mensal.
+A ampliacao deve conferir OHLC contra o Work, registrar dias sem operacao/dados faltantes e separar resultado matematico, normalizacao e execucao. Os casos ambiguos devem preservar o STOP adotado no Work e identificar qualquer resultado do EA como dependente da modelagem, ate existir cronologia real comprovada.
