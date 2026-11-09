@@ -1,0 +1,23 @@
+CONTROLES DA AMPLIACAO — 09/11/2026
+
+1. Evidencia do dia auditado e o que nao deve ser inferido
+O ZIP de 21/09 confirmou OHLC identico ao Work nos 563 minutos e +930 pontos dos deals, em comparacao a +815 nos precos solicitados normalizados. A diferenca de +115 pertence a execucao sintetica. Nao deve ser somada a uma conclusao de desempenho real.
+ORDERS registra as saidas de TP #7/#8 como type=0 (ORDER_TYPE_BUY), enquanto as pendentes de suporte sao type=2 (ORDER_TYPE_BUY_LIMIT). Portanto o registro de saida nao e o de uma compra limitada. Isso e compativel com uma recompra a mercado pelo motor. Nao prova sozinho se o gatilho foi Last/Bid ou qual Ask existia em cada instante. Tambem nao estabelece uma regra universal de TP para todas as corretoras/mercados.
+A compra de encerramento de R61.8 em 188970, acima de TP188965, deve permanecer identificada no comparativo, sem ser convertida para o alvo teorico.
+
+2. Comparacao pura de dados
+Exportador mensal M1, sem ordens e sem alterar historico, para usar preferencialmente no principal da Genial. O inicio de historico anunciado em 2022 ou os ticks anunciados a partir de 06/11 sao indicacoes do ambiente, nao provas globais de cobertura/ausencia. A cobertura e verificada pelos retornos e comparacao externa com as fontes originais.
+O exportador nao certifica ticks reais nem elimina a necessidade de conferir o Diario e os dados efetivamente usados pelo Tester.
+
+3. Controle de modelagem
+Dois INI/CMD usam o mesmo EA e periodo: Model=4 e Model=1. BRL, volume, datas e latencia permanecem iguais. O segundo mede sensibilidade de preenchimentos/motivos a uma trajetoria diferente. Nem um nem outro reconstitui cronologia real ausente; nao escolher resultado mais favoravel como validacao.
+
+4. Casos dificeis
+A referencia de setembro tem 33 operacoes, nenhum caso ambiguo e nenhuma saida por horario. Logo este lote nao garante exercitar posicao aberta as 18h; isso so sera confirmado se o EA de fato chegar ao corte com posicao.
+O tratamento de cutoff foi exercitado localmente com APIs simuladas para compras/vendas, precos Bid/Ask, resultado parcial e zero. A execucao nativa desse cenario continua pendente ate observarmos um caso real no Tester.
+Antes de concluir sobre o historico longo, preparar controle dirigido com uma data ambigua e uma data com saida por horario da referencia completa. Nao declarar esses casos aprovados porque o lote comum concluiu.
+
+5. Tabela diaria e separacao dos resultados
+Abertura esperada, primeiro minuto, pregao anterior, H/L/C, ajuste e corte estao na tabela historica compilada, cruzada com os arquivos originais. O EA observa a abertura e recusa dados divergentes; nao usa o resultado futuro do Work para decidir entrada/saida.
+COMPARATIVO separa matematico, grade, execucao e motivos. Decomposicao normalizacao/execucao exige o mesmo motivo ALVO/STOP nos dois lados. Ausencia de dados, operacao faltante e zero operacoes sao estados diferentes.
+Work ambiguo conserva seu STOP de referencia; qualquer ganho/stop do EA em modelagem sintetica e marcado como tal, sem prometer o que aconteceu primeiro no mercado real.

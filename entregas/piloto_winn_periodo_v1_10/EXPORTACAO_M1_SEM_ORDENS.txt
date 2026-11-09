@@ -1,0 +1,34 @@
+EXPORTACAO DE COBERTURA M1 — SEM ORDENS, SEM ESTRATEGIA
+
+OBJETIVO
+Obter os candles M1 do WIN$N nativo de 01/03/2023 ate 21/09/2026, em arquivos mensais, para verificar cobertura e OHLC contra a referencia original. Nao presume que ticks reais existam nesse periodo e nao tenta cria-los.
+O exportador e implementado como Expert SOMENTE LEITURA para trabalhar por timer, permitir download assincrono e reler ate estabilizar sem um script preso em um loop longo. Nao e um EA de negociacao: nao possui OrderSend, OrderCheck ou CTrade nem mutacao de historico.
+
+INSTALACAO
+Copie a pasta MQL5 deste ZIP para a Pasta de Dados do MT5 PRINCIPAL DA GENIAL, usando Arquivo > Abrir Pasta de Dados nessa instalacao. Cole na raiz da Pasta de Dados, sem criar MQL5\MQL5. Este terminal e diferente da XP onde esta o EA DEMO e pode ser diferente do secundario portable.
+No MetaEditor desse terminal, compile:
+MQL5\Experts\ModeloD_PilotoWINN_Periodo\Exportar_M1_WINN_Sem_Ordens.mq5
+Se preferir compilar uma so vez, o .ex5 ja compilado em outra instalacao compativel pode ser copiado para essa subpasta, mas a compilacao no MetaEditor da propria instalacao e o caminho mais claro.
+
+EXECUTAR EM GRAFICO, NAO NO TESTER
+1. Confirme GenialInvestimentos-PRD no terminal principal.
+2. Abra um NOVO grafico WIN$N. Nao remova nem substitua o EA da XP.
+3. No Navegador > Experts > ModeloD_PilotoWINN_Periodo, arraste Exportar_M1_WINN_Sem_Ordens para esse grafico novo.
+4. Parametros padrao:
+   InpSymbol = WIN$N
+   InpInicio = 2023.03.01 00:00:00
+   InpFim = 2026.09.22 00:00:00 (exclusivo)
+   InpMaxTentativasPorMes = 10
+5. Aguarde a mensagem M1EXP110;END. Ha 43 janelas mensais, sendo setembro/2026 parcial. A exportacao exige duas leituras validas, exatamente iguais nos oito campos das barras. Cada evento do timer trata uma janela, com intervalo de 2s entre eventos; downloads podem levar mais tempo. O botao AlgoTrading nao e necessario para leitura; nenhuma ordem sera enviada.
+6. Se um mes nao estabilizar, ele fica PENDENTE e o exportador prossegue. Vazio estavel e registrado como observacao daquele intervalo, nao como prova de ausencia global no servidor. Se for removido/fechado antes do END, a exportacao permanece incompleta.
+
+RETORNO
+%APPDATA%\MetaQuotes\Terminal\Common\Files\ModeloD_Cobertura_WINN
+Compacte a pasta EXPORT110_... completa e envie. Ela contem ESPECIFICACAO.txt, STATUS.csv e M1_AAAAMM.csv para os meses exportados. Guarde tambem o log Experts do exportador.
+Se o ZIP ultrapassar o limite de anexo, divida os arquivos por ano e inclua STATUS/ESPECIFICACAO no primeiro envio.
+STATUS com EXPORTADO_ESTAVEL significa apenas leitura repetida consistente, nao cobertura certificada de todos os pregoes do Work. A conferencia externa verificara datas ausentes, dados extras e OHLC.
+Onde a fonte original do Work estiver em M5, agregaremos M1 em M5 antes de comparar; nao confrontar barras de duracoes diferentes como se fossem iguais.
+
+LIMITES
+Este controle nao analisa ordens, desempenho, negocios reais ou cronologia intrabar e nao demonstra o que o Tester entrega. Ele completa a comparacao de dados; as rodadas no Tester tratam a outra parte.
+Nenhum cache e apagado, nenhum simbolo personalizado e criado e nenhuma barra ou tick e alterado.

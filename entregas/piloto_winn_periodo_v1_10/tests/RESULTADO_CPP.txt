@@ -1,0 +1,3 @@
+PASS checks=16098; actual MQL source adapted to C++; ASan/UBSan; mock trading APIs; NOT native MT5 compilation/execution
+
+EXIT_STATUS=0

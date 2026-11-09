@@ -1,0 +1,5 @@
+XP DEMO — RETOMADA DE 09/11/2026
+O primeiro trecho iniciou com AlgoTrading do terminal desligado, transporte em OBSERVACAO, sem envios. Os dados e a cobertura desde a abertura foram reconstruidos e conferidos no trecho observado.
+No trecho atualizado, apos o usuario habilitar a permissao, ocorreram cinco solicitacoes com retcode 10009, cada nivel com um ticket distinto e uma unica tentativa. As pendencias temporarias CHAIN_ORIGEM_NAO_COMPROVADA foram conciliadas. Em 10:21:31: revision=127, ALL_CHAINS_RECONCILED, unresolved=0, transport=DEMO_ONLY.
+Os cinco niveis ainda estavam sem toque/consumo ao fim do log enviado (10:23:01). Ordens pendentes aceitas nao sao operacoes executadas. Nao ha resultado em pontos a apurar a partir deste trecho.
+A JANELA_ATUAL_INVALIDA_OU_DEFASADA reapareceu perto da virada do minuto e voltou a CONFERIDA no timer seguinte; nao foi bloqueio permanente nem consumiu tentativas. O EA operacional nao foi alterado durante a preparacao dos pilotos da Genial.

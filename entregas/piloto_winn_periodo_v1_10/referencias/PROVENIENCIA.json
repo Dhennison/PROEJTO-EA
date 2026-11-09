@@ -1,0 +1,20 @@
+{
+  "days": 14,
+  "from": "2026-09-01",
+  "through": "2026-09-21",
+  "Tester_end_exclusive": "2026-09-22",
+  "Work_operations": 33,
+  "Work_points_exported": "3839.308998",
+  "Work_zero_operation_days": [
+    "2026-09-03"
+  ],
+  "Work_ambiguous_operations": 0,
+  "Work_cutoff_exits": 0,
+  "expected_M1_bars": 7875,
+  "reference_only_adjustments": "Historical Work inputs; not certified native B3/live adjustment feed",
+  "source_SHA256": {
+    "CONTEXTO_M1_E_CINCO_NIVEIS.csv": "030feeba4dcd7fe918415555b1f3448fe8455fe932906e97e2b2d1ee312aafd1",
+    "REFERENCIA_OPERACOES_SETEMBRO.csv": "46ae35eb19b321215f388af6356e89cc937b5308f2ad63113e5d2b0e9d5538c7",
+    "WINFUT_F_0_1min_01-01-2026_22-09-2026.csv": "f1343f8181fce176b5d266bd1710c5aadfea8ed8af8941da1ee6b3fd9469dc45"
+  }
+}

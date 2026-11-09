@@ -1,0 +1,83 @@
+AMPLIACAO WIN$N v1.10 — SETEMBRO DISPONIVEL NO WORK
+Preparado em 09/11/2026. Compilacao e execucao nativas PENDENTES.
+
+ESCOPO
+Uma rodada cobre os 14 pregoes de 01/09/2026 a 21/09/2026, com fim exclusivo do Tester em 22/09. A referencia Work tem 33 operacoes, +3839.308998 pontos exportados (matematicos, sem normalizar) e 7.875 barras M1.
+O EA experimental usa o mesmo ModeloD_Core.mqh da v2.13.05, byte a byte, e evolui o transporte do piloto de 21/09 ja auditado. Nao substitui o EA DEMO da XP e nao altera os fontes operacionais.
+UM CONTRATO POR NIVEL, pontos brutos calculados dos precos efetivamente executados. Cinco contratos ficam para outra etapa.
+
+1 — INSTALAR NA MESMA COPIA SECUNDARIA DA GENIAL QUE RODOU EM BRL
+Extraia o ZIP em uma pasta temporaria.
+Copie a pasta MQL5 extraida para a RAIZ:
+C:\Users\jhenn\AppData\Local\ModeloD_MT5_Isolado_20261102_145749_6554356a
+Nessa raiz devem estar terminal64.exe e MQL5 lado a lado. Nao cole dentro de MQL5, para nao criar MQL5\MQL5.
+Este pacote usa subpastas NOVAS ModeloD_PilotoWINN_Periodo. Nao e necessario apagar o piloto de um dia nem alterar o EA da XP.
+
+2 — COMPILAR PRIMEIRO APENAS O EA DE PERIODO
+Abra o MT5 secundario. F4 abre o MetaEditor DESSA instalacao.
+No MetaEditor, Ctrl+O, cole o caminho:
+C:\Users\jhenn\AppData\Local\ModeloD_MT5_Isolado_20261102_145749_6554356a\MQL5\Experts\ModeloD_PilotoWINN_Periodo\EA_ModeloD_WINN_Periodo.mq5
+Pressione F7. Envie erros/avisos se existirem. Os .mqh nao sao compilados separadamente.
+Nao abra o EA_ModeloD_Demo da XP no lugar deste arquivo.
+
+3 — INICIAR O TESTE POR PERIODO EM BRL (APOS COMPILAR)
+Copie para a RAIZ do secundario, junto de terminal64.exe:
+ ModeloD_WINN_Setembro_BRL.ini
+ INICIAR_SETEMBRO_WINN_BRL.cmd
+Confira antes que o secundario esteja conectado em GenialInvestimentos-PRD.
+Feche apenas o secundario e o seu MetaEditor. O terminal principal e a XP podem permanecer abertos.
+Abra INICIAR_SETEMBRO_WINN_BRL.cmd e pressione uma tecla. A rodada comeca automaticamente via /portable /config.
+O INI configura: WIN$N, M5, 01/09/2026 ate 22/09/2026, modelo 4 (ticks reais se disponiveis), sem atrasos e otimizacao, deposito 1.000.000 BRL, ProfitInPips=0, agentes locais, sem cloud/remotos. Nao necessita .set.
+NAO selecione BRL manualmente pela lista do Tester. O BRL e solicitado pelo INI, como na rodada concluida anterior.
+No Diario deve aparecer initial deposit 1000000.00 BRL. Em ESPECIFICACAO.txt, account_currency=BRL. O EA recusa USD antes de enviar ordens.
+A selecao de ticks reais nao certifica a origem usada: conferir o Diario para geracao substituta.
+
+O QUE MUDOU EM RELACAO AO DIA FIXO
+- Data, abertura esperada, primeiro minuto, ajuste e H/L/C do pregao anterior sao consultados em uma TABELA DIARIA compilada da referencia Work. Nao usa o ajuste atual do terminal para os dias passados.
+- Os 14 contextos foram cruzados com os candles originais do dia e do pregao anterior. O ajuste e o fornecido pelo Work; nao e fonte B3 live certificada.
+- O primeiro tick classificado deve ter horario e preco de abertura exatamente iguais ao esperado do dia. Divergencia bloqueia novas entradas naquele dia e fica registrada; nao flexibiliza abertura para fazer passar.
+- Cada data/nivel tem magic e estado proprios. Nao mistura niveis consumidos, ordens ou pontos de dias diferentes.
+- Um pedido por nivel elegivel por dia; nao repete apos execucao. Rearme apos cancelamento externo e retomada persistente do EA operacional nao estao sendo homologados aqui.
+- Nao consulta resultados futuros do Work para decidir ordens: essa tabela so e acessada no fechamento dos RELATORIOS. Os candles completos tambem sao consultados apenas para auditoria ao finalizar.
+- Mantem SL/TP nativos fixos, normalizados a 5 pontos, derivados da linha teorica. Diferenca do preco executado nao desloca a protecao.
+- Pendente tocada e mantida ate SL/TP teorico apos toque, primeira saida ou corte. Nao considera TP que ocorreu ANTES do toque como motivo para cancelar.
+- No primeiro tick a partir do corte diario, cancela pendentes e fecha posicoes a mercado pelo Bid/Ask adequado. Usa os deals efetivos para apurar pontos, inclusive ganho/perda parcial ou zero.
+- Nao fabrica evento das 18h. Ausencia do corte, barras, abertura valida ou encerramento completo resulta em dia INCOMPLETO/SEM_EVENTOS, com campos de pontos apropriados; nao e dia aprovado com resultado zero.
+- Saldo de uma data anterior bloqueia novas entradas e continua recebendo pedidos de cancelamento/fechamento. Nao limpa o estado e segue negociando como se estivesse zerado.
+
+RETORNO DO TESTE
+No Explorador do Windows:
+%APPDATA%\MetaQuotes\Terminal\Common\Files\ModeloD_WINN_Periodo
+Compacte a NOVA pasta PM110_... inteira e envie com o Diario do Tester completo.
+Arquivos:
+ RESULTADO.txt — log, auditoria por dia e RESUMO_PERIODO.
+ ESPECIFICACAO.txt — servidor, build, moeda, contrato de referencia e propriedades.
+ REFERENCIA_USADA.csv — dados efetivamente selecionados por data.
+ DIAS.csv — 14 datas, incluindo a de referencia sem operacoes (03/09).
+ COMPARATIVO.csv — 70 linhas data/nivel: estado, precos solicitados e efetivos, pontos, motivos e referencia Work.
+ DEALS.csv / ORDERS.csv — evidencia nativa e tickets.
+ M1_ONTICK.csv / M1_TESTER.csv — candles observados e consultados.
+Os 7.875 candles devem ser comparados com referencias/WORK_M1_SETEMBRO.csv. Dia sem operacao, operacao ausente e dia sem dados sao resultados distintos.
+RESUMO_PERIODO informa days_complete e flags de erro; nao significa homologacao nem substitui a auditoria externa contra o Work.
+
+COMO LER AS DIFERENCAS DE PONTOS
+O COMPARATIVO separa o Work original, o resultado na grade de 5 pontos e o resultado dos deals.
+A decomposicao normalizacao/execucao so e preenchida quando EA e Work encerraram pelo MESMO motivo ALVO ou STOP. Se um der alvo e outro stop, nao fingimos que a diferenca foi so arredondamento ou execucao; o caso fica MOTIVOS_DIFERENTES para analisar dados/cronologia/logica.
+Dias ambiguos preservam o stop adotado no Work e recebem observacao de modelagem. Esta referencia de setembro nao tem operacoes ambiguas nem saidas por horario no Work; nao afirmar que esses casos foram homologados por esta rodada. O EA pode apresentar outros resultados e eles serao registrados.
+Os +115 pontos adicionais vistos em 21/09 foram diferenca da execucao sintetica. Nao sao evidencia de desempenho real da estrategia.
+
+CONTROLE ADICIONAL DE MODELAGEM — APOS GUARDAR A PRIMEIRA RODADA
+Ha um segundo INI/CMD:
+ ModeloD_WINN_Setembro_OHLC_BRL.ini
+ INICIAR_SETEMBRO_WINN_OHLC_BRL.cmd
+Eles usam o MESMO EA, periodo, fonte Work, volume, BRL e latencia; muda apenas o modelo do Tester para 1 MINUTO OHLC (Model=1).
+Copie os dois para a raiz do secundario e execute pelo CMD com o secundario fechado. Guarde a nova pasta PM110_... e o Diario SEPARADAMENTE da primeira.
+A comparacao medira sensibilidade de preenchimentos/motivos ao modelo, nao dira qual trajetoria foi a real. Nao escolher o modo com maior lucro como criterio de validacao.
+
+COMPARACAO PURA DE DADOS DO HISTORICO LONGO
+O exportador sem ordens e o roteiro estao em EXPORTACAO_M1_SEM_ORDENS.txt. Pode usar o terminal PRINCIPAL da Genial que anunciava historico mais antigo, sem tocar o EA da XP. Nao apaga cache nem altera barras/ticks.
+O inicio anunciado pelo terminal e apenas uma indicacao de cobertura: os arquivos e STATUS permitem verificar de fato o que foi retornado.
+
+CONTINUIDADE
+A investigacao ActivTrades continua prevista como alimentacao adicional, com identificacao do produto/CFD e fuso antes de comparar janelas. O piloto de periodo acima permanece exclusivamente WIN$N.
+A ampliacao seguinte para outros meses/anos requer gerar tabelas correspondentes e conferir cobertura, mantendo horarios historicos por data (inclusive 17:45 onde aplicavel em 2023). Esta tabela de setembro usa corte 18h; nao foi artificialmente estendida para datas sem referencia.
