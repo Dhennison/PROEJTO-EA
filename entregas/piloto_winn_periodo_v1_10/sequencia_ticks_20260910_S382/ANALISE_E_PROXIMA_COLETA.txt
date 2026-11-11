@@ -1,0 +1,86 @@
+MODELO D — SEQUÊNCIA DE NEGÓCIOS WINV26 — S38,2 DE 10/09/2026
+Análise concluída em 11/11/2026. Horários abaixo são os campos de hora do servidor.
+
+CONCLUSÃO
+Nos dados coletados, o alvo creditado pelo Work na barra de entrada não aconteceu após o toque da compra. O primeiro nível de saída atingido depois da entrada foi o STOP, nas quatro variantes: preços matemáticos ou grade de cinco pontos, entrada por toque ou ultrapassagem estrita.
+Isso esclarece a cronologia de preços desta operação. Não comprova preenchimento, posição na fila, preço executável ou resultado financeiro de uma ordem real. Não extrapolar para as outras cinco operações e não alterar o Work original.
+
+1. VALIDADE E CORRESPONDÊNCIA ANTES DA SEQUÊNCIA
+Fonte: DiagTicksAB v1.21, ambiente TERMINAL, GenialInvestimentos-PRD, build 6231, WINV26 não personalizado.
+Janela: 10/09/2026 09:05:00 a 09:15:00.
+Duas leituras consecutivas válidas idênticas, erro zero e STATUS=ESTAVEL.
+CSV: 174.567 registros ALL; 129.598 negócios com flags públicos de negócio e Last positivo; 44.969 registros de cotação excluídos da análise da sequência de negócios.
+Flags: 1336 x61159, 1368 x59036, 1400 x9403, 1026 x22280, 1028 x22689.
+O relatório registra quantidade e hash de negócios iguais entre ALL filtrado e a consulta TRADE. O CSV ALL foi conferido em contagem e flags contra esse relatório; não foi recebido CSV separado de TRADE.
+Preservadas todas as linhas, sua ordem e registros com milissegundos repetidos. Nenhuma deduplicação temporal.
+
+OHLC reconstruído por minuto somente com negócios, comparado com:
+(a) exportação nativa WIN$N da Genial;
+(b) fonte original Profit M1 usada no Work.
+Resultado: os DEZ minutos são idênticos nas três fontes em O/H/L/C e soma de quantidade/volume_real. Não houve o problema de máxima do candle ausente nos ticks nesta janela.
+Contagens de negócios por minuto 09:05 a 09:14:
+24065; 11742; 19781; 12701; 16580; 10949; 9760; 10845; 5580; 7595.
+A estabilidade e a correspondência dos candles não certificam de maneira independente a completude do feed de origem.
+
+2. NÍVEIS CONFERIDOS
+Matemáticos da tabela de operações já auditada:
+Entrada compra S38,2: 186786,2146666667.
+Alvo: 187021,226.
+Stop: 186411,2146666667, ou entrada teórica menos 375.
+
+Normalizados na grade de cinco pontos:
+Entrada: 186785.
+Alvo: 187020.
+Stop: 186410.
+Os decimais matemáticos são os da tabela auditada; precisão além das casas exportadas não altera nenhum cruzamento nesta amostra de preços em múltiplos de cinco.
+
+3. ORDEM OBSERVADA DOS ACONTECIMENTOS
+Antes da janela, os candles disponíveis às 09:03 e 09:04 têm mínima conjunta de 187025, acima da linha de entrada. As fontes desse dia começam às 09:03; não foram inventados candles às 09:00, 09:01 ou 09:02.
+Dentro da janela:
+09:07:23.021 — último negócio no lado do alvo matemático antes da entrada.
+09:07:23.046 — último negócio no lado do alvo normalizado antes da entrada.
+09:07:45.555 — primeiro negócio a tocar/ultrapassar a entrada matemática e a tocar a entrada normalizada: Last=186785.
+09:07:45.557 — primeiro negócio estritamente abaixo da entrada normalizada: Last=186780.
+Depois dessas entradas, a máxima observada ATÉ O STOP foi 186995. Não alcançou nem 187020 nem 187021,226.
+09:09:33.464 — primeiro negócio a alcançar/ultrapassar o stop: Last=186410.
+
+Portanto, os preços na região do alvo anteriores à entrada não podem ser usados como se fossem saída posterior à compra.
+No minuto 09:07, o candle O=187270 H=187305 L=186760 C=186905 é verdadeiro e coincide nas fontes. O ponto que o candle não fornece é a ordem interna entre o alvo e a entrada; os ticks mostram a ocorrência do alvo antes da entrada e ausência de novo alcance do alvo até o stop.
+
+4. QUATRO VARIANTES, REGRA DEFINIDA ANTES DA LEITURA DO RESULTADO
+(a) Matemática, entrada Last <= linha: entrada 09:07:45.555; STOP 09:09:33.464.
+(b) Matemática, entrada Last < linha: entrada 09:07:45.555; STOP 09:09:33.464.
+(c) Grade5, entrada Last <= linha: entrada 09:07:45.555; STOP 09:09:33.464.
+(d) Grade5, entrada Last < linha: entrada 09:07:45.557; STOP 09:09:33.464.
+Alvo e stop são testados por igualdade ou ultrapassagem, somente nos registros posteriores à entrada. Entrada estrita é um controle de sensibilidade ao toque; não modela fila.
+A ordem entrada/stop tem milissegundos distintos, portanto não depende de desempate entre dois registros com o mesmo milissegundo.
+
+5. RELAÇÃO COM WORK E TESTER
+Work: ALVO, +235,011333 pontos, entrada e saída atribuídas ao minuto 09:07.
+Tester com ticks gerados: STOP, -360 pontos efetivamente apurados dos deals; entrada 09:07:03.965, saída 09:09:03.624.
+Ticks históricos coletados: primeiro toque 09:07:45.555 e primeiro stop 09:09:33.464.
+O motivo STOP do Tester é compatível com a sequência histórica nesta operação. Seus horários e seus -360 pontos não estão, por isso, certificados como execução real.
+Um resultado calculado a preços teóricos normalizados seria -375 pontos, se ambos os níveis fossem preenchidos exatamente. Essa hipótese não se confunde com negócios observados, fila, slippage ou posição real.
+A classificação de auditoria é WORK_ALVO_NAO_SUSTENTADO_PELA_SEQUENCIA_COLETADA; STOP primeiro nos quatro controles. Preservar o ALVO do Work como referência original e registrar a divergência em coluna separada.
+
+6. PRÓXIMA COLETA — R61,8 DO MESMO DIA
+Usar o mesmo EA DiagTicksAB v1.21 na Genial principal, no gráfico WINV26. Não usar o Tester nem alterar o EA da XP. Não é necessário recompilar.
+Parâmetros:
+InpSymbol = WINV26
+hora do servidor (início) = 2026.09.10 11:43:00
+max. 60 min (fim) = 2026.09.10 11:55:00
+releituras até estabilizar = 10
+identificação = GENIAL_SEQ_20260910_R618_A
+grava todos os ticks ALL da leitura final = true
+Aguardar relatório final e gravação. Enviar TXT e CSV dessa identificação e mensagens da aba Experts.
+Pasta:
+%APPDATA%\MetaQuotes\Terminal\Common\Files
+Primeiro comparar OHLC e quantidade; só então reconstruir a sequência da venda R61,8 nos quatro controles.
+Depois permanecem S38,2 de 14/09, S38,2 de 16/09 e S38,2/S61,8 de 17/09. Não atribuir antecipadamente o mesmo desfecho a essas cinco operações.
+
+7. RASTREABILIDADE
+analisar_sequencia.py: análise reproduzível de arquivos locais, sem conexão nem ordens.
+CORRESPONDENCIA_10_MINUTOS.csv: confronto dos dez OHLC e quantidades.
+SEQUENCIA_QUATRO_VARIANTES.csv: horários e níveis das quatro variantes.
+CONFERENCIA.json: contagens, eventos, origem e SHA-256 dos arquivos de entrada.
+Os dados brutos recebidos permanecem locais; publicam-se apenas a análise e seus resultados derivados.
