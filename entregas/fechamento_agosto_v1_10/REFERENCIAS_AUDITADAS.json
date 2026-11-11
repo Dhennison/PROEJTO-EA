@@ -1,0 +1,18 @@
+{
+  "month": "2026-08",
+  "days": 20,
+  "operations_Work": 43,
+  "Work_points": "-387.164995",
+  "source_m1": 11266,
+  "reference_sha256": "39e2ff3de91579aaa412fde0d8028dd2aae15116afb4ddb68ccffc692658d6ea",
+  "m1_sha256": "0620d667dd6a2e107205a168f4d28b5bbf61f1df337643d9e58ecd4a330b8d30",
+  "source_profit_sha256": "f1343f8181fce176b5d266bd1710c5aadfea8ed8af8941da1ee6b3fd9469dc45",
+  "source_context_sha256": "2a1d4c851a62189895e5c124cf03254ec523d441c83f277fe98db722e5e69128",
+  "source_operations_sha256": "238cdba2c615ccf9512964de483a6deebf3fed3d97502f68d6c09b48a7e37dd0",
+  "native_compile_or_execution": false,
+  "frozen_core_sha256": "e198de7e6bb608ad9e13cc999be53e632d94a780bbba8ffc1712297ea1a2da55",
+  "status": "PACOTE_PREPARADO_TESTADO_LOCALMENTE_AGUARDANDO_COMPILACAO_E_COLETA_NATIVA",
+  "principal_criterion": "1 contrato por nivel; grade5; toque inclusivo; pontos brutos condicionais",
+  "result_ours": null,
+  "native_deals_August": "NAO_MEDIDOS_CONTROLE_SEPARADO_NAO_PRE_REQUISITO_DO_PRINCIPAL"
+}

@@ -62,10 +62,15 @@
       "Referencias por data e hash, sem resultados futuros nas decisoes.",
       "Coleta em lote de todos os niveis e dias elegiveis, sem uma coleta por operacao.",
       "Validar contratos historicos por data, com atencao a transicao Q/V; nao reutilizar WINV26 em agosto inteiro sem conferir correspondencia.",
-      "Consolidar Work, resultado principal grade5/toque e deals simulados com comparacao por operacao.",
+      "Consolidar Work e resultado principal grade5/toque por operacao. Deals do Tester de agosto, se medidos, sao controle separado e nao pre-requisito oculto.",
       "Preservar as duas saidas por horario e a ambiguidade original na referencia Work."
     ],
-    "regra_apresentacao": "Mostrar primeiro Work, nosso resultado principal e diferenca. Outros cenarios apenas na parte tecnica."
+    "regra_apresentacao": "Mostrar primeiro Work, nosso resultado principal e diferenca. Outros cenarios apenas na parte tecnica.",
+    "pacote_preparado": "entregas/fechamento_agosto_v1_10",
+    "zip": "entregas/ModeloD_Fechamento_Agosto_v1_10.zip",
+    "status": "AGUARDANDO_COMPILACAO_E_COLETA_NATIVA",
+    "validacao_local": "28 controles do coletor com mocks C++; pipeline sintetico 20 dias/1140 blocos; 400 estados por busca independente; 400 controles de reducao; nao e execucao MT5",
+    "deals_agosto": "Nao medidos. Controle separado; nao substitui nem bloqueia o resultado principal por sequencia de negocios."
   },
   "meses": [
     {
@@ -886,6 +891,6 @@
     "entregar_dois_pdfs_juntos_no_final": true,
     "nao_reenviar_resultados_ou_pdfs_a_cada_etapa": true,
     "atualizar_internamente": true,
-    "trabalho_ativo": "Preparar agosto/2026 com validacao de contratos por data"
+    "trabalho_ativo": "Agosto/2026: pacote pronto, aguardando compilacao e coleta nativa no principal da Genial"
   }
 }

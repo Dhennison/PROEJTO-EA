@@ -1,0 +1,24 @@
+USO INTERNO DO ASSISTENTE — O USUARIO SO COMPILA/EXECUTA O COLETOR NO MT5
+
+1. Reunir os ZIPs recebidos, sem alterar os originais:
+python analise/reunir_retorno.py --out /caminho/coleta /caminho/MES110*.zip
+O shell deve expandir os nomes dos arquivos, ou enumera-los explicitamente.
+
+2. Usar uma pasta de analise nova:
+python analise/analisar_mes.py --coleta /caminho/coleta --out /caminho/resultado
+Referencias e fonte Work M1 sao conferidas contra o pacote. Retorno pendente gera JSON sem total principal; nao agregar ao compilado.
+
+3. Validacao independente da sequencia:
+python analise/validar_independente.py --coleta /caminho/coleta --analise /caminho/resultado
+Para um retorno completo devem ser conferidos 400 estados (20x5x4), independentemente de haver 43 operacoes ou quantidade diferente.
+
+4. Revisao do resultado observado:
+Ler PENDENCIAS.csv (se existir), RESSALVAS.csv, comparacao de contratos, extras/ausencias, divergencias de OHLC e as janelas de entrada/saida, cortes e ambiguidades. Se houver pendencia, nao fechar o mes. Divergencias de feed nao sao apagadas nem equivalencia integral presumida.
+Se necessario, conferir reducao contra negocios brutos disponiveis; nao pedir nova coleta sem identificar uma lacuna concreta.
+
+5. Consolidar somente depois da conferencia, sem reenviar PDFs a cada etapa:
+Congelar DIARIO_PRINCIPAL.csv, nosso resultado principal e relatorio tecnico mensal em entregas/compilado_work_modelod/diarios_principais/2026_08.csv e originais_por_mes, atualizando INDICE_MENSAL.csv e o manifesto com hash do PDF.
+Executar o gerador existente de dois compilados (gerar_dois_compilados.py), que recalcula DD em ordem cronologica e verifica resultados mensais congelados e base comum. Preservar o resultado de setembro (+1380) e seus PDFs originais.
+Atualizar RETOMADA_DO_TRABALHO.txt e o registro da conversa. O proximo mes sera julho/2026 somente depois de resolver/concluir agosto.
+
+O pacote nao contem resultados historicos nossos de agosto. Os resultados dos testes locais sao sinteticos e nao devem ser copiados ao indice mensal, PDFs ou curva DD.

@@ -1,0 +1,10 @@
+{
+  "august_level_state_reduction_checks": 400,
+  "same_millisecond_order_kept": true,
+  "gaps_equality_cutoff": true,
+  "core_identical_to_frozen_september": true,
+  "zip_merge_equal_duplicates": true,
+  "zip_conflicts_refused": true,
+  "zip_traversal_refused": true,
+  "native_MT5_compile_or_execution": false
+}

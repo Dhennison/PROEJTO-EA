@@ -106,3 +106,7 @@ O arquivo canônico de todas as etapas é **`entregas/v2_10/RETOMADA_DO_TRABALHO
 ## Publicação confirmada
 
 Push confirmado em 11/11/2026: continuidade/inventário no commit `6e31844` e seis partes com 185 originais no commit `3cd9be6`, branch `entrega-modelod-v2-10-20261030`, repositório `Dhennison/PROEJTO-EA`.
+
+## Etapa de agosto preparada
+
+Pacote completo `entregas/fechamento_agosto_v1_10`, ZIP `entregas/ModeloD_Fechamento_Agosto_v1_10.zip`. Fontes, contratos por data, coleta, análise e instruções prontas; aguardando compilação/coleta no principal da Genial. Resultado de agosto ainda não apurado. Um ZIP de instalação por mês; retorno pode ser dividido automaticamente. Registro detalhado atualizado no TXT principal.

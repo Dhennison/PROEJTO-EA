@@ -1,0 +1,3 @@
+PASS checks=28; actual collector adapted to C++ API mocks; synthetic four-point path; NOT native MetaEditor compilation/execution or historical PnL
+
+EXIT_STATUS=0

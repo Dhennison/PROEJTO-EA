@@ -1,0 +1,19 @@
+{
+  "scope": "SYNTHETIC FOUR-POINT PATH; API and consumer only; NOT historical ticks or performance",
+  "days": 20,
+  "blocks": 1140,
+  "contract_candidates_audited": 40,
+  "stable_m1_snapshots": 32,
+  "candidates_outside_life": 8,
+  "states_all_variants": 400,
+  "price_differences": 0,
+  "quantity_differences": 0,
+  "cutoff_cases_exercised": 2,
+  "pending_refuses_total": true,
+  "forged_contract_refused": true,
+  "forged_candidate_bar_refused": true,
+  "changed_source_refused": true,
+  "forged_expiry_refused": true,
+  "independent_states_checked": 400,
+  "native_MT5_compile_or_execution": false
+}

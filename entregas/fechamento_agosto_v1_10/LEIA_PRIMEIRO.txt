@@ -1,0 +1,85 @@
+AGOSTO/2026 — MODELO D — PACOTE COMPLETO v1.10
+Preparado em 11/11/2026. Coleta somente de leitura no TERMINAL PRINCIPAL DA GENIAL.
+
+OBJETIVO E ESCOPO
+Confrontar os 20 pregoes de 04/08 a 31/08/2026 e as 43 operacoes da selecao auditada do Work. Nao acrescentar 03/08 como dia zero: ele nao faz parte dessa selecao do Work.
+O resultado principal seguira exatamente o criterio de setembro: um contrato por nivel, precos na grade de 5 pontos e entrada por toque inclusivo. O Work de agosto tem -387,164995 pontos. Nosso resultado de agosto ainda nao foi apurado.
+O pacote faz uma coleta em lote dos cinco niveis em todos os dias, inclusive os que nao tiverem operacao. Nao pede coleta manual por operacao.
+
+1. INSTALAR NO MT5 PRINCIPAL DA GENIAL
+Extraia este ZIP numa pasta temporaria.
+No MT5 PRINCIPAL da Genial: Arquivo > Abrir Pasta de Dados.
+Copie a pasta MQL5 deste pacote para dentro dessa Pasta de Dados, mesclando as pastas.
+Nao criar uma segunda MQL5 dentro da primeira. A estrutura deve ficar assim:
+MQL5\Experts\ModeloD_Fechamento_Agosto\Coletar_Agosto_Sem_Ordens.mq5
+MQL5\Experts\ModeloD_Fechamento_Agosto\ModeloD_Core.mqh
+MQL5\Files\MD_Agosto_2026_Referencias.csv
+MQL5\Files\MD_Agosto_2026_M1_Work.csv
+Nao copiar para a XP nem substituir o EA DEMO. Setembro fica preservado em sua propria pasta.
+Os dois CSVs ja vem prontos. Nao editar simbolos, datas, precos, ajuste ou hashes.
+
+2. COMPILAR ESTE UNICO ARQUIVO
+No principal da Genial, pressione F4 para abrir o MetaEditor.
+Abra: MQL5\Experts\ModeloD_Fechamento_Agosto\Coletar_Agosto_Sem_Ordens.mq5
+Pressione F7.
+O ModeloD_Core.mqh e incluido automaticamente; nao compilar separado.
+Envie a lista de compilacao se houver erro ou aviso. Nao ha EX5 pre-compilado neste ZIP.
+Os testes locais usam adaptacao C++ com mocks e analise Python: nao equivalem a compilar/rodar no MetaEditor/MT5.
+
+3. EXECUTAR UMA VEZ NO GRAFICO
+Volte ao principal da Genial e abra um grafico WIN$N, M5.
+Ctrl+N > Expert Advisors > ModeloD_Fechamento_Agosto > Coletar_Agosto_Sem_Ordens.
+Arraste o coletor para esse grafico. Use TODOS OS PARAMETROS PADRAO e clique OK.
+Nao iniciar o Testador de Estrategia. Nao mudar moeda do deposito. Nao usar o terminal da XP.
+Este EA nao envia ordens nem altera ticks/candles/simbolos personalizados. So seleciona simbolos para leitura, consulta historico e grava arquivos.
+O nome do contrato historico e escolhido automaticamente por dia; nao precisa trocar WINQ26/WINV26 manualmente.
+
+4. O QUE ELE CONFERE ANTES DE COLETAR TICKS
+- SHA-256 das referencias e dos 11.266 candles M1 originais do Work de agosto.
+- Em cada dia, WINQ26 e WINV26: inicio/expiracao informados pelo terminal; se o dia inteiro estiver fora da vigencia, o candidato e excluido com metadados registrados.
+- Para os candidatos em vigencia, faz duas leituras M1 completas identicas, inclusive volume/spread, e compara horarios e OHLC antes do corte com o Work.
+- Seleciona apenas UM candidato com correspondencia exata. Um erro de leitura em candidato ainda possivel, nenhum correspondente ou dois correspondentes tornam o dia pendente. Nao escolhe pelo lucro nem usa uma data de rolagem arbitraria.
+- Exporta CONTRATOS.csv, M1_CONTRATO_... e REFERENCIAS_RESOLVIDAS.csv para verificacao independente.
+A comparacao de contrato nao certifica que a fita de ticks e completa: os ticks terao sua propria conferencia OHLC/quantidade depois.
+
+5. AGUARDAR ATE MES110;END
+A aba Experts mostrara MES110;START, CONTRATO_LEITURA, CONTRATO, DIA, LEITURA, DIA_CONCLUIDO e END.
+Com os 20 dias disponiveis sao 1.140 blocos de ate 10 minutos, com duas leituras validas identicas em cada bloco. A coleta pode levar cerca de 40 minutos ou mais se houver downloads/releituras. Mantenha o notebook acordado, terminal aberto e conectado.
+O encerramento completo esperado e:
+MES110;END;reason=CONCLUIDO;days=20;blocks=1140;pending_blocks=0;pending_days=0;io_failed=false
+ExpertRemove depois do END e normal.
+Se o inicio conhecido do pregao nao trouxer negocios em duas leituras estaveis, ou nao puder ser lido apos as tentativas, o dia e marcado pendente e o coletor segue ao seguinte, sem perder tempo consultando o resto de um dia que ja nao pode ser fechado. Isso nao prova ausencia definitiva no servidor.
+Se aparecer CONCLUIDO_COM_PENDENCIAS, envie o retorno do mesmo jeito. Nao repetir a coleta por conta propria; os arquivos mostram quais datas e por que ficaram pendentes. Um mes incompleto nao recebe resultado zero nem e agregado ao drawdown.
+
+6. COMPACTAR E ENVIAR
+Apos o END, de dois cliques em COMPACTAR_RESULTADO.cmd, na pasta onde extraiu este pacote.
+Ele encontra a ultima MES110_... completa, cria ZIP(s) e abre a pasta no Explorador. Nao apaga os dados.
+Se houver varios ZIPs, envie TODOS, inclusive o que terminar em GERAL.zip. Envie tambem o texto da aba Experts do START ao END.
+Se o compactador nao abrir, Windows+R e cole:
+%APPDATA%\MetaQuotes\Terminal\Common\Files\ModeloD_Fechamento_Agosto
+Compacte a NOVA pasta MES110_... inteira. Nao reenviar a pasta de setembro.
+
+7. ANALISE QUE JA ESTA PREPARADA
+O assistente executara os programas da pasta analise; voce nao precisa instalar Python.
+- Reunir os ZIPs sem duplicar arquivos compartilhados, recusando duplicatas diferentes.
+- Revalidar os hashes e a escolha dos contratos por data, reconstruindo a comparacao dos arquivos M1 exportados.
+- Conferir todos os blocos, ordem/milissegundos, horarios M1, abertura e primeiro negocio no minuto do corte.
+- Reproduzir todos os 100 estados data/nivel em quatro controles: principal GRADE5_TOQUE, matematica por toque, grade5 estrita e matematica estrita. Os resultados futuros do Work nao decidem entradas/saidas.
+- Comparar por operacao e por dia, incluindo extras, ausencias, diferencas de motivo, ambiguidades, horarios, grade e cortes. O numero de operacoes nao e forcado a ser 43.
+- Uma segunda busca cronologica independente confere os estados/primeiros eventos do replay.
+- Preparar DIARIO_PRINCIPAL.csv e RESULTADO_PRINCIPAL.txt, com UM resultado principal para comparar com o Work.
+- Registrar todas as divergencias OHLC e quantidade, distinguindo as que ocorrem durante operacoes. Feed divergente nao vira feed certificado por conveniencia.
+Os dois casos de corte do Work (06/08 S61.8 e 25/08 R61.8) e o caso ambiguo original de 18/08 S38.2 estao preservados. O negocio de corte pode ser alguns milissegundos apos as 18h; seu horario/preco ficam registrados. Sem negocio no minuto do corte, o dia nao e liberado automaticamente.
+
+8. COMPARACAO, PREENCHIMENTOS E PDFS
+Principal = pontos condicionais nos niveis, sem spread, custos ou fila; e o mesmo criterio usado nos +1.380 pontos de setembro. Nao e um teste de ordens reais.
+Para agosto nao ha deals do Tester medidos. O pacote nao apresenta deals de setembro como se fossem de agosto nem deixa essa ausencia como uma futura exigencia para comparar o principal. Uma eventual simulacao de ordens seria controle separado, nao substituicao da cronologia coletada.
+As saidas sao avaliadas em negocio posterior ao registro de entrada, mesmo havendo varios registros no mesmo milissegundo; nao ha deduplicacao por tempo. Corte = primeiro Last observado no minuto do corte.
+Depois de fechar agosto, seus resultados diarios/mensais sao congelados. Atualizamos internamente os dois PDFs (tecnico e enxuto, somente Modelo D), entregando ambos juntos no final, conforme solicitado.
+O drawdown e calculado em ordem crescente: agosto antes de setembro. Saldo/pico/DD passam de um mes para o outro. Os pontos diarios/mensais de setembro nao mudam. O DD segue provisorio enquanto faltarem meses anteriores; e DD por fechamentos diarios, nao intradiario.
+
+9. REDUCAO E AUDITORIA
+EVENTOS_... nao contem todos os ticks brutos: conservam os primeiros dois negocios de cada categoria relativa aos limiares dos cinco niveis, o primeiro negocio de cada minuto e todos os negocios fora da grade. MINUTOS_... resume TODOS os negocios lidos por OHLC, quantidade, contagem e hash.
+As duas leituras brutas sao comparadas campo a campo antes de reduzir. A reducao nao serve para livro/fila, importacao de feed completo ou geracao de outro Tester.
+O nucleo ModeloD_Core.mqh e copia byte a byte do nucleo congelado usado em setembro; a logica e as regras do Modelo D nao foram alteradas.
+Registro geral do projeto: entregas/v2_10/RETOMADA_DO_TRABALHO.txt.
