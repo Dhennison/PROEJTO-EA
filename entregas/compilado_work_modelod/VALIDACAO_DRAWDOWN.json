@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scope": "Synthetic August prefix ONLY; not August market results.",
+  "checks": [
+    "Chronological ordering ignores reverse collection order",
+    "Monthly and daily September PnL unchanged",
+    "Historical accumulated DD propagates into September",
+    "Monthly-local DD remains a distinct reference",
+    "Matched Work/test coverage starts at the same date",
+    "Earlier missing months mark DD provisional",
+    "Gaps between completed months are refused, not zero-filled"
+  ]
+}
