@@ -1,0 +1,271 @@
+{
+  "collection_complete": true,
+  "comparison_strict_ohlc_approved": false,
+  "days": 14,
+  "blocks": 798,
+  "two_exact_reads_each_block": true,
+  "blocks_pending": 0,
+  "ALL_records": 47809973,
+  "business_records": 37191079,
+  "retained_events": 632359,
+  "states_per_variant": 70,
+  "closed_per_variant": 33,
+  "no_extra_or_missing_operations_any_variant": true,
+  "no_open_positions_at_end": true,
+  "all_openings_and_cutoffs_observed": true,
+  "Work_points": "3839.308998",
+  "observed_conditional_price_totals": {
+    "GRADE5_ESTRITA": "730.000000",
+    "GRADE5_TOQUE": "1380.000000",
+    "MATEMATICA_ESTRITA": "720.536666",
+    "MATEMATICA_TOQUE": "720.536666"
+  },
+  "Tester_generated_deals_points": "1070",
+  "Tester_OHLC_deals_points": "565",
+  "candle_replay_on_Work_and_received_tick_aggregates": {
+    "identical_states_all_70_each_price_grid": true,
+    "mathematical_total": "3839.308998",
+    "grade5_total": "4490.000000",
+    "scope": "Same full-candle Work convention. Does not prove tick completeness."
+  },
+  "quality": {
+    "Work_M1": 7875,
+    "same_timestamps": true,
+    "OHLC_equal": 7851,
+    "OHLC_different": 24,
+    "OHLC_different_1824": 14,
+    "OHLC_different_before_cut": 10,
+    "quantity_equal": 7835,
+    "quantity_different": 40,
+    "changed_relation_with_strategy_thresholds_at_intraday_different_bars": [
+      "S50:sl:H",
+      "S50:sl5:H"
+    ],
+    "operations_with_price_different_bar_between_entry_and_exit": 0,
+    "operations_with_quantity_different_bar_between_entry_and_exit": [
+      [
+        "2026.09.17",
+        "S61.8"
+      ]
+    ]
+  },
+  "same_entry_bar_targets_Work": {
+    "count": 12,
+    "actual_price_sequence_classification": {
+      "ALVO_EM_BARRA_POSTERIOR": 6,
+      "STOP_PRIMEIRO": 5,
+      "ALVO_MESMA_BARRA": 1
+    }
+  },
+  "grade_touch_vs_strict": {
+    "only_changed_points_key": [
+      "2026.09.01",
+      "R38.2"
+    ],
+    "difference_points": "650",
+    "grade_touch": "ALVO +275",
+    "grade_strict": "STOP -375"
+  },
+  "Tester_vs_grade_touch": {
+    "same_motive": 32,
+    "different_motive": 1,
+    "different_key": [
+      "2026.09.14",
+      "S38.2"
+    ],
+    "difference_on_changed_motive": "-775",
+    "arithmetic_price_fill_difference_on_other_32": "465.0000000000",
+    "total_difference": "-310"
+  },
+  "cutoff_position_close_exercised": false,
+  "conclusion": "Full-period observed conditional price totals computed. Strict source-price equality failed on 24 bars; do not certify as identical feed or real PnL. No new collection requested to conceal these exceptions.",
+  "sha256_data": {
+    "EVENTOS_20260911.csv": "b575b5ec4c5a05a0a6273a8065b625538efb83cce97561edfda79b820a4fa08b",
+    "MINUTOS_20260909.csv": "6e6772db4d2e57a78ec50804e8432d72b17e9fc4d072b90127a12809d11f62a7",
+    "EVENTOS_20260901.csv": "bdfa763d16c80a5d7db0e1e6468715bbe6d469473f65baeab95beed44c76fc1d",
+    "MINUTOS_20260902.csv": "6bc2d40b1703a7e718893188a78b1e5880d80a8b800a195036e5d6218d1570aa",
+    "MINUTOS_20260914.csv": "89ae216f0d5de6f254d562f759cc8fe023a0247c58fa651bf110eee3b4b870ce",
+    "MINUTOS_20260904.csv": "636e1d0c9e67ea72cd745a51204e0310bcca3f124aab3450b5df3fcde1418ab9",
+    "EVENTOS_20260902.csv": "b5a915df27f4bb761b44d4a0d7cabb19d69d0e36c9c6b9ecb31fc2797b1c0e82",
+    "EVENTOS_20260917.csv": "96615bacf2b8a09cb84f069cadd6effdfe0bdcd79733573b26d58561bd63a68e",
+    "MINUTOS_20260915.csv": "ce2279629a62f3458aa50856fbb71c493fd355d1c99daa51882c1e6c32e1041a",
+    "REFERENCIAS.csv": "ff2623cc41ddf7a4a9ef8c476b658bd22e5629ec1160a22ad1fa285476408313",
+    "MINUTOS_20260911.csv": "5ef2e3b213ce7baae9fc2c773858e931715b30b4d3b9b81f844db3b69f69faea",
+    "EVENTOS_20260903.csv": "c5a890b788de052f742ac7fc765bbe5ffcec086943704ba676ee2dd301585adb",
+    "BLOCOS.csv": "3738c9534a371705091d3632a6af163f6ff0f4c80906e2b7840ad60b4198f2e2",
+    "MINUTOS_20260918.csv": "3515c5ba458776b78e2461ec56874f395b57781de28ac2f5b5cb65b6da172425",
+    "EVENTOS_20260921.csv": "0afbad24500cdc186d5d7d3d1c700e71213f516c124acb8a20fa58a99af1412e",
+    "MINUTOS_20260917.csv": "bfc998afc58d45aabbe5a1bcf2ba642ce5c7badfd289b6dc6670026bef065e71",
+    "MINUTOS_20260903.csv": "077bc69a33bd270192a31df8f1d08f8074fc8b7ec71ea55490198141256c0ab2",
+    "EVENTOS_20260914.csv": "a791d46b583bd6e56a9f29abf02bca80285d2a6854b837cfaba931479cae6d91",
+    "EVENTOS_20260910.csv": "80fd822645b761aaa0f5cfce511b95beb5c38f40e83e88b7be57e35ad42230cb",
+    "EVENTOS_20260916.csv": "6cd32f2c46bae291d8aea864af199de72f4128416ca35c2be87c42cd8122195c",
+    "MINUTOS_20260910.csv": "8954341afae73d70e2309146a2ef208271385ecffb95df82280b4f47f439ab4f",
+    "MINUTOS_20260901.csv": "d7ed0185ad13ad918eefdd333a72b0bceaa4cc81940662808ed5726980762c32",
+    "MINUTOS_20260908.csv": "c518f2d0ff1711ed5bea22f80d45c8e24e012b69542a7df9c252efeaf692a39e",
+    "MINUTOS_20260916.csv": "392950cca1e4b683024471e3bcf3ae12b5db6011382370be1defd61b3826989a",
+    "EVENTOS_20260908.csv": "14f4e7d6d88450ebe3a5af8f27e48c670c637ebd85a850a86b174a79e97a6917",
+    "EVENTOS_20260909.csv": "842f495890bb544457531c959f08bf14ac121ddc223853e5ce0027766532c0f1",
+    "EVENTOS_20260918.csv": "88d159c48d19d0a00f61d7ef99d0a7e79507477a86ea46d0d6283df354599ebc",
+    "EVENTOS_20260904.csv": "89345ad85e344c606ae60c2b3b3768161b2e51eb39da19af94262983b22012cf",
+    "EVENTOS_20260915.csv": "e2177f3f51e6ca14fa543494a538bf5321ea5f9fb2aa8b80cd5415024c4b2192",
+    "RESULTADO.txt": "b9372935ae74687256aa19c79b12110586c3753c9dbe3552d53b1be360e5c3a2",
+    "MINUTOS_20260921.csv": "6460ee3fce6ffd6493fe461375f1fdf8510079a3c6b9c527e8bf42b07ae8a953"
+  },
+  "zip_manifest": [
+    {
+      "zip": "/workspace/attachments/045ddecd-7bf4-410c-a2b3-84d28a51f2db/MES100_1794411333_1034344671_20260903.zip",
+      "sha256": "ae471920267cf1114b05cd3e4bb9837c285babaeeb09d115d89d88a3030e6dd3",
+      "files": [
+        "BLOCOS.csv",
+        "REFERENCIAS.csv",
+        "RESULTADO.txt",
+        "EVENTOS_20260903.csv",
+        "MINUTOS_20260903.csv"
+      ]
+    },
+    {
+      "zip": "/workspace/attachments/308bd589-fa32-47a5-bdf7-83fffc86c7cd/MES100_1794411333_1034344671_20260918.zip",
+      "sha256": "4c6cc133aaea86316451ab023d1a1640140a8c06f35bc11128462a989f033edb",
+      "files": [
+        "BLOCOS.csv",
+        "REFERENCIAS.csv",
+        "RESULTADO.txt",
+        "EVENTOS_20260918.csv",
+        "MINUTOS_20260918.csv"
+      ]
+    },
+    {
+      "zip": "/workspace/attachments/48232c02-f515-4df6-9273-41bf603d6853/MES100_1794411333_1034344671_20260911.zip",
+      "sha256": "4ea7bb6347ad5e6685fe522325edac2802f1751d70bd2ff596fcdbc61dd212d7",
+      "files": [
+        "BLOCOS.csv",
+        "REFERENCIAS.csv",
+        "RESULTADO.txt",
+        "EVENTOS_20260911.csv",
+        "MINUTOS_20260911.csv"
+      ]
+    },
+    {
+      "zip": "/workspace/attachments/51379ff3-4261-4045-9895-02f5409c8dca/MES100_1794411333_1034344671_20260901.zip",
+      "sha256": "5e23ecdf6c191a06d72b607b1bc856c79f3707586a25a5b8a07ec4a957a9cd8e",
+      "files": [
+        "BLOCOS.csv",
+        "REFERENCIAS.csv",
+        "RESULTADO.txt",
+        "EVENTOS_20260901.csv",
+        "MINUTOS_20260901.csv"
+      ]
+    },
+    {
+      "zip": "/workspace/attachments/5676da2b-58f2-4d66-96bd-8f13b92475db/MES100_1794411333_1034344671_20260902.zip",
+      "sha256": "d4aea8763e152018bd41639558305c45d38bdf8e4400f4ce94bca52586e67e21",
+      "files": [
+        "BLOCOS.csv",
+        "REFERENCIAS.csv",
+        "RESULTADO.txt",
+        "EVENTOS_20260902.csv",
+        "MINUTOS_20260902.csv"
+      ]
+    },
+    {
+      "zip": "/workspace/attachments/640ac3ba-3f26-4db8-9fdd-0989c481ed29/MES100_1794411333_1034344671_20260916.zip",
+      "sha256": "9cf63035f6c9c868d45ccb39f3c749d67d9920cbf46f1bc1ff3f85778bbfd322",
+      "files": [
+        "BLOCOS.csv",
+        "REFERENCIAS.csv",
+        "RESULTADO.txt",
+        "EVENTOS_20260916.csv",
+        "MINUTOS_20260916.csv"
+      ]
+    },
+    {
+      "zip": "/workspace/attachments/6de7a36d-815d-4108-a78a-332a7f189338/MES100_1794411333_1034344671_20260917.zip",
+      "sha256": "e2a5a5145f79af6168ead57dcd7bc062211882de85f221f6c5c7d5d38d40fd66",
+      "files": [
+        "BLOCOS.csv",
+        "REFERENCIAS.csv",
+        "RESULTADO.txt",
+        "EVENTOS_20260917.csv",
+        "MINUTOS_20260917.csv"
+      ]
+    },
+    {
+      "zip": "/workspace/attachments/84f03c7e-c8a4-4d2d-b835-b7d837852ede/MES100_1794411333_1034344671_20260910.zip",
+      "sha256": "8ec7cfcebe0a3300f1c72fd60317988dd4e5e21f1d281afd10c8df94bb2632d8",
+      "files": [
+        "BLOCOS.csv",
+        "REFERENCIAS.csv",
+        "RESULTADO.txt",
+        "EVENTOS_20260910.csv",
+        "MINUTOS_20260910.csv"
+      ]
+    },
+    {
+      "zip": "/workspace/attachments/a63a6754-cdaf-4ec5-a475-adf6ef05b42c/MES100_1794411333_1034344671_20260921.zip",
+      "sha256": "aaf91972d86d780c494be87433d544ef26a34892d4861b2c01b3d7b11646452c",
+      "files": [
+        "BLOCOS.csv",
+        "REFERENCIAS.csv",
+        "RESULTADO.txt",
+        "EVENTOS_20260921.csv",
+        "MINUTOS_20260921.csv"
+      ]
+    },
+    {
+      "zip": "/workspace/attachments/b3ddd2e3-1380-4497-8b81-0a9c317425b8/MES100_1794411333_1034344671_20260915.zip",
+      "sha256": "41f7f5d9fbcd27bc779be596ab4ba304d6ec044c845cfad35ae36dd8638e43de",
+      "files": [
+        "BLOCOS.csv",
+        "REFERENCIAS.csv",
+        "RESULTADO.txt",
+        "EVENTOS_20260915.csv",
+        "MINUTOS_20260915.csv"
+      ]
+    },
+    {
+      "zip": "/workspace/attachments/b6b2027e-acb3-4f1b-af8d-7ba78714a2b1/MES100_1794411333_1034344671_20260914.zip",
+      "sha256": "a821500f7636b9c3cebc04e4af4550ccaddfa81507ceacc8fc95d170516d409d",
+      "files": [
+        "BLOCOS.csv",
+        "REFERENCIAS.csv",
+        "RESULTADO.txt",
+        "EVENTOS_20260914.csv",
+        "MINUTOS_20260914.csv"
+      ]
+    },
+    {
+      "zip": "/workspace/attachments/ca82f8dc-7d8f-4ece-bb14-74fade3d963b/MES100_1794411333_1034344671_20260908.zip",
+      "sha256": "d4735553a4d2ccda6f368bd58b18f67fb8ec79f789fb334189e7ad94cd2a3de2",
+      "files": [
+        "BLOCOS.csv",
+        "REFERENCIAS.csv",
+        "RESULTADO.txt",
+        "EVENTOS_20260908.csv",
+        "MINUTOS_20260908.csv"
+      ]
+    },
+    {
+      "zip": "/workspace/attachments/ef40e6ca-d6df-417b-bcb5-99ba02780880/MES100_1794411333_1034344671_20260909.zip",
+      "sha256": "765a539b77a6cb7448e461bdcc7a13ff1e3bc4daff47a8df9f27e68ef99b7e9b",
+      "files": [
+        "BLOCOS.csv",
+        "REFERENCIAS.csv",
+        "RESULTADO.txt",
+        "EVENTOS_20260909.csv",
+        "MINUTOS_20260909.csv"
+      ]
+    },
+    {
+      "zip": "/workspace/attachments/f36f4e96-5f01-41f6-8ff3-3ba8e27beb87/MES100_1794411333_1034344671_20260904.zip",
+      "sha256": "ddb849a7e0c6cff500aff3606fe6b74b584c202de7108444b1102f023bdb77f0",
+      "files": [
+        "BLOCOS.csv",
+        "REFERENCIAS.csv",
+        "RESULTADO.txt",
+        "EVENTOS_20260904.csv",
+        "MINUTOS_20260904.csv"
+      ]
+    }
+  ]
+}

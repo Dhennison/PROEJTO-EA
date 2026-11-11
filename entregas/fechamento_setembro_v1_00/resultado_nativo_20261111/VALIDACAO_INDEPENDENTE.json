@@ -1,0 +1,9 @@
+{
+  "checks": 280,
+  "dates": 14,
+  "variants": 4,
+  "all_five_levels_compared": true,
+  "method": "Independent per-level first-entry/first-exit search vs streaming engine; exact timestamps, event prices, reasons and theoretical points.",
+  "passed": true,
+  "certifies_exchange_fills": false
+}

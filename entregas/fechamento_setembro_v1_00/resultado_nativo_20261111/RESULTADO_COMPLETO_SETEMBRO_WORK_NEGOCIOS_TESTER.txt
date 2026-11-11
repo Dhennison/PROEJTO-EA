@@ -1,0 +1,161 @@
+MODELO D — FECHAMENTO OBSERVADO DE SETEMBRO/2026
+Período: 01/09 a 21/09/2026, 14 pregões — relatório de 11/11/2026
+Um contrato por nível; pontos brutos, sem custos. Referências históricas auditadas do Work preservadas.
+
+RESULTADO DO MÊS INTEIRO SOBRE OS NEGÓCIOS RECEBIDOS
+Work original: +3839,308998 pontos (24 alvos e 9 stops).
+Sequência dos negócios, níveis matemáticos, entrada por toque: +720,536666 pontos (19 alvos e 14 stops).
+Sequência dos negócios, níveis matemáticos, entrada estrita: +720,536666 pontos (19 alvos e 14 stops).
+Sequência dos negócios, grade5, entrada por toque: +1380 pontos (20 alvos e 13 stops).
+Sequência dos negócios, grade5, entrada estrita: +730 pontos (19 alvos e 14 stops).
+Deals do Tester com ticks gerados, já auditados: +1070 pontos (19 alvos e 14 stops).
+Deals do Tester em 1 minuto OHLC, já auditados: +565 pontos (19 alvos e 14 stops).
+Controle de candle inteiro com preços normalizados: +4490 pontos — continua sendo cenário por candle, não execução por negócios.
+
+Os valores +720,54 e +1380 agora foram calculados varrendo os 14 pregões e todos os cinco níveis. Não são mais a substituição parcial dos seis desfechos mantendo as outras 27 operações do Work. O total matemático coincidir com a conta parcial anterior foi um resultado do processamento completo, não uma premissa.
+O cenário principal para representar a grade de cinco pontos com toque inclusivo é GRADE5_TOQUE: +1380 pontos teóricos. Entrada estrita é sensibilidade ao toque, não simulação de fila. Não escolher o cenário pelo maior lucro e não tratar +730 a +1380 como intervalo garantido do resultado real.
+
+COLETA COMPLETA, CORRESPONDÊNCIA INTEGRAL DE FEED NÃO APROVADA
+Foram recebidos os 14 ZIPs e o log de Experts. Arquivos compartilhados repetidos nos ZIPs são idênticos, com extração reunida sem duplicar conteúdo.
+Execução nativa GenialInvestimentos-PRD, build 6231, WINV26, entre 15:35:33 e 16:02:24 de 11/11/2026.
+798 blocos, TODOS com duas leituras válidas idênticas, zero pendências e io_failed=false.
+47.809.973 registros ALL observados, incluindo 37.191.079 negócios. A redução reteve 632.359 eventos relevantes aos níveis e aos primeiros negócios dos minutos; não são todos os ticks brutos.
+Quatro variantes: 70 estados por variante (14 datas x 5 níveis), 33 operações encerradas por variante. Mesmas chaves data/nível das 33 operações Work; zero extras ou ausentes. Um nível inelegível e 36 sem toque antes do corte por variante.
+Todas as aberturas e primeiros negócios no/depois do corte foram observados. Nenhuma posição das 33 permaneceu aberta ao final. Dia 03/09 foi conferido com dados e zero operações, não tratado como dia ausente.
+A coleta termina em END;reason=CONCLUIDO;days=14;blocks=798;pending_blocks=0;io_failed=false.
+
+A comparação de candles encontrou os mesmos 7875 horários do Work:
+7851 candles com OHLC idêntico; 24 diferentes.
+7835 candles com quantidade idêntica; 40 diferentes.
+14 diferenças de OHLC estão às 18:24, depois do corte das 18h. As outras 10 estão antes do corte.
+NENHUM dos 24 candles de preço divergente está entre a entrada e a saída das 33 operações nos cenários matemático/grade5 por toque.
+A única diferença de quantidade dentro desses intervalos é 17/09 10:40, S61,8: ticks 139969 contra 139970 nas referências, já reproduzida no controle curto. Ela continua registrada como ressalva.
+Os horários e as quantidades divergentes completos estão nos CSVs de auditoria; não se presume a causa. Não criar negócios para fechar volume e não tratar estabilidade como certificação independente do feed.
+
+POR QUE O JSON INICIAL RECUSOU O RÓTULO DE MÊS APROVADO
+O analisador original exige igualdade absoluta de OHLC em todos os 7875 candles para preencher pontos_mensais_teoricos como total aprovado. Ele corretamente deixou esse campo nulo e guardou os números em subtotal_nao_aprovado porque 24 candles não coincidem.
+Isso não significa que faltam pregões, posições abertas ou blocos: todos foram processados. A validação estrita de igualdade integral da alimentação falhou; a soma observada dos negócios recebidos foi integralmente calculada.
+A auditoria adicional não apagou essa recusa. Ela separou coleta completa, preço observado e equivalência do feed, e publica os números como TOTAIS CONDICIONAIS OBSERVADOS, sem homologá-los como lucro real ou feed idêntico.
+Não há pedido de nova coleta para ocultar as diferenças.
+
+EFEITO DAS 24 DIFERENÇAS SOBRE O CONTROLE POR CANDLES
+Foi refeito o replay pela mesma convenção do Work sobre (a) seus candles originais e (b) os candles agregados dos negócios recebidos, mantendo o MESMO contexto por data.
+Os 70 estados por grade coincidiram em entrada por minuto, saída por minuto, motivo e pontos.
+Matemática por candle: +3839,308998 nas duas fontes.
+Grade5 por candle: +4490 nas duas fontes.
+Portanto, essas diferenças de OHLC não explicam a queda entre Work e sequência de negócios nesse controle. O efeito relevante observado foi a cronologia dentro dos candles.
+A mudança de relação com um limiar encontrada em uma máxima de candle contra o SL da S50 não é condição de stop para a compra (que usa a mínima). O replay completo foi conferido em vez de presumir que qualquer diferença de preço alteraria o resultado.
+Isso não prova que todos os negócios do servidor existem na amostra ou que a ordem de um negócio não recebido seja conhecida.
+
+REFERÊNCIAS E FRONTEIRA DO TESTE
+Abertura, H/L/C anterior, ajuste e corte usados foram os da referência auditada por data; o SHA-256 confere com o pacote. Resultados futuros do Work não foram usados para escolher entradas/saídas.
+Não substituímos H/L/C anterior por um fechamento derivado dos ticks recebidos até 18:25. Há diferenças de fechamento às 18:24 e essa não seria uma comparação com os mesmos níveis do Work. O uso das referências congeladas isola cronologia/grade; não certifica outro algoritmo de formação diária ou o ajuste B3 em produção.
+No motor de preços, o alvo/stop são testados em negócio posterior ao da entrada, como nas auditorias manuais. A redução guarda os primeiros dois registros de cada categoria para conservar o caso de gap além de entrada e proteção. No corte, usa-se o primeiro Last observado, sem preço inventado às 18h.
+Não houve posição chegando ao corte neste conjunto. Isso não invalida o mês apurado; apenas significa que esta amostra não exercita a zeragem de posição aberta às 18h, que deve constar de outra amostra de homologação operacional.
+
+DOZE ALVOS NA BARRA DE ENTRADA DO WORK
+1 foi confirmado como alvo na mesma barra: S38,2 de 14/09.
+6 foram alvos em barras posteriores: R61,8 de 01/09; S38,2, S50 e S61,8 de 11/09; S50 e S61,8 de 16/09.
+5 tiveram stop primeiro nos dados recebidos: S38,2 e R61,8 de 10/09; S38,2 de 16/09; S38,2 e S61,8 de 17/09. A última conserva a ressalva quantitativa já descrita.
+A S50 de 11/09 é um exemplo de concordância de motivo com horário diferente: Work atribui alvo às 09:30, os negócios mostram entrada às 09:30:01.632 e alvo às 09:40:23.334.
+Os quatro controles fora dos seis iniciais também foram abrangidos e deram alvo em barra posterior. Isso confirma que concordância Work/Tester no motivo não certifica o minuto de saída.
+A amostra não prova uma regra universal para a abertura além do alvo. Nenhuma regra do Modelo D foi substituída por STOP automático ou negação automática de alvo.
+
+CASO QUE EXPLICA OS 650 PONTOS ENTRE TOQUE E ESTRITA
+01/09, R38,2:
+Linha matemática=180935,837333...; normalizada=180935.
+Grade5 por toque: primeiro toque 09:47:50.034 em 180935; alvo 09:50:01.283 na linha 180660; +275 pontos teóricos.
+Matemática: primeiro alcance 09:51:15.648 em 180940; stop 10:00:03.471 na linha matemática 181310,837333...; -375 pontos teóricos.
+Grade5 estrita: entrada 09:51:15.648, stop 10:00:03.471 em 181310; -375 pontos.
+É a ÚNICA mudança de pontos entre GRADE5_TOQUE e GRADE5_ESTRITA. Diferença=650. A igualdade ao nível pode disparar uma hipótese por toque sem comprovar execução na fila.
+A diferença total entre grade5 por toque e matemática por toque é +659,463334: +650 por esse motivo/cronologia e +9,463334 de diferenças aritméticas nos demais casos.
+
+SEPARANDO TRAJETÓRIA E PREENCHIMENTO SIMULADO
+Grade5 por toque nos negócios recebidos: +1380.
+Tester com ticks gerados: +1070.
+32 operações têm o mesmo motivo entre esses dois cenários. A diferença aritmética de seus preços efetivos contra níveis exatos favoreceu o Tester em +465 pontos nesse subconjunto.
+A única troca de motivo é S38,2 de 14/09: alvo teórico normalizado +440 contra stop simulado -335, parcela -775.
+1380 - 775 + 465 = 1070.
+Tester 1 minuto OHLC: +565. As outras 32 operações têm os preços nos níveis; em 14/09 o stop de -375 substitui o alvo de +440, parcela -815.
+1380 - 815 = 565.
+Essa decomposição é comparação aritmética de cenários, não estimativa de fila/slippage de bolsa real.
+
+PREENCHIMENTO E RESULTADO REAL — SEM NOVA EXIGÊNCIA ESCONDIDA
+Os deals do Tester JÁ mediram suas execuções simuladas e estão na tabela por operação. Não é necessário repetir aquelas duas rodadas.
+Os cenários de negócios históricos assumem entrada/saída exatamente nos níveis matemáticos/normalizados. Não há spread, custos, parciais ou fila nesses pontos; o preço do primeiro negócio observado também consta em coluna separada e não é confundido com preenchimento garantido.
+A fila e uma ordem que não foi colocada na bolsa naquele instante não podem ser comprovadas retroativamente. Não haverá outro teste histórico prometendo reconstruí-las para transformar estes pontos em lucro real.
+A demo XP é evidência de execução em tempo corrente no ambiente demo, com seus limites; não foi alterada por esta coleta e não equivale a conta real.
+
+VALIDAÇÃO INDEPENDENTE
+O resultado do motor em fluxo foi confrontado com uma busca independente por nível sobre os eventos recebidos. Foram conferidos 280 estados, datas, eventos de entrada e saída, motivos, preços dos negócios e pontos, nas quatro variantes. Todos coincidiram.
+A preservação do fluxo reduzido já havia sido confrontada com os CSVs completos recebidos, em 921 verificações e controles de igualdade/gap/timestamp/corte. A coleta nativa concluída e os seus metadados agora estão disponíveis; isso não transforma a validação em certificação independente do servidor.
+
+CONCLUSÃO E CONTINUIDADE
+A comparação de setembro sobre a alimentação recebida foi concluída: mesmos 33 pares data/nível em 14 pregões, zero extras/ausentes, nenhum saldo aberto. Há números integrais observados, dados excepcionais explicitados e comparação com os deals existentes, não uma conta híbrida de seis operações.
+Para a regra de grade5 com toque inclusivo, o cenário apurado é +1380 pontos; para comparação na escala matemática original do Work, +720,536666. Work permanece +3839,308998; Tester gerado +1070 e Tester OHLC +565.
+Não certificar esses valores como retorno real, equivalência integral de feeds ou desempenho de todo o histórico. A próxima ampliação usa o mesmo processo em lote, referências auditadas e amostra que exercite corte/abertura tardia/lacunas/ambiguidades, sem mais repetições manuais desta coleta de setembro.
+A contagem de exposição de 1094/1877 operações no histórico longo continua sendo inventário, não número de erros demonstrados. Nenhuma alteração foi feita nos resultados originais, nas 32 ambiguidades históricas ou no núcleo do Modelo D.
+
+RESUMO POR PREGAO — PONTOS
+Data;Operacoes;Work;Negocios_math;Negocios_grade5_toque;Grade5_estrita;Tester_ticks;Tester_OHLC
+2026.09.01;2;-262.585333;-262.585333;385.000000;-265.000000;430.0000000000;385.0000000000
+2026.09.02;2;-825;-825.000000;-825.000000;-825.000000;-925.0000000000;-825.0000000000
+2026.09.03;0;0;0;0;0;0;0
+2026.09.04;2;865.585334;865.585334;865.000000;865.000000;915.0000000000;865.0000000000
+2026.09.08;1;399.43;399.430000;400.000000;400.000000;395.0000000000;400.0000000000
+2026.09.09;3;-755.995;-755.995000;-755.000000;-755.000000;-695.0000000000;-755.0000000000
+2026.09.10;4;386.841999;-820.118667;-820.000000;-820.000000;-755.0000000000;-820.0000000000
+2026.09.11;3;792.687999;792.687999;795.000000;795.000000;940.0000000000;795.0000000000
+2026.09.14;3;774.247;774.247000;775.000000;775.000000;5.0000000000;-40.0000000000
+2026.09.15;2;-196.643;-196.643000;-195.000000;-195.000000;-210.0000000000;-195.0000000000
+2026.09.16;3;501.507;8.028000;10.000000;10.000000;35.0000000000;10.0000000000
+2026.09.17;4;687.109999;-731.222667;-730.000000;-730.000000;-700.0000000000;-730.0000000000
+2026.09.18;2;657.931334;657.931334;660.000000;660.000000;705.0000000000;660.0000000000
+2026.09.21;2;814.191666;814.191666;815.000000;815.000000;930.0000000000;815.0000000000
+
+COMPARACAO DAS 33 OPERACOES
+Data;Nivel;Work_motivo;Work_pontos;Negocios_math_motivo;Negocios_math_pontos;Grade5_motivo;Grade5_pontos;Grade5_estrita_pontos;Tester_ticks_pontos;Tester_OHLC_pontos;Entrada_grade5_servidor;Saida_grade5_servidor
+2026.09.01;R38.2;STOP;-375;STOP;-375.000000;ALVO;275.000000;-375.000000;280.0000000000;275.0000000000;2026.09.01 09:47:50.034;2026.09.01 09:50:01.283
+2026.09.01;R61.8;ALVO;112.414667;ALVO;112.414667;ALVO;110.000000;110.000000;150.0000000000;110.0000000000;2026.09.01 10:00:03.808;2026.09.01 10:01:00.206
+2026.09.02;R38.2;STOP;-375;STOP;-375.000000;STOP;-375.000000;-375.000000;-395.0000000000;-375.0000000000;2026.09.02 10:26:44.120;2026.09.02 10:29:34.082
+2026.09.02;R61.8;STOP;-450;STOP;-450.000000;STOP;-450.000000;-450.000000;-530.0000000000;-450.0000000000;2026.09.02 10:41:17.474;2026.09.02 10:50:38.777
+2026.09.04;S38.2;ALVO;379.794667;ALVO;379.794667;ALVO;380.000000;380.000000;430.0000000000;380.0000000000;2026.09.04 10:27:23.268;2026.09.04 10:30:30.593
+2026.09.04;R38.2;ALVO;485.790667;ALVO;485.790667;ALVO;485.000000;485.000000;485.0000000000;485.0000000000;2026.09.04 13:18:24.297;2026.09.04 13:59:29.355
+2026.09.08;R61.8;ALVO;399.43;ALVO;399.430000;ALVO;400.000000;400.000000;395.0000000000;400.0000000000;2026.09.08 10:47:14.741;2026.09.08 10:49:18.196
+2026.09.09;S38.2;ALVO;269.005;ALVO;269.005000;ALVO;270.000000;270.000000;285.0000000000;270.0000000000;2026.09.09 10:18:44.401;2026.09.09 10:20:30.474
+2026.09.09;S50;STOP;-375;STOP;-375.000000;STOP;-375.000000;-375.000000;-375.0000000000;-375.0000000000;2026.09.09 11:46:14.639;2026.09.09 11:55:23.937
+2026.09.09;S61.8;STOP;-650;STOP;-650.000000;STOP;-650.000000;-650.000000;-605.0000000000;-650.0000000000;2026.09.09 12:01:46.976;2026.09.09 12:21:33.989
+2026.09.10;S38.2;ALVO;235.011333;STOP;-375.000000;STOP;-375.000000;-375.000000;-360.0000000000;-375.0000000000;2026.09.10 09:07:45.555;2026.09.10 09:09:33.464
+2026.09.10;S50;ALVO;379.881333;ALVO;379.881333;ALVO;380.000000;380.000000;405.0000000000;380.0000000000;2026.09.10 09:09:33.464;2026.09.10 09:14:36.213
+2026.09.10;R38.2;STOP;-375;STOP;-375.000000;STOP;-375.000000;-375.000000;-335.0000000000;-375.0000000000;2026.09.10 11:35:16.674;2026.09.10 11:41:03.752
+2026.09.10;R61.8;ALVO;146.949333;STOP;-450.000000;STOP;-450.000000;-450.000000;-465.0000000000;-450.0000000000;2026.09.10 11:45:29.572;2026.09.10 11:50:55.436
+2026.09.11;S38.2;ALVO;187.269333;ALVO;187.269333;ALVO;190.000000;190.000000;210.0000000000;190.0000000000;2026.09.11 09:26:10.633;2026.09.11 09:27:53.813
+2026.09.11;S50;ALVO;302.709333;ALVO;302.709333;ALVO;300.000000;300.000000;415.0000000000;300.0000000000;2026.09.11 09:30:01.632;2026.09.11 09:40:23.334
+2026.09.11;S61.8;ALVO;302.709333;ALVO;302.709333;ALVO;305.000000;305.000000;315.0000000000;305.0000000000;2026.09.11 09:30:22.531;2026.09.11 09:31:29.792
+2026.09.14;S38.2;ALVO;439.241;ALVO;439.241000;ALVO;440.000000;440.000000;-335.0000000000;-375.0000000000;2026.09.14 09:03:01.132;2026.09.14 09:03:05.730
+2026.09.14;S50;STOP;-375;STOP;-375.000000;STOP;-375.000000;-375.000000;-370.0000000000;-375.0000000000;2026.09.14 09:09:17.382;2026.09.14 09:11:36.422
+2026.09.14;S61.8;ALVO;710.006;ALVO;710.006000;ALVO;710.000000;710.000000;710.0000000000;710.0000000000;2026.09.14 09:15:03.305;2026.09.14 09:56:15.295
+2026.09.15;R38.2;STOP;-375;STOP;-375.000000;STOP;-375.000000;-375.000000;-385.0000000000;-375.0000000000;2026.09.15 12:23:03.660;2026.09.15 12:30:01.756
+2026.09.15;R61.8;ALVO;178.357;ALVO;178.357000;ALVO;180.000000;180.000000;175.0000000000;180.0000000000;2026.09.15 13:54:02.203;2026.09.15 14:03:52.950
+2026.09.16;S38.2;ALVO;118.479;STOP;-375.000000;STOP;-375.000000;-375.000000;-385.0000000000;-375.0000000000;2026.09.16 10:00:39.386;2026.09.16 10:02:13.727
+2026.09.16;S50;ALVO;191.514;ALVO;191.514000;ALVO;195.000000;195.000000;195.0000000000;195.0000000000;2026.09.16 10:01:30.676;2026.09.16 10:03:30.420
+2026.09.16;S61.8;ALVO;191.514;ALVO;191.514000;ALVO;190.000000;190.000000;225.0000000000;190.0000000000;2026.09.16 10:02:15.235;2026.09.16 10:02:53.673
+2026.09.17;S38.2;ALVO;150.331333;STOP;-375.000000;STOP;-375.000000;-375.000000;-410.0000000000;-375.0000000000;2026.09.17 10:33:49.413;2026.09.17 10:34:38.006
+2026.09.17;S50;STOP;-375;STOP;-375.000000;STOP;-375.000000;-375.000000;-385.0000000000;-375.0000000000;2026.09.17 10:34:13.326;2026.09.17 10:36:03.348
+2026.09.17;S61.8;ALVO;243.001333;STOP;-650.000000;STOP;-650.000000;-650.000000;-650.0000000000;-650.0000000000;2026.09.17 10:34:44.638;2026.09.17 10:40:37.330
+2026.09.17;R38.2;ALVO;668.777333;ALVO;668.777333;ALVO;670.000000;670.000000;745.0000000000;670.0000000000;2026.09.17 09:09:33.217;2026.09.17 09:39:41.759
+2026.09.18;S38.2;ALVO;251.460667;ALVO;251.460667;ALVO;255.000000;255.000000;295.0000000000;255.0000000000;2026.09.18 09:56:01.366;2026.09.18 10:00:23.563
+2026.09.18;S50;ALVO;406.470667;ALVO;406.470667;ALVO;405.000000;405.000000;410.0000000000;405.0000000000;2026.09.18 11:24:09.687;2026.09.18 12:04:13.678
+2026.09.21;R38.2;ALVO;579.863333;ALVO;579.863333;ALVO;580.000000;580.000000;700.0000000000;580.0000000000;2026.09.21 09:02:49.460;2026.09.21 09:03:36.898
+2026.09.21;R61.8;ALVO;234.328333;ALVO;234.328333;ALVO;235.000000;235.000000;230.0000000000;235.0000000000;2026.09.21 09:19:35.806;2026.09.21 09:20:05.845
+
+ARQUIVOS DE AUDITORIA
+COMPARATIVO_COMPLETO_33_OPERACOES.csv e RESUMO_14_PREGOES.csv: comparações principais.
+ALVOS_MESMA_BARRA_WORK_12_CASOS.csv: cronologia dos doze casos.
+DIFERENCAS_OHLC_E_LIMIARES.csv: vinte e quatro diferenças de preço.
+CANDLES_CONFERIDOS.csv e RESSALVAS.csv: comparação de 7875 minutos e quarenta diferenças de quantidade.
+CONTROLE_DAS_24_DIFERENCAS.csv: confronto dos estados por candles nas duas fontes.
+CONFERENCIA_COMPLETA_OBSERVADA.json: contagens, totais condicionais, limites, SHA-256 dos arquivos e dos quatorze ZIPs.
+VALIDACAO_INDEPENDENTE.json: busca independente de eventos nos 280 estados.
+RESULTADO_MENSAL.json: saída original do validador estrito, preservada sem apagar sua recusa de igualdade integral.
+Os scripts permitem reproduzir a análise com os brutos locais. Os ZIPs originais e os eventos de mercado recebidos não integram a publicação.
