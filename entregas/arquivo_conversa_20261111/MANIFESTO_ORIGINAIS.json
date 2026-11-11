@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-11",
+  "user_authorization": "Aproveite e salve todo conteudo recente desta conversa, arquivos, tudo, no github.",
+  "scope": "All original files currently materialized under /workspace/attachments plus recovered original Work candle sources. Not a claim of all chat attachments ever mentioned, nor an API transcript export.",
+  "attachment_files": 179,
+  "recovered_source_files": 6,
+  "files_total": 185,
+  "input_bytes": 378288961,
+  "restore_hash_checks_passed": 185,
+  "parts": [
+    {
+      "file": "ORIGINAIS_PARTE_001.zip",
+      "bytes": 15119611,
+      "sha256": "d679df3c3ff213d93911d7b3e745db05c886442a4dfe37445dc76982673c3f31"
+    },
+    {
+      "file": "ORIGINAIS_PARTE_002.zip",
+      "bytes": 19294561,
+      "sha256": "816ba6252ac4b5dfeadf41077ad201b209aa39a560e6b7f90760ae9a1f112946"
+    },
+    {
+      "file": "ORIGINAIS_PARTE_003.zip",
+      "bytes": 22927374,
+      "sha256": "a738bf021928b6deb29fa57a4ea9520757c8b347c529b96bdf76fbdc075ef81b"
+    },
+    {
+      "file": "ORIGINAIS_PARTE_004.zip",
+      "bytes": 24199944,
+      "sha256": "e090ebeb73d73503a0158ec25d8be819b24996505cc2b769832a28c9c7099d89"
+    },
+    {
+      "file": "ORIGINAIS_PARTE_005.zip",
+      "bytes": 24409018,
+      "sha256": "de5f0ebf6a11c29bf3d747560ed75e9dce76575382f461389d5de28c1d4cf130"
+    },
+    {
+      "file": "ORIGINAIS_PARTE_006.zip",
+      "bytes": 10863890,
+      "sha256": "19339939db26754a2f2c5af62fefd2cafec298c92f6df68169548bbdbdc11f86"
+    }
+  ],
+  "credential_assignment_scan": {
+    "files_scanned": 179,
+    "zip_entries_scanned": 280,
+    "possible_assignments_found": 0,
+    "note": "Conservative text/configuration scan; no execution or publication of runtime environment configuration."
+  }
+}

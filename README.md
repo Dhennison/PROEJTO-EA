@@ -1,5 +1,19 @@
 # PROEJTO-EA
 
+Estado geral atualizado em **11/11/2026**. Registro principal: **[RETOMADA_DO_TRABALHO.txt](entregas/v2_10/RETOMADA_DO_TRABALHO.txt)**. Esse TXT acompanha todas as etapas, o que foi concluído, pendências, evidências e próximo passo; será atualizado a cada avanço.
+
+- **Setembro concluído:** Work +3.839,31; nosso resultado principal +1.380,00; diferença −2.459,31 pontos. Critério: um contrato por nível, grade de cinco pontos, entrada por toque.
+- **Trabalho ativo:** agosto/2026, com identificação do contrato por data e coleta em lote; sem resultado nosso ainda.
+- **Relatórios finais:** dois PDFs (técnico e enxuto Modelo D diário), atualizados internamente e entregues juntos no final. DD contínuo calculado em ordem cronológica, sem alterar resultados mensais já fechados.
+- [Continuidade dos compilados e drawdown](entregas/compilado_work_modelod/LEIA_CONTINUIDADE.md)
+- [Conteúdo recente da conversa e decisões](entregas/arquivo_conversa_20261111/CONTEXTO_E_CONTINUIDADE.md)
+- [Trechos literais recentes — não é transcrição integral](entregas/arquivo_conversa_20261111/TRECHOS_LITERAIS_RECENTES.md)
+- [Inventário dos originais disponíveis](entregas/arquivo_conversa_20261111/INVENTARIO_ORIGINAIS.csv)
+
+## Histórico das entregas anteriores
+
+Os estados “pendente” abaixo correspondem às datas originais. Para o estado corrente, prevalece o TXT principal acima.
+
 Expert Advisor Modelo D para WIN no MT5. Estado consolidado em 05/11/2026, após o corte das 18h (Brasília).
 
 - [Resultado dos dias 04–05/11, evidências e pendências](entregas/consolidacao_20261104_20261105/RESULTADO_E_ESTADO.md)

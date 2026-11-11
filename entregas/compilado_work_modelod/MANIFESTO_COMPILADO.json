@@ -881,5 +881,11 @@
       "Work_DD_local_mensal_referencia": "1087.585333",
       "teste_DD_local_mensal_referencia": "1575.000000"
     }
+  },
+  "preferencia_entrega_atualizada": {
+    "entregar_dois_pdfs_juntos_no_final": true,
+    "nao_reenviar_resultados_ou_pdfs_a_cada_etapa": true,
+    "atualizar_internamente": true,
+    "trabalho_ativo": "Preparar agosto/2026 com validacao de contratos por data"
   }
 }

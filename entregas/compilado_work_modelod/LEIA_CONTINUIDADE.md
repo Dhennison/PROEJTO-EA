@@ -34,3 +34,7 @@ Os 877 resultados diários Modelo D e os 43 totais, DD locais e acumulados foram
 - `gerar_dois_compilados.py`: atualiza ambos os PDFs e metadados; valida resultados mensais congelados e continuidade dos meses.
 
 Próximo mês: **agosto/2026**, seleção do Work com 20 pregões de 04 a 31/08 e 43 operações. Work **−387,164995**; nosso resultado ainda não apurado. Há saídas às 18h em 06/08 S61,8 e 25/08 R61,8, e ambiguidade original em 18/08 S38,2. Validar contratos históricos por data na transição Q/V e fazer processamento em lote. Ver `PROXIMO_MES_AGOSTO_2026.json`.
+
+## Entrega e continuidade — instrução mais recente
+
+Não reenviar PDFs ou resultados a cada etapa: salvar e atualizar internamente; entregar os **dois PDFs juntos no final**. Comunicar apenas andamento e instruções necessárias de coleta. O usuário também pediu arquivamento dos arquivos disponíveis e decisões recentes no GitHub. Ver `entregas/arquivo_conversa_20261111/CONTEXTO_E_CONTINUIDADE.md`. Prosseguir com agosto sem reabrir setembro.

@@ -1,3 +1,149 @@
+REGISTRO GERAL DE CONTINUIDADE — PROJETO EA MODELO D
+ATUALIZAÇÃO MAIS RECENTE: 11/11/2026 — America/Sao_Paulo
+NOME ESTÁVEL: RETOMADA_DO_TRABALHO.txt
+CAMINHO: entregas/v2_10/RETOMADA_DO_TRABALHO.txt
+O diretório v2_10 é histórico; este TXT acompanha o projeto inteiro até o estado atual.
+
+COMO USAR ESTE REGISTRO
+Este é o arquivo principal para retomada. Atualizar a seção atual a cada etapa, com evidências, arquivos, conclusão, pendências e próximo passo. Só marcar publicação no GitHub depois do push confirmado. Não tratar uma preparação como execução, mocks como compilação MetaEditor ou pontos condicionais como resultado financeiro real.
+A seção histórica ao final é preservada como histórico: instruções antigas e antigos estados pendentes não substituem o estado mais recente no início.
+
+MAPA DAS ETAPAS DO PROJETO
+1. Contrato real associado a WIN$N e ajuste B3 do mesmo contrato: concluído nos escopos históricos registrados; validar contrato por data na ampliação histórica.
+2. Fail-safe e recuperação diante de fonte ausente/inválida: concluído nos escopos documentados; guardas e retomada continuam sob acompanhamento operacional.
+3. Calendário/sessão B3: implementação e testes delimitados a 2026 e cenários documentados; não presumir calendário universal ou fuso independente certificado.
+4. Coletor C# B3, publicação de ajuste_b3.txt, agendamento e recuperação: concluído nos escopos históricos registrados; operação vigente deve continuar validando fonte/data/contrato, sem substituir ajuste por fechamento.
+5. Testes de falhas e recuperação de ajuste/indicador: aceitos nos ensaios históricos documentados. Falha física de energia durante gravação não é provada apenas por Wi-Fi, hibernação ou interrupção de processo.
+6. Integração do EA, demonstração nativa, confronto com Work e homologação operacional: EM ANDAMENTO.
+
+SUBFRENTES ATUAIS DA ETAPA 6
+6.1 Matemática e referência Work: 877 datas/1877 operações, replay teórico conferido; não significa backtest executável aprovado.
+6.2 Transporte e gestão: fluxo funcional v2.11 demonstrado no Tester; corte v2.12 aprovado em cenário sintético controlado. v2.13.05 utilizada em DEMO XP; nenhuma liberação de conta real.
+6.3 Dados históricos: M1 longo obtido, agregado confrontado com fonte Work na duração correta; ticks/fita e candles não são presumidos equivalentes. Comparativos A/B e símbolos personalizados tiveram limitações explicitadas.
+6.4 Setembro/2026: CONCLUÍDO sobre a alimentação recebida, 14 pregões/33 operações. Principal Work +3839,308998 versus nosso +1380; diferença -2459,308998. Ressalvas preservadas.
+6.5 Relatórios: DOIS PDFs finais (técnico e enxuto), principal único por mês; DD contínuo em ordem crescente, provisório enquanto faltarem meses anteriores. Não reenviar PDFs a cada etapa.
+6.6 Próximo trabalho: AGOSTO/2026, 20 pregões/43 operações; nosso resultado não apurado. Preparar seleção inequívoca de contrato por data na transição Q/V, coleta em lote e fechamento comparável.
+6.7 Arquivamento recente: decisões/trechos literais/inventário preparados; originais disponíveis empacotados e hashes de restauração conferidos. Publicação só é confirmada após o push correspondente.
+
+PENDÊNCIAS QUE NÃO DEVEM DESAPARECER
+- Agosto e demais meses/anos ainda não têm nosso resultado principal fechado.
+- Descrever correspondência/preços/quantidade e ausências sem fabricar ticks ou assumir lucro zero.
+- Exercitar a posição aberta no corte na amostra operacional apropriada; não repetir setembro, cujas posições já estavam encerradas.
+- Manter ambiguidades originais do Work e separar cronologia entrada/alvo na mesma barra.
+- Sondagem de disponibilidade de ticks antigos; candles M1 existentes não garantem ticks.
+- Teste adicional ActivTrades após identificar instrumento, servidor, fuso e natureza do produto.
+- Acompanhamento DEMO e pendências nativas da gestão, retomada, permissões, SL/TP e fechamento por sessão; não confundir resultados históricos com conta real autorizada.
+- Arquivamento: não prometer transcrição integral da plataforma ou anexos que não estão disponíveis no workspace. Não incluir segredos/configurações do ambiente.
+
+ESTADO ATUAL DETALHADO, DECISÕES, RESULTADOS E ARQUIVOS
+
+Registro de continuidade — Modelo D — 11/11/2026
+
+Este arquivo registra o conteúdo operacional recente da conversa, decisões, resultados, limites e próximos passos. É um resumo fiel de continuidade, não uma exportação integral/verbatim do histórico da plataforma. Os trechos literais recentes ficam em arquivo separado. O inventário discrimina os arquivos originais efetivamente disponíveis e preservados.
+
+Solicitações atuais e preferências obrigatórias
+
+- Prosseguir para agosto/2026, depois retroceder pelos meses do Work.
+- Não reenviar PDFs/resultados a cada etapa: salvar no projeto e entregar no final dois PDFs juntos.
+- PDF técnico: observações, cenários de controle, qualidade dos dados, rastreabilidade e análises por operação.
+- PDF enxuto: estilo do PDF original enviado relatorio_diario_win_modelos_abcd_2023_2026.pdf, somente Modelo D, data/dia/Work/nosso resultado principal/diferença lado a lado, um mês por página.
+- Mostrar primeiro o resultado principal, sem misturar vários totais: um contrato por nível, grade de cinco pontos, entrada por toque inclusivo. Controles matemático/estrito e Tester ficam na parte técnica.
+- Drawdown sempre em ordem crescente dos meses, embora a coleta ocorra em ordem inversa. Saldo, pico e máximo DD passam entre meses. Ao inserir agosto antes de setembro, recalcular DD e acumulados de setembro, sem mudar os resultados diários e mensais congelados.
+- DD principal = máximo acumulado da curva de fechamentos diários; não reinicia no mês. A convenção do PDF Work original reiniciava o DD local, que fica somente como referência técnica separada.
+- Usar base cronológica comparável para Work e teste; meses ausentes não são zero. DD provisório enquanto faltarem meses anteriores. Não concatenar lacunas como histórico contínuo.
+- Arquivar no GitHub todo o conteúdo recente e arquivos disponíveis, pedido expresso nesta data. Não afirmar exportação integral de mensagens ou arquivo ausente como se disponível.
+
+Setembro concluído
+
+01/09 a 21/09/2026; 14 pregões e 33 operações; um contrato por nível; pontos brutos.
+
+Comparação principal congelada: Work +3.839,308998; nosso principal +1.380; diferença −2.459,308998 pontos.
+
+Controles técnicos, sem substituir a comparação principal:
+
+- Sequência com níveis matemáticos: +720,536666 (19 alvos/14 stops).
+- Grade5 por toque: +1380 (20 alvos/13 stops).
+- Grade5 estrita: +730 (19 alvos/14 stops); sensibilidade ao toque, não fila.
+- Deals do Tester com ticks gerados: +1070; Tester 1 minuto OHLC: +565, ambos já auditados. Não pedir novamente essas duas rodadas.
+- Replay de candle inteiro na grade5: +4490; é convenção de candle, não execução por negócios.
+
+Os +720,54 inicialmente eram uma substituição parcial de seis operações; depois a varredura completa encontrou o mesmo total matemático. Hoje todos os 14 pregões foram examinados, não apenas os seis casos.
+
+Coleta nativa na Genial principal, build 6231, WINV26, em 11/11/2026, 15:35:33–16:02:24. Nome MES100_1794411333_1034344671.
+798 blocos, todos com duas leituras válidas idênticas campo a campo, zero pendências, io_failed=false. 47.809.973 registros ALL, 37.191.079 negócios; 632.359 eventos relevantes retidos. 70 estados por variante; mesmas 33 chaves data/nível, zero extras/ausentes, nenhum saldo aberto. 03/09 tem dados e zero operações.
+
+7875 candles no período; 24 diferenças de OHLC (14 às 18:24, 10 antes do corte) e 40 diferenças de quantidade contra Work. Nenhum candle de preço divergente entre a entrada e a saída das 33 operações. O replay por candles usando os dois OHLC preservou todos os 70 estados em cada grade e os totais +3839,308998/+4490. Isso não certifica a completude do feed.
+Única diferença quantitativa dentro de uma operação: 17/09 10:40 S61,8, ticks somam 139969 contra 139970 nas duas referências. Controle curto repetiu os mesmos 26519 registros, campo a campo e em ordem. Encerrar repetições desse minuto, manter ressalva sem inventar um tick.
+Validador estrito deixou total aprovado nulo por 24 diferenças de preço. A auditoria suplementar separa coleta completa e totais condicionais observados de aprovação de feed idêntico; a recusa original foi preservada.
+Buscas independentes confirmaram 280 estados nas quatro variantes. Redução foi testada antes contra CSVs completos em 921 verificações. Compilação inicial nativa: 0 erros/1 aviso de sombreamento de day; revisão renomeou global sem alterar núcleo/lógica. Usuário executou a versão compilada; aviso não invalidava a coleta.
+
+Nenhuma posição dessas 33 chegou aberta ao corte. Não invalidar o mês por isso, mas escolher outro período para exercitar posição aberta às 18h.
+
+Casos de cronologia e grade
+
+Seis ALVO Work / STOP Tester inicialmente selecionados:
+
+- 10/09 S38,2: STOP primeiro na sequência recebida.
+- 10/09 R61,8: STOP primeiro.
+- 14/09 S38,2: ALVO primeiro; Tester deu STOP.
+- 16/09 S38,2: STOP primeiro; retorno ao alvo só depois do stop, às 10:07.
+- 17/09 S38,2: STOP primeiro.
+- 17/09 S61,8: STOP observado, com ressalva quantitativa do minuto de saída.
+
+12 alvos que Work creditava na barra de entrada: 1 realmente nessa barra (14/09 S38,2), 6 em barras posteriores, 5 STOP primeiro. Concordância do motivo não certifica o horário. S50 de 11/09: Work alvo às 09:30, negócios alvo às 09:40:23.334.
+S50 é independente de S38,2/S61,8. Controles já conferidos: 10/09 ALVO, 14/09 STOP, 16/09 ALVO posterior (10:03, Work 10:01), 17/09 STOP. Nova coleta de 14/09 reproduziu exatamente a sobreposição de 34812 registros ALL e fechou o stop às 09:11:36.422.
+
+01/09 R38,2 explica os 650 pontos entre toque e estrita: linha matemática 180935,837333...; normalizada 180935. Toque normalizado 09:47:50.034, alvo 09:50:01.283, +275. Matemática/estrita entram 09:51:15.648 e terminam STOP 10:00:03.471, −375. Não confundir esse efeito de grade com erro de cálculo ou comprovação de execução por fila.
+
+Grade5 toque nos negócios +1380 versus Tester gerado +1070: troca de motivo em 14/09 produz −775, diferença aritmética dos preenchimentos simulados nas outras 32 favorece Tester em +465: 1380−775+465=1070. No Tester OHLC: 1380−815=565.
+
+Drawdown e PDFs preservados
+
+Base comum atual: somente 01–21/09/2026. DD Work 1087,585333; teste 1575 pontos, provisórios. Setembro +1380 permanece fixo quando meses anteriores forem inseridos. Gerador testado com prefixo sintético de agosto: DD posterior mudou e PnL setembro ficou igual; lacunas foram recusadas. Esse teste sintético não é resultado de agosto.
+
+entregas/compilado_work_modelod/ contém os dois compilados, índice de 43 meses, curva diária, regra de DD, dados principais congelados e gerador. Fonte do PDF Work: 44 páginas; 877 valores diários D e 43 totais/DD locais/acumulados conferidos à precisão de exibição, textos D preservados. A/B/C não entram nos relatórios comparativos.
+PDF original de setembro preservado byte a byte em originais_por_mes, SHA-256 fa44dcf148465c03a71a51d3ce91676f2626f17ec2ec92964db46464ea54ac25.
+Compilado técnico tem capa e regra de risco atualizadas mais relatório original; enxuto somente meses concluídos, em ordem crescente, principal Work/teste/diferença. O link técnico antigo continua como alias.
+
+Agosto — trabalho ativo, sem resultado ainda
+
+Seleção do Work: 20 pregões, 04/08 a 31/08/2026, 43 operações; Work −387,164995. Não atribuir resultado nosso ainda.
+Casos para exercitar:
+
+- 06/08 S61,8, entrada 13:50, zeragem 18h, Work −531,8.
+- 25/08 R61,8, entrada 16:26, zeragem 18h, Work −144,824.
+- 18/08 S38,2 ambígua, Work STOP −375 preservado.
+
+Preparar uma coleta em lote. Validar contrato por data na transição WINQ26/WINV26, não reutilizar WINV26 em todo agosto sem correspondência. O coletor atual lê tabela dinâmica e hash, mas não resolve automaticamente o vencimento; é a evolução a preparar. Proposta técnica: comparar M1 dos candidatos com o WIN$N por data, com leituras estáveis, escolher somente correspondência inequívoca e registrar resolução. Ausência/ambiguidade deve ser pendência, não escolha por maior resultado.
+Referências de H/L/C anterior, ajuste, abertura e corte congeladas por dia. O resultado futuro Work só entra na comparação posterior, nunca na decisão. Abertura e corte observados exigidos; não fabricar PnL quando o servidor não fornece negócios suficientes.
+
+Demais pontos de continuidade
+
+Histórico Work selecionado: 877 datas/1877 operações, março/2023 a 21/09/2026. M5 até fevereiro/2026, M1 a partir de março. Fonte 2023 é export MT5 anterior, não Profit independente. Referência matemática completa reproduziu Work +124337,758661, mas isso não é execução real.
+Inventário: 1094 alvos na barra de entrada (781 abrem além do alvo, 313 entre entrada e alvo). M5 1580 operações: 989 alvos/47 stops na própria barra. M1 297: 105 alvos/9 stops na própria barra. Abertura além do alvo não autoriza regra universal de STOP/negação de alvo. Não alterar regra do Modelo D ou as 32 ambiguidades originais para ajustar resultados.
+A captação M1 longa retornou 497028 barras; 162334 barras originais comparadas nas durações correspondentes, 3 diferenças após 18h e zero faltantes. Nas 877 datas, abertura/HLC anterior coincidiram. Limite de barras anterior 100000 foi aumentado para 1000000 e terminal reiniciado. Isso superou a coleta antiga pendente; não classificá-la como comprovada ausência no servidor.
+
+Fila de bolsa passada não é comprovada retroativamente. Há pontos condicionais por negócios e deals simulados já medidos; não apresentar nova exigência escondida para certificar lucro real depois de cada rodada.
+XP DEMO v2.13.05 é acompanhamento em tempo corrente e não equivale a conta real. Não alterar a XP ao instalar pilotos na Genial. O último arquivo de relatório XP enviado foi explicitamente cancelado pelo usuário como errado; a análise foi interrompida e não entra nas conclusões atuais.
+Não pedir novamente BRL pela lista da interface do Tester: usuário já informou várias vezes que a opção não existe. Quando houver ordens no Tester secundário, o BRL foi configurado via INI. Coletor somente leitura do terminal principal não depende da moeda do depósito.
+ActivTrades permanece pendente: identificar símbolo/servidor/propriedades/fuso e natureza do BRA50 antes de equiparar CFD a WIN B3. Resultado semelhante entre corretoras não isola MT5 ou B3 como causa. Sondagem de ticks antigos ainda não resolve cobertura integral 2023–2025; candles não provam disponibilidade de ticks.
+Não enviar mensagens à outra IA ou a terceiros por ferramenta. O usuário leva os documentos quando desejar. Não usar subagentes sem pedido explícito.
+
+Localização para retomada
+
+Repositório: Dhennison/PROEJTO-EA, branch entrega-modelod-v2-10-20261030, workspace /workspace/PROEJTO-EA.
+entregas/fechamento_setembro_v1_00/resultado_nativo_20261111: comparação final 33 operações, 14 dias, CSVs, TXT/PDF e scripts de auditoria.
+entregas/fechamento_setembro_v1_00: pacote do coletor em lote, referências por arquivo/hash, motor de preços e testes.
+entregas/compilado_work_modelod: dois PDFs, preferências atuais e DD cronológico.
+entregas/arquivo_conversa_20261111: continuidade, trechos literais, inventário/hashes e originais efetivamente arquivados.
+Os relatórios e pacotes anteriores continuam no histórico Git. Nunca incluir credenciais/configurações do ambiente de execução como parte de “tudo”.
+
+
+====================================================================
+HISTÓRICO PRESERVADO — ESTADOS E ROTEIROS ANTERIORES
+O conteúdo abaixo é histórico. Os trechos que diziam “ainda não compilado”, “próximo passo”, “uma entrega em PDF” ou outros estados antigos são substituídos pelas atualizações correntes acima quando houver mudança expressa.
+====================================================================
+
 REGISTRO DE CONTINUIDADE — MODELO D v2.10
 
 Repositório: Dhennison/PROEJTO-EA

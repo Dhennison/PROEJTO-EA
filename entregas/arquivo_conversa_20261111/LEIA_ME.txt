@@ -1,0 +1,11 @@
+ARQUIVO DE CONTINUIDADE — 11/11/2026
+
+Registro principal: entregas/v2_10/RETOMADA_DO_TRABALHO.txt
+
+CONTEXTO_E_CONTINUIDADE.md resume decisões, resultados e pendências. TRECHOS_LITERAIS_RECENTES.md preserva pedidos recentes. Não representam exportação integral do chat.
+
+INVENTARIO_ORIGINAIS.csv relaciona os 185 arquivos disponíveis, origem, tamanho, SHA-256 e ZIP correspondente. MANIFESTO_ORIGINAIS.json contém os hashes das seis partes.
+
+Restauração: baixe as seis partes originais/ORIGINAIS_PARTE_001.zip a 006.zip e extraia todas na mesma pasta. São ZIPs independentes, não volumes que exigem junção. Os caminhos UPLOADS e FONTES_CANDLES_WORK preservam os arquivos. Confira os hashes pelo inventário.
+
+O arquivo de demonstração enviado por engano permanece como original arquivado; não é evidência de nova análise operacional. Arquivos não disponíveis no workspace não são apresentados como preservados.
