@@ -1,0 +1,3 @@
+PASS checks=14; actual collector adapted to C++ with API mocks and OpenSSL SHA256; synthetic 4-point transport; NOT native MT5 compile/execution
+
+EXIT_STATUS=0

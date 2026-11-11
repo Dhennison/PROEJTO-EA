@@ -1,0 +1,8 @@
+SYNTHETIC FOUR-POINT PATH — API/PIPELINE TEST ONLY, NOT HISTORICAL TICKS OR PERFORMANCE
+{
+  "complete_price_replay": true,
+  "minute_checks": 7875,
+  "price_differences": 0,
+  "quantity_differences": 0
+}
+EXIT_STATUS=0

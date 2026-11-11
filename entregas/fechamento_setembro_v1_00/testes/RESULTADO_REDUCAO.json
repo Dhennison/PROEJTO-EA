@@ -1,0 +1,43 @@
+{
+  "checks": 921,
+  "full_tick_fixtures": [
+    {
+      "file": "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINV26_2026_09_10_09_05_2026_09_10_09_15_GENIAL_SEQ_20260910_S382_A_869588921_ALL.csv",
+      "business_records": 129598,
+      "reduced_events": 3346,
+      "all_5_levels_4_variants_identical": true
+    },
+    {
+      "file": "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINV26_2026_09_10_11_43_2026_09_10_11_55_GENIAL_SEQ_20260910_R618_A_1020006000_ALL.csv",
+      "business_records": 99823,
+      "reduced_events": 2372,
+      "all_5_levels_4_variants_identical": true
+    },
+    {
+      "file": "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINV26_2026_09_14_09_00_2026_09_14_09_10_GENIAL_SEQ_20260914_S382_A_1020551515_ALL.csv",
+      "business_records": 125185,
+      "reduced_events": 2746,
+      "all_5_levels_4_variants_identical": true
+    },
+    {
+      "file": "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINV26_2026_09_16_09_58_2026_09_16_10_08__GENIAL_SEQ_20260916_S382_A_1021169281_ALL.csv",
+      "business_records": 128797,
+      "reduced_events": 6757,
+      "all_5_levels_4_variants_identical": true
+    },
+    {
+      "file": "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINV26_2026_09_17_10_30_2026_09_17_10_45_GENIAL_SEQ_20260917_S382_S618_A_1021675390_ALL.csv",
+      "business_records": 297486,
+      "reduced_events": 10052,
+      "all_5_levels_4_variants_identical": true
+    },
+    {
+      "file": "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINV26_2026_09_14_09_08_2026_09_14_09_15__GENIAL_SEQ_20260914_S50_A_1022922437_ALL.csv",
+      "business_records": 101964,
+      "reduced_events": 2112,
+      "all_5_levels_4_variants_identical": true
+    }
+  ],
+  "native_MT5_compile_or_execution": false,
+  "scope": "Exact comparison of all replay fields and event identities, full stream versus reduced stream; seeded gap/equality/timestamp/cutoff controls."
+}

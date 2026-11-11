@@ -1,0 +1,1 @@
+PASS pending chunks refuse month; price mismatch suppresses all four monthly totals. Synthetic API transport only.

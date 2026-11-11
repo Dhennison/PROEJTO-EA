@@ -1,0 +1,84 @@
+FECHAMENTO DE SETEMBRO — MODELO D — v1.00 — 11/11/2026
+
+OBJETIVO
+Uma execucao no terminal principal da Genial coleta todos os 14 pregoes de 01/09 a 21/09/2026, varrendo os cinco niveis. Nao e uma nova rodada de ordens e nao pede uma janela por operacao. Os dados permitem fechar os quatro cenarios de pontos sobre negocios recebidos e comparar TODAS as operacoes com Work e com os deals do Tester ja auditados.
+
+OS PREENCHIMENTOS DO TESTER JA FORAM MEDIDOS
+Work: +3839,308998 pontos em 33 operacoes.
+Tester com ticks gerados: +1070 pontos de seus deals.
+Tester 1 minuto OHLC: +565 pontos de seus deals.
+Nao repetir essas duas rodadas. Seus relatorios por operacao acompanham o pacote na pasta analise.
+A nova coleta fornece a cronologia historica completa para explicar esses resultados, inclusive extras/ausencias e casos em que ambos deram o mesmo motivo.
+Execucao na bolsa passada, com fila daquele instante, nao e recuperavel por backtest. Esta distincao ja faz parte do escopo desta entrega; nao havera um teste posterior escondido com a promessa de comprovar a fila historica. A demo da XP e acompanhamento em tempo corrente e nao sera alterada.
+
+1. INSTALAR — NO PRINCIPAL DA GENIAL
+Extraia o ZIP em uma pasta temporaria.
+No MT5 PRINCIPAL da Genial: Arquivo > Abrir Pasta de Dados.
+Copie a pasta MQL5 do pacote para essa PASTA DE DADOS, mesclando as pastas.
+A estrutura correta e:
+MQL5\Experts\ModeloD_Fechamento_Setembro\Coletar_Setembro_Sem_Ordens.mq5
+MQL5\Experts\ModeloD_Fechamento_Setembro\ModeloD_Core.mqh
+MQL5\Files\MD_Setembro_2026_Referencias.csv
+Nao criar MQL5\MQL5. Nao copiar para a XP nem substituir o EA DEMO.
+O arquivo de referencias ja vem pronto e e conferido por SHA-256 na inicializacao. Nao precisa editar referencias ou digitar hash.
+
+2. COMPILAR — UM ARQUIVO
+No principal da Genial, pressione F4.
+No MetaEditor, abra:
+MQL5\Experts\ModeloD_Fechamento_Setembro\Coletar_Setembro_Sem_Ordens.mq5
+Pressione F7. O ModeloD_Core.mqh e incluido automaticamente, nao e compilado separado.
+Compilacao e execucao NATIVAS NO MT5 ainda precisam acontecer nessa instalacao. Foram feitos testes locais do codigo adaptado com mocks; nao sao uma compilacao MetaEditor.
+Se houver erro de compilacao, envie a lista completa; nao execute outro EA no lugar.
+
+3. EXECUTAR — UMA VEZ NO GRAFICO, NAO NO TESTER
+Volte ao MT5 principal da Genial.
+Abra um grafico WINV26 (M5 pode ser mantido).
+No Navegador (Ctrl+N): Expert Advisors > ModeloD_Fechamento_Setembro > Coletar_Setembro_Sem_Ordens.
+Arraste para o grafico. Use TODOS OS PARAMETROS PADRAO:
+InpReferencias = MD_Setembro_2026_Referencias.csv
+InpSHA256 = ff2623cc41ddf7a4a9ef8c476b658bd22e5629ec1160a22ad1fa285476408313
+InpMinutosPorBloco = 10
+InpMaxTentativas = 10
+Nao precisa selecionar BRL, iniciar Tester, instalar simbolo personalizado ou habilitar envio de ordens. Este coletor nao tem OrderSend/OrderCheck nem alteracao de historico.
+Nao colocar dois coletores no mesmo grafico.
+
+4. AGUARDAR O FIM
+A aba Experts mostrara MES100;START, DIA, LEITURA e DIA_CONCLUIDO.
+Sao 798 blocos, com duas leituras validas identicas campo a campo por bloco. Cada bloco pode precisar de download e novas tentativas. Nao ha necessidade de acompanhar operacao por operacao.
+Mantenha o terminal aberto/conectado e o notebook acordado ate aparecer:
+MES100;END;reason=CONCLUIDO;days=14;blocks=798;pending_blocks=0;io_failed=false
+Se pending_blocks for maior que zero ou io_failed=true, a pasta ainda e util para diagnostico; o analisador nao publicara um total mensal completo com lacunas escondidas.
+Se fechar o terminal, remover o coletor ou trocar suas configuracoes no meio, a coleta ficara incompleta. ExpertRemove depois do END e normal.
+
+5. ENVIAR O RESULTADO
+Depois do END, execute COMPACTAR_RESULTADO.cmd que esta neste pacote. Ele encontra a pasta mais recente e cria ZIP(s), sem apagar a coleta. Se os arquivos forem grandes, divide por pregao automaticamente. Abre a pasta dos ZIPs no Explorador.
+Envie os ZIPs criados e o log da aba Experts do START ao END.
+Opcao manual: Windows+R e cole:
+%APPDATA%\MetaQuotes\Terminal\Common\Files\ModeloD_Fechamento_Setembro
+Compacte a NOVA pasta MES100_... completa. Se um ZIP ficar acima de 32 MB, use o compactador do pacote.
+Nao precisa enviar novamente os CSVs individuais de antes.
+
+6. O QUE A ANALISE ENTREGARA, EM UMA COMPARACAO
+- Work original, por data/nivel e total.
+- Pontos condicionais pela sequencia de negocios, niveis matematicos e grade5, entrada por toque e estrita.
+- Todas as operacoes encontradas nos cinco niveis, inclusive extras, ausencias, dias sem operacao, cortes ou incompletos.
+- Os deals do Tester com ticks gerados e do Tester OHLC ja medidos, sem repetir esses testes.
+- Comparacao completa dos candles, quantidades, abertura e corte de cada pregao.
+- Diferencas por dados, grade, cronologia e preenchimento simulado.
+- Ressalvas de volume como a de 17/09 10:40 permanecem explicitas, sem fabrica-las ou repetir indefinidamente a mesma consulta.
+A conta parcial +720,54 nao sera usada como resultado do mes. O analisador recalcula os 70 estados (14 datas x 5 niveis) em cada variante, sem consultar o resultado futuro do Work para decidir entradas ou saidas.
+
+7. FORMATO REDUZIDO E LIMITES
+EVENTOS_...csv NAO e o CSV bruto de todos os ticks. Preserva os primeiros dois negocios de cada categoria de preco relativa aos niveis, o primeiro negocio de cada minuto e todos os negocios fora da grade. Essas categorias incluem igualdade/ultrapassagem dos niveis matematicos e normalizados. Os MINUTOS_...csv contem OHLC, quantidades e hashes de TODOS os negocios lidos.
+As duas leituras completas de cada bloco sao comparadas antes da reducao. Registros distintos no mesmo milissegundo nao sao deduplicados. A reducao foi conferida contra os CSVs completos ja recebidos e contra casos de igualdade, gaps e corte; vejam testes.
+O ponto da reducao e evitar gigabytes de CSV bruto para uma pergunta sobre primeiro toque/primeira saida. Ela nao serve como alimentacao completa de outro Tester, estudo de fila ou reconstrucao de livro.
+O protocolo de preco mantem a mesma regra das auditorias manuais: a saida e verificada em registro de negocio posterior a entrada. O primeiro negocio no corte encerra a hipotese pelo Last. Isso e um cenario explicito de preco, sem spread, custos ou preenchimento garantido.
+Quando houver barra faltante/preco divergente/abertura ou corte nao conferido, o total mensal fica incompleto. Volume divergente e registrado e condiciona a auditoria de integridade.
+
+8. REFERENCIAS E REPRODUCAO
+ModeloD_Core.mqh e copia byte a byte do nucleo puro congelado v2.13.05; nao altera o EA da XP.
+CSV de referencias contem abertura, H/L/C anterior, ajuste Work, primeiro minuto e corte por data. Nao contem motivos ou pontos futuros do Work. Hash e registrado no START e CSV e copiado para a pasta de retorno.
+O coletor le a quantidade de datas do arquivo, sem tabela compilada por mes, e valida o calendario de corte historico. Para outro periodo, a referencia/hashes precisam ser gerados e auditados antes; este pacote ja vem configurado apenas para os 14 pregoes de setembro.
+analise/motor_precos.py: nucleo independente de replay por negocios.
+analise/analisar_mes.py: verifica os arquivos e emite a comparacao (sera executado pelo assistente apos receber os ZIPs; voce nao precisa instalar Python).
+testes: controles locais, claramente distintos de compilacao/execucao nativa MT5.
