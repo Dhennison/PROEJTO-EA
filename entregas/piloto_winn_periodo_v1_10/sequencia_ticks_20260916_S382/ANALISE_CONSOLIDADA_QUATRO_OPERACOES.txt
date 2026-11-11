@@ -1,0 +1,321 @@
+MODELO D — CONSOLIDADO DAS QUATRO OPERAÇÕES INVESTIGADAS COM TICKS
+Atualizado em 11/11/2026 — S38,2 e R61,8 de 10/09; S38,2 de 14/09 e 16/09
+Este arquivo reúne as informações analíticas anteriores e acrescenta a quarta coleta. Os próximos passos antigos foram substituídos pelo roteiro atualizado ao final.
+
+RESUMO ATUAL — 4 DAS 6 OPERAÇÕES
+Primeiro foi conferida a correspondência de OHLC e quantidade dos negócios contra WIN$N e Profit/Work; depois foi reconstruída a sequência de entrada e primeira saída nas quatro variantes predefinidas.
+10/09 S38,2: 174.567 registros ALL; 129.598 negócios; 10 candles coincidentes; STOP primeiro.
+10/09 R61,8: 127.124 registros ALL; 99.823 negócios; 12 candles coincidentes; STOP primeiro.
+14/09 S38,2: 180.021 registros ALL; 125.185 negócios; 7 candles existentes coincidentes; ALVO primeiro.
+16/09 S38,2: 165.890 registros ALL; 128.797 negócios; 10 candles coincidentes; STOP primeiro.
+Total das quatro janelas distintas: 647.602 registros ALL, 483.403 negócios e 39 candles M1 correspondentes nas três fontes em OHLC e quantidade. Cotações com Last carregado não foram contadas como novos negócios.
+Os motivos acima são iguais nas quatro variantes de cada operação: matemática/grade5 e entrada por toque/ultrapassagem estrita.
+
+Data;Nível;Work original;Tester com ticks gerados;Primeira saída na sequência recebida
+10/09/2026;S38,2;ALVO +235,011333;STOP -360;STOP
+10/09/2026;R61,8;ALVO +146,949333;STOP -465;STOP
+14/09/2026;S38,2;ALVO +439,241;STOP -335;ALVO
+16/09/2026;S38,2;ALVO +118,479;STOP -385;STOP
+
+Os ticks sustentam a ordem entrada-alvo em 14/09, mas não sustentam os alvos atribuídos pelo Work aos outros três casos. O STOP do Tester coincide com a primeira saída recebida nesses três casos, mas não em 14/09. Isso impede presumir que uma única modelagem acerte todas as operações.
+A sequência de negócios não certifica ordens aceitas, fila, preenchimentos ou resultado financeiro real. Os resultados originais continuam preservados e as divergências são registradas separadamente.
+
+PARTE I — S38,2 DE 10/09/2026 (ANÁLISE ANTERIOR PRESERVADA)
+As análises das duas coletas de 10/09 são preservadas nesta Parte I e na Parte II. O novo caso de 14/09 está na Parte III e o novo caso de 16/09 está na Parte IV e o encaminhamento atualizado está na Parte V.
+
+MODELO D — SEQUÊNCIA DE NEGÓCIOS WINV26 — S38,2 DE 10/09/2026
+Análise concluída em 11/11/2026. Horários abaixo são os campos de hora do servidor.
+
+CONCLUSÃO
+Nos dados coletados, o alvo creditado pelo Work na barra de entrada não aconteceu após o toque da compra. O primeiro nível de saída atingido depois da entrada foi o STOP, nas quatro variantes: preços matemáticos ou grade de cinco pontos, entrada por toque ou ultrapassagem estrita.
+Isso esclarece a cronologia de preços desta operação. Não comprova preenchimento, posição na fila, preço executável ou resultado financeiro de uma ordem real. Não extrapolar para as outras cinco operações e não alterar o Work original.
+
+1. VALIDADE E CORRESPONDÊNCIA ANTES DA SEQUÊNCIA
+Fonte: DiagTicksAB v1.21, ambiente TERMINAL, GenialInvestimentos-PRD, build 6231, WINV26 não personalizado.
+Janela: 10/09/2026 09:05:00 a 09:15:00.
+Duas leituras consecutivas válidas idênticas, erro zero e STATUS=ESTAVEL.
+CSV: 174.567 registros ALL; 129.598 negócios com flags públicos de negócio e Last positivo; 44.969 registros de cotação excluídos da análise da sequência de negócios.
+Flags: 1336 x61159, 1368 x59036, 1400 x9403, 1026 x22280, 1028 x22689.
+O relatório registra quantidade e hash de negócios iguais entre ALL filtrado e a consulta TRADE. O CSV ALL foi conferido em contagem e flags contra esse relatório; não foi recebido CSV separado de TRADE.
+Preservadas todas as linhas, sua ordem e registros com milissegundos repetidos. Nenhuma deduplicação temporal.
+
+OHLC reconstruído por minuto somente com negócios, comparado com:
+(a) exportação nativa WIN$N da Genial;
+(b) fonte original Profit M1 usada no Work.
+Resultado: os DEZ minutos são idênticos nas três fontes em O/H/L/C e soma de quantidade/volume_real. Não houve o problema de máxima do candle ausente nos ticks nesta janela.
+Contagens de negócios por minuto 09:05 a 09:14:
+24065; 11742; 19781; 12701; 16580; 10949; 9760; 10845; 5580; 7595.
+A estabilidade e a correspondência dos candles não certificam de maneira independente a completude do feed de origem.
+
+2. NÍVEIS CONFERIDOS
+Matemáticos da tabela de operações já auditada:
+Entrada compra S38,2: 186786,2146666667.
+Alvo: 187021,226.
+Stop: 186411,2146666667, ou entrada teórica menos 375.
+
+Normalizados na grade de cinco pontos:
+Entrada: 186785.
+Alvo: 187020.
+Stop: 186410.
+Os decimais matemáticos são os da tabela auditada; precisão além das casas exportadas não altera nenhum cruzamento nesta amostra de preços em múltiplos de cinco.
+
+3. ORDEM OBSERVADA DOS ACONTECIMENTOS
+Antes da janela, os candles disponíveis às 09:03 e 09:04 têm mínima conjunta de 187025, acima da linha de entrada. As fontes desse dia começam às 09:03; não foram inventados candles às 09:00, 09:01 ou 09:02.
+Dentro da janela:
+09:07:23.021 — último negócio no lado do alvo matemático antes da entrada.
+09:07:23.046 — último negócio no lado do alvo normalizado antes da entrada.
+09:07:45.555 — primeiro negócio a tocar/ultrapassar a entrada matemática e a tocar a entrada normalizada: Last=186785.
+09:07:45.557 — primeiro negócio estritamente abaixo da entrada normalizada: Last=186780.
+Depois dessas entradas, a máxima observada ATÉ O STOP foi 186995. Não alcançou nem 187020 nem 187021,226.
+09:09:33.464 — primeiro negócio a alcançar/ultrapassar o stop: Last=186410.
+
+Portanto, os preços na região do alvo anteriores à entrada não podem ser usados como se fossem saída posterior à compra.
+No minuto 09:07, o candle O=187270 H=187305 L=186760 C=186905 é verdadeiro e coincide nas fontes. O ponto que o candle não fornece é a ordem interna entre o alvo e a entrada; os ticks mostram a ocorrência do alvo antes da entrada e ausência de novo alcance do alvo até o stop.
+
+4. QUATRO VARIANTES, REGRA DEFINIDA ANTES DA LEITURA DO RESULTADO
+(a) Matemática, entrada Last <= linha: entrada 09:07:45.555; STOP 09:09:33.464.
+(b) Matemática, entrada Last < linha: entrada 09:07:45.555; STOP 09:09:33.464.
+(c) Grade5, entrada Last <= linha: entrada 09:07:45.555; STOP 09:09:33.464.
+(d) Grade5, entrada Last < linha: entrada 09:07:45.557; STOP 09:09:33.464.
+Alvo e stop são testados por igualdade ou ultrapassagem, somente nos registros posteriores à entrada. Entrada estrita é um controle de sensibilidade ao toque; não modela fila.
+A ordem entrada/stop tem milissegundos distintos, portanto não depende de desempate entre dois registros com o mesmo milissegundo.
+
+5. RELAÇÃO COM WORK E TESTER
+Work: ALVO, +235,011333 pontos, entrada e saída atribuídas ao minuto 09:07.
+Tester com ticks gerados: STOP, -360 pontos efetivamente apurados dos deals; entrada 09:07:03.965, saída 09:09:03.624.
+Ticks históricos coletados: primeiro toque 09:07:45.555 e primeiro stop 09:09:33.464.
+O motivo STOP do Tester é compatível com a sequência histórica nesta operação. Seus horários e seus -360 pontos não estão, por isso, certificados como execução real.
+Um resultado calculado a preços teóricos normalizados seria -375 pontos, se ambos os níveis fossem preenchidos exatamente. Essa hipótese não se confunde com negócios observados, fila, slippage ou posição real.
+A classificação de auditoria é WORK_ALVO_NAO_SUSTENTADO_PELA_SEQUENCIA_COLETADA; STOP primeiro nos quatro controles. Preservar o ALVO do Work como referência original e registrar a divergência em coluna separada.
+
+
+PARTE II — NOVA COLETA: R61,8 DE 10/09/2026
+
+1. COLETA E CORRESPONDÊNCIA
+Origem: DiagTicksAB v1.21, ambiente TERMINAL, WINV26, GenialInvestimentos-PRD, build 6231, não personalizado e conectado.
+Janela em hora do servidor: 10/09/2026 11:43:00 até 11:55:00.
+Identificação: GENIAL_SEQ_20260910_R618_A.
+Duas leituras consecutivas válidas idênticas, erro zero e STATUS=ESTAVEL.
+ALL: 127.124 registros; TRADE/negócios: 99.823; INFO/cotações: 27.301.
+Flags: 1336 x49075, 1368 x46137, 1400 x4611, 1026 x13448, 1028 x13853.
+Hash de negócios reportado: 13432588515423959829, igual entre ALL filtrado e TRADE. CSV separado de TRADE não foi recebido; o CSV ALL foi conferido em contagem e flags contra o relatório.
+Quantidade de negócios por minuto, de 11:43 a 11:54:
+6367; 9321; 12983; 6121; 8673; 4802; 8984; 11249; 12689; 9319; 5106; 4209.
+As 27.301 cotações com Last carregado não foram usadas como novos negócios.
+
+Os DOZE OHLC M1 reconstruídos dos negócios coincidem exatamente com as barras WIN$N exportadas da Genial e com a fonte Profit M1 usada no Work. A soma de volume_real também coincide com a quantidade nas duas referências em todos os minutos.
+Preservados registros repetidos no mesmo milissegundo e sua ordem original; não houve deduplicação por timestamp.
+Os candles nativos anteriores à janela, nas datas/horários disponíveis desse pregão, têm máxima abaixo da entrada normalizada. A primeira entrada identificada na janela não conflita com um toque anterior registrado nesses candles. Candles ausentes não foram inventados.
+
+2. NÍVEIS DA VENDA
+Matemáticos:
+Entrada = 189555,232.
+Alvo = 189408,2826666667.
+Stop = 190005,232 (linha matemática +450).
+Normalizados:
+Entrada = 189555.
+Alvo = 189410.
+Stop = 190005.
+O stop continua ancorado na linha teórica, não no preço do primeiro negócio que a ultrapassou.
+
+3. QUATRO CONTROLES PREDEFINIDOS E SEUS EVENTOS
+Venda: entrada por Last >= linha (toque) ou Last > linha (estrita). Após entrada, alvo por Last <= alvo e stop por Last >= stop. São comparações de negócios e preços, sem assumir fila ou execução.
+
+Matemática por toque:
+Entrada: 11:45:34.004, Last=189560.
+Primeira saída: STOP em 11:50:55.449, Last=190010.
+Matemática estrita:
+Mesmos horários e preços, pois o primeiro negócio além da linha matemática já está estritamente acima dela.
+
+Grade5 por toque:
+Entrada: 11:45:29.572, Last=189555.
+Primeira saída: STOP em 11:50:55.436, Last=190005.
+Grade5 estrita:
+Entrada: 11:45:34.004, Last=189560.
+Primeira saída: STOP em 11:50:55.436, Last=190005.
+
+A grade antecipa a entrada por toque em 4,432 segundos em relação à linha matemática e à entrada estrita. O stop matemático é ultrapassado 13 milissegundos depois do toque no stop normalizado. Essas diferenças não alteram o motivo neste caso.
+Em todas as variantes, a mínima após a entrada ATÉ O STOP foi 189420. Ela ficou 10 pontos acima do alvo normalizado e 11,7173333333 pontos acima do alvo matemático.
+Último negócio no lado do alvo ANTES da entrada:
+Matemática: 11:45:20.428.
+Grade5: 11:45:20.432.
+Não houve negócio de retorno ao alvo após a entrada dentro da janela coletada.
+
+4. POR QUE O CANDLE NÃO RESOLVIA
+11:45: O=189345, H=189575, L=189325, C=189455.
+A abertura já estava no lado do alvo da venda. O Work marcou a entrada e o alvo no mesmo minuto porque a barra contém os dois preços. Os ticks mostram que o preço estava no lado do alvo antes de subir até a entrada; depois da entrada não voltou ao alvo antes do stop.
+Classificação: WORK_ALVO_NAO_SUSTENTADO_PELA_SEQUENCIA_COLETADA; STOP primeiro nas quatro variantes.
+
+5. RELAÇÃO COM O TESTER
+Work: ALVO +146,949333, entrada/saída no minuto 11:45.
+Tester com ticks gerados: entrada 11:45:06.225, saída 11:50:07.261, motivo STOP e -465 pontos.
+Coleta histórica: entrada normalizada por toque 11:45:29.572 e stop normalizado 11:50:55.436.
+O motivo STOP é compatível entre Tester e sequência recebida, mas os horários são diferentes. A coleta não confirma o preço de execução ou os -465 pontos como resultado real.
+Uma execução exatamente nos níveis normalizados daria -450 pontos, sob essa hipótese de preenchimento. Um negócio a 189560 na entrada não desloca o stop para 190010; o stop normalizado permanece 190005. Não transformar diferenças entre primeiros negócios observados em slippage real certificado.
+
+
+PARTE III — NOVA COLETA: S38,2 DE 14/09/2026
+
+1. COLETA E VALIDAÇÃO
+DiagTicksAB v1.21, ambiente TERMINAL, WINV26 nativo, GenialInvestimentos-PRD, build 6231, conectado.
+Janela solicitada: 14/09/2026 09:00:00 até 09:10:00, em hora do servidor.
+Identificação: GENIAL_SEQ_20260914_S382_A.
+Duas leituras consecutivas válidas e idênticas, sem erro: STATUS=ESTAVEL.
+ALL=180.021; negócios/TRADE=125.185; cotações/INFO=54.836.
+Flags: 1336 x62124, 1368 x56778, 1400 x6283, 1030 x1, 1026 x27303, 1028 x27532.
+Hash de negócios reportado 17285925323756126862, igual entre ALL filtrado e TRADE. Foi recebido o CSV ALL, não um CSV separado de TRADE. Contagens e flags do CSV foram confrontadas com o relatório.
+Quantidade de negócios por minuto, 09:00 a 09:09:
+0; 0; 0; 33277; 20877; 14174; 12407; 17800; 14324; 12326.
+Primeiro negócio recebido: 09:03:00.915, Last=186900. O primeiro negócio tem bid e ask iguais a zero; seu Last é positivo e finito e contém flags de negócio. Não foi eliminado da reconstrução de preços por causa de bid/ask zero. Isso não o torna prova de liquidez executável.
+Não há registros de negócios nos primeiros três minutos da janela; também não há candles 09:00, 09:01 e 09:02 nas duas referências comparadas. O relatório não fabrica três candles vazios e não trata essa observação como prova independente de inexistência de negociação no servidor.
+
+2. CORRESPONDÊNCIA ANTES DA SEQUÊNCIA
+Os sete minutos existentes, de 09:03 a 09:09, coincidem exatamente em abertura, máxima, mínima, fechamento e soma de quantidade/volume_real entre:
+- Negócios reconstruídos do CSV WINV26.
+- Barras WIN$N exportadas da Genial.
+- Candles Profit M1 originais do Work.
+Não houve máxima/mínima da barra ausente na reconstrução desses minutos. Todas as linhas de negócio e sua ordem foram preservadas, inclusive timestamps repetidos.
+Estabilidade da consulta e igualdade dos candles não certificam de maneira independente a completude de todos os registros do feed.
+
+3. NÍVEIS AUDITADOS
+Matemáticos:
+Entrada compra S38,2 = 186688,506.
+Alvo = 187127,747.
+Stop = 186313,506 (linha teórica menos 375).
+Normalizados na grade de cinco pontos:
+Entrada = 186690.
+Alvo = 187130.
+Stop = 186315.
+SL e TP continuam ancorados na linha teórica; não são deslocados pelo preço do primeiro negócio observado.
+
+4. QUATRO VARIANTES, DEFINIDAS ANTES DO RESULTADO
+Compra por toque: primeiro Last <= linha de entrada.
+Compra estrita: primeiro Last < linha de entrada.
+Depois da entrada, alvo por Last >= alvo e stop por Last <= stop. A entrada estrita é controle de sensibilidade, não simulação de fila.
+
+Matemática por toque:
+Entrada em 09:03:01.132, Last=186685.
+Primeira saída em 09:03:05.730, Last=187130, motivo ALVO.
+Matemática estrita:
+Mesmos horários e preços; o primeiro preço abaixo da linha matemática já a ultrapassa estritamente.
+Grade5 por toque:
+Entrada em 09:03:01.132, Last=186690.
+Primeira saída em 09:03:05.730, Last=187130, motivo ALVO.
+Grade5 estrita:
+Entrada em 09:03:01.132, Last=186685.
+Primeira saída em 09:03:05.730, Last=187130, motivo ALVO.
+
+A entrada normalizada por toque e a entrada matemática/estrita ocorrem no mesmo milissegundo, mas são registros diferentes do CSV (registros de dados 664 e 668). Eles foram preservados nessa ordem. O alvo ocorre em outro milissegundo, 4,598 segundos após a entrada; a conclusão entrada-antes-do-alvo não depende de desempatar eventos simultâneos.
+A mínima entre a entrada e a primeira saída foi 186675 em todas as variantes, muito acima dos stops 186315 e 186313,506. Não houve stop anterior ao alvo nesse intervalo.
+Nenhum negócio antes da entrada, dentro da coleta, já estava no lado do alvo. Esse caso difere dos dois de 10/09.
+Classificação: WORK_SEQUENCIA_ENTRADA_ALVO_SUSTENTADA_PELA_COLETA; ALVO primeiro nas quatro variantes.
+
+5. POR QUE ESTE CASO É DIFERENTE
+Candle 09:03: O=186900 H=187335 L=186645 C=186725.
+A abertura estava entre a linha de compra e o alvo. A sequência coletada mostra queda até a entrada às 09:03:01.132 e alta posterior até o alvo às 09:03:05.730. Atribuir o alvo ao minuto da entrada é compatível com essa cronologia.
+Isso não transforma todos os casos de entrada e alvo na mesma barra em alvos válidos. Nos dois casos anteriores, o preço no alvo ocorreu antes da entrada e não foi repetido antes do stop.
+
+6. RELAÇÃO COM WORK E TESTER
+Work: ALVO +439,241 pontos, entrada e saída atribuídas ao minuto 09:03.
+Tester com ticks gerados: STOP -335 pontos dos deals, entrada 09:03:02.423 e saída 09:07:04.151.
+Sequência recebida: entrada 09:03:01.132 e ALVO 09:03:05.730.
+O motivo do Work é sustentado nesta consulta; o STOP do Tester não reproduz o primeiro desfecho dessa sequência histórica recebida.
+A grade normalizada tem diferença entrada-alvo de +440 pontos, SE uma compra e sua saída fossem preenchidas exatamente nesses níveis. Isso é uma conta condicional, não lucro real certificado. Tampouco a coleta comprova a execução a preços fracionários implícita no resultado matemático +439,241 do Work.
+
+
+PARTE IV — NOVA COLETA: S38,2 DE 16/09/2026
+
+1. COLETA E VALIDAÇÃO
+DiagTicksAB v1.21, ambiente TERMINAL, WINV26 nativo, GenialInvestimentos-PRD, build 6231, conectado.
+Janela em hora do servidor: 16/09/2026 09:58:00 até 10:08:00.
+Tag recebida: " GENIAL_SEQ_20260916_S382_A", com um espaço inicial. Isso explica o separador duplo no nome do arquivo; não muda a janela nem os registros analisados.
+Duas leituras consecutivas válidas idênticas, erro zero e STATUS=ESTAVEL.
+ALL=165.890; negócios/TRADE=128.797; cotações/INFO=37.093.
+Flags: 1336 x61010, 1368 x58443, 1400 x9344, 1026 x18226, 1028 x18867.
+Hash de negócios reportado 13511915388430095994, igual entre ALL filtrado e TRADE. Recebido CSV ALL, sem CSV separado de TRADE; contagens e flags foram conferidas contra o relatório.
+Negócios por minuto, 09:58 a 10:07:
+10381; 6627; 26807; 17045; 11616; 14994; 9612; 6636; 12536; 12543.
+Primeiro negócio: 09:58:00.004, Last=187960.
+As cotações foram excluídas como novos negócios. Registros com o mesmo milissegundo foram preservados na ordem original, sem deduplicação.
+
+2. CORRESPONDÊNCIA ANTES DA SEQUÊNCIA
+Todos os DEZ candles M1 reconstruídos dos negócios WINV26 coincidem exatamente em abertura, máxima, mínima, fechamento e soma de volume_real com:
+- A exportação nativa WIN$N da Genial.
+- A fonte Profit M1 original usada no Work.
+Os candles nativos disponíveis anteriormente à janela nesse pregão não mostram toque anterior na linha de entrada normalizada.
+A estabilidade da consulta e a igualdade das barras não certificam de maneira independente a completude de todos os registros do feed.
+
+3. NÍVEIS AUDITADOS
+Matemáticos:
+Entrada compra S38,2 = 187773,014.
+Alvo = 187891,493.
+Stop = 187398,014 (linha teórica menos 375).
+Grade5:
+Entrada = 187775.
+Alvo = 187890.
+Stop = 187400.
+SL e TP permanecem ancorados na linha teórica, sem deslocamento pelo primeiro preço observado.
+
+4. QUATRO VARIANTES E HORÁRIOS
+Compra por toque: primeiro Last <= entrada. Compra estrita: primeiro Last < entrada.
+Após entrada, alvo por Last >= alvo e stop por Last <= stop. A entrada estrita é sensibilidade ao toque, não simulação de fila.
+Matemática por toque: entrada 10:00:39.386 em 187770; STOP primeiro às 10:02:15.235 em 187395.
+Matemática estrita: mesmos horários e preços.
+Grade5 por toque: entrada 10:00:39.386 em 187775; STOP primeiro às 10:02:13.727 em 187400.
+Grade5 estrita: entrada 10:00:39.386 em 187770; STOP primeiro às 10:02:13.727 em 187400.
+As entradas por toque normalizado e estrita ocorrem no mesmo milissegundo, mas em registros diferentes (dados do CSV 40204 e 40215). O primeiro alvo/stop está em outro milissegundo; a ordem entre entrada e primeira saída não depende de desempatar registros simultâneos.
+O stop matemático, inferior ao normalizado, é ultrapassado 1,508 segundo depois do toque no normalizado. O motivo não muda.
+
+5. SEQUÊNCIA DETERMINANTE
+Último negócio no lado do alvo antes de entrar:
+Matemática: 10:00:37.922 em 187895.
+Grade5: 10:00:37.966 em 187890.
+Entrada: 10:00:39.386.
+Máxima após a entrada ATÉ O STOP: 187850, às 10:00:40.264.
+Isso ficou 40 pontos abaixo do alvo normalizado e 41,493 pontos abaixo do alvo matemático.
+Primeira saída normalizada: STOP às 10:02:13.727.
+Primeira saída matemática: STOP às 10:02:15.235.
+
+O alvo foi novamente negociado, porém SÓ DEPOIS DO STOP:
+Grade5: primeiro retorno às 10:07:00.597 em 187890.
+Matemática: primeiro retorno às 10:07:00.859 em 187895.
+Esses negócios posteriores não convertem o stop em alvo; o critério acompanha o primeiro nível de saída após a entrada, e não procura um alvo a qualquer momento futuro.
+Classificação: WORK_ALVO_NAO_SUSTENTADO_PELA_SEQUENCIA_COLETADA; STOP primeiro nas quatro variantes.
+
+6. RELAÇÃO COM O CANDLE, WORK E TESTER
+Candle 10:00: O=187935 H=188155 L=187650 C=187735.
+O preço no lado do alvo já havia ocorrido antes da entrada. O candle contém entrada e alvo, mas sua máxima não prova retorno ao alvo após a compra. Os ticks recebidos mostram que esse retorno não ocorreu antes do stop.
+Work: ALVO +118,479 pontos, entrada/saída atribuídas ao minuto 10:00.
+Tester com ticks gerados: STOP -385 pontos dos deals; entrada 10:00:02.749, saída 10:02:06.213.
+Ticks recebidos: entrada 10:00:39.386, stop normalizado 10:02:13.727.
+O motivo STOP do Tester é compatível com o primeiro desfecho da sequência histórica recebida neste caso. Seus horários e -385 pontos não ficam homologados como execução real por essa coincidência.
+Um preenchimento exatamente nos níveis normalizados daria -375 pontos sob essa hipótese. Não confundir essa conta condicional com execução comprovada. O controle estrito tampouco desloca o SL da linha teórica para o preço do primeiro negócio estritamente abaixo da entrada.
+
+PARTE V — LIMITES CONSOLIDADOS, RASTREABILIDADE E CONTINUIDADE
+
+A investigação cobre agora quatro das seis operações selecionadas. Três tiveram STOP primeiro e uma ALVO primeiro. Restam S38,2 e S61,8 de 17/09/2026. Não atribuir resultado antecipado a essas duas.
+As seis operações originais somam Work +1333,013332 contra -2605 no Tester com ticks gerados. Não substituir os resultados investigados em um total e chamá-lo de desempenho real, pois a coleta não simula ordens aceitas, fila, parciais, spread, slippage ou custos.
+Manter Work original e deals do Tester intactos, anotando a primeira saída da sequência recebida em coluna adicional. As 32 ambiguidades originais do Work continuam preservadas; cronologia entre entrada e alvo na mesma barra é observação adicional, sem mudança nas regras do Modelo D.
+Não chamar Work/replay de teto comprovado, nem escolher a modelagem pelo maior lucro. Tanto a convenção de candle quanto a trajetória gerada podem divergir da ordem dos negócios recebida; os quatro casos mostram isso em ambas as direções.
+
+Arquivos derivados disponíveis por pasta:
+sequencia_ticks_20260910_S382: relatório original, CORRESPONDENCIA_10_MINUTOS.csv, SEQUENCIA_QUATRO_VARIANTES.csv, CONFERENCIA.json e analisar_sequencia.py.
+sequencia_ticks_20260910_R618: consolidado de duas operações, CORRESPONDENCIA_12_MINUTOS.csv, SEQUENCIA_QUATRO_VARIANTES.csv, CONFERENCIA.json e analisar_sequencia.py.
+sequencia_ticks_20260914_S382: consolidado de três operações, CORRESPONDENCIA_7_MINUTOS.csv, SEQUENCIA_QUATRO_VARIANTES.csv, CONFERENCIA.json e analisar_sequencia.py.
+sequencia_ticks_20260916_S382: este consolidado de quatro operações, CORRESPONDENCIA_10_MINUTOS.csv, SEQUENCIA_QUATRO_VARIANTES.csv, CONFERENCIA.json e analisar_sequencia.py.
+Os JSON registram hashes SHA-256 dos arquivos de entrada. CSVs brutos de ticks permanecem locais; a publicação contém análise e resultados derivados.
+
+PRÓXIMA COLETA — DUAS OPERAÇÕES DE 17/09 NA MESMA JANELA
+O mesmo arquivo cobrirá S38,2 e S61,8, reduzindo uma rodada manual.
+No mesmo EA DiagTicksAB v1.21, na Genial principal, gráfico WINV26, fora do Tester:
+InpSymbol = WINV26
+hora do servidor (início) = 2026.09.17 10:30:00
+max. 60 min (fim) = 2026.09.17 10:45:00
+releituras até estabilizar = 10
+identificação = GENIAL_SEQ_20260917_S382_S618_A
+grava todos os ticks ALL da leitura final = true
+Não precisa recompilar. Manter o EA da XP separado.
+Enviar TXT e CSV dessa identificação e mensagens da aba Experts após conclusão.
+Pasta:
+%APPDATA%\MetaQuotes\Terminal\Common\Files
+Primeiro comparar os candles e quantidades; depois reconstruir cada operação separadamente nas quatro variantes. Se a correspondência falhar ou a janela não contiver o desfecho, registrar a limitação e não atribuir resultado automaticamente.
