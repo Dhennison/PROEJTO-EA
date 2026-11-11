@@ -1,0 +1,48 @@
+{
+  "proximo_mes": "2026-08",
+  "escopo_selecao_Work": {
+    "primeiro_pregao": "2026-08-04",
+    "ultimo_pregao": "2026-08-31",
+    "pregoes": 20,
+    "operacoes": 43,
+    "Work_pontos": "-387.164995"
+  },
+  "resultado_nosso": "AINDA_NAO_APURADO",
+  "casos_zeragem_18h": [
+    {
+      "Data": "2026-08-06",
+      "Nível": "S61.8",
+      "Hora entrada": "13:50:00",
+      "Hora saída": "18:00:00",
+      "Motivo": "ZERAGEM 18H",
+      "Pontos": "-531.800000"
+    },
+    {
+      "Data": "2026-08-25",
+      "Nível": "R61.8",
+      "Hora entrada": "16:26:00",
+      "Hora saída": "18:00:00",
+      "Motivo": "ZERAGEM 18H",
+      "Pontos": "-144.824000"
+    }
+  ],
+  "casos_ambiguos_originais": [
+    {
+      "Data": "2026-08-18",
+      "Nível": "S38.2",
+      "Hora entrada": "09:03:00",
+      "Hora saída": "09:03:00",
+      "Motivo": "STOP",
+      "Pontos": "-375.000000",
+      "Ambíguo": "SIM"
+    }
+  ],
+  "requisitos_pacote": [
+    "Referencias por data e hash, sem resultados futuros nas decisoes.",
+    "Coleta em lote de todos os niveis e dias elegiveis, sem uma coleta por operacao.",
+    "Validar contratos historicos por data, com atencao a transicao Q/V; nao reutilizar WINV26 em agosto inteiro sem conferir correspondencia.",
+    "Consolidar Work, resultado principal grade5/toque e deals simulados com comparacao por operacao.",
+    "Preservar as duas saidas por horario e a ambiguidade original na referencia Work."
+  ],
+  "regra_apresentacao": "Mostrar primeiro Work, nosso resultado principal e diferenca. Outros cenarios apenas na parte tecnica."
+}
