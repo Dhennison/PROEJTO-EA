@@ -1,0 +1,190 @@
+{
+  "instrument": "WINV26",
+  "server": "GenialInvestimentos-PRD",
+  "window_server": [
+    "2026.09.14 09:08:00",
+    "2026.09.14 09:15:00"
+  ],
+  "csv_ALL_records": 132860,
+  "business_records": 101964,
+  "quote_records_excluded": 30896,
+  "flags_counts": {
+    "1026": 15389,
+    "1336": 49283,
+    "1028": 15507,
+    "1368": 46519,
+    "1400": 6162
+  },
+  "minute_trade_counts": [
+    14324,
+    12326,
+    14788,
+    21387,
+    17078,
+    14777,
+    7284
+  ],
+  "minute_OHLC_and_quantity_match_native_WINN_and_original_Work": 7,
+  "earlier_available_bars": [
+    "2026.09.14 09:03",
+    "2026.09.14 09:04",
+    "2026.09.14 09:05",
+    "2026.09.14 09:06",
+    "2026.09.14 09:07"
+  ],
+  "earlier_available_bars_min_low": "186220.0000000000000000",
+  "same_millisecond_records_preserved": true,
+  "previous_overlap_ALL_exact_all_fields": 34812,
+  "previous_overlap_business_records": 26650,
+  "Work_points": "-375",
+  "Tester_generated_points": "-370.0000000000",
+  "Tester_generated_entry_time": "09:09:06.215",
+  "Tester_generated_exit_time": "09:11:03.490",
+  "variants": [
+    {
+      "grade": "MATEMATICA",
+      "entrada_estrita": false,
+      "entrada_linha": "185978.5000000000",
+      "alvo_linha": "186688.5060000000",
+      "stop_linha": "185603.5000000000",
+      "entrada_observada": {
+        "csv_data_row": 25991,
+        "time_msc": 1789376957384,
+        "server_time": "2026.09.14 09:09:17.384",
+        "last": "185975.00000000000",
+        "flags": 1368
+      },
+      "primeira_saida_por_preco": {
+        "csv_data_row": 74076,
+        "time_msc": 1789377096422,
+        "server_time": "2026.09.14 09:11:36.422",
+        "last": "185600.00000000000",
+        "flags": 1368
+      },
+      "motivo": "STOP",
+      "maximo_apos_entrada_ate_stop": {
+        "csv_data_row": 49698,
+        "time_msc": 1789377049807,
+        "server_time": "2026.09.14 09:10:49.807",
+        "last": "186320.00000000000",
+        "flags": 1336
+      },
+      "ultimo_alvo_antes_entrada": null,
+      "primeiro_alvo_apos_entrada_na_janela": null,
+      "Work_motivo_sustentado_pelos_precos": true
+    },
+    {
+      "grade": "MATEMATICA",
+      "entrada_estrita": true,
+      "entrada_linha": "185978.5000000000",
+      "alvo_linha": "186688.5060000000",
+      "stop_linha": "185603.5000000000",
+      "entrada_observada": {
+        "csv_data_row": 25991,
+        "time_msc": 1789376957384,
+        "server_time": "2026.09.14 09:09:17.384",
+        "last": "185975.00000000000",
+        "flags": 1368
+      },
+      "primeira_saida_por_preco": {
+        "csv_data_row": 74076,
+        "time_msc": 1789377096422,
+        "server_time": "2026.09.14 09:11:36.422",
+        "last": "185600.00000000000",
+        "flags": 1368
+      },
+      "motivo": "STOP",
+      "maximo_apos_entrada_ate_stop": {
+        "csv_data_row": 49698,
+        "time_msc": 1789377049807,
+        "server_time": "2026.09.14 09:10:49.807",
+        "last": "186320.00000000000",
+        "flags": 1336
+      },
+      "ultimo_alvo_antes_entrada": null,
+      "primeiro_alvo_apos_entrada_na_janela": null,
+      "Work_motivo_sustentado_pelos_precos": true
+    },
+    {
+      "grade": "GRADE5",
+      "entrada_estrita": false,
+      "entrada_linha": "185980.0000000000",
+      "alvo_linha": "186690.0000000000",
+      "stop_linha": "185605.0000000000",
+      "entrada_observada": {
+        "csv_data_row": 25976,
+        "time_msc": 1789376957382,
+        "server_time": "2026.09.14 09:09:17.382",
+        "last": "185980.00000000000",
+        "flags": 1368
+      },
+      "primeira_saida_por_preco": {
+        "csv_data_row": 74064,
+        "time_msc": 1789377096422,
+        "server_time": "2026.09.14 09:11:36.422",
+        "last": "185605.00000000000",
+        "flags": 1368
+      },
+      "motivo": "STOP",
+      "maximo_apos_entrada_ate_stop": {
+        "csv_data_row": 49698,
+        "time_msc": 1789377049807,
+        "server_time": "2026.09.14 09:10:49.807",
+        "last": "186320.00000000000",
+        "flags": 1336
+      },
+      "ultimo_alvo_antes_entrada": null,
+      "primeiro_alvo_apos_entrada_na_janela": null,
+      "Work_motivo_sustentado_pelos_precos": true
+    },
+    {
+      "grade": "GRADE5",
+      "entrada_estrita": true,
+      "entrada_linha": "185980.0000000000",
+      "alvo_linha": "186690.0000000000",
+      "stop_linha": "185605.0000000000",
+      "entrada_observada": {
+        "csv_data_row": 25991,
+        "time_msc": 1789376957384,
+        "server_time": "2026.09.14 09:09:17.384",
+        "last": "185975.00000000000",
+        "flags": 1368
+      },
+      "primeira_saida_por_preco": {
+        "csv_data_row": 74064,
+        "time_msc": 1789377096422,
+        "server_time": "2026.09.14 09:11:36.422",
+        "last": "185605.00000000000",
+        "flags": 1368
+      },
+      "motivo": "STOP",
+      "maximo_apos_entrada_ate_stop": {
+        "csv_data_row": 49698,
+        "time_msc": 1789377049807,
+        "server_time": "2026.09.14 09:10:49.807",
+        "last": "186320.00000000000",
+        "flags": 1336
+      },
+      "ultimo_alvo_antes_entrada": null,
+      "primeiro_alvo_apos_entrada_na_janela": null,
+      "Work_motivo_sustentado_pelos_precos": true
+    }
+  ],
+  "classification": "WORK_STOP_SUSTENTADO_PELA_SEQUENCIA_COLETADA;STOP_PRIMEIRO_NAS_QUATRO_VARIANTES",
+  "limits": [
+    "Stability and agreement with bars do not certify the independent completeness of the upstream tick feed.",
+    "Price-touch reconstruction does not certify order acceptance, queue priority, partial fills, spread, execution price or real PnL.",
+    "Strict entry is sensitivity to touch, not a queue simulation.",
+    "Decimal math prices come from the audited operation table; precision beyond those digits does not change any crossing for this sample of five-point prices.",
+    "CSV order preserved at equal milliseconds; no timestamp deduplication.",
+    "Do not extrapolate this single operation to the other five or overwrite original Work results."
+  ],
+  "sha256": {
+    "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINV26_2026_09_14_09_08_2026_09_14_09_15__GENIAL_SEQ_20260914_S50_A_1022922437_ALL.csv": "719b64e9b625c23c7c5fe73008c60b3d4912b06570aa2960dc68bc94b4351db7",
+    "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINV26_2026_09_14_09_08_2026_09_14_09_15__GENIAL_SEQ_20260914_S50_A_1022922437.txt": "df08b25e90e6bb501e6dc25298542234899d2552f9586014656c80d1a8e1bd62",
+    "M1_202609.csv": "4f209aa4c854ca52f8793b1448a08fef613d4a8048dda59ef8d8afb5e5e206eb",
+    "WINFUT_F_0_1min_01-01-2026_22-09-2026.csv": "f1343f8181fce176b5d266bd1710c5aadfea8ed8af8941da1ee6b3fd9469dc45",
+    "POR_OPERACAO_CONFERIDO.csv": "fca03098a2732ab5aa39e9cf2a02489e1c6bb2e3e166e8dbcbb2004a06e07067",
+    "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINV26_2026_09_14_09_00_2026_09_14_09_10_GENIAL_SEQ_20260914_S382_A_1020551515_ALL.csv": "1ec4777f5ff694d30df3d55cb4a7e77d90bbd579d3f034586f800646da2fffb0"
+  }
+}
