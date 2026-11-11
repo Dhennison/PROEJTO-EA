@@ -23,7 +23,7 @@ SUBFRENTES ATUAIS DA ETAPA 6
 6.4 Setembro/2026: CONCLUÍDO sobre a alimentação recebida, 14 pregões/33 operações. Principal Work +3839,308998 versus nosso +1380; diferença -2459,308998. Ressalvas preservadas.
 6.5 Relatórios: DOIS PDFs finais (técnico e enxuto), principal único por mês; DD contínuo em ordem crescente, provisório enquanto faltarem meses anteriores. Não reenviar PDFs a cada etapa.
 6.6 Próximo trabalho: AGOSTO/2026, 20 pregões/43 operações; nosso resultado não apurado. Preparar seleção inequívoca de contrato por data na transição Q/V, coleta em lote e fechamento comparável.
-6.7 Arquivamento recente: decisões/trechos literais/inventário preparados; originais disponíveis empacotados e hashes de restauração conferidos. Publicação só é confirmada após o push correspondente.
+6.7 Arquivamento recente: PUBLICADO no GitHub em 11/11/2026. Registro/decisões/inventário no commit 6e31844; 185 originais disponíveis em seis ZIPs no commit 3cd9be6. Push dos dois confirmado na branch entrega-modelod-v2-10-20261030. Hashes de restauração conferidos; não é exportação integral do chat.
 
 PENDÊNCIAS QUE NÃO DEVEM DESAPARECER
 - Agosto e demais meses/anos ainda não têm nosso resultado principal fechado.

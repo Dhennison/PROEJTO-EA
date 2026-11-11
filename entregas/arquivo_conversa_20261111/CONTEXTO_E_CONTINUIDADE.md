@@ -102,3 +102,7 @@ Os relatórios e pacotes anteriores continuam no histórico Git. Nunca incluir c
 ## Registro principal permanente
 
 O arquivo canônico de todas as etapas é **`entregas/v2_10/RETOMADA_DO_TRABALHO.txt`**. Ele foi atualizado em 11/11/2026 com o estado atual no início e o histórico anterior preservado abaixo. Atualizá-lo sempre que uma etapa avança. Este arquivo é o registro da conversa recente, complementar ao TXT geral.
+
+## Publicação confirmada
+
+Push confirmado em 11/11/2026: continuidade/inventário no commit `6e31844` e seis partes com 185 originais no commit `3cd9be6`, branch `entrega-modelod-v2-10-20261030`, repositório `Dhennison/PROEJTO-EA`.

@@ -44,5 +44,13 @@
     "zip_entries_scanned": 280,
     "possible_assignments_found": 0,
     "note": "Conservative text/configuration scan; no execution or publication of runtime environment configuration."
+  },
+  "publication": {
+    "status": "push_confirmed",
+    "repository": "Dhennison/PROEJTO-EA",
+    "branch": "entrega-modelod-v2-10-20261030",
+    "originals_commit": "3cd9be6",
+    "continuity_inventory_commit": "6e31844",
+    "date": "2026-11-11"
   }
 }
