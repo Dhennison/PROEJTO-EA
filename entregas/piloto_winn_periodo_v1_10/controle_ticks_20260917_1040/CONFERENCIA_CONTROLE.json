@@ -1,0 +1,50 @@
+{
+  "window_server": [
+    "2026.09.17 10:40:00",
+    "2026.09.17 10:41:00"
+  ],
+  "rows_ALL": 26519,
+  "business_rows": 19368,
+  "quote_rows": 7151,
+  "flags": {
+    "1026": 3651,
+    "1028": 3500,
+    "1336": 7779,
+    "1368": 9243,
+    "1400": 2346
+  },
+  "reread_equal_to_previous_minute_all_fields_and_order": true,
+  "OHLC_ticks": [
+    "185635.00000000000",
+    "185640.00000000000",
+    "185225.00000000000",
+    "185285.00000000000"
+  ],
+  "OHLC_identical_to_native_WINN_and_original_Work": true,
+  "quantity_ticks": "139969.0000000000000000",
+  "quantity_native_WINN": "139970",
+  "quantity_Work": "139970",
+  "difference_ticks_minus_reference": "-1.0000000000000000",
+  "first_normalized_S618_stop_business": {
+    "time_msc": 1789641637330,
+    "server_time": "2026.09.17 10:40:37.330",
+    "last": "1.8531500000000000e+05",
+    "flags": "1368"
+  },
+  "classification": "CONTROLE_CONCLUIDO;DIVERGENCIA_QUANTITATIVA_REPRODUZIDA;STOP_OBSERVADO_NAO_HOMOLOGA_INTEGRIDADE_INTEGRAL",
+  "unique_new_minutes": 0,
+  "unique_new_records": 0,
+  "limits": [
+    "Exact reread proves repeatability of returned data, not independent feed completeness or cause of the discrepancy.",
+    "One missing contract in aggregate does not prove exactly one missing tick.",
+    "Do not fabricate a tick, adjust volume or certify real fills.",
+    "No further identical manual rereads are required for this control."
+  ],
+  "sha256": {
+    "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINV26_2026_09_17_10_40_2026_09_17_10_41_GENIAL_SEQ_20260917_1040_CONTROLE_A_1023302453_ALL.csv": "b8971d1f2def13907de6879851bea555589f3e3fd6a5f20fe83674514ebf9903",
+    "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINV26_2026_09_17_10_40_2026_09_17_10_41_GENIAL_SEQ_20260917_1040_CONTROLE_A_1023302453.txt": "7dcfebca73af422b5a784ab44e406f86bd677d1f4b3312d917e17324d2d616b5",
+    "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINV26_2026_09_17_10_30_2026_09_17_10_45_GENIAL_SEQ_20260917_S382_S618_A_1021675390_ALL.csv": "237584d16c34e527c75254d8caa5cc366949366e2ceeecd67065c7b0caef2096",
+    "M1_202609.csv": "4f209aa4c854ca52f8793b1448a08fef613d4a8048dda59ef8d8afb5e5e206eb",
+    "WINFUT_F_0_1min_01-01-2026_22-09-2026.csv": "f1343f8181fce176b5d266bd1710c5aadfea8ed8af8941da1ee6b3fd9469dc45"
+  }
+}
