@@ -22,7 +22,7 @@ int CryptEncode(int,const std::vector<uchar>&v,const std::vector<uchar>&,std::ve
 int CopyTicksRange(string,std::vector<MqlTick>&out,int,ulong a,ulong b){error=copy_error;if(error){out.clear();return -1;}out.clear();for(auto &t:fixture)if((ulong)t.time_msc>=a&&(ulong)t.time_msc<=b)out.push_back(t);return out.size();}
 #include "Coletar_Setembro_Sem_Ordens.mq5"
 int checks=0;void require(bool ok,const char*label){checks++;if(!ok)throw std::runtime_error(label);}
-void reset(){files.clear();nextid=1;saved.clear();fixture.clear();day=attempt=pending=blocks=0;logfile=statusfile=events=minutes=INVALID_HANDLE;ordinal=0;previous_msc=last_minute=-1;last_bucket=-1;run_count=0;from_time=to_time=0;have=done=io_failed=false;env_tester=false;write_ok=true;removed=false;copy_error=error=0;before.clear();now.clear();}
+void reset(){files.clear();nextid=1;saved.clear();fixture.clear();batch_day_index=attempt=pending=blocks=0;logfile=statusfile=events=minutes=INVALID_HANDLE;ordinal=0;previous_msc=last_minute=-1;last_bucket=-1;run_count=0;from_time=to_time=0;have=done=io_failed=false;env_tester=false;write_ok=true;removed=false;copy_error=error=0;before.clear();now.clear();}
 string readall(string p){std::ifstream f(p);return string(std::istreambuf_iterator<char>(f),{});}
 MqlTick tick(long ms,double price){MqlTick t;t.time=ms/1000;t.time_msc=ms;t.last=price;t.bid=price;t.ask=price+5;t.flags=56;t.volume=1;t.volume_real=1;return t;}
 int main(int argc,char**argv){
@@ -46,7 +46,7 @@ int main(int argc,char**argv){
   double q=std::stod(fields[5]);
   for(int i=0;i<4;i++){auto tickvalue=tick(t*1000+i*100,std::stod(fields[i+1]));tickvalue.volume_real=i==3?q-3*std::floor(q/4):std::floor(q/4);tickvalue.volume=(ulong)tickvalue.volume_real;fixture.push_back(tickvalue);}
  }
- int watchdog=0;while(!done&&watchdog++<3000)OnTimer();require(done&&day==14&&pending==0&&!io_failed,"14-day complete transport");require(blocks==798,"798 contiguous 10-minute blocks");
+ int watchdog=0;while(!done&&watchdog++<3000)OnTimer();require(done&&batch_day_index==14&&pending==0&&!io_failed,"14-day complete transport");require(blocks==798,"798 contiguous 10-minute blocks");
  std::filesystem::create_directories(argv[3]);for(auto &[name,data]:saved){auto slash=name.find_last_of('\\');if(slash!=string::npos){std::ofstream f(std::filesystem::path(argv[3])/name.substr(slash+1));f<<data;}}
  std::cout<<"PASS checks="<<checks<<"; actual collector adapted to C++ with API mocks and OpenSSL SHA256; synthetic 4-point transport; NOT native MT5 compile/execution\n";
 }

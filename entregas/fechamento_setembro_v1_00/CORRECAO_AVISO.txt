@@ -1,0 +1,7 @@
+CORRECAO v1.00 — aviso de sombreamento, 11/11/2026
+O usuario compilou a versao inicial no MetaEditor: 0 erros, 1 aviso, 717 ms.
+A variavel global day do coletor foi renomeada para batch_day_index.
+ModeloD_Core.mqh foi preservado byte a byte. Nao houve mudanca de referencias ou de logica.
+O codigo corrigido passou novamente nos 14 controles C++ com mocks e no pipeline, incluindo recusas de blocos/precos incompletos. Isso nao equivale a compilacao nativa da revisao.
+Substituir somente Coletar_Setembro_Sem_Ordens.mq5 na pasta Experts/ModeloD_Fechamento_Setembro e pressionar F7.
+Se uma coleta ja estiver em andamento, nao substitui-la nem reinicia-la por este aviso: o aviso inicial nao altera a execucao.

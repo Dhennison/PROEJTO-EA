@@ -27,7 +27,7 @@ No principal da Genial, pressione F4.
 No MetaEditor, abra:
 MQL5\Experts\ModeloD_Fechamento_Setembro\Coletar_Setembro_Sem_Ordens.mq5
 Pressione F7. O ModeloD_Core.mqh e incluido automaticamente, nao e compilado separado.
-Compilacao e execucao NATIVAS NO MT5 ainda precisam acontecer nessa instalacao. Foram feitos testes locais do codigo adaptado com mocks; nao sao uma compilacao MetaEditor.
+A versao inicial foi compilada pelo usuario: 0 erros e 1 aviso de sombreamento. Esta revisao remove o aviso renomeando somente a variavel global do coletor; recompile com F7. A execucao nativa completa continua pendente. Os testes locais com mocks nao sao execucao MT5.
 Se houver erro de compilacao, envie a lista completa; nao execute outro EA no lugar.
 
 3. EXECUTAR — UMA VEZ NO GRAFICO, NAO NO TESTER

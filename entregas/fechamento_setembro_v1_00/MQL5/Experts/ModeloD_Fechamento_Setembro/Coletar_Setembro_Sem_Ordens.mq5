@@ -11,7 +11,7 @@ struct Minute { long n,first,last; double o,h,l,c,quantity; ulong volume,hash; }
 Ref refs[]; MDDay model;
 MqlTick before[],now[];
 double thresholds[60];
-int day=0,attempt=0,logfile=INVALID_HANDLE,statusfile=INVALID_HANDLE,events=INVALID_HANDLE,minutes=INVALID_HANDLE;
+int batch_day_index=0,attempt=0,logfile=INVALID_HANDLE,statusfile=INVALID_HANDLE,events=INVALID_HANDLE,minutes=INVALID_HANDLE;
 long ordinal=0,previous_msc=-1,last_minute=-1; int last_bucket=-1,run_count=0;
 datetime from_time=0,to_time=0; bool have=false,done=false,io_failed=false;
 int pending=0,blocks=0; string folder="",reference_hash="";
@@ -59,29 +59,29 @@ int Bucket(double price) {
  return 2*lo+((lo<60&&thresholds[lo]==price)?1:0);
 }
 void CloseDay() { if(events!=INVALID_HANDLE){FileFlush(events);FileClose(events);events=INVALID_HANDLE;}if(minutes!=INVALID_HANDLE){FileFlush(minutes);FileClose(minutes);minutes=INVALID_HANDLE;} }
-datetime BlockEnd(datetime start) { datetime end=start+InpMinutosPorBloco*60;return end<refs[day].end?end:refs[day].end; }
+datetime BlockEnd(datetime start) { datetime end=start+InpMinutosPorBloco*60;return end<refs[batch_day_index].end?end:refs[batch_day_index].end; }
 bool StartDay() {
- if(!SymbolSelect(refs[day].symbol,true)||!MDCalculate(refs[day].values,model))return false;
+ if(!SymbolSelect(refs[batch_day_index].symbol,true)||!MDCalculate(refs[batch_day_index].values,model))return false;
  int k=0;for(int i=0;i<5;i++){
   double values[6];values[0]=model.levels[i].entry;values[1]=model.levels[i].sl;values[2]=model.levels[i].tp;
   values[3]=model.levels[i].entry_tick;values[4]=model.levels[i].sl_tick;values[5]=model.levels[i].tp_tick;
   for(int j=0;j<6;j++){thresholds[k++]=5.0*MathFloor(values[j]/5.0);thresholds[k++]=5.0*MathCeil(values[j]/5.0);}
  }
  ArraySort(thresholds);
- string tag=refs[day].date;StringReplace(tag,".","");
+ string tag=refs[batch_day_index].date;StringReplace(tag,".","");
  events=FileOpen(folder+"\\EVENTOS_"+tag+".csv",FILE_WRITE|FILE_CSV|FILE_ANSI|FILE_COMMON,';',CP_UTF8);
  minutes=FileOpen(folder+"\\MINUTOS_"+tag+".csv",FILE_WRITE|FILE_CSV|FILE_ANSI|FILE_COMMON,';',CP_UTF8);
  if(events==INVALID_HANDLE||minutes==INVALID_HANDLE)return false;
  if(FileWrite(events,"ordinal_ALL","time_msc","last","volume","volume_real","flags","bucket")==0)return false;
  if(FileWrite(minutes,"time","business_n","open","high","low","close","volume","volume_real","first_msc","last_msc","business_hash")==0)return false;
- from_time=StringToTime(refs[day].date+" 09:00:00");to_time=BlockEnd(from_time);
+ from_time=StringToTime(refs[batch_day_index].date+" 09:00:00");to_time=BlockEnd(from_time);
  ordinal=0;previous_msc=-1;last_minute=-1;last_bucket=-1;run_count=0;attempt=0;have=false;ArrayFree(before);
- Say("DIA;"+refs[day].date+";simbolo="+refs[day].symbol+";progresso="+IntegerToString(day+1)+"/"+IntegerToString(ArraySize(refs)));return true;
+ Say("DIA;"+refs[batch_day_index].date+";simbolo="+refs[batch_day_index].symbol+";progresso="+IntegerToString(batch_day_index+1)+"/"+IntegerToString(ArraySize(refs)));return true;
 }
 void Finish(string reason) {
  if(done)return;
  done=true;EventKillTimer();CloseDay();
- Say("END;reason="+reason+";days="+IntegerToString(day)+";blocks="+IntegerToString(blocks)+";pending_blocks="+IntegerToString(pending)+";io_failed="+(io_failed?"true":"false")+";pasta=Common\\Files\\"+folder);
+ Say("END;reason="+reason+";days="+IntegerToString(batch_day_index)+";blocks="+IntegerToString(blocks)+";pending_blocks="+IntegerToString(pending)+";io_failed="+(io_failed?"true":"false")+";pasta=Common\\Files\\"+folder);
  if(statusfile!=INVALID_HANDLE){FileFlush(statusfile);FileClose(statusfile);statusfile=INVALID_HANDLE;}
  if(logfile!=INVALID_HANDLE){FileFlush(logfile);FileClose(logfile);logfile=INVALID_HANDLE;}
  ExpertRemove();
@@ -107,7 +107,7 @@ bool Commit(int n) {
   last_minute=minute;
  }
  for(int j=0;j<count;j++)if(FileWrite(minutes,TimeToString(from_time+j*60,TIME_DATE|TIME_MINUTES),m[j].n,DoubleToString(m[j].o,-16),DoubleToString(m[j].h,-16),DoubleToString(m[j].l,-16),DoubleToString(m[j].c,-16),m[j].volume,DoubleToString(m[j].quantity,-16),m[j].first,m[j].last,m[j].hash)==0)return false;
- if(FileWrite(statusfile,refs[day].date,TimeToString(from_time,TIME_DATE|TIME_MINUTES),TimeToString(to_time,TIME_DATE|TIME_MINUTES),"ESTAVEL",attempt,n,business,hash,0)==0)return false;
+ if(FileWrite(statusfile,refs[batch_day_index].date,TimeToString(from_time,TIME_DATE|TIME_MINUTES),TimeToString(to_time,TIME_DATE|TIME_MINUTES),"ESTAVEL",attempt,n,business,hash,0)==0)return false;
  FileFlush(events);FileFlush(minutes);FileFlush(statusfile);return true;
 }
 int OnInit() {
@@ -129,7 +129,7 @@ void OnTick() {}
 void OnTimer() {
  if(done)return;
  if(io_failed){Finish("ERRO_IO");return;}
- attempt++;ResetLastError();int n=CopyTicksRange(refs[day].symbol,now,COPY_TICKS_ALL,(ulong)from_time*1000,(ulong)to_time*1000-1);int error=GetLastError();
+ attempt++;ResetLastError();int n=CopyTicksRange(refs[batch_day_index].symbol,now,COPY_TICKS_ALL,(ulong)from_time*1000,(ulong)to_time*1000-1);int error=GetLastError();
  bool valid=(n>=0&&n==ArraySize(now)&&error==0);long previous=-1;
  if(valid)for(int i=0;i<n;i++) {
   if(now[i].time_msc<(long)from_time*1000||now[i].time_msc>=(long)to_time*1000||now[i].time_msc<previous||((now[i].flags&120)!=0&&(!MDPositive(now[i].last)||!MathIsValidNumber(now[i].volume_real)||now[i].volume_real<0))){valid=false;break;}
@@ -139,16 +139,16 @@ void OnTimer() {
  if(stable) {
   if(!Commit(n)){io_failed=true;Finish("ERRO_GRAVACAO_OU_ORDEM");return;}blocks++;
  } else if(attempt>=InpMaxTentativas) {
-  pending++;blocks++;if(FileWrite(statusfile,refs[day].date,TimeToString(from_time,TIME_DATE|TIME_MINUTES),TimeToString(to_time,TIME_DATE|TIME_MINUTES),"PENDENTE",attempt,n,0,0,error)==0){io_failed=true;Finish("ERRO_IO");return;}
-  Say("PENDENTE;"+refs[day].date+";"+TimeToString(from_time,TIME_MINUTES)+";erro="+IntegerToString(error));last_bucket=-1;last_minute=-1;run_count=0;
+  pending++;blocks++;if(FileWrite(statusfile,refs[batch_day_index].date,TimeToString(from_time,TIME_DATE|TIME_MINUTES),TimeToString(to_time,TIME_DATE|TIME_MINUTES),"PENDENTE",attempt,n,0,0,error)==0){io_failed=true;Finish("ERRO_IO");return;}
+  Say("PENDENTE;"+refs[batch_day_index].date+";"+TimeToString(from_time,TIME_MINUTES)+";erro="+IntegerToString(error));last_bucket=-1;last_minute=-1;run_count=0;
  } else {
   have=false;
   if(valid){if(ArrayResize(before,n)!=n||(n>0&&ArrayCopy(before,now)!=n)){io_failed=true;Finish("ERRO_MEMORIA");return;}have=true;}
-  if(attempt==1||!valid)Say("LEITURA;dia="+refs[day].date+";bloco="+TimeToString(from_time,TIME_MINUTES)+";tentativa="+IntegerToString(attempt)+";n="+IntegerToString(n)+";erro="+IntegerToString(error));
+  if(attempt==1||!valid)Say("LEITURA;dia="+refs[batch_day_index].date+";bloco="+TimeToString(from_time,TIME_MINUTES)+";tentativa="+IntegerToString(attempt)+";n="+IntegerToString(n)+";erro="+IntegerToString(error));
   return;
  }
  from_time=to_time;have=false;attempt=0;ArrayFree(before);ArrayFree(now);
- if(from_time>=refs[day].end){Say("DIA_CONCLUIDO;"+refs[day].date);CloseDay();day++;if(day>=ArraySize(refs)){Finish("CONCLUIDO");return;}if(!StartDay()){io_failed=true;Finish("ERRO_INICIO_DIA");return;}}
+ if(from_time>=refs[batch_day_index].end){Say("DIA_CONCLUIDO;"+refs[batch_day_index].date);CloseDay();batch_day_index++;if(batch_day_index>=ArraySize(refs)){Finish("CONCLUIDO");return;}if(!StartDay()){io_failed=true;Finish("ERRO_INICIO_DIA");return;}}
  else to_time=BlockEnd(from_time);
 }
 void OnDeinit(const int reason) {

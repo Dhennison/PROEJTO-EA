@@ -17,7 +17,7 @@ COMPARACAO FINAL QUE SERA EMITIDA
 Por data e nivel, nas quatro variantes de preco: estado, entrada e primeira saida, ponto teorico, motivo, comparacao com Work e deals dos dois modelos do Tester, extras/ausencias, dados, grade, cronologia e preenchimento simulado.
 Resumo dos 14 dias e total dos cenarios completos. Se houver bloco pendente, falha de preco, abertura ou corte, o programa impede apresentar um subtotal como se fosse total do mes. Diferencas de volume permanecem como ressalvas de integridade.
 A reducao de eventos foi comparada a todos os negocios dos CSVs recebidos em 921 verificacoes e cenarios sinteticos de gaps, igualdade, corte e timestamps repetidos. O coletor real adaptado a C++ foi exercitado com API simulada, SHA-256 e transporte de 798 blocos; o pipeline conferiu 7875 candles sinteticos derivados da referencia. Os resultados sinteticos de desempenho NAO sao publicados como resultados de mercado.
-Faltam compilacao e execucao NATIVAS na Genial, que o usuario realiza com o pacote. Nao afirmar que C++/mocks seja compilacao MQL5.
+A versao inicial compilou nativamente com 0 erros e 1 aviso. A revisao remove o sombreamento e precisa ser recompilada no MetaEditor; a coleta nativa completa continua pendente. Nao afirmar que C++/mocks seja compilacao MQL5.
 
 PREENCHIMENTO REAL — ESCOPO FIXADO ANTES DA RODADA
 Os pontos dos negocios historicos sao um cenario de preenchimento exatamente nos niveis; o corte usa o primeiro Last observado. Os deals do Tester sao preenchimentos simulados efetivamente registrados naquelas rodadas, e ja compoem o comparativo.
