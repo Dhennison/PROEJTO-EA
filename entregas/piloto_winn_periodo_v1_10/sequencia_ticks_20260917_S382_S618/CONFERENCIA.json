@@ -1,0 +1,410 @@
+{
+  "instrument": "WINV26",
+  "server": "GenialInvestimentos-PRD",
+  "window_server": [
+    "2026.09.17 10:30:00",
+    "2026.09.17 10:45:00"
+  ],
+  "csv_ALL_records": 414529,
+  "business_records": 297486,
+  "quote_records_excluded": 117043,
+  "flags_counts": {
+    "1368": 132372,
+    "1336": 129946,
+    "1026": 58459,
+    "1028": 58584,
+    "1400": 35168
+  },
+  "minute_trade_counts": [
+    20721,
+    12811,
+    29141,
+    26124,
+    26451,
+    17203,
+    16997,
+    15715,
+    11479,
+    19658,
+    19368,
+    25034,
+    19063,
+    23591,
+    14130
+  ],
+  "minute_OHLC_match_native_WINN_and_original_Work": 15,
+  "minute_quantity_match_all_three": 14,
+  "quantity_differences": [
+    {
+      "time": "2026.09.17 10:40",
+      "trade_records": 19368,
+      "ticks_OHLC": "185635.00000000000|185640.00000000000|185225.00000000000|185285.00000000000",
+      "WINN_OHLC": "185635.0000000000000000|185640.0000000000000000|185225.0000000000000000|185285.0000000000000000",
+      "Work_OHLC": "185635|185640|185225|185285",
+      "OHLC_identico": true,
+      "quantity": "139969.0000000000000000",
+      "WINN_quantity": "139970",
+      "Work_quantity": "139970",
+      "quantity_identica": false
+    }
+  ],
+  "same_millisecond_records_preserved": true,
+  "operations": [
+    {
+      "nivel": "S38.2",
+      "Work_points": "150.331333",
+      "Tester_generated_points": "-410.0000000000",
+      "Tester_generated_entry_time": "10:33:02.988",
+      "Tester_generated_exit_time": "10:34:02.333",
+      "variants": [
+        {
+          "grade": "MATEMATICA",
+          "entrada_estrita": false,
+          "entrada_linha": "186449.3346666667",
+          "alvo_linha": "186599.6660000000",
+          "stop_linha": "186074.3346666667",
+          "entrada_observada": {
+            "csv_data_row": 117207,
+            "time_msc": 1789641229413,
+            "server_time": "2026.09.17 10:33:49.413",
+            "last": "186445.00000000000",
+            "flags": 1368
+          },
+          "primeira_saida_por_preco": {
+            "csv_data_row": 146174,
+            "time_msc": 1789641278006,
+            "server_time": "2026.09.17 10:34:38.006",
+            "last": "186070.00000000000",
+            "flags": 1368
+          },
+          "motivo_observado": "STOP",
+          "maximo_apos_entrada_ate_primeira_saida": {
+            "csv_data_row": 117702,
+            "time_msc": 1789641230030,
+            "server_time": "2026.09.17 10:33:50.030",
+            "last": "186495.00000000000",
+            "flags": 1336
+          },
+          "ultimo_alvo_antes_entrada": {
+            "csv_data_row": 115064,
+            "time_msc": 1789641224232,
+            "server_time": "2026.09.17 10:33:44.232",
+            "last": "186600.00000000000",
+            "flags": 1400
+          },
+          "primeiro_alvo_apos_entrada_na_janela": null,
+          "minutos_com_divergencia_quantitativa_no_intervalo_da_operacao": [],
+          "homologacao_integral_de_correspondencia": true
+        },
+        {
+          "grade": "MATEMATICA",
+          "entrada_estrita": true,
+          "entrada_linha": "186449.3346666667",
+          "alvo_linha": "186599.6660000000",
+          "stop_linha": "186074.3346666667",
+          "entrada_observada": {
+            "csv_data_row": 117207,
+            "time_msc": 1789641229413,
+            "server_time": "2026.09.17 10:33:49.413",
+            "last": "186445.00000000000",
+            "flags": 1368
+          },
+          "primeira_saida_por_preco": {
+            "csv_data_row": 146174,
+            "time_msc": 1789641278006,
+            "server_time": "2026.09.17 10:34:38.006",
+            "last": "186070.00000000000",
+            "flags": 1368
+          },
+          "motivo_observado": "STOP",
+          "maximo_apos_entrada_ate_primeira_saida": {
+            "csv_data_row": 117702,
+            "time_msc": 1789641230030,
+            "server_time": "2026.09.17 10:33:50.030",
+            "last": "186495.00000000000",
+            "flags": 1336
+          },
+          "ultimo_alvo_antes_entrada": {
+            "csv_data_row": 115064,
+            "time_msc": 1789641224232,
+            "server_time": "2026.09.17 10:33:44.232",
+            "last": "186600.00000000000",
+            "flags": 1400
+          },
+          "primeiro_alvo_apos_entrada_na_janela": null,
+          "minutos_com_divergencia_quantitativa_no_intervalo_da_operacao": [],
+          "homologacao_integral_de_correspondencia": true
+        },
+        {
+          "grade": "GRADE5",
+          "entrada_estrita": false,
+          "entrada_linha": "186450.0000000000",
+          "alvo_linha": "186600.0000000000",
+          "stop_linha": "186075.0000000000",
+          "entrada_observada": {
+            "csv_data_row": 117196,
+            "time_msc": 1789641229413,
+            "server_time": "2026.09.17 10:33:49.413",
+            "last": "186450.00000000000",
+            "flags": 1368
+          },
+          "primeira_saida_por_preco": {
+            "csv_data_row": 146166,
+            "time_msc": 1789641278006,
+            "server_time": "2026.09.17 10:34:38.006",
+            "last": "186075.00000000000",
+            "flags": 1368
+          },
+          "motivo_observado": "STOP",
+          "maximo_apos_entrada_ate_primeira_saida": {
+            "csv_data_row": 117702,
+            "time_msc": 1789641230030,
+            "server_time": "2026.09.17 10:33:50.030",
+            "last": "186495.00000000000",
+            "flags": 1336
+          },
+          "ultimo_alvo_antes_entrada": {
+            "csv_data_row": 115064,
+            "time_msc": 1789641224232,
+            "server_time": "2026.09.17 10:33:44.232",
+            "last": "186600.00000000000",
+            "flags": 1400
+          },
+          "primeiro_alvo_apos_entrada_na_janela": null,
+          "minutos_com_divergencia_quantitativa_no_intervalo_da_operacao": [],
+          "homologacao_integral_de_correspondencia": true
+        },
+        {
+          "grade": "GRADE5",
+          "entrada_estrita": true,
+          "entrada_linha": "186450.0000000000",
+          "alvo_linha": "186600.0000000000",
+          "stop_linha": "186075.0000000000",
+          "entrada_observada": {
+            "csv_data_row": 117207,
+            "time_msc": 1789641229413,
+            "server_time": "2026.09.17 10:33:49.413",
+            "last": "186445.00000000000",
+            "flags": 1368
+          },
+          "primeira_saida_por_preco": {
+            "csv_data_row": 146166,
+            "time_msc": 1789641278006,
+            "server_time": "2026.09.17 10:34:38.006",
+            "last": "186075.00000000000",
+            "flags": 1368
+          },
+          "motivo_observado": "STOP",
+          "maximo_apos_entrada_ate_primeira_saida": {
+            "csv_data_row": 117702,
+            "time_msc": 1789641230030,
+            "server_time": "2026.09.17 10:33:50.030",
+            "last": "186495.00000000000",
+            "flags": 1336
+          },
+          "ultimo_alvo_antes_entrada": {
+            "csv_data_row": 115064,
+            "time_msc": 1789641224232,
+            "server_time": "2026.09.17 10:33:44.232",
+            "last": "186600.00000000000",
+            "flags": 1400
+          },
+          "primeiro_alvo_apos_entrada_na_janela": null,
+          "minutos_com_divergencia_quantitativa_no_intervalo_da_operacao": [],
+          "homologacao_integral_de_correspondencia": true
+        }
+      ],
+      "classification": "WORK_ALVO_NAO_SUSTENTADO_PELA_SEQUENCIA_COLETADA;STOP_PRIMEIRO_NAS_QUATRO_VARIANTES"
+    },
+    {
+      "nivel": "S61.8",
+      "Work_points": "243.001333",
+      "Tester_generated_points": "-650.0000000000",
+      "Tester_generated_entry_time": "10:34:03.049",
+      "Tester_generated_exit_time": "10:40:03.804",
+      "variants": [
+        {
+          "grade": "MATEMATICA",
+          "entrada_estrita": false,
+          "entrada_linha": "185963.3320000000",
+          "alvo_linha": "186206.3333333333",
+          "stop_linha": "185313.3320000000",
+          "entrada_observada": {
+            "csv_data_row": 151366,
+            "time_msc": 1789641284638,
+            "server_time": "2026.09.17 10:34:44.638",
+            "last": "185960.00000000000",
+            "flags": 1368
+          },
+          "primeira_saida_por_preco": {
+            "csv_data_row": 288291,
+            "time_msc": 1789641637330,
+            "server_time": "2026.09.17 10:40:37.330",
+            "last": "185310.00000000000",
+            "flags": 1368
+          },
+          "motivo_observado": "STOP",
+          "maximo_apos_entrada_ate_primeira_saida": {
+            "csv_data_row": 221137,
+            "time_msc": 1789641449116,
+            "server_time": "2026.09.17 10:37:29.116",
+            "last": "186175.00000000000",
+            "flags": 1336
+          },
+          "ultimo_alvo_antes_entrada": {
+            "csv_data_row": 143799,
+            "time_msc": 1789641272865,
+            "server_time": "2026.09.17 10:34:32.865",
+            "last": "186210.00000000000",
+            "flags": 1336
+          },
+          "primeiro_alvo_apos_entrada_na_janela": null,
+          "minutos_com_divergencia_quantitativa_no_intervalo_da_operacao": [
+            "2026.09.17 10:40"
+          ],
+          "homologacao_integral_de_correspondencia": false
+        },
+        {
+          "grade": "MATEMATICA",
+          "entrada_estrita": true,
+          "entrada_linha": "185963.3320000000",
+          "alvo_linha": "186206.3333333333",
+          "stop_linha": "185313.3320000000",
+          "entrada_observada": {
+            "csv_data_row": 151366,
+            "time_msc": 1789641284638,
+            "server_time": "2026.09.17 10:34:44.638",
+            "last": "185960.00000000000",
+            "flags": 1368
+          },
+          "primeira_saida_por_preco": {
+            "csv_data_row": 288291,
+            "time_msc": 1789641637330,
+            "server_time": "2026.09.17 10:40:37.330",
+            "last": "185310.00000000000",
+            "flags": 1368
+          },
+          "motivo_observado": "STOP",
+          "maximo_apos_entrada_ate_primeira_saida": {
+            "csv_data_row": 221137,
+            "time_msc": 1789641449116,
+            "server_time": "2026.09.17 10:37:29.116",
+            "last": "186175.00000000000",
+            "flags": 1336
+          },
+          "ultimo_alvo_antes_entrada": {
+            "csv_data_row": 143799,
+            "time_msc": 1789641272865,
+            "server_time": "2026.09.17 10:34:32.865",
+            "last": "186210.00000000000",
+            "flags": 1336
+          },
+          "primeiro_alvo_apos_entrada_na_janela": null,
+          "minutos_com_divergencia_quantitativa_no_intervalo_da_operacao": [
+            "2026.09.17 10:40"
+          ],
+          "homologacao_integral_de_correspondencia": false
+        },
+        {
+          "grade": "GRADE5",
+          "entrada_estrita": false,
+          "entrada_linha": "185965.0000000000",
+          "alvo_linha": "186205.0000000000",
+          "stop_linha": "185315.0000000000",
+          "entrada_observada": {
+            "csv_data_row": 151361,
+            "time_msc": 1789641284638,
+            "server_time": "2026.09.17 10:34:44.638",
+            "last": "185965.00000000000",
+            "flags": 1368
+          },
+          "primeira_saida_por_preco": {
+            "csv_data_row": 288284,
+            "time_msc": 1789641637330,
+            "server_time": "2026.09.17 10:40:37.330",
+            "last": "185315.00000000000",
+            "flags": 1368
+          },
+          "motivo_observado": "STOP",
+          "maximo_apos_entrada_ate_primeira_saida": {
+            "csv_data_row": 221137,
+            "time_msc": 1789641449116,
+            "server_time": "2026.09.17 10:37:29.116",
+            "last": "186175.00000000000",
+            "flags": 1336
+          },
+          "ultimo_alvo_antes_entrada": {
+            "csv_data_row": 143880,
+            "time_msc": 1789641273073,
+            "server_time": "2026.09.17 10:34:33.073",
+            "last": "186205.00000000000",
+            "flags": 1336
+          },
+          "primeiro_alvo_apos_entrada_na_janela": null,
+          "minutos_com_divergencia_quantitativa_no_intervalo_da_operacao": [
+            "2026.09.17 10:40"
+          ],
+          "homologacao_integral_de_correspondencia": false
+        },
+        {
+          "grade": "GRADE5",
+          "entrada_estrita": true,
+          "entrada_linha": "185965.0000000000",
+          "alvo_linha": "186205.0000000000",
+          "stop_linha": "185315.0000000000",
+          "entrada_observada": {
+            "csv_data_row": 151366,
+            "time_msc": 1789641284638,
+            "server_time": "2026.09.17 10:34:44.638",
+            "last": "185960.00000000000",
+            "flags": 1368
+          },
+          "primeira_saida_por_preco": {
+            "csv_data_row": 288284,
+            "time_msc": 1789641637330,
+            "server_time": "2026.09.17 10:40:37.330",
+            "last": "185315.00000000000",
+            "flags": 1368
+          },
+          "motivo_observado": "STOP",
+          "maximo_apos_entrada_ate_primeira_saida": {
+            "csv_data_row": 221137,
+            "time_msc": 1789641449116,
+            "server_time": "2026.09.17 10:37:29.116",
+            "last": "186175.00000000000",
+            "flags": 1336
+          },
+          "ultimo_alvo_antes_entrada": {
+            "csv_data_row": 143880,
+            "time_msc": 1789641273073,
+            "server_time": "2026.09.17 10:34:33.073",
+            "last": "186205.00000000000",
+            "flags": 1336
+          },
+          "primeiro_alvo_apos_entrada_na_janela": null,
+          "minutos_com_divergencia_quantitativa_no_intervalo_da_operacao": [
+            "2026.09.17 10:40"
+          ],
+          "homologacao_integral_de_correspondencia": false
+        }
+      ],
+      "classification": "STOP_OBSERVADO_NAS_QUATRO_VARIANTES;RESSALVA_QUANTITATIVA_NO_MINUTO_DA_SAIDA;AUDITORIA_INTEGRAL_PENDENTE"
+    }
+  ],
+  "limits": [
+    "Price chronology describes only the received feed and does not certify fills, queue, partial execution or real PnL.",
+    "The 10:40 quantity is short by one contract against both references; do not label full correspondence as passed.",
+    "S61.8 has an observed STOP but integral feed correspondence remains pending because 10:40 includes its exit.",
+    "S38.2 exits before the minute with quantity discrepancy.",
+    "All OHLC values match both references; do not infer the missing quantity represents a known missing record or a specific price.",
+    "Strict entry is sensitivity to touch, not queue simulation.",
+    "Work original results and Tester deals are preserved."
+  ],
+  "sha256": {
+    "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINV26_2026_09_17_10_30_2026_09_17_10_45_GENIAL_SEQ_20260917_S382_S618_A_1021675390_ALL.csv": "237584d16c34e527c75254d8caa5cc366949366e2ceeecd67065c7b0caef2096",
+    "DiagTicksAB_TERMINAL_GenialInvestimentos-PRD_WINV26_2026_09_17_10_30_2026_09_17_10_45_GENIAL_SEQ_20260917_S382_S618_A_1021675390.txt": "f92ee4af84c053023b665b37832763eaac5a9be636db53e30a1b6c6614534170",
+    "M1_202609.csv": "4f209aa4c854ca52f8793b1448a08fef613d4a8048dda59ef8d8afb5e5e206eb",
+    "WINFUT_F_0_1min_01-01-2026_22-09-2026.csv": "f1343f8181fce176b5d266bd1710c5aadfea8ed8af8941da1ee6b3fd9469dc45",
+    "POR_OPERACAO_CONFERIDO.csv": "fca03098a2732ab5aa39e9cf2a02489e1c6bb2e3e166e8dbcbb2004a06e07067"
+  }
+}
