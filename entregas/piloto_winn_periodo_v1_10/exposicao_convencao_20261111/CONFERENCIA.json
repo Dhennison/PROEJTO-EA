@@ -1,0 +1,158 @@
+{
+  "classification_only_no_rule_changes": true,
+  "operations": 1877,
+  "dates": 877,
+  "summary": [
+    {
+      "escopo": "TOTAL",
+      "operacoes": 1877,
+      "alvos_na_barra_entrada": 1094,
+      "percentual_operacoes": "58.28",
+      "alem_alvo": 781,
+      "exatamente_alvo": 0,
+      "entre_entrada_alvo": 313,
+      "na_entrada_ou_alem_entrada": 0,
+      "pontos_originais_desses_alvos": "149875.715983",
+      "operacoes_com_alvo_presente_barra_entrada_independente_motivo": 1125
+    },
+    {
+      "escopo": "2023",
+      "operacoes": 469,
+      "alvos_na_barra_entrada": 305,
+      "percentual_operacoes": "65.03",
+      "alem_alvo": 222,
+      "exatamente_alvo": 0,
+      "entre_entrada_alvo": 83,
+      "na_entrada_ou_alem_entrada": 0,
+      "pontos_originais_desses_alvos": "40475.287335",
+      "operacoes_com_alvo_presente_barra_entrada_independente_motivo": 306
+    },
+    {
+      "escopo": "2024",
+      "operacoes": 514,
+      "alvos_na_barra_entrada": 316,
+      "percentual_operacoes": "61.48",
+      "alem_alvo": 217,
+      "exatamente_alvo": 0,
+      "entre_entrada_alvo": 99,
+      "na_entrada_ou_alem_entrada": 0,
+      "pontos_originais_desses_alvos": "34032.169982",
+      "operacoes_com_alvo_presente_barra_entrada_independente_motivo": 323
+    },
+    {
+      "escopo": "2025",
+      "operacoes": 510,
+      "alvos_na_barra_entrada": 323,
+      "percentual_operacoes": "63.33",
+      "alem_alvo": 231,
+      "exatamente_alvo": 0,
+      "entre_entrada_alvo": 92,
+      "na_entrada_ou_alem_entrada": 0,
+      "pontos_originais_desses_alvos": "44748.680336",
+      "operacoes_com_alvo_presente_barra_entrada_independente_motivo": 334
+    },
+    {
+      "escopo": "2026",
+      "operacoes": 384,
+      "alvos_na_barra_entrada": 150,
+      "percentual_operacoes": "39.06",
+      "alem_alvo": 111,
+      "exatamente_alvo": 0,
+      "entre_entrada_alvo": 39,
+      "na_entrada_ou_alem_entrada": 0,
+      "pontos_originais_desses_alvos": "30619.578330",
+      "operacoes_com_alvo_presente_barra_entrada_independente_motivo": 162
+    },
+    {
+      "escopo": "M5",
+      "operacoes": 1580,
+      "alvos_na_barra_entrada": 989,
+      "percentual_operacoes": "62.59",
+      "alem_alvo": 701,
+      "exatamente_alvo": 0,
+      "entre_entrada_alvo": 288,
+      "na_entrada_ou_alem_entrada": 0,
+      "pontos_originais_desses_alvos": "128717.373319",
+      "operacoes_com_alvo_presente_barra_entrada_independente_motivo": 1015
+    },
+    {
+      "escopo": "M1",
+      "operacoes": 297,
+      "alvos_na_barra_entrada": 105,
+      "percentual_operacoes": "35.35",
+      "alem_alvo": 80,
+      "exatamente_alvo": 0,
+      "entre_entrada_alvo": 25,
+      "na_entrada_ou_alem_entrada": 0,
+      "pontos_originais_desses_alvos": "21158.342664",
+      "operacoes_com_alvo_presente_barra_entrada_independente_motivo": 110
+    }
+  ],
+  "candidates_September_agreement_same_bar_open_at_or_beyond_target": [
+    {
+      "data": "2026-09-01",
+      "nivel": "R61.8",
+      "hora_entrada_Work": "10:00",
+      "hora_saida_Work": "10:00",
+      "motivo_Work": "ALVO",
+      "motivo_Tester": "ALVO",
+      "abertura_barra": "181195",
+      "entrada_math": "181385.4960000000",
+      "alvo_math": "181273.0813333333",
+      "estado_ticks": "PENDENTE_CONFERENCIA_DA_SEQUENCIA"
+    },
+    {
+      "data": "2026-09-11",
+      "nivel": "S38.2",
+      "hora_entrada_Work": "09:26",
+      "hora_saida_Work": "09:26",
+      "motivo_Work": "ALVO",
+      "motivo_Tester": "ALVO",
+      "abertura_barra": "189640",
+      "entrada_math": "189432.0426666667",
+      "alvo_math": "189619.3120000000",
+      "estado_ticks": "PENDENTE_CONFERENCIA_DA_SEQUENCIA"
+    },
+    {
+      "data": "2026-09-11",
+      "nivel": "S61.8",
+      "hora_entrada_Work": "09:30",
+      "hora_saida_Work": "09:30",
+      "motivo_Work": "ALVO",
+      "motivo_Tester": "ALVO",
+      "abertura_barra": "189415",
+      "entrada_math": "188826.6240000000",
+      "alvo_math": "189129.3333333333",
+      "estado_ticks": "PENDENTE_CONFERENCIA_DA_SEQUENCIA"
+    },
+    {
+      "data": "2026-09-16",
+      "nivel": "S61.8",
+      "hora_entrada_Work": "10:17",
+      "hora_saida_Work": "10:17",
+      "motivo_Work": "ALVO",
+      "motivo_Tester": "ALVO",
+      "abertura_barra": "187615",
+      "entrada_math": "187389.9860000000",
+      "alvo_math": "187581.5000000000",
+      "estado_ticks": "PENDENTE_CONFERENCIA_DA_SEQUENCIA"
+    }
+  ],
+  "limits": [
+    "Exposure counts do not prove the target happened before or after entry.",
+    "Current original Work outcome and original ambiguity markers are preserved.",
+    "This is not M1 replay of the whole history; M5/M1 follow original sources.",
+    "No candidate rule has been applied; totals listed are original accounting exposure, not estimated performance correction.",
+    "2023 reference is an earlier MT5 WIN$N export, not an independent Profit feed."
+  ],
+  "sha256": {
+    "OPERACOES_REPLAY_D.csv": "238cdba2c615ccf9512964de483a6deebf3fed3d97502f68d6c09b48a7e37dd0",
+    "CONTEXTO_E_4385_NIVEIS.csv": "2a1d4c851a62189895e5c124cf03254ec523d441c83f277fe98db722e5e69128",
+    "POR_OPERACAO_CONFERIDO.csv": "fca03098a2732ab5aa39e9cf2a02489e1c6bb2e3e166e8dbcbb2004a06e07067",
+    "WIN$N_M5_202302271510_202312281820.csv": "34a0ec1a5e42508dd42534c0a6e01a8dcb48296f080bfe2c4a720739b0bcc147",
+    "WINFUT_F_0_1min_01-01-2026_22-09-2026.csv": "f1343f8181fce176b5d266bd1710c5aadfea8ed8af8941da1ee6b3fd9469dc45",
+    "WINFUT_F_0_5min_01-01-2024_31-12-2024.csv": "152692d933327b33cca8cb2d71d741dfb4bb3d70b1605cc50d0f6cadec71cf82",
+    "WINFUT_F_0_5min_01-01-2025_31-12-2025.csv": "103c1404e6e5aa3085e426e20f0273c51dcc21b7a8c899776da23318e5cb4e63",
+    "WINFUT_F_0_5min_01-01-2026_28-02-2026.csv": "92c7534706b548653635abc97ae242841d2a22e285b8fa1c3ceeec0e7b010922"
+  }
+}
