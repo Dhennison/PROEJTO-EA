@@ -110,3 +110,7 @@ Push confirmado em 11/11/2026: continuidade/inventário no commit `6e31844` e se
 ## Etapa de agosto preparada
 
 Pacote completo `entregas/fechamento_agosto_v1_10`, ZIP `entregas/ModeloD_Fechamento_Agosto_v1_10.zip`. Fontes, contratos por data, coleta, análise e instruções prontas; aguardando compilação/coleta no principal da Genial. Resultado de agosto ainda não apurado. Um ZIP de instalação por mês; retorno pode ser dividido automaticamente. Registro detalhado atualizado no TXT principal.
+
+## Primeiro retorno nativo de agosto e contexto do pregão anterior
+
+v1.10 compilada sem erros/avisos. A execução terminou com 20 dias pendentes e zero blocos: WINQ26 não selecionável, erro 4305. Nenhum contrato foi escolhido. WINV26 M1 corresponde ao Work de 12/08 em diante neste recorte, divergindo antes. 03/08 teve pregão, mas está fora da seleção elegível do Work; a fonte de 31/07 começa às 12h34 e não assegura H/L/C diário completo. As referências já carregam o contexto do pregão anterior sem reiniciar no mês; 04/08 usa H/L/C de 03/08. Evidências e originais preservados em `entregas/fechamento_agosto_v1_10/retorno_nativo_20261111`. Não repetir v1.10 sem tratar a falha de seleção.

@@ -3,7 +3,7 @@
 Estado geral atualizado em **11/11/2026**. Registro principal: **[RETOMADA_DO_TRABALHO.txt](entregas/v2_10/RETOMADA_DO_TRABALHO.txt)**. Esse TXT acompanha todas as etapas, o que foi concluído, pendências, evidências e próximo passo; será atualizado a cada avanço.
 
 - **Setembro concluído:** Work +3.839,31; nosso resultado principal +1.380,00; diferença −2.459,31 pontos. Critério: um contrato por nível, grade de cinco pontos, entrada por toque.
-- **Trabalho ativo:** [pacote completo de agosto/2026](entregas/fechamento_agosto_v1_10/LEIA_PRIMEIRO.txt), [ZIP de instalação](entregas/ModeloD_Fechamento_Agosto_v1_10.zip), aguardando compilação e coleta no principal da Genial. Contrato por data, coleta em lote e análise prontas; sem resultado nosso ainda.
+- **Trabalho ativo:** agosto/2026; v1.10 compilada sem erros/avisos, mas retorno nativo com zero blocos por erro 4305 na seleção WINQ26. [Análise do retorno e do contexto anterior](entregas/fechamento_agosto_v1_10/retorno_nativo_20261111/ANALISE_DO_RETORNO_E_CONTEXTO.txt). Não repetir o pacote antes da correção; resultado ainda não apurado.
 - **Relatórios finais:** dois PDFs (técnico e enxuto Modelo D diário), atualizados internamente e entregues juntos no final. DD contínuo calculado em ordem cronológica, sem alterar resultados mensais já fechados.
 - [Continuidade dos compilados e drawdown](entregas/compilado_work_modelod/LEIA_CONTINUIDADE.md)
 - [Conteúdo recente da conversa e decisões](entregas/arquivo_conversa_20261111/CONTEXTO_E_CONTINUIDADE.md)

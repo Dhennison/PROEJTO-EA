@@ -1,0 +1,81 @@
+{
+  "month": "2026-08",
+  "status": "PENDENTE_NAO_COMPARAR_TOTAL",
+  "complete": false,
+  "Work_points": "-387.164995",
+  "principal_points": null,
+  "difference": null,
+  "days_analyzed": 0,
+  "operations_Work": 43,
+  "operations_ours": 0,
+  "price_differences": 0,
+  "quantity_differences": 0,
+  "new_price_scenarios": [
+    {
+      "cenario": "GRADE5_TOQUE",
+      "operacoes": 0,
+      "pontos": null,
+      "subtotal_nao_fechado": "0",
+      "motivos": {}
+    },
+    {
+      "cenario": "MATEMATICA_TOQUE",
+      "operacoes": 0,
+      "pontos": null,
+      "subtotal_nao_fechado": "0",
+      "motivos": {}
+    },
+    {
+      "cenario": "GRADE5_ESTRITA",
+      "operacoes": 0,
+      "pontos": null,
+      "subtotal_nao_fechado": "0",
+      "motivos": {}
+    },
+    {
+      "cenario": "MATEMATICA_ESTRITA",
+      "operacoes": 0,
+      "pontos": null,
+      "subtotal_nao_fechado": "0",
+      "motivos": {}
+    }
+  ],
+  "Tester_deals": "NAO_MEDIDOS_EM_AGOSTO_NAO_SAO_O_RESULTADO_PRINCIPAL",
+  "limitations": [
+    "Pontos condicionais nos niveis, um contrato, sem custos/fila/spread ou garantia de execucao.",
+    "Escolha de contrato por correspondencia unica de M1, nunca por ganho.",
+    "Duas leituras identicas conferem estabilidade local, nao completude do servidor.",
+    "Grade5/toque e o principal; demais variantes sao controles.",
+    "Saida em negocio posterior a entrada; corte pelo primeiro Last no minuto do corte.",
+    "Todas as divergencias de OHLC/quantidade sao registradas, inclusive durante operacoes.",
+    "Nenhum saldo de setembro e alterado. DD so recalculado depois de congelar agosto."
+  ],
+  "sha256_inputs": {
+    "M1_CONTRATO_20260807_WINV26.csv": "e007a2ce2ab8ee9f4b4ee5ee633c4f58ff4a2e60f746a4992253c74f4cbaf1fa",
+    "M1_CONTRATO_20260820_WINV26.csv": "5db944ea3e93a18ddfe8c29fc266254fb252c9b498ffadd307badfe71e7a270c",
+    "M1_CONTRATO_20260813_WINV26.csv": "eed203f049c489d23c6f572b0b2d430642bb2612d4bdb6e09302cf3e08619685",
+    "M1_CONTRATO_20260818_WINV26.csv": "70ce60a65690528382291c622232e421f947f5ddcf0690dc6c986827723cc135",
+    "M1_CONTRATO_20260827_WINV26.csv": "69658ed23bfbe4bfec715aad5e498ded09243d89397f0aad1da8559bbc5c685c",
+    "M1_CONTRATO_20260814_WINV26.csv": "96ddb2819d4802bcacec5ad1e8cb9418b2b0b9ae2fa1ffa35477765c2492c7c6",
+    "M1_WORK.csv": "0620d667dd6a2e107205a168f4d28b5bbf61f1df337643d9e58ecd4a330b8d30",
+    "M1_CONTRATO_20260821_WINV26.csv": "fcc1a24df8b9104c40c1e29b5ea6495f9ed567bb266ecf18e47b756e79fde833",
+    "M1_CONTRATO_20260828_WINV26.csv": "d1bc74d558e3efb49efc9e7cde059a234088f6b750e922cf91264ce20f113faa",
+    "M1_CONTRATO_20260817_WINV26.csv": "f19efc6cf34cc3c49ee3438eaead49d7a48588a723b7e4491ee5ef61d8c5385e",
+    "M1_CONTRATO_20260810_WINV26.csv": "b7f43c6aa2f694a020083bd3f96969f23a82df19cead6229beecab57fef0ed93",
+    "REFERENCIAS.csv": "39e2ff3de91579aaa412fde0d8028dd2aae15116afb4ddb68ccffc692658d6ea",
+    "M1_CONTRATO_20260812_WINV26.csv": "26351d2998c29b80103addf9c8135055ff63ddb1bbdc8aaad8a1fd5a3a24baa1",
+    "BLOCOS.csv": "e39ff0e833c5108350b0a712e6bd07243a3d1932ab14e589962ffc587eb91765",
+    "M1_CONTRATO_20260819_WINV26.csv": "8609b51dac2fa243685e97fde82c8f7b283d2b76f030ad162fc14056693da395",
+    "M1_CONTRATO_20260805_WINV26.csv": "6b18abf7badedfe76fa95c14d7dd44b67ef1f7b737e3435f0b118b76536dcbae",
+    "M1_CONTRATO_20260811_WINV26.csv": "3b59770e926362fe3e7815669c34eae34e47cf3cfe058ef3c1362624e10648df",
+    "REFERENCIAS_RESOLVIDAS.csv": "aebaf3247a447bb6dc3dcf60196778441590bd2f2caafadc3a87f061f848f5ad",
+    "M1_CONTRATO_20260831_WINV26.csv": "31dc80174cf6cc897692ae1a2be046d0a4cff10e75010519352cc645e0e12df8",
+    "M1_CONTRATO_20260824_WINV26.csv": "ead60720a744268a206097d9efb9ca081383393a7d13d30045fcc82928d6df8e",
+    "CONTRATOS.csv": "b1d26b6da2ee460a3aa6f29fab0a247976bf21f8d4a327ea025deb501caddfb8",
+    "M1_CONTRATO_20260825_WINV26.csv": "0f645148b70cc19d1d4bf52c44652a3058dc71484b1bff8653a52e622f3d33e9",
+    "M1_CONTRATO_20260826_WINV26.csv": "8531ae702db733320dc48f57f834d68d0823e23c607fd03f65df9f24a98feb35",
+    "M1_CONTRATO_20260804_WINV26.csv": "4c9b29318878d4ef3ec6b538cc54914549f201960526edb8597df4963a304d46",
+    "RESULTADO.txt": "aa6de7f4ed411e7c7d33353d96b7d1cf6a38f4847cea170b4ecb4b45168ceb46",
+    "M1_CONTRATO_20260806_WINV26.csv": "1edc4db4e319452675b8c0651794c651e8fbe002e896c413ab030aeba29c1596"
+  }
+}

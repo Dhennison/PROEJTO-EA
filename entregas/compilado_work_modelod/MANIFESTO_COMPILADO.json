@@ -68,9 +68,14 @@
     "regra_apresentacao": "Mostrar primeiro Work, nosso resultado principal e diferenca. Outros cenarios apenas na parte tecnica.",
     "pacote_preparado": "entregas/fechamento_agosto_v1_10",
     "zip": "entregas/ModeloD_Fechamento_Agosto_v1_10.zip",
-    "status": "AGUARDANDO_COMPILACAO_E_COLETA_NATIVA",
+    "status": "RETORNO_NATIVO_PENDENTE_SELECAO_CONTRATO_4305_ZERO_BLOCOS",
     "validacao_local": "28 controles do coletor com mocks C++; pipeline sintetico 20 dias/1140 blocos; 400 estados por busca independente; 400 controles de reducao; nao e execucao MT5",
-    "deals_agosto": "Nao medidos. Controle separado; nao substitui nem bloqueia o resultado principal por sequencia de negocios."
+    "deals_agosto": "Nao medidos. Controle separado; nao substitui nem bloqueia o resultado principal por sequencia de negocios.",
+    "retorno_nativo": "entregas/fechamento_agosto_v1_10/retorno_nativo_20261111",
+    "compilacao_nativa_usuario": {
+      "erros": 0,
+      "avisos": 0
+    }
   },
   "meses": [
     {
@@ -891,6 +896,6 @@
     "entregar_dois_pdfs_juntos_no_final": true,
     "nao_reenviar_resultados_ou_pdfs_a_cada_etapa": true,
     "atualizar_internamente": true,
-    "trabalho_ativo": "Agosto/2026: pacote pronto, aguardando compilacao e coleta nativa no principal da Genial"
+    "trabalho_ativo": "Agosto: diagnosticar selecao WINQ26 (4305); retorno nativo zero blocos, resultado nao apurado."
   }
 }

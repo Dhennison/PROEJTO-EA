@@ -1,0 +1,26 @@
+{
+  "compilation_user_report": {
+    "errors": 0,
+    "warnings": 0,
+    "elapsed_ms": 1096
+  },
+  "native_run": "MES110_1794433146_1056157781",
+  "days_pending": 20,
+  "blocks_collected": 0,
+  "chosen_contracts": 0,
+  "WINQ26_error": 4305,
+  "WINV26_matching_days": 14,
+  "WINV26_mismatching_days": 6,
+  "first_match_in_sample": "2026-08-12",
+  "principal_points": null,
+  "prior_day_context_already_loaded": true,
+  "aug03_is_trading_day": true,
+  "aug03_in_original_Work_eligible_scope": false,
+  "jul31_source_start": "12:34:00",
+  "jul31_source_bars": 351,
+  "aug03_source_bars": 562,
+  "sha256_originals": {
+    "Texto colado.txt": "8887f22ba5dc2d830e6d6f6a73f6958c3d0288a8f8def07362f35235866538cf",
+    "MES110_1794433146_1056157781.zip": "c2604a8829db5777581b83ed683c9cffdbba707c4d3577000f56b961efbf1f2b"
+  }
+}

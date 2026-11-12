@@ -1,0 +1,20 @@
+AGOSTO/2026 — PRIMEIRO RETORNO NATIVO — 11/11/2026
+Compilacao comunicada pelo usuario: 0 erros, 0 avisos, 1096 ms, AVX2 + FMA3.
+Coleta MES110_1794433146_1056157781, GenialInvestimentos-PRD, build 6231.
+END: CONCLUIDO_COM_PENDENCIAS, days=20, blocks=0, pending_blocks=0, pending_days=20, io_failed=false.
+Nao foram coletados ticks. Nao houve escolha efetivada de contrato ou troca durante a coleta: REFERENCIAS_RESOLVIDAS.csv so tem cabecalho. Resultado de agosto continua NAO APURADO; nao e zero.
+
+CONTRATOS
+WINQ26: selecao falhou, erro 4305, dez tentativas em cada uma das 20 datas. Nao houve consulta de ticks. Isto nao comprova inexistencia do contrato ou ausencia de historico no servidor.
+WINV26: M1 estavel em todas as 20 datas. De 04/08 a 11/08 (6 datas) nao coincide com M1 Work antes do corte. De 12/08 a 31/08 (14 datas), horarios e OHLC coincidem integralmente antes do corte.
+Isso e evidencia de correspondencia da serie com WINV26 a partir de 12/08 neste recorte. Nao e prova da data oficial de rolagem nem identificacao de WINQ26 antes dessa data. Falha de selecao do candidato Q fez a guarda conservadora bloquear mesmo os dias em que V coincidiu.
+Proximo passo tecnico: diagnosticar erro 4305/selecionabilidade e recuperar o contrato correspondente ao inicio de agosto, preservando os M1 exportados e sem usar WINV26 nos dias em que diverge. Nao repetir v1.10 sem corrigir o ponto identificado.
+
+PREGAO ANTERIOR E VIRADA DO MES
+O contexto nao e reiniciado no mes: abertura atual, H/L/C do ultimo pregao anterior e ajuste ja estao no CSV de referencias, carregado pelo EA; nao depende de existir uma operacao no dia anterior. O gerador original escolhe max(data negociada < data atual), nao dia civil anterior nem ultimo dia elegivel.
+Para 04/08 usa 03/08: high_prev=179715, low_prev=177410, close_prev=178650; open_today=179225; ajuste=178561. A data 03/08 aparece explicitamente como PregaoAnterior no contexto original.
+03/08 teve pregao: fonte Profit M1 possui 562 barras, 09:03 a 18:24. Ja estava excluido do universo elegivel original do Work, nao do calendario de negociacao. A fonte de 31/07 possui somente 351 barras, 12:34 a 18:24; e incompleta para assegurar H/L/C de todo o pregao. A exclusao de 03/08 e consistente com a dependencia desse OHLC anterior incompleto. O pacote original informa ambos os dias fora da base elegivel; nao contem motivo individual explicitamente atribuido a 2026 nas abas auxiliares exportadas.
+Nao usar 30/07 como se fosse o anterior de 03/08 para contornar 31/07. Se recuperarmos o contexto completo de 31/07 e quisermos incluir 03/08 em teste ampliado, registrar como extensao fora do recorte Work original; manter separada a comparacao homogenea de 20 datas.
+A exclusao deveria ter sido explicada no passo anterior; a afirmacao apenas de que 03/08 nao integrava a selecao foi insuficiente.
+
+Nenhum resultado mensal nem DD de setembro foi alterado. Nao ha novo resultado para comparar com Work. Relatorios finais seguem internos ate a entrega conjunta.
