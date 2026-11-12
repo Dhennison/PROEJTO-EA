@@ -172,3 +172,6 @@ Primeiro terminar D setembro, depois D outubro, ambos Cedro. Em seguida rodar A/
 
 ##12/11 — esclarecimento dos totais e correção do rótulo
 Usuário questionou +2855 versus imagem +1380. +2855 é fechamento Cedro setembro21pregões; +1380 é recorte Work14pregões. Imagem anterior chamava recorte TOTAL DO MÊS indevidamente; assistente reconheceu erro de apresentação. Nova imagem/PDF mostram TOTAL COMPARÁVEL e FECHAMENTO CEDRO, sem mudar cálculos. Setembro completo é o valor para comparar modelos A/B/C/D; para Work usar só as datas originais.
+
+##12/11 — imagem de setembro completa e primeiro lote outubro
+Usuário pediu imagem com todos os dias operáveis,21/09* e Total Comparável*,seguidos do total geral Cedro. Renderizador atualizado:21pregões, Work—após21,subtotal1380 e total2855. Imagem/PDF/ZIP guardados; página setembro do enxuto substituída e gancho de regeneração preserva apresentação. Recebidos20ZIPs outubro,hashes/tamanhos conferidos,8datas completas01–13 e14parte001. Faltam28partes,inclusive14parte002; não há resultado outubro.

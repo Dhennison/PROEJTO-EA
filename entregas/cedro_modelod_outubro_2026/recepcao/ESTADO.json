@@ -1,0 +1,49 @@
+{
+  "ZIPs_recebidos": 20,
+  "ZIPs_totais": 48,
+  "ZIPs_faltantes": 28,
+  "datas_completas": [
+    "20261001",
+    "20261002",
+    "20261005",
+    "20261006",
+    "20261007",
+    "20261008",
+    "20261009",
+    "20261013"
+  ],
+  "datas_parciais": [
+    "20261014"
+  ],
+  "faltantes": [
+    "WIN_20261014_parte002.zip",
+    "WIN_20261014_parte003.zip",
+    "WIN_20261015_parte001.zip",
+    "WIN_20261015_parte002.zip",
+    "WIN_20261016_parte001.zip",
+    "WIN_20261016_parte002.zip",
+    "WIN_20261019_parte001.zip",
+    "WIN_20261019_parte002.zip",
+    "WIN_20261020_parte001.zip",
+    "WIN_20261020_parte002.zip",
+    "WIN_20261021_parte001.zip",
+    "WIN_20261021_parte002.zip",
+    "WIN_20261022_parte001.zip",
+    "WIN_20261022_parte002.zip",
+    "WIN_20261023_parte001.zip",
+    "WIN_20261023_parte002.zip",
+    "WIN_20261026_parte001.zip",
+    "WIN_20261026_parte002.zip",
+    "WIN_20261027_parte001.zip",
+    "WIN_20261027_parte002.zip",
+    "WIN_20261028_parte001.zip",
+    "WIN_20261028_parte002.zip",
+    "WIN_20261028_parte003.zip",
+    "WIN_20261029_parte001.zip",
+    "WIN_20261029_parte002.zip",
+    "WIN_20261029_parte003.zip",
+    "WIN_20261030_parte001.zip",
+    "WIN_20261030_parte002.zip"
+  ],
+  "nenhum_calculo_outubro_realizado": true
+}

@@ -33,5 +33,22 @@
     "20261005",
     "20261006",
     "20261007"
-  ]
+  ],
+  "outubro_progresso": {
+    "ZIPs_recebidos": 20,
+    "ZIPs_faltantes": 28,
+    "datas_completas": [
+      "20261001",
+      "20261002",
+      "20261005",
+      "20261006",
+      "20261007",
+      "20261008",
+      "20261009",
+      "20261013"
+    ],
+    "data_parcial": "2026-10-14",
+    "falta_parte_14": "WIN_20261014_parte002.zip",
+    "calculado": false
+  }
 }

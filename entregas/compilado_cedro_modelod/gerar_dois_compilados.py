@@ -136,3 +136,7 @@ serial=lambda obj:json.loads(json.dumps(obj,default=str,ensure_ascii=False))
 metadata.update({'entregas_finais_solicitadas':['PDF técnico com observações e análises','PDF enxuto no estilo da fonte, somente Modelo D, Work e teste lado a lado'],'pdf_tecnico':str(tech.relative_to(root.parents[1])),'pdf_enxuto':str(lean.relative_to(root.parents[1])),'regra_drawdown_continuo':{'calculo':'Iterar fechamentos diarios em ordem crescente, saldo e pico carregados entre meses; DD max acumulado ate cada mes.','coleta_em_ordem_inversa_nao_altera_ordem_da_curva':True,'resultado_diario_e_mensal_congelado':True,'recalcular_saldo_acumulado_e_DD_quando_chegam_meses_anteriores':True,'meses_ausentes_nao_sao_zero':True,'base_comum_atual':[period_start,period_end],'provisorio':provisional,'DD_Work':str(maxdd['work']),'DD_teste':str(maxdd['test']),'DD_intradiario':False},'risco_por_mes':serial(months),'meses':index})
 (root/'MANIFESTO_COMPILADO.json').write_text(json.dumps(metadata,ensure_ascii=False,indent=2)+'\n')
 print('Created lean and technical PDFs; monthly results frozen; chronological drawdown',maxdd,'base',period_start,period_end,'provisional',provisional)
+
+# IMAGEM_SETEMBRO_COMPLETO
+import subprocess,sys
+subprocess.run([sys.executable,str(root.parent/'cedro_modelod_setembro_2026/renderizar_setembro_completo.py'),'--atualizar-compilado'],check=True)

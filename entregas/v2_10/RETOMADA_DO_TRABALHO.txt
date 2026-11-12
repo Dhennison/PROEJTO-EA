@@ -25,6 +25,15 @@ O mesmo critério separa agosto: -2.275 comparável / -2.375 incluindo 03/08.
 Imagem setembro corrigida em entregas/cedro_modelod_setembro_2026/resultado.
 
 
+APRESENTAÇÃO PEDIDA PELO USUÁRIO — SETEMBRO COMPLETO
+Imagem/PDF atualizados com todos os 21 pregões, Work em traço quando indisponível,
+21/09* e TOTAL COMPARÁVEL* (+1.380). Logo abaixo TOTAL GERAL CEDRO (+2.855).
+Renderizador reproduzível em cedro_modelod_setembro_2026/renderizar_setembro_completo.py;
+imagem,PDF eZIP em resultado/Setembro_2026_Mes_Completo_Modelo_D.*.
+Recebidos20ZIPs de outubro com hash/tamanho conferidos,8datas completas01,02,05,06,
+07,08,09,13 e14parte001. Faltam28ZIPs, inclusive14parte002; ainda sem cálculo outubro.
+Recepção em entregas/cedro_modelod_outubro_2026/recepcao. Fonte bruta preservada localmente.
+
 COMO USAR ESTE REGISTRO
 Este é o arquivo principal para retomada. Atualizar a seção atual a cada etapa, com evidências, arquivos, conclusão, pendências e próximo passo. Só marcar publicação no GitHub depois do push confirmado. Não tratar uma preparação como execução, mocks como compilação MetaEditor ou pontos condicionais como resultado financeiro real.
 A seção histórica ao final é preservada como histórico: instruções antigas e antigos estados pendentes não substituem o estado mais recente no início.

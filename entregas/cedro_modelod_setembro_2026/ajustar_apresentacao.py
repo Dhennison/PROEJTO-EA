@@ -16,4 +16,6 @@ if insert not in s:s=s.replace(line,line+insert)
 s=s.replace('Períodos concluídos — resultados mensais preservados','Resultados no recorte comparável ao Work')
 s=s.replace("notes=[f'Acumulados", "notes=[f'Acumulados")
 assert "'TOTAL DO MÊS'" not in s and "'TOTAL COMPARÁVEL'" in s and "'FECHAMENTO CEDRO'" in s
+hook="\n# IMAGEM_SETEMBRO_COMPLETO\nimport subprocess,sys\nsubprocess.run([sys.executable,str(root.parent/'cedro_modelod_setembro_2026/renderizar_setembro_completo.py'),'--atualizar-compilado'],check=True)\n"
+if '# IMAGEM_SETEMBRO_COMPLETO' not in s:s+=hook
 p.write_text(s)
