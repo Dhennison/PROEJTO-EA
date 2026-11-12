@@ -44,7 +44,7 @@
   "sample_download": "manual_usuario",
   "sample_size_user_report": "3.8GB",
   "sample_inspected": false,
-  "next_step": "Aguardar estrutura/layout;selecionar negocios WIN para todosos3meses;validar contexto/ajustes;nenhum resultado novo ainda",
+  "next_step": "Ver primeiras20linhas deumlogdiario extraido,antes decriarfiltro;escopo continuam3mesesinteiros",
   "no_purchase_authorized": true,
   "sample_reprocessing_scope": {
     "months": [
@@ -59,5 +59,38 @@
     "Work_only_on_original_reference_dates": true,
     "selection": "Negocios BMF familia WIN para os3meses;naolimitarWINQ26nem7dias",
     "context_and_adjustment_by_date_contract_required": true
+  },
+  "sample_structure_user_screenshots": {
+    "monthly_archives": [
+      "202608.zip",
+      "202609.zip",
+      "202610.zip"
+    ],
+    "daily_extension": ".log",
+    "August_filenames": [
+      "20260803.log",
+      "20260804.log",
+      "20260805.log",
+      "20260806.log",
+      "20260807.log",
+      "20260810.log",
+      "20260811.log",
+      "20260812.log",
+      "20260813.log",
+      "20260814.log",
+      "20260817.log",
+      "20260818.log",
+      "20260819.log",
+      "20260820.log",
+      "20260821.log",
+      "20260824.log",
+      "20260825.log",
+      "20260826.log",
+      "20260827.log",
+      "20260828.log",
+      "20260831.log"
+    ],
+    "layout_not_yet_seen": true,
+    "content_not_yet_inspected": true
   }
 }

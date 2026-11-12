@@ -148,3 +148,7 @@ Drivebloqueado403paraassistente; usuárioestábaixando3,8GB e mostrará estrutur
 ## Escopo Cedro ampliado expressamente pelo usuário
 
 Usar agosto,setembro,outubro/2026inteiros,refazendo até setembro.Ousuário confirmou outubro mesmo fora doWork.A seleção dos7diasWINQ26foi substituída por todosos negóciosWIN/BM&Fpertinentes aos3meses.Preservar análisesanteriores para comparação,identificar extensões semWorkfictíciozero,conferircontextoeajustes.Amostra ainda não inspecionada,aguardar download/estrutura.Semnovosresultados ouclassificador executado.
+
+## Estrutura da amostraCedro apresentada
+
+Capturas:202608.zip/202609.zip/202610.zip,comlogsdiários. Agosto21datas03a31/08. Layout/conteúdoaindanãoinspecionados. Próximopassoéverprimeiras20linhasdeumlogextraído,porleituraemfluxo,antesdeprepararfiltro. Escopode3mesesinteirospreservado;nenhumreplaycalculado.
