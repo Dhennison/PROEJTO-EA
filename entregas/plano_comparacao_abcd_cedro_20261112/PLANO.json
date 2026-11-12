@@ -17,11 +17,17 @@
   "compra_dados_autorizada": false,
   "nenhum_novo_backtest_executado_agora": true,
   "proximo_lote_setembro": [
-    "20260901",
-    "20260902",
-    "20260903",
-    "20260904",
-    "20260908"
+    "20260914",
+    "20260915",
+    "20260916",
+    "20260917",
+    "20260918",
+    "20260921"
   ],
-  "alternativa_sem_compra": "Arquivar negocios reais do contrato vigente diariamente para ampliar validacao futura; nao implementado agora."
+  "alternativa_sem_compra": "Arquivar negocios reais do contrato vigente diariamente para ampliar validacao futura; nao implementado agora.",
+  "setembro_progresso": {
+    "datas_auditadas": 8,
+    "ZIPs": 16,
+    "restantes": 26
+  }
 }

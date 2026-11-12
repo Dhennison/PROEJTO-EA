@@ -1,0 +1,34 @@
+SETEMBRO CEDRO — PRIMEIRO LOTE AUDITADO — 12/11/2026
+
+Recebidos e lidos 16 ZIPs, duas partes de 01,02,03,04,08,09,10,11/09.
+Total: 46.812.324 registros da família WIN. Não é resultado de estratégia.
+Todos os SHA256/tamanhos/CRC conferidos. Ordinais crescentes entre partes,
+primeiro/último registro, contagens/empates/regressões por contrato conferem
+com o GERAL. Sem regressão temporal neste lote. Dados preservados em ordem
+original, sem deduplicação ou filtro de condição/agressor.
+
+WINV26 é o contrato de referência nos oito dias. Todos os minutos Work
+presentes nos ticks; preços e quantidades M1 coincidem durante o horário das
+operações. Única barra divergente por dia: 18:24, depois do corte das 18h.
+Um minuto adicional Cedro fora do conjunto de minutos Work por dia.
+OHLC diário completo, quantidade e número de registros iguais ao EOD do
+WINV26 nas oito datas. Campos 3 e 4 tratados como preço/quantidade são
+corroborados por esses controles. Fuso/condições/ordem oficial entre empates
+continuam sem certificação independente. Não ordenar registros às cegas.
+
+Controle adicional já possível com o EOD recebido: as 14 aberturas e os
+14 contextos anteriores H/L/C/ajuste do Work de setembro coincidem com o
+WINV26, inclusive contexto de 31/08 para 01/09. Referências mantidas.
+Fonte M1 Work: CSV Profit original, normalizado para 14 datas/7.875 barras.
+
+Ainda não há novo total mensal Cedro de setembro. Agosto Cedro -2.275 e
+setembro anterior +1.380 permanecem arquivados; não concatenar fontes ao DD
+nem substituir setembro antes de terminar seu reprocessamento.
+Próximo lote: todas as partes de 14,15,16,17,18 e21/09 (12 ZIPs).
+Esses dias completam as 14 datas comparáveis ao Work. Depois ainda receber
+22,23,24,25,28,29,30/09 (14 ZIPs), complemento fora Work original.
+Total restante de setembro: 26 ZIPs/13 datas. Nas datas 22 e24/09 há anomalias
+de ordem/contagem conhecidas do GERAL, a investigar nos arquivos originais
+quando chegarem; não usar esse alerta para modificar a referência de resultado.
+A sequência aprovada segue D setembro, D outubro, A/B/C, comparação dos quatro,
+e estudo posterior de alvos/stops com parâmetros originais preservados.

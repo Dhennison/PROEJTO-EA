@@ -1,0 +1,13 @@
+CEDRO SETEMBRO — PRIMEIRO LOTE
+16 ZIPs: duas partes de01,02,03,04,08,09,10,11/09.
+Originais preservados localmente em /workspace/retorno_cedro_20261112/ticks.
+Hashes/tamanhos esperados do GERAL recebido. Todos os registros WIN mantidos,
+sem filtro de condicao, ordenacao ou deduplicacao. Referencia de preco WINV26.
+M1 Work normalizado do CSV Profit original, CP1252, mes09;14datas7875barras.
+Conversao de milhares: ponto e removido; sem alterar precos/quantidades.
+Rastreabilidade por linha original, nao sequencia oficial dos negocios.
+Controle de referencias: as14aberturas e14contextos HLC/ajuste do Work conferem
+com EOD do WINV26, inclusive contexto31/08para01/09. Nao altera referencias.
+Ainda nao ha resultado mensal Cedro de setembro; faltam os demais ZIPs.
+
+SHA256 da fonte M1 Work: f1343f8181fce176b5d266bd1710c5aadfea8ed8af8941da1ee6b3fd9469dc45
