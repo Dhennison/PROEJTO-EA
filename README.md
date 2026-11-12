@@ -3,7 +3,7 @@
 Estado geral atualizado em **12/11/2026**. Registro principal: **[RETOMADA_DO_TRABALHO.txt](entregas/v2_10/RETOMADA_DO_TRABALHO.txt)**. Esse TXT acompanha todas as etapas, o que foi concluído, pendências, evidências e próximo passo; será atualizado a cada avanço.
 
 - **Setembro concluído:** Work +3.839,31; nosso resultado principal +1.380,00; diferença −2.459,31 pontos. Critério: um contrato por nível, grade de cinco pontos, entrada por toque.
-- **Trabalho ativo:** discussão da classificação por candles após parecer da outra IA. [Avaliação e requisitos da especificação](entregas/avaliacao_proposta_candles_20261112/AVALIACAO_E_REQUISITOS_DA_ESPECIFICACAO.txt). Sem implementação/nova coleta. Agosto permanece parcial; resultados e DD preservados.
+- **Trabalho ativo:** [pesquisa comercial de histórico WIN](entregas/pesquisa_dados_historicos_20261112/ESTADO_DA_PESQUISA_E_COMPARACAO.txt), com dois períodos completos paraNelogica/Cedro/B3:Worke2020–30/09/2026.Pedidos preparados,não enviados;preços/cobertura ainda não verificados.Novos testes/replay permanecem pausados.
 - **Relatórios finais:** dois PDFs (técnico e enxuto Modelo D diário), atualizados internamente e entregues juntos no final. DD contínuo calculado em ordem cronológica, sem alterar resultados mensais já fechados.
 - [Continuidade dos compilados e drawdown](entregas/compilado_work_modelod/LEIA_CONTINUIDADE.md)
 - [Conteúdo recente da conversa e decisões](entregas/arquivo_conversa_20261111/CONTEXTO_E_CONTINUIDADE.md)

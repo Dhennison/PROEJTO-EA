@@ -135,3 +135,7 @@ Direção proposta: conjunto de desfechos OHLC,63casos conhecidos como controle,
 ## Especificação revisada —12/11/2026
 
 A revisão incorporou envoltório externo e estados, mas o exemplo115->85->105comE100/T110/S90revelaABERTAnão incluída na tabela deSLforçado, sob o protocolo anterior de saída só em registro posterior. Corrigir a especificação de saltos/entrada antes de implementar. Classe inicial não é conjunto final. Formato principal proposto:WorkversusfaixaM1/grade5+contagens,identificando limitescondicionais. Sem novo replay/classificador/teste/PDFnumérico. Detalhes em `entregas/avaliacao_proposta_candles_20261112/AVALIACAO_DA_ESPECIFICACAO_REVISADA.txt`.
+
+## Fontes comerciais e escopo integral —12/11/2026
+
+Usuário pediu compararNelogica,Cedro,B3e depois especificou DUAScotaçõesintegrais:01/03/2023a21/09/2026(baseWork),e01/01/2020a30/09/2026.Não cotar sóum mês/7dias.Pedidos padronizados preparados em `entregas/pesquisa_dados_historicos_20261112`;nenhum envio/compra/preço confirmado.Sites bloqueados403;rascunho restritodereDESalvo,requires_publish=true,aplicação ainda não confirmada.Contato de retorno/perfilcliente solicitados.Novos testes/replay/classificador continuam pausados.

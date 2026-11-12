@@ -83,5 +83,27 @@
   "avaliacao_da_proposta": "entregas/avaliacao_proposta_candles_20261112/AVALIACAO_E_REQUISITOS_DA_ESPECIFICACAO.txt",
   "classificador_ou_nova_coleta_executado": false,
   "avaliacao_especificacao_revisada": "entregas/avaliacao_proposta_candles_20261112/AVALIACAO_DA_ESPECIFICACAO_REVISADA.txt",
-  "formato_principal_em_discussao": "Work=X;M1grade5=[A,B],contagensdeterminadas/incertas;envoltorioexternocondicional"
+  "formato_principal_em_discussao": "Work=X;M1grade5=[A,B],contagensdeterminadas/incertas;envoltorioexternocondicional",
+  "pesquisa_fontes_pagas": {
+    "status": "PEDIDOS_PREPARADOS_NAO_ENVIADOS_PRECOS_NAO_CONFIRMADOS",
+    "fornecedores": [
+      "Nelogica",
+      "Cedro",
+      "B3"
+    ],
+    "periodo_A": [
+      "2023-03-01",
+      "2026-09-21"
+    ],
+    "periodo_B": [
+      "2020-01-01",
+      "2026-09-30"
+    ],
+    "nao_cotar_um_mes_ou_so_dias_pendentes": true,
+    "pasta": "entregas/pesquisa_dados_historicos_20261112",
+    "impedimentos": [
+      "rede403dominiosoficiais",
+      "contato_retorno_e_perfil_cliente_pendentes"
+    ]
+  }
 }

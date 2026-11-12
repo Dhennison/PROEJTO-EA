@@ -1,0 +1,49 @@
+DESTINATÁRIO PREVISTO: NELOGICA
+ENVIO PENDENTE — NÃO ENVIADO
+
+PEDIDO DE DUAS COTAÇÕES — HISTÓRICO COMPLETO DE NEGÓCIOS WIN/B3
+Escopo atualizado em 12/11/2026 por solicitação do usuário.
+Destinatários previstos: Nelogica, Cedro e B3, com o mesmo escopo para comparação.
+STATUS: TEXTO PREPARADO; AINDA NÃO ENVIADO. Preços e disponibilidade não confirmados.
+
+Olá,
+
+Gostaria de solicitar DUAS COTAÇÕES SEPARADAS para aquisição de histórico de negócios individuais do minicontrato futuro de índice WIN negociado na B3, incluindo contratos já vencidos.
+
+COTAÇÃO A — PERÍODO COMPLETO DO ESTUDO DE REFERÊNCIA (WORK)
+De 01/03/2023 a 21/09/2026, ambas as datas inclusivas.
+Solicito todos os pregões e todas as sessões negociadas no intervalo, e não apenas os dias com operações na estratégia. Não limitar a um mês ou a uma amostra.
+
+COTAÇÃO B — PERÍODO HISTÓRICO ESTENDIDO
+De 01/01/2020 a 30/09/2026, ambas as datas inclusivas.
+Solicito todos os pregões e todas as sessões negociadas no intervalo.
+
+CONTEÚDO SOLICITADO NAS DUAS COTAÇÕES
+
+1. Negócios executados individualizados, sem agregação por minuto ou segundo. Candles, snapshots de cotação ou apenas replay gráfico não substituem os negócios.
+2. Contratos WIN que cubram integralmente cada período, inclusive vencidos. Identificar o contrato real em cada registro/arquivo. Informar se o preço cotado cobre todos os vencimentos negociados ou apenas uma seleção de vencimento por data, descrevendo essa seleção.
+3. Data e horário do negócio, com fuso e definição do timestamp; resolução de milissegundos ou melhor; campo de sequência/identificador ou ordenação documentada para negócios com o mesmo timestamp. Preservar registros distintos no mesmo milissegundo.
+4. Preço negociado e quantidade de contratos de cada negócio. Não usar número de ticks ou volume financeiro como substituto da quantidade de contratos.
+5. Tratamento documentado de negócios cancelados, correções, duplicidades, leilões e eventuais lacunas. Informar alterações de schema ao longo do histórico.
+6. Preferência por entrega dos arquivos em lote, CSV ou formato documentado que possa ser convertido, com possibilidade de processamento e armazenamento local. Se disponível apenas por API, informar limites, paginação, prazo e custo total de extração dos dois períodos.
+7. Dados dos contratos reais sem deslocamentos artificiais de preço. Se houver série contínua, informar separadamente como é construída e quais ajustes/rolagens usa; ela não substitui a identificação dos contratos físicos.
+8. A finalidade é pesquisa e validação de uma estratégia própria, sem necessidade de cotações ao vivo e sem redistribuição comercial dos dados. Não precisamos de book completo de ofertas para esta cotação. Informar licenças/restrições para exportar, armazenar e processar os arquivos por programas próprios.
+
+POR FAVOR, DISCRIMINAR EM CADA COTAÇÃO
+
+- Valor total em reais para o período integral solicitado.
+- Quais instrumentos, vencimentos e datas estão efetivamente cobertos; ausência de cobertura deve ser declarada.
+- Taxas de implantação, licença B3 ou outras licenças, mensalidades, prazo mínimo/fidelidade, tributos e custos adicionais de acesso/API/download, caso aplicáveis.
+- Possibilidade de compra pontual do conjunto histórico. Se depender de assinatura, informar o menor custo TOTAL para obter a base completa e as regras após o encerramento da assinatura.
+- Prazo de entrega, tamanho aproximado dos arquivos e documentação do formato.
+- Disponibilidade de contratação por pessoa física; se exigir pessoa jurídica, indicar essa condição.
+- Condições de permanência/uso dos arquivos após download e término de eventual assinatura.
+- Validade da proposta e forma de pagamento.
+
+Informar também se os preços incluem OHLC diário e ajuste oficial B3 por contrato/data, ou se esses itens têm preço separado. Para inicializar o cálculo, é útil conhecer H/L/C do último pregão anterior ao início de cada período: informar disponibilidade desse contexto, sem substituir o histórico de negócios solicitado.
+
+Pode ser anexada uma pequena amostra de formato/documentação para validação técnica. Isso NÃO é pedido de cotação de um mês ou de uma amostra: os preços solicitados são exclusivamente para os DOIS PERÍODOS COMPLETOS acima.
+
+Se nenhum produto atender ao histórico de negócios individualizados, favor informar explicitamente. Uma assinatura de plataforma ou dados em tempo real sem esse direito/conteúdo histórico não atende ao pedido.
+
+Contato de retorno: a preencher com nome/e-mail informados pelo solicitante.

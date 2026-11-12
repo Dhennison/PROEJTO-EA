@@ -1,0 +1,16 @@
+{
+  "data": "2026-11-12",
+  "scope_A": [
+    "2023-03-01",
+    "2026-09-21"
+  ],
+  "scope_B": [
+    "2020-01-01",
+    "2026-09-30"
+  ],
+  "status": "PEDIDOS_PREPARADOS_NAO_ENVIADOS",
+  "prices_verified": false,
+  "purchase_made": false,
+  "network_status": "OFFICIAL_SITES_BLOCKED_403_DRAFT_REQUIRES_PUBLISH",
+  "sha256_request": "0a7d1987b5fddcee3328d6b7ffdd6074f92802e87c32d1014673b97a68a01584"
+}

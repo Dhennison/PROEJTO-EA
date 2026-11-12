@@ -104,7 +104,29 @@
     "avaliacao_da_proposta": "entregas/avaliacao_proposta_candles_20261112/AVALIACAO_E_REQUISITOS_DA_ESPECIFICACAO.txt",
     "classificador_ou_nova_coleta_executado": false,
     "avaliacao_especificacao_revisada": "entregas/avaliacao_proposta_candles_20261112/AVALIACAO_DA_ESPECIFICACAO_REVISADA.txt",
-    "formato_principal_em_discussao": "Work=X;M1grade5=[A,B],contagensdeterminadas/incertas;envoltorioexternocondicional"
+    "formato_principal_em_discussao": "Work=X;M1grade5=[A,B],contagensdeterminadas/incertas;envoltorioexternocondicional",
+    "pesquisa_fontes_pagas": {
+      "status": "PEDIDOS_PREPARADOS_NAO_ENVIADOS_PRECOS_NAO_CONFIRMADOS",
+      "fornecedores": [
+        "Nelogica",
+        "Cedro",
+        "B3"
+      ],
+      "periodo_A": [
+        "2023-03-01",
+        "2026-09-21"
+      ],
+      "periodo_B": [
+        "2020-01-01",
+        "2026-09-30"
+      ],
+      "nao_cotar_um_mes_ou_so_dias_pendentes": true,
+      "pasta": "entregas/pesquisa_dados_historicos_20261112",
+      "impedimentos": [
+        "rede403dominiosoficiais",
+        "contato_retorno_e_perfil_cliente_pendentes"
+      ]
+    }
   },
   "meses": [
     {
@@ -925,6 +947,6 @@
     "entregar_dois_pdfs_juntos_no_final": true,
     "nao_reenviar_resultados_ou_pdfs_a_cada_etapa": true,
     "atualizar_internamente": true,
-    "trabalho_ativo": "Especificacao revisada em discussao; resolver saltos/registrodeentrada antes de programar. Faixa como principal proposta, sem mudar resultados existentes."
+    "trabalho_ativo": "Pesquisa de fontes pagas:duas cotações completas(Work;2020a30/09/2026)preparadas,nãoenviadas.Preços/cobertura pendentes.Implementação/classificador continua pausada."
   }
 }

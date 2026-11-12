@@ -1,0 +1,27 @@
+PESQUISA COMERCIAL — NELOGICA, CEDRO E B3
+12/11/2026
+
+Objetivo: comparar custo total e adequação de histórico individualizado de negócios WIN para o projeto Modelo D, sem adquirir dados nem assinar produtos nesta etapa.
+
+ESCOPO DEFINIDO PELO USUÁRIO
+A) 01/03/2023 a 21/09/2026, período completo do Work, todos os pregões.
+B) 01/01/2020 a 30/09/2026, período completo estendido, todos os pregões.
+Não cotar somente agosto, os sete dias pendentes ou uma amostra. Pedido anterior de escopo pequeno foi substituído por esta instrução.
+
+ESTADO DE ACESSO E ENVIO
+Tentativas de acesso aos sites oficiais www.nelogica.com.br, www.cedrotech.com e www.b3.com.br não chegaram ao conteúdo: bloqueio de rede HTTP403 no túnel do ambiente. Não é prova de que os sites estejam fora do ar.
+Não foram consultadas ofertas atuais, tabelas de preço, canais comerciais ou cobertura dos produtos. Não classificar fornecedor como mais barato com preços não verificados, nem declarar preços sob consulta como fato sem ler a oferta.
+Foi salvo rascunho restrito de rede para domínios oficiais e buscadores, preservando as demais configurações. A ferramenta informou requires_publish=true: revisão/salvamento/publicação pelo usuário nas configurações são necessários antes de tratar o acesso como aplicado. Não foi alterada a política ativa por conta própria.
+O pedido padrão está pronto em PEDIDO_DUAS_COTACOES_HISTORICO_COMPLETO_WIN.txt. Não houve envio de mensagens/formulários nem contato comercial. Nome, e-mail de retorno e tipo de contratação foram solicitados ao usuário para eventual encaminhamento.
+
+COMPARAÇÃO AINDA POSSÍVEL, SEM INVENTAR PREÇOS
+Nelogica: como o usuário já utiliza Profit, vale verificar primeiro os direitos/exportações da licença que ele já possui. Isso pode reduzir custo incremental SE incluir os negócios antigos necessários; não está confirmado. Licença de plataforma, Replay ou candles não prova direito à base individualizada/exportável do período.
+Cedro: verificar produto de histórico, entrega em lote/API, cobertura de WIN vencidos e custo total. Não presumir que uma oferta de Market Data em tempo real inclua todos os anos ou download histórico.
+B3: consultar o produto oficial adequado de negócios históricos de derivativos e condições de contratação. Não presumir que qualquer pacote chamado Market Data ou um arquivo diário OHLC atenda. Preço e atendimento a pessoa física precisam ser verificados.
+
+CRITÉRIO DE ESCOLHA
+Primeiro, cobertura/formato/ordenação/licença atendem? Depois, menor custo total entre produtos equivalentes, contabilizando implantação, recorrência mínima, taxas e extração. Não escolher só por mensalidade anunciada.
+Dados de negócios são suficientes para reconstruir cronologia de preços sob o protocolo do estudo; não comprovam fila ou preenchimento efetivo de uma ordem hipotética. Book de ofertas não faz parte deste pedido.
+Não foi emitida recomendação definitiva de fornecedor ou compra. Pesquisa permanece pendente de acesso e de cotações verificáveis.
+
+O classificador/replay de candles e os novos testes do projeto continuam pausados conforme instrução anterior. As consultas comerciais não alteram os resultados, arquivos originais ou DD.
