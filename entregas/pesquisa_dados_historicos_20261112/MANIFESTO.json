@@ -44,6 +44,20 @@
   "sample_download": "manual_usuario",
   "sample_size_user_report": "3.8GB",
   "sample_inspected": false,
-  "next_step": "Aguardar estrutura/layout;selecionarTBTBMF_WINQ26_03_11_AGO2026;naopedirpacoteinteiro",
-  "no_purchase_authorized": true
+  "next_step": "Aguardar estrutura/layout;selecionar negocios WIN para todosos3meses;validar contexto/ajustes;nenhum resultado novo ainda",
+  "no_purchase_authorized": true,
+  "sample_reprocessing_scope": {
+    "months": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "full_months": true,
+    "redo_September": true,
+    "October_explicitly_authorized_outside_Work": true,
+    "preserve_previous_results_as_reference": true,
+    "Work_only_on_original_reference_dates": true,
+    "selection": "Negocios BMF familia WIN para os3meses;naolimitarWINQ26nem7dias",
+    "context_and_adjustment_by_date_contract_required": true
+  }
 }

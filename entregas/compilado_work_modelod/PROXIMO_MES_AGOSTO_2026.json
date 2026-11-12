@@ -47,7 +47,7 @@
   "regra_apresentacao": "Mostrar primeiro Work, nosso resultado principal e diferenca. Outros cenarios apenas na parte tecnica.",
   "pacote_preparado": "entregas/fechamento_agosto_v1_11",
   "zip": "entregas/ModeloD_Fechamento_Agosto_v1_11.zip",
-  "status": "AGUARDAR_ESTRUTURA_AMOSTRA_CEDRO_DOWNLOAD_MANUAL_3_8GB",
+  "status": "AGUARDAR_AMOSTRA_CEDRO_REPROCESSAR_AGOSTO_SETEMBRO_OUTUBRO_COMPLETOS",
   "validacao_local": "28 controles do coletor com mocks C++; pipeline sintetico 20 dias/1140 blocos; 400 estados por busca independente; 400 controles de reducao; nao e execucao MT5",
   "deals_agosto": "Nao medidos. Controle separado; nao substitui nem bloqueia o resultado principal por sequencia de negocios.",
   "retorno_nativo": "entregas/fechamento_agosto_v1_11/retorno_nativo_20261111",
@@ -117,8 +117,19 @@
     "download": "manual_usuario",
     "size": "3.8GB",
     "inspected": false,
-    "priority": "WINQ26_TBT_BMF_03_11_AGOSTO2026",
+    "priority": "TODOSOS3MESES_BMF_FAMILIA_WIN;naolimitar7dias",
     "no_full_package_upload": true
   },
-  "budget": "R$30000eR$1000rejeitados;priorizargratuito/incluso;tetonaoinformado"
+  "budget": "R$30000eR$1000rejeitados;priorizargratuito/incluso;tetonaoinformado",
+  "sample_scope_expanded": {
+    "months": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "redo_September": true,
+    "October_outside_Work_explicitly_authorized": true,
+    "preserve_old_results": true,
+    "no_fictitious_Work_zero": true
+  }
 }

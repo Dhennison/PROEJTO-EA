@@ -144,3 +144,7 @@ Usuário pediu compararNelogica,Cedro,B3e depois especificou DUAScotaçõesinteg
 
 Usuário recebeuTBT/EODAGO/SET/OUT2026,comlinkexpirando15/11. Cotação1000/mês/mercado,10000/ano,30000/5anos;compra rejeitada(R$1000também);priorizaramostra/gratuito/incluso. TBTdesdeMaio2020não cobreJan–Abr2020;antes02/07/2025semms,precisa deordemoriginal/seq,semdeclararinútilautomaticamente. Usuáriodispensoucontatos:querapenasmodelos. Link/senha não publicados.
 Drivebloqueado403paraassistente; usuárioestábaixando3,8GB e mostrará estrutura. Aguardarlista/layout,selecionarTBTBM&FWINQ26dias03–11/08;filtro local sóapósconhecerformato. Nãopediruploadinteiro,nãorecoletar14diasGenial,nãoiniciarclassificadorou afirmar novosresultados. Contexto e orçamento registrados noTXTgeral.
+
+## Escopo Cedro ampliado expressamente pelo usuário
+
+Usar agosto,setembro,outubro/2026inteiros,refazendo até setembro.Ousuário confirmou outubro mesmo fora doWork.A seleção dos7diasWINQ26foi substituída por todosos negóciosWIN/BM&Fpertinentes aos3meses.Preservar análisesanteriores para comparação,identificar extensões semWorkfictíciozero,conferircontextoeajustes.Amostra ainda não inspecionada,aguardar download/estrutura.Semnovosresultados ouclassificador executado.

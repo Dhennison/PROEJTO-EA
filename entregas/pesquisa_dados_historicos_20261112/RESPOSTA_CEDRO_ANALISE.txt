@@ -31,3 +31,9 @@ Ousuário quer apenas modelos de resposta e faz os contatos por conta própria; 
 
 AMOSTRA EM DOWNLOAD MANUAL PELO USUÁRIO
 Usuário informou pacote de3,8GB. Vai baixar/guardar localmente e mostrar a estrutura dos arquivos. Pedir primeiro lista/nomes de pastas/arquivos eREADME/layout; selecionarTBTBM&F,WINQ26,03a11/08/2026(dias03,04,05,06,07,10,11). Não solicitar upload do pacote inteiro. Se os ativos estiverem misturados, preparar filtro local após inspecionar o layout, preservando registros/ordem/resolução de horário. Arquivos originais permanecem intactos; evitar salvar dados grandes porExcelque pode truncar linhas. AmostraCedroainda não inspecionada pelo assistente.
+
+AMPLIAÇÃO DE ESCOPO EXPRESSA PELO USUÁRIO
+Usar TODOS os três meses da amostra: agosto, setembro e outubro/2026 completos. Refazer inclusive setembro. O usuário confirmou expressamente outubro mesmo fora do Work. Substitui a prioridade anterior de usar apenas WINQ26 nos sete dias pendentes.
+Selecionar do pacote os arquivos de negócios BM&F pertinentes à família WIN em todas as datas dos três meses, incluindo vencimentos sobrepostos e transições; preservar nomes/códigos reais. Não limitar à janela03–11/08 nem somente a um contrato. BOV/outrosativos não são necessários para esse escopo.
+Nova análise pela mesma fonte/protocolo, preservando snapshots e resultados anteriores para comparação de diferenças. Agosto e setembro devem ser comparados ao Work apenas nas datas em que a referência existe;03/08e o restante de setembro após21/09ficam identificados como extensão. Outubro será integralmente extensão, sem Work=0. Verificar OHLC do último pregão anterior a cada início e ajustes corretos por data/contrato. Se os arquivos não contiverem ajuste oficial, não substituí-lo pelo fechamento.
+Primeiro aguardar estrutura/layout da amostra de3,8GBemdownloadmanual. Amostra ainda não inspecionada; não afirmar disponibilidade/qualidade ou resultado dos três meses antes da conferência.
