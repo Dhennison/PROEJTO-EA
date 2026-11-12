@@ -1,3 +1,6 @@
+RETIFICAÇÃO POSTERIOR: o usuário confirmou que31/07 abriu realmente às12:34, com gráfico Profit. A inferência de histórico incompleto por horário no texto abaixo está retirada. H/L/C31/07 é válido para03/08. Ver entregas/fechamento_agosto_v1_11/RETIFICACAO_31JUL_ABERTURA_REAL.txt. O diagnóstico nativo de zero blocos/erro4305 permanece válido.
+
+HISTÓRICO ANTERIOR PRESERVADO:
 AGOSTO/2026 — PRIMEIRO RETORNO NATIVO — 11/11/2026
 Compilacao comunicada pelo usuario: 0 erros, 0 avisos, 1096 ms, AVX2 + FMA3.
 Coleta MES110_1794433146_1056157781, GenialInvestimentos-PRD, build 6231.

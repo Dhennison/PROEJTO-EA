@@ -66,16 +66,23 @@
       "Preservar as duas saidas por horario e a ambiguidade original na referencia Work."
     ],
     "regra_apresentacao": "Mostrar primeiro Work, nosso resultado principal e diferenca. Outros cenarios apenas na parte tecnica.",
-    "pacote_preparado": "entregas/fechamento_agosto_v1_10",
-    "zip": "entregas/ModeloD_Fechamento_Agosto_v1_10.zip",
-    "status": "RETORNO_NATIVO_PENDENTE_SELECAO_CONTRATO_4305_ZERO_BLOCOS",
+    "pacote_preparado": "entregas/fechamento_agosto_v1_11",
+    "zip": "entregas/ModeloD_Fechamento_Agosto_v1_11.zip",
+    "status": "REVISAO_1_11_PRONTA_AGUARDANDO_COMPILACAO_E_COLETA",
     "validacao_local": "28 controles do coletor com mocks C++; pipeline sintetico 20 dias/1140 blocos; 400 estados por busca independente; 400 controles de reducao; nao e execucao MT5",
     "deals_agosto": "Nao medidos. Controle separado; nao substitui nem bloqueia o resultado principal por sequencia de negocios.",
     "retorno_nativo": "entregas/fechamento_agosto_v1_10/retorno_nativo_20261111",
     "compilacao_nativa_usuario": {
       "erros": 0,
       "avisos": 0
-    }
+    },
+    "collected_dates": 21,
+    "original_Work_comparison_dates": 20,
+    "supplement_dates": [
+      "2026-08-03"
+    ],
+    "jul31_actual_open": "12:34:00",
+    "jul31_missing_morning_inference_retracted": true
   },
   "meses": [
     {
@@ -896,6 +903,6 @@
     "entregar_dois_pdfs_juntos_no_final": true,
     "nao_reenviar_resultados_ou_pdfs_a_cada_etapa": true,
     "atualizar_internamente": true,
-    "trabalho_ativo": "Agosto: diagnosticar selecao WINQ26 (4305); retorno nativo zero blocos, resultado nao apurado."
+    "trabalho_ativo": "Agosto: v1.11 pronta; leitura direta/aliases de contrato,21datas incluindo03/08 complementar. Abertura real31/07 às12:34 reconhecida; contexto válido. Aguardando retorno nativo."
   }
 }

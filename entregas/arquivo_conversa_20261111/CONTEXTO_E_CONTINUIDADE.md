@@ -114,3 +114,7 @@ Pacote completo `entregas/fechamento_agosto_v1_10`, ZIP `entregas/ModeloD_Fecham
 ## Primeiro retorno nativo de agosto e contexto do pregão anterior
 
 v1.10 compilada sem erros/avisos. A execução terminou com 20 dias pendentes e zero blocos: WINQ26 não selecionável, erro 4305. Nenhum contrato foi escolhido. WINV26 M1 corresponde ao Work de 12/08 em diante neste recorte, divergindo antes. 03/08 teve pregão, mas está fora da seleção elegível do Work; a fonte de 31/07 começa às 12h34 e não assegura H/L/C diário completo. As referências já carregam o contexto do pregão anterior sem reiniciar no mês; 04/08 usa H/L/C de 03/08. Evidências e originais preservados em `entregas/fechamento_agosto_v1_10/retorno_nativo_20261111`. Não repetir v1.10 sem tratar a falha de seleção.
+
+## Retificação do usuário e revisão1.11
+
+31/07 abriu realmente às12:34, conforme usuário/grafico Profit. A inferência anterior de incompletude por horário estava errada; H/L/C179495/176985/178725 válido para03/08. v1.11 inclui03/08 na coleta como complemento fora do Work original, sem atribuir Work=0, preservando o comparável20datas. Corrige bloqueio anterior a CopyRates/CopyTicksRange por SymbolSelect4305, inventaria sufixos e registra ressalva quando outro candidato não é verificável. Pacote, fontes, testes e retificação em `entregas/fechamento_agosto_v1_11`, ZIP próprio. Nenhum resultado nativo de agosto ainda.

@@ -1,0 +1,8 @@
+CORRECAO v1.11
+1. SymbolSelect=false nao impede tentativa direta CopyRates/CopyTicksRange.
+2. Inventario de codigos nativos Q/V e sufixos; simbolos customizados recusados.
+3. Correspondente M1 exato pode avancar com ressalva de outro candidato nao verificado; nao prova unicidade e nao dispensa igualdade de precos. Mais de um correspondente continua bloqueado.
+4. 31/07 abriu realmente12:34 (usuario/grafico). Retirada a classificacao injustificada de historico incompleto. H/L/C179495/176985/178725 valido como contexto de03/08.
+5. Coleta03/08 incluida com abertura179590/ajuste178845, identificada como complemento fora do universo Work original. Sao21datas/1197blocos. Principal comparavel continua nas20datas originais, sem atribuir Work=0 ao complemento.
+6. Conferencia adicional M1/D1 de31/07 na mesma rodada, sem bloquear uso do contexto validado por abertura real.
+7. Regras do ModeloD e resultado/setembro preservados. Erros de leitura/ticks nao recuperados permanecem pendentes; a revisao nao garante acesso que o servidor negue.

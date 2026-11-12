@@ -1,0 +1,66 @@
+AGOSTO/2026 — MODELO D — REVISAO CORRIGIDA v1.11
+
+O QUE ESTA CORRIGIDO
+A v1.10 compilou, mas nao coletou ticks porque SymbolSelect(WINQ26) falhou com 4305 e impediu tentar CopyRates. Esta revisao tenta ler o historico diretamente e registra os dois erros separadamente. Descobre tambem variantes nativas WINQ26/WINV26 com sufixo no servidor.
+Um candidato com M1 completo identico ao Work pode coletar mesmo se o outro nao puder ser verificado, com ressalva explicita e sem alegar unicidade. Precos divergentes nunca sao aceitos; dois correspondentes continuam pendentes. Se o servidor negar o historico/ticks, isso continua sendo pendencia, nao PnL zero.
+
+31/07 E 03/08 — RETIFICACAO
+31/07 abriu REALMENTE as 12:34, conforme informado pelo usuario e corroborado pelo grafico Profit. Foi errado classificar suas 351 barras (12:34–18:24) como historico incompleto apenas por esse horario. O CSV original Profit do Work e o M1 anteriormente exportado do MT5 concordam nesse trecho.
+H/L/C agregado de 31/07: 179495 / 176985 / 178725. Esse contexto e valido para calcular 03/08. O programa consulta ainda M1/D1 de 31/07 para conferencia, sem usar a consulta como novo impedimento ao contexto reconhecido.
+A nova coleta inclui 03/08: sao 21 datas, de 03/08 a 31/08. Como o Work original omitiu 03/08, a comparacao homogenea permanece nas suas 20 datas/43 operacoes, Work -387,164995 pontos. O resultado de 03/08 fica separado e identificado como complementar, sem inventar Work=0 nem misturar seu resultado ao comparavel. O dia nao sera ignorado.
+A tabela de referencias ja traz H/L/C do pregao anterior por data, sem reiniciar na virada do mes. Para 03/08 usa 31/07; para 04/08 usa 03/08. Abertura de 03/08=179590; ajuste historico Work dessa data=178845.
+
+1. INSTALAR NO MT5 PRINCIPAL DA GENIAL
+Extraia este ZIP numa pasta temporaria.
+No MT5 principal da Genial: Arquivo > Abrir Pasta de Dados.
+Copie a pasta MQL5 do pacote para essa Pasta de Dados, mesclando as pastas e substituindo os arquivos de agosto da revisao anterior.
+A estrutura deve ficar:
+MQL5\Experts\ModeloD_Fechamento_Agosto\Coletar_Agosto_Sem_Ordens.mq5
+MQL5\Experts\ModeloD_Fechamento_Agosto\ModeloD_Core.mqh
+MQL5\Files\MD_Agosto_2026_Referencias.csv
+MQL5\Files\MD_Agosto_2026_M1_Work.csv
+Copiar OS DOIS CSVs novos: os hashes mudaram para incluir 03/08. Nao misturar arquivos novos e antigos. Nao criar MQL5\MQL5 nem substituir nada da XP.
+
+2. COMPILAR UM ARQUIVO
+No principal da Genial, F4 para abrir o MetaEditor.
+Abra MQL5\Experts\ModeloD_Fechamento_Agosto\Coletar_Agosto_Sem_Ordens.mq5 e pressione F7.
+O nucleo MQH e incluido automaticamente. A propriedade de versao deve ser 1.11.
+Esta revisao foi verificada localmente com mocks C++ e analise Python, NAO compilada no MetaEditor pelo assistente. Se houver erro/aviso, enviar a lista antes de executar.
+
+3. EXECUTAR UMA VEZ NO GRAFICO — NAO NO TESTER
+No principal da Genial, abra um grafico WIN$N, M5.
+Ctrl+N > Expert Advisors > ModeloD_Fechamento_Agosto > Coletar_Agosto_Sem_Ordens.
+Arraste ao grafico. Na janela de parametros, clique Resetar e OK. Todos os padroes ja estao prontos.
+Nao mudar moeda do deposito nem iniciar o Tester. O coletor nao envia ordens nem altera candles/ticks; somente consulta e grava resultados. A DEMO da XP fica intacta.
+
+4. AGUARDAR O END
+Comeca com MES111;START, inventario SIMBOLOS e consulta CONTEXTO_31JUL em M1 e D1. Depois mostra CONTRATO, DIA e LEITURA.
+21 datas x 57 blocos = 1.197 blocos se todos estiverem disponiveis. Cada bloco tem duas leituras brutas identicas campo a campo antes da reducao. Mantenha terminal conectado e notebook acordado; a coleta completa pode levar 40 minutos ou mais.
+Final totalmente disponivel:
+MES111;END;reason=CONCLUIDO;days=21;blocks=1197;pending_blocks=0;pending_days=0;io_failed=false
+ExpertRemove depois do END e normal.
+Se houver pendencias, envie o resultado mesmo assim. Nao repetir sem analise: o registro separa selecao, leitura, candidato nao verificavel, divergencia OHLC e ticks nao recuperados. 03/08 pendente nao vira zero e nao e tratado como mes fechado de21datas.
+
+5. COMPACTAR E ENVIAR
+Apos MES111;END, execute COMPACTAR_RESULTADO.cmd do NOVO pacote.
+Ele cria ZIP(s) e abre a pasta no Explorador. Envie TODOS, inclusive GERAL.zip se houver, e o log Experts START–END.
+Caminho manual, Windows+R:
+%APPDATA%\MetaQuotes\Terminal\Common\Files\ModeloD_Fechamento_Agosto
+Compacte a NOVA pasta MES111_...; nao a MES110 anterior. Nao apaga dados antigos.
+
+6. O QUE A ANALISE FARA
+- Hashes dos dois CSVs, inventario de simbolos, metadados e escolha por igualdade M1 com o Work.
+- 21 datas x 5 niveis em quatro variantes e validacao cronologica independente (420 estados).
+- Principal: um contrato por nivel, grade5 e toque inclusivo, igual ao criterio de setembro. Matematica/estrita sao apenas controles.
+- DIARIO_PRINCIPAL.csv: 20 datas comparaveis com Work original. DIARIO_COMPLEMENTAR.csv: 03/08, com resultado nosso e Work em branco por nao haver referencia original.
+- Todos os niveis, extras/ausencias, ambiguidades, horarios, abertura/corte, OHLC e quantidades. Nenhuma contagem e forcada a coincidir com o Work.
+- CONTEXTO_31JUL.json: conferencia adicional M1/D1, respeitando abertura real12:34 e sem reconstruir uma manha inexistente.
+- Cortes de06/08 S61.8 e25/08 R61.8, e ambiguidade original de18/08 S38.2, preservados.
+Nao ha novo teste oculto de preenchimento real: os pontos sao condicionais nos niveis, sem custos/fila/spread; nao sao lucro de conta real. Deals do Tester, se medidos para agosto, seriam controle separado.
+As saidas sao avaliadas em negocio posterior a entrada, inclusive registros distintos no mesmo milissegundo. Corte pelo primeiro Last no minuto do corte; sem negocio nesse minuto, marcar pendencia.
+
+7. RELATORIOS E HISTORICO
+Os dois PDFs serao atualizados internamente e entregues juntos no final. O complemento03/08 ficara identificado, com base de comparacao/drawdown compativel; nao transformar ausencia de resultado Work em zero.
+Ao incorporar agosto, DD sempre em ordem crescente agosto->setembro. Resultados diarios/mensais ja fechados de setembro nao mudam. DD por fechamentos diarios, provisorio enquanto faltarem meses anteriores.
+EVENTOS_... sao eventos reduzidos para primeiros toques/saidas, NAO todos os ticks brutos; MINUTOS_... resume todos os negocios lidos. O nucleo congelado ModeloD_Core.mqh nao foi alterado.
+Registro principal: entregas/v2_10/RETOMADA_DO_TRABALHO.txt.

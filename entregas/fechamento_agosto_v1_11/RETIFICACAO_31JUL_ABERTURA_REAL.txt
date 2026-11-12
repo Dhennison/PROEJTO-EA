@@ -1,0 +1,11 @@
+RETIFICAÇÃO — ABERTURA REAL DE 31/07/2026
+
+O usuário esclareceu: “No dia 31 de julho, o indice abriu as 12:34, por isso não tinha como ter historico antes desse horario.” O gráfico Profit anexado mostra o primeiro M1 em 31/07/2026 às 12:34. Isso corrige a inferência anterior do assistente de que o início tardio seria histórico incompleto.
+
+O trecho de 31/07 no CSV Profit usado pelo Work, WINFUT_F_0_1min_01-01-2026_22-09-2026.csv, possui 351 barras de 12:34 a 18:24. A exportação anterior WIN$N do MT5, M1_202607.csv, possui os mesmos 351 horários e OHLC. A ausência de barras antes da abertura real não é lacuna.
+
+OHLC agregado do dia: O 177470, H 179495, L 176985, C 178725. A máxima do primeiro M1 (177830) não é a máxima do pregão (179495). H/L/C 179495/176985/178725 é o contexto válido de 03/08, primeiro pregão seguinte.
+
+31/07 e 03/08 não constam no universo elegível original do Work recebido. Isso descreve o recorte original, sem provar que fossem pregões inválidos. Fica retirada a justificativa de incompletude pelo horário.
+
+A revisão 1.11 inclui 03/08 na coleta com esse contexto. O dia é identificado como complemento, sem Work fictício zero nem alteração silenciosa do comparativo original. Ao preparar julho, respeitar também a abertura real de 31/07. Reavaliar exclusões por horário com a sessão real, sem presumir que todo início após 09h significa perda de dados.
