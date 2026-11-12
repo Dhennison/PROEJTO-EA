@@ -1,0 +1,11 @@
+CEDRO TICK/BMF — TRECHO OBSERVADO DE03/08/2026
+
+Fonte: primeiras20linhas coladas pelo usuário, não arquivo integral recebido.
+Separador:pipe(|). Oito campos em cada linha mostrada.
+Campo1:código deativo. Nenhum dos20registroséWIN; há outros códigos.
+Campo2:datahoraformatoYYYY-MM-DD HH:mm:ss.fff,com3casas para milissegundos. Fuso não confirmado.
+Campos3a6:numéricos,sem significado confirmado porlayout. Possível preço/quantidade/participantes,ainda hipótese.
+Campo7:marcador alfabético nas linhas observadas;campo8numérico. Não assumir mapeamento deagressor/condição sem documentação.
+Os horários retrocedem entre registros do trecho global. Isso não prova desordem dentro deum contratoWINnem autoriza ordenar/deduplicar osdados. Preservar índiceoriginalde linha ao extrair; verificar ordenação intra-contrato e empates.
+Próximopasso:20linhasWINdo mesmo arquivo, porSelectStringemfluxo. Não é coleta limitada aumdia: oescopo finalsegue agosto,setembro,outubrointeiros,famíliaWIN/BM&F.
+NenhumreplayouresultadoNovofoicalculado.

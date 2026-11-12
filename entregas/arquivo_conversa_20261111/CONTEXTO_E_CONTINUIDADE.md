@@ -152,3 +152,7 @@ Usar agosto,setembro,outubro/2026inteiros,refazendo até setembro.Ousuário conf
 ## Estrutura da amostraCedro apresentada
 
 Capturas:202608.zip/202609.zip/202610.zip,comlogsdiários. Agosto21datas03a31/08. Layout/conteúdoaindanãoinspecionados. Próximopassoéverprimeiras20linhasdeumlogextraído,porleituraemfluxo,antesdeprepararfiltro. Escopode3mesesinteirospreservado;nenhumreplaycalculado.
+
+## Primeiro trechoTICK/BMF observado
+
+Usuário colou20linhas de20260803.log:8campospipe,timestampcomms;nenhumWINna amostra,camposefuso restantesnão confirmados. Retrocessosdehorárionotrechoglobal,não inferirporcontrato. Próximopasso20linhasWINemfluxo;semordenar/deduplicaroucalcularnovosresultados. Escopo3mesesinteiromantido.

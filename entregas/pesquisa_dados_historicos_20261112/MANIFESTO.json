@@ -44,7 +44,7 @@
   "sample_download": "manual_usuario",
   "sample_size_user_report": "3.8GB",
   "sample_inspected": false,
-  "next_step": "Ver primeiras20linhas deumlogdiario extraido,antes decriarfiltro;escopo continuam3mesesinteiros",
+  "next_step": "Ler primeiras20linhas deWINporSelectString;depoisdefinirfiltro dos3mesespreservandoordemoriginal;naoinferir campos3a8semconfirmar",
   "no_purchase_authorized": true,
   "sample_reprocessing_scope": {
     "months": [
@@ -92,5 +92,15 @@
     ],
     "layout_not_yet_seen": true,
     "content_not_yet_inspected": true
+  },
+  "sample_first_snippet": {
+    "source": "20linhascoladaspeloUsuario_20260803.log_TICK_BMF",
+    "delimiter": "|",
+    "fields_per_shown_row": 8,
+    "timestamp_format": "YYYY-MM-DD HH:mm:ss.fff",
+    "timezone_confirmed": false,
+    "WIN_rows_shown": 0,
+    "nonmonotonic_timestamps_in_global_snippet": true,
+    "remaining_field_semantics_confirmed": false
   }
 }
