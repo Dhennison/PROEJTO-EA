@@ -1,0 +1,10 @@
+CEDRO WIN v1.00 - extracao de agosto/setembro/outubro 2026.
+Texto original WIN preservado em UTF-8; finais de linha normalizados.
+Primeira coluna adicionada: numero de linha no arquivo fonte (nao sequencia oficial).
+Todos os registros preservados, inclusive repetidos/mesmo milissegundo. Sem ordenar ou filtrar condicoes.
+Campo3 a campo8 ainda sem interpretacao certificada; fuso nao confirmado.
+CONTRATOS.csv mostra inventario por data/codigo, regressoes e anomalias. Ausencia de regressao nao prova ordem oficial entre empates.
+EOD copiado sem interpretacao. Arquivos EOD encontrados: 63.
+SHA256 TICK_FONTE corresponde a todos os bytes originais, nao apenas ao WIN.
+Escopo sao os arquivos encontrados; completude de calendario e qualidade serao auditadas no retorno.
+Nenhum backtest, selecao de contrato, resultado ou preenchimento real foi calculado.

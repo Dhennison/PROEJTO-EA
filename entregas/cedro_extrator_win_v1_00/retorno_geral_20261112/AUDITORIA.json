@@ -1,0 +1,215 @@
+{
+  "fonte_sha256": "50e86789dd9ab5e2c646a259cfa60eccc071cc8bc01325047c54c636dba5a938",
+  "zip_CRC_OK": true,
+  "conteudo_recebido": "Somente controle geral e EOD; ZIPs diarios TICK ainda nao recebidos",
+  "meses": {
+    "202608": {
+      "datas": [
+        "20260803",
+        "20260804",
+        "20260805",
+        "20260806",
+        "20260807",
+        "20260810",
+        "20260811",
+        "20260812",
+        "20260813",
+        "20260814",
+        "20260817",
+        "20260818",
+        "20260819",
+        "20260820",
+        "20260821",
+        "20260824",
+        "20260825",
+        "20260826",
+        "20260827",
+        "20260828",
+        "20260831"
+      ],
+      "dias": 21,
+      "registros_WIN": 102168252,
+      "ZIPs": 42,
+      "contratos": {
+        "WINQ26": 33199266,
+        "WINV26": 68910263,
+        "WINZ26": 58356,
+        "WING27": 367
+      }
+    },
+    "202609": {
+      "datas": [
+        "20260901",
+        "20260902",
+        "20260903",
+        "20260904",
+        "20260908",
+        "20260909",
+        "20260910",
+        "20260911",
+        "20260914",
+        "20260915",
+        "20260916",
+        "20260917",
+        "20260918",
+        "20260921",
+        "20260922",
+        "20260923",
+        "20260924",
+        "20260925",
+        "20260928",
+        "20260929",
+        "20260930"
+      ],
+      "dias": 21,
+      "registros_WIN": 121647412,
+      "ZIPs": 42,
+      "contratos": {
+        "WING27": 1370,
+        "WINV26": 121456881,
+        "WINZ26": 189161
+      }
+    },
+    "202610": {
+      "datas": [
+        "20261001",
+        "20261002",
+        "20261005",
+        "20261006",
+        "20261007",
+        "20261008",
+        "20261009",
+        "20261013",
+        "20261014",
+        "20261015",
+        "20261016",
+        "20261019",
+        "20261020",
+        "20261021",
+        "20261022",
+        "20261023",
+        "20261026",
+        "20261027",
+        "20261028",
+        "20261029",
+        "20261030"
+      ],
+      "dias": 21,
+      "registros_WIN": 154385672,
+      "ZIPs": 48,
+      "contratos": {
+        "WING27": 79058,
+        "WINV26": 62429604,
+        "WINZ26": 91876444,
+        "WINJ27": 566
+      }
+    }
+  },
+  "anomalias": {
+    "regressoes_timestamp": 4,
+    "empates_consecutivos": 254550520,
+    "timestamp_invalido": 0,
+    "data_diferente_arquivo": 0,
+    "campos_diferentes_de_8": 0
+  },
+  "regressoes": [
+    {
+      "dia": "20260922",
+      "ativo": "WINV26",
+      "registros": "5412726",
+      "primeiro_timestamp_na_ordem": "2026-09-22 09:02:41.701",
+      "ultimo_timestamp_na_ordem": "2026-09-22 18:31:23.015",
+      "regressoes_timestamp": "1",
+      "empates_consecutivos": "3581361",
+      "timestamp_invalido": "0",
+      "data_diferente_arquivo": "0",
+      "campos_diferentes_de_8": "0"
+    },
+    {
+      "dia": "20260924",
+      "ativo": "WINV26",
+      "registros": "6198001",
+      "primeiro_timestamp_na_ordem": "2026-09-24 09:02:47.464",
+      "ultimo_timestamp_na_ordem": "2026-09-24 18:31:25.001",
+      "regressoes_timestamp": "2",
+      "empates_consecutivos": "4224347",
+      "timestamp_invalido": "0",
+      "data_diferente_arquivo": "0",
+      "campos_diferentes_de_8": "0"
+    },
+    {
+      "dia": "20261028",
+      "ativo": "WINZ26",
+      "registros": "9331723",
+      "primeiro_timestamp_na_ordem": "2026-10-28 09:00:48.703",
+      "ultimo_timestamp_na_ordem": "2026-10-28 18:31:18.190",
+      "regressoes_timestamp": "1",
+      "empates_consecutivos": "6641945",
+      "timestamp_invalido": "0",
+      "data_diferente_arquivo": "0",
+      "campos_diferentes_de_8": "0"
+    }
+  ],
+  "EOD_hash_failures": [],
+  "EOD_quantitytrades_matches": 182,
+  "EOD_quantitytrades_mismatches": [
+    {
+      "data": "20260922",
+      "contrato": "WINV26",
+      "quantitytrades_EOD": 5412725,
+      "registros_TICK": 5412726
+    },
+    {
+      "data": "20260924",
+      "contrato": "WINV26",
+      "quantitytrades_EOD": 6165264,
+      "registros_TICK": 6198001
+    },
+    {
+      "data": "20260924",
+      "contrato": "WINZ26",
+      "quantitytrades_EOD": 8466,
+      "registros_TICK": 8168
+    },
+    {
+      "data": "20261027",
+      "contrato": "WING27",
+      "quantitytrades_EOD": 3972,
+      "registros_TICK": 3970
+    },
+    {
+      "data": "20261027",
+      "contrato": "WINZ26",
+      "quantitytrades_EOD": 7284623,
+      "registros_TICK": 7272064
+    },
+    {
+      "data": "20261028",
+      "contrato": "WINZ26",
+      "quantitytrades_EOD": 9331722,
+      "registros_TICK": 9331723
+    }
+  ],
+  "inventory_without_EOD": [
+    [
+      "20260812",
+      "WING27"
+    ],
+    [
+      "20260812",
+      "WINQ26"
+    ],
+    [
+      "20261008",
+      "WINJ27"
+    ],
+    [
+      "20261014",
+      "WINV26"
+    ]
+  ],
+  "registros_WIN_total": 378201336,
+  "WIN_ZIP_bytes": 2547790632,
+  "WIN_ZIP_max_bytes": 25200731,
+  "novo_resultado_ModeloD": null
+}

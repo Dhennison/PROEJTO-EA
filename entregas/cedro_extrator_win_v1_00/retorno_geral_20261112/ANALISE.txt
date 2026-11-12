@@ -1,0 +1,49 @@
+CEDRO — RETORNO DO GERAL — 12/11/2026
+
+Recebido GERAL_CEDRO_WIN.zip (654749 bytes), CRC interno OK.
+63 EOD presentes, todos os hashes conferidos com o manifesto.
+Somente inventario/controle e EOD recebidos. Dados TICK diarios ainda pendentes;
+hashes TICK e WIN_ZIP declarados pelo extrator nao foram validados nos arquivos diarios.
+
+Agosto: 21 datas, 102168252 registros WIN, 42 ZIPs.
+Setembro: 21 datas, 121647412 registros WIN, 42 ZIPs.
+Outubro: 21 datas, 154385672 registros WIN, 48 ZIPs.
+Total: 378201336 registros WIN e 132 ZIPs (2547790632 bytes, cerca de 2,55 GB).
+Maior ZIP 25200731 bytes, abaixo do limite 32 MiB.
+WINQ26 confirmado em agosto, inclusive 4170422 registros em 03/08.
+Contrato predominante em contagem: Q ate 11/08, V de 12/08 a 13/10,
+Z a partir de 14/10. Isso e evidencia de atividade, nao selecao homologada por
+resultado: validar correspondencia de precos/candles e referencia Work por data.
+
+Anomalias do inventario:
+Zero timestamp invalido, data divergente ou quantidade de campos diferente de oito.
+254550520 empates consecutivos de timestamp. Preservar todos; empates nao
+provam duplicidade nem ordem oficial das execucoes dentro do mesmo milissegundo.
+Quatro regressoes: WINV26 em 22/09 (1) e 24/09 (2), WINZ26 em 28/10 (1).
+Manter ordem original; localizar as linhas e semantica de condicao/correcao no
+layout antes de decidir como reconstruir. Nao ordenar ou deduplicar automaticamente.
+
+EOD inclui cabecalho documentado no proprio arquivo:
+papel,time_trade,last_trade,open,high,low,volume_amount,volume_financier,
+quantitytrades,historical_price,adjust.
+Exemplo de controle: WINQ26 03/08 O179590 H179715 L177410 last178650,
+adjust178561. OHLC e ajuste coincidem com referencias ja registradas desse dia;
+ajuste 178561 e contexto para 04/08, nao substitui ajuste de 31/07 para 03/08.
+Para outubro teremos EOD de setembro para contexto inicial; transicao de
+vencimento exige referencia do contrato correto por data, sem herdar contrato errado.
+Historico de julho nao esta neste pacote; contexto 31/07 previamente documentado.
+
+Contagem quantitytrades do EOD versus inventario TICK por dia/contrato:
+182 correspondencias; 6 divergencias; 4 pares existentes no inventario sem
+linha EOD correspondente. Detalhes em AUDITORIA.json. Nao assumir igualdade
+integral so porque ha arquivos diários. Possiveis correcoes/condicoes ainda
+nao confirmadas. Nenhuma divergencia quantitativa nessa comparacao em agosto.
+Layout dos campos 3–8 do TICK e fuso/garantia de ordem ainda precisam de confirmacao.
+
+Proximo passo: receber todos os WIN_202608...zip, com todas as partes, em lotes.
+Nao compactar novamente o mes inteiro em um unico ZIP grande. Conservar tambem
+setembro/outubro para envio posterior; escopo autorizado continua os tres meses.
+Analisar ticks/candles/condicoes antes de novo replay; resultado antigo de
+setembro e PDFs/DD preservados, nenhum resultado novo calculado nesta etapa.
+Fonte bruta recebida preservada localmente em /workspace/retorno_cedro_20261112;
+EOD integral nao republicado no GitHub. Repositorio guarda auditoria/controles.

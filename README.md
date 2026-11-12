@@ -3,7 +3,7 @@
 Estado geral atualizado em **12/11/2026**. Registro principal: **[RETOMADA_DO_TRABALHO.txt](entregas/v2_10/RETOMADA_DO_TRABALHO.txt)**. Esse TXT acompanha todas as etapas, o que foi concluído, pendências, evidências e próximo passo; será atualizado a cada avanço.
 
 - **Setembro concluído:** Work +3.839,31; nosso resultado principal +1.380,00; diferença −2.459,31 pontos. Critério: um contrato por nível, grade de cinco pontos, entrada por toque.
-- **Trabalho ativo:** [extrator Cedro WIN dos três meses](entregas/cedro_extrator_win_v1_00/LEIA_PRIMEIRO.txt) preparado. Extrai agosto/setembro/outubro completos sem MT5, preservando linhas repetidas e ordem original. Aguardando GERAL e ZIPs filtrados; contrato, layout, cobertura e ajustes ainda serão auditados. Setembro anterior preservado.
+- **Trabalho ativo:** controle Cedro recebido: 63 datas nos três meses e WINQ26 confirmado em agosto. [Auditoria do inventário e EOD](entregas/cedro_extrator_win_v1_00/retorno_geral_20261112/ANALISE.txt). Aguardando ZIPs diários de agosto; nenhum novo resultado calculado.
 - **Relatórios finais:** dois PDFs (técnico e enxuto Modelo D diário), atualizados internamente e entregues juntos no final. DD contínuo calculado em ordem cronológica, sem alterar resultados mensais já fechados.
 - [Continuidade dos compilados e drawdown](entregas/compilado_work_modelod/LEIA_CONTINUIDADE.md)
 - [Conteúdo recente da conversa e decisões](entregas/arquivo_conversa_20261111/CONTEXTO_E_CONTINUIDADE.md)
