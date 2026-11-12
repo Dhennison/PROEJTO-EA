@@ -1,0 +1,15 @@
+CEDRO AGO/2026 — PRIMEIRO LOTE
+10 ZIPs originais recebidos pelo usuario, duas partes por dia de 03 a 07/08.
+Originais preservados localmente: /workspace/retorno_cedro_20261112/ticks.
+Hashes esperados: retorno_geral_20261112/ARQUIVOS.csv (controle recebido antes).
+Leitura sequencial por dia/parte; CRC verificado ao concluir cada ZipExtFile.
+Cada registro mantem numero de linha original e ordem. Nao deduplicar, ordenar
+ou excluir campos I/5/qualquer condicao. Ordinais entre partes precisam crescer.
+Script auditar_lote.py: comparacao de contagens/empates/regressoes com inventario,
+preco e quantidade candidatos (campos 3 e 4) contra EOD e candles M1 Work.
+Nao confundir concordancia de candles com prova de fila ou preenchimento.
+Dia 03/08 e complemento fora do Work original; comparacao de dados e possivel,
+mas nao atribuir resultado Work=0 nem incluir no subtotal original.
+Sem novo resultado de estrategia, PnL, PDF ou DD nesta etapa de recepcao.
+Repositorios armazenam controles e agregados de auditoria, nao republicam os
+10 arquivos brutos Cedro. Layout/fuso/ordem oficial entre empates seguem pendentes.

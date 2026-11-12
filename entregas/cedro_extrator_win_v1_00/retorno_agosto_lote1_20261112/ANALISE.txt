@@ -1,0 +1,36 @@
+CEDRO AGOSTO — PRIMEIRO LOTE RECEBIDO — 12/11/2026
+
+03, 04, 05, 06 e 07/08, duas partes de cada dia, 10 ZIPs.
+Total recebido e lido: 23240795 registros da familia WIN.
+Todos os 10 hashes e tamanhos identicos ao GERAL recebido. CRC verificado
+na leitura ate o final. Cabecalhos conferidos. Ordinais crescem entre registros
+e na passagem da parte001 para parte002; sem duplicar ou descartar linhas.
+Contagens por contrato, primeiro/ultimo timestamp, empates e regressoes
+reproduzem exatamente o inventario. Nenhuma regressao temporal neste lote.
+Linhas repetidas e milissegundos empatados preservados.
+
+WINQ26 e o contrato correspondente a referencia Work nestes cinco dias:
+- Todos os minutos presentes no CSV M1 Work tiveram negocios WINQ26.
+- Todos os precos OHLC e quantidades por minuto coincidem com Work, exceto
+  a barra 18:24 de cada data. Diferencas detalhadas em DIFERENCAS_M1.csv.
+- Em 18:24 ha diferenca no fechamento/quantidade e, em quatro datas, maxima.
+  Sao posteriores ao corte de operacoes 18:00; nao afetam eventos ate o corte.
+- Cedro tem um minuto adicional por dia, fora do conjunto de minutos Work.
+  Nao atribuir automaticamente causa a leilao sem confirmacao de layout/horarios.
+- OHLC diario completo de WINQ26, contagem de registros e soma do campo4
+  coincidem exatamente com open/high/low/last_trade/quantitytrades/volume_amount
+  dos respectivos EOD. Campos3/4 como preco/quantidade corroborados por esses
+  controles; demais semanticas de condicao/agressor e fuso ainda nao homologadas.
+- Campo8 apresenta 0,1,2,5; campo7 I,A,V. Todos preservados. Nao filtrar I/5
+  nem escolher classe pelo resultado esperado. Nao inferir fila ou agressor
+  sem documento da Cedro. Linha original e proveniencia, nao sequencia oficial.
+
+03/08 e complemento fora das operacoes do Work original: nao criar Work=0.
+Contexto 31/07 segue documentado previamente (abertura tardia real, nao falta
+arbitraria de dados). Nenhum resultado de estrategia ou DD recalculado aqui.
+Os controles M1 nao provam execucao de ordens ou prioridade de fila.
+
+Proximo lote: todas as partes de 10,11,12,13 e 14/08 (10 ZIPs).
+Restam 32 ZIPs de agosto apos este primeiro lote. Setembro/outubro seguem
+no escopo autorizado, preservados para processamento posterior.
+Arquivos brutos Cedro preservados localmente, sem republicacao no repositorio.

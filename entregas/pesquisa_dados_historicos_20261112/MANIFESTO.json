@@ -8,7 +8,7 @@
     "2020-01-01",
     "2026-09-30"
   ],
-  "status": "GERAL_RECEBIDO_WINQ26_CONFIRMADO_AGUARDANDO_TICKS_DIARIOS",
+  "status": "AGOSTO_PRIMEIRO_LOTE_TICKS_AUDITADO",
   "prices_verified": false,
   "purchase_made": false,
   "network_status": "OFFICIAL_SITES_BLOCKED_403_DRAFT_REQUIRES_PUBLISH",
@@ -44,7 +44,7 @@
   "sample_download": "manual_usuario",
   "sample_size_user_report": "3.8GB",
   "sample_inspected": false,
-  "next_step": "Receber WIN_202608...ZIP todas as partes em lotes; conferir SHA256/linhas, layout e anomalias antes de replay",
+  "next_step": "Receber ZIPs 10 a 14/08 com todas as partes; seguir auditoria por contrato/data",
   "no_purchase_authorized": true,
   "sample_reprocessing_scope": {
     "months": [
@@ -129,5 +129,20 @@
     "WINQ26_confirmed": true,
     "tick_files_received": false,
     "audit_path": "entregas/cedro_extrator_win_v1_00/retorno_geral_20261112"
+  },
+  "August_tick_batch_1": {
+    "days": [
+      "2026-08-03",
+      "2026-08-04",
+      "2026-08-05",
+      "2026-08-06",
+      "2026-08-07"
+    ],
+    "ZIPs": 10,
+    "WIN_rows": 23240795,
+    "sha256_sizes_CRC_OK": true,
+    "Work_M1_differences_only_1824": true,
+    "EOD_Q_daily_prices_count_quantity_equal": true,
+    "new_strategy_result": false
   }
 }

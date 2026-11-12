@@ -1,0 +1,397 @@
+[
+  {
+    "dia": "20260803",
+    "registros_total": 4175820,
+    "contratos": {
+      "WINV26": {
+        "registros": 5367,
+        "regressoes": 0,
+        "empates": 1687,
+        "primeiro": "2026-08-03 09:00:57.276",
+        "ultimo": "2026-08-03 18:31:28.834",
+        "condicoes": {
+          "5": 27,
+          "0": 5339,
+          "1": 1
+        },
+        "campo7": {
+          "I": 28,
+          "V": 2187,
+          "A": 3152
+        },
+        "soma_campo4": 16277.0,
+        "open": 182810.0,
+        "high": 183400.0,
+        "low": 181145.0,
+        "close": 182400.0
+      },
+      "WINQ26": {
+        "registros": 4170422,
+        "regressoes": 0,
+        "empates": 2673793,
+        "primeiro": "2026-08-03 09:03:04.414",
+        "ultimo": "2026-08-03 18:31:26.411",
+        "condicoes": {
+          "5": 3600,
+          "0": 2941294,
+          "2": 1225507,
+          "1": 21
+        },
+        "campo7": {
+          "I": 1229128,
+          "V": 1479516,
+          "A": 1461778
+        },
+        "soma_campo4": 14647503.0,
+        "open": 179590.0,
+        "high": 179715.0,
+        "low": 177410.0,
+        "close": 178650.0
+      },
+      "WINZ26": {
+        "registros": 31,
+        "regressoes": 0,
+        "empates": 2,
+        "primeiro": "2026-08-03 09:04:57.872",
+        "ultimo": "2026-08-03 17:34:16.779",
+        "condicoes": {
+          "0": 31
+        },
+        "campo7": {
+          "A": 13,
+          "V": 18
+        },
+        "soma_campo4": 38.0,
+        "open": 186655.0,
+        "high": 187025.0,
+        "low": 184920.0,
+        "close": 185985.0
+      }
+    },
+    "EOD_Q_comparacao": {
+      "open": true,
+      "high": true,
+      "low": true,
+      "close": true,
+      "registros": true,
+      "soma_campo4": true
+    },
+    "ultimo_ordinal": 4877747
+  },
+  {
+    "dia": "20260804",
+    "registros_total": 4851794,
+    "contratos": {
+      "WINV26": {
+        "registros": 12741,
+        "regressoes": 0,
+        "empates": 4538,
+        "primeiro": "2026-08-04 09:00:56.796",
+        "ultimo": "2026-08-04 18:31:23.070",
+        "condicoes": {
+          "5": 31,
+          "0": 12710
+        },
+        "campo7": {
+          "I": 31,
+          "V": 6363,
+          "A": 6347
+        },
+        "soma_campo4": 52547.0,
+        "open": 183025.0,
+        "high": 185670.0,
+        "low": 181775.0,
+        "close": 181955.0
+      },
+      "WINQ26": {
+        "registros": 4838964,
+        "regressoes": 0,
+        "empates": 3169406,
+        "primeiro": "2026-08-04 09:02:49.562",
+        "ultimo": "2026-08-04 18:31:26.741",
+        "condicoes": {
+          "5": 3669,
+          "0": 3501205,
+          "2": 1333861,
+          "1": 229
+        },
+        "campo7": {
+          "I": 1337759,
+          "V": 1777829,
+          "A": 1723376
+        },
+        "soma_campo4": 17380834.0,
+        "open": 179225.0,
+        "high": 181930.0,
+        "low": 178020.0,
+        "close": 178360.0
+      },
+      "WINZ26": {
+        "registros": 89,
+        "regressoes": 0,
+        "empates": 2,
+        "primeiro": "2026-08-04 09:04:02.288",
+        "ultimo": "2026-08-04 18:30:00.094",
+        "condicoes": {
+          "0": 88,
+          "5": 1
+        },
+        "campo7": {
+          "A": 37,
+          "V": 51,
+          "I": 1
+        },
+        "soma_campo4": 539.0,
+        "open": 187000.0,
+        "high": 189165.0,
+        "low": 185630.0,
+        "close": 185850.0
+      }
+    },
+    "EOD_Q_comparacao": {
+      "open": true,
+      "high": true,
+      "low": true,
+      "close": true,
+      "registros": true,
+      "soma_campo4": true
+    },
+    "ultimo_ordinal": 5687850
+  },
+  {
+    "dia": "20260805",
+    "registros_total": 4656403,
+    "contratos": {
+      "WINV26": {
+        "registros": 10025,
+        "regressoes": 0,
+        "empates": 3886,
+        "primeiro": "2026-08-05 09:00:53.324",
+        "ultimo": "2026-08-05 18:31:24.113",
+        "condicoes": {
+          "5": 40,
+          "0": 9985
+        },
+        "campo7": {
+          "I": 40,
+          "A": 4586,
+          "V": 5399
+        },
+        "soma_campo4": 25000.0,
+        "open": 182530.0,
+        "high": 184460.0,
+        "low": 181780.0,
+        "close": 181945.0
+      },
+      "WINQ26": {
+        "registros": 4646247,
+        "regressoes": 0,
+        "empates": 3020072,
+        "primeiro": "2026-08-05 09:03:05.025",
+        "ultimo": "2026-08-05 18:31:15.883",
+        "condicoes": {
+          "5": 3337,
+          "0": 3341314,
+          "2": 1301571,
+          "1": 25
+        },
+        "campo7": {
+          "I": 1304933,
+          "V": 1682994,
+          "A": 1658320
+        },
+        "soma_campo4": 16153247.0,
+        "open": 178990.0,
+        "high": 180720.0,
+        "low": 178030.0,
+        "close": 178230.0
+      },
+      "WINZ26": {
+        "registros": 131,
+        "regressoes": 0,
+        "empates": 11,
+        "primeiro": "2026-08-05 09:04:09.569",
+        "ultimo": "2026-08-05 18:15:43.941",
+        "condicoes": {
+          "0": 131
+        },
+        "campo7": {
+          "A": 60,
+          "V": 71
+        },
+        "soma_campo4": 357.0,
+        "open": 186800.0,
+        "high": 188000.0,
+        "low": 185500.0,
+        "close": 185500.0
+      }
+    },
+    "EOD_Q_comparacao": {
+      "open": true,
+      "high": true,
+      "low": true,
+      "close": true,
+      "registros": true,
+      "soma_campo4": true
+    },
+    "ultimo_ordinal": 5415003
+  },
+  {
+    "dia": "20260806",
+    "registros_total": 4848888,
+    "contratos": {
+      "WINV26": {
+        "registros": 18151,
+        "regressoes": 0,
+        "empates": 6678,
+        "primeiro": "2026-08-06 09:00:48.371",
+        "ultimo": "2026-08-06 18:31:28.941",
+        "condicoes": {
+          "5": 15,
+          "0": 18136
+        },
+        "campo7": {
+          "I": 15,
+          "V": 9124,
+          "A": 9012
+        },
+        "soma_campo4": 45919.0,
+        "open": 182170.0,
+        "high": 182400.0,
+        "low": 179215.0,
+        "close": 179450.0
+      },
+      "WINZ26": {
+        "registros": 186,
+        "regressoes": 0,
+        "empates": 9,
+        "primeiro": "2026-08-06 09:01:08.110",
+        "ultimo": "2026-08-06 18:14:28.555",
+        "condicoes": {
+          "0": 186
+        },
+        "campo7": {
+          "A": 142,
+          "V": 44
+        },
+        "soma_campo4": 251.0,
+        "open": 184370.0,
+        "high": 186295.0,
+        "low": 183000.0,
+        "close": 183065.0
+      },
+      "WINQ26": {
+        "registros": 4830551,
+        "regressoes": 0,
+        "empates": 3192162,
+        "primeiro": "2026-08-06 09:02:48.291",
+        "ultimo": "2026-08-06 18:31:25.366",
+        "condicoes": {
+          "5": 3739,
+          "0": 3524963,
+          "2": 1301823,
+          "1": 26
+        },
+        "campo7": {
+          "I": 1305588,
+          "A": 1747551,
+          "V": 1777412
+        },
+        "soma_campo4": 16389051.0,
+        "open": 178400.0,
+        "high": 178435.0,
+        "low": 175550.0,
+        "close": 175825.0
+      }
+    },
+    "EOD_Q_comparacao": {
+      "open": true,
+      "high": true,
+      "low": true,
+      "close": true,
+      "registros": true,
+      "soma_campo4": true
+    },
+    "ultimo_ordinal": 5531301
+  },
+  {
+    "dia": "20260807",
+    "registros_total": 4707890,
+    "contratos": {
+      "WINZ26": {
+        "registros": 135,
+        "regressoes": 0,
+        "empates": 20,
+        "primeiro": "2026-08-07 09:00:40.032",
+        "ultimo": "2026-08-07 18:31:00.006",
+        "condicoes": {
+          "5": 4,
+          "0": 131
+        },
+        "campo7": {
+          "I": 4,
+          "A": 54,
+          "V": 77
+        },
+        "soma_campo4": 500.0,
+        "open": 183550.0,
+        "high": 184000.0,
+        "low": 179480.0,
+        "close": 179850.0
+      },
+      "WINV26": {
+        "registros": 43590,
+        "regressoes": 0,
+        "empates": 17883,
+        "primeiro": "2026-08-07 09:00:47.120",
+        "ultimo": "2026-08-07 18:31:17.105",
+        "condicoes": {
+          "5": 37,
+          "0": 43553
+        },
+        "campo7": {
+          "I": 37,
+          "V": 20683,
+          "A": 22870
+        },
+        "soma_campo4": 98800.0,
+        "open": 180070.0,
+        "high": 180485.0,
+        "low": 175855.0,
+        "close": 176195.0
+      },
+      "WINQ26": {
+        "registros": 4664165,
+        "regressoes": 0,
+        "empates": 3104574,
+        "primeiro": "2026-08-07 09:03:08.135",
+        "ultimo": "2026-08-07 18:31:25.216",
+        "condicoes": {
+          "5": 3584,
+          "0": 3441454,
+          "2": 1219045,
+          "1": 82
+        },
+        "campo7": {
+          "I": 1222711,
+          "V": 1770717,
+          "A": 1670737
+        },
+        "soma_campo4": 16624040.0,
+        "open": 176420.0,
+        "high": 176825.0,
+        "low": 172275.0,
+        "close": 172670.0
+      }
+    },
+    "EOD_Q_comparacao": {
+      "open": true,
+      "high": true,
+      "low": true,
+      "close": true,
+      "registros": true,
+      "soma_campo4": true
+    },
+    "ultimo_ordinal": 5407923
+  }
+]
