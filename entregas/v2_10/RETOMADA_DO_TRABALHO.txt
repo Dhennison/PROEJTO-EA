@@ -9,6 +9,8 @@ Diario recebido: reconstrucao R38/R61 progride e avisos cessam apos 15:14; dados
 
 RETORNO XP ATE 16:29 — apos maximizar e trocar M5 para M15, falhas visuais cessam no trecho; indicador ajuste Status OK, 173849. EA reinicia com diario validado/estado preservado/revision 201. Nova reconstrucao R38/R61 progride, ainda pendente no fim. Coleta geral conferida ate 16:28. Nao tratar recuperacao visual como prova de causa interna ou de execucao de ordens. Detalhes no diagnostico XP acima.
 
+XP — RECORRENCIA 16:33–16:35: recuperacao visual anterior foi temporaria. Erro relatado 4102 (grafico nao responde); WINZ26 no mesmo terminal segue atualizando segundo usuario. Nao atribuir causa B3/corretora ou assegurar efeito apenas estetico. Proximo isolamento proposto: trocar simbolo do mesmo grafico hospedeiro WIN$N para WINZ26, mantendo Instancia/parametros e sem duplicar EA. Codigo aceita contrato real; persistencia por conta/servidor/Instancia. Sem alteracao de codigo/ordens pelo assistente.
+
 COMO USAR ESTE REGISTRO
 Este é o arquivo principal para retomada. Atualizar a seção atual a cada etapa, com evidências, arquivos, conclusão, pendências e próximo passo. Só marcar publicação no GitHub depois do push confirmado. Não tratar uma preparação como execução, mocks como compilação MetaEditor ou pontos condicionais como resultado financeiro real.
 A seção histórica ao final é preservada como histórico: instruções antigas e antigos estados pendentes não substituem o estado mais recente no início.

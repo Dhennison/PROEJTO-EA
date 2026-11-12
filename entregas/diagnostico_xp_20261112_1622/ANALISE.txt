@@ -56,3 +56,21 @@ causa interna do travamento ainda nao provada. Nao houve mudanca de codigo
 nem comando de ordens pelo assistente. Diario nao comprova preenchimentos.
 Orientacao: manter grafico atual e aguardar reconstrucoes, evitando alternar
 periodo repetidamente. Nao precisa interromper extrator Cedro.
+
+RECORRENCIA — USUARIO AS 16:35
+Usuario relata nova falha em WIN$N/M15, indicador ajuste sem autorizacao por
+conferencia de objeto, e FALHA_VISUAL_MODELO_D: S382; erro=4102 as 16:33:35.289.
+4102 e ERR_CHART_NO_REPLY, grafico nao responde. Codigo nao reseta GetLastError
+imediatamente antes de cada operacao visual; mensagem isolada nao identifica
+qual chamada original falhou. Chart getters/confirmacoes sao sincronos; falha
+pode atrasar ciclo do EA, nao classificar como puramente estetica.
+Captura mostra WINZ26/M5 no mesmo terminal e usuario relata funcionando;
+Genial tambem normal. Nao ha prova de indisponibilidade B3/feed global nem
+causa raiz WIN$N versus programa grafico/terminal. Recuperacao anterior temporaria.
+Conferido no EA v2.13.05: aceita grafico WIN$N ou contrato WIN real, inclusive
+WINZ26; persistencia/lock por conta, servidor, Instancia (nao simbolo/periodo);
+entrada exige grafico WIN$N ou o contrato do dia. Plano de isolamento: trocar
+simbolo do MESMO grafico hospedeiro para WINZ26, mantendo Instancia/parametros,
+sem anexar segunda copia do EA. Reinicializa trilhas em memoria; validar
+DIARIO_REABERTO_VALIDADO/ESTADO_PRESERVADO e eventual recorrencia. Nao e
+correcao definitiva nem altera regras Modelo D. Nenhuma acao remota executada.
