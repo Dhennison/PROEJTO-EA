@@ -68,7 +68,7 @@
     "regra_apresentacao": "Mostrar primeiro Work, nosso resultado principal e diferenca. Outros cenarios apenas na parte tecnica.",
     "pacote_preparado": "entregas/fechamento_agosto_v1_11",
     "zip": "entregas/ModeloD_Fechamento_Agosto_v1_11.zip",
-    "status": "PARCIAL_14_DATAS_PRESERVADAS_ROTA_XP_SUSPENSA",
+    "status": "PAUSADO_PARA_AVALIACAO_OUTRA_IA",
     "validacao_local": "28 controles do coletor com mocks C++; pipeline sintetico 20 dias/1140 blocos; 400 estados por busca independente; 400 controles de reducao; nao e execucao MT5",
     "deals_agosto": "Nao medidos. Controle separado; nao substitui nem bloqueia o resultado principal por sequencia de negocios.",
     "retorno_nativo": "entregas/fechamento_agosto_v1_11/retorno_nativo_20261111",
@@ -97,7 +97,9 @@
       "2026-08-03"
     ],
     "XP_route": "SUSPENSA_NAO_EXECUTAR_NOVA_COLETA",
-    "novo_pacote_executavel": null
+    "novo_pacote_executavel": null,
+    "novo_metodo_WINN_sem_Tester": "PROPOSTO_NAO_EXECUTADO_POR_PEDIDO_EXPRESSO_DO_USUARIO",
+    "handoff_txt": "entregas/atualizacao_outra_ia_20261111/ATUALIZACAO_MODELO_D_AGOSTO_CONTRATOS_ALTERNATIVAS.txt"
   },
   "meses": [
     {
@@ -918,6 +920,6 @@
     "entregar_dois_pdfs_juntos_no_final": true,
     "nao_reenviar_resultados_ou_pdfs_a_cada_etapa": true,
     "atualizar_internamente": true,
-    "trabalho_ativo": "Agosto parcial:14dias auditados e preservados; acesso a7datas pendente. XPsemcontratos segundo usuario,rota suspensa. Nao repetir coleta nem fechar mes/DDsem dados."
+    "trabalho_ativo": "PAUSADO: aguardar outraIA; TXTconsolidado pronto. Nao iniciar replayWIN$Nnem Tester ou nova coletaXP. Preservar14dias e setembro."
   }
 }

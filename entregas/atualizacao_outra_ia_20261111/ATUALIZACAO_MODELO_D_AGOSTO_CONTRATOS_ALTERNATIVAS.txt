@@ -1,0 +1,349 @@
+MODELO D — ATUALIZAÇÃO PARA ANÁLISE DA OUTRA IA
+AGOSTO/2026, CONTRATOS VENCIDOS E ALTERNATIVAS DE VALIDAÇÃO
+Atualização: 11/11/2026, horário de Brasília.
+
+FINALIDADE E SITUAÇÃO ATUAL
+
+O usuário pediu PAUSA na implementação/execução de novos testes para discutir alternativas com outra IA. Este documento reúne o contexto, os resultados disponíveis, as dificuldades e as propostas. Nenhuma nova alternativa descrita abaixo deve ser entendida como já executada ou aprovada.
+
+A ideia mais recente do usuário é continuar usando WIN$N, SEM o Testador de Estratégia do MT5, de maneira semelhante à coleta/análise que vínhamos fazendo. Ele quer saber se essa rota permite avançar sem depender dos contratos vencidos. O assistente propôs um replay direto dos candles M1 do WIN$N, mas o usuário pediu para ainda não fazê-lo e primeiro levar toda a situação à outra IA.
+
+Não foi executado um novo replay de agosto pelo WIN$N sem Tester, nem produzido resultado mensal sob esse novo critério. Também não foi executada uma nova rodada de agosto no Tester. Os números existentes estão discriminados a seguir.
+
+======================================================================
+1. OBJETIVO DO PROJETO E PREFERÊNCIAS DO USUÁRIO
+======================================================================
+
+Validar a implementação do Modelo D e comparar seus resultados com o Work, mantendo suas regras, separando diferenças de dados, granularidade, convenção intrabar, grade de preços e execução.
+
+O usuário quer um resultado principal claramente identificado para comparar com o Work, sem vários totais apresentados como equivalentes. O critério que vinha sendo usado na reconstrução por negócios era: um contrato por nível, preços na grade de cinco pontos e entrada por toque inclusivo. Os pontos são brutos/condicionais nos níveis, sem fila, custos ou preenchimento garantido.
+
+O usuário não quer repetições improdutivas, um teste por operação ou exigências posteriores de novos testes de “preenchimento real” para cada resultado. A fila/preenchimento efetivamente ocorrido na bolsa no passado não pode ser comprovado apenas por Last, OHLC ou simulação.
+
+Ao final, quer DOIS PDFs:
+- Técnico, com observações, limitações, controles e rastreabilidade.
+- Enxuto, no estilo do PDF do Work enviado, somente Modelo D, com Work e nosso resultado diário lado a lado, mês a mês, e acompanhamento de drawdown.
+
+A coleta estava andando de trás para frente: setembro, depois agosto e assim por diante. O DD deve sempre ser recalculado em ordem cronológica crescente. A entrada de meses anteriores pode alterar saldos acumulados, picos e DD dos posteriores, mas não seus resultados diários/mensais já apurados sob o mesmo critério.
+
+DD principal: curva de fechamentos diários, saldo/pico carregados entre meses, sem reiniciar a cada mês. Não é DD intradiário. Meses/dias pendentes não viram zero. Work e teste precisam usar uma base comparável. Resultados obtidos por critérios diferentes não devem ser misturados silenciosamente na mesma curva.
+
+Os dois PDFs continuam sendo atualizados/guardados internamente para entrega conjunta no final. O usuário pediu para não receber um PDF ou vários resultados a cada etapa.
+
+======================================================================
+2. O WORK E O HISTÓRICO DISPONÍVEL
+======================================================================
+
+A referência original do Modelo D contém 877 datas elegíveis, de março/2023 a 21/09/2026, e 1.877 operações. O total teórico original é +124.337,758661 pontos. Isso é referência retrospectiva por candles, não lucro de execução homologado.
+
+A maior parte do Work utilizou M5:
+- 2023 a fevereiro/2026: M5.
+- Março a setembro/2026: M1.
+
+A fonte de 2023 veio de exportação anterior do próprio WIN$N do MT5. A fonte independente do Profit cobre 2024 a setembro/2026. Portanto, igualdade de 2023 entre Work e MT5 não é conferência independente entre plataformas.
+
+Já foi obtido um histórico M1 longo do WIN$N, com 497.028 barras no conjunto exportado. O histórico se tornou acessível após corrigir o limite de barras do terminal e repetir janelas que antes falhavam. Não era correto concluir ausência no servidor apenas por aquelas falhas iniciais.
+
+Na comparação com os candles originais do Work, respeitando o timeframe de cada trecho, foram confrontadas 162.334 barras, com apenas três divergências de preço, todas após as 18h. Os quatro preços que alimentam os níveis — abertura atual e H/L/C anterior — coincidiram nas 877 datas auditadas.
+
+Isso valida os insumos observados, mas uma barra M5 igual não comprova cada M1 interno nem a ordem dos negócios. Há 19 saltos intradiários documentados no histórico, incluindo lacunas grandes em alguns dias de 2025. O histórico não deve ser chamado de M1 universalmente contínuo/completo.
+
+Em agosto/2026 já temos a exportação M1 do WIN$N: M1_202608.csv, 11.828 barras em 21 datas, de 03/08 a 31/08. Também temos M1_202607.csv, inclusive o pregão de 31/07 para contexto. Não seria necessário pedir nova coleta desses candles apenas para iniciar um replay local.
+
+Exposição à convenção de candle no Work original:
+- M5: 1.580 operações; 989 ALVOS creditados na mesma barra de entrada, 47 STOPS na mesma barra e 544 encerramentos em barras posteriores.
+- M1: 297 operações; 105 ALVOS e nove STOPS na mesma barra; 112 ALVOS, 66 STOPS e cinco cortes em barras posteriores.
+- Total: 1.094 ALVOS na barra da entrada. Esse número NÃO significa todos os encerramentos na barra da entrada.
+
+A convenção original testa saída na própria barra da entrada e usa STOP FIRST quando SL e TP estão presentes nessa barra. Mesmo sem SL e TP simultâneos, pode haver incerteza sobre um alvo que ocorreu antes do toque de entrada. “Abriu além do alvo” não determina sozinho que o ganho seja impossível: pode haver um retorno posterior ao alvo. Não adotamos uma regra universal de forçar STOP ou retirar ALVO por essa condição.
+
+======================================================================
+3. REGRAS DO MODELO D QUE DEVEM SER PRESERVADAS
+======================================================================
+
+Com O = abertura atual, H/L/C = máxima/mínima/fechamento do pregão anterior e A = ajuste histórico da referência:
+PP = (H + L + C) / 3
+R200 = O + 2 * abs(L - PP)
+S200 = O - 2 * abs(H - PP)
+R(p) = A + (R200 - A) * p
+S(p) = A + (S200 - A) * p
+
+Cinco entradas independentes, no máximo uma operação por nível/dia:
+- S38,2: compra; SL 375 pontos abaixo da linha; TP no meio de S38,2 e S23,6.
+- S50: compra; SL 375 abaixo; TP em S38,2.
+- S61,8: compra; SL 650 abaixo; TP em S50.
+- R38,2: venda; SL 375 acima; TP em R23,6.
+- R61,8: venda; SL 450 acima; TP no meio de R61,8 e R50.
+
+Filtro de abertura matemático: compra se O >= entrada; venda se O <= entrada. Igualdade é válida. Ajuste <= S200 bloqueia compras; ajuste >= R200 bloqueia vendas.
+
+Quando usada grade5, entrada, SL e TP são normalizados separadamente ao múltiplo de cinco mais próximo, empate para cima. SL/TP ficam ancorados na linha teórica, sem deslocamento por eventual preço efetivo de execução.
+
+Corte: 18h, exceto o trecho histórico de 13/03 a 03/11/2023, inclusive, com 17h45. A abertura real da sessão e o último pregão anterior precisam ser respeitados; não se deve invalidar uma sessão apenas por não começar às 09h.
+
+O ajuste usado nos estudos históricos é o fornecido/auditado do Work. Não é o ajuste atual do terminal nem uma certificação de fonte B3 live para cada contrato.
+
+======================================================================
+4. O QUE JÁ OCORREU NO TESTER E NOS DIAGNÓSTICOS
+======================================================================
+
+Foram observadas diferenças entre três coisas:
+1) candles/histórico consultado;
+2) negócios reais consultados por CopyTicksRange no terminal;
+3) eventos e execuções produzidos pelo Tester.
+
+Em contratos nativos, o terminal devolveu negócios reais enquanto o Tester descartava ticks por divergências com barras, ou os considerava ausentes e gerava uma trajetória substituta. Disponibilidade por CopyTicksRange não prova reprodução fiel por OnTick no Tester.
+
+Um piloto com símbolo personalizado, alimentado com CSV real de 29/10, conseguiu reproduzir o dia, mas também revelou transformação de flags/cotações dentro do Tester e divergências em consultas de histórico. O CSV tinha 204.027 registros ALL, 128.669 negócios e 75.358 cotações. A importação personalizada não se tornou uma solução universal de fidelidade e não restaura ticks que não foram obtidos.
+
+WIN$N foi aceito para negociação simulada no Tester. O problema de conversão BRL/USD foi contornado usando o MT5 secundário da Genial configurado em BRL por INI. O usuário NÃO tem opção BRL disponível na lista normal do Tester; não voltar a pedir essa seleção manual.
+
+No WIN$N, a consulta direta já feita para 21/09/2026, 09:00–09:10, voltou estável com ALL=0, TRADE=0 e INFO=0, erro zero. O Tester informou ticks desse símbolo começando em 06/11/2026 e utilizou geração a partir das barras para a janela histórica testada.
+
+Precisão importante: não executamos consultas diretas WIN$N em TODAS as datas de agosto. A experiência acima sustenta uma limitação nas consultas feitas; não é prova universal de inexistência de ticks em qualquer data/servidor desse símbolo. WIN$N ter M1 antigo não garante que ofereça negócios antigos pela API de ticks.
+
+======================================================================
+5. SETEMBRO — RESULTADO PRESERVADO E CENÁRIOS DIFERENTES
+======================================================================
+
+Base: 01/09 a 21/09/2026, 14 pregões e 33 operações.
+
+COMPARAÇÃO PRINCIPAL JÁ FECHADA SOBRE OS NEGÓCIOS RECEBIDOS:
+Work: +3.839,308998 pontos.
+Nosso resultado principal, grade5/toque: +1.380 pontos.
+Diferença: -2.459,308998 pontos.
+
+Esse resultado foi calculado varrendo todos os dias e os cinco níveis, não apenas trocando seis desfechos divergentes. É condicional aos níveis e à alimentação recebida, sem garantia de fila/custos/preenchimento real.
+
+Controles técnicos, que NÃO devem ser confundidos com o principal:
+- Níveis matemáticos por negócios: +720,536666.
+- Grade5 com entrada estrita: +730; é sensibilidade ao toque, não simulação comprovada de fila.
+- Deals do Tester WIN$N com ticks gerados: +1.070.
+- Deals do Tester WIN$N em 1 minuto OHLC: +565.
+- Replay por candles na grade5, pela convenção do Work: +4.490.
+
+Nenhum desses totais prova sozinho qual seria o resultado efetivamente negociado. Work/replay não são limites superiores demonstrados; os cenários do Tester dependem da trajetória gerada.
+
+O principal de +1.380 e seu PDF estão preservados. Se mudarmos o método para meses antigos, precisamos identificar a nova série e decidir como compará-la, sem substituir esse resultado silenciosamente nem somar DD de critérios diferentes.
+
+======================================================================
+6. AGOSTO — PRIMEIRA TENTATIVA v1.10
+======================================================================
+
+O recorte original do Work tem 20 datas, de 04/08 a 31/08, 43 operações e -387,164995 pontos.
+
+Duas operações do Work terminam por horário:
+- 06/08 S61,8: entrada 13h50; corte 18h; -531,800000.
+- 25/08 R61,8: entrada 16h26; corte 18h; -144,824000.
+Há ambiguidade original em 18/08 S38,2, preservada como STOP no Work.
+
+O coletor v1.10 compilou sem erros/avisos, mas terminou com 20 dias pendentes e ZERO blocos de ticks. Ao falhar SymbolSelect(WINQ26), o código nem tentava CopyRates. Além disso, um candidato não verificável bloqueava o dia mesmo quando o outro tinha M1 igual ao Work.
+
+WINV26 M1 coincidiu com o Work de 12/08 em diante e divergiu de 04/08 a 11/08. Não é válido usar WINV26 nos dias divergentes para contornar falta de WINQ26, nem presumir que uma diferença constante de preços resolveria.
+
+======================================================================
+7. AGOSTO — REVISÃO v1.11 E RETORNO RECEBIDO
+======================================================================
+
+A revisão corrigiu o bloqueio do programa:
+- Tenta CopyRates diretamente mesmo se SymbolSelect falhar.
+- Procura nomes nativos com prefixos WINQ26/WINV26 e sufixos no catálogo.
+- Permite coletar um candidato com M1 integral igual ao Work quando outro não é verificável, com ressalva explícita; isso não prova unicidade.
+- Recusa nenhum correspondente ou mais de um correspondente; não escolhe pelo lucro.
+- Também tenta os ticks sem depender apenas do sucesso de SymbolSelect.
+- Inclui 03/08 como complemento, com contexto de 31/07, sem inventar Work=0.
+
+Compilação v1.11 informada pelo usuário: zero erros, zero avisos, 1.046 ms.
+
+Retorno: MES111_1794437149_1060160656.
+GenialInvestimentos-PRD, build 6231.
+Execução de 11/11/2026, 22:45:50 a 23:17:59.
+Recebidos 22 ZIPs (GERAL + 21 datas) e o log completo. Reunião: 58 arquivos únicos, sem conflitos. Hashes das referências e do M1 Work conferidos.
+
+Final:
+21 datas processadas; 798 blocos;
+zero blocos de ticks pendentes; sete DIAS pendentes por contrato;
+io_failed=false.
+797 blocos tiveram duas leituras idênticas; um precisou de três leituras.
+39.738.970 registros ALL e 31.924.356 negócios observados.
+
+14 PREGÕES COLETADOS E PRESERVADOS:
+12, 13, 14, 17, 18, 19, 20, 21, 24, 25, 26, 27, 28 e 31/08.
+Foram varridos 70 estados data/nível em quatro variantes. Busca cronológica independente confirmou os 280 estados.
+Na principal, 30 operações encerradas, mesmas 30 chaves do Work, sem extras/ausentes. Dias 12, 17 e 26 foram conferidos com dados e zero operações, não tratados como ausentes.
+
+PARCIAL COMPARÁVEL — APENAS ESSES 14 DIAS:
+Work: +1.259,981338.
+Nosso grade5/toque pela sequência recebida: -620,000000.
+Diferença: -1.879,981338.
+17 alvos, 12 stops e um corte.
+
+ATENÇÃO: -620 NÃO É O RESULTADO DO MÊS DE AGOSTO.
+Não comparar -620 com -387,164995, pois esse último é o Work das 20 datas. O resultado mensal nosso continua NÃO APURADO. A parcial não entrou no índice de meses fechados nem no DD.
+
+Três trocas de ALVO do Work para STOP na sequência recebida:
+- 13/08 R38,2.
+- 14/08 S38,2.
+- 31/08 R38,2.
+
+25/08 R61,8 fechou no primeiro negócio observado às 18:00:00.012, Last 177575. Na grade5, -145 pontos; Work -144,824. Esse é corte de cenário de preço, NÃO prova de OrderClose real do EA na bolsa.
+
+Qualidade de alimentação nesses 14 dias:
+- 7.891 minutos com negócios, mesmos horários da referência.
+- 7.871 OHLC iguais, 20 diferentes.
+- 7.837 quantidades iguais, 54 diferentes.
+- Uma divergência de preço dentro de posição: 25/08, 15:14, R38,2. Máxima dos negócios 176605 contra 176610 no Work; ambas abaixo do stop 176785. Mínima 176530, acima do alvo 175775. Essa diferença não atravessa os limiares dessa posição naquela barra.
+- Nesse minuto, quantidade 17757 contra 24883, diferença de 7126 contratos. A ressalva permanece; não foram inventados negócios para fechar volume.
+
+Estabilidade local, igualdade parcial de OHLC e concordância de desfechos não certificam a completude absoluta da fita. Não estamos chamando esses dados de reprodução perfeita de todos os negócios da bolsa.
+
+FALTAM SEIS DATAS DO WORK:
+04, 05, 06, 07, 10 e 11/08, com 13 operações na referência.
+Falta também 03/08 complementar, que não consta do resultado original do Work.
+Os 14 dias já obtidos NÃO precisam ser coletados novamente.
+
+======================================================================
+8. CONTRATOS VENCIDOS: O BLOQUEIO ATUAL
+======================================================================
+
+Na Genial, o inventário encontrou 73.536 símbolos, mas WINQ26 retornou:
+exists=0; select_ok=0; select_error=4305; metadata_error=4301.
+A tentativa direta de leitura também falhou com 4301, símbolo desconhecido.
+
+O coletor não encontrou variante com os prefixos WINQ26/WINV26 buscados. Isso não equivale a uma investigação universal de qualquer nomenclatura possível do servidor.
+
+WINV26 estava disponível e correspondeu ao M1 do Work de 12/08 em diante. Antes disso, seu M1 diverge. Essa mudança de correspondência observada é compatível com uma transição de contrato da série, mas o teste não certifica por si uma regra oficial de rolagem.
+
+O assistente estava preparando uma coleta apenas das sete datas pendentes na XP, em gráfico novo e sem tocar o EA DEMO. O usuário informou que tentou adicionar tanto WINV26 quanto WINQ26 na XP e não conseguiu. A rota foi SUSPENSA antes da entrega/execução nativa; o rascunho foi arquivado como NÃO EXECUTAR.
+
+Relato/avaliação do usuário: as corretoras em geral mantêm poucas letras vencidas, normalmente uma, no máximo duas; se não temos WINQ26, é provável que os contratos ainda mais antigos também não estejam acessíveis. Ao recuar para julho, junho e anos anteriores, a estratégia de coletar vencimentos antigos tende a bloquear repetidamente.
+
+Essa é uma preocupação prática fundada nas tentativas atuais, NÃO uma política universal verificada de todas as corretoras, servidores e datas. Tampouco prova inexistência dos dados na B3 ou uma falha geral do MT5.
+
+A decisão atual é não insistir em novas rodadas idênticas na Genial/XP sem evidência de uma fonte disponível. A DEMO da XP não foi alterada.
+
+======================================================================
+9. RETIFICAÇÃO IMPORTANTE — 31/07 E CONTEXTO DE 03/08
+======================================================================
+
+O assistente interpretou inicialmente que 31/07 estava incompleto porque os dados começavam às 12h34. Essa conclusão foi ERRADA e foi retirada.
+
+O usuário esclareceu que o índice abriu realmente às 12h34 em 31/07/2026 e mostrou o gráfico do Profit. Portanto, não havia que esperar barras antes da abertura real.
+
+O CSV Profit utilizado pelo Work é:
+WINFUT_F_0_1min_01-01-2026_22-09-2026.csv.
+O trecho de 31/07 contém 351 M1, das 12:34 às 18:24.
+A exportação do MT5 M1_202607.csv tem os mesmos horários e OHLC.
+
+OHLC agregado de 31/07:
+Abertura 177470; máxima 179495; mínima 176985; fechamento 178725.
+A máxima do primeiro M1 (177830) não é a máxima do pregão inteiro.
+
+Na v1.11 também consultamos o D1 do WIN$N. O D1 retornou exatamente esse OHLC, igual ao agregado dos 351 M1. Seu timestamp 00:00 identifica a barra diária; não significa abertura da negociação à meia-noite.
+
+Assim, H/L/C 179495/176985/178725 é contexto válido de 03/08. A pendência de 03/08 agora é acesso ao contrato/ticks, NÃO falta desse contexto.
+
+Para 03/08: abertura 179590; ajuste histórico da fonte Work 178845.
+Para 04/08, o contexto anterior é 03/08: H 179715, L 177410, C 178650; abertura atual 179225; ajuste 178561.
+
+Os contextos já eram carregados por data, sem reiniciar no começo do mês. O anterior deve ser o último pregão negociado anterior, não o último dia civil nem o último dia elegível do backtest. Um pregão excluído de operações ainda pode fornecer contexto completo ao seguinte.
+
+31/07 e 03/08 não constam da seleção elegível original do Work recebido. Isso é fato do recorte, não prova de invalidade desses pregões. O motivo original específico dessas exclusões não foi comprovado detalhadamente pelas abas auxiliares disponíveis. Não se deve manter a justificativa incorreta do assistente como se fosse uma explicação original demonstrada.
+
+03/08 foi incluído na coleta como complemento. Se for integrado a um novo resultado principal, será necessário identificar o escopo ampliado e construir uma referência comparável à parte; não atribuir zero ao Work original nem alterar silenciosamente sua curva.
+
+======================================================================
+10. A IDEIA DO USUÁRIO: WIN$N DIRETO, SEM TESTER
+======================================================================
+
+Pergunta do usuário: “Não tem como fazer do mesmo jeito que estamos fazendo, sem ser pelo tester e usando o WIN$N?”
+
+A sugestão deve ser examinada em dois sentidos distintos:
+
+A) Consultar NEGÓCIOS históricos do WIN$N por CopyTicksRange no terminal, sem o Tester.
+Isso preservaria a abordagem de reconstrução cronológica por negócios, SE o servidor realmente devolvesse ticks no período. A consulta já feita em 21/09 voltou vazia. Não devemos prometer que WIN$N fornece ticks de 2023–2026 apenas por ter candles M1 desse período. Também não foi feita uma varredura de ticks WIN$N de todas as datas de agosto.
+
+B) Ler os CANDLES M1 do WIN$N por CopyRates/exportação e executar o Modelo D sobre os candles, fora do Tester.
+Isso é tecnicamente possível com os arquivos já obtidos. Pode ser feito em Python ou por um programa de replay, sem ordens e sem terminal gerar ticks fictícios. Seria próximo à metodologia do Work, respeitando os M1 disponíveis, com possibilidade de grade5 e convenção intrabar explicitamente fixada.
+
+O assistente propôs B e estava se preparando para calcular agosto usando os arquivos M1 já existentes. O usuário pediu para AINDA NÃO FAZER e ouvir primeiro a outra IA.
+
+B não recupera a ordem dos negócios dentro de cada candle. Portanto, não seria equivalente à sequência real usada na auditoria de setembro e nos 14 dias de agosto. O método precisa ter outro rótulo, e as ambiguidades não podem desaparecer por mudança de programa.
+
+======================================================================
+11. ALTERNATIVAS PARA A OUTRA IA AVALIAR
+======================================================================
+
+ALTERNATIVA 1 — FONTE HISTÓRICA DE NEGÓCIOS FORA DOS CONTRATOS ACESSÍVEIS NO MT5 ATUAL
+Verificar se o Profit, arquivos já exportados, backups existentes, outro servidor com acesso comprovado ou um provedor de dados fornece negócios históricos dos vencimentos necessários. Não está comprovado que a licença do usuário tenha exportação histórica de Times & Trades, nem que a cobertura alcance todo o Work. Não assumir disponibilidade ou gratuidade.
+Se houver fonte, analisar os arquivos diretamente, sem precisar importar no Tester. Validar instrumento/contrato, fuso/horário do servidor, milissegundos e ordem de registros empatados, Last, quantidade e correspondência dos OHLC por minuto com o Work/WIN$N. Série contínua e contrato físico precisam ser compatibilizados por evidência, não por deslocamento arbitrário.
+Vantagem: pode recuperar cronologia observada. Limite: negócios ainda não provam a fila/preenchimento da nossa ordem hipotética.
+
+ALTERNATIVA 2 — REPLAY M1 DO WIN$N FORA DO TESTER, PELA CONVENÇÃO DO WORK
+Usar os candles já exportados, os contextos e ajustes auditados; calcular todos os níveis/dias sem consultar desfechos futuros do Work para decidir. Fixar antes a convenção: primeiro toque por candle, testar a saída na barra da entrada e STOP FIRST se SL/TP coexistirem, se for mantida a convenção original.
+Distinguir preços matemáticos de grade5. Manter um principal escolhido antes dos resultados e os demais como controles.
+Vantagem: cobre o histórico disponível sem contratos vencidos nem nova coleta. Limite: conserva a hipótese intrabar do Work, inclusive possíveis alvos anteriores à entrada. Não é uma nova confirmação independente da realidade só por ser implementado fora do Tester.
+No trecho original M5, migrar para M1 também muda granularidade. É preciso medir essa diferença separadamente.
+
+ALTERNATIVA 3 — AUDITORIA M1 COM DESFECHOS DETERMINÁVEIS E AMBIGUIDADES EXPLÍCITAS
+Usar os mesmos M1 e identificar quais resultados decorrem da informação observável e quais dependem da ordem intrabar. Exemplos merecem prova caso a caso: entrada e alvo na mesma barra; SL e TP coexistentes; abertura além do alvo; lacunas; corte; abertura tardia real.
+Pode-se manter um cenário convencional separado e quantificar a exposição às ambiguidades. Não inventar um resultado único “real” para os casos sem cronologia.
+Se usar O-H-L-C e O-L-H-C como caminhos de controle, chamá-los de cenários, não de limites inferior/superior garantidos. OHLC admite outras sequências, retornos e saltos.
+Pedir à outra IA uma proposta rigorosa que seja útil, executável e não transforme toda a análise em novas consultas sem cobertura.
+
+ALTERNATIVA 4 — TESTER DO WIN$N COM MODELAGEM GERADA, ASSUMIDA COMO SIMULAÇÃO
+Há prova de que o WIN$N aceita ordens limit/SL/TP no Tester secundário da Genial em BRL. Poderíamos executar agosto e demais meses sobre M1, com uma modelagem congelada, sem alegar ticks reais.
+O assistente chegou a propor “Cada tick” gerado de M1 como perfil único. O usuário preferiu discutir a opção SEM Tester; não foi preparado/executado um novo pacote de agosto dessa rodada.
+Vantagem: mede o transporte e os deals da simulação. Limite: trajetória intrabar, spread e regras do simulador influenciam os resultados. Setembro já mostrou grande sensibilidade entre modelos. Não escolher a modelagem pelo maior lucro.
+
+ALTERNATIVA 5 — CONTROLES RECENTES/DEMO E AMOSTRAS COM TICKS, SEM PROMETER RECUPERAR TODO O PASSADO
+Preservar setembro e os 14 dias de agosto com negócios como amostras de controle e continuar acompanhando o EA DEMO em tempo corrente. Isso ajuda a verificar execução/gestão reais de agora e a exposição das convenções, mas não reconstrói os meses sem dados.
+Não generalizar que o Tester ou o Work “acerta mais” em todo o histórico com base apenas em casos selecionados por divergência.
+
+ALTERNATIVA 6 — ACTIVTRADES, SEPARADAMENTE E COM ESPECIFICAÇÃO CONFIRMADA
+O usuário também deseja avaliar ActivTrades. A pesquisa apresentada por ele cita BRA50/BRA50-futuro, possivelmente CFD baseado em futuro/índice; ainda não foram confirmados no terminal o símbolo exato, servidor, natureza jurídica do produto, unidade de ponto, sessões, fuso e cobertura.
+Se for CFD, seus preços/ticks não são automaticamente os negócios do WIN na B3 nem substituem WINQ26 para resolver a cronologia do Work. Pode servir a um experimento separado da lógica, desde que as diferenças sejam tratadas. Não concluir que um problema semelhante em CFD prova falha da B3 ou do MT5.
+
+O símbolo personalizado é uma ferramenta de transporte quando a alimentação existe; não é solução para falta da alimentação. Gerar ticks artificiais de candles também apenas introduz uma convenção de trajetória, sem recuperar a sequência real.
+
+======================================================================
+12. PERGUNTAS OBJETIVAS À OUTRA IA
+======================================================================
+
+1) Existe uma forma concreta e verificável de obter os negócios históricos necessários, por WIN$N, Profit, cache/backup já existente ou outro provedor, sem insistir nos códigos indisponíveis? Que evidência mínima justificaria essa tentativa?
+
+2) A ausência de ticks WIN$N em 21/09 e a indicação de início em 06/11 sustentam descartar essa fonte para todo o passado ou apenas as janelas verificadas? Há razão técnica para uma consulta curta específica em agosto, em vez de outra varredura longa?
+
+3) Se a cronologia histórica não estiver acessível, qual é o melhor compromisso para comparar o Modelo D com o Work usando M1 já disponível, SEM Tester? Preservar a convenção original, reportar ambiguidades ou combinar as duas apresentações?
+
+4) Como classificar rigorosamente as ambiguidades sem afirmar que dois caminhos OHLC são limites de lucro garantidos? Que desfechos os candles realmente permitem determinar sob uma convenção de preço explicitada?
+
+5) Como separar efeito M5->M1, normalização grade5, ordem intrabar, diferenças de alimentação e execução? Como reaproveitar os 14 dias de agosto e setembro para calibrar/diagnosticar esses efeitos sem selecionar uma regra pelo resultado?
+
+6) Como tratar a abertura real de 31/07 às 12h34, o contexto válido de 03/08 e as exclusões originais do Work? Devemos manter a base original e um complemento identificado, ou reprocessar uma referência ampliada à parte?
+
+7) Como manter um único resultado principal claro nos dois PDFs sem misturar replay de negócios, replay por candles e deals de Tester na mesma série/DD? Os resultados originais devem permanecer preservados e a mudança de critério, explícita.
+
+8) Há alguma alternativa melhor que não estamos considerando? Se houver, indicar os dados necessários, o que ela efetivamente demonstra e o que continua incerto. Evitar propor uma sequência longa de novos testes sem primeiro demonstrar que a fonte necessária existe.
+
+======================================================================
+13. ARQUIVOS, PRESERVAÇÃO E PRÓXIMA AÇÃO
+======================================================================
+
+Repositório: Dhennison/PROEJTO-EA.
+Branch: entrega-modelod-v2-10-20261030.
+Registro geral permanente: entregas/v2_10/RETOMADA_DO_TRABALHO.txt.
+
+Setembro auditado:
+entregas/fechamento_setembro_v1_00/resultado_nativo_20261111
+
+Agosto v1.11 e retorno completo recebido:
+entregas/fechamento_agosto_v1_11/retorno_nativo_20261111
+Contém auditorias, resultados parciais identificados, validação independente, manifestos/hashes e os 22 ZIPs originais + log.
+
+Exportações WIN$N e histórico Work já estão preservados no projeto/arquivo de anexos. Os dados M1 de agosto e julho estão disponíveis no workspace; não foram objeto de novo replay agora.
+
+Rascunho de recuperação XP: arquivado em rascunhos_suspensos como NÃO EXECUTAR. Nenhum novo teste na XP foi solicitado após o relato de indisponibilidade. O EA DEMO da XP permanece intacto.
+
+PAUSA ATUAL:
+Aguardar a avaliação da outra IA. Não iniciar o replay M1 de agosto, não criar nova rodada de Tester, não pedir repetição dos 14 dias e não fechar o mês com dados faltantes. Depois da discussão, fixar método/escopo antes de ampliar para julho e os demais meses.

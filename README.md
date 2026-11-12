@@ -3,7 +3,7 @@
 Estado geral atualizado em **11/11/2026**. Registro principal: **[RETOMADA_DO_TRABALHO.txt](entregas/v2_10/RETOMADA_DO_TRABALHO.txt)**. Esse TXT acompanha todas as etapas, o que foi concluído, pendências, evidências e próximo passo; será atualizado a cada avanço.
 
 - **Setembro concluído:** Work +3.839,31; nosso resultado principal +1.380,00; diferença −2.459,31 pontos. Critério: um contrato por nível, grade de cinco pontos, entrada por toque.
-- **Trabalho ativo:** agosto parcial,14dias/30operações auditados e preservados. [Retorno e pendências](entregas/fechamento_agosto_v1_11/retorno_nativo_20261111/ANALISE_DO_RETORNO.txt). Faltam6datasWork+03/08complementar por acesso aWINQ26. RotaXP suspensa após relato do usuário; nenhum novo pacote a executar. Agosto ainda não fechado; DD/setembro preservados.
+- **Trabalho ativo:** pausado para avaliação da outra IA. [TXT consolidado: agosto, contratos e alternativas](entregas/atualizacao_outra_ia_20261111/ATUALIZACAO_MODELO_D_AGOSTO_CONTRATOS_ALTERNATIVAS.txt).14dias de agosto preservados; resultado mensal pendente. WIN$NsemTester é proposta, ainda não executada.
 - **Relatórios finais:** dois PDFs (técnico e enxuto Modelo D diário), atualizados internamente e entregues juntos no final. DD contínuo calculado em ordem cronológica, sem alterar resultados mensais já fechados.
 - [Continuidade dos compilados e drawdown](entregas/compilado_work_modelod/LEIA_CONTINUIDADE.md)
 - [Conteúdo recente da conversa e decisões](entregas/arquivo_conversa_20261111/CONTEXTO_E_CONTINUIDADE.md)
