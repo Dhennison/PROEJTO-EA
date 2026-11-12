@@ -1,0 +1,39 @@
+XP DEMO — DIARIO RECEBIDO EM 12/11/2026, ATE 16:22:14
+
+Evidencia: texto fornecido pelo usuario, 2048 linhas, trecho 12:09–16:22.
+Nao inclui inicializacao nem registros suficientes para resultado financeiro do dia.
+Nenhuma alteracao de codigo, estado do EA, ordens ou configuracoes realizada.
+
+1. Dados e recuperacao:
+13:31:56 DESCONECTADO; 13:32 inventario indisponivel. Saltos do trecho nao provam
+hibernacao nem duracao exata de indisponibilidade. Em 15:11:34 houve OHLC insuficiente;
+em 15:11:39 DADOS_DIARIOS CONFERIDOS, WINZ26; em 15:11:40 ALL_CHAINS_RECONCILED,
+unresolved=0, transport=DEMO_ONLY. Isso confirma conciliacao naquele instante,
+nao homologa execucao nem demonstra ausencia de posicoes.
+S61,8: 10 TRAIL_COPY_FAILED_4403, ultima 15:11:32.935 (timeout de historico).
+R38,2 e R61,8: cursores avancam; ultimas mensagens de reconstrucao em 15:14:15.202.
+As mensagens cessam no restante do trecho. Ha evidencia de progresso, nao cursor parado.
+Ultima coleta: 275 blocos acumulados, 1594296 negocios, ate 16:22 exclusivo,
+abertura_confere=1, M1_consistente=1, integridade total nao certificada.
+121 consultas de ticks e 121 referencias M1 presentes: todas erro=0/erro_m1=0.
+Nao confundir esses totais acumulados com numero de consultas contidas no trecho.
+Avisos de janela atual defasada retornam a CONFERIDA nas ocorrencias observadas.
+
+2. Visual:
+427 VISUAL_SYNC_FAILED, primeiro 15:11:41.192, ultimo 16:22:14.482, persistente.
+Sem FALHA_VISUAL_MODELO_D detalhando objeto/erro no trecho.
+Indicador Ajuste_Oficial_B3_v2_20 em 15:58:36: AJUSTE NAO AUTORIZADO;
+Conferencia do objeto no grafico falhou. Este aviso nao prova valor numerico incorreto
+nem arquivo de ajuste invalido; falha e na conferencia do objeto conforme texto recebido.
+No codigo do EA v2.13.05, falha MDVisualSync e registrada e nao impede chamada Pump615.
+Ainda nao ha prova de causa: janela minimizada/coordenadas sao hipoteses, nao diagnostico.
+Proximo controle simples: ativar e maximizar grafico WIN$N/M5 na XP, aguardar atualizacao,
+observar se aviso persiste; nao remover EA, limpar estado ou reiniciar ordens por isso.
+Se persistir, imagem do grafico e ultimas linhas permitirao localizar falha visual.
+
+3. Ordens/resultados:
+TOQUE_6_15 relata negocio passando nivel, explicitamente NAO_E_EXECUCAO.
+Suportes S38,2/S50/S61,8 tem toque observado; resistencias sem toque no trecho conferido.
+Nao ha OrderSend/retcode/deals no texto recebido. Nao atribuir alvo/stop ou pontos diarios.
+Nao e possivel certificar SL/TP atualmente no servidor por este Diario isolado.
+Extracao Cedro em .cmd e independente; nao foi interrompida nem modificada.
