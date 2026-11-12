@@ -1,0 +1,31 @@
+CEDRO AGOSTO — SEGUNDO LOTE AUDITADO — 12/11/2026
+
+Recebidos e lidos os 10 ZIPs de 10,11,12,13 e 14/08, duas partes por dia.
+Total do lote: 24149473 registros WIN. Acumulado dos lotes1+2: 47390268,
+20 ZIPs e 10 dias. Arquivos brutos preservados localmente, controles no GitHub.
+Hashes, tamanhos e CRC das 10 partes conferidos. Ordinais crescentes entre
+partes, contagens por contrato, primeiro/ultimo timestamp, empates e regressoes
+conferem com inventario GERAL. Nenhuma regressao temporal no lote.
+
+Correspondencia com M1 Work: Q em 10/11, V em 12/13/14, conforme mapeamento
+previo. Todos os minutos Work presentes nos ticks do contrato de referencia.
+OHLC e quantidade M1 coincidem em todo o horario operado; apenas 18:24 difere
+em cada dia (detalhes DIFERENCAS_M1.csv), apos o corte 18:00. Um minuto extra
+Cedro por dia fora dos minutos Work. Nao inferir causa do tratamento de fechamento
+sem confirmar regras de timestamp/layout. Todos os registros mantidos sem filtro.
+OHLC diario, total de registros e soma do campo4 de cada contrato de referencia
+conferem exatamente com EOD: open/high/low/last_trade/quantitytrades/volume_amount.
+Nenhum novo resultado de estrategia, PDF ou DD foi calculado nesta auditoria.
+
+Controle de referencias por EOD completo (nao depende dos ZIPs TICK restantes):
+21 aberturas de agosto coincidem com algum contrato WIN em EOD.
+20 contextos anteriores disponiveis no pacote coincidem em H/L/C/ajuste;
+31/07 fora da amostra atual, previamente documentado. Em 12/08 a abertura e de
+WINV26 e o contexto anterior HLC/ajuste do Work e de WINQ26 em 11/08.
+Nao sobrescrever contexto da serie continua por outro vencimento: isso alteraria
+a base matematica do comparativo. Conferencia de referencias nao homologa execucao.
+
+Campos de agressor/condicao e fuso/ordem oficial entre empates ainda dependem
+do layout. Linhas e condicoes mantidas integralmente, sem ordenacao/deduplicacao.
+Proximo lote: todas as partes de 17,18,19,20 e 21/08, 10 ZIPs.
+Restam 22 ZIPs (11 datas) de agosto. Setembro/outubro continuam no escopo.

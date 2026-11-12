@@ -8,7 +8,7 @@
     "2020-01-01",
     "2026-09-30"
   ],
-  "status": "AGOSTO_PRIMEIRO_LOTE_TICKS_AUDITADO",
+  "status": "AGOSTO_SEGUNDO_LOTE_TICKS_AUDITADO",
   "prices_verified": false,
   "purchase_made": false,
   "network_status": "OFFICIAL_SITES_BLOCKED_403_DRAFT_REQUIRES_PUBLISH",
@@ -44,7 +44,7 @@
   "sample_download": "manual_usuario",
   "sample_size_user_report": "3.8GB",
   "sample_inspected": false,
-  "next_step": "Receber ZIPs 10 a 14/08 com todas as partes; seguir auditoria por contrato/data",
+  "next_step": "Receber ZIPs 17 a 21/08, todas as partes",
   "no_purchase_authorized": true,
   "sample_reprocessing_scope": {
     "months": [
@@ -144,5 +144,33 @@
     "Work_M1_differences_only_1824": true,
     "EOD_Q_daily_prices_count_quantity_equal": true,
     "new_strategy_result": false
+  },
+  "August_tick_batch_2": {
+    "days": [
+      "2026-08-10",
+      "2026-08-11",
+      "2026-08-12",
+      "2026-08-13",
+      "2026-08-14"
+    ],
+    "ZIPs": 10,
+    "WIN_rows": 24149473,
+    "sha256_sizes_CRC_OK": true,
+    "reference_symbols": [
+      "WINQ26",
+      "WINQ26",
+      "WINV26",
+      "WINV26",
+      "WINV26"
+    ],
+    "Work_M1_differences_only_1824": true,
+    "EOD_daily_prices_count_quantity_equal": true,
+    "new_strategy_result": false
+  },
+  "August_received_progress": {
+    "days": 10,
+    "ZIPs": 20,
+    "WIN_rows": 47390268,
+    "ZIPs_remaining": 22
   }
 }

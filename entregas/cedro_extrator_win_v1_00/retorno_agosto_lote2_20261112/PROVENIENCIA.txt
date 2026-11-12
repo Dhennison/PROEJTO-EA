@@ -1,0 +1,21 @@
+CEDRO AGO/2026 — SEGUNDO LOTE
+10 ZIPs originais enviados pelo usuario: duas partes por dia, de 10 a 14/08.
+Originais preservados localmente em /workspace/retorno_cedro_20261112/ticks.
+Hashes/tamanhos esperados: retorno_geral_20261112/ARQUIVOS.csv.
+Sem deduplicacao, reordenacao ou filtros de condicao. Primeira coluna de cada
+registro e numero da linha fonte, nao sequencia oficial de negocio.
+Contrato para comparacao M1: WINQ26 em 10/11; WINV26 em 12/13/14, conforme
+mapeamento ja auditado. Escolha anterior a qualquer resultado de operacao.
+Nenhum resultado de estrategia, preenchimento, lucro, PDF ou DD calculado.
+Script valida CRC ao ler ate final, contagens, primeiro/ultimo registro,
+empates, regressoes e ordinais na passagem entre as duas partes.
+Agregados M1 sem filtro de condicao sao confrontados com Work e EOD.
+Fuso e significado dos campos de condicao/agressor seguem pendentes de layout.
+
+Controle adicional do EOD completo contra referencias de agosto:
+Todas as 21 aberturas encontram contrato com preco igual no EOD.
+Todos os 20 contextos anteriores contidos na amostra coincidem em H/L/C/ajuste.
+31/07 e externo ao pacote Cedro atual e tem auditoria documental anterior.
+Na rolagem 12/08, a abertura corresponde a V e o HLC/ajuste anterior a Q de
+11/08. Preservar referencia da serie continua do Work; nao trocar silenciosamente
+esse contexto por V de 11/08. Isso nao altera as regras ModeloD nem homologa fills.
