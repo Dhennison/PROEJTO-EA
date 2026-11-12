@@ -1,0 +1,3 @@
+﻿mes;Work_acumulado_anterior;teste_acumulado_anterior;Work_DD_continuo_no_mes;teste_DD_continuo_no_mes;base_DD_inicio;base_DD_fim;DD_provisorio_por_meses_anteriores_pendentes;Work_DD_max_acumulado;Work_acumulado_ate_mes;teste_DD_max_acumulado;teste_acumulado_ate_mes;Work_DD_local_mensal_referencia;teste_DD_local_mensal_referencia
+2026-08;0;0;2248.559000;2960.000000;2026-08-04;2026-09-21;True;2248.559000;-387.164995;2960.000000;-2275.000000;2248.559000;2960.000000
+2026-09;-387.164995;-2275.000000;2076.162995;3620.000000;2026-08-04;2026-09-21;True;2248.559000;3452.144003;3620.000000;-895.000000;1087.585333;1575.000000

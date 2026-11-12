@@ -16,18 +16,22 @@
   "parametros_atuais_congelados_ate_comparacao": true,
   "compra_dados_autorizada": false,
   "nenhum_novo_backtest_executado_agora": true,
-  "proximo_lote_setembro": [
-    "20260914",
-    "20260915",
-    "20260916",
-    "20260917",
-    "20260918",
-    "20260921"
-  ],
   "alternativa_sem_compra": "Arquivar negocios reais do contrato vigente diariamente para ampliar validacao futura; nao implementado agora.",
   "setembro_progresso": {
-    "datas_auditadas": 8,
-    "ZIPs": 16,
-    "restantes": 26
-  }
+    "datas_auditadas": 21,
+    "ZIPs": 42,
+    "restantes": 0,
+    "principal_Work": "1380",
+    "mes_completo_ABCD": "2855"
+  },
+  "estado_atual": "D_SETEMBRO_CEDRO_CONCLUIDO_AGUARDANDO_OUTUBRO",
+  "reutilizacao_dados": "Reutilizar fita bruta e auditorias; reducao por limiares precisa ser gerada por modelo/parametro. Nunca aplicar reducao especifica D a A/B/C ou novos stops/alvos.",
+  "controle_anomalias": "Repetir sensibilidade arquivo/cronologico22e24 em cada modelo e estudo de parametros.",
+  "proximo_lote_outubro": [
+    "20261001",
+    "20261002",
+    "20261005",
+    "20261006",
+    "20261007"
+  ]
 }

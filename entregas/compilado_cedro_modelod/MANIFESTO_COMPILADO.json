@@ -1,0 +1,128 @@
+{
+  "serie": "CEDRO",
+  "modelos_incluidos": [
+    "D"
+  ],
+  "meses_completos": {
+    "base_inicio": "2026-08-03",
+    "base_fim": "2026-09-30",
+    "meses": {
+      "2026-08": {
+        "mes": "2026-08",
+        "modelo": "D",
+        "pregoes": 21,
+        "pontos": "-2375.000000",
+        "operacoes": 46,
+        "DD_max_acumulado": "2960.000000"
+      },
+      "2026-09": {
+        "mes": "2026-09",
+        "modelo": "D",
+        "pregoes": 21,
+        "pontos": "2855.000000",
+        "operacoes": 52,
+        "DD_max_acumulado": "3620.000000"
+      }
+    },
+    "saldo": "480.000000",
+    "DD_max_acumulado": "3620.000000",
+    "metodo": "FECHAMENTOS_DIARIOS_ORDEM_CRESCENTE_SALDO_PICO_CONTINUOS",
+    "inclui03_agosto_e22a30_setembro": true,
+    "separada_da_comparacao_Work": true,
+    "provisorio": true
+  },
+  "originais_anteriores_preservados": true,
+  "entregas_finais_solicitadas": [
+    "PDF técnico com observações e análises",
+    "PDF enxuto no estilo da fonte, somente Modelo D, Work e teste lado a lado"
+  ],
+  "pdf_tecnico": "entregas/compilado_cedro_modelod/Comparativo_Work_ModeloD_Tecnico_Em_Andamento.pdf",
+  "pdf_enxuto": "entregas/compilado_cedro_modelod/Comparativo_Diario_ModeloD_Enxuto_Em_Andamento.pdf",
+  "regra_drawdown_continuo": {
+    "calculo": "Iterar fechamentos diarios em ordem crescente, saldo e pico carregados entre meses; DD max acumulado ate cada mes.",
+    "coleta_em_ordem_inversa_nao_altera_ordem_da_curva": true,
+    "resultado_diario_e_mensal_congelado": true,
+    "recalcular_saldo_acumulado_e_DD_quando_chegam_meses_anteriores": true,
+    "meses_ausentes_nao_sao_zero": true,
+    "base_comum_atual": [
+      "2026-08-04",
+      "2026-09-21"
+    ],
+    "provisorio": true,
+    "DD_Work": "2248.559000",
+    "DD_teste": "3620.000000",
+    "DD_intradiario": false
+  },
+  "risco_por_mes": {
+    "2026-08": {
+      "mes": "2026-08",
+      "Work_acumulado_anterior": "0",
+      "teste_acumulado_anterior": "0",
+      "Work_DD_continuo_no_mes": "2248.559000",
+      "teste_DD_continuo_no_mes": "2960.000000",
+      "base_DD_inicio": "2026-08-04",
+      "base_DD_fim": "2026-09-21",
+      "DD_provisorio_por_meses_anteriores_pendentes": true,
+      "Work_DD_max_acumulado": "2248.559000",
+      "Work_acumulado_ate_mes": "-387.164995",
+      "teste_DD_max_acumulado": "2960.000000",
+      "teste_acumulado_ate_mes": "-2275.000000",
+      "Work_DD_local_mensal_referencia": "2248.559000",
+      "teste_DD_local_mensal_referencia": "2960.000000"
+    },
+    "2026-09": {
+      "mes": "2026-09",
+      "Work_acumulado_anterior": "-387.164995",
+      "teste_acumulado_anterior": "-2275.000000",
+      "Work_DD_continuo_no_mes": "2076.162995",
+      "teste_DD_continuo_no_mes": "3620.000000",
+      "base_DD_inicio": "2026-08-04",
+      "base_DD_fim": "2026-09-21",
+      "DD_provisorio_por_meses_anteriores_pendentes": true,
+      "Work_DD_max_acumulado": "2248.559000",
+      "Work_acumulado_ate_mes": "3452.144003",
+      "teste_DD_max_acumulado": "3620.000000",
+      "teste_acumulado_ate_mes": "-895.000000",
+      "Work_DD_local_mensal_referencia": "1087.585333",
+      "teste_DD_local_mensal_referencia": "1575.000000"
+    }
+  },
+  "meses": [
+    {
+      "mes": "2026-08",
+      "inicio_Work": "2026-08-04",
+      "fim_Work": "2026-08-31",
+      "pregoes_Work": "20",
+      "operacoes_Work": "43",
+      "Work_pontos": "-387.164995",
+      "nosso_resultado_principal": "-2275.000000",
+      "diferenca_nosso_menos_Work": "-1887.835005",
+      "estado": "CONCLUIDO_CEDRO",
+      "criterio_principal": "1 contrato;grade5;toque;condicional",
+      "pdf_preservado": "entregas/cedro_modelod_agosto_2026/resultado/Comparativo_ModeloD_Cedro_Tecnico_Em_Andamento.pdf",
+      "pdf_sha256": "f172eea3a81b1303c59c7edc5d5c6137b57923a1d9603a7940788a9651fa2e8d",
+      "Work_DD_max_acumulado_base_comum": "2248.559000",
+      "teste_DD_max_acumulado_base_comum": "2960.000000",
+      "base_DD_inicio": "2026-08-04",
+      "DD_provisorio": "True"
+    },
+    {
+      "mes": "2026-09",
+      "inicio_Work": "2026-09-01",
+      "fim_Work": "2026-09-21",
+      "pregoes_Work": "14",
+      "operacoes_Work": "33",
+      "Work_pontos": "3839.308998",
+      "nosso_resultado_principal": "1380.000000",
+      "diferenca_nosso_menos_Work": "-2459.308998",
+      "estado": "CONCLUIDO_CEDRO",
+      "criterio_principal": "1 contrato;grade5;toque;condicional",
+      "pdf_preservado": "entregas/cedro_modelod_setembro_2026/resultado/Comparativo_ModeloD_Cedro_Tecnico_Setembro.pdf",
+      "pdf_sha256": "93f78c2d3f36b989b03a72a755e57966b6c51789c08318480ea6505aa2d63b06",
+      "Work_DD_max_acumulado_base_comum": "2248.559000",
+      "teste_DD_max_acumulado_base_comum": "3620.000000",
+      "base_DD_inicio": "2026-08-04",
+      "DD_provisorio": "True"
+    }
+  ]
+}

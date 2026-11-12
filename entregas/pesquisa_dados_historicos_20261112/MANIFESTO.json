@@ -8,7 +8,7 @@
     "2020-01-01",
     "2026-09-30"
   ],
-  "status": "SETEMBRO_CEDRO_PRIMEIRO_LOTE_AUDITADO",
+  "status": "SETEMBRO_CEDRO_CALCULADO_SEM_MT5",
   "prices_verified": false,
   "purchase_made": false,
   "network_status": "OFFICIAL_SITES_BLOCKED_403_DRAFT_REQUIRES_PUBLISH",
@@ -44,7 +44,7 @@
   "sample_download": "manual_usuario",
   "sample_size_user_report": "3.8GB",
   "sample_inspected": false,
-  "next_step": "Receber todas as partes de14,15,16,17,18,21/09 (12 ZIPs); depois ultimos7dias foraWork",
+  "next_step": "Receber outubro inteiro; depois A/B/C e estudo de stops/alvos",
   "no_purchase_authorized": true,
   "sample_reprocessing_scope": {
     "months": [
@@ -216,13 +216,10 @@
     "supplement_not_added_to_principal": true
   },
   "September_received_progress": {
-    "days": 8,
-    "ZIPs": 16,
-    "WIN_rows": 46812324,
-    "ZIPs_remaining": 26,
-    "Work_dates_received": 8,
-    "Work_dates_remaining": 6,
-    "full_month_dates_remaining": 13
+    "days": 21,
+    "ZIPs": 42,
+    "WIN_rows": 121647412,
+    "ZIPs_remaining": 0
   },
   "September_tick_batch_1": {
     "days": [
@@ -240,5 +237,20 @@
     "Work_M1_differences_only_1824": true,
     "EOD_daily_prices_count_quantity_equal": true,
     "new_strategy_monthly_result": false
+  },
+  "September_result": {
+    "principal_Work_points": "1380",
+    "Work_points": "3839.308998",
+    "comparison_days": 14,
+    "comparison_operations": 33,
+    "full_month_points": "2855",
+    "full_month_days": 21,
+    "full_month_operations": 52,
+    "report": "entregas/cedro_modelod_setembro_2026/resultado/RESULTADO.json",
+    "anomalies_days": [
+      "2026-09-22",
+      "2026-09-24"
+    ],
+    "same_results_both_record_orders": true
   }
 }

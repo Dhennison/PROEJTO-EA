@@ -1,0 +1,65 @@
+ESCLARECIMENTO DE APRESENTAÇÃO — 12/11/2026
+FECHAMENTO DE SETEMBRO INTEIRO CEDRO: +2.855 pontos,21pregões.
+RECORTE COMPARÁVEL AO WORK (01–21/09): +1.380 pontos,14pregões.
+A imagem anterior chamava o subtotal do recorte de TOTAL DO MÊS; rótulo errado.
+PDF/imagem corrigidos: TOTAL COMPARÁVEL e FECHAMENTO CEDRO em linhas distintas.
+Os valores calculados não foram alterados. Imagem corrigida em resultado/.
+
+SETEMBRO/2026 — MODELO D — FONTE CEDRO
+
+RESULTADO PRINCIPAL PARA COMPARAR COM O WORK
+Base original: 01 a 21/09, 14 pregões e 33 operações (inclui dia sem operação).
+Work: +3.839,308998 pontos.
+Nosso principal Cedro: +1.380 pontos.
+Diferença: -2.459,308998 pontos.
+20 alvos, 13 stops. As 33 operações repetem motivo e pontos da coleta Genial
+anterior. Assim, +1.380 foi confirmado por outra alimentação, não substituído.
+
+SETEMBRO INTEIRO PARA COMPARAR OS MODELOS A/B/C/D
+01 a 30/09: 21 pregões, 52 operações, +2.855 pontos.
+As sete datas adicionais de 22 a 30/09 somam +1.475; não constavam no Work
+original e não recebem Work fictício zero. Não confundir esse mês inteiro
+com os +1.380 da base comparável ao Work.
+Na mesma base de meses completos: agosto -2.375 (inclui 03/08 de -100).
+O agosto comparável ao Work continua -2.275 nas suas 20 datas originais.
+
+CRITÉRIO E VALIDAÇÃO
+Um contrato por nível, grade5, toque inclusivo; preços de entrada/SL/TP nos
+níveis teóricos normalizados. Saída só em registro posterior ao da entrada;
+corte pelo primeiro negócio do minuto18:00. Sem MT5 ou Tester.
+Pontos brutos condicionais, sem custos, fila ou garantia de preenchimento real.
+105 estados: motor Python anterior em eventos reduzidos contra C++ independente
+em TODOS os negócios; mesmas entradas, saídas e pontos. 33 chaves e 14 somas
+Work conferidas contra arquivos anteriores e extração validada do PDF Work.
+As 14 referências Work são idênticas às originais. As sete extras usam O/H/L/C
+Cedro do contrato vigente e ajuste do pregão anterior. Todas têm abertura e
+primeiro negócio no minuto do corte conferidos.
+
+ALIMENTAÇÃO E ANOMALIAS
+42 ZIPs, 21 datas, 121.647.412 registros WIN, todos recebidos e preservados.
+SHA256/tamanhos/CRC, contagens, primeiro/último registro e ordinais entre partes
+conferidos. Auditor C++ validado contra auditor Python nas oito datas anteriores.
+Candles e quantidades M1 iguais ao Work nas 14 datas durante horário operado;
+diferenças apenas às18:24, depois do corte. OHLC diário igual aos EOD.
+Há diferenças não resolvidas de quantidade/contagem em22 e24/09, detalhadas
+em auditoria/DIFERENCAS_EOD.csv. OHLC igual não prova fita integralmente correta.
+Três registros com horário atrasado: um em22/09 e dois em24/09. Originais não
+alterados. Leitura cronológica estável por timestamp, usando linha original
+como desempate. Não houve filtro, deduplicação ou alteração de preço/volume.
+Controle independente na ordem original do arquivo: os10estados desses dias
+mantêm entradas, saídas, motivos e pontos. Essa invariância vale para ModeloD
+atual; repetir a conferência em A/B/C e no estudo de outros alvos/stops.
+Reordenar não resolve as divergências de conteúdo com EOD. Fuso, condições e
+ordem oficial entre registros empatados não certificados independentemente.
+
+DRAWDOWN E PDFs
+Os dois PDFs atualizados ficam em entregas/compilado_cedro_modelod.
+Curva comparável Work: agosto20datas + setembro14datas. DD Work2.248,559,
+Cedro3.620 pontos, saldo e pico carregados agosto→setembro, sem reiniciar.
+Curva de meses completos para A/B/C/D: agosto21 + setembro21. DD ModeloD3.620,
+base03/08–30/09; saldo+480 antes de custos. Série separada da comparação Work.
+Valores relativos à base disponível, sem presumir meses ausentes iguais a zero.
+Resultados diários/mensais congelados; recalcular acumulados/DD com ampliação.
+PDFs guardados internamente para entrega conjunta ao final, conforme solicitado.
+Originais anteriores preservados. Próximo: outubro D; depois A/B/C nos mesmos
+três meses, comparação dos quatro e, só então, estudo de alvos/stops por nível.

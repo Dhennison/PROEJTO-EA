@@ -1,0 +1,13 @@
+12/11/2026 — PASS
+Auditor C++17 -O2 -Wall -Wextra -Werror;8dias integralmente conferidos contra Python anterior.
+42hashes/tamanhos/CRC,21contagens diarias,121647412registros familiaWIN conferidos.
+105estados históricos: Python anterior em redução x C++ independente no fluxo integral.
+33operações anteriores Genial com mesmos pontos/motivos na Cedro.
+14datas/somas Work conferidas com extração validada do PDF, incluindo dia03 sem operação.
+3registros regressivos localizados;10estados22/24 idênticos em ordem arquivo/cronológica.
+Teste sintético demonstra modos distintos:arquivo SL,cronológico TP,6registros preservados;
+modo estrito recusa regressão. Resultado principal não escolhido pelo maior lucro.
+21aberturas e21primeiros negócios do minuto18:00 conferidos.
+Novo PDF enxuto2páginas e técnico6páginas abertos;texto validado,página setembro inspecionada.
+DD calculado cronologicamente em duas bases,sem misturar datas fora Work com Work zero.
+Ressalvas EOD22/24 mantidas. Validação não prova conteúdo completo,condições,fuso ou fills.

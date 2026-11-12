@@ -1,0 +1,97 @@
+{
+  "mes": "2026-09",
+  "fonte": "CEDRO_TICK_BMF",
+  "criterio": "GRADE5_TOQUE_1_CONTRATO_NIVEIS_CONDICIONAIS",
+  "status": "CONCLUIDO_SOBRE_ALIMENTACAO_RECEBIDA_COM_RESSALVAS",
+  "dias_Work": 14,
+  "dias_suplementares": 7,
+  "Work_pontos": "3839.308998",
+  "nosso_principal_pontos": "1380.000000",
+  "diferenca": "-2459.308998",
+  "operacoes_Work": 33,
+  "operacoes_nossas": 33,
+  "motivos": {
+    "ALVO": 20,
+    "STOP": 13
+  },
+  "complemento_22_a_30_setembro": {
+    "pontos": "1475.000000",
+    "dias": 7
+  },
+  "mes_completo": {
+    "pontos": "2855.000000",
+    "dias": 21,
+    "operacoes": 52
+  },
+  "estados_conferidos_independentemente": 105,
+  "todos_conferidos": true,
+  "preenchimentos_reais_comprovados": false,
+  "custos_inclusos": false,
+  "limites": [
+    "Sem fila, custos ou garantia de preenchimento; entrada e saida creditadas nos niveis.",
+    "Saida em registro posterior a entrada, inclusive quando mesmo milissegundo.",
+    "Corte no primeiro negocio do minuto18:00.",
+    "Condicoes preservadas sem filtro. Em22/24 leituracronologica estavel por timestamp e linhaoriginal, sem alterar originais. Ordem oficial entre empates nao certificada.",
+    "OHLC/quantidade M1 conferem com Work no horario operado; divergencias18:24 posteriores ao corte.",
+    "22 a30/09 fora do Work original, nao somados ao principal comparavel.",
+    "Setembro anterior permanece arquivado; nova serie Cedro identificada separadamente."
+  ],
+  "sha256_motor_anterior": "17b2c75dfc709379e8a894b3afb2f677a8f122c991aa4f4680b6b0dd785a37bb",
+  "conferencia_setembro_anterior": {
+    "operacoes": 33,
+    "todos_mesmo_motivo_e_pontos": true,
+    "total": "1380"
+  },
+  "sensibilidade_ordem": {
+    "registros_preservados": true,
+    "ordenacao_principal": "timestamp e linha_original como desempate",
+    "alternativa": "ordem original do arquivo",
+    "estados": 10,
+    "todos_mesmo_resultado": true,
+    "sem_filtro_ou_correcao_de_negocios": true,
+    "nao_resolve_divergencias_de_conteudo_EOD": true
+  },
+  "dados_quantidade_EOD": {
+    "dias_com_diferencas": [
+      "2026-09-22",
+      "2026-09-24"
+    ],
+    "precos_diarios_OHLC_iguais": true,
+    "registros_todos_mantidos": true,
+    "diferencas_nao_resolvidas_por_reordenacao": true,
+    "arquivo": "auditoria/DIFERENCAS_EOD.csv"
+  },
+  "serie_meses_completos": {
+    "base_inicio": "2026-08-03",
+    "base_fim": "2026-09-30",
+    "meses": {
+      "2026-08": {
+        "mes": "2026-08",
+        "modelo": "D",
+        "pregoes": 21,
+        "pontos": "-2375.000000",
+        "operacoes": 46,
+        "DD_max_acumulado": "2960.000000"
+      },
+      "2026-09": {
+        "mes": "2026-09",
+        "modelo": "D",
+        "pregoes": 21,
+        "pontos": "2855.000000",
+        "operacoes": 52,
+        "DD_max_acumulado": "3620.000000"
+      }
+    },
+    "saldo": "480.000000",
+    "DD_max_acumulado": "3620.000000",
+    "metodo": "FECHAMENTOS_DIARIOS_ORDEM_CRESCENTE_SALDO_PICO_CONTINUOS",
+    "inclui03_agosto_e22a30_setembro": true,
+    "separada_da_comparacao_Work": true,
+    "provisorio": true
+  },
+  "rotulos_explicitos": {
+    "fechamento_setembro_completo": "2855",
+    "resultado_comparavel_ao_Work_01a21": "1380",
+    "erro_apresentacao_anterior": "Imagem de14datas rotulava total como TOTAL DO MES; corrigido para TOTAL COMPARAVEL,com linha FECHAMENTO CEDRO separada. Nenhum calculo alterado."
+  }
+}

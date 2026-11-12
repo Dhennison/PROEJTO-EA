@@ -989,23 +989,19 @@
   },
   "nova_serie_Cedro": {
     "meses_concluidos": [
-      "2026-08"
+      "2026-08",
+      "2026-09"
     ],
-    "fonte_resultados": "entregas/cedro_modelod_agosto_2026/resultado/RESULTADO.json",
-    "pontos_agosto": "-2275",
-    "DD": {
-      "base_inicio": "2026-08-04",
-      "base_fim": "2026-08-31",
-      "Work": "2248.559000",
-      "teste": "2960.000000",
-      "ordem": "CRONOLOGICA_CRESCENTE_SALDO_E_PICO_NAO_REINICIAM_POR_MES",
-      "medida": "MAXIMO_SOBRE_FECHAMENTOS_DIARIOS",
-      "provisorio_por_meses_anteriores_ausentes": true,
-      "serie": "CEDRO",
-      "setembro_nativo_nao_concatenado_a_esta_curva": true
+    "compilados_atuais": "entregas/compilado_cedro_modelod/MANIFESTO_COMPILADO.json",
+    "principal_comparavel_Work": {
+      "2026-08": "-2275",
+      "2026-09": "1380"
     },
-    "PDFs": "entregas/cedro_modelod_agosto_2026/resultado/MANIFESTO_RELATORIOS.json",
-    "serie_anterior_setembro_preservada": true,
-    "nao_concatenar_setembro_anterior_ao_DD_Cedro": true
+    "meses_completos_comparacao_ABCD": {
+      "2026-08": "-2375",
+      "2026-09": "2855"
+    },
+    "bases_separadas": true,
+    "originais_anteriores_preservados": true
   }
 }
