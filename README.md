@@ -4,6 +4,7 @@ Estado geral atualizado em **12/11/2026**. Registro principal: **[RETOMADA_DO_TR
 
 - **Setembro — resultado anterior preservado:** Work +3.839,31; nosso resultado principal +1.380,00; diferença −2.459,31 pontos. Critério: um contrato por nível, grade de cinco pontos, entrada por toque.
 - **Trabalho ativo:** [agosto Cedro calculado sem MT5](entregas/cedro_modelod_agosto_2026/LEIA_RESULTADO.txt): Work −387,16; nosso principal **−2.275 pontos**, mesmas 20 datas e 43 operações. Dois PDFs salvos internamente. Próximo: reprocessar setembro pela Cedro; fonte anterior preservada.
+- **Sequência aprovada:** D em setembro e outubro Cedro → A/B/C nos mesmos três meses → comparação dos quatro → estudo separado de alvos/stops. [Plano registrado](entregas/plano_comparacao_abcd_cedro_20261112/PLANO_E_CONTINUIDADE.txt).
 - **Relatórios finais:** dois PDFs (técnico e enxuto Modelo D diário), atualizados internamente e entregues juntos no final. DD contínuo calculado em ordem cronológica, sem alterar resultados mensais já fechados.
 - [Continuidade dos compilados e drawdown](entregas/compilado_work_modelod/LEIA_CONTINUIDADE.md)
 - [Conteúdo recente da conversa e decisões](entregas/arquivo_conversa_20261111/CONTEXTO_E_CONTINUIDADE.md)

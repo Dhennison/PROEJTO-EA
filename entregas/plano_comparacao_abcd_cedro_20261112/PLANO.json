@@ -1,0 +1,27 @@
+{
+  "data": "2026-11-12",
+  "ordem": [
+    "D_SETEMBRO_CEDRO",
+    "D_OUTUBRO_CEDRO",
+    "A_B_C_3_MESES",
+    "COMPARAR_A_B_C_D_ORIGINAIS",
+    "ESTUDAR_ALVO_STOP_POR_NIVEL",
+    "CONFIRMAR_COM_DADOS_NOVOS"
+  ],
+  "meses": [
+    "2026-08",
+    "2026-09",
+    "2026-10"
+  ],
+  "parametros_atuais_congelados_ate_comparacao": true,
+  "compra_dados_autorizada": false,
+  "nenhum_novo_backtest_executado_agora": true,
+  "proximo_lote_setembro": [
+    "20260901",
+    "20260902",
+    "20260903",
+    "20260904",
+    "20260908"
+  ],
+  "alternativa_sem_compra": "Arquivar negocios reais do contrato vigente diariamente para ampliar validacao futura; nao implementado agora."
+}

@@ -1,0 +1,52 @@
+PLANO APROVADO PELO USUÁRIO — 12/11/2026
+
+1. Concluir Modelo D em setembro Cedro, depois em outubro Cedro.
+   Agosto Cedro já calculado. Não mudar parâmetros nesta etapa.
+2. Rodar modelos A, B e C nos mesmos três meses Cedro: agosto, setembro,
+   outubro/2026. Reutilizar arquivos e infraestrutura de leitura, auditoria,
+   replay e relatórios. Antes de implementar cada modelo, conferir as regras
+   originais do acervo; formalizar diferenças de níveis, entradas e saídas.
+   Não presumir que regras D se apliquem onde houver diferença não documentada.
+3. Comparar A/B/C/D por mês e por nível: pontos, operações, motivos de saída,
+   drawdown, concentração de ganhos/perdas e sensibilidade a custos.
+   Um contrato por nível, mesma fonte, mesmas datas e convenções explícitas.
+   Não usar amostras selecionadas só porque houve divergência no Work.
+4. Só depois realizar estudo de alvo/stop por nível. Preservar os resultados
+   dos parâmetros originais como referência. Avaliar valores vizinhos e
+   estabilidade por mês, não apenas o maior total encontrado na amostra.
+   Registrar as combinações testadas, dados usados na escolha e critérios.
+   Resultados usados para escolher parâmetros não são validação independente.
+   Três meses não demonstram ótimo universal nem lucratividade futura.
+5. Confirmação posterior com dados novos não usados na seleção. Alternativa
+   sem compra de histórico: gravar negócios do contrato vigente diariamente
+   no terminal, fora da lógica de envio de ordens, e auditar os arquivos.
+   Não implementar novo coletor agora, desviando do fechamento de setembro D.
+
+ESCOPO E ORÇAMENTO
+Usuário não autoriza compra Cedro a R$1.000/mês ou pacote R$30.000.
+Trabalhar com a amostra já recebida e dados gratuitos/incluídos disponíveis.
+A indisponibilidade de histórico anterior a agosto é limitação do acervo atual,
+não prova de que nenhuma fonte o possua. Não prometer recuperação gratuita.
+Empresa de desenvolvimento não tem automaticamente acesso/licença de TBT;
+se essa alternativa for considerada, cobertura e direitos devem constar da proposta.
+
+COMPARAÇÕES E PDFs
+Manter comparação ao Work apenas em suas datas originais, com complementos
+separados: 03/08 e 22–30/09 não recebem Work fictício zero. Outubro fora Work.
+Comparação entre modelos nos três meses deve usar a mesma base completa de
+pregões entre A/B/C/D, mantendo as extensões fora Work devidamente identificadas.
+Drawdown em ordem crescente agosto→setembro→outubro; saldo/pico não reiniciam
+entre meses, sem mudar os resultados mensais já registrados.
+Após escolher novos parâmetros, usar outra série/versionamento para seus
+resultados; não sobrescrever a curva dos parâmetros originais.
+Dois PDFs finais continuam solicitados: técnico e enxuto. Comparação A/B/C/D
+e estudo de parâmetros devem ser identificados como etapas distintas.
+
+ESTADO ATUAL
+Agosto D comparável ao Work: -2275,00 versus -387,164995; 20 datas,43 operações.
+03/08 complemento: -100,00, fora do principal comparável.
+Setembro D anterior +1380 preservado, aguardando reprocessamento Cedro.
+Setembro Cedro: 21 datas/42ZIPs no inventário; arquivos diários ainda pendentes.
+Primeiro lote: 01,02,03,04,08/09, todas as partes (10ZIPs).
+Depois restante de setembro, outubro, então A/B/C.
+Nenhuma nova execução A/B/C ou otimização feita com esta atualização de plano.
