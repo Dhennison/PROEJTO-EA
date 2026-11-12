@@ -131,5 +131,17 @@
     "October_outside_Work_explicitly_authorized": true,
     "preserve_old_results": true,
     "no_fictitious_Work_zero": true
+  },
+  "cedro_extracao_atual": {
+    "pacote": "entregas/Cedro_Extrair_WIN_3_Meses_v1_00.zip",
+    "status": "PREPARADO_AGUARDANDO_USUARIO",
+    "meses": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "novos_resultados_calculados": false,
+    "WINQ26_confirmado": false,
+    "WINV26_visto_em_03_agosto": true
   }
 }

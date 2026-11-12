@@ -156,3 +156,7 @@ Capturas:202608.zip/202609.zip/202610.zip,comlogsdiários. Agosto21datas03a31/08
 ## Primeiro trechoTICK/BMF observado
 
 Usuário colou20linhas de20260803.log:8campospipe,timestampcomms;nenhumWINna amostra,camposefuso restantesnão confirmados. Retrocessosdehorárionotrechoglobal,não inferirporcontrato. Próximopasso20linhasWINemfluxo;semordenar/deduplicaroucalcularnovosresultados. Escopo3mesesinteiromantido.
+
+## 12/11 — extração local Cedro dos três meses
+
+O usuário mostrou 20 registros WINV26 de 03/08, todos em 09:00:57.276, com linhas idênticas que serão preservadas. Não há confirmação de WINQ26, do significado dos campos 3–8, fuso ou ordenação oficial entre empates. Preparado extrator local Windows PowerShell/C#, sem MT5, Python ou ordens. Descobre TICK/BMF de agosto/setembro/outubro, preserva todos os WIN e a ordem, adiciona linha original, inventaria contratos e anomalias e copia EOD pequeno. ZIPs por dia/parte, limite com margem para upload, SHA256 e GERAL. Aguardando execução do usuário e recebimento. Nenhum número de resultado ou DD alterado. Testado com fontes sintéticas em PowerShell 7/Linux; interface Windows e PowerShell 5.1 não executados neste ambiente.

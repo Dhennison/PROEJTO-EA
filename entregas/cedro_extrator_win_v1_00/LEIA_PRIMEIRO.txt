@@ -1,0 +1,23 @@
+CEDRO - EXTRAIR WIN DOS TRES MESES - v1.00
+
+1. Descompacte agosto, setembro e outubro dentro de uma pasta comum.
+   Mantenha as subpastas TICK/BMF e EOD. Nao precisa juntar os arquivos diarios.
+2. Descompacte ESTE pacote e abra INICIAR_EXTRACAO.cmd com dois cliques.
+3. Na janela, selecione a pasta comum dos tres meses da Cedro.
+4. Aguarde END;EXTRACAO_CONCLUIDA. Mantenha o notebook ligado, sem hibernar.
+
+O programa abre a pasta CEDRO_WIN_... criada na Area de Trabalho.
+Envie primeiro GERAL_CEDRO_WIN.zip; depois os ZIPs WIN_... em lotes.
+Nao precisa enviar os 3,8 GB originais nem abrir MetaEditor/MT5.
+
+Extrai todos os codigos iniciados por WIN, sem escolher vencimento.
+Preserva registros repetidos, milissegundos e ordem de arquivo.
+Adiciona numero da linha original como rastreabilidade, nao sequencia oficial.
+Nao altera os arquivos Cedro e nao usa internet. Precisa de espaco livre para
+os ZIPs filtrados. Nao calcula resultado ou valida preenchimento de ordens.
+
+O fuso e o significado dos campos precisam do layout da Cedro.
+Se houver README/manual de layout no pacote, envie esse documento tambem.
+Se aparecer ERRO, envie a mensagem; nao trate a pasta parcial como concluida.
+Se houver duas copias do mesmo dia, mantenha apenas uma dentro da pasta
+selecionada (ou selecione a arvore que nao inclui as copias).

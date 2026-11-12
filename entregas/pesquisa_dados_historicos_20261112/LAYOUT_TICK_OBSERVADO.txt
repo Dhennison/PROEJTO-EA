@@ -1,11 +1,21 @@
-CEDRO TICK/BMF — TRECHO OBSERVADO DE03/08/2026
+CEDRO TICK/BMF — TRECHOS OBSERVADOS DE 03/08/2026
 
-Fonte: primeiras20linhas coladas pelo usuário, não arquivo integral recebido.
-Separador:pipe(|). Oito campos em cada linha mostrada.
-Campo1:código deativo. Nenhum dos20registroséWIN; há outros códigos.
-Campo2:datahoraformatoYYYY-MM-DD HH:mm:ss.fff,com3casas para milissegundos. Fuso não confirmado.
-Campos3a6:numéricos,sem significado confirmado porlayout. Possível preço/quantidade/participantes,ainda hipótese.
-Campo7:marcador alfabético nas linhas observadas;campo8numérico. Não assumir mapeamento deagressor/condição sem documentação.
-Os horários retrocedem entre registros do trecho global. Isso não prova desordem dentro deum contratoWINnem autoriza ordenar/deduplicar osdados. Preservar índiceoriginalde linha ao extrair; verificar ordenação intra-contrato e empates.
-Próximopasso:20linhasWINdo mesmo arquivo, porSelectStringemfluxo. Não é coleta limitada aumdia: oescopo finalsegue agosto,setembro,outubrointeiros,famíliaWIN/BM&F.
-NenhumreplayouresultadoNovofoicalculado.
+Fonte: duas amostras de 20 linhas coladas pelo usuário, não arquivo integral recebido.
+Separador pipe (|), oito campos em cada linha mostrada.
+Primeira amostra: outros ativos; horários retrocedem globalmente, sem prova sobre ordem de WIN.
+Segunda amostra: WINV26, data 03/08/2026, todas as 20 linhas em 09:00:57.276.
+Campo 3 constante 182810; campos 4 a 6 numéricos; campo 7 I; campo 8 5.
+Preço, quantidade, participantes, agressor e condição são hipóteses de layout, não mapeamento certificado.
+Fuso e sequência oficial entre linhas empatadas ainda não confirmados.
+Há linhas de texto idênticas; manter todas. Não presumir duplicidade indevida.
+WINQ26 ainda não visto; inventário do extrator vai verificar presença em todos os dias.
+
+Extrator v1.00: Windows PowerShell + C#, fora do MT5. Não interpreta campos 3–8;
+preserva registros WIN de todos os horários/condições/vencimentos em ordem original,
+acrescentando número da linha fonte como metadado técnico, não sequência oficial.
+Saída UTF-8 com finais de linha normalizados; texto dos campos permanece intacto.
+Registra regressões e empates consecutivos por símbolo, formatos inválidos, data divergente,
+campos diferentes de oito, SHA256 integral das fontes e SHA256 dos ZIPs filtrados.
+EOD copiado integralmente, sem inferir ajuste. Ausência de regressões não comprova ordem oficial.
+A completude de pregões será auditada após retorno. Três meses presentes não bastam para provar cobertura.
+Sem ordenação, deduplicação, exclusão de I/5, backtest ou mudança de resultados/DD.

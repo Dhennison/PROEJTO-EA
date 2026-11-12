@@ -1,0 +1,21 @@
+VALIDACAO DO EXTRATOR v1.00 — 12/11/2026
+
+Motor C# compilado por Add-Type e script executado em PowerShell 7.4.6/Linux.
+Controles somente com dados sinteticos, sem arquivo integral da Cedro:
+- selecao TICK/BMF dos tres meses; BOV excluido;
+- todos os codigos WIN preservados, sem escolha de vencimento;
+- numeros de linha originais, duplicadas, empates e regressao preservados;
+- inventario de contratos/contagens/regressoes/empates/campos anormais;
+- SHA256 de todos os bytes da fonte, inclusive BOM e CRLF, conferido por Python;
+- integridade ZIP, hashes dos ZIPs e copia exata de EOD;
+- recusa de mes ausente, duas fontes no mesmo dia e destino existente;
+- UTF-8 invalido interrompe sem marcar concluido;
+- divisao em varias partes forcada com limite reduzido, seguida de releitura
+  e comparacao exata de todas as linhas e ordinais.
+Resultado: PASS em todos os controles de testar_extrator.py.
+
+A interface de selecao de pastas Windows e o ramo Windows PowerShell 5.1
+nao foram executados neste ambiente Linux. C# usa APIs do .NET Framework 4.5+
+e sintaxe compativel com o compilador integrado do Windows PowerShell 5.1.
+Validacao nao certifica semantica do layout Cedro, cobertura, sequencia oficial,
+fuso, execucao de ordens ou resultado do Modelo D.

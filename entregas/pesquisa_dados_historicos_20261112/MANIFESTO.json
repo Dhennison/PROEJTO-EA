@@ -8,7 +8,7 @@
     "2020-01-01",
     "2026-09-30"
   ],
-  "status": "USUARIO_BAIXANDO_AMOSTRA_3_8GB_COMPRA_PAGA_DESCARTADA",
+  "status": "EXTRATOR_WIN_3_MESES_PREPARADO_AGUARDANDO_EXECUCAO_USUARIO",
   "prices_verified": false,
   "purchase_made": false,
   "network_status": "OFFICIAL_SITES_BLOCKED_403_DRAFT_REQUIRES_PUBLISH",
@@ -44,7 +44,7 @@
   "sample_download": "manual_usuario",
   "sample_size_user_report": "3.8GB",
   "sample_inspected": false,
-  "next_step": "Ler primeiras20linhas deWINporSelectString;depoisdefinirfiltro dos3mesespreservandoordemoriginal;naoinferir campos3a8semconfirmar",
+  "next_step": "Executar extrator Windows; enviar GERAL_CEDRO_WIN.zip primeiro e ZIPs WIN por dia/parte; auditar layout, contratos, sequencia, cobertura e ajustes antes de replay.",
   "no_purchase_authorized": true,
   "sample_reprocessing_scope": {
     "months": [
@@ -90,8 +90,8 @@
       "20260828.log",
       "20260831.log"
     ],
-    "layout_not_yet_seen": true,
-    "content_not_yet_inspected": true
+    "layout_not_yet_seen": false,
+    "content_not_yet_inspected": "Apenas trechos colados; nao arquivo integral"
   },
   "sample_first_snippet": {
     "source": "20linhascoladaspeloUsuario_20260803.log_TICK_BMF",
@@ -102,5 +102,24 @@
     "WIN_rows_shown": 0,
     "nonmonotonic_timestamps_in_global_snippet": true,
     "remaining_field_semantics_confirmed": false
+  },
+  "sample_WIN_snippet": {
+    "source": "20 linhas coladas pelo usuario de 20260803.log",
+    "symbol": "WINV26",
+    "records_shown": 20,
+    "timestamp": "2026-08-03 09:00:57.276",
+    "identical_rows_present": true,
+    "WINQ26_confirmed": false,
+    "field_semantics_confirmed": false,
+    "timezone_confirmed": false,
+    "official_tie_order_confirmed": false
+  },
+  "extractor": {
+    "version": "1.00",
+    "path": "entregas/cedro_extrator_win_v1_00",
+    "scope": "2026-08/09/10 completos, familia WIN",
+    "changes_source": false,
+    "interpretation_or_backtest": false,
+    "validation": "Dados sinteticos PowerShell 7/Linux; interface Windows e PowerShell 5.1 pendentes"
   }
 }

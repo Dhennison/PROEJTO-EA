@@ -974,5 +974,17 @@
     "nao_reenviar_resultados_ou_pdfs_a_cada_etapa": true,
     "atualizar_internamente": true,
     "trabalho_ativo": "Aguardar estrutura Cedro para reprocessar AGOSTO/SETEMBRO/OUTUBROinteiros;setembro refeito comoriginal preservado;outubroextensao foraWork."
+  },
+  "cedro_extracao_atual": {
+    "pacote": "entregas/Cedro_Extrair_WIN_3_Meses_v1_00.zip",
+    "status": "PREPARADO_AGUARDANDO_USUARIO",
+    "meses": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "novos_resultados_calculados": false,
+    "WINQ26_confirmado": false,
+    "WINV26_visto_em_03_agosto": true
   }
 }

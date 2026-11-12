@@ -1,0 +1,10 @@
+{
+  "Extrator.cs": "e78f7bb5a4a390479625594981db8924704ce19339159923af95513413ef653d",
+  "Extrair_WIN.ps1": "efb2128721bf76f9fc74a6ba7ebb77dfcff343137c54bc190f10eeca78978dd1",
+  "INICIAR_EXTRACAO.cmd": "03dee24a10f67001390af16a0aa98b12d806644be08a53b72ee5ed77921c10a2",
+  "LEIA_PRIMEIRO.txt": "25b1190be994613b3751ecf7cdf43ecf6a8f8e46d3b4309dbd7b1cec9f3fba22",
+  "VALIDACAO.txt": "d3ebb730b433d59e6450a8923004c6d87f20d97c679b6d344afd3748a7b21428",
+  "testar_extrator.py": "6f2756d580787bc6e60c3e8b46428eadeb0d730b367f07cace4ff60904962717",
+  "zip_sha256": "b11e069588ef21bfdbdca0b83bc6f6d7c0e41ac85dfc9cb760abee8e6fe9514b",
+  "nota": "ZIP normaliza finais de linha para CRLF; hashes de fontes referem-se aos arquivos do repositorio, ZIP possui hash proprio."
+}
