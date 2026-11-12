@@ -127,3 +127,7 @@ WINQ26ausente do catálogo atual daGenial. Ousuário informou queXPnão adiciona
 ## Pausa solicitada e TXT para outra IA
 
 O usuário propôs testar WIN$N semTester e depois pediu expressamente “Ainda não faça então”. Preparado TXTconsolidado com situação completa, agosto parcial, contratos indisponíveis e risco de meses mais antigos, abertura real31/07, contexto03/08, ideiaWIN$Ndireto, alternativas e perguntas para avaliação externa. Nenhum novo replay nem nova rodada deTester executados. Aguardar parecer, preservando dados/resultados/criterios e sem misturar DDentre métodos. Arquivo em `entregas/atualizacao_outra_ia_20261111/ATUALIZACAO_MODELO_D_AGOSTO_CONTRATOS_ALTERNATIVAS.txt`; ZIPcontém sóesseTXTpara download. Usuário encaminhará à outraIA.
+
+## Parecer da outra IA e avaliação —12/11/2026
+
+Direção proposta: conjunto de desfechos OHLC,63casos conhecidos como controle, aplicação posterior ao histórico e faixas por série. Avaliação registrou que alvo após entrada não implica primeiro encerramento, que existem posições abertas/corte e saltos, e que validação precisa alinhar dados/grade/protocolo. Limites individuais/juntos e DDnecessitam especificação. Reconciliação877/1877não é homologação deexecução. Recomendado fechar especificação corrigida antes de programar. Pausa mantida; nenhum novo algoritmo/teste/coleta/PDFalterado. Detalhamento em `entregas/avaliacao_proposta_candles_20261112/AVALIACAO_E_REQUISITOS_DA_ESPECIFICACAO.txt`.

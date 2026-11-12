@@ -1,0 +1,77 @@
+MODELO D — AVALIAÇÃO DA PROPOSTA DA OUTRA IA
+12/11/2026 — discussão metodológica, sem implementação/novo teste.
+
+CONCLUSÃO
+A direção é útil: classificar o que OHLC permite determinar, preservar a incerteza e confrontar o modelo com os negócios já coletados. A tabela sugerida não pode ser implementada literalmente. É necessária uma especificação completa do conjunto de trajetórias e das regras de entrada/saída.
+A pausa de execução permanece. Nenhum classificador, replay novo ou consulta adicional WIN$N foi iniciado nesta avaliação.
+
+1. ALVO DEPOIS DA ENTRADA NÃO IMPLICA ALVO ANTES DO STOP
+A tabela afirma que abertura na linha/abaixo com máxima >= alvo, ou fechamento >= alvo com mínima <= entrada, tornam o alvo determinado. Essas condições podem mostrar um toque no alvo após a entrada, mas não afastam um STOP anterior.
+
+Contraexemplo para compra elegível, com preços na grade5:
+Entrada100; TP110; SL90.
+Candle: O100, H115, L85, C110.
+Sequência100->85->115->110: entra100 e sai STOP antes do alvo.
+Sequência100->115->85->110: entra100 e sai ALVO antes do stop.
+As duas sequências têm o mesmoOHLC. Abertura na entrada e fechamento no alvo não determinam o primeiro encerramento.
+É necessário considerar concorrência SL/TP e estado da posição. A afirmação “o alvo ocorreu depois” não basta quando a posição já poderia ter sido encerrada.
+
+2. O CONJUNTO NÃO É APENAS {ALVO,STOP}
+Uma barra pode permitir ALVO ou permanência aberta, dependendo da ordem dos preços. Barras posteriores podem resolver em ALVO, STOP ou corte por horário.
+Exemplo: compraE100,TP110,SL90; O115,H115,L100,C105. Uma trajetória pode fazer o alvo antes da entrada e terminar com posição aberta; outra pode repetir115 depois da entrada e realizarTP. Não háSTOP nessa barra, cujo mínimo é100.
+Se as barras posteriores também não tocaremSL/TP, o encerramento possível é o corte. A classificação deve propagar estados cronologicamente, incluir corte/preço de saída e registrar dados faltantes, sem forçar resultado binário.
+
+3. DEFINIR O QUE SIGNIFICA “QUALQUER TRAJETÓRIA POSSÍVEL”
+Antes da implementação, fixar:
+- Fonte/preço: Last de negócios, candles nativosWIN$N ou candlesWork; divergências não são ignoradas.
+- Matemática ou grade5; elegibilidade pela abertura e geometria; toque inclusivo ou outro critério, sem trocar variantes ao validar.
+- Permissão de saltos entre negócios, dentro da barra e entre barras; não presumir continuidade quando o protocolo usa registros discretos.
+- Abertura/fechamento como primeiro/último negócio observado da barra; máxima/mínima precisam ser atingidas; extremos podem repetir.
+- Entrada/saída em negócios distintos, preservando a regra do replay por negócios: uma saída só é avaliada em registro posterior ao da entrada, inclusive no mesmo milissegundo.
+- Corte, primeiro preço no corte, aberturas reais tardias e lacunas.
+- Uma operação por nível/dia e mesma trajetória para os cinco níveis quando avaliar o resultado conjunto.
+
+Exemplo que exige tratar saltos e a regra do registro posterior:
+CompraE100,SL90,TP110; negócios115,85,105,115. No protocolo atual,85é o primeiro negócio de entrada; não se processa saída no mesmo registro. O seguinte105não disparaSL;115disparaTP. Uma interpolação contínua entre115e85 inventaria passagem porE100eSL90antes do negócio85e poderia concluir STOP indevidamente.
+Portanto, uma prova para caminhos contínuos não é automaticamente válida para o replay discreto existente.
+
+Não é necessário escolher dois caminhos artificiais OHLC/OLHC. Pode-se estudar estados/símbolos definidos pelos limiares, mas cada regra precisa preservar os requisitos acima e ter sua abrangência demonstrada. Nenhuma implementação desse mecanismo foi iniciada.
+
+4. VALIDAR COM OS63CASOS SEM CONFUNDIR FONTES OU VARIANTES
+Existem33operações de setembro e30nos14dias de agosto coletados. Para consistência interna, primeiro usar candlesM1 agregados dos próprios negócios, compatíveis com o replay por negócios usado como controle. Só depois confrontar a classificação nos candles doWork/WIN$N.
+Há divergências documentadas entre candles e negócios:24OHLC em setembro e20nos14dias de agosto. Uma divergência entre previsão e controle pode decorrer de alimentação, não necessariamente da lógica do classificador.
+Há também diferença entre níveis matemáticos e grade5: em setembro,01/09R38,2 muda o desfecho conforme normalização/toque. Comparar grade5comgrade5e preservar a regra de saída em registro posterior.
+O corte é parte do controle: em agosto houve25/08R61,8, com primeiroLast às18:00:00.012. Não excluir essa operação da validação por não serALVO/STOP.
+
+Verificar se todo desfecho observado pertence ao conjunto previsto é necessário, mas não suficiente. Um classificador que devolve todos os desfechos para tudo passaria nesse teste sem informar nada.
+Devem existir testes/provas de:
+(a) cobertura: nenhuma trajetória admissível tem desfecho fora do conjunto;
+(b) realizabilidade/exatidão: cada desfecho listado tem uma trajetória admissível que o produz, se o resultado for anunciado como conjunto exato;
+(c) correção dos rótulos“determinado”, incluindo casos adversariais construídos.
+Se a proposta deliberadamente usar um superconjunto conservador, identificá-lo assim e medir o quanto fica pouco informativo.
+
+Os63resultados já são conhecidos e pertencem a recortes disponíveis/inspecionados, não a uma amostra inédita e aleatória. Servem como teste de consistência/regressão, não prova geral nem estimativa confiável de probabilidades para2023–2026. Percentuais devem ser descritivos do recorte.
+
+5. MÍNIMOS/MÁXIMOS CONDICIONAIS E CINCO NÍVEIS
+Um conjunto correto de desfechos pode gerar limites matemáticos para o modelo de preço declarado. Esses limites não são limites garantidos dePnLreal com fila, latência, spread e custos.
+Somar o menor/maior resultado de cada operação pode produzir uma faixa conservadora, mas não necessariamente endpoints realizáveis por uma única trajetória de preço compartilhada pelos cinco níveis. Se anunciar mínimo/máximo EXATOS da estratégia, tratar a consistência conjunta. Se usar soma de limites individuais, declarar possível folga.
+Não apresentar o subtotal das operações determinadas como se fosse o resultado do mês inteiro. Apresentar contribuição fixa + faixa das incertas e a base completa; meses incompletos por dados são outra categoria de pendência.
+
+6. DRAWDOWN
+Calcular cada série em ordem cronológica, sem misturar fita, convençãoWork e novos cenários. Preservar os resultados já apurados sob seus respectivos critérios.
+DDdas curvas de extremos exige definição precisa. Um envelope pontual de SALDOS não dá, sozinho, limites deDD: curvas com mesmo saldo mínimo/máximo podem ter picos/vales diferentes.
+Se forem conhecidos limites válidos de RETORNO DE CADA DIA e a métrica forDDde fechamentos diários, a curva de retornos mínimos fornece um limite conservador superior doDD e a de máximos um limite conservador inferior, sob a base/hipóteses declaradas. A atingibilidade depende da consistência das escolhas. Isso não éDDintradiário nemDDreal deexecução.
+Deixar a construção e as limitações escritas antes de rotular os números dosPDFs como uma faixa de risco.
+
+7. ESCOPO DA VALIDAÇÃO E RELATÓRIOS
+A reprodução matemática de877datas/1877operações conferiu a convenção de referência. Não equivale à homologação de todo oEA, do transporte de ordens ou deexecução em conta real.
+Mesmo com negócios, a evidência é de cronologia dos preços recebidos sob regras condicionais; não comprova que uma ordem específica teria preenchido na bolsa.
+
+A proposta de relatório por séries é útil, mas o novo“determinável+faixa”precisa ser identificado como tal. Nenhum número novo foi calculado nem autorizado como substituto silencioso de setembro+1380pela fita. OWorkoriginal e os resultados reconstruídos permanecem preservados.
+31/07teve abertura real12:34, comM1eD1coincidentes. Contexto válido de03/08; não restaurar a inferência de incompletude pelo horário. 03/08está fora da base original doWork e deve continuar identificado quando ampliar o escopo.
+
+8. CONTRATOS E PRÓXIMO PASSO RECOMENDADO
+Concordamos em não insistir nas mesmas corretoras sem fonte disponível. Uma consulta curtaWIN$Nde1minuto pode ser uma hipótese delimitada, mas não foi iniciada e não cria cobertura de anos. Coletar daqui em diante negócios do contrato vigente é uma frente prospectiva útil, separada da recuperação do passado e ainda não implementada neste passo.
+
+Recomendação: pedir/fechar uma especificação corrigida dos estados e trajetórias, incorporando as ressalvas acima; revisar casos adversariais; somente então discutir implementação. Depois, confrontar com os63casos alinhando dados e variantes, e medir a exposição à incerteza nosM1disponíveis.
+Não é necessária nova coleta dos14dias deagosto nem repetição doTester para esta discussão. Não foi iniciado nenhum novo teste/classificador.
