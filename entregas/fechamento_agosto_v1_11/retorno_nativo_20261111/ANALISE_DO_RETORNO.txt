@@ -1,0 +1,27 @@
+AGOSTO/2026 — SEGUNDO RETORNO NATIVO — GENIAL — v1.11
+STATUS PRINCIPAL: MES AINDA NAO FECHADO. NAO COMPARAR TOTAL PARCIAL AO WORK DE AGOSTO INTEIRO.
+
+22 ZIPs recebidos (GERAL+21 datas), reunidos em58arquivos unicos sem conflitos. Log START–END recebido. Hashes dos arquivos de referencia e M1Work coincidem com o pacote. Compilacao v1.11 informada anteriormente pelo usuario: zero erros/avisos.
+END:21datas processadas,798blocos,zero blocos de ticks pendentes,7dias pendentes por contrato,io_failed=false. 797blocos estabilizaram na2a leitura e1na3a. 39.738.970registrosALL,31.924.356negocios.
+14datas coletadas:12/08 a31/08. Foram examinados70estados data/nivel em4variantes;30operacoes encerradas na principal, mesmas30chaves Work,sem extras/ausentes. Tres dias sem operacao foram conferidos com dados (12,17,26/08). Busca independente confirmou280estados.
+
+PARCIAL TECNICA — SO ESTES14DIAS
+Work +1259,981338; principal grade5/toque -620; diferenca -1879,981338.17alvos,12stops e1corte. Estes valores NAO sao o resultado de agosto nem entram no DD/indice mensal.
+Tres trocasALVO->STOP:13/08R38.2,14/08S38.2 e31/08R38.2. Corte25/08R61.8 observado primeiro negocio18:00:00.012,Last177575,resultado condicional-145; Work-144,824. Nao e OrderClose real: trata-se do cenario de preco pela fita. O corte06/08ainda nao pode ser analisado.
+
+ALIMENTACAO
+M1dos contratosWINV26 corresponde aoWork antes do corte nas14datas; Q continua nao verificavel, ressalva explicita e nao prova de unicidade de contrato.
+7891minutos com negocios correspondem aos horarios Work.7871OHLCidenticos,20diferentes;7837quantidadesidenticas,54diferentes. Uma divergencia de preco durante operacao:25/08 15:14 R38.2. Maxima da fita176605 vsWork176610, ambas abaixo doSL176785, minima176530 acima doTP175775; essa diferenca nao atravessa os limiares da posicao nessa barra. Volume17757 vs24883, diferenca7126contratos. Ressalva de completude preservada, sem inventar negocios.
+Todas aberturas e primeiros negocios no minuto do corte dos14dias conferidos. Nenhuma posicao ficou aberta na principal. Estabilidade e OHLC equivalentes em parte do feed nao certificam completude absoluta da fita.
+
+O QUE FALTA
+WINQ26 nao existe no catalogo retornado pelo terminalGenial:exists=0,select_error4305,metadata_error4301; a tentativa direta de leituratambem falhou. Catalogo73536simbolos encontrou somente os codigosQ/Vsolicitados, sem sufixo alternativo. Isto descreve o acesso atual daGenial, nao ausencia universal do contrato ou de ticks naB3.
+Faltam6datas Work:04,05,06,07,10,11/08(13operacoes Work), e03/08complementar. WINV26 diverge doWork nessas datas e nao sera usado como substituto.
+Nao repetir os14dias coletados nem a mesma consulta naGenial. A tentativa pelaXPfoi SUSPENSA: o usuario informou que nao consegue adicionar WINQ26 nem WINV26. Nao pedir nova coleta naXP. O rascunho de recuperacao ficou arquivado como NAOEXECUTAR. Qualquer nova fonte precisa primeiro demonstrar acesso aos ticks do contrato e equivalencia dos dados. InstrumentoCFDActivTrades nao e automaticamente equivalente ao contratoWINQ26.
+
+31/07 CONFIRMADO
+M1351barras,12:34–18:24: O177470,H179495,L176985,C178725.
+D1MT5: mesmoOHLCexato. TimestampD100:00 identifica a barra diaria; nao e horario de abertura. Abertura real12:34 reconhecida conforme usuario/grafico. H/L/Cvalido para03/08. A pendencia de03/08e contrato/ticks, nao falta do contexto anterior.
+
+CONSERVACAO
+Originais e hashes preservados nesta pasta. Setembro+1380e seuPDForiginal permanecem intactos. Agosto segue pendente no compilado; nenhuma curva/DDatualizada com valores parciais. DoisPDFs serao entregues juntos no final.

@@ -1,0 +1,133 @@
+{
+  "month": "2026-08",
+  "status": "PENDENTE_NAO_COMPARAR_TOTAL",
+  "complete": false,
+  "Work_points": "-387.164995",
+  "principal_points": null,
+  "difference": null,
+  "days_analyzed": 14,
+  "supplement_days_analyzed": 0,
+  "supplement_complete": false,
+  "supplement_points": null,
+  "supplement_Work_points": null,
+  "operations_Work": 43,
+  "operations_ours": 30,
+  "price_differences": 20,
+  "quantity_differences": 54,
+  "new_price_scenarios": [
+    {
+      "cenario": "GRADE5_TOQUE",
+      "operacoes": 30,
+      "pontos": null,
+      "subtotal_nao_fechado": "-620.000000",
+      "motivos": {
+        "ALVO": 17,
+        "STOP": 12,
+        "CORTE_LAST": 1
+      }
+    },
+    {
+      "cenario": "MATEMATICA_TOQUE",
+      "operacoes": 30,
+      "pontos": null,
+      "subtotal_nao_fechado": "-614.022996",
+      "motivos": {
+        "ALVO": 17,
+        "STOP": 12,
+        "CORTE_LAST": 1
+      }
+    },
+    {
+      "cenario": "GRADE5_ESTRITA",
+      "operacoes": 30,
+      "pontos": null,
+      "subtotal_nao_fechado": "-620.000000",
+      "motivos": {
+        "ALVO": 17,
+        "STOP": 12,
+        "CORTE_LAST": 1
+      }
+    },
+    {
+      "cenario": "MATEMATICA_ESTRITA",
+      "operacoes": 30,
+      "pontos": null,
+      "subtotal_nao_fechado": "-614.022996",
+      "motivos": {
+        "ALVO": 17,
+        "STOP": 12,
+        "CORTE_LAST": 1
+      }
+    }
+  ],
+  "Tester_deals": "NAO_MEDIDOS_EM_AGOSTO_NAO_SAO_O_RESULTADO_PRINCIPAL",
+  "limitations": [
+    "Pontos condicionais nos niveis, um contrato, sem custos/fila/spread ou garantia de execucao.",
+    "Escolha por M1 completo identico ao Work; multiplos correspondentes recusados. Candidato nao verificavel e ressalva explicita, nao prova de unicidade.",
+    "Duas leituras identicas conferem estabilidade local, nao completude do servidor.",
+    "Grade5/toque e o principal; demais variantes sao controles.",
+    "Saida em negocio posterior a entrada; corte pelo primeiro Last no minuto do corte.",
+    "Todas as divergencias de OHLC/quantidade sao registradas, inclusive durante operacoes.",
+    "Nenhum saldo de setembro e alterado. DD so recalculado depois de congelar agosto."
+  ],
+  "sha256_inputs": {
+    "SIMBOLOS.csv": "26fcc75caf63a5749c187382cd5479f304e4099ddf3e9ae19468de85f1bc6feb",
+    "EVENTOS_20260826.csv": "972a74d0925b9d2f9529d5d34bb9e777354ed4652741fe85232d1f5d029899b7",
+    "EVENTOS_20260819.csv": "ce620630e0e86284e878921536f31487a48febe6c454067c0e860cfa3c1d7174",
+    "EVENTOS_20260818.csv": "ef38a2c02bcf36f5cf25ab7ad6555bc01e1a82da281ae848dc0a32d34e244c45",
+    "MINUTOS_20260817.csv": "a983de77905aff98435f32951f783d6cdddda151b71d5cfab5cfa3b1fc8822ab",
+    "EVENTOS_20260828.csv": "07e99500677dc59d3f935f536be432b84a3113f9e8c770d07f7907448794b278",
+    "EVENTOS_20260824.csv": "969bd76ecb3d4f03b6bce6c28db86ebca74f59077f2c42dea50157c9095b721d",
+    "M1_CONTRATO_20260807_WINV26.csv": "e007a2ce2ab8ee9f4b4ee5ee633c4f58ff4a2e60f746a4992253c74f4cbaf1fa",
+    "M1_CONTRATO_20260820_WINV26.csv": "5db944ea3e93a18ddfe8c29fc266254fb252c9b498ffadd307badfe71e7a270c",
+    "M1_CONTRATO_20260813_WINV26.csv": "eed203f049c489d23c6f572b0b2d430642bb2612d4bdb6e09302cf3e08619685",
+    "EVENTOS_20260821.csv": "6442b4e848551b6ab821cd0267738f6129cfaa2adc281937da9bd4fb87caf34b",
+    "M1_CONTRATO_20260818_WINV26.csv": "70ce60a65690528382291c622232e421f947f5ddcf0690dc6c986827723cc135",
+    "M1_CONTRATO_20260803_WINV26.csv": "0fb91c614e3c114ff70c24c84d01cb43a4b33ecd61cbfc631b193098cf7fdd6e",
+    "MINUTOS_20260825.csv": "080d3e27cd5ebb3ae4f7ef5b3d4f613c3eb8117280e5b8779a45a68578dd56e7",
+    "M1_CONTRATO_20260827_WINV26.csv": "69658ed23bfbe4bfec715aad5e498ded09243d89397f0aad1da8559bbc5c685c",
+    "M1_CONTRATO_20260814_WINV26.csv": "96ddb2819d4802bcacec5ad1e8cb9418b2b0b9ae2fa1ffa35477765c2492c7c6",
+    "M1_WORK.csv": "bae9afc7de51461fde8e7aedebdba306a8a76063ded2d571787742e05aea3413",
+    "MINUTOS_20260813.csv": "ecfb86d70c57448d2cecc615750313e2c4016cdce3d98416e7dbbcb910c774da",
+    "MINUTOS_20260818.csv": "ae684d3b82e4d15f794ffabb2996bd773238dc99abda7181b3502d4e466e183d",
+    "M1_CONTRATO_20260821_WINV26.csv": "fcc1a24df8b9104c40c1e29b5ea6495f9ed567bb266ecf18e47b756e79fde833",
+    "M1_CONTRATO_20260828_WINV26.csv": "d1bc74d558e3efb49efc9e7cde059a234088f6b750e922cf91264ce20f113faa",
+    "M1_CONTRATO_20260817_WINV26.csv": "f19efc6cf34cc3c49ee3438eaead49d7a48588a723b7e4491ee5ef61d8c5385e",
+    "EVENTOS_20260825.csv": "533361b3660059050d42c08bf31cd1727b04427460ce38fe9b603f6c024531c4",
+    "M1_CONTRATO_20260810_WINV26.csv": "b7f43c6aa2f694a020083bd3f96969f23a82df19cead6229beecab57fef0ed93",
+    "REFERENCIAS.csv": "7135eca392acfc9ab3ecd5b6ddbfe99b11fef94385680463cf9771dc219222f0",
+    "MINUTOS_20260831.csv": "0e30324150ece947a48776119ca5a4f5c8a4dabf80a63a072d9f6ab82ab5db16",
+    "M1_CONTRATO_20260812_WINV26.csv": "26351d2998c29b80103addf9c8135055ff63ddb1bbdc8aaad8a1fd5a3a24baa1",
+    "MINUTOS_20260828.csv": "26a20db064143204eb5f341f0ec3c689d3661a77f421ec894d4512d6f37a564a",
+    "MINUTOS_20260821.csv": "5c36281b809abf7584b56409be55ad9bef5d30a0ccbcf1d92434cc0af2ff7355",
+    "CONTEXTO_20260731_M1.csv": "3b4fc3237460637f9bb59f844c0de448942b0199416a84afa4bd418ec3a3ecfb",
+    "MINUTOS_20260820.csv": "aa1809a7144fda708302c3afca25a0c77d2e9a9e68d2b541f0fc51d552aac9bf",
+    "EVENTOS_20260831.csv": "729a9214e143977c153601c992664588f602c895ea5de50aea09545fa9ee3ce3",
+    "BLOCOS.csv": "cf7b98c4cba39f7203c999fd12ed9acfa6d42601a76bf9902358156c330871a5",
+    "M1_CONTRATO_20260819_WINV26.csv": "8609b51dac2fa243685e97fde82c8f7b283d2b76f030ad162fc14056693da395",
+    "CONTEXTO_20260731_D1.csv": "f8879a6b96e5d63ae1e811a090783e3b0dd9f491482210839abbf747ba64a8b6",
+    "M1_CONTRATO_20260805_WINV26.csv": "6b18abf7badedfe76fa95c14d7dd44b67ef1f7b737e3435f0b118b76536dcbae",
+    "EVENTOS_20260814.csv": "1cc782597903946dcfa5b99a47dc005fb053b321454bd8dd33127b69580b6fa1",
+    "MINUTOS_20260827.csv": "f0fa07df18f4f5f4f4394ac051eb68d6c6955a0bbc9cbde34ba02545bca5c10e",
+    "M1_CONTRATO_20260811_WINV26.csv": "3b59770e926362fe3e7815669c34eae34e47cf3cfe058ef3c1362624e10648df",
+    "REFERENCIAS_RESOLVIDAS.csv": "a8b0c1168bef4021c35149df27515dcc7519399456e5d0b38f142484166c51ae",
+    "MINUTOS_20260819.csv": "5af1f625ffa14a91ddb0109949e34488c02eb1bb6117cf4376b3b87114b0a1ff",
+    "MINUTOS_20260824.csv": "bc53e75ed68e6bb62f40a51ca4e8c10783b4afba4cb0d51d077f5ffb29e76c63",
+    "M1_CONTRATO_20260831_WINV26.csv": "31dc80174cf6cc897692ae1a2be046d0a4cff10e75010519352cc645e0e12df8",
+    "M1_CONTRATO_20260824_WINV26.csv": "ead60720a744268a206097d9efb9ca081383393a7d13d30045fcc82928d6df8e",
+    "CONTRATOS.csv": "cb8c8b914a0b5e4c67956aacbd3fa8f2a0e778628a276e80ed571bb7cb3ef07a",
+    "MINUTOS_20260814.csv": "0a3abc07f4eb88a966f4e708e402fab32951bc778a3a244c21082b237ebd2c07",
+    "EVENTOS_20260813.csv": "2dc16464988d9bf50fc61177a4aacc548276254d38072cc33b24998c33238129",
+    "EVENTOS_20260812.csv": "6b99140db602737bfc27b4acb0fdc80917f03ce5c245395ff38f26d2a4d692ee",
+    "M1_CONTRATO_20260825_WINV26.csv": "0f645148b70cc19d1d4bf52c44652a3058dc71484b1bff8653a52e622f3d33e9",
+    "MINUTOS_20260812.csv": "93202b2a6a2cdd49ffcd3695d0e6ab7d723359f9ea147f3a56526cc4c31f30e5",
+    "M1_CONTRATO_20260826_WINV26.csv": "8531ae702db733320dc48f57f834d68d0823e23c607fd03f65df9f24a98feb35",
+    "EVENTOS_20260817.csv": "d1101ce7176171673b03449702abefae891cf6efb21dfc66c97d9c15bd979c4e",
+    "MINUTOS_20260826.csv": "1f377f5dad079d1e44ee1d133385983ad69d5b87eb61f44e6d8a81f7f7a1dc10",
+    "M1_CONTRATO_20260804_WINV26.csv": "4c9b29318878d4ef3ec6b538cc54914549f201960526edb8597df4963a304d46",
+    "RESULTADO.txt": "5869e6822199bc7ba262b48798fe2b376c033fe1a70951f0212c3d0e80535879",
+    "M1_CONTRATO_20260806_WINV26.csv": "1edc4db4e319452675b8c0651794c651e8fbe002e896c413ab030aeba29c1596",
+    "EVENTOS_20260827.csv": "8008a8ad3f4c0e5b087f8fd763f595baf859fdffbe69a5bc6433f8931381f2fb",
+    "EVENTOS_20260820.csv": "39448f87438233ffb6d6f9eb21bd55c4340a0bbb183998205c417421d522b716"
+  }
+}

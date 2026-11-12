@@ -118,3 +118,8 @@ v1.10 compilada sem erros/avisos. A execução terminou com 20 dias pendentes e 
 ## Retificação do usuário e revisão1.11
 
 31/07 abriu realmente às12:34, conforme usuário/grafico Profit. A inferência anterior de incompletude por horário estava errada; H/L/C179495/176985/178725 válido para03/08. v1.11 inclui03/08 na coleta como complemento fora do Work original, sem atribuir Work=0, preservando o comparável20datas. Corrige bloqueio anterior a CopyRates/CopyTicksRange por SymbolSelect4305, inventaria sufixos e registra ressalva quando outro candidato não é verificável. Pacote, fontes, testes e retificação em `entregas/fechamento_agosto_v1_11`, ZIP próprio. Nenhum resultado nativo de agosto ainda.
+
+## Retorno completo v1.11 e suspensão da recuperação XP
+
+22ZIPs/log recebidos.14dias12–31/08coletados,798blocos,30operações; busca independente280estados. São preservados e não serão repetidos. Restam6datasWork+03/08complementar. D1de31/07coincide com oM1; abertura12:34e contexto válido confirmados.
+WINQ26ausente do catálogo atual daGenial. Ousuário informou queXPnão adicionaWINQ26nemWINV26; suspendemos a nova tentativa antes de entregar o rascunho, arquivado comoNAOEXECUTAR emrascunhos_suspensos. Nenhuma alteração naDEMOXP. Não há resultado mensal principal deagosto nem novoDD; parcial técnica fica somente nos arquivos. Reavaliar próximos passos com acesso comprovado a ticks ou auditoria M1 com ambiguidades, sem simular como se fosse fita real.

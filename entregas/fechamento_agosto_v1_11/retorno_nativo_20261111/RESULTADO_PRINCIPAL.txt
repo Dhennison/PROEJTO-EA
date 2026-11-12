@@ -1,0 +1,4 @@
+AGOSTO/2026 — PENDENTE_NAO_COMPARAR_TOTAL
+Nenhum total mensal nosso liberado: ver PENDENCIAS.csv.
+Base comparavel:20datas do Work original;03/08 esta em DIARIO_COMPLEMENTAR.csv, sem Work ficticio zero nem soma ao principal.
+Um contrato por nivel; grade 5; toque inclusivo; pontos condicionais, sem custos/fila.

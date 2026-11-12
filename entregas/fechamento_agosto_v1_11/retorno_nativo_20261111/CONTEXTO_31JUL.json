@@ -1,0 +1,35 @@
+{
+  "date": "2026-07-31",
+  "symbol": "WIN$N",
+  "jul31_actual_session_open": "12:34:00",
+  "session_open_confirmed_by_user_and_chart": true,
+  "aug03_collected_as_supplement_outside_original_Work_scope": true,
+  "does_not_override_references": true,
+  "M1": {
+    "state": "ESTAVEL",
+    "rows": 351,
+    "first": "2026.07.31 12:34",
+    "last": "2026.07.31 18:24",
+    "OHLC": [
+      "177470.00000000000",
+      "179495.00000000000",
+      "176985.00000000000",
+      "178725.00000000000"
+    ]
+  },
+  "D1": {
+    "state": "ESTAVEL",
+    "rows": 1,
+    "first": "2026.07.31 00:00",
+    "last": "2026.07.31 00:00",
+    "OHLC": [
+      "177470.00000000000",
+      "179495.00000000000",
+      "176985.00000000000",
+      "178725.00000000000"
+    ]
+  },
+  "D1_equal_M1_aggregate": true,
+  "D1_OHLC_is_additional_source_not_certified_full_feed": true,
+  "interpretation": "A sessao de31/07 abriu realmente as12:34, confirmado pelo usuario/grafico. Nao classificar o inicio tardio como historico incompleto. H/L/C das351barras e contexto valido para03/08. A consultaD1 e conferencia adicional e nao bloqueia uso desse contexto. 03/08 e coletado como complemento, sem inventar resultado Work original."
+}

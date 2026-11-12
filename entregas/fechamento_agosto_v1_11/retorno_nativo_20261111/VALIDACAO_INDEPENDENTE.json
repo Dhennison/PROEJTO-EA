@@ -1,0 +1,6 @@
+{
+  "states_checked": 280,
+  "cut_cases": 4,
+  "passed": true,
+  "scope": "Independent per-level chronological search. Conditional level fills; not queue or native MT5 execution."
+}

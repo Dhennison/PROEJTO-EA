@@ -1,0 +1,3 @@
+Rascunhos suspensos, NAO executar.
+
+Rascunho_Recuperacao_XP_v1_12_SUSPENSO.zip foi arquivado porque o usuario confirmou que os contratos WINQ26/WINV26 nao sao adicionados naXP. Nao e pacote de proxima etapa. A guarda de fontes, os testes com mocks e o consolidador em desenvolvimento sao preservados como historico de trabalho.
