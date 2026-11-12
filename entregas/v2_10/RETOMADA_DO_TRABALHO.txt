@@ -7,6 +7,8 @@ O diretório v2_10 é histórico; este TXT acompanha o projeto inteiro até o es
 ULTIMA VERIFICACAO PARALELA — XP DEMO 12/11 ATE 16:22
 Diario recebido: reconstrucao R38/R61 progride e avisos cessam apos 15:14; dados ate 16:22, 1594296 negocios acumulados, M1 consistente. Falha visual persiste (427 avisos); indicador ajuste tambem falha ao conferir objeto em 15:58, sem prova de valor errado. Sem confirmacao de fills/SLTP/resultado neste trecho. Analise e fonte em entregas/diagnostico_xp_20261112_1622. Nenhuma alteracao no EA ou ordens. Extracao Cedro segue como frente principal.
 
+RETORNO XP ATE 16:29 — apos maximizar e trocar M5 para M15, falhas visuais cessam no trecho; indicador ajuste Status OK, 173849. EA reinicia com diario validado/estado preservado/revision 201. Nova reconstrucao R38/R61 progride, ainda pendente no fim. Coleta geral conferida ate 16:28. Nao tratar recuperacao visual como prova de causa interna ou de execucao de ordens. Detalhes no diagnostico XP acima.
+
 COMO USAR ESTE REGISTRO
 Este é o arquivo principal para retomada. Atualizar a seção atual a cada etapa, com evidências, arquivos, conclusão, pendências e próximo passo. Só marcar publicação no GitHub depois do push confirmado. Não tratar uma preparação como execução, mocks como compilação MetaEditor ou pontos condicionais como resultado financeiro real.
 A seção histórica ao final é preservada como histórico: instruções antigas e antigos estados pendentes não substituem o estado mais recente no início.

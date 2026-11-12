@@ -37,3 +37,22 @@ Suportes S38,2/S50/S61,8 tem toque observado; resistencias sem toque no trecho c
 Nao ha OrderSend/retcode/deals no texto recebido. Nao atribuir alvo/stop ou pontos diarios.
 Nao e possivel certificar SL/TP atualmente no servidor por este Diario isolado.
 Extracao Cedro em .cmd e independente; nao foi interrompida nem modificada.
+
+ATUALIZACAO — NOVO TRECHO ATE 16:29:03
+Usuario relata grafico WIN$N sem atualizar; maximizou e mudou de periodo.
+Ultimo VISUAL_SYNC_FAILED 16:26:28.251 em M5. As 16:26:28.388 aparece M15,
+com nova inicializacao do EA. Nenhuma falha visual no restante deste trecho.
+Indicador as 16:26:28.394: WINZ26, fonte 11/11, operacional 12/11,
+ajuste 173849, anterior 173209, BVBG.187.01, Status OK.
+EA: DIARIO_REABERTO_VALIDADO, ESTADO_PRESERVADO, revision=201;
+ALL_CHAINS_RECONCILED as 16:26:32.378, unresolved=0.
+Troca de periodo reexecuta inicializacao e reconstroi trilhas de ticks mantidas
+em memoria. Assim, PENDING_HISTORY volta para R38/R61, com cursores avancando.
+Ate 16:29 o processo ainda nao terminou; nao afirmar trilhas concluidas.
+Coleta geral ja esta conferida ate 16:28 exclusivo, 1604258 negocios acumulados,
+M1_consistente=1, e COBERTURA_ATUAL CONFERIDA as 16:28:38.358.
+Recuperacao visual ocorreu apos atualizar grafico/reinicializar os programas;
+causa interna do travamento ainda nao provada. Nao houve mudanca de codigo
+nem comando de ordens pelo assistente. Diario nao comprova preenchimentos.
+Orientacao: manter grafico atual e aguardar reconstrucoes, evitando alternar
+periodo repetidamente. Nao precisa interromper extrator Cedro.

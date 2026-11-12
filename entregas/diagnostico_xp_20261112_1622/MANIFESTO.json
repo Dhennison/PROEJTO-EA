@@ -3,5 +3,12 @@
   "source_bytes": 435441,
   "kind": "ANALISE_DIARIO_USUARIO_NAO_EXECUCAO_REMOTA",
   "code_changed": false,
-  "trading_actions": false
+  "trading_actions": false,
+  "retorno_M15": {
+    "bytes": 432617,
+    "sha256": "2e8cafc6e72f21a2fbf7ce84d8bb3a43428928ac7b217ea73178ec77062b851c",
+    "visual_errors_after_M15": 0,
+    "last_time": "2026-11-12 16:29:03.030",
+    "reconstruction_finished": false
+  }
 }
