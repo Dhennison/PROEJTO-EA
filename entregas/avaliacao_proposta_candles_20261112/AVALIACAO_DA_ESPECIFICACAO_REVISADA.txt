@@ -1,0 +1,45 @@
+MODELO D — AVALIAÇÃO DA ESPECIFICAÇÃO REVISADA
+12/11/2026 — discussão, sem implementar classificador nem executar replay.
+
+RESULTADO PRINCIPAL PROPOSTO PARA DISCUSSÃO
+Work original = X; Modelo D M1/grade5 = [A,B], com quantidade de operações determinadas e indeterminadas. A faixa é envoltório externo de pontos condicionais do modelo, não intervalo garantido de lucro real nem probabilidade.
+As séries por negócios e resultados já preservados continuam identificados à parte. Não substituir setembro+1380 silenciosamente e não misturar curvas/DD de métodos distintos.
+
+AVANÇOS DA REVISÃO
+Inclui estados TP/SL/ABERTA, propagação entre barras e corte; reconhece que a soma de mínimos/máximos individuais é envoltório externo possivelmente folgado; preserva Work e separa séries. A direção continua útil.
+
+INCOMPATIBILIDADE A RESOLVER: SALTOS E REGISTRO DA ENTRADA
+A especificação permite qualquer salto, mas escreve que, se O>E, a entrada ocorre quando o preço cai aE, e que L<=S torna SLforçado porque o mínimo viria depois da entrada.
+Se houver salto de um negócio acima deE para outro abaixo deS, pode não existir negócio emE nem emS. Sob o protocolo já usado nos63casos, o primeiro registro<=E entra na compra e a saída só é testada em registro posterior. O mínimo pode ser precisamente o registro de entrada, não um registro posterior.
+
+Contraexemplo para compra elegível, todos os preços na grade5:
+E=100, T=110, S=90.
+OHLC da barra: O=115, H=115, L=85, C=105.
+Trajetórias admissíveis de registros de negócios:
+1)115->85->105: entra no registro85; no seguinte105não háSLnemTP. FicaABERTA.
+2)115->100->85->105: entra100;85é posterior e disparaSL.
+3)115->85->115->105: entra85;115é posterior e disparaTP.
+Todas começam em115, tocam os extremos85/115, terminam105e ficam dentro de[85,115]. A elegibilidade de compra por abertura115>=100é satisfeita. A sequência permite repetir o máximo, como OHLC permite.
+Logo o conjunto dessa barra, para o protocolo discreto usado, inclui{TP,SL,ABERTA}. A tabela proposta marcaSLforçado e gera apenas{TP,SL}, excluindoABERTApossível.
+
+AJUSTE DE ESPECIFICAÇÃO NECESSÁRIO
+Definir entrada da compra como primeiro registro com preço<=E, da venda como primeiro registro>=E. O preço condicional da hipótese pode continuar no nívelE, mas isso não cria registros intermediários inexistentes. Fixar se SL/TP podem ou não ser processados no mesmo registro que dispara a entrada. Para confrontar diretamente os63casos existentes, preservar a regra de saída em registro posterior.
+Se for escolhido processar entrada eSLno mesmo salto, ou interpolar cruzamentos continuamente, explicitar a mudança: será outro modelo e não se deve exigir equivalência automática com o replay discreto anterior.
+Os casos em queL<=Srealmente força uma saída precisam ser demonstrados com a ordem dos registros/estado de entrada; não aplicar essa conclusão indistintamente à barra de entrada. Para posição já aberta antes da barra, o registroOjá é posterior à entrada e as condições da abertura têm outro significado.
+Isso não pede novos ticks; pede fechar o significado do algoritmo antes de programar.
+
+CLASSE NA BARRA DE ENTRADA VERSUS CONJUNTO FINAL
+{TP,ABERTA} pode ser uma classe ao fim da barra de entrada. O ramoABERTAprecisa seguir nas barras posteriores e pode terminar emTP,SLouCORTE. O conjunto final da operação não deve conservarABERTAse foi observado um corte válido e toda posição foi encerrada.
+As seis operações de setembro devem ser classificadas a partir dos respectivosOHLC, níveis/grade e protocolo. A expectativa de todas serem{TP,ABERTA}é uma hipótese de sanidade sobre aquela barra, não uma condição a impor ao código. Uma classificação diferente deve primeiro ser confrontada com a entrada/grade/dados e a fase considerada; não ser automaticamente chamada de erro.
+
+VALIDAÇÃO
+Manter os demais requisitos da avaliação anterior:
+- Primeiro comparar com candles agregados dos próprios negócios; depois com Work/WIN$N, separando divergências de alimentação.
+- Grade5comgrade5, mesmos filtros/níveis e corte, mesma regra para entrada/saída em registros distintos.
+- Os63casos conhecidos são controles de consistência, não prova geral nem amostra aleatória para probabilidades de todo o histórico.
+- Pertinência do desfecho observado ao conjunto é necessária, mas não basta para provar que o conjunto é exato ou os rótulos determinados são corretos. Um superconjunto deve ser anunciado como conservador e ter sua folga avaliada.
+- Workoriginal preservado; subtotal determinado não é resultado mensal completo. Operações com dados ausentes são pendência distinta da incerteza intrabar.
+- Envoltórios individuais podem ser folgados por compartilhamento da trajetória entre níveis. DDexige sua construção explícita, por série e por fechamentos diários; não éDDintradiário.
+
+STATUS
+A recomendação é resolver esse ponto da especificação, manter o formato principal como faixa claramente rotulada e só então discutir implementação. Não foi iniciado classificador, novo replay, novo teste de corretora ou atualização numérica dosPDFs.

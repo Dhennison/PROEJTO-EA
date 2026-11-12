@@ -131,3 +131,7 @@ O usuário propôs testar WIN$N semTester e depois pediu expressamente “Ainda 
 ## Parecer da outra IA e avaliação —12/11/2026
 
 Direção proposta: conjunto de desfechos OHLC,63casos conhecidos como controle, aplicação posterior ao histórico e faixas por série. Avaliação registrou que alvo após entrada não implica primeiro encerramento, que existem posições abertas/corte e saltos, e que validação precisa alinhar dados/grade/protocolo. Limites individuais/juntos e DDnecessitam especificação. Reconciliação877/1877não é homologação deexecução. Recomendado fechar especificação corrigida antes de programar. Pausa mantida; nenhum novo algoritmo/teste/coleta/PDFalterado. Detalhamento em `entregas/avaliacao_proposta_candles_20261112/AVALIACAO_E_REQUISITOS_DA_ESPECIFICACAO.txt`.
+
+## Especificação revisada —12/11/2026
+
+A revisão incorporou envoltório externo e estados, mas o exemplo115->85->105comE100/T110/S90revelaABERTAnão incluída na tabela deSLforçado, sob o protocolo anterior de saída só em registro posterior. Corrigir a especificação de saltos/entrada antes de implementar. Classe inicial não é conjunto final. Formato principal proposto:WorkversusfaixaM1/grade5+contagens,identificando limitescondicionais. Sem novo replay/classificador/teste/PDFnumérico. Detalhes em `entregas/avaliacao_proposta_candles_20261112/AVALIACAO_DA_ESPECIFICACAO_REVISADA.txt`.

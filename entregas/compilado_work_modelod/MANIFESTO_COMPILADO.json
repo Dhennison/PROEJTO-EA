@@ -68,7 +68,7 @@
     "regra_apresentacao": "Mostrar primeiro Work, nosso resultado principal e diferenca. Outros cenarios apenas na parte tecnica.",
     "pacote_preparado": "entregas/fechamento_agosto_v1_11",
     "zip": "entregas/ModeloD_Fechamento_Agosto_v1_11.zip",
-    "status": "DISCUSSAO_ESPECIFICACAO_CANDLES_SEM_IMPLEMENTACAO",
+    "status": "ESPECIFICACAO_REVISADA_AINDA_REQUER_PROTOCOLO_DE_SALTOS_E_ENTRADA",
     "validacao_local": "28 controles do coletor com mocks C++; pipeline sintetico 20 dias/1140 blocos; 400 estados por busca independente; 400 controles de reducao; nao e execucao MT5",
     "deals_agosto": "Nao medidos. Controle separado; nao substitui nem bloqueia o resultado principal por sequencia de negocios.",
     "retorno_nativo": "entregas/fechamento_agosto_v1_11/retorno_nativo_20261111",
@@ -102,7 +102,9 @@
     "handoff_txt": "entregas/atualizacao_outra_ia_20261111/ATUALIZACAO_MODELO_D_AGOSTO_CONTRATOS_ALTERNATIVAS.txt",
     "parecer_outra_IA_recebido": "2026-11-12",
     "avaliacao_da_proposta": "entregas/avaliacao_proposta_candles_20261112/AVALIACAO_E_REQUISITOS_DA_ESPECIFICACAO.txt",
-    "classificador_ou_nova_coleta_executado": false
+    "classificador_ou_nova_coleta_executado": false,
+    "avaliacao_especificacao_revisada": "entregas/avaliacao_proposta_candles_20261112/AVALIACAO_DA_ESPECIFICACAO_REVISADA.txt",
+    "formato_principal_em_discussao": "Work=X;M1grade5=[A,B],contagensdeterminadas/incertas;envoltorioexternocondicional"
   },
   "meses": [
     {
@@ -923,6 +925,6 @@
     "entregar_dois_pdfs_juntos_no_final": true,
     "nao_reenviar_resultados_ou_pdfs_a_cada_etapa": true,
     "atualizar_internamente": true,
-    "trabalho_ativo": "Discussao de especificacao corrigida apos parecer outraIA; sem implementar/testar nova alternativa. Agosto parcial e series/DDpreservados."
+    "trabalho_ativo": "Especificacao revisada em discussao; resolver saltos/registrodeentrada antes de programar. Faixa como principal proposta, sem mudar resultados existentes."
   }
 }
