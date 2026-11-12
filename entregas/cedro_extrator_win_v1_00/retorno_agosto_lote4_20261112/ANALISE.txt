@@ -1,0 +1,8 @@
+QUARTO LOTE CEDRO AGOSTO —24,25,26,27,28,31/08
+12ZIPs,30613890registros familiaWIN. Hashes/tamanhos/CRC,ordinais entrepartes,
+primeiro/ultimo registro,contagens/empates/regressoes conferem com GERAL.
+WINV26 corresponde aWork;M1semminutosWorkausentes;diferencas apenas18:24apos corte.
+OHLCdiario,quantidade econtagem de registros iguais aoEOD nas6datas.
+Com este lote:42ZIPs,21pregoes,102168252registrosWIN deagosto completos recebidos.
+Resultado ecalculo deestrategia em entregas/cedro_modelod_agosto_2026/LEIA_RESULTADO.txt.
+Originais preservados localmente;naorepublicados. Sem alterar ordem,duplicadasoucondicoes.

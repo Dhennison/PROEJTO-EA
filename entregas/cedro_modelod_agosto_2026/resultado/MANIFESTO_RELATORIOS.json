@@ -1,0 +1,31 @@
+{
+  "serie": "CEDRO",
+  "meses_concluidos": [
+    "2026-08"
+  ],
+  "pendentes": [
+    "2026-09",
+    "2026-10"
+  ],
+  "pontos_principais": "-2275.000000",
+  "DD": {
+    "base_inicio": "2026-08-04",
+    "base_fim": "2026-08-31",
+    "Work": "2248.559000",
+    "teste": "2960.000000",
+    "ordem": "CRONOLOGICA_CRESCENTE_SALDO_E_PICO_NAO_REINICIAM_POR_MES",
+    "medida": "MAXIMO_SOBRE_FECHAMENTOS_DIARIOS",
+    "provisorio_por_meses_anteriores_ausentes": true,
+    "serie": "CEDRO",
+    "setembro_nativo_nao_concatenado_a_esta_curva": true
+  },
+  "PDFs_guardados_para_entrega_final": [
+    "entregas/cedro_modelod_agosto_2026/resultado/Comparativo_ModeloD_Cedro_Tecnico_Em_Andamento.pdf",
+    "entregas/cedro_modelod_agosto_2026/resultado/Comparativo_Diario_ModeloD_Cedro_Enxuto_Em_Andamento.pdf"
+  ],
+  "sha256_PDFs": {
+    "Comparativo_ModeloD_Cedro_Tecnico_Em_Andamento.pdf": "f172eea3a81b1303c59c7edc5d5c6137b57923a1d9603a7940788a9651fa2e8d",
+    "Comparativo_Diario_ModeloD_Cedro_Enxuto_Em_Andamento.pdf": "1e280cae465ee05b88ffa9a73ae37a502451627acb5b110d1ee89daa2e736dc7"
+  },
+  "originais_e_setembro_anterior_preservados": true
+}

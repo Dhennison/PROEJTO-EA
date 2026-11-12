@@ -7,7 +7,7 @@
     "operacoes": 43,
     "Work_pontos": "-387.164995"
   },
-  "resultado_nosso": "MES_AINDA_NAO_APURADO",
+  "resultado_nosso": "-2275",
   "casos_zeragem_18h": [
     {
       "Data": "2026-08-06",
@@ -143,5 +143,7 @@
     "novos_resultados_calculados": false,
     "WINQ26_confirmado": false,
     "WINV26_visto_em_03_agosto": true
-  }
+  },
+  "status_atual": "CONCLUIDO_NOVA_FONTE_CEDRO",
+  "resultado_Cedro": "entregas/cedro_modelod_agosto_2026/resultado/RESULTADO.json"
 }

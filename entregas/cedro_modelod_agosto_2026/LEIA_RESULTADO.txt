@@ -1,0 +1,60 @@
+AGOSTO/2026 — RESULTADO PRINCIPAL COM A CEDRO
+
+Base comparável ao Work: 04 a 31/08, 20 pregões e 43 operações.
+Work: -387,164995 pontos.
+Nosso resultado principal: -2.275 pontos.
+Diferença: -1.887,835005 pontos.
+
+Critério: um contrato por nível, grade de cinco pontos e entrada por toque.
+Cálculo direto dos negócios Cedro, sem MT5 ou Tester. Entrada, alvo e stop
+creditados nos níveis da estratégia. Saída somente em registro posterior ao
+da entrada; corte pelo primeiro negócio do minuto das 18h. Pontos brutos
+condicionais, sem custos, fila ou comprovação de preenchimento de ordem real.
+
+DESFECHOS E DIFERENÇAS
+23 alvos, 18 stops e 2 saídas por horário. Mesmas 43 operações do Work.
+Três alvos do Work viram stop: 13/08 R38,2; 14/08 S38,2; 31/08 R38,2.
+Esses casos explicam -1.874,004334 pontos da diferença. Os demais ajustes,
+de grade e corte, explicam -13,830671 pontos.
+As 30 operações já obtidas na coleta Genial repetem desfecho e pontos.
+
+03/08 foi calculado como complemento: -100 pontos, três operações. Não
+constava no Work original; não recebe Work fictício zero nem entra nos -2.275.
+
+DRAWDOWN
+Maior DD sobre fechamentos diários na base comparável de agosto:
+Work: 2.248,559 pontos. Cedro: 2.960 pontos.
+Cálculo em ordem crescente, provisório enquanto faltarem meses anteriores.
+Quando setembro Cedro chegar, carregar saldo e pico de agosto para setembro,
+sem reiniciar o DD e sem mudar os resultados diários de agosto.
+A nova série Cedro não foi concatenada ao setembro da coleta anterior.
+
+CONFERÊNCIAS
+42 ZIPs, 21 datas e 102.168.252 registros da família WIN recebidos e auditados.
+Hashes, tamanhos, CRC, contagens e ordinais entre partes conferidos.
+WINQ26 de 03 a 11/08; WINV26 de 12 a 31/08. Referências do Work preservadas
+na rolagem. OHLC diário e quantidade/registros conferem com os EOD.
+Candles e quantidades M1 iguais ao Work no horário operado; diferenças às
+18:24, depois do corte. Todos os registros mantidos, sem filtrar condições,
+ordenar ou deduplicar. Fuso, semântica de condições e ordem oficial entre
+registros empatados não foram certificados independentemente.
+
+105 estados conferidos: motor Python anterior sobre eventos reduzidos contra
+C++ independente sobre TODOS os negócios do contrato. Mesmas entradas,
+saídas, preços e pontos. 400 estados sintéticos conferidos em quatro variantes.
+105 níveis conferidos com a tabela anterior; 43 operações e 20 somas diárias
+Work validadas contra fontes anteriores e a extração validada do PDF original.
+
+ARQUIVOS E PRÓXIMO PASSO
+resultado/RESULTADO.json: resultado principal, controles e DD.
+resultado/DIARIO_PRINCIPAL.csv: comparação diária.
+resultado/POR_OPERACAO.csv: operações, horários, ordinais e níveis.
+resultado/DIARIO_COMPLEMENTAR.csv: 03/08, fora da comparação original.
+resultado/CURVA_DIARIA_DRAWDOWN_CEDRO.csv: curva cronológica.
+Os dois PDFs, técnico e enxuto, estão em resultado/. Foram guardados para
+entrega conjunta no final, conforme solicitado pelo usuário.
+
+Setembro anterior e seu PDF continuam preservados. Próximo: reprocessar
+setembro Cedro inteiro, comparando ao Work só as 14 datas de 01 a 21/09.
+As datas de 22 a 30/09 ficam separadas, sem Work fictício zero.
+Outubro permanece autorizado como extensão fora do Work.

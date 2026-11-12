@@ -1,0 +1,64 @@
+{
+  "mes": "2026-08",
+  "fonte": "CEDRO_TICK_BMF",
+  "criterio": "GRADE5_TOQUE_1_CONTRATO_NIVEIS_CONDICIONAIS",
+  "status": "CONCLUIDO_SOBRE_ALIMENTACAO_RECEBIDA_COM_RESSALVAS",
+  "dias_Work": 20,
+  "dias_suplementares": 1,
+  "Work_pontos": "-387.164995",
+  "nosso_principal_pontos": "-2275.000000",
+  "diferenca": "-1887.835005",
+  "operacoes_Work": 43,
+  "operacoes_nossas": 43,
+  "motivos": {
+    "STOP": 18,
+    "ALVO": 23,
+    "CORTE_LAST": 2
+  },
+  "complemento_03_agosto": {
+    "data": "2026-08-03",
+    "escopo": "COMPLEMENTO_FORA_WORK",
+    "contrato": "WINQ26",
+    "Work_pontos": "",
+    "nosso_pontos": "-100.000000",
+    "diferenca": "",
+    "operacoes_Work": 0,
+    "operacoes_nossas": 3
+  },
+  "estados_conferidos_independentemente": 105,
+  "todos_conferidos": true,
+  "preenchimentos_reais_comprovados": false,
+  "custos_inclusos": false,
+  "limites": [
+    "Sem fila, custos ou garantia de preenchimento; entrada e saida creditadas nos niveis.",
+    "Saida em registro posterior a entrada, inclusive quando mesmo milissegundo.",
+    "Corte no primeiro negocio do minuto18:00.",
+    "Condicoes preservadas sem filtro. Sem garantia independente da ordenacao dos negocios com timestamp empatado.",
+    "OHLC/quantidade M1 conferem com Work no horario operado; divergencias18:24 posteriores ao corte.",
+    "03/08 fora do Work original, nao somado ao principal.",
+    "Setembro anterior permanece arquivado; nova serie Cedro identificada separadamente."
+  ],
+  "sha256_motor_anterior": "17b2c75dfc709379e8a894b3afb2f677a8f122c991aa4f4680b6b0dd785a37bb",
+  "drawdown": {
+    "base_inicio": "2026-08-04",
+    "base_fim": "2026-08-31",
+    "Work": "2248.559000",
+    "teste": "2960.000000",
+    "ordem": "CRONOLOGICA_CRESCENTE_SALDO_E_PICO_NAO_REINICIAM_POR_MES",
+    "medida": "MAXIMO_SOBRE_FECHAMENTOS_DIARIOS",
+    "provisorio_por_meses_anteriores_ausentes": true,
+    "serie": "CEDRO",
+    "setembro_nativo_nao_concatenado_a_esta_curva": true
+  },
+  "conferencia_com_Genial_anterior": {
+    "operacoes": 30,
+    "pontos_e_desfechos_identicos": true,
+    "total": "-620.000000"
+  },
+  "divergencias_Work": {
+    "alvos_Work_que_viraram_stop": 3,
+    "diferenca_nesses_casos": "-1874.004334",
+    "demais_diferencas_grade_e_corte": "-13.830671"
+  },
+  "referencias_niveis_105_conferidos": true
+}

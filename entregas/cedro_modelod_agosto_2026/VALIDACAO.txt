@@ -1,0 +1,11 @@
+12/11/2026 — PASS
+Compilacao C++17 -O2 -Wall -Wextra -Werror, sem erros/avisos.
+400estados sinteticos: reducao preserva4variantes,empates,cabecalho repartido,corte.
+105estados historicos: Python anterior sobre reducao x C++ independente sobre fluxo integral.
+105entradas/stops/alvos da tabela de niveis anterior conferidos.
+43chaves Work iguais;20valores diários iguais à fonte extraida doPDF anterior.
+30operacoes antigasGenial com mesmo motivo/pontos na Cedro.
+21primeiros negocios no minuto de abertura e21negocios de corte no minuto18:00.
+42hashes,tamanhos,CRC conferidos;contagens dos contratos confrontadas com controleGeral.
+PDFenxuto1pagina e tecnico2paginas abertos;texto principal verificado;paginaenxuta inspecionada.
+Sem MetaEditor,MT5,Tester,ordens externas,novas regras ou fila real.

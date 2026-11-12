@@ -2,8 +2,8 @@
 
 Estado geral atualizado em **12/11/2026**. Registro principal: **[RETOMADA_DO_TRABALHO.txt](entregas/v2_10/RETOMADA_DO_TRABALHO.txt)**. Esse TXT acompanha todas as etapas, o que foi concluído, pendências, evidências e próximo passo; será atualizado a cada avanço.
 
-- **Setembro concluído:** Work +3.839,31; nosso resultado principal +1.380,00; diferença −2.459,31 pontos. Critério: um contrato por nível, grade de cinco pontos, entrada por toque.
-- **Trabalho ativo:** [terceiro lote Cedro de agosto auditado](entregas/cedro_extrator_win_v1_00/retorno_agosto_lote3_20261112/ANALISE.txt): 15 pregões, de 03–21/08, recebidos. Restam os 12 ZIPs de 24–31/08; nenhum novo resultado de estratégia calculado.
+- **Setembro — resultado anterior preservado:** Work +3.839,31; nosso resultado principal +1.380,00; diferença −2.459,31 pontos. Critério: um contrato por nível, grade de cinco pontos, entrada por toque.
+- **Trabalho ativo:** [agosto Cedro calculado sem MT5](entregas/cedro_modelod_agosto_2026/LEIA_RESULTADO.txt): Work −387,16; nosso principal **−2.275 pontos**, mesmas 20 datas e 43 operações. Dois PDFs salvos internamente. Próximo: reprocessar setembro pela Cedro; fonte anterior preservada.
 - **Relatórios finais:** dois PDFs (técnico e enxuto Modelo D diário), atualizados internamente e entregues juntos no final. DD contínuo calculado em ordem cronológica, sem alterar resultados mensais já fechados.
 - [Continuidade dos compilados e drawdown](entregas/compilado_work_modelod/LEIA_CONTINUIDADE.md)
 - [Conteúdo recente da conversa e decisões](entregas/arquivo_conversa_20261111/CONTEXTO_E_CONTINUIDADE.md)

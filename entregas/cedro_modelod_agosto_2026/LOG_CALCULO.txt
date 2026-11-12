@@ -1,0 +1,84 @@
+CALCULANDO 2026.08.03 WINQ26
+CONFERIDO 2026.08.03 -100.000000 pontos
+CALCULANDO 2026.08.04 WINQ26
+CONFERIDO 2026.08.04 -200.000000 pontos
+CALCULANDO 2026.08.05 WINQ26
+CONFERIDO 2026.08.05 710.000000 pontos
+CALCULANDO 2026.08.06 WINQ26
+CONFERIDO 2026.08.06 85.000000 pontos
+CALCULANDO 2026.08.07 WINQ26
+CONFERIDO 2026.08.07 -1400.000000 pontos
+CALCULANDO 2026.08.10 WINQ26
+CONFERIDO 2026.08.10 0 pontos
+CALCULANDO 2026.08.11 WINQ26
+CONFERIDO 2026.08.11 -850.000000 pontos
+CALCULANDO 2026.08.12 WINV26
+CONFERIDO 2026.08.12 0 pontos
+CALCULANDO 2026.08.13 WINV26
+CONFERIDO 2026.08.13 230.000000 pontos
+CALCULANDO 2026.08.14 WINV26
+CONFERIDO 2026.08.14 -560.000000 pontos
+CALCULANDO 2026.08.17 WINV26
+CONFERIDO 2026.08.17 0 pontos
+CALCULANDO 2026.08.18 WINV26
+CONFERIDO 2026.08.18 165.000000 pontos
+CALCULANDO 2026.08.19 WINV26
+CONFERIDO 2026.08.19 -200.000000 pontos
+CALCULANDO 2026.08.20 WINV26
+CONFERIDO 2026.08.20 660.000000 pontos
+CALCULANDO 2026.08.21 WINV26
+CONFERIDO 2026.08.21 -825.000000 pontos
+CALCULANDO 2026.08.24 WINV26
+CONFERIDO 2026.08.24 340.000000 pontos
+CALCULANDO 2026.08.25 WINV26
+CONFERIDO 2026.08.25 -520.000000 pontos
+CALCULANDO 2026.08.26 WINV26
+CONFERIDO 2026.08.26 0 pontos
+CALCULANDO 2026.08.27 WINV26
+CONFERIDO 2026.08.27 655.000000 pontos
+CALCULANDO 2026.08.28 WINV26
+CONFERIDO 2026.08.28 -370.000000 pontos
+CALCULANDO 2026.08.31 WINV26
+CONFERIDO 2026.08.31 -195.000000 pontos
+{
+  "mes": "2026-08",
+  "fonte": "CEDRO_TICK_BMF",
+  "criterio": "GRADE5_TOQUE_1_CONTRATO_NIVEIS_CONDICIONAIS",
+  "status": "CONCLUIDO_SOBRE_ALIMENTACAO_RECEBIDA_COM_RESSALVAS",
+  "dias_Work": 20,
+  "dias_suplementares": 1,
+  "Work_pontos": "-387.164995",
+  "nosso_principal_pontos": "-2275.000000",
+  "diferenca": "-1887.835005",
+  "operacoes_Work": 43,
+  "operacoes_nossas": 43,
+  "motivos": {
+    "STOP": 18,
+    "ALVO": 23,
+    "CORTE_LAST": 2
+  },
+  "complemento_03_agosto": {
+    "data": "2026-08-03",
+    "escopo": "COMPLEMENTO_FORA_WORK",
+    "contrato": "WINQ26",
+    "Work_pontos": "",
+    "nosso_pontos": "-100.000000",
+    "diferenca": "",
+    "operacoes_Work": 0,
+    "operacoes_nossas": 3
+  },
+  "estados_conferidos_independentemente": 105,
+  "todos_conferidos": true,
+  "preenchimentos_reais_comprovados": false,
+  "custos_inclusos": false,
+  "limites": [
+    "Sem fila, custos ou garantia de preenchimento; entrada e saida creditadas nos niveis.",
+    "Saida em registro posterior a entrada, inclusive quando mesmo milissegundo.",
+    "Corte no primeiro negocio do minuto18:00.",
+    "Condicoes preservadas sem filtro. Sem garantia independente da ordenacao dos negocios com timestamp empatado.",
+    "OHLC/quantidade M1 conferem com Work no horario operado; divergencias18:24 posteriores ao corte.",
+    "03/08 fora do Work original, nao somado ao principal.",
+    "Setembro anterior permanece arquivado; nova serie Cedro identificada separadamente."
+  ],
+  "sha256_motor_anterior": "17b2c75dfc709379e8a894b3afb2f677a8f122c991aa4f4680b6b0dd785a37bb"
+}
