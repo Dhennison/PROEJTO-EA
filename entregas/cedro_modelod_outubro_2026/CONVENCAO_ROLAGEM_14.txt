@@ -1,0 +1,8 @@
+DEFINIDA ANTES DE CALCULAR 14/10
+Histórico mantém convenção auditada do Work na rolagem de12/08: abertura do
+contrato que assume a série e H/L/C/ajuste do contrato ativo do pregão anterior.
+Assim,14/10:abertura/negóciosWINZ26;contextoHLC/ajusteWINV26de13/10.
+Não trocar silenciosamente para histórico anterior deWINZ26; isso mudaria a
+convenção histórica em relação ao Work. Regras ao vivo do EA usam fonte do
+contrato corrente e permanecem outra frente; não foram alteradas neste estudo.
+Critério fixado antes do resultado; nenhuma escolha pelo maior lucro.

@@ -1,0 +1,43 @@
+OUTUBRO/2026 — MODELO D — PARCIAL CALCULADA EM 12/11/2026
+
+01 a 14/10: 9 pregões completos recebidos e calculados.
+PARCIAL: +1.600 pontos. Ainda não é o fechamento de outubro.
+13 operações: oito alvos e cinco stops. Dia14 completo: sem operações.
+
+POR DIA
+01/10 +100;02/10 -140;05/10 zero;06/10 -140;07/10 zero;
+08/10 +295;09/10 +1190;13/10 +295;14/10 zero.
+Zeros em dias completos e com dados conferidos, não por ausência de arquivo.
+
+AUDITORIA
+22 ZIPs integralmente lidos (incluindo as três partes de14/10),69.807.252
+registros da família WIN, contagens/hashes/tamanhos/CRC/ordinais conferidos.
+Sem regressão temporal nestes nove dias. Preços OHLC, soma de quantidade e
+contagem de negócios dos contratos presentes nos EOD coincidem. Contrato
+expirado V em14 tem registros, mas não linha EOD; ativo Z tem EOD conferido.
+Primeiro negócio e negócio no minuto do corte conferidos em todos os dias.
+40 estados do primeiro lote e cinco estados de14/10: motor Python anterior
+sobre redução versus C++ independente em TODOS os registros, todos iguais.
+Um contrato por nível, grade5, toque inclusivo, saída em registro posterior
+ao da entrada, corte no primeiro negócio do minuto18:00. Sem MT5/Tester.
+Pontos condicionais nos níveis, sem custos/fila ou garantia de preenchimento.
+Outubro está fora da referência Work; não inventar Work zero.
+
+ROLAGEM
+01–13/10: negócios WINV26.14/10: negócios WINZ26.
+No14, contexto H/L/C/ajuste do V de13; abertura Z do14. Mantida convenção
+histórica já conferida no Work12/08 (abertura V/contexto Q anterior).
+Convenção registrada ANTES do resultado; não foi escolhida pelo lucro.
+Não altera nem homologa as regras de seleção de fonte do EA ao vivo.
+
+RISCO E ESTADO
+DD local desta parcial:280 pontos. DD máximo contínuo desde agosto:3.620,
+sem reiniciar saldo/pico na virada do mês. Curva específica marcada PARCIAL.
+Os meses concluídos agosto/setembro não foram sobrescritos por esta parcial.
+A primeira parcela de8dias/+1600 e o dia14/zero estão preservados separadamente.
+
+PENDÊNCIAS
+Faltam12pregões,15 a30/10,26ZIPs; lista exata em recepcao/ESTADO.json.
+As partes002 e003 de14/10 já foram recebidas e processadas, sem pendência.
+Não marcar outubro como concluído até receber e conferir o restante.
+Depois de outubro D: A/B/C nos três meses; comparar; só depois testar alvos/stops.

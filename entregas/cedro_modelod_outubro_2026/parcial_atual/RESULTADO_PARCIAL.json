@@ -1,0 +1,25 @@
+{
+  "mes": "2026-10",
+  "status": "PARCIAL_NAO_E_FECHAMENTO_MENSAL",
+  "data_inicio": "2026-10-01",
+  "data_fim": "2026-10-14",
+  "pregoes_calculados": 9,
+  "subtotal_pontos": "1600.000000",
+  "operacoes": 13,
+  "motivos": {
+    "STOP": 5,
+    "ALVO": 8
+  },
+  "dia14": "COMPLETO_SEM_OPERACOES",
+  "estados_conferidos": 45,
+  "registros_WIN_auditados": 69807252,
+  "ZIPs_auditados": 22,
+  "faltam_pregoes": 12,
+  "faltam_ZIPs": 26,
+  "DD_continuo_desde03agosto": "3620.000000",
+  "DD_local_parcial": "280.000000",
+  "saldo_periodo_completo_AgoSet_e_Out_parcial": "2080.000000",
+  "Work": "SEM_REFERENCIA_NESTE_MES",
+  "criterio": "Modelo D original,1contrato/nível,grade5,toque,pontos condicionais,sem custos",
+  "referencias_rolagem": "14/10abertura/negociosZ,contextoHLC/ajusteV13,convencaohistoricaWork12/08preservada"
+}

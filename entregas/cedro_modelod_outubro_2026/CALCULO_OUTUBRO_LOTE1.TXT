@@ -1,0 +1,48 @@
+CALCULANDO 20261001
+CONFERIDO 20261001 100.000000
+CALCULANDO 20261002
+CONFERIDO 20261002 -140.000000
+CALCULANDO 20261005
+CONFERIDO 20261005 0
+CALCULANDO 20261006
+CONFERIDO 20261006 -140.000000
+CALCULANDO 20261007
+CONFERIDO 20261007 0
+CALCULANDO 20261008
+CONFERIDO 20261008 295.000000
+CALCULANDO 20261009
+CONFERIDO 20261009 1190.000000
+CALCULANDO 20261013
+CONFERIDO 20261013 295.000000
+{
+  "mes": "2026-10",
+  "status": "PARCIAL_8_PREGOES_NAO_E_FECHAMENTO_MENSAL",
+  "datas_calculadas": [
+    "2026-10-01",
+    "2026-10-02",
+    "2026-10-05",
+    "2026-10-06",
+    "2026-10-07",
+    "2026-10-08",
+    "2026-10-09",
+    "2026-10-13"
+  ],
+  "pregoes_calculados": 8,
+  "subtotal_pontos": "1600.000000",
+  "operacoes": 13,
+  "motivos": {
+    "STOP": 5,
+    "ALVO": 8
+  },
+  "Work_comparavel": false,
+  "dados_recebidos_ZIPs": 20,
+  "ZIPs_processados_datas_completas": 19,
+  "pregoes_restantes": 13,
+  "ZIPs_faltantes": 28,
+  "dia14_parcial_nao_calculado": true,
+  "estados_validados": 40,
+  "criterio": "MODELO_D_ORIGINAL_1_CONTRATO_GRADE5_TOQUE",
+  "preenchimentos_reais_comprovados": false,
+  "custos_inclusos": false,
+  "todos_registros_preservados": true
+}

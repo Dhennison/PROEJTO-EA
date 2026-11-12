@@ -24,7 +24,7 @@
     "principal_Work": "1380",
     "mes_completo_ABCD": "2855"
   },
-  "estado_atual": "D_SETEMBRO_CEDRO_CONCLUIDO_AGUARDANDO_OUTUBRO",
+  "estado_atual": "D_OUTUBRO_PARCIAL_9_DE21_PREGOES_CALCULADOS",
   "reutilizacao_dados": "Reutilizar fita bruta e auditorias; reducao por limiares precisa ser gerada por modelo/parametro. Nunca aplicar reducao especifica D a A/B/C ou novos stops/alvos.",
   "controle_anomalias": "Repetir sensibilidade arquivo/cronologico22e24 em cada modelo e estudo de parametros.",
   "proximo_lote_outubro": [
@@ -35,20 +35,12 @@
     "20261007"
   ],
   "outubro_progresso": {
-    "ZIPs_recebidos": 20,
-    "ZIPs_faltantes": 28,
-    "datas_completas": [
-      "20261001",
-      "20261002",
-      "20261005",
-      "20261006",
-      "20261007",
-      "20261008",
-      "20261009",
-      "20261013"
-    ],
-    "data_parcial": "2026-10-14",
-    "falta_parte_14": "WIN_20261014_parte002.zip",
-    "calculado": false
+    "ZIPs_recebidos": 22,
+    "ZIPs_faltantes": 26,
+    "datas_calculadas": 9,
+    "parcial_pontos": "1600",
+    "mes_fechado": false,
+    "dia14_processado": true,
+    "arquivo": "entregas/cedro_modelod_outubro_2026/parcial_atual/RESULTADO_PARCIAL.json"
   }
 }

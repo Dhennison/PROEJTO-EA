@@ -1,0 +1,26 @@
+AUDITANDO 20261001
+CONFERIDO 20261001 Work= 0 diferencas_preco= 0 regressoes= 0
+AUDITANDO 20261002
+CONFERIDO 20261002 Work= 0 diferencas_preco= 0 regressoes= 0
+AUDITANDO 20261005
+CONFERIDO 20261005 Work= 0 diferencas_preco= 0 regressoes= 0
+AUDITANDO 20261006
+CONFERIDO 20261006 Work= 0 diferencas_preco= 0 regressoes= 0
+AUDITANDO 20261007
+CONFERIDO 20261007 Work= 0 diferencas_preco= 0 regressoes= 0
+AUDITANDO 20261008
+CONFERIDO 20261008 Work= 0 diferencas_preco= 0 regressoes= 0
+AUDITANDO 20261009
+CONFERIDO 20261009 Work= 0 diferencas_preco= 0 regressoes= 0
+AUDITANDO 20261013
+CONFERIDO 20261013 Work= 0 diferencas_preco= 0 regressoes= 0
+{
+  "ZIPs": 19,
+  "datas": 8,
+  "registros_WIN": 61787122,
+  "datas_Cpp_vs_Python_independentes": 0,
+  "regressoes": [],
+  "EOD_diferencas": 0,
+  "novos_resultados_estrategia": false,
+  "mes_completo": false
+}

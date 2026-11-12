@@ -1,0 +1,24 @@
+CALCULANDO 20261014
+CONFERIDO 20261014 0
+{
+  "mes": "2026-10",
+  "status": "DIA14_COMPLETO_NAO_E_FECHAMENTO_MENSAL",
+  "datas_calculadas": [
+    "2026-10-14"
+  ],
+  "pregoes_calculados": 1,
+  "subtotal_pontos": "0",
+  "operacoes": 0,
+  "motivos": {},
+  "Work_comparavel": false,
+  "dados_recebidos_ZIPs": 22,
+  "ZIPs_processados_datas_completas": 3,
+  "pregoes_restantes": 12,
+  "ZIPs_faltantes": 26,
+  "dia14_parcial_nao_calculado": false,
+  "estados_validados": 5,
+  "criterio": "MODELO_D_ORIGINAL_1_CONTRATO_GRADE5_TOQUE",
+  "preenchimentos_reais_comprovados": false,
+  "custos_inclusos": false,
+  "todos_registros_preservados": true
+}

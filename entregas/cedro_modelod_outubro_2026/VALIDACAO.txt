@@ -1,0 +1,8 @@
+PASS —40+5 estados nos negócios integrais contra motor anterior/redução.
+9primeiros negócios de abertura,9primeiros negócios no minuto18:00.
+22SHA256/tamanhos/CRC e contagens/ordinais conferidos.
+13chaves de operação únicas e9datas únicas; soma diária=operação=+1600.
+Dia14semoperações confirmado por5estados auditados, não por arquivo ausente.
+Referências EOD preservadas,rolagem histórica fixada antes do cálculo.
+Sem regressões,sem divergências EOD nos contratos com linha EOD disponível.
+Sem MT5,ordens,otimização,parametrização nova ou fechamento mensal declarado.

@@ -175,3 +175,6 @@ Usuário questionou +2855 versus imagem +1380. +2855 é fechamento Cedro setembr
 
 ##12/11 — imagem de setembro completa e primeiro lote outubro
 Usuário pediu imagem com todos os dias operáveis,21/09* e Total Comparável*,seguidos do total geral Cedro. Renderizador atualizado:21pregões, Work—após21,subtotal1380 e total2855. Imagem/PDF/ZIP guardados; página setembro do enxuto substituída e gancho de regeneração preserva apresentação. Recebidos20ZIPs outubro,hashes/tamanhos conferidos,8datas completas01–13 e14parte001. Faltam28partes,inclusive14parte002; não há resultado outubro.
+
+##12/11 — cobrança e cálculo de outubro parcial
+Usuário perguntou cadê análise outubro: até então só arquivos guardados, imagemsetembro entregue. Assistente reconheceu e calculou8dias/+1600. Usuário enviou14partes002/003 (dia tem3,informação anterior de só002 estava incompleta). Processado14,Znegócios/contextoV13conforme convençãohistóricaWorkfixadaantesresultado; zeroops. Parcial consolidada9pregões/+1600,13ops8TP5SL,22ZIPs/69.807.252registros,45estados conferidos. Faltam26ZIPs/12dias15–30; outubro não fechado. DD contínuo3.620 mantido,mesesfechadospreservados.

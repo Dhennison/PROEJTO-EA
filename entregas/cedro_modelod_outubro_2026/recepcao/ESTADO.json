@@ -1,7 +1,7 @@
 {
-  "ZIPs_recebidos": 20,
+  "ZIPs_recebidos": 22,
   "ZIPs_totais": 48,
-  "ZIPs_faltantes": 28,
+  "ZIPs_faltantes": 26,
   "datas_completas": [
     "20261001",
     "20261002",
@@ -10,14 +10,11 @@
     "20261007",
     "20261008",
     "20261009",
-    "20261013"
-  ],
-  "datas_parciais": [
+    "20261013",
     "20261014"
   ],
+  "datas_parciais": [],
   "faltantes": [
-    "WIN_20261014_parte002.zip",
-    "WIN_20261014_parte003.zip",
     "WIN_20261015_parte001.zip",
     "WIN_20261015_parte002.zip",
     "WIN_20261016_parte001.zip",
@@ -45,5 +42,20 @@
     "WIN_20261030_parte001.zip",
     "WIN_20261030_parte002.zip"
   ],
-  "nenhum_calculo_outubro_realizado": true
+  "nenhum_calculo_outubro_realizado": false,
+  "primeiros8_calculados": true,
+  "dia14_em_processamento": false,
+  "datas_calculadas": [
+    "20261001",
+    "20261002",
+    "20261005",
+    "20261006",
+    "20261007",
+    "20261008",
+    "20261009",
+    "20261013",
+    "20261014"
+  ],
+  "parcial_pontos": "1600",
+  "fechamento_mensal_calculado": false
 }

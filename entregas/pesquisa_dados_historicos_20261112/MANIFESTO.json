@@ -8,7 +8,7 @@
     "2020-01-01",
     "2026-09-30"
   ],
-  "status": "SETEMBRO_CEDRO_CALCULADO_SEM_MT5",
+  "status": "OUTUBRO_CEDRO_PARCIAL9PREGOES_CALCULADA",
   "prices_verified": false,
   "purchase_made": false,
   "network_status": "OFFICIAL_SITES_BLOCKED_403_DRAFT_REQUIRES_PUBLISH",
@@ -44,7 +44,7 @@
   "sample_download": "manual_usuario",
   "sample_size_user_report": "3.8GB",
   "sample_inspected": false,
-  "next_step": "Receber outubro inteiro; depois A/B/C e estudo de stops/alvos",
+  "next_step": "Receber26ZIPs de15–30/10 e concluir D,outubro",
   "no_purchase_authorized": true,
   "sample_reprocessing_scope": {
     "months": [
@@ -252,5 +252,14 @@
       "2026-09-24"
     ],
     "same_results_both_record_orders": true
+  },
+  "October_partial": {
+    "days": 9,
+    "ZIPs": 22,
+    "WIN_records": 69807252,
+    "points": "1600",
+    "operations": 13,
+    "monthly_closed": false,
+    "remaining_ZIPs": 26
   }
 }

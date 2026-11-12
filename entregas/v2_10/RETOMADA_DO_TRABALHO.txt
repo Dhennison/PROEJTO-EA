@@ -34,6 +34,19 @@ Recebidos20ZIPs de outubro com hash/tamanho conferidos,8datas completas01,02,05,
 07,08,09,13 e14parte001. Faltam28ZIPs, inclusive14parte002; ainda sem cálculo outubro.
 Recepção em entregas/cedro_modelod_outubro_2026/recepcao. Fonte bruta preservada localmente.
 
+OUTUBRO — ANÁLISE DOS ARQUIVOS DISPONÍVEIS CONCLUÍDA
+Usuário cobrou a análise; assistente reconheceu que até então só guardara os ZIPs
+e entregara a imagem. Agora calculados 9pregões (01,02,05,06,07,08,09,13,14):
+PARCIAL +1.600 pontos,13operações,8alvos/5stops.14/10 completo sem operações.
+Recebidos/processados22ZIPs/69.807.252registrosWIN,45estados conferidos.
+Faltam26ZIPs/12pregões de15–30. Ainda NÃO é fechamento de outubro.
+14 tem3partes:002 e003 recebidas após a cobrança,ambas processadas.
+Rolagem histórica preserva convenção Work:abertura/negóciosZ14,contextoV13;
+definida antes do resultado,conforme precedente Work12/08. Não modifica EA vivo.
+Análise em entregas/cedro_modelod_outubro_2026/ANALISE_PARCIAL.txt;
+consolidado atual em parcial_atual/RESULTADO_PARCIAL.json. Não substituir
+resultados agosto/setembro por subtotais de outubro. Próximo receber restante.
+
 COMO USAR ESTE REGISTRO
 Este é o arquivo principal para retomada. Atualizar a seção atual a cada etapa, com evidências, arquivos, conclusão, pendências e próximo passo. Só marcar publicação no GitHub depois do push confirmado. Não tratar uma preparação como execução, mocks como compilação MetaEditor ou pontos condicionais como resultado financeiro real.
 A seção histórica ao final é preservada como histórico: instruções antigas e antigos estados pendentes não substituem o estado mais recente no início.
