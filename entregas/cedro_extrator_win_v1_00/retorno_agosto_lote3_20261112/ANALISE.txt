@@ -1,0 +1,28 @@
+CEDRO AGOSTO — TERCEIRO LOTE AUDITADO — 12/11/2026
+
+Recebidos e lidos 10 ZIPs de 17,18,19,20 e 21/08; duas partes por dia.
+Total do lote: 24164094 registros WIN. Acumulado lotes1+2+3: 71554362,
+30 ZIPs e 15 pregoes. Sem novo resultado de estrategia, PDF ou DD.
+Todos os hashes/tamanhos/CRC conferidos. Ordinais originais crescentes entre
+registros e partes. Contagens, primeiro/ultimo timestamp, empates/regressoes
+por contrato reproduzem o GERAL. Nenhuma regressao de timestamp neste lote.
+Nenhuma deduplicacao, ordenacao ou exclusao de condicao/agressor.
+
+Contrato de referencia WINV26 em todas as cinco datas, conforme mapeamento
+anterior, sem escolha por resultado de operacoes. Todos os minutos Work
+presentes nos ticks. Precos e quantidade M1 coincidem durante horario das
+operacoes. Diferencas apenas em18:24, apos corte18h: quatro dias com preco
+mais quantidade,20/08 apenas quantidade. Um minuto adicional Cedro por dia
+fora do conjunto de minutos Work. Detalhes em DIFERENCAS_M1 e COBERTURA.
+OHLC diario completo, numero de registros e soma de quantidade WINV26
+coincidem exatamente com EOD nos cinco dias.
+
+Sem inferir causa do tratamento de fechamento ou semantica dos campos de
+condicao/agressor sem layout. Fuso e ordem oficial entre empates nao homologados.
+Concordancia dos candles nao comprova fila nem preenchimento real de ordens.
+Originais Cedro preservados localmente, controles e agregados no repositorio.
+
+Restam os seis dias24,25,26,27,28 e31/08:12 ZIPs, todas as partes.
+Depois do retorno, concluir recepcao/auditoria de agosto e seguir ao replay
+pela fonte Cedro, preservando a comparacao original Work e resultados antigos.
+Setembro/outubro permanecem no escopo autorizado para a sequencia.

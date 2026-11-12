@@ -1,0 +1,13 @@
+CEDRO AGOSTO — TERCEIRO LOTE
+Originais: 10 ZIPs de 17,18,19,20,21/08; duas partes por data.
+Preservacao local: /workspace/retorno_cedro_20261112/ticks.
+Referencia de hashes/tamanhos: retorno_geral_20261112/ARQUIVOS.csv.
+Protocolo de auditoria mantido dos lotes1/2: todos os contratos lidos, todos os
+registros mantidos, nenhuma escolha por resultado, filtro de condicao ou deduplicacao.
+Contrato de referencia WINV26 nas cinco datas, conforme mapeamento anterior.
+Validacoes: SHA256, tamanho, CRC ao terminar leitura, cabecalho, ordinal crescente
+entre partes, contagens, primeiro/ultimo registro, empates/regressoes por contrato,
+precos e quantidades agregadas M1 contra Work, diario completo contra EOD.
+Linha original preservada e proveniencia, nao sequencia oficial do negocio.
+Dados TICK brutos nao republicados no repositorio. Controles e agregados salvos.
+Nao ha novo resultado de estrategia, DD ou PDF nesta auditoria de recepcao.
