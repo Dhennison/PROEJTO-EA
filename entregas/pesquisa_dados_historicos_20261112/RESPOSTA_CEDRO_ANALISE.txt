@@ -1,0 +1,33 @@
+CEDRO — PROPOSTA RECEBIDA PELO USUÁRIO —12/11/2026
+ATUALIZAÇÃO: compra paga descartada pelo usuário; R$30000e atéR$1000foram rejeitados. Priorizar amostra fornecida e alternativas gratuitas/inclusas na licença atual. Teto exato não informado; nenhuma compra autorizada.
+Fonte: e-mail transcrito pelo usuário; não tabela pública consultada. Link e senha da amostra omitidos do registro público.
+
+AMOSTRA E PRODUTO
+AmostraTBT/EOD:AGO/SET/OUT/2026,BM&FeBOV. Link expira15/11/2026. Ainda NÃOinspecionada: acesso tentouHEADnohostdrive.cedrotech.com, bloqueado403no túnel doambiente. Preservar amostra antes da expiração.
+Extração únicaFTP ou plano mensal/acesso diárioFTP; a descrição do plano cita fechamento do dia anterior após20h, cujo conteúdo precisa ser confirmado.
+EOD:5anos; Bovespa ajustada por proventos; BM&Frolada por vencimento paraWIN,IND,WDO,DOL,BIT. Rolagem descrita paraEODnão prova queTBTtenha contratos físicos ou série rolada: verificar layout/arquivos.
+TBT/minuto desdeMAIO/2020. Agressor desde21/12/2023. Condição doTrade desde14/11/2024. Arquivos anteriores a02/07/2025não incluem milissegundos.
+
+PREÇOS INFORMADOS
+TBT: R$1000por mês/mercado; pacote1anoR$10000; pacote5anosR$30000. Base de mercado/período dos pacotes e taxas precisam de confirmação.
+Minuto, descrito como preço por ativo por ano: até10ativosR$1000;11–50R$2000;51–100R$3600;101–1000R$10000. Confirmar unidade se necessário; não confundir comTBT. M1já disponível, não é objetivo da compra.
+
+COTAÇÃO A — WORK INTEIRO
+01/03/2023a21/09/2026=43meses. Pela unidade mensal,43x1000=R$43000paraUMmercado. Pacote5anosR$30000seria menor SEcobrir o período solicitado eBM&Fsem adicionais. Isso é comparação aritmética da tabela, não cotação fechada doescopo.
+COTAÇÃO B —01/01/2020a30/09/2026
+81meses solicitados. DesdeMAIO/2020deixaJAN–ABR/2020sem cobertura declarada. Oferta atual não atende o início. Não apresentar preço dos77meses disponíveis como cotação do período completo.
+Nelogica/B3ainda sem propostas equivalentes; não declararCedromaisbarata entre as três.
+
+SEM MILISSEGUNDOS
+A falta demsnão inviabiliza automaticamente replay por ordem dos negócios: se cada linha é um negócio, com sequência/ordem original garantida para empates de segundo, a cronologia de preços pode ser preservada. Não inventar precisão de horário.
+Se existe agregação ou reordenação sem garantia, a ordem intrassegundo fica incerta. Confirmar sequência, definição/truncamento dohorário e tratamento de cancelamentos/correções.
+Agressor não é requisito da lógica atual. Condição doTradeexige documentação de filtragem. Não inventar flagsMT5para registrosCedro.
+Amostra2026é posterior à inclusão dems, pode testarlayout/contratos/coberturaM1antes de comprar anos. Se trouxerWINQ26deagosto,pode cobrir04,05,06,07,10,11/08(6datasWork)e03/08complementar.14diasGenialjápreservados não precisam ser recoletados.
+Se pacote grande/não separado por ativo, começar porlayout/lista de arquivos e planejar filtragem local, sem pedir todoBOVporupload.
+
+STATUS
+Nenhum arquivo daCedrofoi lido, nenhum novo resultado doModeloDcalculado, nenhuma compra. Links/credenciais e dados licenciados daamostra não são publicados por este registro.
+Ousuário quer apenas modelos de resposta e faz os contatos por conta própria; não pedir novamente nome/e-mail nem enviar formulários.
+
+AMOSTRA EM DOWNLOAD MANUAL PELO USUÁRIO
+Usuário informou pacote de3,8GB. Vai baixar/guardar localmente e mostrar a estrutura dos arquivos. Pedir primeiro lista/nomes de pastas/arquivos eREADME/layout; selecionarTBTBM&F,WINQ26,03a11/08/2026(dias03,04,05,06,07,10,11). Não solicitar upload do pacote inteiro. Se os ativos estiverem misturados, preparar filtro local após inspecionar o layout, preservando registros/ordem/resolução de horário. Arquivos originais permanecem intactos; evitar salvar dados grandes porExcelque pode truncar linhas. AmostraCedroainda não inspecionada pelo assistente.

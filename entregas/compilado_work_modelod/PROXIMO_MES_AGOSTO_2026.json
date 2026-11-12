@@ -47,7 +47,7 @@
   "regra_apresentacao": "Mostrar primeiro Work, nosso resultado principal e diferenca. Outros cenarios apenas na parte tecnica.",
   "pacote_preparado": "entregas/fechamento_agosto_v1_11",
   "zip": "entregas/ModeloD_Fechamento_Agosto_v1_11.zip",
-  "status": "ESPECIFICACAO_REVISADA_AINDA_REQUER_PROTOCOLO_DE_SALTOS_E_ENTRADA",
+  "status": "AGUARDAR_ESTRUTURA_AMOSTRA_CEDRO_DOWNLOAD_MANUAL_3_8GB",
   "validacao_local": "28 controles do coletor com mocks C++; pipeline sintetico 20 dias/1140 blocos; 400 estados por busca independente; 400 controles de reducao; nao e execucao MT5",
   "deals_agosto": "Nao medidos. Controle separado; nao substitui nem bloqueia o resultado principal por sequencia de negocios.",
   "retorno_nativo": "entregas/fechamento_agosto_v1_11/retorno_nativo_20261111",
@@ -85,7 +85,7 @@
   "avaliacao_especificacao_revisada": "entregas/avaliacao_proposta_candles_20261112/AVALIACAO_DA_ESPECIFICACAO_REVISADA.txt",
   "formato_principal_em_discussao": "Work=X;M1grade5=[A,B],contagensdeterminadas/incertas;envoltorioexternocondicional",
   "pesquisa_fontes_pagas": {
-    "status": "PEDIDOS_PREPARADOS_NAO_ENVIADOS_PRECOS_NAO_CONFIRMADOS",
+    "status": "CEDRO_RESPONDEU_USUARIO_DESCARTOU_COMPRA_PRECOS_ELEVADOS",
     "fornecedores": [
       "Nelogica",
       "Cedro",
@@ -104,6 +104,21 @@
     "impedimentos": [
       "rede403dominiosoficiais",
       "contato_retorno_e_perfil_cliente_pendentes"
-    ]
-  }
+    ],
+    "contact_preference": "APENAS_MODELOS_USUARIO_FAZ_CONTATOS"
+  },
+  "amostra_cedro": {
+    "months": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "expiration": "2026-11-15",
+    "download": "manual_usuario",
+    "size": "3.8GB",
+    "inspected": false,
+    "priority": "WINQ26_TBT_BMF_03_11_AGOSTO2026",
+    "no_full_package_upload": true
+  },
+  "budget": "R$30000eR$1000rejeitados;priorizargratuito/incluso;tetonaoinformado"
 }

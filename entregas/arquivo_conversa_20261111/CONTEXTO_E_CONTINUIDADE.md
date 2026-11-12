@@ -139,3 +139,8 @@ A revisão incorporou envoltório externo e estados, mas o exemplo115->85->105co
 ## Fontes comerciais e escopo integral —12/11/2026
 
 Usuário pediu compararNelogica,Cedro,B3e depois especificou DUAScotaçõesintegrais:01/03/2023a21/09/2026(baseWork),e01/01/2020a30/09/2026.Não cotar sóum mês/7dias.Pedidos padronizados preparados em `entregas/pesquisa_dados_historicos_20261112`;nenhum envio/compra/preço confirmado.Sites bloqueados403;rascunho restritodereDESalvo,requires_publish=true,aplicação ainda não confirmada.Contato de retorno/perfilcliente solicitados.Novos testes/replay/classificador continuam pausados.
+
+## Cedro: amostra e preferência de custo
+
+Usuário recebeuTBT/EODAGO/SET/OUT2026,comlinkexpirando15/11. Cotação1000/mês/mercado,10000/ano,30000/5anos;compra rejeitada(R$1000também);priorizaramostra/gratuito/incluso. TBTdesdeMaio2020não cobreJan–Abr2020;antes02/07/2025semms,precisa deordemoriginal/seq,semdeclararinútilautomaticamente. Usuáriodispensoucontatos:querapenasmodelos. Link/senha não publicados.
+Drivebloqueado403paraassistente; usuárioestábaixando3,8GB e mostrará estrutura. Aguardarlista/layout,selecionarTBTBM&FWINQ26dias03–11/08;filtro local sóapósconhecerformato. Nãopediruploadinteiro,nãorecoletar14diasGenial,nãoiniciarclassificadorou afirmar novosresultados. Contexto e orçamento registrados noTXTgeral.

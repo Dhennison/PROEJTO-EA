@@ -8,9 +8,42 @@
     "2020-01-01",
     "2026-09-30"
   ],
-  "status": "PEDIDOS_PREPARADOS_NAO_ENVIADOS",
+  "status": "USUARIO_BAIXANDO_AMOSTRA_3_8GB_COMPRA_PAGA_DESCARTADA",
   "prices_verified": false,
   "purchase_made": false,
   "network_status": "OFFICIAL_SITES_BLOCKED_403_DRAFT_REQUIRES_PUBLISH",
-  "sha256_request": "0a7d1987b5fddcee3328d6b7ffdd6074f92802e87c32d1014673b97a68a01584"
+  "sha256_request": "0a7d1987b5fddcee3328d6b7ffdd6074f92802e87c32d1014673b97a68a01584",
+  "contact_preference": "Usuario quer apenasmodelos;naosolicitar nome/email nem enviarcomercial",
+  "cedro": {
+    "source": "emailtranscrito_usuario",
+    "sample_months": [
+      "2026-08",
+      "2026-09",
+      "2026-10"
+    ],
+    "sample_expiration": "2026-11-15",
+    "sample_inspected": false,
+    "tbt_start": "2020-05",
+    "no_milliseconds_before": "2025-07-02",
+    "monthly_market_R$": 1000,
+    "one_year_package_R$": 10000,
+    "five_year_package_R$": 30000,
+    "scope_A_calendar_months": 43,
+    "scope_A_monthly_arithmetic_R$": 43000,
+    "scope_A_five_year_candidate_R$": 30000,
+    "specific_scope_A_confirmed": false,
+    "scope_B_complete": false,
+    "scope_B_uncovered_months": [
+      "2020-01",
+      "2020-02",
+      "2020-03",
+      "2020-04"
+    ]
+  },
+  "budget_preference": "Usuario rejeitouR$30000eR$1000;priorizaramostra egratuito/incluso;tetonaoinformado",
+  "sample_download": "manual_usuario",
+  "sample_size_user_report": "3.8GB",
+  "sample_inspected": false,
+  "next_step": "Aguardar estrutura/layout;selecionarTBTBMF_WINQ26_03_11_AGO2026;naopedirpacoteinteiro",
+  "no_purchase_authorized": true
 }

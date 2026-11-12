@@ -1,0 +1,11 @@
+Obrigado pelo envio da amostra!
+
+Poderia esclarecer três pontos?
+
+1. Antes de 02/07/2025, cada linha continua sendo um negócio individual? A ordem original dos negócios dentro do mesmo segundo é preservada ou existe campo de sequência?
+
+2. O pacote Tick-by-Tick de 5 anos por R$ 30.000 pode cobrir 01/03/2023 a 21/09/2026, somente BM&F, incluindo WIN vencidos? Esse é o custo total ou há taxas adicionais?
+
+3. Para 01/01/2020 a 30/09/2026: vocês conseguem fornecer também janeiro a abril/2020? Se não, confirmem a limitação e cotem o período disponível, deixando essa ausência explícita.
+
+Se puder, envie também o layout dos arquivos da amostra.
