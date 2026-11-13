@@ -1,0 +1,24 @@
+{
+  "ZIPs": 26,
+  "datas": 12,
+  "registros_WIN": 84578420,
+  "datas_Cpp_vs_Python_independentes": 0,
+  "regressoes": [
+    {
+      "data": "20261028",
+      "ativo": "WINZ26",
+      "ordinal_anterior": "6220158",
+      "timestamp_anterior": "2026-10-28 12:33:24.753",
+      "preco_anterior": "173470",
+      "ordinal_atual": "6220210",
+      "timestamp_atual": "2026-10-28 11:27:49.000",
+      "preco_atual": "173330",
+      "quantidade_atual": "375",
+      "campo7": "V",
+      "campo8": "0"
+    }
+  ],
+  "EOD_diferencas": 6,
+  "novos_resultados_estrategia": false,
+  "mes_completo": false
+}

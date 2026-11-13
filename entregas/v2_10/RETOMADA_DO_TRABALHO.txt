@@ -47,6 +47,28 @@ Análise em entregas/cedro_modelod_outubro_2026/ANALISE_PARCIAL.txt;
 consolidado atual em parcial_atual/RESULTADO_PARCIAL.json. Não substituir
 resultados agosto/setembro por subtotais de outubro. Próximo receber restante.
 
+CONCLUSÃO DOS TRÊS MESES MODELO D — PEDIDO ATUAL ATENDIDO
+Usuário enviou os26ZIPs restantes e pediu continuar os dias restantes e entregar
+PDF unificado com3meses,um mês por página. Outubro completo:+3.830 pontos,
+21pregões,31operações(21alvos/10stops).48ZIPs/154.385.672registrosWIN auditados;
+105estados conferidos com motor anterior e execução C++ no fluxo integral.
+As parciais +1600(9dias) e+2230(12dias) foram preservadas,sem alterar resultados.
+28/10 testado em ordemarquivo/timestamp:5estados iguais.27temdiferençasEOD,
+mas5níveis fora dos extremos diários validados confirmam ausência de entrada.
+Ressalvas quantitativas27/28permanecem,não prova de fita perfeita.
+
+PDF entregue: entregas/compilado_cedro_modelod/
+Modelo_D_Cedro_Agosto_Setembro_Outubro_2026.pdf (também ZIP para download).
+Exatamente3páginas/21pregõescada,todososdias,21/09* eTotalComparável* preservados.
+Totais mesescompletos:-2375,+2855,+3830;total+4310;63pregões/129operações.
+DD geral contínuo desde03/08:3620pontos. Separados dos recortesWork:
+agosto-2275 e setembro+1380; outubro sem Work,sem preencher referência com zero.
+Valores condicionais nosníveis,1contrato,grade5,toque,sem custos/fila/fill garantido.
+PDF técnico interno atualizado para incluir outubro. Parâmetros D inalterados.
+Próxima etapa aprovada:A/B/C nosmesmos63pregões,depois comparar e só então
+estudoalvo/stop. Reaproveitar dados brutos/auditoria,regenerar redução por limiares
+de cada modelo/parametrização e repetir controles de anomalias. Sem compras.
+
 COMO USAR ESTE REGISTRO
 Este é o arquivo principal para retomada. Atualizar a seção atual a cada etapa, com evidências, arquivos, conclusão, pendências e próximo passo. Só marcar publicação no GitHub depois do push confirmado. Não tratar uma preparação como execução, mocks como compilação MetaEditor ou pontos condicionais como resultado financeiro real.
 A seção histórica ao final é preservada como histórico: instruções antigas e antigos estados pendentes não substituem o estado mais recente no início.
@@ -66,7 +88,7 @@ SUBFRENTES ATUAIS DA ETAPA 6
 6.4 Setembro/2026: CONCLUÍDO sobre a alimentação recebida, 14 pregões/33 operações. Principal Work +3839,308998 versus nosso +1380; diferença -2459,308998. Ressalvas preservadas.
 6.5 Relatórios: DOIS PDFs finais (técnico e enxuto), principal único por mês; DD contínuo em ordem crescente, provisório enquanto faltarem meses anteriores. Não reenviar PDFs a cada etapa.
 6.6 Agosto Cedro: CALCULADO SEM MT5. Comparação nas 20 datas de 04–31/08 e 43 operações: Work -387,164995; nosso principal -2.275; diferença -1.887,835005 pontos. 23 alvos, 18 stops, 2 cortes. Dia 03/08: complemento -100, fora do principal. Recebidos e auditados 42 ZIPs, 21 datas, 102.168.252 registros WIN. Conferidos 105 estados históricos, 400 sintéticos, 105 níveis e as 30 operações anteriores Genial. DD diário na base agosto: Work 2.248,559; Cedro 2.960, cronológico e provisório. Nova série Cedro separada do setembro anterior até reprocessá-lo. Dois PDFs salvos internamente em entregas/cedro_modelod_agosto_2026/resultado; entregar juntos no final. Setembro anterior +1.380 e PDF preservados. Próximo: receber/reprocessar setembro Cedro inteiro (Work em 14 datas de 01–21/09; extras separados), depois outubro fora do Work. Detalhes em entregas/cedro_modelod_agosto_2026/LEIA_RESULTADO.txt.
-6.7 Trabalho atual: SETEMBRO CEDRO CALCULADO SEM MT5. Principal comparável Work (14 datas/33 operações,01–21/09): Work+3.839,308998; nosso+1.380, confirmado operação a operação com coleta anterior. Mês completo (21 pregões/52 operações,01–30/09):+2.855; complemento22–30:+1.475, foraWork. Para comparar A/B/C/D usar meses completos: agosto-2.375 incluindo03/08, setembro+2.855; principal Work de agosto continua-2.275. Recebidos42ZIPs/121.647.412registrosWIN.105estados conferidos,8dias auditorCpp/Python,33ops nativas iguais. Três registros foraordem em22/24: leitura cronológica estável e controle ordemarquivo com10estados iguais; diferenças quantidade/contagemEOD nesses dias permanecem ressalvas. Próximos modelos/parametrizações precisam repetir sensibilidade. DD cronológico da nova sérieCedro:3.620, Work2.248,559 na base comum; curvas mesescompletos separadas. DoisPDFs atualizados e guardados em entregas/compilado_cedro_modelod. Detalhes: entregas/cedro_modelod_setembro_2026/LEIA_RESULTADO.txt. Próximo: outubro D, depois A/B/C e estudo alvo/stop, sem compras de dados. Primeiros arquivos outubro:01,02,05,06,07,todaspartes(13ZIPs).
+6.7 Setembro Cedro: CALCULADO SEM MT5. Principal comparável Work (14 datas/33 operações,01–21/09): Work+3.839,308998; nosso+1.380, confirmado operação a operação com coleta anterior. Mês completo (21 pregões/52 operações,01–30/09):+2.855; complemento22–30:+1.475, foraWork. Para comparar A/B/C/D usar meses completos: agosto-2.375 incluindo03/08, setembro+2.855; principal Work de agosto continua-2.275. Recebidos42ZIPs/121.647.412registrosWIN.105estados conferidos,8dias auditorCpp/Python,33ops nativas iguais. Três registros foraordem em22/24: leitura cronológica estável e controle ordemarquivo com10estados iguais; diferenças quantidade/contagemEOD nesses dias permanecem ressalvas. Próximos modelos/parametrizações precisam repetir sensibilidade. DD cronológico da nova sérieCedro:3.620, Work2.248,559 na base comum; curvas mesescompletos separadas. DoisPDFs atualizados e guardados em entregas/compilado_cedro_modelod. Detalhes: entregas/cedro_modelod_setembro_2026/LEIA_RESULTADO.txt. Próximo: outubro D, depois A/B/C e estudo alvo/stop, sem compras de dados. Primeiros arquivos outubro:01,02,05,06,07,todaspartes(13ZIPs).
 6.7 Arquivamento recente: PUBLICADO no GitHub em 11/11/2026. Registro/decisões/inventário no commit 6e31844; 185 originais disponíveis em seis ZIPs no commit 3cd9be6. Push dos dois confirmado na branch entrega-modelod-v2-10-20261030. Hashes de restauração conferidos; não é exportação integral do chat.
 
 PENDÊNCIAS QUE NÃO DEVEM DESAPARECER

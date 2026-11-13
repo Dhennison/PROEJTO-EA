@@ -1,0 +1,42 @@
+OUTUBRO/2026 — MODELO D — FECHAMENTO COMPLETO
+
++3.830 pontos nos 21 pregões de 01 a30/10.
+31 operações:21 alvos e10 stops. Nenhuma saída por corte neste mês.
+A parcial anterior de9pregões/+1600 foi preservada; os12restantes somaram+2230.
+Outubro fora da referência Work; ausência de referência não é resultado zero.
+
+Método:negócios Cedro diretamente,sem MT5/Tester. Um contrato por nível,
+grade5,toque inclusivo,saída só em registro posterior,corte primeiro negócio18h.
+Preços de entrada/SL/TP creditados nos níveis,pontos brutos condicionais,
+sem custos,fila ou garantia de preenchimento real. Parâmetros D não alterados.
+
+Validação:48ZIPs,21datas,154.385.672registros famíliaWIN; hashes/tamanhos/CRC,
+contagens e ordinais entre partes conferidos.105estados comparados entre
+motor Python anterior em redução e C++ independente em todos os negócios.
+Todos os resultados coincidem. Primeira abertura e primeiro negócio no minuto
+do corte conferidos em21datas. Sem posições abertas sem encerramento.
+
+Ressalvas:27/28 têm diferenças de quantidade/contagem EOD; preços OHLCdiários
+conferem. No27 todos os níveis de entrada estão fora da faixa diária EOD,
+o que confirma ausência de entrada do ModeloD atual apesar da diferença quantitativa.
+No28 há uma regressão de timestamp,localizada. Leitura cronológica estável,
+desempate por linha original; sem deduplicar,excluir,alterar preço/quantidade.
+Controle na ordem de arquivo:mesmas entradas,saídas,pontos nos cinco estados.
+Não significa que a fita esteja certificada nem que outras parametrizações
+sejam invariantes. Repetir controles em A/B/C e no estudo de alvos/stops.
+Rolagem:negócios V até13,Z desde14; contexto14 do V13,preservando convenção
+histórica Work já vista em12/08. Essa convenção foi fixada antes do resultado.
+Não altera ou homologa a seleção de dados do EA ao vivo,que é outra frente.
+
+TRÊS MESES COMPLETOS NA MESMA BASE
+Agosto:-2.375 (inclui03/08). Setembro:+2.855. Outubro:+3.830.
+Total:+4.310 pontos,63pregões,129operações. DD diário contínuo:3.620 pontos.
+Na comparação estrita ao Work,agosto continua-2275 e setembro+1380; são
+recortes menores e estão separados no PDF,sem alterar os resultados anteriores.
+
+ENTREGA SOLICITADA
+PDF único de3páginas,uma para cada mês completo:
+entregas/compilado_cedro_modelod/Modelo_D_Cedro_Agosto_Setembro_Outubro_2026.pdf
+Todos os pregões,asterisco no fim das datas Work,total comparável e total
+Cedro separados. Dois DDs explícitos:base comum Work e meses completos.
+Próximo:A/B/C na mesma base,parâmetros originais;depois comparação e estudo alvo/stop.

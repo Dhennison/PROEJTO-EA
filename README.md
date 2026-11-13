@@ -3,7 +3,7 @@
 Estado geral atualizado em **12/11/2026**. Registro principal: **[RETOMADA_DO_TRABALHO.txt](entregas/v2_10/RETOMADA_DO_TRABALHO.txt)**. Esse TXT acompanha todas as etapas, o que foi concluído, pendências, evidências e próximo passo; será atualizado a cada avanço.
 
 - **Setembro — resultado anterior preservado:** Work +3.839,31; nosso resultado principal +1.380,00; diferença −2.459,31 pontos. Critério: um contrato por nível, grade de cinco pontos, entrada por toque.
-- **Trabalho ativo:** [outubro Modelo D — parcial calculada](entregas/cedro_modelod_outubro_2026/ANALISE_PARCIAL.txt): **+1.600 pontos em 9 pregões até 14/10**,13operações. Faltam26ZIPs/12pregões; ainda não há fechamento mensal. Setembro completo Cedro permanece +2.855.
+- **Trabalho ativo:** **Modelo D concluído nos três meses Cedro:** agosto −2.375; setembro +2.855; outubro +3.830; total +4.310 pontos brutos. [PDF unificado de 3 páginas](entregas/compilado_cedro_modelod/Modelo_D_Cedro_Agosto_Setembro_Outubro_2026.pdf). Recortes Work separados; DD geral 3.620. Próxima etapa: A/B/C com parâmetros originais.
 - **Sequência aprovada:** D em setembro e outubro Cedro → A/B/C nos mesmos três meses → comparação dos quatro → estudo separado de alvos/stops. [Plano registrado](entregas/plano_comparacao_abcd_cedro_20261112/PLANO_E_CONTINUIDADE.txt).
 - **Relatórios finais:** dois PDFs (técnico e enxuto Modelo D diário), atualizados internamente e entregues juntos no final. DD contínuo calculado em ordem cronológica, sem alterar resultados mensais já fechados.
 - [Continuidade dos compilados e drawdown](entregas/compilado_work_modelod/LEIA_CONTINUIDADE.md)

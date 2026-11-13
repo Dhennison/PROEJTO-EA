@@ -140,3 +140,7 @@ print('Created lean and technical PDFs; monthly results frozen; chronological dr
 # IMAGEM_SETEMBRO_COMPLETO
 import subprocess,sys
 subprocess.run([sys.executable,str(root.parent/'cedro_modelod_setembro_2026/renderizar_setembro_completo.py'),'--atualizar-compilado'],check=True)
+
+# ATUALIZAR_TRES_MESES_COMPLETOS
+if (root.parent/'cedro_modelod_outubro_2026/resultado_mensal/RESULTADO.json').exists():
+ subprocess.run([sys.executable,str(root/'gerar_tres_meses.py')],check=True)

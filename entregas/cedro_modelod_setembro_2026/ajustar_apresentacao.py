@@ -18,4 +18,6 @@ s=s.replace("notes=[f'Acumulados", "notes=[f'Acumulados")
 assert "'TOTAL DO MÊS'" not in s and "'TOTAL COMPARÁVEL'" in s and "'FECHAMENTO CEDRO'" in s
 hook="\n# IMAGEM_SETEMBRO_COMPLETO\nimport subprocess,sys\nsubprocess.run([sys.executable,str(root.parent/'cedro_modelod_setembro_2026/renderizar_setembro_completo.py'),'--atualizar-compilado'],check=True)\n"
 if '# IMAGEM_SETEMBRO_COMPLETO' not in s:s+=hook
+hook_tres="\n# ATUALIZAR_TRES_MESES_COMPLETOS\nif (root.parent/'cedro_modelod_outubro_2026/resultado_mensal/RESULTADO.json').exists():\n subprocess.run([sys.executable,str(root/'gerar_tres_meses.py')],check=True)\n"
+if '# ATUALIZAR_TRES_MESES_COMPLETOS' not in s:s+=hook_tres
 p.write_text(s)

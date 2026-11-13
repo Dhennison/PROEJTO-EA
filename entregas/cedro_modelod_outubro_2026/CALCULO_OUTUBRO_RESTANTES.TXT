@@ -1,0 +1,60 @@
+CALCULANDO 20261015
+CONFERIDO 20261015 0
+CALCULANDO 20261016
+CONFERIDO 20261016 615.000000
+CALCULANDO 20261019
+CONFERIDO 20261019 840.000000
+CALCULANDO 20261020
+CONFERIDO 20261020 -825.000000
+CALCULANDO 20261021
+CONFERIDO 20261021 635.000000
+CALCULANDO 20261022
+CONFERIDO 20261022 565.000000
+CALCULANDO 20261023
+CONFERIDO 20261023 490.000000
+CALCULANDO 20261026
+CONFERIDO 20261026 0
+CALCULANDO 20261027
+CONFERIDO 20261027 0
+CALCULANDO 20261028
+CONFERIDO 20261028 -240.000000
+CALCULANDO 20261029
+CONFERIDO 20261029 0
+CALCULANDO 20261030
+CONFERIDO 20261030 150.000000
+{
+  "mes": "2026-10",
+  "status": "LOTE_12_PREGOES_RESTANTES_CALCULADO",
+  "datas_calculadas": [
+    "2026-10-15",
+    "2026-10-16",
+    "2026-10-19",
+    "2026-10-20",
+    "2026-10-21",
+    "2026-10-22",
+    "2026-10-23",
+    "2026-10-26",
+    "2026-10-27",
+    "2026-10-28",
+    "2026-10-29",
+    "2026-10-30"
+  ],
+  "pregoes_calculados": 12,
+  "subtotal_pontos": "2230.000000",
+  "operacoes": 18,
+  "motivos": {
+    "ALVO": 13,
+    "STOP": 5
+  },
+  "Work_comparavel": false,
+  "dados_recebidos_ZIPs": 48,
+  "ZIPs_processados_datas_completas": 26,
+  "pregoes_restantes": 0,
+  "ZIPs_faltantes": 0,
+  "dia14_parcial_nao_calculado": false,
+  "estados_validados": 60,
+  "criterio": "MODELO_D_ORIGINAL_1_CONTRATO_GRADE5_TOQUE",
+  "preenchimentos_reais_comprovados": false,
+  "custos_inclusos": false,
+  "todos_registros_preservados": true
+}

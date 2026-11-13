@@ -1,0 +1,40 @@
+{
+  "mes": "2026-10",
+  "status": "CONCLUIDO_SOBRE_ALIMENTACAO_RECEBIDA_COM_RESSALVAS",
+  "pregoes": 21,
+  "pontos_mes_completo": "3830",
+  "operacoes": 31,
+  "motivos": {
+    "STOP": 10,
+    "ALVO": 21
+  },
+  "Work_comparavel": false,
+  "Work_pontos": null,
+  "ZIPs": 48,
+  "registros_WIN": 154385672,
+  "estados_conferidos": 105,
+  "parcial9dias_preservada": true,
+  "sensibilidade28": {
+    "registros_preservados": true,
+    "ordenacao_principal": "timestamp e linha_original como desempate",
+    "alternativa": "ordem original do arquivo",
+    "estados": 5,
+    "todos_mesmo_resultado": true,
+    "sem_filtro_ou_correcao_de_negocios": true,
+    "nao_resolve_divergencias_de_conteudo_EOD": true
+  },
+  "dias_ressalva_quantidade": [
+    "2026-10-27",
+    "2026-10-28"
+  ],
+  "dia27_niveis_fora_extremos_diarios_EOD": true,
+  "registros_reordenados_somente_por_timestamp_estavel": "2026-10-28",
+  "custos_inclusos": false,
+  "preenchimentos_reais_comprovados": false,
+  "criterio": "ModeloD original;1contrato/nivel;grade5;toque;saida em registro posterior;corte primeiro negocio18:00",
+  "rolagem": "V ate13;Z desde14;contexto14V13 conforme convencao historica Work",
+  "garantia_ordem_oficial_entre_empates": false,
+  "DD_continuo_tres_meses": "3620",
+  "total_tres_meses": "4310",
+  "relatorio_unificado": "entregas/compilado_cedro_modelod/Modelo_D_Cedro_Agosto_Setembro_Outubro_2026.pdf"
+}

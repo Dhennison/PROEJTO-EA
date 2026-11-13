@@ -5,31 +5,50 @@
   ],
   "meses_completos": {
     "base_inicio": "2026-08-03",
-    "base_fim": "2026-09-30",
+    "base_fim": "2026-10-30",
     "meses": {
       "2026-08": {
         "mes": "2026-08",
-        "modelo": "D",
-        "pregoes": 21,
-        "pontos": "-2375.000000",
-        "operacoes": 46,
-        "DD_max_acumulado": "2960.000000"
+        "pregoes_mes": 21,
+        "pontos_mes_completo": "-2375",
+        "operacoes_mes": 46,
+        "pregoes_comparaveis": 20,
+        "Work_comparavel": "-387.164995",
+        "Cedro_comparavel": "-2275.000000",
+        "Work_DD_comparavel_acumulado": "2248.559000",
+        "Cedro_DD_comparavel_acumulado": "2960.000000",
+        "Cedro_DD_geral_acumulado": "2960.000000"
       },
       "2026-09": {
         "mes": "2026-09",
-        "modelo": "D",
-        "pregoes": 21,
-        "pontos": "2855.000000",
-        "operacoes": 52,
-        "DD_max_acumulado": "3620.000000"
+        "pregoes_mes": 21,
+        "pontos_mes_completo": "2855",
+        "operacoes_mes": 52,
+        "pregoes_comparaveis": 14,
+        "Work_comparavel": "3839.308998",
+        "Cedro_comparavel": "1380.000000",
+        "Work_DD_comparavel_acumulado": "2248.559000",
+        "Cedro_DD_comparavel_acumulado": "3620.000000",
+        "Cedro_DD_geral_acumulado": "3620.000000"
+      },
+      "2026-10": {
+        "mes": "2026-10",
+        "pregoes_mes": 21,
+        "pontos_mes_completo": "3830",
+        "operacoes_mes": 31,
+        "pregoes_comparaveis": 0,
+        "Work_comparavel": null,
+        "Cedro_comparavel": null,
+        "Work_DD_comparavel_acumulado": null,
+        "Cedro_DD_comparavel_acumulado": null,
+        "Cedro_DD_geral_acumulado": "3620.000000"
       }
     },
-    "saldo": "480.000000",
-    "DD_max_acumulado": "3620.000000",
-    "metodo": "FECHAMENTOS_DIARIOS_ORDEM_CRESCENTE_SALDO_PICO_CONTINUOS",
-    "inclui03_agosto_e22a30_setembro": true,
-    "separada_da_comparacao_Work": true,
-    "provisorio": true
+    "saldo": "4310",
+    "DD_max_acumulado": "3620",
+    "serie": "CEDRO_MODELO_D",
+    "dias": 63,
+    "escopo_fechado": true
   },
   "originais_anteriores_preservados": true,
   "entregas_finais_solicitadas": [
@@ -124,5 +143,61 @@
       "base_DD_inicio": "2026-08-04",
       "DD_provisorio": "True"
     }
-  ]
+  ],
+  "relatorio_tres_meses": {
+    "modelo": "D",
+    "fonte": "CEDRO_TICK_BMF",
+    "status": "TRES_MESES_COMPLETOS",
+    "meses": {
+      "2026-08": {
+        "mes": "2026-08",
+        "pregoes_mes": 21,
+        "pontos_mes_completo": "-2375",
+        "operacoes_mes": 46,
+        "pregoes_comparaveis": 20,
+        "Work_comparavel": "-387.164995",
+        "Cedro_comparavel": "-2275.000000",
+        "Work_DD_comparavel_acumulado": "2248.559000",
+        "Cedro_DD_comparavel_acumulado": "2960.000000",
+        "Cedro_DD_geral_acumulado": "2960.000000"
+      },
+      "2026-09": {
+        "mes": "2026-09",
+        "pregoes_mes": 21,
+        "pontos_mes_completo": "2855",
+        "operacoes_mes": 52,
+        "pregoes_comparaveis": 14,
+        "Work_comparavel": "3839.308998",
+        "Cedro_comparavel": "1380.000000",
+        "Work_DD_comparavel_acumulado": "2248.559000",
+        "Cedro_DD_comparavel_acumulado": "3620.000000",
+        "Cedro_DD_geral_acumulado": "3620.000000"
+      },
+      "2026-10": {
+        "mes": "2026-10",
+        "pregoes_mes": 21,
+        "pontos_mes_completo": "3830",
+        "operacoes_mes": 31,
+        "pregoes_comparaveis": 0,
+        "Work_comparavel": null,
+        "Cedro_comparavel": null,
+        "Work_DD_comparavel_acumulado": null,
+        "Cedro_DD_comparavel_acumulado": null,
+        "Cedro_DD_geral_acumulado": "3620.000000"
+      }
+    },
+    "pregoes_totais": 63,
+    "operacoes_totais": 129,
+    "total_tres_meses": "4310",
+    "DD_geral": "3620.000000",
+    "arquivo": "entregas/compilado_cedro_modelod/Modelo_D_Cedro_Agosto_Setembro_Outubro_2026.pdf",
+    "paginas": 3,
+    "sha256": "03a80a0e0068c5588d57ccda079f4f31cff7999ac8419481de82e0394cb68575",
+    "zip_sha256": "b7b05d97888c8f3339d73df8e86115b3cc9c0184429ef9a3699ffd55274f4a72",
+    "custos_fila_inclusos": false,
+    "dados_originais_anteriores_preservados": true
+  },
+  "modeloD_completo": true,
+  "meses_completos_status": "AGO_SET_OUT_CONCLUIDOS",
+  "proxima_etapa": "MODELOS_A_B_C_NOS_MESMOS63PREGOES"
 }

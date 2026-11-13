@@ -990,7 +990,8 @@
   "nova_serie_Cedro": {
     "meses_concluidos": [
       "2026-08",
-      "2026-09"
+      "2026-09",
+      "2026-10"
     ],
     "compilados_atuais": "entregas/compilado_cedro_modelod/MANIFESTO_COMPILADO.json",
     "principal_comparavel_Work": {
@@ -999,9 +1000,11 @@
     },
     "meses_completos_comparacao_ABCD": {
       "2026-08": "-2375",
-      "2026-09": "2855"
+      "2026-09": "2855",
+      "2026-10": "3830"
     },
     "bases_separadas": true,
-    "originais_anteriores_preservados": true
+    "originais_anteriores_preservados": true,
+    "PDF_tres_paginas": "entregas/compilado_cedro_modelod/Modelo_D_Cedro_Agosto_Setembro_Outubro_2026.pdf"
   }
 }

@@ -1,0 +1,2 @@
+SENSIBILIDADE 20261028 records=9331723;reduced=22078;regressions=1
+{"registros_preservados": true, "ordenacao_principal": "timestamp e linha_original como desempate", "alternativa": "ordem original do arquivo", "estados": 5, "todos_mesmo_resultado": true, "sem_filtro_ou_correcao_de_negocios": true, "nao_resolve_divergencias_de_conteudo_EOD": true}

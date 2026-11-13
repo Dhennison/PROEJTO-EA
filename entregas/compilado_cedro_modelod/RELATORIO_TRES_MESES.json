@@ -1,0 +1,53 @@
+{
+  "modelo": "D",
+  "fonte": "CEDRO_TICK_BMF",
+  "status": "TRES_MESES_COMPLETOS",
+  "meses": {
+    "2026-08": {
+      "mes": "2026-08",
+      "pregoes_mes": 21,
+      "pontos_mes_completo": "-2375",
+      "operacoes_mes": 46,
+      "pregoes_comparaveis": 20,
+      "Work_comparavel": "-387.164995",
+      "Cedro_comparavel": "-2275.000000",
+      "Work_DD_comparavel_acumulado": "2248.559000",
+      "Cedro_DD_comparavel_acumulado": "2960.000000",
+      "Cedro_DD_geral_acumulado": "2960.000000"
+    },
+    "2026-09": {
+      "mes": "2026-09",
+      "pregoes_mes": 21,
+      "pontos_mes_completo": "2855",
+      "operacoes_mes": 52,
+      "pregoes_comparaveis": 14,
+      "Work_comparavel": "3839.308998",
+      "Cedro_comparavel": "1380.000000",
+      "Work_DD_comparavel_acumulado": "2248.559000",
+      "Cedro_DD_comparavel_acumulado": "3620.000000",
+      "Cedro_DD_geral_acumulado": "3620.000000"
+    },
+    "2026-10": {
+      "mes": "2026-10",
+      "pregoes_mes": 21,
+      "pontos_mes_completo": "3830",
+      "operacoes_mes": 31,
+      "pregoes_comparaveis": 0,
+      "Work_comparavel": null,
+      "Cedro_comparavel": null,
+      "Work_DD_comparavel_acumulado": null,
+      "Cedro_DD_comparavel_acumulado": null,
+      "Cedro_DD_geral_acumulado": "3620.000000"
+    }
+  },
+  "pregoes_totais": 63,
+  "operacoes_totais": 129,
+  "total_tres_meses": "4310",
+  "DD_geral": "3620.000000",
+  "arquivo": "entregas/compilado_cedro_modelod/Modelo_D_Cedro_Agosto_Setembro_Outubro_2026.pdf",
+  "paginas": 3,
+  "sha256": "07dbeafd69db264e773aed1cd6050343fd8a742ea2f3f362e05b787d3f6c350a",
+  "zip_sha256": "c431ea76efd8f1027f1cd8b732a8a6084ca164987b40eb72c85f08fe13813026",
+  "custos_fila_inclusos": false,
+  "dados_originais_anteriores_preservados": true
+}

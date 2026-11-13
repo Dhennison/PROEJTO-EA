@@ -1,0 +1,9 @@
+PASS:21datas/48ZIPs/154385672registros conferidos;105estados no fluxo integral vs motor anterior.
+Parcial9datas congelada;31chaves de operação únicas;21somas diárias=31operações=3830.
+105estados sem posição pendente;21aberturas/cortes no minuto esperado.
+5estados28 invariantes em ordem arquivo/cronológica;27entradas fora da faixa EOD.
+Três meses:63datas/129operações,somas -2375,+2855,+3830=4310.
+PDF final:3páginas,cada uma com21datas,somas e21/09* preservados.
+Outubro sem Work zero;totais comparáveis distintos de totais gerais.
+DDs calculados em ordem crescente,sem reset;máximo geral3620.
+Ressalvas de qualidade não apagadas. Sem custos/fila/execução real comprovada.

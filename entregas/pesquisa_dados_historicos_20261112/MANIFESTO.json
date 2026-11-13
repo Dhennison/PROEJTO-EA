@@ -8,7 +8,7 @@
     "2020-01-01",
     "2026-09-30"
   ],
-  "status": "OUTUBRO_CEDRO_PARCIAL9PREGOES_CALCULADA",
+  "status": "MODELO_D_AGO_SET_OUT_COMPLETOS_PDF3PAGINAS",
   "prices_verified": false,
   "purchase_made": false,
   "network_status": "OFFICIAL_SITES_BLOCKED_403_DRAFT_REQUIRES_PUBLISH",
@@ -44,7 +44,7 @@
   "sample_download": "manual_usuario",
   "sample_size_user_report": "3.8GB",
   "sample_inspected": false,
-  "next_step": "Receber26ZIPs de15–30/10 e concluir D,outubro",
+  "next_step": "Modelos A/B/C originais nos mesmos63pregoes;depois estudo de parametros",
   "no_purchase_authorized": true,
   "sample_reprocessing_scope": {
     "months": [
@@ -261,5 +261,21 @@
     "operations": 13,
     "monthly_closed": false,
     "remaining_ZIPs": 26
+  },
+  "October_result": {
+    "days": 21,
+    "ZIPs": 48,
+    "WIN_records": 154385672,
+    "points": "3830",
+    "operations": 31,
+    "monthly_closed": true,
+    "remaining_ZIPs": 0
+  },
+  "all_three_months": {
+    "ZIPs": 132,
+    "WIN_records": 378201336,
+    "days": 63,
+    "D_points": "4310",
+    "full_months": true
   }
 }

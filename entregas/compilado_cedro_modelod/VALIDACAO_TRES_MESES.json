@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "paginas": 3,
+  "datas_por_pagina": 21,
+  "datas_total": 63,
+  "operacoes": 129,
+  "soma_diaria_e_mensal": "4310",
+  "DD_geral": "3620",
+  "asteriscos_solicitados_preservados": true,
+  "PDF_regenerado_sem_perder_outubro": true,
+  "ZIP_contem_PDF_exato": true,
+  "valores_originais_congelados": true
+}

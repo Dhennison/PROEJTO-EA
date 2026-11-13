@@ -1,0 +1,48 @@
+AUDITANDO 20261015
+CONFERIDO 20261015 Work= 0 diferencas_preco= 0 regressoes= 0
+AUDITANDO 20261016
+CONFERIDO 20261016 Work= 0 diferencas_preco= 0 regressoes= 0
+AUDITANDO 20261019
+CONFERIDO 20261019 Work= 0 diferencas_preco= 0 regressoes= 0
+AUDITANDO 20261020
+CONFERIDO 20261020 Work= 0 diferencas_preco= 0 regressoes= 0
+AUDITANDO 20261021
+CONFERIDO 20261021 Work= 0 diferencas_preco= 0 regressoes= 0
+AUDITANDO 20261022
+CONFERIDO 20261022 Work= 0 diferencas_preco= 0 regressoes= 0
+AUDITANDO 20261023
+CONFERIDO 20261023 Work= 0 diferencas_preco= 0 regressoes= 0
+AUDITANDO 20261026
+CONFERIDO 20261026 Work= 0 diferencas_preco= 0 regressoes= 0
+AUDITANDO 20261027
+CONFERIDO 20261027 Work= 0 diferencas_preco= 0 regressoes= 0
+AUDITANDO 20261028
+CONFERIDO 20261028 Work= 0 diferencas_preco= 0 regressoes= 1
+AUDITANDO 20261029
+CONFERIDO 20261029 Work= 0 diferencas_preco= 0 regressoes= 0
+AUDITANDO 20261030
+CONFERIDO 20261030 Work= 0 diferencas_preco= 0 regressoes= 0
+{
+  "ZIPs": 26,
+  "datas": 12,
+  "registros_WIN": 84578420,
+  "datas_Cpp_vs_Python_independentes": 0,
+  "regressoes": [
+    {
+      "data": "20261028",
+      "ativo": "WINZ26",
+      "ordinal_anterior": "6220158",
+      "timestamp_anterior": "2026-10-28 12:33:24.753",
+      "preco_anterior": "173470",
+      "ordinal_atual": "6220210",
+      "timestamp_atual": "2026-10-28 11:27:49.000",
+      "preco_atual": "173330",
+      "quantidade_atual": "375",
+      "campo7": "V",
+      "campo8": "0"
+    }
+  ],
+  "EOD_diferencas": 6,
+  "novos_resultados_estrategia": false,
+  "mes_completo": false
+}
