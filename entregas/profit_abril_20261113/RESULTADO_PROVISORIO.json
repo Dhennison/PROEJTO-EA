@@ -1,0 +1,36 @@
+{
+  "status": "PROVISORIO_CANDLES_M1_AGUARDANDO_REPLAY",
+  "days": 20,
+  "operations": 36,
+  "determined": 33,
+  "pending": 3,
+  "work_operations": 36,
+  "work_points": "6877.556998",
+  "outer_min": "5720",
+  "outer_max": "7455",
+  "pending_dates": [
+    "2026-04-09",
+    "2026-04-17"
+  ],
+  "branch_minutes": 13,
+  "adjustments_Work_available": 20,
+  "mathematical_level_differences": [],
+  "work_missing": [],
+  "work_extra": [],
+  "gaps": [],
+  "limits": "Outer envelope per operation, not jointly attainable guaranteed. Normalized levels only, no costs/fills. No tick path invented. Candle range does not prove tape completeness. Unresolved chronology requires Replay; intra-minute exit time not determined.",
+  "contracts": {
+    "09abr": "WINJ26",
+    "17abr": "WINM26"
+  },
+  "window_count": 3,
+  "window_dates": [
+    "2026-04-09",
+    "2026-04-17"
+  ],
+  "grade_controls": [],
+  "resultado_principal": "AGUARDANDO_REPLAY",
+  "previous_context_first_day": "2026-03-31",
+  "source_context": "M1 Profit e ajustes Work preservados;HLC de todo pregao anterior;sem gerar ticks.",
+  "coletas_apenas_ambiguidades": true
+}

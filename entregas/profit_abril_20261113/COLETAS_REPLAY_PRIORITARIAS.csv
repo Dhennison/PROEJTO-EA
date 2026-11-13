@@ -1,0 +1,4 @@
+﻿data;contrato;inicio;fim_exclusivo;niveis;motivo
+2026-04-09;WINJ26;10:32:00;10:33:00;R61.8;Ordem entrada/alvo/stop ambigua no M1
+2026-04-17;WINM26;09:47:00;09:48:00;R61.8;Ordem entrada/alvo/stop ambigua no M1
+2026-04-17;WINM26;11:51:00;11:52:00;S38.2;Ordem entrada/alvo/stop ambigua no M1

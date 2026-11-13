@@ -1328,3 +1328,26 @@ substitui visao corrente anterior desdeJunho,sem apagar originais. Cedro
 agosto/setembro/outubro ecurvaDD integrais seguem intactos e separados.
 Julho controle10juldispensado usuario,nao pedir novamente. Proxima expansao
 cronologicaAbril,quando prosseguir;nao rodar novosstops/modelosporconta propria.
+
+ABRIL ANALISADO — ORDEM AMPLIAR ATE LIMITE PROFIT — 13/11/2026
+Usuario determinou irate limiteReplayProfit,depois alvo/stop,depoisA/B/C
+mesmos meses. Salvarbrutos para futuroestudo;nao chamar otimo universal.
+Foi explicitado:maio-julhoM1+janelasnao cobrem todosnovosparametros;novas
+barreiras/modelos podem requerer novas coletas. Agosto-outubroCedrocompleto
+recebido reutilizavel,com auditorias,semcertificarintegralidadeabsoluta.
+Copias identicasSHA256 dos3XLSX brutos em/workspace/dados_brutos_modelo_d/
+replay_profit;manifesto PRESERVACAO_DADOS_BRUTOS_20261113.json em pastaPlano.
+Originaisattachments eCedro/workspace/retorno_cedro_20261112/ticks intactos.
+GitHubguarda derivados/auditorias/manifesto;nao afirmar que brutos foram
+publicados. PlanoEContinuidade atualizado comestadoatual;historico preservado.
+Abril20pregoes,11260M1 ProfitWork/MT5 mesmoshorarios/OHLC. Ajustes20datas
+presentes. Primeiro01abr usa31marco completo ja noacervo.36operacoes,
+33determinadas,3pendentes em09abrR61.8 e17abrR61.8/S38.2. 36conjuntos matematicos entrada/SL/TP iguaisWork,tol0,00001,
+sem chavesfaltantes/extra e sem lacunasintradiarias nos candlesfornecidos.
+Work+6877,556998;nossofechamento aguardandoReplay. Sem controlesgradeextras.
+Coletar09abrWINJ26 10:32–10:33;17abrWINM26 09:47–09:48 e11:51–11:52.
+XLSX3abas,mesmo metodo,sem outrosOHLC/ajustes. Arquivos/script/inventario
+referencias/lista/ZIP em entregas/profit_abril_20261113. Resultados fechados
+Maio-780/Junho3405/Julho1100 eCedro preservados. RecalcularDD em ordem
+abril->maio->junho->julho na mesma serie aposresolverabril,nunca somar
+subtotais de determinadas nem trocar resultados mensais congelados.

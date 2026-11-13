@@ -1,3 +1,29 @@
+ESTADO E ORDEM ATUAIS — 13/11/2026
+1. Expandir D original retroativamente ate limite de Replay que o Profit entregar.
+2. Depois estudar alvo/stop por nivel,preservando originais e variantes separadas.
+3. Depois testar A/B/C nos mesmos meses,com regras originais documentadas.
+4. Comparar fontes/datas/convencoes iguais;validar parametros em dados novos
+   ou reservados,sem chamar melhor resultado amostral de otimo universal.
+Sem compra autorizada. Nao iniciar otimizacao ou A/B/C antes de fechar etapa.
+
+Dados disponiveis:maio-julho M1+Replay pontual;agosto-outubro negocios Cedro
+recebidos de todos os pregoes. Novos alvos/stops/modelos podem precisar de
+novas janelas de Replay fora das atuais. Preservar brutos,nao apenas reducoes
+por barreiras D. Ver PRESERVACAO_DADOS_BRUTOS_20261113.json.
+
+D fechado:Maio-780,Junho3405,Julho1100;AgostoCedro-2375,SetembroCedro2855,
+OutubroCedro3830. Bases comparaveis Work menores em agosto/setembro,ja
+identificadas;nao substituir fechamento integral por subtotal Work.
+Abril analisado:36operacoes,33determinadas,3pendentes em09abr/17abr.
+Work6877,556998;nosso aguardandoReplay. Tres minutos,lista em
+entregas/profit_abril_20261113/COLETAS_REPLAY_PRIORITARIAS.csv.
+DDcronologico porserie,sem reinicio mensal;mes novo alteraDD,nunca resultado
+mensal fechado. Curva M1+Replaymaio-julho separada da Cedro integral.
+DoisPDFs finais tecnico/enxuto seguem guardados internamente para compilacao.
+Julho controle10jul dispensado expressamente;nao pedir novamente.
+
+ARQUIVO HISTORICO DO PLANO ANTERIOR — NAO E ESTADO ATUAL
+
 ATUALIZACAO MAIS RECENTE — NOVA ORDEM DO USUARIO,12/11/2026
 Para retomar amanha:buscar julho e outros meses para ampliar a comparacao.
 Depois estudar outros stops/alvos e,por fim,testar A/B/C.

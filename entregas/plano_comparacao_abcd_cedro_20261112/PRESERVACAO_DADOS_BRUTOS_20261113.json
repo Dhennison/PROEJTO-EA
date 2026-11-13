@@ -1,0 +1,35 @@
+{
+  "data": "2026-11-13",
+  "brutos_Replay": [
+    {
+      "arquivo": "2026_05_Mes_de_Maio.xlsx",
+      "origem_recebida": "/workspace/attachments/7c0c19ac-3473-4e8b-a837-fa686b6b9c45/Mês de Maio.xlsx",
+      "copia_local_bruta": "/workspace/dados_brutos_modelo_d/replay_profit/2026_05_Mes_de_Maio.xlsx",
+      "size": 5132491,
+      "sha256": "3dbf6d4b6c79b77ce117fc261c0c0599dddc4633bbb65d33064097fd58767e44",
+      "conteudo": "Janelas pontuais de negocios,nao pregao/mes integral",
+      "publicado_GitHub": false
+    },
+    {
+      "arquivo": "2026_06_Mes_de_Junho.xlsx",
+      "origem_recebida": "/workspace/attachments/d5bf86e5-e80b-4053-8cc7-0c7be5bb55fd/Mês de Junho.xlsx",
+      "copia_local_bruta": "/workspace/dados_brutos_modelo_d/replay_profit/2026_06_Mes_de_Junho.xlsx",
+      "size": 8256924,
+      "sha256": "1acc836b81981e2be52e48ad5d568d15e066cb5fadcae962a3b6903e03c82bfc",
+      "conteudo": "Janelas pontuais de negocios,nao pregao/mes integral",
+      "publicado_GitHub": false
+    },
+    {
+      "arquivo": "2026_07_Janelas_de_Julho.xlsx",
+      "origem_recebida": "/workspace/attachments/d2c78e16-1755-4734-a825-82905357ce2b/Janelas de Julho.xlsx",
+      "copia_local_bruta": "/workspace/dados_brutos_modelo_d/replay_profit/2026_07_Janelas_de_Julho.xlsx",
+      "size": 23933144,
+      "sha256": "1cd88083a1e2d0ad105d6e42c7af1b7b89fc1bc8f9f08235bda5533f9900437f",
+      "conteudo": "Janelas pontuais de negocios,nao pregao/mes integral",
+      "publicado_GitHub": false
+    }
+  ],
+  "Cedro_brutos_local": "/workspace/retorno_cedro_20261112/ticks/",
+  "preservar_negocios_identicos_e_originais": true,
+  "limitacao_para_parametros": "M1 e janelas pontuais maio-julho nao bastam para todo alvo/stop/modelo;coletar novas janelas quando novas barreiras forem ambiguas. Cedro completo recebido agosto-outubro pode ser reutilizado com auditorias e reducao apropriada."
+}

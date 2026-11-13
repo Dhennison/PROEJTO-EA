@@ -1,0 +1,35 @@
+ABRIL/2026 — MODELO D — ANALISE M1 AGUARDANDO REPLAY
+Work:+6877,556998 pontos,36operacoes,20pregoes. Nosso principal:pendente.
+33operacoes determinadas emM1;3pendentes em09abr e17abr.
+09abr10:32–10:33WINJ26R61.8.
+17abr09:47–09:48WINM26R61.8;17abr11:51–11:52WINM26S38.2.
+Tres minutos,sem controles extras de grade nesta rodada.
+
+ACERVO
+11260M1Profit Work eMT5WIN$N,mesmoshorarios/OHLC,zero diferencas.
+Ajustes20datas Work presentes. Contexto primeirodia01abr vem31marco
+ja no acervo;HLC de todo pregao anterior,abertura atual eajusteoperacional.
+36niveis matematicos entrada/SL/TP iguais Work,tolerancia0,00001.
+Sem lacunas intradiarias fornecidas;nao certifica todosnegocios demercado.
+
+METODO E COLETA
+Mesmo criterio M1+Replay demaio/junho/julho,grade5,1contrato/nivel,
+parametrosoriginais,corte18h. Nao escolher ordem de toques pelo resultado.
+Ramos TP/SL/ABERTA,propagados ate corte. Pontos nos niveis,sem custos/fila/fills.
+Nao apresentar subtotal dasdeterminadas nem envoltorio5720–7455 como
+fechamento:extremos por operacao podem nao coexistir na fita diaria.
+XLSX com3abas(09abr;17abr0947;17abr1151). Comecar algunssegundosantes,
+terminardepois,sem saltar dentrojanela,sem filtro de lotes/corretoras/tipos.
+Preservar negociosidenticos,verificarhorarios/limite200001/OHLC/quantidade.
+Nenhum pedido adicional deOHLC/ajuste. Resultados fechados preservados.
+
+CONTINUIDADE DEFINIDA PELO USUARIO
+Expandir D original ate limite deReplayProfit,sem compra dehistorico.
+Depois estudar alvo/stop por nivel e depois testar A/B/C nos mesmos meses.
+Nao e otimo universal nem validacao independente escolher parametros na
+mesma amostra. Preservar D original e identificar variantes/fontes/curvas.
+Cedro ago-out:negocios brutos recebidos de todo periodo. Maio-julho:M1mais
+janelas pontuais de negocios. Novos stops/alvos/modelos podem exigirnovas
+janelas fora dascoletas ja feitas. Candles nao recuperam ordem de negocios.
+Guardarbrutos,nao apenas reducao feita para os niveis D atuais. A validacao
+nao se transfere automaticamente para novos parametros ou modelos.
