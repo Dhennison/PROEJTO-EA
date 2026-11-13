@@ -181,3 +181,6 @@ Usuário perguntou cadê análise outubro: até então só arquivos guardados, i
 
 ##12/11 — outubro completo e entrega solicitada dos três meses
 Usuário enviou26ZIPs finais,pediu continuar ePDFunificado1mesporpagina. Todos48ZIPsOutubro recebidos,auditados ecalculados:+3830,21pregões,31ops21TP10SL.105estadosconferidos;parciaispreservadas.28ordemarquivo/timestamp nãoalterou5estados;27níveisforaEODconfirmamzeroentradasapesardiferençaquantitativa. MesescompletosD:-2375,+2855,+3830,total4310,DDgeral3620,63pregões129ops. PDF3páginas guardado/disponibilizado em compilado_cedro_modelod/Modelo_D_Cedro_Agosto_Setembro_Outubro_2026.pdf,ZIPidêntico. RecortesWork-2275/+1380 separados. PróximoABCantesdeestudostop/alvo,semotimizarDparaesconderresultados.
+
+##12/11 — nova prioridade para amanhã
+Após explicação do DD2960,pico06/08+495/vale25/08-2465,usuário mudou ordem:buscar julho/outrosmeses para ampliar comparação;depois outros stops/alvos;depois ABC. Prioridade mais recente substitui ABC antes da otimização. Julho sem cobertura confirmada,sem compra autorizada. Preservar D original e separar variantes.

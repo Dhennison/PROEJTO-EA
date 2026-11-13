@@ -1,11 +1,11 @@
 {
   "data": "2026-11-12",
   "ordem": [
-    "D_SETEMBRO_CEDRO",
-    "D_OUTUBRO_CEDRO",
-    "A_B_C_3_MESES",
-    "COMPARAR_A_B_C_D_ORIGINAIS",
+    "BUSCAR_JULHO_E_OUTROS_MESES",
+    "AMPLIAR_MODELO_D_NOS_MESES_DISPONIVEIS",
     "ESTUDAR_ALVO_STOP_POR_NIVEL",
+    "TESTAR_MODELOS_A_B_C",
+    "COMPARAR_ORIGINAIS_E_VARIANTES_IDENTIFICADAS",
     "CONFIRMAR_COM_DADOS_NOVOS"
   ],
   "meses": [
@@ -24,7 +24,7 @@
     "principal_Work": "1380",
     "mes_completo_ABCD": "2855"
   },
-  "estado_atual": "MODELO_D_TRES_MESES_CONCLUIDO_PDF_ENTREGUE_PROXIMO_A_B_C",
+  "estado_atual": "RETOMAR_AMANHA_BUSCA_JULHO_E_OUTROS_MESES",
   "reutilizacao_dados": "Reutilizar fita bruta e auditorias; reducao por limiares precisa ser gerada por modelo/parametro. Nunca aplicar reducao especifica D a A/B/C ou novos stops/alvos.",
   "controle_anomalias": "Repetir sensibilidade arquivo/cronologico22e24 em cada modelo e estudo de parametros.",
   "outubro_progresso": {
@@ -46,5 +46,16 @@
     "pregoes": 63,
     "operacoes": 129,
     "PDF_unificado": "entregas/compilado_cedro_modelod/Modelo_D_Cedro_Agosto_Setembro_Outubro_2026.pdf"
-  }
+  },
+  "ordem_anterior_preservada": [
+    "D_SETEMBRO_CEDRO",
+    "D_OUTUBRO_CEDRO",
+    "A_B_C_3_MESES",
+    "COMPARAR_A_B_C_D_ORIGINAIS",
+    "ESTUDAR_ALVO_STOP_POR_NIVEL",
+    "CONFIRMAR_COM_DADOS_NOVOS"
+  ],
+  "mudanca_explicita_usuario": "Depois de ampliar meses, testar outros stops/alvos e so depois A/B/C. Substitui ordem anterior ABC antes de parametros.",
+  "regra_preservacao": "Preservar D original e separar quaisquer novos parametros em serie identificada; nao sobrescrever resultados dos tres meses.",
+  "cobertura_adicional": "Julho e anteriores ainda sem ticks disponiveis confirmados; consultar fontes existentes/gratuitas. Nenhuma compra autorizada."
 }

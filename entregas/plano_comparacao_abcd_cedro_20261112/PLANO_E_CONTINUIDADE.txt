@@ -1,3 +1,15 @@
+ATUALIZACAO MAIS RECENTE — NOVA ORDEM DO USUARIO,12/11/2026
+Para retomar amanha:buscar julho e outros meses para ampliar a comparacao.
+Depois estudar outros stops/alvos e,por fim,testar A/B/C.
+Esta instrucao substitui a ordem anterior de testar ABC antes dos parametros.
+Julho/anteriores ainda dependem de conseguir negocios historicos;nao prometer
+cobertura nem comprar historico. Reutilizar fontes existentes/gratuitas.
+Os resultados originais D dos tres meses seguem congelados;variantes de
+parametros terao identificacao e curvas separadas. Nao escolher e validar
+parametros nos mesmos dados como se fossem evidencia independente.
+
+PLANO ANTERIOR PRESERVADO COMO HISTORICO
+
 PLANO APROVADO PELO USUÁRIO — 12/11/2026
 
 1. Concluir Modelo D em setembro Cedro, depois em outubro Cedro.
