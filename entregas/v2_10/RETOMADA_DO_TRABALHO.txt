@@ -1160,3 +1160,15 @@ Após análise desse teste, usar pacote2.13c077570, modoobservaçãofalse
 antesativarDEMO. Não voltar aos cenáriosimportados/sintéticos aprovados.
 Config/preset/identidadefontes/arquivoB3/ZIPconferidos. LauncherWindows e
 rodadaXPnativos ainda pendentes. Nenhuma mudança no código doEA.
+
+PROFIT WINQ26 M1 E AJUSTES JULHO — 13/11/2026
+Recebidos CSV17jun–12ago e XLSX JUN a AGO. Ordem OHLC confirmada pelo print
+18jun09:03:171800/171940/171060/171210. Primeira barra18jun09:03, nao09:02.
+Julho23datas/12748M1:mesmos timestamps e OHLC do export WIN$N MT5, zero
+diferencas.31jul inicia12:34, abertura tardia conhecida, nao lacuna matinal.
+Planilha contem ajuste unico exibido por data nas23datas julho; extraidos
+em entregas/profit_winq26_julho_20261113/AJUSTES_JULHO_PLANILHA.csv.
+20001timestamps comuns CSV/XLSX, todos OHLC iguais. Valor indicador extraido
+nao equivale ainda a confirmar data de referencia/contrato/ajuste oficial.
+Dados sao candles M1, nao negocios individuais; nenhum resultado novo calculado.
+Auditoria e script preservados na pasta acima; anexos brutos mantidos locais.

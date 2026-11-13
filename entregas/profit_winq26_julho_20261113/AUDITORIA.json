@@ -1,0 +1,28 @@
+{
+  "csv_barras": 22793,
+  "csv_duplicadas_timestamp": 0,
+  "csv_inicio": "2026-06-17T09:02:00",
+  "csv_fim": "2026-08-12T16:59:00",
+  "xlsx_barras": 20001,
+  "comuns_csv_xlsx": 20001,
+  "divergencias_ohlc_csv_xlsx": 0,
+  "julho_dias": 23,
+  "julho_barras": 12748,
+  "julho_comuns_mt5": 12748,
+  "julho_divergencias_ohlc_mt5": 0,
+  "julho_exclusivas_profit": 0,
+  "julho_exclusivas_mt5": 0,
+  "julho_dias_ajuste_unico": 23,
+  "julho_dias_ajuste_ausente": 0,
+  "julho_dias_ajuste_variavel": {},
+  "primeira_barra_18jun": "2026-06-18T09:03:00",
+  "print_18jun_0903_ohlc": [
+    171800.0,
+    171940.0,
+    171060.0,
+    171210.0
+  ],
+  "julho31_inicio": "2026-07-31T12:34:00",
+  "sha256_csv": "0c6619bfe09207633a832ec11fc15053e2843b48e6c6e81d44b4d8fa9826029e",
+  "sha256_xlsx": "d6504209e1c1b41a66c4ad182a00ce71d31a1b682f71fb045f77b5bc853032d4"
+}
