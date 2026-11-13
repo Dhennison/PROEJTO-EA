@@ -1365,3 +1365,32 @@ nao apresentar soma parcial como abril. Falta apenas09abrWINJ26R61.8
 Bruto copiadoSHAidentico para dados_brutos_modelo_d/replay_profit;manifesto
 atualizado. Auditorias/script/CSV/resultadoparcial/PROGRESSO_RESOLUCAO.json
 em entregas/profit_abril_20261113. Proximo receberapenas09abr.
+
+ABRIL ENCERRADO APOS RECEBIMENTO02 — 13/11/2026
+NovoMesdeAbril.xlsx contem09abr+duasjanelas17abr,119805negocios.
+PRINCIPAL+5720grade5,Work+6877,556998,diferenca-1157,556998.36operacoes
+30TP/6SL,20pregoes.33determinadas emM1+3resolvidas porReplaypontual.
+NAO e mes inteiropornegocios nem garantiafills. Parametrosoriginais,
+1contrato/nivel,toqueinclusivo,corte18h,sem custos/fila/slippage.
+09abrR61.8WINJ26SL-450,entrada10:32:30.101,saida minuto10:41 peloM1.
+17abrR61.8WINM26SL-450;17abrS38.2WINM26SL-375 preservados doRecebimento01.
+DoisALVO Work->SL;S38.2confirmaSLoriginal. MatematicoscontrolesSL3casos.
+Tresminutos completos iguaisOHLC/quantidade,6bordasparciaisesperadas,
+sem limite200001. Doisdesempatesms nao alteram resultado,sem barreiras
+opostas nomesmo ms. Nao deduplicar negocios. Testes antirreprocessamento
+maxima preentrada/barraentrada incompleta passaram. Nenhuma nova coleta.
+Arquivos finais/script/diario/PDFs/ZIP em entregas/profit_abril_20261113.
+RESULTADO_FINAL.json ePROGRESSO_RESOLUCAO.json saoestadoatual. Outputs
+recebimento01parcial preservados nasubpasta;rawantigo e novoSHAidenticos
+em dados_brutos_modelo_d/replay_profit,manifestoPlanoatualizado.
+DDdiarioatual cronologicoABRIL->MAIO->JUNHO->JULHOna serieM1+Replay:
+abril teste595 Work476,336667;atemaio/junho teste2150 Work1408,692667;
+atejulho teste2150 Work1951,152667. Resultadosmaio-780,junho3405,julho1100
+inalterados,so historico/DDampliados. Curvaatual CURVA_ABRIL_MAIO_JUNHO_JULHO_M1_REPLAY.csv
+ePDFdiario4paginas interno para compilacao final;tecnico tambem guardado.
+Cedro ago/set/out ecurva integral intactos,separados eidentificados.
+Julho10julcontrole dispensado usuario,nao pedir novamente. Proxima expansao
+cronologicaMarco,quando prosseguir. Observar contexto primeirodia deMarco
+vem27fevereiro M5 completo Work,nao usar M1parcial sobreposto. Nao alterar
+referencias originais nem inventar ticksdeM1/M5. Ordemposterior segue
+expandir ate limiteProfit,depois estudoalvosstops,depois modelosA/B/C.

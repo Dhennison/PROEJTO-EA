@@ -1,0 +1,258 @@
+{
+  "status": "ABRIL_ENCERRADO_M1_REPLAY",
+  "workbook_sha256": "45c9463c19ee09e443111a086b860d8a2fedb613af07f44065e2c64bd86ff38e",
+  "sheets": [
+    {
+      "sheet": "17-04 1ª Janela",
+      "date": "2026-04-17",
+      "records": 36350,
+      "start": "09:46:58.003",
+      "end": "09:48:04.988",
+      "at_observed_limit": false
+    },
+    {
+      "sheet": "17-04 2ª Janela",
+      "date": "2026-04-17",
+      "records": 50198,
+      "start": "11:50:58.007",
+      "end": "11:52:04.997",
+      "at_observed_limit": false
+    },
+    {
+      "sheet": "09-04",
+      "date": "2026-04-09",
+      "records": 33257,
+      "start": "10:31:58.004",
+      "end": "10:33:04.995",
+      "at_observed_limit": false
+    }
+  ],
+  "ignored_sheets": [],
+  "records": 119805,
+  "pending_operation_count": 0,
+  "resolved_original_pending": 3,
+  "grade_controls": 0,
+  "operations": 36,
+  "test_points": "5720",
+  "work_points": "6877.556998",
+  "difference": "-1157.556998",
+  "unresolved_operations": [],
+  "method": "33resultados determinados nos candles+3resolvidos por Replay;nao e mes integral tick a tick. Grade5,niveis,sem custos/fills.",
+  "gap_control": "Sem lacunas intradiarias nos M1 fornecidos.",
+  "results": [
+    {
+      "date": "2026-04-09",
+      "level": "R61.8",
+      "sheet": "09-04",
+      "contract": "WINJ26",
+      "grade_control": false,
+      "primary": {
+        "reason": "SL",
+        "points": "-450",
+        "entry": {
+          "time": "10:32:30.101",
+          "price": 194320,
+          "quantity": 1,
+          "source_row": 20214
+        },
+        "exit": {
+          "time": "10:41:00_CANDLE",
+          "price": 194770
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-450",
+        "entry": {
+          "time": "10:32:30.101",
+          "price": 194320,
+          "quantity": 1,
+          "source_row": 20146
+        },
+        "exit": {
+          "time": "10:41:00_CANDLE",
+          "price": 194770
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "mathematical": {
+        "reason": "SL",
+        "points": "-450.0000000000000000000000",
+        "entry": {
+          "time": "10:32:30.220",
+          "price": 194325,
+          "quantity": 1,
+          "source_row": 19954
+        },
+        "exit": {
+          "time": "10:41:00_CANDLE",
+          "price": 194772
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    },
+    {
+      "date": "2026-04-17",
+      "level": "S38.2",
+      "sheet": "17-04 2ª Janela",
+      "contract": "WINM26",
+      "grade_control": false,
+      "primary": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "11:51:23.140",
+          "price": 200005,
+          "quantity": 1,
+          "source_row": 33036
+        },
+        "exit": {
+          "time": "11:51:55.504",
+          "price": 199630,
+          "quantity": 1,
+          "source_row": 8312
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "11:51:23.140",
+          "price": 200000,
+          "quantity": 4,
+          "source_row": 32801
+        },
+        "exit": {
+          "time": "11:51:55.504",
+          "price": 199625,
+          "quantity": 2,
+          "source_row": 8249
+        },
+        "exit_source": "REPLAY"
+      },
+      "mathematical": {
+        "reason": "SL",
+        "points": "-375.000",
+        "entry": {
+          "time": "11:51:23.140",
+          "price": 200005,
+          "quantity": 1,
+          "source_row": 33036
+        },
+        "exit": {
+          "time": "11:51:55.504",
+          "price": 199630,
+          "quantity": 1,
+          "source_row": 8312
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    },
+    {
+      "date": "2026-04-17",
+      "level": "R61.8",
+      "sheet": "17-04 1ª Janela",
+      "contract": "WINM26",
+      "grade_control": false,
+      "primary": {
+        "reason": "SL",
+        "points": "-450",
+        "entry": {
+          "time": "09:47:21.704",
+          "price": 202415,
+          "quantity": 5,
+          "source_row": 25414
+        },
+        "exit": {
+          "time": "09:49:00_CANDLE",
+          "price": 202865
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-450",
+        "entry": {
+          "time": "09:47:21.704",
+          "price": 202415,
+          "quantity": 1,
+          "source_row": 25318
+        },
+        "exit": {
+          "time": "09:49:00_CANDLE",
+          "price": 202865
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "mathematical": {
+        "reason": "SL",
+        "points": "-450.000",
+        "entry": {
+          "time": "09:47:21.704",
+          "price": 202415,
+          "quantity": 5,
+          "source_row": 25414
+        },
+        "exit": {
+          "time": "09:49:00_CANDLE",
+          "price": 202864
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    }
+  ],
+  "final_operation_reasons": {
+    "TP": 30,
+    "SL": 6
+  },
+  "Work_flips": [
+    {
+      "Work": "ALVO",
+      "test": "SL",
+      "count": 2
+    }
+  ],
+  "ohlc_quantity_matching_minutes": 3,
+  "partial_boundary_minutes": 6,
+  "chronological_stats": {
+    "2026-04": {
+      "test_points": "5720",
+      "work_points": "6877.556998",
+      "test_DD_accum": "595",
+      "work_DD_accum": "476.336667"
+    },
+    "2026-05": {
+      "test_points": "-780",
+      "work_points": "2032.313668",
+      "test_DD_accum": "2150",
+      "work_DD_accum": "1408.692667"
+    },
+    "2026-06": {
+      "test_points": "3405",
+      "work_points": "7214.523331",
+      "test_DD_accum": "2150",
+      "work_DD_accum": "1408.692667"
+    },
+    "2026-07": {
+      "test_points": "1100",
+      "work_points": "5255.800668",
+      "test_DD_accum": "2150",
+      "work_DD_accum": "1951.152667"
+    }
+  },
+  "April_July_test": "9445",
+  "April_July_Work": "21380.194665",
+  "no_new_replay_requested": true,
+  "series": "M1_PLUS_TARGETED_REPLAY_SEPARATE_FROM_FULL_CEDRO"
+}

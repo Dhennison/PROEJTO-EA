@@ -1,0 +1,36 @@
+ABRIL/2026 — ENCERRADO — MODELO D
+RESULTADO PRINCIPAL: +5720 pontos,grade5. Work:+6877,556998.
+Diferenca:-1157,556998.36operacoes em20pregoes.
+Parametros D originais,1contrato/nivel,toque inclusivo,corte18h.
+33resultados determinados emM1+3resolvidos por janelasReplay.
+NAO e mes integral por negocios nem resultado de preenchimentos reais.
+Pontos nos niveis,sem custos/fila/slippage. Nenhuma coleta adicional.
+
+CONFERENCIA
+Recebimento02 completo:3abas,119805negocios. Tres minutos requeridos
+conferem OHLC/quantidade;6bordasparciais divergem como esperado. Semlimite
+200001. Dois desempatesms com mesmo resultado;sem barreirasopostas nomesmo
+ms dentro das posicoes investigadas. Sem remover negociosidenticos.
+17abril duasjanelas identicas em resultados/timestamps ao recebimento01;
+outputs antigos preservados em recebimento01_parcial. Rawambos preservados.
+09abrWINJ26R61.8SL-450,entrada10:32:30.101,saida no minuto10:41 peloM1.
+17abrWINM26R61.8SL-450,entrada09:47:21.704,saida no minuto09:49 peloM1.
+17abrWINM26S38.2SL-375,entrada11:51:23.140,saida11:51:55.504na copia.
+DoisALVO Work passaram aSL;S38.2 confirmaSLoriginal. Controles matematicos
+SLnos3casos. Uma saida diretamente na copia,duas em candlesseguintes sem
+ambiguidade. SufixoCANDLE indica minuto,nao instante exato da saida.
+Nao reutilizar maxima/minima preentrada de barra ja completamente copiada;
+regressao testada,assim como rejeitar barra deentrada incompleta.
+Tres casos dentro dos conjuntos previstos antes de olhar as copias.
+
+DRAWDOWN EM ORDEM ABRIL->MAIO->JUNHO->JULHO
+Fechamentos diarios,sem reinicio mensal,na mesma serieM1+Replay.
+Ateabril:teste595,Work476.336667.
+Atemaio:teste2150,Work1408.692667.
+Atejunho:teste2150,Work1408.692667.
+Atejulho:teste2150,Work1951.152667.
+Maio-780,Junho3405 eJulho1100 inalterados;so historico/DD ampliados desdeabril.
+TotalserieM1+Replayabril-julho9445;nao somar como se fosse Cedro integral.
+Cedro agosto/outubro ecurva originais intactos,separados eidentificados.
+Julho10julcontrole dispensado usuario,nao pedir novamente.
+PDFenxuto4paginas e tecnico internos para compilacao final.

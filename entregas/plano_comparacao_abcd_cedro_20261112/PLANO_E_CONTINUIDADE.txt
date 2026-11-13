@@ -1,3 +1,13 @@
+ATUALIZACAO DE ESTADO — 13/11/2026,APOS RECEBIMENTO02 ABRIL
+D originalM1+Replay fechado:Abril5720,Maio-780,Junho3405,Julho1100.
+Abril36operacoes,30TP/6SL,nenhuma pendencia. Nenhuma coleta adicional.
+PDFs/curva correntes desdeABRIL em entregas/profit_abril_20261113.
+Cedro integralAgo-2375/Set2855/Out3830 ecurvaoriginais separados intactos.
+Proxima expansaoMarco;contexto02mar vem27fevM5 completo Work. Preservar
+referencias e tratar novasambiguidades,sem chamar janelas de mesintegral.
+Ordem usuario:expandir ate limiteProfit,depois parametros,depoisA/B/C.
+Trechos de estado abaixo sao historico de preparacao,nao novas pendencias.
+
 ESTADO E ORDEM ATUAIS — 13/11/2026
 1. Expandir D original retroativamente ate limite de Replay que o Profit entregar.
 2. Depois estudar alvo/stop por nivel,preservando originais e variantes separadas.

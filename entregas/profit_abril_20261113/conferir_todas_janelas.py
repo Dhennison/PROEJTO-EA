@@ -6,7 +6,7 @@ import openpyxl
 OUT=Path(__file__).parent;ROOT=OUT.parents[1]
 sys.path.insert(0,str(ROOT/'entregas/fechamento_agosto_v1_11/analise'))
 from motor_precos import levels
-XLS=Path('/workspace/attachments/582d979b-0c68-46fd-adcd-a077c64c0cec/Mês de Abril.xlsx')
+XLS=Path('/workspace/attachments/5a8ae9ea-8406-4706-9d89-14638baf4c7c/Mês de Abril.xlsx')
 SOURCE=Path('/workspace/candles_originais_modelo_d/WINFUT_F_0_1min_01-01-2026_22-09-2026.csv')
 def read(n):
  with (OUT/n).open(encoding='utf-8-sig') as f:return list(csv.DictReader(f,delimiter=';'))
@@ -117,7 +117,7 @@ for day in refs:
  daily.append(dict(date=day,operations=n,resolved_by_candles=n-tick-pending,resolved_by_Replay_window=tick,pending=pending,test_points=str(total) if not pending else 'PENDENTE',work_points=str(work) if day in work_dates else '',difference=(str(total-work) if not pending else 'PENDENTE') if day in work_dates else ''))
 daily.sort(key=lambda r:r['date']);total=sum((D(r['test_points']) for r in daily if not r['pending']),D(0));worktotal=sum((D(r['work_points']) for r in daily if r['work_points']!=''),D(0))
 assert all(r['resolved'] for r in results if r.get('reason')!='MISSING_REPLAY_WINDOW'),results
-summary=dict(status='ABRIL_PARCIAL_AGUARDANDO_REPLAY_09ABR' if unresolved else 'ABRIL_ENCERRADO_M1_REPLAY',workbook_sha256=hashlib.sha256(XLS.read_bytes()).hexdigest(),sheets=sheets,ignored_sheets=ignored_sheets,records=sum(s['records'] for s in sheets),pending_operation_count=len(unresolved),resolved_original_pending=sum(not r['grade_control'] for r in resolved),grade_controls=sum(r['grade_control'] for r in resolved),operations=len(ops),test_points=None if unresolved else str(total),work_points=str(worktotal),difference=None if unresolved else str(total-worktotal),unresolved_operations=unresolved,method='33resultados determinados nos candles+2resolvidos por Replay+1ainda sem copia;nao e mes integral tick a tick. Grade5,niveis,sem custos/fills.',gap_control='Sem lacunas intradiarias nos M1 fornecidos.',results=results)
+summary=dict(status='ABRIL_PARCIAL_AGUARDANDO_REPLAY_09ABR' if unresolved else 'ABRIL_ENCERRADO_M1_REPLAY',workbook_sha256=hashlib.sha256(XLS.read_bytes()).hexdigest(),sheets=sheets,ignored_sheets=ignored_sheets,records=sum(s['records'] for s in sheets),pending_operation_count=len(unresolved),resolved_original_pending=sum(not r['grade_control'] for r in resolved),grade_controls=sum(r['grade_control'] for r in resolved),operations=len(ops),test_points=None if unresolved else str(total),work_points=str(worktotal),difference=None if unresolved else str(total-worktotal),unresolved_operations=unresolved,method='33resultados determinados nos candles+3resolvidos por Replay;nao e mes integral tick a tick. Grade5,niveis,sem custos/fills.',gap_control='Sem lacunas intradiarias nos M1 fornecidos.',results=results)
 write('REPLAY_TODAS_ABAS_AUDITORIA.csv',sheets);write('REPLAY_TODAS_ABAS_M1.csv',checks);write('REPLAY_OPERACOES_RESOLVIDAS.csv',resolved);write('DIARIO_APOS_JANELAS.csv',daily)
 (OUT/'REPLAY_TODAS_ABAS_RESULTADO.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({k:v for k,v in summary.items() if k!='results'},ensure_ascii=False,indent=2));print('OPERATIONS');print(json.dumps(resolved,ensure_ascii=False,indent=2));print('MINUTE MISMATCHES');print(json.dumps([x for x in checks if not x['ohlc_match'] or not x['quantity_match']],ensure_ascii=False,indent=2))

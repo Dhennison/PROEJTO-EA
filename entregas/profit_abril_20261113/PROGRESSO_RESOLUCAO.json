@@ -1,21 +1,37 @@
 {
-  "status": "ABRIL_PARCIAL_AGUARDANDO_REPLAY_09ABR",
+  "status": "ABRIL_ENCERRADO_M1_REPLAY",
   "operations": 36,
-  "test_points": null,
+  "test_points": "5720",
   "work_points": "6877.556998",
-  "pending_operation_count": 1,
-  "resolved_original_pending": 2,
-  "unresolved_operations": [
-    [
-      "2026-04-09",
-      "R61.8"
-    ]
-  ],
-  "proxima_coleta": {
-    "data": "2026-04-09",
-    "contrato": "WINJ26",
-    "inicio": "10:32:00",
-    "fim": "10:33:00",
-    "nivel": "R61.8"
-  }
+  "difference": "-1157.556998",
+  "resolved_original_pending": 3,
+  "grade_controls": 0,
+  "pending_operation_count": 0,
+  "chronological_stats": {
+    "2026-04": {
+      "test_points": "5720",
+      "work_points": "6877.556998",
+      "test_DD_accum": "595",
+      "work_DD_accum": "476.336667"
+    },
+    "2026-05": {
+      "test_points": "-780",
+      "work_points": "2032.313668",
+      "test_DD_accum": "2150",
+      "work_DD_accum": "1408.692667"
+    },
+    "2026-06": {
+      "test_points": "3405",
+      "work_points": "7214.523331",
+      "test_DD_accum": "2150",
+      "work_DD_accum": "1408.692667"
+    },
+    "2026-07": {
+      "test_points": "1100",
+      "work_points": "5255.800668",
+      "test_DD_accum": "2150",
+      "work_DD_accum": "1951.152667"
+    }
+  },
+  "no_new_replay_requested": true
 }

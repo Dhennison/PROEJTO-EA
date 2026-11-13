@@ -1,0 +1,21 @@
+{
+  "status": "ABRIL_PARCIAL_AGUARDANDO_REPLAY_09ABR",
+  "operations": 36,
+  "test_points": null,
+  "work_points": "6877.556998",
+  "pending_operation_count": 1,
+  "resolved_original_pending": 2,
+  "unresolved_operations": [
+    [
+      "2026-04-09",
+      "R61.8"
+    ]
+  ],
+  "proxima_coleta": {
+    "data": "2026-04-09",
+    "contrato": "WINJ26",
+    "inicio": "10:32:00",
+    "fim": "10:33:00",
+    "nivel": "R61.8"
+  }
+}

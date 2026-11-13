@@ -36,6 +36,15 @@
       "sha256": "1a5a095a68851ec1c207417580ce45dbcae15b93a5346344f2a3d29c3c2aec17",
       "conteudo": "Duas janelas17abril;abaPlanilha1vazia;09abril nao recebido",
       "publicado_GitHub": false
+    },
+    {
+      "arquivo": "2026_04_Mes_de_Abril_recebimento02_completo.xlsx",
+      "origem_recebida": "/workspace/attachments/5a8ae9ea-8406-4706-9d89-14638baf4c7c/Mês de Abril.xlsx",
+      "copia_local_bruta": "/workspace/dados_brutos_modelo_d/replay_profit/2026_04_Mes_de_Abril_recebimento02_completo.xlsx",
+      "size": 3537536,
+      "sha256": "45c9463c19ee09e443111a086b860d8a2fedb613af07f44065e2c64bd86ff38e",
+      "conteudo": "Tresjanelas abril:09abruma,17abrduas. Completo dasjanelas solicitadas,NAO mesintegral.",
+      "publicado_GitHub": false
     }
   ],
   "Cedro_brutos_local": "/workspace/retorno_cedro_20261112/ticks/",
