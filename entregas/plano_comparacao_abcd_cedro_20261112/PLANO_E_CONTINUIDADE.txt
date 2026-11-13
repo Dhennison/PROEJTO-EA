@@ -1,3 +1,12 @@
+ATUALIZACAO DE ESTADO — MARCO ANALISADO,13/11/2026
+Marco50operacoes,46desfechosdeterminados dosquais1controlegrade;4ambiguas.
+Replay5casos,5minutos,17/19mar,WINJ26. Lista em profit_marco_20261113.
+Resultado principal aindaaguardandoReplay;Work3451,037332. Nao confundir
+metricasWork/subtotaldeterminadas com fechamento teste. Contexto02mar
+27fevM5completo;10mar18:24/25poscorte semimpactoHLCdiario,semnovacoleta.
+Resultadosabril-julho eCedro preservados. Ordemaprofundarhistoria,depois
+parametros,depoisA/B/Cmantida. Historico deestados anterioresabaixo.
+
 ATUALIZACAO DE ESTADO — 13/11/2026,APOS RECEBIMENTO02 ABRIL
 D originalM1+Replay fechado:Abril5720,Maio-780,Junho3405,Julho1100.
 Abril36operacoes,30TP/6SL,nenhuma pendencia. Nenhuma coleta adicional.

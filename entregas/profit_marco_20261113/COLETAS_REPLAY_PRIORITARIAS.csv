@@ -1,0 +1,6 @@
+﻿data;contrato;inicio;fim_exclusivo;niveis;motivo
+2026-03-17;WINJ26;10:21:00;10:22:00;R61.8;Ordem entrada/alvo/stop ambigua no M1
+2026-03-19;WINJ26;09:03:00;09:04:00;S38.2;Ordem entrada/alvo/stop ambigua no M1
+2026-03-19;WINJ26;09:31:00;09:32:00;S61.8;Controle do toque no stop normalizado grade5:desfecho difere Work
+2026-03-19;WINJ26;16:01:00;16:02:00;R38.2;Ordem entrada/alvo/stop ambigua no M1
+2026-03-19;WINJ26;16:02:00;16:03:00;R61.8;Ordem entrada/alvo/stop ambigua no M1

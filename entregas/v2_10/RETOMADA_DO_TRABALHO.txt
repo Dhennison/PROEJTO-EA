@@ -1394,3 +1394,31 @@ cronologicaMarco,quando prosseguir. Observar contexto primeirodia deMarco
 vem27fevereiro M5 completo Work,nao usar M1parcial sobreposto. Nao alterar
 referencias originais nem inventar ticksdeM1/M5. Ordemposterior segue
 expandir ate limiteProfit,depois estudoalvosstops,depois modelosA/B/C.
+
+MARCO ANALISADO E JANELAS DELIMITADAS — 13/11/2026
+Usuario pediuMarco,esclareceucriterioReplay epediu metricas. Foi explicado:
+nao basta toque isolado;desfecho so determinado quando todosramoscompativeis
+comM1levammesmoresultado. Duvida sobre depoisentrada/ordemTP/SL->Replay,
+sem afirmar fila ou preenchimento deordens.
+Marco22pregoes,50operacoes,46desfechosdeterminados e4ambiguidadesem17/19mar.
+Das46,umcontrolegrade necessario19marS61.8,portanto45semcoleta+5casos
+Replay(4ambiguos+1grade). Nossoresultadoprincipal AGUARDANDO_REPLAY.
+Work+3451,037332,30ALVO/19STOP/1ZERAGEM,DDdiariomensalisolado2373,011333.
+Nao apresentar subtotal/faita tecnica-180a2220 como fechamento ou DDteste.
+TodosWINJ26. Coletas17mar10:21–10:22R61.8;19mar09:03–09:04S38.2;
+19mar09:31–09:32S61.8controlegrade;19mar16:01–16:02R38.2 e16:02–16:03
+R61.8,podem serjuntos16:01–16:03. XLS4abasou5,5minutosno total.
+19marS61.8stopgrade177480tocadominuto09:31,stopmatematico177477,898
+naoatingido;WorkALVO574,935333as10:17. Conferirpreco177480na fita,nao
+reselecionar parametro porresultado. Nenhum outrodia solicitado.
+Acervo12411M1Work contra12412MT5:unica diferenca10mar18:24 eMT5extra18:25
+aposcorte18h. OHLCdiarioigual em22datas,referenciaspreservadas. Nao repetir
+coleta poscorte. Semlacunas intradiarias nosM1fornecidos.50conjuntos
+matematicosentrada/SL/TP iguaisWork,tol0,00001,sem chavesfaltantes/extra.
+Contexto02mar usa27fevM5COMPLETO113barras09:00–18:20,nao210M1parciais
+14:55–18:24. Nenhuma conversaoM5emtrajetoria,ticks ou barsM1inventados.
+Arquivos/script/inventario/referencias/metricasWork/diarioprovisorio/listaZIP
+em entregas/profit_marco_20261113. Proximo receberjanelasMarco. Meses
+fechadosabril5720/maio-780/junho3405/julho1100 eCedro intactos. Recalcular
+DDcronologico desdeMarco somenteapos resolverpendencias,sem reiniciar
+meses ou misturarseries/fontes indevidamente. Brutossemprepreservados.

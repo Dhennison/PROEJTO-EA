@@ -1,0 +1,46 @@
+{
+  "status": "PROVISORIO_CANDLES_M1_AGUARDANDO_REPLAY",
+  "days": 22,
+  "operations": 50,
+  "determined": 46,
+  "pending": 4,
+  "work_operations": 50,
+  "work_points": "3451.037332",
+  "outer_min": "-180",
+  "outer_max": "2220",
+  "pending_dates": [
+    "2026-03-17",
+    "2026-03-19"
+  ],
+  "branch_minutes": 13,
+  "adjustments_Work_available": 22,
+  "mathematical_level_differences": [],
+  "work_missing": [],
+  "work_extra": [],
+  "gaps": [],
+  "limits": "Outer envelope per operation, not jointly attainable guaranteed. Normalized levels only, no costs/fills. No tick path invented. Candle range does not prove tape completeness. Unresolved chronology requires Replay; intra-minute exit time not determined.",
+  "contracts": {
+    "marco": "WINJ26"
+  },
+  "window_count": 5,
+  "window_dates": [
+    "2026-03-17",
+    "2026-03-19"
+  ],
+  "grade_controls": [
+    {
+      "date": "2026-03-19",
+      "level": "S61.8",
+      "normalized_outcome": "SL:-650",
+      "Work_reason": "ALVO",
+      "Work_points": "574,935333"
+    }
+  ],
+  "resultado_principal": "AGUARDANDO_REPLAY",
+  "previous_context_first_day": "2026-02-27",
+  "source_context": "M1 Profit e ajustes Work preservados;HLC de todo pregao anterior;sem gerar ticks.",
+  "coletas_apenas_ambiguidades": true,
+  "Work_metrics_file": "METRICAS_WORK_MARCO.json",
+  "desfechos_sem_coleta_adicional": 45,
+  "controle_grade_incluido_nas_46_determinadas": true
+}

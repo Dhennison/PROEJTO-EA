@@ -1,0 +1,38 @@
+MARCO/2026 — MODELO D — ANALISE M1 AGUARDANDO REPLAY
+Work:+3451,037332 pontos,50operacoes,22pregoes. Nosso principal:pendente.
+46operacoes determinadas nos candles;4pendentes em17mar/19mar.
+Controle adicional19marS61.8:stopgrade177480 tocado09:31,mas stop matematico
+177477,898 nao e atingido. WorkALVO574,935333 posterior10:17. Conferir toque
+na grade5,nao alterar criterio conforme ganho. Total5minutos,sempreWINJ26.
+
+ACERVO
+12411M1ProfitWork eMT5WIN$N,horarios/OHLC conferidos em inventario.
+10mar18:24diferente eMT5extra18:25:depoiscorte18h,OHLCdiariofinaligual
+em todas22datas,semimpacto nasreferencias. Nao pedir nova coleta.
+Ajustes22datas Work disponiveis. Niveis matematicos50entrada/SL/TP iguais
+Work,tolerancia0,00001. Sem chaves faltantes/extra,sem lacunas intradiarias.
+Contexto02mar usa27fevereiro M5 COMPLETO do Work(09h em diante),nao210M1
+parciais sobrepostos que comecam14:55. HLC todo pregao anterior,sem truncar
+18h;abertura atual;ajuste operacional congelado. Nao gerar ticks deM5/M1.
+M5 so para contexto HLC,nao simular negocios ou definir trajetoria de marco.
+
+COLETAS
+17mar10:21–10:22 R61.8.
+19mar09:03–09:04 S38.2.
+19mar09:31–09:32 S61.8(controlestopgrade).
+19mar16:01–16:02 R38.2 e16:02–16:03 R61.8,podem vir juntos16:01–16:03.
+TodasWINJ26. XLSX porjanelas:17mar;19mar0903;19mar0931;19mar1601.
+Comecar algunssegundos antes/terminardepois,reproduzir sem saltar dentro
+janela,sem filtrar lotes/corretoras/tipos. Preservar negociosidenticos.
+Verificar limite200001,alcance/OHLC/quantidade e desempatesms antes de decidir.
+Nao pedir novos ajustes ou candles,acervo suficiente para esta classificacao.
+
+CRITERIO
+Mesmo protocoloD grade5,1contrato/nivel,parametrosoriginais,toqueinclusivo,
+corte18h,sem custos/fila/fills. Um mero toque nao determina ordementrada/
+alvo/stop;so descartar Replay se todosramos compativeis dao mesmoresultado.
+Ramos TP/SL/ABERTA propagados ate corte. Envoltorioexterno-180a2220 e dado
+tecnico,nao fechamento nem faixa de resultado realizavel garantida.
+Nao somar subtotal de determinadas nem incorporar marco aoDD ate resolver.
+Abril5720/Maio-780/Junho3405/Julho1100 eCedro fechados preservados.
+Cada ampliacao recalculaDDcronologico porserie,sem mudar pontos fechados.

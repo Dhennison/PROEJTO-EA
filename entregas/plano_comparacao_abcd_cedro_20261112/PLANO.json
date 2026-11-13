@@ -24,7 +24,7 @@
     "principal_Work": "1380",
     "mes_completo_ABCD": "2855"
   },
-  "estado_atual": "ABRIL_MAIO_JUNHO_JULHO_ENCERRADOS_M1_REPLAY",
+  "estado_atual": "MARCO_M1_ANALISADO_AGUARDANDO_REPLAY",
   "reutilizacao_dados": "Reutilizar fita bruta e auditorias; reducao por limiares precisa ser gerada por modelo/parametro. Nunca aplicar reducao especifica D a A/B/C ou novos stops/alvos.",
   "controle_anomalias": "Repetir sensibilidade arquivo/cronologico22e24 em cada modelo e estudo de parametros.",
   "outubro_progresso": {
@@ -184,5 +184,30 @@
     "Work_DD_ate_Julho": "1951.152667",
     "resultados_fechados_preservados": true,
     "Cedro_tres_meses_preservado_separado": true
+  },
+  "marco_progresso": {
+    "pregoes": 22,
+    "candles_M1_Work": 12411,
+    "candles_M1_MT5": 12412,
+    "divergencias_apenas_pos_corte": true,
+    "contexto02mar": "27fevM5completo113barras",
+    "operacoes": 50,
+    "determinadas": 46,
+    "pendentes_Replay": 4,
+    "controle_grade_adicional": "19marS61.8 09:31–09:32",
+    "desfechos_sem_coleta": 45,
+    "coletas_minutos": 5,
+    "coletas_datas": [
+      "2026-03-17",
+      "2026-03-19"
+    ],
+    "contrato": "WINJ26",
+    "Work_pontos": "3451.037332",
+    "Work_TP": 30,
+    "Work_SL": 19,
+    "Work_CORTE": 1,
+    "Work_DD_marco_isolado": "2373.011333",
+    "resultado_principal": "AGUARDANDO_REPLAY",
+    "necessita_novos_candles_ajustes": false
   }
 }

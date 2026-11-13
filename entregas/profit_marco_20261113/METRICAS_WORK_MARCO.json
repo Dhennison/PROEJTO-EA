@@ -1,0 +1,18 @@
+{
+  "camada": "WORK_ORIGINAL_NAO_RESULTADO_TESTE",
+  "mes": "2026-03",
+  "pregoes": 22,
+  "operacoes": 50,
+  "motivos": {
+    "ALVO": 30,
+    "STOP": 19,
+    "ZERAGEM 18H": 1
+  },
+  "pontos": "3451.037332",
+  "DD_diario_marco_isolado": "2373.011333",
+  "dias_com_operacoes": 21,
+  "dias_positivos": 12,
+  "dias_negativos": 9,
+  "resultado_teste": "AGUARDANDO_REPLAY",
+  "observacao": "Nao calcular DD ou taxa de acerto do nosso teste como fechado antes de resolver4ambiguidades econtrolegrade."
+}
