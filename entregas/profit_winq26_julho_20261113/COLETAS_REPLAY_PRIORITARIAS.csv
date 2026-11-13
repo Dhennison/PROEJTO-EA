@@ -1,0 +1,10 @@
+﻿data;inicio;fim_exclusivo;contrato;niveis;objetivo
+2026-07-01;09:01:00;09:05:00;WINQ26;S38.2;Resolver ordem entrada/alvo/stop
+2026-07-02;09:29:00;09:32:00;WINQ26;R38.2;Resolver ordem entrada/alvo/stop
+2026-07-06;09:00:00;09:04:00;WINQ26;S38.2,S50,S61.8;Resolver ordem entrada/alvo/stop
+2026-07-10;09:55:00;09:58:00;WINQ26;CONTROLE_LACUNA;"CSV nao tem09:56; duas operacoes conhecidas ja encerradas ate09:55, conferir continuidade/novas entradas"
+2026-07-14;09:29:00;09:32:00;WINQ26;R38.2;Resolver ordem entrada/alvo/stop
+2026-07-16;09:59:00;10:02:00;WINQ26;S38.2;Resolver ordem entrada/alvo/stop
+2026-07-24;09:03:00;09:06:00;WINQ26;S38.2;Resolver ordem entrada/alvo/stop
+2026-07-28;08:59:00;09:05:00;WINQ26;R38.2,R61.8;Resolver ordem entrada/alvo/stop
+2026-07-29;10:34:00;10:37:00;WINQ26;S38.2;Resolver ordem entrada/alvo/stop

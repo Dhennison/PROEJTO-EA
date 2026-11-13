@@ -1172,3 +1172,20 @@ em entregas/profit_winq26_julho_20261113/AJUSTES_JULHO_PLANILHA.csv.
 nao equivale ainda a confirmar data de referencia/contrato/ajuste oficial.
 Dados sao candles M1, nao negocios individuais; nenhum resultado novo calculado.
 Auditoria e script preservados na pasta acima; anexos brutos mantidos locais.
+
+JULHO M1 ANALISADO, AGUARDANDO TRECHOS REPLAY — 13/11/2026
+Usuario autorizou analisar candles e resolver duvidas pontuais com Replay.
+47operacoes nas22datas Work:Work+5255,800668.23datas CSV incluindo31jul
+complementar sem entradas. Ajustes das22datas iguais Work;47conjuntos de
+entrada/SL/TP matematicos conferem,tolerancia0,00001. Parametros intactos.
+Modelo de ramificacao grade5:36operacoes mesmo resultado entre ramos,11
+com TP/SL alternativos em8datas. Nao e fechamento certificado de julho.
+Envoltorio externo tecnico -1165 a6080,nao somar subtotaldeterminado como
+resultado mensal nem incluir em DD Cedro. Sem trajetoria gerada/ordens.
+Janelas01/02/06/14/16/24/28/29jul. Controle extra10jul09:55–09:58 por
+09:56 ausente nos CSVs;duas operacoes conhecidas encerradas ate09:55.
+Entregas em entregas/profit_winq26_julho_20261113: script,possibilidades
+poroperacao,diario,referencias,coletasprioritarias,TXT,ZIP. Coletar apenas
+minutos indicados WINQ26,sem pular dentrojanela e sem filtros;verificar
+limite200001 e completude. Primeiro01jul09:01–09:05. Nao exigir replay
+de pregao inteiro. Resultados dos3meses Cedro preservados.

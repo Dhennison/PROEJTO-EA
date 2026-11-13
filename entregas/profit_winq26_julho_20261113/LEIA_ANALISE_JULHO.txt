@@ -1,0 +1,50 @@
+JULHO/2026 — MODELO D — ANALISE M1 PROVISORIA
+RESULTADO PRINCIPAL PARA COMPARAR: ainda pendente de Replay.
+Work: +5.255,800668 pontos,47operacoes,22datas da referencia original.
+CSV contem23datas:31jul e complemento,zero entradas pelos candles.
+47operacoes localizadas;36 com mesmo motivo/pontos
+em todos os ramos do modelo de candles,11 com TP/SL alternativos,8datas.
+Os36 sao determinados no conjunto de candles fornecidos, nao fills comprovados.
+Parametros originais,um contrato/nivel,toque inclusivo,grade5,corte18h.
+Precos creditados nos niveis;sem custos,fila,slippage ou trajetoria inventada.
+
+REFERENCIAS
+Ajuste exibido unico por data nas23datas. Nas22datas com referencia Work,
+valor igual ao arquivo Work. Contexto H/L/C de todo pregao anterior disponivel,
+sem truncar18h;abertura do dia atual. Linhas/SL/TP matematicos das47operacoes
+iguais ao Work(tolerancia0,00001).23dias/12748M1 Profit=MT5 em horarios/OHLC.
+31jul abre12:34;nao preencher manha nem tratar como falha de cobertura.
+
+METODO
+Compra: entrada quando L<=E. TP pode ter vindo antes da entrada se O>E;
+C>=T obriga toque depois, salvo encerramento anterior por SL. L<=S permite
+SL apos entrada. Posicao aberta: O fora dos niveis resolve primeiro; dentro,
+H>=T e L<=S deixam ordem ambigua. Venda por simetria de sinal.
+Ramos TP/SL encerram; ramo ABERTA continua nos minutos seguintes ate corte.
+Nao escolher STOP automaticamente nem creditar TP por H/L sem sequencia.
+Saida da barra da entrada segue leitura de niveis; nao prova ordem entre
+registros empatados ou entrada/saida no mesmo negocio. Replay decide.
+Seis verificacoes sinteticas de ramos passaram; nao e homologacao de feed/EA.
+
+FAIXA TECNICA,NAO RESULTADO MENSAL
+Envoltorio externo somando extremos individuais: -1165 a+6080 pontos.
+Extremos por operacao podem ser incompativeis numa unica trajetoria diaria.
+Nao apresentar subtotal das determinadas como fechamento,nao misturar com
+Cedro nem adicionar julho ao DD antes da resolucao. Work original intacto.
+
+LACUNA
+10jul:09:56 ausente tanto Profit como MT5. Duas operacoes conhecidas encerram
+09:12 e09:55,mas conferir09:55–09:58 no Replay para continuidade. Nao interpolar.
+
+COLETA
+Usar WINQ26 e lista COLETAS_REPLAY_PRIORITARIAS.csv. So9janelas(8datas com
+resultados pendentes+controle10jul). Reproduzir continuamente apenas trechos,
+sem saltar dentro da janela;copiar ao final,conferir primeiro/ultimo horario.
+Se iniciar antes do trecho, pode pular ate ANTES do inicio, depois reproduzir.
+Manter todas as corretoras/negocios/tipos,sem filtro por lote. Preservar
+negocios identicos. Copiar antes que volume exceda limite observado200001.
+Sem presumir que quantidade menor prova completude; conferir barras/volumes
+por minuto e ordem entre timestamps empatados. Enviar cada TXT nomeado por
+contrato/data/janela; data/ativo nao estao nos registros copiados.
+Caso ramo permaneça aberto, usar candles seguintes ja analisados; pedir
+janela adicional apenas se a copia nao cobrir o toque ou discordar do OHLC.

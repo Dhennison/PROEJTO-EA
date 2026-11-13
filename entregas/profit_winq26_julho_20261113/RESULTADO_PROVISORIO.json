@@ -1,0 +1,38 @@
+{
+  "status": "PROVISORIO_CANDLES_M1_AGUARDANDO_REPLAY",
+  "days": 23,
+  "operations": 47,
+  "determined": 36,
+  "pending": 11,
+  "work_operations": 47,
+  "work_points": "5255.800668",
+  "outer_min": "-1165",
+  "outer_max": "6080",
+  "pending_dates": [
+    "2026-07-01",
+    "2026-07-02",
+    "2026-07-06",
+    "2026-07-14",
+    "2026-07-16",
+    "2026-07-24",
+    "2026-07-28",
+    "2026-07-29"
+  ],
+  "branch_minutes": 23,
+  "adjustments_Work_available": 22,
+  "mathematical_level_differences": [],
+  "work_missing": [],
+  "work_extra": [],
+  "gaps": [
+    {
+      "date": "2026-07-10",
+      "start": "2026-07-10 09:55:00",
+      "end": "2026-07-10 09:57:00"
+    }
+  ],
+  "limits": "Outer envelope per operation, not jointly attainable guaranteed. Normalized levels only, no costs/fills. No tick path invented. Candle range does not prove tape completeness. Unresolved chronology requires Replay; intra-minute exit time not determined.",
+  "gaps_control": "10jul09:56 ausente. Operacoes conhecidas encerradas09:12 e09:55; controle Replay adicional necessario, sem interpolar.",
+  "comparison_Work_dates": 22,
+  "extra_date": "31jul fora Work; zero entradas nos candles",
+  "priority_windows": 9
+}
