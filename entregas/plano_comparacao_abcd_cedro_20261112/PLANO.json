@@ -24,7 +24,7 @@
     "principal_Work": "1380",
     "mes_completo_ABCD": "2855"
   },
-  "estado_atual": "RETOMAR_AMANHA_BUSCA_JULHO_E_OUTROS_MESES",
+  "estado_atual": "BUSCA_JULHO_E_OUTROS_MESES_EM_ANDAMENTO",
   "reutilizacao_dados": "Reutilizar fita bruta e auditorias; reducao por limiares precisa ser gerada por modelo/parametro. Nunca aplicar reducao especifica D a A/B/C ou novos stops/alvos.",
   "controle_anomalias": "Repetir sensibilidade arquivo/cronologico22e24 em cada modelo e estudo de parametros.",
   "outubro_progresso": {
@@ -57,5 +57,7 @@
   ],
   "mudanca_explicita_usuario": "Depois de ampliar meses, testar outros stops/alvos e so depois A/B/C. Substitui ordem anterior ABC antes de parametros.",
   "regra_preservacao": "Preservar D original e separar quaisquer novos parametros em serie identificada; nao sobrescrever resultados dos tres meses.",
-  "cobertura_adicional": "Julho e anteriores ainda sem ticks disponiveis confirmados; consultar fontes existentes/gratuitas. Nenhuma compra autorizada."
+  "cobertura_adicional": "Julho e anteriores ainda sem ticks disponiveis confirmados; consultar fontes existentes/gratuitas. Nenhuma compra autorizada.",
+  "atualizacao": "2026-11-13",
+  "importacao_profit": "Nao confirmada; consulta documentacao bloqueada HTTP403. Verificar Replay contratado e exportacao de negocios, sem presumir disponibilidade."
 }

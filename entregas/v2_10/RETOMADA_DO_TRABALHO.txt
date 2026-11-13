@@ -1,8 +1,31 @@
 REGISTRO GERAL DE CONTINUIDADE — PROJETO EA MODELO D
-ATUALIZAÇÃO MAIS RECENTE: 12/11/2026 — America/Sao_Paulo
+ATUALIZAÇÃO MAIS RECENTE: 13/11/2026 — America/Sao_Paulo
 NOME ESTÁVEL: RETOMADA_DO_TRABALHO.txt
 CAMINHO: entregas/v2_10/RETOMADA_DO_TRABALHO.txt
 O diretório v2_10 é histórico; este TXT acompanha o projeto inteiro até o estado atual.
+
+ESCLARECIMENTO CEDRO E BUSCA DE HISTORICO — 13/11/2026
+Nelogica considerada cara pelo usuario; nenhuma compra autorizada. Prioridade:
+buscar julho/anteriores usando acessos existentes ou fontes gratuitas, sem
+repetir como novidade a indisponibilidade WINQ26 ja constatada Genial/XP.
+Julho M1 ja existe no acervo; julho tick a tick ainda nao confirmado.
+Cedro fornece registros individuais com milissegundos nos tres meses recebidos.
+Isso permite replay dos negocios e agregacao OHLC sem MT5; nao comprova todos
+os negocios sem excecao nem ordem oficial entre negocios no mesmo milissegundo.
+Ha diferencas de contagem/quantidade vs EOD em setembro/outubro e regressao
+de timestamps. Originais preservados, controles existentes valem para D atual.
+Replay aplica regras de preco D e parametros originais congelados. Entradas e
+saidas creditadas nos niveis, nao preenchimentos de ordens certificados; sem
+custos/fila/slippage. Nao equivale a homologar toda camada operacional do EA.
+LOG e CSV sao formatos: conteudo Cedro individual versus Work OHLC M1/M5.
+Negocios permitem formar candles; candles nao recuperam sequencia real.
+Importacao de negocios externos no Profit NAO CONFIRMADA. Consulta publica
+ajuda.nelogica.com.br bloqueada pelo proxy HTTP403 neste ambiente. Replay
+nativo, importacao externa e exportacao de candles sao capacidades diferentes.
+Proximo verificar se o Replay do Profit ja contratado disponibiliza julho e
+se permite extrair negocios individuais com ordem/timestamps. Nao prometer
+exportacao nem cobertura antiga antes de confirmar. Nenhum teste novo rodado.
+Resultados e PDFs dos tres meses permanecem inalterados.
 
 ULTIMA VERIFICACAO PARALELA — XP DEMO 12/11 ATE 16:22
 Diario recebido: reconstrucao R38/R61 progride e avisos cessam apos 15:14; dados ate 16:22, 1594296 negocios acumulados, M1 consistente. Falha visual persiste (427 avisos); indicador ajuste tambem falha ao conferir objeto em 15:58, sem prova de valor errado. Sem confirmacao de fills/SLTP/resultado neste trecho. Analise e fonte em entregas/diagnostico_xp_20261112_1622. Nenhuma alteracao no EA ou ordens. Extracao Cedro segue como frente principal.
