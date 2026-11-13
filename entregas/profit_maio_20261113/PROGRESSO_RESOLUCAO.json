@@ -1,0 +1,31 @@
+{
+  "status": "MAIO_ENCERRADO_M1_REPLAY",
+  "operations": 45,
+  "test_points": "-780",
+  "work_points": "2032.313668",
+  "difference": "-2812.313668",
+  "resolved_original_pending": 5,
+  "grade_controls": 0,
+  "pending_operation_count": 0,
+  "chronological_stats": {
+    "2026-05": {
+      "test_points": "-780",
+      "work_points": "2032.313668",
+      "test_DD_accum": "2150",
+      "work_DD_accum": "932.356000"
+    },
+    "2026-06": {
+      "test_points": "3405",
+      "work_points": "7214.523331",
+      "test_DD_accum": "2150",
+      "work_DD_accum": "932.356000"
+    },
+    "2026-07": {
+      "test_points": "1100",
+      "work_points": "5255.800668",
+      "test_DD_accum": "2150",
+      "work_DD_accum": "1951.152667"
+    }
+  },
+  "no_new_replay_requested": true
+}

@@ -1,0 +1,38 @@
+MAIO/2026 — ENCERRADO — MODELO D
+RESULTADO PRINCIPAL: -780 pontos,grade5. Work:+2032,313668.
+Diferenca:-2812,313668.45operacoes em20pregoes.
+Parametros D originais,1contrato/nivel,toqueinclusivo,corte18h.
+40resultados determinados emM1+5resolvidos por janelasReplay.
+NAO e mes inteiro por negocios nem resultado de preenchimentos reais.
+Pontos nos niveis,sem custos/fila/slippage. Nenhuma coleta adicional.
+
+CONFERENCIA
+4abas,174927negocios. Semlimite observado200001. Quatro minutos requeridos
+conferem OHLC/quantidade;7bordasparciais divergem como esperado. Primeira
+cotacao19maio09:03:07.863 coincide com abertura da barra nos dados
+exportados;quantidade inteira do minuto confere,nao exigir segundos sem
+negocios. Dois desempatesms produzem mesmo motivo/pontos;sem barreiras
+TP/SL opostas no mesmo ms nas posicoes. Sem remover negociosidenticos.
+TodosWINM26. Ajustes/referencias Work preservados e niveis conferidos.
+
+DESFECHOS
+15maioS61.8SL-650;19maioS38.2SL-375 eS50SL-375;
+26maioS38.2SL-375;27maioR61.8SL-450.
+QuatroALVO Work passaram aSL;19maioS38.2 confirmaSL doWork.
+UmSL esta diretamente na copia;outros4determinados pelos candles seguintes
+apos resolver cronologia na barra deentrada. SufixoCANDLE indica somente
+minuto,nao instante exato da saida. Controles matematicos tambem daoSL.
+Regressao testada:nao reutilizar maxima/minima preentrada de barra completa;
+barraentrada incompleta nao se resolve por extrema anterior. Cinco casos
+pertencem aos conjuntos de desfecho previstos antes de olhar as copias.
+
+DRAWDOWN EM ORDEM CRONOLOGICA MAIO->JUNHO->JULHO
+Fechamentos diarios,sem reinicio mensal,na mesma serieM1+Replay.
+Ate maio:teste2150,Work932.356000.
+Ate junho:teste2150,Work932.356000.
+Ate julho:teste2150,Work1951.152667.
+Junho+3405 eJulho+1100inalterados;so historico/DD ampliados desde maio.
+Total serieM1+Replaymaio-julho3725;nao somar como se fosse Cedro integral.
+Cedro agosto/outubro ecurva originais intactos,separados e identificados.
+Julho10julcontrole dispensado pelo usuario,nao pedir novamente.
+PDFenxuto3paginas e tecnico internos para compilacao final.

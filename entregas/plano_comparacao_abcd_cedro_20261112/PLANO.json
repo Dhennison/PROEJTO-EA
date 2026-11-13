@@ -24,7 +24,7 @@
     "principal_Work": "1380",
     "mes_completo_ABCD": "2855"
   },
-  "estado_atual": "MAIO_M1_ANALISADO_AGUARDANDO_4_JANELAS_REPLAY",
+  "estado_atual": "MAIO_JUNHO_JULHO_ENCERRADOS_M1_REPLAY",
   "reutilizacao_dados": "Reutilizar fita bruta e auditorias; reducao por limiares precisa ser gerada por modelo/parametro. Nunca aplicar reducao especifica D a A/B/C ou novos stops/alvos.",
   "controle_anomalias": "Repetir sensibilidade arquivo/cronologico22e24 em cada modelo e estudo de parametros.",
   "outubro_progresso": {
@@ -106,7 +106,7 @@
     "candles_M1": 11280,
     "operacoes": 45,
     "determinadas": 40,
-    "pendentes_Replay": 5,
+    "pendentes_Replay": 0,
     "coletas_minutos": 4,
     "datas": [
       "2026-05-15",
@@ -116,8 +116,27 @@
     ],
     "contrato": "WINM26",
     "Work_pontos": "2032.313668",
-    "resultado_principal": "AGUARDANDO_REPLAY",
+    "resultado_principal": "-780",
     "controles_grade_extras": 0,
-    "necessita_novos_candles_ajustes": false
+    "necessita_novos_candles_ajustes": false,
+    "status": "ENCERRADO",
+    "difference_Work": "-2812.313668",
+    "Replay_registros": 174927,
+    "PDFs_internos_salvos": true,
+    "fonte": "M1+Replay pontual;separada Cedro integral"
+  },
+  "curva_Maio_Junho_Julho_M1_Replay": {
+    "Maio": "-780",
+    "Junho": "3405",
+    "Julho": "1100",
+    "total": "3725",
+    "DD_ate_Maio": "2150",
+    "DD_ate_Junho": "2150",
+    "DD_ate_Julho": "2150",
+    "Work_DD_ate_Maio": "932.356000",
+    "Work_DD_ate_Junho": "932.356000",
+    "Work_DD_ate_Julho": "1951.152667",
+    "nao_muda_resultados_fechados_Junho_Julho": true,
+    "Cedro_tres_meses_preservado_separado": true
   }
 }

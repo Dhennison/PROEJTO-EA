@@ -1300,3 +1300,31 @@ Aposjanelas recalcularcurva MESMAserieemordemmaio->junho->julho,sem reiniciar
 DDmensal,sem misturar serieCedrointegral agosto/outubro. SalvarPDFs finais
 conforme preferenciasusuario e continuarTXT. Nenhum novo teste de parametro
 ou modeloA/B/C executado. Proximo receber4abasReplaymaio.
+
+MAIO ENCERRADO APOS XLSX REPLAY — 13/11/2026
+RecebidoMesdeMaio.xlsx4abas,174927negocios. Resultado principal-780grade5,
+Work+2032,313668,diferenca-2812,313668.45operacoes:26TP/18SL/1CORTE.
+40resultadosdeterminados emM1+5resolvidosReplay;nao e mes integral deticks.
+CincoSL:15maioS61.8,19maioS38.2/S50,26maioS38.2,27maioR61.8.
+QuatroALVO Work->SL;19maioS38.2confirmaSLoriginal. Controles matematicosSL
+nosmesmos5casos. Parametrosoriginais,1contrato/nivel,toqueinclusivo,grade5,
+sem custos/fila/slippage/fillsreais. TodosWINM26. Nenhuma coletapendente.
+Quatro minutos requeridos OHLC/quantidade iguaisCSV;7bordasparciais esperadas.
+19maio primeiroregistro09:03:07.863 eprimeirodamostracorrespondeabertura
+CSV,quantidadeinteira confere;nao pedir segundos semnegocios. Sem limite
+200001;negociosidenticos preservados. Doisdesempatesms sem alterarresultado,
+sem barreirasTP/SL opostas nomesmo ms. Testes de naoreprocessar maxima
+preentrada ebarraentradaincompleta passaram;5casos dentro conjuntosprevistos.
+UmSLdireto nascopias e4determinados nos candles seguintes sem ambiguidade;
+sufixoCANDLE indica minuto,nao milissegundo da saida. Auditoria preservada.
+Arquivos/resultados/diario/script/PDFs eZIP em entregas/profit_maio_20261113.
+Estadoatual RESULTADO_FINAL.json ePROGRESSO_RESOLUCAO.json;provisorios
+preservados. Meses fechadosna serieM1+Replay:Maio-780,Junho3405,Julho1100.
+DDcronologicorecalculado desdeMAIOsem reinicio:teste2150ateMaio,2150ateJunho,
+2150ateJulho;Work932,356ateMaio/Junho,1951,152667ateJulho. Pontosdiarios e
+mensais deJunho/Julho inalterados;historia/DDampliados conforme usuario.
+Curvaatual CURVA_MAIO_JUNHO_JULHO_M1_REPLAY.csv ePDFenxuto3paginas interno;
+substitui visao corrente anterior desdeJunho,sem apagar originais. Cedro
+agosto/setembro/outubro ecurvaDD integrais seguem intactos e separados.
+Julho controle10juldispensado usuario,nao pedir novamente. Proxima expansao
+cronologicaAbril,quando prosseguir;nao rodar novosstops/modelosporconta propria.
