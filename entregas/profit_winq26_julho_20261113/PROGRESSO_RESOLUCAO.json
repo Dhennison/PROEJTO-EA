@@ -1,20 +1,14 @@
 {
+  "status": "JULHO_CANDLES_COM_JANELAS_REPLAY_PENDENTE_CONTROLE_LACUNA_10JUL",
   "julho_operacoes": 47,
   "determinadas_por_candles_sem_coleta": 36,
-  "resolvidas_Replay": 1,
-  "pendentes": 10,
-  "data_resolvida": "2026-07-01",
-  "nivel": "S38.2",
-  "motivo": "ALVO",
-  "pontos_grade5": 285,
-  "pontos_matematicos": "286.23300",
-  "dia01_total_grade5": 1210,
-  "dia01_Work": "1211.589",
-  "dia01_limite": "S38.2 conferido Replay;demais duas operacoes determinadas pelos candles,nao coletadas integralmente. Serie combinada identificada,nao mes todo por ticks.",
-  "envoltorio_externo_atual": [
-    -505,
-    6080
-  ],
-  "resultado_mensal": "PENDENTE",
-  "proximo": "02/07/2026 WINQ26 09:30:00–09:31:00 R38.2"
+  "resolvidas_Replay": 11,
+  "pendentes_operacoes": 0,
+  "resultado_principal": "1100",
+  "work": "5255.800668",
+  "diferenca": "-4155.800668",
+  "controle_cobertura_pendente": "10jul09:55–09:58,ausencia09:56",
+  "fonte": "M1+Replay pontual,nao fita integral",
+  "DD_somente_julho": "2140",
+  "DD_Work_somente_julho": "1951.152667"
 }

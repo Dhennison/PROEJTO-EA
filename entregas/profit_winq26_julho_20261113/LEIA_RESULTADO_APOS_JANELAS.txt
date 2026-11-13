@@ -1,0 +1,43 @@
+JULHO/2026 — RESULTADO PRINCIPAL APOS JANELAS REPLAY
+Nosso: +1.100 pontos. Work: +5.255,800668. Diferenca: -4.155,800668.
+47operacoes,22datas comparaveis Work;31jul extra sem entradas.
+Fonte:36resultados determinados pelos candles M1 +11resolvidos por Replay
+pontual. NAO apresentar como mes inteiro auditado tick a tick ou fills reais.
+Parametros D originais,1contrato/nivel,grade5,toque inclusivo,corte18h.
+Custos,fila e slippage nao incluidos.
+
+COBERTURA RECEBIDA
+9abas,824455registros,nenhuma alcanca limite observado200001.
+13minutos reconstituem OHLC e quantidade exatos do CSV.12minutos de borda
+parciais divergem como esperado,pelo inicio/fim da janela. Todos os minutos
+de entrada das11operacoes pendentes conferem OHLC e quantidade.
+Dia28duasabas tratadas separadamente.01jul repete coleta anterior.
+Dois desempates entre registros do mesmo ms produzem mesmo motivo/pontos;
+sem grupos com TP e SL opostos no mesmo ms dentro das posicoes investigadas.
+Isso nao certifica sequencia oficial,completude absoluta ou fonte independente.
+
+RESULTADOS
+SeisALVO Work viraramSL:02julR38.2,06julS50,06julS61.8,16julS38.2,
+28julR38.2,29julS38.2.14julR38.2 confirmaSTOP doWork. Demais quatro
+pendencias confirmamALVO na grade5,incluindo01jul ja conferido antes.
+Seis saidas estao nas copias;cinco sao determinadas pelos candles seguintes,
+apos copia resolver ordem entrada/alvo. Horarios com sufixoCANDLE indicam
+somente minuto,nao segundo exato. Nunca reutilizar maxima anterior a entrada.
+Testes de regressao cobrem esse caso e barra de entrada incompleta.
+
+EFEITO DA GRADE
+06julS38.2:alvo matematico176160,542 nao atingido depois da entrada antes
+SL;alvo normalizado176160 foi atingido,+105. Principal permanece grade5,
+mesmo criterio de agosto/setembro/outubro. Nao selecionar regra pelo resultado.
+
+CONTROLE AINDA NAO RECEBIDO
+A planilha nao tem10jul09:55–09:58 para verificar ausencia de09:56. Duas
+operacoes conhecidas desse dia ja encerradas09:12 e09:55;coleta e controle
+de cobertura,nao uma das11ambiguidades. Nao interpolar. Resultado calculado
+acima fica identificado com essa ressalva ate conferirmos a janela.
+
+DRAWDOWN
+Julho isolado,fechamentos diarios:teste2140;Work1951.152667pontos.
+NAO atualizar DD Cedro3meses usando julho como se fosse a mesma serie de
+ticks integrais. Serie M1+Replay explicitamente separada;Cedro original intacto.
+PDFs de julho guardados para compilacao final. Resultados originais preservados.

@@ -1203,3 +1203,30 @@ resultado determinado por candles;nao apresentar todo dia como fita integral.
 10operacoes pendentes. Mes sem fechamento. Proximo02jul09:30–09:31WINQ26.
 Auditoria/scripts/progresso na pasta profit_winq26_julho_20261113.
 Originais da analise inicial preservados;PROGRESSO_RESOLUCAO.json registra estadoatual.
+
+JULHO — TODAS AS11PENDENCIAS RESOLVIDAS COM XLSX REPLAY — 13/11/2026
+Recebida Janelas de Julho.xlsx:9abas,824455registros,28julduasjanelas.
+Resultado principal calculado+1100 vs Work+5255,800668;dif-4155,800668.
+47operacoes,36determinadas emM1+11resolvidas porjanelas;22datas comparaveis
+Work e31jul complementarzero. NAO e mes inteiro por negocios. Fonte e
+criterio identificados,sem fills/custos/fila/alteracaoparametros.
+13minutos reconstruidos iguais OHLC/quantidade;12bordas parciais esperadas.
+Todas11entradas em minutos OHLC/quantidade iguais,dois desempates ms com
+mesmo resultado.01jul identico a coletaTXT anterior. Sem limite200001.
+SeisALVO Work->SL:02julR38.2,06julS50/S61.8,16julS38.2,28julR38.2,
+29julS38.2.14julR38.2 confirmaSL.06julS38.2 TPna grade5,masSLnos niveis
+matematicos:alvo176160 vs176160,542. Nao misturarseries nem escolhermodelo
+pelo resultado. Pontos principais mantem grade5 de agosto/setembro/outubro.
+Seis saidasdiretas nascopias e5determinadas por candlesaposjanela,com
+horariominuto marcadoCANDLE. Regressao testada:nao reprocessar maxima
+pre-entrada de barra ja inteiramente coletada. Entrada em barra incompleta
+nao pode ser resolvida por maxima anterior. Testes easserts passaram.
+As11operacoes ja nao pendem;resta controle de cobertura10jul09:55–09:58,
+pois09:56 ausente nosCSV e aba10julnao recebida. Duasoperacoes conhecidas
+desse dia encerram09:12 e09:55. Solicitar apenas3minutos,sem repetircoletas.
+JulhoDDfechamentodiario isolado2140;Work1951,152667. Nao anexar julho
+M1+Replay ao DDserieCedrointegral como se fossem mesma fonte/metodo.
+PDFdiario e tecnico de julho salvos internamente em profit_winq26_julho_20261113
+para compilacaofinal. ZIP Julho_Modelo_D_Apos_Janelas.zip. Antigos resultados
+provisorios preservados; estadoatual em PROGRESSO_RESOLUCAO.json e
+LEIA_RESULTADO_APOS_JANELAS.txt. Cedro3meses permanece intacto.

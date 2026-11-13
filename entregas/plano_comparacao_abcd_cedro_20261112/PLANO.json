@@ -24,7 +24,7 @@
     "principal_Work": "1380",
     "mes_completo_ABCD": "2855"
   },
-  "estado_atual": "BUSCA_JULHO_E_OUTROS_MESES_EM_ANDAMENTO",
+  "estado_atual": "JULHO_M1_REPLAY_11_RESOLVIDAS_CONTROLE_10JUL_PENDENTE",
   "reutilizacao_dados": "Reutilizar fita bruta e auditorias; reducao por limiares precisa ser gerada por modelo/parametro. Nunca aplicar reducao especifica D a A/B/C ou novos stops/alvos.",
   "controle_anomalias": "Repetir sensibilidade arquivo/cronologico22e24 em cada modelo e estudo de parametros.",
   "outubro_progresso": {
@@ -59,5 +59,14 @@
   "regra_preservacao": "Preservar D original e separar quaisquer novos parametros em serie identificada; nao sobrescrever resultados dos tres meses.",
   "cobertura_adicional": "Julho e anteriores ainda sem ticks disponiveis confirmados; consultar fontes existentes/gratuitas. Nenhuma compra autorizada.",
   "atualizacao": "2026-11-13",
-  "importacao_profit": "Nao confirmada; consulta documentacao bloqueada HTTP403. Verificar Replay contratado e exportacao de negocios, sem presumir disponibilidade."
+  "importacao_profit": "Nao confirmada; consulta documentacao bloqueada HTTP403. Verificar Replay contratado e exportacao de negocios, sem presumir disponibilidade.",
+  "julho_progresso": {
+    "fonte": "M1+Replay pontual",
+    "operacoes": 47,
+    "pendencias_operacoes": 0,
+    "principal_pontos": "1100",
+    "Work_pontos": "5255.800668",
+    "controle_pendente": "10jul09:55–09:58",
+    "misturar_com_serie_Cedro_integral": false
+  }
 }

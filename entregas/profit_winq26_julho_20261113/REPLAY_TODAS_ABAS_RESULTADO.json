@@ -1,0 +1,722 @@
+{
+  "status": "JULHO_CANDLES_COM_JANELAS_REPLAY_PENDENTE_CONTROLE_LACUNA_10JUL",
+  "workbook_sha256": "1cd88083a1e2d0ad105d6e42c7af1b7b89fc1bc8f9f08235bda5533f9900437f",
+  "sheets": [
+    {
+      "sheet": "01-07",
+      "date": "2026-07-01",
+      "records": 164074,
+      "start": "09:02:00.005",
+      "end": "09:04:59.999",
+      "at_observed_limit": false
+    },
+    {
+      "sheet": "02-07",
+      "date": "2026-07-02",
+      "records": 119177,
+      "start": "09:29:00.003",
+      "end": "09:31:29.996",
+      "at_observed_limit": false
+    },
+    {
+      "sheet": "06-07",
+      "date": "2026-07-06",
+      "records": 116329,
+      "start": "09:01:00.001",
+      "end": "09:02:59.991",
+      "at_observed_limit": false
+    },
+    {
+      "sheet": "14-07",
+      "date": "2026-07-14",
+      "records": 123918,
+      "start": "09:29:30.000",
+      "end": "09:31:29.998",
+      "at_observed_limit": false
+    },
+    {
+      "sheet": "16-07",
+      "date": "2026-07-16",
+      "records": 47456,
+      "start": "09:59:50.057",
+      "end": "10:01:09.992",
+      "at_observed_limit": false
+    },
+    {
+      "sheet": "24-07",
+      "date": "2026-07-24",
+      "records": 87221,
+      "start": "09:03:55.000",
+      "end": "09:05:09.999",
+      "at_observed_limit": false
+    },
+    {
+      "sheet": "28-07 1ª Janela",
+      "date": "2026-07-28",
+      "records": 52403,
+      "start": "09:00:51.345",
+      "end": "09:01:29.999",
+      "at_observed_limit": false
+    },
+    {
+      "sheet": "28-07 2ª Janela",
+      "date": "2026-07-28",
+      "records": 79030,
+      "start": "09:02:58.011",
+      "end": "09:04:09.996",
+      "at_observed_limit": false
+    },
+    {
+      "sheet": "29-07",
+      "date": "2026-07-29",
+      "records": 34847,
+      "start": "10:34:58.006",
+      "end": "10:36:04.998",
+      "at_observed_limit": false
+    }
+  ],
+  "records": 824455,
+  "pending_operation_count": 0,
+  "resolved_original_pending": 11,
+  "operations": 47,
+  "test_points": "1100",
+  "work_points": "5255.800668",
+  "difference": "-4155.800668",
+  "method": "36resultados determinados nos candles+11resolvidos por janelas Replay;nao e mes integral tick a tick. Grade5,niveis,sem custos/fills.",
+  "gap_control": "10jul09:56 ausente no CSV. Workbook nao tem aba10jul;controle09:55–09:58 ainda nao recebido.",
+  "results": [
+    {
+      "date": "2026-07-01",
+      "level": "S38.2",
+      "sheet": "01-07",
+      "primary": {
+        "reason": "TP",
+        "points": "285",
+        "entry": {
+          "time": "09:02:09.509",
+          "price": 173320,
+          "quantity": 1,
+          "source_row": 148493
+        },
+        "exit": {
+          "time": "09:02:12.355",
+          "price": 173605,
+          "quantity": 1,
+          "source_row": 142277
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_control": {
+        "reason": "TP",
+        "points": "285",
+        "entry": {
+          "time": "09:02:09.509",
+          "price": 173320,
+          "quantity": 1,
+          "source_row": 148488
+        },
+        "exit": {
+          "time": "09:02:12.355",
+          "price": 173695,
+          "quantity": 1,
+          "source_row": 141836
+        },
+        "exit_source": "REPLAY"
+      },
+      "mathematical": {
+        "reason": "TP",
+        "points": "286.23300",
+        "entry": {
+          "time": "09:02:09.716",
+          "price": 173315,
+          "quantity": 2,
+          "source_row": 148270
+        },
+        "exit": {
+          "time": "09:02:12.355",
+          "price": 173605,
+          "quantity": 1,
+          "source_row": 142277
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    },
+    {
+      "date": "2026-07-02",
+      "level": "R38.2",
+      "sheet": "02-07",
+      "primary": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "09:30:43.169",
+          "price": 175685,
+          "quantity": 2,
+          "source_row": 43081
+        },
+        "exit": {
+          "time": "09:32:00_CANDLE",
+          "price": 176060
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "09:30:43.169",
+          "price": 175695,
+          "quantity": 1,
+          "source_row": 42897
+        },
+        "exit": {
+          "time": "09:32:00_CANDLE",
+          "price": 176060
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "mathematical": {
+        "reason": "SL",
+        "points": "-375.00000",
+        "entry": {
+          "time": "09:30:43.169",
+          "price": 175685,
+          "quantity": 2,
+          "source_row": 43081
+        },
+        "exit": {
+          "time": "09:32:00_CANDLE",
+          "price": 176057
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    },
+    {
+      "date": "2026-07-06",
+      "level": "S38.2",
+      "sheet": "06-07",
+      "primary": {
+        "reason": "TP",
+        "points": "105",
+        "entry": {
+          "time": "09:01:47.169",
+          "price": 176055,
+          "quantity": 1,
+          "source_row": 65240
+        },
+        "exit": {
+          "time": "09:01:59.971",
+          "price": 176160,
+          "quantity": 1,
+          "source_row": 50318
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_control": {
+        "reason": "TP",
+        "points": "105",
+        "entry": {
+          "time": "09:01:47.169",
+          "price": 176055,
+          "quantity": 1,
+          "source_row": 65223
+        },
+        "exit": {
+          "time": "09:01:59.971",
+          "price": 176160,
+          "quantity": 1,
+          "source_row": 50277
+        },
+        "exit_source": "REPLAY"
+      },
+      "mathematical": {
+        "reason": "SL",
+        "points": "-375.0000000000000000000000",
+        "entry": {
+          "time": "09:01:47.169",
+          "price": 176055,
+          "quantity": 1,
+          "source_row": 65240
+        },
+        "exit": {
+          "time": "09:02:38.918",
+          "price": 175680,
+          "quantity": 2,
+          "source_row": 15882
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    },
+    {
+      "date": "2026-07-06",
+      "level": "S50",
+      "sheet": "06-07",
+      "primary": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "09:02:15.635",
+          "price": 175890,
+          "quantity": 1,
+          "source_row": 35074
+        },
+        "exit": {
+          "time": "09:03:00_CANDLE",
+          "price": 175515
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "09:02:15.635",
+          "price": 175890,
+          "quantity": 1,
+          "source_row": 35050
+        },
+        "exit": {
+          "time": "09:03:00_CANDLE",
+          "price": 175515
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "mathematical": {
+        "reason": "SL",
+        "points": "-375.0000000000000000000000",
+        "entry": {
+          "time": "09:02:15.643",
+          "price": 175885,
+          "quantity": 2,
+          "source_row": 34985
+        },
+        "exit": {
+          "time": "09:03:00_CANDLE",
+          "price": 175512
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    },
+    {
+      "date": "2026-07-06",
+      "level": "S61.8",
+      "sheet": "06-07",
+      "primary": {
+        "reason": "SL",
+        "points": "-650",
+        "entry": {
+          "time": "09:02:34.861",
+          "price": 175720,
+          "quantity": 1,
+          "source_row": 19599
+        },
+        "exit": {
+          "time": "09:26:00_CANDLE",
+          "price": 175070
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-650",
+        "entry": {
+          "time": "09:02:34.861",
+          "price": 175720,
+          "quantity": 1,
+          "source_row": 19555
+        },
+        "exit": {
+          "time": "09:26:00_CANDLE",
+          "price": 175070
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "mathematical": {
+        "reason": "SL",
+        "points": "-650.0000000000000000000000",
+        "entry": {
+          "time": "09:02:34.863",
+          "price": 175715,
+          "quantity": 1,
+          "source_row": 19518
+        },
+        "exit": {
+          "time": "09:26:00_CANDLE",
+          "price": 175069
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    },
+    {
+      "date": "2026-07-14",
+      "level": "R38.2",
+      "sheet": "14-07",
+      "primary": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "09:30:33.762",
+          "price": 178700,
+          "quantity": 25,
+          "source_row": 64133
+        },
+        "exit": {
+          "time": "09:30:56.297",
+          "price": 179075,
+          "quantity": 1,
+          "source_row": 34172
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "09:30:33.762",
+          "price": 178705,
+          "quantity": 1,
+          "source_row": 63959
+        },
+        "exit": {
+          "time": "09:30:56.297",
+          "price": 179075,
+          "quantity": 3,
+          "source_row": 34126
+        },
+        "exit_source": "REPLAY"
+      },
+      "mathematical": {
+        "reason": "SL",
+        "points": "-375.0000000000000000000000",
+        "entry": {
+          "time": "09:30:33.762",
+          "price": 178705,
+          "quantity": 1,
+          "source_row": 64029
+        },
+        "exit": {
+          "time": "09:30:56.303",
+          "price": 179080,
+          "quantity": 5,
+          "source_row": 34103
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    },
+    {
+      "date": "2026-07-16",
+      "level": "S38.2",
+      "sheet": "16-07",
+      "primary": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "10:00:50.600",
+          "price": 177095,
+          "quantity": 30,
+          "source_row": 18820
+        },
+        "exit": {
+          "time": "10:06:00_CANDLE",
+          "price": 176720
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "10:00:50.600",
+          "price": 177095,
+          "quantity": 2,
+          "source_row": 18690
+        },
+        "exit": {
+          "time": "10:06:00_CANDLE",
+          "price": 176720
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "mathematical": {
+        "reason": "SL",
+        "points": "-375.00000",
+        "entry": {
+          "time": "10:00:50.600",
+          "price": 177095,
+          "quantity": 30,
+          "source_row": 18820
+        },
+        "exit": {
+          "time": "10:06:00_CANDLE",
+          "price": 176720
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    },
+    {
+      "date": "2026-07-24",
+      "level": "S38.2",
+      "sheet": "24-07",
+      "primary": {
+        "reason": "TP",
+        "points": "135",
+        "entry": {
+          "time": "09:04:09.052",
+          "price": 177110,
+          "quantity": 10,
+          "source_row": 61654
+        },
+        "exit": {
+          "time": "09:04:12.821",
+          "price": 177245,
+          "quantity": 1,
+          "source_row": 55642
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_control": {
+        "reason": "TP",
+        "points": "135",
+        "entry": {
+          "time": "09:04:09.052",
+          "price": 177105,
+          "quantity": 5,
+          "source_row": 61580
+        },
+        "exit": {
+          "time": "09:04:12.821",
+          "price": 177250,
+          "quantity": 2,
+          "source_row": 55561
+        },
+        "exit_source": "REPLAY"
+      },
+      "mathematical": {
+        "reason": "TP",
+        "points": "133.9063333333333333333333",
+        "entry": {
+          "time": "09:04:09.052",
+          "price": 177110,
+          "quantity": 10,
+          "source_row": 61654
+        },
+        "exit": {
+          "time": "09:04:12.821",
+          "price": 177245,
+          "quantity": 1,
+          "source_row": 55642
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    },
+    {
+      "date": "2026-07-28",
+      "level": "R38.2",
+      "sheet": "28-07 1ª Janela",
+      "primary": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "09:00:59.129",
+          "price": 177620,
+          "quantity": 6,
+          "source_row": 37987
+        },
+        "exit": {
+          "time": "09:01:20.253",
+          "price": 177995,
+          "quantity": 1,
+          "source_row": 10464
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "09:00:59.129",
+          "price": 177625,
+          "quantity": 5,
+          "source_row": 37956
+        },
+        "exit": {
+          "time": "09:01:20.253",
+          "price": 177995,
+          "quantity": 1,
+          "source_row": 10438
+        },
+        "exit_source": "REPLAY"
+      },
+      "mathematical": {
+        "reason": "SL",
+        "points": "-375.0000000000000000000000",
+        "entry": {
+          "time": "09:00:59.129",
+          "price": 177620,
+          "quantity": 6,
+          "source_row": 37987
+        },
+        "exit": {
+          "time": "09:01:20.253",
+          "price": 177995,
+          "quantity": 1,
+          "source_row": 10464
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    },
+    {
+      "date": "2026-07-28",
+      "level": "R61.8",
+      "sheet": "28-07 2ª Janela",
+      "primary": {
+        "reason": "TP",
+        "points": "165",
+        "entry": {
+          "time": "09:03:35.363",
+          "price": 178280,
+          "quantity": 1,
+          "source_row": 42315
+        },
+        "exit": {
+          "time": "09:03:40.886",
+          "price": 178115,
+          "quantity": 1,
+          "source_row": 31088
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_control": {
+        "reason": "TP",
+        "points": "165",
+        "entry": {
+          "time": "09:03:35.363",
+          "price": 178280,
+          "quantity": 3,
+          "source_row": 42250
+        },
+        "exit": {
+          "time": "09:03:40.886",
+          "price": 178110,
+          "quantity": 1,
+          "source_row": 30999
+        },
+        "exit_source": "REPLAY"
+      },
+      "mathematical": {
+        "reason": "TP",
+        "points": "164.5706666666666666666667",
+        "entry": {
+          "time": "09:03:35.363",
+          "price": 178280,
+          "quantity": 1,
+          "source_row": 42315
+        },
+        "exit": {
+          "time": "09:03:40.886",
+          "price": 178110,
+          "quantity": 4,
+          "source_row": 31053
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    },
+    {
+      "date": "2026-07-29",
+      "level": "S38.2",
+      "sheet": "29-07",
+      "primary": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "10:35:31.381",
+          "price": 176605,
+          "quantity": 1,
+          "source_row": 19589
+        },
+        "exit": {
+          "time": "10:49:00_CANDLE",
+          "price": 176230
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "10:35:31.381",
+          "price": 176605,
+          "quantity": 1,
+          "source_row": 19499
+        },
+        "exit": {
+          "time": "10:49:00_CANDLE",
+          "price": 176230
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "mathematical": {
+        "reason": "SL",
+        "points": "-375.0000000000000000000000",
+        "entry": {
+          "time": "10:35:31.381",
+          "price": 176605,
+          "quantity": 1,
+          "source_row": 19589
+        },
+        "exit": {
+          "time": "10:49:00_CANDLE",
+          "price": 176232
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    }
+  ],
+  "DD_julho_isolado": "2140",
+  "DD_Work_julho_isolado": "1951.152667",
+  "minutos_iguais_ohlc_quantidade": 13,
+  "minutos_parciais_de_borda": 12,
+  "trocas_Work": 6,
+  "datas_trocas": [
+    "2026-07-02 R38.2",
+    "2026-07-06 S50",
+    "2026-07-06 S61.8",
+    "2026-07-16 S38.2",
+    "2026-07-28 R38.2",
+    "2026-07-29 S38.2"
+  ],
+  "observacao_grade": "06julS38.2: alvo teorico176160.542 nao atingido apos entrada (SL);grade5alvo176160 atingido (TP+105). Principal continua grade5. Nao mudar regra para escolher resultado."
+}
