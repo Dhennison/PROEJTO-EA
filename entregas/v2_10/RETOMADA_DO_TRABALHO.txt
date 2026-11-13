@@ -1189,3 +1189,17 @@ poroperacao,diario,referencias,coletasprioritarias,TXT,ZIP. Coletar apenas
 minutos indicados WINQ26,sem pular dentrojanela e sem filtros;verificar
 limite200001 e completude. Primeiro01jul09:01–09:05. Nao exigir replay
 de pregao inteiro. Resultados dos3meses Cedro preservados.
+
+JULHO — PRIMEIRO CASO REPLAY RESOLVIDO — 13/11/2026
+01/07/2026 S38.2 RESOLVIDO POR REPLAY
+164074negocios,09:02:00.005–09:04:59.999. Tres minutos OHLC e quantidade
+iguais ao CSV Profit usando inversao integral da lista decrescente.
+Entrada grade5:173320,09:02:09.509. Alvo173605,09:02:12.355.
++285pontos nos niveis;matematico+286,233 igual Work. Dois desempates de
+milissegundo dao ALVO no mesmo horario. Registro/preco individual no empate
+varia;nao certificar sequencia oficial nem preenchimento real.
+Dia01:julho grade5+1210 vs Work+1211,589. Duas outras operacoes conservam
+resultado determinado por candles;nao apresentar todo dia como fita integral.
+10operacoes pendentes. Mes sem fechamento. Proximo02jul09:30–09:31WINQ26.
+Auditoria/scripts/progresso na pasta profit_winq26_julho_20261113.
+Originais da analise inicial preservados;PROGRESSO_RESOLUCAO.json registra estadoatual.

@@ -1,0 +1,157 @@
+{
+  "data": "2026-07-01",
+  "contrato_informado": "WINQ26",
+  "origem": "Profit Times & Trades Replay,identidade informada pelo usuario/contexto; nao consta em cada linha",
+  "sha256": "63561c765126c69aebaa4e65cc2eb471b56e9666cdc3a307c7184d3363db51b2",
+  "registros": 164074,
+  "inicio": "09:02:00.005",
+  "fim": "09:04:59.999",
+  "grade5_reversao": {
+    "entrada": {
+      "ordinal_copia": 148492,
+      "hora": "09:02:09.509",
+      "preco": 173320,
+      "quantidade": 1
+    },
+    "saida": {
+      "ordinal_copia": 142276,
+      "hora": "09:02:12.355",
+      "preco": 173605,
+      "quantidade": 1
+    },
+    "motivo": "TP",
+    "pontos_niveis": "285"
+  },
+  "grade5_estavel": {
+    "entrada": {
+      "ordinal_copia": 148487,
+      "hora": "09:02:09.509",
+      "preco": 173320,
+      "quantidade": 1
+    },
+    "saida": {
+      "ordinal_copia": 141835,
+      "hora": "09:02:12.355",
+      "preco": 173695,
+      "quantidade": 1
+    },
+    "motivo": "TP",
+    "pontos_niveis": "285"
+  },
+  "matematico_reversao": {
+    "entrada": {
+      "ordinal_copia": 148269,
+      "hora": "09:02:09.716",
+      "preco": 173315,
+      "quantidade": 2
+    },
+    "saida": {
+      "ordinal_copia": 142276,
+      "hora": "09:02:12.355",
+      "preco": 173605,
+      "quantidade": 1
+    },
+    "motivo": "TP",
+    "pontos_niveis": "286.23300"
+  },
+  "matematico_estavel": {
+    "entrada": {
+      "ordinal_copia": 148261,
+      "hora": "09:02:09.716",
+      "preco": 173315,
+      "quantidade": 1
+    },
+    "saida": {
+      "ordinal_copia": 141835,
+      "hora": "09:02:12.355",
+      "preco": 173695,
+      "quantidade": 1
+    },
+    "motivo": "TP",
+    "pontos_niveis": "286.23300"
+  },
+  "conferencia_m1": [
+    {
+      "minuto": "09:02",
+      "negocios": 52022,
+      "quantidade": 114506,
+      "ohlc_reversao": [
+        173720,
+        173845,
+        173225,
+        173490
+      ],
+      "ohlc_estavel": [
+        173715,
+        173845,
+        173225,
+        173490
+      ],
+      "ohlc_csv": [
+        173720.0,
+        173845.0,
+        173225.0,
+        173490.0
+      ],
+      "volume_csv": 114506,
+      "igual_ohlc_reversao": true,
+      "igual_ohlc_estavel": false,
+      "igual_volume": true
+    },
+    {
+      "minuto": "09:03",
+      "negocios": 59792,
+      "quantidade": 128737,
+      "ohlc_reversao": [
+        173490,
+        173625,
+        172930,
+        173030
+      ],
+      "ohlc_estavel": [
+        173495,
+        173625,
+        172930,
+        173030
+      ],
+      "ohlc_csv": [
+        173490.0,
+        173625.0,
+        172930.0,
+        173030.0
+      ],
+      "volume_csv": 128737,
+      "igual_ohlc_reversao": true,
+      "igual_ohlc_estavel": false,
+      "igual_volume": true
+    },
+    {
+      "minuto": "09:04",
+      "negocios": 52260,
+      "quantidade": 108950,
+      "ohlc_reversao": [
+        173025,
+        173270,
+        172805,
+        172835
+      ],
+      "ohlc_estavel": [
+        173030,
+        173270,
+        172805,
+        172840
+      ],
+      "ohlc_csv": [
+        173025.0,
+        173270.0,
+        172805.0,
+        172835.0
+      ],
+      "volume_csv": 108950,
+      "igual_ohlc_reversao": true,
+      "igual_ohlc_estavel": false,
+      "igual_volume": true
+    }
+  ],
+  "limite": "Dois desempates de mesmo milissegundo controlados,sem sequencia oficial. Precos nos niveis,nao fills. Nenhum registro identico removido."
+}
