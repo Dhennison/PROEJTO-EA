@@ -1,0 +1,35 @@
+JUNHO/2026 — ENCERRADO — MODELO D
+RESULTADO PRINCIPAL: +3.405 pontos,na grade5. Work:+7.214,523331.
+Diferenca:-3.809,523331.43operacoes em21pregoes.
+Parametros originais,1contrato por nivel,toque inclusivo,corte18h.
+Niveis creditados,sem custos/fila/slippage ou certificacao de fills reais.
+34resultados determinados nos candles+8ambiguidades Replay+1controle grade.
+Nao e mes integral tick a tick. Zero operacoes pendentes. Nenhuma nova coleta.
+
+AUDITORIA
+5abas,278766negocios,sem atingir limite observado200001.7minutos completos
+reconstituem OHLC/quantidade do CSV.10bordasparciais esperadas;sem divergencia
+em minutos integralmente cobertos. Entradas das8operacoes,agrupadas em6minutos,e minuto17:00 do controle
+conferem. Dois desempates de ms com mesmo resultado,
+sem barreirasTP/SL opostas no mesmo ms dentro das posicoes investigadas.
+Sem deduplicar registros. ContratosM26ate16jun,Q26desde17jun.
+
+RESULTADOS DOS CASOS
+03jun:tres suportesSL;15junR61.8SL;22junS38.2TP,S50SL,S61.8SL;
+30junS38.2SL.23junR38.2TP na grade5,preco174245,17:00:35.664.
+SeteALVO Work viramSL. UmSTOP viraTP e umaZERAGEM18H viraTP.
+Doisultimos casos sao efeitos da grade5:execucao matematica mantemSTOP
+em22junS38.2 eZERAGEM55,092 em23junR38.2. Nao selecionar variante pelo ganho.
+Saidas posteriores a janela verificadas em candles sem ambiguidade;
+sufixoCANDLE marca minuto,nao segundo exato. Regressao:nao reutilizar
+maxima/minima pre-entrada de barra ja inteiramente coletada. Testes passaram.
+
+DRAWDOWN E CONTINUIDADE
+Curva M1+Replay calculada em junho->julho,sem reinicio. JunhoDDteste:
+1630;Work:230.509000.
+JulhoDDacumulado aposjunho:teste2140,
+Work1951.152667. Julho continua+1100;soDDatualizado.
+Cedro integral agosto/setembro/outubro permanece serie separada e intacta.
+Julho controle10juldispensado usuario,nao pedir novamente. Fontes preservadas.
+PDFs M1+Replay enxuto(2paginas) e tecnico salvos internamente,para compilacao
+final com meses identificados por fonte/metodo. Sem PDF misturando curvasDD.

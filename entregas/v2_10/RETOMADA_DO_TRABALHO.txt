@@ -1253,3 +1253,28 @@ PedidosReplaylimitados asjanelas,sem repetir testes antigosnem simular
 trajetoria. Proximo receberjanelasjunho,resolverclassificacao ecomparar
 resultado principal claramente. DDporseriecronologico,nao misturarfontes
 sem rotulo. Resultados Cedro e julho preservados.
+
+JUNHO ENCERRADO APOS XLSX REPLAY — 13/11/2026
+RecebidoMesdeJunho.xlsx5abas,278766registros,sem limite200001.
+PRINCIPAL:+3405grade5 vsWork+7214,523331;diferenca-3809,523331.
+43operacoes,32TP/11SL,21pregoes.34resultados determinados emM1+8ambiguidades
+resolvidas porReplay+1controlegrade;nao e mes inteiro por negocios nem
+certificacao de fills. Parametros originais,1contrato/nivel,toque inclusivo,
+sem custos/fila/slippage. WINM26ate16jun,WINQ26desde17jun conformeusuario.
+7minutos completos iguais OHLC/quantidade;10bordasparciais esperadas.
+Todosminutos requeridos conferem. Dois desempatesms sem alterarresultado.
+Regressao na barraentrada testada;nao reutilizar maxima/minima preentrada.
+SeteALVO Work->SL:03junS38/S50/S61,15junR61,22junS50/S61,30junS38.
+22junS38WorkSL->TP55 por grade5;23junR38WorkZERAGEM55,092->TP495porgrade5,
+174245as17:00:35.664. Controles matematicos preservam motivosWorknesses2casos.
+Oitoambiguidades econtroleextra resolvidos. Nenhum novoReplay solicitado.
+Resultados/scripts/diario/referencias/auditorias/PDFs guardados em
+entregas/profit_junho_20261113. RESULTADO_FINAL.json ePROGRESSO_RESOLUCAO.json
+sao estadoatual;analiseprovisoria e originais preservados. Junho_Modelo_D_Resultado.zip.
+DDdiario cronologico MESMAserieM1+Replay junho->julho:junho teste1630,
+Work230,509;atejulho teste2140,Work1951,152667. Julho resultado+1100inalterado
+e controle10jul dispensado usuario,nao pedir novamente. Curva em
+CURVA_JUNHO_JULHO_M1_REPLAY.csv ePDFs tecnico/enxuto2paginas internos.
+Cedro agosto/setembro/outubro ecurvaDD originais intactos e separados.
+Nao somar faixas/subtotaispendentes nem apresentar mistura de fontes como
+serie integral de ticks. Proxima expansao cronologica:maio,quando prosseguir.

@@ -1,0 +1,25 @@
+{
+  "status": "JUNHO_ENCERRADO_M1_REPLAY",
+  "operations": 43,
+  "test_points": "3405",
+  "work_points": "7214.523331",
+  "difference": "-3809.523331",
+  "resolved_original_pending": 8,
+  "grade_controls": 1,
+  "pending_operation_count": 0,
+  "chronological_stats": {
+    "2026-06": {
+      "test_points": "3405",
+      "work_points": "7214.523331",
+      "test_DD_accum": "1630",
+      "work_DD_accum": "230.509000"
+    },
+    "2026-07": {
+      "test_points": "1100",
+      "work_points": "5255.800668",
+      "test_DD_accum": "2140",
+      "work_DD_accum": "1951.152667"
+    }
+  },
+  "no_new_replay_requested": true
+}
