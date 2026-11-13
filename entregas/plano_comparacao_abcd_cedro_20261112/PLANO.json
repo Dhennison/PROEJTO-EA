@@ -24,7 +24,7 @@
     "principal_Work": "1380",
     "mes_completo_ABCD": "2855"
   },
-  "estado_atual": "ABRIL_M1_ANALISADO_AGUARDANDO_3_JANELAS_REPLAY",
+  "estado_atual": "ABRIL_PARCIAL_FALTA_09ABR_REPLAY",
   "reutilizacao_dados": "Reutilizar fita bruta e auditorias; reducao por limiares precisa ser gerada por modelo/parametro. Nunca aplicar reducao especifica D a A/B/C ou novos stops/alvos.",
   "controle_anomalias": "Repetir sensibilidade arquivo/cronologico22e24 em cada modelo e estudo de parametros.",
   "outubro_progresso": {
@@ -145,7 +145,7 @@
     "candles_M1": 11260,
     "operacoes": 36,
     "determinadas": 33,
-    "pendentes_Replay": 3,
+    "pendentes_Replay": 1,
     "coletas_minutos": 3,
     "datas": [
       "2026-04-09",
@@ -156,9 +156,18 @@
       "WINM26"
     ],
     "Work_pontos": "6877.556998",
-    "resultado_principal": "AGUARDANDO_REPLAY",
+    "resultado_principal": "AGUARDANDO_09ABR",
     "controles_grade_extras": 0,
-    "necessita_novos_candles_ajustes": false
+    "necessita_novos_candles_ajustes": false,
+    "resolvidas_Replay": 2,
+    "coleta_restante": {
+      "data": "2026-04-09",
+      "contrato": "WINJ26",
+      "inicio": "10:32",
+      "fim": "10:33",
+      "nivel": "R61.8"
+    },
+    "bruto_recebido_abas": "17abrduasjanelas;Planilha1vazia"
   },
   "limitacao_otimizacao": "Maio-julho M1+Replay pontual;novos parametros/modelos podem exigir novas janelas. Agosto-outubro Cedro recebido integral dos periodos,com ressalvas auditadas;preservar brutos e refazer reducao por novo conjunto de barreiras."
 }

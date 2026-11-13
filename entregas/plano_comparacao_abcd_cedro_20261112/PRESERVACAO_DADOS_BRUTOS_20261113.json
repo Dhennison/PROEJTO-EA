@@ -27,6 +27,15 @@
       "sha256": "1cd88083a1e2d0ad105d6e42c7af1b7b89fc1bc8f9f08235bda5533f9900437f",
       "conteudo": "Janelas pontuais de negocios,nao pregao/mes integral",
       "publicado_GitHub": false
+    },
+    {
+      "arquivo": "2026_04_Mes_de_Abril_recebimento01_parcial.xlsx",
+      "origem_recebida": "/workspace/attachments/582d979b-0c68-46fd-adcd-a077c64c0cec/Mês de Abril.xlsx",
+      "copia_local_bruta": "/workspace/dados_brutos_modelo_d/replay_profit/2026_04_Mes_de_Abril_recebimento01_parcial.xlsx",
+      "size": 2546244,
+      "sha256": "1a5a095a68851ec1c207417580ce45dbcae15b93a5346344f2a3d29c3c2aec17",
+      "conteudo": "Duas janelas17abril;abaPlanilha1vazia;09abril nao recebido",
+      "publicado_GitHub": false
     }
   ],
   "Cedro_brutos_local": "/workspace/retorno_cedro_20261112/ticks/",

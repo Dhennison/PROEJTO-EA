@@ -1,0 +1,168 @@
+{
+  "status": "ABRIL_PARCIAL_AGUARDANDO_REPLAY_09ABR",
+  "workbook_sha256": "1a5a095a68851ec1c207417580ce45dbcae15b93a5346344f2a3d29c3c2aec17",
+  "sheets": [
+    {
+      "sheet": "17-04 1ª Janela",
+      "date": "2026-04-17",
+      "records": 36350,
+      "start": "09:46:58.003",
+      "end": "09:48:04.988",
+      "at_observed_limit": false
+    },
+    {
+      "sheet": "17-04 2ª Janela",
+      "date": "2026-04-17",
+      "records": 50198,
+      "start": "11:50:58.007",
+      "end": "11:52:04.997",
+      "at_observed_limit": false
+    }
+  ],
+  "ignored_sheets": [
+    {
+      "sheet": "Planilha1",
+      "reason": "EMPTY_NO_BUSINESS_RECORDS"
+    }
+  ],
+  "records": 86548,
+  "pending_operation_count": 1,
+  "resolved_original_pending": 2,
+  "grade_controls": 0,
+  "operations": 36,
+  "test_points": null,
+  "work_points": "6877.556998",
+  "difference": null,
+  "unresolved_operations": [
+    [
+      "2026-04-09",
+      "R61.8"
+    ]
+  ],
+  "method": "33resultados determinados nos candles+2resolvidos por Replay+1ainda sem copia;nao e mes integral tick a tick. Grade5,niveis,sem custos/fills.",
+  "gap_control": "Sem lacunas intradiarias nos M1 fornecidos.",
+  "results": [
+    {
+      "date": "2026-04-09",
+      "level": "R61.8",
+      "resolved": false,
+      "reason": "MISSING_REPLAY_WINDOW"
+    },
+    {
+      "date": "2026-04-17",
+      "level": "S38.2",
+      "sheet": "17-04 2ª Janela",
+      "contract": "WINM26",
+      "grade_control": false,
+      "primary": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "11:51:23.140",
+          "price": 200005,
+          "quantity": 1,
+          "source_row": 33036
+        },
+        "exit": {
+          "time": "11:51:55.504",
+          "price": 199630,
+          "quantity": 1,
+          "source_row": 8312
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "11:51:23.140",
+          "price": 200000,
+          "quantity": 4,
+          "source_row": 32801
+        },
+        "exit": {
+          "time": "11:51:55.504",
+          "price": 199625,
+          "quantity": 2,
+          "source_row": 8249
+        },
+        "exit_source": "REPLAY"
+      },
+      "mathematical": {
+        "reason": "SL",
+        "points": "-375.000",
+        "entry": {
+          "time": "11:51:23.140",
+          "price": 200005,
+          "quantity": 1,
+          "source_row": 33036
+        },
+        "exit": {
+          "time": "11:51:55.504",
+          "price": 199630,
+          "quantity": 1,
+          "source_row": 8312
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    },
+    {
+      "date": "2026-04-17",
+      "level": "R61.8",
+      "sheet": "17-04 1ª Janela",
+      "contract": "WINM26",
+      "grade_control": false,
+      "primary": {
+        "reason": "SL",
+        "points": "-450",
+        "entry": {
+          "time": "09:47:21.704",
+          "price": 202415,
+          "quantity": 5,
+          "source_row": 25414
+        },
+        "exit": {
+          "time": "09:49:00_CANDLE",
+          "price": 202865
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-450",
+        "entry": {
+          "time": "09:47:21.704",
+          "price": 202415,
+          "quantity": 1,
+          "source_row": 25318
+        },
+        "exit": {
+          "time": "09:49:00_CANDLE",
+          "price": 202865
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "mathematical": {
+        "reason": "SL",
+        "points": "-450.000",
+        "entry": {
+          "time": "09:47:21.704",
+          "price": 202415,
+          "quantity": 5,
+          "source_row": 25414
+        },
+        "exit": {
+          "time": "09:49:00_CANDLE",
+          "price": 202864
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    }
+  ]
+}

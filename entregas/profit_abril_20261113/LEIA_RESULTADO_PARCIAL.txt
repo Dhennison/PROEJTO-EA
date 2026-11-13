@@ -1,0 +1,13 @@
+ABRIL PARCIAL — FALTA APENAS09/04
+Planilha recebida contem17abr1janela,17abr2janela ePlanilha1vazia.
+86548negocios,doisminutos completos iguais OHLC/quantidade aoCSV.
+4bordasparciais esperadas,sem limite200001. Doisdesempatesms mesmos
+motivos/pontos;sem barreirasTP/SL opostas nomesmo ms nasposicoes.
+17abrS38.2SL-375,entrada11:51:23.140,stop11:51:55.504,confirmaWork.
+17abrR61.8SL-450,entrada09:47:21.704,saida no minuto09:49 peloM1
+sem ambiguidade,WorkALVO virouSL. Controle matematico tambemSLnos2casos.
+Parametros originais,grade5,toqueinclusivo,1contrato/nivel,sem custos/fills.
+Restam09abrWINJ26R61.8,10:32–10:33. Nao pedir novamente17abr.
+Resultado mensal principal NAO FECHADO,nao usar soma parcial como mensal.
+33determinadas+2resolvidas+1pendente. Workmensal6877,556998 preservado.
+Proximo receber somentejanela09abr. Arquivos brutos/derivados preservados.

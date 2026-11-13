@@ -1351,3 +1351,17 @@ referencias/lista/ZIP em entregas/profit_abril_20261113. Resultados fechados
 Maio-780/Junho3405/Julho1100 eCedro preservados. RecalcularDD em ordem
 abril->maio->junho->julho na mesma serie aposresolverabril,nunca somar
 subtotais de determinadas nem trocar resultados mensais congelados.
+
+ABRIL XLSX PARCIAL RECEBIDO — 13/11/2026
+MesdeAbril.xlsx contemsomente17abrduasjanelas ePlanilha1vazia.86548negocios.
+Doisminutos completos conferem OHLC/quantidade;4bordasparciais esperadas.
+17abrS38.2SL-375confirmaWork;17abrR61.8SL-450contraALVOdoWork.
+Doisdesempatesms nao alterammotivo/pontos,sem barreirasopostas nomesmo ms.
+17S38entrada11:51:23.140stop11:51:55.504;R61entrada09:47:21.704,
+SL no minuto09:49 determinado noM1depoisjanela. Controle matematicoSLambos.
+33determinadas+2resolvidas+1pendente. NAO FECHAR resultado mensal,
+nao apresentar soma parcial como abril. Falta apenas09abrWINJ26R61.8
+10:32–10:33. Nao pedir17novamente. Resultado Work6877,556998preservado.
+Bruto copiadoSHAidentico para dados_brutos_modelo_d/replay_profit;manifesto
+atualizado. Auditorias/script/CSV/resultadoparcial/PROGRESSO_RESOLUCAO.json
+em entregas/profit_abril_20261113. Proximo receberapenas09abr.
