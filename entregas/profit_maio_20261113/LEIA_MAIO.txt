@@ -1,0 +1,32 @@
+MAIO/2026 — MODELO D — ANALISE M1 AGUARDANDO REPLAY
+Work:+2032,313668 pontos,45operacoes,20pregoes. Nosso principal:pendente.
+40operacoes determinadas pelos candles;5pendentes em15/19/26/27maio.
+Quatro minutos de coleta,WINM26 em todos. Dia19resolveS38.2 eS50 juntos.
+Nao solicitar outrosdias ou controles extras sem evidencia nova.
+
+ACERVO E REFERENCIAS
+11280barrasM1Profit Work eMT5WIN$N,mesmoshorarios eOHLC;zero diferencas.
+Ajustes20datas presentes no Work. Contexto primeirodia04maio usa30abril
+ja existente;HLC do pregao anterior completo,aberturaatual eajusteoperacional.
+Todos45conjuntos matematicos entrada/SL/TP iguais Work,tolerancia0,00001.
+Mesmo criterio grade5,1contrato/nivel,toqueinclusivo,corte18h,parametrosoriginais.
+Sem lacunas intradiarias nos candles fornecidos;nao certifica negocios reais.
+Nenhum desfecho determinado difere Work nesta rodada;sem controlegradeextra.
+
+COLETA
+15maio09:02–09:03S61.8;19maio09:03–09:04S38.2/S50;
+26maio10:05–10:06S38.2;27maio09:22–09:23R61.8.
+TodasWINM26. Iniciar algunssegundos antes e terminar depois do minuto
+completo,reproduzir sem saltar dentrojanela,copiarsem filtro/corretora/lote.
+Preservar negocios identicos. Copiaranteslimite observado200001;verificar
+horario inicial/final,OHLC/quantidade e desempatesms na analise. XLSX com
+abas pordia como mesesanteriores;nao pedir pregõesinteiros ou novoOHLC.
+
+METODO
+Ramos TP/SL/ABERTA propagados pelos M1,sem inventar trajeto. Mesmo
+classificador de junho/julho. Pontos brutos nos niveis,sem custos/fila/fills.
+Envoltorio externo tecnico-780a2540,nao fechamento nem faixa de resultado
+realizavel garantida;extremos individuais podem ser incompativeis no dia.
+Nao somar subtotal das determinadas nem incorporar maio ao DD antesde
+resolver os5casos. Resultados fechadosjunho3405/julho1100 preservados.
+Cedro agosto/setembro/outubro ecurva propria intactos;nao misturar fontes.

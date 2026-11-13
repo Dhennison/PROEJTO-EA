@@ -1278,3 +1278,25 @@ CURVA_JUNHO_JULHO_M1_REPLAY.csv ePDFs tecnico/enxuto2paginas internos.
 Cedro agosto/setembro/outubro ecurvaDD originais intactos e separados.
 Nao somar faixas/subtotaispendentes nem apresentar mistura de fontes como
 serie integral de ticks. Proxima expansao cronologica:maio,quando prosseguir.
+
+MAIO ANALISADO E JANELAS REPLAY DELIMITADAS — 13/11/2026
+Usuario pediu analisarmaio e informarcoletas. Temos20pregoes e11280M1,
+mesmos timestamps/OHLC Profit Work eMT5WIN$N,zero diferencas. Ajustes20dias
+Work presentes. Primeirodia04maio usa contexto30abril completoja noacervo.
+45operacoes,40comresultado determinado,5pendentes em15/19/26/27maio.
+Work+2032,313668. Nosso fechamento AGUARDANDO_REPLAY;nao destacar envoltorio
+tecnico como resultado.45niveis matematicos entrada/SL/TP iguais Work,
+tolerancia0,00001;nenhuma chavefaltante/extra. Semlacunas intradiarias.
+TodoscontratosReplay WINM26,sem virada de contrato emmaio. Quatrocoletas:
+15maio09:02–09:03 S61.8;19maio09:03–09:04 S38.2/S50;
+26maio10:05–10:06 S38.2;27maio09:22–09:23 R61.8.
+Semcontrolegradeextra:nenhum desfecho determinado difere Work. Pedirapenas
+esses4minutos,mesmoXLSXabas por data,sem novosOHLC/ajustes. Reproduzir
+algunssegundosantes/depois,sem saltar dentrojanela ou filtrar/deduplicar.
+Analise/inventario/referencias/coletas/scripts/ZIP em entregas/profit_maio_20261113.
+Mesmo metodo M1+Replay,grade5,1contrato/nivel,parametrosoriginais. Junho3405
+eJulho1100fechados inalterados. Nenhuma mudancaDD antes de resolvermaio.
+Aposjanelas recalcularcurva MESMAserieemordemmaio->junho->julho,sem reiniciar
+DDmensal,sem misturar serieCedrointegral agosto/outubro. SalvarPDFs finais
+conforme preferenciasusuario e continuarTXT. Nenhum novo teste de parametro
+ou modeloA/B/C executado. Proximo receber4abasReplaymaio.

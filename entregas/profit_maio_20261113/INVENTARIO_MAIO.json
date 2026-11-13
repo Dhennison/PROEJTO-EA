@@ -1,0 +1,35 @@
+{
+  "Work_M1_bars": 11280,
+  "MT5_M1_bars": 11280,
+  "dates": [
+    "2026-05-04",
+    "2026-05-05",
+    "2026-05-06",
+    "2026-05-07",
+    "2026-05-08",
+    "2026-05-11",
+    "2026-05-12",
+    "2026-05-13",
+    "2026-05-14",
+    "2026-05-15",
+    "2026-05-18",
+    "2026-05-19",
+    "2026-05-20",
+    "2026-05-21",
+    "2026-05-22",
+    "2026-05-25",
+    "2026-05-26",
+    "2026-05-27",
+    "2026-05-28",
+    "2026-05-29"
+  ],
+  "common_timestamps": 11280,
+  "exclusive_Work": 0,
+  "exclusive_MT5": 0,
+  "OHLC_differences": 0,
+  "OHLC_difference_timestamps": [],
+  "source_hashes": {
+    "/workspace/candles_originais_modelo_d/WINFUT_F_0_1min_01-01-2026_22-09-2026.csv": "f1343f8181fce176b5d266bd1710c5aadfea8ed8af8941da1ee6b3fd9469dc45",
+    "/workspace/exportacao_winn_110/EXPORT110_1794241201_5300/M1_202605.csv": "112be79a2a16bbbd70b0bf02b93a8a5ec2986b0a14d49eb541b69d721d690d03"
+  }
+}
