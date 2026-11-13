@@ -1,5 +1,5 @@
 {
-  "status": "JULHO_CANDLES_COM_JANELAS_REPLAY_PENDENTE_CONTROLE_LACUNA_10JUL",
+  "status": "JULHO_ENCERRADO_M1_REPLAY_CONTROLE_ADICIONAL_DISPENSADO_USUARIO",
   "julho_operacoes": 47,
   "determinadas_por_candles_sem_coleta": 36,
   "resolvidas_Replay": 11,
@@ -7,8 +7,9 @@
   "resultado_principal": "1100",
   "work": "5255.800668",
   "diferenca": "-4155.800668",
-  "controle_cobertura_pendente": "10jul09:55–09:58,ausencia09:56",
+  "controle_cobertura_pendente": null,
   "fonte": "M1+Replay pontual,nao fita integral",
   "DD_somente_julho": "2140",
-  "DD_Work_somente_julho": "1951.152667"
+  "DD_Work_somente_julho": "1951.152667",
+  "controle_dispensado_usuario": "10jul09:55–09:58;ressalva preservada,sem afirmar verificacao."
 }

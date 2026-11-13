@@ -1,0 +1,8 @@
+﻿data;contrato;inicio;fim_exclusivo;niveis;motivo
+2026-06-03;WINM26;09:03:00;09:04:00;S38.2;Ordem entrada/alvo/stop ambigua no M1
+2026-06-03;WINM26;09:04:00;09:05:00;S50;Ordem entrada/alvo/stop ambigua no M1
+2026-06-03;WINM26;09:05:00;09:06:00;S61.8;Ordem entrada/alvo/stop ambigua no M1
+2026-06-15;WINM26;09:28:00;09:29:00;R61.8;Ordem entrada/alvo/stop ambigua no M1
+2026-06-22;WINQ26;09:01:00;09:02:00;S38.2,S50,S61.8;Ordem entrada/alvo/stop ambigua no M1
+2026-06-23;WINQ26;17:00:00;17:01:00;R38.2;Controle de toque na grade5:desfecho difere Work
+2026-06-30;WINQ26;09:14:00;09:15:00;S38.2;Ordem entrada/alvo/stop ambigua no M1

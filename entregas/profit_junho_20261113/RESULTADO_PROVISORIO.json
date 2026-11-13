@@ -1,0 +1,49 @@
+{
+  "status": "PROVISORIO_CANDLES_M1_AGUARDANDO_REPLAY",
+  "days": 21,
+  "operations": 43,
+  "determined": 35,
+  "pending": 8,
+  "work_operations": 43,
+  "work_points": "7214.523331",
+  "outer_min": "2975",
+  "outer_max": "8070",
+  "pending_dates": [
+    "2026-06-03",
+    "2026-06-15",
+    "2026-06-22",
+    "2026-06-30"
+  ],
+  "branch_minutes": 21,
+  "adjustments_Work_available": 21,
+  "mathematical_level_differences": [],
+  "work_missing": [],
+  "work_extra": [],
+  "gaps": [],
+  "limits": "Outer envelope per operation, not jointly attainable guaranteed. Normalized levels only, no costs/fills. No tick path invented. Candle range does not prove tape completeness. Unresolved chronology requires Replay; intra-minute exit time not determined.",
+  "contratos": {
+    "ate_2026_06_16": "WINM26",
+    "desde_2026_06_17": "WINQ26"
+  },
+  "calendario_confirmado_usuario": true,
+  "grade_controls": [
+    {
+      "date": "2026-06-23",
+      "level": "R38.2",
+      "normalized_outcome": "TP:495",
+      "Work_reason": "ZERAGEM 18H",
+      "Work_points": "55,092"
+    }
+  ],
+  "window_count": 7,
+  "window_dates": [
+    "2026-06-03",
+    "2026-06-15",
+    "2026-06-22",
+    "2026-06-23",
+    "2026-06-30"
+  ],
+  "previous_context_first_day": "2026-05-29",
+  "resultado_principal": "AGUARDANDO_REPLAY",
+  "previous_context_method": "HLC do pregao anterior completo,abertura atual,ajuste operacional Work;sem trocar referencias para melhorar resultado."
+}

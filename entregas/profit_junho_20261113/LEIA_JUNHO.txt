@@ -1,0 +1,35 @@
+JUNHO/2026 — MODELO D — INVENTARIO E ANALISE M1
+Resultado principal para comparar com Work: AGUARDANDO REPLAY.
+Work: +7214,523331 pontos,43operacoes,21pregoes.
+Fonte original WINFUT M1:11825barras. MT5 WIN$N:mesmos11825horarios/OHLC,
+zero diferencas. CSV novo WINQ26:5628barras,10pregoes17–30jun;OHLC iguais.
+Nao e necessario pedir novamente candles ou ajustes de junho.
+Ajustes21datas presentes no Work. XLSX JUN a AGO so tem6datas de junho,
+23/24/25/26/29/30;todas iguais Work. Nao alegar que XLSX cobre junho inteiro.
+Contexto01jun vem29maio,candles ja no acervo. HLC pregao anterior completo,
+sem truncar18h;abertura atual;ajuste operacional congelado Work.
+Niveis matematicos entrada/SL/TP das43operacoes iguais Work,tol0,00001.
+
+35operacoes com resultado determinado nos candles.8operacoes pendentes
+em03/15/22/30jun. Controle adicional23junR38.2:Work encerra18h+55,092,
+grade5 alcancaTP+495 no minuto17:00;conferir toque,nao alterar criterio.
+Total7janelas de1minuto em03jun(3),15jun(1),22jun(1),23jun(1),30jun(1).
+Dia22um minuto resolve tres niveis. Pode mandar mesma planilha,abas por data;
+dia03preferir3abas ou uma09:03–09:06 se nao atingir limite200001registros.
+Comecar antes do inicio,reproduzir sem saltar dentrojanela,copiar ao final.
+Todos negocios/corretoras/tipos,sem filtrar lotes,sem deduplicar negocios.
+Conferir alcance,OHLC/quantidade e ordem antes de resolver.
+
+CONTRATOS:WINM26ate16/06;WINQ26desde17/06. Confirmado pelo usuario com
+calendario B3;nao confundir SerieWINFUT dos candles com contrato da fita.
+Historico continuo Work preservado inclusive contexto na virada;operacoes
+atualizadas com negocios do contrato indicado depois de verificar OHLC.
+
+Metodo:mesmo classificador de julho,grade5,1contrato/nivel,parametros originais,
+sem custos/fills/trajetoria sintetica. Ramos TP/SL/ABERTA,propagados ate corte18h.
+Envoltorio tecnico2975–8070 e soma de extremos por operacao,nao fechamento
+nem faixa de execucao real;extremos podem nao coexistir numa mesma fita.
+Sem lacunas intradiarias nos M1 fornecidos;nao e certificado de todos negocios.
+Nao adicionar junho aos resultados/DD fechados antes da resolucao. DDporserie
+em ordem cronologica;nao misturar M1+Replay com Cedro integral sem identificar.
+Julho encerrado+1100,controle10juldispensado expressamente;nao pedir novamente.

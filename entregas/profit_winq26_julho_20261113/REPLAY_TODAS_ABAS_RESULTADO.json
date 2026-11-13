@@ -1,5 +1,5 @@
 {
-  "status": "JULHO_CANDLES_COM_JANELAS_REPLAY_PENDENTE_CONTROLE_LACUNA_10JUL",
+  "status": "JULHO_ENCERRADO_M1_REPLAY_CONTROLE_ADICIONAL_DISPENSADO_USUARIO",
   "workbook_sha256": "1cd88083a1e2d0ad105d6e42c7af1b7b89fc1bc8f9f08235bda5533f9900437f",
   "sheets": [
     {
@@ -83,7 +83,7 @@
   "work_points": "5255.800668",
   "difference": "-4155.800668",
   "method": "36resultados determinados nos candles+11resolvidos por janelas Replay;nao e mes integral tick a tick. Grade5,niveis,sem custos/fills.",
-  "gap_control": "10jul09:56 ausente no CSV. Workbook nao tem aba10jul;controle09:55–09:58 ainda nao recebido.",
+  "gap_control": "DISPENSADO expressamente pelo usuario13/11;09:56 nao foi conferido. Ressalva de cobertura preservada.",
   "results": [
     {
       "date": "2026-07-01",

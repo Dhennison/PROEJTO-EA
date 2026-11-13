@@ -1230,3 +1230,26 @@ PDFdiario e tecnico de julho salvos internamente em profit_winq26_julho_20261113
 para compilacaofinal. ZIP Julho_Modelo_D_Apos_Janelas.zip. Antigos resultados
 provisorios preservados; estadoatual em PROGRESSO_RESOLUCAO.json e
 LEIA_RESULTADO_APOS_JANELAS.txt. Cedro3meses permanece intacto.
+
+DECISAO USUARIO E JUNHO PREPARADO — 13/11/2026
+Usuario dispensou expressamente controle de10jul09:56;nao pedir novamente.
+Julho encerrado+1100 vs Work+5255,800668,com ressalva preservada e controle
+nao executado. DECISAO_ENCERRAMENTO_USUARIO.json registra decisao;PDFdiario
+e tecnico Encerrado regenerados,sem alterar pontos. FonteM1+Replaypontual.
+Junho:21pregoes,11825M1 originaisWorkProfit eMT5,mesmoshorarios/OHLC.
+CSV novoQ17–30jun5628M1 tambemigual. Ajustes21datas Work;novoXLSsomente
+23/24/25/26/29/30jun,todosiguais. Contexto01jun29maioja noacervo.
+AnaliseJune43operacoes,35resultado determinado,8pendentes em03/15/22/30jun.
+Niveis matematicos43entrada/SL/TP iguais Work,tol0,00001. Work+7214,523331.
+Sem fechamento novo ateReplay. Semlacunas intradiarias nosM1fornecidos.
+Usuario confirmoucontratos:WINM26ate16jun,WINQ26desde17jun. Nao pedir
+novoscandles/ajustes,cobertura suficiente ja conferida. Julhomespassado fechado.
+7minutoscoleta:03jun09:03/09:04/09:05M26;15jun09:28M26;22jun09:01Q26
+(tressuportes);30jun09:14Q26. Controle23jun17:00Q26R38.2,poisgrade5
+TP495 vsWorkZERAGEM18H55,092. Fonte original e criterio preservados.
+Analise/script/inventario/diario/referencias/listacoletas eZIP em
+entregas/profit_junho_20261113. Mesmo formatoXLSabas usado emjulho aceito.
+PedidosReplaylimitados asjanelas,sem repetir testes antigosnem simular
+trajetoria. Proximo receberjanelasjunho,resolverclassificacao ecomparar
+resultado principal claramente. DDporseriecronologico,nao misturarfontes
+sem rotulo. Resultados Cedro e julho preservados.

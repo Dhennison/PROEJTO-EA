@@ -24,7 +24,7 @@
     "principal_Work": "1380",
     "mes_completo_ABCD": "2855"
   },
-  "estado_atual": "JULHO_M1_REPLAY_11_RESOLVIDAS_CONTROLE_10JUL_PENDENTE",
+  "estado_atual": "JUNHO_M1_ANALISADO_AGUARDANDO_JANELAS_REPLAY",
   "reutilizacao_dados": "Reutilizar fita bruta e auditorias; reducao por limiares precisa ser gerada por modelo/parametro. Nunca aplicar reducao especifica D a A/B/C ou novos stops/alvos.",
   "controle_anomalias": "Repetir sensibilidade arquivo/cronologico22e24 em cada modelo e estudo de parametros.",
   "outubro_progresso": {
@@ -66,7 +66,24 @@
     "pendencias_operacoes": 0,
     "principal_pontos": "1100",
     "Work_pontos": "5255.800668",
-    "controle_pendente": "10jul09:55–09:58",
-    "misturar_com_serie_Cedro_integral": false
+    "controle_pendente": null,
+    "misturar_com_serie_Cedro_integral": false,
+    "status": "ENCERRADO_USUARIO_DISPENSOU_CONTROLE_ADICIONAL"
+  },
+  "junho_progresso": {
+    "pregoes": 21,
+    "candles_M1": 11825,
+    "operacoes": 43,
+    "determinadas": 35,
+    "pendentes_Replay": 8,
+    "controle_grade_adicional": "23junR38.2 17:00–17:01",
+    "coletas_minutos": 7,
+    "Work_pontos": "7214.523331",
+    "resultado_principal": "AGUARDANDO_REPLAY",
+    "contratos": {
+      "ate16jun": "WINM26",
+      "desde17jun": "WINQ26"
+    },
+    "necessita_novos_candles_ajustes": false
   }
 }

@@ -30,11 +30,11 @@ EFEITO DA GRADE
 SL;alvo normalizado176160 foi atingido,+105. Principal permanece grade5,
 mesmo criterio de agosto/setembro/outubro. Nao selecionar regra pelo resultado.
 
-CONTROLE AINDA NAO RECEBIDO
+CONTROLE DISPENSADO EXPRESSAMENTE PELO USUARIO EM13/11
 A planilha nao tem10jul09:55–09:58 para verificar ausencia de09:56. Duas
 operacoes conhecidas desse dia ja encerradas09:12 e09:55;coleta e controle
 de cobertura,nao uma das11ambiguidades. Nao interpolar. Resultado calculado
-acima fica identificado com essa ressalva ate conferirmos a janela.
+acima fica encerrado com essa ressalva preservada,sem coleta adicional.
 
 DRAWDOWN
 Julho isolado,fechamentos diarios:teste2140;Work1951.152667pontos.

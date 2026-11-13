@@ -5,7 +5,11 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 import fitz
 P=Path(__file__).parent
-s=json.loads((P/'REPLAY_TODAS_ABAS_RESULTADO.json').read_text());daily=list(csv.DictReader((P/'DIARIO_APOS_JANELAS.csv').open(encoding='utf-8-sig'),delimiter=';'))
+s=json.loads((P/'REPLAY_TODAS_ABAS_RESULTADO.json').read_text());waived=(P/'DECISAO_ENCERRAMENTO_USUARIO.json').exists()
+if waived:
+ s['status']='JULHO_ENCERRADO_M1_REPLAY_CONTROLE_ADICIONAL_DISPENSADO_USUARIO'
+ s['gap_control']='DISPENSADO expressamente pelo usuario13/11;09:56 nao foi conferido. Ressalva de cobertura preservada.'
+daily=list(csv.DictReader((P/'DIARIO_APOS_JANELAS.csv').open(encoding='utf-8-sig'),delimiter=';'))
 assert s['pending_operation_count']==0 and len(s['results'])==11
 assert all(r['tie_invariant'] and not r['mixed_exit_barrier_ms'] for r in s['results'])
 assert daily[-1]['date']=='2026-07-31' and daily[-1]['work_points']==''
@@ -25,6 +29,9 @@ s['trocas_Work']=len(flips);s['datas_trocas']=[r['date']+' '+r['level'] for r in
 s['observacao_grade']='06julS38.2: alvo teorico176160.542 nao atingido apos entrada (SL);grade5alvo176160 atingido (TP+105). Principal continua grade5. Nao mudar regra para escolher resultado.'
 (P/'REPLAY_TODAS_ABAS_RESULTADO.json').write_text(json.dumps(s,ensure_ascii=False,indent=2)+'\n')
 progress=dict(status=s['status'],julho_operacoes=47,determinadas_por_candles_sem_coleta=36,resolvidas_Replay=11,pendentes_operacoes=0,resultado_principal='1100',work='5255.800668',diferenca='-4155.800668',controle_cobertura_pendente='10jul09:55–09:58,ausencia09:56',fonte='M1+Replay pontual,nao fita integral',DD_somente_julho=str(td),DD_Work_somente_julho=str(wd))
+if waived:
+ progress['controle_cobertura_pendente']=None
+ progress['controle_dispensado_usuario']='10jul09:55–09:58;ressalva preservada,sem afirmar verificacao.'
 (P/'PROGRESSO_RESOLUCAO.json').write_text(json.dumps(progress,ensure_ascii=False,indent=2)+'\n')
 text=f'''JULHO/2026 — RESULTADO PRINCIPAL APOS JANELAS REPLAY
 Nosso: +1.100 pontos. Work: +5.255,800668. Diferenca: -4.155,800668.
@@ -70,14 +77,16 @@ NAO atualizar DD Cedro3meses usando julho como se fosse a mesma serie de
 ticks integrais. Serie M1+Replay explicitamente separada;Cedro original intacto.
 PDFs de julho guardados para compilacao final. Resultados originais preservados.
 '''
+if waived:
+ text=text.replace('CONTROLE AINDA NAO RECEBIDO','CONTROLE DISPENSADO EXPRESSAMENTE PELO USUARIO EM13/11').replace('acima fica identificado com essa ressalva ate conferirmos a janela.','acima fica encerrado com essa ressalva preservada,sem coleta adicional.')
 (P/'LEIA_RESULTADO_APOS_JANELAS.txt').write_text(text)
 def fmt(x):
  if x=='':return '-'
  v=D(x);return f'{v:,.2f}'.replace(',','X').replace('.',',').replace('X','.')
-pdf=P/'Julho_2026_Comparativo_Diario_Em_Analise.pdf';c=canvas.Canvas(str(pdf),pagesize=A4);W,H=A4
+pdf=P/('Julho_2026_Comparativo_Diario_Encerrado.pdf' if waived else 'Julho_2026_Comparativo_Diario_Em_Analise.pdf');c=canvas.Canvas(str(pdf),pagesize=A4);W,H=A4
 c.setFont('Helvetica-Bold',16);c.drawString(35,H-42,'MODELO D - JULHO / 2026')
 c.setFont('Helvetica',9);c.drawString(35,H-61,'M1 + janelas Replay | Grade 5 | Pontos brutos nos niveis')
-c.drawString(35,H-76,'Controle de cobertura de 10/07 ainda pendente.')
+c.drawString(35,H-76,'Julho encerrado; controle adicional de 10/07 dispensado pelo usuario.' if waived else 'Controle de cobertura de 10/07 ainda pendente.')
 y=H-107;c.setFont('Helvetica-Bold',9)
 for x,t in [(35,'Data'),(205,'Work'),(320,'Nosso'),(445,'Diferenca')]:c.drawString(x,y,t)
 y-=22
@@ -93,7 +102,7 @@ for line in ['36 operacoes determinadas em M1; 11 resolvidas com janelas Replay.
 c.save()
 with fitz.open(pdf) as doc:
  assert len(doc)==1 and '1.100,00' in doc[0].get_text() and '5.255,80' in doc[0].get_text()
-tech=P/'Julho_2026_Analise_Tecnica_Em_Analise.pdf';c=canvas.Canvas(str(tech),pagesize=A4);y=H-40;c.setFont('Helvetica',9)
+tech=P/('Julho_2026_Analise_Tecnica_Encerrado.pdf' if waived else 'Julho_2026_Analise_Tecnica_Em_Analise.pdf');c=canvas.Canvas(str(tech),pagesize=A4);y=H-40;c.setFont('Helvetica',9)
 for line in text.splitlines():
  if y<40:c.showPage();c.setFont('Helvetica',9);y=H-40
  c.drawString(28,y,line);y-=14
