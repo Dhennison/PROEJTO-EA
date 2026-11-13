@@ -4,6 +4,20 @@ NOME ESTÁVEL: RETOMADA_DO_TRABALHO.txt
 CAMINHO: entregas/v2_10/RETOMADA_DO_TRABALHO.txt
 O diretório v2_10 é histórico; este TXT acompanha o projeto inteiro até o estado atual.
 
+PROFIT REPLAY — PRIMEIRA COPIA DE NEGOCIOS RECEBIDA — 13/11/2026
+Usuario confirmou Replay com julho e meses anteriores. Captura WINQ26,
+13/07/2026. Menu Times&Trades oferece Copiar para Excel e Definir periodo.
+TXT recebido contem168081registros, seis campos por registro; todos com
+milissegundos. Lista decrescente sem regressao,09:03:10.703 a09:05:04.086.
+Quantidade total415219; precos179475 a180235. Copia inclui muito mais que
+linhas visiveis. Nao comprova retencao do dia completo ou equivalencia Cedro.
+Cabecalho Num nao preenchido; data/calendario e ativo so na captura. Empates
+nao tem sequencia oficial confirmada. Nao deduplicar registros identicos.
+Fonte integral mantida no arquivo de attachment local,sem publicar dados brutos.
+Auditoria: entregas/profit_replay_20260713/AUDITORIA_COPIA_INICIAL.json.
+Proximo conferir submenu Definir periodo para planejar captura do pregao;
+nao solicitar reproducao de mes inteiro antes de validar alcance da copia.
+
 ESCLARECIMENTO CEDRO E BUSCA DE HISTORICO — 13/11/2026
 Nelogica considerada cara pelo usuario; nenhuma compra autorizada. Prioridade:
 buscar julho/anteriores usando acessos existentes ou fontes gratuitas, sem

@@ -1,0 +1,32 @@
+{
+  "arquivo": "Texto colado.txt",
+  "sha256": "88615d32f1e31d4348b725b4e09d42cd363b789d7ca0ca39759790e7f85aa7bd",
+  "registros": 168081,
+  "campos_por_registro": {
+    "6": 168081
+  },
+  "primeiro_na_lista": "09:05:04.086",
+  "ultimo_na_lista": "09:03:10.703",
+  "horario_minimo": "09:03:10.703",
+  "horario_maximo": "09:05:04.086",
+  "transicoes_fora_ordem_decrescente": 0,
+  "horarios_distintos": 36681,
+  "quantidade_total": 415219,
+  "preco_minimo": 179475,
+  "preco_maximo": 180235,
+  "por_minuto": {
+    "09:03": 86021,
+    "09:04": 76079,
+    "09:05": 5981
+  },
+  "agressor": {
+    "Vendedor": 77605,
+    "RLP": 8207,
+    "Comprador": 80376,
+    "Direto": 1,
+    "Leilão": 1892
+  },
+  "linhas_identicas_excedentes_preservadas": 27646,
+  "todos_horarios_milissegundos": true,
+  "limites": "Data e contrato inferidos da captura do usuario: WINQ26 em 13/07/2026; nao constam em cada linha. Cabecalho Num presente mas registros tem apenas seis campos, sem identificador de negocio. Completude nao comprovada. Desempate temporal nao certificado."
+}
