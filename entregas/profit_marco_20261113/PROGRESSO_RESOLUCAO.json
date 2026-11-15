@@ -1,0 +1,59 @@
+{
+  "status": "MARCO_ENCERRADO_M1_REPLAY",
+  "workbook_sha256": "23a1b8bc89774beeac96732d3f438ba8cfb1b7d79e77e0dd67e03f4f6bfeacfb",
+  "ignored_sheets": [],
+  "records": 212494,
+  "pending_operation_count": 0,
+  "resolved_original_pending": 4,
+  "grade_controls": 1,
+  "operations": 50,
+  "test_points": "350",
+  "work_points": "3451.037332",
+  "difference": "-3101.037332",
+  "unresolved_operations": [],
+  "method": "45resultados determinados nos candles+4ambiguidades e1controle por Replay;nao e mes integral tick a tick. Grade5,niveis,sem custos/fills.",
+  "gap_control": "Sem lacunas intradiarias nos M1 fornecidos.",
+  "final_operation_reasons": {
+    "TP": 26,
+    "SL": 23,
+    "CORTE": 1
+  },
+  "chronological_stats": {
+    "2026-03": {
+      "test_points": "350",
+      "work_points": "3451.037332",
+      "test_DD_accum": "2540",
+      "work_DD_accum": "2373.011333"
+    },
+    "2026-04": {
+      "test_points": "5720",
+      "work_points": "6877.556998",
+      "test_DD_accum": "2540",
+      "work_DD_accum": "2373.011333"
+    },
+    "2026-05": {
+      "test_points": "-780",
+      "work_points": "2032.313668",
+      "test_DD_accum": "2540",
+      "work_DD_accum": "2373.011333"
+    },
+    "2026-06": {
+      "test_points": "3405",
+      "work_points": "7214.523331",
+      "test_DD_accum": "2540",
+      "work_DD_accum": "2373.011333"
+    },
+    "2026-07": {
+      "test_points": "1100",
+      "work_points": "5255.800668",
+      "test_DD_accum": "2540",
+      "work_DD_accum": "2373.011333"
+    }
+  },
+  "March_July_test": "9795",
+  "March_July_Work": "24831.231997",
+  "no_new_replay_requested": true,
+  "series": "M1_PLUS_TARGETED_REPLAY_SEPARATE_FROM_CEDRO",
+  "complete_matching_minutes": 5,
+  "partial_boundary_minutes": 8
+}

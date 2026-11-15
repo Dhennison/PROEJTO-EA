@@ -1,0 +1,338 @@
+{
+  "status": "MARCO_ENCERRADO_M1_REPLAY",
+  "workbook_sha256": "23a1b8bc89774beeac96732d3f438ba8cfb1b7d79e77e0dd67e03f4f6bfeacfb",
+  "sheets": [
+    {
+      "sheet": "17-03",
+      "date": "2026-03-17",
+      "records": 33185,
+      "start": "10:20:58.027",
+      "end": "10:22:04.993",
+      "at_observed_limit": false
+    },
+    {
+      "sheet": "19-03 1ª Janela",
+      "date": "2026-03-19",
+      "records": 52206,
+      "start": "09:02:58.017",
+      "end": "09:04:04.998",
+      "at_observed_limit": false
+    },
+    {
+      "sheet": "19-03 2ª Janela",
+      "date": "2026-03-19",
+      "records": 38410,
+      "start": "09:30:58.009",
+      "end": "09:32:04.997",
+      "at_observed_limit": false
+    },
+    {
+      "sheet": "19-03 3ª Janela",
+      "date": "2026-03-19",
+      "records": 88693,
+      "start": "16:00:58.002",
+      "end": "16:03:04.988",
+      "at_observed_limit": false
+    }
+  ],
+  "ignored_sheets": [],
+  "records": 212494,
+  "pending_operation_count": 0,
+  "resolved_original_pending": 4,
+  "grade_controls": 1,
+  "operations": 50,
+  "test_points": "350",
+  "work_points": "3451.037332",
+  "difference": "-3101.037332",
+  "unresolved_operations": [],
+  "method": "45resultados determinados nos candles+4ambiguidades e1controle por Replay;nao e mes integral tick a tick. Grade5,niveis,sem custos/fills.",
+  "gap_control": "Sem lacunas intradiarias nos M1 fornecidos.",
+  "results": [
+    {
+      "date": "2026-03-17",
+      "level": "R61.8",
+      "sheet": "17-03",
+      "contract": "WINJ26",
+      "grade_control": false,
+      "primary": {
+        "reason": "SL",
+        "points": "-450",
+        "entry": {
+          "time": "10:21:37.660",
+          "price": 183140,
+          "quantity": 3,
+          "source_row": 16426
+        },
+        "exit": {
+          "time": "10:28:00_CANDLE",
+          "price": 183590
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-450",
+        "entry": {
+          "time": "10:21:37.660",
+          "price": 183140,
+          "quantity": 1,
+          "source_row": 16391
+        },
+        "exit": {
+          "time": "10:28:00_CANDLE",
+          "price": 183590
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "mathematical": {
+        "reason": "SL",
+        "points": "-450.0000000000000000000000",
+        "entry": {
+          "time": "10:21:37.665",
+          "price": 183145,
+          "quantity": 1,
+          "source_row": 16267
+        },
+        "exit": {
+          "time": "10:28:00_CANDLE",
+          "price": 183590
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    },
+    {
+      "date": "2026-03-19",
+      "level": "S38.2",
+      "sheet": "19-03 1ª Janela",
+      "contract": "WINJ26",
+      "grade_control": false,
+      "primary": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "09:03:59.887",
+          "price": 179280,
+          "quantity": 1,
+          "source_row": 5149
+        },
+        "exit": {
+          "time": "09:05:00_CANDLE",
+          "price": 178905
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "09:03:59.887",
+          "price": 179280,
+          "quantity": 1,
+          "source_row": 5137
+        },
+        "exit": {
+          "time": "09:05:00_CANDLE",
+          "price": 178905
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "mathematical": {
+        "reason": "SL",
+        "points": "-375.0000000000000000000000",
+        "entry": {
+          "time": "09:03:59.948",
+          "price": 179275,
+          "quantity": 20,
+          "source_row": 5069
+        },
+        "exit": {
+          "time": "09:05:00_CANDLE",
+          "price": 178902
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    },
+    {
+      "date": "2026-03-19",
+      "level": "S61.8",
+      "sheet": "19-03 2ª Janela",
+      "contract": "WINJ26",
+      "grade_control": true,
+      "primary": {
+        "reason": "SL",
+        "points": "-650",
+        "entry": {
+          "time": "09:27:00_CANDLE",
+          "price": 178130,
+          "source": "ENTRY_MINUTE_PREVIOUSLY_DETERMINED_FROM_CANDLES"
+        },
+        "exit": {
+          "time": "09:31:41.874",
+          "price": 177480,
+          "quantity": 1,
+          "source_row": 12339
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-650",
+        "entry": {
+          "time": "09:27:00_CANDLE",
+          "price": 178130,
+          "source": "ENTRY_MINUTE_PREVIOUSLY_DETERMINED_FROM_CANDLES"
+        },
+        "exit": {
+          "time": "09:31:41.874",
+          "price": 177480,
+          "quantity": 2,
+          "source_row": 12282
+        },
+        "exit_source": "REPLAY"
+      },
+      "mathematical": {
+        "reason": "TP",
+        "points": "574.9353333333333333333333",
+        "entry": {
+          "time": "09:27:00_CANDLE",
+          "price": 178130,
+          "source": "ENTRY_MINUTE_PREVIOUSLY_DETERMINED_FROM_CANDLES"
+        },
+        "exit": {
+          "time": "10:17:00_CANDLE",
+          "price": 178702
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    },
+    {
+      "date": "2026-03-19",
+      "level": "R38.2",
+      "sheet": "19-03 3ª Janela",
+      "contract": "WINJ26",
+      "grade_control": false,
+      "primary": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "16:01:35.544",
+          "price": 181665,
+          "quantity": 7,
+          "source_row": 68638
+        },
+        "exit": {
+          "time": "16:02:19.359",
+          "price": 182040,
+          "quantity": 5,
+          "source_row": 43174
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "16:01:35.544",
+          "price": 181665,
+          "quantity": 1,
+          "source_row": 68585
+        },
+        "exit": {
+          "time": "16:02:19.359",
+          "price": 182040,
+          "quantity": 2,
+          "source_row": 43167
+        },
+        "exit_source": "REPLAY"
+      },
+      "mathematical": {
+        "reason": "SL",
+        "points": "-375.0000000000000000000000",
+        "entry": {
+          "time": "16:01:51.640",
+          "price": 181670,
+          "quantity": 3,
+          "source_row": 62892
+        },
+        "exit": {
+          "time": "16:02:19.993",
+          "price": 182045,
+          "quantity": 5,
+          "source_row": 42586
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    },
+    {
+      "date": "2026-03-19",
+      "level": "R61.8",
+      "sheet": "19-03 3ª Janela",
+      "contract": "WINJ26",
+      "grade_control": false,
+      "primary": {
+        "reason": "TP",
+        "points": "80",
+        "entry": {
+          "time": "16:02:12.608",
+          "price": 181990,
+          "quantity": 1,
+          "source_row": 48099
+        },
+        "exit": {
+          "time": "16:02:13.342",
+          "price": 181910,
+          "quantity": 10,
+          "source_row": 47524
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_control": {
+        "reason": "TP",
+        "points": "80",
+        "entry": {
+          "time": "16:02:12.608",
+          "price": 181990,
+          "quantity": 1,
+          "source_row": 48093
+        },
+        "exit": {
+          "time": "16:02:13.342",
+          "price": 181910,
+          "quantity": 1,
+          "source_row": 47518
+        },
+        "exit_source": "REPLAY"
+      },
+      "mathematical": {
+        "reason": "SL",
+        "points": "-450.0000000000000000000000",
+        "entry": {
+          "time": "16:02:15.917",
+          "price": 181995,
+          "quantity": 1,
+          "source_row": 45795
+        },
+        "exit": {
+          "time": "16:05:00_CANDLE",
+          "price": 182440
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_invariant": true,
+      "mixed_exit_barrier_ms": [],
+      "resolved": true
+    }
+  ]
+}

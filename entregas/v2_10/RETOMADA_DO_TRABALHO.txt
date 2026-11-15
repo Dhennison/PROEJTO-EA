@@ -1422,3 +1422,28 @@ em entregas/profit_marco_20261113. Proximo receberjanelasMarco. Meses
 fechadosabril5720/maio-780/junho3405/julho1100 eCedro intactos. Recalcular
 DDcronologico desdeMarco somenteapos resolverpendencias,sem reiniciar
 meses ou misturarseries/fontes indevidamente. Brutossemprepreservados.
+
+MARCO ENCERRADO APOS XLSX REPLAY — 14/11/2026
+Recebido Mês de Março.xlsx:4abas,212494negocios. Principal+350grade5,
+Work+3451,037332,diferenca-3101,037332.50operacoes:26TP/23SL/1CORTE,
+22pregoes.45determinadas emM1+4ambiguidades e1controlegrade porReplay.
+Cinco minutos completos iguaisOHLC/quantidade;8bordasparciais esperadas.
+Semlimite200001,sem deduplicacao. Doisdesempatesms mantem motivos/pontos;
+sem barreirasopostas nomesmo ms. Testes antirreprocessamento passaram.
+17marR61.8SL-450;19marS38.2SL-375,S61.8SL-650,R38.2SL-375,R61.8TP80.
+S61.8stop177480 as09:31:41.874,matematico177477,898 naoatingido eTP10:17.
+19marR61.8tarde TPgrade5,masSLmatematico porentrada/alvo arredondados.
+QuatroALVOWork->SL. Nao alterarparametros nem misturarcontrolesmatematicos.
+Tres saidasdiretas e2minutosM1 posteriores. CANDLEnao indica instanteexato.
+Nenhuma novacoleta. Mesnaoe fita integral nem certificacaofills/custos/fila.
+Estadoatual RESULTADO_FINAL.json ePROGRESSO_RESOLUCAO.json na pasta
+entregas/profit_marco_20261113. Originais eprovisorios preservados. Bruto
+SHA256identico em/workspace/dados_brutos_modelo_d/replay_profit/Marco_2026.xlsx;
+manifesto PRESERVACAO_BRUTO.json,brutonaopublicado. PDFdiario5paginas,tecnico,
+CSVscurva/operacoes/auditorias eMarco_Modelo_D_Resultado.zip salvos.
+DDdiarioM1+ReplaydesdeMARCO:teste2540,Work2373,011333,sem reiniciomensal;
+mesmosmaximos atejulho. Totalmarco-julho+9795. Curva ampliada,sem mudar
+abril+5720/maio-780/junho+3405/julho+1100;Cedroago/set/outintactoseparado.
+Julho10juldispensado,naopedir. Nao repetir mesesfechados. Ordemvigente:
+expandir ate limiteProfit,depois alvos/stops,depoisA/B/C. Sem novasvariantes.
+PublicacaoGitHub:confirmar pelo push;preparacao localnao comprova publicacao.

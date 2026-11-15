@@ -1,0 +1,34 @@
+MARÇO/2026 — MODELO D ENCERRADO
+Principal +350 pontos; Work +3451,037332; diferença -3101,037332.
+50 operações / 22 pregões. 45 determinadas em M1 + 4 ambiguidades e
+1 controle de grade conferidos por Replay. Parâmetros originais, WINJ26,
+grade5, um contrato/nível, toque inclusivo, corte18h, sem custos/fila/slippage.
+Não é mês integral por negócios nem certificação de preenchimento real.
+
+XLSX: quatro abas, 212494 negócios; cinco minutos completos iguais em
+OHLC/quantidade; oito bordas parciais esperadas. Sem limite200001 por aba.
+Linhas vazias/formatadas não contam como negócios. Sem deduplicação.
+Duas ordenações de empates ms mantêm motivo/pontos; sem barreiras opostas
+no mesmo ms. Regressões de máxima pré-entrada e barra incompleta passaram.
+17mar R61.8 SL -450: entrada10:21:37.660; saída minuto10:28 M1.
+19mar S38.2 SL -375: entrada09:03:59.887; saída minuto09:05 M1.
+19mar S61.8 SL -650: entrada minuto09:27 M1; stop177480 às09:31:41.874.
+19mar R38.2 SL -375: entrada16:01:35.544; saída16:02:19.359.
+19mar R61.8 TP +80: entrada16:02:12.608; saída16:02:13.342.
+CANDLE indica minuto, não instante exato da saída ou entrada.
+Quatro ALVO Work passam a SL. R61.8 da tarde confirma TP na grade5,
+mas controle matemático resulta SL: entrada181990 contra181993,842,
+alvo181910 contra181912,559667. Não misturar séries nem escolher parâmetros.
+S61.8 confirma stop normalizado177480; matemático177477,898 não tocado,
+controle conserva TP posterior10:17. Controles matemáticos são diagnósticos.
+Contexto02mar continua27fevM5 completo; referências originais preservadas.
+
+DD por fechamento diário em ordem março->abril->maio->junho->julho,
+sem reinício mensal. Série M1+Replay separada da série Cedro.
+Até 2026-03: DD teste 2540; Work 2373.011333.
+Até 2026-04: DD teste 2540; Work 2373.011333.
+Até 2026-05: DD teste 2540; Work 2373.011333.
+Até 2026-06: DD teste 2540; Work 2373.011333.
+Até 2026-07: DD teste 2540; Work 2373.011333.
+Abril+5720/Maio-780/Junho+3405/Julho+1100 e Cedro intactos.
+Nenhuma nova coleta necessária. Julho10jul dispensado, não solicitar novamente.

@@ -1,0 +1,14 @@
+﻿sheet;date;minute;records;quantity;csv_quantity;ohlc;csv_ohlc;ohlc_match;quantity_match;full_minute_from_bounds
+17-03;2026-03-17;10:20;401;1363;74479;[183015, 183040, 183010, 183030];[Decimal('182900'), Decimal('183055'), Decimal('182800'), Decimal('183030')];False;False;False
+17-03;2026-03-17;10:21;30575;88882;88882;[183030, 183255, 182960, 183185];[Decimal('183030'), Decimal('183255'), Decimal('182960'), Decimal('183185')];True;True;True
+17-03;2026-03-17;10:22;2209;6702;48457;[183190, 183225, 183165, 183205];[Decimal('183190'), Decimal('183270'), Decimal('183115'), Decimal('183205')];False;False;False
+19-03 1ª Janela;2026-03-19;09:02;795;1896;92681;[179715, 179775, 179715, 179740];[Decimal('179975'), Decimal('180160'), Decimal('179690'), Decimal('179740')];False;False;False
+19-03 1ª Janela;2026-03-19;09:03;46637;95688;95688;[179740, 179815, 179265, 179280];[Decimal('179740'), Decimal('179815'), Decimal('179265'), Decimal('179280')];True;True;True
+19-03 1ª Janela;2026-03-19;09:04;4774;9281;98807;[179280, 179315, 179230, 179245];[Decimal('179280'), Decimal('179430'), Decimal('179065'), Decimal('179105')];False;False;False
+19-03 2ª Janela;2026-03-19;09:30;879;1885;116134;[177800, 177855, 177795, 177840];[Decimal('177875'), Decimal('178140'), Decimal('177515'), Decimal('177840')];False;False;False
+19-03 2ª Janela;2026-03-19;09:31;31870;74190;74190;[177840, 177855, 177480, 177565];[Decimal('177840'), Decimal('177855'), Decimal('177480'), Decimal('177565')];True;True;True
+19-03 2ª Janela;2026-03-19;09:32;5661;12590;69678;[177560, 177805, 177550, 177755];[Decimal('177560'), Decimal('177915'), Decimal('177550'), Decimal('177745')];False;False;False
+19-03 3ª Janela;2026-03-19;16:00;597;2397;73752;[181390, 181400, 181370, 181385];[Decimal('181130'), Decimal('181400'), Decimal('181095'), Decimal('181385')];False;False;False
+19-03 3ª Janela;2026-03-19;16:01;30062;110178;110178;[181390, 181780, 181335, 181755];[Decimal('181390'), Decimal('181780'), Decimal('181335'), Decimal('181755')];True;True;True
+19-03 3ª Janela;2026-03-19;16:02;49886;160055;160055;[181755, 182360, 181720, 182300];[Decimal('181755'), Decimal('182360'), Decimal('181720'), Decimal('182300')];True;True;True
+19-03 3ª Janela;2026-03-19;16:03;8148;26189;127732;[182295, 182315, 182020, 182025];[Decimal('182295'), Decimal('182355'), Decimal('181920'), Decimal('182070')];False;False;False
