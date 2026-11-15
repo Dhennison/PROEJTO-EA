@@ -1,0 +1,100 @@
+{
+  "status": "DEZEMBRO_ENCERRADO_M1_REPLAY",
+  "workbook_sha256": "0f84103a6a0f1d42274f102236ab2145ba3818fb93032d270c8039d583a52721",
+  "ignored_sheets": [],
+  "records": 171239,
+  "pending_operation_count": 0,
+  "resolved_original_pending": 3,
+  "grade_controls": 0,
+  "operations": 40,
+  "test_points": "3135",
+  "work_points": "5211.102335",
+  "difference": "-2076.102335",
+  "unresolved_operations": [],
+  "method": "37resultados determinados nos candles M1 (7 antes ambiguos emM5)+3resolvidos por Replay;0pendentes;nao e mes integral tick a tick. Grade5,niveis,sem custos/fills.",
+  "gap_control": "Sem lacunas intradiarias M1.16dez primeiros negocios a09:03 conformeusuario/acervo;nao inventar negocios anteriores. Oito diferencasquantidade M1/M5 comOHLCiguais;05dez nao compensa -51968.",
+  "opening_16dec": {
+    "user_observation": "Mercado abriu somente a partir09:03",
+    "first_M1": "09:03",
+    "first_copied_trade": "09:03:10.147",
+    "open_price": 161250,
+    "minute_records": 72540,
+    "quantity": 220479,
+    "OHLC_quantity_match": true,
+    "no_earlier_businesses_requested": true
+  },
+  "grade_sensitive_replay_cases": [],
+  "final_operation_reasons": {
+    "SL": 9,
+    "TP": 31
+  },
+  "Work_flips": [
+    {
+      "Work": "ALVO",
+      "test": "SL",
+      "count": 6
+    },
+    {
+      "Work": "STOP",
+      "test": "TP",
+      "count": 2
+    }
+  ],
+  "chronological_stats": {
+    "2025-12": {
+      "test_points": "3135",
+      "work_points": "5211.102335",
+      "test_DD_accum": "560",
+      "work_DD_accum": "1286.936333"
+    },
+    "2026-01": {
+      "test_points": "-1620",
+      "work_points": "140.280331",
+      "test_DD_accum": "4375",
+      "work_DD_accum": "2605.831664"
+    },
+    "2026-02": {
+      "test_points": "-3545",
+      "work_points": "-664.311665",
+      "test_DD_accum": "8720",
+      "work_DD_accum": "4780.240329"
+    },
+    "2026-03": {
+      "test_points": "350",
+      "work_points": "3451.037332",
+      "test_DD_accum": "9365",
+      "work_DD_accum": "4780.240329"
+    },
+    "2026-04": {
+      "test_points": "5720",
+      "work_points": "6877.556998",
+      "test_DD_accum": "9365",
+      "work_DD_accum": "4780.240329"
+    },
+    "2026-05": {
+      "test_points": "-780",
+      "work_points": "2032.313668",
+      "test_DD_accum": "9365",
+      "work_DD_accum": "4780.240329"
+    },
+    "2026-06": {
+      "test_points": "3405",
+      "work_points": "7214.523331",
+      "test_DD_accum": "9365",
+      "work_DD_accum": "4780.240329"
+    },
+    "2026-07": {
+      "test_points": "1100",
+      "work_points": "5255.800668",
+      "test_DD_accum": "9365",
+      "work_DD_accum": "4780.240329"
+    }
+  },
+  "December2025_July2026_test": "7765",
+  "December2025_July2026_Work": "29518.302998",
+  "no_new_replay_requested": true,
+  "series": "M1_PLUS_TARGETED_REPLAY_SEPARATE_FROM_CEDRO",
+  "complete_matching_minutes": 3,
+  "partial_boundary_minutes": 5,
+  "previous_month_daily_points_unchanged": true
+}

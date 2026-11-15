@@ -1,3 +1,47 @@
+DEZEMBRO/2025 ENCERRADO APÓS XLSX REPLAY — 15/11/2026
+Principal D original: +3.135 pontos, grade5. Work+5.211,102335;
+diferença-2.076,102335.40operações:31TP/9SL,20pregões.
+37resultados determinadosM1+3resolvidosReplay;sem pendências ou nova coleta.
+M1+Replay pontual,não mês inteiro por negócios;sem custos/fila/fills garantidos.
+
+Mês de Dezembro.xlsx:3abas/171239negócios. Três minutos requeridos iguais em
+OHLC/quantidade;5bordasparciais esperadas. Semlimite200001,sem deduplicação.
+Doisdesempatesms mantêm motivos/pontos na grade econtroles matemáticos;
+sem barreirasopostas no mesmo ms. Testes máxima pré-entrada/incompleta passaram.
+01dezWINZ25S38.2SL-375;entrada10:15:30.198;saída minuto10:25 peloM1.
+11dezWINZ25S38.2SL-375;entrada09:06:54.733;saída minuto09:28 peloM1.
+16dezWINZ25S61.8TP+380;entrada09:03:14.988;saída09:03:15.793.
+CANDLE indica minuto,não instante exato. Matemáticos com mesmos motivos.
+01/11dezALVOWork->SL;16dezSTOPWork->TP. Comseteoperações determinadas
+pela passagemM5->M1,total6ALVO->SL e2STOP->TP. Não misturar controles comprincipal.
+
+OBSERVAÇÃO DO USUÁRIO16/12:ABERTURA A PARTIR09:03
+M1começa09:03;primeiro negócio da cópia09:03:10.147,a161250 igual àabertura.
+Minuto09:03 tem72540negócios/220479contratos;O161250/H161350/L160290/C160340,
+OHLC/quantidade exatos. Não exigir negócios anteriores nem criar barras09h.
+Usuárioobservação e conferência registrados emRESULTADO_FINAL.json.
+
+Referências ebrutos preservados:20ajustes/40conjuntos matemáticos iguaisWork;
+11269M1/2260M5,preçosagregados iguais. Oitodiferençasquantidade comOHLCiguais;
+05dez mantém-51968diário,ressalvaintacta,sem alegar compensação/fita perfeita.
+Contexto28novM5/M1conferido. XLSX e réplica SHA256idênticos preservados;
+manifestoPRESERVACAO_BRUTO.json. Provisórios eoriginais nãoapagados.
+Estadoatual em entregas/profit_dezembro_2025_20261115/RESULTADO_FINAL.json,
+PROGRESSO_RESOLUCAO.json eLEIA_RESULTADO_FINAL.txt. PDFs técnico/enxuto agora
+incluem diáriodezembro2025-julho2026,comparaçãoWorkversusteste;ZIP final salvo.
+
+DD diário emordemdez2025->jan2026->...->jul2026,semresetmensal:
+dezembroisolado560;atéjan4375;atéfev8720;até março-julho9365.
+DDWork atédez1286,936333;atéjan2605,831664;atéfev-jul4780,240329.
+Totaldez-jul+7765. Nenhum dia/mês anterioralterado:Jan-1620/Fev-3545/
+Mar+350/Abr+5720/Mai-780/Jun+3405/Jul+1100 intactos. CedroAgo-2375/Set+2855/
+Out+3830 eDD3620 intactos,separados. RecortesWorkAgo-2275/Set+1380àparte.
+Curvaatual CURVA_DEZEMBRO2025_JANEIRO_FEVEREIRO_MARCO_ABRIL_MAIO_JUNHO_JULHO_M1_REPLAY.csv.
+Controle10/07dispensado permaneceencerrado. Próximaexpansão:novembro2025,
+conformeplano aprovado. Secontrato indisponível,tentar negóciosWINFUT comms,
+correspondência depreços/ajustes,semcompra;depois expansãoestudaralvos/stops,
+posteriormenteABC. Nenhuma variante oumodelo novo executado nestaetapa.
+
 DEZEMBRO/2025 ANALISADO — 15/11/2026 — AGUARDANDO REPLAY
 40operações/20pregões,37determinadasM1 e3pendentes. Work+5211,102335;
 nosso principalPENDENTE;nenhumfechamento ouDDdezembro. Nenhumcontrolegradeextra.

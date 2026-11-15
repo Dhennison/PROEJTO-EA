@@ -1,0 +1,66 @@
+DEZEMBRO/2025 — MODELO D ENCERRADO
+Principal +3135 pontos. Work +5211,102335. Diferença -2076,102335.
+40operações/20pregões;37determinadasM1+3resolvidas porReplay.
+ParâmetrosD originais,grade5,um contrato/nível,toque inclusivo,corte18h;
+pontos nos níveis,sem custos/fila/slippage ou fills garantidos.
+M1+Replay pontual,não mês integral por negócios.
+
+REPLAY CONCLUÍDO
+Mês de Dezembro.xlsx:3abas,171239negócios. Trêsminutos requeridos
+conferem emOHLC/quantidade;5bordasparciais esperadas. Sem limite200001,
+sem deduplicação. Dois desempatesms mantêm motivos/pontos nas grades e
+controlesmatemáticos;sem barreiras opostas nomesmo ms. Regressões
+máxima pré-entrada e barra incompleta passaram. Todos os três WINZ25.
+01/12 S38.2 SL-375;entrada10:15:30.198;saída minuto10:25 peloM1.
+11/12 S38.2 SL-375;entrada09:06:54.733;saída minuto09:28 peloM1.
+16/12 S61.8 TP+380;entrada09:03:14.988;saída09:03:15.793.
+CANDLE indica minuto,não instante exato. Matemáticos com mesmos motivos
+nos3casos.01/11dez passamALVOWork->SL;16dez passaSTOPWork->TP.
+Com mudanças jádeterminadas noM1:total6ALVO->SL e2STOP->TP.
+Seteoperações antes ambíguasM5 foramdeterminadas porM1;resultados
+individuais/evidências preservados. Nenhum controleextra pendente.
+
+ABERTURA16/12 INFORMADA PELO USUÁRIO E CONFERIDA
+Usuário observou abertura somente a partir09:03. AcervoM1 inicia09:03.
+Primeiro negócio da cópia09:03:10.147,a161250,igual àaberturaM1.
+09:03 tem72540negócios/220479contratos;O161250,H161350,L160290,C160340,
+quantidade eOHLC exatos àreferência. Não exigir segundos anteriores sem
+negócios,nem inventar registros entre09:00 e09:03. Essaobservação fica
+registrada;completude do minuto aferida pelos dados,não sópela anotação.
+
+RESSALVAS E REFERÊNCIAS PRESERVADAS
+11269M1MT5/2260M5Work:preços dosgrupos iguais,sem lacunasM1 internas.
+Oitodiferençasquantidade M1-M5,preçosiguais,originais preservados:
+05dez12:50-51968/15:35+2850/17:40-2850;12dez10:40+622/13:50-622;
+17dez16:35+750/17:00-500/18:05-250.05dez mantém-51968 no dia.
+Não declarar compensação integral,causa comprovada ou fita perfeita.
+Contexto01dez:28novcompleto113M5/565M1conferidos;20ajustes presentes,
+40conjuntos matemáticos iguaisWork,tolerância0,00001. Rolagem17dez
+mantém convenção Work. Brutos/referências/análiseinicial preservados.
+XLSX e réplica SHA256idênticos emdados_brutos_modelo_d/replay_profit/
+Dezembro_2025.xlsx;manifestoPRESERVACAO_BRUTO.json,bruto não publicado.
+
+CONTINUIDADE
+Janeiro-1620/Fevereiro-3545/Março+350/Abril+5720/Maio-780/Junho+3405/
+Julho+1100 intactos. CedroAgo-2375/Set+2855/Out+3830 eDD3620 intactos,
+separados. ComparáveisWorkAgo-2275/Set+1380 àparte dos mesescompletos.
+PDFs técnico/enxuto correntes cobremdezembro2025-julho2026,com diário
+Work versus teste. Originais de meses/curvas/PDFs anteriores preservados.
+Controle10/07 dispensado permaneceencerrado. Nenhuma coleta adicional
+necessária para dezembro. Próxima expansão cronológica:novembro2025,
+conformeplano aprovado;se contrato indisponível,tentar negóciosWINFUT
+comms ecorrespondência depreços/ajustes. Semcompra. Após expansão,
+alvos/stops pornível;posteriormenteABC. Variantes podemexigir novasjanelas.
+
+DD POR FECHAMENTOS DIÁRIOS DEZEMBRO2025->JANEIRO2026->...->JULHO2026
+Sem reinício mensal;nenhum resultado diário oumensal anterior alterado.
+Até 2025-12: DD teste 560; Work 1286.936333.
+Até 2026-01: DD teste 4375; Work 2605.831664.
+Até 2026-02: DD teste 8720; Work 4780.240329.
+Até 2026-03: DD teste 9365; Work 4780.240329.
+Até 2026-04: DD teste 9365; Work 4780.240329.
+Até 2026-05: DD teste 9365; Work 4780.240329.
+Até 2026-06: DD teste 9365; Work 4780.240329.
+Até 2026-07: DD teste 9365; Work 4780.240329.
+
+Total dezembro2025-julho2026:teste7765. Meses anteriores preservados. SérieCedro separada.
