@@ -1,3 +1,25 @@
+FEVEREIRO — RECEBIMENTO01 PARCIAL — 14/11/2026 — ESTADO MAIS RECENTE
+Mês de Fevereiro.xlsx:3abas/152719negócios. 11/02 WING26R61.8 SL-450 e
+24/02 WINJ26R38.2 SL-375 resolvidos; OHLC/quantidade dos2minutos completos
+conferem. Controles matemáticos SL, dois desempatesms mantêm resultados.
+36determinadasM1+2Replay+1pendente. Não repetir11/02 ou24/02.
+27/02 WINJ26S38.2 permanecePENDENTE:aba começa09:01:00.286,preço194015,
+aberturaM1 193930;quantidade131722 versus133520,diferença1798. H/L/Ciguais
+não excluem entrada/alvo no começo ausente;grupo do primeiroms pode estar
+parcial. Resultado no trecho recebido écondicional,não fechamento.
+Pedir SOMENTE complemento27/02 WINJ26 09:00:58.000–09:01:01.000(fimexclusivo).
+Preservar ordem/ms/negóciosidênticos;comparar sobreposição e substituir prefixo
+por corte temporal,sem deduplicação. Não repetirminutointeiro nem outrosdias.
+Principal eDDfevereiroPENDENTES;Work-664,311665preservado. Nenhuma soma parcial
+publicada como mês. Curvas/PDFs anteriores e todosmesesfechados intactos.
+Raworiginal+réplicaSHA256idêntica emdados_brutos_modelo_d/replay_profit,
+manifestoPRESERVACAO_BRUTO_RECEBIMENTO01.json na pasta fevereiro.
+EstadoatualPROGRESSO_RESOLUCAO.json,LEIA_RESULTADO_PARCIAL.txt e
+COLETA_COMPLEMENTAR_PENDENTE.csv em entregas/profit_fevereiro_20261114.
+Análise inicial/lista3minutos preservadas comohistórico;pendênciaagora é
+apenas prefixo27/02. Plano aprovado,WINFUTfuturo,semcompra,alvos/stopsdepois
+expansão eABCdepois continuam. Controle10/07não reabrir.
+
 SEQUÊNCIA VIGENTE APROVADA — 14/11/2026
 Esta seção substitui as ordens anteriores preservadas no histórico abaixo.
 

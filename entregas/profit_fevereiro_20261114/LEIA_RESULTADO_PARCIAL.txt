@@ -1,0 +1,48 @@
+FEVEREIRO/2026 — RECEBIMENTO01 PARCIAL — FALTA INÍCIO DE27/02
+Nosso resultado principal: PENDENTE. Não existe fechamento mensal nem DD do
+teste para fevereiro. Não somar subtotal de operações determinadas.
+Work original -664,311665 preservado.
+
+Arquivo Mês de Fevereiro.xlsx: três abas, 152719 negócios preservados sem
+remover duplicatas. Sem limite200001 por aba. Cópia original e réplica
+SHA256 idêntica preservadas; manifesto PRESERVACAO_BRUTO_RECEBIMENTO01.json.
+
+RESOLVIDOS — NÃO REPETIR COLETA
+11/02 WING26 R61.8: SL -450. Entrada09:02:31.309; saída no minuto09:04 peloM1.
+Confirma STOP Work. Minuto09:02 completo, OHLC/quantidade iguais aoM1.
+24/02 WINJ26 R38.2: SL -375. Entrada09:06:11.210; saída no minuto09:11 peloM1.
+ALVO Work passa aSTOP. Minuto09:06 completo, OHLC/quantidade iguais aoM1.
+Controles matemáticos dãoSL nos dois casos. Dois desempates de milissegundo
+mantêm motivo/pontos; sem barreiras opostas no mesmo ms. Regressões contra
+reprocessar máxima pré-entrada e aceitar barra de entrada incompleta passaram.
+Saídas CANDLE indicam apenas minuto, não instante exato de negócio.
+Estado:36resultados determinadosM1 +2resolvidosReplay +1pendente.
+
+ÚNICA PENDÊNCIA
+27/02 WINJ26 S38.2. A aba começa09:01:00.286, a194015; a abertura do
+candle09:01 é193930. Quantidade observada131722 versus referência133520;
+diferença1798. Máxima194055/mínima193200/fechamento193265 conferem.
+Essas igualdades não reconstituem a trajetória nem excluem entrada/saída
+no prefixo ausente. O primeiro grupo09:01:00.286 também pode estar cortado.
+O trecho observado, isoladamente, sugereSL, mas esse cálculo éCONDICIONAL
+e não foi incorporado a resultado/fechamento. Primary noJSON está explicitamente
+marcado resolved=false/conditional_only=true para essa operação.
+
+ENVIAR APENAS COMPLEMENTO CURTO
+27/02/2026 WINJ26:09:00:58.000 até09:01:01.000 (fimexclusivo), sem saltar,
+filtrar ou deduplicar negócios; preservar milissegundos e ordem original.
+É necessário o começo de09:01 e a sobreposição até o segundo01 para conferir
+a emenda. Não repetir11/02,24/02 nem o minuto inteiro de27/02.
+Ao receber, comparar a sobreposição registro por registro, inclusive negócios
+idênticos, e substituir o prefixo por um corte temporal explícito. Não unir
+arquivos por deduplicação. Só classificar depois de recompor e conferir
+OHLC/quantidade133520 do minuto09:01 e desempates de milissegundo.
+
+PRESERVAÇÃO
+Março+350/Abril+5720/Maio-780/Junho+3405/Julho+1100 eCedroAgo-2375/Set+2855/
+Out+3830 intactos. Curvas deDD/PDFs fechados não regravados. Fevereiro não
+entrou noDD. Após resolver, ampliar DD cronológico por série, sem reinício
+mensal, e preparar os dois PDFs finais com diárioWork versus nosso teste.
+M1+Replay pontual não é mês inteiro por negócios nem prova de fills reais.
+Parâmetros originais/grade5/toque/1contrato/corte18h preservados.
+Controle10/07 dispensado permanece encerrado. Plano vigente sem mudança.
