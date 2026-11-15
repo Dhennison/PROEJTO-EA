@@ -1,6 +1,6 @@
 {
-  "status": "FEVEREIRO_AGUARDANDO_REPLAY",
-  "workbook_sha256": "aec8292df186d666ebd7fc16b615c08dd7f182533fe7366ea3c8029a468c247e",
+  "status": "FEVEREIRO_ENCERRADO_M1_REPLAY",
+  "workbook_sha256": "c80c3516a5ac2dc6c92fed86f9eb7679b5c84885f02b767ce0714d36a2cc911b",
   "sheets": [
     {
       "sheet": "11-02",
@@ -21,28 +21,23 @@
     {
       "sheet": "27-02",
       "date": "2026-02-27",
-      "records": 66698,
-      "start": "09:01:00.286",
-      "end": "09:02:04.987",
+      "records": 89162,
+      "start": "09:00:53.413",
+      "end": "09:02:16.152",
       "at_observed_limit": false
     }
   ],
   "ignored_sheets": [],
-  "records": 152719,
-  "pending_operation_count": 1,
-  "resolved_original_pending": 2,
+  "records": 175183,
+  "pending_operation_count": 0,
+  "resolved_original_pending": 3,
   "grade_controls": 0,
   "operations": 39,
-  "test_points": null,
+  "test_points": "-3545",
   "work_points": "-664.311665",
-  "difference": null,
-  "unresolved_operations": [
-    [
-      "2026-02-27",
-      "S38.2"
-    ]
-  ],
-  "method": "36resultados determinados nos candles M1 (5 antes ambiguos emM5)+2resolvidos por Replay;1pendentes;nao e mes integral tick a tick. Grade5,niveis,sem custos/fills.",
+  "difference": "-2880.688335",
+  "unresolved_operations": [],
+  "method": "36resultados determinados nos candles M1 (5 antes ambiguos emM5)+3resolvidos por Replay;0pendentes;nao e mes integral tick a tick. Grade5,niveis,sem custos/fills.",
   "gap_control": "Sem lacunas intradiarias nos M1 fornecidos.",
   "results": [
     {
@@ -196,7 +191,7 @@
           "time": "09:01:38.671",
           "price": 193330,
           "quantity": 2,
-          "source_row": 22962
+          "source_row": 31205
         },
         "exit": {
           "time": "09:03:00_CANDLE",
@@ -211,7 +206,7 @@
           "time": "09:01:38.671",
           "price": 193260,
           "quantity": 1,
-          "source_row": 22115
+          "source_row": 30358
         },
         "exit": {
           "time": "09:03:00_CANDLE",
@@ -226,7 +221,7 @@
           "time": "09:01:38.671",
           "price": 193325,
           "quantity": 2,
-          "source_row": 22911
+          "source_row": 31154
         },
         "exit": {
           "time": "09:03:00_CANDLE",
@@ -236,27 +231,21 @@
       },
       "tie_invariant": true,
       "mixed_exit_barrier_ms": [],
-      "entry_minute_coverage_ok": false,
+      "entry_minute_coverage_ok": true,
       "entry_minute_check": {
         "sheet": "27-02",
         "date": "2026-02-27",
         "minute": "09:01",
-        "records": 63748,
-        "quantity": 131722,
+        "records": 64722,
+        "quantity": 133520,
         "csv_quantity": 133520,
-        "ohlc": "[194015, 194055, 193200, 193265]",
+        "ohlc": "[193930, 194055, 193200, 193265]",
         "csv_ohlc": "[Decimal('193930.0000000000000000'), Decimal('194055.0000000000000000'), Decimal('193200.0000000000000000'), Decimal('193265.0000000000000000')]",
-        "ohlc_match": false,
-        "quantity_match": false,
-        "full_minute_from_bounds": false
+        "ohlc_match": true,
+        "quantity_match": true,
+        "full_minute_from_bounds": true
       },
-      "resolved": false,
-      "reason": "INCOMPLETE_REPLAY_ENTRY_MINUTE",
-      "conditional_only": true,
-      "missing_quantity": 1798,
-      "observed_start": "09:01:00.286",
-      "required_minute": "09:01",
-      "limitation": "Observed-copy outcome cannot certify absence of an earlier entry/exit in missing prefix."
+      "resolved": true
     }
   ]
 }

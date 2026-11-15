@@ -1,0 +1,59 @@
+FEVEREIRO/2026 — MODELO D ENCERRADO
+Principal: -3545 pontos. Work: -664,311665. Diferença: -2880,688335.
+39 operações, 18 pregões. Parâmetros originais, grade5, um contrato por nível,
+toque inclusivo, corte18h. Pontos nos níveis, sem custos/fila/slippage.
+M1 + Replay pontual; não é mês inteiro de negócios nem certificação de fills.
+36 resultados determinados emM1 +3ambiguidades resolvidas porReplay.
+
+ACERVO E GRANULARIDADE
+M5ProfitWork:1986barras;M1MT5WIN$N:9930barras. OHLC/quantidade exatos nos
+1986grupos completos;contexto30/01:113M5 contra565M1 também exato.
+18ajustes Work presentes e39conjuntos matemáticos iguais,tolerância0,00001.
+Oito operações ambíguas emM5;cinco determinadas peloM1:13fevS38.2SL,
+19fevR38.2SL,20fevS38.2SL,25fevR38.2TP,27fevS50SL. As três primeiras
+mudam ALVO Work paraSL por granularidade,também nos níveis matemáticos.
+Dados e evidências por operação preservados,sem inventar trajetória de candles.
+
+REPLAY CONCLUÍDO
+Recebimento02:trêsabas,175183negócios. Trêsminutos completos conferem em
+OHLC/quantidade;seisbordas parciais esperadas. Sem limite200001 poraba.
+11/02 WING26 R61.8:SL-450,entrada09:02:31.309,saída minuto09:04 peloM1.
+24/02 WINJ26 R38.2:SL-375,entrada09:06:11.210,saída minuto09:11 peloM1.
+27/02 WINJ26 S38.2:SL-375,entrada09:01:38.671,saída minuto09:03 peloM1.
+CANDLE indica minuto,não instante exato do negócio. Controles matemáticosSL
+nos3casos. Dois desempatesms mantêm motivos/pontos;sem barreiras opostas
+no mesmo ms. Regressões de máxima pré-entrada e barra incompleta passaram.
+11fev/27fev confirmamSTOPWork;24fev mudaALVOWork paraSL. Total4ALVOWork->SL,
+três resolvidos porM1 e um porReplay. Nenhum controle extra de grade necessário.
+
+COMPLEMENTO DE27/02 CONFERIDO
+Novaaba cobre09:00:53.413–09:02:16.152. Minuto09:01 temquantidade133520,
+O193930/H194055/L193200/C193265,iguais à referênciaM1.
+A cópia antiga de66698negócios é um bloco contíguo exatamente igual na nova,
+com multiplicidade/ordem/linhas idênticas preservadas. Não houve deduplicação
+nem necessidade de emenda sintética. Usado fluxo novo completo de27/02.
+Abas11fev/24fev inteiramente idênticas;resultados/timestamps anteriores
+preservados. Auditoria emAUDITORIA_RECEBIMENTO02_SOBREPOSICAO.json.
+Recebimento01 parcial e seus derivados guardados emrecebimento01_parcial.
+DoisXLSX brutos preservados comSHA256;manifestos separados,brutos não publicados.
+A antiga COLETA_COMPLEMENTAR_PENDENTE.csv é histórica e está atendida.
+Nenhuma coleta adicional necessária para fechar fevereiro.
+
+DRAWDOWN POR FECHAMENTO DIÁRIO, SEM REINÍCIO MENSAL
+SérieM1+Replay emordemfevereiro->março->abril->maio->junho->julho.
+Até 2026-02: DD teste 5360; Work 3195.228666.
+Até 2026-03: DD teste 6005; Work 3195.228666.
+Até 2026-04: DD teste 6005; Work 3195.228666.
+Até 2026-05: DD teste 6005; Work 3195.228666.
+Até 2026-06: DD teste 6005; Work 3195.228666.
+Até 2026-07: DD teste 6005; Work 3195.228666.
+Total fevereiro-julho:teste6250;curva ampliada sem alterar nenhum dia/mês fechado.
+Março+350/Abril+5720/Maio-780/Junho+3405/Julho+1100 intactos.
+CedroAgo-2375/Set+2855/Out+3830 eDD3620 intactos,separados eidentificados.
+ComparáveisWorkAgo-2275/Set+1380 preservados àparte dos mesescompletos.
+DoisPDFs correntes técnico/enxuto cobremfevereiro-julho comdiárioWork versus
+nosso teste. CompiladosCedro anteriores preservados. Controle10/07dispensado,
+não reabrir. Próxima expansão cronológica:janeiro,seguindo plano aprovado.
+Quando contratos anteriores indisponíveis,tentar negóciosWINFUT comms e
+correspondência de preços/ajustes;sem compra. Só depois daexpansão estudar
+alvos/stops pornível;depoisA/B/C. Novasvariantes podem exigir outrasjanelas.

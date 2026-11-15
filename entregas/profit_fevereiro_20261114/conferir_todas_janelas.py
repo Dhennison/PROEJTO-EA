@@ -6,7 +6,7 @@ import openpyxl
 OUT=Path(__file__).parent;ROOT=OUT.parents[1]
 sys.path.insert(0,str(ROOT/'entregas/fechamento_agosto_v1_11/analise'))
 from motor_precos import levels
-XLS=Path(sys.argv[1]) if len(sys.argv)>1 else Path('/workspace/dados_brutos_modelo_d/replay_profit/Fevereiro_2026_Recebimento01.xlsx')
+XLS=Path(sys.argv[1]) if len(sys.argv)>1 else Path('/workspace/dados_brutos_modelo_d/replay_profit/Fevereiro_2026_Recebimento02.xlsx')
 
 def read(n):
  with (OUT/n).open(encoding='utf-8-sig') as f:return list(csv.DictReader(f,delimiter=';'))

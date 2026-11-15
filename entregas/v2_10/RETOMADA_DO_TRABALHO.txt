@@ -1,3 +1,48 @@
+FEVEREIRO ENCERRADO — RECEBIMENTO02 COMPLETO — 14/11/2026
+Principal Modelo D original: -3.545 pontos, grade5. Work -664,311665;
+diferença -2.880,688335. 39 operações:19TP/20SL,18pregões.
+36 resultados determinados emM1 e3resolvidos porReplay. M1+Replay pontual,
+não mês inteiro por negócios,sem custos/fila/slippage ou fills certificados.
+
+Novo Mês de Fevereiro.xlsx:3abas/175183negócios,sem limite200001 poraba.
+27/02 agora cobre09:00:53.413–09:02:16.152;minuto09:01 com64722negócios,
+quantidade133520,O193930/H194055/L193200/C193265 iguais aoM1.
+Abas11/02 e24/02 idênticas aoRecebimento01. Todos66698negócios da abaantiga
+27/02 são um bloco contíguo exatamente igual na nova,sem deduplicação ou
+emenda sintética. Sobreposição e dois brutos preservados comSHA256.
+Três minutos requeridos conferem emOHLC/quantidade;6bordasparciais esperadas.
+Dois desempatesms mantêm motivos/pontos,sem barreirasopostas nomesmo ms.
+Testes de máxima pré-entrada e entrada incompleta passaram.
+
+11/02 WING26R61.8SL-450,entrada09:02:31.309,saída minuto09:04M1.
+24/02 WINJ26R38.2SL-375,entrada09:06:11.210,saída minuto09:11M1.
+27/02 WINJ26S38.2SL-375,entrada09:01:38.671,saída minuto09:03M1.
+CANDLE indica minuto,não instante exato. Controles matemáticosSL nos3casos.
+11/02 e27/02 confirmamSTOPWork;24/02 passaALVO->SL. Somadas às três
+mudanças já determinadas porM1,quatroALVO Work passamSL. As cinco dúvidas
+M5 resolvidas porM1 e respectivas evidências continuam preservadas.
+Pendência do prefixo27/02 resolvida;COLETA_COMPLEMENTAR_PENDENTE.csv e
+documentosparciais são históricos. Nenhuma nova coleta necessária parafev.
+
+DD diário recalculado em ordemfevereiro->março->abril->maio->junho->julho,
+sem reiniciar mensalmente. Atéfev:teste5360,Work3195,228666. Desdemarço até
+julho:teste6005,Work3195,228666. Totalfev-julho+6250. NovoDD não altera
+nenhum resultado diário/mensal anterior:março+350/abril+5720/maio-780/
+junho+3405/julho+1100 intactos. Curva corrente desdefev em
+CURVA_FEVEREIRO_MARCO_ABRIL_MAIO_JUNHO_JULHO_M1_REPLAY.csv.
+Cedroagosto-2375/setembro+2855/outubro+3830 eDD3620 intactos,separados.
+RecortesWorkAgo-2275/Set+1380 preservados àparte. Não misturar fontes semrótulo.
+
+Estado atual em entregas/profit_fevereiro_20261114/RESULTADO_FINAL.json e
+PROGRESSO_RESOLUCAO.json. Recebimento01 emrecebimento01_parcial;análiseinicial
+ebrutosintactos. PDFs correntes técnico/enxuto incluem diáriofev-julho,
+comparaçãoWorkversusteste,principal efontes explícitos;ZIP finalgerado.
+Retomada eplano atualizados. Próxima expansão:janeiro,conforme sequência
+aprovada. Se contratosanteriores indisponíveis,tentar negóciosWINFUT comms,
+correspondência depreços eajustes;semcompra. Só após expansão,alvos/stops;
+posteriormenteA/B/C. Não iniciados estudos devariantes nestaetapa.
+Controle adicional10/07 dispensado permaneceencerrado;nadareabrir.
+
 FEVEREIRO — RECEBIMENTO01 PARCIAL — 14/11/2026 — ESTADO MAIS RECENTE
 Mês de Fevereiro.xlsx:3abas/152719negócios. 11/02 WING26R61.8 SL-450 e
 24/02 WINJ26R38.2 SL-375 resolvidos; OHLC/quantidade dos2minutos completos

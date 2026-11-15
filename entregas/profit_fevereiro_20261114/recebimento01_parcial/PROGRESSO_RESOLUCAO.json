@@ -1,0 +1,32 @@
+{
+  "status": "FEVEREIRO_PARCIAL_FALTA_INICIO_27FEV",
+  "operations": 39,
+  "determined_M1": 36,
+  "resolved_Replay": 2,
+  "pending": 1,
+  "principal": null,
+  "work_points": "-664.311665",
+  "difference": null,
+  "missing": {
+    "date": "2026-02-27",
+    "contract": "WINJ26",
+    "level": "S38.2",
+    "interval_start_inclusive": "09:01:00.000",
+    "first_observed": "09:01:00.286",
+    "same_millisecond_prefix_may_also_be_partial": true,
+    "quantity_observed": 131722,
+    "quantity_reference": 133520,
+    "quantity_shortfall": 1798,
+    "requested_capture_start": "09:00:58.000",
+    "requested_capture_end_exclusive": "09:01:01.000",
+    "purpose": "Repair beginning and full boundary timestamp group, verify overlap against existing copy without deduplication."
+  },
+  "do_not_repeat": [
+    "11/02 R61.8",
+    "24/02 R38.2",
+    "27/02 after09:01:01"
+  ],
+  "DD_expansion": "WAIT_UNTIL_FEBRUARY_CLOSED",
+  "previous_months": "UNCHANGED",
+  "raw_sha256": "aec8292df186d666ebd7fc16b615c08dd7f182533fe7366ea3c8029a468c247e"
+}

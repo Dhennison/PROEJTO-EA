@@ -1,32 +1,74 @@
 {
-  "status": "FEVEREIRO_PARCIAL_FALTA_INICIO_27FEV",
+  "status": "FEVEREIRO_ENCERRADO_M1_REPLAY",
+  "workbook_sha256": "c80c3516a5ac2dc6c92fed86f9eb7679b5c84885f02b767ce0714d36a2cc911b",
+  "ignored_sheets": [],
+  "records": 175183,
+  "pending_operation_count": 0,
+  "resolved_original_pending": 3,
+  "grade_controls": 0,
   "operations": 39,
-  "determined_M1": 36,
-  "resolved_Replay": 2,
-  "pending": 1,
-  "principal": null,
+  "test_points": "-3545",
   "work_points": "-664.311665",
-  "difference": null,
-  "missing": {
-    "date": "2026-02-27",
-    "contract": "WINJ26",
-    "level": "S38.2",
-    "interval_start_inclusive": "09:01:00.000",
-    "first_observed": "09:01:00.286",
-    "same_millisecond_prefix_may_also_be_partial": true,
-    "quantity_observed": 131722,
-    "quantity_reference": 133520,
-    "quantity_shortfall": 1798,
-    "requested_capture_start": "09:00:58.000",
-    "requested_capture_end_exclusive": "09:01:01.000",
-    "purpose": "Repair beginning and full boundary timestamp group, verify overlap against existing copy without deduplication."
+  "difference": "-2880.688335",
+  "unresolved_operations": [],
+  "method": "36resultados determinados nos candles M1 (5 antes ambiguos emM5)+3resolvidos por Replay;0pendentes;nao e mes integral tick a tick. Grade5,niveis,sem custos/fills.",
+  "gap_control": "Sem lacunas intradiarias nos M1 fornecidos.",
+  "final_operation_reasons": {
+    "TP": 19,
+    "SL": 20
   },
-  "do_not_repeat": [
-    "11/02 R61.8",
-    "24/02 R38.2",
-    "27/02 after09:01:01"
+  "Work_flips": [
+    {
+      "Work": "ALVO",
+      "test": "SL",
+      "count": 4
+    }
   ],
-  "DD_expansion": "WAIT_UNTIL_FEBRUARY_CLOSED",
-  "previous_months": "UNCHANGED",
-  "raw_sha256": "aec8292df186d666ebd7fc16b615c08dd7f182533fe7366ea3c8029a468c247e"
+  "chronological_stats": {
+    "2026-02": {
+      "test_points": "-3545",
+      "work_points": "-664.311665",
+      "test_DD_accum": "5360",
+      "work_DD_accum": "3195.228666"
+    },
+    "2026-03": {
+      "test_points": "350",
+      "work_points": "3451.037332",
+      "test_DD_accum": "6005",
+      "work_DD_accum": "3195.228666"
+    },
+    "2026-04": {
+      "test_points": "5720",
+      "work_points": "6877.556998",
+      "test_DD_accum": "6005",
+      "work_DD_accum": "3195.228666"
+    },
+    "2026-05": {
+      "test_points": "-780",
+      "work_points": "2032.313668",
+      "test_DD_accum": "6005",
+      "work_DD_accum": "3195.228666"
+    },
+    "2026-06": {
+      "test_points": "3405",
+      "work_points": "7214.523331",
+      "test_DD_accum": "6005",
+      "work_DD_accum": "3195.228666"
+    },
+    "2026-07": {
+      "test_points": "1100",
+      "work_points": "5255.800668",
+      "test_DD_accum": "6005",
+      "work_DD_accum": "3195.228666"
+    }
+  },
+  "February_July_test": "6250",
+  "February_July_Work": "24166.920332",
+  "no_new_replay_requested": true,
+  "series": "M1_PLUS_TARGETED_REPLAY_SEPARATE_FROM_CEDRO",
+  "complete_matching_minutes": 3,
+  "partial_boundary_minutes": 6,
+  "previous_month_daily_points_unchanged": true,
+  "receipt01_preserved": "recebimento01_parcial",
+  "receipt02_overlap_audit": "AUDITORIA_RECEBIMENTO02_SOBREPOSICAO.json"
 }
