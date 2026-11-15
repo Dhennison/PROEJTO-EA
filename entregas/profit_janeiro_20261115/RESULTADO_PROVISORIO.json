@@ -1,0 +1,217 @@
+{
+  "status": "JANEIRO_ANALISADO_AGUARDANDO_REPLAY",
+  "days": 21,
+  "operations": 48,
+  "determined": 44,
+  "pending": 4,
+  "grade_controls": 0,
+  "work_points": "140.280331",
+  "work_operations": 48,
+  "mathematical_differences": [],
+  "work_missing": [],
+  "work_extra": [],
+  "M1_January_bars": 11837,
+  "M5_January_bars": 2373,
+  "M5_buckets_checked": 2486,
+  "M5_OHLC_mismatches": [],
+  "M5_quantity_mismatches": [
+    {
+      "date": "2026-01-07",
+      "minute": "15:50",
+      "M1_count": 5,
+      "OHLC_match": true,
+      "quantity_M1": 93037,
+      "quantity_M5": 92837,
+      "quantity_difference": 200,
+      "quantity_match": false
+    },
+    {
+      "date": "2026-01-07",
+      "minute": "16:20",
+      "M1_count": 5,
+      "OHLC_match": true,
+      "quantity_M1": 52514,
+      "quantity_M5": 52714,
+      "quantity_difference": -200,
+      "quantity_match": false
+    },
+    {
+      "date": "2026-01-26",
+      "minute": "17:30",
+      "M1_count": 5,
+      "OHLC_match": true,
+      "quantity_M1": 167318,
+      "quantity_M5": 166868,
+      "quantity_difference": 450,
+      "quantity_match": false
+    },
+    {
+      "date": "2026-01-26",
+      "minute": "18:00",
+      "M1_count": 5,
+      "OHLC_match": true,
+      "quantity_M1": 81528,
+      "quantity_M5": 81978,
+      "quantity_difference": -450,
+      "quantity_match": false
+    },
+    {
+      "date": "2026-01-29",
+      "minute": "13:20",
+      "M1_count": 5,
+      "OHLC_match": true,
+      "quantity_M1": 235306,
+      "quantity_M5": 232090,
+      "quantity_difference": 3216,
+      "quantity_match": false
+    },
+    {
+      "date": "2026-01-29",
+      "minute": "15:25",
+      "M1_count": 5,
+      "OHLC_match": true,
+      "quantity_M1": 93052,
+      "quantity_M5": 96268,
+      "quantity_difference": -3216,
+      "quantity_match": false
+    }
+  ],
+  "intraday_M1_gaps": [
+    {
+      "date": "2026-01-22",
+      "before": "2026-01-22 12:40:00",
+      "after": "2026-01-22 12:42:00"
+    },
+    {
+      "date": "2026-01-26",
+      "before": "2026-01-26 11:30:00",
+      "after": "2026-01-26 11:33:00"
+    },
+    {
+      "date": "2026-01-26",
+      "before": "2026-01-26 11:33:00",
+      "after": "2026-01-26 11:35:00"
+    }
+  ],
+  "M5_pending": 10,
+  "resolved_by_granularity": 6,
+  "raw_hashes": {
+    "EXPORT110_1794243035_5791.zip": "0e4a1cf44e37c4409ea856e8a52f754669819c338b080346ec643fdfbcbb7093",
+    "M1_202601.csv": "257cf66da25426f28f940324253de2c2ee0ee40e8cab0f4e484dffc07164387d",
+    "Work_M5_2026.csv": "92c7534706b548653635abc97ae242841d2a22e285b8fa1c3ceeec0e7b010922",
+    "Work_M5_2025.csv": "103c1404e6e5aa3085e426e20f0273c51dcc21b7a8c899776da23318e5cb4e63",
+    "M1_202512.csv": "acb58a7506ae9e4821f59c83cfad4835f1172fb37bc6148b32ae1ac03ebe73e7"
+  },
+  "first_day_context": {
+    "date": "2026-01-02",
+    "previous": "2025-12-30",
+    "previous_source": "WORK_M5_FULL_CROSSCHECK_M1",
+    "previous_first": "2025-12-30 09:00:00",
+    "previous_last": "2025-12-30 18:20:00",
+    "previous_bars": 113,
+    "open": "163970.00",
+    "high_prev": "164795",
+    "low_prev": "163070",
+    "close_prev": "163770",
+    "adjustment": "163930",
+    "contrato_Replay": "WING26",
+    "contract_status": "CALENDARIO_E_CONVENCAO_WORK;CONFERIR_PRECOS_NA_COPIA"
+  },
+  "principal": "AGUARDANDO_REPLAY;nao somar subtotais nem inserir janeiro no DD",
+  "source": "M1 nativo MT5 WIN$N;referencia Work Profit M5;ajustes Work preservados;Replay futuro por contrato real. Sem fita integral ou fills certificados.",
+  "gaps_affect_known_results": false,
+  "quantity_mismatches_are_price_equal": true,
+  "adjustments_available": 21,
+  "opening_bucket_with_fewer_than_5_M1": [
+    {
+      "date": "2026-01-05",
+      "minute": "09:00",
+      "M1_count": 2,
+      "OHLC_match": true,
+      "quantity_M1": 153724,
+      "quantity_M5": 153724,
+      "quantity_difference": 0,
+      "quantity_match": true
+    },
+    {
+      "date": "2026-01-06",
+      "minute": "09:00",
+      "M1_count": 2,
+      "OHLC_match": true,
+      "quantity_M1": 253282,
+      "quantity_M5": 253282,
+      "quantity_difference": 0,
+      "quantity_match": true
+    },
+    {
+      "date": "2026-01-07",
+      "minute": "09:00",
+      "M1_count": 2,
+      "OHLC_match": true,
+      "quantity_M1": 242781,
+      "quantity_M5": 242781,
+      "quantity_difference": 0,
+      "quantity_match": true
+    },
+    {
+      "date": "2026-01-08",
+      "minute": "09:00",
+      "M1_count": 2,
+      "OHLC_match": true,
+      "quantity_M1": 184668,
+      "quantity_M5": 184668,
+      "quantity_difference": 0,
+      "quantity_match": true
+    },
+    {
+      "date": "2026-01-12",
+      "minute": "09:00",
+      "M1_count": 3,
+      "OHLC_match": true,
+      "quantity_M1": 226570,
+      "quantity_M5": 226570,
+      "quantity_difference": 0,
+      "quantity_match": true
+    },
+    {
+      "date": "2026-01-13",
+      "minute": "09:00",
+      "M1_count": 3,
+      "OHLC_match": true,
+      "quantity_M1": 271954,
+      "quantity_M5": 271954,
+      "quantity_difference": 0,
+      "quantity_match": true
+    },
+    {
+      "date": "2026-01-14",
+      "minute": "09:00",
+      "M1_count": 2,
+      "OHLC_match": true,
+      "quantity_M1": 227732,
+      "quantity_M5": 227732,
+      "quantity_difference": 0,
+      "quantity_match": true
+    },
+    {
+      "date": "2026-01-15",
+      "minute": "09:00",
+      "M1_count": 2,
+      "OHLC_match": true,
+      "quantity_M1": 255011,
+      "quantity_M5": 255011,
+      "quantity_difference": 0,
+      "quantity_match": true
+    },
+    {
+      "date": "2026-01-16",
+      "minute": "09:00",
+      "M1_count": 3,
+      "OHLC_match": true,
+      "quantity_M1": 281363,
+      "quantity_M5": 281363,
+      "quantity_difference": 0,
+      "quantity_match": true
+    }
+  ]
+}

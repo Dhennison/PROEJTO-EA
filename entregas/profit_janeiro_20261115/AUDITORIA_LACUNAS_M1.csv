@@ -1,0 +1,4 @@
+﻿date;before;after;missing_minutes;all_known_positions_closed_before_gap;other_eligible_levels_no_entry_whole_day_M5;extra_Replay_required
+2026-01-22;2026-01-22 12:40:00;2026-01-22 12:42:00;1;True;True;False
+2026-01-26;2026-01-26 11:30:00;2026-01-26 11:33:00;2;True;True;False
+2026-01-26;2026-01-26 11:33:00;2026-01-26 11:35:00;1;True;True;False

@@ -1,3 +1,26 @@
+JANEIRO/2026 ANALISADO — 15/11/2026 — AGUARDANDO DUAS JANELAS REPLAY
+21pregões,48operações,44determinadas emM1 e4pendentes. Work+140,280331;
+nosso principal pendente,sem fechamento ouDDjaneiro. Nenhumcontrolegradeextra.
+M1MT5WIN$N11837barras eWorkM52373barras:todosOHLCdos2373gruposiguais.
+Seisdiferençasquantidade (3parescompensados),preçosiguais,ressalvas preservadas.
+Quatro minutos semlinhaM1:22jan12:41;26jan11:31/11:32/11:34. Posições doD
+jáfechadas antes;outrosníveis sementrada emtodoM5,semnova coleta necessária.
+Primeirosgrupos09hcom2/3M1faltantes no início têmOHLC/quantidade iguaisM5;
+nãoinventar barras/negócios. Limitações não presumem cobertura denovasvariantes.
+21ajustes presentes;48conjuntos matemáticos entrada/SL/TP iguaisWork,tol0,00001.
+Contexto02jan:30dez2025completo,113M5/565M1 iguaisOHLC/quantidade;
+H164795/L163070/C163770;abertura163970,ajuste163930. HLCdocontextointegral.
+M5tinha10dúvidas;M1resolve6:13S38SL,16S38TP/16S50SL,20R38SL,22R61SL,26R38SL.
+TrêsALVOWork->SLpela granularidade13S38/16S50/22R61,também matemáticos.
+Replay:20janWING26 11:37–11:38 R61.8;29janWING26 11:56–11:57 S38.2/S50/S61.8.
+Apenas2minutos,XLSX2abas,algunssegundosantes/depois,semfiltros/deduplicação.
+Janeirosemrolagem,WING26;confirmar preços/OHLC/quantidade nascópias.
+Análise/script/inventário/ajustes/referências/diário/lista/evidências/ZIP em
+entregas/profit_janeiro_20261115. Próximo receberapenas asduasjanelas.
+Todosmesesfechadosfev-outinalterados. Curva/PDFscorrentesfev-jul preservados,
+DD6005. CedroDD3620separado. Sóampliarcurvas/PDFsapós fecharjaneiro.
+Plano vigente econtrole10juldispensado preservados. Semnovasvariantes/compras.
+
 FEVEREIRO ENCERRADO — RECEBIMENTO02 COMPLETO — 14/11/2026
 Principal Modelo D original: -3.545 pontos, grade5. Work -664,311665;
 diferença -2.880,688335. 39 operações:19TP/20SL,18pregões.

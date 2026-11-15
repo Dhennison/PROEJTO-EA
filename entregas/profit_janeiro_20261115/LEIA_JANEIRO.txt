@@ -1,0 +1,80 @@
+JANEIRO/2026 — MODELO D — ANALISADO, AGUARDANDO REPLAY
+Principal: AGUARDANDO_REPLAY. Não publicar subtotal como fechamento nem incluir
+janeiro no DD antes de resolver as quatro operações pendentes.
+Work: +140,280331 pontos,48operações,21pregões. Nosso fechamento ainda pendente.
+44operações determinadas emM1;quatro dúvidas de sequência em dois minutos.
+Nenhum controle adicional de grade:conjuntos de motivos matemáticos/M1 e
+grade5/M1 conferem nas48operações. Grade5 permanece resultado principal.
+Parâmetros D originais,um contrato/nível,toque inclusivo,corte18h;sem custos,
+fila,slippage ou preenchimentos certificados. Não é mês inteiro de negócios.
+
+ACERVO RESTAURADO E CONFERIDO
+M1MT5WIN$N:M1_202601.csv,11837barras,exportação posterior
+EXPORT110_1794243035_5791.zip,de ORIGINAIS_PARTE_005.zip. STATUS:duasleituras
+estáveis,erro0. WorkProfitM5:WINFUT_F_0_5min_01-01-2026_28-02-2026.csv,
+2373barras nos21pregões. Originais nos ZIPs versionados;hashes no JSON.
+Todos2373grupos deM1->M5 conferem emOHLC. Há seis diferenças de quantidade,
+com preços iguais,registradas com valores exatos na conferência:
+07/01 15:50 +200 e16:20 -200;26/01 17:30 +450 e18:00 -450;
+29/01 13:20 +3216 e15:25 -3216 (M1 menosM5). Pares compensam o total do dia;
+não atribuir causa comprovada. Não afetam regras de preço,mas ficam ressalvadas.
+
+Vários primeiros negócios aparecem às09:02/09:03 noM1 enquantoM5 é rotulado
+09:00. Os agregados de preço E quantidade desses primeiros grupos conferem;
+não criar barras artificiais ou presumir negócios nos minutos sem linha.
+Há também quatro minutos internos ausentes:
+22/01 12:41;26/01 11:31/11:32/11:34. OHLC equantidade dos grupos correspondem
+aoM5. Em22/01 posições conhecidas já encerradas até12:38;em26/01 até09:04.
+Demais níveis elegíveis não têm entrada emtodoM5 do dia. Logo as ausências
+não deixam novas operações ou posições pendentes sob as regras atuais.
+Auditoria emAUDITORIA_LACUNAS_M1.csv. Não são exigidas novas coletas dessesdias.
+Essa conclusão é restrita ao D atual;novas variantes podem exigir mais dados.
+
+AJUSTES E CONTEXTO DO PRIMEIRO PREGÃO
+Ajustes das21datas Work presentes.48conjuntos matemáticos entrada/stop/alvo
+iguais aos originais,tolerância0,00001. Nenhuma operação faltante ou extra.
+02/01 usa o último pregão de2025:30/12,113M5 completos09:00–18:20,cruzados
+com565M1. OHLC/quantidade exatos nos113grupos;total2486grupos comjaneiro.
+H164795,L163070,C163770;abertura02/01 163970;ajusteoperacional163930.
+Não substituir ajuste por fechamento nem truncar HLC do contexto às18h.
+
+GRANULARIDADE E SEQUÊNCIA
+Dez operações tinham resultados alternativos emM5. Seis determinadas emM1:
+13/01 S38.2 SL;16/01 S38.2 TP;16/01 S50 SL;20/01 R38.2 SL;
+22/01 R61.8 SL;26/01 R38.2 SL. TrêsALVOWork->SL já pela granularidade:
+13S38.2,16S50,22R61.8,também nos níveis matemáticos. Sem pedir Replay
+para dúvidas já determinadas porM1. GRANULARIDADE_M5_VS_M1.csv e
+EVIDENCIA_SEIS_RESOLUCOES_M1.csv preservam a evidência poroperação.
+Ramos de entrada/TP/SL/posição aberta propagados até desfecho/corte18h.
+Conjuntos M1 conferidos como subconjuntos M5 nas48operações matemáticas egrade5.
+Não é trajetória reconstruída de negócios;toqueisolado não decide a sequência.
+
+REPLAY NECESSÁRIO — APENAS DUAS JANELAS, SEM VIRADA DE CONTRATO
+20/01/2026 WING26 11:37:00–11:38:00: R61.8.
+29/01/2026 WING26 11:56:00–11:57:00: S38.2,S50,S61.8.
+Fim exclusivo,horários deSãoPaulo. XLSX comduasabas identificadas pelasdatas.
+Começar algunssegundos antes e terminar depois;sem saltos,filtros ou
+remover negócios idênticos. Preservar timestampsms eordem original.
+Conferir minuto completo,OHLC/quantidade,limite200001 eempatesms antes de fechar.
+Níveis principais:
+20R61.8 E166975/TP166935/SL167425.
+29S38.2 E185910/TP185945/SL185535.
+29S50 E185850/TP185910/SL185475.
+29S61.8 E185790/TP185850/SL185140.
+Janeiro inteiro usaWING26 pela convenção histórica/calendário:expira18/02.
+Calendário não prova correspondência da fita à série contínua;auditar preços
+na cópia antes do fechamento. Se contrato indisponível,registrar o alcance e
+seguir o plano de verificação de negóciosWINFUT,sem compra e sem substituir
+negócios por exportação de candles. Não solicitar novos candles ou ajustes.
+
+PRESERVAÇÃO E RELATÓRIOS
+Fevereiro-3545/Março+350/Abril+5720/Maio-780/Junho+3405/Julho+1100 intactos.
+CedroAgo-2375/Set+2855/Out+3830 intactos,separados eidentificados.
+ComparáveisWorkAgo-2275/Set+1380 preservados àparte dos mesescompletos.
+Janeiro fica fora das curvas até Replay. DDcorrente fev-julhoM1+Replay6005;
+Cedroago-out3620. Ao fecharjaneiro,ampliar DD emordemjan->fev->...sem reinício
+mensal nem alterar resultados fechados. PDFs técnico/enxuto correntes desde
+fevereiro preservados;ampliar após resolverjaneiro,com diárioWorkversusteste.
+Não reabrir10/07 dispensado. Ordemvigente:expansão atélimitecontratos;
+tentar negóciosWINFUT sepreciso;depois estudoalvos/stops;depois modelosABC.
+Não executados variantes/modelos novos nem compra dehistórico.
