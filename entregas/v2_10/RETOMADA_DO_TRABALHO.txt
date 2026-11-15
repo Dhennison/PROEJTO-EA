@@ -1447,3 +1447,6 @@ abril+5720/maio-780/junho+3405/julho+1100;Cedroago/set/outintactoseparado.
 Julho10juldispensado,naopedir. Nao repetir mesesfechados. Ordemvigente:
 expandir ate limiteProfit,depois alvos/stops,depoisA/B/C. Sem novasvariantes.
 PublicacaoGitHub:confirmar pelo push;preparacao localnao comprova publicacao.
+
+PUBLICACAO MARCO CONFIRMADA: push8cb8aa0 na branchentrega-modelod-v2-10-20261030
+concluido14/11/2026. PDFs eZIP lidos/conferidos,5paginas nodiario.
