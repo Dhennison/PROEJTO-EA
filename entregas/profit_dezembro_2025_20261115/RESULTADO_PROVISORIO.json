@@ -1,0 +1,126 @@
+{
+  "status": "DEZEMBRO_ANALISADO_AGUARDANDO_REPLAY",
+  "days": 20,
+  "operations": 40,
+  "determined": 37,
+  "pending": 3,
+  "grade_controls": 0,
+  "work_points": "5211.102335",
+  "work_operations": 40,
+  "mathematical_differences": [],
+  "work_missing": [],
+  "work_extra": [],
+  "M1_December_bars": 11269,
+  "M5_December_bars": 2260,
+  "M5_buckets_checked": 2373,
+  "M5_OHLC_mismatches": [],
+  "M5_quantity_mismatches": [
+    {
+      "date": "2025-12-05",
+      "minute": "12:50",
+      "M1_count": 5,
+      "OHLC_match": true,
+      "quantity_M1": 605978,
+      "quantity_M5": 657946,
+      "quantity_difference": -51968,
+      "quantity_match": false
+    },
+    {
+      "date": "2025-12-05",
+      "minute": "15:35",
+      "M1_count": 5,
+      "OHLC_match": true,
+      "quantity_M1": 353857,
+      "quantity_M5": 351007,
+      "quantity_difference": 2850,
+      "quantity_match": false
+    },
+    {
+      "date": "2025-12-05",
+      "minute": "17:40",
+      "M1_count": 5,
+      "OHLC_match": true,
+      "quantity_M1": 125923,
+      "quantity_M5": 128773,
+      "quantity_difference": -2850,
+      "quantity_match": false
+    },
+    {
+      "date": "2025-12-12",
+      "minute": "10:40",
+      "M1_count": 5,
+      "OHLC_match": true,
+      "quantity_M1": 381448,
+      "quantity_M5": 380826,
+      "quantity_difference": 622,
+      "quantity_match": false
+    },
+    {
+      "date": "2025-12-12",
+      "minute": "13:50",
+      "M1_count": 5,
+      "OHLC_match": true,
+      "quantity_M1": 97792,
+      "quantity_M5": 98414,
+      "quantity_difference": -622,
+      "quantity_match": false
+    },
+    {
+      "date": "2025-12-17",
+      "minute": "16:35",
+      "M1_count": 5,
+      "OHLC_match": true,
+      "quantity_M1": 87853,
+      "quantity_M5": 87103,
+      "quantity_difference": 750,
+      "quantity_match": false
+    },
+    {
+      "date": "2025-12-17",
+      "minute": "17:00",
+      "M1_count": 5,
+      "OHLC_match": true,
+      "quantity_M1": 78293,
+      "quantity_M5": 78793,
+      "quantity_difference": -500,
+      "quantity_match": false
+    },
+    {
+      "date": "2025-12-17",
+      "minute": "18:05",
+      "M1_count": 5,
+      "OHLC_match": true,
+      "quantity_M1": 56062,
+      "quantity_M5": 56312,
+      "quantity_difference": -250,
+      "quantity_match": false
+    }
+  ],
+  "intraday_M1_gaps": [],
+  "M5_pending": 10,
+  "resolved_by_granularity": 7,
+  "raw_hashes": {
+    "EXPORT110_1794243035_5791.zip": "0e4a1cf44e37c4409ea856e8a52f754669819c338b080346ec643fdfbcbb7093",
+    "M1_202512.csv": "acb58a7506ae9e4821f59c83cfad4835f1172fb37bc6148b32ae1ac03ebe73e7",
+    "M1_202511.csv": "bcf0d6fce62a3b7c6fbd2fe2be630e73dcdf1c07a21728540f723af655823daa",
+    "Work_M5_2025.csv": "103c1404e6e5aa3085e426e20f0273c51dcc21b7a8c899776da23318e5cb4e63"
+  },
+  "first_day_context": {
+    "date": "2025-12-01",
+    "previous": "2025-11-28",
+    "previous_source": "WORK_M5_FULL_CROSSCHECK_M1",
+    "previous_first": "2025-11-28 09:00:00",
+    "previous_last": "2025-11-28 18:20:00",
+    "previous_bars": 113,
+    "open": "160000",
+    "high_prev": "160840",
+    "low_prev": "159465",
+    "close_prev": "160100",
+    "adjustment": "160223",
+    "contrato_Replay": "WINZ25",
+    "contract_status": "CALENDARIO_E_CONVENCAO_WORK;CONFERIR_PRECOS_NA_COPIA"
+  },
+  "principal": "AGUARDANDO_REPLAY;nao somar subtotais nem inserir dezembro no DD",
+  "source": "M1 nativo MT5 WIN$N;referencia Work Profit M5;ajustes Work preservados;Replay futuro por contrato real. Sem fita integral ou fills certificados.",
+  "adjustments_available": 20
+}

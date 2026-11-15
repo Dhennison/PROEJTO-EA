@@ -1,0 +1,73 @@
+DEZEMBRO/2025 — MODELO D — ANALISADO, AGUARDANDO REPLAY
+Principal: AGUARDANDO_REPLAY.40operações/20pregões,37determinadasM1 e3pendentes.
+Work +5211,102335 pontos. Não somar subtotal como fechamento nem inserir
+dezembro noDD enquanto as três pendências não forem resolvidas.
+Parâmetros originais D,grade5,1contrato/nível,toque inclusivo,corte18h;
+sem custos/fila/slippage ou certificação de fills reais.
+
+ACERVO
+MT5 WIN$N:M1_202512.csv,11269barras,deEXPORT110_1794243035_5791.zip,
+restaurado deORIGINAIS_PARTE_005.zip. STATUS:2leiturasestáveis,erro0.
+WorkProfitM5:WINFUT_F_0_5min_01-01-2025_31-12-2025.csv,2260barras.
+Todos2260grupos M1->M5 de dezembro coincidem emOHLC;nenhuma lacuna M1
+intradiária no conjunto fornecido. Alguns primeiros negócios aparecem após
+09:00;conservar horários originais,sem gerar barras/negócios artificiais.
+Há oito diferenças de quantidade M1-M5,com preços iguais:
+05/12 12:50 -51968;15:35 +2850;17:40 -2850.
+12/12 10:40 +622;13:50 -622.
+17/12 16:35 +750;17:00 -500;18:05 -250.
+05/12 mantém diferença diária de-51968. Não afirmar compensação integral,
+causa conhecida ou fita perfeita. Esses dados não são certificados de fills.
+As regras doD atual usam preços;as diferenças de quantidade ficam ressalvadas,
+não convertidas em preço diferente ou nova ambiguidade sem evidência.
+
+REFERÊNCIAS E CONTRATOS
+20ajustesWork presentes;40conjuntos matemáticos entrada/stop/alvo iguais
+às referências originais,tolerância0,00001;nenhuma operação faltante ou extra.
+01/12 usa28/11 completo:113M5 09:00–18:20 cruzados com565M1;OHLC equantidade
+exatos. Total2373grupos incluindo contexto. H160840/L159465/C160100;
+abertura01/12 160000;ajuste operacional160223. HLC anterior não truncado às18h.
+Convenção histórica:WINZ25 até16/12;WING26 desde17/12,vencimento de dezembro.
+Contexto do dia de rolagem preserva pregão anterior Work;nenhuma troca de
+contrato/ajuste selecionada pelo lucro. As trêscoletas são anteriores àrolagem,
+portantoWINZ25. Calendário/convenção não comprovam a correspondência da fita
+à série contínua;conferir preços/OHLC/quantidade das cópias antes de fechar.
+
+GRANULARIDADE
+Dez operações ambíguas emM5,sete determinadas porM1:
+04/12 R38.2 SL;05/12 S38.2 TP;05/12 S50 TP;09/12 S38.2 TP;
+12/12 R61.8 SL;15/12 R38.2 SL;30/12 R38.2 SL.
+QuatroALVOWork->SL (04R38/12R61/15R38/30R38) e umSTOPWork->TP (05S50)
+já determinados porM1,também matemáticos. Não pedir fita para dúvidas resolvidas.
+ConjuntosM1 conferidos como subconjuntosM5 nas40operações,nos níveis
+matemáticos egrade5. Conjuntos de motivos M1/grade5 e matemático iguais;
+nenhum controlegradeextra. Isso não exclui diferenças de grade reveladas
+pelo Replay nas três operações já solicitadas. Controles serão separados.
+Não foi inventada trajetória de negócios a partir dos candles.
+
+REPLAY NECESSÁRIO — SOMENTE TRÊS MINUTOS
+01/12/2025 WINZ25 10:15:00–10:16:00 S38.2.
+11/12/2025 WINZ25 09:06:00–09:07:00 S38.2.
+16/12/2025 WINZ25 09:03:00–09:04:00 S61.8.
+Horários deSãoPaulo,fimexclusivo. Começar algunssegundos antes e terminar
+depois,sem saltos,filtros ou deduplicação. XLSX trêsabas comdatas.
+Conferir minuto completo,OHLC/quantidade,limite200001 eempatesms antes
+classificação. Negócios individuais precisam manter horáriosms eordem.
+SeWINZ25 não estiver disponível,registrar alcance/contrato/data e seguir
+planoWINFUT:confirmar negócios individuais comms,preços eajustes da série.
+Exportação de candles não substitui negócios. Sem compra dehistórico.
+Não pedir novos candles/ajustes nem mês inteiro deReplay.
+
+PRESERVAÇÃO
+Janeiro-1620/Fevereiro-3545/Março+350/Abril+5720/Maio-780/Junho+3405/
+Julho+1100 eCedroAgo-2375/Set+2855/Out+3830 intactos. ComparáveisWork
+Ago-2275/Set+1380 preservados àparte. Brutos/referências/auditorias intactos.
+Dezembro fora das curvas atéresolverReplay. DDjan-julM1+Replay9365;
+CedroDD3620,separado. Ao fechardezembro,ampliarDD emordemdez2025->jan2026
+->...sem resetmensal,nem alterar resultados fechados. Ampliar os doisPDFs
+técnico/enxuto comdiárioWorkversusteste apósconclusão,preservando originais.
+Controle10/07dispensado,não reabrir. Ordemaprovada:expandir atélimitecontratos;
+tentar negóciosWINFUT se necessário;depois alvos/stops;depoisABC.
+M1+Replay pontual não é mês integral auditado tick a tick. Novasvariantes
+podem exigir outrasjanelas,não limitadas às barreiras atuais. Nenhum novo
+parâmetro/modelo ou compra executados nestaetapa.

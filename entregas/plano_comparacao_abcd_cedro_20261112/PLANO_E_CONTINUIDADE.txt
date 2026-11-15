@@ -1,3 +1,25 @@
+DEZEMBRO/2025 ANALISADO — 15/11/2026 — AGUARDANDO REPLAY
+40operações/20pregões,37determinadasM1 e3pendentes. Work+5211,102335;
+nosso principalPENDENTE;nenhumfechamento ouDDdezembro. Nenhumcontrolegradeextra.
+11269M1MT5 e2260M5Work:todosOHLCdos2260grupos iguais,sem lacunasM1internas.
+Oito diferençasquantidade com preçosiguais:05dez12:50-51968,15:35+2850,
+17:40-2850;12dez10:40+622/13:50-622;17dez16:35+750/17:00-500/18:05-250.
+05dez mantém-51968diário;não presumir compensação ou fita completa.
+20ajustes e40conjuntos matemáticos entrada/SL/TP iguaisWork,tol0,00001.
+Contexto01dez:28novcompleto113M5/565M1conferidos;H160840/L159465/C160100;
+abertura160000,ajuste160223. Referências econtexto de rolagem preservados.
+M5tinha10dúvidas,M1resolve7;quatroALVO->SL e1STOP->TPjádeterminados porM1.
+Replay apenas:01dezWINZ25 10:15–10:16 S38.2;11dezWINZ25 09:06–09:07 S38.2;
+16dezWINZ25 09:03–09:04 S61.8. XLSX3abas,algunssegundosantes/depois,
+sem filtros/deduplicação,sótrêsminutos. Coletasantesdarolagem17dezZ->G;
+conferir correspondência depreços/OHLC/quantidade nascópias antes defechamento.
+SeWINZ25 indisponível,seguirverificaçãoWINFUTcommilissegundos/ajustes,semcompra.
+Acervo/script/inventário/referências/evidências/diário/listaZIP em
+entregas/profit_dezembro_2025_20261115. Próximo receberapenasas3janelas.
+Janeiro-julho eCedroago-outfechados intactos. Curva/PDFs correntes desdejan,
+DD9365;CedroDD3620separado. SóampliarDD/PDFs apósfechardezembro2025.
+Controle10juldispensado eplano expansão->alvos/stops->ABC preservados.
+
 JANEIRO ENCERRADO APÓS XLSX REPLAY — 15/11/2026
 Principal Modelo D original: -1.620 pontos, grade de5;Work+140,280331;
 diferença-1.760,280331.48operações:31TP/17SL,21pregões.
