@@ -1,0 +1,4 @@
+﻿data;contrato;inicio;fim_exclusivo;niveis;entrada;alvo;stop;motivo
+2026-02-11;WING26;09:02:00;09:03:00;R61.8;187845;187695;188295;"Sequencia entrada/alvo no M1 pode alterar TP/SL;preservar negocios anteriores/posteriores e empates ms"
+2026-02-24;WINJ26;09:06:00;09:07:00;R38.2;193330;192995;193705;"Sequencia entrada/alvo no M1 pode alterar TP/SL;preservar negocios anteriores/posteriores e empates ms"
+2026-02-27;WINJ26;09:01:00;09:02:00;S38.2;193330;193520;192955;"Sequencia entrada/alvo no M1 pode alterar TP/SL;preservar negocios anteriores/posteriores e empates ms"

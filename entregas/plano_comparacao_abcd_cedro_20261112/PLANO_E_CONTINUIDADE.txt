@@ -1,3 +1,106 @@
+SEQUÊNCIA VIGENTE APROVADA — 14/11/2026
+Esta seção substitui as ordens anteriores preservadas no histórico abaixo.
+
+1. Continuar retroativamente pelos contratos disponíveis no Replay do Profit,
+   até atingir o limite de acesso. Analisar os candles e coletar negócios apenas
+   nas janelas em que a sequência possa mudar o resultado, incluindo diferenças
+   relevantes causadas pela grade de 5 pontos.
+2. Quando os contratos anteriores deixarem de estar disponíveis, tentar WINFUT.
+   Verificar se permite extrair negócios individuais com horários em milissegundos,
+   conferir sua correspondência com os preços utilizados e identificar possíveis
+   ajustes da série contínua. Exportação de candles não substitui negócios.
+   Essa capacidade do WINFUT ainda não foi confirmada.
+3. Se WINFUT fornecer os negócios necessários, continuar pelos meses anteriores
+   disponíveis. Caso contrário, encerrar a expansão no limite dos contratos cuja
+   coleta conseguimos confirmar. Não há autorização para comprar histórico.
+4. Após encerrar a expansão, estudar alvos e stops por nível e comparar cada
+   combinação testada com o Modelo D atual. Preservar parâmetros e resultados
+   originais; identificar cada variante separadamente. Avaliar estabilidade entre
+   meses, drawdown e concentração dos resultados, além do total de pontos.
+   Registrar cobertura e dados usados em cada teste. Seleção de parâmetros na
+   amostra não equivale a validação independente ou ótimo universal.
+5. Posteriormente, testar A, B e C nos mesmos meses disponíveis, com suas regras
+   documentadas, e comparar com o Modelo D original e suas variantes.
+
+PRESERVAÇÃO, RESULTADO PRINCIPAL E RELATÓRIOS
+Preservar todos os brutos, referências, auditorias e resultados. Março a julho:
+M1 e Replay pontual. Agosto a outubro: base Cedro recebida para os períodos
+completos, com as ressalvas de auditoria existentes. Não apresentar os meses
+M1 + janelas como integralmente auditados tick a tick. Novos parâmetros ou
+modelos podem exigir novas janelas fora das já coletadas. Preservar os brutos
+para estudos futuros, não apenas as reduções específicas das barreiras D.
+
+Principal: Modelo D original, grade de 5 pontos, um contrato por nível, toque
+inclusivo, corte às 18h. Pontos condicionais nos níveis, sem custos, fila,
+slippage ou garantia de preenchimento de ordens.
+Resultados principais fechados de 2026, que não devem ser reprocessados:
+- Março: +350 pontos.
+- Abril: +5.720 pontos.
+- Maio: -780 pontos.
+- Junho: +3.405 pontos.
+- Julho: +1.100 pontos.
+- Agosto completo Cedro: -2.375 pontos.
+- Setembro completo Cedro: +2.855 pontos.
+- Outubro completo Cedro: +3.830 pontos.
+
+Recortes comparáveis ao Work preservados separadamente:
+- Agosto: nosso -2.275 versus Work -387,164995; complemento 03/08: -100.
+- Setembro: nosso +1.380 versus Work +3.839,308998; complemento 22–30/09: +1.475.
+Ausência de Work recebe traço, nunca zero fabricado. Outubro está fora do Work.
+
+Recalcular DD por fechamentos diários em ordem cronológica, sem reiniciar a
+cada mês e sem alterar os resultados diários ou mensais já fechados. Identificar
+fontes e metodologias das séries. Conferência atual dos saldos e DD acumulados:
+- Março a julho, M1 + Replay pontual: DD 2.540 pontos.
+- Agosto a outubro, Cedro: DD 3.620 pontos.
+Curvas por fonte preservadas. Eventual visão concatenada deve ser rotulada
+como híbrida; não descrevê-la como fita integral de negócios. Fevereiro fica
+fora das curvas até resolver as pendências. Ao fechar cada mês anterior,
+ampliar o histórico e recalcular o DD na ordem correta sem mudar os dias fechados.
+
+Continuar preparando os dois PDFs finais, técnico e enxuto, com comparação
+diária Work versus nosso teste, principal inequívoco, recortes e complementos,
+fontes e limitações explícitas. PDFs correntes desde março e compilados Cedro
+preservados; ampliar ao concluir fevereiro. O controle adicional de 10/07 foi
+expressamente dispensado pelo usuário: não pedir novamente nem reabrir.
+
+ETAPA ATIVA — FEVEREIRO/2026 ANALISADO, AGUARDANDO REPLAY
+18 pregões, 39 operações: 36 determinadas em M1 e três dúvidas de sequência.
+Nenhum controle adicional de grade. Work -664,311665; nosso principal pendente.
+M1 completo: 9.930 barras recuperadas da exportação posterior
+EXPORT110_1794243035_5791.zip. Não confundir com os 2.307 M1 da exportação
+anterior nem com os 210 M1 do Profit de 27/02, ambos parciais.
+
+Os 1.986 M5 de fevereiro e os 113 M5 do contexto de 30/01 foram reconstituídos
+exatamente em OHLC e quantidade a partir do M1. Ajustes das 18 datas presentes;
+39 conjuntos matemáticos entrada/stop/alvo iguais ao Work, tolerância 0,00001.
+Contexto de 02/02: 30/01 completo; H 184765, L 181065, C 182695;
+abertura de 02/02: 180820; ajuste operacional: 182325.
+
+M5 tinha oito operações com desfechos alternativos. M1 resolve cinco:
+13/02 S38.2 SL; 19/02 R38.2 SL; 20/02 S38.2 SL; 25/02 R38.2 TP; 27/02 S50 SL.
+As três primeiras eram ALVO Work e passam a SL pela granularidade, também
+nos níveis matemáticos. Não atribuir essas diferenças à grade nem pedir fita
+para dúvidas já resolvidas pelo M1. Não inventar trajetória dentro das barras.
+
+Restam apenas estas três janelas (fim exclusivo, horários de São Paulo):
+- 11/02 WING26 R61.8: 09:02–09:03.
+- 24/02 WINJ26 R38.2: 09:06–09:07.
+- 27/02 WINJ26 S38.2: 09:01–09:02.
+Reproduzir alguns segundos antes/depois, sem saltos, filtros ou deduplicação.
+B3 confirma último dia de negociação de WING26 em 18/02 e abertura às 13h
+nesse dia. Coletas em 11/02 no G, em 24/02 e 27/02 no J. Calendário não prova
+correspondência dos preços à série contínua: auditar OHLC/quantidade das cópias
+antes de fechar. Não solicitar mês inteiro nem novos candles ou ajustes.
+Análise, script, inventário, referências, diário provisório, comparação de
+granularidade, fontes dos contratos e lista de coletas em:
+entregas/profit_fevereiro_20261114.
+Próximo passo: receber somente essas três janelas e resolver as classificações.
+Fevereiro ainda não tem resultado principal ou DD do teste. Demais meses intactos.
+
+
+HISTÓRICO PRESERVADO — TRECHOS ABAIXO NÃO SUBSTITUEM O ESTADO ACIMA
+
 ATUALIZACAO DE ESTADO — MARCO ANALISADO,13/11/2026
 Marco50operacoes,46desfechosdeterminados dosquais1controlegrade;4ambiguas.
 Replay5casos,5minutos,17/19mar,WINJ26. Lista em profit_marco_20261113.

@@ -1,0 +1,90 @@
+FEVEREIRO/2026 — MODELO D — ANALISADO, AGUARDANDO REPLAY
+Principal: AGUARDANDO_REPLAY. Não somar operações determinadas como fechamento
+nem incorporar fevereiro ao DD antes de resolver as três pendências.
+Work: -664,311665 pontos; 39 operações; 18 pregões; DD diário isolado 3195,228666.
+Nosso teste: 36 operações determinadas em M1 e três dúvidas de sequência.
+Nenhum controle adicional de grade: M1 matemático e grade5 permitem os mesmos
+conjuntos de motivos nas 39 operações. Pontos e instantes podem mudar com a grade.
+
+ACERVO E COMPARAÇÃO ENTRE ARQUIVOS
+Há duas fontes distintas de candles do mesmo mês:
+1. Profit M5 usado pelo Work:
+   WINFUT_F_0_5min_01-01-2026_28-02-2026.csv, dentro de
+   entregas/historico_work_modelo_d_20261105/replay_setembro_20261106/originais/
+   Candles_Originais_Modelo_D_2023_2026.zip.
+2. MT5 WIN$N M1: M1_202602.csv, dentro de EXPORT110_1794243035_5791.zip,
+   restaurado de entregas/arquivo_conversa_20261111/originais/ORIGINAIS_PARTE_005.zip.
+   Terminal GenialInvestimentos-PRD, build6231, exportação nativa, não Tester;
+   STATUS registra duas leituras estáveis, erro0. Hashes no JSON provisório.
+
+M5: 1986 barras nos 18 pregões. M1: 9930 barras, até 18:24; 18/02 inicia às13h,
+os demais dias às09h. Sem lacunas intradiárias no conjunto fornecido.
+Todos os 1986 grupos completos de cinco M1 coincidem com o M5 em abertura,
+máxima, mínima, fechamento e quantidade. Isso confirma a correspondência
+entre os candles fornecidos; não prova cobertura de todos os negócios reais.
+Não confundir esse M1 completo com a primeira exportação MT5
+EXPORT110_1794241201_5300.zip: 2307 M1 parciais desde23/02 às17:38;
+nem com o CSV Profit M1: apenas210 barras de27/02 às14:55–18:24.
+
+CONTEXTO E AJUSTES
+Primeiro pregão02/02 usa30/01 completo:113M5 de09h a18:20, conferidos contra
+565M1. Mais113 grupos exatos;2099 comparações incluindo fevereiro e contexto.
+H184765, L181065, C182695; abertura02/02:180820; ajuste operacional182325.
+Usar HLC de todo o pregão anterior, sem cortar seu contexto às18h.
+Ajustes das18datas Work presentes. Os39 conjuntos matemáticos entrada/stop/
+alvo são iguais aos originais,tolerância0,00001. Nenhuma operação falta ou sobra.
+Não substituir ajuste por fechamento ou recalibrar referência na rolagem.
+
+GRANULARIDADE NÃO É FITA DE NEGÓCIOS
+Oito operações permitiam TP/SL alternativos emM5. M1 determina cinco:
+13/02 S38.2 SL;19/02 R38.2 SL;20/02 S38.2 SL;25/02 R38.2 TP;27/02 S50 SL.
+As três primeiras eram ALVO Work e passam a SL pela cronologiaM1, também nos
+níveis matemáticos. As duas últimas confirmam os motivos Work.
+Isso decorre de localizar as barreiras em minutos diferentes ou de eliminar
+ramos com máximas/mínimas anteriores à entrada. Não pressupõe trajetória dentro
+do minuto. Só há resultado determinado se todos os ramos compatíveis comM1
+terminam no mesmo motivo/pontuação. Os ramos são propagados até desfecho/corte.
+O conjunto de resultados M1 foi conferido como subconjunto do conjuntoM5,
+tanto na grade5 quanto nos níveis matemáticos, para todas as39 operações.
+Detalhes: GRANULARIDADE_M5_VS_M1.csv e EVIDENCIA_CINCO_RESOLUCOES_M1.csv.
+
+REPLAY — APENAS TRÊS MINUTOS, HORÁRIOS DE SÃO PAULO
+Data        Contrato   Janela (fim exclusivo)  Nível   Entrada  Alvo    Stop
+11/02/2026  WING26     09:02:00–09:03:00        R61.8  187845   187695  188295
+24/02/2026  WINJ26     09:06:00–09:07:00        R38.2  193330   192995  193705
+27/02/2026  WINJ26     09:01:00–09:02:00        S38.2  193330   193520  192955
+
+Nesses minutos a ordem entrada/alvo pode mudar TP para SL. Não basta um toque.
+Reproduzir alguns segundos antes e depois, sem saltos, filtros ou deduplicação.
+XLSX com três abas identificadas pela data, timestamps em milissegundos e
+ordem original. Conferir OHLC/quantidade do minuto completo, alcance da cópia,
+limite200001 e empates de milissegundo antes de classificar.
+Se contrato indisponível, registrar contrato/data/alcance; não coletar mês
+inteiro ou substituir negócios por candles.
+
+CONTRATOS
+O calendário B3 confirma último dia de negociação deWING26 em18/02, não11/02.
+Convenção de referência:WING até13/02, WINJ desde18/02;18/02 tem zerooperações.
+Contexto de18/02 continua13/02Work, sem trocar série para obter outro resultado.
+As três coletas estão fora do dia da rolagem:11/02 noG;24 e27/02 noJ.
+Calendário não certifica correspondência da fita à série contínua: conferir
+preços/OHLC/quantidade das cópias antes do fechamento. Divergência exige
+investigar contrato/ajustes, nunca escolher série pelo lucro.
+Fontes oficiais e data de consulta em FONTES_CONTRATOS_E_CALENDARIO.txt.
+
+PRESERVAÇÃO E CONTINUIDADE
+ParâmetrosD originais, um contrato/nível, toque inclusivo, grade5, corte18h;
+sem custos/fila/slippage ou preenchimentos certificados. M1+janelas não é
+mês integral auditado tick a tick. Não são necessários outros candles/ajustes.
+Março+350/Abril+5720/Maio-780/Junho+3405/Julho+1100 preservados.
+Cedro:Agosto-2375/Setembro+2855/Outubro+3830 preservados e separados.
+Comparáveis Work:Agosto-2275 eSetembro+1380 não substituem os meses completos.
+DD diário dos fechamentos foi recalculado e confere com as curvas existentes:
+março-julhoM1+Replay2540;Cedroagosto-outubro3620,sem reinícios mensais.
+Fevereiro só ampliará o histórico/DD após resolução;nenhum dia fechado alterado.
+VERIFICACAO_DD_SERIES_FECHADAS.json documenta essa conferência.
+PDFs correntes preservados. Após fechar fevereiro, ampliar os dois finais,
+técnico e enxuto, com diárioWork versus teste, fontes e recortes explícitos.
+Não reabrir controle10/07 dispensado. Seguir plano vigente:expansão pelos
+contratos;depois tentar negóciosWINFUT se necessário;depois parâmetros;depoisABC.
+Sem compra autorizada e sem variantes/modelos novos executados nesta etapa.

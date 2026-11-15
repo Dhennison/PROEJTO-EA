@@ -1,0 +1,36 @@
+[
+  {
+    "series": "M1_REPLAY_MAR_JUL",
+    "days": 106,
+    "start": "2026-03-02",
+    "end": "2026-07-31",
+    "monthly_totals": {
+      "2026-03": "350",
+      "2026-04": "5720",
+      "2026-05": "-780",
+      "2026-06": "3405",
+      "2026-07": "1100"
+    },
+    "total": "9795",
+    "DD_diario": "2540",
+    "verified_all_daily_balances": true,
+    "monthly_reset": false,
+    "February_included": false
+  },
+  {
+    "series": "CEDRO_AGO_OUT",
+    "days": 63,
+    "start": "2026-08-03",
+    "end": "2026-10-30",
+    "monthly_totals": {
+      "2026-08": "-2375.000000",
+      "2026-09": "2855.000000",
+      "2026-10": "3830.000000"
+    },
+    "total": "4310.000000",
+    "DD_diario": "3620.000000",
+    "verified_all_daily_balances": true,
+    "monthly_reset": false,
+    "February_included": false
+  }
+]
