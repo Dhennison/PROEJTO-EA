@@ -1,3 +1,49 @@
+JANEIRO ENCERRADO APÓS XLSX REPLAY — 15/11/2026
+Principal Modelo D original: -1.620 pontos, grade de5;Work+140,280331;
+diferença-1.760,280331.48operações:31TP/17SL,21pregões.
+44resultados determinadosM1+4resolvidosReplay;nenhuma pendência ou nova coleta.
+M1+Replay pontual,não mês inteiro por negócios;sem custos/fila/fills certificados.
+
+Mês de Janeiro.xlsx:2abas/97765negócios. Doisminutos completos iguais em
+OHLC/quantidade;4bordasparciais esperadas. Semlimite200001 poraba e sem
+deduplicação. Doisdesempatesms preservam motivos/pontos na grade econtroles
+matemáticos. Sem barreirasopostas no mesmo ms;regressões passaram.
+20jan WING26R61.8TP+40,entrada11:37:54.555,saída11:37:58.953.
+29jan WING26S38.2TP+35,entrada11:56:22.875,saída11:56:23.715.
+29jan WING26S50TP+60,entrada11:56:25.940,saída11:56:27.580.
+29jan WING26S61.8SL-650,entrada11:56:31.478,saída minuto12:00 peloM1.
+CANDLE indica minuto,não instante exato.29janS38/S50 mudamSTOPWork->TP;
+29janS61 mudaALVOWork->SL. ComtrêsALVO->SL já determinados porM1,
+total4ALVO->SL/2STOP->TP.20janR61 confirmaALVOprincipal.
+
+DIFERENÇA DE GRADE RELEVANTE,COBERTA PELA MESMA JANELA
+20janR61.8:alvo grade166935 atingido11:37:58.953,TP+40. Nosníveis
+matemáticos E166976,638/TP166933,902333/SL167426,638,a operação dáSL-450
+no minuto11:43. Grade5 continua principal;controle matemático separado.
+Três suportes29jan mantêm motivosnoscontroles matemáticos. Não recalibrar
+parâmetros nem selecionar critério conforme lucro. Nenhuma coleta extra.
+
+Acervo/referências preservados:21ajustes,48conjuntos matemáticos iguaisWork;
+11837M1/2373M5,preçosagregados iguais;6diferençasquantidade em3parescompensados
+compreçosiguais;4minutos semlinhaM1 apósencerramento das posições conhecidas,
+outrosníveis sementrada emtodoM5. Ressalvas econtexto30dez2025intactos.
+XLSX bruto e réplica SHA256idênticos preservados;PRESERVACAO_BRUTO.json.
+Análise inicial e originais não apagados. RESULTADO_FINAL.json e
+PROGRESSO_RESOLUCAO.json são o estadoatual em entregas/profit_janeiro_20261115.
+
+DD porfechamentosdiários emordemjaneiro->fevereiro->...->julho,semresetmensal:
+atéjan teste4375/Work2605,831664;atéfev teste8720/Work4780,240329;
+desdemarço atéjulho teste9365/Work4780,240329. Totaljan-julho+4630.
+Nenhum dia/mês anterior alterado:Fev-3545/Mar+350/Abr+5720/Mai-780/
+Jun+3405/Jul+1100 intactos. CedroAgo-2375/Set+2855/Out+3830 eDD3620intactos,
+separados. ComparáveisWorkAgo-2275/Set+1380 preservados àparte.
+Curva atual CURVA_JANEIRO_FEVEREIRO_MARCO_ABRIL_MAIO_JUNHO_JULHO_M1_REPLAY.csv;
+PDFs técnico/enxuto agora cobrem janeiro-julho,diárioWork versus nosso teste.
+CompiladosCedro ePDFs anteriores preservados. Não reabrircontrole10/07dispensado.
+Próxima expansão cronológica:dezembro2025,conforme plano aprovado. Contratos
+indisponíveis->tentar negóciosWINFUT comms,preços/ajustesverificados,semcompra;
+alvos/stops só depois daexpansão,ABC posteriormente. Nenhuma variante executada.
+
 JANEIRO/2026 ANALISADO — 15/11/2026 — AGUARDANDO DUAS JANELAS REPLAY
 21pregões,48operações,44determinadas emM1 e4pendentes. Work+140,280331;
 nosso principal pendente,sem fechamento ouDDjaneiro. Nenhumcontrolegradeextra.

@@ -1,0 +1,63 @@
+JANEIRO/2026 — MODELO D ENCERRADO
+Principal: -1620 pontos. Work: +140,280331. Diferença: -1760,280331.
+48 operações /21pregões.44determinadas emM1 +4resolvidas porReplay.
+Parâmetros D originais,grade5,1contrato/nível,toque inclusivo,corte18h.
+Pontos nos níveis,sem custos/fila/slippage ou fills garantidos.
+M1+Replay pontual,não mês integral por negócios.
+
+REPLAY CONCLUÍDO
+Mês de Janeiro.xlsx:duasabas,97765negócios. Dois minutos completos
+conferem emOHLC/quantidade;4bordasparciais esperadas. Sem limite200001.
+Negócios idênticos preservados. Dois desempatesms mantêm resultados;
+sem barreirasopostas no mesmo ms. Regressões máxima pré-entrada e
+barra de entrada incompleta passaram. Todos contratosWING26.
+20/01 R61.8:TP+40,entrada11:37:54.555,saída11:37:58.953.
+29/01 S38.2:TP+35,entrada11:56:22.875,saída11:56:23.715.
+29/01 S50:TP+60,entrada11:56:25.940,saída11:56:27.580.
+29/01 S61.8:SL-650,entrada11:56:31.478,saída minuto12:00 peloM1.
+CANDLE indica minuto,não instante exato. Controles matemáticos dos três
+suportes de29jan mantêm os mesmos motivos.20janR61.8 é sensível àgrade:
+alvo166935 atingido11:37:58.953 produzTP+40 na grade5;nos níveis matemáticos,
+a operação terminaSL-450 no minuto11:43. Entrada matemática também difere.
+A janela já pedida cobriu esse controle,não há coleta extra. Não misturar
+controle matemático com resultado principal nem selecionar pelo lucro.
+S38.2/S50 de29jan passamSTOPWork->TP. S61.8 passaALVOWork->SL.
+20janR61.8 confirmaALVO. Três outros ALVOWork->SL já determinados
+porM1:13janS38.2/16janS50/22janR61.8. Total4ALVO->SL e2STOP->TP.
+Nenhuma ambiguidade ou controlegradeextra pendente. Nenhuma nova coleta.
+
+ACERVO/REFERÊNCIAS PRESERVADOS
+11837M1MT5 e2373M5Work:todosOHLCdos2373grupos conferem.
+Seisdiferençasquantidade M1-M5:07jan15:50+200/16:20-200;
+26jan17:30+450/18:00-450;29jan13:20+3216/15:25-3216.
+Preços iguais,parescompensados por dia;causa não certificada.
+Quatro minutos M1 ausentes22/26jan:posiçõesjáfechadas eoutrosníveis
+sementrada emtodoM5;auditoria preservada. Não geradas barras artificiais.
+Primeiros grupos com minutos semlinha também conferemOHLC/quantidade.
+Contexto02jan:30dez2025completo113M5/565M1conferidos;H164795,L163070,
+C163770;abertura163970,ajuste163930.21ajustes/48conjuntos matemáticos
+iguaisWork,tol0,00001. Referências eanálisesprovisórias preservadas.
+Bruto SHA256 idêntico emdados_brutos_modelo_d/replay_profit/Janeiro_2026.xlsx;
+manifestoPRESERVACAO_BRUTO.json,brutonão publicado.
+
+CONTINUIDADE
+Fev-3545/Mar+350/Abr+5720/Mai-780/Jun+3405/Jul+1100 intactos.
+CedroAgo-2375/Set+2855/Out+3830,DD3620 intactos,separados.
+RecortesWorkAgo-2275/Set+1380 preservados àparte dos mesescompletos.
+PDFs técnico/enxuto correntes agora cobremjaneiro-julho;originais anteriores
+preservados. Controle10/07 dispensado permaneceencerrado.
+Próxima expansão cronológica:dezembro2025,conforme plano aprovado.
+Se contratosanteriores indisponíveis,tentar negóciosWINFUT comms,
+correspondência depreços eajustes;semcompra. Só após expansão estudar
+alvos/stops;depoisABC. Novasvariantes podem exigir novasjanelas.
+
+DD POR FECHAMENTOS DIÁRIOS EM ORDEM JANEIRO->JULHO, SEM REINÍCIO MENSAL
+Até 2026-01: DD teste 4375; Work 2605.831664.
+Até 2026-02: DD teste 8720; Work 4780.240329.
+Até 2026-03: DD teste 9365; Work 4780.240329.
+Até 2026-04: DD teste 9365; Work 4780.240329.
+Até 2026-05: DD teste 9365; Work 4780.240329.
+Até 2026-06: DD teste 9365; Work 4780.240329.
+Até 2026-07: DD teste 9365; Work 4780.240329.
+
+Total janeiro-julho:teste4630. Meses anteriores preservados. SérieCedro separada.

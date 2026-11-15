@@ -1,0 +1,96 @@
+{
+  "status": "JANEIRO_ENCERRADO_M1_REPLAY",
+  "workbook_sha256": "17b22670cd7ba6329d2ef74e51744d1ee1f149c39c543383f47ab7bd1daca50d",
+  "ignored_sheets": [],
+  "records": 97765,
+  "pending_operation_count": 0,
+  "resolved_original_pending": 4,
+  "grade_controls": 0,
+  "operations": 48,
+  "test_points": "-1620",
+  "work_points": "140.280331",
+  "difference": "-1760.280331",
+  "unresolved_operations": [],
+  "method": "44resultados determinados nos candles M1 (6 antes ambiguos emM5)+4resolvidos por Replay;0pendentes;nao e mes integral tick a tick. Grade5,niveis,sem custos/fills.",
+  "gap_control": "Quatro minutos M1 ausentes em22/26jan;posicoes ja encerradas e outros niveis sem entrada noM5;auditoria preservada. Seis diferencas quantidade M1/M5,OHLC iguais,parescompensados por dia.",
+  "grade_sensitive_replay_cases": [
+    {
+      "date": "2026-01-20",
+      "level": "R61.8",
+      "primary": "TP",
+      "mathematical": "SL",
+      "mathematical_levels": {
+        "entry": "166976.6380000000000000000000000000000000",
+        "tp": "166933.9023333333333333333333333333333334",
+        "sl": "167426.6380000000000000000000000000000000"
+      }
+    }
+  ],
+  "final_operation_reasons": {
+    "TP": 31,
+    "SL": 17
+  },
+  "Work_flips": [
+    {
+      "Work": "ALVO",
+      "test": "SL",
+      "count": 4
+    },
+    {
+      "Work": "STOP",
+      "test": "TP",
+      "count": 2
+    }
+  ],
+  "chronological_stats": {
+    "2026-01": {
+      "test_points": "-1620",
+      "work_points": "140.280331",
+      "test_DD_accum": "4375",
+      "work_DD_accum": "2605.831664"
+    },
+    "2026-02": {
+      "test_points": "-3545",
+      "work_points": "-664.311665",
+      "test_DD_accum": "8720",
+      "work_DD_accum": "4780.240329"
+    },
+    "2026-03": {
+      "test_points": "350",
+      "work_points": "3451.037332",
+      "test_DD_accum": "9365",
+      "work_DD_accum": "4780.240329"
+    },
+    "2026-04": {
+      "test_points": "5720",
+      "work_points": "6877.556998",
+      "test_DD_accum": "9365",
+      "work_DD_accum": "4780.240329"
+    },
+    "2026-05": {
+      "test_points": "-780",
+      "work_points": "2032.313668",
+      "test_DD_accum": "9365",
+      "work_DD_accum": "4780.240329"
+    },
+    "2026-06": {
+      "test_points": "3405",
+      "work_points": "7214.523331",
+      "test_DD_accum": "9365",
+      "work_DD_accum": "4780.240329"
+    },
+    "2026-07": {
+      "test_points": "1100",
+      "work_points": "5255.800668",
+      "test_DD_accum": "9365",
+      "work_DD_accum": "4780.240329"
+    }
+  },
+  "January_July_test": "4630",
+  "January_July_Work": "24307.200663",
+  "no_new_replay_requested": true,
+  "series": "M1_PLUS_TARGETED_REPLAY_SEPARATE_FROM_CEDRO",
+  "complete_matching_minutes": 2,
+  "partial_boundary_minutes": 4,
+  "previous_month_daily_points_unchanged": true
+}
