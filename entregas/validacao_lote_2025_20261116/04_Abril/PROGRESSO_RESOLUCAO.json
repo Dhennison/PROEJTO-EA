@@ -1,19 +1,18 @@
 {
   "month": "2025-04",
-  "status": "PENDENTE_COMPLEMENTO",
+  "status": "ENCERRADO_M1_REPLAY",
   "pregoes": 20,
   "operacoes": 37,
-  "pendentes": 1,
-  "principal": null,
-  "comparavel_Work_teste": null,
+  "pendentes": 0,
+  "principal": "865",
+  "comparavel_Work_teste": "865",
   "Work_referencia": "1397.842335",
-  "diferenca_comparavel": null,
+  "diferenca_comparavel": "-532.842335",
   "complemento_fora_Work": "0",
   "datas_fora_Work": "",
   "motivos": {
     "TP": 25,
-    "SL": 10,
-    "CORTE": 1,
-    "PENDENTE": 1
+    "SL": 11,
+    "CORTE": 1
   }
 }

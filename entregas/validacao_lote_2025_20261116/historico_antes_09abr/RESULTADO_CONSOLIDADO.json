@@ -1,0 +1,334 @@
+{
+  "status": "DEZ_MESES_ENCERRADOS_ABRIL_PENDENTE",
+  "newly_closed_months": [
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11"
+  ],
+  "pending_months": [
+    "2025-04"
+  ],
+  "monthly": [
+    {
+      "month": "2025-01",
+      "status": "ENCERRADO_M1_REPLAY",
+      "pregoes": 22,
+      "operacoes": 50,
+      "pendentes": 0,
+      "principal": "-2405",
+      "comparavel_Work_teste": "-1630",
+      "Work_referencia": "1091.86267",
+      "diferenca_comparavel": "-2721.86267",
+      "complemento_fora_Work": "-775",
+      "datas_fora_Work": "2025-01-02",
+      "motivos": {
+        "TP": 31,
+        "SL": 14,
+        "CORTE": 5
+      }
+    },
+    {
+      "month": "2025-02",
+      "status": "ENCERRADO_M1_REPLAY",
+      "pregoes": 20,
+      "operacoes": 41,
+      "pendentes": 0,
+      "principal": "-1180",
+      "comparavel_Work_teste": "-1180",
+      "Work_referencia": "3827.443337",
+      "diferenca_comparavel": "-5007.443337",
+      "complemento_fora_Work": "0",
+      "datas_fora_Work": "",
+      "motivos": {
+        "TP": 29,
+        "SL": 12
+      }
+    },
+    {
+      "month": "2025-03",
+      "status": "ENCERRADO_M1_REPLAY",
+      "pregoes": 19,
+      "operacoes": 39,
+      "pendentes": 0,
+      "principal": "-970",
+      "comparavel_Work_teste": "-970",
+      "Work_referencia": "1721.539667",
+      "diferenca_comparavel": "-2691.539667",
+      "complemento_fora_Work": "0",
+      "datas_fora_Work": "",
+      "motivos": {
+        "TP": 27,
+        "SL": 12
+      }
+    },
+    {
+      "month": "2025-04",
+      "status": "PENDENTE_COMPLEMENTO",
+      "pregoes": 20,
+      "operacoes": 37,
+      "pendentes": 1,
+      "principal": null,
+      "comparavel_Work_teste": null,
+      "Work_referencia": "1397.842335",
+      "diferenca_comparavel": null,
+      "complemento_fora_Work": "0",
+      "datas_fora_Work": "",
+      "motivos": {
+        "TP": 25,
+        "SL": 10,
+        "CORTE": 1,
+        "PENDENTE": 1
+      }
+    },
+    {
+      "month": "2025-05",
+      "status": "ENCERRADO_M1_REPLAY",
+      "pregoes": 21,
+      "operacoes": 39,
+      "pendentes": 0,
+      "principal": "-2915",
+      "comparavel_Work_teste": "-2915",
+      "Work_referencia": "822.760335",
+      "diferenca_comparavel": "-3737.760335",
+      "complemento_fora_Work": "0",
+      "datas_fora_Work": "",
+      "motivos": {
+        "TP": 25,
+        "SL": 14
+      }
+    },
+    {
+      "month": "2025-06",
+      "status": "ENCERRADO_M1_REPLAY",
+      "pregoes": 20,
+      "operacoes": 50,
+      "pendentes": 0,
+      "principal": "895",
+      "comparavel_Work_teste": "895",
+      "Work_referencia": "5830.996665",
+      "diferenca_comparavel": "-4935.996665",
+      "complemento_fora_Work": "0",
+      "datas_fora_Work": "",
+      "motivos": {
+        "SL": 14,
+        "TP": 34,
+        "CORTE": 2
+      }
+    },
+    {
+      "month": "2025-07",
+      "status": "ENCERRADO_M1_REPLAY",
+      "pregoes": 23,
+      "operacoes": 53,
+      "pendentes": 0,
+      "principal": "2740",
+      "comparavel_Work_teste": "2170",
+      "Work_referencia": "4465.377",
+      "diferenca_comparavel": "-2295.377",
+      "complemento_fora_Work": "570",
+      "datas_fora_Work": "2025-07-10,2025-07-11",
+      "motivos": {
+        "TP": 42,
+        "SL": 10,
+        "CORTE": 1
+      }
+    },
+    {
+      "month": "2025-08",
+      "status": "ENCERRADO_M1_REPLAY",
+      "pregoes": 21,
+      "operacoes": 40,
+      "pendentes": 0,
+      "principal": "-460",
+      "comparavel_Work_teste": "-460",
+      "Work_referencia": "3415.303664",
+      "diferenca_comparavel": "-3875.303664",
+      "complemento_fora_Work": "0",
+      "datas_fora_Work": "",
+      "motivos": {
+        "TP": 28,
+        "SL": 12
+      }
+    },
+    {
+      "month": "2025-09",
+      "status": "ENCERRADO_M1_REPLAY",
+      "pregoes": 22,
+      "operacoes": 42,
+      "pendentes": 0,
+      "principal": "-385",
+      "comparavel_Work_teste": "-385",
+      "Work_referencia": "4528.847334",
+      "diferenca_comparavel": "-4913.847334",
+      "complemento_fora_Work": "0",
+      "datas_fora_Work": "",
+      "motivos": {
+        "TP": 28,
+        "SL": 14
+      }
+    },
+    {
+      "month": "2025-10",
+      "status": "ENCERRADO_M1_REPLAY",
+      "pregoes": 23,
+      "operacoes": 48,
+      "pendentes": 0,
+      "principal": "-1055",
+      "comparavel_Work_teste": "-1055",
+      "Work_referencia": "1728.645995",
+      "diferenca_comparavel": "-2783.645995",
+      "complemento_fora_Work": "0",
+      "datas_fora_Work": "",
+      "motivos": {
+        "TP": 32,
+        "SL": 15,
+        "CORTE": 1
+      }
+    },
+    {
+      "month": "2025-11",
+      "status": "ENCERRADO_M1_REPLAY",
+      "pregoes": 19,
+      "operacoes": 39,
+      "pendentes": 0,
+      "principal": "-300",
+      "comparavel_Work_teste": "-300",
+      "Work_referencia": "4238.725002",
+      "diferenca_comparavel": "-4538.725002",
+      "complemento_fora_Work": "0",
+      "datas_fora_Work": "",
+      "motivos": {
+        "SL": 11,
+        "TP": 27,
+        "CORTE": 1
+      }
+    }
+  ],
+  "continuous_blocks": {
+    "2025_01_03": {
+      "start": "2025-01-02",
+      "end": "2025-03-31",
+      "days": 61,
+      "test_points": "-4555",
+      "test_DD": "5200",
+      "Work_DD_on_comparable_dates": "1475.364666",
+      "test_DD_on_comparable_dates": "4425",
+      "monthly_reset": false
+    },
+    "2025_05_2026_07": {
+      "start": "2025-05-02",
+      "end": "2026-07-31",
+      "days": 314,
+      "test_points": "6285",
+      "test_DD": "9365",
+      "Work_DD_on_comparable_dates": "4780.240329",
+      "test_DD_on_comparable_dates": "9365",
+      "monthly_reset": false
+    }
+  },
+  "global_DD_since_January2025": null,
+  "January_complement": {
+    "date": "2025-01-02",
+    "sheet": "TXT_COMPLEMENTO02JAN",
+    "index": "TXT02JAN",
+    "records": 56878,
+    "start": "09:00:38.125",
+    "end": "09:02:12.123",
+    "at_limit_200001": false,
+    "cache": "/workspace/work/lote2025/cache/complemento02jan.pickle",
+    "source": "USER_TEXT_COMPLEMENT",
+    "source_raw": "/workspace/dados_brutos_modelo_d/replay_profit/2025_01_02_Complemento_20261116.txt",
+    "source_sha256": "8e37c24e56587501b37fa8c1a14e7b2162bf887d860c2e58c64506bac1db00cc",
+    "main_original_records": 42252,
+    "main_original_temporal_price_quantity_sequence_contiguous_in_complement": true,
+    "main_original_slice_start": 3047,
+    "no_deduplication": true,
+    "use": "Replace entire Jan02copy with complete text,retain original unchanged;do not concatenate/double count"
+  },
+  "DD_global_unavailable_reason": "April2025 incomplete;no zero insertion/no concatenation across incomplete months",
+  "current_continuous_curve": "CURVA_M1_REPLAY_2025_05_2026_07.csv",
+  "old_daily_results_preserved": [
+    {
+      "path": "entregas/profit_dezembro_2025_20261115/DIARIO_APOS_JANELAS.csv",
+      "sha256": "66f20781c81669547ef4699b03da816459d2dc042e402e7c9c0891036f7c20e2",
+      "points": 3135
+    },
+    {
+      "path": "entregas/profit_janeiro_20261115/DIARIO_APOS_JANELAS.csv",
+      "sha256": "cd245a22c47e91c335d7a8d3f219e0b76b176aa940cdd2e4990fb2fec39f4404",
+      "points": -1620
+    },
+    {
+      "path": "entregas/profit_fevereiro_20261114/DIARIO_APOS_JANELAS.csv",
+      "sha256": "623054cb8f3985a61789007edf69d292365c2fa54fd2c717d3edf0b8f6732d83",
+      "points": -3545
+    },
+    {
+      "path": "entregas/profit_marco_20261113/DIARIO_APOS_JANELAS.csv",
+      "sha256": "c861fda8adecbdc859425ae411209d5a612a133eef83ac9c3d60738bfdc37a06",
+      "points": 350
+    },
+    {
+      "path": "entregas/profit_abril_20261113/DIARIO_APOS_JANELAS.csv",
+      "sha256": "630606dbc841f0ea31ac81ef41c521e158be9f52e1bbb100e6b60f970971f5d8",
+      "points": 5720
+    },
+    {
+      "path": "entregas/profit_maio_20261113/DIARIO_APOS_JANELAS.csv",
+      "sha256": "5d6a590bce65afa2f50e45737215bfcd5c25d9f60020e3f5c2ee4268da290986",
+      "points": -780
+    },
+    {
+      "path": "entregas/profit_junho_20261113/DIARIO_APOS_JANELAS.csv",
+      "sha256": "2be80226fb49968c71e1b9cde291068210d4c6c2185488799bba315b1be7a80c",
+      "points": 3405
+    },
+    {
+      "path": "entregas/profit_winq26_julho_20261113/DIARIO_APOS_JANELAS.csv",
+      "sha256": "2d2ae77c188eb930c291ffbbbb48896450e332505b03000ef058ade0f2200bb1",
+      "points": 1100
+    }
+  ],
+  "source_records": 1940063,
+  "source_sheets": 39,
+  "source_asset": "https://github.com/Dhennison/PROEJTO-EA/releases/download/dados-replay-2025-20261116/Janeiro.a.Novembro.2025.xlsx",
+  "source_sha256": "e0992ed7c4b603a1a24307f30b94713952af9bebae9f5c417fd81c010817fd13",
+  "source_local": "/workspace/dados_brutos_modelo_d/replay_profit/Janeiro_a_Novembro_2025_Release.xlsx",
+  "source_published_by_user": true,
+  "raw_copied_into_Git_history": false,
+  "main": "D_ORIGINAL_GRADE5",
+  "method": "M1_PLUS_TARGETED_REPLAY_NO_CERTIFIED_FILLS",
+  "costs": false,
+  "full_tape": false,
+  "pending": [
+    {
+      "date": "2025-04-09",
+      "contract": "WINJ25",
+      "level": "R61.8",
+      "capture_start": "14:20:00",
+      "capture_end_exclusive": "14:21:00",
+      "reason": "Aba recebida cobre09:20;necessario14:20",
+      "do_not_repeat": "02jan complementado e validado;demais dias/abas validados"
+    }
+  ],
+  "partial_prefix_proof": {
+    "method": "M1_ENTRY_BAR_BOUNDS_PLUS_OBSERVED_LATER_ENTRY_EXIT",
+    "entry_bar_OHLC": [
+      "125690.0000000000000000",
+      "125830.0000000000000000",
+      "125645.0000000000000000",
+      "125795.0000000000000000"
+    ],
+    "opposite_barrier": "126275",
+    "missing_prefix_cannot_reach_opposite_barrier": true,
+    "earlier_entry_or_same_result_exit_possible": true,
+    "exact_entry_exit_timestamps_not_certified": true
+  }
+}

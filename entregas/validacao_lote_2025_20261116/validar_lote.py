@@ -17,6 +17,8 @@ def dec(s):return D(s.replace(',','.'))
 inv=json.loads((P/'INVENTARIO_ABAS.json').read_text())
 if (P/'COMPLEMENTO_02JAN.json').exists():
  replacement=json.loads((P/'COMPLEMENTO_02JAN.json').read_text());inv=[replacement if x['sheet']=='JAN 02-01-25' else x for x in inv]
+if (P/'COMPLEMENTO_09ABR.json').exists():
+ replacement=json.loads((P/'COMPLEMENTO_09ABR.json').read_text());inv=[replacement if x['sheet']=='ABR 09-04-25' else x for x in inv]
 (P/'INVENTARIO_FONTES_EM_USO.json').write_text(json.dumps(inv,ensure_ascii=False,indent=2)+'\n')
 with zipfile.ZipFile(R/'entregas/arquivo_conversa_20261111/originais/ORIGINAIS_PARTE_005.zip') as z:raw=z.read(next(n for n in z.namelist() if n.endswith('/EXPORT110_1794243035_5791.zip')))
 assert hashlib.sha256(raw).hexdigest()=='0e4a1cf44e37c4409ea856e8a52f754669819c338b080346ec643fdfbcbb7093'
@@ -107,6 +109,8 @@ coverage_audits.append(dict(date='2025-08-21',explanation='USER_THREE_AUCTIONS_T
 allsummary=[];allpending=[];allresolved=[]
 for month in range(1,12):
  src=next(p for p in PRE.iterdir() if p.is_dir() and p.name.startswith(f'{month:02d}_'));out=P/src.name;out.mkdir(exist_ok=True)
+ if (out/'RESULTADO_FINAL.json').exists():
+  saved=json.loads((out/'RESULTADO_FINAL.json').read_text());allsummary.append(saved);allresolved.extend(r for r in saved['results'] if r['resolved']);print('PRESERVED_CLOSED_MONTH',saved['month'],flush=True);continue
  ops=read(src/'OPERACOES_POSSIBILIDADES.csv');refs={r['date']:r for r in read(src/'REFERENCIAS.csv')};ws=read(src/'JANELAS_POR_OPERACAO.csv');gradekeys={(r['data'],r['nivel']):r for r in ws if r.get('tipo')=='CONTROLE_GRADE5'}
  results=[];lookup={};pending=[]
  for op in ops:

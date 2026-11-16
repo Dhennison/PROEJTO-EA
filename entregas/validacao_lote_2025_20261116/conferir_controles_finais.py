@@ -25,8 +25,8 @@ for s in months:
    assert ck['OHLC_match']=='True' and ck['quantity_match']=='True' or key in proofs and tm==op['entry_minute'],(key,tm,'later requested minute not complete')
   validated+=1
 assert proofs==[('2025-03-13','R61.8')],proofs
-assert validated==41,validated
-assert [(x['date'],x['level']) for x in json.loads((P/'PENDENCIAS.json').read_text())]==[('2025-04-09','R61.8')]
+assert validated==42,validated
+assert [(x['date'],x['level']) for x in json.loads((P/'PENDENCIAS.json').read_text())]==[]
 coverage=json.loads((P/'CONTROLES_COBERTURA.json').read_text());jun=coverage[0]
 assert jun['observed_gaps']==[dict(sheet='Cobertura 03-06-25',date='2025-06-03',last_trade='09:03:09.264',next_trade='09:56:21.720',seconds=3192.456)]
 assert all(c['OHLC_match'] for c in jun['minute_checks'] if c['minute']<'10:01')
@@ -69,5 +69,5 @@ def suffix_from_state(state):
    elif price<=125765:state='TP'
  return state
 assert {suffix_from_state(state) for state in ['NONE','OPEN','TP']}=={'TP'}
-report=dict(validated_Replay_or_grade_operations=validated,partial_prefix_invariant_outcome_cases=proofs,January_original_prefix_was_not_accepted=True,January_complement_now_accepted=True,April_wrong_hour_not_accepted=True,June03_no_entry_before_reopening_and_copied_prices_exclude_extra_entries=True,June03_quantity_remark=-1,July30_exit_before_auction=True,August21_S50_now_resolved=True,August21_later_text_control_preserved=True,remaining_operations=1,months_with_no_Replay_pending=10)
+report=dict(validated_Replay_or_grade_operations=validated,partial_prefix_invariant_outcome_cases=proofs,January_original_prefix_was_not_accepted=True,January_complement_now_accepted=True,April_original_wrong_hour_was_not_accepted=True,April_complement_now_accepted=True,June03_no_entry_before_reopening_and_copied_prices_exclude_extra_entries=True,June03_quantity_remark=-1,July30_exit_before_auction=True,August21_S50_now_resolved=True,August21_later_text_control_preserved=True,remaining_operations=0,months_with_no_Replay_pending=11)
 (P/'CONFERENCIA_FINAL.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps(report,indent=2))

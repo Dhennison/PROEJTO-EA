@@ -1,0 +1,202 @@
+[
+  {
+    "path": "entregas/validacao_lote_2025_20261116/01_Janeiro/RESULTADO_FINAL.json",
+    "sha256": "04b6038d00c00ff54a85ae6590eb149dbaf84ab6b6f2e70bb02ae4038bd9503d"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/01_Janeiro/OPERACOES_FINAIS.csv",
+    "sha256": "d115849d8490f612a165de7928e7018676f32c245fbc2deb75acab557188ba63"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/01_Janeiro/DIARIO_APOS_REPLAY.csv",
+    "sha256": "2784ae466a3b272c464c211ddd8b5a0167a8b37becef549ac14bcca9787c787f"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/01_Janeiro/LEIA_RESULTADO.txt",
+    "sha256": "1431adfe17fed5146e31fd73d531658a97f25449caa185716c80613409892981"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/01_Janeiro/PROGRESSO_RESOLUCAO.json",
+    "sha256": "e1d11ac5becbe9dc2f495155034cce602be248be699d5890f5bfe9b11612638c"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/02_Fevereiro/RESULTADO_FINAL.json",
+    "sha256": "3bf25144c7a268a8e9ee1012d93d1c16f606b9e30a3e186f90e746337eb8820f"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/02_Fevereiro/OPERACOES_FINAIS.csv",
+    "sha256": "bef898ceb73341872f39cfe91e905578978667ff3db7365aa5def746cbd9c6b8"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/02_Fevereiro/DIARIO_APOS_REPLAY.csv",
+    "sha256": "7d6babcfb9eca1048d69be8ba3fd5522d74934b9a36585194bef098759311a86"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/02_Fevereiro/LEIA_RESULTADO.txt",
+    "sha256": "da2e71f9cbf8e2ba2ef2863bccdb03dc30a55aa929bd51d3698abb66d082d876"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/02_Fevereiro/PROGRESSO_RESOLUCAO.json",
+    "sha256": "18fbc4438362a3ebc6ff1b68a0fee85deb74a46fd5a166137237afc80856d136"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/03_Mar\u00e7o/RESULTADO_FINAL.json",
+    "sha256": "e38b81cdffc75e6fd44b9089e58a4c7d704a4d13230d19fbd4ebb2b07237b3c8"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/03_Mar\u00e7o/OPERACOES_FINAIS.csv",
+    "sha256": "e302af1daf73809c8d081fc435f7c74cbe4c2996193899028706d1d749f169c5"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/03_Mar\u00e7o/DIARIO_APOS_REPLAY.csv",
+    "sha256": "cd24ecc9c8fd275b0adb9961d2bc341cf6f600caa37167b6198fb5d092ed96eb"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/03_Mar\u00e7o/LEIA_RESULTADO.txt",
+    "sha256": "3c461255194ec277e41cad785c65e2dd3114c931c2c4c2f86b06277b8bcbb159"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/03_Mar\u00e7o/PROGRESSO_RESOLUCAO.json",
+    "sha256": "4b949f36d896c76a5a575dfcd913b8b75f0c7bd1b592ad6bb18bd3e0ed171155"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/05_Maio/RESULTADO_FINAL.json",
+    "sha256": "52e919d0a5ca133d674d117747e15a26d5cedffb59bc8099975b08d972921c04"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/05_Maio/OPERACOES_FINAIS.csv",
+    "sha256": "590348febcbd0dd38a928a596be70d172aaa34a6c4122a92930548fab7979784"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/05_Maio/DIARIO_APOS_REPLAY.csv",
+    "sha256": "416913e0bf36c7a6c042c4b868023300356ed9a3733218b7e515ba1cdee5ee66"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/05_Maio/LEIA_RESULTADO.txt",
+    "sha256": "dc54ee22a3f3813493621cf17fadcaa4679cf2274c8f4abaed5990c9feb0fc50"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/05_Maio/PROGRESSO_RESOLUCAO.json",
+    "sha256": "b70fea101744b3bc8ba4dedaf81cd38fb2190b060b019d4a2f74418045ac4caa"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/06_Junho/RESULTADO_FINAL.json",
+    "sha256": "e8b15a8f9ce85d596c6a9ca582067ad91e5fd616bf3c0da4886d425b4c20b5d4"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/06_Junho/OPERACOES_FINAIS.csv",
+    "sha256": "a3c03afcabc2be4be9d3744b82358f6097cee88185ba02d0072df059d5fa67fe"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/06_Junho/DIARIO_APOS_REPLAY.csv",
+    "sha256": "3ac1f474f26c9e5d262021d887aac28db360fcfc742352e13abc10a6e36f6fac"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/06_Junho/LEIA_RESULTADO.txt",
+    "sha256": "94ccdaa93470bf3fb2597628d17a7169382b41844beb10fa8d4437028b6a5533"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/06_Junho/PROGRESSO_RESOLUCAO.json",
+    "sha256": "8f22e877cc4e1388d19e341f97a8f33a132f13d0d03a64f85e98205dc669d9b3"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/07_Julho/RESULTADO_FINAL.json",
+    "sha256": "ce0f06daaabd67b811db5f81cefdf2cd9716f00635f57a84c0c2ae083a05cfd7"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/07_Julho/OPERACOES_FINAIS.csv",
+    "sha256": "aee451b1486ea0ae69528004f1dbcc4d3a3dd65188c59439fbfa2845492d8008"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/07_Julho/DIARIO_APOS_REPLAY.csv",
+    "sha256": "65f5c179407167c5b116b5b08234edf00989d3364f89f4b4d69aaf2e19544ff4"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/07_Julho/LEIA_RESULTADO.txt",
+    "sha256": "ed93e2c8a66ef4b2961462f6d17b0aff4204ca61ecfef3b283604bc9f2555d87"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/07_Julho/PROGRESSO_RESOLUCAO.json",
+    "sha256": "284d2cc72678206bba4454ab405c8fba951336afacc616b003cf6e77d564b998"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/08_Agosto/RESULTADO_FINAL.json",
+    "sha256": "176c039f5ef278c14256a9b700ae21760b0b55f424c2c88415c57b229ab5f4d9"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/08_Agosto/OPERACOES_FINAIS.csv",
+    "sha256": "618f23610cf232973d7d48f70b9e3679c3714fac9f89d2c474c5d08cedb55648"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/08_Agosto/DIARIO_APOS_REPLAY.csv",
+    "sha256": "e3b05c87c453006225a7f8e5d1b9977a0c9042d8a607ff8ad741fb8b49c844ff"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/08_Agosto/LEIA_RESULTADO.txt",
+    "sha256": "9c83c859bb3bdb9ac664051c9b7c29514ac9ab5877d35b5dd580251ad9084ada"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/08_Agosto/PROGRESSO_RESOLUCAO.json",
+    "sha256": "97bd28e06886f47558922464ab677a88d180a4f6bf7cc04ea9b18a4c36e34662"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/09_Setembro/RESULTADO_FINAL.json",
+    "sha256": "16c0a95314f1c76720c6b2deea0b8452c01285a160c0153ee99ec435ab70b172"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/09_Setembro/OPERACOES_FINAIS.csv",
+    "sha256": "dcd23ee86f3e495dab7c3edc665210d39457c8ca0d621472fcf4b1468d0beae0"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/09_Setembro/DIARIO_APOS_REPLAY.csv",
+    "sha256": "53103211bcfc9194b823ec882da1c948c84d85e9669779fb0f43a26c858220ff"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/09_Setembro/LEIA_RESULTADO.txt",
+    "sha256": "7baa1b539b56b251ad0728a6ba1a44debd82028d476993eb4f9da72827caacf4"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/09_Setembro/PROGRESSO_RESOLUCAO.json",
+    "sha256": "15f4af3de06641c81bbb266d10dec22ed889a8bdfc517a1e5210f5a65fe858c8"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/10_Outubro/RESULTADO_FINAL.json",
+    "sha256": "a3c236cbb1cfe56c318c205deda552c96aa921bf42f8c658427a3b1687426940"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/10_Outubro/OPERACOES_FINAIS.csv",
+    "sha256": "097fae1d12a8ec0437c6092d01228b55c907f1151cf2d2e2899ebc9d606215ef"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/10_Outubro/DIARIO_APOS_REPLAY.csv",
+    "sha256": "e992ca30bfa964bcdba35e20a1dc4ea00c1c05094b5e97eccafa601a428b549f"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/10_Outubro/LEIA_RESULTADO.txt",
+    "sha256": "bdfd7926fd05a4894a68ed3a43d329c3830aeb5bee276b492ec5eb2d8279e00a"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/10_Outubro/PROGRESSO_RESOLUCAO.json",
+    "sha256": "90bffbe11bcb9f5f22a9d94edfc6fd4f90c3fad7720a57bd5fbe95457061a702"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/11_Novembro/RESULTADO_FINAL.json",
+    "sha256": "d8e0df4fa5f279c6458e10787c5edca4121107e11d53fa7b04532c2a86d91ff3"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/11_Novembro/OPERACOES_FINAIS.csv",
+    "sha256": "5901eb03069307c4f89127a46d87af9d43f8ca80b27e6b22dd0cc7d07a000597"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/11_Novembro/DIARIO_APOS_REPLAY.csv",
+    "sha256": "02798cf32170009d33c142ef6e1c1456f5c7566e0b3ce74438bce2ffbdf68876"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/11_Novembro/LEIA_RESULTADO.txt",
+    "sha256": "da7c5ddcf49a2d6753bbdb8a3bdf12f78aba8ee9027141f29e4ffbdb95c84050"
+  },
+  {
+    "path": "entregas/validacao_lote_2025_20261116/11_Novembro/PROGRESSO_RESOLUCAO.json",
+    "sha256": "4a8ca1d18ce7138ccf944ab745a539c4e0e6ca43aed51c27b676dfbf0c8affae"
+  }
+]

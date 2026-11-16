@@ -1,3 +1,55 @@
+FECHAMENTO DO LOTE JANEIRO–NOVEMBRO/2025 — 16/11/2026
+Este registro substitui o estado de pendência descrito nos registros históricos abaixo.
+
+09/04/2025, WINJ25, R61.8: complemento recebido e validado.
+75.799 negócios, de 14:19:58.000 a 14:21:03.869. O minuto 14:20 contém
+67.641 negócios e 177.981 contratos; OHLC e quantidade conferem com M1.
+Entrada na grade em 125.430 às 14:20:25.497; stop em 125.880 às
+14:20:38.402: -450 pontos, confirmando o STOP do Work. Ordem dos negócios
+com o mesmo milissegundo não altera o resultado. Abril/2025: +865 pontos.
+Raw preservado e SHA256 em COMPLEMENTO_09ABR.json; aba antiga de 09:20
+mantida como referência histórica, sem uso para resolver o minuto 14:20.
+
+PRINCIPAL: MODELO D ORIGINAL, GRADE DE 5 PONTOS
+2025: janeiro -2.405; fevereiro -1.180; março -970; abril +865;
+maio -2.915; junho +895; julho +2.740; agosto -460; setembro -385;
+outubro -1.055; novembro -300. Onze meses encerrados, 478 operações,
+nenhuma pendência de Replay neste lote. Foram conferidos 40 casos de
+ambiguidade e dois controles adicionais de grade. Não refazer meses fechados.
+Janeiro comparável ao Work: -1.630; complemento 02/01: -775 separado.
+Julho comparável ao Work: +2.170; complementos 10 e 11/07: +570 separados.
+
+CURVA DIÁRIA CONTÍNUA JANEIRO/2025–JULHO/2026
+395 fechamentos diários em ordem cronológica, saldo +2.595 pontos.
+DD máximo: 9.365 pontos, do pico acumulado +120 em 12/01/2026 ao vale
+-9.245 em 23/03/2026. Sem reinício mensal e sem alterar resultados fechados.
+A série comparável ao Work mantém datas ausentes separadas, sem inventar zeros.
+Fonte/metodologia: M1 com Replay pontual; não é auditoria tick a tick integral.
+Cedro agosto–outubro/2026 permanece separado: -2.375, +2.855 e +3.830;
+recortes comparáveis Work de agosto e setembro também permanecem separados.
+Todos os resultados anteriores, brutos, referências e auditorias preservados.
+Controle adicional de 10/07/2026 dispensado pelo usuário não foi reaberto.
+
+ARQUIVOS ATUAIS: entregas/validacao_lote_2025_20261116/
+RESULTADO_CONSOLIDADO.json, CURVA_M1_REPLAY_2025_01_2026_07.csv,
+Resultados_2025_Apos_Release.xlsx e PDFs Diario/Tecnico com comparação diária.
+Os arquivos em historico_antes_09abr registram o estado anterior, com abril pendente.
+
+SEQUÊNCIA DO PROJETO PRESERVADA
+1. Continuar retroativamente nos contratos disponíveis no Replay até o limite,
+coletando apenas janelas capazes de mudar resultados, inclusive por grade de 5 pontos.
+2. No limite dos contratos, tentar WINFUT e confirmar negócios individuais com
+milissegundos, correspondência de preços e ajustes da série contínua. Candles
+não substituem negócios individuais. Não há autorização para comprar histórico.
+3. Se WINFUT fornecer negócios confirmáveis, continuar pelos meses disponíveis;
+caso contrário, encerrar a expansão no limite confirmado.
+4. Após a expansão, estudar alvos/stops por nível, mantendo D original principal;
+variantes separadas, comparando estabilidade, DD e concentração, além dos pontos.
+5. Posteriormente testar A, B e C com regras documentadas nos mesmos meses.
+Novas regras podem exigir novas janelas além das já coletadas.
+
+===== REGISTROS HISTÓRICOS PRESERVADOS ABAIXO =====
+
 LOTE2025 ANALISADO APÓS RELEASE E COMPLEMENTO02JAN — 16/11/2026
 Planilha principal agora LIDA por download diretoGitHubRelease:
 dados-replay-2025-20261116/Janeiro.a.Novembro.2025.xlsx,56091431bytes,

@@ -1,11 +1,11 @@
 {
   "month": "2025-04",
-  "status": "PARCIAL_AGUARDA_COMPLEMENTO",
+  "status": "REPLAY_RESOLVIDO_AGUARDA_CONFERENCIA_FINAL",
   "operations": 37,
-  "resolved_original_pending": 5,
+  "resolved_original_pending": 6,
   "grade_controls_resolved": 1,
-  "pending": 1,
-  "principal": null,
+  "pending": 0,
+  "principal": "865",
   "work_points": "1397.842335",
   "outside_Work_dates": [],
   "results": [
@@ -345,16 +345,81 @@
       "date": "2025-04-09",
       "level": "R61.8",
       "contract": "WINJ25",
-      "resolved": false,
-      "reason": "MISSING_REQUIRED_WINDOW",
+      "sheet": "TXT_COMPLEMENTO09ABR",
       "required_minute": "14:20",
-      "available_windows": [
-        [
-          "ABR 09-04-25",
-          "09:19:58.014",
-          "09:21:04.993"
-        ]
-      ]
+      "grade_control": false,
+      "primary": {
+        "reason": "SL",
+        "points": "-450",
+        "entry": {
+          "time": "14:20:25.497",
+          "price": 125430,
+          "quantity": 1,
+          "source_row": 37529
+        },
+        "exit": {
+          "time": "14:20:38.402",
+          "price": 125880,
+          "quantity": 10,
+          "source_row": 25045
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-450",
+        "entry": {
+          "time": "14:20:25.497",
+          "price": 125430,
+          "quantity": 15,
+          "source_row": 37511
+        },
+        "exit": {
+          "time": "14:20:38.402",
+          "price": 125880,
+          "quantity": 1,
+          "source_row": 25038
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_invariant": true,
+      "mathematical": {
+        "reason": "SL",
+        "points": "-450.0000000000000000000000",
+        "entry": {
+          "time": "14:20:25.499",
+          "price": 125435,
+          "quantity": 10,
+          "source_row": 37510
+        },
+        "exit": {
+          "time": "14:20:38.485",
+          "price": 125885,
+          "quantity": 1,
+          "source_row": 25003
+        },
+        "exit_source": "REPLAY"
+      },
+      "mathematical_tie_invariant": true,
+      "mathematical_levels": {
+        "entry": "125431.6560000000000000000000000000000000",
+        "tp": "125321.9946666666666666666666666666666666",
+        "sl": "125881.6560000000000000000000000000000000"
+      },
+      "minute_check": {
+        "minute": "14:20",
+        "records": 67641,
+        "quantity": 177981,
+        "M1_quantity": 177981,
+        "OHLC": "[124930, 126665, 124660, 126345]",
+        "M1_OHLC": "[Decimal('124930.0000000000000000'), Decimal('126665.0000000000000000'), Decimal('124660.0000000000000000'), Decimal('126345.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true
+      },
+      "partial_prefix_invariance_proof": null,
+      "timestamps_conditional_on_no_earlier_entry": false,
+      "mixed_barrier_ms": [],
+      "resolved": true
     },
     {
       "date": "2025-04-17",
@@ -512,22 +577,20 @@
       "resolved": true
     }
   ],
-  "unresolved": [
-    {
-      "date": "2025-04-09",
-      "level": "R61.8",
-      "contract": "WINJ25",
-      "resolved": false,
-      "reason": "MISSING_REQUIRED_WINDOW",
-      "required_minute": "14:20",
-      "available_windows": [
-        [
-          "ABR 09-04-25",
-          "09:19:58.014",
-          "09:21:04.993"
-        ]
-      ]
-    }
-  ],
-  "source_workbook_sha256": "e0992ed7c4b603a1a24307f30b94713952af9bebae9f5c417fd81c010817fd13"
+  "unresolved": [],
+  "source_workbook_sha256": "e0992ed7c4b603a1a24307f30b94713952af9bebae9f5c417fd81c010817fd13",
+  "comparavel_Work_teste": null,
+  "diferenca_comparavel": null,
+  "complemento_fora_Work": "0",
+  "final_operation_reasons": {
+    "TP": 25,
+    "SL": 10,
+    "CORTE": 1,
+    "PENDENTE": 1
+  },
+  "closed": false,
+  "coverage_controls_conferred": "CONFERENCIA_FINAL.json",
+  "main_is_grade5": true,
+  "source_method": "M1_MT5_PLUS_TARGETED_PROFIT_REPLAY;WORK_M5_CONTEXT;NO_CERTIFIED_FILLS",
+  "April_complement": "COMPLEMENTO_09ABR.json"
 }

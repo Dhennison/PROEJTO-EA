@@ -1,88 +1,83 @@
-LOTE JANEIRO A NOVEMBRO/2025 — VALIDACAO16/11/2026
-Release recebida:39abas,1940063registros,XLSX56091431bytes,SHA256 conferido.
-Dez meses encerrados;Abril permanecependente de um complemento.02jan foi complementado.
-D original/grade5/toqueinclusivo/1contrato/corte18h,sem custos/fills certificados.
-M1+Replay pontual,não mês inteiro de negócios. Brutos preservados,sem deduplicação.
+LOTE JANEIRO A NOVEMBRO/2025 — ENCERRADO EM16/11/2026
+Planilha daRelease:39abas,1940063registros,56091431bytes,SHA256 conferido.
+Complementos TXT02jan e09abr preservados separadamente,sem deduplicação.
+Onze meses encerrados,478operações determinadas,nenhuma pendênciaReplay.
+42casos conferidos porReplay/grade:40ambiguidades originais e2controlesgrade.
+D original/grade5/1contrato/toque inclusivo/corte18h,pontos condicionais nos
+níveis,sem custos/fila/slippage ou fills garantidos. M1+Replay pontual,
+não mês inteiro auditado por negócios. Meses fechados antes destaetapa intactos.
 
-FECHAMENTOS E COMPARAVEIS
-2025-01: principal-2405, comparavel-1630, Work1091.86267, complemento-775.
-2025-02: principal-1180, comparavel-1180, Work3827.443337, complemento0.
-2025-03: principal-970, comparavel-970, Work1721.539667, complemento0.
-2025-04: principalPENDENTE, comparavelNone, Work1397.842335, complemento0.
-2025-05: principal-2915, comparavel-2915, Work822.760335, complemento0.
-2025-06: principal895, comparavel895, Work5830.996665, complemento0.
-2025-07: principal2740, comparavel2170, Work4465.377, complemento570.
-2025-08: principal-460, comparavel-460, Work3415.303664, complemento0.
-2025-09: principal-385, comparavel-385, Work4528.847334, complemento0.
-2025-10: principal-1055, comparavel-1055, Work1728.645995, complemento0.
-2025-11: principal-300, comparavel-300, Work4238.725002, complemento0.
+PRINCIPAIS E RECORTES COMPARÁVEIS
+2025-01: principal-2405, nosso comparável-1630, Work1091.86267, complemento-775.
+2025-02: principal-1180, nosso comparável-1180, Work3827.443337, complemento0.
+2025-03: principal-970, nosso comparável-970, Work1721.539667, complemento0.
+2025-04: principal865, nosso comparável865, Work1397.842335, complemento0.
+2025-05: principal-2915, nosso comparável-2915, Work822.760335, complemento0.
+2025-06: principal895, nosso comparável895, Work5830.996665, complemento0.
+2025-07: principal2740, nosso comparável2170, Work4465.377, complemento570.
+2025-08: principal-460, nosso comparável-460, Work3415.303664, complemento0.
+2025-09: principal-385, nosso comparável-385, Work4528.847334, complemento0.
+2025-10: principal-1055, nosso comparável-1055, Work1728.645995, complemento0.
+2025-11: principal-300, nosso comparável-300, Work4238.725002, complemento0.
 
-02JAN COMPLEMENTADO E VALIDADO
-NovoTXT56878registros09:00:38.125–09:02:12.123;minuto09:01completo.
-Todos42252registrosanteriores formambloco contiguo igual emhorario/preco/quantidade.
-Usado novo fluxo completo,sem concatenar ou deduplicar. R38.2SL-375
-no minuto09:04,com entrada09:01:16.180. Janeirofechado-2405,Workcomparavel separado.
+ÚLTIMO COMPLEMENTO09ABR CONFERIDO
+WINJ25R61.8,75799negócios,14:19:58.000–14:21:03.869.
+Minuto14:20:67641negócios/177981contratos,OHLC e quantidade iguaisM1.
+Entrada grade125430 às14:20:25.497,stop125880 às14:20:38.402,SL-450.
+ConfirmaSTOPWork. MatemáticoSL-450,doisdesempatesms com mesmoresultado,
+sem barreirasopostas nomesmo ms. Abrilfechado+865,37operações/20pregões.
+A cópia incorreta09:20 foi preservada como histórico,não usada em14:20.
+TXToriginal e réplicaSHA256idêntica preservados,COMPLEMENTO_09ABR.json.
+02jan já complementado:09:01 completo,sequência antiga toda contida no novo
+TXT. Jan completo-2405;comparávelWork-1630;complemento02jan-775 separado.
+Julho completo2740;comparável2170;complementos10/11jul+570 separados.
+Não somar comparáveis aos completos,nem preencher Work ausente comzero.
 
-UNICO COMPLEMENTO NECESSARIO
-09abrWINJ25R61.8:enviar14:20–14:21 algunssegundosantes/depois;
-aba recebida e09:19:58–09:21:04. Demaiscopias preservadas,nao repetir.
+CASOS DE SEQUÊNCIA E GRADE
+07marS50 entrou09:47M1,Replay10:30 pósentrada,como preparado.
+13marR61.8:prefixo parcial,TP60 invariável:stop126275 acima de toda a máxima
+M1125830. Estados possíveis do prefixo:sem entrada,aberta oujáTP;após a cópia
+todos levamTP. Não certificar horários observados11:13:52.410/11:13:54.829
+como únicos possíveis;entrada/saída anteriores podem existir no prefixo.
+02jan antigo não passava essecontrole,efoi corretamente complementado.
+Controles de máxima préentrada/entrada incompleta eordem temporal passaram.
+Posição só transportada se entrada precede a cópia;se entrar durante a cópia,
+aguardar o toque antes de qualquer saída. Não reprocessar extremo préentrada.
+2025-04-02 R61.8: gradeTP 110;matemáticoSL -450.0000000000000000000000.
+2025-04-30 S38.2: gradeSL -375;matemáticoTP 133.0546666666666666666667.
+2025-07-25 R38.2: gradeTP 160;matemáticoSL -375.0000000000000000000000.
 
-VALIDACAO E CASOS DE SEQUENCIA
-41operacoesReplay/grade validadas,39ambiguidades originais e2controlesgrade.
-Mar07S50 entrou09:47M1 e precisouReplay10:30 aposentrada,como preparado;
-nao exigir repetir09:47,poisposicao antes da copia e conhecida pelos candles.
-Mar13R61.8:copia comeca11:13:20.698,parcial. Alvo60 observado aposentrada,
-stop126275 fora de toda a faixaM1(high125830). Qualquer ramo do prefixo
-omitido fica aberto ou ja terminaTP;nao podeSL. LogoTP60 e invariavel.
-Nao certificar entrada11:13:52.410/saida11:13:54.829 como unicos instantes
-possiveis,poisuma entrada/saida anteriores no prefixo nao sao excluidas.
-Janeiro02 nao passava essa prova no primeiro arquivo:alvo poderia ser anterior
-no prefixo. NovoTXTcompleto resolveu a pendencia,sem aprovar o trecho antigo sozinho.
-Doisdesempatesms ebarreirasopostas conferidos. Regressoes contra maxima
-preentrada eentrada incompleta passaram. Nivel ja aberto so e transportado
-seentradaM1 precede a copia;seentrada ocorre dentro da copia,aguardar toque.
+LEILÕES,ABERTURAS E RESSALVAS
+03jun pausa09:03:09.264–09:56:21.720:relato do usuário,cópia eM1 compatíveis.
+Não há novas entradas elegíveis nospreços copiados;quantidade09:03difere-1.
+30julTP80 às15:42:37.020,antesleilão15:42:39.719–15:47:23.012.
+09out/11nov iniciam09:03,OHLC/quantidade das aberturas conferem;sem criar
+negócios anteriores.21ago S38.2SL-375 eS50SL-375 conferidos na planilha.
+S61.8TP17010:26:23.070 doTXT longo preservado;três pausas compatíveis com
+relato/M1. TXT longo200001registros,limiteobservado;não é fita inteira.
+Quantidade09:16difere-1. Layoutnão traz flag oficialde leilão;origem do relato
+identificada. Nenhuma trajetória/candle/negócio artificial foi criado.
+41grupos de quantidade M1/M5 divergem.20mai fechamentoM1141510 vsWork141500,
+após18h mas contexto21mai:mantida referênciaWork original141500,sem recalibrar
+resultado. Todasressalvas de fonte são preservadas;sem certificar fita perfeita.
 
-DIFERENCAS DE GRADE,CONTROLES MATEMATICOS SEPARADOS
-2025-04-02 R61.8: gradeTP 110;matematicoSL -450.0000000000000000000000.
-2025-04-30 S38.2: gradeSL -375;matematicoTP 133.0546666666666666666667.
-2025-07-25 R38.2: gradeTP 160;matematicoSL -375.0000000000000000000000.
+DD POR FECHAMENTOS DIÁRIOS,SEM REINÍCIO MENSAL
+Agora todosos19meses janeiro2025-julho2026 estão fechados,permitindo uma única
+curva contínua. Os blocos anteriores jan-mar e maio2025-jul2026 ficam como
+histórico;não são reiniciados nem concatenados com zero. Apenas abril foi
+acrescentado aos resultados antes fechados. Curvas comparáveisWork utilizam
+somente as mesmas datas com referênciaWork;complementos continuam separados.
+SérieCedro agosto-outubro2026 permanece separada,DD3620 e resultados antigos
+intactos. Não apresentar fontes mistas como fita integral de negócios.
+2025_01_2026_07: 2025-01-02 a2026-07-31,saldo2595,DD9365,pico2026-01-12 saldo120,vale2026-03-23 saldo-9245;DDWorkcomparável4780.240329.
 
-LEILOES/ABERTURAS E COBERTURA
-03jun:copia09:00:49.714–10:01:12.000,ultimoantespausa09:03:09.264,
-retorno09:56:21.720. Semnovasentradas elegiveis nosprecos copiados;
-minutos relevantesOHLCiguais,M1quantidade09:03difere-1,ressalvapreservada.
-30jul:R61.8TP80 as15:42:37.020,antesleilaoentre15:42:39.719 e15:47:23.012.
-09out abre09:03:31.490 e11nov09:03:09.401;OHLC/quantidade dasaberturas
-conferemM1. Nao pedir negocios anteriores semnegociacao.
-21ago:aba29 AGO21 cobre09:00:55.663–09:03:07.533,agora minuto09:02
-completo92869contratos;S50SL-375 no minuto09:06. S38.2SL-375 preservado.
-S61.8TP170 as10:26:23.070 confirmado noTXT anterior;leiloes reportados
-pelo usuario compatíveiscomausencias. TXTtem200001registros,limiteobservado;
-nao e fita inteira. Quantidade09:16difere-1. Statusleilao nao temflag oficial
-neste layout. Nenhum negocio/candle artificial foi criado nas pausas.
-
-FONTES/RESSALVAS/PRESERVACAO
-41gruposquantidade divergemM1/M5,umfechamento20maiM1141510 vsWork141500
-apos18h:referenciaWork141500 mantida nocontexto21mai,sem recalibrar lucro.
-02jan/10jul/11jul foraWork,comajustes originais conferidos;resultados
-complementares separados,Work em branco. Julho2025 principal inclui esses
-complementos;comparavel separado. Controle10jul2026dispensado nao reaberto.
-Todosresultadosdez2025-jul2026 eCedroago-out2026 intactos;curvas anteriores
-preservadas. Semcompra,nova parametrizacao oumodelosABC nesta etapa.
-
-DD EM ORDEM CRONOLOGICA,SEM REINICIO MENSAL
-Nao existe DDglobal desdejan2025 enquantoabril estiverpendente.
-Bloco fechadojan-mar2025 e separado do bloco continuomaio2025-julho2026.
-Nosso principal completo inclui complementos;curvas comparaveisWork apenas
-nasdatas onde existeWork,para compararDD sobre mesmasdatas. Nao inserir
-zeros nosmeses/diaspendentes,nem confundir essesblocos comserieCedro.
-2025_01_03: 2025-01-02 a2025-03-31,saldo-4555,DD5200,WorkcomparavelDD1475.364666.
-2025_05_2026_07: 2025-05-02 a2026-07-31,saldo6285,DD9365,WorkcomparavelDD4780.240329.
-
-PROXIMO PASSO
-Receber apenas09abr14:20–14:21,validar minuto completo,
-fecharabril eentao atualizarcurva2025inteira+meses2026 emordem.
-Continuar retroativamente ate limiteProfit;secontratos ausentes,verificar
-negociosWINFUTcommilissegundos/precos/ajustes,semcompra. Depoisalvos/stops,
-posteriormenteABC,nosmesmosmeses,variantesseparadas. M1+janelaspodemnaocobrir
-novosparametros;preservar brutos,auditorias,referencias ePDFs.
+PRESERVAÇÃO E PRÓXIMOS PASSOS
+Todos os brutos/referências/auditorias e meses fechados anteriores preservados.
+Dez2025+3135/Jan2026-1620/Fev-3545/Mar+350/Abr+5720/Mai-780/Jun+3405/Jul+1100;
+CedroAgo-2375/Set+2855/Out+3830 e recortesWorkAgo-2275/Set+1380 intactos.
+Controle adicional10/07/2026 dispensado permanece encerrado. Nenhuma coleta
+adicional parajan-nov2025. Continuar retroativamente pelos contratosProfit
+acessíveis;se indisponíveis,verificar negóciosWINFUT commilissegundos e
+correspondência de preços/ajustes,semcompra. Só depois daexpansão estudar
+alvos/stops pornível;depoisABC nosmesmosmeses,variantesseparadas. Novasbarreiras
+podem exigir outrasjanelas;preservar brutos,não apenasreduções doD atual.

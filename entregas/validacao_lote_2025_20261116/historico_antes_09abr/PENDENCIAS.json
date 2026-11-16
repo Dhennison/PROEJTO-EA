@@ -1,0 +1,17 @@
+[
+  {
+    "date": "2025-04-09",
+    "level": "R61.8",
+    "contract": "WINJ25",
+    "resolved": false,
+    "reason": "MISSING_REQUIRED_WINDOW",
+    "required_minute": "14:20",
+    "available_windows": [
+      [
+        "ABR 09-04-25",
+        "09:19:58.014",
+        "09:21:04.993"
+      ]
+    ]
+  }
+]

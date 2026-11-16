@@ -1,9 +1,9 @@
-2025-04 — MODELO D — PENDENTE_COMPLEMENTO
-Principal:PENDENTE;NAO SOMAR SUBTOTAL pontos.
-Work original:1397.842335;nosso comparável:None;
-diferença comparável:None. Complemento foraWork:
+2025-04 — MODELO D — ENCERRADO_M1_REPLAY
+Principal:865 pontos.
+Work original:1397.842335;nosso comparável:865;
+diferença comparável:-532.842335. Complemento foraWork:
 0;datas:nenhuma.
-20pregões/37operações conhecidas;1pendentes.
+20pregões/37operações conhecidas;0pendentes.
 M1+Replay pontual,grade5,1contrato/nível,toqueinclusivo,corte18h,parametrosD originais.
 Sem custos/fila/slippage ou fills certificados. Não é mês inteiro de negócios.
 Preparo,referências,ajustes ecomparaçõesM1/M5 preservados na pasta depreparação.
@@ -14,7 +14,7 @@ Bruto preservado localmente;não duplicado no históricoGit;Release indicada no 
 2025-04-02 R61.8: TP 110;entrada 17:14:22.303;saída 17:14:24.142;fonte REPLAY.
 2025-04-07 R38.2: SL -375;entrada 11:11:40.266;saída 11:11:45.335;fonte REPLAY.
 2025-04-07 R61.8: TP 40;entrada 11:11:41.332;saída 11:11:50.246;fonte REPLAY.
-PENDENTE 2025-04-09 R61.8 14:20: MISSING_REQUIRED_WINDOW.
+2025-04-09 R61.8: SL -450;entrada 14:20:25.497;saída 14:20:38.402;fonte REPLAY.
 2025-04-17 R61.8: SL -450;entrada 12:06:34.264;saída 13:05:00_CANDLE;fonte CANDLES_AFTER_WINDOW.
 2025-04-30 S38.2: SL -375;entrada 10:03:00_CANDLE;saída 10:12:16.383;fonte REPLAY.
 CANDLE indica minuto,não horário exato. Dois desempatesms ebarreiras opostas foramconferidos. Dadosde leilão:relato do usuário +cópias/M1;semcriar negócios ausentes. Ressalvas quantitativas preservadas.
