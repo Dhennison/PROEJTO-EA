@@ -696,8 +696,8 @@
   },
   {
     "path": "11_Novembro/LEIA_MES.txt",
-    "size": 2104,
-    "sha256": "e6db6c116c32dd96fce94a949810ef0a8d659a65265599ba364127bf678952b3"
+    "size": 2103,
+    "sha256": "1942bfff838df6b6d7d61badce9989888524e285b7e55793755b61b345e607d7"
   },
   {
     "path": "11_Novembro/OPERACOES_POSSIBILIDADES.csv",
@@ -746,8 +746,8 @@
   },
   {
     "path": "Lista_Replay_Janeiro_a_Novembro_2025.xlsx",
-    "size": 14775,
-    "sha256": "8e8d286b2c5b1e02e114efbdab006b80cd68ca9a922852bb83eadc27ff178b22"
+    "size": 14774,
+    "sha256": "840f4e63a4903ec3997725777539eb128e6de7ab1faa6c77c5a18c2a5bcb9985"
   },
   {
     "path": "RESUMO_MENSAL.csv",
@@ -766,63 +766,63 @@
   },
   {
     "path": "empacotar_planilhas.py",
-    "size": 14787,
-    "sha256": "055126d5f9d89f1e9dd4dfe1de348b7fddfe4f1ec176c27ffe0dc1bf0084ce8d"
+    "size": 14796,
+    "sha256": "08de40cd7ff66afcb40ec4a0707fc38d2510068a22c8c18d9385c94830262da2"
   },
   {
     "path": "planilhas/2025_01_Janeiro.xlsx",
-    "size": 31877,
-    "sha256": "8cf07deb06d908d92592bd5861a0308cedc05c0ba04656e1337645da84f32672"
+    "size": 31873,
+    "sha256": "6587b76ce0a25d61e39995dc4e86c3bf77d9acef78b34af25a9be6ca75ef3f07"
   },
   {
     "path": "planilhas/2025_02_Fevereiro.xlsx",
-    "size": 23319,
-    "sha256": "3711c47e747d6212acefa5f6ef871684589ae3155304ad595983065b76bba0c4"
+    "size": 23318,
+    "sha256": "4b2d9bce886dd490f0782b00df3fc3b6fd57523aa71d625792eec6d454b218fd"
   },
   {
     "path": "planilhas/2025_03_Marco.xlsx",
-    "size": 34034,
-    "sha256": "0e0068726f6bf01fe498f10ab9fb894b7ae9312ca7fc4d5975f816cb77a5598c"
+    "size": 34033,
+    "sha256": "2f1426fc5d2329892a529dcbd1addc15738538be73c17254fcab45332588ef87"
   },
   {
     "path": "planilhas/2025_04_Abril.xlsx",
-    "size": 31698,
-    "sha256": "b0deb005dab96f1db198f4b4cf920be202fb18e26931b4ac78dbde3b2e73d330"
+    "size": 31697,
+    "sha256": "bc9df6e6901d7cb1b9b506357b428f5d8d6b7df5ff3981c15d1b1a9af2db11f0"
   },
   {
     "path": "planilhas/2025_05_Maio.xlsx",
-    "size": 22946,
-    "sha256": "9e731ac871d10156a0fe8b3fdbda41a38a4212ce3b33d16b7f81d07bd4b0e90f"
+    "size": 22945,
+    "sha256": "713da4c2b8f58877f317d2f5c432b58d6f684b131c32f10ff6122483c676ab17"
   },
   {
     "path": "planilhas/2025_06_Junho.xlsx",
-    "size": 29653,
-    "sha256": "6bf37b22d42f91e44aeb021e9a2eed2e889f42a3d28d1d42e6d037a1c3ef64bc"
+    "size": 29652,
+    "sha256": "1a2142e23f09884c546f72b630b07e6cb608a59b786b09eda447e0f5ecb62e58"
   },
   {
     "path": "planilhas/2025_07_Julho.xlsx",
-    "size": 37060,
-    "sha256": "a5547db75c1550714af00e201435f9ab53dfa7039c1336949a44cf01620d97a6"
+    "size": 37059,
+    "sha256": "181c75db28c57c31779c9af7a99076f974a45abb0344e2ee66721580b109a6c4"
   },
   {
     "path": "planilhas/2025_08_Agosto.xlsx",
-    "size": 28893,
-    "sha256": "27a6e6d77c51820a24767d226ed40639c003214da8bab39c17469f49653fef61"
+    "size": 28892,
+    "sha256": "bd03f92b954b69e4a165cd48fddc809ec58f7ec795167142500322954b0c3bb3"
   },
   {
     "path": "planilhas/2025_09_Setembro.xlsx",
-    "size": 32882,
-    "sha256": "2bcc4c1ce267c053b7f4b7bb58141f6d66ab0a938c2e3dcb2f7be404835f48ad"
+    "size": 32881,
+    "sha256": "f023d58e0fa40e3b38a8441bc4991db85023b55375c9e9dd108fef2276bf4545"
   },
   {
     "path": "planilhas/2025_10_Outubro.xlsx",
-    "size": 26759,
-    "sha256": "ad860993bd40540221d092d4263b9c0e293e008ac15d11432be4763c4447e502"
+    "size": 26758,
+    "sha256": "ad70843b968c536722270f430b706c163f9582dc7705061be83802fc08daf2b1"
   },
   {
     "path": "planilhas/2025_11_Novembro.xlsx",
-    "size": 24804,
-    "sha256": "6464b5d4e3214d50fded086269d8c6a2139f6a7b06bb239916076ef3cd6eb06a"
+    "size": 24803,
+    "sha256": "de0c8632426c8f506ff5131551beaea9d8ec43ea02eb67f9447c1f98c6e01c4b"
   },
   {
     "path": "preparar_2025.py",

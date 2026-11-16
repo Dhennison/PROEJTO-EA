@@ -91,7 +91,7 @@ for s in summary:
  readme+='\n\nJANELAS PARA COPIAR\n'+'\n'.join(f'{c["data"]} {c["contrato"]} {c["inicio"]}–{c["fim_exclusivo"]} {c["niveis"]} [{c["tipo"]}]' for c in merged)
  if controls:readme+='\n\nCONTROLES DE COBERTURA\n'+'\n'.join(f'{c["data"]} {c["contrato"]} {c["inicio"]}–{c["fim_exclusivo"]}: {c["acao"]}' for c in controls)
  readme+='\n\nO QUE NÃO CASA\n'+'\n'.join(f'{c["data"]} {c["inicio"]} {c["tipo"]}: {c["detalhe"]}' for c in issues)
- (out/'LEIA_MES.txt').write_text(readme+'\n')
+ (out/'LEIA_MES.txt').write_text(readme.rstrip()+'\n')
  wb=openpyxl.Workbook();wb.remove(wb.active)
  table(wb,'LEIA',[dict(topico=a,instrucao=b) for a,b in instructions]);table(wb,'Coletas',merged);table(wb,'Controle_Cobertura',controls);table(wb,'Datas_A_Conferir',issues);table(wb,'Concreto_Pendente',ops_out);table(wb,'Comparativo_Work_M5_M1',read(out/'COMPARATIVO_WORK_M5_M1.csv'));table(wb,'Acervo',read(out/'INVENTARIO_POR_DATA.csv'));table(wb,'Referencias',read(out/'REFERENCIAS.csv'))
  for c in merged:
