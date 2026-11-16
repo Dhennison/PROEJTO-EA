@@ -1,3 +1,29 @@
+LOTE2025 RECEBIDO PARCIALMENTE — 16/11/2026
+Usuário enviouJaneiro a Novembro2025.xlsx eTexto colado21/08/25.
+Planilha principal NÃO lida:download_file rejeitou transferência acima32MiB.
+Necessário reenviar dividida,preferencialmente umXLSX por mês,cada<32MiB.
+Não pedir refazer coletas. Nenhum mês novo fechado ouDDrecalculado neste retorno.
+Observações usuário:30jul leilão;09out e11nov abertura09:03 (M1confirma);
+03jun semcotação após09:03,retorno09:56;21ago trêsleilões/retornos.
+Confrontar03jun/30jul comabas quandoacessíveis;sem inventarcandles/negócios.
+Texto21ago analisado:200001negócios,09:09:19.642–10:34:05.286;atinge limite
+observado,não inclui09:01/09:02. Essasjanelas podem estarna planilha bloqueada;
+não recolher novamenteantes de lerreenvio.10OHLCinternos conferemM1;9quantidades
+iguais,09:16difere-1(17325contra17326),ressalvapreservada.
+Gapscopiados09:16:59.076->10:26:22.948;10:26:32.496->10:30:46.618;
+10:30:53.299->10:33:17.492,compatíveis comrelato/M1. Statusleilão reportado
+pelo usuário,sem flags oficiais no layout. Não chamar fita perfeita.
+S61.8entradaM1prévia09:03E136365,TP136535 atingido10:26:23.070;mantém+170.
+Doisdesempatesms mantêmresultado,minuto10:26OHLC/quantidade iguais;vendasR38/
+R61 fora damáxima137565. Controle depreço da lacuna21ago conferido comressalva.
+Texto original/réplicaSHA256idênticos preservados,rawnão publicado.
+Auditoria/script/CSVs/progresso em entregas/recebimento_lote_2025_20261116.
+Nenhum resultado mensal atribuído à cópia parcial. Preparação11meses anterior
+preservada. ResultadosfechadosDez25-Out26,curvas/PDFs eDD9365/Cedro3620intactos.
+Próximo receber arquivos abaixo32MiB e analisarabas por mês. Não pedirtexto21ago
+de novo neste momento;controle10/07/2026 dispensado permaneceencerrado.
+Plano expansão->WINFUTsepreciso->alvos/stops->ABC e semcompra preservados.
+
 PREPARAÇÃO JANEIRO A NOVEMBRO/2025 — LOTE COMPLETO — 15/11/2026
 Usuário autorizou preparar todos11meses para planilhar e enviar asjanelas.
 Acervo M1MT5/M5Work conferido.230pregões,478operações conhecidas,incluindo

@@ -1,0 +1,45 @@
+{
+  "status": "PARCIAL_PLANILHA_PRINCIPAL_EXCEDE_LIMITE_TRANSFERENCIA",
+  "main_file": "Janeiro a Novembro 2025.xlsx",
+  "main_file_inspected": false,
+  "transfer_limit_MiB": 32,
+  "request": "Reenviar arquivos separados por mes,cada um abaixo32MiB;nao refazer as coletas.",
+  "raw_text_audited": true,
+  "text_records": 200001,
+  "text_start": "09:09:19.642",
+  "text_end": "10:34:05.286",
+  "text_at_observed_limit": true,
+  "control_21Aug_S61_8": {
+    "entry_source": "M1_PREVIAMENTE_DETERMINADO_09:03_ANTES_DA_COPIA",
+    "entry": "136365",
+    "tp": "136535",
+    "sl": "135715",
+    "primary": {
+      "reason": "TP",
+      "points": "170",
+      "exit_time": "10:26:23.070",
+      "observed_price": 136535,
+      "source_row": 41409
+    },
+    "tie_control": {
+      "reason": "TP",
+      "points": "170",
+      "exit_time": "10:26:23.070",
+      "observed_price": 136535,
+      "source_row": 41354
+    },
+    "coverage_resolved": true,
+    "coverage_note": "Price control confirmed with user-reported auction explanation;quantity09:16 differs by1,not certified perfect tape."
+  },
+  "main_windows_21Aug_0901_0903_pending_main_file": true,
+  "monthly_principals": null,
+  "DD_update": false,
+  "prior_results_unchanged": true,
+  "user_observations": {
+    "Jul30": "LEILAO_NO_INTERVALO",
+    "Oct09": "ABERTURA09:03",
+    "Nov11": "ABERTURA09:03",
+    "Jun03": "SEM_COTACAO_APOS09:03_REABERTURA09:56",
+    "Aug21": "TRES_PAUSAS_LEILOES_RELATADOS;COPIA_AUDITADA"
+  }
+}

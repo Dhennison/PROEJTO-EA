@@ -1,0 +1,225 @@
+{
+  "status": "CONTROLE_COBERTURA_21AGO_CONFERIDO_MES_AINDA_PENDENTE",
+  "date": "2025-08-21",
+  "contract": "WINV25",
+  "records": 200001,
+  "observed_limit_200001": true,
+  "start": "09:09:19.642",
+  "end": "10:34:05.286",
+  "opening_windows_0901_0903_in_this_text": false,
+  "raw_sha256": "a0c7b9b213468965953ce0d68b6564eef54a08d8eb498298f40900b6274bc418",
+  "preserved_raw": "/workspace/dados_brutos_modelo_d/replay_profit/2025_08_21_Texto_Recebimento01.txt",
+  "raw_published": false,
+  "matched_interior_minutes": 9,
+  "interior_quantity_discrepancies": [
+    {
+      "minute": "09:16",
+      "records": 5379,
+      "OHLC": "[136350, 136365, 136305, 136355]",
+      "quantity": 17325,
+      "M1_OHLC": "[Decimal('136350.0000000000000000'), Decimal('136365.0000000000000000'), Decimal('136305.0000000000000000'), Decimal('136355.0000000000000000')]",
+      "M1_quantity": 17326,
+      "OHLC_match": true,
+      "quantity_match": false,
+      "interior_minute": true
+    }
+  ],
+  "all_interior_prices_match": true,
+  "minute_checks": [
+    {
+      "minute": "09:09",
+      "records": 31248,
+      "OHLC": "[136060, 136215, 136030, 136195]",
+      "quantity": 91811,
+      "M1_OHLC": "[Decimal('135940.0000000000000000'), Decimal('136215.0000000000000000'), Decimal('135900.0000000000000000'), Decimal('136195.0000000000000000')]",
+      "M1_quantity": 134324,
+      "OHLC_match": false,
+      "quantity_match": false,
+      "interior_minute": false
+    },
+    {
+      "minute": "09:10",
+      "records": 16456,
+      "OHLC": "[136190, 136215, 136090, 136145]",
+      "quantity": 51965,
+      "M1_OHLC": "[Decimal('136190.0000000000000000'), Decimal('136215.0000000000000000'), Decimal('136090.0000000000000000'), Decimal('136145.0000000000000000')]",
+      "M1_quantity": 51965,
+      "OHLC_match": true,
+      "quantity_match": true,
+      "interior_minute": true
+    },
+    {
+      "minute": "09:11",
+      "records": 15625,
+      "OHLC": "[136140, 136265, 136125, 136205]",
+      "quantity": 45828,
+      "M1_OHLC": "[Decimal('136140.0000000000000000'), Decimal('136265.0000000000000000'), Decimal('136125.0000000000000000'), Decimal('136205.0000000000000000')]",
+      "M1_quantity": 45828,
+      "OHLC_match": true,
+      "quantity_match": true,
+      "interior_minute": true
+    },
+    {
+      "minute": "09:12",
+      "records": 16306,
+      "OHLC": "[136210, 136295, 136150, 136295]",
+      "quantity": 46808,
+      "M1_OHLC": "[Decimal('136210.0000000000000000'), Decimal('136295.0000000000000000'), Decimal('136150.0000000000000000'), Decimal('136295.0000000000000000')]",
+      "M1_quantity": 46808,
+      "OHLC_match": true,
+      "quantity_match": true,
+      "interior_minute": true
+    },
+    {
+      "minute": "09:13",
+      "records": 38646,
+      "OHLC": "[136290, 136465, 136285, 136350]",
+      "quantity": 122190,
+      "M1_OHLC": "[Decimal('136290.0000000000000000'), Decimal('136465.0000000000000000'), Decimal('136285.0000000000000000'), Decimal('136350.0000000000000000')]",
+      "M1_quantity": 122190,
+      "OHLC_match": true,
+      "quantity_match": true,
+      "interior_minute": true
+    },
+    {
+      "minute": "09:14",
+      "records": 15901,
+      "OHLC": "[136350, 136355, 136235, 136285]",
+      "quantity": 48872,
+      "M1_OHLC": "[Decimal('136350.0000000000000000'), Decimal('136355.0000000000000000'), Decimal('136235.0000000000000000'), Decimal('136285.0000000000000000')]",
+      "M1_quantity": 48872,
+      "OHLC_match": true,
+      "quantity_match": true,
+      "interior_minute": true
+    },
+    {
+      "minute": "09:15",
+      "records": 14118,
+      "OHLC": "[136285, 136365, 136260, 136355]",
+      "quantity": 48647,
+      "M1_OHLC": "[Decimal('136285.0000000000000000'), Decimal('136365.0000000000000000'), Decimal('136260.0000000000000000'), Decimal('136355.0000000000000000')]",
+      "M1_quantity": 48647,
+      "OHLC_match": true,
+      "quantity_match": true,
+      "interior_minute": true
+    },
+    {
+      "minute": "09:16",
+      "records": 5379,
+      "OHLC": "[136350, 136365, 136305, 136355]",
+      "quantity": 17325,
+      "M1_OHLC": "[Decimal('136350.0000000000000000'), Decimal('136365.0000000000000000'), Decimal('136305.0000000000000000'), Decimal('136355.0000000000000000')]",
+      "M1_quantity": 17326,
+      "OHLC_match": true,
+      "quantity_match": false,
+      "interior_minute": true
+    },
+    {
+      "minute": "10:26",
+      "records": 20354,
+      "OHLC": "[136475, 137565, 136475, 137565]",
+      "quantity": 56080,
+      "M1_OHLC": "[Decimal('136475.0000000000000000'), Decimal('137565.0000000000000000'), Decimal('136475.0000000000000000'), Decimal('137565.0000000000000000')]",
+      "M1_quantity": 56080,
+      "OHLC_match": true,
+      "quantity_match": true,
+      "interior_minute": true
+    },
+    {
+      "minute": "10:30",
+      "records": 10418,
+      "OHLC": "[137345, 137390, 136250, 136250]",
+      "quantity": 73765,
+      "M1_OHLC": "[Decimal('137345.0000000000000000'), Decimal('137390.0000000000000000'), Decimal('136250.0000000000000000'), Decimal('136250.0000000000000000')]",
+      "M1_quantity": 73765,
+      "OHLC_match": true,
+      "quantity_match": true,
+      "interior_minute": true
+    },
+    {
+      "minute": "10:33",
+      "records": 14843,
+      "OHLC": "[137055, 137385, 136850, 136970]",
+      "quantity": 42427,
+      "M1_OHLC": "[Decimal('137055.0000000000000000'), Decimal('137385.0000000000000000'), Decimal('136850.0000000000000000'), Decimal('136970.0000000000000000')]",
+      "M1_quantity": 42427,
+      "OHLC_match": true,
+      "quantity_match": true,
+      "interior_minute": true
+    },
+    {
+      "minute": "10:34",
+      "records": 707,
+      "OHLC": "[136970, 137020, 136955, 136960]",
+      "quantity": 1989,
+      "M1_OHLC": "[Decimal('136970.0000000000000000'), Decimal('137400.0000000000000000'), Decimal('136955.0000000000000000'), Decimal('137010.0000000000000000')]",
+      "M1_quantity": 40806,
+      "OHLC_match": false,
+      "quantity_match": false,
+      "interior_minute": false
+    }
+  ],
+  "gaps": [
+    {
+      "last_trade": "09:16:59.076",
+      "next_trade": "10:26:22.948",
+      "next_price": 136475,
+      "elapsed_seconds": 4163.872,
+      "user_explanation": "LEILAO_REPORTADO_PELO_USUARIO"
+    },
+    {
+      "last_trade": "10:26:32.496",
+      "next_trade": "10:30:46.618",
+      "next_price": 137345,
+      "elapsed_seconds": 254.122,
+      "user_explanation": "LEILAO_REPORTADO_PELO_USUARIO"
+    },
+    {
+      "last_trade": "10:30:53.299",
+      "next_trade": "10:33:17.492",
+      "next_price": 137055,
+      "elapsed_seconds": 144.193,
+      "user_explanation": "LEILAO_REPORTADO_PELO_USUARIO"
+    }
+  ],
+  "S61_8": {
+    "entry_source": "M1_PREVIAMENTE_DETERMINADO_09:03_ANTES_DA_COPIA",
+    "entry": "136365",
+    "tp": "136535",
+    "sl": "135715",
+    "primary": {
+      "reason": "TP",
+      "points": "170",
+      "exit_time": "10:26:23.070",
+      "observed_price": 136535,
+      "source_row": 41409
+    },
+    "tie_control": {
+      "reason": "TP",
+      "points": "170",
+      "exit_time": "10:26:23.070",
+      "observed_price": 136535,
+      "source_row": 41354
+    },
+    "coverage_resolved": true,
+    "coverage_note": "Price control confirmed with user-reported auction explanation;quantity09:16 differs by1,not certified perfect tape."
+  },
+  "eligible_sells": [
+    {
+      "level": "R38.2",
+      "entry": "137630",
+      "max_copy": 137565,
+      "entry_hit_in_copy": false
+    },
+    {
+      "level": "R61.8",
+      "entry": "137855",
+      "max_copy": 137565,
+      "entry_hit_in_copy": false
+    }
+  ],
+  "main_workbook_status": "DOWNLOAD_REJECTED_OVER32MiB_NO_CONTENT_INSPECTED",
+  "monthly_principal": null,
+  "monthly_DD": null,
+  "limitation": "Text starts09:09 and has200001records:earlier records truncated;do not use for09:01/09:02 entries. All10interiorOHLC match;9quantities match and09:16 differs by1. Exit minute matches OHLC/quantity. This validates the price control with retained quantitative remark,not a perfect full-day tape. Auction labels are user explanation,not official event flags in this layout."
+}

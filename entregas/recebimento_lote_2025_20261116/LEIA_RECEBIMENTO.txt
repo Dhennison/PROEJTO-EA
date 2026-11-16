@@ -1,0 +1,65 @@
+LOTE JANEIRO A NOVEMBRO/2025 — RECEBIMENTO16/11/2026
+ESTADO:PARCIAL. NENHUM MÊS FECHADO NESTE RECEBIMENTO.
+
+PLANILHA PRINCIPAL NÃO ABERTA
+Arquivo informado:Janeiro a Novembro 2025.xlsx,com abas de respectivas datas.
+A ferramenta download_file rejeitou a transferência porque excede32MiB.
+Conteúdo,abas e resultados dessa planilha NÃO foram inspecionados. Não alegar
+que foram lidos ou faltam coletas sem primeiro receber o arquivo acessível.
+Solicitar somente reenvio dividido,por exemplo umXLSX por mês,cada um abaixo
+32MiB. Não pedir para refazer negócios já coletados. Em partes de30MiB há margem.
+Os dados continuam necessários para resolver os11meses. Não computar mensal
+ouDD a partir de parciais. Esse limite é técnico da transferência,não rejeição
+de autorização nem falta de permissão do usuário.
+
+OBSERVAÇÕES DO USUÁRIO PRESERVADAS
+30/07/2025:índice em leilão no intervalo semcandles/minutos.
+09/10/2025:abertura na vela09:03. InventárioM1 existente confirma início09:03.
+11/11/2025:abertura na vela09:03. InventárioM1 existente confirma início09:03.
+03/06/2025:abertura inicial;sem cotação a partir09:03 noTimes&Trades egráfico;
+retorno emleilão e reabertura09:56. Aferir extremidades na planilha ao receber;
+não criar negócios/candles na suspensão nem exigir fita contínua inexistente.
+21/08/2025:pausa09:16:59 e três leilões sucessivos,incluindo novas aberturas.
+Descrição de leilão é informação do usuário;layout da cópia não traz status
+oficial de leilão. As ausências na cópia/M1 foram comparadas separadamente.
+
+TEXTO21/08 RECEBIDO E ANALISADO
+Texto colado.txt:8670207bytes,200001negócios,ordem decrescente preservada;
+inversão integral e ordenaçãoalternativa de empates conferidas. Semdeduplicação.
+Alcance09:09:19.642–10:34:05.286. Atinge o limite observado200001 e não inclui
+as entradas09:01/09:02. Essas janelas podem estar na planilha grande nãoaberta;
+não pedir repetição sem conferir o reenvio. Não usar o texto para resolvê-las.
+As dez sériesOHLCdosminutos internos conferem comM1. Novequantidades iguais;
+09:16:17325 contra17326 noM1,diferença-1. Mantida como ressalva quantitativa,
+não como fita perfeita. Duas bordas parciais:09:09 e10:34.
+
+Intervalos sem negócios entre registros consecutivos na cópia:
+09:16:59.076 ->10:26:22.948(preço de retorno136475).
+10:26:32.496 ->10:30:46.618(preço de retorno137345).
+10:30:53.299 ->10:33:17.492(preço de retorno137055).
+Concordam temporalmente com relato e lacunasM1. Nenhum candle ou negócio criado.
+
+CONTROLE S61.8 DE21/08
+Entrada grade136365,previamente determinada emM1 no minuto09:03,antes deste
+texto. Alvo136535 e stop135715. M1 prévio só permitia posição ainda aberta
+até o alvo10:26;continuidade conferida pela nova cópia.
+Alvo tocado10:26:23.070,preço136535. +170pontos nos níveis,resultado anterior
+conservado. Duas ordenaçõesms dão mesmo motivo/pontos;minuto de saída10:26
+confereOHLC/quantidade. Não é horário real de preenchimento de ordem.
+Mínima da cópia136030,acima dostop. Máxima137565,igual ao extremo diárioM1,
+abaixo das vendas elegíveisR38.2=137630 eR61.8=137855,sem entrada dessas
+vendas no trecho. Controle de preço da lacuna21/08 conferido com ressalva-1
+em09:16. Não fechar agosto;faltam as janelas na planilha inacessível.
+Nenhum pedido de nova cópia desse texto é necessário agora.
+
+PRESERVAÇÃO
+Texto original e réplicaSHA256idêntica emdados_brutos_modelo_d/replay_profit/
+2025_08_21_Texto_Recebimento01.txt. Raw não publicado;auditoria e hashes salvos.
+Scripts/CSVs/JSON neste diretório. Preparação original dos11meses permanece
+preservada como histórico;este recebimento registra progresso limitado.
+Retomada eplano atualizados com bloqueio técnico e observações do usuário.
+Todos os meses antesfechados,curvas ePDFs continuam intactos;nenhuma nova
+soma mensal ouDD. M1+Replay pontual não é mês inteiro auditado tick a tick.
+Próximo:receber Janeiro a Novembro2025 emarquivos abaixo32MiB,validar cadaaba,
+resolver apenas pendências;preservar parâmetrosD/grade5/toque/1contrato/corte18h.
+Controle10/07/2026 dispensado,não reabrir. Sem compra/modelos/variantes novos.
