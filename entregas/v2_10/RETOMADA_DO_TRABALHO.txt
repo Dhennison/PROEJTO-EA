@@ -1,3 +1,18 @@
+RELATÓRIO POR NÍVEL — 16/11/2026
+Usuário encerrou expansão para 2024/2023. Antes de testar saídas, solicitou
+resultado mensal por nível de janeiro/2025 a outubro/2026, sem Work.
+Entregue em entregas/resultado_niveis_202501_202610_20261116/: PDF com
+22 páginas, 955 operações; pontos, quantidade e DD por nível. DD mensal
+adicional e DD contínuo por nível desde janeiro/2025, pelos fechamentos
+diários. M1+Replay até julho/2026; meses completos Cedro de agosto a outubro.
+Todos os totais diários/mensais reconciliados, fontes e resultados preservados.
+Modelo D não possui R50: níveis R38.2/R61.8/S38.2/S50/S61.8.
+Registrar stop proporcional ao alvo como hipótese para a próxima etapa;
+aguardar decisão do usuário sobre testes após este relatório. Nenhuma
+variante foi executada nesta entrega; D original permanece principal.
+
+REGISTROS ANTERIORES PRESERVADOS ABAIXO
+
 FECHAMENTO DO LOTE JANEIRO–NOVEMBRO/2025 — 16/11/2026
 Este registro substitui o estado de pendência descrito nos registros históricos abaixo.
 
