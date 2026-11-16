@@ -1,0 +1,3 @@
+﻿mes;data;contrato;inicio;fim_exclusivo;nivel;tipo;entrada;alvo;stop;motivo;prioridade
+2025-11;2025-11-11;WINZ25;09:03:00;09:04:00;R38.2;SEQUENCIA;158255;157950;158630;Ramos M1 ainda permitem desfechos diferentes;COLETAR
+2025-11;2025-11-28;WINZ25;09:01:00;09:02:00;R38.2;SEQUENCIA;159785;159695;160160;Ramos M1 ainda permitem desfechos diferentes;COLETAR

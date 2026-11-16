@@ -1,0 +1,3 @@
+﻿mes;data;contrato;inicio;fim_exclusivo;tipo;prioridade;niveis;instrucoes;aba_retorno
+2025-11;2025-11-11;WINZ25;09:03:00;09:04:00;SEQUENCIA;COLETAR;R38.2;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem.";11-11_0903
+2025-11;2025-11-28;WINZ25;09:01:00;09:02:00;SEQUENCIA;COLETAR;R38.2;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem.";28-11_0901

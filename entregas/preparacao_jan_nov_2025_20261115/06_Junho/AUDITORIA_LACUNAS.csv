@@ -1,0 +1,2 @@
+﻿data;inicio;fim_exclusivo;minutos;sem_limites_M5;niveis_possivelmente_afetados;acao
+2025-06-03;09:04:00;09:56:00;52;True;S38.2,S50,S61.8,R38.2,R61.8;PENDENTE_COBERTURA

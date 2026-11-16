@@ -1,0 +1,32 @@
+[
+  {
+    "path": "entregas/arquivo_conversa_20261111/originais/ORIGINAIS_PARTE_005.zip",
+    "size": 24409018,
+    "sha256": "de5f0ebf6a11c29bf3d747560ed75e9dce76575382f461389d5de28c1d4cf130",
+    "original_modified": false
+  },
+  {
+    "path": "entregas/historico_work_modelo_d_20261105/replay_setembro_20261106/originais/Candles_Originais_Modelo_D_2023_2026.zip",
+    "size": 3487417,
+    "sha256": "74442c025633c95a8a86b854bed6de172534d439b9e955e7fe74c47536f2ab76",
+    "original_modified": false
+  },
+  {
+    "path": "entregas/historico_work_modelo_d_20261105/originais/Pacote_Modelo_D_Historico_20230301_20260921.zip",
+    "size": 5091035,
+    "sha256": "b107d539afa3e76fb5fbd5f0d7cf8045283e9f133f21828e79638a0c85d823a6",
+    "original_modified": false
+  },
+  {
+    "path": "entregas/historico_work_modelo_d_20261105/Ajustes_Diarios_Modelo_D_20230301_20260921.csv",
+    "size": 94803,
+    "sha256": "c4140fbdf725509e4b3fbc8fa5859ae4bdf236e0605ef3d181c7e84b817f52d6",
+    "original_modified": false
+  },
+  {
+    "path": "entregas/historico_work_modelo_d_20261105/Operacoes_Modelo_D_20230301_20260921_ORIGINAL.csv",
+    "size": 279595,
+    "sha256": "da1d65eb594d9543ead6eb121cfae51df07873f809569a021968905a8025e3e7",
+    "original_modified": false
+  }
+]

@@ -1,0 +1,34 @@
+Escopo: Novembro/2025: 19pregões, 39operações conhecidas. Sem fechamento mensal ou DD do teste.
+
+Concreto: 37operações determinadas sob os candles fornecidos, sem pendência de sequência/cobertura/grade. Quantidade divergente continua ressalvada.
+
+Replay: 2janelas /2minutos. Use as abas de retorno já preparadas. Fim do intervalo é exclusivo; horários de São Paulo.
+
+Como copiar: Reproduzir alguns segundos antes/depois,sem pular nem filtrar lotes/corretoras. Copiar dados completos do Times&Trades;preservar milissegundos,ordem e negócios idênticos. Não deduplicar.
+
+Abas de retorno: As abas com data/hora contêm só o cabeçalho padrão do Profit. Cole negócios nelas, mantendo os cabeçalhos. Se abertura for tardia, não invente negócios anteriores; informe a observação.
+
+Validação futura: Antes de resolver:OHLC/quantidade,minuto inteiro,limite200001 por cópia e empates de milissegundo. Preenchimento/ordens não certificados.
+
+Cobertura: A aba Controle_Cobertura informa lacunas. Nas lacunas longas, verificar existência de negócios no Replay e recuperar candles M1 primeiro; não é pedido de copiar toda a fita.
+
+30/07: Não aplicável neste mês.
+
+Datas fora do Work: Nenhuma data complementar fora da seleção original.
+
+Preço20/05: Ver aba Datas_A_Conferir.
+
+Parâmetros: D original,grade5,1contrato/nível,toque inclusivo,corte18h. Não variar alvos/stops,modelos ou ajustar referência pelo lucro.
+
+Fontes: M1 nativo MT5 WIN$N;M5 Profit usado pelo Work;ajustes Work. M1+janelas não são fita integral. Calendário sugere contrato;preços da cópia ainda precisam conferir.
+
+Acesso: Se contrato antigo indisponível,registrar data/contrato/alcance. TentarWINFUT só confirmando negócios individuais comms,correspondência e ajustes;sem compra.
+
+Preservação: Todos os meses fechados,brutos,referências e auditorias anteriores preservados. Controle10/07/2026 dispensado não reaberto;10/07/2025 é outra data.
+
+JANELAS PARA COPIAR
+2025-11-11 WINZ25 09:03:00–09:04:00 R38.2 [SEQUENCIA]
+2025-11-28 WINZ25 09:01:00–09:02:00 R38.2 [SEQUENCIA]
+
+O QUE NÃO CASA
+

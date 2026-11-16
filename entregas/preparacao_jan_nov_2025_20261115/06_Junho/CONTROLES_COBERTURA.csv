@@ -1,0 +1,2 @@
+﻿mes;data;contrato;inicio;fim_exclusivo;niveis;tipo;acao;minutos
+2025-06;2025-06-03;WINM25;09:04:00;09:56:00;S38.2,S50,S61.8,R38.2,R61.8;COBERTURA_COMPARTILHADA_SEM_M5;"Verificar no Replay se houve negocios;recuperar candles M1 primeiro,nao copiar toda fita longa";52

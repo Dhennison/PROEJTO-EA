@@ -1,0 +1,7 @@
+﻿mes;data;contrato;inicio;fim_exclusivo;nivel;tipo;entrada;alvo;stop;motivo;prioridade
+2025-03;2025-03-07;WINJ25;10:30:00;10:31:00;S50;SEQUENCIA;124265;124425;123890;Ramos M1 ainda permitem desfechos diferentes;COLETAR
+2025-03;2025-03-11;WINJ25;10:20:00;10:21:00;S50;SEQUENCIA;125450;125565;125075;Ramos M1 ainda permitem desfechos diferentes;COLETAR
+2025-03;2025-03-13;WINJ25;11:13:00;11:14:00;R61.8;SEQUENCIA;125825;125765;126275;Ramos M1 ainda permitem desfechos diferentes;COLETAR
+2025-03;2025-03-24;WINJ25;09:35:00;09:36:00;S38.2;SEQUENCIA;133170;133220;132795;Ramos M1 ainda permitem desfechos diferentes;COLETAR
+2025-03;2025-03-25;WINJ25;10:39:00;10:40:00;R61.8;SEQUENCIA;133400;133305;133850;Ramos M1 ainda permitem desfechos diferentes;COLETAR
+2025-03;2025-03-28;WINJ25;09:01:00;09:02:00;S38.2;SEQUENCIA;133310;133435;132935;Ramos M1 ainda permitem desfechos diferentes;COLETAR

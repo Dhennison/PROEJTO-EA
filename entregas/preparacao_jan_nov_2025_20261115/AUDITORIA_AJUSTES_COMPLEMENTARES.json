@@ -1,0 +1,32 @@
+[
+  {
+    "date": "2025-01-02",
+    "adjustment": "121576",
+    "source": "Book(3).xlsx/Planilha1/F",
+    "row_start": 16329,
+    "row_end": 16366,
+    "source_values_all_equal": true,
+    "Work_reference_available": false,
+    "source_workbook_sha256": "90b189326aaa5f1fb4e82e52217fa0f98e5cf0538c5b4fd561d461beb058303f"
+  },
+  {
+    "date": "2025-07-10",
+    "adjustment": "139145",
+    "source": "Book(3).xlsx/Planilha1/F",
+    "row_start": 11445,
+    "row_end": 11482,
+    "source_values_all_equal": true,
+    "Work_reference_available": false,
+    "source_workbook_sha256": "90b189326aaa5f1fb4e82e52217fa0f98e5cf0538c5b4fd561d461beb058303f"
+  },
+  {
+    "date": "2025-07-11",
+    "adjustment": "138319",
+    "source": "Book(3).xlsx/Planilha1/F",
+    "row_start": 11407,
+    "row_end": 11444,
+    "source_values_all_equal": true,
+    "Work_reference_available": false,
+    "source_workbook_sha256": "90b189326aaa5f1fb4e82e52217fa0f98e5cf0538c5b4fd561d461beb058303f"
+  }
+]

@@ -1,0 +1,6 @@
+﻿mes;data;contrato;inicio;fim_exclusivo;tipo;prioridade;niveis;instrucoes;aba_retorno
+2025-09;2025-09-05;WINV25;09:30:00;09:31:00;SEQUENCIA;COLETAR;R38.2;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem.";05-09_0930
+2025-09;2025-09-22;WINV25;09:04:00;09:05:00;SEQUENCIA;COLETAR;S38.2;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem.";22-09_0904
+2025-09;2025-09-23;WINV25;11:10:00;11:11:00;SEQUENCIA;COLETAR;R61.8;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem.";23-09_1110
+2025-09;2025-09-25;WINV25;10:12:00;10:13:00;SEQUENCIA;COLETAR;S38.2;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem.";25-09_1012
+2025-09;2025-09-29;WINV25;09:09:00;09:10:00;SEQUENCIA;COLETAR;R61.8;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem.";29-09_0909

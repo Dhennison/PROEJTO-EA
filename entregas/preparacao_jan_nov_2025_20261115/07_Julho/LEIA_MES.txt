@@ -1,0 +1,43 @@
+Escopo: Julho/2025: 23pregões, 53operações conhecidas. Sem fechamento mensal ou DD do teste.
+
+Concreto: 46operações determinadas sob os candles fornecidos, sem pendência de sequência/cobertura/grade. Quantidade divergente continua ressalvada.
+
+Replay: 6janelas /10minutos. Use as abas de retorno já preparadas. Fim do intervalo é exclusivo; horários de São Paulo.
+
+Como copiar: Reproduzir alguns segundos antes/depois,sem pular nem filtrar lotes/corretoras. Copiar dados completos do Times&Trades;preservar milissegundos,ordem e negócios idênticos. Não deduplicar.
+
+Abas de retorno: As abas com data/hora contêm só o cabeçalho padrão do Profit. Cole negócios nelas, mantendo os cabeçalhos. Se abertura for tardia, não invente negócios anteriores; informe a observação.
+
+Validação futura: Antes de resolver:OHLC/quantidade,minuto inteiro,limite200001 por cópia e empates de milissegundo. Preenchimento/ordens não certificados.
+
+Cobertura: A aba Controle_Cobertura informa lacunas. Nas lacunas longas, verificar existência de negócios no Replay e recuperar candles M1 primeiro; não é pedido de copiar toda a fita.
+
+30/07: A coleta15:42–15:47 já inclui os4minutos ausentes15:43–15:47. Não precisa enviar um segundo trecho igual.
+
+Datas fora do Work: 2025-07-10, 2025-07-11; ajustes no pacote original,complementos separados,Work em branco.
+
+Preço20/05: Ver aba Datas_A_Conferir.
+
+Parâmetros: D original,grade5,1contrato/nível,toque inclusivo,corte18h. Não variar alvos/stops,modelos ou ajustar referência pelo lucro.
+
+Fontes: M1 nativo MT5 WIN$N;M5 Profit usado pelo Work;ajustes Work. M1+janelas não são fita integral. Calendário sugere contrato;preços da cópia ainda precisam conferir.
+
+Acesso: Se contrato antigo indisponível,registrar data/contrato/alcance. TentarWINFUT só confirmando negócios individuais comms,correspondência e ajustes;sem compra.
+
+Preservação: Todos os meses fechados,brutos,referências e auditorias anteriores preservados. Controle10/07/2026 dispensado não reaberto;10/07/2025 é outra data.
+
+JANELAS PARA COPIAR
+2025-07-03 WINQ25 10:34:00–10:35:00 R61.8 [SEQUENCIA]
+2025-07-09 WINQ25 09:05:00–09:06:00 S38.2 [SEQUENCIA]
+2025-07-18 WINQ25 09:00:00–09:01:00 S38.2,S50 [SEQUENCIA|SEQUENCIA]
+2025-07-24 WINQ25 10:15:00–10:16:00 S61.8 [SEQUENCIA]
+2025-07-25 WINQ25 09:02:00–09:03:00 R38.2 [CONTROLE_GRADE5]
+2025-07-30 WINQ25 15:42:00–15:47:00 R61.8 [SEQUENCIA|COBERTURA_15:43_15:47]
+
+CONTROLES DE COBERTURA
+2025-07-30 WINQ25 15:43:00–15:47:00: JA_INCLUIDO na coleta30/07 15:42–15:47;nao repetir separadamente
+
+O QUE NÃO CASA
+2025-07-22 17:10 QUANTIDADE: M1 [Decimal('135260.0000000000000000'), Decimal('135370.0000000000000000'), Decimal('135230.0000000000000000'), Decimal('135265.0000000000000000')]; M5 [Decimal('135260'), Decimal('135370'), Decimal('135230'), Decimal('135265')]; quantidade M1-M5 1575
+2025-07-10  COMPLEMENTO_FORA_WORK: Candles e ajuste disponíveis na cobertura original;resultado complementar separado,Work indisponível
+2025-07-11  COMPLEMENTO_FORA_WORK: Candles e ajuste disponíveis na cobertura original;resultado complementar separado,Work indisponível

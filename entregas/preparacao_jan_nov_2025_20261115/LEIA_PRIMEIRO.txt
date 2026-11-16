@@ -1,0 +1,50 @@
+PREPARAÇÃO JANEIRO A NOVEMBRO/2025 — 15/11/2026
+Nenhum mês foi fechado:resultado principal eDD do teste permanecem pendentes.
+M1 de todos os11meses e M5Work disponíveis,com ressalvas individuais.
+478operações conhecidas, incluindo complementos foraWork identificados.
+434operações concretas sob os candles fornecidos,sem pendência de sequência/cobertura/grade;
+40operações com dúvida de sequência;2controles adicionais de grade.
+As categorias podem sobrepor cobertura;lacunas longas ainda podem esconder entradas extras.
+São38janelas de negócios/45minutos,sendo4minutos de cobertura30jul já incluídos.
+Além disso,verificar existência/recuperar candles nos intervalos longos03jun09:04–09:56
+WINM25 e21ago09:17–10:26 WINV25. Não copiar52/69minutos de negócios agora.
+
+Janeiro: 22pregões;50operações conhecidas;46concretas;4janelas/4minutos;0controles longos primeiro.
+Fevereiro: 20pregões;41operações conhecidas;40concretas;1janelas/1minutos;0controles longos primeiro.
+Março: 19pregões;39operações conhecidas;33concretas;6janelas/6minutos;0controles longos primeiro.
+Abril: 20pregões;37operações conhecidas;30concretas;5janelas/7minutos;0controles longos primeiro.
+Maio: 21pregões;39operações conhecidas;38concretas;1janelas/1minutos;0controles longos primeiro.
+Junho: 20pregões;50operações conhecidas;46concretas;3janelas/3minutos;1controles longos primeiro.
+Julho: 23pregões;53operações conhecidas;46concretas;6janelas/10minutos;0controles longos primeiro.
+Agosto: 21pregões;40operações conhecidas;35concretas;3janelas/4minutos;1controles longos primeiro.
+Setembro: 22pregões;42operações conhecidas;37concretas;5janelas/5minutos;0controles longos primeiro.
+Outubro: 23pregões;48operações conhecidas;46concretas;2janelas/2minutos;0controles longos primeiro.
+Novembro: 19pregões;39operações conhecidas;37concretas;2janelas/2minutos;0controles longos primeiro.
+
+ARQUIVOS
+planilhas/:11XLSX,um por mês,com abas de instruções,coletas,cobertura,divergências,
+operações concretas/pendentes,comparaçãoWork e abas vazias para colar negócios.
+Lista_Replay_Janeiro_a_Novembro_2025.xlsx:lista consolidada para organizar a coleta.
+Pastas01_... a11_...:CSVs completos,referências,comparações eLEIA_MES.txt.
+DATAS_DIVERGENTES_TODOS_MESES.csv:divergências e datas foraWork.
+
+RESSALVAS QUE NÃO DEVEM SER PERDIDAS
+20/05 18:20:fechamentoM5 141500 versusM1 141510. Após corte,mas contexto21/05:
+manter HLCWork141500 e ajustes originais;nenhuma alteração para aproximar lucro.
+41grupos de quantidade diferentes no período,sem presumir fita perfeita.
+02jan/10jul/11jul têm ajustes na cobertura original e candles conferidos,mas não
+referência diáriaWork. Complementos separados,Work em branco,nunca zero fabricado.
+10/07/2025 não é o controle10/07/2026 dispensado,que permanece encerrado.
+Lacunas M1 e compartilhadas têm auditoria individual. Julho30 é5minutos incluindo
+entrada15:42 e4minutos ausentes;sem pedido duplicado. Outras lacunas sem efeito
+paraD atual não exigem negócios agora. Novasvariantes podem exigir outrasjanelas.
+Calendário/convenção determina contratos sugeridos;conferir preços nas cópias.
+M1+janelas não são histórico inteiro por negócios nem fills garantidos.
+D original/grade5/1contrato/toque/corte18h preservados. Sem compras ou novosmodelos.
+
+PRESERVAÇÃO
+Dez2025+3135/Jan2026-1620/Fev-3545/Mar+350/Abr+5720/Mai-780/Jun+3405/Jul+1100
+intactos. CedroAgo-2375/Set+2855/Out+3830 e comparáveis separados intactos.
+Curvas/PDFs fechados não regravados;DDdez25-jul26 continua9365 eCedro3620.
+Somente após resolver cada mês ampliarDD por fechamentos diários emordemcronológica,
+sem reinício mensal,sem alterar dias fechados;PDFs técnico/enxuto continuarão diáriosWorkversusteste.

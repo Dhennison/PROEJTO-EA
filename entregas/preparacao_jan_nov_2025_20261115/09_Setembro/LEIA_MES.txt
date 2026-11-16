@@ -1,0 +1,42 @@
+Escopo: Setembro/2025: 22pregões, 42operações conhecidas. Sem fechamento mensal ou DD do teste.
+
+Concreto: 37operações determinadas sob os candles fornecidos, sem pendência de sequência/cobertura/grade. Quantidade divergente continua ressalvada.
+
+Replay: 5janelas /5minutos. Use as abas de retorno já preparadas. Fim do intervalo é exclusivo; horários de São Paulo.
+
+Como copiar: Reproduzir alguns segundos antes/depois,sem pular nem filtrar lotes/corretoras. Copiar dados completos do Times&Trades;preservar milissegundos,ordem e negócios idênticos. Não deduplicar.
+
+Abas de retorno: As abas com data/hora contêm só o cabeçalho padrão do Profit. Cole negócios nelas, mantendo os cabeçalhos. Se abertura for tardia, não invente negócios anteriores; informe a observação.
+
+Validação futura: Antes de resolver:OHLC/quantidade,minuto inteiro,limite200001 por cópia e empates de milissegundo. Preenchimento/ordens não certificados.
+
+Cobertura: A aba Controle_Cobertura informa lacunas. Nas lacunas longas, verificar existência de negócios no Replay e recuperar candles M1 primeiro; não é pedido de copiar toda a fita.
+
+30/07: Não aplicável neste mês.
+
+Datas fora do Work: Nenhuma data complementar fora da seleção original.
+
+Preço20/05: Ver aba Datas_A_Conferir.
+
+Parâmetros: D original,grade5,1contrato/nível,toque inclusivo,corte18h. Não variar alvos/stops,modelos ou ajustar referência pelo lucro.
+
+Fontes: M1 nativo MT5 WIN$N;M5 Profit usado pelo Work;ajustes Work. M1+janelas não são fita integral. Calendário sugere contrato;preços da cópia ainda precisam conferir.
+
+Acesso: Se contrato antigo indisponível,registrar data/contrato/alcance. TentarWINFUT só confirmando negócios individuais comms,correspondência e ajustes;sem compra.
+
+Preservação: Todos os meses fechados,brutos,referências e auditorias anteriores preservados. Controle10/07/2026 dispensado não reaberto;10/07/2025 é outra data.
+
+JANELAS PARA COPIAR
+2025-09-05 WINV25 09:30:00–09:31:00 R38.2 [SEQUENCIA]
+2025-09-22 WINV25 09:04:00–09:05:00 S38.2 [SEQUENCIA]
+2025-09-23 WINV25 11:10:00–11:11:00 R61.8 [SEQUENCIA]
+2025-09-25 WINV25 10:12:00–10:13:00 S38.2 [SEQUENCIA]
+2025-09-29 WINV25 09:09:00–09:10:00 R61.8 [SEQUENCIA]
+
+O QUE NÃO CASA
+2025-09-08 16:45 QUANTIDADE: M1 [Decimal('143770.0000000000000000'), Decimal('143785.0000000000000000'), Decimal('143735.0000000000000000'), Decimal('143775.0000000000000000')]; M5 [Decimal('143770'), Decimal('143785'), Decimal('143735'), Decimal('143775')]; quantidade M1-M5 450
+2025-09-08 17:25 QUANTIDADE: M1 [Decimal('143700.0000000000000000'), Decimal('143710.0000000000000000'), Decimal('143660.0000000000000000'), Decimal('143695.0000000000000000')]; M5 [Decimal('143700'), Decimal('143710'), Decimal('143660'), Decimal('143695')]; quantidade M1-M5 -450
+2025-09-16 17:10 QUANTIDADE: M1 [Decimal('145560.0000000000000000'), Decimal('145575.0000000000000000'), Decimal('145455.0000000000000000'), Decimal('145475.0000000000000000')]; M5 [Decimal('145560'), Decimal('145575'), Decimal('145455'), Decimal('145475')]; quantidade M1-M5 1225
+2025-09-16 17:55 QUANTIDADE: M1 [Decimal('145545.0000000000000000'), Decimal('145570.0000000000000000'), Decimal('145475.0000000000000000'), Decimal('145495.0000000000000000')]; M5 [Decimal('145545'), Decimal('145570'), Decimal('145475'), Decimal('145495')]; quantidade M1-M5 -1225
+2025-09-23 14:00 QUANTIDADE: M1 [Decimal('148260.0000000000000000'), Decimal('148375.0000000000000000'), Decimal('148200.0000000000000000'), Decimal('148225.0000000000000000')]; M5 [Decimal('148260'), Decimal('148375'), Decimal('148200'), Decimal('148225')]; quantidade M1-M5 375
+2025-09-23 14:40 QUANTIDADE: M1 [Decimal('147855.0000000000000000'), Decimal('147870.0000000000000000'), Decimal('147695.0000000000000000'), Decimal('147745.0000000000000000')]; M5 [Decimal('147855'), Decimal('147870'), Decimal('147695'), Decimal('147745')]; quantidade M1-M5 -375

@@ -1,0 +1,38 @@
+Escopo: Abril/2025: 20pregões, 37operações conhecidas. Sem fechamento mensal ou DD do teste.
+
+Concreto: 30operações determinadas sob os candles fornecidos, sem pendência de sequência/cobertura/grade. Quantidade divergente continua ressalvada.
+
+Replay: 5janelas /7minutos. Use as abas de retorno já preparadas. Fim do intervalo é exclusivo; horários de São Paulo.
+
+Como copiar: Reproduzir alguns segundos antes/depois,sem pular nem filtrar lotes/corretoras. Copiar dados completos do Times&Trades;preservar milissegundos,ordem e negócios idênticos. Não deduplicar.
+
+Abas de retorno: As abas com data/hora contêm só o cabeçalho padrão do Profit. Cole negócios nelas, mantendo os cabeçalhos. Se abertura for tardia, não invente negócios anteriores; informe a observação.
+
+Validação futura: Antes de resolver:OHLC/quantidade,minuto inteiro,limite200001 por cópia e empates de milissegundo. Preenchimento/ordens não certificados.
+
+Cobertura: A aba Controle_Cobertura informa lacunas. Nas lacunas longas, verificar existência de negócios no Replay e recuperar candles M1 primeiro; não é pedido de copiar toda a fita.
+
+30/07: Não aplicável neste mês.
+
+Datas fora do Work: Nenhuma data complementar fora da seleção original.
+
+Preço20/05: Ver aba Datas_A_Conferir.
+
+Parâmetros: D original,grade5,1contrato/nível,toque inclusivo,corte18h. Não variar alvos/stops,modelos ou ajustar referência pelo lucro.
+
+Fontes: M1 nativo MT5 WIN$N;M5 Profit usado pelo Work;ajustes Work. M1+janelas não são fita integral. Calendário sugere contrato;preços da cópia ainda precisam conferir.
+
+Acesso: Se contrato antigo indisponível,registrar data/contrato/alcance. TentarWINFUT só confirmando negócios individuais comms,correspondência e ajustes;sem compra.
+
+Preservação: Todos os meses fechados,brutos,referências e auditorias anteriores preservados. Controle10/07/2026 dispensado não reaberto;10/07/2025 é outra data.
+
+JANELAS PARA COPIAR
+2025-04-02 WINJ25 17:13:00–17:15:00 R38.2,R61.8 [SEQUENCIA]
+2025-04-07 WINJ25 11:11:00–11:13:00 R38.2,R61.8 [SEQUENCIA]
+2025-04-09 WINJ25 14:20:00–14:21:00 R61.8 [SEQUENCIA]
+2025-04-17 WINM25 12:06:00–12:07:00 R61.8 [SEQUENCIA]
+2025-04-30 WINM25 10:12:00–10:13:00 S38.2 [CONTROLE_GRADE5]
+
+O QUE NÃO CASA
+2025-04-07 13:00 QUANTIDADE: M1 [Decimal('125890.0000000000000000'), Decimal('126070.0000000000000000'), Decimal('125705.0000000000000000'), Decimal('125790.0000000000000000')]; M5 [Decimal('125890'), Decimal('126070'), Decimal('125705'), Decimal('125790')]; quantidade M1-M5 450
+2025-04-07 13:30 QUANTIDADE: M1 [Decimal('125590.0000000000000000'), Decimal('125925.0000000000000000'), Decimal('125535.0000000000000000'), Decimal('125880.0000000000000000')]; M5 [Decimal('125590'), Decimal('125925'), Decimal('125535'), Decimal('125880')]; quantidade M1-M5 -450

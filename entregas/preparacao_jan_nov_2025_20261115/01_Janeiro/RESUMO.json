@@ -1,0 +1,71 @@
+{
+  "mes": "2025-01",
+  "nome": "Janeiro",
+  "pregoes": 22,
+  "operacoes": 50,
+  "determinadas_candles": 46,
+  "concretas_sem_ressalva_de_sequencia_cobertura_grade": 46,
+  "pendentes_sequencia": 4,
+  "controles_grade": 0,
+  "operacoes_conhecidas_com_cobertura_pendente": 0,
+  "janelas_replay": 4,
+  "minutos_replay": 4,
+  "intervalos_cobertura_a_conferir": 0,
+  "Work_pontos": "1091.862670",
+  "ajustes": 22,
+  "M1": 12430,
+  "M5": 2486,
+  "grupos_preco_divergente": 0,
+  "grupos_quantidade_divergente": 4,
+  "contexto": {
+    "date": "2025-01-02",
+    "previous": "2024-12-30",
+    "previous_source": "WORK_M5_FULL",
+    "previous_first": "2024-12-30 09:00:00",
+    "previous_last": "2024-12-30 18:20:00",
+    "previous_bars": 113,
+    "open": "121790",
+    "high_prev": "122410.00",
+    "low_prev": "121410.00",
+    "close_prev": "121620.00",
+    "adjustment": "121576",
+    "contrato_Replay": "WING25"
+  },
+  "principal": null,
+  "DD_teste": null,
+  "ajustes_complementares": [
+    "2025-01-02"
+  ],
+  "ajustes_ausentes": [],
+  "datas_fora_Work": [
+    "2025-01-02"
+  ],
+  "status": "PREPARADO_AGUARDANDO_REPLAY_E_CONTROLES",
+  "resultado_mensal_fechado": false,
+  "mathematical_differences": [],
+  "work_missing": [],
+  "work_extra": [
+    [
+      "2025-01-02",
+      "R38.2"
+    ],
+    [
+      "2025-01-02",
+      "R61.8"
+    ],
+    [
+      "2025-01-02",
+      "S38.2"
+    ],
+    [
+      "2025-01-02",
+      "S50"
+    ],
+    [
+      "2025-01-02",
+      "S61.8"
+    ]
+  ],
+  "intervalos_longos_exigem_primeiro_candles": 0,
+  "controles_cobertura_ja_incluidos_no_replay": 0
+}

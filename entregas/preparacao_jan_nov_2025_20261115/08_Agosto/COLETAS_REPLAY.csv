@@ -1,0 +1,4 @@
+﻿mes;data;contrato;inicio;fim_exclusivo;tipo;prioridade;niveis;instrucoes;aba_retorno
+2025-08;2025-08-01;WINQ25;09:50:00;09:51:00;SEQUENCIA;COLETAR;R61.8;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem.";01-08_0950
+2025-08;2025-08-12;WINQ25;09:30:00;09:31:00;SEQUENCIA;COLETAR;R61.8;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem.";12-08_0930
+2025-08;2025-08-21;WINV25;09:01:00;09:03:00;SEQUENCIA;COLETAR;S38.2,S50;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem.";21-08_0901

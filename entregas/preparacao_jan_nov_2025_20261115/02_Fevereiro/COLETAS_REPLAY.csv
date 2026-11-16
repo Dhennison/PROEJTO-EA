@@ -1,0 +1,2 @@
+﻿mes;data;contrato;inicio;fim_exclusivo;tipo;prioridade;niveis;instrucoes;aba_retorno
+2025-02;2025-02-07;WING25;11:24:00;11:25:00;SEQUENCIA;COLETAR;S38.2;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem.";07-02_1124

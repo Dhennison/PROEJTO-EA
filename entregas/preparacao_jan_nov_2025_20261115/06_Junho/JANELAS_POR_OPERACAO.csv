@@ -1,0 +1,4 @@
+﻿mes;data;contrato;inicio;fim_exclusivo;nivel;tipo;entrada;alvo;stop;motivo;prioridade
+2025-06;2025-06-09;WINM25;09:24:00;09:25:00;S38.2;SEQUENCIA;136235;136335;135860;Ramos M1 ainda permitem desfechos diferentes;COLETAR
+2025-06;2025-06-16;WINM25;09:10:00;09:11:00;R61.8;SEQUENCIA;138300;138215;138750;Ramos M1 ainda permitem desfechos diferentes;COLETAR
+2025-06;2025-06-20;WINQ25;09:24:00;09:25:00;S38.2;SEQUENCIA;141115;141160;140740;Ramos M1 ainda permitem desfechos diferentes;COLETAR

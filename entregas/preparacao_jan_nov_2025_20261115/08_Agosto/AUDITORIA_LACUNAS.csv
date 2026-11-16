@@ -1,0 +1,5 @@
+﻿data;inicio;fim_exclusivo;minutos;sem_limites_M5;niveis_possivelmente_afetados;acao
+2025-08-15;18:03:00;18:04:00;1;False;;SEM_EFEITO_D_ATUAL
+2025-08-21;09:17:00;10:26:00;69;True;S61.8,R38.2,R61.8;PENDENTE_COBERTURA
+2025-08-21;10:27:00;10:30:00;3;False;;SEM_EFEITO_D_ATUAL
+2025-08-21;10:31:00;10:33:00;2;False;;SEM_EFEITO_D_ATUAL

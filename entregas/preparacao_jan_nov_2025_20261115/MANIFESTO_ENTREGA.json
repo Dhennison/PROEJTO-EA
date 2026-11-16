@@ -1,0 +1,832 @@
+[
+  {
+    "path": "01_Janeiro/AUDITORIA_LACUNAS.csv",
+    "size": 10,
+    "sha256": "391216e91f1f4fcf21d5654c34e622147a2eb92d62984f61c3438f0ec7f6b5a7"
+  },
+  {
+    "path": "01_Janeiro/COLETAS_REPLAY.csv",
+    "size": 740,
+    "sha256": "8f5dedb42795ddafeec1c6a6da42923ff9e010ebfdf23bbd2033ca703b21ef4d"
+  },
+  {
+    "path": "01_Janeiro/COMPARATIVO_WORK_M5_M1.csv",
+    "size": 7527,
+    "sha256": "da70b49701198f37cdf72e33216f1da6fc0a7ada9498baeac467b14f561ea047"
+  },
+  {
+    "path": "01_Janeiro/CONCRETO_E_PENDENTE_POR_OPERACAO.csv",
+    "size": 6391,
+    "sha256": "431554866378f725a75a65548c12f5dcf7f220ffe77e3894405b5f00a5ccbafb"
+  },
+  {
+    "path": "01_Janeiro/CONFERENCIA_M1_M5.csv",
+    "size": 679485,
+    "sha256": "7219d94c6300ee90914e2e8a5fd3ce2edb8a85b125266d8d7bd2330ab35461e4"
+  },
+  {
+    "path": "01_Janeiro/CONTROLES_COBERTURA.csv",
+    "size": 10,
+    "sha256": "391216e91f1f4fcf21d5654c34e622147a2eb92d62984f61c3438f0ec7f6b5a7"
+  },
+  {
+    "path": "01_Janeiro/DATAS_E_DIVERGENCIAS.csv",
+    "size": 1733,
+    "sha256": "55e924943a1f888511ae166bd18c330361e7a73fd7309a0bc719259993b7d75c"
+  },
+  {
+    "path": "01_Janeiro/INVENTARIO_POR_DATA.csv",
+    "size": 2155,
+    "sha256": "14b6c2931d67f40293a423a308bfd67d612a0cab2b1058d8fa900df1b14ab88d"
+  },
+  {
+    "path": "01_Janeiro/JANELAS_POR_OPERACAO.csv",
+    "size": 625,
+    "sha256": "a9e633a583c4f6e3df59a592de0555ed4a57af6cee2b26d4ecf7da97baaaabca"
+  },
+  {
+    "path": "01_Janeiro/LEIA_MES.txt",
+    "size": 3502,
+    "sha256": "5aa920328edafae8b9b0e5e5539296da61178a6cf55353fe9815235199169a39"
+  },
+  {
+    "path": "01_Janeiro/OPERACOES_POSSIBILIDADES.csv",
+    "size": 6620,
+    "sha256": "4d1afbe3d4f908834eade06445b0be6fd2f3f2dcb5d78a9b4228709d0f4832e1"
+  },
+  {
+    "path": "01_Janeiro/REFERENCIAS.csv",
+    "size": 2809,
+    "sha256": "e58acfb1c3b3c55a22ddfb62a539acb67ac4aeaaba04e10f09e6d5cb453705d4"
+  },
+  {
+    "path": "01_Janeiro/RESUMO.json",
+    "size": 1579,
+    "sha256": "1bc8b02a1511638a6328cdad20e4f2fe88cd9c2a6263e65d43f820a2dee2bbf5"
+  },
+  {
+    "path": "02_Fevereiro/AUDITORIA_LACUNAS.csv",
+    "size": 10,
+    "sha256": "391216e91f1f4fcf21d5654c34e622147a2eb92d62984f61c3438f0ec7f6b5a7"
+  },
+  {
+    "path": "02_Fevereiro/COLETAS_REPLAY.csv",
+    "size": 251,
+    "sha256": "81da395d76e47ce83a9386211fa9cd0e42f44e16a78b032845bf80446a9de755"
+  },
+  {
+    "path": "02_Fevereiro/COMPARATIVO_WORK_M5_M1.csv",
+    "size": 5733,
+    "sha256": "b25a9e358c971555371fb39905dcb61d66861a1e24f8401fab99344af6b6eb93"
+  },
+  {
+    "path": "02_Fevereiro/CONCRETO_E_PENDENTE_POR_OPERACAO.csv",
+    "size": 5010,
+    "sha256": "375132a6cfacc34040be3aa5c406d73e864a7d54260b68728a04288b399b80ae"
+  },
+  {
+    "path": "02_Fevereiro/CONFERENCIA_M1_M5.csv",
+    "size": 619055,
+    "sha256": "f9a5dfcc92972f1cd66e855d42f602687836c5ebc8641124cbb51ece48a4d34a"
+  },
+  {
+    "path": "02_Fevereiro/CONTROLES_COBERTURA.csv",
+    "size": 10,
+    "sha256": "391216e91f1f4fcf21d5654c34e622147a2eb92d62984f61c3438f0ec7f6b5a7"
+  },
+  {
+    "path": "02_Fevereiro/DATAS_E_DIVERGENCIAS.csv",
+    "size": 1516,
+    "sha256": "364d25ad557da9df4306220b7fefc4ae5581663e0938339fb3da138e571aafd5"
+  },
+  {
+    "path": "02_Fevereiro/INVENTARIO_POR_DATA.csv",
+    "size": 1979,
+    "sha256": "6cddb0fae0db0459819f74b965728b19cc10279f94a84e33659b3bc56b131465"
+  },
+  {
+    "path": "02_Fevereiro/JANELAS_POR_OPERACAO.csv",
+    "size": 223,
+    "sha256": "bfdd0126bbb80940bccadc8693ce1299d203fe716b74fa210cb361ac02049817"
+  },
+  {
+    "path": "02_Fevereiro/LEIA_MES.txt",
+    "size": 3170,
+    "sha256": "46cf4a1597a3eb49ef87637a5a120cd11a19763e15ed8a0ae8e4ec655e3d0464"
+  },
+  {
+    "path": "02_Fevereiro/OPERACOES_POSSIBILIDADES.csv",
+    "size": 5034,
+    "sha256": "1dd00bda695c6f22d20a52b6fc3b3eae74fdcd11e9c305399f6611b0f974f6a7"
+  },
+  {
+    "path": "02_Fevereiro/REFERENCIAS.csv",
+    "size": 2558,
+    "sha256": "4cf562d87b82a676125ab1b1c12d30ecdf6b0a5c8edfceea01b16f031b345ada"
+  },
+  {
+    "path": "02_Fevereiro/RESUMO.json",
+    "size": 1297,
+    "sha256": "6e96cc5f4661ce22e9d3eac9ff74a959d25e4da4fc3e5e80eb1ae197608b88dd"
+  },
+  {
+    "path": "03_Março/AUDITORIA_LACUNAS.csv",
+    "size": 10,
+    "sha256": "391216e91f1f4fcf21d5654c34e622147a2eb92d62984f61c3438f0ec7f6b5a7"
+  },
+  {
+    "path": "03_Março/COLETAS_REPLAY.csv",
+    "size": 1062,
+    "sha256": "2976aa8690e8155d3754ffdb6e212b0aecfd7e96b0baea2b51cb5b789def25b1"
+  },
+  {
+    "path": "03_Março/COMPARATIVO_WORK_M5_M1.csv",
+    "size": 5848,
+    "sha256": "0a6f8216b365ae87e6e88a14f3c6e6a77f258e6ae5d78c4f12ec7392460803c9"
+  },
+  {
+    "path": "03_Março/CONCRETO_E_PENDENTE_POR_OPERACAO.csv",
+    "size": 5081,
+    "sha256": "796d8331cd71e5d189f55c36c11b7ee703199068f32bbfb9d62cc52e5a8983c9"
+  },
+  {
+    "path": "03_Março/CONFERENCIA_M1_M5.csv",
+    "size": 577463,
+    "sha256": "6f0b1b48d7c94673838bb9342b848c2dfded6feb3ff2c45b390e7f65afab5582"
+  },
+  {
+    "path": "03_Março/CONTROLES_COBERTURA.csv",
+    "size": 10,
+    "sha256": "391216e91f1f4fcf21d5654c34e622147a2eb92d62984f61c3438f0ec7f6b5a7"
+  },
+  {
+    "path": "03_Março/DATAS_E_DIVERGENCIAS.csv",
+    "size": 781,
+    "sha256": "c6598a4a8faa22a25c13ec86c0b49d0c95d0e77a3cfe2072ee5dea2a50279841"
+  },
+  {
+    "path": "03_Março/INVENTARIO_POR_DATA.csv",
+    "size": 1890,
+    "sha256": "7092eab1d05e30415ecf37f234e4313fe2098974f9d9af9410e65f8d226f4640"
+  },
+  {
+    "path": "03_Março/JANELAS_POR_OPERACAO.csv",
+    "size": 889,
+    "sha256": "b5b15cb972741115484e6fa32533f2906e2356e7a9a3ed8eb24f7f1236659e22"
+  },
+  {
+    "path": "03_Março/LEIA_MES.txt",
+    "size": 2880,
+    "sha256": "4d4447afc71c9b0b1b945ad146b11d3ac7d994bbbd65cd388a93f10cb050f909"
+  },
+  {
+    "path": "03_Março/OPERACOES_POSSIBILIDADES.csv",
+    "size": 5170,
+    "sha256": "960976a50543c84f65962fe6d3e3f4f7d8808600b2d9e3fda563736bbfee066d"
+  },
+  {
+    "path": "03_Março/REFERENCIAS.csv",
+    "size": 2436,
+    "sha256": "f330474064a4e21164968cc1b07e99741085efee7208d3bec02eb18478037131"
+  },
+  {
+    "path": "03_Março/RESUMO.json",
+    "size": 1294,
+    "sha256": "b38b39dae2ffde4de1aa504d27d4cd98d1103585062eb17b589656f211b5a27e"
+  },
+  {
+    "path": "04_Abril/AUDITORIA_LACUNAS.csv",
+    "size": 258,
+    "sha256": "2ea20cde250a0d72970572f2104e110c4f4ad070f041a87d9e94a37e223f0248"
+  },
+  {
+    "path": "04_Abril/COLETAS_REPLAY.csv",
+    "size": 921,
+    "sha256": "13a8b644c5cb9053f4ba732f98250ca1269cd35c4f4e0c81fa52118e9065ed59"
+  },
+  {
+    "path": "04_Abril/COMPARATIVO_WORK_M5_M1.csv",
+    "size": 5479,
+    "sha256": "89fec1ca3b31375f822d266721e620fffcd29602e5d35fbe075d87a51086bba2"
+  },
+  {
+    "path": "04_Abril/CONCRETO_E_PENDENTE_POR_OPERACAO.csv",
+    "size": 4735,
+    "sha256": "5582233e390a95bc0cd55de6e633a9a08df90468858684bb5c5e87f65390ebf6"
+  },
+  {
+    "path": "04_Abril/CONFERENCIA_M1_M5.csv",
+    "size": 619979,
+    "sha256": "1bd64dfc6b64c366126896253b1de492a65a97636e93d6b5c1035645a18a26d3"
+  },
+  {
+    "path": "04_Abril/CONTROLES_COBERTURA.csv",
+    "size": 10,
+    "sha256": "391216e91f1f4fcf21d5654c34e622147a2eb92d62984f61c3438f0ec7f6b5a7"
+  },
+  {
+    "path": "04_Abril/DATAS_E_DIVERGENCIAS.csv",
+    "size": 783,
+    "sha256": "eec3a13842f09a3bf5ea4980daa0c593fcad9344a30804fd1b2ea6579445d44e"
+  },
+  {
+    "path": "04_Abril/INVENTARIO_POR_DATA.csv",
+    "size": 1979,
+    "sha256": "a5ace77d99221a1cdf1c75ad365f6794697d7c5d11ea316a4abc6587af2cae47"
+  },
+  {
+    "path": "04_Abril/JANELAS_POR_OPERACAO.csv",
+    "size": 1184,
+    "sha256": "78d132428e99f798f94bb4511d2659d8d8cf9cbe35c21f562a955ddb1acebb90"
+  },
+  {
+    "path": "04_Abril/LEIA_MES.txt",
+    "size": 2847,
+    "sha256": "8cb9118cf346397d11fadc74f4a92fba9a8ac48b997c1206243e9b8d9e575126"
+  },
+  {
+    "path": "04_Abril/OPERACOES_POSSIBILIDADES.csv",
+    "size": 4824,
+    "sha256": "98daa0c761ae889bde6778c48f94092922505455315d2191d17b53b0700918f6"
+  },
+  {
+    "path": "04_Abril/REFERENCIAS.csv",
+    "size": 2558,
+    "sha256": "58d0941015f58776d08cd4307bb701d337ca6bba55a5e6964f0fc473d50017c5"
+  },
+  {
+    "path": "04_Abril/RESUMO.json",
+    "size": 1293,
+    "sha256": "8f3c2ec8a699809ebca9e9c48f54f794d42a923384149ab690acff26bc9553ec"
+  },
+  {
+    "path": "05_Maio/AUDITORIA_LACUNAS.csv",
+    "size": 10,
+    "sha256": "391216e91f1f4fcf21d5654c34e622147a2eb92d62984f61c3438f0ec7f6b5a7"
+  },
+  {
+    "path": "05_Maio/COLETAS_REPLAY.csv",
+    "size": 251,
+    "sha256": "e2e123847a2f74085550abd168348ca10f416205fa6317ffd29699df5622222c"
+  },
+  {
+    "path": "05_Maio/COMPARATIVO_WORK_M5_M1.csv",
+    "size": 5729,
+    "sha256": "9b75ba2de5fb3ff50d842c633c494d5cdd6a58b98a069cbe1e1ceee67c535c35"
+  },
+  {
+    "path": "05_Maio/CONCRETO_E_PENDENTE_POR_OPERACAO.csv",
+    "size": 4893,
+    "sha256": "525bcbeef7e3bb36dc61e52a851865e04be08d8294b72307facbb93a2a30bce8"
+  },
+  {
+    "path": "05_Maio/CONFERENCIA_M1_M5.csv",
+    "size": 648596,
+    "sha256": "d40abb3ed099d581719253042f1d249c351179f9415555469c4dd357ee870173"
+  },
+  {
+    "path": "05_Maio/CONTROLES_COBERTURA.csv",
+    "size": 10,
+    "sha256": "391216e91f1f4fcf21d5654c34e622147a2eb92d62984f61c3438f0ec7f6b5a7"
+  },
+  {
+    "path": "05_Maio/DATAS_E_DIVERGENCIAS.csv",
+    "size": 418,
+    "sha256": "ad4fc2cfc7b9eea3897650df32610eaa29553b1e74660af1ab75d5e6e1a69d5d"
+  },
+  {
+    "path": "05_Maio/INVENTARIO_POR_DATA.csv",
+    "size": 2067,
+    "sha256": "bf4e0bcac832362cbd16306e3b5c44f7941c7045e474a8634cc8200043ae9171"
+  },
+  {
+    "path": "05_Maio/JANELAS_POR_OPERACAO.csv",
+    "size": 223,
+    "sha256": "05a9077eaf63d8018d1e17697548b7275626c00c5d094736510eea4bad966dad"
+  },
+  {
+    "path": "05_Maio/LEIA_MES.txt",
+    "size": 2465,
+    "sha256": "26a53cb1da826467678c9b199ce45053d48881a52b9fc9f7405c9c1e012f2527"
+  },
+  {
+    "path": "05_Maio/OPERACOES_POSSIBILIDADES.csv",
+    "size": 4952,
+    "sha256": "75c12d87e05dae80757c491e567f9ce11dcd18966b5517cd73ce939ccf934430"
+  },
+  {
+    "path": "05_Maio/REFERENCIAS.csv",
+    "size": 2679,
+    "sha256": "639ea8385e36d025ebf6b96c369e7a567d192aa9e2ed4e4146924e369e08c418"
+  },
+  {
+    "path": "05_Maio/RESUMO.json",
+    "size": 1291,
+    "sha256": "83ff40375ca37e5445b7e90b5d987ddb3d092d11a0e6c189bc7951576cfe3251"
+  },
+  {
+    "path": "06_Junho/AUDITORIA_LACUNAS.csv",
+    "size": 171,
+    "sha256": "9f0afb8c8082307b07dd4929af0d119c3defbd8c8fbbe0e8bfaff8f322bc6dbd"
+  },
+  {
+    "path": "06_Junho/COLETAS_REPLAY.csv",
+    "size": 577,
+    "sha256": "751c04aa06a595c23cdbe786c3254dcde24c171a554198dcd40b2865b74f2805"
+  },
+  {
+    "path": "06_Junho/COMPARATIVO_WORK_M5_M1.csv",
+    "size": 7419,
+    "sha256": "8f457acaf3ed2007a83a90016ea25eda82efadfe77862cf1da65a1edc2e9107d"
+  },
+  {
+    "path": "06_Junho/CONCRETO_E_PENDENTE_POR_OPERACAO.csv",
+    "size": 6358,
+    "sha256": "1ba2e4f1c94c3c3760a79cb5390621c0bea45b67dcefc019dd7720f294c5c305"
+  },
+  {
+    "path": "06_Junho/CONFERENCIA_M1_M5.csv",
+    "size": 616754,
+    "sha256": "e2785432059913c39d4a0572df9bd20f027148c07b57f51b61970758567da716"
+  },
+  {
+    "path": "06_Junho/CONTROLES_COBERTURA.csv",
+    "size": 270,
+    "sha256": "2892868c65a921f755b3e9d5f5e2afc3a76af36948808e850d4663ba37be82d6"
+  },
+  {
+    "path": "06_Junho/DATAS_E_DIVERGENCIAS.csv",
+    "size": 2242,
+    "sha256": "dd75ce3c155131551788739c0bafa03cf6e13f78578c9702e85f0c08a84e3651"
+  },
+  {
+    "path": "06_Junho/INVENTARIO_POR_DATA.csv",
+    "size": 1979,
+    "sha256": "86e0ad6a8d3c3e416bb26afeabb6ec773ae1abf9bdd7e4e9789bacf21ad084d8"
+  },
+  {
+    "path": "06_Junho/JANELAS_POR_OPERACAO.csv",
+    "size": 491,
+    "sha256": "f298677fcbe6d6f2367d47798e0d36d0fde16bdf74fc512c4d534ee738e41560"
+  },
+  {
+    "path": "06_Junho/LEIA_MES.txt",
+    "size": 3990,
+    "sha256": "b95b05d42405ee01f7cf26f47cf06e7513e3849bb53031417ff8970120b3fff2"
+  },
+  {
+    "path": "06_Junho/OPERACOES_POSSIBILIDADES.csv",
+    "size": 6495,
+    "sha256": "36e7a398dc2f1952c61f5d3fcd611ff262db63f895265cb5c9082bd20e503cb9"
+  },
+  {
+    "path": "06_Junho/REFERENCIAS.csv",
+    "size": 2558,
+    "sha256": "dfe0845742ded3711327a496197dde992c39bb7daaaec5c651ffde416d29b891"
+  },
+  {
+    "path": "06_Junho/RESUMO.json",
+    "size": 1293,
+    "sha256": "212f056a6a23d61523806ed26280815840009d1ca028efa0d4cffc806831893c"
+  },
+  {
+    "path": "07_Julho/AUDITORIA_LACUNAS.csv",
+    "size": 149,
+    "sha256": "ab2cc545c1d5e3144cbaf18d6a49311f703b0d6261fba03b5653b766ac3bc48f"
+  },
+  {
+    "path": "07_Julho/COLETAS_REPLAY.csv",
+    "size": 1108,
+    "sha256": "ec0ab86794eb274083718fdf168ffc3590e5a974135bdcda97c09c29eba95b86"
+  },
+  {
+    "path": "07_Julho/COMPARATIVO_WORK_M5_M1.csv",
+    "size": 8022,
+    "sha256": "cb5715547fa6e96c779a75b532b2fa7622a8999965600c80ff581b9ab47546a4"
+  },
+  {
+    "path": "07_Julho/CONCRETO_E_PENDENTE_POR_OPERACAO.csv",
+    "size": 6818,
+    "sha256": "1c59ea333ff50fd817c758988fcd14a0ff812820d61c37f1ca265b83d82a99ce"
+  },
+  {
+    "path": "07_Julho/CONFERENCIA_M1_M5.csv",
+    "size": 707307,
+    "sha256": "ee80893d1391eb80e32e4e62364856d837e6f6fe223883877601a449c9627d59"
+  },
+  {
+    "path": "07_Julho/CONTROLES_COBERTURA.csv",
+    "size": 209,
+    "sha256": "c61e626fbe424bd0f4d36bc60c21e62e2572b7687694396d1a48ccd3fac86922"
+  },
+  {
+    "path": "07_Julho/DATAS_E_DIVERGENCIAS.csv",
+    "size": 843,
+    "sha256": "52bc053b37c8d9413155e9775af13f603ea86a50883b1623959fd314f0d1d475"
+  },
+  {
+    "path": "07_Julho/INVENTARIO_POR_DATA.csv",
+    "size": 2243,
+    "sha256": "35fa28356013718daf68fb6b045408fb86f618c980f3f4174f7d42ba67bc6f0f"
+  },
+  {
+    "path": "07_Julho/JANELAS_POR_OPERACAO.csv",
+    "size": 1048,
+    "sha256": "d92623088aa347b92f5851e764bd2a2ad5da995793c914c32a2fcce25b5ece95"
+  },
+  {
+    "path": "07_Julho/LEIA_MES.txt",
+    "size": 3174,
+    "sha256": "5110f5fde1b39284b8530839981571c8def58bca98cb5ef175602c04739f8af9"
+  },
+  {
+    "path": "07_Julho/OPERACOES_POSSIBILIDADES.csv",
+    "size": 6913,
+    "sha256": "fae12359a759447915f1e8d9abb3104c89cfd532d5394805ac069583f89fbdad"
+  },
+  {
+    "path": "07_Julho/REFERENCIAS.csv",
+    "size": 2921,
+    "sha256": "88ab11a659957bacc312b714e9a532c4b053c7e0a729c4c5b94f3ccacecf5048"
+  },
+  {
+    "path": "07_Julho/RESUMO.json",
+    "size": 1511,
+    "sha256": "c95e2422bc4d811dbe3b4ad31dfcbf4d482733c9f432b364b2074c09b65b3688"
+  },
+  {
+    "path": "08_Agosto/AUDITORIA_LACUNAS.csv",
+    "size": 332,
+    "sha256": "1e6aa46c135cb962532bb7199440130077a028dbb3aa8134b52375cbe3965896"
+  },
+  {
+    "path": "08_Agosto/COLETAS_REPLAY.csv",
+    "size": 581,
+    "sha256": "6e1eb1d395b69c953a1d10b834b57b40cecbf4e09f587806378e9543f30d3058"
+  },
+  {
+    "path": "08_Agosto/COMPARATIVO_WORK_M5_M1.csv",
+    "size": 6008,
+    "sha256": "f5e5f277f2943be13ee36c5aeeb0b5a17181a30c1fdee2a7148827138a6616dd"
+  },
+  {
+    "path": "08_Agosto/CONCRETO_E_PENDENTE_POR_OPERACAO.csv",
+    "size": 5133,
+    "sha256": "5366ae55ce36f9ce837866907f9238394be4ee0b80ad728add1aebe41d46f40e"
+  },
+  {
+    "path": "08_Agosto/CONFERENCIA_M1_M5.csv",
+    "size": 645656,
+    "sha256": "54749f38b07878b4a20db0998e6782c5771b88755fa3d501423f01dd84aa975a"
+  },
+  {
+    "path": "08_Agosto/CONTROLES_COBERTURA.csv",
+    "size": 260,
+    "sha256": "551d9fffb3421d69750f2132fc66e8517e63874557e393984c738dca6640e573"
+  },
+  {
+    "path": "08_Agosto/DATAS_E_DIVERGENCIAS.csv",
+    "size": 4813,
+    "sha256": "006c064a7620a4a732b536cc70ab280aac0d2c646a510ba94fe4f894e4031b14"
+  },
+  {
+    "path": "08_Agosto/INVENTARIO_POR_DATA.csv",
+    "size": 2067,
+    "sha256": "4e633d89d7a31395a6b3a06cbe6505709f0cbb6132fe8af9d60060d287c3a372"
+  },
+  {
+    "path": "08_Agosto/JANELAS_POR_OPERACAO.csv",
+    "size": 623,
+    "sha256": "73f933bd7cf1042587754006b3d9d411db7103c9e97c013d13306871a95c7d58"
+  },
+  {
+    "path": "08_Agosto/LEIA_MES.txt",
+    "size": 5964,
+    "sha256": "dbcb762ed18bdbfd29aee0f0bb427dee743b87397daf3a81f6f40caa985c9f4c"
+  },
+  {
+    "path": "08_Agosto/OPERACOES_POSSIBILIDADES.csv",
+    "size": 5201,
+    "sha256": "630a94766db22f0cf2d948175635701d3ef6dfa2f028da35438a0633b644a5b0"
+  },
+  {
+    "path": "08_Agosto/REFERENCIAS.csv",
+    "size": 2679,
+    "sha256": "8d53070c7030b84207b69004e3cce2ab300ea182b56f7ffeef41373117c40dc4"
+  },
+  {
+    "path": "08_Agosto/RESUMO.json",
+    "size": 1295,
+    "sha256": "f21c395adad1e3fd04a1bd8911bf78f9cbddb2c46535d2914cdf89c8a9fe5e9f"
+  },
+  {
+    "path": "09_Setembro/AUDITORIA_LACUNAS.csv",
+    "size": 144,
+    "sha256": "da1b909b6224d42b450fed3b6fd83c994675b111c5b2274b1f6f0e6c85ea2ef2"
+  },
+  {
+    "path": "09_Setembro/COLETAS_REPLAY.csv",
+    "size": 903,
+    "sha256": "5bd4e526f603e662825bc3ccd42cad824de5eeb92145def1371b5c13fabb99d8"
+  },
+  {
+    "path": "09_Setembro/COMPARATIVO_WORK_M5_M1.csv",
+    "size": 6327,
+    "sha256": "9a9822e36f8e9f035edb62fce2c3dd21da220dbef88cf5d74d96a809fd2a477b"
+  },
+  {
+    "path": "09_Setembro/CONCRETO_E_PENDENTE_POR_OPERACAO.csv",
+    "size": 5303,
+    "sha256": "ddb35e32fbb9eec8634f338eb12808b1f48c51f5bd0b475df7228095a726efeb"
+  },
+  {
+    "path": "09_Setembro/CONFERENCIA_M1_M5.csv",
+    "size": 678509,
+    "sha256": "845c05d14064f2aaad2b226cbe4ce7b2a82d6f2b6f5182d038b0548784bc0cb1"
+  },
+  {
+    "path": "09_Setembro/CONTROLES_COBERTURA.csv",
+    "size": 10,
+    "sha256": "391216e91f1f4fcf21d5654c34e622147a2eb92d62984f61c3438f0ec7f6b5a7"
+  },
+  {
+    "path": "09_Setembro/DATAS_E_DIVERGENCIAS.csv",
+    "size": 2251,
+    "sha256": "510ac6804e127fda15034ceac7e370df241ec06ccadda6161833e77f3b5b2943"
+  },
+  {
+    "path": "09_Setembro/INVENTARIO_POR_DATA.csv",
+    "size": 2155,
+    "sha256": "cd0a4b703d34ad88357e1a83feaa6fcba2a7ce4bb13f67a521a8788b53d70ae6"
+  },
+  {
+    "path": "09_Setembro/JANELAS_POR_OPERACAO.csv",
+    "size": 759,
+    "sha256": "01f84ac29b46cf5fcc83a91b4adeed915d8202e981ecc1650a2cdd0e1cdbf92a"
+  },
+  {
+    "path": "09_Setembro/LEIA_MES.txt",
+    "size": 3956,
+    "sha256": "97ac309b273f4c1d4b6e533d493197944167861be49fe942cf06e560146825bb"
+  },
+  {
+    "path": "09_Setembro/OPERACOES_POSSIBILIDADES.csv",
+    "size": 5364,
+    "sha256": "28f08da13ba834ef2587e0c9f9e65087e695573fa2caeb4acaed40a5b4765283"
+  },
+  {
+    "path": "09_Setembro/REFERENCIAS.csv",
+    "size": 2800,
+    "sha256": "e40db3def29e8189f49baae00af1d605279d9c5cc83f7b907acc855df155b44e"
+  },
+  {
+    "path": "09_Setembro/RESUMO.json",
+    "size": 1296,
+    "sha256": "62d2eca32ee5a82c18e9346f638f433ae4835d8bd7e4778ee96754fa62dc29a1"
+  },
+  {
+    "path": "10_Outubro/AUDITORIA_LACUNAS.csv",
+    "size": 10,
+    "sha256": "391216e91f1f4fcf21d5654c34e622147a2eb92d62984f61c3438f0ec7f6b5a7"
+  },
+  {
+    "path": "10_Outubro/COLETAS_REPLAY.csv",
+    "size": 414,
+    "sha256": "c4e84ced03cfe75d1d5cf9d48bedcc5c60e1c6ff8451791b6356c6d1274e41b7"
+  },
+  {
+    "path": "10_Outubro/COMPARATIVO_WORK_M5_M1.csv",
+    "size": 6711,
+    "sha256": "39f2b2e2f4d659ce83f8c7f7d7a3b58d2fb413dacb4ae1d197fa2b9210e585c7"
+  },
+  {
+    "path": "10_Outubro/CONCRETO_E_PENDENTE_POR_OPERACAO.csv",
+    "size": 5907,
+    "sha256": "897c818045b10072495daa1479c85d367118186920c237d71712bc2449131f45"
+  },
+  {
+    "path": "10_Outubro/CONFERENCIA_M1_M5.csv",
+    "size": 708107,
+    "sha256": "6e21076ee1ae9a5e5fd1ec3e65957251f1782cb95902fba42981abad2e7add5b"
+  },
+  {
+    "path": "10_Outubro/CONTROLES_COBERTURA.csv",
+    "size": 10,
+    "sha256": "391216e91f1f4fcf21d5654c34e622147a2eb92d62984f61c3438f0ec7f6b5a7"
+  },
+  {
+    "path": "10_Outubro/DATAS_E_DIVERGENCIAS.csv",
+    "size": 783,
+    "sha256": "6799983a5236821a4f62df57c394f649587e4a67740ad9fab9692a2c9604f077"
+  },
+  {
+    "path": "10_Outubro/INVENTARIO_POR_DATA.csv",
+    "size": 2243,
+    "sha256": "a06eaa9b9a8e0169d61cca5c2c2ac095ba4e4ee916b4644eea9593856ff63c1e"
+  },
+  {
+    "path": "10_Outubro/JANELAS_POR_OPERACAO.csv",
+    "size": 357,
+    "sha256": "9bc54023aa5801da5d0ce78d077f5715169392e9284a2f4e545e3d20e0708ead"
+  },
+  {
+    "path": "10_Outubro/LEIA_MES.txt",
+    "size": 2663,
+    "sha256": "4c73d9a5167ee50ed60f650fbba6eec372566192a2cfc3e3ad4b03f2dd7202ed"
+  },
+  {
+    "path": "10_Outubro/OPERACOES_POSSIBILIDADES.csv",
+    "size": 5986,
+    "sha256": "8a53e544e4e56e5f6f4bf22df8e4177186e1d7153dd729a7445422fe6f20f891"
+  },
+  {
+    "path": "10_Outubro/REFERENCIAS.csv",
+    "size": 2921,
+    "sha256": "28a8fb4ddc2674e4bb212cd5e07384a36cf6bba44e3948ba336503b2aae2f1f2"
+  },
+  {
+    "path": "10_Outubro/RESUMO.json",
+    "size": 1295,
+    "sha256": "1c215f7a731c79485c83853be0160ddfcfd4a2d18b74adc13eec2c8ae0967e99"
+  },
+  {
+    "path": "11_Novembro/AUDITORIA_LACUNAS.csv",
+    "size": 10,
+    "sha256": "391216e91f1f4fcf21d5654c34e622147a2eb92d62984f61c3438f0ec7f6b5a7"
+  },
+  {
+    "path": "11_Novembro/COLETAS_REPLAY.csv",
+    "size": 414,
+    "sha256": "3cf88c549c6894b4066c30e692d7122495ec72509136e9c08a04b5daf0eeb26f"
+  },
+  {
+    "path": "11_Novembro/COMPARATIVO_WORK_M5_M1.csv",
+    "size": 5760,
+    "sha256": "b9978f9c5197e0fbf785199c6d5a44d0946e73185c65a7140f6197dbd68bce77"
+  },
+  {
+    "path": "11_Novembro/CONCRETO_E_PENDENTE_POR_OPERACAO.csv",
+    "size": 4958,
+    "sha256": "24053e47a926a432c244272da3ad9d0ac74a4010d2f3c9ca6d5fd78c01e1f078"
+  },
+  {
+    "path": "11_Novembro/CONFERENCIA_M1_M5.csv",
+    "size": 590238,
+    "sha256": "c28060f2895c927c3a48af5f45aede7f0d5861e6157c02f90fecbc1011d90004"
+  },
+  {
+    "path": "11_Novembro/CONTROLES_COBERTURA.csv",
+    "size": 10,
+    "sha256": "391216e91f1f4fcf21d5654c34e622147a2eb92d62984f61c3438f0ec7f6b5a7"
+  },
+  {
+    "path": "11_Novembro/DATAS_E_DIVERGENCIAS.csv",
+    "size": 10,
+    "sha256": "391216e91f1f4fcf21d5654c34e622147a2eb92d62984f61c3438f0ec7f6b5a7"
+  },
+  {
+    "path": "11_Novembro/INVENTARIO_POR_DATA.csv",
+    "size": 1891,
+    "sha256": "5f5353100a2483bbb982afa9f7223e08d136792e46b34f1aa3ad5e5e7545b2f8"
+  },
+  {
+    "path": "11_Novembro/JANELAS_POR_OPERACAO.csv",
+    "size": 357,
+    "sha256": "0ba5e956163747d725898bdb973102d6a0d3b94882f6c69cfc8903d4be036978"
+  },
+  {
+    "path": "11_Novembro/LEIA_MES.txt",
+    "size": 2104,
+    "sha256": "e6db6c116c32dd96fce94a949810ef0a8d659a65265599ba364127bf678952b3"
+  },
+  {
+    "path": "11_Novembro/OPERACOES_POSSIBILIDADES.csv",
+    "size": 5053,
+    "sha256": "f7eaa94b407a7dcb7241f9a4679c0993221c6a91b39c14a81f31a90260a40d72"
+  },
+  {
+    "path": "11_Novembro/REFERENCIAS.csv",
+    "size": 2437,
+    "sha256": "80c6e91ecedfd0de898efc6afe6c73cb406f8cbfe9552f170d219632a5993343"
+  },
+  {
+    "path": "11_Novembro/RESUMO.json",
+    "size": 1296,
+    "sha256": "75c4a776e46b2376280b1062ec8a8fb6e4d6cd89aa64a657012dd404dcd5d6f1"
+  },
+  {
+    "path": "AUDITORIA_AJUSTES_COMPLEMENTARES.json",
+    "size": 975,
+    "sha256": "c29b4cfe85019288135d6dee28be353eb9aae6cfc8e58b0c900710743766749a"
+  },
+  {
+    "path": "COLETAS_TODOS_MESES.csv",
+    "size": 6342,
+    "sha256": "e4232861d3bc3bdcbbe1ce67749217a7c8b3b45f20b77627fda29cd9d0d63abe"
+  },
+  {
+    "path": "CONTROLES_COBERTURA_TODOS_MESES.csv",
+    "size": 605,
+    "sha256": "e493e30eee13a5edfeaad8beb1a3b67392ab2974dae119515f4ac3255e4e759b"
+  },
+  {
+    "path": "DATAS_DIVERGENTES_TODOS_MESES.csv",
+    "size": 15713,
+    "sha256": "522f65b1d6017c40e13afa48335edae82a05bb69364d7bd895d6e9f42ae12ead"
+  },
+  {
+    "path": "FONTES_E_PRESERVACAO.json",
+    "size": 1259,
+    "sha256": "37d3b0db1c7870d4798de393e11bfab3ad162b1740b650628f942c23616f2006"
+  },
+  {
+    "path": "LEIA_PRIMEIRO.txt",
+    "size": 3787,
+    "sha256": "65f19fadf91239652000a25f59205babef1f160d39f896e8c314297b8a39a2ea"
+  },
+  {
+    "path": "Lista_Replay_Janeiro_a_Novembro_2025.xlsx",
+    "size": 14775,
+    "sha256": "8e8d286b2c5b1e02e114efbdab006b80cd68ca9a922852bb83eadc27ff178b22"
+  },
+  {
+    "path": "RESUMO_MENSAL.csv",
+    "size": 1333,
+    "sha256": "e7cfe4950ed527c51d6b66582eb7626cb2c0f471f94534196b1835a8ab321eb5"
+  },
+  {
+    "path": "RESUMO_PARA_COLETA.md",
+    "size": 2324,
+    "sha256": "88802dda5e5a400679de85b47a128ac85ca1d3236c520c993c3c73589c94d7ba"
+  },
+  {
+    "path": "RESUMO_TODOS_MESES.json",
+    "size": 15854,
+    "sha256": "d8cd2d25039137553f1b69e03265414695d4b24d347aefcb3e440aa6497a36f1"
+  },
+  {
+    "path": "empacotar_planilhas.py",
+    "size": 14787,
+    "sha256": "055126d5f9d89f1e9dd4dfe1de348b7fddfe4f1ec176c27ffe0dc1bf0084ce8d"
+  },
+  {
+    "path": "planilhas/2025_01_Janeiro.xlsx",
+    "size": 31877,
+    "sha256": "8cf07deb06d908d92592bd5861a0308cedc05c0ba04656e1337645da84f32672"
+  },
+  {
+    "path": "planilhas/2025_02_Fevereiro.xlsx",
+    "size": 23319,
+    "sha256": "3711c47e747d6212acefa5f6ef871684589ae3155304ad595983065b76bba0c4"
+  },
+  {
+    "path": "planilhas/2025_03_Marco.xlsx",
+    "size": 34034,
+    "sha256": "0e0068726f6bf01fe498f10ab9fb894b7ae9312ca7fc4d5975f816cb77a5598c"
+  },
+  {
+    "path": "planilhas/2025_04_Abril.xlsx",
+    "size": 31698,
+    "sha256": "b0deb005dab96f1db198f4b4cf920be202fb18e26931b4ac78dbde3b2e73d330"
+  },
+  {
+    "path": "planilhas/2025_05_Maio.xlsx",
+    "size": 22946,
+    "sha256": "9e731ac871d10156a0fe8b3fdbda41a38a4212ce3b33d16b7f81d07bd4b0e90f"
+  },
+  {
+    "path": "planilhas/2025_06_Junho.xlsx",
+    "size": 29653,
+    "sha256": "6bf37b22d42f91e44aeb021e9a2eed2e889f42a3d28d1d42e6d037a1c3ef64bc"
+  },
+  {
+    "path": "planilhas/2025_07_Julho.xlsx",
+    "size": 37060,
+    "sha256": "a5547db75c1550714af00e201435f9ab53dfa7039c1336949a44cf01620d97a6"
+  },
+  {
+    "path": "planilhas/2025_08_Agosto.xlsx",
+    "size": 28893,
+    "sha256": "27a6e6d77c51820a24767d226ed40639c003214da8bab39c17469f49653fef61"
+  },
+  {
+    "path": "planilhas/2025_09_Setembro.xlsx",
+    "size": 32882,
+    "sha256": "2bcc4c1ce267c053b7f4b7bb58141f6d66ab0a938c2e3dcb2f7be404835f48ad"
+  },
+  {
+    "path": "planilhas/2025_10_Outubro.xlsx",
+    "size": 26759,
+    "sha256": "ad860993bd40540221d092d4263b9c0e293e008ac15d11432be4763c4447e502"
+  },
+  {
+    "path": "planilhas/2025_11_Novembro.xlsx",
+    "size": 24804,
+    "sha256": "6464b5d4e3214d50fded086269d8c6a2139f6a7b06bb239916076ef3cd6eb06a"
+  },
+  {
+    "path": "preparar_2025.py",
+    "size": 16802,
+    "sha256": "b78a2623a850f100f969d13b714bfc441eb455cb912842491e20a293cb335143"
+  }
+]

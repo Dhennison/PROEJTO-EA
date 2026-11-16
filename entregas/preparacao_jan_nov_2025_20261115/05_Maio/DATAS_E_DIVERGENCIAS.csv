@@ -1,0 +1,2 @@
+﻿mes;data;inicio;fim;tipo;detalhe;acao;contexto
+2025-05;2025-05-20;18:20;18:25;PRECO;"M1 [Decimal('141505.0000000000000000'), Decimal('141525.0000000000000000'), Decimal('141470.0000000000000000'), Decimal('141510.0000000000000000')]; M5 [Decimal('141505'), Decimal('141525'), Decimal('141470'), Decimal('141500')]; quantidade M1-M5 -5781";"Preservar HLC Work no contexto;conferir fonte,sem mudar referencias";False

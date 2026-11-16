@@ -1,3 +1,54 @@
+PREPARAÇÃO JANEIRO A NOVEMBRO/2025 — LOTE COMPLETO — 15/11/2026
+Usuário autorizou preparar todos11meses para planilhar e enviar asjanelas.
+Acervo M1MT5/M5Work conferido.230pregões,478operações conhecidas,incluindo
+7operações complementares foraWork em02jan/10jul/11jul. Referênciasdiárias
+Work só227datas/471operações;comparação ecomplementos separados,semWorkzero.
+Ajustes dessas3datas encontrados na cobertura original e conferidos no
+Book(3).xlsx/Planilha1/F;nenhum arquivo foi declarado ausente sem busca.
+434operações concretas soboscandles disponíveis,sem pendência de sequência/
+cobertura/grade.40operações com dúvida de sequência e2controles de grade;
+categorias podem sobrepor cobertura. Lacunas longas podem ocultar entradasextras.
+
+Entrega:38janelas deReplay/45minutos,agrupadasporcontinuidade econtrato.
+Os45minutos já incluem quatrominutos ausentes30jul na coleta15:42–15:47WINQ25.
+Controlesgrade adicionais incluídos:30abr10:12WINM25S38.2(stopgrade/alvomath)
+e25jul09:02WINQ25R38.2(alvograde/stopmath). Preservar principal grade5.
+Cobertura longa,separada:03junWINM25 09:04–09:56 e21agoWINV25 09:17–10:26.
+Verificar sehouve negócios/recuperar candlesM1 primeiro;não copiar52/69min
+inteiros de negócios agora. Não fechar junho/agosto sem controles.
+As demais lacunas foram auditadas;sem exigir fita onde não alteraD atual.
+
+Dadosque não casam:umgrupo depreço divergente,20mai18:20(M5141500/M1141510
+nofechamento). Após corte,mascontexto21mai;manterreferênciaWork original.
+41grupos dequantidade divergentes,ressalvaspor data/valor,não alegar fita perfeita.
+Todosníveis matemáticos de operações comparáveis iguaisWork,tol0,00001;
+nenhuma operação comparável faltante. Dados suplementares separados.
+Contratos porcalendário/convençãoWork;auditar preços dascópias ao receber.
+Semcompra. Se contratoinacessível,seguir verificação de negóciosWINFUT comms,
+preços/ajustes,não substituir por candles. Não prometer cobertura anterior.
+
+Pasta entregas/preparacao_jan_nov_2025_20261115 contém:
+- planilhas/:11XLSX mensais,abasColetas/Controle_Cobertura/Datas_A_Conferir/
+Concreto_Pendente/Comparativo/Acervo/Referencias e abasvazias para colarnegócios.
+- Lista_Replay_Janeiro_a_Novembro_2025.xlsx:lista consolidada.
+- RESUMO_PARA_COLETA.md,LEIA_PRIMEIRO.txt eCSVs completospor mês.
+- Preparacao_Janeiro_a_Novembro_2025.zip:pacotecompleto.
+- Scripts reproduzíveis,manifestos e auditoria dasfontes/ajustescomplementares.
+ReceberXLSX por mês ou lote,com identificação dasdatas;algunssegundosantes/depois,
+sem filtros/saltos/deduplicação,manterms/ordem;conferir minuto inteiro/OHLC/
+quantidade/limite200001 eempates antes deresolver. Abas de instrução não são negócios.
+
+Nenhum dos11meses foi fechado,não somar subtotais nem inserir noDD agora.
+Quando fechar,ampliar DDporfechamentosdiários emordemcronológica,semresetmensal,
+sem mudar resultadosdiários/mensais jáfechados. PDFs técnico/enxuto continuam
+comparação diáriaWorkversusteste,comfontes/recortes explícitos.
+Dez2025+3135/Jan2026-1620/Fev-3545/Mar+350/Abr+5720/Mai-780/Jun+3405/Jul+1100
+intactos;CedroAgo-2375/Set+2855/Out+3830,comparáveisAgo-2275/Set+1380 separados.
+DDatualdez25-jul26M1+Replay9365;Cedro3620;PDFs/curvas anteriores não regravados.
+Controle10/07/2026dispensado permaneceencerrado;10/07/2025 éoutradata.
+Plano expansão->verificaçãoWINFUTsepreciso->alvos/stops->ABC preservado.
+Próximo receber coletas de2025 econtroles de junho/agosto;sem compra/variantes.
+
 DEZEMBRO/2025 ENCERRADO APÓS XLSX REPLAY — 15/11/2026
 Principal D original: +3.135 pontos, grade5. Work+5.211,102335;
 diferença-2.076,102335.40operações:31TP/9SL,20pregões.

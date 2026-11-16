@@ -1,0 +1,4 @@
+﻿mes;data;contrato;inicio;fim_exclusivo;niveis;tipo;acao;minutos
+2025-06;2025-06-03;WINM25;09:04:00;09:56:00;S38.2,S50,S61.8,R38.2,R61.8;COBERTURA_COMPARTILHADA_SEM_M5;"Verificar no Replay se houve negocios;recuperar candles M1 primeiro,nao copiar toda fita longa";52
+2025-07;2025-07-30;WINQ25;15:43:00;15:47:00;R61.8;COBERTURA_MINUTOS_M1;"JA_INCLUIDO na coleta30/07 15:42–15:47;nao repetir separadamente";4
+2025-08;2025-08-21;WINV25;09:17:00;10:26:00;S61.8,R38.2,R61.8;COBERTURA_COMPARTILHADA_SEM_M5;"Verificar no Replay se houve negocios;recuperar candles M1 primeiro,nao copiar toda fita longa";69

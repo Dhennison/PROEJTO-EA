@@ -1,0 +1,3 @@
+﻿mes;data;inicio;fim;tipo;detalhe;acao;contexto
+2025-03;2025-03-13;15:50;15:55;QUANTIDADE;"M1 [Decimal('126970.0000000000000000'), Decimal('126990.0000000000000000'), Decimal('126940.0000000000000000'), Decimal('126990.0000000000000000')]; M5 [Decimal('126970'), Decimal('126990'), Decimal('126940'), Decimal('126990')]; quantidade M1-M5 10";"Ressalva quantitativa;precos iguais,nao prova de fita completa";False
+2025-03;2025-03-13;18:05;18:10;QUANTIDADE;"M1 [Decimal('126910.0000000000000000'), Decimal('126975.0000000000000000'), Decimal('126885.0000000000000000'), Decimal('126925.0000000000000000')]; M5 [Decimal('126910'), Decimal('126975'), Decimal('126885'), Decimal('126925')]; quantidade M1-M5 -10";"Ressalva quantitativa;precos iguais,nao prova de fita completa";False
