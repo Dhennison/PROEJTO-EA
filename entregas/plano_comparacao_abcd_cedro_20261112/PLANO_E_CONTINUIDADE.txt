@@ -1,3 +1,20 @@
+ATUALIZAÇÃO16/11/2026 — REENVIO GRANDE VIA GITHUB E ABERTURA21AGO
+Usuário pediu envio diretoGitHub. Orientar anexoRelease(<2GiB),nãoAddfileweb
+(limite25MiB). Tag sugerida dados-replay-2025-20261116,targetbranch atual,
+pre-release de dados. Repo público;anexo será público. Assistente não criou
+Release/upload. AguardarlinkRelease/Assets,baixar diretamente e auditarabas.
+Guia em entregas/recebimento_lote_2025_20261116/COMO_ENVIAR_PELO_GITHUB.txt.
+NovoTexto colado21ago:62632negócios,09:00:55.663–09:02:22.884.09:00/09:01
+OHLC/quantidade conferemM1. S38.2SL-375,entrada09:01:07.505,saída minuto09:03
+M1;doisdesempates iguais,controle matemáticoSL. ConfirmaSTOPWork.
+Usuário esclareceu captura intencionalminuto09:01 até09:02 comextensão curta,
+não09:02inteiro. Não tratar como erro. S50entrou09:02:21.643 e09:02está
+parcial;se esseminuto nãoconstar planilha,pedir apenas21agoWINV25 09:02–09:03
+algunssegundosantes/depois. Não repetir09:01. TXTlongocontroleS61+170preservado.
+AuditoriaABERTURA_21AGO,preservaçãoSHA256 eprogressoatualizados. Planilhagrande
+continuaNÃOlida,nenhummêsdo lote fechado,nenhumDD/PDF ou resultado anterior
+alterado. MétodoGitHubsubstitui divisãochatsecouberlimiteRelease. Semcompra.
+
 LOTE2025 RECEBIDO PARCIALMENTE — 16/11/2026
 Usuário enviouJaneiro a Novembro2025.xlsx eTexto colado21/08/25.
 Planilha principal NÃO lida:download_file rejeitou transferência acima32MiB.

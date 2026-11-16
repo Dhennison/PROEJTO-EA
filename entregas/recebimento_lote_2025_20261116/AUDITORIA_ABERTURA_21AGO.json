@@ -1,0 +1,154 @@
+{
+  "status": "21AGO_S38_RESOLVIDO_S50_PENDENTE_PLANILHA",
+  "date": "2025-08-21",
+  "contract": "WINV25",
+  "records": 62632,
+  "start": "09:00:55.663",
+  "end": "09:02:22.884",
+  "records_at_200001_limit": false,
+  "minute_checks": [
+    {
+      "minute": "09:00",
+      "records": 4823,
+      "OHLC": "[136960, 136980, 136860, 136890]",
+      "quantity": 26491,
+      "M1_OHLC": "[Decimal('136960.0000000000000000'), Decimal('136980.0000000000000000'), Decimal('136860.0000000000000000'), Decimal('136890.0000000000000000')]",
+      "M1_quantity": 26491,
+      "OHLC_match": true,
+      "quantity_match": true
+    },
+    {
+      "minute": "09:01",
+      "records": 44321,
+      "OHLC": "[136890, 136900, 136550, 136655]",
+      "quantity": 99971,
+      "M1_OHLC": "[Decimal('136890.0000000000000000'), Decimal('136900.0000000000000000'), Decimal('136550.0000000000000000'), Decimal('136655.0000000000000000')]",
+      "M1_quantity": 99971,
+      "OHLC_match": true,
+      "quantity_match": true
+    },
+    {
+      "minute": "09:02",
+      "records": 13488,
+      "OHLC": "[136660, 136735, 136520, 136530]",
+      "quantity": 33688,
+      "M1_OHLC": "[Decimal('136660.0000000000000000'), Decimal('136735.0000000000000000'), Decimal('136375.0000000000000000'), Decimal('136380.0000000000000000')]",
+      "M1_quantity": 92869,
+      "OHLC_match": false,
+      "quantity_match": false
+    }
+  ],
+  "results": [
+    {
+      "level": "S38.2",
+      "primary": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "09:01:07.505",
+          "price": 136710,
+          "quantity": 1,
+          "source_row": 47929
+        },
+        "exit": {
+          "time": "09:03:00_CANDLE",
+          "price": 136335
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "09:01:07.505",
+          "price": 136710,
+          "quantity": 9,
+          "source_row": 47922
+        },
+        "exit": {
+          "time": "09:03:00_CANDLE",
+          "price": 136335
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "mathematical": {
+        "reason": "SL",
+        "points": "-375.000",
+        "entry": {
+          "time": "09:01:07.507",
+          "price": 136705,
+          "quantity": 1,
+          "source_row": 47801
+        },
+        "exit": {
+          "time": "09:03:00_CANDLE",
+          "price": 136333
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "resolved": true,
+      "tie_invariant": true,
+      "required_minute": {
+        "minute": "09:01",
+        "records": 44321,
+        "OHLC": "[136890, 136900, 136550, 136655]",
+        "quantity": 99971,
+        "M1_OHLC": "[Decimal('136890.0000000000000000'), Decimal('136900.0000000000000000'), Decimal('136550.0000000000000000'), Decimal('136655.0000000000000000')]",
+        "M1_quantity": 99971,
+        "OHLC_match": true,
+        "quantity_match": true
+      }
+    },
+    {
+      "level": "S50",
+      "primary": {
+        "reason": "INCOMPLETE_ENTRY_MINUTE",
+        "minute": "09:02",
+        "entry": {
+          "time": "09:02:21.643",
+          "price": 136535,
+          "quantity": 1,
+          "source_row": 1487
+        }
+      },
+      "tie_control": {
+        "reason": "INCOMPLETE_ENTRY_MINUTE",
+        "minute": "09:02",
+        "entry": {
+          "time": "09:02:21.643",
+          "price": 136535,
+          "quantity": 25,
+          "source_row": 1408
+        }
+      },
+      "mathematical": {
+        "reason": "INCOMPLETE_ENTRY_MINUTE",
+        "minute": "09:02",
+        "entry": {
+          "time": "09:02:21.643",
+          "price": 136535,
+          "quantity": 1,
+          "source_row": 1487
+        }
+      },
+      "resolved": false,
+      "tie_invariant": true,
+      "required_minute": {
+        "minute": "09:02",
+        "records": 13488,
+        "OHLC": "[136660, 136735, 136520, 136530]",
+        "quantity": 33688,
+        "M1_OHLC": "[Decimal('136660.0000000000000000'), Decimal('136735.0000000000000000'), Decimal('136375.0000000000000000'), Decimal('136380.0000000000000000')]",
+        "M1_quantity": 92869,
+        "OHLC_match": false,
+        "quantity_match": false
+      }
+    }
+  ],
+  "raw_preserved": "/workspace/dados_brutos_modelo_d/replay_profit/2025_08_21_Abertura_Recebimento02.txt",
+  "raw_sha256": "0b309b8df16bf24369c42188e2499ab64612ce45b122712176ec50df9a036799",
+  "raw_published": false,
+  "monthly_principal": null,
+  "monthly_DD": null,
+  "no_extra_copy_requested": "Remaining09:02may be in main workbook;await GitHubasset instead of requesting duplicate Replay."
+}

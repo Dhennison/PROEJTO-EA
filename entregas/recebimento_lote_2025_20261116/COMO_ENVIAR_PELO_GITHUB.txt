@@ -1,0 +1,34 @@
+ENVIO DA PLANILHA GRANDE PELO GITHUB — 16/11/2026
+Método recomendado:anexo de Release. Upload comum de arquivos pelo navegador
+tem limite25MiB;cada anexo de Release deve ser menor que2GiB. O limite32MiB
+anterior era da transferência de anexos do chat,não do download diretoGitHub.
+Repositório Dhennison/PROEJTO-EA está público;anexos publicados serão públicos.
+
+1.Abrir https://github.com/Dhennison/PROEJTO-EA/releases/new e entrar na conta.
+2.Em Choose a tag,digitar dados-replay-2025-20261116 e escolher Create new tag.
+3.Em Target,selecionar entrega-modelod-v2-10-20261030.
+4.Em Release title,usar Dados Replay 2025 - Janeiro a Novembro.
+5.Na área Attach binaries by dropping them here or selecting them,arrastar
+Janeiro a Novembro 2025.xlsx e aguardar concluir o upload.
+6.Marcar Set as a pre-release e clicar Publish release.
+7.Enviar o link da Release ou do arquivo na seçãoAssets para o assistente.
+É uma entrega de dados:não representa versão liberada do EA ou conta real.
+Nenhuma Release/tag/upload foi criada pelo assistente neste procedimento.
+
+Fontes oficiais consultadas16/11/2026:
+https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
+https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases
+
+NOVO TEXTO DA ABERTURA21/08
+Usuário esclareceu que capturou intencionalmente09:01–09:02,com extensão curta.
+Arquivo recebido tem62632registros,09:00:55.663–09:02:22.884.
+Minutos09:00 e09:01 conferem integralmente emOHLC/quantidade.09:02 é parcial.
+S38.2WINV25:entrada09:01:07.505,SL-375 no minuto09:03 peloM1;doisdesempates
+mantêm motivo/pontos;controle matemático tambémSL. ConfirmaSTOPWork.
+S50WINV25:entrada09:02:21.643,ainda sem saída no trecho;não usar OHLC
+completo de09:02 para inventar sequência após o final da cópia.
+Fica pendente21/08 WINV25 09:02–09:03,algunssegundosantes/depois,se esse
+minuto não estiver na planilha principal. Pode ser incluído no envioGitHub.
+Não repetir09:01,que foi resolvido. Não tratar término intencional como
+falha de coleta. Arquivo/preservação/auditoriaAbertura21ago registrados.
+Nenhum mês fechado,DD/PDFs e resultados anteriores intactos.

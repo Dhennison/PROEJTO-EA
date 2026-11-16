@@ -1,3 +1,18 @@
+ATUALIZAÇÃO16/11/2026 — ENVIO VIA GITHUB E ABERTURA21/08
+Usuário pediu passo a passo para disponibilizar planilha grande viaGitHub.
+Orientado anexo deRelease(<2GiB),poisupload comum pelo navegador limita25MiB.
+Repositório público:arquivo ficará público. GuiaCOMO_ENVIAR_PELO_GITHUB.txt.
+Aguardar linkRelease/Assets para baixar diretamente;assistente não criouRelease.
+Esse método substitui a necessidade anterior de dividir para o chat,se couber2GiB.
+Novo textoabertura21ago:62632registros,09:00:55.663–09:02:22.884.
+Usuário esclareceu captura intencional09:01–09:02 com pequenaextensão.
+09:00/09:01OHLC/quantidade iguaisM1;S38.2SL-375,entrada09:01:07.505,saída
+minuto09:03 peloM1.09:02parcial,S50entrada09:02:21.643,resultado não determinado.
+Se09:02nãoestiverna planilha,enviar apenas21agoWINV25 09:02–09:03,algunssegundos
+antes/depois. Não repetir09:01 nem chamar término intencional de erro.
+S61.8+170 econtrolelongotextoanterior preservados. Nenhum mês/DDLote fechado.
+Arquivooriginal/réplicaSHA256idênticos,auditoriaAUDITORIA_ABERTURA_21AGO.json.
+
 LOTE JANEIRO A NOVEMBRO/2025 — RECEBIMENTO16/11/2026
 ESTADO:PARCIAL. NENHUM MÊS FECHADO NESTE RECEBIMENTO.
 
