@@ -1,0 +1,17 @@
+[
+  {
+    "sheet": "MAR 13-03-25",
+    "records": 15995,
+    "independent_openpyxl_equals_streaming_XML": true
+  },
+  {
+    "sheet": "JUL 25-07-25",
+    "records": 29087,
+    "independent_openpyxl_equals_streaming_XML": true
+  },
+  {
+    "sheet": "Cobertura 03-06-25",
+    "records": 136214,
+    "independent_openpyxl_equals_streaming_XML": true
+  }
+]

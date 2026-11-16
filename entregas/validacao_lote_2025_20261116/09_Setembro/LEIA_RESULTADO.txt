@@ -1,0 +1,18 @@
+2025-09 — MODELO D — ENCERRADO_M1_REPLAY
+Principal:-385 pontos.
+Work original:4528.847334;nosso comparável:-385;
+diferença comparável:-4913.847334. Complemento foraWork:
+0;datas:nenhuma.
+22pregões/42operações conhecidas;0pendentes.
+M1+Replay pontual,grade5,1contrato/nível,toqueinclusivo,corte18h,parametrosD originais.
+Sem custos/fila/slippage ou fills certificados. Não é mês inteiro de negócios.
+Preparo,referências,ajustes ecomparaçõesM1/M5 preservados na pasta depreparação.
+Resultados anteriores não alterados. Fonte:XLSXdaRelease,39abas/1940063registros,
+SHA256e0992ed7c4b603a1a24307f30b94713952af9bebae9f5c417fd81c010817fd13.
+Bruto preservado localmente;não duplicado no históricoGit;Release indicada no manifesto.
+2025-09-05 R38.2: SL -375;entrada 09:30:07.126;saída 09:30:10.626;fonte REPLAY.
+2025-09-22 S38.2: SL -375;entrada 09:04:46.338;saída 09:13:00_CANDLE;fonte CANDLES_AFTER_WINDOW.
+2025-09-23 R61.8: SL -450;entrada 11:10:04.034;saída 11:59:00_CANDLE;fonte CANDLES_AFTER_WINDOW.
+2025-09-25 S38.2: TP 70;entrada 10:12:08.952;saída 10:12:32.676;fonte REPLAY.
+2025-09-29 R61.8: SL -450;entrada 09:09:48.090;saída 09:37:00_CANDLE;fonte CANDLES_AFTER_WINDOW.
+CANDLE indica minuto,não horário exato. Dois desempatesms ebarreiras opostas foramconferidos. Dadosde leilão:relato do usuário +cópias/M1;semcriar negócios ausentes. Ressalvas quantitativas preservadas.

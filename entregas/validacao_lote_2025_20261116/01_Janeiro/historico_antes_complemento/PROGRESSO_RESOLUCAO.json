@@ -1,0 +1,19 @@
+{
+  "month": "2025-01",
+  "status": "PENDENTE_COMPLEMENTO",
+  "pregoes": 22,
+  "operacoes": 50,
+  "pendentes": 1,
+  "principal": null,
+  "comparavel_Work_teste": "-1630",
+  "Work_referencia": "1091.86267",
+  "diferenca_comparavel": "-2721.86267",
+  "complemento_fora_Work": null,
+  "datas_fora_Work": "2025-01-02",
+  "motivos": {
+    "TP": 31,
+    "SL": 13,
+    "PENDENTE": 1,
+    "CORTE": 5
+  }
+}

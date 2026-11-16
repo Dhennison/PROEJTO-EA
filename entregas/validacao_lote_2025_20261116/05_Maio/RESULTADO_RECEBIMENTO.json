@@ -1,0 +1,92 @@
+{
+  "month": "2025-05",
+  "status": "REPLAY_RESOLVIDO_AGUARDA_CONFERENCIA_FINAL",
+  "operations": 39,
+  "resolved_original_pending": 1,
+  "grade_controls_resolved": 0,
+  "pending": 0,
+  "principal": "-2915",
+  "work_points": "822.760335",
+  "outside_Work_dates": [],
+  "results": [
+    {
+      "date": "2025-05-21",
+      "level": "S38.2",
+      "contract": "WINM25",
+      "sheet": "MAI 21-05-25",
+      "required_minute": "10:00",
+      "grade_control": false,
+      "primary": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "10:00:57.181",
+          "price": 141030,
+          "quantity": 1,
+          "source_row": 12593
+        },
+        "exit": {
+          "time": "10:34:00_CANDLE",
+          "price": 140655
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "10:00:57.181",
+          "price": 141030,
+          "quantity": 1,
+          "source_row": 12481
+        },
+        "exit": {
+          "time": "10:34:00_CANDLE",
+          "price": 140655
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_invariant": true,
+      "mathematical": {
+        "reason": "SL",
+        "points": "-375.0000000000000000000000",
+        "entry": {
+          "time": "10:00:57.190",
+          "price": 141025,
+          "quantity": 1,
+          "source_row": 11993
+        },
+        "exit": {
+          "time": "10:34:00_CANDLE",
+          "price": 140653
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "mathematical_tie_invariant": true,
+      "mathematical_levels": {
+        "entry": "141028.9993333333333333333333333333333334",
+        "tp": "141124.1670000000000000000000000000000000",
+        "sl": "140653.9993333333333333333333333333333334"
+      },
+      "minute_check": {
+        "sheet": "MAI 21-05-25",
+        "date": "2025-05-21",
+        "minute": "10:00",
+        "records": 22484,
+        "quantity": 65458,
+        "M1_quantity": 65458,
+        "OHLC": "[141135, 141150, 141010, 141030]",
+        "M1_OHLC": "[Decimal('141135.0000000000000000'), Decimal('141150.0000000000000000'), Decimal('141010.0000000000000000'), Decimal('141030.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": true
+      },
+      "partial_prefix_invariance_proof": null,
+      "timestamps_conditional_on_no_earlier_entry": false,
+      "mixed_barrier_ms": [],
+      "resolved": true
+    }
+  ],
+  "unresolved": [],
+  "source_workbook_sha256": "e0992ed7c4b603a1a24307f30b94713952af9bebae9f5c417fd81c010817fd13"
+}

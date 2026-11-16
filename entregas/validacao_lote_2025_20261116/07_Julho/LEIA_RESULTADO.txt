@@ -1,0 +1,20 @@
+2025-07 — MODELO D — ENCERRADO_M1_REPLAY
+Principal:2740 pontos.
+Work original:4465.377;nosso comparável:2170;
+diferença comparável:-2295.377. Complemento foraWork:
+570;datas:2025-07-10,2025-07-11.
+23pregões/53operações conhecidas;0pendentes.
+M1+Replay pontual,grade5,1contrato/nível,toqueinclusivo,corte18h,parametrosD originais.
+Sem custos/fila/slippage ou fills certificados. Não é mês inteiro de negócios.
+Preparo,referências,ajustes ecomparaçõesM1/M5 preservados na pasta depreparação.
+Resultados anteriores não alterados. Fonte:XLSXdaRelease,39abas/1940063registros,
+SHA256e0992ed7c4b603a1a24307f30b94713952af9bebae9f5c417fd81c010817fd13.
+Bruto preservado localmente;não duplicado no históricoGit;Release indicada no manifesto.
+2025-07-03 R61.8: SL -450;entrada 10:34:32.505;saída 10:38:00_CANDLE;fonte CANDLES_AFTER_WINDOW.
+2025-07-09 S38.2: TP 80;entrada 09:05:07.376;saída 09:05:22.943;fonte REPLAY.
+2025-07-18 S38.2: SL -375;entrada 09:00:52.474;saída 09:01:00_CANDLE;fonte CANDLES_AFTER_WINDOW.
+2025-07-18 S50: SL -375;entrada 09:00:59.857;saída 09:10:00_CANDLE;fonte CANDLES_AFTER_WINDOW.
+2025-07-24 S61.8: CORTE -190;entrada 10:15:54.625;saída 18:00:00_CANDLE;fonte CANDLES_AFTER_WINDOW.
+2025-07-25 R38.2: TP 160;entrada 09:02:55.830;saída 09:03:00_CANDLE;fonte CANDLES_AFTER_WINDOW.
+2025-07-30 R61.8: TP 80;entrada 15:42:36.767;saída 15:42:37.020;fonte REPLAY.
+CANDLE indica minuto,não horário exato. Dois desempatesms ebarreiras opostas foramconferidos. Dadosde leilão:relato do usuário +cópias/M1;semcriar negócios ausentes. Ressalvas quantitativas preservadas.

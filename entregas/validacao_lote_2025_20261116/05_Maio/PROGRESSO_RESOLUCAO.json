@@ -1,0 +1,17 @@
+{
+  "month": "2025-05",
+  "status": "ENCERRADO_M1_REPLAY",
+  "pregoes": 21,
+  "operacoes": 39,
+  "pendentes": 0,
+  "principal": "-2915",
+  "comparavel_Work_teste": "-2915",
+  "Work_referencia": "822.760335",
+  "diferenca_comparavel": "-3737.760335",
+  "complemento_fora_Work": "0",
+  "datas_fora_Work": "",
+  "motivos": {
+    "TP": 25,
+    "SL": 14
+  }
+}

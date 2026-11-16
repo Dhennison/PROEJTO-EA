@@ -1,0 +1,19 @@
+{
+  "validated_Replay_or_grade_operations": 41,
+  "partial_prefix_invariant_outcome_cases": [
+    [
+      "2025-03-13",
+      "R61.8"
+    ]
+  ],
+  "January_original_prefix_was_not_accepted": true,
+  "January_complement_now_accepted": true,
+  "April_wrong_hour_not_accepted": true,
+  "June03_no_entry_before_reopening_and_copied_prices_exclude_extra_entries": true,
+  "June03_quantity_remark": -1,
+  "July30_exit_before_auction": true,
+  "August21_S50_now_resolved": true,
+  "August21_later_text_control_preserved": true,
+  "remaining_operations": 1,
+  "months_with_no_Replay_pending": 10
+}

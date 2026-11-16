@@ -1,3 +1,69 @@
+LOTE2025 ANALISADO APÓS RELEASE E COMPLEMENTO02JAN — 16/11/2026
+Planilha principal agora LIDA por download diretoGitHubRelease:
+dados-replay-2025-20261116/Janeiro.a.Novembro.2025.xlsx,56091431bytes,
+SHA256e0992ed7c4b603a1a24307f30b94713952af9bebae9f5c417fd81c010817fd13.
+39abas/1940063registros,sem limites200001 nasabasXLSX. Texto longo21ago
+anterior continua200001,ressalvapreservada. Raworiginal localpreservado,
+não duplicado noGit;Releasepublicada pelo usuário,fonte emFONTE_RELEASE.json.
+
+DEZ MESES/2025 ENCERRADOS — PRINCIPAL D ORIGINAL,GRADE5
+Janeiro-2405;Fevereiro-1180;Março-970;Maio-2915;Junho+895;Julho+2740;
+Agosto-460;Setembro-385;Outubro-1055;Novembro-300. AbrilPENDENTE.
+478operações conhecidas,neste lote477determinadas e1pendente.41casos
+Replay/grade validados(39ambiguidades originais+2controlesgrade);M1 demais.
+Jan completo inclui02/01 complementar-775:comparávelWork-1630 vsWork1091,862670.
+Jul completo inclui10/11jul complementares+570:comparável2170 vsWork4465,377000.
+SemWorkfictício nosdiasforaWork. Todosparâmetros originais preservados.
+
+COMPLEMENTO02JAN RECEBIDO E VALIDADO
+TXT56878registros,09:00:38.125–09:02:12.123,09:01 completo.
+Todos42252registrosantigos formambloco contíguo igual emtempo/preço/quantidade;
+substituída cópia inteira,semconcatenação/deduplicação. Jan02R38.2SL-375,
+entrada09:01:16.180,saída minuto09:04peloM1. Raw/hash/overlapauditpreservados.
+ÚNICO COMPLEMENTO AINDA NECESSÁRIO:09abr2025WINJ25R61.8 14:20–14:21,
+algunssegundosantes/depois. AbaABR09-04-25 contém09:20,não14:20.
+Usuário disse que já enviará;não repetir demaisjanelas oucoletas jávalidadas.
+
+CASOS E CONTROLES IMPORTANTES
+07marS50 entradaM109:47,Replay correto10:30 pósentrada,como preparado.
+13marR61.8prefixo parcial:TP60 invariável,stop126275 fora de toda máximaM1125830;
+qualquer prefixo ficaaberto oujáfechaTP. Horários observados podem serposteriores
+àrealentrada/saída;anotados condicionais. Não pedir prefixo sem mudar resultado.
+Grade2abrR61TP110 vsmathSL450;30abrS38SL375 vsmathTP133,054667;
+25julR38TP160 vsmathSL375. Controlesmathseparados,nãomudar principal.
+Entrada dentrocópia aguarda toque real;posição anterior só transportada se
+entradaM1 precede início da cópia. Não usar preço préentrada como saída.
+
+LEILOES/ABERTURAS CONFERIDOS SEM CRIAR NEGÓCIOS
+03jun copia09:00:49.714–10:01:12.000,ausência09:03:09.264–09:56:21.720;
+preçosanteriores/retornonãotocam níveis elegíveis,sem entradasextras.09:03qty-1.
+30julTP80 as15:42:37.020 antespausa15:42:39.719–15:47:23.012.
+09out/11nov início09:03,OHLC/quantidade conferem;sem exigir cotação anterior.
+21agoabaXLSX agora09:00:55.663–09:03:07.533,09:02completo92869contratos;
+S50SL375 no minuto09:06. S38SL375 preservado. S61TP17010:26:23.070doTXTlongo
+preservado;relatoleilões compatívelcomausências,M1 e negócios.09:16qty-1.
+41gruposquantidadeM1/M5divergentes eclose20mai141510(M1)/141500(Work)
+continuamressalvas;HLCWork141500 no contexto21mai preservado.
+
+DD POR FECHAMENTOS DIÁRIOS,SEM RESET MENSAL
+Abrilpendenteimpede DDglobal desdejan2025. Bloco jan-mar2025:saldo-4555,
+DD5200;bloco contíguo maio2025-julho2026:saldo6285,DD9365. Curvascomparáveis
+Work separadas nasmesmasdatas,DDWork1475,364666 no1bloco e4780,240329no2.
+Não inserir zero porabril nem concatenar blocos comoano completo.
+Resultadosdiários/mensais fechados anterioresDez2025-Out2026intactos:
+Dez25+3135/Jan26-1620/Fev-3545/Mar+350/Abr+5720/Mai-780/Jun+3405/Jul+1100;
+CedroAgo-2375/Set+2855/Out+3830 eDD3620 separado;comparáveisAgo-2275/Set+1380àparte.
+
+Estadoatual em entregas/validacao_lote_2025_20261116/RESULTADO_CONSOLIDADO.json.
+CSVsdias/operações,progresso por mês,PENDENCIAS.json eCOMPLEMENTO_PENDENTE.csv.
+DoisPDFsdiário/técnico cobremjan2025-jul2026,abrilPENDENTE explícito,comparação
+Workversusteste,blocosDD efontes;originais anteriores preservados.
+Resultados_2025_Apos_Release.xlsx eZIP consolidados.Semcertificarfills,
+custos/fila/slippage ou mês inteiro por negócios. Controle10jul2026dispensado
+permaneceencerrado. Próximo receber09abr14:20–14:21,fecharabril eentão ligar
+curva2025completa emordem. Planoexpansão->WINFUTsepreciso->alvos/stops->ABC,
+semcompra e sem variantes/modelosnovos nestaetapa.
+
 ATUALIZAÇÃO16/11/2026 — REENVIO GRANDE VIA GITHUB E ABERTURA21AGO
 Usuário pediu envio diretoGitHub. Orientar anexoRelease(<2GiB),nãoAddfileweb
 (limite25MiB). Tag sugerida dados-replay-2025-20261116,targetbranch atual,

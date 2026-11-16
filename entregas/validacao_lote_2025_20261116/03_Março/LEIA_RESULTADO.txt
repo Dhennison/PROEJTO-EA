@@ -1,0 +1,20 @@
+2025-03 — MODELO D — ENCERRADO_M1_REPLAY
+Principal:-970 pontos.
+Work original:1721.539667;nosso comparável:-970;
+diferença comparável:-2691.539667. Complemento foraWork:
+0;datas:nenhuma.
+19pregões/39operações conhecidas;0pendentes.
+M1+Replay pontual,grade5,1contrato/nível,toqueinclusivo,corte18h,parametrosD originais.
+Sem custos/fila/slippage ou fills certificados. Não é mês inteiro de negócios.
+Preparo,referências,ajustes ecomparaçõesM1/M5 preservados na pasta depreparação.
+Resultados anteriores não alterados. Fonte:XLSXdaRelease,39abas/1940063registros,
+SHA256e0992ed7c4b603a1a24307f30b94713952af9bebae9f5c417fd81c010817fd13.
+Bruto preservado localmente;não duplicado no históricoGit;Release indicada no manifesto.
+2025-03-07 S50: SL -375;entrada 09:47:00_CANDLE;saída 10:30:01.437;fonte REPLAY.
+2025-03-11 S50: SL -375;entrada 10:20:28.939;saída 10:45:00_CANDLE;fonte CANDLES_AFTER_WINDOW.
+2025-03-13 R61.8: TP 60;entrada 11:13:52.410;saída 11:13:54.829;fonte REPLAY.
+Prefixo parcial aceito apenas para motivo/pontos:barreiraoposta fora de todoM1;entrada/saída reais podem ser anteriores. Não certificar horários observados como únicos.
+2025-03-24 S38.2: TP 50;entrada 09:35:19.039;saída 09:35:26.690;fonte REPLAY.
+2025-03-25 R61.8: SL -450;entrada 10:39:55.000;saída 11:17:00_CANDLE;fonte CANDLES_AFTER_WINDOW.
+2025-03-28 S38.2: SL -375;entrada 09:01:30.683;saída 09:08:00_CANDLE;fonte CANDLES_AFTER_WINDOW.
+CANDLE indica minuto,não horário exato. Dois desempatesms ebarreiras opostas foramconferidos. Dadosde leilão:relato do usuário +cópias/M1;semcriar negócios ausentes. Ressalvas quantitativas preservadas.

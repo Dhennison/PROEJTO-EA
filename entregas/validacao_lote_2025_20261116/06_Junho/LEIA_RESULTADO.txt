@@ -1,0 +1,16 @@
+2025-06 — MODELO D — ENCERRADO_M1_REPLAY
+Principal:895 pontos.
+Work original:5830.996665;nosso comparável:895;
+diferença comparável:-4935.996665. Complemento foraWork:
+0;datas:nenhuma.
+20pregões/50operações conhecidas;0pendentes.
+M1+Replay pontual,grade5,1contrato/nível,toqueinclusivo,corte18h,parametrosD originais.
+Sem custos/fila/slippage ou fills certificados. Não é mês inteiro de negócios.
+Preparo,referências,ajustes ecomparaçõesM1/M5 preservados na pasta depreparação.
+Resultados anteriores não alterados. Fonte:XLSXdaRelease,39abas/1940063registros,
+SHA256e0992ed7c4b603a1a24307f30b94713952af9bebae9f5c417fd81c010817fd13.
+Bruto preservado localmente;não duplicado no históricoGit;Release indicada no manifesto.
+2025-06-09 S38.2: SL -375;entrada 09:24:48.566;saída 09:27:00_CANDLE;fonte CANDLES_AFTER_WINDOW.
+2025-06-16 R61.8: SL -450;entrada 09:10:41.087;saída 09:31:00_CANDLE;fonte CANDLES_AFTER_WINDOW.
+2025-06-20 S38.2: SL -375;entrada 09:24:34.983;saída 09:29:00_CANDLE;fonte CANDLES_AFTER_WINDOW.
+CANDLE indica minuto,não horário exato. Dois desempatesms ebarreiras opostas foramconferidos. Dadosde leilão:relato do usuário +cópias/M1;semcriar negócios ausentes. Ressalvas quantitativas preservadas.

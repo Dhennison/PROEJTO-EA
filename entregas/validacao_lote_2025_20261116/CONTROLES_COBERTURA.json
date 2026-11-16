@@ -1,0 +1,235 @@
+[
+  {
+    "date": "2025-06-03",
+    "sheet": "Cobertura 03-06-25",
+    "explanation": "USER_NO_QUOTES_0903_TO0956",
+    "first": "09:00:49.714",
+    "last": "10:01:12.000",
+    "observed_gaps": [
+      {
+        "sheet": "Cobertura 03-06-25",
+        "date": "2025-06-03",
+        "last_trade": "09:03:09.264",
+        "next_trade": "09:56:21.720",
+        "seconds": 3192.456
+      }
+    ],
+    "minute_checks": [
+      {
+        "sheet": "Cobertura 03-06-25",
+        "date": "2025-06-03",
+        "minute": "09:00",
+        "records": 8544,
+        "quantity": 27861,
+        "M1_quantity": 27861,
+        "OHLC": "[137525, 137530, 137380, 137405]",
+        "M1_OHLC": "[Decimal('137525.0000000000000000'), Decimal('137530.0000000000000000'), Decimal('137380.0000000000000000'), Decimal('137405.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": false
+      },
+      {
+        "sheet": "Cobertura 03-06-25",
+        "date": "2025-06-03",
+        "minute": "09:01",
+        "records": 34778,
+        "quantity": 71067,
+        "M1_quantity": 71067,
+        "OHLC": "[137405, 137505, 137305, 137430]",
+        "M1_OHLC": "[Decimal('137405.0000000000000000'), Decimal('137505.0000000000000000'), Decimal('137305.0000000000000000'), Decimal('137430.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": true
+      },
+      {
+        "sheet": "Cobertura 03-06-25",
+        "date": "2025-06-03",
+        "minute": "09:02",
+        "records": 17599,
+        "quantity": 35895,
+        "M1_quantity": 35895,
+        "OHLC": "[137425, 137440, 137315, 137390]",
+        "M1_OHLC": "[Decimal('137425.0000000000000000'), Decimal('137440.0000000000000000'), Decimal('137315.0000000000000000'), Decimal('137390.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": true
+      },
+      {
+        "sheet": "Cobertura 03-06-25",
+        "date": "2025-06-03",
+        "minute": "09:03",
+        "records": 1872,
+        "quantity": 3879,
+        "M1_quantity": 3880,
+        "OHLC": "[137390, 137395, 137330, 137370]",
+        "M1_OHLC": "[Decimal('137390.0000000000000000'), Decimal('137395.0000000000000000'), Decimal('137330.0000000000000000'), Decimal('137370.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": false,
+        "interior": true
+      },
+      {
+        "sheet": "Cobertura 03-06-25",
+        "date": "2025-06-03",
+        "minute": "09:56",
+        "records": 27275,
+        "quantity": 67605,
+        "M1_quantity": 67605,
+        "OHLC": "[137200, 137250, 136945, 137210]",
+        "M1_OHLC": "[Decimal('137200.0000000000000000'), Decimal('137250.0000000000000000'), Decimal('136945.0000000000000000'), Decimal('137210.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": true
+      },
+      {
+        "sheet": "Cobertura 03-06-25",
+        "date": "2025-06-03",
+        "minute": "09:57",
+        "records": 11812,
+        "quantity": 24129,
+        "M1_quantity": 24129,
+        "OHLC": "[137210, 137250, 137100, 137110]",
+        "M1_OHLC": "[Decimal('137210.0000000000000000'), Decimal('137250.0000000000000000'), Decimal('137100.0000000000000000'), Decimal('137110.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": true
+      },
+      {
+        "sheet": "Cobertura 03-06-25",
+        "date": "2025-06-03",
+        "minute": "09:58",
+        "records": 9796,
+        "quantity": 21659,
+        "M1_quantity": 21659,
+        "OHLC": "[137110, 137130, 137050, 137095]",
+        "M1_OHLC": "[Decimal('137110.0000000000000000'), Decimal('137130.0000000000000000'), Decimal('137050.0000000000000000'), Decimal('137095.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": true
+      },
+      {
+        "sheet": "Cobertura 03-06-25",
+        "date": "2025-06-03",
+        "minute": "09:59",
+        "records": 5816,
+        "quantity": 12535,
+        "M1_quantity": 12535,
+        "OHLC": "[137095, 137130, 137085, 137125]",
+        "M1_OHLC": "[Decimal('137095.0000000000000000'), Decimal('137130.0000000000000000'), Decimal('137085.0000000000000000'), Decimal('137125.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": true
+      },
+      {
+        "sheet": "Cobertura 03-06-25",
+        "date": "2025-06-03",
+        "minute": "10:00",
+        "records": 16152,
+        "quantity": 33893,
+        "M1_quantity": 33893,
+        "OHLC": "[137120, 137205, 137040, 137085]",
+        "M1_OHLC": "[Decimal('137120.0000000000000000'), Decimal('137205.0000000000000000'), Decimal('137040.0000000000000000'), Decimal('137085.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": true
+      },
+      {
+        "sheet": "Cobertura 03-06-25",
+        "date": "2025-06-03",
+        "minute": "10:01",
+        "records": 2570,
+        "quantity": 5096,
+        "M1_quantity": 26099,
+        "OHLC": "[137090, 137155, 137075, 137105]",
+        "M1_OHLC": "[Decimal('137090.0000000000000000'), Decimal('137155.0000000000000000'), Decimal('137010.0000000000000000'), Decimal('137065.0000000000000000')]",
+        "OHLC_match": false,
+        "quantity_match": false,
+        "interior": false
+      }
+    ]
+  },
+  {
+    "date": "2025-07-30",
+    "sheet": "JUL 30-07-25",
+    "explanation": "USER_AUCTION_1543_TO1547",
+    "first": "15:41:58.018",
+    "last": "15:47:23.486",
+    "observed_gaps": [
+      {
+        "sheet": "JUL 30-07-25",
+        "date": "2025-07-30",
+        "last_trade": "15:42:39.719",
+        "next_trade": "15:47:23.012",
+        "seconds": 283.293
+      }
+    ],
+    "minute_checks": [
+      {
+        "sheet": "JUL 30-07-25",
+        "date": "2025-07-30",
+        "minute": "15:41",
+        "records": 259,
+        "quantity": 758,
+        "M1_quantity": 140485,
+        "OHLC": "[133205, 133205, 133185, 133190]",
+        "M1_OHLC": "[Decimal('132955.0000000000000000'), Decimal('133245.0000000000000000'), Decimal('132955.0000000000000000'), Decimal('133190.0000000000000000')]",
+        "OHLC_match": false,
+        "quantity_match": false,
+        "interior": false
+      },
+      {
+        "sheet": "JUL 30-07-25",
+        "date": "2025-07-30",
+        "minute": "15:42",
+        "records": 43991,
+        "quantity": 148180,
+        "M1_quantity": 148180,
+        "OHLC": "[133185, 134360, 133175, 134360]",
+        "M1_OHLC": "[Decimal('133185.0000000000000000'), Decimal('134360.0000000000000000'), Decimal('133175.0000000000000000'), Decimal('134360.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": true
+      },
+      {
+        "sheet": "JUL 30-07-25",
+        "date": "2025-07-30",
+        "minute": "15:47",
+        "records": 6475,
+        "quantity": 35328,
+        "M1_quantity": 155870,
+        "OHLC": "[134360, 134575, 134350, 134575]",
+        "M1_OHLC": "[Decimal('134360.0000000000000000'), Decimal('135450.0000000000000000'), Decimal('134350.0000000000000000'), Decimal('135065.0000000000000000')]",
+        "OHLC_match": false,
+        "quantity_match": false,
+        "interior": false
+      }
+    ]
+  },
+  {
+    "date": "2025-08-21",
+    "explanation": "USER_THREE_AUCTIONS_TEXT_AUDITED",
+    "previous_audit": "entregas/recebimento_lote_2025_20261116/AUDITORIA_TEXTO_21AGO.json",
+    "result": {
+      "entry_source": "M1_PREVIAMENTE_DETERMINADO_09:03_ANTES_DA_COPIA",
+      "entry": "136365",
+      "tp": "136535",
+      "sl": "135715",
+      "primary": {
+        "reason": "TP",
+        "points": "170",
+        "exit_time": "10:26:23.070",
+        "observed_price": 136535,
+        "source_row": 41409
+      },
+      "tie_control": {
+        "reason": "TP",
+        "points": "170",
+        "exit_time": "10:26:23.070",
+        "observed_price": 136535,
+        "source_row": 41354
+      },
+      "coverage_resolved": true,
+      "coverage_note": "Price control confirmed with user-reported auction explanation;quantity09:16 differs by1,not certified perfect tape."
+    },
+    "quantity_remark_0916": -1
+  }
+]

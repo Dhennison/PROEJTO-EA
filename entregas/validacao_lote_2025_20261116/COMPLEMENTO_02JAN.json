@@ -1,0 +1,18 @@
+{
+  "date": "2025-01-02",
+  "sheet": "TXT_COMPLEMENTO02JAN",
+  "index": "TXT02JAN",
+  "records": 56878,
+  "start": "09:00:38.125",
+  "end": "09:02:12.123",
+  "at_limit_200001": false,
+  "cache": "/workspace/work/lote2025/cache/complemento02jan.pickle",
+  "source": "USER_TEXT_COMPLEMENT",
+  "source_raw": "/workspace/dados_brutos_modelo_d/replay_profit/2025_01_02_Complemento_20261116.txt",
+  "source_sha256": "8e37c24e56587501b37fa8c1a14e7b2162bf887d860c2e58c64506bac1db00cc",
+  "main_original_records": 42252,
+  "main_original_temporal_price_quantity_sequence_contiguous_in_complement": true,
+  "main_original_slice_start": 3047,
+  "no_deduplication": true,
+  "use": "Replace entire Jan02copy with complete text,retain original unchanged;do not concatenate/double count"
+}

@@ -1,0 +1,3 @@
+﻿date;contract;level;capture_start;capture_end_exclusive;reason;do_not_repeat
+2025-01-02;WING25;R38.2;09:00:58;09:01:02;"Prefixo antes09:01:00.615 ausente;falta2108contratos;repor comsobreposicao,sem deduplicar";Restante do minuto09:01 ja recebido
+2025-04-09;WINJ25;R61.8;14:20:00;14:21:00;"Aba recebida cobre09:20;necessario14:20";Demais dias/abas validados
