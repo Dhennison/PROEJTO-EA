@@ -1,0 +1,497 @@
+{
+  "original_main": "MODELO_D_ORIGINAL_GRADE5",
+  "period": "2024-01 a2026-10",
+  "days": 709,
+  "original_operations": 1485,
+  "exit_rule_recipes": 175,
+  "per_level_tests": 875,
+  "exclusion_combinations": 31,
+  "mixed_candidates": 1279,
+  "source_closed_files": [
+    {
+      "path": "entregas/arquivo_conversa_20261111/originais/ORIGINAIS_PARTE_005.zip",
+      "sha256": "de5f0ebf6a11c29bf3d747560ed75e9dce76575382f461389d5de28c1d4cf130"
+    },
+    {
+      "path": "entregas/cedro_modelod_agosto_2026/resultado/TODOS_NIVEIS.csv",
+      "sha256": "2d684747b37c014692f903118ece66e3b5913a6f7d25d9018070ec7d2f60fad6"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria/20261001_M1.csv",
+      "sha256": "764628a8c50d60d612689271fb37c4d85259ad6f4f63a6537c6676efbfe444f4"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria/20261002_M1.csv",
+      "sha256": "6fb908d5dd39ce74af95afd93c27329f97bd9ba94913116eb3d842ec31fa9311"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria/20261005_M1.csv",
+      "sha256": "2663bdd3743848e9b0c24a1a83747ca3f2ea6e6f8eed2b6e93d99514bb70190d"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria/20261006_M1.csv",
+      "sha256": "3747682783b3b6ecfd398009e61d8106247565a74db66ba8ccb70e6ca9112f72"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria/20261007_M1.csv",
+      "sha256": "988030834de1cd136d81bccee7019f97f1bf456032b7c0068a3257d1d7fdf0cc"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria/20261008_M1.csv",
+      "sha256": "3dc6cc9d30463e1efb98df5328729cc9d8187f542981e9bb0f798803e183d263"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria/20261009_M1.csv",
+      "sha256": "0750d87992eab26a45bda1b4040670ac6e36cc6cefb1d3d73c3b8b45146d121e"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria/20261013_M1.csv",
+      "sha256": "2615f0eefde47b29b6e6cf70830b75cf3a19c25e949b16c6b20e65b3cd8842df"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria/DIFERENCAS_M1.csv",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria14/20261014_M1.csv",
+      "sha256": "966fc83eff0f89f25b8fc0659cde68fba92bce02df7f6970e17d39846d51c13e"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria14/DIFERENCAS_M1.csv",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria_final/20261015_M1.csv",
+      "sha256": "07e9b24c9fd5c09629375ba035ec818c168ec3d4bfa6a1f5c16b63d220501355"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria_final/20261016_M1.csv",
+      "sha256": "3144b62a31d29e8a5d78dcc3e1ad7d95409d6093080831e4a0610121fd3484a8"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria_final/20261019_M1.csv",
+      "sha256": "d2fd16d0c8702f578352d83af7fcd584a8937302afe21f5f6b970735d12841fd"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria_final/20261020_M1.csv",
+      "sha256": "9382cb6fa51cdd2290bb42186f9f2aa91811320dabe5255ddcb71846ae197fb2"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria_final/20261021_M1.csv",
+      "sha256": "9fdde223d538d5733d761a259827a3a1f634fa3c2ed184f0029fd360deaeb3ff"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria_final/20261022_M1.csv",
+      "sha256": "c394df4ccb428b1c7cecfd27349fc31c3913123590854851080f9d2fef97d877"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria_final/20261023_M1.csv",
+      "sha256": "fa6347d70f56ed21c0562e9833e8024018afe2604cd42118e703311ec26d8730"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria_final/20261026_M1.csv",
+      "sha256": "a57c580d07fdb0281f2d55f4802ca1f8cfa88dcf34f9dca7ca14592bc70f010b"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria_final/20261027_M1.csv",
+      "sha256": "3634be4d09b46d2ca16526ab63ed776d7d739ae40851452cc6553caf4e4d7f37"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria_final/20261028_M1.csv",
+      "sha256": "953b0d07f43c5881a844c91a119c801cc5b6337992856cefa7db76cd2501d7a4"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria_final/20261029_M1.csv",
+      "sha256": "fc17c8986f9236580b9eaed7fbcde9c570af2749d809a826738a49e8748aab00"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria_final/20261030_M1.csv",
+      "sha256": "3e7c3f816f4f24656cbbc01d2c668a23fc55230361b60f3378127fc6ca0d94c2"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/auditoria_final/DIFERENCAS_M1.csv",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/resultado_mensal/TODOS_NIVEIS.csv",
+      "sha256": "0c99eb1511df97525666fca98a76fe2a405bf9a278bd864253cf45674eafb6bf"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260901_M1.csv",
+      "sha256": "f87da4100516785b37f04c5969bebb21472fa362852f503130c7bb2680bf1a29"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260902_M1.csv",
+      "sha256": "8c51364f63659b25df08f17ccadc9ddbbb6bb0e1aa832f690c0cddd22b964276"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260903_M1.csv",
+      "sha256": "aab678065b122c6608a649d90e450f9e10ecbbab2f6eaed0bcf2dff1872e4372"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260904_M1.csv",
+      "sha256": "3e10100de5a36d927a164640a7483bb93cda2afcda9df0c9f359174948b8ad14"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260908_M1.csv",
+      "sha256": "0cb5c0ec5f3a34ab43ae0cc4bdc7a8071e2bc3aebc303ad30f7c613d85a7df96"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260909_M1.csv",
+      "sha256": "a67101bf9c12e196f2b28b6e301d02bb3605bd94ecaf7f43aa26df4f3303207a"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260910_M1.csv",
+      "sha256": "191afd7674515f6d6ec1e1f6be36f3175e23b68d9e5e61a01e23816b13a2bf94"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260911_M1.csv",
+      "sha256": "871a149174814c26b4a848535330abfce1c0e4f83903490e06db203ad4b93e3a"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260914_M1.csv",
+      "sha256": "8808ff38141c1b2193e565f8696f1d96a76d57e5096f70966e15f747aeac24dd"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260915_M1.csv",
+      "sha256": "984460acbd465d9c39c7c5d293eb46afbd3daabe97b8c6e2c57d18fa3e0e30ed"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260916_M1.csv",
+      "sha256": "9646e0e0339263ffb44810574b1e21d700fdc96dde766dbc2d6f4e147ab3cea3"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260917_M1.csv",
+      "sha256": "729637f7132b376653c083566df25693533aa5d0522432e8d71bfa4d125e5eb2"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260918_M1.csv",
+      "sha256": "81b9f60c2194521374889ea845419c1c7bb2cdd73737800e8448a97e411c2819"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260921_M1.csv",
+      "sha256": "1b95bcb5297c5c7c5ca21f0c1ff51406019aa56f25cff2bcbed431570ab95d93"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260922_M1.csv",
+      "sha256": "68ac3db3555047e83a3e878c46651cfcdedcef586aef2e7500c69c9bfc56e507"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260923_M1.csv",
+      "sha256": "bc8612697f33747151d3b5b0e43eff59000477387b21ede72f7a62bce30c7be0"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260924_M1.csv",
+      "sha256": "0fd9e72997ccf04f90a46e26f9bd6026377c8fd578ee18f232e61fed833f830e"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260925_M1.csv",
+      "sha256": "5fc002cffe7c890b3cce9bf59e678915403c90e05cce1a9ad1824fc214dfd3fd"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260928_M1.csv",
+      "sha256": "645f3c40881967f20f6b424f6b383ccd88fc6ec9311052be8bbc393758a36e69"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260929_M1.csv",
+      "sha256": "fd9da11436f54cf0f305493ecee6b4c0661cf32dd1cfc9be3b01c0c35984c249"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/20260930_M1.csv",
+      "sha256": "a2a376d95848656f684d448b3065fdda7c72c19e8ac544f6e9f87c8a90479951"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/auditoria/DIFERENCAS_M1.csv",
+      "sha256": "6a2c6defad726bfea843283b1ffa9410a641d7087a604803d3e763267df1cc18"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/resultado/TODOS_NIVEIS.csv",
+      "sha256": "cff6a2418d98e167b6ea2e546d4ed8334c984f1ec122d9822d95d04528a463b0"
+    },
+    {
+      "path": "entregas/historico_work_modelo_d_20261105/replay_setembro_20261106/originais/Candles_Originais_Modelo_D_2023_2026.zip",
+      "sha256": "74442c025633c95a8a86b854bed6de172534d439b9e955e7fe74c47536f2ab76"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/01_Janeiro/REFERENCIAS.csv",
+      "sha256": "be5ad51b21ebece3451b0451ed1dcb75672abd0891eda3f9ea17983d9d5de0a1"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/02_Fevereiro/REFERENCIAS.csv",
+      "sha256": "7c6e9c6c09ed6e9ec89e72b91de7b72e103af575b0b21b467be437ad6472d50a"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/03_Março/REFERENCIAS.csv",
+      "sha256": "c6d56ce17c8cb074bd3a3e48a210b3f394b4699000d0d837a82006947de6e370"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/04_Abril/REFERENCIAS.csv",
+      "sha256": "a24fa8f897219733bf437d6a1898d1ba34ab0d4171c0413167b4508e6cfbc1c1"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/05_Maio/REFERENCIAS.csv",
+      "sha256": "d5323625bb0607f238cb425f5ae65d4a8ba9b5038dd57e0ff032581a18c4def6"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/06_Junho/REFERENCIAS.csv",
+      "sha256": "d3837a158a47b3e2382b9bd898cf4bc8036937497dd64d0c510512c0aa860ff3"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/07_Julho/REFERENCIAS.csv",
+      "sha256": "70341612b5f58925339a7a7dfb0473338471436a66b67e24d030eb474b2f0e9a"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/08_Agosto/REFERENCIAS.csv",
+      "sha256": "d883d845d99e8588e4da595c4c241c95429e987c27b0ce111bd37805cd52013b"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/09_Setembro/REFERENCIAS.csv",
+      "sha256": "809ca2cc553c56bd441477f71158ad955af0ede18d2d253fb1cc0c32773c863e"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/10_Outubro/REFERENCIAS.csv",
+      "sha256": "6454992a0da68398b3bcf3921738dd632fefeb7b858444151002578e36d3e744"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/11_Novembro/REFERENCIAS.csv",
+      "sha256": "b7652a04e84e1bb3d58a052548501ad55fb2a8517d98434e03ea9aa4e6ea488c"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/12_Dezembro/REFERENCIAS.csv",
+      "sha256": "0f4a6f9f2aa6bab47016ae25e0dfeace5d41401e80c7c48e04f60f9f82bbea4e"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/complemento_ajustes_02a05jan/REFERENCIAS.csv",
+      "sha256": "598aa9c0d7cdd40c76aa378250b576289d172e0724718ab8b27a34a039ca6d3e"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/01_Janeiro/REFERENCIAS.csv",
+      "sha256": "e58acfb1c3b3c55a22ddfb62a539acb67ac4aeaaba04e10f09e6d5cb453705d4"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/02_Fevereiro/REFERENCIAS.csv",
+      "sha256": "4cf562d87b82a676125ab1b1c12d30ecdf6b0a5c8edfceea01b16f031b345ada"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/03_Março/REFERENCIAS.csv",
+      "sha256": "f330474064a4e21164968cc1b07e99741085efee7208d3bec02eb18478037131"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/04_Abril/REFERENCIAS.csv",
+      "sha256": "58d0941015f58776d08cd4307bb701d337ca6bba55a5e6964f0fc473d50017c5"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/05_Maio/REFERENCIAS.csv",
+      "sha256": "639ea8385e36d025ebf6b96c369e7a567d192aa9e2ed4e4146924e369e08c418"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/06_Junho/REFERENCIAS.csv",
+      "sha256": "dfe0845742ded3711327a496197dde992c39bb7daaaec5c651ffde416d29b891"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/07_Julho/REFERENCIAS.csv",
+      "sha256": "88ab11a659957bacc312b714e9a532c4b053c7e0a729c4c5b94f3ccacecf5048"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/08_Agosto/REFERENCIAS.csv",
+      "sha256": "8d53070c7030b84207b69004e3cce2ab300ea182b56f7ffeef41373117c40dc4"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/09_Setembro/REFERENCIAS.csv",
+      "sha256": "e40db3def29e8189f49baae00af1d605279d9c5cc83f7b907acc855df155b44e"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/10_Outubro/REFERENCIAS.csv",
+      "sha256": "28a8fb4ddc2674e4bb212cd5e07384a36cf6bba44e3948ba336503b2aae2f1f2"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/11_Novembro/REFERENCIAS.csv",
+      "sha256": "80c6e91ecedfd0de898efc6afe6c73cb406f8cbfe9552f170d219632a5993343"
+    },
+    {
+      "path": "entregas/profit_abril_20261113/OPERACOES_FINAIS.csv",
+      "sha256": "417cb64e78bdd88b74ffe8d3103daecce6327feda5d32b01ef04d90afa83206c"
+    },
+    {
+      "path": "entregas/profit_abril_20261113/REFERENCIAS_ABRIL.csv",
+      "sha256": "b01a69b102f1ef16852a02afacc4ffa001fb47e048e0b7c4a6758e9fe037a3ac"
+    },
+    {
+      "path": "entregas/profit_dezembro_2025_20261115/OPERACOES_FINAIS.csv",
+      "sha256": "d85e3764214cfc7d0738f5b0f90e47ab9e088ed39d561b6408ff40eddcbceb08"
+    },
+    {
+      "path": "entregas/profit_dezembro_2025_20261115/REFERENCIAS_DEZEMBRO.csv",
+      "sha256": "be8c525116838df98bc5042574484ec30d97b1a1ae0be5b62473824e642fb868"
+    },
+    {
+      "path": "entregas/profit_fevereiro_20261114/OPERACOES_FINAIS.csv",
+      "sha256": "4dbb048358f6eff141a12b9c7ed3a29dcf16eb66169a899554692e1ac10ec3f9"
+    },
+    {
+      "path": "entregas/profit_fevereiro_20261114/REFERENCIAS_FEVEREIRO.csv",
+      "sha256": "2415399be2ed6db5e487cabe8bc3c2e2f930bf228641789b00d32862a6fc56fb"
+    },
+    {
+      "path": "entregas/profit_janeiro_20261115/OPERACOES_FINAIS.csv",
+      "sha256": "8df9618a5c2212a1b448326094dc389ba3cc23bdc484eca9115bc3e5fc8df0ae"
+    },
+    {
+      "path": "entregas/profit_janeiro_20261115/REFERENCIAS_JANEIRO.csv",
+      "sha256": "8c40cb1a0a4401e7070664cbaf2e29e392e6047ba0a37cfccc9f66de6dc08495"
+    },
+    {
+      "path": "entregas/profit_junho_20261113/OPERACOES_FINAIS.csv",
+      "sha256": "27f8126e896a6322bab1360c7e7b8eeaef3dac43b22451bf06e5e16d221c3241"
+    },
+    {
+      "path": "entregas/profit_junho_20261113/REFERENCIAS_JUNHO.csv",
+      "sha256": "1b483615e5916737bda57e46eafb300de0b78bba44b4c7d61fb717bc77ed8049"
+    },
+    {
+      "path": "entregas/profit_maio_20261113/OPERACOES_FINAIS.csv",
+      "sha256": "374dff4fa74d0466618d704249e1d35eeeccd4e56ca1f63341ad81fcd674947f"
+    },
+    {
+      "path": "entregas/profit_maio_20261113/REFERENCIAS_MAIO.csv",
+      "sha256": "fe58fbe40a80a0b46f9f7fd7f00c5e21683fa4f4436a5b7e98d42b90359dcfcb"
+    },
+    {
+      "path": "entregas/profit_marco_20261113/OPERACOES_FINAIS.csv",
+      "sha256": "c1b7598205d990c2954fa9539a0b118f5c8c3b19dc3be0f736c31df73f3dbef2"
+    },
+    {
+      "path": "entregas/profit_marco_20261113/REFERENCIAS_MARCO.csv",
+      "sha256": "b655747b5e0319b060914d8a439dfab78825662a718a3fe874a09afa6942bbee"
+    },
+    {
+      "path": "entregas/profit_winq26_julho_20261113/OPERACOES_POSSIBILIDADES.csv",
+      "sha256": "7f33528f4223162bc1ae7ec837acddb31fd733af0ef82f50933c4ccf2da3c2bd"
+    },
+    {
+      "path": "entregas/profit_winq26_julho_20261113/REFERENCIAS_JULHO.csv",
+      "sha256": "88658b34c6b1810c933499046e8076b29df85e97d4a675d5b2550f75193f4f42"
+    },
+    {
+      "path": "entregas/profit_winq26_julho_20261113/REPLAY_OPERACOES_RESOLVIDAS.csv",
+      "sha256": "211ef6549027fdcc5f04edbe415e397974fd08de701c13fbf36276c5d3c54bd4"
+    },
+    {
+      "path": "entregas/resultado_niveis_202401_202610_20261117/CURVAS_DIARIAS_POR_NIVEL.csv",
+      "sha256": "523c9ad24c3f34c804afa5350b04f72ee48743041202c32f51730a54c4396d6b"
+    },
+    {
+      "path": "entregas/resultado_niveis_202401_202610_20261117/OPERACOES_NORMALIZADAS.csv",
+      "sha256": "4d42c76932920cfe78d183be0e90130bc7f3fe5573beda190247dabc109e9f8e"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/01_Janeiro/OPERACOES_FINAIS.csv",
+      "sha256": "d115849d8490f612a165de7928e7018676f32c245fbc2deb75acab557188ba63"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/02_Fevereiro/OPERACOES_FINAIS.csv",
+      "sha256": "bef898ceb73341872f39cfe91e905578978667ff3db7365aa5def746cbd9c6b8"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/03_Março/OPERACOES_FINAIS.csv",
+      "sha256": "e302af1daf73809c8d081fc435f7c74cbe4c2996193899028706d1d749f169c5"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/04_Abril/OPERACOES_FINAIS.csv",
+      "sha256": "626d6cbba2b2c4b8caa0127f4a907f4a62a300c1d4fcb69c0d5beefc76450b2c"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/05_Maio/OPERACOES_FINAIS.csv",
+      "sha256": "590348febcbd0dd38a928a596be70d172aaa34a6c4122a92930548fab7979784"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/06_Junho/OPERACOES_FINAIS.csv",
+      "sha256": "a3c03afcabc2be4be9d3744b82358f6097cee88185ba02d0072df059d5fa67fe"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/07_Julho/OPERACOES_FINAIS.csv",
+      "sha256": "aee451b1486ea0ae69528004f1dbcc4d3a3dd65188c59439fbfa2845492d8008"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/08_Agosto/OPERACOES_FINAIS.csv",
+      "sha256": "618f23610cf232973d7d48f70b9e3679c3714fac9f89d2c474c5d08cedb55648"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/09_Setembro/OPERACOES_FINAIS.csv",
+      "sha256": "dcd23ee86f3e495dab7c3edc665210d39457c8ca0d621472fcf4b1468d0beae0"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/10_Outubro/OPERACOES_FINAIS.csv",
+      "sha256": "097fae1d12a8ec0437c6092d01228b55c907f1151cf2d2e2899ebc9d606215ef"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/11_Novembro/OPERACOES_FINAIS.csv",
+      "sha256": "5901eb03069307c4f89127a46d87af9d43f8ca80b27e6b22dd0cc7d07a000597"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/01_Janeiro/OPERACOES_FINAIS.csv",
+      "sha256": "074f2f9eb83724fe1f3624a22bc732b7673c2895bfd6ecb40042a48337cda25e"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/02_Fevereiro/OPERACOES_FINAIS.csv",
+      "sha256": "33b63436e3ff128dfdd24057ada832697cc1d25da97bb4573fef7ddd3621ae03"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/03_Março/OPERACOES_FINAIS.csv",
+      "sha256": "3006c3d633bcb1038b2ead8ea0c458b2df6cecdaaaaefd13589946dca91411f7"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/04_Abril/OPERACOES_FINAIS.csv",
+      "sha256": "c1b786f17092754d729007e30d70e54d64373d01ea85769ca360b9663811da7b"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/05_Maio/OPERACOES_FINAIS.csv",
+      "sha256": "ecf4db13cf6e8f2d8932c6ac6b884dd003d14996bbe4d09c7dd6f6ad38b6c379"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/06_Junho/OPERACOES_FINAIS.csv",
+      "sha256": "5dc8b797796e9363db0f69e258a29be65f71b02bfdc603fbd1c85ea55b877e40"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/07_Julho/OPERACOES_FINAIS.csv",
+      "sha256": "2d7c094c0c29f177a3b65c6e26a90c28c72a1a45b17031de7c14c800103f947c"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/08_Agosto/OPERACOES_FINAIS.csv",
+      "sha256": "093f56b2e00639afc92bf2845233ba79ac04472f484dae2c129e913e83ec508b"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/09_Setembro/OPERACOES_FINAIS.csv",
+      "sha256": "76f006d6634566cfd86631cbdf7ab66dc541d2499a8ecb426bd2516907cef584"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/10_Outubro/OPERACOES_FINAIS.csv",
+      "sha256": "bb7d43a18c5a26afbcce5202a2c532d70087a17481e6b242c413bc286959ddfa"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/11_Novembro/OPERACOES_FINAIS.csv",
+      "sha256": "3317611bff4fc7ebda95fc0c7dad391e5bf3758dd22ac911e94e5ce5bec8c089"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/12_Dezembro/OPERACOES_FINAIS.csv",
+      "sha256": "fd61e0c6d2dd5fd99de97057fb77afb1dc9b04ce7dfd7860b545622bb6da3ee9"
+    }
+  ],
+  "original_points": 3950,
+  "original_DD_daily": 14805,
+  "original_result_files_not_changed": true,
+  "tests": [
+    "frozen1485tradesconserved",
+    "31subsetresultsindependentlyrecomputed",
+    "originaldailyexactreproduced",
+    "preentryhighnotforcedTP",
+    "replaychronology",
+    "cut",
+    "sourcegaps",
+    "missingCedroAugustbounded"
+  ],
+  "missing_cedro_parts": 132,
+  "candidate_missing_parts": 16,
+  "no_variants_promoted": true,
+  "point_intervals_not_certified_trades": true
+}

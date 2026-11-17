@@ -1,3 +1,49 @@
+ESTUDO EXPLORATÓRIO DE SAÍDAS E EXCLUSÕES —17/11/2026
+Usuário autorizou diferentes stops/alvos por nível, alvos maiores, stop proporcional
+ ao alvo e exclusões. Entrega:entregas/estudo_saidas_niveis_20261117/.
+709pregões/1485entradas congeladas,janeiro2024–outubro2026. Referência principal
+D original:3950pontos/DD14805 preservada. Sem comparação comWork.
+175receitas de saída(875testes pornível),31exclusões exatas,1279mistos.
+Receitas incluem stopmultiplicador,stop proporcional ao NOVO alvo,stop fixo,
+alvosmultiplicados ealvos fixos100a1000 comstops100a650,grade5.
+Entradas/eligibilidade/referências/tamanho/corte18h mantidos,sem reentrada.
+Todos os preços após a saídaoriginal até o corte foram considerados.
+
+EXCLUSÕES FECHADAS
+SomenteR61.8+S61.8:5890pontos/DD5505,488operações;2024+2680,
+2025+4325,2026jan-out-1115. S61.8isolado5065/DD4765.
+R61.8+S50+S61.8:5750/DD6760;anos+140/+3600/+2010;786operações;
+custo hipotético10pontos/operação torna total-2110. Não declarar robusto.
+Maiorbruto nas exclusões:R38.2+R61.8+S61.8,+6055/DD11270.
+
+NOVAS SAÍDAS: LIMITES E PENDÊNCIAS
+Usados106minutos Replay completos após OHLC/quantidade,sem deduplicação.
+M1:MT5 atéfev2026,Profitmar–ago2026,Cedroauditset/out.132partesCedro não
+estão locais;agosto sem M1de auditoriaCedro,nova saída fica limitada entre
+stop/alvo/corte,não trocarfonte para certificar lucro. OriginalCedro preservado.
+Mantidas todas as sequências M1 admissíveis;limites não são duas trajetórias
+certificadas e podem não ser simultaneamente realizáveis entre níveis.
+DD por fechamentos diários contínuos,não reinicia mês;DD de pontosinferiores
+é limite superior e de pontossuperiores é limite inferior. Sem fills/custosreais.
+5/10/20pontos poroperação completa são apenas sensibilidades hipotéticas.
+Candidatos mistos selecionados por2024/25;2026 separado mas já conhecido,
+logo não é validação futura independente. Não houve variante aprovada.
+
+CANDIDATA MIX_0161
+R61.8alvo750/stop150;S61.8original;demaisOFF. Treino2024/25+12270.
+Faixa completa7830a19145,DD6920a7875,488operações.2026faixa-4440a6875.
+Oito pendências, todasCedroagosto2026:04,05,13,18,19,21,25,31.
+São16partesoriginais priorizadas emCEDRO_PRIORITARIO_OITO_DATAS.csv com
+nomes/hashes;recuperar antes de certificar a candidata.Não pedir todas945linhas
+da busca. Controle10/07/2026 dispensado não reaberto para o original.
+2023não aberto e sem autorização de compra. Resultadosfechados não alterados.
+
+PDF12páginas,planilha com todos cenários/mensais/níveis/custos,vizinhança de
+parâmetros,pendências eCSVsporoperação.117fontes hashconferidas;motor testado
+para máximaantesentrada,Replay,corte,lacunas efonteCedroagosto ausente.
+
+REGISTROS HISTÓRICOS PRESERVADOS ABAIXO
+
 PDF POR NÍVEL AMPLIADO PARA2024–2026 —17/11/2026
 Usuário solicitou ampliar o mesmo formato do PDF por nível incluindo2024,
 sem comparação comWork. Novoarquivo:

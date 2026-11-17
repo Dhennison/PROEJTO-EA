@@ -1,0 +1,18 @@
+{
+  "period": "2024-01 a2026-10",
+  "days": 709,
+  "ops": 1485,
+  "original_points": 3950,
+  "original_DD": 14805.0,
+  "exit_rules": 175,
+  "per_level_rule_tests": 875,
+  "exact_exclusion_combinations": 31,
+  "mixed_candidates": 1279,
+  "total_scenarios": 1485,
+  "source_baseline_inconsistent_trades": 0,
+  "ambiguous_window_rows": 945,
+  "selection_training": "2024-2025",
+  "validation": "2026JanOct;alreadyknownhistorically,notindependentfuture",
+  "raw_cedro_missing": true,
+  "no_parameter_promoted": true
+}
