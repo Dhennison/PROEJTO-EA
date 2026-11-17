@@ -1,0 +1,98 @@
+{
+  "month": "2024-02",
+  "status": "REPLAY_RESOLVIDO_AGUARDA_CONFERENCIA_FINAL",
+  "operations": 36,
+  "resolved_original_pending": 1,
+  "grade_controls_resolved": 0,
+  "pending": 0,
+  "principal": "120",
+  "work_points": "887.188997",
+  "outside_Work_dates": [],
+  "results": [
+    {
+      "date": "2024-02-02",
+      "level": "S38.2",
+      "contract": "WING24",
+      "sheet": "FEV 02-02-24",
+      "required_minute": "10:30",
+      "grade_control": false,
+      "primary": {
+        "reason": "TP",
+        "points": "60",
+        "entry": {
+          "time": "10:30:32.000",
+          "price": 128490,
+          "quantity": 1,
+          "source_row": 24652
+        },
+        "exit": {
+          "time": "10:30:39.362",
+          "price": 128550,
+          "quantity": 1,
+          "source_row": 15906
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_control": {
+        "reason": "TP",
+        "points": "60",
+        "entry": {
+          "time": "10:30:32.000",
+          "price": 128490,
+          "quantity": 1,
+          "source_row": 24572
+        },
+        "exit": {
+          "time": "10:30:32.000",
+          "price": 128550,
+          "quantity": 1,
+          "source_row": 25864
+        },
+        "exit_source": "REPLAY"
+      },
+      "tie_invariant": true,
+      "mathematical": {
+        "reason": "TP",
+        "points": "58.9353333333333333333333",
+        "entry": {
+          "time": "10:30:32.000",
+          "price": 128490,
+          "quantity": 1,
+          "source_row": 24652
+        },
+        "exit": {
+          "time": "10:30:39.362",
+          "price": 128550,
+          "quantity": 1,
+          "source_row": 15906
+        },
+        "exit_source": "REPLAY"
+      },
+      "mathematical_tie_invariant": true,
+      "mathematical_levels": {
+        "entry": "128490.5986666666666666666666666666666666",
+        "tp": "128549.5340000000000000000000000000000000",
+        "sl": "128115.5986666666666666666666666666666666"
+      },
+      "minute_check": {
+        "sheet": "FEV 02-02-24",
+        "date": "2024-02-02",
+        "minute": "10:30",
+        "records": 64374,
+        "quantity": 215023,
+        "M1_quantity": 215023,
+        "OHLC": "[129180, 129215, 128405, 128455]",
+        "M1_OHLC": "[Decimal('129180.0000000000000000'), Decimal('129215.0000000000000000'), Decimal('128405.0000000000000000'), Decimal('128455.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": true
+      },
+      "partial_prefix_invariance_proof": null,
+      "timestamps_conditional_on_no_earlier_entry": false,
+      "mixed_barrier_ms": [],
+      "resolved": true
+    }
+  ],
+  "unresolved": [],
+  "source_workbook_sha256": "7124866bdfc2a605ba5fd5d1a2edfba99761188e620997df81b84a595eea38b2"
+}

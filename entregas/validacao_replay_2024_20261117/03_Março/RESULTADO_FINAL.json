@@ -1,0 +1,98 @@
+{
+  "month": "2024-03",
+  "status": "ENCERRADO_M1_REPLAY_PONTUAL",
+  "operations": 42,
+  "resolved_original_pending": 1,
+  "grade_controls_resolved": 0,
+  "pending": 0,
+  "principal": "1795.0000000000000000",
+  "work_points": "2873.616670",
+  "outside_Work_dates": [
+    "2024-03-08",
+    "2024-03-11"
+  ],
+  "results": [
+    {
+      "date": "2024-03-04",
+      "level": "S38.2",
+      "contract": "WINJ24",
+      "sheet": "MAR 04-03-24",
+      "required_minute": "11:21",
+      "grade_control": false,
+      "primary": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "11:21:10.529",
+          "price": 130255,
+          "quantity": 1,
+          "source_row": 20923
+        },
+        "exit": {
+          "time": "11:46:00_CANDLE",
+          "price": 129880
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_control": {
+        "reason": "SL",
+        "points": "-375",
+        "entry": {
+          "time": "11:21:10.529",
+          "price": 130255,
+          "quantity": 3,
+          "source_row": 20795
+        },
+        "exit": {
+          "time": "11:46:00_CANDLE",
+          "price": 129880
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "tie_invariant": true,
+      "mathematical": {
+        "reason": "SL",
+        "points": "-375.0000000000000000000000",
+        "entry": {
+          "time": "11:21:10.724",
+          "price": 130250,
+          "quantity": 1,
+          "source_row": 20417
+        },
+        "exit": {
+          "time": "11:53:00_CANDLE",
+          "price": 129877
+        },
+        "exit_source": "CANDLES_AFTER_WINDOW"
+      },
+      "mathematical_tie_invariant": true,
+      "mathematical_levels": {
+        "entry": "130252.9893333333333333333333333333333334",
+        "tp": "130352.1720000000000000000000000000000000",
+        "sl": "129877.9893333333333333333333333333333334"
+      },
+      "minute_check": {
+        "sheet": "MAR 04-03-24",
+        "date": "2024-03-04",
+        "minute": "11:21",
+        "records": 31877,
+        "quantity": 118097,
+        "M1_quantity": 118097,
+        "OHLC": "[130365, 130365, 130210, 130225]",
+        "M1_OHLC": "[Decimal('130365.0000000000000000'), Decimal('130365.0000000000000000'), Decimal('130210.0000000000000000'), Decimal('130225.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": true
+      },
+      "partial_prefix_invariance_proof": null,
+      "timestamps_conditional_on_no_earlier_entry": false,
+      "mixed_barrier_ms": [],
+      "resolved": true
+    }
+  ],
+  "unresolved": [],
+  "source_workbook_sha256": "7124866bdfc2a605ba5fd5d1a2edfba99761188e620997df81b84a595eea38b2",
+  "closed": true,
+  "main": "MODELO_D_ORIGINAL_GRADE5",
+  "coverage_audits": "CONFERENCIA_COBERTURA_OPERACOES.json"
+}

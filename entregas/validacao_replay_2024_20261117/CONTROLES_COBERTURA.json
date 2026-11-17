@@ -1,0 +1,108 @@
+[
+  {
+    "date": "2024-02-06",
+    "sheet": "FEV 06-02-24",
+    "source": "USER_AUCTION_REPORT_PLUS_OBSERVED_TRADES",
+    "first": "10:18:37.198",
+    "last": "10:19:03.998",
+    "observed_gaps": [],
+    "minute_checks": [
+      {
+        "sheet": "FEV 06-02-24",
+        "date": "2024-02-06",
+        "minute": "10:18",
+        "records": 29592,
+        "quantity": 119301,
+        "M1_quantity": 119301,
+        "OHLC": "[129010, 129230, 129010, 129065]",
+        "M1_OHLC": "[Decimal('129010.0000000000000000'), Decimal('129230.0000000000000000'), Decimal('129010.0000000000000000'), Decimal('129065.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": false
+      },
+      {
+        "sheet": "FEV 06-02-24",
+        "date": "2024-02-06",
+        "minute": "10:19",
+        "records": 3827,
+        "quantity": 13298,
+        "M1_quantity": 114932,
+        "OHLC": "[129070, 129090, 129035, 129075]",
+        "M1_OHLC": "[Decimal('129070.0000000000000000'), Decimal('129315.0000000000000000'), Decimal('129035.0000000000000000'), Decimal('129305.0000000000000000')]",
+        "OHLC_match": false,
+        "quantity_match": false,
+        "interior": false
+      }
+    ]
+  },
+  {
+    "date": "2024-06-07",
+    "sheet": "JUN 07-06-24",
+    "source": "USER_AUCTION_REPORT_PLUS_OBSERVED_TRADES",
+    "first": "09:29:58.000",
+    "last": "09:33:04.996",
+    "observed_gaps": [
+      {
+        "sheet": "JUN 07-06-24",
+        "date": "2024-06-07",
+        "last_trade": "09:30:15.140",
+        "next_trade": "09:32:39.957",
+        "seconds": 144.817
+      }
+    ],
+    "minute_checks": [
+      {
+        "sheet": "JUN 07-06-24",
+        "date": "2024-06-07",
+        "minute": "09:29",
+        "records": 717,
+        "quantity": 1429,
+        "M1_quantity": 62266,
+        "OHLC": "[123190, 123215, 123180, 123210]",
+        "M1_OHLC": "[Decimal('123195.0000000000000000'), Decimal('123265.0000000000000000'), Decimal('122950.0000000000000000'), Decimal('123210.0000000000000000')]",
+        "OHLC_match": false,
+        "quantity_match": false,
+        "interior": false
+      },
+      {
+        "sheet": "JUN 07-06-24",
+        "date": "2024-06-07",
+        "minute": "09:30",
+        "records": 34966,
+        "quantity": 109973,
+        "M1_quantity": 109973,
+        "OHLC": "[123210, 123425, 122130, 122130]",
+        "M1_OHLC": "[Decimal('123210.0000000000000000'), Decimal('123425.0000000000000000'), Decimal('122130.0000000000000000'), Decimal('122130.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": true
+      },
+      {
+        "sheet": "JUN 07-06-24",
+        "date": "2024-06-07",
+        "minute": "09:32",
+        "records": 23010,
+        "quantity": 81442,
+        "M1_quantity": 81442,
+        "OHLC": "[122270, 122430, 122235, 122295]",
+        "M1_OHLC": "[Decimal('122270.0000000000000000'), Decimal('122430.0000000000000000'), Decimal('122235.0000000000000000'), Decimal('122295.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": true
+      },
+      {
+        "sheet": "JUN 07-06-24",
+        "date": "2024-06-07",
+        "minute": "09:33",
+        "records": 3362,
+        "quantity": 13528,
+        "M1_quantity": 124713,
+        "OHLC": "[122290, 122325, 122250, 122320]",
+        "M1_OHLC": "[Decimal('122290.0000000000000000'), Decimal('122460.0000000000000000'), Decimal('122150.0000000000000000'), Decimal('122155.0000000000000000')]",
+        "OHLC_match": false,
+        "quantity_match": false,
+        "interior": false
+      }
+    ]
+  }
+]

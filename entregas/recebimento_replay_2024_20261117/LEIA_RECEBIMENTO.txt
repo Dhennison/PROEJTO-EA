@@ -1,3 +1,7 @@
+ATUALIZAÇÃO: arquivo XLSX de2024 acessado pela Release e analisado.
+Resultado completo em entregas/validacao_replay_2024_20261117/.
+O bloqueio de transferência doZIP dochat descrito abaixo é histórico.
+
 REPLAY2024 — ARQUIVO ENVIADO, TRANSFERÊNCIA BLOQUEADA POR TAMANHO — 17/11/2026
 Usuário enviou Janeiro a Dezembro 2024.zip. Ferramenta download_file rejeitou
 transferência por limite32MiB;conteúdo NÃO LIDO. Falta cópia acessível desse ZIP,

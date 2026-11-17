@@ -1,0 +1,59 @@
+{
+  "cases_validated": 35,
+  "independent_reader": "openpyxl",
+  "stream_reader": "lxml",
+  "sheets": [
+    {
+      "sheet": "JAN 18-01-24",
+      "rows": 15644,
+      "all_time_price_quantity_ordinals_equal": true
+    },
+    {
+      "sheet": "JUN 07-06-24",
+      "rows": 62055,
+      "all_time_price_quantity_ordinals_equal": true
+    },
+    {
+      "sheet": "AGO 29-08-24",
+      "rows": 18759,
+      "all_time_price_quantity_ordinals_equal": true
+    }
+  ],
+  "prefix_proofs": [
+    {
+      "date": "2024-01-18",
+      "level": "S50",
+      "proof": {
+        "method": "M1_ENTRY_FORCED_IN_MISSING_PREFIX_SUFFIX_HAS_NO_ENTRY_TOUCH",
+        "entry_bar_OHLC": [
+          "128885.0000000000000000",
+          "128920.0000000000000000",
+          "128835.0000000000000000",
+          "128870.0000000000000000"
+        ],
+        "opposite_barrier": "128460",
+        "missing_prefix_cannot_reach_opposite_barrier": true,
+        "earlier_entry_or_same_result_exit_possible": true,
+        "exact_entry_exit_timestamps_not_certified": true
+      }
+    },
+    {
+      "date": "2024-08-29",
+      "level": "S50",
+      "proof": {
+        "method": "M1_ENTRY_FORCED_IN_MISSING_PREFIX_SUFFIX_HAS_NO_ENTRY_TOUCH",
+        "entry_bar_OHLC": [
+          "138700.0000000000000000",
+          "138700.0000000000000000",
+          "138595.0000000000000000",
+          "138660.0000000000000000"
+        ],
+        "opposite_barrier": "138220",
+        "missing_prefix_cannot_reach_opposite_barrier": true,
+        "earlier_entry_or_same_result_exit_possible": true,
+        "exact_entry_exit_timestamps_not_certified": true
+      }
+    }
+  ],
+  "unresolved": 0
+}

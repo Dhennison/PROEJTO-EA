@@ -1,0 +1,40 @@
+FECHAMENTO2024 APÓS RECEBIMENTO DA RELEASE —17/11/2026
+Arquivo efetivamente recebido:Janeiro.a.Dezembro.2024.xlsx,38318901bytes,
+SHA2567124866bdfc2a605ba5fd5d1a2edfba99761188e620997df81b84a595eea38b2.
+Fonte:asset da Release dados-replay-2025-20261116 publicada pelo usuário.
+33abas/1313080negócios;sem deduplicação;nenhuma aba no limite200001.
+O ZIP do chat continua não transferido;não confundir com XLSX lido daRelease.
+
+MODELO D ORIGINAL GRADE5 —RESULTADOS2024 ENCERRADOS
+Jan-1555;Fev+120;Mar+1795;Abr-2695;Mai+690;Jun-80;Jul+1230;
+Ago-220;Set+3075;Out-1435;Nov-905;Dez-2975. Total-2955pontos,
+251pregões/530operações. 25ambiguidades+10controlesgrade resolvidos;
+3operações adicionais com cobertura antespendente conferidas. Nenhuma pendência.
+Ajustes02–05jan fornecidos pelo usuário;fonte preservada,sem boletim independente.
+DD por fechamentos diários contínuos de2024:5560,pico+2605 em01/10,
+vale-2955 em30/12;sem reiniciar mensalmente.
+
+LEILÕES E PROVAS
+06fev:relato leilão após10:16;primeiro negócio copiado10:18:37.198,
+minuto10:18 OHLC/quantidade conferidos;R61.8SL-450 mantido. Sem flagoficial.
+07jun:pausa observada09:30:15.140–09:32:39.957;09:30/09:32 completos
+OHLC/quantidade iguaisM1;relato leilão preservado.Sem negócios inventados.
+18janS50/29agoS50:entrada no prefixo anterior à cópia é forçada peloM1,
+sem toque deentrada na parte observada;stop fora de todo candleentrada;
+TP invariável,mas timestamps reais podem ser anteriores. Não pedir complemento.
+35casos em duas ordensms;nenhuma barreiraoposta no mesmo ms relevante.
+Extração independenteopenpyxl de3abas inteiras idêntica ao parserlxml.
+
+CURVA ESTENDIDA EM ARQUIVO NOVO
+Janeiro2024–outubro2026:709fechamentos,saldo+3950,DD14805. Fontes:
+M1+Replaypontual atéjul2026;Cedro mesescompletosago–out2026. Sem reinício.
+Isso amplia a janela de cálculo;não substitui DD9365 do escopoJan2025–Jul2026,
+nem DD3620 da sérieCedro isolada. Fontes/metodologias marcadas noCSVnovo.
+Todos os resultados diários/mensais anteriores permanecem intactos;recortes
+comparáveis Workago/set2026 separados;10/07/2026 dispensado não reaberto.
+
+ENTREGA:entregas/validacao_replay_2024_20261117/.
+XLSX de resultados,PDF técnico com níveis/DD,PDFdiárioWork/teste,
+CSVdeoperações ecurvas,auditorias emanifesto dafonte. Não éauditoria integral
+tickatick,nem certificação defills.Sem custos/fila/slippage. PrincipalDoriginal.
+Não houve variante destop/alvo. 2023 não reaberto,não comprarhistórico.

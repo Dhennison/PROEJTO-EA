@@ -1,0 +1,140 @@
+[
+  {
+    "date": "2024-02-06",
+    "level": "R61.8",
+    "primary": {
+      "reason": "SL",
+      "points": "-450",
+      "entry": {
+        "time": "10:18:37.198",
+        "price": 129035,
+        "quantity": 1,
+        "source_row": 29939
+      },
+      "exit": {
+        "time": "10:25:00_CANDLE",
+        "price": 129485
+      },
+      "exit_source": "CANDLES_AFTER_WINDOW"
+    },
+    "tie_invariant": true,
+    "checks": [
+      {
+        "sheet": "FEV 06-02-24",
+        "date": "2024-02-06",
+        "minute": "10:18",
+        "records": 29592,
+        "quantity": 119301,
+        "M1_quantity": 119301,
+        "OHLC": "[129010, 129230, 129010, 129065]",
+        "M1_OHLC": "[Decimal('129010.0000000000000000'), Decimal('129230.0000000000000000'), Decimal('129010.0000000000000000'), Decimal('129065.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": false
+      }
+    ],
+    "source": "USER_AUCTION_REPORT_PLUS_M1_PLUS_TARGETED_REPLAY",
+    "official_auction_flags": false,
+    "limitation": "User-reported auction;no quote/market-status feed independent of submitted trades"
+  },
+  {
+    "date": "2024-06-07",
+    "level": "S50",
+    "primary": {
+      "reason": "TP",
+      "points": "220",
+      "entry": {
+        "time": "09:30:14.070",
+        "price": 122190,
+        "quantity": 1,
+        "source_row": 28159
+      },
+      "exit": {
+        "time": "09:32:43.779",
+        "price": 122410,
+        "quantity": 7,
+        "source_row": 18936
+      },
+      "exit_source": "REPLAY"
+    },
+    "tie_invariant": true,
+    "checks": [
+      {
+        "sheet": "JUN 07-06-24",
+        "date": "2024-06-07",
+        "minute": "09:30",
+        "records": 34966,
+        "quantity": 109973,
+        "M1_quantity": 109973,
+        "OHLC": "[123210, 123425, 122130, 122130]",
+        "M1_OHLC": "[Decimal('123210.0000000000000000'), Decimal('123425.0000000000000000'), Decimal('122130.0000000000000000'), Decimal('122130.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": true
+      },
+      {
+        "sheet": "JUN 07-06-24",
+        "date": "2024-06-07",
+        "minute": "09:32",
+        "records": 23010,
+        "quantity": 81442,
+        "M1_quantity": 81442,
+        "OHLC": "[122270, 122430, 122235, 122295]",
+        "M1_OHLC": "[Decimal('122270.0000000000000000'), Decimal('122430.0000000000000000'), Decimal('122235.0000000000000000'), Decimal('122295.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": true
+      }
+    ],
+    "source": "USER_AUCTION_REPORT_PLUS_M1_PLUS_TARGETED_REPLAY",
+    "official_auction_flags": false,
+    "limitation": "User-reported auction;no quote/market-status feed independent of submitted trades"
+  },
+  {
+    "date": "2024-06-07",
+    "level": "S61.8",
+    "primary": {
+      "reason": "TP",
+      "points": "220",
+      "entry": {
+        "time": "09:34:00_CANDLE"
+      },
+      "exit": {
+        "time": "TP@2024-06-07T09:34:00|TP@2024-06-07T10:18:00"
+      },
+      "exit_source": "M1_AFTER_COPY"
+    },
+    "tie_invariant": true,
+    "checks": [
+      {
+        "sheet": "JUN 07-06-24",
+        "date": "2024-06-07",
+        "minute": "09:30",
+        "records": 34966,
+        "quantity": 109973,
+        "M1_quantity": 109973,
+        "OHLC": "[123210, 123425, 122130, 122130]",
+        "M1_OHLC": "[Decimal('123210.0000000000000000'), Decimal('123425.0000000000000000'), Decimal('122130.0000000000000000'), Decimal('122130.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": true
+      },
+      {
+        "sheet": "JUN 07-06-24",
+        "date": "2024-06-07",
+        "minute": "09:32",
+        "records": 23010,
+        "quantity": 81442,
+        "M1_quantity": 81442,
+        "OHLC": "[122270, 122430, 122235, 122295]",
+        "M1_OHLC": "[Decimal('122270.0000000000000000'), Decimal('122430.0000000000000000'), Decimal('122235.0000000000000000'), Decimal('122295.0000000000000000')]",
+        "OHLC_match": true,
+        "quantity_match": true,
+        "interior": true
+      }
+    ],
+    "source": "USER_AUCTION_REPORT_PLUS_M1_PLUS_TARGETED_REPLAY",
+    "official_auction_flags": false,
+    "limitation": "User-reported auction;no quote/market-status feed independent of submitted trades"
+  }
+]

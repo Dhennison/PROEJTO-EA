@@ -1,0 +1,14 @@
+{
+  "month": "2024-04",
+  "status": "REPLAY_RESOLVIDO_AGUARDA_CONFERENCIA_FINAL",
+  "operations": 45,
+  "resolved_original_pending": 0,
+  "grade_controls_resolved": 0,
+  "pending": 0,
+  "principal": "-2695.0000000000000000",
+  "work_points": "1541.759667",
+  "outside_Work_dates": [],
+  "results": [],
+  "unresolved": [],
+  "source_workbook_sha256": "7124866bdfc2a605ba5fd5d1a2edfba99761188e620997df81b84a595eea38b2"
+}

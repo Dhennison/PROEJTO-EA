@@ -1,0 +1,183 @@
+{
+  "status": "DOZE_MESES_2024_ENCERRADOS",
+  "months": [
+    {
+      "month": "2024-01",
+      "days": 22,
+      "operations": 52,
+      "points": "-1555.0000000000000000",
+      "DD_month": "2630.0000000000000000",
+      "DD_continuous_2024": "2630.0000000000000000",
+      "Work_comparable": "3341.487332",
+      "test_comparable": "-70.0000000000000000",
+      "outside_Work_points": "-1485",
+      "outside_Work_dates": "2024-01-02,2024-01-03,2024-01-04,2024-01-05,2024-01-08"
+    },
+    {
+      "month": "2024-02",
+      "days": 19,
+      "operations": 36,
+      "points": "120",
+      "DD_month": "1305",
+      "DD_continuous_2024": "2645.0000000000000000",
+      "Work_comparable": "887.188997",
+      "test_comparable": "120",
+      "outside_Work_points": "0",
+      "outside_Work_dates": ""
+    },
+    {
+      "month": "2024-03",
+      "days": 20,
+      "operations": 42,
+      "points": "1795.0000000000000000",
+      "DD_month": "845",
+      "DD_continuous_2024": "2645.0000000000000000",
+      "Work_comparable": "2873.616670",
+      "test_comparable": "935.0000000000000000",
+      "outside_Work_points": "860",
+      "outside_Work_dates": "2024-03-08,2024-03-11"
+    },
+    {
+      "month": "2024-04",
+      "days": 22,
+      "operations": 45,
+      "points": "-2695.0000000000000000",
+      "DD_month": "3595.0000000000000000",
+      "DD_continuous_2024": "3915.0000000000000000",
+      "Work_comparable": "1541.759667",
+      "test_comparable": "-2695.0000000000000000",
+      "outside_Work_points": "0",
+      "outside_Work_dates": ""
+    },
+    {
+      "month": "2024-05",
+      "days": 21,
+      "operations": 36,
+      "points": "690",
+      "DD_month": "700",
+      "DD_continuous_2024": "3915.0000000000000000",
+      "Work_comparable": "2530.907997",
+      "test_comparable": "690",
+      "outside_Work_points": "0",
+      "outside_Work_dates": ""
+    },
+    {
+      "month": "2024-06",
+      "days": 20,
+      "operations": 46,
+      "points": "-80.0000000000000000",
+      "DD_month": "1560.0000000000000000",
+      "DD_continuous_2024": "3915.0000000000000000",
+      "Work_comparable": "2263.419996",
+      "test_comparable": "-80.0000000000000000",
+      "outside_Work_points": "0",
+      "outside_Work_dates": ""
+    },
+    {
+      "month": "2024-07",
+      "days": 23,
+      "operations": 49,
+      "points": "1230.0000000000000000",
+      "DD_month": "1610.0000000000000000",
+      "DD_continuous_2024": "3915.0000000000000000",
+      "Work_comparable": "1751.695667",
+      "test_comparable": "1230.0000000000000000",
+      "outside_Work_points": "0",
+      "outside_Work_dates": ""
+    },
+    {
+      "month": "2024-08",
+      "days": 22,
+      "operations": 42,
+      "points": "-220.0000000000000000",
+      "DD_month": "1040.0000000000000000",
+      "DD_continuous_2024": "3915.0000000000000000",
+      "Work_comparable": "1279.371329",
+      "test_comparable": "-220.0000000000000000",
+      "outside_Work_points": "0",
+      "outside_Work_dates": ""
+    },
+    {
+      "month": "2024-09",
+      "days": 21,
+      "operations": 52,
+      "points": "3075.0000000000000000",
+      "DD_month": "690.0000000000000000",
+      "DD_continuous_2024": "3915.0000000000000000",
+      "Work_comparable": "3213.512665",
+      "test_comparable": "3075.0000000000000000",
+      "outside_Work_points": "0",
+      "outside_Work_dates": ""
+    },
+    {
+      "month": "2024-10",
+      "days": 23,
+      "operations": 51,
+      "points": "-1435.0000000000000000",
+      "DD_month": "3605",
+      "DD_continuous_2024": "3915.0000000000000000",
+      "Work_comparable": "657.259330",
+      "test_comparable": "-1435.0000000000000000",
+      "outside_Work_points": "0",
+      "outside_Work_dates": ""
+    },
+    {
+      "month": "2024-11",
+      "days": 19,
+      "operations": 41,
+      "points": "-905.0000000000000000",
+      "DD_month": "2195.0000000000000000",
+      "DD_continuous_2024": "3915.0000000000000000",
+      "Work_comparable": "2701.345667",
+      "test_comparable": "-905.0000000000000000",
+      "outside_Work_points": "0",
+      "outside_Work_dates": ""
+    },
+    {
+      "month": "2024-12",
+      "days": 19,
+      "operations": 38,
+      "points": "-2975.0000000000000000",
+      "DD_month": "3385.0000000000000000",
+      "DD_continuous_2024": "5560.0000000000000000",
+      "Work_comparable": "-1496.968333",
+      "test_comparable": "-2975.0000000000000000",
+      "outside_Work_points": "0",
+      "outside_Work_dates": ""
+    }
+  ],
+  "days": 251,
+  "operations": 530,
+  "points": "-2955.0000000000000000",
+  "DD_2024": "5560.0000000000000000",
+  "DD_2024_peak_valley": {
+    "peak_date": "2024-10-01",
+    "valley_date": "2024-12-30",
+    "peak": "2605.0000000000000000",
+    "valley": "-2955.0000000000000000"
+  },
+  "extended_curve": {
+    "start": "2024-01-02",
+    "end": "2026-10-30",
+    "days": 709,
+    "points": "3950.0000000000000000",
+    "DD": "14805.0000000000000000",
+    "method": "M1_REPLAY_JAN2024_JUL2026;CEDRO_AUG_OCT2026",
+    "monthly_reset": false
+  },
+  "original_closed_sources_preserved": [
+    {
+      "path": "entregas/validacao_lote_2025_20261116/CURVA_M1_REPLAY_2025_01_2026_07.csv",
+      "sha256": "90af9c6e3dc6cba91d6413a1d27e6fae17ee325e9e9730603bd837d9395046be"
+    },
+    {
+      "path": "entregas/compilado_cedro_modelod/CURVA_MODELO_D_MESES_COMPLETOS.csv",
+      "sha256": "3849f6d65d6e4d6f8b5362a15d203928a54c0dd9b36a8a1c632fabef5ada4349"
+    }
+  ],
+  "pending": [],
+  "raw_source": "GitHub Release XLSX;original chat ZIP not transferred",
+  "full_tick_audit": false,
+  "fill_certification": false,
+  "costs": false
+}
