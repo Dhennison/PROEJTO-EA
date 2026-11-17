@@ -1,0 +1,30 @@
+{
+  "data": "2026-11-17",
+  "arquivo_informado": "Janeiro a Dezembro 2024.zip",
+  "sediment_id": "file_00000000f9dc820ea18375879cd9b2d8",
+  "conteudo_lido": false,
+  "motivo": "download_file: file exceeds the executor transfer limit of32MiB",
+  "arquivo_necessario_para_continuar": "Janeiro a Dezembro 2024.zip acessivel por GitHub Release ou partes de ate32MiB",
+  "github_releases_verificadas": "Apenas dados-replay-2025-20261116 com Janeiro.a.Novembro.2025.xlsx;ZIP2024nao listado",
+  "observacoes_usuario": [
+    {
+      "data": "2024-02-06",
+      "horario": "apos10:16",
+      "ocorrencia": "leilao",
+      "fonte": "Relato do usuario;nao confirmado por negocios ou boletim",
+      "janela_pedida": "10:17–10:18",
+      "contrato_esperado": "WING24"
+    },
+    {
+      "data": "2024-06-07",
+      "horario": "09:30",
+      "ocorrencia": "entrada em leilao",
+      "fonte": "Relato do usuario;nao confirmado por negocios ou boletim",
+      "janela_pedida": "09:30–09:32",
+      "contrato_esperado": "WINM24"
+    }
+  ],
+  "nao_inferir": "Ausencia de candles nao autoriza inventar negocios,encerrar operacoes ou alterar resultado",
+  "resultados_anteriores_alterados": false,
+  "lista_replay_mantida": "32datas/33intervalos;nao reabrir outrasjanelas sem analise do arquivo"
+}
