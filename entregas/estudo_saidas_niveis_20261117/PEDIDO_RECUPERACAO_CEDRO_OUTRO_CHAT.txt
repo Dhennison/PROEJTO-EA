@@ -1,0 +1,55 @@
+PRECISO RECUPERAR ARQUIVOS CEDRO JÁ ENVIADOS NESTE CHAT
+
+No projeto https://github.com/Dhennison/PROEJTO-EA, branch entrega-modelod-v2-10-20261030, os manifestos comprovam que os 132ZIPsCedro foram recebidos e tiveram hash conferido. No chat atual, os resultados e auditorias estão salvos, mas os arquivos brutos não estão acessíveis. Não é uma nova solicitação de histórico.
+
+Prioridade: recuperar exatamente estes 16ZIPs originais, correspondentes a oito pregões deagosto/2026:
+
+WIN_20260804_parte001.zip
+WIN_20260804_parte002.zip
+WIN_20260805_parte001.zip
+WIN_20260805_parte002.zip
+WIN_20260813_parte001.zip
+WIN_20260813_parte002.zip
+WIN_20260818_parte001.zip
+WIN_20260818_parte002.zip
+WIN_20260819_parte001.zip
+WIN_20260819_parte002.zip
+WIN_20260821_parte001.zip
+WIN_20260821_parte002.zip
+WIN_20260825_parte001.zip
+WIN_20260825_parte002.zip
+WIN_20260831_parte001.zip
+WIN_20260831_parte002.zip
+
+Locais utilizados na sessão anterior:
+/workspace/retorno_cedro_20261112/ticks/
+/workspace/attachments/<pasta-do-upload>/
+Procurar também em outras pastas/arquivos preservados daquela sessão. Confirmar presença real dos ZIPs; não confundir comCSV de manifesto ou resultados.
+
+Identificação eSHA256 esperados de cada arquivo:
+https://github.com/Dhennison/PROEJTO-EA/blob/entrega-modelod-v2-10-20261030/entregas/estudo_saidas_niveis_20261117/CEDRO_PRIORITARIO_OITO_DATAS.csv
+
+Comprovantes de recebimento:
+entregas/cedro_extrator_win_v1_00/retorno_agosto_lote1_20261112/PARTES_RECEBIDAS.csv
+entregas/cedro_extrator_win_v1_00/retorno_agosto_lote2_20261112/PARTES_RECEBIDAS.csv
+entregas/cedro_extrator_win_v1_00/retorno_agosto_lote3_20261112/PARTES_RECEBIDAS.csv
+entregas/cedro_extrator_win_v1_00/retorno_agosto_lote4_20261112/PARTES_RECEBIDAS.csv
+Manifesto geral:entregas/cedro_extrator_win_v1_00/retorno_geral_20261112/ARQUIVOS.csv
+
+Peço devolver os próprios 16ZIPs para download, preservando nomes e bytes originais, e um inventário comnome/tamanho/SHA256/caminho encontrado. Todos essesZIPs individuais têm menos de32MiB. Podem ser repassados individualmente em lotes; se reunidos em arquivo maior, disponibilizar para publicação naReleaseGitHub. Não incluir manifestos como se fossem os brutos. Se faltarem arquivos, identificar exatamente quais.
+
+Objetivo: fechar a variante R61,8% comalvo fixo750pontos e stopfixo150pontos, mantendo S61,8% original e excluindo R38,2%,S38,2%eS50%. Para R61,8(venda), alvo=entrada_grade5-750 e stop=entrada_grade5+150. Entradas, referências, umcontrato/nível,grade5 e corte18h permanecem. Os resultados originais2026 já estão fechados e incluem Cedroagosto–outubro; não reabrir nem sobrescrevê-los.
+
+Datas/contratos/minutos das entradas R61,8 originais:
+04/08/2026 WINQ26 09:15
+05/08/2026 WINQ26 11:10
+13/08/2026 WINV26 10:39
+18/08/2026 WINV26 10:31
+19/08/2026 WINV26 09:35
+21/08/2026 WINV26 11:17
+25/08/2026 WINV26 16:26
+31/08/2026 WINV26 09:04
+
+Precisamos dos negócios também depois da saída original, pois o alvo/stop mudaram. Devolver os ZIPs diários completos evita cortar uma nova saída posterior. Não filtrar por operação, não ordenar, não deduplicar e não substituir por candlesM1/M5,prints, totais ou resumos. Preservar contratos, timestamps/milissegundos, preços, quantidades, ordem e campos de rastreabilidade originais.
+
+Se toda a base132partes ainda estiver disponível, informar e preservá-la para os outros cenários; para fechar esta candidata a prioridade são apenas os16ZIPs acima. Não comprar histórico nem fazer nova coleta antes de verificar o acervo existente.
