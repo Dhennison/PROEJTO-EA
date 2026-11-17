@@ -1,0 +1,3 @@
+﻿mes;data;contrato;inicio;fim_exclusivo;nivel;tipo;entrada;alvo;stop;motivo;prioridade
+2024-08;2024-08-08;WINQ24;11:01:00;11:02:00;R61.8;SEQUENCIA;128415;128350;128865;Ramos M1 ainda permitem desfechos diferentes;COLETAR
+2024-08;2024-08-29;WINV24;10:10:00;10:11:00;S50;CONTROLE_GRADE5;138595;138720;138220;Grade TP:125 versus matematico SL:-375.000;COLETAR

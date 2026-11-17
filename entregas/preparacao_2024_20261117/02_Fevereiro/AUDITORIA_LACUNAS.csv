@@ -1,0 +1,4 @@
+﻿data;inicio;fim_exclusivo;minutos;sem_limites_M5;niveis_possivelmente_afetados;acao
+2024-02-06;10:12:00;10:13:00;1;False;;SEM_EFEITO_D_ATUAL
+2024-02-06;10:17:00;10:18:00;1;False;R61.8;PENDENTE_COBERTURA
+2024-02-06;10:22:00;10:23:00;1;False;;SEM_EFEITO_D_ATUAL

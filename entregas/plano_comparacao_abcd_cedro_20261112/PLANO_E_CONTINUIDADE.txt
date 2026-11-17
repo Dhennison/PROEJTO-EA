@@ -1,3 +1,25 @@
+CONFERÊNCIA DE 2024 REABERTA PELO USUÁRIO — 17/11/2026
+Antes de variantes de stop/alvo, usuário solicitou conferência completa de 2024.
+Isso substitui a decisão anterior de encerrar a expansão para 2024; 2023 não foi reaberto.
+Pasta: entregas/preparacao_2024_20261117. Doze meses M1 disponíveis;
+247 pregões preparados,521 operações;483 determinadas sem pendência de
+sequência/cobertura/grade;25 operações ambíguas,10 controles de grade,
+duas lacunas de um minuto possivelmente relevantes. Lista consolidada:
+32 datas,33 intervalos,35 minutos úteis,mais margens antes/depois.
+Disponibilidade de contratos no Profit NÃO VERIFICADA. Contratos esperados
+pela rolagem, incluindo WING25 a partir de18/12/2024; validar preços reais.
+02–05/01: ajustes operacionais ausentes nas tabelas consultadas, M1 disponível;
+não atribuir zero nem fechar esses dias. 08/01 complementar usa ajuste133414,
+contexto05/01 M1 completo,pois M5 desse contexto é parcial. Work inicia09/01.
+Todos os OHLC de grupos anteriores18h coincidem M1/M5. Divergência na mínima
+04/09 18:20 após corte: M1 137780/M5 137920;preservado contextoWork seguinte.
+53 grupos com divergência quantitativa,ressalvados. Nenhum mês2024 fechado.
+Lista TXT,PDF mensal,XLSX com abas de retorno,CSV e auditorias disponibilizados.
+Preservados todos os brutos, referências, auditorias e meses2025/2026 fechados;
+controle dispensado10/07/2026 não reaberto. Sem testes de novos parâmetros.
+
+REGISTROS ANTERIORES PRESERVADOS ABAIXO
+
 RELATÓRIO POR NÍVEL — 16/11/2026
 Usuário encerrou expansão para 2024/2023. Antes de testar saídas, solicitou
 resultado mensal por nível de janeiro/2025 a outubro/2026, sem Work.

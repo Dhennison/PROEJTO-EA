@@ -1,0 +1,4 @@
+﻿mes;data;contrato;inicio;fim_exclusivo;tipo;prioridade;niveis;instrucoes
+2024-10;2024-10-09;WINV24;09:03:00;09:04:00;SEQUENCIA|SEQUENCIA;COLETAR;S38.2,S50;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem."
+2024-10;2024-10-23;WINZ24;09:00:00;09:01:00;CONTROLE_GRADE5;COLETAR;S38.2;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem."
+2024-10;2024-10-23;WINZ24;09:01:00;09:02:00;SEQUENCIA;COLETAR;S50;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem."

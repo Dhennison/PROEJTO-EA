@@ -1,0 +1,3 @@
+﻿mes;data;contrato;inicio;fim_exclusivo;niveis;tipo;acao;minutos
+2024-02;2024-02-06;WING24;10:17:00;10:18:00;R61.8;COBERTURA_MINUTOS_M1;"Conferir negocios apenas nos minutos ausentes;possivel efeito nos niveis listados";1
+2024-06;2024-06-07;WINM24;09:31:00;09:32:00;S38.2,S50,S61.8;COBERTURA_MINUTOS_M1;"Conferir negocios apenas nos minutos ausentes;possivel efeito nos niveis listados";1

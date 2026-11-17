@@ -1,0 +1,5 @@
+﻿mes;data;contrato;inicio;fim_exclusivo;nivel;tipo;entrada;alvo;stop;motivo;prioridade
+2024-01;2024-01-09;WING24;09:02:00;09:03:00;S38.2;SEQUENCIA;133235;133340;132860;Ramos M1 ainda permitem desfechos diferentes;COLETAR
+2024-01;2024-01-10;WING24;11:18:00;11:19:00;S38.2;SEQUENCIA;132180;132280;131805;Ramos M1 ainda permitem desfechos diferentes;COLETAR
+2024-01;2024-01-11;WING24;12:04:00;12:05:00;S38.2;SEQUENCIA;131340;131460;130965;Ramos M1 ainda permitem desfechos diferentes;COLETAR
+2024-01;2024-01-18;WING24;11:28:00;11:29:00;S50;CONTROLE_GRADE5;128835;128965;128460;Grade TP:130 versus matematico SL:-375.0000000000000000000000;COLETAR

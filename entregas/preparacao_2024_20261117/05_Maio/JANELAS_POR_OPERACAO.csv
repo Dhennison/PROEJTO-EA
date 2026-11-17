@@ -1,0 +1,5 @@
+﻿mes;data;contrato;inicio;fim_exclusivo;nivel;tipo;entrada;alvo;stop;motivo;prioridade
+2024-05;2024-05-03;WINM24;09:30:00;09:31:00;R38.2;SEQUENCIA;128875;128730;129250;Ramos M1 ainda permitem desfechos diferentes;COLETAR
+2024-05;2024-05-07;WINM24;09:58:00;09:59:00;R61.8;SEQUENCIA;130200;130160;130650;Ramos M1 ainda permitem desfechos diferentes;COLETAR
+2024-05;2024-05-20;WINM24;09:03:00;09:04:00;S50;SEQUENCIA;128830;128885;128455;Ramos M1 ainda permitem desfechos diferentes;COLETAR
+2024-05;2024-05-28;WINM24;09:11:00;09:12:00;R61.8;SEQUENCIA;125645;125580;126095;Ramos M1 ainda permitem desfechos diferentes;COLETAR

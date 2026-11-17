@@ -1,0 +1,49 @@
+{
+  "mes": "2024-06",
+  "nome": "Junho",
+  "pregoes": 20,
+  "operacoes": 46,
+  "determinadas_candles": 40,
+  "concretas_sem_ressalva_de_sequencia_cobertura_grade": 37,
+  "pendentes_sequencia": 6,
+  "controles_grade": 1,
+  "operacoes_conhecidas_com_cobertura_pendente": 3,
+  "janelas_replay": 6,
+  "minutos_replay": 6,
+  "intervalos_cobertura_a_conferir": 1,
+  "Work_pontos": "2263.419996",
+  "ajustes": 20,
+  "M1": 11294,
+  "M5": 2260,
+  "grupos_preco_divergente": 0,
+  "grupos_quantidade_divergente": 7,
+  "contexto": {
+    "date": "2024-06-03",
+    "previous": "2024-05-31",
+    "previous_source": "WORK_M5_FULL",
+    "previous_first": "2024-05-31 09:00:00",
+    "previous_last": "2024-05-31 18:20:00",
+    "previous_bars": 113,
+    "open": "122860.00",
+    "high_prev": "123460.00",
+    "low_prev": "122215.00",
+    "close_prev": "122720.00",
+    "adjustment": "122627",
+    "contrato_Replay": "WINM24"
+  },
+  "principal": null,
+  "DD_teste": null,
+  "ajustes_complementares": [],
+  "ajustes_ausentes": [],
+  "datas_fora_Work": [],
+  "status": "PREPARADO_AGUARDANDO_REPLAY_E_CONTROLES",
+  "resultado_mensal_fechado": false,
+  "mathematical_differences": [],
+  "work_missing": [],
+  "work_extra": [
+    [
+      "2024-06-26",
+      "R38.2"
+    ]
+  ]
+}

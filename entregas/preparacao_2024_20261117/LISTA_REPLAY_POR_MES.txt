@@ -1,0 +1,70 @@
+CONFERÊNCIA 2024 — MODELO D ORIGINAL
+32 datas candidatas ao Replay; disponibilidade no Profit ainda não verificada.
+Intervalos abaixo: início inclusivo, fim exclusivo, horário de São Paulo.
+Copiar alguns segundos antes/depois, minuto completo, sem filtros ou deduplicação.
+Preservar milissegundos e ordem; se não houver negócios, informar a ausência.
+Contratos esperados pela rolagem; validar correspondência de preços antes de concluir.
+
+Janeiro/2024
+09/01 | 09:02–09:03 | WING24 | S38.2 | SEQUENCIA
+10/01 | 11:18–11:19 | WING24 | S38.2 | SEQUENCIA
+11/01 | 12:04–12:05 | WING24 | S38.2 | SEQUENCIA
+18/01 | 11:28–11:29 | WING24 | S50 | CONTROLE_GRADE5
+
+Fevereiro/2024
+02/02 | 10:30–10:31 | WING24 | S38.2 | SEQUENCIA
+06/02 | 10:17–10:18 | WING24 | R61.8 | COBERTURA_MINUTOS_M1
+
+Março/2024
+04/03 | 11:21–11:22 | WINJ24 | S38.2 | SEQUENCIA
+
+Abril/2024
+Sem janela de Replay necessária para o Modelo D original nos dados preparados.
+
+Maio/2024
+03/05 | 09:30–09:31 | WINM24 | R38.2 | SEQUENCIA
+07/05 | 09:58–09:59 | WINM24 | R61.8 | SEQUENCIA
+20/05 | 09:03–09:04 | WINM24 | S50 | SEQUENCIA
+28/05 | 09:11–09:12 | WINM24 | R61.8 | SEQUENCIA
+
+Junho/2024
+06/06 | 10:24–10:25 | WINM24 | R61.8 | SEQUENCIA
+07/06 | 09:30–09:32 | WINM24 | S38.2,S50,S61.8 | SEQUENCIA|COBERTURA_MINUTOS_M1
+12/06 | 09:30–09:31 | WINQ24 | R61.8 | SEQUENCIA
+26/06 | 09:25–09:26 | WINQ24 | S50,S61.8 | SEQUENCIA|SEQUENCIA
+26/06 | 16:55–16:56 | WINQ24 | R38.2 | CONTROLE_GRADE5
+28/06 | 10:45–10:46 | WINQ24 | S38.2 | SEQUENCIA
+
+Julho/2024
+03/07 | 09:47–09:48 | WINQ24 | R38.2 | CONTROLE_GRADE5
+05/07 | 10:39–10:40 | WINQ24 | S38.2 | SEQUENCIA
+11/07 | 09:17–09:18 | WINQ24 | R38.2 | CONTROLE_GRADE5
+
+Agosto/2024
+08/08 | 11:01–11:02 | WINQ24 | R61.8 | SEQUENCIA
+29/08 | 10:10–10:11 | WINV24 | S50 | CONTROLE_GRADE5
+
+Setembro/2024
+17/09 | 09:40–09:41 | WINV24 | S38.2 | SEQUENCIA
+25/09 | 14:35–14:36 | WINV24 | S61.8 | CONTROLE_GRADE5
+30/09 | 17:07–17:08 | WINV24 | S61.8 | CONTROLE_GRADE5
+
+Outubro/2024
+09/10 | 09:03–09:04 | WINV24 | S38.2,S50 | SEQUENCIA|SEQUENCIA
+23/10 | 09:00–09:02 | WINZ24 | S38.2,S50 | CONTROLE_GRADE5|SEQUENCIA
+
+Novembro/2024
+13/11 | 11:36–11:37 | WINZ24 | S50 | SEQUENCIA
+26/11 | 09:08–09:09 | WINZ24 | R38.2 | SEQUENCIA
+28/11 | 16:36–16:37 | WINZ24 | S61.8 | SEQUENCIA
+
+Dezembro/2024
+16/12 | 17:52–17:53 | WINZ24 | S38.2 | CONTROLE_GRADE5
+23/12 | 09:13–09:14 | WING25 | S38.2 | SEQUENCIA
+27/12 | 14:52–14:53 | WING25 | S61.8 | CONTROLE_GRADE5
+
+Fora da preparação: 02,03,04,05/01 sem ajuste operacional nas fontes disponíveis.
+08/01 complementar: ajuste 133414; contexto 05/01 M1 completo, pois M5 é parcial.
+Divergência de preços:04/09 18:20, mínima M1 137780 versus M5 137920.
+Após corte18h; preservar referência HLC Work do pregão seguinte, sem recalibrar.
+Nenhum resultado mensal ou DD de2024 é apresentado como fechado nesta etapa.

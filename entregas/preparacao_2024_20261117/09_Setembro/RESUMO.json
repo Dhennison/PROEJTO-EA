@@ -1,0 +1,53 @@
+{
+  "mes": "2024-09",
+  "nome": "Setembro",
+  "pregoes": 21,
+  "operacoes": 52,
+  "determinadas_candles": 51,
+  "concretas_sem_ressalva_de_sequencia_cobertura_grade": 49,
+  "pendentes_sequencia": 1,
+  "controles_grade": 2,
+  "operacoes_conhecidas_com_cobertura_pendente": 0,
+  "janelas_replay": 3,
+  "minutos_replay": 3,
+  "intervalos_cobertura_a_conferir": 0,
+  "Work_pontos": "3213.512665",
+  "ajustes": 21,
+  "M1": 11864,
+  "M5": 2373,
+  "grupos_preco_divergente": 1,
+  "grupos_quantidade_divergente": 6,
+  "contexto": {
+    "date": "2024-09-02",
+    "previous": "2024-08-30",
+    "previous_source": "WORK_M5_FULL",
+    "previous_first": "2024-08-30 09:00:00",
+    "previous_last": "2024-08-30 18:20:00",
+    "previous_bars": 113,
+    "open": "137250.00",
+    "high_prev": "138990.00",
+    "low_prev": "136500.00",
+    "close_prev": "138025.00",
+    "adjustment": "138132",
+    "contrato_Replay": "WINV24"
+  },
+  "principal": null,
+  "DD_teste": null,
+  "ajustes_complementares": [],
+  "ajustes_ausentes": [],
+  "datas_fora_Work": [],
+  "status": "PREPARADO_AGUARDANDO_REPLAY_E_CONTROLES",
+  "resultado_mensal_fechado": false,
+  "mathematical_differences": [],
+  "work_missing": [],
+  "work_extra": [
+    [
+      "2024-09-25",
+      "S61.8"
+    ],
+    [
+      "2024-09-30",
+      "S61.8"
+    ]
+  ]
+}

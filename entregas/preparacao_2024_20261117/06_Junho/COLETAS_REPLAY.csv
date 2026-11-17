@@ -1,0 +1,7 @@
+﻿mes;data;contrato;inicio;fim_exclusivo;tipo;prioridade;niveis;instrucoes
+2024-06;2024-06-06;WINM24;10:24:00;10:25:00;SEQUENCIA;COLETAR;R61.8;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem."
+2024-06;2024-06-07;WINM24;09:30:00;09:31:00;SEQUENCIA;COLETAR;S38.2;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem."
+2024-06;2024-06-12;WINQ24;09:30:00;09:31:00;SEQUENCIA;COLETAR;R61.8;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem."
+2024-06;2024-06-26;WINQ24;09:25:00;09:26:00;SEQUENCIA|SEQUENCIA;COLETAR;S50,S61.8;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem."
+2024-06;2024-06-26;WINQ24;16:55:00;16:56:00;CONTROLE_GRADE5;COLETAR;R38.2;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem."
+2024-06;2024-06-28;WINQ24;10:45:00;10:46:00;SEQUENCIA;COLETAR;S38.2;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem."

@@ -1,0 +1,5 @@
+﻿mes;data;contrato;inicio;fim_exclusivo;nivel;tipo;entrada;alvo;stop;motivo;prioridade
+2024-10;2024-10-09;WINV24;09:03:00;09:04:00;S38.2;SEQUENCIA;131355;131425;130980;Ramos M1 ainda permitem desfechos diferentes;COLETAR
+2024-10;2024-10-09;WINV24;09:03:00;09:04:00;S50;SEQUENCIA;131250;131355;130875;Ramos M1 ainda permitem desfechos diferentes;COLETAR
+2024-10;2024-10-23;WINZ24;09:00:00;09:01:00;S38.2;CONTROLE_GRADE5;131415;131505;131040;Grade TP:90 versus matematico SL:-375.0000000000000000000000;COLETAR
+2024-10;2024-10-23;WINZ24;09:01:00;09:02:00;S50;SEQUENCIA;131265;131415;130890;Ramos M1 ainda permitem desfechos diferentes;COLETAR

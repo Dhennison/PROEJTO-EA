@@ -1,0 +1,53 @@
+{
+  "mes": "2024-01",
+  "nome": "Janeiro",
+  "pregoes": 18,
+  "operacoes": 43,
+  "determinadas_candles": 40,
+  "concretas_sem_ressalva_de_sequencia_cobertura_grade": 39,
+  "pendentes_sequencia": 3,
+  "controles_grade": 1,
+  "operacoes_conhecidas_com_cobertura_pendente": 0,
+  "janelas_replay": 4,
+  "minutos_replay": 4,
+  "intervalos_cobertura_a_conferir": 0,
+  "Work_pontos": "3341.487332",
+  "ajustes": 18,
+  "M1": 10170,
+  "M5": 2034,
+  "grupos_preco_divergente": 0,
+  "grupos_quantidade_divergente": 4,
+  "contexto": {
+    "date": "2024-01-08",
+    "previous": "2024-01-05",
+    "previous_source": "MT5_M1_FULL_SUPPLEMENTAL_CONTEXT",
+    "previous_first": "2024-01-05 09:00:00",
+    "previous_last": "2024-01-05 18:24:00",
+    "previous_bars": 565,
+    "open": "132840.00",
+    "high_prev": "134040.0000000000000000",
+    "low_prev": "131840.0000000000000000",
+    "close_prev": "133520.0000000000000000",
+    "adjustment": "133414",
+    "contrato_Replay": "WING24"
+  },
+  "principal": null,
+  "DD_teste": null,
+  "ajustes_complementares": [
+    "2024-01-08"
+  ],
+  "ajustes_ausentes": [],
+  "datas_fora_Work": [
+    "2024-01-08"
+  ],
+  "status": "PREPARADO_AGUARDANDO_REPLAY_E_CONTROLES",
+  "resultado_mensal_fechado": false,
+  "mathematical_differences": [],
+  "work_missing": [],
+  "work_extra": [
+    [
+      "2024-01-08",
+      "S38.2"
+    ]
+  ]
+}

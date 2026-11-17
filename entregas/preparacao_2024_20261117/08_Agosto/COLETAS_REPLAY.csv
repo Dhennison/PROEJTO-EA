@@ -1,0 +1,3 @@
+﻿mes;data;contrato;inicio;fim_exclusivo;tipo;prioridade;niveis;instrucoes
+2024-08;2024-08-08;WINQ24;11:01:00;11:02:00;SEQUENCIA;COLETAR;R61.8;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem."
+2024-08;2024-08-29;WINV24;10:10:00;10:11:00;CONTROLE_GRADE5;COLETAR;S50;"Alguns segundos antes/depois;sem filtros,saltos ou deduplicacao;manter ms eordem."

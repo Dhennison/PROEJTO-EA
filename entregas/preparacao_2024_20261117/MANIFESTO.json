@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-17",
+  "months": 12,
+  "prepared_days": 247,
+  "operations": 521,
+  "concrete": 483,
+  "ambiguous_operations": 25,
+  "grade_controls": 10,
+  "coverage_intervals": 2,
+  "Replay_dates": 32,
+  "merged_intervals": 33,
+  "unique_requested_minutes": 35,
+  "contracts_available_in_Profit": "NOT_VERIFIED",
+  "closed_results": false,
+  "missing_adjustment_dates": [
+    "2024-01-02",
+    "2024-01-03",
+    "2024-01-04",
+    "2024-01-05"
+  ],
+  "original_source_hashes": [
+    {
+      "path": "entregas/arquivo_conversa_20261111/originais/ORIGINAIS_PARTE_005.zip",
+      "sha256": "de5f0ebf6a11c29bf3d747560ed75e9dce76575382f461389d5de28c1d4cf130"
+    },
+    {
+      "path": "nested EXPORT110_1794243035_5791.zip",
+      "sha256": "0e4a1cf44e37c4409ea856e8a52f754669819c338b080346ec643fdfbcbb7093"
+    },
+    {
+      "path": "entregas/historico_work_modelo_d_20261105/replay_setembro_20261106/originais/Candles_Originais_Modelo_D_2023_2026.zip",
+      "sha256": "74442c025633c95a8a86b854bed6de172534d439b9e955e7fe74c47536f2ab76"
+    },
+    {
+      "path": "entregas/historico_work_modelo_d_20261105/Ajustes_Diarios_Modelo_D_20230301_20260921.csv",
+      "sha256": "c4140fbdf725509e4b3fbc8fa5859ae4bdf236e0605ef3d181c7e84b817f52d6"
+    },
+    {
+      "path": "entregas/historico_work_modelo_d_20261105/originais/Pacote_Modelo_D_Historico_20230301_20260921.zip",
+      "sha256": "b107d539afa3e76fb5fbd5f0d7cf8045283e9f133f21828e79638a0c85d823a6"
+    },
+    {
+      "path": "entregas/historico_work_modelo_d_20261105/Operacoes_Modelo_D_20230301_20260921_ORIGINAL.csv",
+      "sha256": "da1d65eb594d9543ead6eb121cfae51df07873f809569a021968905a8025e3e7"
+    },
+    {
+      "path": "entregas/historico_work_modelo_d_20261105/Referencia_D_diário.csv",
+      "sha256": "a6465aee1dba3946722624c222e3393e4a4645625ece2a198d4bb967b2569081"
+    }
+  ],
+  "checks": [
+    "All prepared M1 outcomes subset of M5 outcomes",
+    "All pre18h OHLC groups exact",
+    "All existing Work operations present",
+    "Mathematical entry/target/stop match Work",
+    "Only D original five levels",
+    "All 12 M1 exports stable twice with zero error"
+  ],
+  "price_difference": "2024-09-04 18:20: M1 low137780 / WorkM5 low137920; after cut; previous Work HLC preserved",
+  "quantity_difference_groups": 53
+}
