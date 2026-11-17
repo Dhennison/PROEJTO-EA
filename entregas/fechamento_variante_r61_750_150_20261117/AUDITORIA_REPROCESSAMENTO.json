@@ -1,0 +1,130 @@
+[
+  {
+    "date": "2026-08-04",
+    "contract": "WINQ26",
+    "full_stream_records": 4838964,
+    "expected_records": 4838964,
+    "reduced_records": 31152,
+    "old_5_states_identical": true,
+    "python_vs_direct_all10_states": true,
+    "variant_reverse_ms_result_equal": true,
+    "opposite_barriers_same_ms": [],
+    "reduced_events_sha256": "56c202cae0a4dbc3a773472b146c96db5f89d92599c1b81b522ed2c56b499bf9",
+    "raw_parts": [
+      "WIN_20260804_parte001.zip",
+      "WIN_20260804_parte002.zip"
+    ]
+  },
+  {
+    "date": "2026-08-05",
+    "contract": "WINQ26",
+    "full_stream_records": 4646247,
+    "expected_records": 4646247,
+    "reduced_records": 28645,
+    "old_5_states_identical": true,
+    "python_vs_direct_all10_states": true,
+    "variant_reverse_ms_result_equal": true,
+    "opposite_barriers_same_ms": [],
+    "reduced_events_sha256": "661f472202267262e665b8052f0a0200dd9403d300f23fbf09c407772d5ab60a",
+    "raw_parts": [
+      "WIN_20260805_parte001.zip",
+      "WIN_20260805_parte002.zip"
+    ]
+  },
+  {
+    "date": "2026-08-13",
+    "contract": "WINV26",
+    "full_stream_records": 4597107,
+    "expected_records": 4597107,
+    "reduced_records": 30616,
+    "old_5_states_identical": true,
+    "python_vs_direct_all10_states": true,
+    "variant_reverse_ms_result_equal": true,
+    "opposite_barriers_same_ms": [],
+    "reduced_events_sha256": "80c15bafacd0f1d808bdb7697a4ff7e52a2becce55e8eb6c8c343b8661c0cd03",
+    "raw_parts": [
+      "WIN_20260813_parte001.zip",
+      "WIN_20260813_parte002.zip"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "contract": "WINV26",
+    "full_stream_records": 4465737,
+    "expected_records": 4465737,
+    "reduced_records": 47757,
+    "old_5_states_identical": true,
+    "python_vs_direct_all10_states": true,
+    "variant_reverse_ms_result_equal": true,
+    "opposite_barriers_same_ms": [],
+    "reduced_events_sha256": "f4c3824c17e38b744934e90ee98a752034802cb75ab537357e6d5e7d761160c7",
+    "raw_parts": [
+      "WIN_20260818_parte001.zip",
+      "WIN_20260818_parte002.zip"
+    ]
+  },
+  {
+    "date": "2026-08-19",
+    "contract": "WINV26",
+    "full_stream_records": 5016892,
+    "expected_records": 5016892,
+    "reduced_records": 42938,
+    "old_5_states_identical": true,
+    "python_vs_direct_all10_states": true,
+    "variant_reverse_ms_result_equal": true,
+    "opposite_barriers_same_ms": [],
+    "reduced_events_sha256": "65d67825a73b21d2d7fd1adb67f94ea58abd6e82d5170c6526fcbd8d3024f37c",
+    "raw_parts": [
+      "WIN_20260819_parte001.zip",
+      "WIN_20260819_parte002.zip"
+    ]
+  },
+  {
+    "date": "2026-08-21",
+    "contract": "WINV26",
+    "full_stream_records": 4903107,
+    "expected_records": 4903107,
+    "reduced_records": 41964,
+    "old_5_states_identical": true,
+    "python_vs_direct_all10_states": true,
+    "variant_reverse_ms_result_equal": true,
+    "opposite_barriers_same_ms": [],
+    "reduced_events_sha256": "1b422fcf430ea0ca145129e753fc2057ae88a74e625a8402f695974a1f21012c",
+    "raw_parts": [
+      "WIN_20260821_parte001.zip",
+      "WIN_20260821_parte002.zip"
+    ]
+  },
+  {
+    "date": "2026-08-25",
+    "contract": "WINV26",
+    "full_stream_records": 5542718,
+    "expected_records": 5542718,
+    "reduced_records": 14036,
+    "old_5_states_identical": true,
+    "python_vs_direct_all10_states": true,
+    "variant_reverse_ms_result_equal": true,
+    "opposite_barriers_same_ms": [],
+    "reduced_events_sha256": "dedcc6eef1bf1474989c98e29d0381866a9a80c47279855f1c542c8cb91a6796",
+    "raw_parts": [
+      "WIN_20260825_parte001.zip",
+      "WIN_20260825_parte002.zip"
+    ]
+  },
+  {
+    "date": "2026-08-31",
+    "contract": "WINV26",
+    "full_stream_records": 5020544,
+    "expected_records": 5020544,
+    "reduced_records": 61437,
+    "old_5_states_identical": true,
+    "python_vs_direct_all10_states": true,
+    "variant_reverse_ms_result_equal": true,
+    "opposite_barriers_same_ms": [],
+    "reduced_events_sha256": "2571caf0b85148c810a53712918d85201367b3dde2c2e29f021fc52c88ec2c8e",
+    "raw_parts": [
+      "WIN_20260831_parte001.zip",
+      "WIN_20260831_parte002.zip"
+    ]
+  }
+]

@@ -6,7 +6,7 @@ import openpyxl,fitz
 from openpyxl.styles import Font,PatternFill
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
-P=Path(__file__).parent;BASE=P.parent;R=BASE.parents[1];E=R/'entregas';cache=Path('/workspace/work/estudo_saidas/resultados.pickle');data=pickle.loads(cache.read_bytes());days=data['data']['days'];levels=['R38.2','R61.8','S38.2','S50','S61.8'];cfg={c['id']:i for i,c in enumerate(data['cfg'])}
+P=Path(__file__).parent;BASE=P.parent;R=BASE.parents[1];E=R/'entregas';cache=Path('/workspace/work/cedro_recuperado/resultados_atualizados.pickle');data=pickle.loads(cache.read_bytes());days=data['data']['days'];levels=['R38.2','R61.8','S38.2','S50','S61.8'];cfg={c['id']:i for i,c in enumerate(data['cfg'])}
 def read(p):
  with p.open(encoding='utf-8-sig') as f:return list(csv.DictReader(f,delimiter=';'))
 def write(name,rs):
@@ -25,7 +25,7 @@ archive=read(E/'cedro_extrator_win_v1_00/retorno_geral_20261112/ARQUIVOS.csv');t
 for r in archive:
  if r['tipo']!='WIN_ZIP':continue
  ev=[e for e in proof[r['arquivo']] if e['sha256']==r['sha256']]
- trace.append(dict(file=r['arquivo'],sha256=r['sha256'],historical_receipt_hash_confirmed=bool(ev),receipt_documents='|'.join(e['path'] for e in ev),current_session_raw_path_exists=any(p.exists() for p in [Path('/workspace/retorno_cedro_20261112/ticks')/r['arquivo'],Path('/workspace/attachments')/r['arquivo']]),original_month_result_included=True))
+ trace.append(dict(file=r['arquivo'],sha256=r['sha256'],historical_receipt_hash_confirmed=bool(ev),receipt_documents='|'.join(e['path'] for e in ev),current_session_raw_path_exists=any(p.exists() for p in [Path('/workspace/retorno_cedro_20261112/ticks')/r['arquivo'],Path('/workspace/dados_brutos_modelo_d/cedro')/r['arquivo']]),original_month_result_included=True))
 write('RASTREAMENTO_RECEBIMENTO_CEDRO.csv',trace)
 # All scenario yearly results, with year-only DD separated from global DD.
 rows=[];lookup={}
@@ -63,18 +63,18 @@ for year in ['2024','2025','2026']:
   c.drawString(32,y,'Pontos: '+range2(r['points_lower'],r['points_upper'])+' | Operações: '+str(r['operations']));y-=17
   c.drawString(32,y,'DD isolado do ano: '+range2(r['DD_year_lower'],r['DD_year_upper'])+' | Pendentes: '+str(r['unresolved_operations']));y-=27
  c.setFont('Helvetica',9)
- for t in ['Pontos brutos. DD pelos fechamentos diários do próprio ano, começando em zero.','Este DD anual é diagnóstico adicional e não substitui o DD contínuo do período completo.','Faixa: resultado não fechado. Limites não são lucro realizado nem trajetória certificada.','2026 já inclui agosto, setembro e outubro Cedro nos cenários de saídas originais.','Na candidata, novas saídas de agosto/2026 dependem dos negócios brutos nesta sessão.']:
+ for t in ['Pontos brutos. DD pelos fechamentos diários do próprio ano, começando em zero.','Este DD anual é diagnóstico adicional e não substitui o DD contínuo do período completo.','Faixa: resultado não fechado. Limites não são lucro realizado nem trajetória certificada.','2026 já inclui agosto, setembro e outubro Cedro nos cenários de saídas originais.','Variante750/150 fechada após recuperar os16ZIPs de oito datas Cedro deagosto.']:
   c.drawString(32,y,t);y-=15
  c.setFont('Helvetica',8);c.drawString(32,28,'17/11/2026 | Modelo D original preservado | Sem comparação com Work');c.showPage()
 c.setFont('Helvetica-Bold',18);c.drawString(32,795,'Critérios e rastreamento Cedro');c.setFont('Helvetica',10);y=760
 paragraphs=[
 'Os cenários mostrados anteriormente eram destaques por critérios diferentes, não vencedores absolutos ou configurações comprovadamente melhores em todas as dimensões.',
 'Maior total exato nas31exclusões: R38,2+R61,8+S61,8,6.055pontos. Melhor relação pontos/DD entre exclusões positivas: R61,8+S61,8,5.890pontos/DD5.505. MenorDD entre exclusões positivas: somenteR61,8,825pontos/DD2.545. Esses critérios não coincidem.',
-'A candidata750/150 é uma hipótese de novas saídas, selecionada no treino2024/25; não deve ser ordenada como resultado fechado de todo o período. A busca usou175receitas e1.279mistos; não abrange todos os parâmetros possíveis.',
-f'Os logs Cedro foram enviados anteriormente: localizados{sum(r["historical_receipt_hash_confirmed"] for r in trace)}comprovantes de partes com hash correspondente ao manifesto. A expressão arquivos faltando foi imprecisa: eles não estão acessíveis na sessão atual; isso não significa que o usuário não enviou.',
+'A variante750/150 foi fechada após recuperação dos16ZIPs:2024+6155,2025+6115,2026jan-out-4345,total7925,DDcontínuo7780. Isso não a torna estável ou aprovada para operar. A busca usou175receitas e1.279mistos; não abrange todos os parâmetros possíveis.',
+f'Os logs Cedro foram enviados anteriormente: localizados{sum(r["historical_receipt_hash_confirmed"] for r in trace)}comprovantes de partes com hash correspondente ao manifesto. A expressão arquivos faltando foi imprecisa: 16ZIPs foram recuperados nesta sessão,fechando a variante750/150;isso não significa que os demais não tenham sido enviados.',
 'Os resultados originais dos três meses Cedro são agosto-2.375,setembro+2.855,outubro+3.830, incluídos no resultado original de2026+8.940. Não é necessário recalcular ou excluir esses meses para entregar a comparação anual original.',
-'Busca realizada nos arquivos locais, anexos atuais, downloads compartilhados, históricoGit e ReleaseGitHub consultada. Foram encontrados manifestos e auditorias, mas não os132ZIPs de negócios no ambiente. A Release contém as planilhas Replay2024e2025. Não é possível reconstituir negócios individuais a partir de totais de auditoria.',
-'As novas saídas permanecem pendentes apenas onde os negócios necessários estão indisponíveis. Não repetir automaticamente toda a coleta. RASTREAMENTO_RECEBIMENTO_CEDRO.csv discrimina prova de recebimento e disponibilidade atual.',
+'Busca realizada nos arquivos locais, anexos atuais, downloads compartilhados, históricoGit e ReleaseGitHub consultada. Os16ZIPs prioritários foram recuperados e reprocessados;os116demais não estão disponíveis neste ambiente. Isso não impede o fechamento da variante750/150. A Release contém as planilhas Replay2024e2025. Não é possível reconstituir negócios individuais a partir de totais de auditoria.',
+'As saídas750/150 das oito operações foram STOP-150,total-1200;nenhuma pendência nessa variante. Outras receitas mantêm limitações próprias. Não repetir automaticamente toda a coleta. RASTREAMENTO_RECEBIMENTO_CEDRO.csv discrimina prova de recebimento e disponibilidade atual.',
 'Resultados anuais de todos os1.485cenários estão na planilha eCSV.2026 corresponde a janeiro-outubro. Todos os resultados originais e os relatórios anteriores permanecem preservados.'
 ]
 import re
@@ -84,15 +84,15 @@ for p in paragraphs:
  y-=12
 c.setFont('Helvetica',8);c.drawString(32,28,'17/11/2026 | Comparação anual | Sem alteração dos resultados fechados');c.save()
 doc=fitz.open(P/'Cenarios_Resultados_Anuais_2024_2025_2026.pdf');assert len(doc)==4
-summary=dict(years=['2024','2025','2026JanOct'],scenarios=len(data['scenarios'])+len(data['subsets']),annual_rows=len(rows),cedro_parts_previously_received_hash_proofs=sum(r['historical_receipt_hash_confirmed'] for r in trace),raw_parts_listed=len(trace),current_session_available_parts=sum(r['current_session_raw_path_exists'] for r in trace),original_2026_includes_full_Cedro_AugOct=True,changed_exits_2026_candidate_still_bounded=True,previous_user_delivery_not_in_question=True)
+summary=dict(years=['2024','2025','2026JanOct'],scenarios=len(data['scenarios'])+len(data['subsets']),annual_rows=len(rows),cedro_parts_previously_received_hash_proofs=sum(r['historical_receipt_hash_confirmed'] for r in trace),raw_parts_listed=len(trace),current_session_available_parts=sum(r['current_session_raw_path_exists'] for r in trace),original_2026_includes_full_Cedro_AugOct=True,changed_exits_2026_candidate_still_bounded=False,previous_user_delivery_not_in_question=True)
 (P/'MANIFESTO_ANUAL.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
 (P/'LEIA_PRIMEIRO.md').write_text('''# Comparação anual dos cenários
 
 PDF com páginas separadas para2024,2025e2026janeiro-outubro;planilha eCSVcontêm todos os1.485cenários em cada ano. Pontos brutos,DD anual isolado,operações,pendências e sensibilidades de custo. DD anual isolado não substitui oDDcontínuo global.
 
-Correção sobreCedro: os arquivos foram enviados e recebidos anteriormente,com comprovantes dehash. RASTREAMENTO_RECEBIMENTO_CEDRO.csv diferencia isso da disponibilidade dos brutos no ambiente atual. Não foi localizada cópia dosZIPs nesta sessão,nos anexos presentes,nohistóricoGit ou naReleaseconsultada. Ausência atual não significa ausência de envio. Os resultados originais Cedro completos já estão incluídos em2026; novas saídas não devem ser certificadas sem seus negócios.
+Correção sobreCedro: os arquivos foram enviados e recebidos anteriormente,com comprovantes dehash. RASTREAMENTO_RECEBIMENTO_CEDRO.csv diferencia isso da disponibilidade dos brutos no ambiente atual. Os16ZIPs prioritários foram recuperados nesta sessão,verificados porhash e reprocessados. Os116demais continuam semcópia local. Ausência local não significa ausência de envio. Os resultados originais Cedro completos já estão incluídos em2026; a variante750/150agora está fechada;demais receitas mantêm limitações próprias.
 
-Maior lucro exato,menorDD e melhorrelação pontos/DD dão rankings diferentes. As listas mostradas são destaques de uma grade finita de testes,não melhores configurações universais. Candidatas comfaixas continuam pendentes;2026 não foi omitido.
+Maior lucro exato,menorDD e melhorrelação pontos/DD dão rankings diferentes. As listas mostradas são destaques de uma grade finita de testes,não melhores configurações universais. A variante750/150soma6155em2024,6115em2025e-4345em2026jan-out;outroscenários comfaixas continuam pendentes.2026 não foi omitido.
 ''')
 print(json.dumps(summary,ensure_ascii=False,indent=2))
 for id in ids:print(id,[range2(lookup[(id,y)]['points_lower'],lookup[(id,y)]['points_upper']) for y in ['2024','2025','2026']])

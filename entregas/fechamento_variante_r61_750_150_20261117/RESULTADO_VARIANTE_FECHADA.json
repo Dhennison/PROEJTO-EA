@@ -1,0 +1,81 @@
+{
+  "status": "FECHADA_SOBRE_PRECOS_CONDICIONAIS_DO_MODELO",
+  "variant_id": "R61_TARGET750_STOP150_S61_ORIGINAL",
+  "included_levels": [
+    "R61.8_NEW",
+    "S61.8_ORIGINAL"
+  ],
+  "excluded_levels": [
+    "R38.2",
+    "S38.2",
+    "S50"
+  ],
+  "period": "2024-01-02 a2026-10-30",
+  "days": 709,
+  "operations": 488,
+  "total_points": 7925.0,
+  "DD_continuous": 7780.0,
+  "DD_peak_valley": {
+    "peak_date": "2026-01-02",
+    "valley_date": "2026-09-10",
+    "peak": 13235.0,
+    "valley": 5455.0
+  },
+  "annual": [
+    {
+      "year": "2024",
+      "scope": "Ano completo",
+      "operations": 177,
+      "R61_target750_stop150_points": 4645.0,
+      "S61_original_points": 1510.0,
+      "variant_pair_points": 6155.0,
+      "variant_year_DD": 2375.0,
+      "original_pair_points": 2680.0,
+      "original_pair_year_DD": 2055.0,
+      "original_D_points": -2955.0,
+      "points_after_cost5": 5270.0,
+      "points_after_cost10": 4385.0,
+      "pending": 0
+    },
+    {
+      "year": "2025",
+      "scope": "Ano completo",
+      "operations": 171,
+      "R61_target750_stop150_points": 1325.0,
+      "S61_original_points": 4790.0,
+      "variant_pair_points": 6115.0,
+      "variant_year_DD": 2235.0,
+      "original_pair_points": 4325.0,
+      "original_pair_year_DD": 2060.0,
+      "original_D_points": -2035.0,
+      "points_after_cost5": 5260.0,
+      "points_after_cost10": 4405.0,
+      "pending": 0
+    },
+    {
+      "year": "2026",
+      "scope": "Janeiro a Outubro",
+      "operations": 140,
+      "R61_target750_stop150_points": -3110.0,
+      "S61_original_points": -1235.0,
+      "variant_pair_points": -4345.0,
+      "variant_year_DD": 7780.0,
+      "original_pair_points": -1115.0,
+      "original_pair_year_DD": 5505.0,
+      "original_D_points": 8940.0,
+      "points_after_cost5": -5045.0,
+      "points_after_cost10": -5745.0,
+      "pending": 0
+    }
+  ],
+  "august_eight_original_points": 295.0,
+  "august_eight_new_points": -1200.0,
+  "pending_variant": 0,
+  "pending_other_study_variants": "NOT_AUTOMATICALLY_CLOSED_BY_THIS_BATCH",
+  "original_D_total_preserved": 3950,
+  "original_D_DD_preserved": 14805,
+  "original_pair_total_preserved": 5890,
+  "costs_in_main": false,
+  "certified_fills": false,
+  "method": "M1_AND_AVAILABLE_TARGETED_REPLAY_JAN2024_JUL2026;CEDRO_ORIGINAL_S61_AUGOCT;RECOVERED_CEDRO_R61_AUG;CEDRO_AUDIT_M1_R61_SEPOCT"
+}

@@ -1,0 +1,16 @@
+{
+  "variant": "R61_TARGET750_STOP150_S61_ORIGINAL",
+  "main_original_unchanged": true,
+  "raw_parts": 16,
+  "raw_bytes": 263870911,
+  "source_contract_records": 39031316,
+  "old_original_states_exactly_reproduced": 40,
+  "ten_state_cpp_vs_python_checks": 80,
+  "pending_candidate": 0,
+  "result": 7925.0,
+  "DD_continuous": 7780.0,
+  "raw_download_ids_in": "RESTAURACAO_FONTES.json",
+  "raw_not_duplicated_into_git": true,
+  "old_117_source_hashes_preserved": true,
+  "annual_previous_files_archived": "estudo_saidas_niveis_20261117/comparacao_anual/historico_antes_cedro_recuperado"
+}

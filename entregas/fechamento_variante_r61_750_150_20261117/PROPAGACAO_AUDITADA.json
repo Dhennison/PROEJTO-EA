@@ -1,0 +1,6 @@
+{
+  "affected_scenarios": 321,
+  "fully_closed_after_recovery": 16,
+  "only_propagated_change": "R61.8 V164 eight August days;others kept as originally bounded",
+  "source_files_preserved": true
+}

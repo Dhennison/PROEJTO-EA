@@ -1,3 +1,44 @@
+VARIANTE750/150 FECHADA APÓS RECUPERAÇÃO CEDRO —17/11/2026
+Usuário reenviou os16ZIPs originais prioritários. Todos hashes/tamanhos eCRC
+conferem com osrecebimentos anteriores. Preservados em
+/workspace/dados_brutos_modelo_d/cedro/. RESTAURACAO_FONTES.json contém
+os16IDs Sediment:seambiente substituído,recuperar automaticamente via
+ferramentadownload_file,não pedir novamente esses16arquivos ao usuário.
+Pasta deentrega:entregas/fechamento_variante_r61_750_150_20261117/.
+
+OITO OPERAÇÕESR61.8 AGOSTO2026
+04,05,13,18,19,21,25,31: todasSTOP-150. Soma-1200 contra+295original.
+39031316negócios doscontratos utilizados foram percorridos integralmente.
+40estados originais(5porpregão) iguais aos resultados congelados,incluindo
+ordinais/horários/pontos;80estadosC++conferidos porPython independente.
+Empatesms invertidos não alteram resultado;nenhuma barreiraoposta no mesmo ms.
+Não é certificação depreenchimento deordemreal.Sem custos/slippage.
+
+VARIANTE: R61.8 ALVO750/STOP150 + S61.8ORIGINAL;DEMAISOFF
+2024+6155(177operações);2025+6115(171);2026jan-out-4345(140).
+Total+7925,488operações,DDdiáriocontínuo7780,sem reinício mensal.
+Pico13235em02/01/2026,vale5455em10/09/2026. Nenhuma pendência na variante.
+DupIacomsaídas originaisR61.8+S61.8 permanece5890/DD5505;
+Dcompleto original3950/DD14805 permanece resultado principal.
+Variante melhoraagregado mas piora2026; nenhuma aprovação para operar.
+2024/25 usamM1+Replaypontual;S61originalCedroago-outpreservado;
+R61agosto reprocessado brutos;R61set/out determinado porM1auditoriaCedro.
+Não afirmar auditoriaintegraltickatick de todo operíodo.
+
+ATUALIZAÇÃO DOS RELATÓRIOS
+Planilha/PDF da variante incluem488operações,curvadiária,mensal eanual,
+oito saídas comtimestamps/ordinais,auditorias/fontes e16combinações do
+R61novo comoutrosníveis originaisON/OFF. Todas receitas diferentes mantêm
+suas próprias limitações. Não extrapolar16ZIPs recuperados para132disponíveis.
+Valores propagados para321cenários relacionados,16agora fechados;demais
+continuam comfaixas quando necessário. Comparaçãoanual foi atualizada;
+PDF/XLSX/CSVs anteriores preservados emhistorico_antes_cedro_recuperado/.
+Todos117hashes dasfontes fechadas anteriores permanecem iguais.
+Estudo amplo original écheckpoint anterior,substituído paraesta variante
+pelosnovos arquivos; não reutilizar afaixaantiga7830a19145 comoresultado atual.
+
+REGISTROS HISTÓRICOS PRESERVADOS ABAIXO
+
 COMPARAÇÃO ANUAL E CORREÇÃO SOBRE RECEBIMENTO CEDRO —17/11/2026
 Usuário pediu rankings esclarecidos e cenários porano, incluindo2026.
 Entrega em estudo_saidas_niveis_20261117/comparacao_anual/:PDF4páginas,
