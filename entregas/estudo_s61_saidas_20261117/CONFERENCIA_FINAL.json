@@ -1,0 +1,15 @@
+{
+  "scenarios": 88,
+  "operations_each": 233,
+  "total_operation_scenarios": 20504,
+  "source_CedroAugust_days": 21,
+  "baseline_original_points": 5065,
+  "baseline_original_DD": 4765,
+  "source_baseline_mismatches": 0,
+  "logical_proofs_checked": 3818,
+  "original_labels_independently_checked": 233,
+  "all_month_year_and_operation_sums_equal": true,
+  "primary_Replay_windows": 20,
+  "primary_Replay_dates": 20,
+  "raw_logs_not_requested_again": true
+}

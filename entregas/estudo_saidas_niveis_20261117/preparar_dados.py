@@ -57,6 +57,12 @@ with zipfile.ZipFile(E/'historico_work_modelo_d_20261105/replay_setembro_2026110
   def br(x):return int(D(x.replace('.','').replace(',','.')))
   extra[day].append((r[2][:5],*[br(v) for v in r[3:7]],br(r[8])))
  for day,rr in extra.items():bars[day]=rr;source[day]='PROFIT_M1'
+# August audit bars use M1_CONTRACT_DATE naming in extractor receipt folders.
+for fp in (E/'cedro_extrator_win_v1_00').rglob('retorno_agosto*/M1_WIN*.csv'):
+ rr=read(fp)
+ if not rr:continue
+ day=rr[0]['time'][:10].replace('.','-')
+ bars[day]=[(r['time'][11:],*[int(D(r[k])) for k in ['open','high','low','close']],int(D(r['soma_campo4']))) for r in rr];source[day]='CEDRO_AUDIT_M1'
 # Cedro audit bars override MT5, preserving its source distinction.
 for folder in ['setembro','outubro']:
  for p in (E/f'cedro_modelod_{folder}_2026').rglob('*_M1.csv'):
@@ -108,5 +114,5 @@ assert len(normal)==1485 and len({(r['date'],r['level']) for r in normal})==1485
 frozen=read(E/'resultado_niveis_202401_202610_20261117/OPERACOES_NORMALIZADAS.csv');assert sorted((r['date'],r['level'],int(D(r['points']))) for r in frozen)==sorted((r['date'],r['level'],r['original']) for r in normal)
 data=dict(days=days,bars=dict(bars),source=source,replay=replay,ops=normal,sources=sorted(set(sources)))
 (CACHE/'dados.pickle').write_bytes(pickle.dumps(data,protocol=4))
-(P/'ACERVO_UTILIZADO.json').write_text(json.dumps(dict(days=len(days),ops=len(normal),sources=sorted(set(sources)),full_replay_minutes=len(replay),bar_sources=dict(collections.Counter(source.values())),limitation='Cedro original ticks unavailable locally;August2026 proxyMT5 only,variant exits kept fully bounded rather than certified'),ensure_ascii=False,indent=2)+'\n')
+(P/'ACERVO_UTILIZADO.json').write_text(json.dumps(dict(days=len(days),ops=len(normal),sources=sorted(set(sources)),full_replay_minutes=len(replay),bar_sources=dict(collections.Counter(source.values())),limitation='Cedro audit M1 available AugustOctober;individual ticks used only where available;new ambiguous sequences remain pending'),ensure_ascii=False,indent=2)+'\n')
 print('DATA',len(days),len(normal),'REPLAY',len(replay),collections.Counter(source.values()),flush=True)

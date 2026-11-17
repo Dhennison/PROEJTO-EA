@@ -2,7 +2,7 @@ from pathlib import Path
 import ast
 p=Path(__file__).parent
 source=(p/'testar_cenarios.py').read_text();t=ast.parse(source);names={'evaluate','tick_choices','dist'}
-ns={'collections':__import__('collections'),'math':__import__('math'),'replay':{},'known_noquote':set()}
+ns={'data':{'source':{'2026-08-03':'MISSING_AUDIT'}},'collections':__import__('collections'),'math':__import__('math'),'replay':{},'known_noquote':set()}
 for f in t.body:
  if isinstance(f,ast.FunctionDef) and f.name in names:exec(compile(ast.Module(body=[f],type_ignores=[]),str(p/'testar_cenarios.py'),'exec'),ns)
 o=dict(date='2099-01-01',buy=True,entry=100,tp=115,sl=90,entry_minute='09:00')
@@ -17,3 +17,8 @@ a,b,_=ns['evaluate'](o,50,30);assert (a,b)==(-30,50),'Unexplained gap must keep 
 ns['bars']['2026-08-03']=[(540,100,200,50,120),(1080,104,104,104,104)]
 a,b,_=ns['evaluate'](o|{'date':'2026-08-03'},50,30);assert (a,b)==(-30,50)
 print('Motor: pre-entry high, Replay chronology, daily cut, unknown gap, absent CedroAugust source: OK')
+
+ns['data']['source']['2026-08-03']='CEDRO_AUDIT_M1'
+ns['bars']['2026-08-03']=[(540,100,110,99,105),(1080,104,104,104,104)]
+a,b,_=ns['evaluate'](o|{'date':'2026-08-03'},50,30);assert (a,b)==(4,4),'Saved Cedro audit source must not be discarded'
+print('Saved CedroAugust audit M1: used rather than unbounded proxy: OK')

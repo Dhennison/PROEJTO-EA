@@ -1,3 +1,55 @@
+ESTUDO S61.8 NOS TRÊS ANOS + CORREÇÃO DE ACERVO —17/11/2026
+Usuário pediu stop650/alvomaior,stopmenor/alvooriginal,stopmenor/alvomaior,
+explicitamente em2024/2025/2026. Entrega:entregas/estudo_s61_saidas_20261117/.
+88parametrizações nas233entradasS61.8,709pregões:original,5alvos maiores com
+stop650,7stops menores comalvooriginal,35combinações,20proporcionais,
+20proporcionais comteto650. 2024/25completos;2026janeiro-outubro apenas.
+Alvo1x é S50original;Nx éentrada+Nvezes a distância original atéS50.
+Alvos1,25/1,5/2/3/4x;stops500/375/325/250/200/150/100,grade5.
+
+CORREÇÃO MATERIAL:OS21ARQUIVOS DE AUDITORIA M1 CEDRO DEAGOSTO EXISTIAM
+emcedro_extrator_win_v1_00/retorno_agosto_lote*/M1_CONTRATO_DATA.csv.
+A busca anterior pelo padrãoDATA_M1.csv e naspastascedro_modelod não os
+localizou. Afirmar queM1auditadoagosto não estava disponível foi errado.
+Osbrutos foram efetivamente reenviados e fecharamR61750/150,mas os21M1
+salvos agora devem ser usados antes de pedir novos brutos ou ampliar limites.
+Scripts da triagemampla corrigidos para leressesM1 e não reutilizarcache de
+fontes diferentes. Os resultados anteriores comfaixas amplas eramcheckpoints;
+não alterados osresultados fechados originais.O estudoS61usaagostoauditado.
+
+RESULTADOS S61ISOLADO
+Original:2024+1510/2025+4790/2026-1235,total5065,DD4765.
+Stop650 alvo4x:2024-2235/2025+2310/2026+3620,total3695,DD9865,fechado.
+Nenhumdos5alvosmaiores comstop650 supera original nem emtotal superior;
+nenhumdos35stopmenor/alvomaior supera5065nemnolimite superior.
+Stop100 alvooriginal:S61_42:total2075a7300,DD785a1370,20operaçõespendentes.
+Anos2024:-210a1755;2025:2040a3495;2026:245a2050.
+Stop100 alvo1,5x:S61_44:2024-2500a-1220/20251490a2220/2026785a2290;
+total-225a3290,10pendentes. Não escolher ramo favorável como lucrorealizado.
+Proporcional1,5xalvooriginal semteto:S61_60,14pendentes;stops25a1165,
+mediana265,18entradas comstop>650.Não classificar tudo como redução destop.
+Há versão comteto650S61_80,cujo risco/resultado édiferente efoi mostrado.
+
+COMBINAÇÕES COMR61DEVEM TER REGRA EXPLÍCITA
+R61original+S61stop100/alvooriginal:total2900a8125,DD1675a2825,488ops,
+20pendentes;anos2024:960a2925/2025:1575a3030/2026:365a2170,brutos.
+R61novo750/150+S61stop100:2026-2865a-1060,não confundircomR61original.
+R61novo750/150+S61stop650/alvo4x:anos2410/3635/510,total6555,DD9080,
+fechado,masnovamente oDD éalto e2026+510não cobre custo5pontosx140ops.
+
+PROVAS E ENTREGAS
+88x233operações,264linhasanuais,34mesesporreceita,264combinações S61isolado
+/comR61original/comR61novo.3818provasmonotônicas conferidas contra rótulos
+originaisSL/TP/CORTE,sem inferir rótulo só porpontos. Somas poroperação/mês/ano
+reconciliadas. BaselineS61reproduzido;117hashesoriginais mantidos.
+PDF16páginas eXLSXcomtodos88. Replayprioritário:S61stop100,20datas/janelas
+novas,listadasemCSVcomcontrato/horário; não éfalta deenvio doslogs anteriores.
+Custos5/10pontos poroperação são sensibilidades;sem certificação defills.
+Nenhum parâmetro aprovado;Dprincipal3950/DD14805 eS61original5065/DD4765
+preservados. Semreabrircontrole10/07/2026dispensado e semcomprarhistórico.
+
+REGISTROS HISTÓRICOS PRESERVADOS ABAIXO
+
 VARIANTE750/150 FECHADA APÓS RECUPERAÇÃO CEDRO —17/11/2026
 Usuário reenviou os16ZIPs originais prioritários. Todos hashes/tamanhos eCRC
 conferem com osrecebimentos anteriores. Preservados em

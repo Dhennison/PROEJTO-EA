@@ -51,7 +51,7 @@ def evaluate(o,td,sd,use_replay=True):
  cut=next((sign*b[1]-e for b in bs if b[0]>=1080),None)
  if cut is None:return -sd,td,[('18:00','CUT_MISSING')]
  # New August exits cannot be certified from missing Cedro raw/minute data.
- if o['date'].startswith('2026-08'):return min(-sd,cut),max(td,cut),[('ALL','CEDRO_RAW_AND_AUDIT_M1_MISSING')]
+ if o['date'].startswith('2026-08') and not data['source'][o['date']].startswith('CEDRO_AUDIT'):return min(-sd,cut),max(td,cut),[('ALL','CEDRO_RAW_AND_AUDIT_M1_MISSING')]
  entrybar=next((b for b in bs if b[0]==start),None)
  if entrybar is None or (entrybar[3]>o['entry'] if sign==1 else entrybar[2]<o['entry']):return min(-sd,cut),max(td,cut),[(o['entry_minute'],'ENTRY_SOURCE_MISMATCH')]
  ends=[];active=True;pending=[];last=start
@@ -94,6 +94,7 @@ def write(name,rs):
 write('CONFERENCIA_BASELINE_FONTES.csv',baseline)
 lo=np.zeros((len(cfg),nd,5));hi=np.zeros_like(lo);uncertain=np.zeros_like(lo,dtype=int);trade_bounds=[];windows=collections.defaultdict(set)
 resume=pickle.loads((CACHE/'resultados.pickle').read_bytes()) if (CACHE/'resultados.pickle').exists() else None
+if resume and (resume['data']['source']!=data['source'] or resume['data']['bars']!=data['bars'] or resume['data']['replay']!=data['replay']):resume=None
 completed=len(resume['cfg']) if resume else 0
 if completed:
  assert completed<=len(cfg) and all(a==b for a,b in zip(resume['cfg'],cfg))

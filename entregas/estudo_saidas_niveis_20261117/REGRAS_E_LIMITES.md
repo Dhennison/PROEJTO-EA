@@ -1,3 +1,5 @@
+**Correção posterior:** existem21arquivosM1Cedroagosto salvos no projeto, localizados no estudoS61. A afirmação de ausência deM1agosto no checkpoint abaixo é histórica e incorreta; as novas execuções devem ler `retorno_agosto_lote*/M1_CONTRATO_DATA.csv`. Brutos individuais são outra fonte e só são necessários quando a sequência puder alterar o resultado.
+
 # Regras do estudo de saídas e exclusões
 
 Estudo exploratório de janeiro/2024 a outubro/2026. O Modelo D original e seus resultados fechados permanecem a referência principal. Não há modelo aprovado para operar nesta entrega.

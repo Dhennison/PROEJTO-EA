@@ -1,0 +1,21 @@
+{
+  "period": "2024Jan-2026Oct",
+  "operations": 233,
+  "days": 709,
+  "scenarios": 88,
+  "families": {
+    "ORIGINAL": 1,
+    "1_STOP650_ALVO_MAIOR": 5,
+    "2_STOP_MENOR_ALVO_ORIGINAL": 7,
+    "3_STOP_MENOR_ALVO_MAIOR": 35,
+    "EXTRA_STOP_PROPORCIONAL_NOVO_ALVO": 20,
+    "EXTRA_STOP_PROPORCIONAL_TETO650": 20
+  },
+  "saved_Cedro_August_audit_days_found": 21,
+  "correction": "Previous claim of no saved CedroAugustM1 was wrong;files located under cedro_extrator.../retorno_agosto_lote*/M1_CONTRACT_DATE.csv",
+  "original_points": 5065.0,
+  "original_DD": 4765.0,
+  "source_baseline_mismatches": 0,
+  "monotonic_proofs": 3818,
+  "new_source_original_not_changed": true
+}
