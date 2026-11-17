@@ -1,3 +1,19 @@
+PDF POR NÍVEL AMPLIADO PARA2024–2026 —17/11/2026
+Usuário solicitou ampliar o mesmo formato do PDF por nível incluindo2024,
+sem comparação comWork. Novoarquivo:
+entregas/resultado_niveis_202401_202610_20261117/Modelo_D_Resultados_por_Nivel_Jan2024_Out2026.pdf
+34páginas/34meses,1485operações,709pregões. Cada nível tem quantidade,
+pontos,DD no mês eDD contínuo desdejaneiro2024. DD total calculado na curva
+conjunta,não somado dosníveis. FonteM1+Replay atéjul2026;Cedroago–out2026.
+Todas as955operações antigas e suas quantidades/pontos/DDmensal pornível
+conferidos iguais ao relatório anterior. DDacumulado agora usa basejan2024;
+não comparar diretamente com a coluna deescopojan2025 doPDFantigo.
+Curva total reconciliada dia a dia com extensãofechada2024–out2026.
+PDF anterior preservado;nenhumresultado fechado ouparâmetro alterado.
+CSVsmensais/diários/operações e manifestocomfontes acompanhamnovoPDF.
+
+REGISTROS HISTÓRICOS PRESERVADOS ABAIXO
+
 FECHAMENTO2024 APÓS RECEBIMENTO DA RELEASE —17/11/2026
 Arquivo efetivamente recebido:Janeiro.a.Dezembro.2024.xlsx,38318901bytes,
 SHA2567124866bdfc2a605ba5fd5d1a2edfba99761188e620997df81b84a595eea38b2.

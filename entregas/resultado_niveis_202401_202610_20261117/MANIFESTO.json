@@ -1,0 +1,255 @@
+{
+  "period": "2024-01 a 2026-10",
+  "levels": [
+    "R38.2",
+    "R61.8",
+    "S38.2",
+    "S50",
+    "S61.8"
+  ],
+  "months": 34,
+  "operations": 1485,
+  "monthly_totals": [
+    -1555,
+    120,
+    1795,
+    -2695,
+    690,
+    -80,
+    1230,
+    -220,
+    3075,
+    -1435,
+    -905,
+    -2975,
+    -2405,
+    -1180,
+    -970,
+    865,
+    -2915,
+    895,
+    2740,
+    -460,
+    -385,
+    -1055,
+    -300,
+    3135,
+    -1620,
+    -3545,
+    350,
+    5720,
+    -780,
+    3405,
+    1100,
+    -2375,
+    2855,
+    3830
+  ],
+  "source_files": [
+    {
+      "path": "entregas/validacao_replay_2024_20261117/OPERACOES_FINAIS_2024.csv",
+      "sha256": "552f43ba01da4f4658acbdec54a3863347dbadf2ed6f16b0198dc2b6a120fa3e"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/DIARIO_FINAL_2024.csv",
+      "sha256": "c8d3d1ffa2b19ba9e8bad3b8cff100be537c9da3dc3c4582ef624916c1cb8484"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/01_Janeiro/OPERACOES_FINAIS.csv",
+      "sha256": "d115849d8490f612a165de7928e7018676f32c245fbc2deb75acab557188ba63"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/01_Janeiro/DIARIO_APOS_REPLAY.csv",
+      "sha256": "2784ae466a3b272c464c211ddd8b5a0167a8b37becef549ac14bcca9787c787f"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/02_Fevereiro/OPERACOES_FINAIS.csv",
+      "sha256": "bef898ceb73341872f39cfe91e905578978667ff3db7365aa5def746cbd9c6b8"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/02_Fevereiro/DIARIO_APOS_REPLAY.csv",
+      "sha256": "7d6babcfb9eca1048d69be8ba3fd5522d74934b9a36585194bef098759311a86"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/03_Março/OPERACOES_FINAIS.csv",
+      "sha256": "e302af1daf73809c8d081fc435f7c74cbe4c2996193899028706d1d749f169c5"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/03_Março/DIARIO_APOS_REPLAY.csv",
+      "sha256": "cd24ecc9c8fd275b0adb9961d2bc341cf6f600caa37167b6198fb5d092ed96eb"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/04_Abril/OPERACOES_FINAIS.csv",
+      "sha256": "626d6cbba2b2c4b8caa0127f4a907f4a62a300c1d4fcb69c0d5beefc76450b2c"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/04_Abril/DIARIO_APOS_REPLAY.csv",
+      "sha256": "2ac83095b262934199d94be04fc1a773b0c37fb5a94e15f4764c565a1d7259a3"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/05_Maio/OPERACOES_FINAIS.csv",
+      "sha256": "590348febcbd0dd38a928a596be70d172aaa34a6c4122a92930548fab7979784"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/05_Maio/DIARIO_APOS_REPLAY.csv",
+      "sha256": "416913e0bf36c7a6c042c4b868023300356ed9a3733218b7e515ba1cdee5ee66"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/06_Junho/OPERACOES_FINAIS.csv",
+      "sha256": "a3c03afcabc2be4be9d3744b82358f6097cee88185ba02d0072df059d5fa67fe"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/06_Junho/DIARIO_APOS_REPLAY.csv",
+      "sha256": "3ac1f474f26c9e5d262021d887aac28db360fcfc742352e13abc10a6e36f6fac"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/07_Julho/OPERACOES_FINAIS.csv",
+      "sha256": "aee451b1486ea0ae69528004f1dbcc4d3a3dd65188c59439fbfa2845492d8008"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/07_Julho/DIARIO_APOS_REPLAY.csv",
+      "sha256": "65f5c179407167c5b116b5b08234edf00989d3364f89f4b4d69aaf2e19544ff4"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/08_Agosto/OPERACOES_FINAIS.csv",
+      "sha256": "618f23610cf232973d7d48f70b9e3679c3714fac9f89d2c474c5d08cedb55648"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/08_Agosto/DIARIO_APOS_REPLAY.csv",
+      "sha256": "e3b05c87c453006225a7f8e5d1b9977a0c9042d8a607ff8ad741fb8b49c844ff"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/09_Setembro/OPERACOES_FINAIS.csv",
+      "sha256": "dcd23ee86f3e495dab7c3edc665210d39457c8ca0d621472fcf4b1468d0beae0"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/09_Setembro/DIARIO_APOS_REPLAY.csv",
+      "sha256": "53103211bcfc9194b823ec882da1c948c84d85e9669779fb0f43a26c858220ff"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/10_Outubro/OPERACOES_FINAIS.csv",
+      "sha256": "097fae1d12a8ec0437c6092d01228b55c907f1151cf2d2e2899ebc9d606215ef"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/10_Outubro/DIARIO_APOS_REPLAY.csv",
+      "sha256": "e992ca30bfa964bcdba35e20a1dc4ea00c1c05094b5e97eccafa601a428b549f"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/11_Novembro/OPERACOES_FINAIS.csv",
+      "sha256": "5901eb03069307c4f89127a46d87af9d43f8ca80b27e6b22dd0cc7d07a000597"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/11_Novembro/DIARIO_APOS_REPLAY.csv",
+      "sha256": "02798cf32170009d33c142ef6e1c1456f5c7566e0b3ce74438bce2ffbdf68876"
+    },
+    {
+      "path": "entregas/profit_dezembro_2025_20261115/OPERACOES_FINAIS.csv",
+      "sha256": "d85e3764214cfc7d0738f5b0f90e47ab9e088ed39d561b6408ff40eddcbceb08"
+    },
+    {
+      "path": "entregas/profit_dezembro_2025_20261115/DIARIO_APOS_JANELAS.csv",
+      "sha256": "66f20781c81669547ef4699b03da816459d2dc042e402e7c9c0891036f7c20e2"
+    },
+    {
+      "path": "entregas/profit_janeiro_20261115/OPERACOES_FINAIS.csv",
+      "sha256": "8df9618a5c2212a1b448326094dc389ba3cc23bdc484eca9115bc3e5fc8df0ae"
+    },
+    {
+      "path": "entregas/profit_janeiro_20261115/DIARIO_APOS_JANELAS.csv",
+      "sha256": "cd245a22c47e91c335d7a8d3f219e0b76b176aa940cdd2e4990fb2fec39f4404"
+    },
+    {
+      "path": "entregas/profit_fevereiro_20261114/OPERACOES_FINAIS.csv",
+      "sha256": "4dbb048358f6eff141a12b9c7ed3a29dcf16eb66169a899554692e1ac10ec3f9"
+    },
+    {
+      "path": "entregas/profit_fevereiro_20261114/DIARIO_APOS_JANELAS.csv",
+      "sha256": "623054cb8f3985a61789007edf69d292365c2fa54fd2c717d3edf0b8f6732d83"
+    },
+    {
+      "path": "entregas/profit_marco_20261113/OPERACOES_FINAIS.csv",
+      "sha256": "c1b7598205d990c2954fa9539a0b118f5c8c3b19dc3be0f736c31df73f3dbef2"
+    },
+    {
+      "path": "entregas/profit_marco_20261113/DIARIO_APOS_JANELAS.csv",
+      "sha256": "c861fda8adecbdc859425ae411209d5a612a133eef83ac9c3d60738bfdc37a06"
+    },
+    {
+      "path": "entregas/profit_abril_20261113/OPERACOES_FINAIS.csv",
+      "sha256": "417cb64e78bdd88b74ffe8d3103daecce6327feda5d32b01ef04d90afa83206c"
+    },
+    {
+      "path": "entregas/profit_abril_20261113/DIARIO_APOS_JANELAS.csv",
+      "sha256": "630606dbc841f0ea31ac81ef41c521e158be9f52e1bbb100e6b60f970971f5d8"
+    },
+    {
+      "path": "entregas/profit_maio_20261113/OPERACOES_FINAIS.csv",
+      "sha256": "374dff4fa74d0466618d704249e1d35eeeccd4e56ca1f63341ad81fcd674947f"
+    },
+    {
+      "path": "entregas/profit_maio_20261113/DIARIO_APOS_JANELAS.csv",
+      "sha256": "5d6a590bce65afa2f50e45737215bfcd5c25d9f60020e3f5c2ee4268da290986"
+    },
+    {
+      "path": "entregas/profit_junho_20261113/OPERACOES_FINAIS.csv",
+      "sha256": "27f8126e896a6322bab1360c7e7b8eeaef3dac43b22451bf06e5e16d221c3241"
+    },
+    {
+      "path": "entregas/profit_junho_20261113/DIARIO_APOS_JANELAS.csv",
+      "sha256": "2be80226fb49968c71e1b9cde291068210d4c6c2185488799bba315b1be7a80c"
+    },
+    {
+      "path": "entregas/profit_winq26_julho_20261113/REPLAY_OPERACOES_RESOLVIDAS.csv",
+      "sha256": "211ef6549027fdcc5f04edbe415e397974fd08de701c13fbf36276c5d3c54bd4"
+    },
+    {
+      "path": "entregas/profit_winq26_julho_20261113/OPERACOES_POSSIBILIDADES.csv",
+      "sha256": "7f33528f4223162bc1ae7ec837acddb31fd733af0ef82f50933c4ccf2da3c2bd"
+    },
+    {
+      "path": "entregas/profit_winq26_julho_20261113/DIARIO_APOS_JANELAS.csv",
+      "sha256": "2d2ae77c188eb930c291ffbbbb48896450e332505b03000ef058ade0f2200bb1"
+    },
+    {
+      "path": "entregas/cedro_modelod_agosto_2026/resultado/TODOS_NIVEIS.csv",
+      "sha256": "2d684747b37c014692f903118ece66e3b5913a6f7d25d9018070ec7d2f60fad6"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/resultado/TODOS_NIVEIS.csv",
+      "sha256": "cff6a2418d98e167b6ea2e546d4ed8334c984f1ec122d9822d95d04528a463b0"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/resultado_mensal/TODOS_NIVEIS.csv",
+      "sha256": "0c99eb1511df97525666fca98a76fe2a405bf9a278bd864253cf45674eafb6bf"
+    },
+    {
+      "path": "entregas/compilado_cedro_modelod/CURVA_MODELO_D_MESES_COMPLETOS.csv",
+      "sha256": "3849f6d65d6e4d6f8b5362a15d203928a54c0dd9b36a8a1c632fabef5ada4349"
+    },
+    {
+      "path": "entregas/resultado_niveis_202501_202610_20261116/RESULTADO_MENSAL_POR_NIVEL.csv",
+      "sha256": "de214b4e4de42073c920bb5313ca604cf7b3094edb140c82695722a301287ee6"
+    },
+    {
+      "path": "entregas/resultado_niveis_202501_202610_20261116/OPERACOES_NORMALIZADAS.csv",
+      "sha256": "d8e4b3c4d15ac061cbc3ef55fbfc4639508571744bc4cdba30879a1f0772ec47"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/CURVA_EXTENSAO_2024_01_2026_10.csv",
+      "sha256": "b6bb0fa644b37c30542bfecdf7aa67100e5b8c8be8419901a75f973f8e64494d"
+    }
+  ],
+  "method": "Aggregate closed operations; DD daily by level; monthly and continuous since Jan2024; mixed source transition explicitly marked",
+  "checks": [
+    "Unique date-level",
+    "Every daily total equals closed source",
+    "34 monthly totals equal frozen results",
+    "No R50",
+    "No re-simulation"
+  ],
+  "original_files_unchanged": true,
+  "previous_monthly_results_counts_and_monthly_DD_preserved": true,
+  "previous_operations_preserved": true,
+  "continuous_total_reconciled_to_closed_709_day_curve": true,
+  "previous_pdf_preserved": true
+}
