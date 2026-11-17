@@ -1,3 +1,21 @@
+ATUALIZAÇÃO — AJUSTES RECEBIDOS EM 17/11/2026
+02/01/2024:135790;03/01:134206;04/01:134398;05/01:132609.
+Fonte: mensagem do usuário; não confirmados em boletim independente.
+Os quatro dias têm M1 completo, sem lacunas internas. Contexto de02/01:
+28/12/2023 M1 completo. M5 independente ausente02–04 e parcial05/01.
+Nove operações adicionais determinadas em M1, sem novo pedido de Replay:
+02/01 -245;03/01 +280;04/01 -1400;05/01 -295 pontos condicionais.
+Lista permanece32datas/33intervalos/35minutos,mais margens de captura.
+Base mais complemento:251pregões/530operações;492determinadas sem pendência
+de sequência/cobertura/grade. Janeiro passa de43para52operações conhecidas.
+A preparação-base anterior é preservada; seus arquivos, PDF e planilha registram
+247pregões/521operações antes deste complemento. Dados completos novos em
+complemento_ajustes_02a05jan/. Não há ajustes pendentes nesses quatro dias.
+Nenhum mês2024 foi fechado nesta etapa; meses fechados2025/2026 intactos.
+Disponibilidade dos contratos no Profit não verificada; validar seus preços.
+
+REGISTROS HISTÓRICOS ANTERIORES
+
 CONFERÊNCIA DE 2024 REABERTA PELO USUÁRIO — 17/11/2026
 Antes de variantes de stop/alvo, usuário solicitou conferência completa de 2024.
 Isso substitui a decisão anterior de encerrar a expansão para 2024; 2023 não foi reaberto.

@@ -1,3 +1,5 @@
+**Atualização: os quatro ajustes de janeiro foram recebidos e analisados.** São nove operações adicionais, todas determinadas pelo M1. A lista de Replay permanece a mesma. Totais atualizados: 251 pregões, 530 operações, 492 determinadas sem pendência de sequência/cobertura/grade. Os números e a pendência de ajustes descritos na preparação-base abaixo são históricos; consulte `complemento_ajustes_02a05jan/LEIA_COMPLEMENTO.txt`.
+
 # Conferência de 2024 — preparação do Replay
 
 247 pregões preparados e 521 operações conhecidas. 483 operações determinadas pelos candles sem pendência de sequência, cobertura ou controle de grade. Permanecem 25 operações com dúvida de sequência, dez controles de grade e duas lacunas de cobertura que afetam posições. As categorias podem compartilhar operações/datas.
