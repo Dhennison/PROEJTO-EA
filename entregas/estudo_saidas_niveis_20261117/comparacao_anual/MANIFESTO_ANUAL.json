@@ -1,0 +1,15 @@
+{
+  "years": [
+    "2024",
+    "2025",
+    "2026JanOct"
+  ],
+  "scenarios": 1485,
+  "annual_rows": 4455,
+  "cedro_parts_previously_received_hash_proofs": 132,
+  "raw_parts_listed": 132,
+  "current_session_available_parts": 0,
+  "original_2026_includes_full_Cedro_AugOct": true,
+  "changed_exits_2026_candidate_still_bounded": true,
+  "previous_user_delivery_not_in_question": true
+}

@@ -1,0 +1,22 @@
+﻿label;scenario;year;scope;configuration;points_lower;points_upper;DD_year_lower;DD_year_upper;operations;unresolved_operations;status;points_cost5_lower;points_cost5_upper;points_cost10_lower;points_cost10_upper
+D completo original;D_ORIGINAL;2024;Janeiro a Dezembro;"{""id"": ""D_ORIGINAL"", ""mode"": ""ORIGINAL"", ""tp_multiplier"": 1, ""stop_parameter"": 1}";-2955.0;-2955.0;5560.0;5560.0;530;0;DETERMINADO_SOB_METODOLOGIA;-5605.0;-5605.0;-8255.0;-8255.0
+R38,2 + R61,8 + S61,8 originais;EXC_19;2024;Janeiro a Dezembro;"R38.2|R61.8|S61.8;saídas originais";4610.0;4610.0;2915.0;2915.0;292;0;DETERMINADO_SOB_METODOLOGIA;3150.0;3150.0;1690.0;1690.0
+R61,8 + S61,8 originais;EXC_18;2024;Janeiro a Dezembro;"R61.8|S61.8;saídas originais";2680.0;2680.0;2055.0;2055.0;177;0;DETERMINADO_SOB_METODOLOGIA;1795.0;1795.0;910.0;910.0
+R61,8 + S50 + S61,8 originais;EXC_26;2024;Janeiro a Dezembro;"R61.8|S50|S61.8;saídas originais";140.0;140.0;3620.0;3620.0;287;0;DETERMINADO_SOB_METODOLOGIA;-1295.0;-1295.0;-2730.0;-2730.0
+Somente S61,8 original;EXC_16;2024;Janeiro a Dezembro;"S61.8;saídas originais";1510.0;1510.0;2040.0;2040.0;90;0;DETERMINADO_SOB_METODOLOGIA;1060.0;1060.0;610.0;610.0
+Somente R61,8 original;EXC_02;2024;Janeiro a Dezembro;"R61.8;saídas originais";1170.0;1170.0;1650.0;1650.0;87;0;DETERMINADO_SOB_METODOLOGIA;735.0;735.0;300.0;300.0
+R61,8 alvo750/stop150 + S61,8 original;MIX_0161;2024;Janeiro a Dezembro;R38.2:OFF|R61.8:V164|S38.2:OFF|S50:OFF|S61.8:D_ORIGINAL;6155.0;6155.0;2375.0;2375.0;177;0;DETERMINADO_SOB_METODOLOGIA;5270.0;5270.0;4385.0;4385.0
+D completo original;D_ORIGINAL;2025;Janeiro a Dezembro;"{""id"": ""D_ORIGINAL"", ""mode"": ""ORIGINAL"", ""tp_multiplier"": 1, ""stop_parameter"": 1}";-2035.0;-2035.0;7010.0;7010.0;518;0;DETERMINADO_SOB_METODOLOGIA;-4625.0;-4625.0;-7215.0;-7215.0
+R38,2 + R61,8 + S61,8 originais;EXC_19;2025;Janeiro a Dezembro;"R38.2|R61.8|S61.8;saídas originais";-875.0;-875.0;5615.0;5615.0;304;0;DETERMINADO_SOB_METODOLOGIA;-2395.0;-2395.0;-3915.0;-3915.0
+R61,8 + S61,8 originais;EXC_18;2025;Janeiro a Dezembro;"R61.8|S61.8;saídas originais";4325.0;4325.0;2060.0;2060.0;171;0;DETERMINADO_SOB_METODOLOGIA;3470.0;3470.0;2615.0;2615.0
+R61,8 + S50 + S61,8 originais;EXC_26;2025;Janeiro a Dezembro;"R61.8|S50|S61.8;saídas originais";3600.0;3600.0;3220.0;3220.0;268;0;DETERMINADO_SOB_METODOLOGIA;2260.0;2260.0;920.0;920.0
+Somente S61,8 original;EXC_16;2025;Janeiro a Dezembro;"S61.8;saídas originais";4790.0;4790.0;1785.0;1785.0;76;0;DETERMINADO_SOB_METODOLOGIA;4410.0;4410.0;4030.0;4030.0
+Somente R61,8 original;EXC_02;2025;Janeiro a Dezembro;"R61.8;saídas originais";-465.0;-465.0;2545.0;2545.0;95;0;DETERMINADO_SOB_METODOLOGIA;-940.0;-940.0;-1415.0;-1415.0
+R61,8 alvo750/stop150 + S61,8 original;MIX_0161;2025;Janeiro a Dezembro;R38.2:OFF|R61.8:V164|S38.2:OFF|S50:OFF|S61.8:D_ORIGINAL;6115.0;6115.0;2235.0;2235.0;171;0;DETERMINADO_SOB_METODOLOGIA;5260.0;5260.0;4405.0;4405.0
+D completo original;D_ORIGINAL;2026;Janeiro a Outubro;"{""id"": ""D_ORIGINAL"", ""mode"": ""ORIGINAL"", ""tp_multiplier"": 1, ""stop_parameter"": 1}";8940.0;8940.0;9365.0;9365.0;437;0;DETERMINADO_SOB_METODOLOGIA;6755.0;6755.0;4570.0;4570.0
+R38,2 + R61,8 + S61,8 originais;EXC_19;2026;Janeiro a Outubro;"R38.2|R61.8|S61.8;saídas originais";2320.0;2320.0;9745.0;9745.0;245;0;DETERMINADO_SOB_METODOLOGIA;1095.0;1095.0;-130.0;-130.0
+R61,8 + S61,8 originais;EXC_18;2026;Janeiro a Outubro;"R61.8|S61.8;saídas originais";-1115.0;-1115.0;5505.0;5505.0;140;0;DETERMINADO_SOB_METODOLOGIA;-1815.0;-1815.0;-2515.0;-2515.0
+R61,8 + S50 + S61,8 originais;EXC_26;2026;Janeiro a Outubro;"R61.8|S50|S61.8;saídas originais";2010.0;2010.0;5070.0;5070.0;231;0;DETERMINADO_SOB_METODOLOGIA;855.0;855.0;-300.0;-300.0
+Somente S61,8 original;EXC_16;2026;Janeiro a Outubro;"S61.8;saídas originais";-1235.0;-1235.0;4765.0;4765.0;67;0;DETERMINADO_SOB_METODOLOGIA;-1570.0;-1570.0;-1905.0;-1905.0
+Somente R61,8 original;EXC_02;2026;Janeiro a Outubro;"R61.8;saídas originais";120.0;120.0;2090.0;2090.0;73;0;DETERMINADO_SOB_METODOLOGIA;-245.0;-245.0;-610.0;-610.0
+R61,8 alvo750/stop150 + S61,8 original;MIX_0161;2026;Janeiro a Outubro;R38.2:OFF|R61.8:V164|S38.2:OFF|S50:OFF|S61.8:D_ORIGINAL;-4440.0;6875.0;6920.0;7875.0;140;8;FAIXA_NAO_FECHADA;-5140.0;6175.0;-5840.0;5475.0

@@ -1,3 +1,33 @@
+COMPARAÇÃO ANUAL E CORREÇÃO SOBRE RECEBIMENTO CEDRO —17/11/2026
+Usuário pediu rankings esclarecidos e cenários porano, incluindo2026.
+Entrega em estudo_saidas_niveis_20261117/comparacao_anual/:PDF4páginas,
+planilha com abas2024/2025/2026jan-out eCSV4455linhas(1485cenários x3anos).
+Pontosbrutos,DD isoladodoano,operações,pendências e custos hipotéticos.
+DD anual adicional não substitui DDcontínuo global.
+
+CEDRO FOI ENVIADO:132partes têm comprovantes de recebimento comhash
+correspondente a ARQUIVOS.csv. RASTREAMENTO_RECEBIMENTO_CEDRO.csv lista
+cada prova. Não insinuar falta de envio do usuário. Brutos não encontrados
+na sessão atual,anexos/downloadspresentes,históricoGit ouReleaseconsultada;
+aqui estão resultados,manifestos,auditorias eM1set/out, não132ZIPs originais.
+Não certificar novas saídas comtotais agregados; não pedir reenvio em massa.
+Originais2026 já incluíam Cedroagosto-2375,setembro+2855,outubro+3830;
+2026jan-outDoriginal+8940.Candidata750/150continua comfaixa em2026.
+
+ANUAIS2024/2025/2026JAN-OUT
+Doriginal:-2955/-2035/+8940.
+R38.2+R61.8+S61.8 originais:+4610/-875/+2320(total6055,maior bruto exato).
+R61.8+S61.8 originais:+2680/+4325/-1115(total5890,melhorpontos/DDpositivo).
+R61.8+S50+S61.8 originais:+140/+3600/+2010(total5750).
+S61.8original:+1510/+4790/-1235(total5065).
+R61.8original:+1170/-465/+120(total825,menorDD entreexclusões positivas).
+R61.8alvo750/stop150+S61.8original:+6155/+6115/FAIXA-4440a+6875.
+Rankings dependem decritério; destaques não são vencedoresuniversais.
+175receitas/1279mistos são grade finita,não todosparâmetros possíveis.
+Preservados resultados e arquivos anteriores; nenhuma variante promovida.
+
+REGISTROS HISTÓRICOS PRESERVADOS ABAIXO
+
 ESTUDO EXPLORATÓRIO DE SAÍDAS E EXCLUSÕES —17/11/2026
 Usuário autorizou diferentes stops/alvos por nível, alvos maiores, stop proporcional
  ao alvo e exclusões. Entrega:entregas/estudo_saidas_niveis_20261117/.

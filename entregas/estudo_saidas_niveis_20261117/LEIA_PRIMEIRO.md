@@ -1,3 +1,5 @@
+**Complemento anual:** consulte `comparacao_anual/` para os cenários separados em2024,2025e2026jan-out. Confirmados comprovantes dehash das132partesCedro recebidas anteriormente. Elas não estão acessíveis comoZIPsbrutos no ambiente atual; isso não significa que o usuário não enviou. OriginaisCedro já estão incluídos em2026; novas saídas pendentes não podem ser fechadas por totais agregados.
+
 # Estudo de saídas e exclusões — janeiro2024 a outubro2026
 
 Leia primeiro Estudo_Stop_Alvo_Exclusoes_2024_2026.pdf. Planilha Estudo_Stop_Alvo_Exclusoes_2024_2026.xlsx reúne as175 receitas,875 testes por nível,31 exclusões exatas,1279 combinações mistas e34meses de cada cenário.
