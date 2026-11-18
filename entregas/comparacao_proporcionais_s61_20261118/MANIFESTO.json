@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-18",
+  "ranking_metric": "TOTAL_LOWER_DIVIDED_BY_DD_UPPER",
+  "earlier_ranking_had_different_priority": true,
+  "requested_options": 10,
+  "distinct_options": 8,
+  "duplicate_pairs": [
+    [
+      "S61_48",
+      "S61_68"
+    ],
+    [
+      "S61_52",
+      "S61_72"
+    ]
+  ],
+  "comparison_count": 5,
+  "stop100_not_manually_positioned": true,
+  "all_curves_scores_totals_and_DD_recomputed": true,
+  "main_ranking_gross": true,
+  "costs_hypothetical": true,
+  "original_results_unchanged": true,
+  "sources": [
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/RESULTADO_S61_CENARIOS.csv",
+      "sha256": "5749f910bc08dd3e42fd3328cd854b1a42c9641a4785c075b7f20352517d5795"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/PARAMETROS_CENARIOS.csv",
+      "sha256": "d05c73f97e7496537be9fcf27728d879a453c967bbf40604988f0c65a2cf699c"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/LIMITES_POR_OPERACAO.csv",
+      "sha256": "2698660568092035c89e503826e0bd31be614c807aca3c928fec72d65b64a65c"
+    },
+    {
+      "path": "entregas/resultado_niveis_202401_202610_20261117/CURVAS_DIARIAS_POR_NIVEL.csv",
+      "sha256": "523c9ad24c3f34c804afa5350b04f72ee48743041202c32f51730a54c4396d6b"
+    },
+    {
+      "path": "entregas/ranking_cenarios_20261118/RANKING_10_MAIS_PENDENTE.csv",
+      "sha256": "a1aee3036afd0a82306cf61bfc89c831ff8b49a4ac005b30280fe6e7884fdecd"
+    },
+    {
+      "path": "entregas/ranking_cenarios_20261118/CURVAS_DIARIAS_10_CENARIOS.csv",
+      "sha256": "0edd41d65ae19bec3df7f491747dc691e48effd17391b336a6b8c6e58261f533"
+    },
+    {
+      "path": "entregas/resultado_niveis_202401_202610_20261117/OPERACOES_NORMALIZADAS.csv",
+      "sha256": "4d42c76932920cfe78d183be0e90130bc7f3fe5573beda190247dabc109e9f8e"
+    },
+    {
+      "path": "entregas/comparacao_proporcionais_s61_20261118/CONFRONTO_CRITERIO_ANUAL_ANTERIOR.csv",
+      "sha256": "9f2347b93c0f82518a6745ead3b59acca97aabf656af252a9f00c905f6ce6ac1"
+    }
+  ]
+}

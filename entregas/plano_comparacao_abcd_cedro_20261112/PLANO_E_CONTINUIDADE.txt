@@ -1,3 +1,37 @@
+CONFRONTO PROPORCIONAIS S61 E STOP100 —18/11/2026
+Usuário escolheu IDs48/52/56/60/64/68/72/76/80/84,autorizou ranking com
+pendências,e confrontar as2melhores comas2primeiras do ranking anterior e
+S61stop100semposiçãoreservada. Entrega:comparacao_proporcionais_s61_20261118/.
+Critério principal agoraé PONTOS NO LIMITE INFERIOR / DD NO LIMITE SUPERIOR,
+semcustos. Difere do critérioanterior que priorizava anospositivos.
+48=68 e52=72em233entradas:alvo/stop/limites idênticos;teto650nunca acionado,
+maxstop390e580. DezIDs,oitoestratégiasdistintas. Duasmelhoresdistintas48/68e60.
+Ranking denso:
+1 48=68:3735/2670=1,399;27pendentes.
+2 60:4545/3845=1,182;14pendentes.
+3 64:3905/4555=0,857;10pendentes.
+4 84:2885/4555=0,633;8pendentes.
+5 52=72:2220/3525=0,630;22pendentes.
+6 80:2965/4890=0,606;13pendentes.
+7 76:1935/4500=0,430;19pendentes.
+8 56:1810/4625=0,391;19pendentes.
+CONFRONTO PELO MESMO ÍNDICE:
+1 S61stop100/alvooriginal:2075/1370=1,515,20pendentes.
+2 48=68,1,399.
+3 60,1,182.
+4 anterior#1R61+S50+S61originais:5750/6760=0,851,fechado,786ops.
+5 anterior#2R61alvo750/stop150+S61alvo4x/stop650:6555/9080=0,722,
+fechado,488ops. S61isolados têm233ops;níveisnão listadosOFF.
+Se mantiver prioridadeanual anterior,a ordem seria48/68,60,anterior1,
+anterior2,stop100,pois último tem2024inferior-210. Não ocultar essa diferença.
+Custos hipotéticos5pontos/operação comDDrecalculado:48>60>100>anterior2>anterior1.
+Custos10:60>48>anterior2>100>anterior1. Não são taxas reais de execução.
+Rankings pendentes são ordens deinvestigação,não lucro certificado. Nenhum
+ramo favorável arbitrado;fechados ebrutos originais preservados,117hashes iguais.
+PDF4páginas,XLSXcomrankings,anuais,custos,equivalências ecritérioanterior.
+
+REGISTROS HISTÓRICOS PRESERVADOS ABAIXO
+
 RANKING10FECHADAS +11ªPENDENTE —18/11/2026
 Usuário pediu as10melhores considerando pontos porano eDD e reservar11ª
 paraS61stop100/alvooriginal pendente. Escopo:todas asreceitas játestadas,
