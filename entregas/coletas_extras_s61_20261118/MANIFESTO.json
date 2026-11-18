@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-18",
+  "extra_days": 8,
+  "extra_windows": 9,
+  "second_variant_extra_days": 7,
+  "second_variant_extra_windows": 8,
+  "third_variant_extra_days": 1,
+  "third_variant_extra_windows": 1,
+  "primary_days_remain20": true,
+  "five_shared_with_50_250_are_inside_primary20": true,
+  "additional_extra_shared_windows_with_50_250": 4,
+  "total_shared_with_50_250": 9,
+  "total_days_including_primary": 28,
+  "total_windows_including_primary": 29,
+  "source_files": [
+    {
+      "path": "entregas/coletas_s61_e_teste_50_250_20261118/JANELAS_EXTRAS_2_E_3_COLOCADOS.csv",
+      "sha256": "7fa901749b9aa119ce4cd8a16688d692ff2d85f9d985916029370b7d8cae3d29"
+    },
+    {
+      "path": "entregas/coletas_s61_e_teste_50_250_20261118/20_JANELAS_PRIORITARIAS_E_COINCIDENCIAS.csv",
+      "sha256": "8ca51e9cb87a2b463a5c0396759ea16ebb7fd1f10e57e703a780cace6df1202a"
+    },
+    {
+      "path": "entregas/coletas_s61_e_teste_50_250_20261118/JANELAS_AGRUPADAS_50_250.csv",
+      "sha256": "67293764765b1674e4c48d2bea32451995e21d92b3b4b8f64ae2e127a109eb7e"
+    }
+  ],
+  "results_changed": false
+}

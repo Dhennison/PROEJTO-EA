@@ -1,0 +1,26 @@
+REPLAY —8DIAS ADICIONAIS /9JANELAS —18/11/2026
+Além das20janelas prioritárias doS61stop100. Não substitui as20.
+Horário deSãoPaulo/fonte;fimexclusivo. Copiar3segundos antes/depois,ou mais se necessário para manter o minuto completo.
+
+2024-02-02 | 10:31–10:32 | WING24 | S61_48/S61_68 | ajuda50/250:NÃO
+2024-03-27 | 10:07–10:08 | WINJ24 | S61_48/S61_68 | ajuda50/250:NÃO
+2024-03-27 | 10:13–10:14 | WINJ24 | S61_48/S61_68 | ajuda50/250:NÃO
+2024-06-05 | 11:00–11:01 | WINM24 | S61_48/S61_68 | ajuda50/250:SIM
+2024-07-05 | 10:42–10:43 | WINQ24 | S61_48/S61_68 | ajuda50/250:NÃO
+2025-01-10 | 10:14–10:15 | WING25 | S61_48/S61_68 | ajuda50/250:NÃO
+2026-04-22 | 09:05–09:06 | WINM26 | S61_48/S61_68 | ajuda50/250:SIM
+2026-05-15 | 09:02–09:03 | WINM26 | S61_60 | ajuda50/250:SIM
+2026-10-19 | 11:45–11:46 | WINZ26 | S61_48/S61_68 | ajuda50/250:SIM
+
+AS5JANELAS50/250QUEJÁESTÃOENTREAS20PRIORITÁRIAS;NÃOCOPIARNOVAMENTE:
+2024-06-07 | 09:34–09:35 | WINM24
+2025-12-05 | 12:57–12:58 | WINZ25
+2026-02-27 | 09:03–09:04 | WINJ26
+2026-03-26 | 09:00–09:01 | WINJ26
+2026-07-24 | 09:05–09:06 | WINQ26
+
+Entreosextras,mais4janelasajudam50/250:05/06/2024;22/04/2026;15/05/2026;19/10/2026.
+Logo,20prioritárias+9extras=29janelas em28datas,dasquais9janelas também ajudam50/250.
+Preservarpreços,quantidades,milissegundos,ordem e negócios idênticos. Não filtrar/ordenar/deduplicar.
+Seabertura/leilão impediu negócios,informar seminventar linhas. ConfirmaremosOHLC/quantidade na volta.
+Contratos esperados pelas referênciaspreservadas;conferir correspondência dospreços ao receber.

@@ -1,3 +1,25 @@
+COLETA DOS8DIAS EXTRAS PREPARADA —18/11/2026
+Usuário confirmou extrasdo2ºe3ºe pediu preparar. São8diasADICIONAIS aos20
+prioritários,com9janelas:27/03/2024tem10:07e10:13,separadas.
+2ºS61_48/S61_68:02/02/2024WING24 10:31;27/03/2024WINJ24 10:07e10:13;
+05/06/2024WINM24 11:00;05/07/2024WINQ24 10:42;10/01/2025WING25 10:14;
+22/04/2026WINM26 09:05;19/10/2026WINZ26 11:45.
+3ºS61_60:15/05/2026WINM26 09:02. Cadajanela1minuto,fimexclusivo,
+comalgunssegundos de margem e minuto completo.
+
+As5queajudam50/250 jáestãoNAS20,não são5novosdias:
+07/06/2024WINM24 09:34;05/12/2025WINZ25 12:57;
+27/02/2026WINJ26 09:03;26/03/2026WINJ26 09:00;24/07/2026WINQ26 09:05.
+Novo cruzamentoencontrou MAIS4extrasqueajudam50/250:05/06/2024(11:00),
+22/04/2026(09:05),15/05/2026(09:02),19/10/2026(11:45).
+Portanto20prioritárias+9extras=29janelas em28datas;9dessasjanelas
+são compartilhadas com50/250. Não repetir coletas porcontar compartilhadade novo.
+Pasta:entregas/coletas_extras_s61_20261118/. XLSXcom9abas de retorno,
+PDF/TXT/CSVdedatas/contratos/horários,referênciadas5jána20 eíndice29semduplicar.
+Nenhumresultado financeiro alterado;validarOHLC/quantidade na volta.
+
+REGISTROS HISTÓRICOS PRESERVADOS ABAIXO
+
 PRIORIDADE S61STOP100 E NOVO STOP50/ALVO250 —18/11/2026
 Usuário mandou preservar estudo atual,coletar primeiro20pendências doS61stop100,
 cruzar com2º(S61_48/S61_68)e3º(S61_60),e testar todos5níveis comstop50/alvo250.
