@@ -1,0 +1,19 @@
+{
+  "preserved_study_files": 46,
+  "preserved_base_commit": "55d5e2b6d2fbcd3ebf635ba72c7b7d472da3041c",
+  "prior_studies_hashes_unchanged": true,
+  "month_year_and_day_trade_reconciliation": true,
+  "max_entries_per_day": 5,
+  "no_duplicate_level_date": true,
+  "exact_stop_operations": 1124,
+  "exact_target_operations": 218,
+  "exact_cut_operations": 3,
+  "exact_cut_points": 205,
+  "unresolved_operations": 140,
+  "unknown_targets_needed_for_gross_positive": 29,
+  "out_of_unknown_operations": 140,
+  "monthly_rows": 34,
+  "no_lower_day_below_minus250": true,
+  "coincidence_second_minutes": 20,
+  "coincidence_third_minutes": 13
+}

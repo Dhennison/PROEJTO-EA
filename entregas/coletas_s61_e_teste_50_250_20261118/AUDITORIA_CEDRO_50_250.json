@@ -1,0 +1,98 @@
+[
+  {
+    "date": "2026-08-04",
+    "contract": "WINQ26",
+    "full_stream_records": 4838964,
+    "expected_records": 4838964,
+    "reduced_records": 39773,
+    "old_5_states_identical": true,
+    "python_vs_direct_all10_states": true,
+    "resolved_new_operations": 2,
+    "new_operations": 2,
+    "reduced_events_sha256": "b4646d4124bdd2d9d9d8b6d428f1385cd439b5a1a7310c6cf7913ca591759b0b"
+  },
+  {
+    "date": "2026-08-05",
+    "contract": "WINQ26",
+    "full_stream_records": 4646247,
+    "expected_records": 4646247,
+    "reduced_records": 41861,
+    "old_5_states_identical": true,
+    "python_vs_direct_all10_states": true,
+    "resolved_new_operations": 2,
+    "new_operations": 2,
+    "reduced_events_sha256": "db5899ebbbb43e25a86ab580f6fdbd17b254a4411261fa457bab21e620f97b85"
+  },
+  {
+    "date": "2026-08-13",
+    "contract": "WINV26",
+    "full_stream_records": 4597107,
+    "expected_records": 4597107,
+    "reduced_records": 55253,
+    "old_5_states_identical": true,
+    "python_vs_direct_all10_states": true,
+    "resolved_new_operations": 4,
+    "new_operations": 4,
+    "reduced_events_sha256": "acf07f93e14d33a494cb0238b240c814b394a2baf3e56ca30d4dbd465e2f9e59"
+  },
+  {
+    "date": "2026-08-18",
+    "contract": "WINV26",
+    "full_stream_records": 4465737,
+    "expected_records": 4465737,
+    "reduced_records": 46014,
+    "old_5_states_identical": true,
+    "python_vs_direct_all10_states": true,
+    "resolved_new_operations": 4,
+    "new_operations": 4,
+    "reduced_events_sha256": "b6dc9b5e383b24a8b938d3fc97acc7a48396c66e8a445b6e824d7e92833280cf"
+  },
+  {
+    "date": "2026-08-19",
+    "contract": "WINV26",
+    "full_stream_records": 5016892,
+    "expected_records": 5016892,
+    "reduced_records": 60041,
+    "old_5_states_identical": true,
+    "python_vs_direct_all10_states": true,
+    "resolved_new_operations": 2,
+    "new_operations": 2,
+    "reduced_events_sha256": "7104909ce7006bc9d7a6e08af93ce83ac2390c8f32508e3462ce7b53278d09f9"
+  },
+  {
+    "date": "2026-08-21",
+    "contract": "WINV26",
+    "full_stream_records": 4903107,
+    "expected_records": 4903107,
+    "reduced_records": 43071,
+    "old_5_states_identical": true,
+    "python_vs_direct_all10_states": true,
+    "resolved_new_operations": 2,
+    "new_operations": 2,
+    "reduced_events_sha256": "e75f7ce4ce8348af6dadc352b59d52272012a38608ea4dae3c7c4553b7b8a17c"
+  },
+  {
+    "date": "2026-08-25",
+    "contract": "WINV26",
+    "full_stream_records": 5542718,
+    "expected_records": 5542718,
+    "reduced_records": 18810,
+    "old_5_states_identical": true,
+    "python_vs_direct_all10_states": true,
+    "resolved_new_operations": 2,
+    "new_operations": 2,
+    "reduced_events_sha256": "42ba3571420f8d54430d91259cf4b52628d9b17071c1d7ded4f387406a499b83"
+  },
+  {
+    "date": "2026-08-31",
+    "contract": "WINV26",
+    "full_stream_records": 5020544,
+    "expected_records": 5020544,
+    "reduced_records": 77558,
+    "old_5_states_identical": true,
+    "python_vs_direct_all10_states": true,
+    "resolved_new_operations": 2,
+    "new_operations": 2,
+    "reduced_events_sha256": "cbacc288a185eb07607ffa252c7605ffeeb6cd31b9656f552cb073558633b35b"
+  }
+]

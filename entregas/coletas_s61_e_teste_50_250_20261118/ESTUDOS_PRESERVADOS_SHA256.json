@@ -1,0 +1,189 @@
+{
+  "base_commit": "55d5e2b6d2fbcd3ebf635ba72c7b7d472da3041c",
+  "files": [
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/testar_s61.py",
+      "sha256": "4f0be63b90f6bf482778ebecc947068fe9b1de21fbcc78d0af6c4a627d303d74"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/RESULTADO_ANUAL.csv",
+      "sha256": "6ad4d03e1eff4487bd83aa8db3ba6144821bcae5e1ea67027991dd06b2e0b49b"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/ROTULOS_ORIGINAIS_CONFERIDOS.csv",
+      "sha256": "156a5c71defb297106b525cadadc1cd6a1e131c5dfcacbe59d38d2adebf6de74"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/PROVAS_MONOTONICAS_ORIGINAL.csv",
+      "sha256": "e9a541a7b201d2df8ef12b80e9102f5ed8f100027aeef3db1a8a8ebd106d9fd5"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/FONTES_CEDRO_AGOSTO_M1_LOCALIZADAS.csv",
+      "sha256": "fba57715f14d606e87763ce17731e5e1cc1009b052ec511d01871c563567bb98"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/CONFERENCIA_FINAL.json",
+      "sha256": "61515bdfc4cf8704b6fd49dd74e8bf002420c3b34cb2e1b5db8deb5fb2d2a00f"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/RESULTADO_S61_CENARIOS.csv",
+      "sha256": "5749f910bc08dd3e42fd3328cd854b1a42c9641a4785c075b7f20352517d5795"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/LIMITES_POR_OPERACAO.csv",
+      "sha256": "2698660568092035c89e503826e0bd31be614c807aca3c928fec72d65b64a65c"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/.gitattributes",
+      "sha256": "d50e5f4dcc71113069ee2ddaad530c826b207827f7af56ef9f6f0255ad62689c"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/S61_Testes_Stop_Alvo_2024_2025_2026.pdf",
+      "sha256": "662c7853fbd8217a022b2ccb81120b17c517411c690167c54cba59f04a3ff714"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/LEIA_PRIMEIRO.md",
+      "sha256": "1abe7586dfb6b392a279f94dee0165d7ca1093459fec963d9602daf859260640"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/S61_Testes_Stop_Alvo_2024_2025_2026.xlsx",
+      "sha256": "b34785f7ebcc6ad60ca8fa5a766326e14716809acd9fef6190ad10f21bdc4d73"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/REPLAY_NECESSARIO_STOP100_ALVO_ORIGINAL.csv",
+      "sha256": "5d6471b3bf3f03efdd289052ef3d845b020f6b0bc9d063553e345220f7203423"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/gerar_relatorio.py",
+      "sha256": "96eefeb75655f53dd7a6368e9865f2e52b41b8ef893c840be0db7cbd9de36683"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/MANIFESTO.json",
+      "sha256": "80708145c097e65abee4c9af8b107f3fea39b7801226dd6b8365480012f37bed"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/RESUMO_ESTUDO.json",
+      "sha256": "74d3328a014189046bb312a2d4c4f9e97d0593625a168082403a0ab4dc1122cc"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/PENDENCIAS_POR_VARIANTE.csv",
+      "sha256": "376625b6c060e95435097d3fc87bc148df846c42b5ccebdf61b3ecfb2bbd86a3"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/.gitignore",
+      "sha256": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/RESULTADO_MENSAL.csv",
+      "sha256": "9290de0eb7b29c6e02b2269147346c23b01b372bd96832b81e928266e79e0b2e"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/PARAMETROS_CENARIOS.csv",
+      "sha256": "d05c73f97e7496537be9fcf27728d879a453c967bbf40604988f0c65a2cf699c"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/COMBINACOES_COM_R61.csv",
+      "sha256": "a7fc90bfa62d4d3566da952b9524755491bb235475fc5b7cc20519cf53d620e2"
+    },
+    {
+      "path": "entregas/comparacao_proporcionais_s61_20261118/Ranking_Proporcionais_e_Confronto_5.pdf",
+      "sha256": "d357c434b0b00e4b8f9cd4d3c8f33a4271c3cf1c6f61ff047828126e56ffbcdb"
+    },
+    {
+      "path": "entregas/comparacao_proporcionais_s61_20261118/Ranking_Proporcionais_e_Confronto_5.xlsx",
+      "sha256": "633ce201e64a3deb8c845eaf5df09679a14ff1058265feed2ac039a84c100630"
+    },
+    {
+      "path": "entregas/comparacao_proporcionais_s61_20261118/ANUAIS_5_OPCOES.csv",
+      "sha256": "80f18a2b816891f433314188fa0c71a7f8c11edf702d60f72603669c29e09cf6"
+    },
+    {
+      "path": "entregas/comparacao_proporcionais_s61_20261118/EQUIVALENCIAS_CONFERIDAS.csv",
+      "sha256": "72931b7ce05c01b189d56e41efb2b998bca2d161b3500abf6639679d0cdd482d"
+    },
+    {
+      "path": "entregas/comparacao_proporcionais_s61_20261118/SENSIBILIDADE_CUSTOS_5_OPCOES.csv",
+      "sha256": "1aa5f735df835c13ab758a6d4835349be3ec0fa64901c760457a3247b93e3330"
+    },
+    {
+      "path": "entregas/comparacao_proporcionais_s61_20261118/CONFRONTO_CRITERIO_ANUAL_ANTERIOR.csv",
+      "sha256": "9f2347b93c0f82518a6745ead3b59acca97aabf656af252a9f00c905f6ce6ac1"
+    },
+    {
+      "path": "entregas/comparacao_proporcionais_s61_20261118/RANKING_10_CODIGOS.csv",
+      "sha256": "d6e2c9a606ecdce74bf9ba1809989f35b2e794f44a6b4b25ba10d7c33dce5118"
+    },
+    {
+      "path": "entregas/comparacao_proporcionais_s61_20261118/CONFRONTO_5_OPCOES.csv",
+      "sha256": "baa509c779bb5fd8869c532d3f352378472cdf6544a9507c02fec96745dbdde2"
+    },
+    {
+      "path": "entregas/comparacao_proporcionais_s61_20261118/.gitattributes",
+      "sha256": "d50e5f4dcc71113069ee2ddaad530c826b207827f7af56ef9f6f0255ad62689c"
+    },
+    {
+      "path": "entregas/comparacao_proporcionais_s61_20261118/comparar.py",
+      "sha256": "5fe7b1889e4b5db38329ae298fc5a1850ac37a953220f3cc730dba19e563b166"
+    },
+    {
+      "path": "entregas/comparacao_proporcionais_s61_20261118/LEIA_PRIMEIRO.md",
+      "sha256": "558be3319086324b5ee3ea180a2c28bc982f04bc6598842a6efd6e4cc464d2a5"
+    },
+    {
+      "path": "entregas/comparacao_proporcionais_s61_20261118/MANIFESTO.json",
+      "sha256": "e4e63756d42ae40dcfdb5088afa4b5f4b34f795d6ee1abb5f622f66e2d85970e"
+    },
+    {
+      "path": "entregas/comparacao_proporcionais_s61_20261118/.gitignore",
+      "sha256": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b"
+    },
+    {
+      "path": "entregas/ranking_cenarios_20261118/CURVAS_DIARIAS_10_CENARIOS.csv",
+      "sha256": "0edd41d65ae19bec3df7f491747dc691e48effd17391b336a6b8c6e58261f533"
+    },
+    {
+      "path": "entregas/ranking_cenarios_20261118/42_OPCOES_FECHADAS_POSITIVAS.csv",
+      "sha256": "861ee742fab6d87a49e9094cccb057b10cf8ccae3539a305871f36b391144fe3"
+    },
+    {
+      "path": "entregas/ranking_cenarios_20261118/gerar_ranking.py",
+      "sha256": "d3479f49d23d6ffa81cfda0250bc7acdc02fc514a7e7b1881396cdfb55ebc3f4"
+    },
+    {
+      "path": "entregas/ranking_cenarios_20261118/Ranking_10_Opcoes_e_Stop100_Pendente.xlsx",
+      "sha256": "bd0a95040a5e0552856b8a18838c84f2eeafe6538cc7a604f469639ca0c15e50"
+    },
+    {
+      "path": "entregas/ranking_cenarios_20261118/.gitattributes",
+      "sha256": "d50e5f4dcc71113069ee2ddaad530c826b207827f7af56ef9f6f0255ad62689c"
+    },
+    {
+      "path": "entregas/ranking_cenarios_20261118/consolidar_universo.py",
+      "sha256": "fe6907d37f23acf17266d29e5ca6ae137c3224f5e5e5c4e91a29b10d0abb0a7e"
+    },
+    {
+      "path": "entregas/ranking_cenarios_20261118/RANKING_10_MAIS_PENDENTE.csv",
+      "sha256": "a1aee3036afd0a82306cf61bfc89c831ff8b49a4ac005b30280fe6e7884fdecd"
+    },
+    {
+      "path": "entregas/ranking_cenarios_20261118/LEIA_PRIMEIRO.md",
+      "sha256": "0b70881b8f1c56724c243f8085d6d93a93d99f842b3d912b67d3a82468ca38f0"
+    },
+    {
+      "path": "entregas/ranking_cenarios_20261118/MANIFESTO.json",
+      "sha256": "830e62829952fbd51fc5a3bda0a46395895b8e6e515283e118566a8a0410be22"
+    },
+    {
+      "path": "entregas/ranking_cenarios_20261118/.gitignore",
+      "sha256": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b"
+    },
+    {
+      "path": "entregas/ranking_cenarios_20261118/UNIVERSO_CONSOLIDADO.json",
+      "sha256": "f8cbaef0ac28df1eca3e9c9ff750d6784a8e78f7476d00719b0c0359cf525fbf"
+    },
+    {
+      "path": "entregas/ranking_cenarios_20261118/Ranking_10_Opcoes_e_Stop100_Pendente.pdf",
+      "sha256": "9d84a46d108db3f78b2b0df8a152db56c2255ef755028b59d96715617ab7e382"
+    }
+  ]
+}

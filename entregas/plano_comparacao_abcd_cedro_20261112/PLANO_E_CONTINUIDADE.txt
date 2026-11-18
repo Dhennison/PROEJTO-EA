@@ -1,3 +1,55 @@
+PRIORIDADE S61STOP100 E NOVO STOP50/ALVO250 —18/11/2026
+Usuário mandou preservar estudo atual,coletar primeiro20pendências doS61stop100,
+cruzar com2º(S61_48/S61_68)e3º(S61_60),e testar todos5níveis comstop50/alvo250.
+Novaentrega:entregas/coletas_s61_e_teste_50_250_20261118/.
+Snapshot hashes dosestudos/rankings ecommit55d5e2b preservado. NenhumS61
+ouresultado principalfoi alterado;20coletasS61 continuam primeira prioridade.
+
+COLETAS
+20/20datas E minutos doS61stop100 coincidem com2º;13/20 com3º.
+2ºtem27operações/28minutos:restam8minutos em7datas fora destas20.
+3ºtem14operações/14minutos:resta15/05/2026. União=28datas/29minutos,
+mas nãopediros29automaticamente:primeiroos20. TXT/PDF de lista eXLSX
+com20abas vazias para retorno,contratos/horários eflags de coincidência.
+Cinco dessas20janelas também ajudam novo50/250. ValidarOHLC/quantidade,
+completude,empates epreços antes de fechar. Novos parâmetros exigemnovasjanelas;
+não confundir com falta dosarquivos jáenviados. Não reabrircontroleadicional
+10/07/2026 dispensado paraooriginal.
+
+TESTE50/250:BASE EM709PREGÕES/1485ENTRADAS ORIGINAIS
+Mesmas referências/elegibilidade,umaoperação pornível/dia,semreentrada,
+semforçar5entradas,semredistribuição,corte18h. Não hábloqueio apósprimeiroTP
+nemstopfinanceirodiário adicional. ModeloD5níveis semR50.
+Conta1TP+4SL=250-200=+50brutos confirmada. Diascomentradas:
+0:100;1:110;2:226;3:195;4:52;5:26. Portanto nãopresumircincooperaçõesdiárias.
+Foram reprocessadas39.031.316linhas doscontratos das8datasCedrorecuperadas;
+40estadosoriginais iguais,80estadosC++vsPython confrontados.20novas operações
+nessasdatas,todasSL-50,total-1000.16ZIPs+IDs preservadospara restauração.
+Todos21M1auditadosagostousados,além demaisfontes corretas eReplaycompleto.
+
+NOVOSRESULTADOS MENSAIS/ANUAIS SÃO FAIXAS ONDE PENDENTES
+2024:-3590a1210,16operaçõespendentes em13dias.
+2025:-2555a4345,23pendentes em19dias.
+2026jan-out:-2350a27950,101pendentes em84dias.
+Total:-8495a33505,DDdiáriocontínuo2050a10195;140operações em116dias,
+139intervalos distintos. Não fecharumtotal nemusarupper comolucrorealizado.
+Limitesdeníveis podem não ser simultaneamente atingíveis na mesmatrajetória.
+Determinados1124SL/218TP/3cortes(+60,+105,+40).140incertosSL/TP.
+São necessários29dos140viraremTPpara totalbruto positivo(29=>+205),
+sem atribuirprobabilidade. Comcusto5pontos/operação o2024énegativo
+aténo limite superior(-1440);custosapenas sensibilidades,não custosreais.
+Nenhumcasolowerportradeabaixo-50 oudiaabaixo-250sobmétodopreçodestehistórico,
+mas nãogarante teto realcomgaps/custos/slippage/fills. Motorpermitecut abaixo
+stopsepreçogapàs18h; não foi imposto clampartificial50/250 nos testes.
+
+PDFmensal4páginas(3anos+método),XLSXmensais/diários/níveis/ops/janelas,
+planilhas/listascoletaS61,auditorias/motores/metadados/hashes disponíveis.
+PrioridadeS61não muda porcausa novoestudo;139janelas novas listadas somente
+para auditoria,não pedido decoletamaciça antes deavaliar resultado.
+Estudos anteriores mantidosbyteabyte,117fontesoriginaisfechadas hashiguais.
+
+REGISTROS HISTÓRICOS PRESERVADOS ABAIXO
+
 CONFRONTO PROPORCIONAIS S61 E STOP100 —18/11/2026
 Usuário escolheu IDs48/52/56/60/64/68/72/76/80/84,autorizou ranking com
 pendências,e confrontar as2melhores comas2primeiras do ranking anterior e

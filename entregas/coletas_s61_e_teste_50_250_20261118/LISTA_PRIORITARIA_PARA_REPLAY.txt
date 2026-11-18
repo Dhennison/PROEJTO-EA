@@ -1,0 +1,29 @@
+COLETA PRIORITÁRIA — S61.8 STOP100/ALVO S50 ORIGINAL
+Horários de São Paulo/fonte;fim exclusivo;copiar minuto completo e segundos antes/depois.
+Não filtrar,ordenar,deduplicar nem cortar negócios repetidos. Manter milissegundos.
+Segundo=S61_48/S61_68;terceiro=S61_60. Estas cópias podem servir às outras receitas.
+
+2024-01-02 | 09:01–09:02 | WING24 | 2º:sim | 3º:sim
+2024-03-26 | 09:17–09:18 | WINJ24 | 2º:sim | 3º:não
+2024-05-10 | 11:53–11:54 | WINM24 | 2º:sim | 3º:sim
+2024-06-07 | 09:34–09:35 | WINM24 | 2º:sim | 3º:sim
+2024-07-25 | 09:01–09:02 | WINQ24 | 2º:sim | 3º:não
+2024-09-06 | 10:21–10:22 | WINV24 | 2º:sim | 3º:não
+2024-09-11 | 11:40–11:41 | WINV24 | 2º:sim | 3º:não
+2024-10-18 | 10:54–10:55 | WINZ24 | 2º:sim | 3º:sim
+2024-10-23 | 09:03–09:04 | WINZ24 | 2º:sim | 3º:sim
+2025-03-11 | 10:21–10:22 | WINJ25 | 2º:sim | 3º:sim
+2025-03-24 | 09:41–09:42 | WINJ25 | 2º:sim | 3º:sim
+2025-06-30 | 09:12–09:13 | WINQ25 | 2º:sim | 3º:sim
+2025-07-18 | 09:01–09:02 | WINQ25 | 2º:sim | 3º:não
+2025-10-06 | 11:01–11:02 | WINV25 | 2º:sim | 3º:sim
+2025-12-05 | 12:57–12:58 | WINZ25 | 2º:sim | 3º:sim
+2026-02-25 | 11:53–11:54 | WINJ26 | 2º:sim | 3º:sim
+2026-02-27 | 09:03–09:04 | WINJ26 | 2º:sim | 3º:sim
+2026-03-26 | 09:00–09:01 | WINJ26 | 2º:sim | 3º:não
+2026-06-29 | 10:33–10:34 | WINQ26 | 2º:sim | 3º:sim
+2026-07-24 | 09:05–09:06 | WINQ26 | 2º:sim | 3º:não
+
+20/20 datas e minutos coincidem com o2º;13/20com o3º.
+Para o2ºrestam8minutos em7datas;para o3ºresta2026-05-15.
+Primeiro finalizar os20pedidos. Não solicitar coletar os demais automaticamente.

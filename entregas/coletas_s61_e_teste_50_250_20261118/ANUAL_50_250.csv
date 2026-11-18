@@ -1,0 +1,4 @@
+﻿year;scope;days;operations;lower;upper;DD_year_lower;DD_year_upper;pending_operations;pending_days;after_cost5_lower;after_cost5_upper;after_cost10_lower;after_cost10_upper
+2024;AnoCompleto;251;530;-3590;1210;1700.0;5140.0;16;13;-6240;-1440;-8890;-4090
+2025;AnoCompleto;250;518;-2555;4345;2050.0;5550.0;23;19;-5145;1755;-7735;-835
+2026;JanOut;208;437;-2350;27950;650.0;4400.0;101;84;-4535;25765;-6720;23580

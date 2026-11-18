@@ -1,0 +1,14 @@
+{
+  "primary_days": 20,
+  "primary_minutes": 20,
+  "shared_second_dates": 20,
+  "shared_second_minutes": 20,
+  "shared_third_dates": 13,
+  "shared_third_minutes": 13,
+  "remaining_second_dates": 7,
+  "remaining_second_minutes": 8,
+  "remaining_third_dates": 1,
+  "total_union_dates": 28,
+  "total_union_windows": 29,
+  "instruction": "Primeiro coletar20;segundo27operacoes/28minutos;terceiro14operacoes/14minutos;nao prometer fechamento sem analisar negocios"
+}
