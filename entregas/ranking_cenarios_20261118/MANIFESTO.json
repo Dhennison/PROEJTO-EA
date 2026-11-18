@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-18",
+  "scope": "ALL_PRIOR_TESTED_PORTFOLIOS_AND_FOCUSED_S61",
+  "consolidated_recipes": 1711,
+  "eligible_closed_positive": 42,
+  "ranking_rule": [
+    "positive_years_desc",
+    "total_points_divided_by_continuous_daily_DD_desc",
+    "worst_year_points_desc",
+    "total_desc",
+    "id_desc"
+  ],
+  "gross_only": true,
+  "year2026_scope": "JanOct",
+  "rank11_manually_reserved": true,
+  "rank11_pending_operations": 20,
+  "all10_daily_curves_independently_recomputed": true,
+  "source_files": [
+    {
+      "path": "entregas/resultado_niveis_202401_202610_20261117/CURVAS_DIARIAS_POR_NIVEL.csv",
+      "sha256": "523c9ad24c3f34c804afa5350b04f72ee48743041202c32f51730a54c4396d6b"
+    },
+    {
+      "path": "entregas/fechamento_variante_r61_750_150_20261117/CURVA_DIARIA_VARIANTE_FECHADA.csv",
+      "sha256": "0d009b4d3f09f8cc00f64ab2147738b9ae865922a8e39ce97ca5d18c05512ef8"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/LIMITES_POR_OPERACAO.csv",
+      "sha256": "2698660568092035c89e503826e0bd31be614c807aca3c928fec72d65b64a65c"
+    },
+    {
+      "path": "entregas/resultado_niveis_202401_202610_20261117/OPERACOES_NORMALIZADAS.csv",
+      "sha256": "4d42c76932920cfe78d183be0e90130bc7f3fe5573beda190247dabc109e9f8e"
+    }
+  ],
+  "consolidation_sources": [
+    {
+      "path": "entregas/estudo_saidas_niveis_20261117/PARAMETROS_VARIANTES.csv",
+      "sha256": "e7256c7141a094ff33d872c56489c352ddf2966e851117d53501970e51bc914c"
+    },
+    {
+      "path": "entregas/estudo_saidas_niveis_20261117/CENARIOS_SAIDAS_E_MISTOS.csv",
+      "sha256": "85df4daf7d282c949db1ffd300bf7d44a6350076ff818f840ab27cc62d17bc67"
+    },
+    {
+      "path": "entregas/estudo_saidas_niveis_20261117/EXCLUSOES_31_COMBINACOES_EXATAS.csv",
+      "sha256": "ececc2cbcdcb3124d9228fbfd87bfdea3c2a8e7137b866790bc4204d813d033a"
+    },
+    {
+      "path": "entregas/fechamento_variante_r61_750_150_20261117/CENARIOS_RELACIONADOS_ATUALIZADOS.csv",
+      "sha256": "a961a244587704d5f3fc1e7cfff5232a168277e93a0a0cb678f8fee8eb21cb91"
+    },
+    {
+      "path": "entregas/fechamento_variante_r61_750_150_20261117/COMBINACOES_16_R61_NOVO_OUTROS_ORIGINAIS.csv",
+      "sha256": "df40978470c854679c31ee355f73c239dbc8c4fdbca8a97f028e148c233ffcca"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/PARAMETROS_CENARIOS.csv",
+      "sha256": "d05c73f97e7496537be9fcf27728d879a453c967bbf40604988f0c65a2cf699c"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/COMBINACOES_COM_R61.csv",
+      "sha256": "a7fc90bfa62d4d3566da952b9524755491bb235475fc5b7cc20519cf53d620e2"
+    }
+  ]
+}

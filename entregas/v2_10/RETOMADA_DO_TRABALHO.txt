@@ -1,3 +1,33 @@
+RANKING10FECHADAS +11ªPENDENTE —18/11/2026
+Usuário pediu as10melhores considerando pontos porano eDD e reservar11ª
+paraS61stop100/alvooriginal pendente. Escopo:todas asreceitas játestadas,
+não apenasS61isolado. Ranking em entregas/ranking_cenarios_20261118/.
+Universo1711configurações consolidadas,42fechadas comtotalbruto positivo.
+Nas10primeiras sóopções sempendência. Critério:mais anospositivos primeiro;
+depoismaior total/DDcontínuo;empates porpiorano,total,ID. Não éordem
+universal nemdezmaioreslucros. Osvalores são brutos;custospodem inverter
+#1ano2024+140 e#5ano2026+15. 2026significajaneiro-outubro.
+Ordem:
+1R61orig+S50orig+S61orig:140/3600/2010,total5750,DD6760.
+2R61novo750/150+S61stop650/alvo4x:2410/3635/510,total6555,DD9080.
+3R38orig+R61novo+S50orig+S61orig:5545/190/2215,total7950,DD11510.
+4R38orig+R61novo+S38orig+S61orig:3060/480/2585,total6125,DD10430.
+5R61novo+S50orig:2105/600/15,total2720,DD4895.
+6R61orig+S61orig:2680/4325/-1115,total5890,DD5505.
+7S61orig:1510/4790/-1235,total5065,DD4765.
+8R61novo+S61orig:6155/6115/-4345,total7925,DD7780.
+9R61novo+S50orig+S61orig:3615/5390/-1220,total7785,DD7665.
+10R61novo+S38orig+S61orig:1130/5680/-850,total5960,DD5940.
+11manualS61isolado stop100/alvoS50:2024-210a1755/20252040a3495/
+2026245a2050,total2075a7300,DD785a1370,20pendentes.Não concorreu.
+Cada nívelnão citado estáOFF.R61novoalvo750/stop150;S61alvo4x=entrada+
+4vezesdistância original atéS50,stop650. Demais parâmetrosoriginais.
+Todas10curvas recalculadas dia a dia e batidas com anual,total eDD.
+PDF2páginas,XLSXranking+42elegíveis+curvas,CSV efontes/hashes disponíveis.
+117hashes de originaisfechados mantidos. Nenhuma variante aprovada.
+
+REGISTROS HISTÓRICOS PRESERVADOS ABAIXO
+
 ESTUDO S61.8 NOS TRÊS ANOS + CORREÇÃO DE ACERVO —17/11/2026
 Usuário pediu stop650/alvomaior,stopmenor/alvooriginal,stopmenor/alvomaior,
 explicitamente em2024/2025/2026. Entrega:entregas/estudo_s61_saidas_20261117/.
