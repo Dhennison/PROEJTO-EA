@@ -1,3 +1,10 @@
+LISTA ÚNICA DE REPLAY — 18/11/2026
+Consolidada em entregas/coletas_unificadas_20261118/TODAS_AS_JANELAS.csv
+São 159 janelas em 130 datas: 20 do S61 stop 100, 28 do S61_48/68,
+14 do S61_60 e 139 do teste 50/250, com coincidências sem duplicação.
+CSV, XLSX e tabela Markdown completos. Intervalos de um minuto, fim exclusivo.
+Resultados, fontes e estudos anteriores preservados.
+
 COLETA DOS8DIAS EXTRAS PREPARADA —18/11/2026
 Usuário confirmou extrasdo2ºe3ºe pediu preparar. São8diasADICIONAIS aos20
 prioritários,com9janelas:27/03/2024tem10:07e10:13,separadas.
