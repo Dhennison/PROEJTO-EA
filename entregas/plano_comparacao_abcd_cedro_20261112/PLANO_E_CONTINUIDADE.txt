@@ -1,3 +1,23 @@
+S23 STOP200/ALVO500: CINCO NOVAS DATAS CONFERIDAS — 19/11/2026
+Pasta entregas/atualizacao_s23_replay_20261119/. Bruto Novas datas.xlsx preservado,
+SHA e ID Sediment file_000000002dc8820e9d982c6f9fb32ac1 no manifesto.
+Cinco minutos OHLC/quantidade exatos. Todas cinco operações deram SL -200:
+11/09/2025,13/02/2026,17/03/2026,11/05/2026,31/07/2026.
+31/07: usuário informou leilão; primeiro negócio12:34:07.958 compatível com retorno.
+2024 +8935 fechado;2025 +3885 fechado;2026jan-out +95 a3595,5pendentes.
+Total12915 a16415; DDdiáriocontínuo4915.386operações.Originais intactos.
+Três combinações anteriores atualizadas só na contribuição S23;21pendências cada.
+
+Cinco S23 restantes dependem dos brutos Cedro JA ENVIADOS, agora sem acesso:
+WIN_20260811_parte001.zip e parte002; WIN_20260824_parte001.zip e parte002;
+WIN_20260904_parte001.zip e parte002; WIN_20260911_parte001.zip e parte002;
+WIN_20260925_parte001.zip e parte002. Nomes completos/SHA/bytes no CSV.
+Usuário pediu nomes exatos para reenviar arquivos existentes; não pedir Replay novo.
+Cache das5janelas validadas:/workspace/work/replay_s23_20261119/auditoria.pickle.
+Incorporar em próximos estudos antes de repetir pedidos.50/250emstand-by.
+
+REGISTROS HISTÓRICOS PRESERVADOS ABAIXO
+
 ALVOS/STOPS FIXOS EM TRÊS NÍVEIS E CORREÇÃO CEDRO — 19/11/2026
 Nova pasta: entregas/estudo_fixos_tres_niveis_20261119/.
 R61,8/S38,2/S61,8: 90 receitas por nível, 270 testes, mesmas 834 entradas.

@@ -1,0 +1,11 @@
+{
+  "accepted_minutes": 5,
+  "full_minute_OHLC_quantity_match": true,
+  "resolved_trades": 5,
+  "independent_path_and_same_ms_runs": 20,
+  "points_all_runs_match": true,
+  "chronological_daily_DD_verified": true,
+  "auction_first_trade": "2026-07-31 12:34:07.958",
+  "remaining_Cedro_operations": 5,
+  "no_new_Replay_requested": true
+}

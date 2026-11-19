@@ -1,0 +1,58 @@
+{
+  "uploaded_name": "Novas datas.xlsx",
+  "sediment_file_id": "file_000000002dc8820e9d982c6f9fb32ac1",
+  "preserved_path": "/workspace/dados_brutos_modelo_d/replay_profit/Novas_datas_S23_20261119.xlsx",
+  "bytes": 10448531,
+  "sha256": "758dfe0c44884edb50bbe4b83c1d2e370acbfb6a2fdc05400d332ab8df30efcd",
+  "user_observation": "31/07/2026 houve leilao; voltou as 12h34min07s.",
+  "observed_first_trade": "2026-07-31 12:34:07.958",
+  "accepted_minutes": 5,
+  "resolved_operations": 5,
+  "all_five_results": "SL:-200",
+  "summary": {
+    "level": "S23.6",
+    "stop": 200,
+    "target": 500,
+    "operations": 386,
+    "total_lower": 12915.0,
+    "total_upper": 16415.0,
+    "DD_lower": 4915.0,
+    "DD_upper": 4915.0,
+    "pending": 5,
+    "year2024_lower": 8935.0,
+    "year2024_upper": 8935.0,
+    "year2025_lower": 3885.0,
+    "year2025_upper": 3885.0,
+    "year2026_lower": 95.0,
+    "year2026_upper": 3595.0
+  },
+  "verification": {
+    "accepted_minutes": 5,
+    "full_minute_OHLC_quantity_match": true,
+    "resolved_trades": 5,
+    "independent_path_and_same_ms_runs": 20,
+    "points_all_runs_match": true,
+    "chronological_daily_DD_verified": true,
+    "auction_first_trade": "2026-07-31 12:34:07.958",
+    "remaining_Cedro_operations": 5,
+    "no_new_Replay_requested": true
+  },
+  "original_and_previous_results_unchanged": true,
+  "scope": "Only S23.6 N089 stop200 target500 and its contribution in three previously reported combinations updated.",
+  "new_Replay_requests": 0,
+  "remaining_Cedro_recovery_windows": 5,
+  "sources": [
+    {
+      "path": "entregas/estudo_niveis_auxiliares_20261119/MANIFESTO.json",
+      "sha256": "792f33fc564743a21468ba0663c917cfa1070eb27e188fbde71e914417bc9f06"
+    },
+    {
+      "path": "entregas/estudo_fixos_tres_niveis_20261119/S23_200_500_REPLAY_5_DATAS.csv",
+      "sha256": "eae2d176cd950728c28e75fde4a8858c380ac7f8135c1d1011099bccf21d5ee4"
+    },
+    {
+      "path": "entregas/estudo_fixos_tres_niveis_20261119/S23_CEDRO_10_ZIPS_JA_RECEBIDOS_A_RESTAURAR.csv",
+      "sha256": "04c789a9e4a3940bc38af68cc4be1a1b67d7e74df7b7df720dbf34df05138731"
+    }
+  ]
+}
