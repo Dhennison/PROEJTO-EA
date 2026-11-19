@@ -1,0 +1,57 @@
+[
+  {
+    "date": "2026-08-11",
+    "contract": "WINQ26",
+    "full_stream_records": 4805520,
+    "expected_records": 4805520,
+    "reduced_events": 28305,
+    "original_5_states_match": true,
+    "python_all6_states_match": true,
+    "full_same_ms_invariant": true,
+    "reduced_file_sha256": "2b23277667f0b9246ec31c2c0ae75e9ff30cd5e8a5d8200d75fd63907e8d67aa"
+  },
+  {
+    "date": "2026-08-24",
+    "contract": "WINV26",
+    "full_stream_records": 5346168,
+    "expected_records": 5346168,
+    "reduced_events": 43177,
+    "original_5_states_match": true,
+    "python_all6_states_match": true,
+    "full_same_ms_invariant": true,
+    "reduced_file_sha256": "d02fcdac9e235687d2fea3b4b4e5937878637c529b9e180073c2b0493caf089a"
+  },
+  {
+    "date": "2026-09-04",
+    "contract": "WINV26",
+    "full_stream_records": 5287536,
+    "expected_records": 5287536,
+    "reduced_events": 23841,
+    "original_5_states_match": true,
+    "python_all6_states_match": true,
+    "full_same_ms_invariant": true,
+    "reduced_file_sha256": "3eaa0490003e961395803bb670e1cde53cc7adc7fa73bf0a3aa22f5c60c831ee"
+  },
+  {
+    "date": "2026-09-11",
+    "contract": "WINV26",
+    "full_stream_records": 5687907,
+    "expected_records": 5687907,
+    "reduced_events": 77449,
+    "original_5_states_match": true,
+    "python_all6_states_match": true,
+    "full_same_ms_invariant": true,
+    "reduced_file_sha256": "5daa5d96311194cc15974ba2453f771159c3ba291813dc3f7557097c6866171b"
+  },
+  {
+    "date": "2026-09-25",
+    "contract": "WINV26",
+    "full_stream_records": 5431789,
+    "expected_records": 5431789,
+    "reduced_events": 42410,
+    "original_5_states_match": true,
+    "python_all6_states_match": true,
+    "full_same_ms_invariant": true,
+    "reduced_file_sha256": "a99192596f1ae7896b12b80620ccec0711a76e146d6738f0fe3a530cd0d68f51"
+  }
+]

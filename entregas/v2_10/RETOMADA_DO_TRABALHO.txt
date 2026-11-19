@@ -1,3 +1,23 @@
+S23 STOP200/ALVO500 FECHADO COM OS DEZ ZIPs RESTAURADOS — 19/11/2026
+Pasta entregas/fechamento_s23_cedro_20261119/.
+Dez ZIPs novos íntegros: hashes iguais aos recibos históricos. Índice unificado
+INDICE_26_ZIPS_RESTAURADOS.json contém nomes, caminhos e IDs para26ZIPs atuais.
+Não pedir novamente estes arquivos: restaurar via IDs se ambiente perder acesso.
+Cinco últimas operações (11/08,24/08,04/09,11/09,25/09/2026): todasSL-200.
+26.558.920registros integrais dos contratos;25estados originais preservados;
+30estados C++integral vsPythonreduzido iguais e empates confirmados.
+
+S23N089isolado:2024 +8935;2025 +3885;2026jan-out +95;total+12915;
+DDdiáriocontínuo4915;386operações;ZERO pendências. DDanuais1600/2300/3600.
+Frequência126TP/253SL/7cortes;1TPa cada3,063entradas;1SL a cada1,526;
+maior sequência12SL. Bruto semcustos/slippage, nenhuma variante promovida.
+Combinações anteriores atualizadas só na contribuição S23: ainda16pendências
+nos outrosníveisR23,6/R50. Não confundir fechamentoS23 com conjuntosfechados.
+Original e estudos anteriores intactos;50/250 dos5continua emstand-by.
+Cachefechado:/workspace/work/fechamento_s23_cedro_20261119/fechado.pickle.
+
+REGISTROS HISTÓRICOS PRESERVADOS ABAIXO
+
 S23 STOP200/ALVO500: CINCO NOVAS DATAS CONFERIDAS — 19/11/2026
 Pasta entregas/atualizacao_s23_replay_20261119/. Bruto Novas datas.xlsx preservado,
 SHA e ID Sediment file_000000002dc8820e9d982c6f9fb32ac1 no manifesto.

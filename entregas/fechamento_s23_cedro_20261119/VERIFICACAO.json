@@ -1,0 +1,11 @@
+{
+  "closed_operations": 386,
+  "zero_pending_S23": true,
+  "scalar_total_and_daily_DD_verified": true,
+  "original_states_preserved": 25,
+  "full_cpp_vs_python_states_checked": 30,
+  "new_full_stream_records": 26558920,
+  "restored_files_hash_verified": 26,
+  "updated_combinations_checked": 3,
+  "other_levels_pending_not_closed": 16
+}

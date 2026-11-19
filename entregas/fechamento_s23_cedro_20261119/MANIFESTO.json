@@ -1,0 +1,169 @@
+{
+  "summary": {
+    "level": "S23.6",
+    "stop": 200,
+    "target": 500,
+    "period": "2024Jan-2026Oct",
+    "operations": 386,
+    "total": 12915.0,
+    "DD_daily_continuous": 4915.0,
+    "pending": 0,
+    "closed_under_saved_methodology": true,
+    "year2024": 8935.0,
+    "year2025": 3885.0,
+    "year2026": 95.0
+  },
+  "new_raw_files": 10,
+  "total_current_restored_raw_files": 26,
+  "new_full_stream_records": 26558920,
+  "original_states_unchanged": 25,
+  "python_vs_full_cpp_states": 30,
+  "remaining_S23_pending": 0,
+  "remaining_combination_pending": 16,
+  "source_recovery_index": "INDICE_26_ZIPS_RESTAURADOS.json",
+  "original_not_modified": true,
+  "no_variant_promoted": true,
+  "verification": {
+    "closed_operations": 386,
+    "zero_pending_S23": true,
+    "scalar_total_and_daily_DD_verified": true,
+    "original_states_preserved": 25,
+    "full_cpp_vs_python_states_checked": 30,
+    "new_full_stream_records": 26558920,
+    "restored_files_hash_verified": 26,
+    "updated_combinations_checked": 3,
+    "other_levels_pending_not_closed": 16
+  },
+  "files": [
+    {
+      "path": "ANUAL_FINAL.csv",
+      "bytes": 156,
+      "sha256": "200124930fc5a86b679fd833a85bf4d3260fd1b95ee7db1356b5d07a6089df68"
+    },
+    {
+      "path": "AUDITORIA_REPROCESSAMENTO.json",
+      "bytes": 1823,
+      "sha256": "4c63e026c3f20268b4da07fa0dbf541dc618559341621f5e7dd0e81ddc95ed00"
+    },
+    {
+      "path": "CINCO_OPERACOES_RESOLVIDAS.csv",
+      "bytes": 874,
+      "sha256": "f071abc9684efb02c492a93b04cb48b73b96946037f85fe55dc58fbfdf995147"
+    },
+    {
+      "path": "COMBINACOES_ATUALIZADAS.csv",
+      "bytes": 492,
+      "sha256": "fcfd2d89f481d9910334366363d8764cab6c47fff49210fd288eec07415cda30"
+    },
+    {
+      "path": "DIARIO_COMBINACOES.csv",
+      "bytes": 105277,
+      "sha256": "bb1c441eac0d3890fd930e2c9a1d6619f986cc2f7ee27627f68834efee433e84"
+    },
+    {
+      "path": "DIARIO_FINAL.csv",
+      "bytes": 27263,
+      "sha256": "e1ec453d71d38a9757a4e476b4d5434666ad5cf11392824001289c4232dc5cf6"
+    },
+    {
+      "path": "DIRETO_20260811.csv",
+      "bytes": 224,
+      "sha256": "64b412c59706353938e4913af80c12241a157ab48eedcbc3cfd9a52e3cef3920"
+    },
+    {
+      "path": "DIRETO_20260824.csv",
+      "bytes": 223,
+      "sha256": "2d7c4b293ab39e8543d3ade4dac4f51afbaea32d1d29cb511cd8c8ce31ab771b"
+    },
+    {
+      "path": "DIRETO_20260904.csv",
+      "bytes": 206,
+      "sha256": "83c7ed49add548b0f7247fbc1a04a549ddc36a88c34be5d1593b278115b7b772"
+    },
+    {
+      "path": "DIRETO_20260911.csv",
+      "bytes": 222,
+      "sha256": "868cc5f7c9dbe550eb619f602e932bfc18fa7d6b79a4fdd1b828678b12c5ec5a"
+    },
+    {
+      "path": "DIRETO_20260925.csv",
+      "bytes": 206,
+      "sha256": "d0033c718f35d385358bad79c3b4f5e14a22e88fa1ed6fa3064b0bb16233b8c9"
+    },
+    {
+      "path": "FREQUENCIAS_FINAIS.csv",
+      "bytes": 1461,
+      "sha256": "f4089c3607f170f402db58d3c7132b7382d69adad714d9dfe5b64b7f2c810834"
+    },
+    {
+      "path": "INDICE_26_ZIPS_RESTAURADOS.json",
+      "bytes": 10217,
+      "sha256": "c2076705b1195baf585b1058b10b7f1f534952c6b2cb1e75130766a65afebf1c"
+    },
+    {
+      "path": "LEIA_PRIMEIRO.md",
+      "bytes": 4817,
+      "sha256": "d639d19a3be27d978afcc029b2c1e7101c37c7d441c2ce11f60d873e611562c3"
+    },
+    {
+      "path": "MENSAL_FINAL.csv",
+      "bytes": 961,
+      "sha256": "88ad5557d12614104281fb184376531f6555018991bbfb0de65d82ceb2d8efbd"
+    },
+    {
+      "path": "OPERACOES_FINAIS.csv",
+      "bytes": 42619,
+      "sha256": "cb801f6b3935ca620a678f4a33c01c3d728e28b0e852388c99d9b329c6cd53d6"
+    },
+    {
+      "path": "RESTAURACAO_FONTES.json",
+      "bytes": 4576,
+      "sha256": "63ce61ee4a0b15fcd40881aacbe88e1c6d8318865563a3a2d51acd8aa97d9dbc"
+    },
+    {
+      "path": "RESULTADO_FINAL_S23.csv",
+      "bytes": 208,
+      "sha256": "b5d07d16dd802b82aa13fe7f3f21402f57d2b32895fb53ec13fc018fd4d7ec9a"
+    },
+    {
+      "path": "S23_Stop200_Alvo500_Fechado_2024_2026.pdf",
+      "bytes": 5369,
+      "sha256": "02e7ec1f86b335b380650282df6a67f0a48c279ccf82b67853bd2adfa9044c9f"
+    },
+    {
+      "path": "S23_Stop200_Alvo500_Fechado_2024_2026.xlsx",
+      "bytes": 57552,
+      "sha256": "b9c075cbbc3ae3ae42178c9c07c5e23acfc27d9f1746d1044c7cdaf509e22307"
+    },
+    {
+      "path": "SENSIBILIDADE_CUSTOS.csv",
+      "bytes": 111,
+      "sha256": "c14bbd1e528347025a6463574936e6e0a7999a27461502c5d6b0c3799771585c"
+    },
+    {
+      "path": "VERIFICACAO.json",
+      "bytes": 338,
+      "sha256": "f7430b7750fac44389b2592eb8c4510ca8044bce19c6a0a81e5b822181266482"
+    },
+    {
+      "path": "fechar.py",
+      "bytes": 10311,
+      "sha256": "492dbcebd87df21a6cd2d5314d7ed4449df92274ab07d0e63269b979f58241dc"
+    },
+    {
+      "path": "reprocessar.cpp",
+      "bytes": 3891,
+      "sha256": "49514751678f74e9d6a6472faf34f45d12f05f75b9cc240a13a8283eed2d5267"
+    },
+    {
+      "path": "reprocessar.py",
+      "bytes": 5133,
+      "sha256": "2817a2b1f73d20319908a1bd03d5a9b560ed47a0726a5ab51fce24d62539e029"
+    },
+    {
+      "path": "verificar.py",
+      "bytes": 2336,
+      "sha256": "515b456b39ff57fcc728fa87cced502433f479a35b08d2069eae1533bad46733"
+    }
+  ]
+}
