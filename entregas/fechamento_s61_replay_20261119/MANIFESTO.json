@@ -1,0 +1,89 @@
+{
+  "file": "Datas.xlsx",
+  "path": "/workspace/dados_brutos_modelo_d/replay_profit/Datas.xlsx",
+  "bytes": 35125505,
+  "sha256": "57b6257163b82e10bcb548a5d544ff441ba539cefdecb3e3a211f865c0c52d12",
+  "url": "https://github.com/Dhennison/PROEJTO-EA/releases/download/dados-replay-2025-20261116/Datas.xlsx",
+  "asset_id": 768928838,
+  "expected_windows": 29,
+  "accepted_windows": 29,
+  "pending_operations_before": 61,
+  "pending_operations_after": 0,
+  "original_compatible_days": 28,
+  "original_not_modified": true,
+  "standby": "50/250",
+  "contract_check": "Contrato esperado das referencias; planilha nao possui campo ativo. Correspondencia OHLC e quantidade confirmada nos minutos aceitos.",
+  "tied_ms": "Reversao de grupos no mesmo milissegundo e rejeicao de grupos com barreiras opostas ou entrada/alvo ambiguos.",
+  "summary": [
+    {
+      "id": "S61_42",
+      "total_lower": 2295.0,
+      "total_upper": 2295.0,
+      "DD_lower": 1370.0,
+      "DD_upper": 1370.0,
+      "pending": 0,
+      "operations": 233,
+      "points_per_DD": 1.6751824817518248,
+      "year2024_lower": -210.0,
+      "year2024_upper": -210.0,
+      "year2025_lower": 2260.0,
+      "year2025_upper": 2260.0,
+      "year2026_lower": 245.0,
+      "year2026_upper": 245.0,
+      "rank": 1
+    },
+    {
+      "id": "S61_48",
+      "total_lower": 3960.0,
+      "total_upper": 3960.0,
+      "DD_lower": 2670.0,
+      "DD_upper": 2670.0,
+      "pending": 0,
+      "operations": 233,
+      "points_per_DD": 1.4831460674157304,
+      "year2024_lower": 240.0,
+      "year2024_upper": 240.0,
+      "year2025_lower": 3395.0,
+      "year2025_upper": 3395.0,
+      "year2026_lower": 325.0,
+      "year2026_upper": 325.0,
+      "rank": 2
+    },
+    {
+      "id": "S61_60",
+      "total_lower": 4845.0,
+      "total_upper": 4845.0,
+      "DD_lower": 3845.0,
+      "DD_upper": 3845.0,
+      "pending": 0,
+      "operations": 233,
+      "points_per_DD": 1.2600780234070221,
+      "year2024_lower": 1175.0,
+      "year2024_upper": 1175.0,
+      "year2025_lower": 2710.0,
+      "year2025_upper": 2710.0,
+      "year2026_lower": 960.0,
+      "year2026_upper": 960.0,
+      "rank": 3
+    }
+  ],
+  "S61_68_equivalent_to_48_all_233_entries": true,
+  "source_hashes": [
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/LIMITES_POR_OPERACAO.csv",
+      "sha256": "2698660568092035c89e503826e0bd31be614c807aca3c928fec72d65b64a65c"
+    },
+    {
+      "path": "entregas/estudo_s61_saidas_20261117/PENDENCIAS_POR_VARIANTE.csv",
+      "sha256": "376625b6c060e95435097d3fc87bc148df846c42b5ccebdf61b3ecfb2bbd86a3"
+    },
+    {
+      "path": "entregas/coletas_extras_s61_20261118/INDICE_29_JANELAS_SEM_DUPLICAR.csv",
+      "sha256": "7bccefe9cda8775ce3aea16ae0c07d7132e0ed5da54e67540dff1167e626129c"
+    },
+    {
+      "path": "entregas/comparacao_proporcionais_s61_20261118/CONFRONTO_5_OPCOES.csv",
+      "sha256": "baa509c779bb5fd8869c532d3f352378472cdf6544a9507c02fec96745dbdde2"
+    }
+  ]
+}

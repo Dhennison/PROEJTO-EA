@@ -1,3 +1,20 @@
+FECHAMENTO S61 COM DATAS.XLSX — 19/11/2026
+Recebido no lançamento dados-replay-2025-20261116, asset 768928838.
+29/29 janelas em 28 datas conferem OHLC e quantidade. Bruto e SHA no manifesto.
+Pasta: entregas/fechamento_s61_replay_20261119/ (PDF, XLSX, CSVs e auditoria).
+S61 stop 100/alvo original: 2024 -210; 2025 +2260; 2026 jan-out +245;
+total +2295; DD diário contínuo 1370; 233 operações; zero pendências.
+S61_48/68: +240/+3395/+325; total +3960; DD 2670; zero pendências.
+S61_60: +1175/+2710/+960; total +4845; DD 3845; zero pendências.
+61 pendências fechadas entre três estratégias (20+27+14), sem duplicar 48/68.
+Ranking total/DD permanece stop 100, 48/68, 60. Nenhuma variante promovida.
+DD diário cronológico com zero inicial, sem reinício mensal/anual.
+Resultados principais, estudos e brutos anteriores preservados.
+50/250 EM STAND-BY por decisão expressa do usuário; não pedir suas 139 janelas.
+Fontes M1 + Replay pontual; não apresentar como auditoria integral tick a tick.
+
+REGISTROS HISTÓRICOS PRESERVADOS ABAIXO
+
 LISTA ÚNICA DE REPLAY — 18/11/2026
 Consolidada em entregas/coletas_unificadas_20261118/TODAS_AS_JANELAS.csv
 São 159 janelas em 130 datas: 20 do S61 stop 100, 28 do S61_48/68,
