@@ -1,0 +1,11 @@
+{
+  "frozen_entries_verified": 834,
+  "tested_recipes_verified": 270,
+  "trade_scenarios_verified": 75060,
+  "independent_scalar_DD_checks": 540,
+  "raw_scenarios_checked": 213,
+  "raw_resolved": 190,
+  "original_results_unchanged": true,
+  "S23_new_Replay_requests": 5,
+  "S23_existing_Cedro_raw_recovery_windows": 5
+}

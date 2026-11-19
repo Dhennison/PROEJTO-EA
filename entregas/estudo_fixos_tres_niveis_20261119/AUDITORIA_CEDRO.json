@@ -1,0 +1,74 @@
+[
+  {
+    "date": "2026-08-04",
+    "contract": "WINQ26",
+    "full_records": 4838964,
+    "expected_records": 4838964,
+    "original_5_states_match": true,
+    "new_pending_checked": 6,
+    "new_resolved": 6
+  },
+  {
+    "date": "2026-08-05",
+    "contract": "WINQ26",
+    "full_records": 4646247,
+    "expected_records": 4646247,
+    "original_5_states_match": true,
+    "new_pending_checked": 6,
+    "new_resolved": 6
+  },
+  {
+    "date": "2026-08-13",
+    "contract": "WINV26",
+    "full_records": 4597107,
+    "expected_records": 4597107,
+    "original_5_states_match": true,
+    "new_pending_checked": 40,
+    "new_resolved": 40
+  },
+  {
+    "date": "2026-08-18",
+    "contract": "WINV26",
+    "full_records": 4465737,
+    "expected_records": 4465737,
+    "original_5_states_match": true,
+    "new_pending_checked": 56,
+    "new_resolved": 56
+  },
+  {
+    "date": "2026-08-19",
+    "contract": "WINV26",
+    "full_records": 5016892,
+    "expected_records": 5016892,
+    "original_5_states_match": true,
+    "new_pending_checked": 26,
+    "new_resolved": 26
+  },
+  {
+    "date": "2026-08-21",
+    "contract": "WINV26",
+    "full_records": 4903107,
+    "expected_records": 4903107,
+    "original_5_states_match": true,
+    "new_pending_checked": 21,
+    "new_resolved": 19
+  },
+  {
+    "date": "2026-08-25",
+    "contract": "WINV26",
+    "full_records": 5542718,
+    "expected_records": 5542718,
+    "original_5_states_match": true,
+    "new_pending_checked": 6,
+    "new_resolved": 6
+  },
+  {
+    "date": "2026-08-31",
+    "contract": "WINV26",
+    "full_records": 5020544,
+    "expected_records": 5020544,
+    "original_5_states_match": true,
+    "new_pending_checked": 52,
+    "new_resolved": 31
+  }
+]

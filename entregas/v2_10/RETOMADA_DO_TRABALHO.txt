@@ -1,3 +1,26 @@
+ALVOS/STOPS FIXOS EM TRÊS NÍVEIS E CORREÇÃO CEDRO — 19/11/2026
+Nova pasta: entregas/estudo_fixos_tres_niveis_20261119/.
+R61,8/S38,2/S61,8: 90 receitas por nível, 270 testes, mesmas 834 entradas.
+Stop200/alvo500: totais -1250 a1550 / -5365 a-465 / -4860 a-2760.
+R61 stop375/alvo1000 fechado: +2315/+1705/+1705, total5725, DD4865.
+R61 stop75/alvo1000 fechado: +4760/+460/-1175, total4045, DD2360.
+S38 stop200/alvo1000 fechado: -305/+3110/-1675, total1130, DD6000.
+190 casos de receitas resolvidos com 16 ZIPs Cedro em 8dias; originais iguais.
+Resultados originais preservados, nenhum modelo promovido.
+
+CORREÇÃO IMPORTANTE: usuário JÁ ENVIOU todos os logs Cedro agosto-outubro.
+132 ZIPs com recibos/hashes; somente16 acessíveis neste ambiente, 116 sem acesso.
+Não pedir Replay novo nesses meses por confundir ausência atual com falta de envio.
+S23 stop200/alvo500: só5 capturas Replay novas: 11/09/2025 09:30 WINV25;
+13/02/2026 09:01 WING26;17/03 09:00 WINJ26;11/05 09:01 WINM26;
+31/07 12:34 WINQ26. Cada minuto completo com margem.
+Os5Cedro 11/08,24/08,04/09,11/09,25/09/2026 são recuperação de brutos
+já recebidos; não são nova coleta.10ZIPsnomes/tamanhos/SHAemCSVna nova pasta.
+As10incertezasdoS23continuam pendentesfinanceiramenteatéconfirmadas.
+50/250 dos cinco níveis continuaemstand-by; grade dos3autorizadaagora.
+
+REGISTROS HISTÓRICOS PRESERVADOS ABAIXO
+
 NOVOS NÍVEIS E FREQUÊNCIAS — 19/11/2026
 Pasta: entregas/estudo_niveis_auxiliares_20261119/.
 R23,6/R50 vendas, S23,6 compra: 386/299/386 novas entradas em 709 pregões.
