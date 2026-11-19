@@ -1,3 +1,22 @@
+NOVOS NÍVEIS E FREQUÊNCIAS — 19/11/2026
+Pasta: entregas/estudo_niveis_auxiliares_20261119/.
+R23,6/R50 vendas, S23,6 compra: 386/299/386 novas entradas em 709 pregões.
+168 receitas por nível = 504 testes; 765 subconjuntos em 3 famílias de seleção.
+Cinco antigos mantêm parâmetros originais. Nenhuma variante promovida.
+Destaque S23,6 stop200/alvo500: 2024 +8935; 2025 +3885 a4585;
+2026jan-out +95 a6395; total12915 a19915; DD3515 a4915; 10 pendências.
+Melhor conjunto pelo treino: S61 original + três novos, 22940 a35855,
+DD5925 a7055, 26 operações pendentes. Maior total exploratório23930 a36845;
+melhor relação total/DD exploratória18560 a31475, DD3595 a3850.
+Não são resultados fechados nem ótimo global. 2026 já conhecido, não validação futura.
+16 ZIPs Cedro: 39031316 registros, cinco estados originais por dia iguais;
+965 variantes novas examinadas, 923 resolvidas; provas e hashes preservados.
+Frequências de alvo/stop cheio/corte por nível, receita e ano; mensal dos novos
+selecionados. Replay de triagem37janelas/32datas, não pedir automaticamente tudo.
+50/250 dos cinco antigos continua em stand-by. Original +3950/DD14805 intacto.
+
+REGISTROS HISTÓRICOS PRESERVADOS ABAIXO
+
 FECHAMENTO S61 COM DATAS.XLSX — 19/11/2026
 Recebido no lançamento dados-replay-2025-20261116, asset 768928838.
 29/29 janelas em 28 datas conferem OHLC e quantidade. Bruto e SHA no manifesto.

@@ -1,0 +1,793 @@
+{
+  "period": "2024Jan-2026Oct",
+  "days": 709,
+  "original_ops": 1485,
+  "original_points": 3950,
+  "original_DD": 14805,
+  "new_entries": {
+    "R23.6": 386,
+    "R50": 299,
+    "S23.6": 386
+  },
+  "recipes_per_level": 168,
+  "new_level_tests": 504,
+  "combinations_tested": 765,
+  "original_unchanged": true,
+  "standby": "Original five-level fixed stop50 target250 test remains on hold; not resumed.",
+  "primary_selection": {
+    "rank": 1,
+    "id": "TRAIN_SCORE_240",
+    "family": "TRAIN_SCORE",
+    "mask": 240,
+    "levels": "S61.8|R23.6:N154|R50:N155|S23.6:N089",
+    "lower": 22940.0,
+    "upper": 35855.0,
+    "DD_lower_path": 5925.0,
+    "DD_upper_path": 7055.0,
+    "points_per_DD": 3.251594613749114,
+    "training_lower": 22370.0,
+    "training_DD": 2650.0,
+    "training_score": 8.441509433962263,
+    "operations": 1304,
+    "pending": 26,
+    "year2024_lower": 15140.0,
+    "year2024_upper": 16460.0,
+    "year2025_lower": 7230.0,
+    "year2025_upper": 9525.0,
+    "year2026_lower": 570.0,
+    "year2026_upper": 9870.0
+  },
+  "posthoc_best_points": {
+    "id": "TRAIN_SCORE_243",
+    "family": "TRAIN_SCORE",
+    "mask": 243,
+    "levels": "R38.2|R61.8|S61.8|R23.6:N154|R50:N155|S23.6:N089",
+    "lower": 23930.0,
+    "upper": 36845.0,
+    "DD_lower_path": 10580.0,
+    "DD_upper_path": 11435.0,
+    "points_per_DD": 2.0926978574551813,
+    "training_lower": 19805.0,
+    "training_DD": 5860.0,
+    "training_score": 3.3796928327645053,
+    "operations": 1912,
+    "pending": 26,
+    "year2024_lower": 18240.0,
+    "year2024_upper": 19560.0,
+    "year2025_lower": 1565.0,
+    "year2025_upper": 3860.0,
+    "year2026_lower": 4125.0,
+    "year2026_upper": 13425.0
+  },
+  "posthoc_best_ratio": {
+    "id": "TRAIN_SCORE_234",
+    "family": "TRAIN_SCORE",
+    "mask": 234,
+    "levels": "R61.8|S50|R23.6:N154|R50:N155|S23.6:N089",
+    "lower": 18560.0,
+    "upper": 31475.0,
+    "DD_lower_path": 3595.0,
+    "DD_upper_path": 3850.0,
+    "points_per_DD": 4.820779220779221,
+    "training_lower": 13510.0,
+    "training_DD": 3850.0,
+    "training_score": 3.5090909090909093,
+    "operations": 1624,
+    "pending": 26,
+    "year2024_lower": 12260.0,
+    "year2024_upper": 13580.0,
+    "year2025_lower": 1250.0,
+    "year2025_upper": 3545.0,
+    "year2026_lower": 5050.0,
+    "year2026_upper": 14350.0
+  },
+  "frequency_original_all": [
+    {
+      "level": "S50",
+      "variant": "ORIGINAL",
+      "period": "ALL",
+      "operations": 298,
+      "pending": 0,
+      "lower": -140,
+      "upper": -140,
+      "TP_guaranteed": 190,
+      "TP_possible": 190,
+      "TP_pct_lower": 63.758389261744966,
+      "TP_pct_upper": 63.758389261744966,
+      "entries_per_TP_min": 1.568421052631579,
+      "entries_per_TP_max": 1.568421052631579,
+      "SL_guaranteed": 103,
+      "SL_possible": 103,
+      "SL_pct_lower": 34.56375838926174,
+      "SL_pct_upper": 34.56375838926174,
+      "entries_per_SL_min": 2.8932038834951457,
+      "entries_per_SL_max": 2.8932038834951457,
+      "CUT_guaranteed": 5,
+      "CUT_possible": 5,
+      "CUT_pct_lower": 1.6778523489932886,
+      "CUT_pct_upper": 1.6778523489932886,
+      "entries_per_CUT_min": 59.6,
+      "entries_per_CUT_max": 59.6,
+      "max_consecutive_SL_guaranteed": 6,
+      "max_consecutive_SL_possible": 6,
+      "max_consecutive_TP_guaranteed": 10,
+      "max_consecutive_TP_possible": 10
+    },
+    {
+      "level": "S61.8",
+      "variant": "ORIGINAL",
+      "period": "ALL",
+      "operations": 233,
+      "pending": 0,
+      "lower": 5065,
+      "upper": 5065,
+      "TP_guaranteed": 179,
+      "TP_possible": 179,
+      "TP_pct_lower": 76.82403433476395,
+      "TP_pct_upper": 76.82403433476395,
+      "entries_per_TP_min": 1.3016759776536313,
+      "entries_per_TP_max": 1.3016759776536313,
+      "SL_guaranteed": 45,
+      "SL_possible": 45,
+      "SL_pct_lower": 19.313304721030043,
+      "SL_pct_upper": 19.313304721030043,
+      "entries_per_SL_min": 5.177777777777778,
+      "entries_per_SL_max": 5.177777777777778,
+      "CUT_guaranteed": 9,
+      "CUT_possible": 9,
+      "CUT_pct_lower": 3.8626609442060085,
+      "CUT_pct_upper": 3.8626609442060085,
+      "entries_per_CUT_min": 25.88888888888889,
+      "entries_per_CUT_max": 25.88888888888889,
+      "max_consecutive_SL_guaranteed": 4,
+      "max_consecutive_SL_possible": 4,
+      "max_consecutive_TP_guaranteed": 17,
+      "max_consecutive_TP_possible": 17
+    },
+    {
+      "level": "R38.2",
+      "variant": "ORIGINAL",
+      "period": "ALL",
+      "operations": 353,
+      "pending": 0,
+      "lower": 165,
+      "upper": 165,
+      "TP_guaranteed": 202,
+      "TP_possible": 202,
+      "TP_pct_lower": 57.22379603399433,
+      "TP_pct_upper": 57.22379603399433,
+      "entries_per_TP_min": 1.7475247524752475,
+      "entries_per_TP_max": 1.7475247524752475,
+      "SL_guaranteed": 144,
+      "SL_possible": 144,
+      "SL_pct_lower": 40.79320113314448,
+      "SL_pct_upper": 40.79320113314448,
+      "entries_per_SL_min": 2.451388888888889,
+      "entries_per_SL_max": 2.451388888888889,
+      "CUT_guaranteed": 7,
+      "CUT_possible": 7,
+      "CUT_pct_lower": 1.9830028328611897,
+      "CUT_pct_upper": 1.9830028328611897,
+      "entries_per_CUT_min": 50.42857142857143,
+      "entries_per_CUT_max": 50.42857142857143,
+      "max_consecutive_SL_guaranteed": 8,
+      "max_consecutive_SL_possible": 8,
+      "max_consecutive_TP_guaranteed": 11,
+      "max_consecutive_TP_possible": 11
+    },
+    {
+      "level": "R61.8",
+      "variant": "ORIGINAL",
+      "period": "ALL",
+      "operations": 255,
+      "pending": 0,
+      "lower": 825,
+      "upper": 825,
+      "TP_guaranteed": 205,
+      "TP_possible": 205,
+      "TP_pct_lower": 80.3921568627451,
+      "TP_pct_upper": 80.3921568627451,
+      "entries_per_TP_min": 1.2439024390243902,
+      "entries_per_TP_max": 1.2439024390243902,
+      "SL_guaranteed": 48,
+      "SL_possible": 48,
+      "SL_pct_lower": 18.823529411764707,
+      "SL_pct_upper": 18.823529411764707,
+      "entries_per_SL_min": 5.3125,
+      "entries_per_SL_max": 5.3125,
+      "CUT_guaranteed": 2,
+      "CUT_possible": 2,
+      "CUT_pct_lower": 0.7843137254901961,
+      "CUT_pct_upper": 0.7843137254901961,
+      "entries_per_CUT_min": 127.5,
+      "entries_per_CUT_max": 127.5,
+      "max_consecutive_SL_guaranteed": 3,
+      "max_consecutive_SL_possible": 3,
+      "max_consecutive_TP_guaranteed": 18,
+      "max_consecutive_TP_possible": 18
+    },
+    {
+      "level": "S38.2",
+      "variant": "ORIGINAL",
+      "period": "ALL",
+      "operations": 346,
+      "pending": 0,
+      "lower": -1965,
+      "upper": -1965,
+      "TP_guaranteed": 247,
+      "TP_possible": 247,
+      "TP_pct_lower": 71.38728323699422,
+      "TP_pct_upper": 71.38728323699422,
+      "entries_per_TP_min": 1.4008097165991902,
+      "entries_per_TP_max": 1.4008097165991902,
+      "SL_guaranteed": 96,
+      "SL_possible": 96,
+      "SL_pct_lower": 27.745664739884393,
+      "SL_pct_upper": 27.745664739884393,
+      "entries_per_SL_min": 3.6041666666666665,
+      "entries_per_SL_max": 3.6041666666666665,
+      "CUT_guaranteed": 3,
+      "CUT_possible": 3,
+      "CUT_pct_lower": 0.8670520231213873,
+      "CUT_pct_upper": 0.8670520231213873,
+      "entries_per_CUT_min": 115.33333333333333,
+      "entries_per_CUT_max": 115.33333333333333,
+      "max_consecutive_SL_guaranteed": 4,
+      "max_consecutive_SL_possible": 4,
+      "max_consecutive_TP_guaranteed": 9,
+      "max_consecutive_TP_possible": 9
+    }
+  ],
+  "selected_replay_windows": 37,
+  "selected_replay_days": 32,
+  "no_variant_promoted": true,
+  "sources": [
+    {
+      "path": "entregas/cedro_modelod_agosto_2026/resultado/TODOS_NIVEIS.csv",
+      "sha256": "2d684747b37c014692f903118ece66e3b5913a6f7d25d9018070ec7d2f60fad6"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/resultado_mensal/REFERENCIAS.csv",
+      "sha256": "2820de2d4be6f55865f896a53f2cb1160c0c782d9005094b85343e7fd968b592"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/resultado_mensal/TODOS_NIVEIS.csv",
+      "sha256": "0c99eb1511df97525666fca98a76fe2a405bf9a278bd864253cf45674eafb6bf"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/referencias/REFERENCIAS.csv",
+      "sha256": "4c64cbd5f7409950298d0b332efa5520bdcb592199c0bb736d2bbe284e42d138"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/resultado/TODOS_NIVEIS.csv",
+      "sha256": "cff6a2418d98e167b6ea2e546d4ed8334c984f1ec122d9822d95d04528a463b0"
+    },
+    {
+      "path": "entregas/fechamento_agosto_v1_11/MQL5/Files/MD_Agosto_2026_Referencias.csv",
+      "sha256": "7135eca392acfc9ab3ecd5b6ddbfe99b11fef94385680463cf9771dc219222f0"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/01_Janeiro/REFERENCIAS.csv",
+      "sha256": "be5ad51b21ebece3451b0451ed1dcb75672abd0891eda3f9ea17983d9d5de0a1"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/02_Fevereiro/REFERENCIAS.csv",
+      "sha256": "7c6e9c6c09ed6e9ec89e72b91de7b72e103af575b0b21b467be437ad6472d50a"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/03_Março/REFERENCIAS.csv",
+      "sha256": "c6d56ce17c8cb074bd3a3e48a210b3f394b4699000d0d837a82006947de6e370"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/04_Abril/REFERENCIAS.csv",
+      "sha256": "a24fa8f897219733bf437d6a1898d1ba34ab0d4171c0413167b4508e6cfbc1c1"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/05_Maio/REFERENCIAS.csv",
+      "sha256": "d5323625bb0607f238cb425f5ae65d4a8ba9b5038dd57e0ff032581a18c4def6"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/06_Junho/REFERENCIAS.csv",
+      "sha256": "d3837a158a47b3e2382b9bd898cf4bc8036937497dd64d0c510512c0aa860ff3"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/07_Julho/REFERENCIAS.csv",
+      "sha256": "70341612b5f58925339a7a7dfb0473338471436a66b67e24d030eb474b2f0e9a"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/08_Agosto/REFERENCIAS.csv",
+      "sha256": "d883d845d99e8588e4da595c4c241c95429e987c27b0ce111bd37805cd52013b"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/09_Setembro/REFERENCIAS.csv",
+      "sha256": "809ca2cc553c56bd441477f71158ad955af0ede18d2d253fb1cc0c32773c863e"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/10_Outubro/REFERENCIAS.csv",
+      "sha256": "6454992a0da68398b3bcf3921738dd632fefeb7b858444151002578e36d3e744"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/11_Novembro/REFERENCIAS.csv",
+      "sha256": "b7652a04e84e1bb3d58a052548501ad55fb2a8517d98434e03ea9aa4e6ea488c"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/12_Dezembro/REFERENCIAS.csv",
+      "sha256": "0f4a6f9f2aa6bab47016ae25e0dfeace5d41401e80c7c48e04f60f9f82bbea4e"
+    },
+    {
+      "path": "entregas/preparacao_2024_20261117/complemento_ajustes_02a05jan/REFERENCIAS.csv",
+      "sha256": "598aa9c0d7cdd40c76aa378250b576289d172e0724718ab8b27a34a039ca6d3e"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/01_Janeiro/REFERENCIAS.csv",
+      "sha256": "e58acfb1c3b3c55a22ddfb62a539acb67ac4aeaaba04e10f09e6d5cb453705d4"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/02_Fevereiro/REFERENCIAS.csv",
+      "sha256": "4cf562d87b82a676125ab1b1c12d30ecdf6b0a5c8edfceea01b16f031b345ada"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/03_Março/REFERENCIAS.csv",
+      "sha256": "f330474064a4e21164968cc1b07e99741085efee7208d3bec02eb18478037131"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/04_Abril/REFERENCIAS.csv",
+      "sha256": "58d0941015f58776d08cd4307bb701d337ca6bba55a5e6964f0fc473d50017c5"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/05_Maio/REFERENCIAS.csv",
+      "sha256": "639ea8385e36d025ebf6b96c369e7a567d192aa9e2ed4e4146924e369e08c418"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/06_Junho/REFERENCIAS.csv",
+      "sha256": "dfe0845742ded3711327a496197dde992c39bb7daaaec5c651ffde416d29b891"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/07_Julho/REFERENCIAS.csv",
+      "sha256": "88ab11a659957bacc312b714e9a532c4b053c7e0a729c4c5b94f3ccacecf5048"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/08_Agosto/REFERENCIAS.csv",
+      "sha256": "8d53070c7030b84207b69004e3cce2ab300ea182b56f7ffeef41373117c40dc4"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/09_Setembro/REFERENCIAS.csv",
+      "sha256": "e40db3def29e8189f49baae00af1d605279d9c5cc83f7b907acc855df155b44e"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/10_Outubro/REFERENCIAS.csv",
+      "sha256": "28a8fb4ddc2674e4bb212cd5e07384a36cf6bba44e3948ba336503b2aae2f1f2"
+    },
+    {
+      "path": "entregas/preparacao_jan_nov_2025_20261115/11_Novembro/REFERENCIAS.csv",
+      "sha256": "80c6e91ecedfd0de898efc6afe6c73cb406f8cbfe9552f170d219632a5993343"
+    },
+    {
+      "path": "entregas/profit_abril_20261113/OPERACOES_FINAIS.csv",
+      "sha256": "417cb64e78bdd88b74ffe8d3103daecce6327feda5d32b01ef04d90afa83206c"
+    },
+    {
+      "path": "entregas/profit_abril_20261113/REFERENCIAS_ABRIL.csv",
+      "sha256": "b01a69b102f1ef16852a02afacc4ffa001fb47e048e0b7c4a6758e9fe037a3ac"
+    },
+    {
+      "path": "entregas/profit_dezembro_2025_20261115/OPERACOES_FINAIS.csv",
+      "sha256": "d85e3764214cfc7d0738f5b0f90e47ab9e088ed39d561b6408ff40eddcbceb08"
+    },
+    {
+      "path": "entregas/profit_dezembro_2025_20261115/REFERENCIAS_DEZEMBRO.csv",
+      "sha256": "be8c525116838df98bc5042574484ec30d97b1a1ae0be5b62473824e642fb868"
+    },
+    {
+      "path": "entregas/profit_fevereiro_20261114/OPERACOES_FINAIS.csv",
+      "sha256": "4dbb048358f6eff141a12b9c7ed3a29dcf16eb66169a899554692e1ac10ec3f9"
+    },
+    {
+      "path": "entregas/profit_fevereiro_20261114/REFERENCIAS_FEVEREIRO.csv",
+      "sha256": "2415399be2ed6db5e487cabe8bc3c2e2f930bf228641789b00d32862a6fc56fb"
+    },
+    {
+      "path": "entregas/profit_janeiro_20261115/OPERACOES_FINAIS.csv",
+      "sha256": "8df9618a5c2212a1b448326094dc389ba3cc23bdc484eca9115bc3e5fc8df0ae"
+    },
+    {
+      "path": "entregas/profit_janeiro_20261115/REFERENCIAS_JANEIRO.csv",
+      "sha256": "8c40cb1a0a4401e7070664cbaf2e29e392e6047ba0a37cfccc9f66de6dc08495"
+    },
+    {
+      "path": "entregas/profit_junho_20261113/OPERACOES_FINAIS.csv",
+      "sha256": "27f8126e896a6322bab1360c7e7b8eeaef3dac43b22451bf06e5e16d221c3241"
+    },
+    {
+      "path": "entregas/profit_junho_20261113/REFERENCIAS_JUNHO.csv",
+      "sha256": "1b483615e5916737bda57e46eafb300de0b78bba44b4c7d61fb717bc77ed8049"
+    },
+    {
+      "path": "entregas/profit_maio_20261113/OPERACOES_FINAIS.csv",
+      "sha256": "374dff4fa74d0466618d704249e1d35eeeccd4e56ca1f63341ad81fcd674947f"
+    },
+    {
+      "path": "entregas/profit_maio_20261113/REFERENCIAS_MAIO.csv",
+      "sha256": "fe58fbe40a80a0b46f9f7fd7f00c5e21683fa4f4436a5b7e98d42b90359dcfcb"
+    },
+    {
+      "path": "entregas/profit_marco_20261113/OPERACOES_FINAIS.csv",
+      "sha256": "c1b7598205d990c2954fa9539a0b118f5c8c3b19dc3be0f736c31df73f3dbef2"
+    },
+    {
+      "path": "entregas/profit_marco_20261113/REFERENCIAS_MARCO.csv",
+      "sha256": "b655747b5e0319b060914d8a439dfab78825662a718a3fe874a09afa6942bbee"
+    },
+    {
+      "path": "entregas/profit_winq26_julho_20261113/OPERACOES_POSSIBILIDADES.csv",
+      "sha256": "7f33528f4223162bc1ae7ec837acddb31fd733af0ef82f50933c4ccf2da3c2bd"
+    },
+    {
+      "path": "entregas/profit_winq26_julho_20261113/REFERENCIAS_JULHO.csv",
+      "sha256": "88658b34c6b1810c933499046e8076b29df85e97d4a675d5b2550f75193f4f42"
+    },
+    {
+      "path": "entregas/profit_winq26_julho_20261113/REPLAY_OPERACOES_RESOLVIDAS.csv",
+      "sha256": "211ef6549027fdcc5f04edbe415e397974fd08de701c13fbf36276c5d3c54bd4"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/01_Janeiro/OPERACOES_FINAIS.csv",
+      "sha256": "d115849d8490f612a165de7928e7018676f32c245fbc2deb75acab557188ba63"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/02_Fevereiro/OPERACOES_FINAIS.csv",
+      "sha256": "bef898ceb73341872f39cfe91e905578978667ff3db7365aa5def746cbd9c6b8"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/03_Março/OPERACOES_FINAIS.csv",
+      "sha256": "e302af1daf73809c8d081fc435f7c74cbe4c2996193899028706d1d749f169c5"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/04_Abril/OPERACOES_FINAIS.csv",
+      "sha256": "626d6cbba2b2c4b8caa0127f4a907f4a62a300c1d4fcb69c0d5beefc76450b2c"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/05_Maio/OPERACOES_FINAIS.csv",
+      "sha256": "590348febcbd0dd38a928a596be70d172aaa34a6c4122a92930548fab7979784"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/06_Junho/OPERACOES_FINAIS.csv",
+      "sha256": "a3c03afcabc2be4be9d3744b82358f6097cee88185ba02d0072df059d5fa67fe"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/07_Julho/OPERACOES_FINAIS.csv",
+      "sha256": "aee451b1486ea0ae69528004f1dbcc4d3a3dd65188c59439fbfa2845492d8008"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/08_Agosto/OPERACOES_FINAIS.csv",
+      "sha256": "618f23610cf232973d7d48f70b9e3679c3714fac9f89d2c474c5d08cedb55648"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/09_Setembro/OPERACOES_FINAIS.csv",
+      "sha256": "dcd23ee86f3e495dab7c3edc665210d39457c8ca0d621472fcf4b1468d0beae0"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/10_Outubro/OPERACOES_FINAIS.csv",
+      "sha256": "097fae1d12a8ec0437c6092d01228b55c907f1151cf2d2e2899ebc9d606215ef"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/11_Novembro/OPERACOES_FINAIS.csv",
+      "sha256": "5901eb03069307c4f89127a46d87af9d43f8ca80b27e6b22dd0cc7d07a000597"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/01_Janeiro/OPERACOES_FINAIS.csv",
+      "sha256": "074f2f9eb83724fe1f3624a22bc732b7673c2895bfd6ecb40042a48337cda25e"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/02_Fevereiro/OPERACOES_FINAIS.csv",
+      "sha256": "33b63436e3ff128dfdd24057ada832697cc1d25da97bb4573fef7ddd3621ae03"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/03_Março/OPERACOES_FINAIS.csv",
+      "sha256": "3006c3d633bcb1038b2ead8ea0c458b2df6cecdaaaaefd13589946dca91411f7"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/04_Abril/OPERACOES_FINAIS.csv",
+      "sha256": "c1b786f17092754d729007e30d70e54d64373d01ea85769ca360b9663811da7b"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/05_Maio/OPERACOES_FINAIS.csv",
+      "sha256": "ecf4db13cf6e8f2d8932c6ac6b884dd003d14996bbe4d09c7dd6f6ad38b6c379"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/06_Junho/OPERACOES_FINAIS.csv",
+      "sha256": "5dc8b797796e9363db0f69e258a29be65f71b02bfdc603fbd1c85ea55b877e40"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/07_Julho/OPERACOES_FINAIS.csv",
+      "sha256": "2d7c094c0c29f177a3b65c6e26a90c28c72a1a45b17031de7c14c800103f947c"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/08_Agosto/OPERACOES_FINAIS.csv",
+      "sha256": "093f56b2e00639afc92bf2845233ba79ac04472f484dae2c129e913e83ec508b"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/09_Setembro/OPERACOES_FINAIS.csv",
+      "sha256": "76f006d6634566cfd86631cbdf7ab66dc541d2499a8ecb426bd2516907cef584"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/10_Outubro/OPERACOES_FINAIS.csv",
+      "sha256": "bb7d43a18c5a26afbcce5202a2c532d70087a17481e6b242c413bc286959ddfa"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/11_Novembro/OPERACOES_FINAIS.csv",
+      "sha256": "3317611bff4fc7ebda95fc0c7dad391e5bf3758dd22ac911e94e5ce5bec8c089"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/12_Dezembro/OPERACOES_FINAIS.csv",
+      "sha256": "fd61e0c6d2dd5fd99de97057fb77afb1dc9b04ce7dfd7860b545622bb6da3ee9"
+    }
+  ],
+  "verification": {
+    "synthetic_engine_checks": 6,
+    "frozen_original_operations": 1485,
+    "original_points": 3950,
+    "reported_curves_checked": 3,
+    "year_and_continuous_DD_checks": true,
+    "raw_variant_checks": 965,
+    "raw_resolved": 923
+  },
+  "raw_audit": [
+    {
+      "date": "2026-08-04",
+      "contract": "WINQ26",
+      "full_records": 4838964,
+      "expected_records": 4838964,
+      "original_5_states_match": true,
+      "new_pending_checked": 183,
+      "new_resolved": 169
+    },
+    {
+      "date": "2026-08-05",
+      "contract": "WINQ26",
+      "full_records": 4646247,
+      "expected_records": 4646247,
+      "original_5_states_match": true,
+      "new_pending_checked": 79,
+      "new_resolved": 79
+    },
+    {
+      "date": "2026-08-13",
+      "contract": "WINV26",
+      "full_records": 4597107,
+      "expected_records": 4597107,
+      "original_5_states_match": true,
+      "new_pending_checked": 176,
+      "new_resolved": 176
+    },
+    {
+      "date": "2026-08-18",
+      "contract": "WINV26",
+      "full_records": 4465737,
+      "expected_records": 4465737,
+      "original_5_states_match": true,
+      "new_pending_checked": 222,
+      "new_resolved": 222
+    },
+    {
+      "date": "2026-08-19",
+      "contract": "WINV26",
+      "full_records": 5016892,
+      "expected_records": 5016892,
+      "original_5_states_match": true,
+      "new_pending_checked": 70,
+      "new_resolved": 70
+    },
+    {
+      "date": "2026-08-21",
+      "contract": "WINV26",
+      "full_records": 4903107,
+      "expected_records": 4903107,
+      "original_5_states_match": true,
+      "new_pending_checked": 53,
+      "new_resolved": 53
+    },
+    {
+      "date": "2026-08-25",
+      "contract": "WINV26",
+      "full_records": 5542718,
+      "expected_records": 5542718,
+      "original_5_states_match": true,
+      "new_pending_checked": 14,
+      "new_resolved": 14
+    },
+    {
+      "date": "2026-08-31",
+      "contract": "WINV26",
+      "full_records": 5020544,
+      "expected_records": 5020544,
+      "original_5_states_match": true,
+      "new_pending_checked": 168,
+      "new_resolved": 140
+    }
+  ],
+  "raw_receipt_reference": "entregas/coletas_s61_e_teste_50_250_20261118/RESTAURACAO_FONTES.json",
+  "new_replay_receipt_reference": "entregas/fechamento_s61_replay_20261119/MANIFESTO.json",
+  "outputs": [
+    {
+      "path": "AUDITORIA_CEDRO.json",
+      "bytes": 1723,
+      "sha256": "446d8622ddbeb7eaf87d5c854f07d455a830ed34b34b4d373b7bb8e368322928"
+    },
+    {
+      "path": "CANDIDATOS_DESTAQUE.csv",
+      "bytes": 953,
+      "sha256": "f7b046cfb1270d746b047613488fb7b59677424006582f825a7e523a15a294ad"
+    },
+    {
+      "path": "CEDRO_RESULTADOS_CONFIRMADOS.csv",
+      "bytes": 57512,
+      "sha256": "b0322bdd3a612fcd42db6ef61fe86e3daae35c7f482c44ccf52977fef69e470c"
+    },
+    {
+      "path": "CENARIOS_POR_NIVEL.csv",
+      "bytes": 88808,
+      "sha256": "a7b5ea7ca6bfbbad1b5dfbac79342c51a04f29c3dcc2610163d150881fad001e"
+    },
+    {
+      "path": "COMBINACOES_765.csv",
+      "bytes": 153657,
+      "sha256": "b94969413ae03c82db667ca99bb494ae0c7505794467bead7bc5328448da049a"
+    },
+    {
+      "path": "DIARIO_CANDIDATOS.csv",
+      "bytes": 139305,
+      "sha256": "37684010f67f5b3c7e7682f143ba90040c7abcfc8b1e19c58db39e33846ded98"
+    },
+    {
+      "path": "FREQUENCIAS_NOVOS_SELECIONADOS.csv",
+      "bytes": 8131,
+      "sha256": "2cdd981cf422143209bc2cd6da03c1d446273ad1c1936e88e32df7037aae173e"
+    },
+    {
+      "path": "FREQUENCIAS_ORIGINAIS.csv",
+      "bytes": 5337,
+      "sha256": "dc6a0ae761b1f741a0ac14d86265e9a8ec685b10a9ed13d977ee30643391b6e2"
+    },
+    {
+      "path": "LEIA_PRIMEIRO.md",
+      "bytes": 6992,
+      "sha256": "90c22765f596349b8ddd08e43276cd6aac2cd814fdae735b2863e2f1efc434a2"
+    },
+    {
+      "path": "MELHORES_EXPLORATORIOS_POR_NIVEL.csv",
+      "bytes": 1330,
+      "sha256": "2f80b82520524cb21256d358ee1a4434876519da68c25b4f6bc99e645697ea60"
+    },
+    {
+      "path": "MENSAL_CANDIDATOS.csv",
+      "bytes": 7970,
+      "sha256": "4241e10a2da864789af4f5e2ad8811348982e68f0644253dc13223fe4d8370be"
+    },
+    {
+      "path": "MENSAL_NOVOS_SELECIONADOS.csv",
+      "bytes": 40239,
+      "sha256": "a91ed775743dd1b8e391e60e3d37262d1c793cb6e0538975b8d4a34a76111cd0"
+    },
+    {
+      "path": "Novos_Niveis_e_Frequencias_2024_2026.pdf",
+      "bytes": 8424,
+      "sha256": "3e6c06334739ea87aa2f99298a3c81560c968a8c95706025648199f4c013ba2d"
+    },
+    {
+      "path": "Novos_Niveis_e_Frequencias_2024_2026.xlsx",
+      "bytes": 222828,
+      "sha256": "04768cc19f6af7b7261fbb311495d4bd9781edf8f8d3136067d8e886dcb1f1eb"
+    },
+    {
+      "path": "PARAMETROS.csv",
+      "bytes": 5107,
+      "sha256": "aae1ca02612e710c89d9ca109676508c811f5682c7e7c987beffb70b7b706da3"
+    },
+    {
+      "path": "RANKING_SELECAO_TREINO.csv",
+      "bytes": 118579,
+      "sha256": "df4191fc0280172e469ab74a9b8fce58f112e2aab121c2075c734d17e7f64bc7"
+    },
+    {
+      "path": "RAW_DIRETO_20260804.csv",
+      "bytes": 6403,
+      "sha256": "1d9111566ccd5741fde91d2da124134d2f77a3f75e8f97af1343d9c46f29c651"
+    },
+    {
+      "path": "RAW_DIRETO_20260805.csv",
+      "bytes": 2801,
+      "sha256": "a752f2a9813fc0f34bb987d94904d52b3ef3d0a38831e4a804423469ce2b4775"
+    },
+    {
+      "path": "RAW_DIRETO_20260813.csv",
+      "bytes": 6193,
+      "sha256": "4c37ae39155475d9db297700c48be9137eb0651b8911b0482fed2351b34ca520"
+    },
+    {
+      "path": "RAW_DIRETO_20260818.csv",
+      "bytes": 7773,
+      "sha256": "a3f1b7a2d571fdc6f8c56a5ab373b51e9f2a7ef9dc123c7e3bd13e84189ca7c6"
+    },
+    {
+      "path": "RAW_DIRETO_20260819.csv",
+      "bytes": 2471,
+      "sha256": "bda29d9c400eaf7d8e068f32997f19139df1feacf337d369299bed0d935b7729"
+    },
+    {
+      "path": "RAW_DIRETO_20260821.csv",
+      "bytes": 1947,
+      "sha256": "3fa69c45aa696a8af54eb2bae21c2d134ab473aa5d66e08ccbd0dc643445d825"
+    },
+    {
+      "path": "RAW_DIRETO_20260825.csv",
+      "bytes": 640,
+      "sha256": "3dfe2fda213085d419027f43396db36f7fcf1aa461b140a4309a20ee9adfb5b6"
+    },
+    {
+      "path": "RAW_DIRETO_20260831.csv",
+      "bytes": 5865,
+      "sha256": "ede11ccfcda9ec30105ccf0af4597bf2e5be662ea680bdb059f7e51c381d7ac1"
+    },
+    {
+      "path": "REFERENCIAS_NOVOS_NIVEIS.csv",
+      "bytes": 156140,
+      "sha256": "762077807ca89acb05a7be4e1b89bc7690a1a6e4580350d979d428df61c7dbd5"
+    },
+    {
+      "path": "REPLAY_CANDIDATOS_SELECIONADOS.csv",
+      "bytes": 3960,
+      "sha256": "7526c5d0af821133c3895de528a6e28f520d2dc61a3a2b5252d2ec90a8057b5a"
+    },
+    {
+      "path": "ROTULOS_ORIGINAIS_CONFERIDOS.csv",
+      "bytes": 154204,
+      "sha256": "99c71ebeebd0eca855a730710d0428db9463a085788359e785d1535d91d43f35"
+    },
+    {
+      "path": "SELECAO_TREINO_2024_2025.csv",
+      "bytes": 1988,
+      "sha256": "34313ccce1fd2492b9bdffc96c200296c3db67b3c5b329baf0d121d9833d5356"
+    },
+    {
+      "path": "SENSIBILIDADE_CUSTOS.csv",
+      "bytes": 594,
+      "sha256": "6edac0e7ae28102525a291e99e1282062f96be3d469e59cb6d3469a5eb371090"
+    },
+    {
+      "path": "Tabelas_Completas.zip",
+      "bytes": 1863011,
+      "sha256": "b3d6e7ca0bcf40ad1442e141c883faf33d9e08445f555c5f885c1e44dbf9268c"
+    },
+    {
+      "path": "VERIFICACAO.json",
+      "bytes": 225,
+      "sha256": "b4373b6976281887511335373b1a187ded66006c8515c25dc2cb74a8dcc52fbe"
+    },
+    {
+      "path": "conferir_raw.cpp",
+      "bytes": 3272,
+      "sha256": "60b36f610be52c6ce7d1940fcefa359a75a6ff0a26970fe2f26ab08bde8ca094"
+    },
+    {
+      "path": "conferir_raw.py",
+      "bytes": 3631,
+      "sha256": "1076d680cd2810a54ee85a9d0bee952ada6eb1598b80e5499925068c283f8700"
+    },
+    {
+      "path": "estudar.py",
+      "bytes": 12602,
+      "sha256": "37f751588f76892aba4e3302df7dcaf6255b7b7883aae338a93a708340df9f6a"
+    },
+    {
+      "path": "frequencias_relatorio.py",
+      "bytes": 15719,
+      "sha256": "fe792065e52c57ccdc27d3c456b81375b124e9c066c3943401bf32151e17f2bd"
+    },
+    {
+      "path": "verificar.py",
+      "bytes": 3509,
+      "sha256": "fd5248a62911b8dcc0f951232f84c947719a5680ab89e678df58af4abfae9054"
+    }
+  ]
+}
