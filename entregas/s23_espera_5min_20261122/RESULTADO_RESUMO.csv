@@ -1,0 +1,2 @@
+﻿period;waiting_ms;opening_anchor;touch_before_or_at_activation;order;stop;target;original_operations;original_points;original_DD;consumed;definitely_retained;clock_boundary_pending;operations_lower;operations_upper;points_lower;points_upper;DD_lower;DD_upper;opening_time_exact_days;time_cases_enumerated;exit_sequence_pending
+2024Jan-2026Oct;300000;FIRST_ACTUAL_BUSINESS;CONSUMES_OPPORTUNITY_NO_ORDER;BUY_LIMIT_AT_S23.6;200;500;386;12915;4915;146;235;5;235;240;3315.0;4915.0;3415.0;3615.0;63;32;0

@@ -1,0 +1,172 @@
+{
+  "summary": {
+    "period": "2024Jan-2026Oct",
+    "waiting_ms": 300000,
+    "opening_anchor": "FIRST_ACTUAL_BUSINESS",
+    "touch_before_or_at_activation": "CONSUMES_OPPORTUNITY_NO_ORDER",
+    "order": "BUY_LIMIT_AT_S23.6",
+    "stop": 200,
+    "target": 500,
+    "original_operations": 386,
+    "original_points": 12915,
+    "original_DD": 4915,
+    "consumed": 146,
+    "definitely_retained": 235,
+    "clock_boundary_pending": 5,
+    "operations_lower": 235,
+    "operations_upper": 240,
+    "points_lower": 3315.0,
+    "points_upper": 4915.0,
+    "DD_lower": 3415.0,
+    "DD_upper": 3615.0,
+    "opening_time_exact_days": 63,
+    "time_cases_enumerated": 32,
+    "exit_sequence_pending": 0
+  },
+  "excluded_breakdown": {
+    "operations": 146,
+    "TP": 54,
+    "SL": 92,
+    "CUT": 0,
+    "points": 8600
+  },
+  "frequency": {
+    "operations_lower": 235,
+    "operations_upper": 240,
+    "TP_lower": 70,
+    "TP_upper": 72,
+    "SL_lower": 158,
+    "SL_upper": 161,
+    "CUT": 7,
+    "entries_per_TP_lower": 3.2916666666666665,
+    "entries_per_TP_upper": 3.4,
+    "entries_per_SL_lower": 1.4782608695652173,
+    "entries_per_SL_upper": 1.5,
+    "max_consecutive_SL_lower": 11,
+    "max_consecutive_SL_upper": 12
+  },
+  "user_selected_rule": "Cinco minutos corridos da abertura efetiva",
+  "user_selected_date": "2026-11-22",
+  "pending_kind": "CLOCK_ACTIVATION_VS_FIRST_TOUCH_ONLY",
+  "finite_time_cases": 32,
+  "original_not_modified": true,
+  "new_exit_reprocessing_needed": false,
+  "sources": [
+    {
+      "path": "entregas/fechamento_s23_cedro_20261119/RESULTADO_FINAL_S23.csv",
+      "sha256": "b5d07d16dd802b82aa13fe7f3f21402f57d2b32895fb53ec13fc018fd4d7ec9a"
+    },
+    {
+      "path": "entregas/fechamento_s23_cedro_20261119/OPERACOES_FINAIS.csv",
+      "sha256": "cb801f6b3935ca620a678f4a33c01c3d728e28b0e852388c99d9b329c6cd53d6"
+    },
+    {
+      "path": "entregas/cedro_extrator_win_v1_00/retorno_geral_20261112/CONTRATOS.csv",
+      "sha256": "80c48a0d0e64accef244c0f0fd04f8caf53a1286937e5fcd8905f6969f713bc5"
+    },
+    {
+      "path": "entregas/atualizacao_s23_replay_20261119/CONFERENCIA_JANELAS.csv",
+      "sha256": "2502c20a7864b385124ee405df9757c00b89c46555303435f3a070e0a099b72d"
+    }
+  ],
+  "verification": {
+    "original_frozen_operations": 386,
+    "original_points": 12915,
+    "all_days_checked": 709,
+    "waiting_rule_ms": 300000,
+    "retained_first_entry_and_exit_unchanged": true,
+    "clock_cases_scalar_DD_verified": 32,
+    "exact_gate_touch_consumes": true,
+    "original_results_unchanged": true,
+    "upper_new_points_below_original": true,
+    "Replay_dates": 5,
+    "Replay_minutes": 10
+  },
+  "outputs": [
+    {
+      "path": "32_CENARIOS_RELOGIO.csv",
+      "bytes": 5044,
+      "sha256": "d56f50a89ef7edf419e2229e33f63c7e9e051469035854145b9ecc2f92c179b2"
+    },
+    {
+      "path": "ANUAL.csv",
+      "bytes": 354,
+      "sha256": "7ea9682dc6fb6bf2e7660efb45f3b40e7fae2acf243acda730523cfcc54bf3ee"
+    },
+    {
+      "path": "CINCO_DUVIDAS_DE_HORARIO.csv",
+      "bytes": 1233,
+      "sha256": "eed27bef118b15305c3fa2cfd6ee318e3fc0bdbbcd7838377605da14ec412c2d"
+    },
+    {
+      "path": "Coleta_Relogio_5_Datas_10_Janelas.xlsx",
+      "bytes": 11068,
+      "sha256": "abe222ac74bdc4abd606a56dbdf76e21d3a6939045dd0a91ab192ffde2fa4989"
+    },
+    {
+      "path": "DIAGNOSTICO_709_PREGOES.csv",
+      "bytes": 118719,
+      "sha256": "5926acafae2dec57deb384666a5382d2a7d52c315f14d7e2062dcedff049a860"
+    },
+    {
+      "path": "DIARIO_COMPARATIVO.csv",
+      "bytes": 27765,
+      "sha256": "3fc05e473e6cb764cacc9eb972df1b4e0bdb7c40fd50ee3885e4a88f5b883b12"
+    },
+    {
+      "path": "FREQUENCIA_RESUMO.csv",
+      "bytes": 289,
+      "sha256": "e89392adba9da865427057b670695d87488f6cf67ba36d6f3b8dff76bd596203"
+    },
+    {
+      "path": "LEIA_PRIMEIRO.txt",
+      "bytes": 4667,
+      "sha256": "04e2168c46ef2df17463b4ffa2fb82a5470df23b3cafa79bb490efcbb9c6177a"
+    },
+    {
+      "path": "MENSAL.csv",
+      "bytes": 1648,
+      "sha256": "e9c449d7d08ffcb6c54f1d28ab58a156193ebb1d1644f00bc1b4e66fb6c2038e"
+    },
+    {
+      "path": "REPLAY_DEZ_JANELAS.csv",
+      "bytes": 1637,
+      "sha256": "5519a1fbff76150a6c57f1a704d6e950e4a42e5843bd43b68114a552ae3e47bf"
+    },
+    {
+      "path": "RESULTADO_RESUMO.csv",
+      "bytes": 503,
+      "sha256": "36a33451ab43d7bc6cbf2b4deb9a88fe8b53876ab7bb5bd3ae885e33808058be"
+    },
+    {
+      "path": "S23_Espera_5_Minutos_2024_2026.pdf",
+      "bytes": 5488,
+      "sha256": "601d79fde931f21e274d6843e727566689ac5c364231dcbb82709371142f1fd1"
+    },
+    {
+      "path": "S23_Espera_5_Minutos_2024_2026.xlsx",
+      "bytes": 89195,
+      "sha256": "d61fb4e7225fd161aa532f6f0639b390525ec8c1c459226b2f27c05a8c3d524b"
+    },
+    {
+      "path": "VERIFICACAO.json",
+      "bytes": 378,
+      "sha256": "8b1223861114637039c3338540e3b1a25ec83d123ab4bd092a7dae559957dd4a"
+    },
+    {
+      "path": "relatorio.py",
+      "bytes": 8329,
+      "sha256": "ae65756aa36b4b31d119b13b4deae3280c66936d9705ba45d88fdf51411102cd"
+    },
+    {
+      "path": "testar.py",
+      "bytes": 9600,
+      "sha256": "d2461e2df71c120772728adf0ed8e4c21dc882e72da59c57b595c100863342e6"
+    },
+    {
+      "path": "verificar.py",
+      "bytes": 3157,
+      "sha256": "a2973bbfe3d31d3550308125b7885c18594d878e803f2db295ca0c48e77c8e6e"
+    }
+  ]
+}

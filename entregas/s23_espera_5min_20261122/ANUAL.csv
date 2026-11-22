@@ -1,0 +1,4 @@
+﻿year;scope;original_operations;original_points;consumed;retained_lower;retained_upper;points_lower;points_upper;DD_year_lower;DD_year_upper;clock_pending
+2024;AnoCompleto;142;8935.0;50;91;92;2335.0;2835.0;1640.0;1640.0;1
+2025;AnoCompleto;138;3885.0;50;86;88;1285.0;1685.0;3200.0;3200.0;2
+2026;JanOut;106;95.0;46;58;60;-305.0;395.0;2600.0;2800.0;2

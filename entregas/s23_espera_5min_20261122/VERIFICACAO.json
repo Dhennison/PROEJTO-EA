@@ -1,0 +1,13 @@
+{
+  "original_frozen_operations": 386,
+  "original_points": 12915,
+  "all_days_checked": 709,
+  "waiting_rule_ms": 300000,
+  "retained_first_entry_and_exit_unchanged": true,
+  "clock_cases_scalar_DD_verified": 32,
+  "exact_gate_touch_consumes": true,
+  "original_results_unchanged": true,
+  "upper_new_points_below_original": true,
+  "Replay_dates": 5,
+  "Replay_minutes": 10
+}

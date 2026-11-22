@@ -1,3 +1,23 @@
+TESTE S23 ESPERA5MIN CORRIDOS — 22/11/2026
+Usuario escolheu explicitamente5min corridos do primeiro negocio efetivo,
+nao fechamentoM5. Stop200/alvo500 intactos; ordemlimitada; toque ate
+liberacao inclusive consome oportunidade, sem reteste/reentrada naquele dia.
+Pasta:entregas/s23_espera_5min_20261122/.
+146das386operacoes originais excluidas com certeza:54TP/92SL,saldo+8600.
+235retidas,5duvidas SOMENTE de segundos abertura/primeirotoque.
+2024:+2335a2835;2025:+1285a1685;2026jan-out:-305a395.
+Total:+3315a4915;DDcontinuo3415a3615;235a240operacoes.
+Todos32casos de horario enumerados. Mesmo limite favoravel piorque12915sem
+espera; original+12915/DD4915 e demais estudos preservados. Nenhuma promocao.
+Cinco duvidas (2minutos cada):03/01/2024WING24 09:00e09:05;
+07/03/2025WINJ25 09:00e09:05;11/03/2025WINJ25 09:00e09:05;
+04/02/2026WING26 09:00e09:05;18/06/2026WINQ26 09:03e09:08.
+Cada minuto inteiro e margem. Nao sao novas duvidas de stop/alvo. Nao pedir
+novamente mesesCedro. HorariosM1nao provam segundo00;63aberturasCedroexatas.
+PDF/XLSX/lista10janelas/template10abas/diagnostico709salvos.50/250stand-by.
+
+REGISTROS HISTORICOS PRESERVADOS ABAIXO
+
 S23 STOP200/ALVO500 FECHADO COM OS DEZ ZIPs RESTAURADOS — 19/11/2026
 Pasta entregas/fechamento_s23_cedro_20261119/.
 Dez ZIPs novos íntegros: hashes iguais aos recibos históricos. Índice unificado

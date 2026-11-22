@@ -1,0 +1,78 @@
+S23,6% STOP200/ALVO500 — ESPERA DE CINCO MINUTOS CORRIDOS
+22/11/2026
+
+REGRA CONFIRMADA PELO USUARIO
+Cinco minutos corridos da abertura efetiva, nao primeira vela M5 do relogio B3.
+Abertura efetiva = primeiro negocio do contrato correto. Se09:02:07.123,
+libera09:07:07.123. Se09:08,libera09:13;se09:05,libera09:10.
+Qualquer toque no S23 desde abertura ate a verificacao no instante de liberacao,
+inclusive, consome oportunidade: zero ordem nesse nivel no restante do dia.
+Nao houve toque: enviar ordem LIMITADA de compra no S23, nao ordem a mercado.
+Esperar tempo nao cria nova entrada nem reentrada. Demais regras intactas:
+referencias, elegibilidade na abertura, bloqueio geometrico, grade5, stop200,
+alvo500, corte18h, uma oportunidade/nivel/dia. Leilao posterior nao reinicia
+os cinco minutos corridos. Nao modelamos latencia/rejeicao/fila de ordens.
+
+APURACAO
+Periodo2024jan-2026out,709pregoes. Usadas as386operacoes S23 ja fechadas,
+total12915/DDcontinuo4915, sem muda-las. Logica: primeiro toque antes/na
+liberacao exclui operacao; primeiro toque depois conserva a MESMA entrada,
+saida e pontos originais. Nao e correto esperar5min e aceitar reteste de
+nivel que ja foi tocado. Nao e necessario recalcular saias se a operacao
+original permanece identica: reaproveitamos desfechos ja comprovados.
+
+146operacoes certamente consumidas:54TP e92SL,sem corte, saldo+8600.
+235operacoes certamente retidas.5operacoes dependem dos segundos na fronteira.
+As323datas restantes nao tinham entrada na configuracao original e continuam
+sem entrada (inelegibilidade/ausencia de toque). Checagem dos precos de abertura
+M1 contra referencias coincide nos709pregoes.
+
+Resultado novo:
+2024:+2335 a+2835,91a92operacoes,1duvida de horario.
+2025:+1285 a+1685,86a88operacoes,2duvidas de horario.
+2026jan-out:-305 a+395,58a60operacoes,2duvidas de horario.
+Total:+3315 a+4915,235a240operacoes;DDdiariocontinuo3415a3615.
+DDanos2024:1640;2025:3200;2026:2600a2800. Nao somar DDs anuais.
+O DD continuo considera todos os dias em ordem cronologica, pico inicial0,
+sem reinicio mensal/anual. Enumero todas as32combinacoes de reter/excluir os
+cinco casos, calculando DDs/frequencias/custos em trajetorias completas.
+Nao sao probabilidades; min/max de metricas distintas podem vir de casos
+distintos, identificados na tabela32_CENARIOS_RELOGIO.csv.
+
+Mesmo o maior total possivel4915 fica abaixo dos12915sem espera. As duvidas
+de horario nao podem reverter essa conclusao. Pontos brutos,semcustos/slippage.
+Nenhum modelo promovido; original financeiro e estudos anteriores intactos.
+Teste50/250dos5niveis segue emstand-by.
+
+PRECISAO DOS HORARIOS
+Os metadados Cedro preservados informam primeiro timestamp real do contrato
+correto nos63pregoes deagosto-outubro. Sao registros de recebimento/auditoria,
+nao alegacao de que todos os132ZIPs estao acessiveis agora. Nos demais dias,
+M1 informa minuto da abertura, nao segundos: intervalo XX:XX:00.000 ate
+XX:XX:59.999. Nunca presumir primeiro negocio no segundo00 sem prova.
+Primeiro toque segue intervalo do minuto, ou timestamp exato deReplaycompleto
+validado/prova bruta quando disponivel. Fora da fronteira, essa incerteza nao
+muda classificacao. Cinco casos sao exclusivamente duvidas de RELOGIO;
+seus desfechos de saida(+500/-200) ja estao fechados e nao foram reabertos.
+
+COLETAS PARA FECHAR OS CINCO CASOS — NAO MESES CEDRO JA ENVIADOS
+03/01/2024 WING24:09:00-09:01 e09:05-09:06. Se operar:+500.
+07/03/2025 WINJ25:09:00-09:01 e09:05-09:06. Se operar:-200.
+11/03/2025 WINJ25:09:00-09:01 e09:05-09:06. Se operar:-200.
+04/02/2026 WING26:09:00-09:01 e09:05-09:06. Se operar:-200.
+18/06/2026 WINQ26:09:03-09:04 e09:08-09:09. Se operar:+500.
+Primeiro minuto identifica primeiro negocio da abertura; segundo identifica
+primeiro toque para comparar com abertura+300segundos. Minutos completos,
+com alguns segundos de margem, preservando milissegundos/quantidade/ordem e
+negocios identicos. Nao extrair dia inteiro nem novas janelas de saida.
+Nenhuma dessas datas e deagosto-outubroCedro. Planilha de retorno com10abas.
+A conclusao de desempenho pior ja e robusta mesmo sem fechar essas duvidas.
+
+ARQUIVOS E VERIFICACAO
+PDF comparativo; Excel anual/mensal/diario709pregoes/32casos/frequencias;
+CSV de diagnostico, lista de5duvidas e10janelas. Testes de fronteira inclusive
+noinstante exato,235primeiros toques retidos e32DDs por somas escalares.
+Cache:/workspace/work/s23_espera_5min_20261122/resultados.pickle.
+Reproducao:testar.py;relatorio.py;verificar.py. Dependem dos caches/fontes
+anteriores;nao e pacote autonomo. Fontes M1MT5/Profit/Cedroauditado, Replay
+pontual e provas brutas doS23fechado. Nao e auditoria integral tickatick de34meses.

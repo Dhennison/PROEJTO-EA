@@ -1,0 +1,11 @@
+﻿date;contract;start;end_exclusive;purpose;entry_level;outcome_if_retained;capture
+2024-01-03;WING24;09:00;09:01;OPENING_FIRST_BUSINESS;133680;500;Minuto inteiro, alguns segundos de margem, preservar milissegundos e negocios identicos
+2024-01-03;WING24;09:05;09:06;FIRST_TOUCH_VS_ACTIVATION;133680;500;Minuto inteiro, alguns segundos de margem, preservar milissegundos e negocios identicos
+2025-03-07;WINJ25;09:00;09:01;OPENING_FIRST_BUSINESS;124620;-200;Minuto inteiro, alguns segundos de margem, preservar milissegundos e negocios identicos
+2025-03-07;WINJ25;09:05;09:06;FIRST_TOUCH_VS_ACTIVATION;124620;-200;Minuto inteiro, alguns segundos de margem, preservar milissegundos e negocios identicos
+2025-03-11;WINJ25;09:00;09:01;OPENING_FIRST_BUSINESS;125705;-200;Minuto inteiro, alguns segundos de margem, preservar milissegundos e negocios identicos
+2025-03-11;WINJ25;09:05;09:06;FIRST_TOUCH_VS_ACTIVATION;125705;-200;Minuto inteiro, alguns segundos de margem, preservar milissegundos e negocios identicos
+2026-02-04;WING26;09:00;09:01;OPENING_FIRST_BUSINESS;185810;-200;Minuto inteiro, alguns segundos de margem, preservar milissegundos e negocios identicos
+2026-02-04;WING26;09:05;09:06;FIRST_TOUCH_VS_ACTIVATION;185810;-200;Minuto inteiro, alguns segundos de margem, preservar milissegundos e negocios identicos
+2026-06-18;WINQ26;09:03;09:04;OPENING_FIRST_BUSINESS;170315;500;Minuto inteiro, alguns segundos de margem, preservar milissegundos e negocios identicos
+2026-06-18;WINQ26;09:08;09:09;FIRST_TOUCH_VS_ACTIVATION;170315;500;Minuto inteiro, alguns segundos de margem, preservar milissegundos e negocios identicos
