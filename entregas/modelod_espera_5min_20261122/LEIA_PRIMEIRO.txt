@@ -1,0 +1,110 @@
+MODELO D ORIGINAL E CONFIGURACOES FECHADAS — ESPERA DE CINCO MINUTOS
+22/11/2026, horario de Sao Paulo
+
+PEDIDO E REGRA
+Usuario manteve S23,6% SEM espera e pediu filtro de cinco minutos no Modelo D
+original (os cinco niveis) e nas configuracoes fechadas antes destacadas.
+Relogio: primeiro negocio efetivo do contrato correto + 300segundos corridos.
+Toque ate o instante de verificacao inclusive consome oportunidade do nivel:
+sem ordem nesse nivel pelo resto do dia. Sem toque: ordem LIMITADA na linha,
+nao ordem a mercado. Niveis continuam independentes, uma oportunidade por nivel
+por dia, sem reentrada. Demais referencias, elegibilidade, bloqueio geometrico,
+grade5, stops/alvos e corte18h mantidos. Nao e fechamento de M5 fixo da bolsa.
+Nao foi adicionada latencia/fila/rejeicao de ordens nem reinicio por leilao.
+
+ESCOPO
+Periodo janeiro/2024 a outubro/2026,709pregoes,1485entradas originais preservadas.
+Original: R38,2 stop375/alvoR23,6; R61,8 stop450/alvo media(R61,8,R50);
+S38,2 stop375/alvo media(S38,2,S23,6); S50 stop375/alvoS38,2;
+S61,8 stop650/alvoS50. Sem nova entrada emR50 nem R23/S23 neste teste.
+
+Adicionais fechados: R61,8stop375/alvo1000; R61,8stop75/alvo1000;
+S38,2stop200/alvo1000; S61,8stop100/alvooriginalS50.
+Tambem formado conjunto dos cinco maiores totais fechados individuais:
+R38original + R61stop375/alvo1000 + S38stop200/alvo1000 + S50original
++ S61original. Soma fechada sem espera11945/DD8290; nao afirmar otimo global.
+
+RESULTADOS — PONTOS BRUTOS
+Originalcinconiveis sem espera: -2955/-2035/+8940; total3950/DD14805.
+Originalcinconiveis com espera:
+2024 -6355a-3300;2025 -345a1265;2026jan-out +8755a11680.
+Total+2055a9645;DDcontinuo10865a12785;1218a1247operacoes.
+238operacoes certamente consumidas,1218retidas,29duvidas de horario.
+2024 permanece negativo mesmo no limite favoravel. Nao concluir melhora
+do total enquanto faixa inclui3950; DD e menor sob todas as resolucoes.
+
+Por nivel ORIGINAL, antes -> depois, DDnovo:
+R38,2:165 ->1970a4435;DD6290a6540;7duvidas.
+R61,8:825 ->-1320a-830;DD3230;4duvidas.
+S38,2:-1965 ->-3500a-1720;DD4575a5385;10duvidas.
+S50:-140 ->855a2100;DD4915a5555;4duvidas.
+S61,8:5065 ->4050a5660;DD4425;4duvidas.
+
+Configuracoes adicionais:
+R61stop375/alvo1000:5725/DD4865 ->220a3225/DD6615;4duvidas.
+R61stop75/alvo1000:4045/DD2360 ->615a3320/DD3315a3815;4duvidas.
+S38stop200/alvo1000:1130/DD6000 ->4530a6530/DD4600;10duvidas.
+S61stop100/alvoS50:2295/DD1370 ->2795a3300/DD995a1095;4duvidas.
+S38fixo e S61stop100 melhoram total e DD em todos os limites. R61fixos pioram
+ambos. O efeito varia por nivel; nao foi testado/promovido filtro seletivo novo.
+
+Conjunto maioresfechadoscinconiveis com espera:
+2024:-470a4260;2025:+2865a4610;2026jan-out:+9230a13080;
+total11625a21950;DD10090a11110. DD pior que8290sem espera, embora total
+possa aumentar. Mantem29duvidas das mesmas datas; nao sao casos adicionais.
+
+METODO E PRECISAO
+Filtro conserva/exclui operacoes ja fechadas: primeiro toque apos liberacao
+mantem mesmo preco/entrada/saida/pontos. Primeiro toque antes exclui, sem
+aceitar reteste. Nenhuma saida nova foi presumida; os parametros originais
+nao mudam. Toda entrada conserva o primeiro toque do estudo original.
+
+Foram usados horarios exatos de abertura em78dias e primeiros toques exatos
+em282operacoes: recibos Cedro primeiro negocio, trades originais auditados,
+Replaycompleto validado e inferencia valida quando entrada exata ocorre ja
+no preco do primeiro negocio da abertura. Os precos de abertura coincidem
+com as referencias nos709dias. Uma entrada cujo horario tem sufixo_CANDLE
+nao foi convertida em segundozero exato.
+
+Sem segundos conhecidos, abertura e primeiro toque sao intervalos de minuto
+00.000ate59.999. Fora da fronteira esse intervalo nao muda classificacao.
+Ha29casos em29datas, um nivel incerto por dia. A duvida e exclusivamente
+se a ordem ja estaria ativa quando aconteceu o primeiro toque, nao qual
+saida (alvo/stop/corte) ocorreu. Nao reabrir resultados fechados de saida.
+
+Padroes diarios compartilham o mesmo instante de liberacao do contrato,
+respeitam ordem dos primeiros toques entre niveis do mesmo lado e negocios
+iguais no primeiro print do minuto. Extremos sao propagados por curvas diarias
+completas. DD com pico inicialzero e sem reinicio mensal/anual. Os extremos
+nao sao probabilidades; diferentes metricas podem vir de padroes distintos.
+O teste escalar independente reconstruiu os11cenarios,33totais/DDs e anos.
+
+Frequencias usam entradas, nao dias; alvos/stops/cortes separados. Nesta
+amostra as29incertezas sao em dias distintos, permitindo limites de frequencia
+com escolhas coerentes. Nao e periodicidade garantida. Custos5/10 por operacao
+sao sensibilidades hipoteticas, nao custos reais informados. Nenhuma linha
+representa execucao real garantida, queue/fill ou auditoria tickatick integral.
+Fontes: M1MT5/Profit/Cedro auditado, Replaypontual e resultados/provas ja salvos.
+
+REPLAY — TRIAGEM, NAO PEDIDO AUTOMATICO DE COLETAR TUDO
+Listaunificada29datas/58minutos: minuto da abertura efetiva e minuto do
+primeiro toque. Apenas14datas/28minutos ajudam os dois destaques que melhoram
+em todos os limites (S38fixo e S61stop100). CSV especifico dessa prioridade.
+Sao os mesmos29casos reutilizados nos cenarios, nao somar pendencias entre
+modelos. Minutos compartilham os dois parametros do mesmo nivel. Janelas
+coincidentes com listaS23anterior estao marcadas, sem exigir as outrasS23.
+Todas estas pendencias sao fora dos mesesCedro agosto-outubro/2026 ja enviados.
+Nao foi reaberto o controle dispensado10/07/2026 09:55.
+
+ARQUIVOS
+PDF com resultados e lista completa de29datas; Excel anual/mensal/diario,
+frequencias, 1485diagnosticos e custos; CSVspadraoesdiarios/listascompartilhadas.
+Template de retorno58abas entregue para eventual coleta, sem necessidade
+de extrair dias completos. Nenhuma compra de historico autorizada.
+
+Original ModeloDsem espera+3950/DD14805 e todos os meses fechados intactos.
+S23sem espera+12915/DD4915 permanece como estava por instrucao expressa.
+50/250dos cinco niveis segue emstand-by. Nenhuma variante promovida.
+Cache:/workspace/work/modelod_espera_5min_20261122/resultados.pickle.
+Reproducao:testar.py;relatorio.py;verificar.py. Dependem das fontes/caches
+anteriores; nao e pacote autonomo sem acervo. Manifesto com hashes das fontes.

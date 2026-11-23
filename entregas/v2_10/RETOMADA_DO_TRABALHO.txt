@@ -1,3 +1,32 @@
+MODELO D ORIGINAL E FECHADOS COM ESPERA5MIN — 22/11/2026
+Pasta entregas/modelod_espera_5min_20261122/.
+Mesmo relogio cinco minutos corridos da abertura efetiva; toque ate verificacao
+inclusive consome nivel, ordem limitada depois, sem reteste/reentrada.
+Original5:1485entradas intactas.238certamenteconsumidas/1218retidas/29horarios.
+Novo2024:-6355a-3300;2025:-345a1265;2026:+8755a11680;total2055a9645;
+DDdiariocontinuo10865a12785;1218a1247operacoes. Antes3950/DD14805.
+R38originalnovo1970a4435;R61original-1320a-830;S38original-3500a-1720;
+S50original855a2100;S61original4050a5660.
+
+Fechados destacados com espera:
+R61stop375/alvo1000:220a3225/DD6615 (piora pontos eDD).
+R61stop75/alvo1000:615a3320/DD3315a3815 (piora pontos eDD).
+S38stop200/alvo1000:4530a6530/DD4600 (melhora pontos eDD),10horarios.
+S61stop100/alvooriginal:2795a3300/DD995a1095 (melhora),4horarios.
+Conjunto5maioresfechados(R38orig,R61fixo375/1000,S38fixo200/1000,S50orig,
+S61orig):sem espera11945/DD8290;com11625a21950/DD10090a11110.
+Nao apresentar maior total possivel como lucro fechado;DDdesseconjunto piora.
+
+29duvidasem29datas,58minutos, mesmos casos reutilizados;nao somar por modelo.
+78aberturas/282primeirostoques exatos aproveitados de fontes salvas. Nao
+presumir segundo00 para M1. Lista unificada e prioridade14datas/28minutos
+S38fixo/S61stop100,template58abas. Triagem,nao pedir automaticamente tudo.
+Nao pedir mesesCedrojaenviados,naoreabrir10/07controle09:55 dispensado.
+S23sem espera12915/DD4915 mantido. Originalsem espera e fechamentos intactos.
+50/250dos5stand-by. Nenhuma variante promovida. Verificacao escalar11cenarios.
+
+REGISTROS HISTORICOS PRESERVADOS ABAIXO
+
 TESTE S23 ESPERA5MIN CORRIDOS — 22/11/2026
 Usuario escolheu explicitamente5min corridos do primeiro negocio efetivo,
 nao fechamentoM5. Stop200/alvo500 intactos; ordemlimitada; toque ate

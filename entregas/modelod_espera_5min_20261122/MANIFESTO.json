@@ -1,0 +1,289 @@
+{
+  "period": "2024Jan-2026Oct",
+  "rule": "Five elapsed minutes from first actual business; any touch at or before activation consumes level; pending limit order only afterwards.",
+  "scenario_count": 11,
+  "frozen_original_operations": 1485,
+  "opening_exact_days": 78,
+  "first_touch_exact_operations": 282,
+  "clock_pending_operations": 29,
+  "clock_pending_dates": 29,
+  "Replay_windows": 58,
+  "priority_S38_S61_windows": 28,
+  "original_unchanged": true,
+  "S23_unchanged_and_without_wait": true,
+  "no_model_promoted": true,
+  "sources": [
+    {
+      "path": "entregas/cedro_extrator_win_v1_00/retorno_geral_20261112/CONTRATOS.csv",
+      "sha256": "80c48a0d0e64accef244c0f0fd04f8caf53a1286937e5fcd8905f6969f713bc5"
+    },
+    {
+      "path": "entregas/cedro_modelod_agosto_2026/resultado/TODOS_NIVEIS.csv",
+      "sha256": "2d684747b37c014692f903118ece66e3b5913a6f7d25d9018070ec7d2f60fad6"
+    },
+    {
+      "path": "entregas/cedro_modelod_outubro_2026/resultado_mensal/TODOS_NIVEIS.csv",
+      "sha256": "0c99eb1511df97525666fca98a76fe2a405bf9a278bd864253cf45674eafb6bf"
+    },
+    {
+      "path": "entregas/cedro_modelod_setembro_2026/resultado/TODOS_NIVEIS.csv",
+      "sha256": "cff6a2418d98e167b6ea2e546d4ed8334c984f1ec122d9822d95d04528a463b0"
+    },
+    {
+      "path": "entregas/estudo_niveis_auxiliares_20261119/ROTULOS_ORIGINAIS_CONFERIDOS.csv",
+      "sha256": "99c71ebeebd0eca855a730710d0428db9463a085788359e785d1535d91d43f35"
+    },
+    {
+      "path": "entregas/fechamento_s61_replay_20261119/OPERACOES.csv",
+      "sha256": "6dba607e7679397bb881ecd947673bdbf8f128d547cfddf94ca0fe665b93c59e"
+    },
+    {
+      "path": "entregas/profit_abril_20261113/OPERACOES_FINAIS.csv",
+      "sha256": "417cb64e78bdd88b74ffe8d3103daecce6327feda5d32b01ef04d90afa83206c"
+    },
+    {
+      "path": "entregas/profit_dezembro_2025_20261115/OPERACOES_FINAIS.csv",
+      "sha256": "d85e3764214cfc7d0738f5b0f90e47ab9e088ed39d561b6408ff40eddcbceb08"
+    },
+    {
+      "path": "entregas/profit_fevereiro_20261114/OPERACOES_FINAIS.csv",
+      "sha256": "4dbb048358f6eff141a12b9c7ed3a29dcf16eb66169a899554692e1ac10ec3f9"
+    },
+    {
+      "path": "entregas/profit_janeiro_20261115/OPERACOES_FINAIS.csv",
+      "sha256": "8df9618a5c2212a1b448326094dc389ba3cc23bdc484eca9115bc3e5fc8df0ae"
+    },
+    {
+      "path": "entregas/profit_junho_20261113/OPERACOES_FINAIS.csv",
+      "sha256": "27f8126e896a6322bab1360c7e7b8eeaef3dac43b22451bf06e5e16d221c3241"
+    },
+    {
+      "path": "entregas/profit_maio_20261113/OPERACOES_FINAIS.csv",
+      "sha256": "374dff4fa74d0466618d704249e1d35eeeccd4e56ca1f63341ad81fcd674947f"
+    },
+    {
+      "path": "entregas/profit_marco_20261113/OPERACOES_FINAIS.csv",
+      "sha256": "c1b7598205d990c2954fa9539a0b118f5c8c3b19dc3be0f736c31df73f3dbef2"
+    },
+    {
+      "path": "entregas/profit_winq26_julho_20261113/REPLAY_OPERACOES_RESOLVIDAS.csv",
+      "sha256": "211ef6549027fdcc5f04edbe415e397974fd08de701c13fbf36276c5d3c54bd4"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/01_Janeiro/OPERACOES_FINAIS.csv",
+      "sha256": "d115849d8490f612a165de7928e7018676f32c245fbc2deb75acab557188ba63"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/02_Fevereiro/OPERACOES_FINAIS.csv",
+      "sha256": "bef898ceb73341872f39cfe91e905578978667ff3db7365aa5def746cbd9c6b8"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/03_Março/OPERACOES_FINAIS.csv",
+      "sha256": "e302af1daf73809c8d081fc435f7c74cbe4c2996193899028706d1d749f169c5"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/04_Abril/OPERACOES_FINAIS.csv",
+      "sha256": "626d6cbba2b2c4b8caa0127f4a907f4a62a300c1d4fcb69c0d5beefc76450b2c"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/05_Maio/OPERACOES_FINAIS.csv",
+      "sha256": "590348febcbd0dd38a928a596be70d172aaa34a6c4122a92930548fab7979784"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/06_Junho/OPERACOES_FINAIS.csv",
+      "sha256": "a3c03afcabc2be4be9d3744b82358f6097cee88185ba02d0072df059d5fa67fe"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/07_Julho/OPERACOES_FINAIS.csv",
+      "sha256": "aee451b1486ea0ae69528004f1dbcc4d3a3dd65188c59439fbfa2845492d8008"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/08_Agosto/OPERACOES_FINAIS.csv",
+      "sha256": "618f23610cf232973d7d48f70b9e3679c3714fac9f89d2c474c5d08cedb55648"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/09_Setembro/OPERACOES_FINAIS.csv",
+      "sha256": "dcd23ee86f3e495dab7c3edc665210d39457c8ca0d621472fcf4b1468d0beae0"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/10_Outubro/OPERACOES_FINAIS.csv",
+      "sha256": "097fae1d12a8ec0437c6092d01228b55c907f1151cf2d2e2899ebc9d606215ef"
+    },
+    {
+      "path": "entregas/validacao_lote_2025_20261116/11_Novembro/OPERACOES_FINAIS.csv",
+      "sha256": "5901eb03069307c4f89127a46d87af9d43f8ca80b27e6b22dd0cc7d07a000597"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/01_Janeiro/OPERACOES_FINAIS.csv",
+      "sha256": "074f2f9eb83724fe1f3624a22bc732b7673c2895bfd6ecb40042a48337cda25e"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/02_Fevereiro/OPERACOES_FINAIS.csv",
+      "sha256": "33b63436e3ff128dfdd24057ada832697cc1d25da97bb4573fef7ddd3621ae03"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/03_Março/OPERACOES_FINAIS.csv",
+      "sha256": "3006c3d633bcb1038b2ead8ea0c458b2df6cecdaaaaefd13589946dca91411f7"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/04_Abril/OPERACOES_FINAIS.csv",
+      "sha256": "c1b786f17092754d729007e30d70e54d64373d01ea85769ca360b9663811da7b"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/05_Maio/OPERACOES_FINAIS.csv",
+      "sha256": "ecf4db13cf6e8f2d8932c6ac6b884dd003d14996bbe4d09c7dd6f6ad38b6c379"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/06_Junho/OPERACOES_FINAIS.csv",
+      "sha256": "5dc8b797796e9363db0f69e258a29be65f71b02bfdc603fbd1c85ea55b877e40"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/07_Julho/OPERACOES_FINAIS.csv",
+      "sha256": "2d7c094c0c29f177a3b65c6e26a90c28c72a1a45b17031de7c14c800103f947c"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/08_Agosto/OPERACOES_FINAIS.csv",
+      "sha256": "093f56b2e00639afc92bf2845233ba79ac04472f484dae2c129e913e83ec508b"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/09_Setembro/OPERACOES_FINAIS.csv",
+      "sha256": "76f006d6634566cfd86631cbdf7ab66dc541d2499a8ecb426bd2516907cef584"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/10_Outubro/OPERACOES_FINAIS.csv",
+      "sha256": "bb7d43a18c5a26afbcce5202a2c532d70087a17481e6b242c413bc286959ddfa"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/11_Novembro/OPERACOES_FINAIS.csv",
+      "sha256": "3317611bff4fc7ebda95fc0c7dad391e5bf3758dd22ac911e94e5ce5bec8c089"
+    },
+    {
+      "path": "entregas/validacao_replay_2024_20261117/12_Dezembro/OPERACOES_FINAIS.csv",
+      "sha256": "fd61e0c6d2dd5fd99de97057fb77afb1dc9b04ce7dfd7860b545622bb6da3ee9"
+    },
+    {
+      "path": "entregas/estudo_fixos_tres_niveis_20261119/Tabelas_Completas.zip",
+      "sha256": "b614b6e14db091e191689b67c2b8066a385c4ceff3582befbf3b2f6b4a679f0e"
+    },
+    {
+      "path": "entregas/estudo_fixos_tres_niveis_20261119/RESULTADOS_270_TESTES.csv",
+      "sha256": "adde20fddac5c914646db671a3fa3c88cd475eb74c7ef33eb07a82885ed2779d"
+    }
+  ],
+  "verification": {
+    "original_entries_preserved": 1485,
+    "independent_recipe_scenarios": 11,
+    "independent_scalar_total_and_DD_checks": 33,
+    "year_points_checked": true,
+    "clock_pending_dates": 29,
+    "Replay_windows": 58,
+    "exact_opening_days": 78,
+    "exact_first_touch_operations": 282,
+    "one_common_clock_per_day": true,
+    "original_model_not_modified": true,
+    "waived_July10_control_not_reopened": true,
+    "S23_without_wait_preserved": true
+  },
+  "outputs": [
+    {
+      "path": "ANUAL.csv",
+      "bytes": 2194,
+      "sha256": "ab37d60b19da7dfae3c7133babe64525db67e739150bd7db25de999f24730c4c"
+    },
+    {
+      "path": "CUSTOS_HIPOTETICOS.csv",
+      "bytes": 1405,
+      "sha256": "036cd4b5598876af6886328a68dd6931f74ba48f52b3d1de0cbe5a3bf39986ba"
+    },
+    {
+      "path": "Coleta_Relogio_29_Datas_58_Janelas.xlsx",
+      "bytes": 39159,
+      "sha256": "37478fe2da13df6fd842da9bc08c954bf02dfdc0d5cddbc6018d2a952163b311"
+    },
+    {
+      "path": "DIAGNOSTICO_1485_ENTRADAS.csv",
+      "bytes": 287253,
+      "sha256": "e123ce53c2495f20ca4c9893029783ac880d0a66cb1ea33859a9c2e78fe2f1d1"
+    },
+    {
+      "path": "DIARIO.csv",
+      "bytes": 360420,
+      "sha256": "4af499fda55f09d31b29aa9e99c55fd1cec53c959173c2d780fda463ff743091"
+    },
+    {
+      "path": "EFEITO_OPERACOES_CONSUMIDAS.csv",
+      "bytes": 439,
+      "sha256": "d2c69ab20c22d981759ef98f685292b476eea96aa466b1e6b83d437de1750fdf"
+    },
+    {
+      "path": "FREQUENCIAS.csv",
+      "bytes": 1697,
+      "sha256": "e551c32c3c5a9669293cf237bcf345ad89f117048be32aa5c3bcd79d34374ba2"
+    },
+    {
+      "path": "LEIA_PRIMEIRO.txt",
+      "bytes": 6284,
+      "sha256": "f0586ad0bba0c8cdd1e3ecec45de8ad5ac43083c73715c676c5dc407f5154423"
+    },
+    {
+      "path": "MENSAL.csv",
+      "bytes": 21240,
+      "sha256": "25a7e8043e9908109940f02642a28778b910560980c25e1ec9a958bbd9e07061"
+    },
+    {
+      "path": "Modelo_D_e_Fechados_Espera_5min_2024_2026.pdf",
+      "bytes": 10342,
+      "sha256": "de2cf41bb6ada9632fa03cc01223dda4c140f37086538648375d91f3c595f5df"
+    },
+    {
+      "path": "Modelo_D_e_Fechados_Espera_5min_2024_2026.xlsx",
+      "bytes": 342403,
+      "sha256": "a6956738ded486654623b19f44544747983b975a76e7370075f47cae50b83232"
+    },
+    {
+      "path": "PADROES_DIARIOS_RELOGIO.csv",
+      "bytes": 183253,
+      "sha256": "a5f81893438ec6ef136f1923714d742ab749503a889b5d893356e2d86758c8aa"
+    },
+    {
+      "path": "PENDENCIAS_RELOGIO.csv",
+      "bytes": 6019,
+      "sha256": "54fca293431b8063403776cb0f042f97117a37976c4f31e9bffa404393605fe1"
+    },
+    {
+      "path": "REPLAY_JANELAS_UNIFICADAS.csv",
+      "bytes": 3375,
+      "sha256": "495ae341b29271a8fa7cf2d7cfa5b4661f346f5c515fa34d2d5cbd678f20eb96"
+    },
+    {
+      "path": "REPLAY_PRIORIDADE_S38_S61.csv",
+      "bytes": 1481,
+      "sha256": "1c63f65206ab36add9e3c5662fc7b82012cddc9389c4c26d3db0ff2cdd6b8e76"
+    },
+    {
+      "path": "RESULTADOS_CENARIOS.csv",
+      "bytes": 2188,
+      "sha256": "e7c61d18a7688fab08aeb84f9a8dbeceda61c95676d7d4873a57d86dc8a470a8"
+    },
+    {
+      "path": "VERIFICACAO.json",
+      "bytes": 437,
+      "sha256": "a6a89f0a0b1d8dea33a30fcc9e491eacf989da78e4ee9f1afbb4d665ad905991"
+    },
+    {
+      "path": "relatorio.py",
+      "bytes": 12032,
+      "sha256": "e5967484eac9a9af5f1eca3c5bbe775ff94d385bbf813686be8254a087cad8b5"
+    },
+    {
+      "path": "testar.py",
+      "bytes": 12785,
+      "sha256": "79353da28d0964dfbab865f3eb06817f7c7bf285e7e0a0bf2ba89efd43fc01fd"
+    },
+    {
+      "path": "verificar.py",
+      "bytes": 3524,
+      "sha256": "5543132c46632eae739ed6698852530fa5cbcf7977b2aa04fefe2944863f8575"
+    }
+  ]
+}

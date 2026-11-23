@@ -1,0 +1,14 @@
+{
+  "original_entries_preserved": 1485,
+  "independent_recipe_scenarios": 11,
+  "independent_scalar_total_and_DD_checks": 33,
+  "year_points_checked": true,
+  "clock_pending_dates": 29,
+  "Replay_windows": 58,
+  "exact_opening_days": 78,
+  "exact_first_touch_operations": 282,
+  "one_common_clock_per_day": true,
+  "original_model_not_modified": true,
+  "waived_July10_control_not_reopened": true,
+  "S23_without_wait_preserved": true
+}
