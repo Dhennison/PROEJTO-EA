@@ -1,0 +1,143 @@
+{
+  "levels": [
+    "S23.6 stop200 target500 no wait",
+    "S38.2 stop200 target1000 wait5min",
+    "S61.8 stop100 original_target wait5min"
+  ],
+  "time_uncertainties": 14,
+  "negative_pending_trades": 13,
+  "positive_pending_trades": 1,
+  "total_pending_negative_points": -2300,
+  "one_pending_target_points": 205,
+  "summary": [
+    {
+      "case": "PIOR_TOTAL",
+      "operations": 865,
+      "points": 20240.0,
+      "DD_continuous": 4855.0,
+      "monthly_average": 595.2941176470588,
+      "TP": 251,
+      "SL": 586,
+      "CUT": 28,
+      "pending_clock_cases": 14,
+      "year2024": 9190.0,
+      "year2025": 10105.0,
+      "year2026": 945.0
+    },
+    {
+      "case": "MELHOR_TOTAL",
+      "operations": 853,
+      "points": 22745.0,
+      "DD_continuous": 4855.0,
+      "monthly_average": 668.9705882352941,
+      "TP": 252,
+      "SL": 573,
+      "CUT": 28,
+      "pending_clock_cases": 14,
+      "year2024": 9990.0,
+      "year2025": 10905.0,
+      "year2026": 1850.0
+    }
+  ],
+  "original_not_modified": true,
+  "conditional_not_closed": true,
+  "sources": [
+    {
+      "path": "entregas/fechamento_s23_cedro_20261119/OPERACOES_FINAIS.csv",
+      "sha256": "cb801f6b3935ca620a678f4a33c01c3d728e28b0e852388c99d9b329c6cd53d6"
+    },
+    {
+      "path": "entregas/modelod_espera_5min_20261122/DIARIO.csv",
+      "sha256": "4af499fda55f09d31b29aa9e99c55fd1cec53c959173c2d780fda463ff743091"
+    },
+    {
+      "path": "entregas/modelod_espera_5min_20261122/PENDENCIAS_RELOGIO.csv",
+      "sha256": "54fca293431b8063403776cb0f042f97117a37976c4f31e9bffa404393605fe1"
+    }
+  ],
+  "verification": {
+    "time_choices_verified": 16384,
+    "pending_dates_independent": 14,
+    "fixed_operations": 852,
+    "fixed_points": 22540,
+    "worst_points": 20240,
+    "best_points": 22745,
+    "all_choices_DD_min": 4855,
+    "all_choices_DD_max": 4855,
+    "worst_operations": 865,
+    "best_operations": 853,
+    "originals_preserved": true
+  },
+  "outputs": [
+    {
+      "path": "ANUAL_EXTREMOS.csv",
+      "bytes": 325,
+      "sha256": "568c73730368fbfb620db64f1900bb686392bfb20dabec1244cf44796e52c57f"
+    },
+    {
+      "path": "COMPARATIVO.csv",
+      "bytes": 186,
+      "sha256": "294272296d3a9fc9d52a522b8acc6a39a2f2819ebe7a226d68e685714cba6548"
+    },
+    {
+      "path": "Combinacao_S23_S38_S61_Pior_Melhor.pdf",
+      "bytes": 3500,
+      "sha256": "baae420d9c4c74eb58c74fb39d5d5b0977a9d8f31871b9e62cb146f50d39d66a"
+    },
+    {
+      "path": "Combinacao_S23_S38_S61_Pior_Melhor.xlsx",
+      "bytes": 131524,
+      "sha256": "bbcd891f94ad97626d6869ee1e067cf9668886cd06089b12490499c57c4226ab"
+    },
+    {
+      "path": "DECISAO_DOS_14_CASOS.csv",
+      "bytes": 2069,
+      "sha256": "ce63cb46d69a1c62efeff69b38736dd0bf004ac90cd75b5144d759ddad3753f8"
+    },
+    {
+      "path": "DIARIO_EXTREMOS.csv",
+      "bytes": 75193,
+      "sha256": "2caf243f7a8dc92dae525803f3a4ccda81ecdacf947a4c63bfab48903a00a3fe"
+    },
+    {
+      "path": "LEIA_PRIMEIRO.txt",
+      "bytes": 2918,
+      "sha256": "05f68a6462f5fef178e9ec24f576b7724becbfe5f5454df29442585be7caff8a"
+    },
+    {
+      "path": "MENSAL_EXTREMOS.csv",
+      "bytes": 2606,
+      "sha256": "9d9ff43853905da956ca20acf052afeed70ed93d57c207e84ead7b58adcb2408"
+    },
+    {
+      "path": "OPERACOES_EXTREMOS.csv",
+      "bytes": 169006,
+      "sha256": "347010f0beac52c982ea49b3f0df561370facee2ec85628aa01c41673e50de50"
+    },
+    {
+      "path": "REPLAY_14_DATAS_28_JANELAS.csv",
+      "bytes": 1481,
+      "sha256": "1c63f65206ab36add9e3c5662fc7b82012cddc9389c4c26d3db0ff2cdd6b8e76"
+    },
+    {
+      "path": "RESUMO_EXTREMOS.csv",
+      "bytes": 285,
+      "sha256": "ebc6f1a97d3cff2a211b52db203331b8ff65346523c87378b660933a3ef45825"
+    },
+    {
+      "path": "VERIFICACAO.json",
+      "bytes": 317,
+      "sha256": "e1f2dbeec7eca20fdec442cf1a4c549def2821c5b2f53ba93454be7f22251957"
+    },
+    {
+      "path": "calcular.py",
+      "bytes": 9422,
+      "sha256": "d2bf98aa5a60df9a8cd119bb3b9cb54c85f6a048fc3415abb7086b4490a54a42"
+    },
+    {
+      "path": "verificar.py",
+      "bytes": 2661,
+      "sha256": "290e2b9fe0c92be246495bb9c5a911c0c1091dce64221dc5b374ac61912ce5b5"
+    }
+  ]
+}

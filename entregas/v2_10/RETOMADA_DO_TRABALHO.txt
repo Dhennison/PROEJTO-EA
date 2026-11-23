@@ -1,3 +1,20 @@
+COMBINACAO S23SEMESPERA + S38/S61COM5MIN — 22/11/2026
+Usuario confirmou S28=S23,6. Pasta entregas/combinacao_s23_s38_s61_20261122/.
+S23stop200/alvo500 SEM espera;S38stop200/alvo1000 COM5min;
+S61stop100/alvooriginalS50 COM5min. Regras anteriores mantidas.
+PIOR14horarios:2024+9190;2025+10105;2026jan-out+945;total20240;
+DDdiariocontinuo4855;865operacoes. MELHOR:+9990/+10905/+1850;
+total22745;DD4855;853operacoes. Bruto,nao resultados fechados do conjunto.
+852operacoescertas22540;13SLpotenciais(-2300)+1TPpotencial205.
+Piorreteve13SL/excluiuTP;melhorexcluiu13SL/reteveTP. Todas16384combinacoes
+verificadas:DD4855emTODAS. Nao somarDDs individuais nem confundir extremos
+pontos comquantidade852a866. Semesperaos3total16340/DD6865.
+PDF/Excel/anuais/mensais/diarios/decisoes14/lista28minutossalvos.
+Sao os14casos dehorario ja existentes,nunca adicionais aos29doestudo5niveis.
+Nenhuma variante promovida;originais preservados;50/250dos5stand-by.
+
+REGISTROS HISTORICOS PRESERVADOS ABAIXO
+
 MODELO D ORIGINAL E FECHADOS COM ESPERA5MIN — 22/11/2026
 Pasta entregas/modelod_espera_5min_20261122/.
 Mesmo relogio cinco minutos corridos da abertura efetiva; toque ate verificacao

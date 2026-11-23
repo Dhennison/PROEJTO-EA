@@ -1,0 +1,13 @@
+{
+  "time_choices_verified": 16384,
+  "pending_dates_independent": 14,
+  "fixed_operations": 852,
+  "fixed_points": 22540,
+  "worst_points": 20240,
+  "best_points": 22745,
+  "all_choices_DD_min": 4855,
+  "all_choices_DD_max": 4855,
+  "worst_operations": 865,
+  "best_operations": 853,
+  "originals_preserved": true
+}

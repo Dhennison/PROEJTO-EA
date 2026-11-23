@@ -1,0 +1,50 @@
+COMBINACAO S23,6 + S38,2 + S61,8 — PIOR/MELHOR ENTRE14CASOS
+22/11/2026
+
+Usuario confirmou que S28 significava S23,6. Composicao:
+S23,6stop200/alvo500 SEM espera, mesmo estudo fechado12915/DD4915.
+S38,2stop200/alvo1000 COM espera5min corridos da abertura efetiva.
+S61,8stop100/alvooriginalS50 COM espera5min corridos da abertura efetiva.
+Toque ate liberacao inclusive consome oportunidade, ordemlimitada depois,
+uma por nivel/dia, sem reentrada, niveis independentes/simultaneidade permitida.
+Nao ha novo stop financeiro conjunto nem alteracao dos parametros originais.
+
+Extremos considerando SOMENTE14duvidasdehorario:
+PIOR:2024+9190;2025+10105;2026jan-out+945;total20240;DD4855;865operacoes.
+MELHOR:2024+9990;2025+10905;2026jan-out+1850;total22745;DD4855;853operacoes.
+Medias34meses:595,29 e668,97pontos/mes, respectivamente, antes dos custos.
+
+Os852tradescertamente retidos somam22540. Ha10SL-200doS38 e3SL-100doS61
+mais1TP+205doS61 entre14casos. Pior mantem13stops(-2300) e elimina alvo:
+22540-2300=20240;865operacoes. Melhor elimina13stops e mantem alvo205:
+22540+205=22745;853operacoes. Estes sao extremos de pontos, nao de quantidade:
+as outras combinacoes podem ter852ate866trades. Nao interpretar pior como
+menos operacoes nem melhor como maisoperacoes.
+
+O relogio e a unica incerteza restante, nao a saida de cada trade. Minutos
+M1 desconhecem segundos do primeiro negocio/primeiro toque; ver fonte do
+estudo de5min. Foram enumeradas TODAS16384combinacoes binarias das14datas,
+sem atribuir probabilidade. Totalmin20240/max22745; DDmin=DDmax=4855.
+DD calculado na soma DIARIA dos tres niveis em709pregoes cronologicos,
+pico inicialzero, sem reinicio mensal/anual. Nao somar DDs individuais.
+
+Sem esperar em nenhum dos3:total16340/DD6865/965operacoes. S23isolado:
+12915/DD4915/386operacoes. A diferenca de DD no conjunto surge das curvas
+conjuntas, nao da soma dos maximos de perda de cada componente.
+
+Pontos brutos,umcontrato por nivel,sem custos/slippage/fila/latencia.
+Os dois extremos sao positivos nos tres anos, mas2026tem ganho bem menor.
+A escolha de niveis e parametros foi historica: nao e validacao futura.
+Faixas condicionais nao sao resultado fechado da combinacao; faltam14horarios.
+Fontes M1MT5/Profit/Cedroauditado,Replaypontual e resultados ja congelados.
+Nao e auditoria integral tickatick dos34meses. Nenhuma variante promovida.
+
+Arquivos: PDF/Excel comextremos; anual/mensal/diario; operacoes por extremo;
+decisao individual dos14casos; lista28minutoscompartilhados do estudo anterior.
+Nao pedir novas datas deCedroagosto-outubro/2026. A lista deriva dos14casos
+ja conhecidos, nao sao14casos adicionais aos29doestudo doscinconiveis.
+OriginalModeloD, S23sem espera e estudos anteriores preservados.
+50/250dos5originais continuaemstand-by.
+
+Reproducao:calcular.py;verificar.py. Dependem dos caches/fontes anteriores.
+Cache:/workspace/work/combinacao_s23_s38_s61_20261122/resultados.pickle.
