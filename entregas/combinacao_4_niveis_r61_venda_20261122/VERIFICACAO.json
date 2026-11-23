@@ -1,0 +1,12 @@
+{
+  "clock_choices_checked": 16384,
+  "new_sale_operations_preserved": 255,
+  "new_sale_points": 5725,
+  "exact_shared_pending_dates": 14,
+  "worst_points": 25965.0,
+  "best_points": 28470.0,
+  "DD_min": 7705.0,
+  "DD_max": 7835.0,
+  "independent_scalar_daily_curves_checked": 2,
+  "originals_preserved": true
+}

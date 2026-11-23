@@ -1,3 +1,20 @@
+RESERVA EM ESTUDO COM4NIVEIS — VENDA R61ADICIONADA — 22/11/2026
+Pasta entregas/combinacao_4_niveis_r61_venda_20261122/.
+S23BUY200/500SEMespera;S38BUY200/1000COM5min;S61BUY100/alvoS50COM5min;
+R61SELL375/1000SEMespera. Umaentrada/nivel/dia,semreentrada,niveisindependentes.
+Nao e alteracao doModeloDprincipal nem arquivo deployEA.
+Pior14horarios:+11505/+11810/+2650(2026jan-out),total25965,DD7835,
+1120operacoes. Melhor:+12305/+12610/+3555,total28470,DD7705,1108operacoes.
+R61adicionou5725fechados(2315/1705/1705),255operacoes,zero novaspendencias.
+Os14casos saoosmesmos doS38/S61;16.384escolhas verificadas.
+Antes3compras20240a22745/DD4855;agora4niveis25965a28470/DD7705a7835:
+retornomaior E DDaumentado. Somacurvasdiarias,nunca somarDDsindividuais.
+CONFIGURACAO_RESERVADA_4_NIVEIS.json documenta definicao;BASE_POTENCIAL_1121
+preserva1107fixas+14condicionais. PDF/Excel/CSVs anuais/mensais/diarios salvos.
+Originais etodosestudosanteriorespreservados;50/250dos5stand-by.
+
+REGISTROS HISTORICOS PRESERVADOS ABAIXO
+
 COMBINACAO S23SEMESPERA + S38/S61COM5MIN — 22/11/2026
 Usuario confirmou S28=S23,6. Pasta entregas/combinacao_s23_s38_s61_20261122/.
 S23stop200/alvo500 SEM espera;S38stop200/alvo1000 COM5min;

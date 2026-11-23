@@ -1,0 +1,41 @@
+{
+  "purpose": "PESQUISA_RESERVADA_NAO_DEPLOY_EA",
+  "contracts_per_level": 1,
+  "reference_rules": "SAME_AS_ORIGINAL_MODEL_D",
+  "cut_at_or_after": "18:00",
+  "independent_levels": true,
+  "reentry": false,
+  "global_stop_added": false,
+  "wait_anchor": "FIRST_ACTUAL_BUSINESS",
+  "pre_activation_touch_inclusive": "CONSUMES_DAY_OPPORTUNITY",
+  "levels": [
+    {
+      "level": "S23.6",
+      "side": "BUY_LIMIT",
+      "wait_ms": 0,
+      "stop_points": 200,
+      "target_points": 500
+    },
+    {
+      "level": "S38.2",
+      "side": "BUY_LIMIT",
+      "wait_ms": 300000,
+      "stop_points": 200,
+      "target_points": 1000
+    },
+    {
+      "level": "S61.8",
+      "side": "BUY_LIMIT",
+      "wait_ms": 300000,
+      "stop_points": 100,
+      "target_level": "S50"
+    },
+    {
+      "level": "R61.8",
+      "side": "SELL_LIMIT",
+      "wait_ms": 0,
+      "stop_points": 375,
+      "target_points": 1000
+    }
+  ]
+}

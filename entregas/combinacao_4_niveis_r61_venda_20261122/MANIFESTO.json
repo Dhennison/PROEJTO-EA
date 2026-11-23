@@ -1,0 +1,161 @@
+{
+  "levels": [
+    "S23.6 BUY stop200 target500 NO_WAIT",
+    "S38.2 BUY stop200 target1000 WAIT5MIN",
+    "S61.8 BUY stop100 target_original_S50 WAIT5MIN",
+    "R61.8 SELL stop375 target1000 NO_WAIT"
+  ],
+  "summary": [
+    {
+      "case": "PIOR_TOTAL",
+      "operations": 1120,
+      "points": 25965.0,
+      "DD_continuous": 7835.0,
+      "monthly_average": 763.6764705882352,
+      "TP": 301,
+      "SL": 741,
+      "CUT": 78,
+      "pending_clock_cases": 14,
+      "year2024": 11505.0,
+      "year2025": 11810.0,
+      "year2026": 2650.0
+    },
+    {
+      "case": "MELHOR_TOTAL",
+      "operations": 1108,
+      "points": 28470.0,
+      "DD_continuous": 7705.0,
+      "monthly_average": 837.3529411764706,
+      "TP": 302,
+      "SL": 728,
+      "CUT": 78,
+      "pending_clock_cases": 14,
+      "year2024": 12305.0,
+      "year2025": 12610.0,
+      "year2026": 3555.0
+    }
+  ],
+  "unchanged_clock_cases": 14,
+  "new_exit_pending": 0,
+  "sale_closed_operations": 255,
+  "sale_added_points": 5725,
+  "no_model_promoted": true,
+  "originals_preserved": true,
+  "sources": [
+    {
+      "path": "entregas/combinacao_s23_s38_s61_20261122/DIARIO_EXTREMOS.csv",
+      "sha256": "2caf243f7a8dc92dae525803f3a4ccda81ecdacf947a4c63bfab48903a00a3fe"
+    },
+    {
+      "path": "entregas/combinacao_s23_s38_s61_20261122/OPERACOES_EXTREMOS.csv",
+      "sha256": "347010f0beac52c982ea49b3f0df561370facee2ec85628aa01c41673e50de50"
+    },
+    {
+      "path": "entregas/modelod_espera_5min_20261122/DIARIO.csv",
+      "sha256": "4af499fda55f09d31b29aa9e99c55fd1cec53c959173c2d780fda463ff743091"
+    },
+    {
+      "path": "entregas/estudo_fixos_tres_niveis_20261119/RESULTADOS_270_TESTES.csv",
+      "sha256": "adde20fddac5c914646db671a3fa3c88cd475eb74c7ef33eb07a82885ed2779d"
+    }
+  ],
+  "verification": {
+    "clock_choices_checked": 16384,
+    "new_sale_operations_preserved": 255,
+    "new_sale_points": 5725,
+    "exact_shared_pending_dates": 14,
+    "worst_points": 25965.0,
+    "best_points": 28470.0,
+    "DD_min": 7705.0,
+    "DD_max": 7835.0,
+    "independent_scalar_daily_curves_checked": 2,
+    "originals_preserved": true
+  },
+  "outputs": [
+    {
+      "path": "ANUAL_EXTREMOS.csv",
+      "bytes": 328,
+      "sha256": "f575b33fe2c53032f8722c9fb7a2a047d689639aa4bd021565d72e4932122f56"
+    },
+    {
+      "path": "BASE_POTENCIAL_1121_OPERACOES.csv",
+      "bytes": 84749,
+      "sha256": "e34b39fcd00e063ab30176f174812c884a290ee13923e08d9db7f53c98a4ccbd"
+    },
+    {
+      "path": "COMPARATIVO_3_E_4_NIVEIS.csv",
+      "bytes": 229,
+      "sha256": "e3864a9cdfaf7b45e6d8bd8cd3b9e0c7058765298d68ab4aef26bcdfece2bb37"
+    },
+    {
+      "path": "CONFIGURACAO_RESERVADA_4_NIVEIS.json",
+      "bytes": 925,
+      "sha256": "bf271907d8fc3e32c62bb87962d2aec068928e1ef63d2a95b5334da497cdf2ae"
+    },
+    {
+      "path": "Combinacao_4_Niveis_com_Venda_R61.pdf",
+      "bytes": 3500,
+      "sha256": "8cd774b6ed49f090c9064bb467906c5233f42735e4e602f2c3cc9c4f8060301b"
+    },
+    {
+      "path": "Combinacao_4_Niveis_com_Venda_R61.xlsx",
+      "bytes": 165607,
+      "sha256": "f77f09874211d9ea0d077db1a634b391d44edb3cdb27de3766c810cc185e16cf"
+    },
+    {
+      "path": "DECISAO_DOS_14_CASOS.csv",
+      "bytes": 2069,
+      "sha256": "ce63cb46d69a1c62efeff69b38736dd0bf004ac90cd75b5144d759ddad3753f8"
+    },
+    {
+      "path": "DIARIO_EXTREMOS.csv",
+      "bytes": 76542,
+      "sha256": "6c41504005e641de0f6f867577fa5697f3399bb7baad14a6c1f744caad9df080"
+    },
+    {
+      "path": "LEIA_PRIMEIRO.txt",
+      "bytes": 2957,
+      "sha256": "8980e94ddb4e34d2f32ba6fc16d0face1248f192b2b2be195ba3a34b1e0cf1f4"
+    },
+    {
+      "path": "MENSAL_EXTREMOS.csv",
+      "bytes": 2612,
+      "sha256": "3d3e39ad55e4873c37f6acfffa494498abdba29591a372ee888e0e00e5b891e7"
+    },
+    {
+      "path": "OPERACOES_EXTREMOS.csv",
+      "bytes": 227124,
+      "sha256": "c70475cc77c734953822fe70817608de56b50565af1d95b8ce72e9d5225831ae"
+    },
+    {
+      "path": "R61_VENDA_FECHADA.csv",
+      "bytes": 10233,
+      "sha256": "d176e36c0d17bfcb4a2a354b0f876c6b9b925d43f6969396fdd517139396d8f6"
+    },
+    {
+      "path": "REPLAY_14_DATAS_28_JANELAS.csv",
+      "bytes": 1481,
+      "sha256": "1c63f65206ab36add9e3c5662fc7b82012cddc9389c4c26d3db0ff2cdd6b8e76"
+    },
+    {
+      "path": "RESUMO_EXTREMOS.csv",
+      "bytes": 290,
+      "sha256": "4184da81076ee7398f12ff12378fee0b1dc3f9cdc9ab3d5093665d50dbfa2920"
+    },
+    {
+      "path": "VERIFICACAO.json",
+      "bytes": 312,
+      "sha256": "720196ee94d601a4e86e7b1a9616d03f25eaa9683ef8b9f07586f5b694d39f1a"
+    },
+    {
+      "path": "calcular.py",
+      "bytes": 8134,
+      "sha256": "8f7b081eecff4344903ce79d991e0c6e7c35a1633db61282011b198fc04c77df"
+    },
+    {
+      "path": "verificar.py",
+      "bytes": 2882,
+      "sha256": "8506ace80aa272c48196387d35e1fc3c3d4a270edd565eddd13a8fe9d3f40dcf"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+QUATRO NIVEIS RESERVADOS EM ESTUDO — ADICAO VENDA R61,8
+22/11/2026, horario de Sao Paulo
+
+Pedido autorizado: acrescentar R61,8% stop375/alvo1000SEMespera aos tres
+niveis ja reservados. Nao altera o resultado principal original doModeloD.
+Composicao exata emCONFIGURACAO_RESERVADA_4_NIVEIS.json, para PESQUISA,
+nao arquivo de deploy/ordens reais:
+S23,6 BUY:stop200/alvo500,SEMespera.
+S38,2 BUY:stop200/alvo1000,COMespera5min.
+S61,8 BUY:stop100/alvooriginalS50,COMespera5min.
+R61,8 SELL:stop375/alvo1000,SEMespera.
+Umcontrato/nivel,uma oportunidade/nivel/dia,niveis independentes,semreentrada,
+simultaneidade/compra-venda permitidas,sem novo stop financeiro conjunto.
+Nosdois comespera:primeiro negocio efetivo+300segundos;toque ate liberacao
+inclusive consome nivel,sem ordem naquele nivel pelo resto do dia.
+
+PIORdos14horarios:2024+11505;2025+11810;2026jan-out+2650;total25965;
+DDdiariocontinuo7835;1120operacoes;media34meses763,68pontos/mes.
+MELHORdos14horarios:2024+12305;2025+12610;2026jan-out+3555;total28470;
+DDcontinuo7705;1108operacoes;media34meses837,35pontos/mes.
+Mesmos14casosjaexistentes,semnovaspendencias na venda. Faixas condicionais,
+nao resultado fechado da combinacao. Os desfechos de saida eram fechados;
+a duvida remanescente e se a ordem teria sido liberada antes do primeiro toque.
+
+R61somou+5725fechados:2315/1705/1705,255operacoes. Comparacao comas3compras:
+antes20240a22745/DD4855;agora25965a28470/DD7705a7835. A venda aumenta
+retorno E drawdown. Nao presumir que vender reduz risco da carteira comprada.
+O DDnao e somadosDDs individuais;somamos as curvas DIARIAS dosquatroniveis
+em709pregoescronologicos,picoinicialzero,sem reinicio mensal/anual.
+
+Enumeradas todas16384escolhas dos14dias:totalmin25965/max28470;
+DDmin7705/max7835. Piorpontuacao=13stopsretidos(-2300),alvo205excluido;
+melhor=13stopsexcluidos,alvo205retido. Componente fixo1107trades/28265pontos.
+Outroscasospodemter1107a1121trades;extremosdepontos nao saoextremosdecontagem.
+
+Pontosbrutos,semcustos/slippage/fila/latencia. Osdoisextremos positivosnos3anos,
+mas2026aindamaisfraco. Selecaodeparametroshistorica,naovalidacaofutura.
+Nao e auditoria integral tickatick:fontesM1MT5/Profit/Cedroauditado,Replaypontual
+e provas anteriores. Nenhum componente financeiro foi modificado.
+50/250doscinconiveiscontinuaemstand-by. Configuracao original preservada.
+
+ArquivosCSV/Excel/PDF comtotalanual,mensal,diario,operacoesporcaso,R61255fechadas,
+comparacao3e4niveis,listasdos14casose28minutos ja conhecidos. Nao sao novoscasos
+adicionais nem novas janelas deCedroagosto-outubro2026. BASE_POTENCIAL_1121
+preserva todasasoperacoes que podem existir neste conjunto,com14flagsdehorario,
+permitindo fechar oscasos futuramente sem perder o componente fixo.
+
+Reproducao:calcular.py;verificar.py. Dependemdoscaches/fontes anteriores.
+Cache:/workspace/work/combinacao_4_niveis_r61_venda_20261122/resultados.pickle.
+Verificacao independente por somasescalares e16384curvas confirmada.
