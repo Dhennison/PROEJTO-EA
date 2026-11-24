@@ -1,3 +1,203 @@
+RETOMADA ATUALIZADA — 24/11/2026 — LEIA ESTE BLOCO PRIMEIRO
+Repositorio: https://github.com/Dhennison/PROEJTO-EA
+BRANCH DE TRABALHO: entrega-modelod-v2-10-20261030
+Este e o arquivo principal de continuidade. Leia o bloco atual antes do historico.
+
+STATUS DE PERSISTENCIA
+Todos os estudos financeiros, PDFs, XLSX, CSVs, scripts e auditorias descritos
+abaixo estao versionados nesta mesma branch. Nenhum mes fechado foi refeito.
+Backup de fontes acessiveis e caches derivados:
+https://github.com/Dhennison/PROEJTO-EA/releases/tag/backup-modelod-20261124
+BACKUP_STATUS: PREPARADO; publicacao/conferencia em andamento.
+Ao terminar a publicacao, este marcador sera atualizado e havera recibo dos assets.
+Manifestos/restauracao: entregas/backup_continuidade_20261124/.
+
+1. FASE ATUAL E PROXIMO PASSO
+A fase atual e o estudo de uma CARTEIRA RESERVADA DE QUATRO NIVEIS.
+Nao e o Modelo D original nem uma configuracao ja promovida para operacao real.
+O usuario pediu acrescentar uma venda aos tres niveis de compra reservados.
+A prioridade e preservar e, quando os dados chegarem, fechar as 14 duvidas de
+HORARIO abaixo. Nao iniciar nova otimizacao, expansao historica ou comparativo
+Work sem orientacao. Nao repetir meses ou varreduras ja fechados.
+Mensagem pronta para novo chat: entregas/v2_10/MENSAGEM_PARA_NOVO_CHAT.txt.
+
+2. DEFINICAO EXATA DA CARTEIRA RESERVADA
+Um contrato por nivel, oportunidades independentes, uma entrada por nivel/dia,
+sem reentrada, simultaneidade permitida. Sem novo stop financeiro conjunto.
+Ordens limitadas nos niveis; nao sao entradas a mercado.
+
+Nivel   Direcao      Stop       Alvo                  Espera
+S23,6%  BUY LIMIT    200 fixo    500 fixo              SEM espera
+S38,2%  BUY LIMIT    200 fixo    1000 fixo             COM 5 minutos
+S61,8%  BUY LIMIT    100 fixo    nivel S50% original   COM 5 minutos
+R61,8%  SELL LIMIT   375 fixo    1000 fixo             SEM espera
+
+Nos dois com espera: cinco minutos CORRIDOS desde o primeiro negocio da
+abertura efetiva do contrato correto, com segundos/milissegundos. Nao e
+fechamento da primeira vela M5 no relogio fixo da bolsa.
+Ex.: abriu 09:02:07.123 -> libera 09:07:07.123.
+Qualquer toque anterior OU no instante da verificacao de liberacao consome a
+oportunidade daquele nivel: nenhuma ordem nele pelo resto do dia, sem reteste.
+O toque em um nivel nao bloqueia os outros. S23,6% permanece SEM espera por
+instrucao expressa; o teste de espera no S23 piorou e foi abandonado.
+Demais regras de referencia, abertura, elegibilidade, bloqueio geometrico antes
+do arredondamento, grade de 5 pontos e corte a partir de 18h permanecem.
+Nao modelamos fila/latencia/slippage: sao simulacoes teoricas de preco.
+
+3. RESULTADO ATUAL: EXTREMOS DAS MESMAS 14 DUVIDAS
+Periodo: janeiro/2024 a outubro/2026, 709 pregoes, 34 meses. Pontos BRUTOS.
+                   2024        2025       2026 jan-out     TOTAL       DD continuo
+PIOR TOTAL       +11.505     +11.810        +2.650       +25.965        7.835
+MELHOR TOTAL     +12.305     +12.610        +3.555       +28.470        7.705
+Operacoes: 1.120 no pior total e 1.108 no melhor total.
+Medias de 34 meses: 763,68 a 837,35 pontos/mes, antes dos custos.
+
+Nao sao resultados fechados da carteira: dependem dos 14 horarios. Os desfechos
+de saida de cada operacao ja sao conhecidos; a duvida e se a ordem existiria.
+Pior: reter 13 operacoes de stop (-2.300 somadas) e excluir o alvo de +205.
+Melhor: excluir os 13 stops e reter o alvo de +205.
+Os 13 stops sao 10 x -200 do S38 e 3 x -100 do S61; o alvo e S61 em 11/05/2026.
+Componente fixo: 1.107 operacoes / +28.265 pontos. Total potencial: 1.121 trades.
+Foram conferidas TODAS as 16.384 escolhas binarias das 14 datas.
+DD minimo 7.705 / maximo 7.835, depois de somar curvas DIARIAS dos 4 niveis.
+Nunca somar DDs individuais, nem reiniciar o DD por mes/ano. Pico inicial zero.
+Extremos de pontos nao correspondem aos extremos de quantidade de operacoes.
+
+Comparacao preservada:
+- Tres compras, sem R61: +20.240 a +22.745; DD continuo 4.855 em todos os casos.
+- Quatro niveis com a venda: +25.965 a +28.470; DD 7.705 a 7.835.
+A venda somou +5.725, mas AUMENTOU o DD. Nao concluir diversificacao eficaz
+apenas por acrescentar uma venda. 2026 segue mais fraco que 2024 e 2025.
+Escolha de parametros historica, sujeita a sobreajuste; nao e validacao futura.
+
+4. ARQUIVOS ATUAIS — FONTE PARA CONTINUAR
+Pasta principal da reserva de 4 niveis:
+entregas/combinacao_4_niveis_r61_venda_20261122/
+- CONFIGURACAO_RESERVADA_4_NIVEIS.json: definicao formal, pesquisa, nao deploy EA.
+- RESUMO_EXTREMOS.csv / ANUAL_EXTREMOS.csv / MENSAL_EXTREMOS.csv.
+- DIARIO_EXTREMOS.csv: curvas conjuntas e DD, em ordem cronologica.
+- OPERACOES_EXTREMOS.csv: operacoes retidas em cada extremo.
+- BASE_POTENCIAL_1121_OPERACOES.csv: 1.107 fixas + 14 condicionais, pronta para
+  fechar os casos futuros sem depender somente de caches locais.
+- R61_VENDA_FECHADA.csv: 255 operacoes, +5.725; sem espera, sem pendencias.
+- DECISAO_DOS_14_CASOS.csv e REPLAY_14_DATAS_28_JANELAS.csv.
+- COMPARATIVO_3_E_4_NIVEIS.csv, MANIFESTO.json, VERIFICACAO.json.
+- Combinacao_4_Niveis_com_Venda_R61.pdf / .xlsx.
+- calcular.py e verificar.py. Todos os originais anteriores permanecem intactos.
+
+5. AS 14 DATAS PENDENTES — 28 MINUTOS, SEM DUPLICAR POR MODELO
+Data | Contrato | Nivel | minuto da abertura e minuto do primeiro toque
+2024-02-20 | WINJ24 | S61.8 | 09:00-09:01 e 09:05-09:06
+2024-06-17 | WINQ24 | S38.2 | 09:00-09:01 e 09:05-09:06
+2024-08-22 | WINV24 | S38.2 | 09:00-09:01 e 09:05-09:06
+2024-10-03 | WINV24 | S38.2 | 09:00-09:01 e 09:05-09:06
+2024-10-09 | WINV24 | S61.8 | 09:00-09:01 e 09:05-09:06
+2025-01-08 | WING25 | S38.2 | 09:00-09:01 e 09:05-09:06
+2025-06-30 | WINQ25 | S38.2 | 09:00-09:01 e 09:05-09:06
+2025-07-09 | WINQ25 | S38.2 | 09:00-09:01 e 09:05-09:06
+2025-11-18 | WINZ25 | S38.2 | 09:03-09:04 e 09:08-09:09
+2026-04-02 | WINJ26 | S61.8 | 09:04-09:05 e 09:09-09:10
+2026-04-28 | WINM26 | S38.2 | 09:03-09:04 e 09:08-09:09
+2026-05-11 | WINM26 | S61.8 | 09:00-09:01 e 09:05-09:06
+2026-05-18 | WINM26 | S38.2 | 09:00-09:01 e 09:05-09:06
+2026-06-24 | WINQ26 | S38.2 | 09:03-09:04 e 09:08-09:09
+
+Cada intervalo tem fim exclusivo, capturar minuto inteiro e alguns segundos de
+margem, preservando negocios identicos, quantidade, ordem e milissegundos.
+Primeiro minuto: obter primeiro negocio efetivo da abertura. Segundo minuto:
+obter primeiro toque e comparar com abertura + 300 segundos.
+Estas 14 datas sao subconjunto das 29 do teste dos cinco niveis. Nao somar
+pendencias entre modelos. Nao pedir novamente agosto-outubro/2026 Cedro para
+estes casos: nenhuma destas datas esta nesses meses. Nenhuma nova janela de
+saida e necessaria para resolver apenas o relogio.
+Template maior ja existente (29 datas/58 abas), usar apenas as 14 acima:
+entregas/modelod_espera_5min_20261122/Coleta_Relogio_29_Datas_58_Janelas.xlsx.
+
+6. RESULTADOS FECHADOS QUE NAO DEVEM SER REABERTOS
+- Modelo D ORIGINAL, 5 entradas (R38,2/R61,8/S38,2/S50/S61,8):
+  2024 -2.955; 2025 -2.035; 2026 jan-out +8.940; total +3.950 / DD 14.805.
+  Este continua identificado separadamente como resultado historico principal.
+- S23,6% stop200/alvo500 SEM espera: 386 operacoes, zero pendencias;
+  2024 +8.935; 2025 +3.885; 2026 jan-out +95; total +12.915 / DD 4.915.
+- R61,8% stop375/alvo1000 SEM espera: 255 operacoes, zero pendencias;
+  2024 +2.315; 2025 +1.705; 2026 jan-out +1.705; total +5.725 / DD 4.865.
+- S38,2% stop200/alvo1000 SEM espera: +1.130 / DD 6.000. Com espera:
+  +4.530 a +6.530 / DD 4.600, 10 duvidas de horario.
+- S61,8% stop100/alvo S50 SEM espera: +2.295 / DD 1.370. Com espera:
+  +2.795 a +3.300 / DD 995 a 1.095, 4 duvidas de horario.
+
+S23 so entrou como nova hipotese auxiliar; nao e entrada do Modelo D original.
+Auxiliares originais: R23,6% (alvo R38), R50% (calcula alvo R61) e S23,6%
+(calcula alvo S38). As referencias matematicas e as cinco entradas originais
+continuam documentadas em entregas/v2_10/CONTEXTO_CONSOLIDADO_DOS_CHATS.txt.
+Nao confundir R50 calculado como auxiliar com uma entrada original.
+
+7. ESTUDOS ANTERIORES PRESERVADOS, MAS NAO CONFUNDIR COM A RESERVA
+- estudo_niveis_auxiliares_20261119: 504 testes novos, 765 combinacoes.
+- estudo_fixos_tres_niveis_20261119: 270 testes, resultados e frequencias.
+- fechamento_s23_cedro_20261119: fechamento S23 com 5 dias Cedro restaurados.
+- s23_espera_5min_20261122: teste de espera S23 piorou; nao aplicar a reserva.
+- modelod_espera_5min_20261122: original e fechados com espera, 29 duvidas.
+- combinacao_s23_s38_s61_20261122: tres compras, dois extremos e 14 duvidas.
+Pendencias antigas de R23,6/R50 (16) NAO pertencem a carteira reservada atual.
+Nao soma-las as 14 duvidas de horario. Os estudos/arquivos continuam salvos.
+O teste stop50/alvo250 nos CINCO niveis segue EM STAND-BY por decisao do usuario.
+Nao reabrir o controle adicional 10/07/2026 09:55-09:58, dispensado expressamente.
+Nao comprar historico. Nao iniciar novos modelos/otimizacoes sem pedido atual.
+Comparacao com Work nao e prioridade atual. PDFs ja produzidos estao salvos;
+referencias antigas a PDFs tecnico/enxuto nao autorizam novo comparativo agora.
+
+8. ACERVO E BACKUP — NAO CONFUNDIR RECEBIMENTO COM ACESSO ATUAL
+Os 132 ZIPs Cedro de agosto-setembro-outubro/2026 foram enviados historicamente
+e os recibos comprovam os hashes. Os meses originais foram fechados naquela
+metodologia. Nao atribuir falta de envio ao usuario nem reabrir meses por isso.
+Nesta sessao foram restaurados 26 ZIPs, agora preparados para backup GitHub.
+Os 106 restantes nao estao acessiveis neste ambiente e NAO estao neste backup.
+Os nomes, tamanhos e hashes exatos dos 132, com flag dos 26 acessiveis:
+entregas/backup_continuidade_20261124/INVENTARIO_CEDRO_132_RECEBIDOS_26_ACESSIVEIS.csv.
+
+Backup de 28 assets no lancamento:
+https://github.com/Dhennison/PROEJTO-EA/releases/tag/backup-modelod-20261124
+- 26 ZIPs Cedro originais, individualmente, sem mudar nomes/bytes.
+- Anexos_Replay_Profit_20261124.zip: os 10 anexos Replay atualmente acessiveis,
+  preservados com nomes e subpastas originais, incluindo Novas datas.xlsx.
+- Caches_Analiticos_Modelo_D_20261124.zip: 14 caches derivados dos estudos.
+Tamanhos/SHA256/URLs: ASSETS_PLANEJADOS.json no diretorio de backup.
+Recibo de publicacao e conferencias: ASSETS_GITHUB_VERIFICADOS.json quando concluido.
+Nao confundir caches com fontes financeiras: conferir contexto/CSV/manifestos.
+
+Os XLSX grandes de Replay ja estao em:
+https://github.com/Dhennison/PROEJTO-EA/releases/tag/dados-replay-2025-20261116
+- Datas.xlsx (29 minutos anteriores).
+- Janeiro.a.Dezembro.2024.xlsx.
+- Janeiro.a.Novembro.2025.xlsx.
+Novas datas.xlsx contem os 5 minutos adicionais do S23. Observacao preservada:
+31/07/2026 houve leilao, retorno informado 12:34:07; primeiro negocio 12:34:07.958.
+
+Para retomar leitura/fechamento dos 14 casos, os CSVs/JSONs da reserva sao a
+primeira fonte; nao e necessario baixar todo o backup de cerca de 630 MB.
+Se precisar reproduzir scripts que dependem de caches ou buscar brutos:
+python entregas/backup_continuidade_20261124/restaurar_backup.py --tipo caches
+python entregas/backup_continuidade_20261124/restaurar_backup.py --tipo cedro --arquivo NOME_EXATO.zip
+python entregas/backup_continuidade_20261124/restaurar_backup.py --tipo anexos
+O helper confere tamanhos/hashes e nao sobrescreve arquivos diferentes.
+--workspace altera a raiz; padrao /workspace. --verificar-somente nao baixa.
+Inventarios internos dos arquivos ZIP preservam os hashes de cada membro.
+
+9. METODOLOGIA E DISCIPLINA DE CONTINUIDADE
+Original 2024-julho/2026: M1 + Replay pontual, nao tick a tick integral.
+Agosto-outubro/2026: base Cedro completa recebida e originais processados;
+nas novas variantes, M1 auditado + negocios individuais onde disponiveis.
+Nunca dizer que todos os 34 meses foram integralmente auditados tick a tick.
+Regras/parametros/versoes sempre identificados separadamente. Preservar brutos,
+referencias, auditorias e recortes comparaveis Work de agosto/setembro separados
+dos meses completos. Nao transformar limites favoraveis em lucro fechado.
+DD por fechamentos diarios em ordem cronologica, pico inicial zero; sem
+reinicio mensal/anual. Somar resultados diarios antes de calcular DD conjunto.
+
+FINAL DO BLOCO ATUAL. O HISTORICO ANTERIOR FOI PRESERVADO ABAIXO.
+===============================================================================
+
 RESERVA EM ESTUDO COM4NIVEIS — VENDA R61ADICIONADA — 22/11/2026
 Pasta entregas/combinacao_4_niveis_r61_venda_20261122/.
 S23BUY200/500SEMespera;S38BUY200/1000COM5min;S61BUY100/alvoS50COM5min;

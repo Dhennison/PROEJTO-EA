@@ -1,0 +1,26 @@
+BACKUP DE CONTINUIDADE — 24/11/2026
+Repositorio https://github.com/Dhennison/PROEJTO-EA, branch entrega-modelod-v2-10-20261030.
+Lancamento: https://github.com/Dhennison/PROEJTO-EA/releases/tag/backup-modelod-20261124
+
+Leia primeiro o TXT principal da branch. Os resultados financeiros nao foram
+recalculados neste backup. O estado corrente e a carteira de quatro niveis,
+com os mesmos14horarios pendentes e resultados condicionais25965a28470.
+
+ASSETS_PLANEJADOS.json lista28assets, aproximadamente630,6MB:
+26ZIPsCedro originais,10anexos em1ZIP e14caches derivados em1ZIP.
+ASSETS_GITHUB_VERIFICADOS.json sera o recibo remoto de cada tamanho/SHA.
+Inventarios internos dos arquivos verificam cada membro. O helperrestaurar
+faz downloads seletivos e nao sobrescreve arquivos diferentes.
+
+Nao sao132brutos no backup:132foram RECEBIDOS historicamente,26estavam
+ACESSIVEIS agora e106nao estavam. Os nomes exatos estao noCSV132. Nao
+culpar o usuario por falta de envio nem reabrir resultados originais fechados.
+FontesXLSX grandes ja existentes continuam no lancamento antigo
+https://github.com/Dhennison/PROEJTO-EA/releases/tag/dados-replay-2025-20261116.
+
+Para nova sessao, prefira primeiroCSV/JSON da reserva. Eles preservam1121trades
+potenciais(1107fixos+14condicionais),sem necessidade de baixar630MB so para
+ler os resultados. Caches sao auxiliares de reproducao dos scripts, nao
+substituem as fontes/documentacao financeira. Conferir SHA antes de carregar.
+
+A mensagem de chamada esta em entregas/v2_10/MENSAGEM_PARA_NOVO_CHAT.txt.

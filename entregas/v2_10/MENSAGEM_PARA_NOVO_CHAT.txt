@@ -1,0 +1,17 @@
+Retome o projeto https://github.com/Dhennison/PROEJTO-EA na branch `entrega-modelod-v2-10-20261030`.
+Leia PRIMEIRO `entregas/v2_10/RETOMADA_DO_TRABALHO.txt`, especialmente o bloco atualizado em 24/11/2026, antes do historico antigo.
+
+A carteira reservada em estudo tem quatro niveis:
+- S23,6% compra, stop 200/alvo 500, SEM espera.
+- S38,2% compra, stop 200/alvo 1.000, COM espera de 5 minutos corridos da abertura efetiva.
+- S61,8% compra, stop 100/alvo original S50%, COM a mesma espera.
+- R61,8% venda, stop 375/alvo 1.000, SEM espera.
+Toque ate a liberacao inclusive consome a oportunidade do nivel; ordem limitada, sem reentrada.
+
+Periodo: janeiro/2024 a outubro/2026. Pior dos 14 casos: +25.965 pontos, DD diario continuo 7.835. Melhor: +28.470, DD 7.705. As 14 pendencias sao de HORARIO da abertura/primeiro toque, nao de alvo/stop. Configuracao, curvas, operacoes, verificacoes e lista dos 28 minutos estao em `entregas/combinacao_4_niveis_r61_venda_20261122/`.
+
+Preserve todos os originais, meses fechados e estudos anteriores. O Modelo D original permanece separado. Nao reinicie DD por mes, nao some DDs individuais e nao apresente limites como lucro fechado. Mantenha 50/250 em stand-by, nao reabra o controle dispensado de 10/07/2026 e nao compre historico.
+
+Backup de brutos acessiveis/anexos/caches: https://github.com/Dhennison/PROEJTO-EA/releases/tag/backup-modelod-20261124. Leia os inventarios e `restaurar_backup.py` em `entregas/backup_continuidade_20261124/` antes de pedir arquivos novamente. Os 132 ZIPs Cedro foram recebidos historicamente; somente 26 estavam acessiveis para este backup, e os 106 restantes estao identificados no inventario.
+
+Confira o estado salvo e prossiga pelas pendencias da configuracao atual, sem refazer os meses nem iniciar novas otimizacoes por conta propria. Se faltar um arquivo necessario, identifique exatamente qual depois de conferir o backup.

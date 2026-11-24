@@ -1,0 +1,86 @@
+[
+  {
+    "path": "/workspace/work/estudo_saidas/dados.pickle",
+    "archive_path": "work/estudo_saidas/dados.pickle",
+    "bytes": 74517530,
+    "sha256": "45dc3b423180c1d45f83652e127832a20359cccc194e6066f3ebbd6fc17b5eba"
+  },
+  {
+    "path": "/workspace/work/estudo_s61/resultados.pickle",
+    "archive_path": "work/estudo_s61/resultados.pickle",
+    "bytes": 78859753,
+    "sha256": "1877ee5740f1deea0892149db3282d61a378191ea52e8d7ca9fd256bf998bc9b"
+  },
+  {
+    "path": "/workspace/work/novos_niveis_20261119/resultados.pickle",
+    "archive_path": "work/novos_niveis_20261119/resultados.pickle",
+    "bytes": 127266411,
+    "sha256": "10e12c3d861dfb6103e7501e619b31875a2d300414e7c49e75b255df9d5f8784"
+  },
+  {
+    "path": "/workspace/work/fixos_tres_niveis_20261119/resultados.pickle",
+    "archive_path": "work/fixos_tres_niveis_20261119/resultados.pickle",
+    "bytes": 113041943,
+    "sha256": "6084f5d2d0d4e2196c600d9d851bc887599fa92f3473997c3e75f8136507f84b"
+  },
+  {
+    "path": "/workspace/work/replay_s61_20261119/auditoria.pickle",
+    "archive_path": "work/replay_s61_20261119/auditoria.pickle",
+    "bytes": 16655249,
+    "sha256": "b6ddc33ebbda6b582cb4a83d6304f17dbd5f797846e3481d415804697b28d4fe"
+  },
+  {
+    "path": "/workspace/work/replay_s23_20261119/auditoria.pickle",
+    "archive_path": "work/replay_s23_20261119/auditoria.pickle",
+    "bytes": 4729231,
+    "sha256": "4fc0f66b3d3298e3715e5a53434e927814b8806a97f82dce9dc86c077362ee67"
+  },
+  {
+    "path": "/workspace/work/replay_s23_20261119/resultado_atualizado.pickle",
+    "archive_path": "work/replay_s23_20261119/resultado_atualizado.pickle",
+    "bytes": 96142358,
+    "sha256": "9b8464903b8ca76a7a646e5d230ee66c01647db3b146b1f063a921732ac3661a"
+  },
+  {
+    "path": "/workspace/work/fechamento_s23_cedro_20261119/resultados.pickle",
+    "archive_path": "work/fechamento_s23_cedro_20261119/resultados.pickle",
+    "bytes": 96144598,
+    "sha256": "3feb04accfbc684f16a0b7c5c156ba0c88689a4d043557c4314a1adb3904268a"
+  },
+  {
+    "path": "/workspace/work/fechamento_s23_cedro_20261119/fechado.pickle",
+    "archive_path": "work/fechamento_s23_cedro_20261119/fechado.pickle",
+    "bytes": 289508,
+    "sha256": "4b7ae3a46fea981f5615407a9fff569b135cb855051e127b3f1195cf663121d0"
+  },
+  {
+    "path": "/workspace/work/s23_espera_5min_20261122/resultados.pickle",
+    "archive_path": "work/s23_espera_5min_20261122/resultados.pickle",
+    "bytes": 128387125,
+    "sha256": "c27a168a932ba2a0c493da3582ed70ae43ce79b324a3ef844e4090d7196fbbdf"
+  },
+  {
+    "path": "/workspace/work/modelod_espera_5min_20261122/resultados.pickle",
+    "archive_path": "work/modelod_espera_5min_20261122/resultados.pickle",
+    "bytes": 129627600,
+    "sha256": "1f8019dd5ac76a173aa1701c05e15b148504721098c90551aa58cefbd61db058"
+  },
+  {
+    "path": "/workspace/work/combinacao_s23_s38_s61_20261122/resultados.pickle",
+    "archive_path": "work/combinacao_s23_s38_s61_20261122/resultados.pickle",
+    "bytes": 346267,
+    "sha256": "55e8a7579cd5590fa713194e8f947cb024f73ecb00f0247d8894e0972d9b0f32"
+  },
+  {
+    "path": "/workspace/work/combinacao_4_niveis_r61_venda_20261122/resultados.pickle",
+    "archive_path": "work/combinacao_4_niveis_r61_venda_20261122/resultados.pickle",
+    "bytes": 803176,
+    "sha256": "b7566dcaf9105d2a8faf6d711376bd2e0635e9292d8712fa78e9829c81badffc"
+  },
+  {
+    "path": "/workspace/work/cedro_recuperado/resultados_atualizados.pickle",
+    "archive_path": "work/cedro_recuperado/resultados_atualizados.pickle",
+    "bytes": 107522116,
+    "sha256": "b959e74d093b8621b5aa3fdde723677092b69b71e73051e1e891490b3cf731a0"
+  }
+]

@@ -1,3 +1,9 @@
+ESTADO CANONICO DE CONTINUIDADE — 24/11/2026
+Leia primeiro entregas/v2_10/RETOMADA_DO_TRABALHO.txt.
+A reserva atual tem quatro niveis, 14 duvidas de horario.
+Backup e inventarios em entregas/backup_continuidade_20261124/.
+Plano antigo preservado abaixo; ele nao substitui a fase atual documentada no TXT.
+
 RESERVA EM ESTUDO COM4NIVEIS — VENDA R61ADICIONADA — 22/11/2026
 Pasta entregas/combinacao_4_niveis_r61_venda_20261122/.
 S23BUY200/500SEMespera;S38BUY200/1000COM5min;S61BUY100/alvoS50COM5min;
