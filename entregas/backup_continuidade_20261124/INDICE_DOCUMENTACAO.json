@@ -1,0 +1,87 @@
+[
+  {
+    "path": "ARQUIVOS_FISICOS_NA_BRANCH.json",
+    "bytes": 17980,
+    "sha256": "300aefa9e8e19efc811441e33dfd9f719fb8ea22f70e37ce532ec0b5fafde106"
+  },
+  {
+    "path": "ARQUIVOS_GITHUB_VERIFICADOS.json",
+    "bytes": 16872,
+    "sha256": "5d392f47351e87cf85cdb43edd76ebc1589575506acb705acf53d81d70e30506"
+  },
+  {
+    "path": "ASSETS_PLANEJADOS.json",
+    "bytes": 20126,
+    "sha256": "18537527a7a0229bf925491c7837c2933785db158735ee5db45c4f22d98a716f"
+  },
+  {
+    "path": "INVENTARIO_ANEXOS_REPLAY.json",
+    "bytes": 2982,
+    "sha256": "6f099e9f980a264df60641a0eee0362f33af5d68b3e89420a21decf27122e558"
+  },
+  {
+    "path": "INVENTARIO_CACHES.json",
+    "bytes": 3609,
+    "sha256": "8751f80ce02968da1e0a5875565fd1f380f06984e6809d1435ab746db144ffdf"
+  },
+  {
+    "path": "INVENTARIO_CEDRO_132_RECEBIDOS_26_ACESSIVEIS.csv",
+    "bytes": 23781,
+    "sha256": "57f9cb9351875fa000ae8eb5a27545b51f36b6533b17bf49bf7a9903e838c622"
+  },
+  {
+    "path": "LEIA_PRIMEIRO.txt",
+    "bytes": 3379,
+    "sha256": "f9ba349e63ad972bafafbe338ed070e63945c7b9a24bb26f5b2b463af61d6675"
+  },
+  {
+    "path": "NOTAS_LANCAMENTO.txt",
+    "bytes": 308,
+    "sha256": "0db26cfaca7a4459313f402ed4775cb789f7182015fc854a0f171388cd32d4fe"
+  },
+  {
+    "path": "VERIFICACAO_BACKUP.json",
+    "bytes": 594,
+    "sha256": "a1ab1971371bee73597ca20f5a174c076668c868c1209832f3a66b13e7af4b9a"
+  },
+  {
+    "path": "VERIFICACAO_DOWNLOAD_GITHUB.json",
+    "bytes": 371,
+    "sha256": "61992a527f80f5b565d849b6ec0a6e30af610bd75fe8bff0c1b6cc54c2409b20"
+  },
+  {
+    "path": "VERIFICACAO_RESTAURACAO.json",
+    "bytes": 185,
+    "sha256": "f6f31c056e956981265098c454dc9062b4b23bb94eb33ad394ada0bfe6ec401f"
+  },
+  {
+    "path": "VERSOES_AMBIENTE.json",
+    "bytes": 144,
+    "sha256": "3b82ba75e9c603802de7eca1a65278b595ddc04d9c723447612f14f4529413f5"
+  },
+  {
+    "path": "preparar_arquivos_na_branch.py",
+    "bytes": 2153,
+    "sha256": "6eb49888600b93dd9666eb419966ac4581eaf0338646cc1ecc0af247ea3b6ee2"
+  },
+  {
+    "path": "preparar_backup.py",
+    "bytes": 4611,
+    "sha256": "08d74a350345f0c40d528a87cccf5374c62884b52bb87e4776b76017e14c7246"
+  },
+  {
+    "path": "publicar_arquivos_na_branch.py",
+    "bytes": 2116,
+    "sha256": "4a046319902f2937b0682c609da401ee0a3e0d77532e3c48e3395c7443733774"
+  },
+  {
+    "path": "restaurar_backup.py",
+    "bytes": 4371,
+    "sha256": "a69a5a89b222150ccb1de814810cddcea8bbf3e008019997d9142318f447c47e"
+  },
+  {
+    "path": "verificar_backup.py",
+    "bytes": 3176,
+    "sha256": "2d2ebc40c2374cc52681a5d104dbd9e55cf1bcc31cf9788cb94c783da0995865"
+  }
+]

@@ -8,8 +8,11 @@ Todos os estudos financeiros, PDFs, XLSX, CSVs, scripts e auditorias descritos
 abaixo estao versionados nesta mesma branch. Nenhum mes fechado foi refeito.
 Backup de fontes acessiveis e caches derivados:
 https://github.com/Dhennison/PROEJTO-EA/tree/entrega-modelod-v2-10-20261030/entregas/backup_continuidade_20261124
-BACKUP_STATUS: PREPARADO; gravacao/conferencia dos binarios na branch em andamento.
-Ao terminar a publicacao, este marcador sera atualizado e havera recibo dos assets.
+BACKUP_STATUS: PUBLICADO E VERIFICADO NA MESMA BRANCH — 24/11/2026.
+31 arquivos fisicos / 28 artefatos logicos / 630.562.860 bytes conferidos.
+Recibo remoto: ARQUIVOS_GITHUB_VERIFICADOS.json; testes de restauracao e download
+registrados no diretorio de backup. A gravacao dos binarios foi verificada no
+commit c27d5704a3d2720b9d7989b8d616759b47f5bd47; os recibos sao atualizados depois.
 Manifestos/restauracao: entregas/backup_continuidade_20261124/.
 
 1. FASE ATUAL E PROXIMO PASSO
@@ -151,7 +154,7 @@ referencias antigas a PDFs tecnico/enxuto nao autorizam novo comparativo agora.
 Os 132 ZIPs Cedro de agosto-setembro-outubro/2026 foram enviados historicamente
 e os recibos comprovam os hashes. Os meses originais foram fechados naquela
 metodologia. Nao atribuir falta de envio ao usuario nem reabrir meses por isso.
-Nesta sessao foram restaurados 26 ZIPs, agora preparados para backup GitHub.
+Nesta sessao foram restaurados 26 ZIPs, agora SALVOS e verificados no GitHub.
 Os 106 restantes nao estao acessiveis neste ambiente e NAO estao neste backup.
 Os nomes, tamanhos e hashes exatos dos 132, com flag dos 26 acessiveis:
 entregas/backup_continuidade_20261124/INVENTARIO_CEDRO_132_RECEBIDOS_26_ACESSIVEIS.csv.
@@ -166,7 +169,7 @@ Tamanhos/SHA256/URLs: ASSETS_PLANEJADOS.json no diretorio de backup.
 Binarios: brutos_cedro/ e anexos_replay/; caches/ tem quatro partes ate40MiB.
 O helper recompõe o ZIP de caches com verificacao do SHA256 original.
 31 arquivos fisicos representam28artefatos logicos. Todos nesta mesma branch.
-Recibo Git remoto: ARQUIVOS_GITHUB_VERIFICADOS.json quando concluido.
+Recibo Git remoto: ARQUIVOS_GITHUB_VERIFICADOS.json (31 blobs/tamanhos conferidos).
 Nao confundir caches com fontes financeiras: conferir contexto/CSV/manifestos.
 
 Os XLSX grandes de Replay ja estao em:

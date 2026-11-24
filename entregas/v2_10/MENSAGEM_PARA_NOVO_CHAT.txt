@@ -1,17 +1,17 @@
 Retome o projeto https://github.com/Dhennison/PROEJTO-EA na branch `entrega-modelod-v2-10-20261030`.
-Leia PRIMEIRO `entregas/v2_10/RETOMADA_DO_TRABALHO.txt`, especialmente o bloco atualizado em 24/11/2026, antes do historico antigo.
+Leia PRIMEIRO `entregas/v2_10/RETOMADA_DO_TRABALHO.txt`, especialmente o bloco atualizado em 24/11/2026, antes do histórico antigo.
 
-A carteira reservada em estudo tem quatro niveis:
+A carteira reservada em estudo tem quatro níveis:
 - S23,6% compra, stop 200/alvo 500, SEM espera.
-- S38,2% compra, stop 200/alvo 1.000, COM espera de 5 minutos corridos da abertura efetiva.
+- S38,2% compra, stop 200/alvo 1.000, COM espera de cinco minutos corridos da abertura efetiva.
 - S61,8% compra, stop 100/alvo original S50%, COM a mesma espera.
 - R61,8% venda, stop 375/alvo 1.000, SEM espera.
-Toque ate a liberacao inclusive consome a oportunidade do nivel; ordem limitada, sem reentrada.
+Toque até a liberação inclusive consome a oportunidade do nível; ordem limitada, sem reentrada.
 
-Periodo: janeiro/2024 a outubro/2026. Pior dos 14 casos: +25.965 pontos, DD diario continuo 7.835. Melhor: +28.470, DD 7.705. As 14 pendencias sao de HORARIO da abertura/primeiro toque, nao de alvo/stop. Configuracao, curvas, operacoes, verificacoes e lista dos 28 minutos estao em `entregas/combinacao_4_niveis_r61_venda_20261122/`.
+Período: janeiro/2024 a outubro/2026. Pior dos 14 casos: +25.965 pontos, DD diário contínuo 7.835. Melhor: +28.470, DD 7.705. As 14 pendências são de HORÁRIO da abertura/primeiro toque, não de alvo/stop. Configuração, curvas, operações, verificações e lista dos 28 minutos estão em `entregas/combinacao_4_niveis_r61_venda_20261122/`.
 
-Preserve todos os originais, meses fechados e estudos anteriores. O Modelo D original permanece separado. Nao reinicie DD por mes, nao some DDs individuais e nao apresente limites como lucro fechado. Mantenha 50/250 em stand-by, nao reabra o controle dispensado de 10/07/2026 e nao compre historico.
+Preserve originais, meses fechados e estudos anteriores. Mantenha o Modelo D original separado, o 50/250 em stand-by e o controle adicional de 10/07/2026 dispensado. Não compre histórico. Calcule DD pela soma diária cronológica, sem reinício mensal ou soma de DDs individuais.
 
-Backup de brutos acessiveis/anexos/caches: https://github.com/Dhennison/PROEJTO-EA/tree/entrega-modelod-v2-10-20261030/entregas/backup_continuidade_20261124. Leia os inventarios e `restaurar_backup.py` em `entregas/backup_continuidade_20261124/` antes de pedir arquivos novamente. Os 132 ZIPs Cedro foram recebidos historicamente; somente 26 estavam acessiveis para este backup, e os 106 restantes estao identificados no inventario.
+Backup dos brutos acessíveis, anexos e caches: `entregas/backup_continuidade_20261124/`, na MESMA branch. Consulte o TXT, inventários e restaurar_backup.py antes de pedir arquivos novamente. Os 132 ZIPs Cedro foram recebidos historicamente; 26 estavam acessíveis e estão salvos, e os 106 restantes estão identificados no inventário.
 
-Confira o estado salvo e prossiga pelas pendencias da configuracao atual, sem refazer os meses nem iniciar novas otimizacoes por conta propria. Se faltar um arquivo necessario, identifique exatamente qual depois de conferir o backup.
+Confira o estado salvo e continue pelas pendências atuais, sem refazer meses nem iniciar novas otimizações por conta própria. Se faltar um arquivo necessário, identifique exatamente qual após conferir o backup.

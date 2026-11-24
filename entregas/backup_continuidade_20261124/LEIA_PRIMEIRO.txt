@@ -1,37 +1,60 @@
-BACKUP DE CONTINUIDADE — 24/11/2026
-Repositorio https://github.com/Dhennison/PROEJTO-EA, branch entrega-modelod-v2-10-20261030.
-Diretorio de backup: https://github.com/Dhennison/PROEJTO-EA/tree/entrega-modelod-v2-10-20261030/entregas/backup_continuidade_20261124
+BACKUP CONCLUIDO E VERIFICADO — 24/11/2026
+Repositorio: https://github.com/Dhennison/PROEJTO-EA
+Branch: entrega-modelod-v2-10-20261030
+Diretorio: entregas/backup_continuidade_20261124/
+Leia primeiro entregas/v2_10/RETOMADA_DO_TRABALHO.txt.
 
-Leia primeiro o TXT principal da branch. Os resultados financeiros nao foram
-recalculados neste backup. O estado corrente e a carteira de quatro niveis,
-com os mesmos14horarios pendentes e resultados condicionais25965a28470.
+O QUE ESTA SALVO NESTA MESMA BRANCH
+- 26 ZIPs Cedro originais intactos em brutos_cedro/.
+- 10 anexos Replay disponiveis, preservados com nomes/subpastas originais em
+  anexos_replay/Anexos_Replay_Profit_20261124.zip, incluindo Novas datas.xlsx.
+- 14 caches analiticos derivados, em um ZIP dividido em quatro partes ate40MiB
+  sob caches/. O helper reune as partes e confere o SHA256 do ZIP original.
+Sao28artefatos logicos,31arquivos fisicos,total630.562.860bytes.
+PDFs,Excel,CSV,scripts,auditorias e resultados financeiros continuam nas pastas
+originais versionadas. Nao foram recalculados/alterados neste backup.
 
-ASSETS_PLANEJADOS.json lista28assets, aproximadamente630,6MB:
-26ZIPsCedro originais,10anexos em1ZIP e14caches derivados em1ZIP.
-ASSETS_GITHUB_VERIFICADOS.json sera o recibo remoto de cada tamanho/SHA.
-Inventarios internos dos arquivos verificam cada membro. O helperrestaurar
-faz downloads seletivos e nao sobrescreve arquivos diferentes.
+VERIFICACOES
+ARQUIVOS_GITHUB_VERIFICADOS.json: tamanho e SHAdo blob Git remoto dos31arquivos
+conferem com os locais; contem commit e URLs raw.
+ASSETS_PLANEJADOS.json: tamanhos/SHA256 dos28artefatos e partes do cache.
+ARQUIVOS_FISICOS_NA_BRANCH.json: nomes/caminhos/SHA256 dos31arquivos fisicos.
+VERIFICACAO_BACKUP.json: fontes locais,24membros internos e blobs remotos validados.
+VERIFICACAO_DOWNLOAD_GITHUB.json: download anonimo raw real conferido porSHA256.
+VERIFICACAO_RESTAURACAO.json: restauracao seletiva e recomposicao multipartes.
+VERSOES_AMBIENTE.json: Python e bibliotecas dos caches/scripts.
 
-Nao sao132brutos no backup:132foram RECEBIDOS historicamente,26estavam
-ACESSIVEIS agora e106nao estavam. Os nomes exatos estao noCSV132. Nao
-culpar o usuario por falta de envio nem reabrir resultados originais fechados.
-FontesXLSX grandes ja existentes continuam no diretorio de backup antigo
-https://github.com/Dhennison/PROEJTO-EA/releases/tag/dados-replay-2025-20261116.
+LIMITACAO EXPLICITA
+Os132ZIPsCedro agosto-outubro foram recebidos historicamente. Nesta sessao,
+26estavamacessiveis e foram salvos. Os106restantes NAO estavam acessiveis para
+este backup. Seus nomes/tamanhos/hashes/recibos estao no inventario132.
+Nao e falta de envio do usuario nem razao para reabrir meses originais fechados.
 
-Para nova sessao, prefira primeiroCSV/JSON da reserva. Eles preservam1121trades
-potenciais(1107fixos+14condicionais),sem necessidade de baixar630MB so para
-ler os resultados. Caches sao auxiliares de reproducao dos scripts, nao
-substituem as fontes/documentacao financeira. Conferir SHA antes de carregar.
+FONTES JA PUBLICADAS ANTES
+https://github.com/Dhennison/PROEJTO-EA/releases/tag/dados-replay-2025-20261116
+Contem Datas.xlsx, Janeiro.a.Dezembro.2024.xlsx e Janeiro.a.Novembro.2025.xlsx.
+Essa release antiga foi preservada. A tentativa de nova release binaria falhou
+comHTTP401; a release vazia criada nessa tentativa foi removida. O backup final
+esta na MESMA BRANCH, sem depender da API de anexos.
 
-A mensagem de chamada esta em entregas/v2_10/MENSAGEM_PARA_NOVO_CHAT.txt.
+COMO RETOMAR
+Primeiro leia o TXT principal e CSV/JSON da carteira de4niveis. Para ler/fechar
+14casos, a BASE_POTENCIAL_1121_OPERACOES.csv preserva1107fixos+14condicionais,
+sem precisar baixar630MB. Carteira:25965a28470pontos/DD7835a7705, nao fechada.
+Nenhum modelo promovido. Originais preservados,50/250emstand-by.
 
-ARMAZENAMENTO DOS BINARIOS NA BRANCH
-Os 26 ZIPs intactos estao em brutos_cedro/; anexos em anexos_replay/.
-O cache ZIP de153MB foi dividido em4partes ate40MiB em caches/ para respeitar
-o limite por arquivo do GitHub. O helper recompõe e verifica o SHA256 original.
-Nao carregar uma parte como ZIP; usar restaurar_backup.py --tipo caches.
-ARQUIVOS_FISICOS_NA_BRANCH.json lista os31arquivos; ASSETS_PLANEJADOS.json
-lista os28artefatos logicos e as URLs raw seletivas. Nenhuma compra realizada.
-A tentativa de anexar binarios via API de releases foi recusada com HTTP401;
-a release vazia criada nesta tarefa foi removida, sem tocar a release antiga.
-A persistencia final usa apenas a mesma branch solicitada pelo usuario.
+Se precisar dos brutos ou de reproduzir scripts com caches:
+python entregas/backup_continuidade_20261124/restaurar_backup.py --tipo caches
+python entregas/backup_continuidade_20261124/restaurar_backup.py --tipo cedro --arquivo NOME_EXATO.zip
+python entregas/backup_continuidade_20261124/restaurar_backup.py --tipo anexos
+O helper verifica hashes e nao sobrescreve arquivos diferentes.
+--workspace escolhe a raiz (padrao/workspace);--verificar-somente nao baixa.
+Nao abrir uma parte do cache comoZIP:usar ohelper para recompor e validar.
+
+MENSAGEM PRONTA
+entregas/v2_10/MENSAGEM_PARA_NOVO_CHAT.txt.
+
+REPRODUCAO DO BACKUP (somente se necessario)
+preparar_backup.py;preparar_arquivos_na_branch.py;publicar_arquivos_na_branch.py;
+verificar_backup.py. Esses scripts preservam o snapshot24/11/2026. Para uma
+retomada normal, usar apenas os inventarios e restaurar_backup.py.

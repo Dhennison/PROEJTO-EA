@@ -1,7 +1,8 @@
 ESTADO CANONICO DE CONTINUIDADE — 24/11/2026
 Leia primeiro entregas/v2_10/RETOMADA_DO_TRABALHO.txt.
 A reserva atual tem quatro niveis, 14 duvidas de horario.
-Backup e inventarios em entregas/backup_continuidade_20261124/.
+Backup CONCLUIDO na mesma branch:31arquivos/630.562.860bytes verificados.
+Recibos e restauracao em entregas/backup_continuidade_20261124/.
 Plano antigo preservado abaixo; ele nao substitui a fase atual documentada no TXT.
 
 RESERVA EM ESTUDO COM4NIVEIS — VENDA R61ADICIONADA — 22/11/2026

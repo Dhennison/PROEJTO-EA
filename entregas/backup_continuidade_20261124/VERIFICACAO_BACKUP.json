@@ -1,0 +1,22 @@
+{
+  "verified_branch": "entrega-modelod-v2-10-20261030",
+  "verified_commit": "c27d5704a3d2720b9d7989b8d616759b47f5bd47",
+  "verified_physical_files": 31,
+  "verified_logical_artifacts": 28,
+  "verified_remote_bytes": 630562860,
+  "original_Cedro_ZIPs": 26,
+  "original_Replay_members": 10,
+  "derived_cache_members": 14,
+  "internal_members_SHA256_verified": 24,
+  "Cedro_historical_receipts": 132,
+  "historical_Cedro_bytes_not_accessible": 106,
+  "saved_portfolio_extremes": [
+    25965,
+    28470
+  ],
+  "saved_DD_extremes": [
+    7835,
+    7705
+  ],
+  "financial_results_changed": false
+}

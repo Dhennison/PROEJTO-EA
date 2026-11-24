@@ -1,12 +1,4 @@
-Backup de continuidade do projeto Modelo D, em 24/11/2026.
-Branch de trabalho: entrega-modelod-v2-10-20261030.
-Leia primeiro o TXT atualizado na branch:
-https://github.com/Dhennison/PROEJTO-EA/blob/entrega-modelod-v2-10-20261030/entregas/v2_10/RETOMADA_DO_TRABALHO.txt
-
-Arquivos anexos: 26 ZIPs Cedro originais restaurados, um pacote com os 10 anexos Replay atualmente acessíveis e um pacote de 14 caches analíticos derivados. Todos os tamanhos e SHA256 constam em entregas/backup_continuidade_20261124/ASSETS_PLANEJADOS.json. Os 106 ZIPs Cedro restantes foram recebidos historicamente, mas não estavam acessíveis nesta sessão: seus recibos e nomes estão no inventário da branch. Não são falta de envio do usuário nem razão para reabrir meses fechados.
-
-Resultados da carteira de quatro níveis, ainda condicionados a 14 horários:
-pior +25.965 / DD 7.835; melhor +28.470 / DD 7.705.
-Isso é um backup de fontes e estado de pesquisa, não release de produção do EA.
-
-Os três XLSX grandes de Replay já publicados no lançamento dados-replay-2025-20261116 permanecem lá, sem duplicação neste backup. PDFs, Excel, CSVs, scripts, auditorias e continuidade estão versionados na branch.
+Backup de continuidade24/11/2026 concluido na branch entrega-modelod-v2-10-20261030.
+A tentativa de anexos via API foi recusada comHTTP401; a release vazia dessa
+tentativa foi removida. A release antiga deReplay nao foi alterada.
+Consulte LEIA_PRIMEIRO.txt e os recibos na mesma pasta para o backup efetivo.
