@@ -1,6 +1,6 @@
 BACKUP DE CONTINUIDADE — 24/11/2026
 Repositorio https://github.com/Dhennison/PROEJTO-EA, branch entrega-modelod-v2-10-20261030.
-Lancamento: https://github.com/Dhennison/PROEJTO-EA/releases/tag/backup-modelod-20261124
+Diretorio de backup: https://github.com/Dhennison/PROEJTO-EA/tree/entrega-modelod-v2-10-20261030/entregas/backup_continuidade_20261124
 
 Leia primeiro o TXT principal da branch. Os resultados financeiros nao foram
 recalculados neste backup. O estado corrente e a carteira de quatro niveis,
@@ -15,7 +15,7 @@ faz downloads seletivos e nao sobrescreve arquivos diferentes.
 Nao sao132brutos no backup:132foram RECEBIDOS historicamente,26estavam
 ACESSIVEIS agora e106nao estavam. Os nomes exatos estao noCSV132. Nao
 culpar o usuario por falta de envio nem reabrir resultados originais fechados.
-FontesXLSX grandes ja existentes continuam no lancamento antigo
+FontesXLSX grandes ja existentes continuam no diretorio de backup antigo
 https://github.com/Dhennison/PROEJTO-EA/releases/tag/dados-replay-2025-20261116.
 
 Para nova sessao, prefira primeiroCSV/JSON da reserva. Eles preservam1121trades
@@ -24,3 +24,14 @@ ler os resultados. Caches sao auxiliares de reproducao dos scripts, nao
 substituem as fontes/documentacao financeira. Conferir SHA antes de carregar.
 
 A mensagem de chamada esta em entregas/v2_10/MENSAGEM_PARA_NOVO_CHAT.txt.
+
+ARMAZENAMENTO DOS BINARIOS NA BRANCH
+Os 26 ZIPs intactos estao em brutos_cedro/; anexos em anexos_replay/.
+O cache ZIP de153MB foi dividido em4partes ate40MiB em caches/ para respeitar
+o limite por arquivo do GitHub. O helper recompõe e verifica o SHA256 original.
+Nao carregar uma parte como ZIP; usar restaurar_backup.py --tipo caches.
+ARQUIVOS_FISICOS_NA_BRANCH.json lista os31arquivos; ASSETS_PLANEJADOS.json
+lista os28artefatos logicos e as URLs raw seletivas. Nenhuma compra realizada.
+A tentativa de anexar binarios via API de releases foi recusada com HTTP401;
+a release vazia criada nesta tarefa foi removida, sem tocar a release antiga.
+A persistencia final usa apenas a mesma branch solicitada pelo usuario.
